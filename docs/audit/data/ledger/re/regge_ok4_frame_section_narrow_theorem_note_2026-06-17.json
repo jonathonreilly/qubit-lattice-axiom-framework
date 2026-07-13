@@ -1,0 +1,191 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "regge_ok4_frame_section_narrow_theorem_note_2026-06-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+    "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10",
+    "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "de2601a36b7580db8b948a3952e3484ee22e9abf0b7b9c26895f313064decd0f",
+  "note_path": "docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.514506+00:00",
+      "audit_date": "2026-06-21T18:39:13.598304+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": "Sampled O(k^4) fingerprint of the Regge metric-sector deviation and full-edge-space on-shell TT dispersion on the OS0 Z^3 x Z_tau tick extension, including the scoped finite branch scan and convention-tagged projected off-shell tables.",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+          "minimal_axioms": null,
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": "For abstract Sym^2(R^4) under the block action 1 \u2295 SO(3) and isotropic spatial diagonal weights, the lapse-plus-spatial-trace projector is invariant, the complement weighted Frobenius energy is orbit-flat, generic complement coordinates move, and the stated quadratic alpha-beta energy is constant on SO(3) orbits."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": "bounded_theorem",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": "retained_bounded",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+          "minimal_axioms",
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "4eaca456188f72233e773a67c1918c0eb7ae0db097a760ef9a05a2b65b5d9c18",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-regge_ok4_frame_section_narrow_theorem_note_2026-06-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The O(k^4) alpha formula is supplied by a retained_bounded upstream theorem, and the new critical-set, Hessian-signature, and E plus T2 split claims are finite algebra/calculus checks over that input. The runner does not recompute the original Regge H=6I-A amplitude, so closure is as an algebraic synthesis over retained inputs, not a new first-principles Regge derivation of alpha.",
+      "claim_scope": "Bounded flat-atlas audit of the retained Regge O(k^4) cubic-harmonic tail as finite O_h frame-section support with lattice-fixed axis/face/body amplitudes, while O(k^2) remains isotropic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T18:39:13.598304+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Given the retained O(k^4) tail alpha(n) = -(1 + sum_a n_a^4)/12, the cubic functional f(n)=sum_a n_a^4 has only the 6 axis, 8 body-diagonal, and 12 face-diagonal critical directions, and the associated de-traced cubic axis 4-tensor splits spin-2 as E(2) plus T2(3) with non-orbit-flat cubic-weighted energy.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope limited to the flat-atlas algebraic section-support claim; this runner does not independently reconstruct the upstream Regge lattice-fingerprint computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing mathematics independently checks out: the alpha values and spread follow arithmetically from the retained alpha formula, the S^2 critical set follows from the Lagrange multiplier condition that all nonzero coordinates have equal magnitude, and the cubic tensor restricted to traceless symmetric tensors has the expected 2 plus 3 eigenvalue split. The O(k^2) covariance input and orbit-flat criterion are retained-grade, and the minimal-axiom citation is an accepted premise rather than a downgrade. No empirical comparator or tuned numerical input is used; the open curved-background, physical preferred-frame, and dimensionful calibration questions are explicitly outside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:56.391687+00:00",
+      "audit_date": "2026-07-10T04:29:42.196861+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": "Sampled O(k^4) fingerprint of the Regge metric-sector deviation and full-edge-space on-shell TT dispersion on the OS0 Z^3 x Z_tau tick extension, including the scoped finite branch scan and convention-tagged projected off-shell tables.",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+          "minimal_axioms": null,
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": "For abstract Sym^2(R^4) under the block action 1 \u2295 SO(3) and isotropic spatial diagonal weights, the lapse-plus-spatial-trace projector is invariant, the complement weighted Frobenius energy is orbit-flat, generic complement coordinates move, and the stated quadratic alpha-beta energy is constant on SO(3) orbits."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": "bounded_theorem",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10": "retained_bounded",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10",
+          "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+          "minimal_axioms",
+          "universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4eaca456188f72233e773a67c1918c0eb7ae0db097a760ef9a05a2b65b5d9c18",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00092-regge_ok4_frame_section_narr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner never derives the actual Regge O(k\u2074) field-space quadratic form from the lattice Hessian; it imports alpha and applies an arbitrarily normalized cubic weight. A bridge identifying that constructed weight with the Regge Hessian\u2014and establishing finite stationarity in full frame space rather than only direction space\u2014is missing.",
+      "claim_scope": "Given the retained sampled dispersion formula and O(k\u00b2) isotropy, the audit verified the 26 critical directions of \u03a3_a n_a\u2074 and the abstract cubic tensor's E\u2295T2 split and non-orbit-flat witness.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:29:42.196861+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "The de-traced cubic axis four-tensor splits spin-2 as E\u2295T2 and gives a non-SO(3)-orbit-flat quadratic energy, so the dispersion anisotropy also supplies a finite field-frame section candidate.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a runner-backed derivation from the full Regge O(k\u2074) Hessian to the cubic spin-2 weight, including its normalization and stationary set on the full SO(3) frame orbit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The critical-set and representation-theory calculations are valid algebraic checks. However, the DISP block directly assumes the retained sampled alpha formula rather than computing H = 6I \u2212 A, while the WEIGHT block constructs W = I + 0.4 G_aniso/||G_aniso|| with a freely chosen mixing coefficient. Nothing in the packet proves that this witness is the actual O(k\u2074) Regge graviton quadratic form, so the claimed field-frame sectioning and same-object identification do not follow, and the exact-amplitude wording also exceeds the sampled upstream certificate."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/regge_ok4_frame_section_2026_06_17.py",
+  "title": "Cubic-Coxeter Regge O(k\u2074) Frame-Section Support: EH-Covariant at O(k\u00b2), Cubic at the Lattice Scale, with a Lattice-Fixed Amplitude",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,140 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (an exactly solvable constructed",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
+    "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "95fe2b820c8a898cfe6f765a7c8d531ad7f26f979c40d006cb7a34519f9033a2",
+  "note_path": "docs/STACK_SPECTRAL_TRANSCRIPTION_WEAK_REGISTRATION_FAITHFUL_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:32:00.003321+00:00",
+      "archived_for_note_hash": "73c5dd0483ae85ae14cd3ca5ea847e7289b13145ff46fe5f31eb0fd80c95b8ab",
+      "audit_date": "2026-06-16T04:03:22.427672+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05": "For the explicit 1+5 qubit redundant-broadcast model with H_k=(pi/2)|1><1|_sys x X_k, record redundancy increases from the blank low-record state, decreases from high-record controls, and is flat from I/d; no from-nothing past-hypothesis derivation is audited.",
+          "kinetic_isotropy_primitive": null,
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": "Model-family non-fixation: within the provided free Euclidean lattice scalar witness family, the listed current structures leave xi=c_t/c_s undetermined, supporting the registered kinetic-isotropy primitive as explicit.",
+          "minimal_axioms": null,
+          "record_outcome_observable_principle_canonical_proposal_note_2026-06-05": null,
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors.",
+          "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10": "Finite-dimensional characterization: an invertible contraction admits an isometric or anti-isometric spectrum-reflection conjugacy iff it is unitary; applied to the realized strict tick only conditional on the stated C-reading transport and N-reading envelope."
+        },
+        "dep_claim_type": {
+          "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": "positive_theorem",
+          "minimal_axioms": "meta",
+          "record_outcome_observable_principle_canonical_proposal_note_2026-06-05": "meta",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "no_go",
+          "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": "retained",
+          "minimal_axioms": "meta",
+          "record_outcome_observable_principle_canonical_proposal_note_2026-06-05": "meta",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "retained_no_go",
+          "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05",
+          "kinetic_isotropy_primitive",
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+          "minimal_axioms",
+          "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "single_clock_uniqueness_scope_boundary_2026-06-06",
+          "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "7302fbb70977db6931700325f46ed88650c3e0f942c8c93584936cf8f660b8b2",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-040025-9d5c7027f9-stack_spectral_transcription",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic theorem closes for the explicitly constructed model. The broader chain does not close because the realized-stack-to-broadcast-registration identification remains the named record-production-dynamics residual, and one cited record-principle authority is meta/unaudited rather than retained-grade.",
+      "claim_scope": "Audited the finite-dimensional single-fiber tick plus fresh-ancilla registration stack: its record covariance transcribes the tick band with O(eps^4) frequency protection, O(eps^2) damping deficit, and an overdamped infrared window, without deriving that realized physical stacks are of this class.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T04:03:22.427672+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The registered-sector transfer is exactly M(eps)=R(omega)\u00b7diag(1,cos 2 eps), giving r=sqrt(cos 2 eps) and cos(omega_eps)=cos(omega)(1+cos 2 eps)/(2 sqrt(cos 2 eps)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained record-production-dynamics theorem that the realized stack belongs to the specified broadcast registration class, or narrow the row to the constructed-model theorem only and remove the load-bearing meta dependency.",
+      "open_dependency_paths": [
+        "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Independent algebra checks agree with the runner on the displacement identity, dephasing channel, eigenvalue formula, vanishing eps^2 term in g(eps), and omega_c(eps)~eps^2 window. The runner source performs actual finite-dimensional Pauli/register computations rather than printing constants or importing external comparators. The verdict is nevertheless conditional because the note\u2019s physical use still depends on the open record-production-dynamics bridge that the realized stack is this class, and it cites the meta RECORD outcome-principle proposal as part of that residual framing."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/stack_spectral_transcription_weak_registration_2026_06_11.py",
+  "title": "Stack Spectral Transcription At Weak Registration: The Record-Stack Reading Mechanism",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

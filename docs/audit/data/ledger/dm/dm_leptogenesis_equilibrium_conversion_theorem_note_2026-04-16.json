@@ -1,0 +1,292 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "sm_relativistic_dof_count_import_note_2026-05-17"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/dm_leptogenesis_exact_common.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.968,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7fc788beb4449b4b46694ea790ad2ed02fd7842b6596c16025ea13c41707da2b",
+  "note_path": "docs/DM_LEPTOGENESIS_EQUILIBRIUM_CONVERSION_THEOREM_NOTE_2026-04-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104966+00:00",
+      "archived_for_note_hash": "2ff0bdb64f131fdadf6cb5d0891a4b5b8cfefff208d275d45fba8a50e2853c29",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.811282+00:00",
+      "audit_date": "2026-05-01T05:05:34.378190+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.587,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conversion formulas close once g_* = 106.75 and the late entropy count are admitted, but the source note has no cited authority or derivation for the load-bearing 28 bosonic and 90 fermionic degrees of freedom. The runner reuses those same constants rather than deriving the spectrum count from retained inputs.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The exact taste-spectrum count gives g_* = 28 + (7/8)*90 = 106.75, after which the equilibrium abundance and late entropy-to-photon factors are algebraic/statistical-mechanics conversions.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the theorem depends on the exact relativistic spectrum count g_* = 28 + (7/8)*90, but the note provides no cited theorem or derivation for the 28 and 90 counts. Why this blocks: the runner verifies downstream arithmetic and standard equilibrium integrals only after those constants are already set, so it does not independently close the authority path. Repair target: cite or add a theorem-grade spectrum-count note/runner that derives the bosonic and fermionic counts from the framework inputs, then keep this note as the conversion corollary. Claim boundary until fixed: conditional on the spectrum count, the d_N, s/n_gamma, and product arithmetic are internally consistent and runner-checked."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.035023+00:00",
+      "archived_for_note_hash": "4fa4dcfd1554d556cb02caffa58efe34b645815d9e0756c1fe778a99a16f5fa0",
+      "audit_date": "2026-05-05T06:04:21.418480+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.555,
+        "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-dm_leptogenesis_equilibr-207",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The standard thermodynamic algebra closes after g_* and the relativistic species counts are accepted, but the restricted packet does not derive the bosonic 28 and fermionic 90 taste-spectrum counts from Cl(3) on Z^3. The runner hard-codes those counts and imports exact constants/helper functions rather than deriving the spectrum from the axiom.",
+      "claim_scope": "Audited whether the note and supplied runner close the leptogenesis equilibrium conversion factors g_*, d_N, and s/n_gamma from the stated axiom-only packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:04:21.418480+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The exact taste-spectrum count gives g_* = 28 + (7/8)*90 = 106.75, which is then used in the equilibrium abundance and conversion factors.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide a retained authority or self-contained runner deriving the 28 bosonic and 90 fermionic relativistic degrees of freedom from Cl(3) on Z^3 rather than hard-coding or importing them.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner verifies algebraic consequences of accepted relativistic equilibrium formulas and imported exact constants, and it numerically checks the standard zeta-function integrals. It does not instantiate the framework axiom or compute the taste spectrum from first principles; the key count 28 + (7/8)*90 is supplied inside the runner. Because no cited authority is provided for that spectrum count and the runner imports the benchmark constants it checks against, the claimed axiom-only closure is conditional on an omitted spectrum-count derivation."
+    },
+    {
+      "archived_at": "2026-05-27T11:23:10.318726+00:00",
+      "archived_for_note_hash": "5a491e5dec4b9ca05279d0dd63a6fb9e67ef7aeb7977f693234d0484aee24c3b",
+      "audit_date": "2026-05-26T00:00:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+        },
+        "dep_claim_type": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "sm_relativistic_dof_count_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 10.448,
+        "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
+        "transitive_descendants": 246
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-dm-leptogenesis-equilibrium-conversion-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop dependency closes only the finite SM inventory arithmetic for g_* = 427/4. The d_N and s/n_gamma steps require the relativistic Majorana equilibrium density and the late photon/neutrino entropy-conservation conversion formulas, which are explicit in the source/runner but not retained dependencies or import wrappers in the restricted packet.",
+      "claim_scope": "Given g_* = 427/4 from the retained-bounded SM inventory wrapper and treating the relativistic Majorana equilibrium-density and late electromagnetic entropy-conservation formulas as external thermal premises, the arithmetic yields d_N, g_*S(today), s/n_gamma, and their conversion product.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T00:00:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The equilibrium number/entropy densities give d_N = 135 zeta(3)/(4 pi^4 g_*), while electromagnetic entropy conservation gives (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11, and s/n_gamma = 7.039433661546651.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge -- add or create direct retained-bounded import-wrapper dependencies for the relativistic Majorana equilibrium density and late electromagnetic entropy-conservation/photon-neutrino conversion formulas, then narrow the source's closed-language or rerun the same arithmetic with those assumptions sourced.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the source says the equilibrium conversion factors are closed, but the direct authority only closes the SM g_* inventory arithmetic. Why this blocks: the Majorana equilibrium-density and electromagnetic entropy-conservation/late-conversion formulas are physical thermal/cosmology premises, and the runner checks algebra after setting them rather than sourcing them from retained dependencies. Repair target: add retained-bounded import wrappers or retained theorems, with direct dependency edges, for the Majorana N1 equilibrium density and the e+e- entropy-conservation/g_*S(today)/s/n_gamma conversion chain. Claim boundary until fixed: exact bounded arithmetic over imported thermal assumptions, not a retained closed theorem and not a tuned numerical benchmark match."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.554512+00:00",
+      "audit_date": "2026-05-29T04:07:35.994517+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+        },
+        "dep_claim_type": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "sm_relativistic_dof_count_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 10.5,
+        "runner_hash": "b7b78ee26edaf69b4ed4d2b1de14807ed9037286c0887a748064c9b1ae531d23",
+        "transitive_descendants": 255
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-dm-equilibrium-conversion-b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct dependency supplies retained-bounded g_* = 106.75. Independent arithmetic gives d_N = 0.003901498367656258, g_*S(today)=43/11, s/n_gamma = 7.039433661546651, and product (s/n_gamma)*d_N = 0.02746433893974878.",
+      "claim_scope": "Bounded arithmetic conversion theorem: given the retained-bounded declared Standard Model g_* inventory plus the stated relativistic-equilibrium and entropy-conservation formulas, compute d_N = 135 zeta(3)/(4 pi^4 g_*), g_*S(today)=43/11, s/n_gamma=7.039433661546651, and their product. This is not a framework derivation of the SM inventory, thermal-equilibrium cosmology, neutrino-decoupling physics, or leptogenesis transport closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T04:07:35.994517+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-28T02:33:35.525262+00:00",
+          "auditor": "codex-audit-loop-dm-equilibrium-conversion-20260528-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded thermal-equilibrium conversion arithmetic: from the retained-bounded declared Standard Model g_*=106.75 inventory plus standard relativistic number/entropy density formulas, compute d_N=0.003901498367656259, g_*S(today)=43/11, s/n_gamma=7.039433661546651, and their product 0.02746433893974878.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-29T04:07:35.994217+00:00",
+          "auditor": "codex-audit-loop-fresh-dm-equilibrium-conversion-b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded arithmetic conversion theorem: given the retained-bounded declared Standard Model g_* inventory plus the stated relativistic-equilibrium and entropy-conservation formulas, compute d_N = 135 zeta(3)/(4 pi^4 g_*), g_*S(today)=43/11, s/n_gamma=7.039433661546651, and their product. This is not a framework derivation of the SM inventory, thermal-equilibrium cosmology, neutrino-decoupling physics, or leptogenesis transport closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given g_* = 106.75, compute d_N = 135 zeta(3)/(4 pi^4 g_*) and, from (T_gamma/T_nu)^3 = 11/4, g_*S(today) = 43/11 and s/n_gamma = pi^4 g_*S(today)/(45 zeta(3)).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if downstream use treats this as a framework derivation of the Standard Model inventory, thermal-equilibrium cosmology, neutrino-decoupling physics, or leptogenesis transport closure rather than bounded conversion arithmetic.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Second clean pass confirms the bounded arithmetic/conversion scope. The runner's nine checks and an independent high-precision recomputation agree on the exact factors and numerics. Residual risk: the result imports the Standard Model inventory and standard equilibrium/entropy-conservation formulas as bounded premises; it does not derive those premises from the framework or close physical leptogenesis transport."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dm_leptogenesis_equilibrium_conversion_theorem.py",
+  "title": "DM Leptogenesis Equilibrium-Conversion Theorem",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1269 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.128,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "abd5c2c381daf2cf26c42ae4611beff791bee6132635e41c2c712daf3799940c",
+  "note_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.356524+00:00",
+      "audit_date": "2026-05-18T12:12:12.223520+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.29,
+        "runner_hash": "6fd19245206377910a63ee12d1083cd544f9f5a439ed188bb419f6b37d091a79",
+        "transitive_descendants": 884
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-hierarchy_seven_eighths_-014",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof reduces to elementary algebra plus the standard eta-zeta identity eta(s)/zeta(s)=1-2^(1-s). The uniqueness of d=4 follows from the monotonicity argument for 2^(d-2)-d on integers d>=4 and direct checks at d=2,3.",
+      "claim_scope": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-18T12:12:12.223520+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T20:22:42.150407+00:00",
+          "auditor": "codex-audit-loop-019e138d-c1be-76e0-911a-455253fb55b5",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Standalone narrow arithmetic theorem: for integer d >= 2, the lattice ratio 1 - 1/(2d), eta-zeta quotient 1 - 2^(1-d), and alignment equation 2^(d-2)=d coincide at 7/8 exactly only at d = 4; no hierarchy-formula, Lt=4 physical-selection, or outer-exponent closure is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-18T12:12:12.223520+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-hierarchy_seven_eighths_-014",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The equality R_lat(d-1)=eta(d)/zeta(d) is equivalent to 1/(2d)=2^(1-d), hence to 2^(d-2)=d, whose unique integer solution for d>=2 is d=4.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor may re-check that relational runner checks T1-T6 are not treated as load-bearing for the narrow theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic identity over explicitly stated functions of d, with no external observed comparator, tuned scale, framework axiom, or upstream retained claim needed. The runner source performs exact rational and symbolic checks rather than merely printing a pass summary, though several runner checks are relational context outside the narrow load-bearing theorem. The note's conclusion is limited enough to close: it establishes the d=4 triple coincidence, not the broader hierarchy formula, L_t selection, or outer exponent."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:27.994236+00:00",
+      "audit_date": "2026-07-11T18:13:45.488274+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.949,
+        "runner_hash": "6fd19245206377910a63ee12d1083cd544f9f5a439ed188bb419f6b37d091a79",
+        "transitive_descendants": 698
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00047-hierarchy_seven_eighths_riem",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The proof closes the narrower statement R_lat(d\u22121)=\u03b7(d)/\u03b6(d)=7/8 with the alignment predicate true only at d=4. It does not establish that the alignment equation is a third rational quantity equal to 7/8; its sides equal 4 and its residual equals 0.",
+      "claim_scope": "Audited the literal claim that the lattice ratio, eta/zeta quotient, and integer alignment equation all coincide on 7/8 only at d=4, together with the narrower equality-and-uniqueness result.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:13:45.488274+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "The equality R_lat(d\u22121)=\u03b7(d)/\u03b6(d) is equivalent to 2^(d\u22122)=d, whose unique integer solution for d\u22652 is d=4.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Checked every transformation in the displayed equivalence.",
+            "disposition": "CLOSED",
+            "evidence_locator": "2^(d - 2)  =  d",
+            "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct reversible algebra between equality of the two ratios and the integer alignment equation.",
+            "outcome": "The route closes the equality predicate but does not make the alignment equation a third 7/8-valued quantity.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "ratio_equivalence"
+          },
+          {
+            "attempt": "Checked the derivation \u03b7(s)=(1\u22122^(1\u2212s))\u03b6(s) and division by positive \u03b6(s).",
+            "disposition": "CLOSED",
+            "evidence_locator": "\u03b7(s) / \u03b6(s)  =  1 \u2212 2^(1 \u2212 s)",
+            "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Independent odd/even decomposition of the absolutely convergent zeta series.",
+            "outcome": "This independently establishes \u03b7(4)/\u03b6(4)=7/8.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "eta_odd_even_split"
+          },
+          {
+            "attempt": "Checked f(2), f(3), f(4) and the positive forward difference f(d+1)\u2212f(d)=2^(d\u22122)\u22121.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the unique integer solution `d \u2265 2` of `2^(d \u2212 2) = d` is `d = 4`",
+            "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Finite evaluation at d=2,3,4 followed by strict discrete monotonicity for the infinite tail d\u22654.",
+            "outcome": "The route proves d=4 is the unique integer alignment solution.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "integer_tail_uniqueness"
+          },
+          {
+            "attempt": "Compared the source's triple-7/8 wording with the combined runner check.",
+            "disposition": "CLOSED",
+            "evidence_locator": "**T14.** Combined verification: at `d = 4`, identities (i), (ii),",
+            "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Type-check the claimed third coincident object against the runner's actual alignment residual.",
+            "outcome": "The runner computes (i)=(ii)=7/8 and residual (iii)=0, exposing the literal triple-value claim as false.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "third_value_type_check"
+          },
+          {
+            "attempt": "Inspected the hypothesis and framework-boundary statements.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The hypothesis `c = d \u2212 1` and the candidate dimension `d \u2265 2` are **stated** rather than imported.",
+            "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether c=d\u22121 is being smuggled in as a derived physical identification.",
+            "outcome": "The relation is explicitly stated as a mathematical hypothesis, so it does not create a hidden-import failure in the narrower theorem.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "stated_hypothesis_boundary"
+          },
+          {
+            "attempt": "Checked the explicit counterfactual and exclusion statements.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The present theorem does not select `d = 4`; it states the alignment property at `d = 4`.",
+            "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the theorem silently identifies framework temporal block size L_t with the integer d.",
+            "outcome": "The physical L_t selector is excluded from the load-bearing chain; this preserves the narrower arithmetic theorem but supplies no repair for the triple-value wording.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "lt_dimension_firewall"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The alignment equation is a predicate whose d=4 sides equal 4, or a residual whose d=4 value is 0, not a third quantity equal to 7/8."
+          ],
+          "evidence_locator": "T14: at d=4, (i) = (ii) = 7/8 and (iii) alignment zero (combined)",
+          "evidence_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "The alignment equation is a predicate whose d=4 sides equal 4, or a residual whose d=4 value is 0, not a third quantity equal to 7/8."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "There are zero ledger dependencies.",
+          "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "hits": [],
+          "none_found_reason": "No hidden admission is needed for the valid two-ratio equivalence; the failure is the explicit semantic and mathematical type mismatch in the claimed third 7/8-valued object.",
+          "scan_scope": "Checked the source note, runner, premise registries, physical-identification disclaimers, normalization language, selectors, and readout boundaries for hidden imports.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "T14: at d=4, (i) = (ii) = 7/8 and (iii) alignment zero (combined)",
+          "evidence_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
+          "none_found_reason": "Every N1 route was directly attempted from the restricted source and runner; none was ruled out solely by a prior witness.",
+          "scan_scope": "Checked whether any N1 route relied on a prior no-go witness and compared the runner's alignment residual with the source's claimed third value.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "At every other integer `d \u2265 2`, the three quantities take three distinct rational values",
+          "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": "",
+          "scan_scope": "Checked uniqueness, all-other-integers, triple-coincidence, and explicit out-of-scope language at the resolutions actually proved or computed.",
+          "statements": [
+            {
+              "evidence_locator": "the unique integer solution `d \u2265 2` of `2^(d \u2212 2) = d` is `d = 4`",
+              "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "only at `d = 4` among integer `d \u2265 2`",
+              "tested_resolutions": [
+                "d=2,3,4 explicitly",
+                "all integer d\u22655 by strict discrete monotonicity"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "At all integer `d \u2208 {2, 3, 5, 6, ...} \u2260 4`",
+              "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "At all integer `d \u2208 {2, 3, 5, 6, ...} \u2260 4`",
+              "tested_resolutions": [
+                "exact algebraic equivalence",
+                "unique integer solution proof"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "At `d = 4` all three quantities equal `7/8`.",
+              "evidence_path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "all three quantities equal `7/8`",
+              "tested_resolutions": [
+                "two ratios at d=4",
+                "alignment equation sides at d=4",
+                "alignment residual at d=4"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy does not change the value or type of the integer alignment predicate.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms supply no reinterpretation that makes an equation or zero residual equal 7/8.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Realized-state pointwise evaluation is unrelated to the exact arithmetic type mismatch.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference cannot alter these dimensionless exact values.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC_phi_lambda occupancy/readout boundary is unrelated and supplies no reinterpretation of the alignment equation.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The bare-coupling rescaling convention is unrelated to the d=4 arithmetic.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "The hypercharge normalization convention is unrelated to the exact alignment residual.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every indexed approved primitive, owner-governed residual, Tier-A surface, convention reframe, and possible scope reframe against the single type-mismatch wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The phrase triple coincidence can be read charitably as two ratios taking 7/8 while a third predicate, equivalent to their equality, is true at the same d; it need not mean that the equation itself numerically equals 7/8.",
+          "evidence_locator": "T14: at d=4, (i) = (ii) = 7/8 and (iii) alignment zero (combined)",
+          "evidence_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
+          "resolution": "That interpretation successfully recovers a narrower theorem, but the source repeatedly says all three quantities evaluate to or equal 7/8 and that they take three rational values elsewhere. The runner instead records two 7/8 values and a zero residual, so the charitable predicate reading cannot ratify the literal audited scope.",
+          "resolved": true,
+          "route_id": "third_value_type_check"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_locator": "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Prior clean audit used the narrower predicate reading; the present audit addresses the literal triple-value wording.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated retired AC premise.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated retired strong-CP premise.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated owner-governed AC retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated foundational no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated architecture and Newton boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated coupling-runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated textbook and RP-axis restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated inherited no-go portfolio.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated electroweak identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated scattering-observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated carrier-registry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated charged-lepton selector routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Separate dimension-selector boundary that does not repair the present claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated causal-metric boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated finite-family replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Wilson-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated flavor-carrier boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated gauge-character routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated gauge-isotropy routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated gravity bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated weak-field scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated absolute-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated hypercharge degeneracy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated atomic-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated quark-mass walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated asymptotic-limit wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated detector-observable wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated finite-path geometry wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated hierarchy-readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated clock/readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Empty unrelated ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated planning boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated physical-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated neutrino construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated neutrino-cosmology walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Newtonian scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated recompute boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated coupling-authority wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated memory and gravity walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated finite-degree boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Planck carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated plaquette bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated character diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Record selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated temporal-axis walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated source-semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated statistics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated kinetic-law wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated SU(3) encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated documentation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated family-card boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated determinant-phase walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated gauge-theta walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated positive-theta gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated theta-insertion walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated theta-defect walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated determinant-power walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated occupancy walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated R-eta walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated Record-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated finite-packet matcher wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated continuum scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "mechanism": "Related only as a general definition-versus-derivation warning; its Yukawa mechanism is distinct.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
+              "accepted_premise_type": null,
+              "content_sha256": "a42d6c1c4206791b8b2d1d7af4b54cd460cefe5abc8b85f6acfbcc0dd9dd593f",
+              "cross_cycle_candidate_ids": [
+                "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": {
+              "accepted_premise_type": null,
+              "content_sha256": "d6fadded2d0dff09a459270b033a21af65de738e8c97ee6db8618a3b481abcea",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "abd5c2c381daf2cf26c42ae4611beff791bee6132635e41c2c712daf3799940c",
+              "effective_status": null,
+              "path": "docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "**T14.** Combined verification: at `d = 4`, identities (i), (ii),",
+                "2^(d - 2)  =  d",
+                "At `d = 4` all three quantities equal `7/8`.",
+                "At all integer `d \u2208 {2, 3, 5, 6, ...} \u2260 4`",
+                "At every other integer `d \u2265 2`, the three quantities take three distinct rational values",
+                "The hypothesis `c = d \u2212 1` and the candidate dimension `d \u2265 2` are **stated** rather than imported.",
+                "The present theorem does not select `d = 4`; it states the alignment property at `d = 4`.",
+                "There are zero ledger dependencies.",
+                "the unique integer solution `d \u2265 2` of `2^(d \u2212 2) = d` is `d = 4`",
+                "\u03b7(s) / \u03b6(s)  =  1 \u2212 2^(1 \u2212 s)"
+              ]
+            },
+            "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "6fd19245206377910a63ee12d1083cd544f9f5a439ed188bb419f6b37d091a79",
+              "effective_status": null,
+              "path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "T14: at d=4, (i) = (ii) = 7/8 and (iii) alignment zero (combined)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-audit after revising the theorem, closure summary, and handoff to say that two ratios equal 7/8 while the third item is an equivalent predicate with zero residual, rather than a third 7/8-valued quantity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The exact algebra and uniqueness proof are correct, and they establish a valid narrower theorem: the two ratios agree exactly when d=4. However, the source repeatedly promotes the alignment equation or its residual into a third quantity that also evaluates to 7/8. The runner itself reports the correct distinction\u2014two values equal 7/8 while the alignment residual is zero\u2014so its successful checks do not support the literal triple-value claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py",
+  "title": "Hierarchy 7/8 Riemann-Dirichlet Dimensional Anchor \u2014 Narrow Theorem",
+  "transitive_descendants": 790,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1347 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 29,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 24.236,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bc057ba26a11293bb93f03b73848b9aed51cbb531769dc48398135675e62cebb",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.772622+00:00",
+      "audit_date": "2026-05-02T16:52:10.704865+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.719,
+        "transitive_descendants": 297
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-source-sector-factorization-bohr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within this boundary, the construction closes: once the residual compression is the positive central diagonal operator D_beta, the factorized matrix law follows algebraically. The chain does not compute or identify the Wilson beta=6 kappa sequence, and the note explicitly leaves that datum open.",
+      "claim_scope": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T16:52:10.704865+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "claim_type_reaudit": {
+          "audit_date": "2026-05-02T16:52:10.705218+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-source-sector-factorization-bohr",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "first_audit": {
+          "audit_date": "2026-04-29T11:42:07.893843+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "legacy_confirmed_clean_claim_type_reaudit",
+        "second_audit": {
+          "audit_date": "2026-04-30T15:02:52.060736+00:00",
+          "auditor": "codex-audit-loop-second-20260430-gauge-source-sector-matrix-drain2",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_failed"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.550234+00:00",
+          "auditor": "codex-judge-20260430-phase-a-source-sector-factorization",
+          "auditor_family": "codex-gpt-5",
+          "first_auditor_error": null,
+          "independence": "judicial_review",
+          "judgment_rationale": "The second auditor read the generic diagonal witness runner as a failure to compute Wilson D_6, but the note explicitly limits the claim to the factorized matrix law once D_beta is fixed. That structural matrix-element identity is exactly what the runner checks, so the first clean/A reading holds within the stated boundary.",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "second_auditor_error": "The second auditor demanded an explicit Wilson D_6 evaluation that the note marks as outside the theorem boundary.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "After stripping the two marked half-slice multipliers, the residual source-sector compression C_beta is central on class functions and therefore diagonal in the SU(3) character basis, giving T_src(beta)=exp[(beta/2)J] D_beta exp[(beta/2)J].",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit separately if a later claim asserts an explicit Wilson kappa_(p,q)(6), residual environment data, or P(6) value.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The audited content is a bounded structural factorization, not a numerical evaluation of Wilson residual data. The runner supports this as a finite algebraic witness: it builds exp(3J), injects a generic positive conjugation-symmetric diagonal kappa, and verifies the factorized matrix formula. Because the claim explicitly excludes evaluation of D_6/kappa and Perron data, there is no hidden numerical closure being asserted."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:15.711758+00:00",
+      "audit_date": "2026-07-11T19:17:49.401496+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 23.731,
+        "runner_hash": "924b8da65cac01a3d25b0fd51e2d1d2e2078a59168456ea906fb9ca6bbf864b8",
+        "transitive_descendants": 600
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00077-gauge_vacuum_plaquette_sourc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Simultaneous-conjugation invariance preserves the class-function sector but does not imply that an operator is a central convolution operator or diagonal in irreducible characters. The packet supplies neither the stronger bi-invariance/commutation theorem nor an explicit Wilson-kernel computation establishing that property.",
+      "claim_scope": "Only the conditional algebraic identity T=M D M and its matrix formula for a supplied diagonal D were established; no Wilson-derived diagonality of the stripped residual compression was established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T19:17:49.401496+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "The note infers that the stripped residual compression is central and therefore character-diagonal solely because its weight is real, positive, and invariant under simultaneous conjugation.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The packet was checked for a derivation of this stronger symmetry; it supplies only simultaneous-conjugation invariance.",
+            "disposition": "OPEN",
+            "evidence_locator": "invariant under simultaneous conjugation of the marked plaquette holonomies",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Prove that the residual compression commutes with the full left and right regular actions, or equivalently has convolution-central kernel structure.",
+            "outcome": "The stronger centrality condition remains unproved, so the route is open.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "representation_centrality"
+          },
+          {
+            "attempt": "On the class-function sector, a rank-one kernel K(U,V)=h(U)h(V) with positive nonconstant real class function h is positive, self-adjoint, and simultaneously conjugation-invariant but mixes every character appearing in h.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`C_beta` is diagonal in the irreducible character basis",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether positivity, self-adjointness, and simultaneous-conjugation invariance alone force character diagonality.",
+            "outcome": "The stated hypotheses do not force diagonality, directly defeating the load-bearing inference.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "positive_kernel_counterexample"
+          },
+          {
+            "attempt": "The runner source and note boundary were inspected for this computation.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "it does **not** compute the Wilson residual diagonal `D_6`",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct the stripped two-slice Wilson compression and calculate its character-basis matrix directly.",
+            "outcome": "The runner injects a generic diagonal witness and explicitly does not compute the Wilson residual diagonal, so this route remains untested.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "explicit_wilson_compression"
+          },
+          {
+            "attempt": "The restricted packet was checked for such an authority or proof.",
+            "disposition": "OPEN",
+            "evidence_locator": "Because the remaining Wilson source-sector weight is real, positive",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use a proved reflection-positive two-slice factorization to establish positivity and self-adjointness of the stripped compressed operator after conjugation by the inverse half-slice multipliers.",
+            "outcome": "No cited authority or in-note derivation establishes that stripping and compression preserve the required operator properties.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "reflection_positive_factor"
+          },
+          {
+            "attempt": "The supplied NMAX=5 runner was inspected and its seven passing checks were classified.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It audits the exact factorized source-sector matrix law with one generic positive conjugation-symmetric diagonal witness",
+            "evidence_path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test the factorized formula numerically on the actual Wilson residual operator.",
+            "outcome": "All checks concern a chosen generic diagonal kappa; they validate conditional algebra but provide no test of Wilson diagonality.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_witness_validation"
+          },
+          {
+            "attempt": "The algebraic stripping step was separated from the additional diagonality assertion.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Strip off the two exact marked half-slice multipliers",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Define C=M^{-1}TM^{-1} and determine whether the definition alone implies a diagonal D.",
+            "outcome": "Stripping defines an operator C but supplies no reason its off-diagonal character matrix elements vanish.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "definition_by_stripping"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "Simultaneous-conjugation invariance does not establish convolution centrality or character diagonality.",
+            "Reality and pointwise positivity of a weight do not by themselves establish positivity and self-adjointness of the stripped compressed operator.",
+            "The actual Wilson residual compression is not computed by the runner."
+          ],
+          "evidence_locator": "Because the remaining Wilson source-sector weight is real, positive, and invariant",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "Simultaneous-conjugation invariance does not establish convolution centrality or character diagonality.",
+              "left_closes_right": false,
+              "right": "Reality and pointwise positivity of a weight do not by themselves establish positivity and self-adjointness of the stripped compressed operator.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Simultaneous-conjugation invariance does not establish convolution centrality or character diagonality.",
+              "left_closes_right": false,
+              "right": "The actual Wilson residual compression is not computed by the runner.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Reality and pointwise positivity of a weight do not by themselves establish positivity and self-adjointness of the stripped compressed operator.",
+              "left_closes_right": false,
+              "right": "The actual Wilson residual compression is not computed by the runner.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "Simultaneous-conjugation invariance does not establish convolution centrality or character diagonality.",
+            "Reality and pointwise positivity of a weight do not by themselves establish positivity and self-adjointness of the stripped compressed operator.",
+            "The actual Wilson residual compression is not computed by the runner."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The theorem above is structural and exact.",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "central on the marked-plaquette class-function sector",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+              "phrase": "central on the marked-plaquette class-function sector",
+              "promoted_wall": "Simultaneous-conjugation invariance does not establish convolution centrality or character diagonality."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "`C_beta` is:\n\n- positive,\n- self-adjoint",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+              "phrase": "positive, self-adjoint",
+              "promoted_wall": "Reality and pointwise positivity of a weight do not by themselves establish positivity and self-adjointness of the stripped compressed operator."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The linked runner is only a finite algebraic witness",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+              "phrase": "generic positive-diagonal witness"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source note and runner were checked for hidden assumptions concerning centrality, operator positivity, prior-main closures, mixed-kernel localization, and the Wilson residual data.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "the linked script is a generic positive-diagonal witness, not an explicit Wilson `D_6` evaluation",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+          "none_found_reason": "No N1 route was ruled out by a retained prior witness; the packet supplies no one-hop authority for the contested residual-centrality step.",
+          "scan_scope": "The restricted packet was checked for retained prior witnesses that prove the residual Wilson compression is character-diagonal.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "So the exact source-sector transfer matrix elements are explicit once the diagonal coefficient sequence",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Closure language about exact factorization, explicit matrix elements, and the narrowed remaining datum was compared with the resolution actually tested by the runner.",
+          "statements": [
+            {
+              "evidence_locator": "This closes the previously open exact factorized source-sector matrix-law step.",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+              "phrase": "This closes the previously open exact factorized source-sector matrix-law step.",
+              "tested_resolutions": [
+                "finite NMAX=5 algebra for an injected diagonal witness"
+              ],
+              "untested_resolutions": [
+                "character diagonality of the actual stripped Wilson residual compression"
+              ]
+            },
+            {
+              "evidence_locator": "exact source-sector factorization of the Wilson transfer operator",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+              "phrase": "exact source-sector factorization of the Wilson transfer operator",
+              "tested_resolutions": [
+                "matrix multiplication MDM after D is supplied"
+              ],
+              "untested_resolutions": [
+                "derivation of D as the Wilson residual operator"
+              ]
+            }
+          ],
+          "unresolved": [
+            "character diagonality of the actual stripped Wilson residual compression",
+            "derivation of D as the Wilson residual operator"
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no Wilson residual-kernel centrality or character-diagonal theorem.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly supply no transfer operator, weighting, or source/action bridge.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation does not determine the Wilson residual operator.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference has no bearing on character diagonality.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC occupancy/readout boundary is unrelated to the gauge-vacuum Wilson compression.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The bare-coupling rescaling convention cannot imply a residual-kernel symmetry.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the plaquette source-sector operator.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied primitive, owner-governed, Tier-A, convention, definition, and scope partial-closure index were dispositioned against the residual-centrality wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Peter-Weyl theory does make a genuinely central convolution operator diagonal in irreducible characters, so the claimed conclusion would follow if the stripped Wilson compression were proved to commute with the relevant regular representation.",
+          "evidence_locator": "By the Peter-Weyl / character decomposition of central operators on class functions",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+          "resolution": "The source establishes only simultaneous-conjugation invariance, which merely preserves class functions and is strictly weaker; the required commutation or convolution structure is neither derived nor computed.",
+          "resolved": true,
+          "route_id": "representation_centrality"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note:previous_audit:0",
+              "evidence_locator": "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Prior clean audit treated the generic diagonal witness as sufficient for the bounded structural claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Retired AC occupancy/readout admission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Retired strong-CP theta admission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Owner-governed AC residual retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated foundational-campaign route ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated architecture-portability and Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Generic finite-positive-versus-physical-bridge warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated audit-unlock boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Earlier plaquette analytic-chain route exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Beta=6 harness explicitly cannot be read as closure proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated scattering and lensing route walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated carrier-orbit symmetry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated emergent-metric bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated radial-orientation replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Local Wilson factors explicitly do not close the full environment.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated flavor-tracial route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated Dirac-Wigner analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Generic diagonal witnesses package supplied data but do not construct Wilson environment data.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Gauge-isotropy source routes do not establish residual compression centrality.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated gravity-dispersion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated weak-field gravity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated hypercharge normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated multi-lane campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated atomic-scale route walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated quark-mass route walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated lattice Green asymptotic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated lensing-observable boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated magnitude readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated temporal-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Empty unrelated matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated time-step boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated neutrino construction no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated neutrino-cosmology boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated Newtonian-distance scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated finite recompute scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Adjacent plaquette coupling warning without residual-operator closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated packet-memory bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated single-plaquette finite-window boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated Clifford-carrier selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated Planck carrier-retention boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Earlier plaquette work records the minimal-block versus bulk-environment gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Adjacent plaquette diagnostic cautions do not prove residual centrality.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated post-record selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated registrability and strong-CP/AC boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated single-clock locality and axis-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated source-measure readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated spin-statistics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated staggered kinetic-selector no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "SU(3) cube quotient approximations are not faithful Wilson environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated three-family finite-card boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated theta mass-side boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated theta gauge-side boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated theta positive-route gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated theta insertion-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated theta defect-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated AC determinant-power boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated AC record-orbit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated AC formation/readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated Casimir-block artifact boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated record-only mass-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated hard-coded finite-table boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Unrelated wide-lattice finite-data boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "mechanism": "Definition-versus-derivation warning analogous in form but concerning a different physical readout.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "Simultaneous-conjugation invariance does not establish convolution centrality or character diagonality.",
+          "Reality and pointwise positivity of a weight do not by themselves establish positivity and self-adjointness of the stripped compressed operator.",
+          "The actual Wilson residual compression is not computed by the runner."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "2f3483230d2c40ee4e31bd910946da2b1a41947b652093095ffe53fcd937332a",
+              "cross_cycle_candidate_ids": [
+                "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "2c636ce109117051e0a8f256cd5583c1d57b589b2a41f9bf90b9ad5303c28c04",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "bc057ba26a11293bb93f03b73848b9aed51cbb531769dc48398135675e62cebb",
+              "effective_status": null,
+              "path": "docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Because the remaining Wilson source-sector weight is real, positive",
+                "Because the remaining Wilson source-sector weight is real, positive, and invariant",
+                "By the Peter-Weyl / character decomposition of central operators on class functions",
+                "So the exact source-sector transfer matrix elements are explicit once the diagonal coefficient sequence",
+                "Strip off the two exact marked half-slice multipliers",
+                "The linked runner is only a finite algebraic witness",
+                "The theorem above is structural and exact.",
+                "This closes the previously open exact factorized source-sector matrix-law step.",
+                "`C_beta` is diagonal in the irreducible character basis",
+                "`C_beta` is:\n\n- positive,\n- self-adjoint",
+                "central on the marked-plaquette class-function sector",
+                "exact source-sector factorization of the Wilson transfer operator",
+                "invariant under simultaneous conjugation of the marked plaquette holonomies",
+                "it does **not** compute the Wilson residual diagonal `D_6`",
+                "the linked script is a generic positive-diagonal witness, not an explicit Wilson `D_6` evaluation"
+              ]
+            },
+            "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "924b8da65cac01a3d25b0fd51e2d1d2e2078a59168456ea906fb9ca6bbf864b8",
+              "effective_status": null,
+              "path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "It audits the exact factorized source-sector matrix law with one generic positive conjugation-symmetric diagonal witness"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 has open and untested routes for proving actual Wilson residual centrality.",
+          "N5 identifies untested resolution levels behind the note's closure rhetoric.",
+          "The strongest N7 representation-theoretic steelman requires a symmetry not established in the packet."
+        ],
+        "narrowed_claim_scope": "Only the conditional algebraic identity T=M D M and its matrix formula for a supplied diagonal D were established; no Wilson-derived diagonality of the stripped residual compression was established.",
+        "next_route": {
+          "reason_untested": "The packet never derives the full regular-action commutation or convolution structure needed to invoke Peter-Weyl diagonality for the actual stripped Wilson compression.",
+          "route_id": "representation_centrality"
+        },
+        "prior_claim_scope": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "Re-audit after the actual stripped Wilson compression is derived and its character-diagonal property is proved rather than assumed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: Theorem 2 conflates simultaneous-conjugation invariance with centrality in the representation-theoretic sense required for character diagonality. Why this blocks: even a positive self-adjoint kernel invariant under simultaneous conjugation can mix character sectors, while the runner assumes a diagonal D and verifies only the resulting matrix multiplication. Repair target: derive bi-invariance/convolution centrality for the actual stripped Wilson compression or compute its character matrix and prove that all off-diagonal entries vanish. Claim boundary until fixed: the factorized matrix formula is valid only conditionally for a supplied diagonal residual operator."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_source_sector_matrix_element_factorization.py",
+  "title": "Gauge-Vacuum Plaquette Source-Sector Matrix-Element Factorization Theorem",
+  "transitive_descendants": 852,
+  "verdict_rationale": null
+}

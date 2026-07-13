@@ -1,0 +1,151 @@
+{
+  "audit_date": "2026-06-09T12:55:27.686409+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "fifth_family_radial_note": "Finite sampled radial-shell sweep for targets (0.05,0), (0.20,0), and (0.30,1) in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py.",
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29": "Finite sampled audit of the repaired radial-shell fifth-family rule on drifts [0.05, 0.10, 0.20, 0.30, 0.40] and seeds [0, 1], plus F~M transfer on targets (0.05, 0) and (0.30, 1)."
+    },
+    "dep_claim_type": {
+      "fifth_family_radial_note": "bounded_theorem",
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "fifth_family_radial_note": "retained_bounded",
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29": "retained_bounded"
+    },
+    "deps": [
+      "fifth_family_radial_note",
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29"
+    ],
+    "load_bearing_score": 4.587,
+    "runner_hash": "0d985aaae5709fc8163991fd7a542f329fcbbe309211d51dfe27337f0d76af71",
+    "transitive_descendants": 16
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260609-125354-bf31ccd960-fifth_family_radial_fm_trans",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner source builds the no-restore grown slice, applies the radial-shell connectivity helper, propagates the free field and two positive source strengths, and computes the log2 centroid-shift exponent rather than reading the claimed F~M values. The one-hop radial packet is marked retained_bounded, and the note confines the conclusion to the sampled rows.",
+  "claim_id": "fifth_family_radial_fm_transfer_note",
+  "claim_scope": "Finite two-row weak-field source-strength doubling check for the radial-shell fifth-family no-restore grown-slice rows (drift=0.05, seed=0) and (drift=0.30, seed=1).",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-09T12:55:27.686409+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "fifth_family_radial_note",
+    "fifth_family_radial_repaired_positive_packet_note_2026-05-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
+    "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "On the two historically cited positive radial-shell rows, drift=0.05 seed=0 and drift=0.30 seed=1, the live weak-field mass-scaling replay gives near-unit F~M with passed rows 2/2 and mean F~M 0.999439.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ffa0967acb672f77fa7d6800d56eae44935e9bb490b5b9b91924174bfbab62ca",
+  "note_path": "docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check source/cache hash alignment if any runner or helper source changes.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368302+00:00",
+      "archived_for_note_hash": "0799f84ab56c7bb4767bfb704e9ea6fad2ae292129553599225509b51fa6872e",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-09T08:57:45.021959+00:00",
+      "archived_for_note_hash": "3e89b557c27fb33ea0cc9f82520e39e6e81fcaa0ae683c8a17dbc3c09310ecb6",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The frozen log reports 2/2 passing rows, but the live script fails before running because CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py no longer exports _build_radial_shell_connectivity. The cited radial-shell base note is unaudited, so the current source packet cannot reproduce the candidate retained-grade F~M transfer.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_from_archived_failed",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note claims weak-field F~M transfer on two sampled radial-shell fifth-family rows: drift 0.05 seed 0 with F~M = 0.999040 and drift 0.30 seed 1 with F~M = 0.999839.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py_import_error_missing__build_radial_shell_connectivity",
+        "docs/FIFTH_FAMILY_RADIAL_NOTE.md_unaudited_base_family",
+        "live_runner_output_not_reproducible"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the current runner for the fifth-family radial F~M transfer is broken by an import/API mismatch, so the sampled weak-field rows cannot be recomputed from the live repo. Why this blocks: a retained finite-computation claim cannot rest only on a stale frozen log when the present script exits before calculating either F~M value, especially with the base radial-family note still unaudited. Repair target: restore or relocate _build_radial_shell_connectivity, _field_from_sources, _centroid_z, and _propagate under the imported API or update this runner to its current helper module, then rerun with explicit PASS thresholds and audit/register FIFTH_FAMILY_RADIAL_NOTE.md as the base family dependency. Claim boundary until fixed: it is safe to say the historical log reported two sampled rows with near-unit F~M; it is not currently an audited retained weak-field transfer."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 2,
+    "D": 0,
+    "total_pass": 2
+  },
+  "runner_path": "scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py",
+  "title": "Fifth Family Radial F~M Transfer Live Packet",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The displayed source-note values match the completed cached runner output, and the provided source code shows an actual finite numerical computation rather than a print-only certificate or cross-note value import. The hard-coded target rows and tolerance define the bounded sampled scope; they do not hard-code the contested F~M results. The cited upstream authorities are retained-grade for audit purposes, and the note explicitly avoids family-wide, continuum, or physical mass-observable claims."
+}

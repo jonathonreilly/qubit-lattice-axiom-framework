@@ -1,0 +1,1915 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.113,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-21T22:13:47.420033+00:00",
+      "audit_date": "2026-05-17T18:54:24.564223+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-185148-41cdea85-staggered_dirac_substep1-018",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conditional/enumeration follows from the retained one-hop Cl(3) decomposition plus standard direct-sum algebra. It does not close unconditional U4; the missing step is a retained theorem selecting k = 1 from the physical Cl(3)/Z^3 substrate.",
+      "claim_scope": "Decorative algebraic corollary of the retained Cl(3) decomposition: under the single-module condition k = 1, dim_C H_x = 2, while k >= 2 remains algebraically admissible.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-17T18:54:24.564223+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+      "load_bearing_step": "By the retained D2 decomposition, H_x is isomorphic to rho_+^{n_+} direct-sum rho_-^{n_-} with dim_C H_x = 2(n_+ + n_-), so k = 1 gives dim_C H_x = 2 while k >= 2 gives higher-multiplicity faithful modules.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the k=0 zero-module/non-Clifford wording; it is not load-bearing for the k=1 conditional.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "Issue: the note's load-bearing content is an algebraic corollary of the retained CL3 faithful-irrep decomposition, with k introduced as n_+ + n_- and no independent physical bridge or comparator. Why this blocks clean independent status: the conditional statement closes, but it adds no independent theorem beyond the parent decomposition and does not close U4. Repair target: keep it boxed as a corollary under the parent or add a retained theorem deriving the physical single-module selection k = 1. Claim boundary until fixed: given k = 1, dim_C H_x = 2; k >= 2 remains admissible on the abstract algebraic surface."
+    },
+    {
+      "archived_at": "2026-05-22T18:29:36.726864+00:00",
+      "archived_for_note_hash": "d147962b455e511fbcd3e9fd8638b0a56c1005f35a1002aab35bd96be6c54140",
+      "audit_date": "2026-05-22T12:46:08.639588+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums."
+        },
+        "dep_claim_type": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T124546Z-ec272185-staggered_dirac_substep1-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional algebraic implication k=1 \u21d2 dim_C H_x=2 closes relative to the cited decomposition, but the retained-grade chain does not close in this restricted packet because the sole cited authority is marked as decoration rather than retained-grade. The missing step is a retained-grade upstream authority for the Cl(3) complex representation decomposition used in M1.",
+      "claim_scope": "Audited the narrow conditional algebraic statement that, given the Cl(3) finite-dimensional complex representation decomposition, a single faithful Cl(3) module per site has complex dimension 2 and higher multiplicities are not excluded by the algebraic surface alone.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T12:46:08.639588+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "By the cited Cl(3) representation decomposition, H_x \u2245 \u03c1_+^{n_+(x)} \u2295 \u03c1_-^{n_-(x)} with dim_C H_x = 2(n_+(x)+n_-(x)); therefore k(x)=1 implies dim_C H_x=2, while k\u22652 remains admissible.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: cheapest repair is to provide a retained-grade upstream authority or audit certificate for the Cl(3) faithful-irrep decomposition dependency, then re-audit this bounded conditional note.",
+      "open_dependency_paths": [
+        "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The presented load-bearing step is an algebraic consequence of the supplied Cl(3) decomposition, and the runner source does perform explicit symbolic Clifford-relation, dimension, Schur, and counterexample checks rather than merely printing constants. The note also honestly limits the result to a conditional single-module selection and explicitly leaves unconditional U4 open; the N-gate boundary is satisfied because the packet exhibits multiple k\u22652 attack routes and does not overclaim closure. However, the only cited authority in the restricted packet carries effective_status decoration, not a retained-grade status, so the audit cannot mark the chain clean under the stated rubric."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:57.539218+00:00",
+      "archived_for_note_hash": "3593358733a4d4ae6819d9b38c0befc95809bc0a41b1d66a72d90c2a0782aac5",
+      "audit_date": "2026-06-10T20:27:56.017139+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 13.314,
+        "runner_hash": "403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea",
+        "transitive_descendants": 1272
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260610-staggered_dirac_substep1_u4_conditional_-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the ledger's C1-only scoped row, the chain closes as a class-A algebraic consequence of the retained Cl(3) complexification split plus standard finite-dimensional semisimple representation theory. The source note explicitly does not claim unconditional U4 closure, and the k>=2 constructions correctly mark that broader statement as outside scope. The second audit identified a plausible issue with C2's unitary-conjugacy wording, but C2 is not part of the current ratified C1-only scope.",
+      "claim_scope": "C1 only: conditional on a single faithful Cl(3) module per site, the retained Cl(3) split and standard semisimple representation theory give dim_C H_x = 2; unconditional U4 closure and chirality/unitary-conjugacy claims are outside this ratified scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T20:27:56.017139+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T22:21:12.803030+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T221909Z-e1b97348-staggered_dirac_substep1-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-10T20:16:16.713341+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260610-201229-ac838bda53-staggered_dirac_substep1_u4_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic multiplicity classification for finite-dimensional complex Cl(3,0) modules and the conditional k=1 dimension readout, plus the stated positive-chirality Pauli convention claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-10T20:27:56.017139+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260610-staggered_dirac_substep1_u4_conditional_-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "C1 only: conditional on a single faithful Cl(3) module per site, the retained Cl(3) split and standard semisimple representation theory give dim_C H_x = 2; unconditional U4 closure and chirality/unitary-conjugacy claims are outside this ratified scope.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "No substantive error for the scoped C1 tuple; the scope should be read as the source note's explicit k=1 single-module condition, not as ratifying the full U4 or C2 chirality/unitary statement.",
+          "independence": "judicial_review",
+          "judgment_rationale": "For the ledger's C1-only scoped row, the chain closes as a class-A algebraic consequence of the retained Cl(3) complexification split plus standard finite-dimensional semisimple representation theory. The source note explicitly does not claim unconditional U4 closure, and the k>=2 constructions correctly mark that broader statement as outside scope. The second audit identified a plausible issue with C2's unitary-conjugacy wording, but C2 is not part of the current ratified C1-only scope.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "It over-scoped the row by auditing C2's unitary-conjugacy claim as part of the operative ledger scope, then converted that extra-scope concern into an audited_conditional verdict for the C1-only row.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Assume k(x)=1, so (n_+(x),n_-(x)) is (1,0) or (0,1); then H_x is one two-dimensional chirality summand, hence dim_C H_x=2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 46
+      },
+      "verdict_rationale": "For the ledger's C1-only scoped row, the chain closes as a class-A algebraic consequence of the retained Cl(3) complexification split plus standard finite-dimensional semisimple representation theory. The source note explicitly does not claim unconditional U4 closure, and the k>=2 constructions correctly mark that broader statement as outside scope. The second audit identified a plausible issue with C2's unitary-conjugacy wording, but C2 is not part of the current ratified C1-only scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.518471+00:00",
+      "audit_date": "2026-06-21T06:21:41.744084+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.925,
+        "runner_hash": "6b0c3de4034fdb748a8a1f90f17b330c6da70a75e960bb026e279a5ad5896e63",
+        "transitive_descendants": 971
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Quantum axiom supplies the primitive one-qubit/M_2(C) carrier, and the retained Cl(3) split plus standard semisimple representation theory supplies the two-dimensional chiral module classification. The note does not use this to close Grassmann, JW, dynamics, chirality selection, or the full staggered-Dirac realization gate.",
+      "claim_scope": "On the current minimal-Quantum one-qubit surface, the one-site Cl(3) physical carrier has multiplicity k=1 and complex dimension 2; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C=2 statement holds, with k>=2 counterexamples preserved.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:21:41.744084+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:18:54.708810+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the single-module/dimension claim: on the current minimal-Quantum one-qubit surface the physical one-site Cl(3,0) carrier has k=1 and dim_C H_x=2, while on the abstract Cl(3) representation surface only the conditional k=1 => dim_C H_x=2 holds and k>=2 remains admissible.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:21:41.744084+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the current minimal-Quantum one-qubit surface, the one-site Cl(3) physical carrier has multiplicity k=1 and complex dimension 2; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C=2 statement holds, with k>=2 counterexamples preserved.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "By the current minimal Quantum axiom, the primitive one-site carrier is one qubit/M_2(C), and the retained Cl(3) split identifies that carrier with one faithful two-dimensional Pauli module, so k=1 and dim_C H_x=2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the clean verdict remains scoped only to the current one-qubit single-module carrier and not to the full staggered-Dirac realization gate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The only non-retained upstream is the minimal axiom memo, which the packet explicitly flags as an accepted axiom premise, so it does not trigger the conditional downgrade. The load-bearing step correctly uses that premise within scope: one qubit gives the primitive two-dimensional carrier, and the retained Cl(3) split classifies it as a single Pauli module. The note also keeps the abstract k>=2 faithful-module counterexample surface visible, preventing overclaim beyond the current framework surface."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.894313+00:00",
+      "audit_date": "2026-06-30T15:54:39.501830+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.925,
+        "runner_hash": "6b0c3de4034fdb748a8a1f90f17b330c6da70a75e960bb026e279a5ad5896e63",
+        "transitive_descendants": 971
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T155439Z-7767a67b-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Qubit axiom is a registered accepted premise and supplies the one-site M_2(C) local algebra; the retained Cl(3) split supplies the Pauli irrep classification. Standard finite-dimensional representation theory then gives the stated multiplicity decomposition and the k=1 dimension readout without importing the downstream staggered-Dirac gate.",
+      "claim_scope": "On the registered minimal-Qubit surface plus the retained Cl(3) complexification split, the physical one-site carrier is the single two-dimensional Pauli module; on the abstract Cl(3) representation surface, k>=2 faithful modules remain admissible.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T15:54:39.501830+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T15:50:52.286512+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T155052Z-bb515b76-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the single-module/dimension claim: the current one-qubit M_2(C)/Cl(3,0) site carrier has k=1 and dim_C H_x=2, while abstract Cl(3) representation theory still admits faithful k>=2 multi-copy modules.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T15:54:39.501830+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T155439Z-7767a67b-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the registered minimal-Qubit surface plus the retained Cl(3) complexification split, the physical one-site carrier is the single two-dimensional Pauli module; on the abstract Cl(3) representation surface, k>=2 faithful modules remain admissible.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "By the minimal Qubit axiom the primitive one-site carrier is the one-qubit algebra M_2(C), and the retained Cl(3) split identifies this with a single two-dimensional Pauli module, so k=1 and dim_C H_x=2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the canonical alias from MINIMAL_AXIOMS_2026-06-05.md to the registered 2026-06-29 minimal_axioms node; no substantive blocker found.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure from the accepted minimal_axioms premise and the retained Cl(3) split theorem, not a tuned comparator or definition-only substitution. The runner constructs Pauli and block-diagonal Cl(3) representations, verifies the Clifford relations, checks k=1 gives dimension 2, and exhibits k>=2 faithful abstract counterexamples. The source correctly scopes the result to the current one-qubit carrier and keeps the abstract representation counterexample surface outside the physical-carrier conclusion."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.505530+00:00",
+      "audit_date": "2026-07-01T20:07:56.647047+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.925,
+        "runner_hash": "6b0c3de4034fdb748a8a1f90f17b330c6da70a75e960bb026e279a5ad5896e63",
+        "transitive_descendants": 971
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T200347Z-c0decaf5-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed claim closes from the registered minimal_axioms/Qubit premise, which is an accepted premise, plus the retained Cl(3) complexification split and standard finite-dimensional algebra. The operative move is an algebraic readout from M_2(C) and the Pauli/Cl(3) module classification, not a fresh first-principles computation producing a new number. No open staggered-Dirac realization gate or non-retained non-axiom dependency is load-bearing for the single-site carrier/multiplicity scope.",
+      "claim_scope": "Single-site carrier/multiplicity only: on the current registered Qubit axiom surface the primitive one-site carrier is the k=1 two-dimensional Pauli module; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C H_x=2 statement holds and k>=2 counterexamples remain.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T20:07:56.647047+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T19:59:41.606005+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T195941Z-3fd8ce5c-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site carrier/multiplicity only: on the current registered Qubit axiom surface the primitive one-site carrier is the k=1 two-dimensional Pauli module; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C H_x=2 statement holds and k>=2 counterexamples remain.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-01T20:03:31.546905+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T200331Z-fcc2d787-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Current minimal-Qubit surface single-module closure: the physical one-site carrier is the two-dimensional Pauli module, while k>=2 Cl(3) modules remain only abstract representation-surface counterexamples.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-01T20:07:56.647047+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T200347Z-c0decaf5-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The narrowed claim closes from the registered minimal_axioms/Qubit premise, which is an accepted premise, plus the retained Cl(3) complexification split and standard finite-dimensional algebra. The operative move is an algebraic readout from M_2(C) and the Pauli/Cl(3) module classification, not a fresh first-principles computation producing a new number. No open staggered-Dirac realization gate or non-retained non-axiom dependency is load-bearing for the single-site carrier/multiplicity scope.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit overclassified the load-bearing step as C. Class C is reserved for first-principles framework computations producing a number not present in the inputs; here dim_C=2 is the algebraic module readout of the accepted M_2(C)/qubit premise and retained Cl(3) split.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only source/authority wording drift from MINIMAL_AXIOMS_2026-06-05.md to the registered 2026-06-29 minimal_axioms node during application; it is not a closure blocker here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The narrowed claim closes from the registered minimal_axioms/Qubit premise, which is an accepted premise, plus the retained Cl(3) complexification split and standard finite-dimensional algebra. The operative move is an algebraic readout from M_2(C) and the Pauli/Cl(3) module classification, not a fresh first-principles computation producing a new number. No open staggered-Dirac realization gate or non-retained non-axiom dependency is load-bearing for the single-site carrier/multiplicity scope."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.504023+00:00",
+      "audit_date": "2026-07-02T07:49:02.876851+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.925,
+        "runner_hash": "6b0c3de4034fdb748a8a1f90f17b330c6da70a75e960bb026e279a5ad5896e63",
+        "transitive_descendants": 971
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T074902Z-f4e0fc2d-staggered_dirac_substep1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal_axioms premise supplies the one-site M_2(C) qubit algebra, and the retained Cl(3) split plus standard semisimple representation theory supplies the Pauli-module classification. The note explicitly excludes the larger abstract k>=2 representations from the current physical one-site carrier claim.",
+      "claim_scope": "On the accepted minimal Qubit surface plus the retained Cl(3) split, the primitive one-site Cl(3)-compatible carrier is the single two-dimensional Pauli module; on the abstract representation surface only the conditional k=1 => dim_C H_x=2 holds and k>=2 counterexamples remain.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T07:49:02.876851+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T07:45:44.273469+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T074544Z-8095969a-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the current-framework single-module/dimension closure: the accepted one-site qubit algebra plus retained Cl(3) representation split gives the primitive two-dimensional Pauli carrier, while abstract Cl(3) representation theory alone still admits faithful k>=2 modules.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T07:49:02.876851+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T074902Z-f4e0fc2d-staggered_dirac_substep1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the accepted minimal Qubit surface plus the retained Cl(3) split, the primitive one-site Cl(3)-compatible carrier is the single two-dimensional Pauli module; on the abstract representation surface only the conditional k=1 => dim_C H_x=2 holds and k>=2 counterexamples remain.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "The current minimal Qubit axiom supplies the primitive one-site M_2(C) one-qubit carrier, and the retained Cl(3) split identifies that carrier with a single two-dimensional Pauli module, so k=1 and dim_C H_x=2.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check on future source refresh that the MINIMAL_AXIOMS_2026-06-05 citation continues to alias to the current registered minimal_axioms node.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The only non-retained direct authority is the registered minimal_axioms axiom premise, so the accepted-premise carve-out applies. The load-bearing step correctly uses only the Qubit/M_2(C) carrier content plus the retained Cl(3) complexification split; it does not import dynamics, Grassmann realization, phases, or external comparators. The runner output and source code support the algebraic checks and counterexample surface, though the clean verdict rests on the restricted packet's stated axiom and retained Cl(3) authority rather than stdout alone."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.098007+00:00",
+      "audit_date": "2026-07-09T23:01:05.094300+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.224,
+        "runner_hash": "6b0c3de4034fdb748a8a1f90f17b330c6da70a75e960bb026e279a5ad5896e63",
+        "transitive_descendants": 597
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-staggered_dirac_substep1-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied Qubit axiom specifies the one-site possibility algebra M_2(C), but does not identify a physical H_x with its irreducible defining module; faithful multiplicity representations a\u21a6a\u2297I_k remain possible. A bridge requiring the physical carrier to be the irreducible/minimal module is missing.",
+      "claim_scope": "Whether the current Qubit axiom plus the retained Cl(3) split fixes the physical one-site module to k=1 and dimension 2, while abstract Cl(3) representations still admit k\u22652.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:01:05.094300+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The Qubit axiom's one-site algebra A_x \u2245 M_2(C) is identified with the single two-dimensional Pauli carrier, so the physical module has k=1.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge or explicit accepted premise identifying the physical H_x as the irreducible standard module of the current Qubit algebra, update the stale MINIMAL_AXIOMS_2026-06-05.md citation to the supplied current authority, and add a compatible *-representation premise or weaken C2 from unitary to invertible equivalence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The retained Cl(3) authority supports the multiplicity decomposition and the conditional implication k=1 \u21d2 dim_C H_x=2. It does not make the Qubit algebra's physical representation irreducible, and the axiom authority itself states only the possibility-domain algebra. The runner hard-codes primitive_qubit_dim=2 and uses unconditional True checks for Q1, so PASS=55 does not verify the missing carrier-identification bridge; additionally, C2's unitary-conjugacy wording requires a compatible *-representation or inner product not supplied here."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:33.200556+00:00",
+      "audit_date": "2026-07-11T14:12:20.103779+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central-idempotent split, and 2-dimensional irreducible complex modules; no physical Hilbert-space or lattice-realization bridge was audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.815,
+        "runner_hash": "532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e",
+        "transitive_descendants": 636
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00002-staggered_dirac_substep1_u4_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic consequences of P-QBIT and the retained Cl(3) split close, including the polar-decomposition upgrade. The physical k=1 selection itself is explicitly declared in P-QBIT rather than derived from or registered as an accepted premise in the restricted packet.",
+      "claim_scope": "Conditional single-site carrier result: given P-QBIT, the physical Cl(3) carrier is the two-dimensional Pauli module and is unitarily equivalent as a *-representation; without P-QBIT, finite-dimensional faithful Cl(3) modules admit every multiplicity k>=1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T14:12:20.103779+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Under the declared bounded carrier premise (P-QBIT), the physical carrier has k(x)=1 and dim_C H_x=2; the retained Cl(3) split then identifies it with one faithful two-dimensional Pauli module.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The proof and runner construct k=2,3,4 block-diagonal representations and verify their Clifford relations and faithfulness.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 5: Counter-example surface k >= 2 (no Cl(3)-algebra-only closure)",
+            "evidence_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use faithful direct sums of a chiral Cl(3) module as alternative carriers.",
+            "outcome": "The explicit higher-dimensional faithful modules close any route claiming that abstract Cl(3) representation theory uniquely selects k=1.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "multicopy_modules"
+          },
+          {
+            "attempt": "The source and runner test the mixed representation rho_+ direct-sum rho_- at k=2.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`\u03c1_+^{k-1} \u2295 \u03c1_-`, etc., give other faithful representations",
+            "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Combine positive- and negative-chirality irreducible summands.",
+            "outcome": "Mixed chirality is another valid faithful four-dimensional module and therefore does not select the physical multiplicity.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "mixed_chirality"
+          },
+          {
+            "attempt": "The runner constructs two independent block embeddings from rho_+ into rho_+ squared.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Schur is consistent with non-trivial \u03c1_+ \u2192 \u03c1_+\u00b2 embedding (no-k-from-Schur)",
+            "evidence_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt to infer one-copy multiplicity from Schur irreducibility and intertwiner uniqueness.",
+            "outcome": "Schur controls a single irreducible summand and its intertwiners but does not constrain the number of summands.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "schur_selection"
+          },
+          {
+            "attempt": "The supplied axiom text was checked for its exact carrier boundary.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Read the Qubit axiom's M_2(C) possibility algebra as selecting its physical irreducible representation.",
+            "outcome": "The axiom specifies the one-site possibility algebra but explicitly requires a further derivation, bridge, admission, or approved primitive for additional physical structure.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "qubit_algebra_selection"
+          },
+          {
+            "attempt": "The source separates chirality choice from multiplicity and applies the convention only after k=1 is supplied.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The chirality piece is a normalisation convention",
+            "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the package's positive-chirality convention to select the physical module.",
+            "outcome": "The convention chooses rho_+ rather than rho_- but cannot distinguish one copy from several copies.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "chirality_convention"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "physical-carrier irreducibility and multiplicity selection are not supplied by the abstract Cl(3) algebra or the Qubit possibility algebra"
+          ],
+          "evidence_locator": "These witnesses are excluded from the declared physical-carrier surface by (P-QBIT), not by the Qubit algebra alone.",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "physical-carrier irreducibility and multiplicity selection are not supplied by the abstract Cl(3) algebra or the Qubit possibility algebra"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "it is not derived here",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "## Declared Bounded Carrier Premise (P-QBIT)",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+              "phrase": "Declared Bounded Carrier Premise (P-QBIT)",
+              "promoted_wall": "physical-carrier irreducibility and multiplicity selection are not supplied by the abstract Cl(3) algebra or the Qubit possibility algebra"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "(K1)-(K4) are statements of standard finite-dim real / complex representation theory",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "standard finite-dimensional representation theory"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "the canonical positive-chirality convention is adopted",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+              "phrase": "positive-chirality convention"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source, runner, one-hop authorities, and supplied premise registries were checked for irreducibility, carrier-identification, single-module, k=1, standard-module, chirality, and *-representation assumptions.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The `k >= 2` multi-copy representations of \u00a75.5 remain the exact falsifier surface this premise excludes.",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+          "none_found_reason": "All N1 routes were tested directly in the supplied source or runner; none was marked RULED OUT BY PRIOR.",
+          "scan_scope": "The explicit multicopy modules and the no-k-from-Schur construction were matched against the claimed algebra-only multiplicity-selection residual.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "every finite-dim complex representation decomposes as",
+          "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative language concerning algebra-only forcing, exclusion of multicopy modules, and the remaining realization gates was checked against the finite-dimensional representation classification actually proved.",
+          "statements": [
+            {
+              "evidence_locator": "Hence `k = 1` is **not** forced by Cl(3)",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+              "phrase": "k = 1 is not forced by Cl(3) representation theory alone",
+              "tested_resolutions": [
+                "all finite-dimensional complex Cl(3,0) representations classified by chiral multiplicities",
+                "explicit same-chirality and mixed-chirality modules at k=2,3,4",
+                "Schur-based multiplicity-selection attempt"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes only the space-time kinetic-form ratio and supplies no one-site carrier irreducibility.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The Qubit axiom supplies M_2(C) as a possibility-domain algebra but no physical representation or irreducibility selector.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only a pointwise realized-state reference and no carrier content.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It is a dimensionful units conversion and cannot select a representation multiplicity.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "Its boundary covers AC_phi_lambda occupancy and R-eta readout only and explicitly supplies no above-C3 taste/Dirac/chirality content.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g_bare rescaling convention has no relation to a Cl(3) module multiplicity.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "The hypercharge normalization convention supplies no one-site physical-carrier identification.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied partial-closure index were checked for an accepted physical-carrier irreducibility or k=1 selector.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because M_2(C) has a unique irreducible complex *-module, calling the one-site possibility algebra a Qubit algebra might be read as already selecting the standard two-dimensional carrier.",
+          "evidence_locator": "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "resolution": "The supplied axiom names only the possibility-domain algebra and its qualification withholds further physical structure absent a derivation, bridge, admission, or approved primitive. Algebra representations may contain arbitrarily many copies, so the steelman succeeds only after adding P-QBIT and therefore does not defeat the scoped algebra-only no-go.",
+          "resolved": true,
+          "route_id": "qubit_algebra_selection"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:0",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior decoration verdict recognized that k=1 implies dimension two but did not close physical multiplicity selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:1",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior conditional verdict accepted the algebraic implication while preserving unconditional U4 as open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:2",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior clean verdict was explicitly limited to C1 and excluded unconditional U4 and unitary-conjugacy claims.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:3",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior audit read the older minimal-Quantum surface as selecting a primitive carrier; the current authority and repair now explicitly reject that inference.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:4",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior audit treated the Qubit algebra as sufficient carrier authority; the repaired note separates algebra from representation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:5",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:5",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior audit again treated primitive one-site carrier language as fixing k=1; that reading is superseded by the current source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:6",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:6",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Prior clean audit relied on an older axiom-content interpretation and is addressed by the explicit P-QBIT separation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:7",
+              "evidence_locator": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:7",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "The immediately relevant prior conditional audit identified both the missing carrier bridge and the missing *-representation premise; this repair solves only the latter derivationally and declares the former.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_locator": "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "The retained authority's prior audit ratified only abstract Cl(3) algebra and explicitly excluded the physical Hilbert-space bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "AC_phi_lambda retirement concerns occupancy and R-eta readout, not one-site Cl(3) carrier multiplicity.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Theta retirement is unrelated to the Cl(3) carrier-selection wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "The owner-governed AC boundary supplies no taste, Dirac, chirality, or physical carrier representation.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Unrelated campaign ledger with no one-site Cl(3) multiplicity result.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Newton/source-scaling boundaries are unrelated to carrier multiplicity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Gauge-coupling runner-boundary cautions do not supply a physical Cl(3) module.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Atomic-stability and temporal-axis cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Its Grassmann and Cl_4 carrier walls concern different rank-four event-cell surfaces, not this one-site Cl(3) multiplicity classification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Electroweak normalization boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Plaquette coefficient-computation boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Lensing observable walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Its carrier-orbit antisymmetric-operator boundary concerns a different flavor carrier and supplies no k=1 selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Charged-lepton selector walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Spatial-dimension selection is unrelated to representation multiplicity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Lorentz-hierarchy boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Metric reconstruction boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Radial replay and basin boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Wilson-environment closure is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Flavor-sector carrier identification is distinct and supplies no Cl(3) one-site irreducibility.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Analytic-vector and audit-retag boundaries do not select the local module.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Gauge-environment character-computation walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Its Cl(3) pseudoscalar result concerns a temporal generator, not representation multiplicity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Gravity/Fermat bridge boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Weak-field sign boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Its Cl_4 rank-four event-cell carrier wall is a different algebra and carrier surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Hypercharge rescaling and species interpretation are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Cross-lane scale, mass, and selector walls do not supply P-QBIT.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Atomic scale and threshold walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Quark-mass readout and selector walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Lattice Green-function asymptotics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Lensing observable reduction is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Finite-path lensing geometry is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Static-source readout boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Temporal readout and clock-rate boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "The ledger contains no relevant no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Planning and objective-selection cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Physical-time and emergent-c boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Neutrino mass and PMNS selector walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Neutrino-scale and cosmological walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Newtonian finite-lattice replay scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Finite recompute and basin-scope cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Coupling and plaquette readout boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Decoherence and gravity-memory boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Finite-degree differential-equation bounds are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Its Cl_4 event-cell representation mismatch reinforces the general need for a carrier bridge but does not prove or supply P-QBIT.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Rank-four projector-selection walls concern a different Cl_4 carrier surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Plaquette bootstrap and minimal-block walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Plaquette diagnostic cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "It confirms that supplied packet data and Record arithmetic are not selector authority, but it contains no Cl(3) carrier theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Record and AC_phi_lambda registrability walls do not identify the one-site Cl(3) carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Transfer locality and temporal-axis selection are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Source semantics and tangent-space readout are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "The hard-core-boson counter-surface is adjacent and confirms that local M_2(C) data alone do not force a statistics realization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "The current four-axiom surface does not select staggered kinetic structure; this is an adjacent but separate wall and does not supply carrier irreducibility.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "SU(3) cube-encoder boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Documentation synchronization is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Three-family geometry scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Theta determinant-readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Theta gauge-action walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Theta winding and phase-insertion gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Theta phase-source gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Theta defect-closure gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "AC determinant-power horn selection is unrelated to Cl(3) multiplicity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Record does not supply AC orbit occupancy; this does not identify the Cl(3) carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Record formation does not supply R-eta; this is unrelated to module multiplicity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Finite-dimensional Casimir artifact visibility is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Record-only mass readout underdetermination is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Finite numerical table-matching boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Continuum and distance-law scope boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "mechanism": "Yukawa readout renaming is unrelated to the Cl(3) carrier premise.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "3140ad5b249f99344e12a5486c48f88557cae9d586360b204ff33410e60d8fc8",
+              "cross_cycle_candidate_ids": [
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:0",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:1",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:2",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:3",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:4",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:5",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:6",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:7",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:0",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:1",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:2",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:3",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:4",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:5",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:6",
+                "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:previous_audit:7",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "420486f999bd5cd08846773a2b1b8a91423147c602cfd1690a45b23f739245d0",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "4680139373bd50a87fa48bea3a00e14feb38fd91d3d75e423c67f8b4b5b19a89",
+              "effective_status": "retained",
+              "path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "(K1)-(K4) are statements of standard finite-dim real / complex representation theory"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.",
+                "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+              ]
+            },
+            "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "e4e1e9d6f532b48bab0b7895e918825be560b64618b4bcf0de21899806466937",
+              "effective_status": null,
+              "path": "docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Declared Bounded Carrier Premise (P-QBIT)",
+                "Hence `k = 1` is **not** forced by Cl(3)",
+                "The `k >= 2` multi-copy representations of \u00a75.5 remain the exact falsifier surface this premise excludes.",
+                "The chirality piece is a normalisation convention",
+                "These witnesses are excluded from the declared physical-carrier surface by (P-QBIT), not by the Qubit algebra alone.",
+                "`\u03c1_+^{k-1} \u2295 \u03c1_-`, etc., give other faithful representations",
+                "every finite-dim complex representation decomposes as",
+                "it is not derived here",
+                "the canonical positive-chirality convention is adopted"
+              ]
+            },
+            "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "532cbb2fb98740096280d8678dd344f84fe4962a044498f63eb0202e7eb1476e",
+              "effective_status": null,
+              "path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Part 5: Counter-example surface k >= 2 (no Cl(3)-algebra-only closure)",
+                "Schur is consistent with non-trivial \u03c1_+ \u2192 \u03c1_+\u00b2 embedding (no-k-from-Schur)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive P-QBIT from a retained bridge or register its exact physical-carrier boundary as an accepted premise, then change this note's own hash with a dated re-audit line.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 56,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 64
+      },
+      "verdict_rationale": "The retained Cl(3) authority and standard semisimple representation theory support M1, C1, the invertible-equivalence statement, and the k>=2 counterexamples. The repaired *-module premise also makes the polar-decomposition proof of unitary equivalence sound. However, Q1 obtains physical irreducibility by assuming P-QBIT, whose text already declares the standard two-dimensional irreducible carrier; the runner guards that declaration and checks its consequences but does not derive or independently authorize it."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py",
+  "title": "Staggered-Dirac Substep 1 \u2014 Qubit-Axiom Single-Module / U4 Conditional Repair",
+  "transitive_descendants": 782,
+  "verdict_rationale": null
+}

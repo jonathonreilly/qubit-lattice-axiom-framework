@@ -1,0 +1,295 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ew_current_matching_ozi_suppression_theorem_note_2026-04-27",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note",
+    "ew_current_matching_rule_open_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5c3fd06ecb1751421c8d09f7d9696de1c36fc644902f2ce7ad636cebaaef661e",
+  "note_path": "docs/EW_CURRENT_MATCHING_OZI_SUPPRESSION_THEOREM_NOTE_2026-04-27.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T11:18:28.155608+00:00",
+      "archived_for_note_hash": "3f39d8f68c97dc11168c0843974ef6670514990014fbb6e390a05622cbf83ab5",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T14:48:07.867584+00:00",
+      "archived_for_note_hash": "34f867539e6431ff85be9cd67b257f0ba358e4095934453c130cb633dcb74365",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-29T12:08:48.309873+00:00",
+      "archived_for_note_hash": "2d9dc42b5609ddd9e3c416d8804ab9b8dd5ff05d2993d8cef8bf74c83811bf7d",
+      "audit_date": "2026-05-27T04:46:45.503881+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-lovelace-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop deps retain only the SU(3) Fierz/channel-count result F_adj = R_conn = 8/9 and explicitly do not derive kappa_EW = 0 or ratify the full EW matching rule. The runner independently checks R_conn against 8/9, but it does not compute EW disconnected topology, OZI h(lambda), physical continuum readout, or the exact 9/8 coefficient.",
+      "claim_scope": "Conditional bounded-support theorem only: the packet supports the exact SU(3) connected-channel/color-projection ratio R_conn = 8/9 at N_c=3 and MC consistency with that ratio, but the EW physical connected-trace selector, OZI suppression input, disconnected coefficient, and exact 9/8 EW matching coefficient are not closed inside the restricted packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T04:46:45.503881+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The source note's bounded EW connected-trace matching support depends on large-N/OZI disconnected-trace suppression and a continuum physical-readout selector that chooses the connected quark-loop contribution over the full color-blind lattice trace.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: require retained-grade closure of the physical EW connected-trace selector and the OZI/disconnected-coefficient bridge before upgrading beyond audited_conditional.",
+      "open_dependency_paths": [
+        "retained derivation of physical EW connected-trace selector kappa_EW = 0",
+        "retained large-N/OZI bridge theorem for EW vector-current disconnected topology in this lattice/readout setting",
+        "retained derivation or computation of disconnected coefficient needed for exact 9/8 matching",
+        "dedicated EW vacuum-polarization disconnected-topology runner or analytic closure"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 1,
+        "runner_result": "runner_sha256=6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326; exit_code=0; measured_R_conn=0.888791 +/- 0.001977 vs 8/9=0.888889; plaquette within tolerance; does not compute EW disconnected topology, physical continuum readout selector, OZI h(lambda), disconnected coefficient, or exact 9/8 matching coefficient",
+        "runner_status": "ok",
+        "scope_hygiene": 2,
+        "total_fail": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the source claim relies on large-N/OZI disconnected-trace suppression and a physical continuum EW readout that selects the connected trace. Why this blocks: those bridge inputs are not retained-grade dependencies in the restricted packet, and both one-hop deps explicitly stop short of deriving the physical connected-trace selector or full 9/8 EW correction. Repair target: add a retained bridge theorem deriving the EW connected-trace selector and disconnected coefficient, or add a dedicated runner/theorem computing the EW disconnected topology and physical readout from packet assumptions. Claim boundary until fixed: retain only conditional bounded support for connected-trace EW matching under imported large-N/OZI and continuum-readout assumptions; exact Pi_EW^phys = Pi_conn*(1+O(1/N_c^2)) and the package 9/8 coefficient are not cleanly derived inside this packet."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:19.723209+00:00",
+      "archived_for_note_hash": "bc354561cb4ac1fbdc0a4ae1158d898d05111d4b9519a42fc3994ec5e9943ce1",
+      "audit_date": "2026-05-29T22:44:32.391161+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6b5a626225eb831738f2adf16a2b661571ca61070138b786b27c8858d85c6326",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-224241-a1acaed5-ew_current_matching_ozi_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet supplies exact Fierz/channel-count support for the 8/9 adjoint fraction and an R_conn MC corroboration, but it does not close the physical EW connected-trace selector or a retained derivation identifying the EW disconnected topology with the claimed O(1/N_c^2) coefficient family. The runner checks the sibling R_conn observable, not the EW disconnected-current vacuum polarization.",
+      "claim_scope": "Audited the bounded claim that EW disconnected-current vacuum-polarization contributions are parametrically O(1/N_c^2) relative to the connected color trace, excluding any exact 9/8 coefficient.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T22:44:32.391161+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Each EW-current insertion is assigned a singlet-projector factor of 1/N_c, so Pi_EW^disc / Pi_EW^conn ~ (1/N_c^2) h(lambda), and the physical continuum readout is then taken to be connected up to O(1/N_c^2).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade EW current selector/disconnected-topology theorem or a dedicated runner/derivation that computes the EW disconnected-current contribution rather than the sibling R_conn ratio.",
+      "open_dependency_paths": [
+        "docs/RCONN_DERIVED_NOTE.md",
+        "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Both cited authorities explicitly leave the physical EW matching selector open: RCONN states kappa_EW is underdetermined, and the Fierz note names matching rule (M) as not derived. The source note admits the exact 9/8 bridge is non-load-bearing, but its displayed theorem still says the physical continuum-matched EW polarization is connected up to O(1/N_c^2), which requires that missing readout bridge. The displayed Wigner-Eckart/projector formula supplies at most a size-class argument and is not independently verified by the R_conn runner."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.701916+00:00",
+      "audit_date": "2026-05-31T15:44:12.822456+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "ew_current_matching_rule_open_gate_note_2026-05-03",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4fdca567329665b71500284e2370fbfc6982be87c1da4b33afbe423645efe518",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-154103-0879641e-ew_current_matching_ozi_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The channel fractions C=(N_c^2-1)/N_c^2 and S=1/N_c^2 give the stated ratio and N_c=3 specializations by direct algebra. The cited no-go authority supports leaving kappa_EW unfixed, so the source note's bounded scope closes without importing the connected-trace selector.",
+      "claim_scope": "The audited claim is the conditional EW-current family K_EW(kappa_EW)=1/(8/9+kappa_EW/9) and the O(1/N_c^2) disconnected/connected size class for bounded kappa_EW, not a derivation of kappa_EW=0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T15:44:12.822456+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_current_matching_rule_open_gate_note_2026-05-03:retained_no_go->unaudited",
+      "load_bearing_step": "For bounded kappa_EW, the disconnected part relative to the connected part is kappa_EW S / C = kappa_EW / (N_c^2 - 1) = O(1/N_c^2), with K_EW(kappa_EW)=1/(C+kappa_EW S).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream use preserves the conditional kappa_EW scope and does not promote K_EW(0)=9/8 to an unconditional coefficient.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "All displayed quantitative identities in the source packet check under the note's own definitions: C+S=1, S/C=1/(N_c^2-1), K_EW(0)=9/8, and K_EW(1)=1 at N_c=3. The runner source performs exact Fraction arithmetic plus source-hygiene guardrails; it is not a first-principles computation, but that is sufficient for this algebraic bounded claim. Both cited authorities are retained-grade for the restricted use made here, and the note explicitly does not claim an unconditional 9/8 coefficient."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ew_current_ozi_scope_repair.py",
+  "title": "EW Current OZI Size-Class Boundary Support Note",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

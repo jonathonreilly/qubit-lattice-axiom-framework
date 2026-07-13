@@ -1,0 +1,219 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2176e349fc6e037865c4c81d372786dd0e5fa90c01bf6268fd466ccb0f117352",
+  "note_path": "docs/U0_SU2_BIVECTOR_IRREP_ANALYTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-21T21:59:09.395674+00:00",
+      "audit_date": "2026-05-17T21:45:58.841179+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed.",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Purely algebraic finite-dimensional complex representation theory of abstract Cl(3,0): faithful irreducibles are 2-dimensional and finite-dimensional complex representations decompose into sums of the two chirality 2-dimensional irreps."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-214422-78dc5814-u0_su2_bivector_irrep_an-012",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the conclusion is a direct substitution into X3 after the retained X1/X2 dimensional readout supplies N_SU(2)=2. No numerical plaquette value or g_2(v) closure is used.",
+      "claim_scope": "Given the retained Cl(3) split/dim-2 irrep inputs and the admitted tadpole convention, the audit checks only the algebraic SU(2) specialization with N_SU(2)=2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T21:45:58.841179+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "Apply the L\u00fcscher-Mackenzie convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the restricted packet's X1/X2 wording is accepted as authorizing the bivector SU(2) fundamental representation used by X3.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing step is exact algebraic substitution over explicit inputs, not a numerical match or comparator check. Both cited one-hop authorities are retained, and the open SU(2) plaquette evaluation is explicitly outside the audited claim scope. The runner source is consistent with class A evidence: it checks the Clifford/Pauli representation, the N=2 readout, and the fourth-root identities symbolically rather than importing any observed value."
+    },
+    {
+      "archived_at": "2026-05-24T22:11:56.675064+00:00",
+      "archived_for_note_hash": "08eb2e9e7b7df50c73903239efa4574e654e659959d5312dfaff8bb51ff77aed",
+      "audit_date": "2026-05-21T22:35:30.441085+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-222935-4c1da52b-u0_su2_bivector_irrep_an-019",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substitution itself closes. However, one cited authority for X2 is marked decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 rather than retained-grade, so the restricted packet does not present all cited authorities as retained-grade.",
+      "claim_scope": "Audited only the algebraic substitution of the Cl(3) bivector SU(2) fundamental dimension N_SU(2)=2 into the admitted tadpole convention, yielding the parametric closed form for u_0(SU(2)).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T22:35:30.441085+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Apply the L\u00fcscher-Mackenzie convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: promote or replace the X2 cited authority with a retained-grade dependency, or cite only the retained Cl(3) complexification split note if its K4 dimensional readout is intended to carry X2.",
+      "open_dependency_paths": [
+        "docs/CL3_FAITHFUL_IRREP_DIM_TWO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The runner performs exact algebraic and symbolic checks, with no external numerical comparator or fitted input, and its source matches the stated class-A substitution role. The load-bearing inference from N_SU(2)=2 to the 1/2 prefactor is a genuine algebraic specialization of the admitted L\u00fcscher convention. The conditional blocker is ledger/status hygiene: the packet labels the X2 cited authority as decoration_under the Cl(3) split note, not as retained, retained_no_go, or retained_bounded."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.173146+00:00",
+      "audit_date": "2026-05-25T12:42:19.314905+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "483ce52c3650a72f1156166d1b11d854b72aef8264b9c0bb8658175be97dd773",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T124048Z-1997ec3e-u0_su2_bivector_irrep_an-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.",
+      "claim_scope": "The audited content is the algebraic specialization of the tadpole fourth-root formula to the Cl(3)-bivector SU(2) representation dimension N_SU(2)=2, with no plaquette evaluation or g_2 closure.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-25T12:42:19.314905+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Apply the tadpole convention with G = SU(2) and N_G = N_SU(2) = 2 to obtain u_0(SU(2)) = <(1/2) Re Tr U_plaquette^SU(2)>^(1/4).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that treating the L\u00fcscher-Mackenzie convention as a stated convention rather than a ledger dependency is intended for decoration classification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_u0_su2_bivector_irrep_analytic_derivation_exact_2026_05_17.py",
+  "title": "u_0(SU(2)) Bivector-Irrep Analytic Derivation Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

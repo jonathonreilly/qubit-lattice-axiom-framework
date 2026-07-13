@@ -1,0 +1,411 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+    "no_per_site_chirality_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.587,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "07746270021e4b55c7c2c041251964e2644e3f17cece0b9a20e0f4ec019cf64a",
+  "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T00:46:44.402863+00:00",
+      "audit_date": "2026-05-25T12:31:25.862039+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "Under the k=1 qubit-per-site reading H_x = C^2 with the canonical Pauli Cl(3) action, no \u03b3_5 \u2208 M_2(C) satisfies \u03b3_5^2 = I and anticommutes with all three generators.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "On an even periodic finite L^3 lattice, with the standard staggered \u03b7 phases treated as a Z2 lattice gauge field, all six axis orderings are gauge-equivalent and the \u03b7 convention does not physically break S3.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d92af88cce7d0a97cbc91cde6bbd03e73d702c5548200098dbb6cbe106bc8ab3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T123104Z-c6771988-positivity_bridge_requir-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from retained determinant positivity, retained S_3 axis-symmetry/gauge-equivalence, and elementary finite S_3 sign/trivial representation theory. The note correctly leaves the physical derivation of any orientation-sign positivity as open and outside this claim.",
+      "claim_scope": "Audited the bounded representation-theoretic claim that retained staggered det(D+mI)>0 is S_3-invariant and cannot break S_3 to C_3, while an orientation-sign constraint would have C_3 as its positive level set.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T12:31:25.862039+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:no_per_site_chirality_theorem_note_2026-05-02:retained_no_go->unaudited",
+      "load_bearing_step": "Determinant-magnitude positivity is constant on S_3 (trivial representation) and selects all of S_3, while sgn(\u03c3)=+1 has level set A_3=C_3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the representative free-link runner is being used only as verification, while the retained axis-symmetry authority supplies the general S_3-invariance input.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is algebraic group/linear-algebra closure over retained-grade cited inputs, not a numerical match, external comparator, or renaming. The runner genuinely constructs the free staggered operator for representative S_3 orderings and separately checks the permutation determinant sign representation; it does not merely print constants. No-Go gate passes for the bounded negative boundary: the packet distinguishes determinant magnitude, determinant sign/phase on a positive determinant surface, axis relabeling, per-site chirality, and the still-open global orientation-sign bridge, so the residual is narrowed to the determinant-magnitude route only."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.082105+00:00",
+      "audit_date": "2026-05-31T16:59:07.177072+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "Single-site one-qubit algebra M_2(C) with a Pauli Cl(3) generating triple: omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero M in M_2(C) anticommutes with all three sigma_i, so no gamma_5-based one-site chirality projector exists.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "On an even periodic finite L^3 lattice, with the standard staggered \u03b7 phases treated as a Z2 lattice gauge field, all six axis orderings are gauge-equivalent and the \u03b7 convention does not physically break S3.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d92af88cce7d0a97cbc91cde6bbd03e73d702c5548200098dbb6cbe106bc8ab3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-165643-00885310-positivity_bridge_requir",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrowed one-dimensional representation argument closes from the retained determinant-positivity input, retained-bounded `S_3` axis-symmetry input, and finite `S_3` algebra. The source theorem also states the broader class-function lemma, which is false unless narrowed to one-dimensional characters or representation-valued sign/magnitude constraints.",
+      "claim_scope": "Determinant-magnitude positivity for the retained staggered determinant is an `S_3`-invariant Boolean constraint and cannot break `S_3` to `C_3`; a one-dimensional representation-valued binary route selecting `C_3` must use the sign/orientation character.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T16:59:07.177072+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:no_per_site_chirality_theorem_note_2026-05-02:retained_no_go->unaudited",
+      "load_bearing_step": "`S_3` has exactly two one-dimensional representations, the trivial representation and `sgn`, with `{sigma : sgn(sigma)=+1}=A_3=C_3`, while determinant positivity is constant on `S_3`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: replace the broad binary-class-function statement with the narrower one-dimensional character/sign-magnitude statement, then re-audit the same determinant-trivial-rep and orientation-sign selection claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source performs real finite checks for the staggered determinant on representative axis orderings and for the sign character of `S_3`; it is not merely printing constants. The cited authorities are retained-grade for the determinant positivity, axis-symmetry, and no-per-site-chirality boundaries used by the narrowed claim. However, the theorem's broad sentence that an arbitrary binary class function on `S_3` can preserve only a union of `sgn`-level sets is not correct: binary class functions may select other conjugacy-class unions, such as the identity class alone. The clean repair is to narrow that sentence to one-dimensional representation-valued sign/magnitude constraints."
+    },
+    {
+      "archived_at": "2026-06-21T08:17:11.089442+00:00",
+      "audit_date": "2026-06-06T00:13:52.130620+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "On an even periodic finite L^3 lattice, with the standard staggered \u03b7 phases treated as a Z2 lattice gauge field, all six axis orderings are gauge-equivalent and the \u03b7 convention does not physically break S3.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "275f23e821cc7d15550d44b06bf128f2a97e17dca038415899aca65753acdb76",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-001331-6c17fe2cbd-positivity_bridge_requires_o",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant positivity and S_3 gauge-equivalence inputs are supplied by retained-grade cited authorities, and the remaining selection claim is finite S_3 representation algebra. The note explicitly leaves the physical derivation of an orientation-sign positivity as open and does not rely on it for the bounded theorem.",
+      "claim_scope": "One-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface: determinant-magnitude positivity is trivial-representation and orientation sign is the sign-representation route whose positive level set is C_3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:13:52.130620+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+      "load_bearing_step": "The staggered determinant is S_3-invariant and positive under axis orderings, while the orientation sign sgn(\u03c3) is +1 exactly on A_3=C_3 and -1 on transpositions.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the bounded scope remains limited to one-dimensional character/sign-magnitude constraints and is not later cited as deriving the physical orientation-sign positivity bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The load-bearing argument is a genuine algebraic closure over retained determinant-positivity and retained-bounded S_3 axis-symmetry inputs plus elementary S_3 sign-character facts. The runner does compute the free staggered determinant under representative identity, transposition, and 3-cycle orderings and separately checks the sign representation; it also guards the stated one-dimensional scope. No external comparator, tuned numerical value, or open upstream premise is imported into the bounded conclusion."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.511824+00:00",
+      "audit_date": "2026-06-21T12:55:57.909925+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "Finite even periodic L^3 staggered-eta kinematics: all S3 axis orderings have the same Z2 plaquettes and Polyakov holonomies and are related by site-local Z2 gauge transformations.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.392,
+        "runner_hash": "275f23e821cc7d15550d44b06bf128f2a97e17dca038415899aca65753acdb76",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained determinant-positivity input supplies det(D+mI)>0, and the retained_bounded S_3 axis-symmetry input supplies invariance under axis permutations. Finite S_3 representation theory then closes the scoped conclusion; the separate physical derivation of an orientation-sign positivity is explicitly not claimed.",
+      "claim_scope": "Audited only the finite S_3 one-dimensional character/sign-magnitude claim: determinant-magnitude positivity selects all of S_3, and the sign/orientation character is the one-dimensional route whose positive subset is C_3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:55:57.909925+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:no_per_site_chirality_theorem_note_2026-05-02:retained_no_go->unaudited",
+      "load_bearing_step": "Within the finite S_3 axis-ordering surface, det(D+mI) is constant/positive under S_3 and therefore is the trivial one-dimensional character, while the sign character has positive level set A_3=C_3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner determinant checks are finite/free-lattice cross-checks; the generality rests on the cited retained determinant-positivity and retained_bounded S_3 symmetry authorities.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 5,
+        "C": 4,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The load-bearing step is standard finite group algebra plus determinant invariance over retained-grade inputs, not a fitted comparator, renaming, or new physical bridge. The runner performs the advertised finite checks and includes a scope guard excluding arbitrary class-function selectors outside the one-dimensional character/sign-magnitude claim. All cited authorities in the restricted packet are retained-grade under the rubric, and the note correctly leaves the framework-level handedness-positivity bridge open rather than importing it."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.498003+00:00",
+      "audit_date": "2026-07-02T04:42:55.046772+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "Single-site complex one-qubit operator algebra M_2(C): the Pauli volume element is iI and no nonzero internal matrix anticommutes with all three Pauli generators, so no one-site gamma_5 projector exists.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "Finite even periodic L^3 staggered-eta kinematics: all S3 axis orderings have the same Z2 plaquettes and Polyakov holonomies and are related by site-local Z2 gauge transformations.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.392,
+        "runner_hash": "275f23e821cc7d15550d44b06bf128f2a97e17dca038415899aca65753acdb76",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T044255Z-456b8f9f-positivity_bridge_requir",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained determinant-positivity input plus retained_bounded S_3 axis-symmetry make det(D+mI)>0 constant over the S_3 orderings, so it selects all of S_3. Finite S_3 representation theory then gives the only nontrivial one-dimensional character as sgn, whose +1 subset is A_3 = C_3; the separate physical handedness bridge is explicitly not claimed.",
+      "claim_scope": "One-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface: det(D+mI) positivity is S_3-invariant and cannot select C_3; the sign/orientation character has positive set C_3 if such a physical constraint is independently supplied.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:42:55.046772+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:no_per_site_chirality_theorem_note_2026-05-02:retained_no_go->unaudited",
+      "load_bearing_step": "Among one-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface, determinant-magnitude positivity is the trivial representation and selects all of S_3, while the sign character has positive level set A_3 = C_3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve the one-dimensional sign/magnitude scope and do not treat this note as deriving the physical handedness-positivity bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The audited claim is narrowly scoped and does not import the open physical orientation-positivity bridge. Its load-bearing step is finite group/linear-algebra closure over retained-grade inputs, not a definition, external comparator, or tuned numerical match. The runner source performs actual finite determinant and sign-character checks and includes scope guards, with no helper-artifact gap or forbidden comparator import. The no-go boundary is narrow: only the determinant-magnitude route is closed, while global orientation-sign selection remains open."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.022580+00:00",
+      "audit_date": "2026-07-09T05:22:34.678071+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "Inside a single one-qubit site algebra A_x ~= M_2(C) with a Pauli Cl(3) presentation, no nonzero element anticommutes with all three Pauli generators, so no internal gamma5/chirality projector exists there.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "Finite even periodic L^3 staggered-eta kinematics: all S3 axis orderings have the same Z2 plaquettes and Polyakov holonomies and are related by site-local Z2 gauge transformations.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "no_per_site_chirality_theorem_note_2026-05-02": "retained_no_go",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "no_per_site_chirality_theorem_note_2026-05-02",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 5.587,
+        "runner_hash": "275f23e821cc7d15550d44b06bf128f2a97e17dca038415899aca65753acdb76",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260709",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes as finite group/linear algebra over retained-grade one-hop inputs. The clean result must not be used as if it derived the separate physical orientation-sign positivity constraint.",
+      "claim_scope": "Finite S3 axis-ordering surface: among one-dimensional character/sign-magnitude constraints, determinant-magnitude positivity is S3-invariant and cannot select C3, while the sign/orientation character has positive level set A3 = C3; no physical orientation-positivity bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T05:22:34.678071+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Determinant positivity is the trivial S3 character, while sgn(sigma)=det(rho_perm(sigma)) is +1 exactly on A3=C3, so the only nontrivial one-dimensional character/sign-magnitude route to C3 is the orientation-sign route.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream citations preserve the note's narrow scope and do not cite it as closing the physical orientation-positivity bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 5,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The source is narrowly scoped to one-dimensional character/sign-magnitude constraints and explicitly does not derive the physical handedness positivity bridge. Given the retained determinant-positivity input, the retained-bounded S3 axis-symmetry input, and finite S3 representation theory, the determinant-magnitude route is trivial/S3-invariant and the sign character has positive set A3=C3. The runner completed with PASS=15 FAIL=0, checking source scope, determinant-magnitude invariance under identity/transposition/3-cycle, sign representation values, and the scope guard excluding arbitrary binary selectors. No hidden physical bridge, tuned comparator, or definition-as-derivation is used inside this bounded scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
+  "title": "Det-Magnitude Positivity Does Not Break S_3; Orientation-Sign Is the C_3 Route",
+  "transitive_descendants": 16,
+  "verdict_rationale": null
+}

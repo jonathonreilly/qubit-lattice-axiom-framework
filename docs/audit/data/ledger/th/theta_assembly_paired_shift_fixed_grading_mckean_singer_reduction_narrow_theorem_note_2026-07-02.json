@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_assembly_paired_shift_fixed_grading_mckean_singer_reduction_narrow_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite fixed-grading paired-shift theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+    "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9b113bb16e54ea2c58c6ba29f22272a1b5b7efc8e99e69d4cfa8b0ee07f66440",
+  "note_path": "docs/THETA_ASSEMBLY_PAIRED_SHIFT_FIXED_GRADING_MCKEAN_SINGER_REDUCTION_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.935467+00:00",
+      "audit_date": "2026-07-10T02:46:34.382192+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30": "The standard massless nearest-neighbor staggered site-parity epsilon heat-trace index A_t[U]=Tr(epsilon exp(-t D^dag D)) vanishes for all t>0 on equal-sublattice finite even periodic 4D hypercubic tori with arbitrary U(1) link phases; only that same-surface epsilon-index route to P1' is pruned.",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": "Audited only the bounded internal correction: on the free/flat staggered operator on Z_4 x Z_2^3, with an L=4 robustness check, the eps-gap identity and A[1,1]=0 show that the existing residual should target a chi != 0 or Q != 0 background, not treat absence of GW as the demonstrated internal obstruction.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30": "no_go",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30": "retained_no_go",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "cefc6206c6e64a168c8a753ba2736c668ba5b9ed65465067f9182b884c3c9829",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_assembly_paired_sh-098",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusions follow directly from finite-dimensional block decomposition, determinant multiplicativity, and the retained balanced-surface and supplier-boundary authorities. The physical gauge-theta interpretation is expressly outside the audited scope.",
+      "claim_scope": "Exact finite-dimensional fixed-grading heat-index rigidity, twisted-mass determinant identity, phase cancellation, balanced-surface collapse, and exclusion of background-dependent transfer from that fixed grading; no continuum ABJ anomaly or physical theta value was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:46:34.382192+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The anticommutation relation implies both the paired-block spectral cancellation and the conjugation identity e^{i alpha eps}(D+mI)e^{i alpha eps}=D+m e^{2 i alpha eps}, yielding n=2 tr(eps).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 85,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 85
+      },
+      "verdict_rationale": "The load-bearing results are genuine algebraic identities under explicitly stated finite-dimensional assumptions, not definitions, imported numerical values, or tuned matches. All cited non-meta authorities are retained-grade, and the accepted axiom memo creates no downgrade. The supplied runner constructs the operators and independently checks the identities and premise-breaking controls rather than merely printing expected constants."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_assembly_paired_shift_fixed_grading_mckean_singer_2026_07_02.py",
+  "title": "Theta Assembly Paired-Shift Law From Fixed Grading",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

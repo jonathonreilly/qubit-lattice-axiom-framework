@@ -1,0 +1,361 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kinetic_isotropy_primitive",
+    "minimal_axioms",
+    "scale_reference_primitive",
+    "emergent_lorentz_invariance_note",
+    "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+    "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.459,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ac0acd0fc0ddf5b2dd5f0be45e2875cec8f594e44d484ae71fb0d9f1efb55eac",
+  "note_path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:01.932717+00:00",
+      "archived_for_note_hash": "6ba9de3ad9eab20b1de31e16d3d1be955f7ef2dea8004df84bdb8b3afe83726d",
+      "audit_date": "2026-06-09T12:50:03.665567+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered Euclidean 2-point function for the displayed canonical action/phases: continuum SO(4) bispinor covariance of the free propagator and O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum/D~ sector, excluding interacting theory, n-point/OS reconstruction, physical-unit readout, and full spin-taste leading finite-a correction.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h/cubic artifact checks on Z^3 x Z_tau do not by themselves force c_t=c_s or full SO(4) kinetic covariance; an explicit Euclidean normalization or 4D-hypercubic premise is needed for that stronger wording."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "30579596b21e21fe053ff3fede9d050f59291dc72102aad8e68df2b304d024cf",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-124720-9967d39ed5-emergent_lorentz_radiative_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The diagonal coefficient vector has one B4 orbit over the four axes, so invariance under coordinate swaps forces all coefficients equal; spatial O_h alone has two orbits, time and space. The self-energy and representation-factor statements are the same finite relabeling argument applied to a B4-invariant measure and then multiplied by species factors.",
+      "claim_scope": "On an explicitly supplied isotropic Z4 surface with full B4 signed-permutation symmetry and no temporal/spatial form breaking, marginal temporal-vs-spatial velocity anisotropy is forbidden; the remaining lattice dispersion residue starts at the dimension-6 hypercubic correction, with the Planck-scale estimate using only the approved scale-reference units conversion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T12:50:03.665567+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The B4 invariant space of diagonal quadratic kinetic forms is one-dimensional, so c_t = c_s is forced.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the primitive registry continues to list scale_reference_primitive as the approved units-conversion premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing result is a direct finite-group invariant calculation, not a definition or tuned numerical match. Independent checks reproduce the two spatial-O_h coefficients, the one B4 coefficient, the Taylor coefficient -a^2/3 for sin^2(ka)/a^2, and the quoted 1 GeV scale estimate 2.24e-39 using M_Pl = 1.22e19 GeV. The note stays within its supplied-surface boundary and does not claim to derive physical time, a temporal lattice, or interacting all-n-point Lorentz invariance."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.205659+00:00",
+      "audit_date": "2026-06-10T03:57:07.450442+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "kinetic_isotropy_primitive": null,
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered Euclidean two-point function with canonical phases: continuum momentum-space SO(4) Dirac/Kahler-Dirac covariance and O(a^2) ell=4 anisotropy in the taste-singlet scalar-spectrum/displayed D~ sector only.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h plus time parity alone permits a marginal time-vs-space kinetic anisotropy and therefore does not by itself justify full SO(4) continuum wording; adding c_t=c_s or 4D hypercubic symmetry is an extra premise that closes this specific obstruction."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "kinetic_isotropy_primitive",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "30579596b21e21fe053ff3fede9d050f59291dc72102aad8e68df2b304d024cf",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-035505-1e91be89f9-emergent_lorentz_radiative_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For a diagonal quadratic form, any B4 axis transposition exchanges two coefficients, so invariance forces all four coefficients equal; spatial O_h lacks the time-space transpositions and leaves c_t and c_s independent. The same finite relabeling closes the one-loop equality on a B4-invariant measure, while the accepted primitives supply only OS0 kinetic isotropy and the M_Pl units conversion.",
+      "claim_scope": "On the approved OS0/B4 kinetic-form surface, the diagonal marginal time-space velocity-anisotropy operator is forbidden; the checked B4-symmetric one-loop self-energy has Sigma_t = Sigma_s, with remaining lattice residue only at the cited dimension-6 structural-dispersion level.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-10T03:57:07.450442+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The B4 invariant space of diagonal quadratic kinetic forms is one-dimensional, so c_t = c_s is forced.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the one-loop/kinetic-form scope and do not read this as a full interacting Lorentz-closure theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The primitive-registry packet flags kinetic_isotropy_primitive and scale_reference_primitive as approved premise nodes, and the source uses them within their declared limits: OS0/B4 kinetic form and a^{-1}=M_Pl units conversion only. Independently, the B4 invariant-count result follows from coefficient equality under coordinate transpositions, not from a definition or tuned numerical match; the finite self-energy equality is the same relabeling on a symmetric integration grid. The displayed residual formula also checks independently: (sin(ka)/a)^2 = k^2 - a^2 k^4/3 + O(a^4 k^6), and the runner's 1 GeV estimate is arithmetic from (1/3)(E/M_Pl)^2. The note's boundaries avoid claiming spacing-ratio, physical-time, Lorentz-closure, or full interacting all-n-point results."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.465019+00:00",
+      "audit_date": "2026-06-12T01:35:22.879830+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "kinetic_isotropy_primitive": null,
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "Free U=1 staggered-Dirac Euclidean 2-point function: continuum SO(4) covariance of the displayed taste-spectator spin block, plus the O(a^2) ell=4 anisotropy of the taste-singlet scalar spectrum Delta(p), excluding interacting, n-point, OS-reconstruction, physical-unit, and full finite-a spin x taste leading-correction claims.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "kinetic_isotropy_primitive",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "30579596b21e21fe053ff3fede9d050f59291dc72102aad8e68df2b304d024cf",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-013258-739e54e6b8-emergent_lorentz_radiative_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The four diagonal coefficients form one orbit under B4, while spatial O_h has a time singleton plus one spatial orbit, so the marginal anisotropic diagonal operator is not B4-invariant. The one-loop equality follows by finite relabeling under a B4-invariant measure/action, and the primitive dependencies supply only the accepted OS0 surface and units conversion used by the scoped estimate.",
+      "claim_scope": "On the approved OS0 kinetic-form surface, B4 signed-permutation symmetry forbids a diagonal marginal time/spatial velocity anisotropy and makes B4-symmetric one-loop temporal/spatial self-energy coefficients equal; the remaining cited lattice artifact is dimension-6 with only a scale-reference units estimate.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:35:22.879830+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The B4 invariant space of diagonal quadratic kinetic forms is one-dimensional, so c_t = c_s is forced.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should verify downstream consumers preserve the diagonal-kinetic, B4-symmetric one-loop scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing step is a genuine finite-group algebraic closure, not a symbol definition or numerical tuning. The kinetic-isotropy and scale-reference inputs are approved primitive premises in the restricted packet, and the other cited authorities are retained-grade for the structural dimension-6 support used here. An independent check confirmed the invariant dimensions, the sine-dispersion coefficient -a^2/3, and the 1 GeV estimate 2.24e-39; the clean verdict is limited to the stated diagonal quadratic and B4-symmetric one-loop scope, not full Lorentz closure or interacting all-n-point dynamics."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.379099+00:00",
+      "audit_date": "2026-07-02T01:34:07.526450+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "kinetic_isotropy_primitive": null,
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "For the specified free U=1 staggered/Kogut-Susskind operator on Z^3 x Z_tau with canonical phases, the continuum-limit 2-point Dirac/Kahler-Dirac propagator is SO(4)-covariant; the O(a^2) ell=4 anisotropy claim is scoped to the taste-singlet scalar spectrum/displayed D~ sector.",
+          "minimal_axioms": null,
+          "scale_reference_primitive": null,
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "scale_reference_primitive": "meta",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "kinetic_isotropy_primitive",
+          "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+          "minimal_axioms",
+          "scale_reference_primitive",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 8.024,
+        "runner_hash": "30579596b21e21fe053ff3fede9d050f59291dc72102aad8e68df2b304d024cf",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T013407Z-ab44708b-emergent_lorentz_radiati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The kinetic-isotropy primitive is registry-approved and supplies the OS0/B4 kinetic-form surface; the invariant-space calculation then algebraically leaves only one diagonal quadratic coefficient. The self-energy relabeling, representation-factor, explicit-breaking, and dimension-6 checks stay within that scoped model and do not require non-retained inputs.",
+      "claim_scope": "On the accepted OS0 kinetic-isotropy surface, B4 signed-permutation symmetry forbids a diagonal marginal time-space velocity anisotropy in the checked hypercubic kinetic/self-energy model; the remaining cited dispersion artifact is dimension-6 with scale-primitive unit conversion.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:34:07.526450+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The B4 invariant space of diagonal quadratic kinetic forms is one-dimensional, so c_t = c_s is forced.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check downstream uses so they preserve the diagonal quadratic OS0 scope and do not inflate the toy one-loop relabeling check into a full interacting continuum proof.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner source constructs the signed-permutation groups, computes the invariant ranks, evaluates the B4 relabeling equality on a symmetric lattice integral, and verifies that an explicit temporal/spatial deformation breaks the equality. The accepted-premise carve-out applies to kinetic_isotropy_primitive and scale_reference_primitive, and the other cited authorities are retained-grade for the scoped content used here. The claim is clean only in the stated diagonal quadratic/OS0 kinetic-form scope, not as a full interacting continuum Lorentz-closure theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py",
+  "title": "B4 Hypercubic Velocity-Anisotropy Boundary on the Kinetic-Isotropy Primitive Surface",
+  "transitive_descendants": 10,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

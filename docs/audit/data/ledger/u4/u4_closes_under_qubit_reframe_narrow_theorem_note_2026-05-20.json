@@ -1,0 +1,833 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4c8057a3902558a11442fc52f1dd78cbbf4071d825a242c3929c3d77133d0b45",
+  "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T18:29:36.923715+00:00",
+      "archived_for_note_hash": "d177763909f68c2e9295f3a0f78e0c89d52eb39e244ac9a743c01e04515efc96",
+      "audit_date": "2026-05-22T13:01:24.019285+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "Abstract algebraic corollary of the Cl(3,0) complexification split: the two complex irreducible chirality modules have dimension 2 and finite-dimensional complex modules decompose into their direct sums.",
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T130103Z-34ddc3b9-u4_closes_under_qubit_re-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The inference from a qubit per site to H_x = C^2 with k=1 is explicit in the provided MINIMAL_AXIOMS ratification text and is algebraically compatible with the retained Cl(3) split. However MINIMAL_AXIOMS is supplied with effective_status meta, not a retained-grade cited authority under the audit rubric.",
+      "claim_scope": "Audited whether A1's qubit-per-site baseline, as quoted in the restricted packet, closes the per-site U4 identification H_x = C^2 with k(x)=1 under M_2(C) ~= Cl(3,0).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T13:01:24.019285+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The qubit-per-site baseline directly specifies H_x = C^2 and multiplicity k(x)=1, so the U4 bridge follows immediately.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: mark the A1 qubit-per-site ratification / MINIMAL_AXIOMS authority as an accepted retained-grade axiom input for this audit lane, or provide a retained bridge theorem explicitly authorizing A1 as load-bearing.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner was provided, so the load-bearing step is judged from the note text alone. On its own terms, the chain is an algebraic closure from the A1 qubit definition plus standard matrix-algebra representation theory, not a numerical match or external comparator. The restricted packet nevertheless marks the load-bearing A1 authority as meta rather than retained, and the rubric requires audited_conditional when any cited authority needed for the chain is not retained-grade."
+    },
+    {
+      "archived_at": "2026-05-23T12:01:21.832773+00:00",
+      "audit_date": "2026-05-22T22:18:33.892923+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T221811Z-8b45f4df-u4_closes_under_qubit_re-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet now includes the canonical A1/R1 clause stating H_x is exactly C^2 with multiplicity k(x)=1, and the retained Cl(3) split authority supplies the standard single-irrep algebraic readout. No staggered-Dirac or Grassmann bridge is needed for this narrow U4 statement.",
+      "claim_scope": "Under the ratified A1/R1 k=1 qubit-per-site clause, the U4 bridge is just the per-site single-qubit Hilbert/module readout plus the retained M_2(C) \u2245 Cl(3,0) algebraic identification.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T22:18:33.892923+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "Axiom 1's ratified qubit-per-site reading selects H_x = C^2 with k(x) = 1, so the per-site physical Hilbert space is the single faithful complex irrep of M_2(C) \u2245 Cl(3,0).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that treating the ratified A1/R1 k=1 clause as canonical axiom-surface input is acceptable despite MINIMAL_AXIOMS carrying effective_status=meta rather than a retained theorem status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "With R1 on the canonical axiom surface, the row adds no independent physical closure beyond unpacking the parent qubit/Cl(3) local-algebra commitment and applying standard matrix-algebra representation theory. There are no D-class comparator checks and no numerical computation. The appropriate category is audited_decoration rather than audited_clean: the content is a useful boxed corollary of the retained Cl(3)/M_2(C) local-algebra parent plus the ratified A1 k=1 reading, not a separate retained theorem."
+    },
+    {
+      "archived_at": "2026-05-23T17:05:17.090961+00:00",
+      "archived_for_note_hash": "80ec7d86edeaee37129356f86d3a7b96d8af1521b079272e92a7ffda6305bc6f",
+      "audit_date": "2026-05-23T12:33:08.130039+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T123137Z-55f06369-u4_closes_under_qubit_re-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows only by identifying A1's one-qubit-per-site reading with U4's single faithful Cl(3) module condition; the M_2(C) unique-irrep fact supplies standard algebraic vocabulary after that identification.",
+      "claim_scope": "Audited whether A1's qubit-per-site baseline plus the retained M_2(C) \u2245 Cl(3,0) algebraic identification closes the U4 k=1 per-site Hilbert-space bridge.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:33:08.130039+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the qubit-per-site baseline, the conditional in C1 is no longer required because the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only whether the current canonical axiom packet treats k=1 as direct A1 meaning; under this packet the row is renaming, not decoration under cl3_complexification_split.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "This is not audited_decoration under cl3_complexification_split: the row does not reduce to that single retained algebraic parent, because the physical k=1 bridge is supplied by the qubit-per-site axiom reading. The decisive move is the identity between \u201cone qubit per site\u201d and \u201csingle faithful complex Cl(3) irrep per site,\u201d not an independent class A or class C derivation. No runner was provided, but the load-bearing step can be judged from the note text."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.089230+00:00",
+      "audit_date": "2026-05-23T17:57:09.233401+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T175506Z-7543c845-u4_closes_under_qubit_re-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the accepted axiom premise that a site carries one qubit, the U4 identification follows by unpacking that wording plus standard M_2(C) module uniqueness. The closure is an identity/unpacking of the axiom-surface qubit clause, not an independent derivation.",
+      "claim_scope": "Audit of the U4 per-site Hilbert-space identification under A1: each Z^3 site has H_x = C^2 and multiplicity k(x)=1.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T17:57:09.233401+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Under the qubit-per-site baseline, the conditional in (C1) is no longer required: the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only whether the current canonical axiom wording intends k=1 as axiom-surface content or a downstream derivation lane; either way this row is not decoration under cl3_complexification_split.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The row is not audited_decoration under cl3_complexification_split: that parent explicitly stops before the physical-Hilbert U4 bridge, and the note also depends on the A1 qubit premise. The load-bearing move identifies A1's 'qubit at every site' with H_x = C^2 and k=1, then restates that as the U4 bridge. That is a concept identity/unpacking, not a class-A algebraic corollary of a single retained parent and not a class-C first-principles computation. No runner was supplied, so the judgment is from the note text and cited authorities."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.552813+00:00",
+      "audit_date": "2026-06-05T16:05:17.594241+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260605-160340-9224911414-u4_closes_under_qubit_refram",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Quantum axiom supplies one qubit per site, and the retained Cl(3) authority supplies the M_2(C) ~= Cl(3,0) and two-dimensional irrep algebra. The row closes only as an identification of U4 with that axiom content, not as an independent derivation.",
+      "claim_scope": "Alias-level audit of identifying the former U4 k=1 per-site Cl(3) bridge with the accepted one-qubit-per-site axiom plus retained Cl(3,0) ~= M_2(C) algebra.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:05:17.594241+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Under the qubit-per-site baseline, the conditional in C1 (if k = 1) is no longer required: the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the class F versus C boundary if the ledger changes whether k=1 is axiom-surface content or separately theorem-derived.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing move is not a pure class-A algebraic corollary of cl3_complexification_split, because the one-qubit-per-site axiom is load-bearing. It is also not class C: the note explicitly says the result is the content of the qubit baseline, and it identifies U4 with the already accepted k=1 qubit-per-site reading. Therefore audited_decoration under the Cl3 parent is not the right category; the row is a renaming/alias surface for the axiom content plus retained algebra."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:31.397180+00:00",
+      "archived_for_note_hash": "19d871c6e60efac61aca92345eefb392044668f7607d6da5d596e6d0c4bde484",
+      "audit_date": "2026-06-10T20:36:06.870950+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.814,
+        "runner_hash": null,
+        "transitive_descendants": 1272
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260610-u4_closes_under_qubit_reframe_narrow_the-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited Quantum axiom is an accepted premise, so there is no dependency downgrade. But the decisive move is the assertion that the former U4 bridge is the same content as the one-qubit-per-site carrier already supplied by the axiom, and the source note explicitly frames this as baseline content rather than a derivation. Standard M_2(C) module theory supports the consistency of the identification, but it is not the load-bearing first-principles computation that closes the claim as class C.",
+      "claim_scope": "Audited the narrow claim that the accepted one-qubit-per-site Quantum axiom identifies the per-site carrier with a single C^2 M_2(C)/Cl(3,0) module, thereby retiring U4 as an open bridge under that reframe.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-10T20:36:06.870950+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T20:39:39.984941+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-203917-c517461246-u4_closes_under_qubit_refram",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited that the accepted one-qubit-per-site Quantum axiom, together with the retained Cl(3,0) ~= M_2(C) algebra result and standard matrix-algebra representation theory, closes the former U4 per-site k=1 Hilbert-space bridge.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-10T20:30:58.808293+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260610-202833-5ef6e1c758-u4_closes_under_qubit_refram",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow claim that the accepted one-qubit-per-site Quantum axiom identifies the per-site carrier with a single C^2 M_2(C)/Cl(3,0) module, thereby retiring U4 as an open bridge under that reframe.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "F",
+          "verdict": "audited_renaming"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-10T20:36:06.870950+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260610-u4_closes_under_qubit_reframe_narrow_the-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow claim that the accepted one-qubit-per-site Quantum axiom identifies the per-site carrier with a single C^2 M_2(C)/Cl(3,0) module, thereby retiring U4 as an open bridge under that reframe.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "It treated the accepted-premise carve-out plus standard module algebra as sufficient for class C, without separating that from the note's load-bearing identity between U4 and the axiom's qubit carrier.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The cited Quantum axiom is an accepted premise, so there is no dependency downgrade. But the decisive move is the assertion that the former U4 bridge is the same content as the one-qubit-per-site carrier already supplied by the axiom, and the source note explicitly frames this as baseline content rather than a derivation. Standard M_2(C) module theory supports the consistency of the identification, but it is not the load-bearing first-principles computation that closes the claim as class C.",
+          "load_bearing_step_class": "F",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_renaming"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The qubit-per-site baseline directly specifies H_x = C^2, A_x = M_2(C) acting irreducibly, and k(x)=1; this is the content of the baseline.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The cited Quantum axiom is an accepted premise, so there is no dependency downgrade. But the decisive move is the assertion that the former U4 bridge is the same content as the one-qubit-per-site carrier already supplied by the axiom, and the source note explicitly frames this as baseline content rather than a derivation. Standard M_2(C) module theory supports the consistency of the identification, but it is not the load-bearing first-principles computation that closes the claim as class C."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:04.802053+00:00",
+      "archived_for_note_hash": "2221e971e4fbf7ccfa1ea436b66a500c70f16b5bfd8b9c043c7130557a7a3203",
+      "audit_date": "2026-06-18T01:57:49.459926+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.547,
+        "runner_hash": null,
+        "transitive_descendants": 1057
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-015204-1f6874e3-u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The alias follows from the accepted Quantum axiom together with the retained M_2(C) ~= Cl(3,0) algebraic authority. The closure is by identification with axiom content, not by an independent theorem-grade derivation.",
+      "claim_scope": "Audited the narrow alias map identifying the old U4 single faithful Cl(3) per-site module condition with the accepted one-qubit-per-site Quantum axiom.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T01:57:49.459926+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The word 'qubit' already means a 2-dimensional complex Hilbert space C^2 with M_2(C) acting irreducibly, so the qubit-per-site baseline directly specifies H_x = C^2 and k(x) = 1.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "A later clean theorem would need an independent proof rather than this axiom-alias statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source note repeatedly scopes itself as axiom-unpacking, compatibility, and alias support, and explicitly says it does not re-derive the qubit-per-site baseline. Its operative move is to identify the older U4 bridge with the accepted one-qubit-per-site Quantum axiom, with retained algebra supplying the Cl(3,0) formulation. No runner is present, but no completed compute is needed because the load-bearing step is adjudicable from the restricted text."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.522610+00:00",
+      "audit_date": "2026-06-21T05:49:59.185291+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports the alias: the accepted Quantum axiom supplies one qubit/M_2(C) per site, and the retained CL3 split authority supplies the M_2(C) ~= Cl(3,0) and 2-dimensional irreducible-module facts. What closes is an identification of existing concepts, not a new first-principles derivation.",
+      "claim_scope": "Audited the narrow alias that the current Quantum axiom's one-qubit-per-site premise identifies the former U4 k=1 per-site Cl(3) module bridge via M_2(C) ~= Cl(3,0), without closing downstream staggered-Dirac gates.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T05:49:59.185291+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Under the qubit-per-site baseline, the older U4 bridge is no longer a separate input because the baseline's one qubit per site is precisely the single faithful complex Cl(3) module selection k(x)=1.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the restricted axiom packet continues to bind one qubit per site to k=1; if that premise is later moved out of axiom content, this row would need a direct dependency on the k=1 derivation lane.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The note's own boundary is alias/renaming support: it maps the old U4 k=1 bridge onto the accepted one-qubit-per-site axiom wording. This is not audited_decoration under cl3_complexification_split because the load-bearing move does not reduce to a single retained algebraic parent plus ordinary algebra; it depends on the accepted Quantum axiom and asserts identity between two framework descriptions. The runner confirms the textual boundary and Pauli/M_2(C) algebra, but it does not turn the alias into a class C computation."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.897921+00:00",
+      "audit_date": "2026-06-30T15:18:39.640236+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T151839Z-8d275950-u4_closes_under_qubit_re",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom premise supplies the one-site M_2(C)/qubit surface, and the retained CL3 split authority supplies the M_2(C) ~= Cl(3,0) and dim-2 irrep algebra needed for consistency. What closes is the alias between the old U4 label and that accepted premise, not an independent derivation of k=1.",
+      "claim_scope": "Compatibility alias map identifying the former U4 per-site Hilbert-space bridge with the accepted one-site M_2(C)/single-qubit k=1 axiom content, using the retained Cl(3,0) ~= M_2(C) algebraic identification; no downstream staggered-Dirac closure audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T15:18:39.640236+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Under the qubit-per-site baseline, the conditional in (C1) (`if k = 1`) is no longer required: the baseline specifies a single qubit per site, which is precisely the single-faithful-complex-irrep selection.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check current canonical axiom wording and alias handling against the source note's 2026-06-05 wording.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "This row is not audited_decoration under cl3_complexification_split because it does not reduce to one upstream algebraic parent; it uses the accepted minimal-axiom qubit/k=1 surface to identify an older bridge label. The load-bearing move is a symbol/bridge identity between existing concepts, while the M_2(C)/Cl(3,0) Pauli checks are supporting algebra. The runner mostly verifies note/authority text and four Pauli/M_2(C) algebra facts; it does not supply a first-principles derivation. Under the rubric, that is class F and therefore audited_renaming."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.510297+00:00",
+      "audit_date": "2026-07-01T19:23:51.441624+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T192351Z-f43ef57e-u4_closes_under_qubit_re",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "As an alias map, the chain closes from the accepted Qubit/M_2(C) premise plus the retained Cl(3,0) algebra facts. It does not derive new physics; it identifies the older U4 bridge wording with axiom-level qubit content.",
+      "claim_scope": "Audited only the alias map that the accepted one-site M_2(C) qubit premise supplies the old U4 k=1 single faithful Cl(3) per-site module identification; no downstream staggered-Dirac gate closure was audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T19:23:51.441624+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Under the qubit-per-site baseline, the conditional in C1 (`if k = 1`) is no longer required because the baseline specifies a single qubit per site, identified with the single faithful complex Cl(3) irrep.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should recheck only the current minimal-axiom wording/alias handling; the row should not be boxed as decoration under cl3_complexification_split.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The presented closure is explicitly an axiom-unpacking/alias move: U4's k=1 single faithful module is identified with the accepted one-site qubit/M_2(C) premise, while the Cl3 split note supplies only the algebraic M_2(C) ~= Cl(3,0) support. This is not audited_decoration under cl3_complexification_split because that parent alone expressly leaves the physical Hilbert-space bridge out of scope, and the load-bearing step uses the axiom premise rather than a single retained algebraic parent. The runner corroborates text wiring and Pauli algebra but is mostly B/A checks and targets the older 2026-06-05 memo, so it does not upgrade the alias to a class-C derivation."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.507613+00:00",
+      "audit_date": "2026-07-02T07:12:08.608211+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T071208Z-a55d8065-u4_closes_under_qubit_re",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes only as an alias/unpacking: accepting the registered Qubit axiom premise, U4 names the same k=1 per-site module selection, while the retained CL3 split supplies the M_2(C)/Cl(3,0) algebraic equivalence. No independent derivation of the qubit baseline or downstream staggered-Dirac content is present.",
+      "claim_scope": "Audit of the narrow alias that the accepted one-qubit-per-site/k=1 axiom content closes the older U4 single faithful Cl(3) per-site module bridge, without closing downstream staggered-Dirac substeps.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T07:12:08.608211+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "The qubit-per-site baseline directly specifies H_x = C^2, A_x = M_2(C) acting irreducibly, and k(x)=1, so U4 is the same single-faithful-Cl(3)-module selection.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the current canonical Qubit axiom surface explicitly retains the k=1/H_x=C^2 commitment, since this verdict treats the row as an alias rather than an independent theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The decisive move is not a new algebraic corollary or first-principles computation; it identifies the older U4 bridge with the accepted qubit/k=1 axiom content. The retained CL3 split verifies the algebraic M_2(C) and two-dimensional irrep facts, but the physical-Hilbert-space selection is supplied by the axiom wording being unpacked. Therefore this is not audited_decoration under cl3_complexification_split: the chain does not reduce to class-A algebra over that single parent, but to a symbol/bridge identity with the axiom premise."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.957332+00:00",
+      "audit_date": "2026-07-02T21:20:58.094535+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bec23a13ccffcf107d26ab30b311100e073bcbf38917c2ab6037786ab9b9f6f6"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T212058Z-e2dfe51c-u4_closes_under_qubit_re",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "At alias scope, the restricted inputs support identifying U4's single faithful complex irrep per site with the accepted qubit/k=1 per-site premise plus the retained M_2(C) ~= Cl(3,0) algebra. This does not derive the axiom itself or close downstream staggered-Dirac, JW, or Grassmann substeps.",
+      "claim_scope": "Audited the narrow alias that the accepted one-qubit/k=1 per-site axiom, together with M_2(C) ~= Cl(3,0), closes the former U4 physical-Hilbert-space bridge only at compatibility-map scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T21:20:58.094535+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bec23a13->70324c45",
+      "load_bearing_step": "The single-faithful-Cl(3)-module-per-site selection is what the qubit-per-site baseline means.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: promotion beyond alias support would require a separate theorem deriving the physical Hilbert/module identification without simply restating the qubit-per-site/k=1 axiom; otherwise keep this row cited only as a compatibility map.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The row is not audited_decoration under cl3_complexification_split: the load-bearing move is not a class-A corollary of that single parent, but an identity between the old U4 bridge and the accepted qubit/k=1 axiom surface. The runner confirms Pauli/M_2(C) algebra and source-boundary text, but it does not turn the compatibility map into an independent class-C derivation. The chain closes only as an alias/renaming support row."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.173203+00:00",
+      "audit_date": "2026-07-09T06:25:17.528327+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "fcd93a4e56dbb08e2819bedd36e9f33b77f851180180ec5a7b4cf219677f22c1",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-2026-07-09-u4-qubit-reframe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The alias map itself is internally consistent and runner-checked, but no independent theorem-grade derivation is supplied beyond restating the accepted qubit-per-site baseline. A clean theorem would need a nontrivial derivation not reducible to this symbol/wording identification.",
+      "claim_scope": "Audited only the source-side compatibility/alias map from the older U4 bridge wording to the current one-qubit/M2(C)/Cl(3,0) per-site baseline, with downstream staggered-Dirac gates left separately auditor-owned.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-09T06:25:17.528327+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The prior U4 wording is treated as exactly the current one-qubit-per-site Quantum axiom plus the retained Cl(3,0) complexification split, yielding k=1 and dim_C H_x=2.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Recast this row as an explicit compatibility or alias map under minimal_axioms and cl3_complexification_split rather than a positive theorem; any clean theorem must derive nontrivial content beyond the accepted qubit-per-site baseline.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner passes all 15 checks and verifies the Pauli/M2(C)/Cl(3,0) facts plus the source boundary text. The source note itself says the claim is source-side alias or renaming support, not a new theorem-grade derivation, and preserves downstream auditor ownership. Under the rubric this is class F: a correct identification between existing concepts rather than an independent derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
+  "title": "U4 Closure Under the 2026-05-20 Qubit Reframe (Narrow)",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,263 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_faithfulness_rotation_scalar_excluded_note_2026-06-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+    "per_site_su2_spin_half_theorem_note_2026-05-02",
+    "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cd01f0ee9f0a0711c091d3b32f5d65386eaf20c037bd48abf7961c3cfec13b03",
+  "note_path": "docs/KOIDE_FAITHFULNESS_ROTATION_SCALAR_EXCLUDED_NOTE_2026-06-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.074663+00:00",
+      "audit_date": "2026-06-03T04:41:43.949180+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification, in the retained positive-chirality Pauli realization of the one-qubit Cl(3,0) local algebra, of the per-site Pauli su(2) generators S_i = sigma_i/2 with the Hermitian infinitesimal Spin(3) lift generator data.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a0212c337b5fef3f088c6bb2cdb4831d1158ae4ba0bbb1330a8faf22d054311c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-043829-4e442f81-koide_faithfulness_rotat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained merger and per-site inputs supply J_i = sigma_i/2 on the operator-frame C^2 algebra, and the Lie-bracket substitution K=0 contradicts the required nonzero +/- i epsilon_ijk J_k term. The matter-attachment, signature, and carrier-identification residuals are explicitly outside the audited scope.",
+      "claim_scope": "Audited only the bounded operator-frame statement that the on-site C^2 spatial-rotation scalar/trivial-K branch is excluded for both so(3,1) and so(4), not matter-field attachment, signature selection, or carrier identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T04:41:43.949180+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "With J_i = sigma_i/2 nonzero, K_i = 0 makes [K_i,K_j] vanish while the so(3,1) or so(4) bracket requires +/- i epsilon_ijk J_k, so no K=0 completion exists once the operator-frame spatial Spin(3) action is applied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers preserve the operator-frame versus matter-field boundary; this audit does not license full faithfulness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The audited conclusion is a narrow algebraic closure over retained-grade operator-frame inputs, not a full faithfulness theorem. The runner source computes the Pauli Spin(3) conjugation, the K=0 bracket failure in both signatures, the nonzero K completions, Hermitian versus anti-Hermitian flavor, and the 6-real-dimensional Weyl image; its final three PASS entries are hard-coded scope assertions, so they are treated as narrative support rather than independent computation. Because the note explicitly preserves the matter-attachment, signature, and carrier residuals, it does not overclaim an absolute no-go."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.500399+00:00",
+      "audit_date": "2026-06-05T23:38:56.561819+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification on the retained one-qubit Pauli Cl(3,0) realization: the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Spin(3) generators from the Clifford action are the same Hermitian operator triple on C^2.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a0212c337b5fef3f088c6bb2cdb4831d1158ae4ba0bbb1330a8faf22d054311c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-233650-be92f8b20e-koide_faithfulness_rotation_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained merger supplies the operator-frame spatial rotation generators J_i=\u03c3_i/2, and the Lie-bracket contradiction for K=0 is immediate. The chain does not close full matter faithfulness; the missing step is the matter-field-index attachment bridge, which the note explicitly disclaims.",
+      "claim_scope": "Audited only the bounded operator-frame statement: once the retained spatial Spin(3) action gives J_i=\u03c3_i/2 on the per-site C^2 algebra, the K=0 scalar branch is excluded for both so(3,1) and so(4); matter-field attachment remains outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T23:38:56.561819+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "With J_i = \u03c3_i/2 \u2260 0, K_i = 0 makes [K_i,K_j] = 0 while the so(3,1) or so(4) bracket requires [K_i,K_j] = \u00b1 i \u03b5_ijk J_k, so K=0 is not a completion.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean scope narrow: operator-frame K=0 exclusion only, not matter-attachment or full faithfulness closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: for any off-diagonal pair, \u03b5_ijk J_k is nonzero, so K=0 cannot satisfy either sign of the [K,K] bracket. An independent algebra check also gives the listed same-carrier completions K_i=aJ_i with a^2=-1 for so(3,1) and a^2=+1 for so(4). The runner's section E uses hard-coded scope assertions, so those are not treated as proof; the clean verdict rests on the bracket algebra and the cited operator-frame merger only."
+    },
+    {
+      "archived_at": "2026-07-10T16:58:49.398465+00:00",
+      "audit_date": "2026-07-10T04:12:30.962944+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Canonical Pauli realization gamma_i=sigma_i on C^2: internal S_i=sigma_i/2 and the self-adjoint infinitesimal Spin(3) unitary generators are the same 2x2 operators, with Clifford bivectors B_i=i*S_i.",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On the Axiom/Qubit one-site algebra M_2(C), the local Pauli action S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module, without identifying physical spin for all matter sectors."
+        },
+        "dep_claim_type": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a0212c337b5fef3f088c6bb2cdb4831d1158ae4ba0bbb1330a8faf22d054311c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00069-koide_faithfulness_rotation_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded merger authority supplies the spatial Spin(3) generators J_i = \u03c3_i/2. Direct substitution of K_i = 0 into the standard boost/rotation commutator gives zero on the left and a nonzero Pauli generator on the right.",
+      "claim_scope": "On the on-site operator frame, J_i = \u03c3_i/2 rules out a K=0 completion of either the Lorentz or Euclidean four-dimensional rotation algebra, independently of signature.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:12:30.962944+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "internal_external_su2_merger",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:per_site_su2_spin_half_theorem_note_2026-05-02",
+      "load_bearing_step": "With the retained operator-frame identification J_i = \u03c3_i/2 \u2260 0, setting K_i = 0 violates [K_i,K_j] = \u00b1i\u03b5_ijkJ_k for both so(3,1) and so(4).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "If a later audit broadens the scope to the assertion that the displayed Weyl and so(4) solutions are exactly all completions, re-check exhaustiveness independently because the runner verifies the proposed solutions but does not solve the general completion equations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The bounded exclusion follows by genuine algebraic closure from the single retained-bounded internal/external SU(2) merger claim and standard Lie-algebra brackets. The runner substantively checks the Pauli rotation action, both K=0 bracket failures, the displayed candidate completions, and their Hermiticity properties. Because the audited exclusion adds only this algebraic corollary to one upstream parent and contains no external-comparator check, it is decoration-grade rather than an independent bounded theorem; the three section-E checks are hard-coded scope assertions and add no computational evidence."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_faithfulness_rotation_scalar_excluded.py",
+  "title": "Faithfulness via Matter-Operator Spin Content: spatial-rotation scalar excluded; matter attachment remains open",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

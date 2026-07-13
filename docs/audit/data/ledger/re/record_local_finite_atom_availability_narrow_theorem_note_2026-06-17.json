@@ -1,0 +1,1608 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.97,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b85381077b5c466de1e4de23e1d9d11ff19235f63d6db8749f45991583edb30b",
+  "note_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.514268+00:00",
+      "audit_date": "2026-06-21T13:01:50.488287+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.392,
+        "runner_hash": "970fea5b752a83b4c4a20599d616361c37f030791bcd84167566949768a5906a",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-record_local_finite_atom_availability_narrow_theorem_note_2026-06-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered minimal-axiom premise supplies Z^3 sites and one-site M_2(C) algebras, and the note's projector construction is exact finite matrix algebra inside a declared readout context. The unit-count readout is explicitly scoped as a declared finite Boolean normalization, not a canonical or physically selected Record normalization.",
+      "claim_scope": "For each finite n, a declared local diagonal M_2(C) readout context on distinct Z^3 sites supplies n pairwise support-disjoint nonzero K-fixed record-eligible atoms with context-local unit-count value n; no production, probability, or physical context selector is derived.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T13:01:50.488287+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For finite n, choose distinct sites x_k=(k,0,0), tag the K-fixed nonzero atom P_1 at each site as r_k, and use finite additivity of the declared unit-count functional to get I({r_0,...,r_{n-1}})=n.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the unit-count functional remains read as a declared context-local normalization only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 8,
+        "C": 15,
+        "D": 5,
+        "total_pass": 43
+      },
+      "verdict_rationale": "The dependency on MINIMAL_AXIOMS_2026-06-05.md is covered by the axiom-premise carve-out, and the proof correctly uses only its Lattice, Quantum, and supplied-context Record content. The runner source directly checks the projector identities, K-fixity, noncentrality in full M_2(C), finite distinct supports, and finite additivity rather than importing an external comparator or tuned number. The source boundary preserves the open gates for production, probability, physical context selection, clock/rate, dial selection, and canonical normalization."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.500811+00:00",
+      "audit_date": "2026-07-02T04:51:11.321343+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.392,
+        "runner_hash": "970fea5b752a83b4c4a20599d616361c37f030791bcd84167566949768a5906a",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T045111Z-f7edb178-record_local_finite_atom",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite Z^3 support and projector algebra checks close as exact mathematics. The restricted packet does not establish that the declared diagonal atoms lie in the Admissibility-available subset or that the declared K-fixed Boolean context and unit-count functional are an allowed Record readout under the current minimal axioms.",
+      "claim_scope": "Whether the cited minimal axioms alone supply arbitrary finite record-eligible readout atoms by choosing diagonal M_2(C) projectors on distinct Z^3 sites.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:51:11.321343+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "At each distinct site x_k, choose the diagonal M_2(C) atom P_1 in a declared local readout context and tag it as r_k, yielding n pairwise support-disjoint record-eligible readout atoms.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained bridge showing that the declared diagonal projectors are admissibility-available record-eligible readout atoms with an allowed finite unit-count scalar readout under the current minimal axioms.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 43
+      },
+      "verdict_rationale": "The runner verifies elementary projector identities, finite disjoint supports, and additivity of a declared unit-count functional, but those checks do not close the physical record-eligibility bridge. The operative 2026-06-29 axiom memo explicitly leaves readout-context selection, K/CPT structure, central-sector decomposition, normalization, and admissibility of chosen possibilities outside generic axiom content. The claim is clean only as a mathematical candidate-label construction, not as a theorem that the framework supplies arbitrary finite record-eligible atoms from the cited axioms alone."
+    },
+    {
+      "archived_at": "2026-07-10T16:45:42.500909+00:00",
+      "archived_for_note_hash": "ab27e30cfac9fe23ad62c6fad008c0ed1782f18e61e124937ea1e796af32e81a",
+      "audit_date": "2026-07-08T21:12:04.891718+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.111,
+        "runner_hash": "970fea5b752a83b4c4a20599d616361c37f030791bcd84167566949768a5906a",
+        "transitive_descendants": 390
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260708",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite projector algebra inside a declared M2(C) context closes, but the live 2026-06-29 axiom surface adds admissibility and only lets records lock admissible local possibilities. The source does not derive that the chosen P1 atoms are admissible for arbitrary finite supports, and its runner is stale against the current formation no-go text.",
+      "claim_scope": "Audited the claim that the live minimal framework axioms alone supply arbitrary finite families of support-disjoint record-eligible local readout atoms with unit-count finite additivity.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-08T21:12:04.891718+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "For every finite n, the Lattice and Quantum axioms admit a concrete finite local readout context with n pairwise support-disjoint nonzero record-eligible readout atoms.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a current-axiom bridge proving the chosen local projector atoms are admissible record-eligible possibilities for arbitrary finite supports, then refresh the runner against MINIMAL_AXIOMS_2026-06-29 and add the formation no-go as a direct dependency or remove the dependency on it.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 42
+      },
+      "verdict_rationale": "Issue: the load-bearing step moves from Z3 sites plus M2(C) projectors to arbitrary finite record-eligible atoms, but the current minimal axioms require admissible local possibilities and do not derive availability of the selected P1 atom at arbitrary supports. Why this blocks: a declared diagonal readout context and unit count are mathematically consistent, yet they are not forced as record-eligible/admissible content by the live axiom packet. Repair target: prove or admit an admissibility/readout-context availability bridge for the selected local atoms under the current MINIMAL_AXIOMS_2026-06-29 surface, and refresh the runner so it no longer fails on the narrowed record-formation no-go. Claim boundary until fixed: finite M2(C) projector algebra and disjoint Z3 support bookkeeping are available, but framework-native arbitrary finite record-eligible atom availability remains conditional."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.316852+00:00",
+      "audit_date": "2026-07-10T16:49:25.155162+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "No-go that the current minimal axioms supply generic record occurrence but do not force a concrete formation rule, process, state trigger, site, weight, or rate."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+        ],
+        "load_bearing_score": 9.14,
+        "runner_hash": "b669d1447af6b84f67a2ebb5fc7b355176ae204d8b730049b29702fa50d18450",
+        "transitive_descendants": 398
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T164715Z-1ebf2b3d-00001-record_local_finite_atom_ava",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite projector, support, and additivity calculations close exactly, but the cited axioms do not select the admissibility instance, diagonal/K context, or unit-count normalization. Those inputs are explicitly supplied by the note rather than derived by the restricted packet.",
+      "claim_scope": "For each finite n, the Z^3/M_2(C) construction yields n pairwise support-disjoint nonzero P1 tags and unit-count value n, conditional on the declared admissibility instance, diagonal readout context, K context, and unit-count normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:49:25.155162+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "Under the declared instance in which P1 is available at every chosen site, tagging P1 at the distinct sites gives pairwise support-disjoint atoms, and the declared unit-count additive functional assigns their finite collection the value n.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or register the admissibility-instance, physical readout/K-context, and unit-count selections, then make the runner construct those selections instead of hard-coding them.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 44,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 52
+      },
+      "verdict_rationale": "The finite projector algebra, distinct-site construction, and additive counting identities are correct and are substantively checked by the runner. However, the availability conclusion assumes an instance already making P1 available at every selected site, while the diagonal/K contexts and unit weights are also directly instantiated in code. The restricted packet therefore establishes an exact conditional construction, not selection of those inputs from the framework axioms."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:30.129064+00:00",
+      "audit_date": "2026-07-12T15:38:13.906673+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "The current minimal axioms entail generic record occurrence but do not entail a concrete formation rule, production process, state trigger, site, weight, or rate."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+        ],
+        "load_bearing_score": 9.245,
+        "runner_hash": "d1cd6f366f8e0888adb05e5953ce4391c94f81e0c137295336844bf00836b92e",
+        "transitive_descendants": 428
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00116-record_local_finite_atom_ava",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra and support construction close exactly after P-REC-a through P-REC-d are supplied. The cited accepted and retained authorities do not select those four premises, so the framework-level chain remains conditional.",
+      "claim_scope": "For every finite n, the displayed Z^3/M_2(C) construction yields n pairwise support-disjoint nonzero P_1 tags and unit-count value n, conditional on the declared admissibility instance, diagonal readout context, conjugation context, and unit-count normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T15:38:13.906673+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Under the declared P-REC-a through P-REC-d premises, the support-disjoint P_1 tags are record-eligible and the declared additive unit-count readout gives I=n.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner checked the chosen atoms inside their commutative algebra and against a noncommuting full-algebra element.",
+            "disposition": "CLOSED",
+            "evidence_locator": "atoms are not central in all M_2(C)",
+            "evidence_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Infer a canonical diagonal readout context from the one-site matrix algebra alone.",
+            "outcome": "The projectors are not central in full M_2(C), so the algebraic identities do not select the declared context.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "context_from_algebra"
+          },
+          {
+            "attempt": "The accepted Qubit premise was checked for whether it privileges a local possibility.",
+            "disposition": "CLOSED",
+            "evidence_locator": "No possibility is privileged.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use lattice and one-site algebra symmetry to privilege P_1 or the computational basis.",
+            "outcome": "Qubit explicitly privileges no possibility, so symmetry does not select P_1 or its basis.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "basis_from_symmetry"
+          },
+          {
+            "attempt": "The runner evaluated the covariant R_p0only rule on the same empty-neighbor conditions.",
+            "disposition": "CLOSED",
+            "evidence_locator": "AD3 R_p0only rejector detects failure of the declared P1 premise at every site",
+            "evidence_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the declared admissibility rule with another covariant nearest-neighbor rule.",
+            "outcome": "R_p0only excludes P_1 everywhere, demonstrating that availability depends on the selected instance.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "alternate_rule"
+          },
+          {
+            "attempt": "The sequential line-site construction was evaluated under the packet's empty-neighbor history.",
+            "disposition": "CLOSED",
+            "evidence_locator": "LOCKING-HISTORY: chosen sites have empty nearest-neighbor slots at lock time",
+            "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Obtain P_1 availability through the empty-neighbor locking history.",
+            "outcome": "The history makes the declared rule work but is itself a named packet condition, not a selected framework boundary condition.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "locking_history"
+          },
+          {
+            "attempt": "The runner checked additivity and I=n after assigning unit weight to each constructed atom.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Unit-count normalization: weight 1 per chosen atom",
+            "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive unit weight per atom from Record additivity.",
+            "outcome": "Additivity fixes sums once weights are supplied but does not select unit normalization.",
+            "route_class": "normalization_or_units",
+            "route_id": "unit_count"
+          },
+          {
+            "attempt": "The source boundary and accepted axiom memo were compared with the narrowed formation no-go.",
+            "disposition": "CLOSED",
+            "evidence_locator": "formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the occurrence statement Records form to infer which atom, site, weight, or rate is realized.",
+            "outcome": "Occurrence is supplied, but the concrete formation rule, site, weight, and rate remain downstream.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "formation_dynamics"
+          },
+          {
+            "attempt": "The live Record wording was checked against the note's entrywise-conjugation construction.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`K`/CPT orbit structure, central-sector decomposition",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the chosen K-fixed sector decomposition as generic Record content.",
+            "outcome": "The live memo explicitly leaves K/CPT and central-sector structure downstream, so the declared K context is not axiom-selected.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "k_readout"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "admissibility-instance selection",
+            "diagonal-readout-context selection",
+            "K/conjugation-context selection",
+            "unit-count-normalization selection"
+          ],
+          "evidence_locator": "The bounded theorem is conditional on four independently named inputs:",
+          "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "admissibility-instance selection",
+              "left_closes_right": false,
+              "right": "diagonal-readout-context selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "admissibility-instance selection",
+              "left_closes_right": false,
+              "right": "K/conjugation-context selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "admissibility-instance selection",
+              "left_closes_right": false,
+              "right": "unit-count-normalization selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "diagonal-readout-context selection",
+              "left_closes_right": false,
+              "right": "K/conjugation-context selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "diagonal-readout-context selection",
+              "left_closes_right": false,
+              "right": "unit-count-normalization selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "K/conjugation-context selection",
+              "left_closes_right": false,
+              "right": "unit-count-normalization selection",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "admissibility-instance selection",
+            "diagonal-readout-context selection",
+            "K/conjugation-context selection",
+            "unit-count-normalization selection"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Declared inputs and remaining selection walls",
+          "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "the framework does not select any of those four inputs",
+              "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+              "phrase": "framework does not select any of those four inputs",
+              "promoted_wall": "admissibility-instance selection"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "None of these toy instances is claimed to be the framework's fixed rule.",
+              "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+              "phrase": "None of these toy instances is claimed to be the framework's fixed rule."
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Records form.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "Records form."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The result, declared-input packet, admissibility layer, proof, boundary, and runner construction were scanned for implicit selectors, dynamics, normalizations, and physical readout identifications.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "production, probability, physical context selection, clock/rate, dial selection, and admissibility-instance selection remain open gates.",
+          "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "none_found_reason": "All N1 routes were tested directly in the restricted source, authority, and runner packet; none was marked RULED OUT BY PRIOR.",
+          "scan_scope": "The finite-algebra witnesses were compared with the asserted residual selection walls; no N1 route relies on a prior-ruled witness.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Selecting that surface remains open.",
+          "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and completion language in the Result, Proof, Boundary, and runner verdict was checked against the resolutions actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "record production or realization dynamics",
+              "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+              "phrase": "record production or realization dynamics",
+              "tested_resolutions": [
+                "finite declared readout-context algebra and sequential toy locking history"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "It is not a completed infinite history and not a production theorem.",
+              "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+              "phrase": "not a completed infinite history",
+              "tested_resolutions": [
+                "arbitrary but finite n and finite prefixes"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "the framework does not select any of those four inputs",
+              "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+              "phrase": "does not select any of those four inputs",
+              "tested_resolutions": [
+                "packet construction, corrupted-packet control, alternate admissibility rule, and noncentrality check"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic graining isotropy supplies none of the admissibility, readout, conjugation, or normalization selections.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms supply sites, M_2(C), a fixed but unspecified rule, record occurrence, and finite additivity while explicitly withholding the four selectors.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A realized-state reference supplies no state content, selector, readout, weighting, or normalization.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful ruler cannot select the dimensionless local context, rule, conjugation, or unit-count functional.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton occupancy-grain obligation is not a retained supplier for the local P-REC selections.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This open charged-lepton readout obligation is neither retained nor scoped to the declared local unit-count context.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This quark-determinant bridge is unrelated to and cannot supply the local P-REC selectors.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied partial-closure index covering axioms, approved primitives, open obligations, conventions, definitions, and repository-visible reframes was dispositioned in full.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because Lattice supplies arbitrarily many sites, Qubit supplies M_2(C), Admissibility supplies a covariant varying rule, and Record locks admissible possibilities additively, the displayed diagonal atoms might be regarded as framework-native representatives requiring no extra selection.",
+          "evidence_locator": "Whether the atom `P_1` is available at a given site therefore depends on the unspecified fixed rule and the neighbor conditions",
+          "evidence_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "resolution": "This fails at record eligibility: the fixed admissibility rule's content is unspecified, no possibility or basis is privileged, and the runner's covariant R_p0only counterexample excludes P_1 on the same sites. The construction is therefore valid only after the P-REC choices are supplied.",
+          "resolved": true,
+          "route_id": "basis_from_symmetry"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:0",
+              "evidence_locator": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Earlier clean verdict on the superseded axiom surface.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:1",
+              "evidence_locator": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Prior readout-context and admissibility selection objection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:2",
+              "evidence_locator": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Prior missing admissibility/readout bridge objection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:3",
+              "evidence_locator": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Prior exact conditional-construction verdict.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:0",
+              "evidence_locator": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Historical occurrence-level no-go under superseded wording.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:1",
+              "evidence_locator": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Historical occurrence-level no-go before Records form.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:2",
+              "evidence_locator": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Historical occurrence-level boundary on an older axiom surface.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:3",
+              "evidence_locator": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Current narrowed formation-rule/process/site/weight/rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Charged-lepton occupancy counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Charged-lepton h-unit readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Quark determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Finite positive arithmetic does not close a physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated atomic and temporal-axis boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated multi-lane inherited no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated scattering-observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated antisymmetric-carrier registry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated charged-lepton selector routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated Lorentz-suppression boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated metric reconstruction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated radial-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated Wilson-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated flavor-trace boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated gauge-environment computation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated gauge-isotropy routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated gravity-sign boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated Planck-carrier and action-unit walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated hypercharge normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated multi-lane campaign walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated atomic-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated quark-mass selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated asymptotic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated lensing-observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous unselected physical readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous per-record readout and clock-rate selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Empty unrelated ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated physical-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated neutrino-construction routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated neutrino/cosmology walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated finite-lattice Newton scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated finite-family recompute boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated coupling/readout bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated decoherence and memory boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated finite-window inference boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated Clifford-carrier selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated rank-four carrier-selection history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated plaquette-bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Supplied finite packet data do not become accepted primitives or selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Adjacent Record registrability and K/CPT readout-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated locality and axis-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated physical-source semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous nonselection of a physical law by the minimal surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated SU(3) cube encoding boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous K/CPT and physical-readout nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous Record context-selection and weighting boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated theta-sector assembly gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous absence of action, weighting, and context bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous distinction between admissibility and selection/dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Analogous physical horn and K/CPT basis-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Current axioms leave K/CPT orbit structure and weights downstream.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Record formation does not select readout, weight, or rate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated artifact-visibility observation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Record additivity permits an unregistered context scale and does not fix normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated finite numerical-family boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated continuum and distance-law boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "mechanism": "Unrelated definition-as-physical-readout boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "651379a59823ee8ea279ca061a9a2b61511cb5cd6875f5bc4890380e0be8c8dd",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:0",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:1",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:2",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:3",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:0",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:1",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:2",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:3"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:0",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:1",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:2",
+                "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06:previous_audit:3",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:0",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:1",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:2",
+                "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17:previous_audit:3"
+              ]
+            },
+            "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "0d09b68814e74e6c84277ed46547e4a68059ddf14c88265e084edd21252c6eaf",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "No possibility is privileged.",
+                "Records form.",
+                "`K`/CPT orbit structure, central-sector decomposition",
+                "formation rules (which admissible possibility a new record locks, at which site, with what weight, or at what rate)"
+              ]
+            },
+            "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "b85381077b5c466de1e4de23e1d9d11ff19235f63d6db8749f45991583edb30b",
+              "effective_status": null,
+              "path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Declared inputs and remaining selection walls",
+                "It is not a completed infinite history and not a production theorem.",
+                "LOCKING-HISTORY: chosen sites have empty nearest-neighbor slots at lock time",
+                "None of these toy instances is claimed to be the framework's fixed rule.",
+                "Selecting that surface remains open.",
+                "The bounded theorem is conditional on four independently named inputs:",
+                "Unit-count normalization: weight 1 per chosen atom",
+                "Whether the atom `P_1` is available at a given site therefore depends on the unspecified fixed rule and the neighbor conditions",
+                "production, probability, physical context selection, clock/rate, dial selection, and admissibility-instance selection remain open gates.",
+                "record production or realization dynamics",
+                "the framework does not select any of those four inputs"
+              ]
+            },
+            "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "d1cd6f366f8e0888adb05e5953ce4391c94f81e0c137295336844bf00836b92e",
+              "effective_status": null,
+              "path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "AD3 R_p0only rejector detects failure of the declared P1 premise at every site",
+                "atoms are not central in all M_2(C)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or register P-REC-a through P-REC-d from the accepted framework surface, then retain the runner's construct-from-packet negative control.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 50,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The runner constructs the atoms, rule, context, and weights from P-REC, but P-REC itself declares rather than derives the four load-bearing selections. Parsing a live premise packet verifies an exact conditional theorem without making the packet framework-native. The arbitrary finite disjoint projector tags with value n are therefore established only on the declared P-REC surface."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+  "title": "Record Local Finite Atom Availability Narrow Theorem",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

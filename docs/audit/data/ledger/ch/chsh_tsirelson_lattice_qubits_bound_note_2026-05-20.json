@@ -1,0 +1,626 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "chsh_tsirelson_lattice_qubits_bound_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06",
+    "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+    "minimal_axioms",
+    "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+    "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3f385150bc15ecbc1a8cb41d03528e88b796480f95615a2734a46d6db2568f07",
+  "note_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.847722+00:00",
+      "audit_date": "2026-05-22T03:39:23.346524+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Standalone Hilbert-space-algebra identity that on a finite tensor-product Hilbert space H = (x)_x H_x with finite-dimensional per-site factors H_x, raw equal-time embedded operators O_x = id (x) a_x (x) id and O_y at distinct sites x != y commute exactly: [O_x, O_y] = 0 (L1). Tensor-factorization corollary O_x O_y = a_x (x) a_y (L3). Distinct-site Pauli-ladder commutation [sigma_a^x, sigma_b^y] = 0 in the raw (ungraded) tensor representation (L2). Per-site Cl(3) instance (L4) via the retained-grade per-site uniqueness dep providing H_x = C^2 and A_x = M_2(C). Explicitly excludes (M2) Lieb-Robinson lightcone bound, (M3) continuum spacelike microcausality, CAR/Jordan-Wigner graded structure, reflection-positivity, spectrum-condition, cluster-decomposition, and emergent-Lorentz authorities.",
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "claude-audit-loop-2026-05-19-chsh-tsirelson",
+      "auditor_confidence": "high",
+      "auditor_family": "claude-opus",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bound and the saturating witness follow directly from the retained CHSH structural bound narrow theorem (chsh_structural_bound_narrow_theorem_note_2026-05-17), which already derives \u2016S_op\u2016 \u2264 2\u221a2 via the Landau identity S_op\u00b2 = 4I \u2212 [A_0,A_1][B_0,B_1] and explicitly exhibits the \u03c3_z/\u03c3_x Bell-state saturator using retained Cl(3) per-site Hilbert dim two. The 2026-05-20 note reproduces that same algebra under tensor-locality (retained) on Z^3 (A2) and adds only the labels 'Tsirelson bound' and 'Z^3 pair-wise uniformity', plus a comparison to the PR-box bound (cited as standard mathematics).",
+      "claim_scope": "Pair-wise Tsirelson bound \u2016C\u2016 \u2264 2\u221a2 on the framework's qubit lattice (A1: per-site M_2(\u2102), A2: Z^3) for dichotomic self-adjoint involution observables at distinct sites, with saturation witnessed by a Bell state |\u03a6\u207a\u27e9 and the standard \u03c3_z/\u03c3_x configuration.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T03:39:23.346524+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "For dichotomic Pauli-involution observables A_i, B_j at distinct Z^3 sites x \u2260 y with tensor locality [A_i \u2297 I, I \u2297 B_j] = 0, the CHSH operator C = A_1\u2297B_1 + A_1\u2297B_2 + A_2\u2297B_1 \u2212 A_2\u2297B_2 satisfies \u2016C\u2016 \u2264 2\u221a2 by Tsirelson's 1980 expansion C\u00b2 = (A_1\u00b2+A_2\u00b2)\u2297(B_1\u00b2+B_2\u00b2) + [A_1,A_2]\u2297[B_1,B_2] combined with \u2016[A_1,A_2]\u2016,\u2016[B_1,B_2]\u2016 \u2264 2, saturated at maximally entangled qubit pairs.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The note's load-bearing derivation is an exact algebraic restatement of the already-retained parent chsh_structural_bound_narrow_theorem_note_2026-05-17 \u2014 same Tsirelson/Landau identity (4), same Pauli commutator-norm bound (6), same Bell-state saturation construction (Step 2 vs parent Part 3). The note explicitly disclaims being a derivation of Tsirelson's theorem from A1+A2 ('Not a derivation of Tsirelson's theorem from A1+A2 (the theorem itself is standard QI; the framework cites it)') and admits the Tsirelson 1980 argument as an imported standard QI result. Why this blocks bounded_theorem: the chain reduces to a single retained parent (chsh_structural_bound) plus standard mathematics, with zero (D) checks and no independent runner \u2014 this is the audit-lane definition of algebraic decoration per ALGEBRAIC_DECORATION_POLICY.md \u00a71. The Z^3 'pair-wise uniformity' (Step 4) and the PR-box comparator (Step 3) are convention-labeling and standard-citation, not new physical content. Repair target: roll the content into a 'Tsirelson-bound corollary' annotation under the retained parent; do not promote as an independent bounded_theorem. Claim boundary until fixed: the parent's retained Tsirelson bound and Bell-saturating witness already cover the substantive content; the lattice qubit pair labels are usable as descriptive prose but should not be presented as a separately retained theorem."
+    },
+    {
+      "archived_at": "2026-05-29T20:59:19.432917+00:00",
+      "audit_date": "2026-05-25T12:03:38.815682+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "For a finite tensor-product Hilbert space H = tensor_x H_x with finite-dimensional complex site factors, raw ungraded operators supported on distinct sites commute exactly, including the Pauli-ladder illustration and expectation-order corollary.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T120315Z-9189bc1d-chsh_tsirelson_lattice_q-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bound follows as a direct algebraic specialization of the retained structural CHSH theorem to the A1+A2 qubit lattice, with distinct-site commutation supplied by retained_bounded tensor locality. The axiom-premise citation supplies the per-site M2(C) and Z^3 substrate and is used within its stated scope.",
+      "claim_scope": "For any two distinct Z^3 qubit sites with self-adjoint involutive single-qubit observables, the two-site CHSH operator has norm at most 2\u221a2 and the bound is saturated by the standard Bell-state Pauli configuration as a state-space witness.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T12:03:38.815682+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "Using the CHSH square expansion with distinct-site tensor commutation and the commutator norm bounds gives \u2016C\u00b2\u2016 \u2264 8, hence \u2016C\u2016 \u2264 2\u221a2, with the standard Bell-state Pauli witness saturating it.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the sign convention in the displayed C^2 commutator identity, but the norm bound and cited retained structural theorem close the audited claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner artifacts are available, so the judgment is from note text alone. The load-bearing step is a textbook algebraic norm bound over retained-grade inputs plus the explicitly flagged axiom premise; no external comparator, fitted scale, or renaming step is used. The saturation witness is already contained in the retained structural CHSH authority and is valid on the qubit-pair Hilbert space supplied by A1. The claim is bounded to pair-wise kinematic CHSH structure and does not assert dynamical preparation."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:17.156224+00:00",
+      "archived_for_note_hash": "5a5f932128dc3d591a15edffaae9920897100c9441c5da7c72c91f5d74d6225d",
+      "audit_date": "2026-05-29T22:30:26.540372+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260529-222911-8bb1fa97-chsh_tsirelson_lattice_q",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed C^2 identity (4) is false under the note's own CHSH sign convention. Expanding C = A_1\u2297(B_1+B_2) + A_2\u2297(B_1-B_2) with involutions gives C^2 = 4I - [A_1,A_2]\u2297[B_1,B_2], not the note's plus-sign formula.",
+      "claim_scope": "Pair-wise CHSH Tsirelson operator-norm bound and Bell-state saturation for dichotomic single-qubit observables on two distinct qubit-lattice sites.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T22:30:26.540372+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note asserts the expansion C^2 = (A_1^2 + A_2^2) \u2297 (B_1^2 + B_2^2) + [A_1,A_2] \u2297 [B_1,B_2] and then uses it to obtain \u2016C^2\u2016 \u2264 8.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair equation (4) by replacing the displayed C^2 expansion with the correct Landau identity for the note's CHSH convention, then re-audit the norm-bound derivation and saturation witness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner stdout or source is available, so the audit falls back to the note text. The headline Tsirelson bound is standard and is supported by the retained upstream CHSH theorem, but the source note's own displayed load-bearing expansion has the wrong commutator sign for the stated plus/plus/plus/minus CHSH convention. Under the strict formula-inventory rule, a false displayed closed-form identity prevents a clean verdict even if the final inequality could be repaired by replacing equation (4) with the Landau identity."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.063563+00:00",
+      "audit_date": "2026-05-31T15:29:00.822660+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260531-152653-4fa4f8a1-chsh_tsirelson_lattice_q",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional Landau/Tsirelson derivation and Bell-state saturation computation close. However the source claim's quantitative comparison reverses the ordering language: since 2 < 2\u221a2 < 4, the Tsirelson bound is looser than the classical Bell bound and tighter than the algebraic/PR bound, not the other way around.",
+      "claim_scope": "Pairwise two-site qubit CHSH operator on distinct Z^3 lattice sites with self-adjoint involutive local observables, including the Tsirelson 2\u221a2 upper bound and standard Bell-state saturation witness.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T15:29:00.822660+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The Landau identity C^2 = 4I - [A_1,A_2] \u2297 [B_1,B_2], together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2, gives ||C||^2 <= 8 and hence ||C|| <= 2\u221a2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Repair the bound-ordering sentence to state that 2\u221a2 is above the classical bound 2 and below the algebraic/PR bound 4, then re-run the restricted formula inventory.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The runner source genuinely computes the Pauli witness, repaired Landau identity, commutator norm checks, negative control, spectrum bound, Bell expectation, and random involution sweep; it is not merely printing constants. The cited dependencies are retained-grade or an explicitly accepted axiom premise, so dependency status is not the blocker. The source as written nevertheless contains a false quantitative comparison in the claim section: it says Tsirelson is tighter than classical and looser than algebraic, while the displayed numbers imply the reverse ordering."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.514311+00:00",
+      "audit_date": "2026-06-05T20:12:33.820338+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-201211-c9d4dc22af-chsh_tsirelson_lattice_qubit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited minimal axiom premise supplies the qubit local algebra and lattice sites, while the retained/retained_bounded tensor-product authorities supply the two-site tensor surface and commuting distinct-site factors. The displayed square identity, norm estimate, and Bell-state saturation are finite-dimensional algebra and close within the restricted packet.",
+      "claim_scope": "For two distinct Z^3 qubit sites with M_2(C) local algebras and dichotomic self-adjoint involution observables, the two-site CHSH operator has norm at most 2\u221a2, with the standard Bell/Pauli witness saturating the bound.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:12:33.820338+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Using the Landau identity C^2 = 4I - [A_1,A_2] \u2297 [B_1,B_2] and the commutator bounds ||[A_1,A_2]||, ||[B_1,B_2]|| <= 2 gives ||C||^2 <= 8, hence ||C|| <= 2\u221a2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that downstream users preserve the narrow scope: state-space Bell-pair saturation only, with no dynamical preparation or multi-party Bell claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic operator-norm closure over accepted or retained-grade inputs, not a numerical match, definition, or external comparator. Independent sign checking of the plus/plus/plus/minus CHSH convention agrees with the note: the cross term is -[A_1,A_2]\u2297[B_1,B_2]. The runner source performs actual Pauli/tensor computations and includes a negative-control sign check rather than merely printing constants."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:05.721356+00:00",
+      "archived_for_note_hash": "ed6ae729946e0218168cf46a649e577c8aa5ff07668d832ce8b7199d882c20fc",
+      "audit_date": "2026-06-05T22:25:14.783919+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-222307-522ccae7fa-chsh_tsirelson_lattice_qubit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite M_2(C) tensor M_2(C) algebra closes once the two-site tensor carrier is assumed. The full framework-lattice conclusion does not close because the restricted packet does not establish that distinct qubit-lattice sites compose into H_x tensor H_y with Bell-state vectors in the framework state space; the tensor-locality authority assumes such tensor factors rather than deriving them.",
+      "claim_scope": "Finite two-site qubit CHSH operator on an assumed tensor carrier H_x tensor H_y = C^2 tensor C^2 with self-adjoint involutive local observables, including the Pauli/Bell saturation witness.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:25:14.783919+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Landau identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2], together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2, gives ||C||^2 <= 8 and hence ||C|| <= 2sqrt(2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained authority that distinct framework qubit-lattice sites compose as H_x tensor H_y with the corresponding Bell-state vectors in the framework state space, or rescope the note to the conditional finite two-site tensor algebra; then recheck the comparison wording.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The Landau identity, commutator-norm bound, sign convention, and Pauli/Bell saturation witness check out independently. The runner source genuinely constructs the finite two-site matrices and verifies the algebraic identities rather than merely printing constants. However, the supplied Minimal Axioms authority explicitly withholds a composition theorem beyond lattice placement, while the tensor-locality note is conditional on already having disjoint tensor factors. The source also should correct the comparison wording: Tsirelson's 2sqrt(2) bound is looser than the classical bound 2 and tighter than the algebraic/no-signaling bound 4."
+    },
+    {
+      "archived_at": "2026-06-13T22:26:01.676552+00:00",
+      "audit_date": "2026-06-10T05:04:25.984618+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null,
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "Finite-dimensional counterexample showing that faithful commuting local M2(C) subalgebras/no-signalling do not force the ordinary generated M2(C) tensor_C M2(C) ~= M4(C) composite; a local-tomography or generated-composite premise is required.",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "On the retained two-site finite-block qubit tensor surface, H_xy is C^2 tensor C^2, the generated operator algebra is M_4(C), the local embeddings are faithful commuting tensor-factor embeddings whose products span M_4(C), Bell/Pauli witnesses live on that surface, and the generated complex surface has the 16=4*4 local-tomography dimension count."
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "no_go",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "retained_no_go",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "retained"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-050224-b2fe2be0b3-chsh_tsirelson_lattice_qubit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained two-site tensor-carrier bridge supplies the ordinary M_2(C) tensor M_2(C) surface and Bell-vector state space, while the displayed finite-dimensional operator algebra proves the Tsirelson bound and saturation. The only non-retained-status cited authority is the minimal axiom memo flagged as an accepted axiom premise, so it does not downgrade dependency closure.",
+      "claim_scope": "For a distinct-site two-qubit tensor carrier C^2_x tensor C^2_y with dichotomic self-adjoint single-qubit observables, the CHSH operator has norm at most 2*sqrt(2), with the standard Pauli/Bell state-space witness saturating the bound; no dynamical preparation or multiparty Bell extension is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:04:25.984618+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06:retained->retained_pending_chain",
+      "load_bearing_step": "The Landau identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2] together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2 gives ||C||^2 <= 8, hence ||C|| <= 2*sqrt(2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that contextual classical/PR comparison wording is read as CHSH scalar-supremum comparison, not as an additional independent operator-norm theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing square identity has the correct minus sign for the plus/plus/plus/minus CHSH convention, and the commutator norm estimate gives the stated 2*sqrt(2) bound. The Pauli/Bell witness independently saturates the bound on the retained two-site qubit surface. The runner source performs actual symbolic and numeric matrix checks, includes a wrong-sign negative control, and has no missing helper imports or external comparator input."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.435473+00:00",
+      "audit_date": "2026-06-16T02:24:29.626362+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null,
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "Finite-dimensional no-go: one-site M_2(C) plus faithful commuting local subalgebras/no-signalling alone does not force the ordinary generated two-qubit tensor product M_4(C); a local-tomography or no-extra-global-generation premise is required.",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "For two distinct sites on the retained finite-block qubit tensor-product surface, H_xy is C^2_x tensor_C C^2_y, End(H_xy) is M_4(C), the tensor-factor embeddings are faithful/commuting/generating, Bell and Pauli-product witnesses live on that surface, and the generated complex two-qubit surface has the 16=4*4 local-tomography dimension count."
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "no_go",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "retained_no_go",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "retained"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-022204-71ef85681c-chsh_tsirelson_lattice_qubit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Expanding C = A_1 tensor (B_1+B_2) + A_2 tensor (B_1-B_2) gives XY = -[B_1,B_2] and YX = [B_1,B_2], so the displayed negative-sign Landau identity is correct. The two-site tensor bridge supplies the ordinary M_2(C) tensor M_2(C) carrier and Bell state surface, and all non-axiom dependencies are retained-grade.",
+      "claim_scope": "On the retained two-site qubit tensor carrier C^2_x tensor C^2_y, any dichotomic self-adjoint local qubit observables satisfy the CHSH operator norm bound ||C|| <= 2sqrt(2), with the standard Pauli/Bell witness saturating it.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T02:24:29.626362+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The Landau/Tsirelson identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2], together with ||[A_1,A_2]|| <= 2 and ||[B_1,B_2]|| <= 2, gives ||C||^2 <= 8.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The proof is finite-dimensional operator algebra over the retained two-site tensor surface, not a tuned numerical match or definition substitution. Independent formula checks confirm the key signs, factors, and normalizations: X^2+Y^2 = 4I, XY = -[B_1,B_2], YX = [B_1,B_2], and the Pauli/Bell witness gives 2sqrt(2). The runner source substantively computes the Landau identity, the old wrong-sign negative control, commutator norms, spectrum, and Bell expectation. The tensor-composition no-go is respected because the claim routes through the retained tensor-carrier bridge rather than deriving tensor composition from locality alone."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.649590+00:00",
+      "audit_date": "2026-07-10T03:52:02.477146+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "Audited the algebraic CHSH bounds: local \u00b11 hidden-variable assignments imply |S| <= 2, tensor-product self-adjoint involution observables imply ||S_op|| <= 2\u221a2, and the Pauli/Bell witness saturates 2\u221a2.",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "Raw equal-time commutation and tensor-factorization for finite-dimensional Hilbert-space tensor factors at distinct lattice sites, including the raw Pauli-ladder illustration but excluding Lieb-Robinson dynamics, continuum microcausality, graded/Jordan-Wigner structure, and physical per-site realization claims.",
+          "minimal_axioms": null,
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "Finite-dimensional no-go showing that faithful commuting complex-qubit subalgebras alone do not force the generated ordinary two-qubit tensor product or local tomography.",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "The ordinary retained finite-block qubit tensor carrier, specialized to two distinct sites, has Hilbert dimension 4, operator algebra M\u2084(C), a 16-element Pauli-product basis, Bell vectors, and the corresponding finite-dimensional local-tomography count."
+        },
+        "dep_claim_type": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "positive_theorem",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "no_go",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "decoration"
+        },
+        "dep_effective_status": {
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17": "retained",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "minimal_axioms": "meta",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": "retained_no_go",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": "decoration_under_cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+        },
+        "deps": [
+          "chsh_structural_bound_narrow_theorem_note_2026-05-17",
+          "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
+          "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "faaee5449f356f3198a5507d013d8f534017bea27153ab6dd0df5b3b2f1dfb24",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00046-chsh_tsirelson_lattice_qubit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Landau square identity and norm estimate are derived correctly from the supplied tensor carrier, tensor locality, and involution hypotheses. The explicit Bell-state calculation establishes tightness without making a dynamical-preparation claim.",
+      "claim_scope": "On the retained ordinary two-site qubit tensor carrier, every CHSH operator formed from dichotomic self-adjoint local involutions has norm at most 2\u221a2, with equality attained by the stated Pauli observables and Bell vector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:52:02.477146+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The exact identity C\u00b2 = 4I \u2212 [A\u2081,A\u2082] \u2297 [B\u2081,B\u2082], together with both commutator norms being at most 2, gives \u2016C\u2016\u00b2 \u2264 8 and hence \u2016C\u2016 \u2264 2\u221a2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing argument is a genuine finite-dimensional algebraic closure over retained-grade inputs, including the decoration-under-retained two-site carrier bridge. The runner source performs the stated symbolic matrix calculations, norm evaluations, negative control, and independent numerical implementation checks rather than merely printing expected results. No fitted input, external comparator, or open composition premise is used."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py",
+  "title": "Tsirelson Bound on Lattice Qubit Pairs",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

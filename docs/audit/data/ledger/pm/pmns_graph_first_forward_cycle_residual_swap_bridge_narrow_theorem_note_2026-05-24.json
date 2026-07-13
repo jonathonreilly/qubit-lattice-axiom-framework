@@ -1,0 +1,1420 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_selector_derivation_note",
+    "graph_first_su3_integration_note",
+    "pmns_graph_axis_to_active_lane_bridge_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.066,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7b9c2e64dc277c069d901fb93d692e55ab1745f30bce5a3cb8a08bc4fcf3e445",
+  "note_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.889199+00:00",
+      "audit_date": "2026-05-25T10:42:27.175326+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "pmns_graph_axis_to_active_lane_bridge_note": "Audited the finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with the corresponding permutation action on Herm(V_1), especially P_23 for selected axis e_1."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "pmns_graph_axis_to_active_lane_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "pmns_graph_axis_to_active_lane_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "pmns_graph_axis_to_active_lane_bridge_note"
+        ],
+        "load_bearing_score": 9.1,
+        "runner_hash": "774bf70f93c6698dce6142d08c50c8edfd68a89d5419f3f718dbb6207ec481c3",
+        "transitive_descendants": 387
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104205Z-56d6bcb2-pmns_graph_first_forward-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axis-to-active-lane bridge supplies the full S_3 restriction T_sigma|_{V_1}=P_sigma, including P_23, and the remaining claims are elementary permutation-matrix and matrix-unit identities. The forward orientation is a stated convention, not an intrinsic uniqueness claim.",
+      "claim_scope": "Exact finite-dimensional algebra on V_1 showing that the chosen forward 3-cycle and residual P_23 action induce the stated cycle-channel and antiunitary residual-swap identities.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T10:42:27.175326+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T10:41:39.407315+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104035Z-56d6bcb2-pmns_graph_first_forward-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact algebraic bridge on V_1 showing that the chosen forward 3-cycle and residual-swap presentations on span(E_12,E_23,E_31) follow from the retained S_3 permutation restriction package.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-25T10:42:27.175326+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T104205Z-56d6bcb2-pmns_graph_first_forward-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-dimensional algebra on V_1 showing that the chosen forward 3-cycle and residual P_23 action induce the stated cycle-channel and antiunitary residual-swap identities.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using the retained identity T_sigma|_{V_1}=P_sigma, take sigma=(1 3 2) so CYCLE=T_{(1 3 2)}|_{V_1}=P_{(1 3 2)}, and then apply the matrix-unit identities to derive the forward-cycle basis and residual-swap actions.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the forward orientation remains scoped as a convention rather than an intrinsic graph-first uniqueness claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "All cited authorities are retained-grade under the rubric, including the retained_bounded active-lane bridge. The runner source performs direct finite-dimensional sympy/numpy algebra over the stated permutation matrices and matrix units; aside from one informational negative-control check that is trivially true, the load-bearing checks compute the claimed identities. No external comparator, fitted value, or non-retained dependency is used."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:06.799071+00:00",
+      "audit_date": "2026-07-11T19:13:41.154051+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "pmns_graph_axis_to_active_lane_bridge_note": "Finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with its permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1; active-sector assignment and PMNS values are excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "pmns_graph_axis_to_active_lane_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "pmns_graph_axis_to_active_lane_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "pmns_graph_axis_to_active_lane_bridge_note"
+        ],
+        "load_bearing_score": 9.899,
+        "runner_hash": "774bf70f93c6698dce6142d08c50c8edfd68a89d5419f3f718dbb6207ec481c3",
+        "transitive_descendants": 674
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00073-pmns_graph_first_forward_cyc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "B1-B4 and the algebra following the definition of R are exact, but the cited authorities derive only the unitary P_23 action. They do not derive why the residual swap should be composed with adjoint rather than act by ordinary conjugation.",
+      "claim_scope": "The exact S_3 and matrix-unit identities on the imported carrier V_1, including whether the retained P_23 action alone derives the claimed antiunitary residual-swap action.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T19:13:41.154051+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "The note defines `R[A] := P_23 . A^dagger . P_23` and then identifies this conjugate-linear map as the antiunitary presentation of the residual swap on the forward-cycle channel.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Restricted T_sigma to P_sigma and evaluated the induced conjugation action on matrix units.",
+            "disposition": "CLOSED",
+            "evidence_locator": "T_sigma|_{V_1} = P_sigma",
+            "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the retained S_3 representation on V_1 to obtain the residual action functorially.",
+            "outcome": "This closes B1-B4 but yields ordinary P_23 conjugation, not the adjoint-composed action.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "s3_restriction"
+          },
+          {
+            "attempt": "Defined R and checked its action on every forward-cycle basis element and on arbitrary coefficients.",
+            "disposition": "CLOSED",
+            "evidence_locator": "R[A] := P_23 . A^dagger . P_23",
+            "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Compose the unitary residual action with the canonical adjoint on End(V_1).",
+            "outcome": "The construction is mathematically well-defined, but the composition is introduced rather than selected by the cited residual-action authority.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "canonical_adjoint"
+          },
+          {
+            "attempt": "Compared both S_3 three-cycles and their exchange under P_23.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Does **not** uniquely select between the forward 3-cycle",
+            "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Choose forward rather than reverse orientation by relabeling the selected-axis-rooted cycle.",
+            "outcome": "The convention consistently fixes the displayed matrices but does not intrinsically select one orientation.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "orientation_relabel"
+          },
+          {
+            "attempt": "Computed P_23 E_12 P_23, P_23 E_23 P_23, and P_23 E_31 P_23 exactly.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It is **not** a self-map of the forward-cycle channel.",
+            "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use only ordinary P_23 conjugation on the forward-cycle channel.",
+            "outcome": "The images lie in the reverse-cycle channel, so this route cannot supply the claimed forward-channel self-map.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "unitary_channel"
+          },
+          {
+            "attempt": "Checked the source boundary for any retained active-sector identification.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Does **not** identify the active sector",
+            "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt to select the antiunitary lift through an E_nu or E_e active-sector assignment.",
+            "outcome": "No sector is selected, and the audited algebra is explicitly restricted to the abstract V_1 carrier.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "active_sector"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The retained S_3 data do not intrinsically select forward rather than reverse cycle orientation.",
+            "The retained unitary P_23 action does not select composition with adjoint as the residual action on M_3(C)."
+          ],
+          "evidence_locator": "Does **not** assert that the antiunitary residual swap",
+          "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "The retained S_3 data do not intrinsically select forward rather than reverse cycle orientation.",
+              "left_closes_right": false,
+              "right": "The retained unitary P_23 action does not select composition with adjoint as the residual action on M_3(C).",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "The retained S_3 data do not intrinsically select forward rather than reverse cycle orientation.",
+            "The retained unitary P_23 action does not select composition with adjoint as the residual action on M_3(C)."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No new foundational premise beyond the abstract 3-dim complex",
+          "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "forward orientation `1 -> 2 -> 3 -> 1`",
+              "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+              "phrase": "forward orientation `1 -> 2 -> 3 -> 1`",
+              "promoted_wall": "The retained S_3 data do not intrinsically select forward rather than reverse cycle orientation."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Define the conjugate-linear involution",
+              "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+              "phrase": "Define the conjugate-linear involution",
+              "promoted_wall": "The retained unitary P_23 action does not select composition with adjoint as the residual action on M_3(C)."
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "T_sigma|_{V_1}` is the standard `3 x 3` permutation matrix",
+              "evidence_path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
+              "phrase": "T_sigma|_{V_1} = P_sigma"
+            }
+          ],
+          "scan_scope": "The orientation convention, active carrier, residual-action lift, coefficient map, and physical-sector disclaimers were checked.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Items derived in this audit-companion",
+          "evidence_path": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
+          "none_found_reason": "All five N1 mechanisms were attempted directly, so no RULED OUT BY PRIOR witness matching is required.",
+          "scan_scope": "No N1 route was ruled out solely by a prior witness; every listed route was tested directly in the restricted packet.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## 6. What this note does NOT claim",
+          "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+          "scan_scope": "Claims of uniqueness, channel non-preservation, generic non-fixedness, and the explicit non-claims were checked at their stated finite-dimensional resolution.",
+          "statements": [
+            {
+              "evidence_locator": "It is **not** a self-map of the forward-cycle channel.",
+              "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+              "phrase": "It is **not** a self-map of the forward-cycle channel.",
+              "tested_resolutions": [
+                "All three forward-cycle matrix units under exact 3x3 P_23 conjugation"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "A generic point in `C^3` is not fixed by R-anti",
+              "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+              "phrase": "A generic point in `C^3` is not fixed by R-anti",
+              "tested_resolutions": [
+                "Exact coefficient-space fixed-locus equations on C^3"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "Does **not** uniquely select between the forward 3-cycle",
+              "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+              "phrase": "Does **not** uniquely select between the forward 3-cycle",
+              "tested_resolutions": [
+                "The two three-cycles in the standard S_3 representation"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies neither an S_3 orientation nor an antiunitary lift on M_3(C).",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms provide no PMNS carrier, orientation, or residual antiunitary-action selector.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A realized-state reference cannot select a law-level orientation or action lift.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful ruler has no bearing on this dimensionless finite representation problem.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC_phi_lambda occupancy/readout boundary explicitly supplies no PMNS alignment or sector-weight law.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g_bare rescaling convention is unrelated to cycle orientation or residual action.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the PMNS cycle-channel action.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All indexed approved primitives, owner-governed residuals, Tier-A conventions, and available definition/scope reframes were checked against the orientation and antiunitary-lift walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because V_1 is a unitary carrier, adjoint is canonical on End(V_1); composing it with P_23 conjugation therefore gives a natural involution preserving the forward channel.",
+          "evidence_locator": "R[A] := P_23 . A^dagger . P_23",
+          "evidence_path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+          "resolution": "This proves that R is canonical once the composition is chosen and that its stated algebra is exact. It does not prove that the graph-side residual Z_2 is represented by this conjugate-linear composition rather than by its already-derived unitary conjugation action.",
+          "resolved": true,
+          "route_id": "canonical_adjoint"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24:previous_audit:0",
+              "evidence_locator": "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Prior clean audit treated the antiunitary map as algebraic closure; the present audit distinguishes its exact consequences from selection of the map.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:0",
+              "evidence_locator": "graph_first_selector_derivation_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unaudited historical selector cycle; no independent antiunitary-lift content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:1",
+              "evidence_locator": "graph_first_selector_derivation_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unaudited historical selector cycle; no independent antiunitary-lift content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:2",
+              "evidence_locator": "graph_first_selector_derivation_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Prior selector audit establishes axis minima and stabilizers, not an action on M_3(C).",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:3",
+              "evidence_locator": "graph_first_selector_derivation_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Current retained selector scope supplies the Z_2 stabilizer but not the antiunitary lift.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_su3_integration_note:previous_audit:0",
+              "evidence_locator": "graph_first_su3_integration_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unaudited historical SU3 cycle does not close the disputed lift.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_su3_integration_note:previous_audit:1",
+              "evidence_locator": "graph_first_su3_integration_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unaudited historical SU3 cycle does not close the disputed lift.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:0",
+              "evidence_locator": "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "The retained bridge derives P_23 on V_1 and Hermitian conjugation invariance, but not the adjoint-composed action on the non-Hermitian cycle channel.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:1",
+              "evidence_locator": "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "The active-lane identity supports ordinary P_23 conjugation only.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Retired AC_phi_lambda occupancy/readout admission is outside the PMNS residual-action boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Retired strong-CP content is unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Owner-governed AC retirement explicitly excludes PMNS alignment.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated foundational-campaign no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated gravity portability boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated coupling-runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated atomic and temporal-axis cautions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated multi-lane inherited no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated coupling identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated lensing observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "A different Z_2 carrier decomposition; it does not identify the PMNS antiunitary lift.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated emergent-metric bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated radial-family orientation certificate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Wilson scorecard boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated flavor-tracial route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Wilson-environment computation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated gauge-isotropy generator walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated gravity dispersion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated gravity sign boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Planck-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated U(1) normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated campaign-level demotions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated atomic-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated quark-mass selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated asymptotic-uniformity wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated physical-source readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated temporal-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated physical-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Adjacent neutrino selector walls do not derive this finite carrier action.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated neutrino-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated finite-lattice gravity scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated recompute-artifact boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated coupling-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated finite packet-memory boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated finite-grid theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated P_A carrier-selection history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated plaquette-bootstrap walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Record selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated registrability and AC readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated temporal-axis walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "A different physical-basis identification warning; no PMNS antiunitary theorem is supplied.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated kinetic-law selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Wilson-cube encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated theta mass-readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated theta gauge-readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated positive-theta gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated theta insertion wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated theta defect-closure wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated AC determinant-power selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated AC orbit-occupancy wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated AC R-eta formation wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated artifact-visibility gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated Record-only readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated finite numerical-family boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "Unrelated continuum-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "mechanism": "A structurally analogous definition-as-derivation warning, but for a different Yukawa readout.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": {
+              "accepted_premise_type": null,
+              "content_sha256": "fee30789447858a0474a53eb9572eaaba4725571503af139cad9be2c09fc9553",
+              "cross_cycle_candidate_ids": [
+                "graph_first_selector_derivation_note:previous_audit:0",
+                "graph_first_selector_derivation_note:previous_audit:1",
+                "graph_first_selector_derivation_note:previous_audit:2",
+                "graph_first_selector_derivation_note:previous_audit:3",
+                "graph_first_su3_integration_note:previous_audit:0",
+                "graph_first_su3_integration_note:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:0",
+                "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:1",
+                "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24:previous_audit:0",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "graph_first_selector_derivation_note:previous_audit:0",
+                "graph_first_selector_derivation_note:previous_audit:1",
+                "graph_first_selector_derivation_note:previous_audit:2",
+                "graph_first_selector_derivation_note:previous_audit:3",
+                "graph_first_su3_integration_note:previous_audit:0",
+                "graph_first_su3_integration_note:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:0",
+                "pmns_graph_axis_to_active_lane_bridge_note:previous_audit:1",
+                "pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24:previous_audit:0",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24": {
+              "accepted_premise_type": null,
+              "content_sha256": "247e121784412f1695778414a3cb2600196214440e3da9d7f5fa212fd829d4a8",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "8553fe0b6ba602ecda8a067e1aea727a3cf622a8d67374fd6dedc7ec7f4dce75",
+              "effective_status": "retained_bounded",
+              "path": "docs/PMNS_GRAPH_AXIS_TO_ACTIVE_LANE_BRIDGE_NOTE.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "T_sigma|_{V_1}` is the standard `3 x 3` permutation matrix"
+              ]
+            },
+            "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "7b9c2e64dc277c069d901fb93d692e55ab1745f30bce5a3cb8a08bc4fcf3e445",
+              "effective_status": null,
+              "path": "docs/PMNS_GRAPH_FIRST_FORWARD_CYCLE_RESIDUAL_SWAP_BRIDGE_NARROW_THEOREM_NOTE_2026-05-24.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## 6. What this note does NOT claim",
+                "A generic point in `C^3` is not fixed by R-anti",
+                "Define the conjugate-linear involution",
+                "Does **not** assert that the antiunitary residual swap",
+                "Does **not** identify the active sector",
+                "Does **not** uniquely select between the forward 3-cycle",
+                "It is **not** a self-map of the forward-cycle channel.",
+                "No new foundational premise beyond the abstract 3-dim complex",
+                "R[A] := P_23 . A^dagger . P_23",
+                "T_sigma|_{V_1} = P_sigma",
+                "forward orientation `1 -> 2 -> 3 -> 1`"
+              ]
+            },
+            "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "774bf70f93c6698dce6142d08c50c8edfd68a89d5419f3f718dbb6207ec481c3",
+              "effective_status": null,
+              "path": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Items derived in this audit-companion"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive an equivariant or physical principle selecting the adjoint-composed lift of P_23 as the residual action on M_3(C), or narrow the note to consequences conditional on the explicit definition of R.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The runner correctly verifies the finite-dimensional permutation and matrix-unit identities, although one non-load-bearing negative-control check is vacuous. Its antiunitary path begins by hard-coding `R_anti(A) = P_23 A^dagger P_23`; subsequent checks establish consequences of that definition, not that the retained residual Z_2 action selects this lift. The safe result is an exact conditional theorem about the defined conjugate-linear involution, while identifying it as a derived presentation of the graph-side residual swap requires an additional bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_2026_05_24.py",
+  "title": "PMNS Graph-First Forward-Cycle + Residual-Swap Bridge \u2014 Narrow Theorem",
+  "transitive_descendants": 757,
+  "verdict_rationale": null
+}

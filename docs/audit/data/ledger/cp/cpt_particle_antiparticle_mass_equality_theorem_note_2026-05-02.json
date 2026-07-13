@@ -1,0 +1,153 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3952cc7949fbc6d96ee612cde3cb2c657d0213c5daa0a2645c8624156c5f9164",
+  "note_path": "docs/CPT_PARTICLE_ANTIPARTICLE_MASS_EQUALITY_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:35:38.962224+00:00",
+      "audit_date": "2026-05-02T23:20:43.800781+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-cpt-mass-sector-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated free-Hamiltonian sector scope, the retained CPT exact note supplies [CPT,H]=0. With the admitted convention that CPT exchanges the relevant sectors and standard antiunitary eigenvalue preservation for Hermitian H, the paired state has the same energy; the rest-mass statement follows at p=0.",
+      "claim_scope": "CPT-exchanged single-particle/antiparticle sector pairs of the retained free staggered Cl(3) Hamiltonian on even periodic Z^3 lattices have equal energy eigenvalues, and equal rest masses at p=0; interacting extensions, named-species bookkeeping, and measurement/readout claims are outside scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T23:20:43.800781+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->retained_pending_chain",
+      "load_bearing_step": "Use the retained CPT invariance [CPT,H]=0 to conjugate a single-particle energy eigenstate into its CPT-exchanged antiparticle sector, preserving the Hermitian eigenvalue; at p=0 this identical energy is the rest mass for both members of the pair.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit any broadened claim identifying named physical species, adding interactions, or asserting observed particle/antiparticle mass equality beyond the retained free-Hamiltonian sector scope.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The derivation is a real consequence of retained CPT symmetry on the scoped free-Hamiltonian surface, not a species-level physical claim. The source excludes named-species bookkeeping and interactions from the load-bearing proof, so the cited authority's open interacting and continuum extensions do not block this narrow theorem. The runner gives a structural witness that CPT-symmetric particle/antiparticle blocks have identical spectra and that breaking CPT breaks the equality."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.034556+00:00",
+      "audit_date": "2026-05-22T03:22:08.792916+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 10.45,
+        "runner_hash": "b13365692a13f80ee9eb7125d951efa4e8cc6842622312cca106fcd063c7b6a1",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "claude-audit-loop-2026-05-19-cpt-mass",
+      "auditor_confidence": null,
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7-1m",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Algebraic specialization of the retained cpt_exact_note [CPT, H] = 0 identity to the mass observable, using two admitted-context inputs (CPT-exchanged sector convention; E(p=0)=m kinematic identification). The proof is three lines of standard linear algebra; no first-principles compute, no new comparator surface beyond the parent.",
+      "claim_scope": "Particle/antiparticle energy and rest-mass equality (m_particle = m_antiparticle) for sectors exchanged by the declared CPT operator on the framework's retained CPT-invariant Hamiltonian H. This is the one-step observable specialization of [CPT, H] = 0 from cpt_exact_note, obtained by combining the retained CPT commutator with the structural convention that the antiparticle state is the CPT-image of the particle state and the kinematic identification E(p=0) = m.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T03:22:08.792916+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cpt_exact_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": "From [CPT, H] = 0 (retained input from cpt_exact_note), H\u00b7(CPT|particle>) = CPT\u00b7H|particle> = E\u00b7(CPT|particle>), so the CPT-image of an energy eigenstate is an eigenstate with the same eigenvalue; identifying the CPT-image with the antiparticle state (admitted convention) and specializing to p=0 with E(p=0)=m gives m_antiparticle = m_particle.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: this note presents a textbook one-step algebraic specialization of cpt_exact_note's [CPT,H]=0 identity to the mass observable as an independent positive theorem. Steps 1-2 of the proof use only the retained commutator plus the admitted CPT-exchanged sector convention; Step 3 specializes to p=0 via the standard kinematic identification E(p=0)=m; Step 4 is a universality observation that no species-specific input was used. The runner verifies algebraic structure on a 4-mode toy block-Hamiltonian (T1-T5 all class A) and includes a useful negative control, but adds no (D) external comparator surface; the experimental K0/K\u03040 and e/e+ comparators cited in the corollaries are not load-bearing for the theorem and are not exercised by the runner. The chain is single-parent (only cpt_exact_note as one-hop dep) and there is no new structural integer or compression of the parent. This is the same structural class as the already-decorated sister claim cpt_squared_is_identity_theorem_note_2026-05-02 (audited_decoration under parent cpt_exact_note): a one-step observable extraction from the retained CPT commutator. Why this blocks: per ALGEBRAIC_DECORATION_POLICY \u00a71, single-parent algebraic dependence + no independent (D) comparator + no compression = decoration. The mass-equality consequence is real and physically meaningful, but it does not constitute independent retained content beyond the parent's [CPT,H]=0 statement. Repair target: to re-promote, attach a retained (D) comparator runner that compares a framework-specific particle/antiparticle pair against PDG bounds (e.g., m_K^0 - m_K\u0304^0 < ~10^-18 GeV, m_p - m_p\u0304 < ~10^-9 m_p) using a derived (not admitted) sector-pairing rule from the framework's matter-sector bookkeeping. Until that lands, mass-equality is boxed under cpt_exact_note as an algebraic corollary. Claim boundary until fixed: it remains safe to state that 'particle/antiparticle mass equality follows from the retained CPT commutator by one-step algebra' as a derived corollary of cpt_exact_note, without granting it independent retained-grade status."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cpt_particle_antiparticle_mass_equality_check.py",
+  "title": "Particle/Antiparticle Mass Equality from Retained CPT",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

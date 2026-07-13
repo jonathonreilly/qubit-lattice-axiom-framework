@@ -1,0 +1,129 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_bounded_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+    "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+    "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "363a5373e6ab5e1d367c0f25d60ed064df0a465874360081c4131bd7b8f98a1d",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_MULTIWORD_PERRON_LADDER_BOUNDED_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.954867+00:00",
+      "audit_date": "2026-06-13T00:22:34.989737+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "plaquette_self_consistency_note"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "e4ac2659ac993b4a7111d5d639b7bb0e30f0ba5509b3d00722d28ef5b79e0902",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-001940-9cf398dc45-gauge_vacuum_plaquette_tenso",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite matrices and readout maps are explicitly constructed from retained bounded Wilson-coefficient, SU(3) fusion, and source-sector Perron inputs; the supplied runner computes the stated finite Perron/readout values rather than importing them. An independent low-rank Gram recomputation of the same finite T_k objects matches the displayed two-word and three-word table values, while the physical 3D environment, L_perp limit, convention selector, and canonical repinning are excluded from scope.",
+      "claim_scope": "Finite beta=6 two-word and feasible three-word tensor-product transfer readouts at tensor NMAX=4, MODE_MAX=80, composed into the retained source-sector Perron machinery at source NMAX=7, MODE_MAX=200, under the explicitly enumerated adjacent-bond and boundary-readout conventions only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T00:22:34.989737+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_tensor_transfer_perron_solve_note:retained_bounded->unaudited",
+      "load_bearing_step": "With D_mid(lambda_1,...,lambda_k)=D_k(lambda_1,...,lambda_k) times the adjacent-bond factors, the finite k-word transfer is T_k = D_k M_k D_mid M_k^T D_k, whose Perron vector is read out as marginal or trivial_slice rho and composed into the finite source-sector Perron solve.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Independent low-rank recomputation matched the printed finite readouts; re-audit if a later note promotes one adjacent-contraction/readout convention to the physical boundary-character convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 18,
+        "D": 1,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Within the stated bounded scope, the load-bearing step is a genuine finite numerical construction over retained bounded inputs, not a definition-only substitution or tuned comparator match. The runner source uses hard-coded reference values only as anchor/isolation checks; the multi-word values are produced by eigensolves from the constructed operators, and the canonical 0.5934 comparator is fenced to distance reporting. The cited authorities are retained_bounded, and their open physical-identification language is not imported into the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+  "title": "Gauge-Vacuum Plaquette Multi-Word Tensor-Transfer Perron Ladder Bounded Note",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

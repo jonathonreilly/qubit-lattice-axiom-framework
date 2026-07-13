@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (conditional conformal-rigidity assembly + retained conformal-factor boundary)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_history_order_time_rate_firewall_2026-06-05",
+    "post_record_clock_rate_interface_2026-06-06",
+    "record_clock_rate_normalization_gate_2026-06-06",
+    "lattice_nn_light_cone_note",
+    "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+    "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06",
+    "lorentz_boost_covariance_3plus1d_theorem_note",
+    "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5ac4a240edc0a639065e6a1a0adeeaef7ff2fcac982c30fbceb8261e0100a603",
+  "note_path": "docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:36.226421+00:00",
+      "archived_for_note_hash": "e4f1744d5b7bdc5d97c6bd866d6f1ba01361204867dc61d5803f4cf1789f10d9",
+      "audit_date": "2026-06-08T11:23:12.926960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_clock_rate_interface_2026-06-06": "Finite post-record append/count histories determine event order and counts, but not a physical clock metric or transition rate; rates are exact only after an external strictly increasing clock map is supplied.",
+          "record_clock_rate_normalization_gate_2026-06-06": "A finite three-atom Markov-generator interface theorem: supplied reversible generators can stabilize the sampled dial distributions, while Record counts, dial selection, and physical clock/rate normalization remain separate."
+        },
+        "dep_claim_type": {
+          "post_record_clock_rate_interface_2026-06-06": "no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "retained"
+        },
+        "deps": [
+          "post_record_clock_rate_interface_2026-06-06",
+          "record_clock_rate_normalization_gate_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a9c631805c56bec3546a6da7902d1baf4691d6b39fb10eadebbd0de774929429",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-112113-85848bf562-emergent_metric_conformal_cl",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The clock-rate boundary follows from the two retained-grade clock/rate authorities, and the conformal rescaling identity is algebraic. The restricted packet does not supply retained-grade one-hop authorities for the event-order/I-axis result, reconstructed-H/Lieb-Robinson cone, or (3,1) signature; the runner illustrates or hard-codes those inputs rather than deriving them.",
+      "claim_scope": "Audited the bounded assembly that, given retained event order, LR light cone, and (3,1) signature, conformal rigidity yields a Lorentzian conformal class, while retained clock-rate no-go authorities leave the scale unfixed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T11:23:12.926960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The retained record-time order, Lieb-Robinson light cone, and (3,1) signature supply the causal structure, so Malament rigidity fixes the metric's conformal class while the remaining conformal factor is the post-record clock-rate no-go.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include one-hop retained source notes/certificates for the record I-axis, reconstructed-H/Lieb-Robinson cone/dispersion, and (3,1) signature, and state the Malament assumptions explicitly, or narrow the theorem to be conditional on those inputs.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner verifies finite group velocity for an asserted dispersion on a grid and checks conformal null invariance, but it does not derive the dispersion, the LR theorem, the record I-axis, or the signature from the provided authorities. The `signature_31` input is hard-coded and the I-order check uses an artificial monotone sequence, so the retained causal-data premise is imported. The result is therefore valid only conditional on retained upstream causal-structure certificates plus a properly stated Malament bridge; the conformal-factor no-go component is supported by the cited clock-rate authorities."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/emergent_metric_conformal_class_from_records_runner.py",
+  "title": "Emergent Lorentzian Metric: Conditional Conformal-Class Assembly and Clock-Rate Boundary",
+  "transitive_descendants": 706,
+  "verdict_rationale": null
+}

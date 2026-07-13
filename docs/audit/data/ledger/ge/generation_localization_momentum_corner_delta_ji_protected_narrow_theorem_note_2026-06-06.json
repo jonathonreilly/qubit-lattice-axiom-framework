@@ -1,0 +1,195 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "generation_localization_momentum_corner_delta_ji_protected_narrow_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (corner-protection of the `J - I` form + sign cross-check; magnitude left open, reframed)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
+    "three_generation_observable_theorem_note",
+    "three_generation_structure_note",
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+    "staggered_self_consistent_two_body_note_2026-04-11"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ed76fb03de1b4b8adc0b4d91220865e508d885113b40d1a3f75cdb586dcff322",
+  "note_path": "docs/GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-07T15:15:54.460618+00:00",
+      "archived_for_note_hash": "0af8bcebb919b2bbf602baf371d0aedcbdfc428c28f4795ba4eb4563c3afbec6",
+      "audit_date": "2026-06-07T00:31:29.519470+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_theorem_note": "retained",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_theorem_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "dc7984c710bffd58aa49310161fb8c16d5f84bc136da8a9d190e3ef3d36dc9d2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-002910-59b3107883-generation_localization_mome",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from the stated periodic translation-invariant kernel closes: eps(Delta k)=8 for all three pairs and delta=-8G/[N mu^2(8+mu^2)]<0 for G,mu^2>0. The restricted packet does not close the bridge from the cited open-lattice self-consistent two-body channel to the periodic translation-invariant density-density/Hartree-Fock plane-wave readout used as the load-bearing kernel.",
+      "claim_scope": "Periodic pure-corner plane-wave calculation for the hw=1 momentum corners using Vq(q)=-G/(eps(q)+mu^2): equal inter-corner transfers, equal negative pair mutual energies, and IR/volume scaling of the magnitude; no physical magnitude or flavor value audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:31:29.519470+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For two plane waves k_i,k_j with translation-invariant V, the mutual energy is delta_ij=(Vq(0)-Vq(k_i-k_j))/N, and every hw=1 corner pair has eps(k_i-k_j)=8, so all pair deltas are equal and negative.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a one-hop retained theorem deriving the periodic translation-invariant Hartree-Fock plane-wave mutual-energy readout Vq(q)=-G/(eps(q)+mu^2), including boundary/normalization, from the retained staggered two-body mediator.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner is substantive rather than a print-only certificate: it independently builds a periodic lattice Green operator for L=4,6 and checks the Hartree-Fock formula, and the displayed eps, sign, 1/N scaling, and Fock/Hartree ratio are algebraically consistent. The remaining blocker is not arithmetic; it is dependency scope. The provided mediator authority is a retained_bounded open-cubic self-consistent force-channel result, while this note needs a retained bridge to the periodic translation-invariant plane-wave density-density kernel and normalization. With that bridge admitted, the theorem would be a clean class-A closure in the stated pure-corner scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.365686+00:00",
+      "audit_date": "2026-06-10T21:36:27.695699+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07": "Finite even periodic L^3 lattice with K=-G(Lap+mu^2 I)^(-1), normalized plane-wave hw=1 corner modes, and same-sector two-mode Slater Hartree-minus-exchange readout; audited result is the Vq multiplier, the 1/N normalization, and the equal negative corner-pair value for transfers with eps=8.",
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion.",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "Exact linear-algebra theorem on abstract C^3: the specified diagonal involutions have distinct joint sign characters on X_1, X_2, X_3 and yield the rank-1 sector-projector decomposition, with no physical-generation identification audited.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07": "positive_theorem",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07": "retained",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": "retained",
+          "three_generation_observable_theorem_note": "retained",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07",
+          "staggered_self_consistent_two_body_note_2026-04-11",
+          "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_theorem_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "f89a1295977bb383beea3becb0cda54569b49b885c7d20afbf391460ffca0c87",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-213400-be4b18b908-generation_localization_mome",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited bridge supplies the periodic `Vq` multiplier and Hartree-Fock `1/N` normalization, while retained generation authorities supply the three corners and distinct translation characters. Substitution gives `eps=8` for each pair, equal negative `delta`, and `1/N` IR-scale magnitude dependence without asserting a physical flavor value.",
+      "claim_scope": "Finite periodic pure-corner `hw=1` plane-wave surface: using the retained attractive screened graph-Poisson Hartree-Fock bridge, the three pairwise mutual energies are identical and negative, `delta=-8G/[N mu^2(8+mu^2)]`, giving the `J-I` form while leaving the physical magnitude to `(G, mu^2, N)`.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:36:27.695699+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07:retained->unaudited",
+      "load_bearing_step": "For two corner plane waves, `delta_ij = (Vq(0) - Vq(k_i - k_j))/N` and every distinct generation pair has `eps(k_i-k_j)=8`, so all pair couplings are equal and negative.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the bridge effective_status retained is the intended current authority despite source-side process prose saying it was audit-pending when written.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing math is an algebraic specialization of the retained bridge and retained corner-character inputs. Independent checking confirms the signs, the `1/N` normalization, the `eps=8` pair equality, and the exact closed form for `delta`; no external comparator or tuned observational value is used. The claim is clean only within the stated periodic pure-corner and mediator-scope boundary, with physical magnitude explicitly left open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/generation_localization_corner_protected_delta_runner.py",
+  "title": "The Generation \"Localization\" is the Momentum-Corner Structure: the Emergent Coupling's `J \u2212 I` Form is Corner-Protected, its Sign Re-confirmed, and its Magnitude Reduces to the Mediator IR \u2014 Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

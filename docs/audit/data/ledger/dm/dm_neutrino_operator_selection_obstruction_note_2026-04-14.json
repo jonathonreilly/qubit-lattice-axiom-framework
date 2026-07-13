@@ -1,0 +1,233 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_neutrino_operator_selection_obstruction_note_2026-04-14",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
+    "dm_neutrino_cascade_geometry_note_2026-04-14"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "524c9ac7d92f8421ff63de73bae0beacdd98cec63cfc015f4628ad87bb841eef",
+  "note_path": "docs/DM_NEUTRINO_OPERATOR_SELECTION_OBSTRUCTION_NOTE_2026-04-14.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105126+00:00",
+      "archived_for_note_hash": "78e198722069cc46175441c8878c0ef4d4d409746212aafe23ad4fe555696e5a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234843+00:00",
+      "audit_date": "2026-04-30T19:20:37.894209+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The registered runner exits cleanly and exposes 5 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:dm_neutrino_cascade_geometry_note_2026-04-14,dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
+      "load_bearing_step": "[`docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`](/Users/jonBridger/Toy%20Physics-dm/docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.919321+00:00",
+      "audit_date": "2026-05-07T02:30:38.810305+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dm_neutrino_cascade_geometry_note_2026-04-14": "Exact C^8 weak-axis Clifford geometry for Gamma_1 on O_0, T_1, and T_2: no T_1 one-hop closure, rank-1 O_0 plus rank-2 T_2 split, and second-order return diag(1,0,0)+diag(0,1,1)=I_3.",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "Exact finite-algebra Dirac-structure claim for the explicit Cl(4)/C^16 Gamma_i and gamma_5 packet: M(phi)=sum_i phi_i Gamma_i is chiral off-diagonal, has zero same-chirality blocks, reduces to Gamma_i at axis inputs, and excludes Xi_5 as a direct chiral off-diagonal Yukawa surface."
+        },
+        "dep_claim_type": {
+          "dm_neutrino_cascade_geometry_note_2026-04-14": "bounded_theorem",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "dm_neutrino_cascade_geometry_note_2026-04-14": "retained_bounded",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "retained"
+        },
+        "deps": [
+          "dm_neutrino_cascade_geometry_note_2026-04-14",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b2966b6df7b245750bf365d26caf6f27d16a3717df530c92d738b6c094e24f9a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-dm-operator-selection-obstruction-audit-1-2026-05-07",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source and current output close the exact inequivalence claims with 10 passing matrix/rank/hop checks. The later audited-clean Dirac bridge changes the live physics interpretation but does not invalidate the older bounded obstruction fact that the two surfaces are inequivalent.",
+      "claim_scope": "Exact operator-inequivalence obstruction between Gamma_1 and Xi_5 on the stated 3+1 completed 16-state Clifford/taste-cube realization; not a proof that operator selection remains open after later bridge authorities.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-07T02:30:38.810305+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:dm_neutrino_dirac_bridge_theorem_note_2026-04-15:retained->unaudited",
+      "load_bearing_step": "The runner establishes that Gamma_1 and Xi_5 are genuinely different operator surfaces: Gamma_1 is chiral off-diagonal, single-hop, and follows the adjacent-Hamming cascade, while Xi_5 is chiral diagonal, four-hop, and pairs opposite sectors.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Recheck only if branch conventions for G0..G4, gamma_5, or the taste-cube projectors change.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The audited scope is the exact obstruction: Gamma_1 and Xi_5 are not the same operator under chirality behavior, hop order, and orbit action. That chain closes from the supplied runner source and zero-fail live output, with the later audited-clean bridge only resolving which local chiral surface wins rather than erasing the inequivalence result. No hidden bridge is needed for the bounded obstruction statement itself."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.675450+00:00",
+      "audit_date": "2026-06-21T16:44:44.257601+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dm_neutrino_cascade_geometry_note_2026-04-14": "Exact C^8 weak-axis Clifford geometry for Gamma_1 on O_0, T_1, and T_2: no T_1 one-hop closure, rank-1 O_0 plus rank-2 T_2 split, and second-order return diag(1,0,0)+diag(0,1,1)=I_3.",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "Audited the local C^16 Clifford-algebra claim that the admitted M(phi) family is chiral off-diagonal and that Xi_5 is chiral diagonal in the stated convention."
+        },
+        "dep_claim_type": {
+          "dm_neutrino_cascade_geometry_note_2026-04-14": "bounded_theorem",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "dm_neutrino_cascade_geometry_note_2026-04-14": "retained_bounded",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15": "retained"
+        },
+        "deps": [
+          "dm_neutrino_cascade_geometry_note_2026-04-14",
+          "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "b2966b6df7b245750bf365d26caf6f27d16a3717df530c92d738b6c094e24f9a",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-dm_neutrino_operator_selection_obstruction_note_2026-04-14-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the stated matrices and projectors directly and computes the commutators, anticommutators, ranks, and Hamming-distance actions supporting the inequivalence. The broader live-blocker language is superseded in scope by the retained Dirac Bridge authority, but the audited obstruction fact itself closes.",
+      "claim_scope": "Exact algebraic inequivalence of `Gamma_1 = G1` and `Xi_5 = G1 G2 G3 G4` in the provided 16x16 Clifford/KS realization, including chirality, hop-distance, and orbit-block-rank checks; not the current post-2026-04-15 selector or normalization status.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:44:44.257601+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "`Gamma_1` and `Xi_5` have different 3+1 chirality behavior, hop order, and spatial-orbit action, so they are not two descriptions of the same operator surface.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream uses cite this row only for operator inequivalence, not for the current live selector or neutrino-sector normalization status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "For the narrowed obstruction claim, the chain closes as exact algebra over the provided operator definitions and branch conventions. The runner source performs real matrix computations rather than print-only PASS output, and it does not depend on an external comparator or tuned numerical input. The source note should not be used as final authority on the later local `Gamma_1` versus `Xi_5` selection question, because the provided retained Dirac Bridge note explicitly supersedes that part."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dm_neutrino_operator_selection_obstruction.py",
+  "title": "DM Neutrino Operator Selection Obstruction Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

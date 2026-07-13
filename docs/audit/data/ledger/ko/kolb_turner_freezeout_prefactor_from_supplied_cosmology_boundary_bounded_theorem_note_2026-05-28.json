@@ -1,0 +1,117 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary_bounded_theorem_note_2026-05-28",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "sm_relativistic_dof_count_import_note_2026-05-17",
+    "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+    "axiom_first_stefan_boltzmann_theorem_note_2026-05-01",
+    "scale_reference_primitive"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dd3fcd614824614082ed184dbf9e07b6a7b119f93c9b11067512b041e1883f54",
+  "note_path": "docs/KOLB_TURNER_FREEZEOUT_PREFACTOR_FROM_SUPPLIED_COSMOLOGY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-05-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-28T09:41:26.237759+00:00",
+      "archived_for_note_hash": "1bd6a3b1b14db54b8b3b621bd8b34b949ded7ef939c369a24bcefeeb8cbb7b19",
+      "audit_date": "2026-05-28T08:25:30.591584+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited."
+        },
+        "dep_claim_type": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "sm_relativistic_dof_count_import_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "sm_relativistic_dof_count_import_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "164b4d30636bb0507496f478d9218df25a20652fb828e7aa28173054e4a3717f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-kolb-turner-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The symbolic algebra and runner checks close under the stated premise packet, but the retained audit chain does not close from the restricted inputs. The sole one-hop retained dependency certifies finite SM g_* arithmetic; it does not retain the Friedmann law, Stefan-Boltzmann/entropy-density authority, Kolb-Turner Boltzmann tail coefficient, entropy conservation, present-day g_*S(T0), T0/H100 boundary values, or the Tier-A S scale as one-hop retained support for this row.",
+      "claim_scope": "Algebraic Kolb-Turner prefactor identity K = s_0 * sqrt(45/pi)/(rho_c/h^2) and its leading-coefficient numerical evaluation, conditional on the supplied Friedmann, Stefan-Boltzmann/entropy-density, Boltzmann-tail, entropy-conservation, Tier-A scale, and cosmological-boundary inputs stated in the note.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T08:25:30.591584+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "K is identified by substituting Y_infty into Omega_X h^2 and comparing with the Kolb-Turner form: K = s_0 * sqrt(45/pi) / (rho_c/h^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: Add retained/effective one-hop support, or explicit bounded premise rows, for P1-P5 plus T0, H100, present-day g_*S(T0), and Tier-A S use; then re-audit the same algebraic identity.",
+      "open_dependency_paths": [
+        "docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
+        "docs/AXIOM_FIRST_STEFAN_BOLTZMANN_THEOREM_NOTE_2026-05-01.md",
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Independent algebra confirms the formula family: substituting D1 and D2 into D3 gives the stated 16*pi^3 form, and the numerical evaluation yields 1.03855e9 GeV^-1, within the note's leading-tail convention gap. The no-go/admission gate does not expose a formula failure; its hidden-premise scan leaves explicit supplied cosmology, thermodynamics, Boltzmann-tail, boundary-value, and Tier-A scale inputs outside the retained one-hop packet. Because those inputs are not closed by the restricted audit context, the row is conditional rather than clean retained science."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_kolb_turner_freezeout_prefactor_from_supplied_cosmology_boundary.py",
+  "title": "Kolb-Turner Freeze-Out Prefactor from Supplied Cosmology Boundary \u2014 Bounded Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

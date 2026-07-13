@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08",
+    "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e438d2d98052e91bed897c4a980e7bd3b5c4f53c15fcb0d790accc025d510c4d",
+  "note_path": "docs/UNIVERSAL_GR_CUBIC_DIFFEO_WARD_FINITE_LATTICE_SCALING_SUPPORT_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:33:33.985293+00:00",
+      "audit_date": "2026-06-16T02:14:26.533279+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08": "Finite two-component Cl(3) and staggered Kahler-Dirac operator Ward identities, plus the tested non-collinear staggered cubic-triangle telescoping into a nonzero bubble-difference and same-order contact term; no full cubic diffeomorphism Ward identity, conserved cubic seagull, Einstein-Hilbert vertex, or physical normalization.",
+          "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08": "Finite-lattice, runner-defined checks for the native elliptic Dirac generator: sampled metric-reparametrized first variation matches the conserved stress vertex, sampled naive shear matches the bare-sigma vertex and differs from the conserved vertex, and the selected cubic contact proportionality lift fails across sampled loop momenta."
+        },
+        "dep_claim_type": {
+          "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08": "retained_bounded"
+        },
+        "deps": [
+          "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08",
+          "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "eb843a41f4cd5a64498467b978a9b75126027275851a3afdfd8b76f8656a9f97",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-021156-ac4309af58-universal_gr_cubic_diffeo_wa",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited upstream authorities are retained_bounded and supply the conserved-operator context and cubic-Ward boundary. The runner source constructs the finite lattice operators, determinant derivative, cross-term residual, and naive control rather than merely printing constants; the reported k powers and naive/conserved ratios also check arithmetically from the quoted numbers.",
+      "claim_scope": "Finite-lattice scaling contrast for the supplied conserved coupling and sqrt(g) measure in the stated cubic diffeomorphism-Ward diagnostic, limited to the runner's L=6,8,10 setup and naive C1 control.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T02:14:26.533279+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "For the supplied conserved D(P_eff)+sqrt(g) coupling, the normalized cubic Ward residual decreases over L=6,8,10 while the naive C1 control does not show that decreasing trend and the naive/conserved gap widens.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check finite-difference tau/amplitude sensitivity and larger-L behavior only if the claim is broadened beyond the stated finite-lattice support.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The audited claim is narrowly finite-lattice and does not assert the continuum limit, Einstein-Hilbert normalization, G_Newton, uniqueness, or all-order diffeomorphism invariance. The runner implements the displayed D[h] coefficients, sqrt(g)/densitized-inverse-vielbein structure, lattice diffeomorphism variation, and a2*a3 cross-term extraction, then computes new finite-matrix numbers not imported from another note or external comparator. Independent arithmetic checks confirm the quoted k=2pi/L values, fitted powers, monotone conserved trend, naive flat/growing trend, and widening gap."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_2026_06_08.py",
+  "title": "Cubic Diffeomorphism Ward Finite-Lattice Scaling Support for the Conserved GR Coupling",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

@@ -1,0 +1,233 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_uv_finite_partition_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_lorentzian_global_atlas_closure_note",
+    "universal_qg_projective_schur_closure_note",
+    "universal_gr_positive_background_local_closure_note"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f1f15ffd4e2439d04fd1f65c1cbde7c5894329212544eb7a68ca03d22737424b",
+  "note_path": "docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T19:14:10.170370+00:00",
+      "archived_for_note_hash": "a33162f887cbdaea015a72d7706382d5aaddb398adca2c55052e18c06c9451f4",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494364+00:00",
+      "archived_for_note_hash": "115d526c782dd246db977cdd97113c0dcfac67cea673426385f8867a064c7d78",
+      "audit_date": "2026-04-30T22:08:29.429141+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-17",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gaussian formula is standard once a finite-dimensional SPD operator K_GR(D) is supplied, but this note does not itself prove or register the required SPD/local-GR closure, finite-atlas patching, or Schur/projective compatibility. With no runner and no ledger dependencies, the exact QG bridge claim remains conditional on those upstream structures.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Because K_GR(D) is symmetric positive definite on the positive-background class, the finite-dimensional Gaussian partition Z_GR(D,J) exists, is finite, and has mean K_GR(D)^-1 J equal to the discrete GR stationary field.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "local_GR_K_GR_positive_definite_closure",
+        "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md",
+        "finite_atlas_partition_density_patch_runner"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note turns a supplied finite-dimensional positive Gaussian action into a UV-finite partition family, but the supplied operator positivity, discrete GR stationary closure, atlas density patching, and Schur coarse-graining claims are imported rather than audited here. Why this blocks: finite Gaussian integration alone does not establish the route-level statement that the direct-universal QG partition reproduces exact discrete 3+1 Einstein/Regge gravity on PL S^3 x R. Repair target: register a runner/proof that constructs K_GR(D), verifies SPD/nondegeneracy over the stated positive-background class, computes the Gaussian mean/covariance, and checks finite-atlas density transformation plus Schur compatibility. Claim boundary until fixed: for any finite-dimensional SPD K_GR(D), the Euclidean Gaussian partition is finite and has mean K_GR(D)^-1 J; the project-level QG bridge remains conditional."
+    },
+    {
+      "archived_at": "2026-05-05T23:54:37.914849+00:00",
+      "audit_date": "2026-05-05T23:54:13.972892+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "universal_gr_lorentzian_global_atlas_closure_note": "audited_conditional",
+          "universal_qg_projective_schur_closure_note": "unaudited"
+        },
+        "deps": [
+          "universal_gr_lorentzian_global_atlas_closure_note",
+          "universal_qg_projective_schur_closure_note"
+        ],
+        "load_bearing_score": 14.322,
+        "runner_hash": null,
+        "transitive_descendants": 319
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_uv_finite_p-095",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gaussian conclusion follows algebraically from a finite-dimensional symmetric positive definite K_GR(D), but that SPD positive-background local closure theorem is imported rather than provided as a retained-grade cited authority. In addition, the supplied cited authorities are audited_conditional and unaudited, so retained-grade closure does not propagate.",
+      "claim_scope": "Audited the restricted-packet claim that the direct-universal positive-background discrete GR operator yields a finite Euclidean Gaussian partition density whose mean/stationary sector equals the discrete GR stationary field on finite charts and patches as a density across the finite atlas.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:54:13.972892+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_qg_projective_schur_closure_note:unaudited->audited_conditional",
+      "load_bearing_step": "Because K_GR(D) is symmetric positive definite on each finite chart, the finite-dimensional Gaussian integral Z_GR(D,J) exists with the stated determinant formula and mean K_GR(D)^-1 J.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain-grade audit the positive-background local SPD closure and the cited Lorentzian atlas/projective Schur dependencies, then re-audit the Gaussian density bridge over those retained inputs.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing Gaussian finiteness and mean-field statements are standard class-A consequences once finite-dimensional SPD K_GR(D) is granted. The restricted packet does not independently close the required positive-background SPD/local GR theorem, and one cited authority is explicitly audited_conditional while another is unaudited. Therefore the theorem is conditional on upstream retained-grade closure of those inputs rather than clean within this packet."
+    },
+    {
+      "archived_at": "2026-07-13T08:47:10.951152+00:00",
+      "archived_for_note_hash": "ebbb67213d06602e4576890f662cecc54629b026328bdf46ee72c7494ca341ff",
+      "audit_date": "2026-05-05T23:54:13.972892+00:00",
+      "audit_invocation_history": [],
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "universal_gr_lorentzian_global_atlas_closure_note": "audited_conditional",
+          "universal_qg_projective_schur_closure_note": "unaudited"
+        },
+        "deps": [
+          "universal_gr_lorentzian_global_atlas_closure_note",
+          "universal_qg_projective_schur_closure_note"
+        ],
+        "load_bearing_score": 14.322,
+        "runner_hash": null,
+        "transitive_descendants": 319
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_uv_finite_p-095",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gaussian conclusion follows algebraically from a finite-dimensional symmetric positive definite K_GR(D), but that SPD positive-background local closure theorem is imported rather than provided as a retained-grade cited authority. In addition, the supplied cited authorities are audited_conditional and unaudited, so retained-grade closure does not propagate.",
+      "claim_scope": "Audited the restricted-packet claim that the direct-universal positive-background discrete GR operator yields a finite Euclidean Gaussian partition density whose mean/stationary sector equals the discrete GR stationary field on finite charts and patches as a density across the finite atlas.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:54:13.972892+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because K_GR(D) is symmetric positive definite on each finite chart, the finite-dimensional Gaussian integral Z_GR(D,J) exists with the stated determinant formula and mean K_GR(D)^-1 J.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain-grade audit the positive-background local SPD closure and the cited Lorentzian atlas/projective Schur dependencies, then re-audit the Gaussian density bridge over those retained inputs.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing Gaussian finiteness and mean-field statements are standard class-A consequences once finite-dimensional SPD K_GR(D) is granted. The restricted packet does not independently close the required positive-background SPD/local GR theorem, and one cited authority is explicitly audited_conditional while another is unaudited. Therefore the theorem is conditional on upstream retained-grade closure of those inputs rather than clean within this packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "restoration_history": [
+    {
+      "archived_at": "2026-05-05T23:54:37.914849+00:00",
+      "archived_audit_sha256": "8390337ca9ae7b788a3d046269cbde1521d85c088905eb49429c650db5f6603f",
+      "invalidation_reason": "dep_weakened:universal_qg_projective_schur_closure_note:unaudited->audited_conditional",
+      "restoration_policy": "restore_overaggressive_invalidation.v2",
+      "restored_at": "2026-07-13T00:45:14.532590+00:00"
+    }
+  ],
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_uv_finite_partition.py",
+  "title": "Universal QG UV-Finite Partition Density Note",
+  "transitive_descendants": 143,
+  "verdict_rationale": null
+}

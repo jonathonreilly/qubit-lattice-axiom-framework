@@ -40,6 +40,8 @@ from pathlib import Path
 import no_go_discipline_gate
 import audit_invocation
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 AXIOM_PREMISE_NODES_PATH = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
@@ -1935,7 +1937,7 @@ def main() -> int:
         else:
             print(f"FAIL {cid}: {msg}", file=sys.stderr)
 
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
     print(f"Applied {applied}/{len(audits)} audit(s) to {LEDGER_PATH.relative_to(REPO_ROOT)}")
 
     propagation_rc = 0

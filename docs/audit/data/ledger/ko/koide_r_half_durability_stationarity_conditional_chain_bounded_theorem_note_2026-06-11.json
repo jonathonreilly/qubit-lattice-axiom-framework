@@ -1,0 +1,142 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_r_half_durability_stationarity_conditional_chain_bounded_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (a conditional theorem chain; the conditional",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02",
+    "minimal_axioms",
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+    "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d352c069a5c8fa96b79c9b24b04a63124829b388e05a7b1348c0da6b418b8916",
+  "note_path": "docs/KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.377674+00:00",
+      "audit_date": "2026-07-10T03:35:33.576675+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "Bounded custody theorem for charged-lepton Q=2/3: the structural chain and exact Koide-line algebra close from the named authorities modulo the Tier-A AC_phi_lambda admitted selector; no unconditional derivation of AC_phi_lambda, physical lane assignment, or mass values is claimed.",
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited.",
+          "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02": "Narrow no-go for the tested attractor/stabilizer family: L\u00fcders sharpening, its reverse erasure map, tested C3 block einselection, and I/3 thermalization do not make r=1/2 a dynamical attractor; stationarity/durability and measure/reference routes are out of scope.",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "Bounded relative independence claim only: the current checked Record/Koide bookkeeping surface admits both sector-slot and orbit-slot occupancy models with exact doublet-weight ratio 2, so it does not fix the occupancy rule; the orbit-occupancy paragraph is audited only as a proposed premise with non-input support, not as adopted or derived content.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "bounded_theorem",
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "bounded_theorem",
+          "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02": "no_go",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02": "retained_bounded",
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "retained_bounded",
+          "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02": "retained_no_go",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "charged_lepton_koide_value_full_chain_of_custody_2026-06-02",
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+          "flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "72d179f5bb08374a8a2b88ac7d3b11d581c75d94cba5bc141a8ff41c5d1ee60b",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00028-koide_r_half_durability_stat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fixed-point calculation and endpoint exclusions close algebraically under the stated assumptions. No cited retained authority derives the missing R-D identification that physical charged-lepton re-registration is L\u00fcders self-composition, so permanence alone does not imply this stationarity condition.",
+      "claim_scope": "The algebraic uniqueness of r = 1/2 was audited conditional on the two-sector partition, the R-D physical re-registration bridge, registered C3-breaking content, and the unsigned positive-weight branch.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:35:33.576675+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:charged_lepton_koide_value_full_chain_of_custody_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Under R-D, a durable registration must be fixed by r \u21a6 2r\u00b2; its closed-simplex stationary set is {0, 1/2, \u221e}, and excluding the two endpoints leaves r = 1/2 uniquely.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained theorem deriving the R-D physical re-registration identification, then update runner check 7 to target MINIMAL_AXIOMS_2026-06-29.md and rerun the audit.",
+      "open_dependency_paths": [
+        "docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md",
+        "docs/FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md",
+        "docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+        "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 5,
+        "C": 0,
+        "D": 1,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner genuinely computes the L\u00fcders fixed points, endpoint identities, Koide arithmetic, and stability properties, rather than merely printing the claimed result. Those computations do not establish R-D, while the current 2026-06-29 axiom authority explicitly leaves update laws and physical persistence dynamics downstream. Runner check 7 also reads the superseded 2026-06-05 axiom memo rather than verifying the current authority supplied in this packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py",
+  "title": "Durable Registration Is Records-Flow Stationarity: Conditional on the Named R-D Bridge and the 2-Sector Partition Prong, r = 1/2 Is the Unique Durably Registrable Value (Bounded Theorem Chain)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

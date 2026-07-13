@@ -1,0 +1,1327 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+    "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
+    "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.629,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0de2a57a7d97161c246f45ca4756a85c75071e6af81036cc600db8aa2a30d05c",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.716323+00:00",
+      "audit_date": "2026-05-02T17:42:18.515315+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.709,
+        "transitive_descendants": 295
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-hume-framework-point-20260502",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The explicit witness pair satisfies the scoped hypotheses and has exact delta beta_eff(6)=0.0046656 with positive delta P, so the stated inputs cannot force a unique framework-point value.",
+      "claim_scope": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-02T17:42:18.515315+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "claim_type_reaudit": {
+          "audit_date": "2026-05-02T17:42:18.515517+00:00",
+          "auditor": "codex-fresh-hume-framework-point-20260502",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "first_audit": {
+          "audit_date": "2026-04-29T11:43:07.092052+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "legacy_confirmed_clean_claim_type_reaudit",
+        "second_audit": {
+          "audit_date": "2026-04-30T00:45:23.854482+00:00",
+          "auditor": "codex-audit-loop-fresh-context-d97a-20260430",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The two analytic strictly increasing witnesses share beta_eff(beta)=beta+beta^5/26244+O(beta^6) but differ at beta=6, hence give different P_1plaq values.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Do not cite this row as canonical P(6) closure; it is the obstruction that current onset data do not determine the framework point.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Clean as a scoped no-go obstruction, not as analytic closure of canonical P(6). The runner confirms 5 theorem checks and 2 support checks with no failures; the load-bearing step is algebraic counterexample construction rather than support-class propagation. The safe conclusion is that the current onset jet plus analyticity/monotonicity does not force beta_eff(6) or analytic P(6)."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:14.040164+00:00",
+      "audit_date": "2026-07-11T19:44:48.925665+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.017,
+        "runner_hash": "80bcb543583d1df6f747db1328fa9c7e72fa2886517318b4ec6020db146b2a41",
+        "transitive_descendants": 517
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00096-gauge_vacuum_plaquette_frame",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic finite-jet counterexample closes, but the broader current-exact-stack conclusion is missing a proof that either witness is realizable by a finite Wilson source surface satisfying the full connected hierarchy and compact spectral-measure constraints.",
+      "claim_scope": "The displayed witnesses establish underdetermination from the order-beta^5 jet, real analyticity, and monotonicity alone; they do not establish underdetermination after imposing the claimed connected-hierarchy and spectral-measure constraints.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-11T19:44:48.925665+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "The two analytic strictly increasing witness laws agree through order beta^5 but differ by c beta^6 at beta=6, so the stated finite jet and monotonicity conditions do not determine beta_eff(6).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note defines beta_eff^- and beta_eff^+ explicitly and evaluates their exact difference at beta=6.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The two witness laws satisfy",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Add a nonzero analytic beta^6 term while preserving the order-beta^5 jet.",
+            "outcome": "This closes underdetermination for the finite jet plus the displayed monotonicity conditions only.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "explicit_beta6_witness"
+          },
+          {
+            "attempt": "No hierarchy equations are instantiated for either witness in the note or runner.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "the exact infinite connected-hierarchy structure,",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The complete connected hierarchy could impose a functional constraint that excludes one or both arbitrary witness laws.",
+            "outcome": "The route remains untested and is the main objection to the full-stack no-go.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "full_hierarchy_compatibility"
+          },
+          {
+            "attempt": "The note discusses Hausdorff uniqueness but constructs no measure or moment sequence for either witness.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "equivalent compact spectral measure.",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Positivity and moment constraints of a compact spectral measure could restrict the admissible reduction laws beyond their finite onset jets.",
+            "outcome": "Neither witness is shown to belong to the compact positive-measure class.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "spectral_measure_compatibility"
+          },
+          {
+            "attempt": "The runner evaluates the two functions but does not construct a Wilson ensemble or finite-surface source law realizing them.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "finite Wilson source surface.",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A realizable finite Wilson source surface may satisfy additional finite-volume identities absent from arbitrary analytic functions.",
+            "outcome": "Finite-surface realizability remains open.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "wilson_surface_realizability"
+          },
+          {
+            "attempt": "The runner numerically evaluates two Bessel-sum values and checks their ordering.",
+            "disposition": "OPEN",
+            "evidence_locator": "The exact one-plaquette block `P_1plaq(beta)` is strictly increasing.",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The plaquette conclusion requires an exact strict-monotonicity theorem for the one-plaquette observable over the relevant interval.",
+            "outcome": "The finite numerical comparison supports these two points but is not the asserted exact interval theorem.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "exact_p1_monotonicity"
+          },
+          {
+            "attempt": "No such identity is enumerated or excluded; the proof treats higher analytic coefficients as freely perturbable.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "existence and uniqueness of an implicit finite-surface reduction law",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A global reduction identity or representation-theoretic constraint could relate the higher Taylor coefficients to the closed lower-order data.",
+            "outcome": "This independent class of possible full-stack constraint remains untested.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "global_reduction_equation"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "finite-jet and monotonicity underdetermination",
+            "full-stack witness admissibility"
+          ],
+          "evidence_locator": "current exact stack does **not** yet force analytic `P(6)`.",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "finite-jet and monotonicity underdetermination",
+              "left_closes_right": false,
+              "right": "full-stack witness admissibility",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "full-stack witness admissibility"
+          ],
+          "walls": [
+            "finite-jet and monotonicity underdetermination",
+            "full-stack witness admissibility"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The witness reduction laws above show exactly why:",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "same current exact regularity boundary:",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "phrase": "same current exact regularity boundary",
+              "promoted_wall": "full-stack witness admissibility"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "the exact infinite connected-hierarchy structure,",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "phrase": "exact infinite connected-hierarchy structure",
+              "promoted_wall": "full-stack witness admissibility"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "equivalent compact spectral measure.",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "phrase": "equivalent compact spectral measure",
+              "promoted_wall": "full-stack witness admissibility"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source note, primary runner, helper sources, and supplied premise registries were checked for unstated realizability, hierarchy, measure, and observable assumptions.",
+          "unresolved": [
+            "No supplied derivation shows that the explicit witnesses satisfy the hierarchy or positive-measure constraints."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Define two witness laws:",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+          "none_found_reason": "All N1 routes were assessed directly from the restricted source and runner packet; none relies on a prior witness.",
+          "scan_scope": "No N1 route was marked RULED OUT BY PRIOR, so no prior-witness residual was used to close an attack route.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What this closes",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "The note's claims of exact proof, current-stack underdetermination, and remaining-gap localization were checked against the resolutions actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "current exact stack does **not** yet force analytic `P(6)`.",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "phrase": "current exact stack does **not** yet force analytic `P(6)`.",
+              "tested_resolutions": [
+                "finite order-beta^5 jet",
+                "real analyticity",
+                "strict monotonicity of the displayed witnesses"
+              ],
+              "untested_resolutions": [
+                "connected-hierarchy compatibility",
+                "compact positive spectral-measure compatibility",
+                "finite Wilson source-surface realizability"
+              ]
+            },
+            {
+              "evidence_locator": "exact proof that the current closed jet does not force a unique",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "phrase": "exact proof that the current closed jet does not force a unique",
+              "tested_resolutions": [
+                "explicit beta^6 analytic perturbation"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "the remaining plaquette gap is not structural",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "phrase": "the remaining plaquette gap is not structural existence, but explicit nonperturbative identification",
+              "tested_resolutions": [
+                "two arbitrary analytic reduction functions"
+              ],
+              "untested_resolutions": [
+                "existence of two full-stack-compatible physical reductions"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The full-stack and structural-gap rhetoric exceeds the tested finite-jet resolution."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no nonperturbative plaquette reduction law, hierarchy realization, or spectral measure.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly withhold dynamics, source/action bridges, weighting, and physical-observable identifications needed to realize the witnesses.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither a state-contingent plaquette value nor a reduction-law selector.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference supplies no dimensionless beta_eff(6), hierarchy, or spectral constraint.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The AC_phi_lambda occupancy/readout boundary is unrelated to the gauge-vacuum plaquette reduction law.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g-bare convention is not an accepted premise and cannot select a nonperturbative beta_eff law or certify witness realizability.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the plaquette hierarchy and is not an accepted premise.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives, owner-governed residuals, live Tier-A classes, listed conventions, and possible scope reframes in the supplied partial-closure index were dispositioned.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The full connected hierarchy and compact positive-measure constraints may correlate every higher coefficient and exclude the arbitrary beta^6 deformation, so a counterexample satisfying only the finite jet and monotonicity does not refute determination by the full exact stack.",
+          "evidence_locator": "the exact infinite connected-hierarchy structure,",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+          "resolution": "This objection succeeds on the restricted packet: neither the note nor the runner instantiates the hierarchy or constructs compatible spectral measures for the two witnesses.",
+          "resolved": true,
+          "route_id": "full_hierarchy_compatibility"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "gauge_vacuum_plaquette_framework_point_underdetermination_note:previous_audit:0",
+              "evidence_locator": "gauge_vacuum_plaquette_framework_point_underdetermination_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "A prior clean result used the narrower finite-jet scope but was invalidated because its no-go-discipline packet was missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Retired flavor occupancy/readout admission; unrelated to plaquette witness realizability.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Retired strong-CP premise; unrelated to the plaquette reduction value.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Owner-governed flavor residual; outside the gauge-vacuum wall.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Unrelated inherited lepton, neutrino, and area-law routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite gravity-sweep scope boundary; unrelated observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Runner-boundary and coupling-scope caution; not a plaquette realization theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Textbook-import and RP-axis cautions; unrelated to beta_eff witnesses.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Records prior plaquette constant-lift and hierarchy-truncation no-gos but does not certify the present arbitrary witnesses against the full hierarchy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Electroweak normalization boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Explicit warning that a coefficient harness is not a beta=6 closure proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Lensing observable no-gos; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Flavor-carrier registry completeness caveat; no plaquette content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Charged-lepton selector walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Dimension-selection boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Lorentz-scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Metric-source conditionality; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite replay and basin-language boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Local Wilson data cannot establish full environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Flavor-route pruning; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Analytic-vector and ledger-retag boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Formal positive witnesses and local coefficients do not provide a physical multi-link Wilson environment.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Gauge-isotropy mechanism boundaries; no beta_eff realization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Gravity dispersion boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Weak-field gravity scope; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Absolute-scale and carrier walls; unrelated to dimensionless plaquette reduction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "U(1) normalization degeneracy; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Cross-lane mass, gravity, and atomic walls; no direct plaquette witness theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Atomic scale and threshold underdetermination; unrelated observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Quark mass selector and readout walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Asymptotic uniformity boundary; not used by this finite beta interval claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Lensing readout obstruction; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite-path lensing surrogate failure; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Static-source readout boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Temporal readout selector boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Empty larger-cell no-go ledger; no applicable witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Planning criterion boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Time-graining boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Neutrino mass construction routes; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Neutrino/cosmology scale walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite-lattice Newtonian scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Live recomputation and finite-basin boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Warns that canonical plaquette 0.5934 is not an unbounded same-surface theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite packet memory scope; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "A one-plaquette or finite-window theorem does not solve the thermodynamic plaquette lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Planck carrier selection walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Planck projector and source-domain walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Records the same minimal-block versus bulk framework-point underdetermination and warns that positivity/bootstrap constraints may add restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Distinguishes valid one-plaquette Haar quantities from incorrect identity evaluations and endpoint language.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Record selector boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Strong-CP and flavor registrability walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Single-clock locality and axis-selection walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite Fisher/source semantics boundary; not the plaquette spectral measure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Spin-statistics non-forcing; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Kinetic-law countermodel discipline; different physical lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "SU(3) quotient encoder is not a faithful Wilson cube theorem, reinforcing the need for genuine realizability.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Documentation synchronization issue; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Three-family scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Theta mass-side bridge wall; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Theta gauge-side action and weighting walls; distinct from plaquette beta_eff.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Theta carrier and phase gates; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Theta insertion selection wall; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Theta defect-closure wall; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Flavor determinant-power horn selection; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Record occupancy selection wall; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "R-eta formation/readout wall; unrelated.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "No no-go was attempted in that gravity packet; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Record-only mass readout countermodel; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Hard-coded finite table match boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Finite lattice rows do not imply continuum or universal laws; no direct beta_eff witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "mechanism": "Definition-as-derivation warning in the Yukawa lane; unrelated to the explicit algebraic witness.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "finite-jet and monotonicity underdetermination",
+          "full-stack witness admissibility"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "02d2e086f45ad55a45143c8ee17837b27515b02bc4580b73011bd545efd0d8d2",
+              "cross_cycle_candidate_ids": [
+                "gauge_vacuum_plaquette_framework_point_underdetermination_note:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "gauge_vacuum_plaquette_framework_point_underdetermination_note:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "976ec4fe94932923abc487f87b3f83855dd6ff8d991cb61497406b210446105e",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_framework_point_underdetermination_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "0de2a57a7d97161c246f45ca4756a85c75071e6af81036cc600db8aa2a30d05c",
+              "effective_status": null,
+              "path": "docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Define two witness laws:",
+                "The exact one-plaquette block `P_1plaq(beta)` is strictly increasing.",
+                "The two witness laws satisfy",
+                "The witness reduction laws above show exactly why:",
+                "What this closes",
+                "current exact stack does **not** yet force analytic `P(6)`.",
+                "equivalent compact spectral measure.",
+                "exact proof that the current closed jet does not force a unique",
+                "existence and uniqueness of an implicit finite-surface reduction law",
+                "finite Wilson source surface.",
+                "same current exact regularity boundary:",
+                "the exact infinite connected-hierarchy structure,",
+                "the remaining plaquette gap is not structural"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: four distinct full-stack attack routes remain OPEN or UNTESTED.",
+          "N2: full-stack witness admissibility is unresolved.",
+          "N3: hierarchy and spectral compatibility are hidden load-bearing assumptions.",
+          "N5: current-exact-stack rhetoric exceeds the finite-jet resolution tested.",
+          "N7: the strongest full-hierarchy steelman succeeds against the broad no-go."
+        ],
+        "narrowed_claim_scope": "The displayed witnesses establish underdetermination from the order-beta^5 jet, real analyticity, and monotonicity alone; they do not establish underdetermination after imposing the claimed connected-hierarchy and spectral-measure constraints.",
+        "next_route": {
+          "reason_untested": "The packet never substitutes either witness into the connected hierarchy or constructs two compatible Wilson/spectral models; this is the cheapest decisive test of the broad current-stack claim.",
+          "route_id": "full_hierarchy_compatibility"
+        },
+        "prior_claim_scope": "Current beta^5 onset jet plus real analyticity and strict monotonicity on [0,6] do not determine beta_eff(6) or analytic P(6).",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a theorem and runner certifying that both witnesses satisfy the full connected-hierarchy, finite-Wilson-surface, and compact-spectral-measure constraints; alternatively narrow this note and add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the row into the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the witnesses satisfy only the finite jet and monotonicity boundary, while the note promotes them to countermodels for a stack that also includes a connected hierarchy and compact spectral measure. Why this blocks: arbitrary analytic increasing functions need not be realizable reduction laws for that stronger stack. Repair target: construct two hierarchy- and spectral-compatible Wilson-surface models with different beta_eff(6), or narrow every full-stack conclusion to finite-jet-plus-monotonicity underdetermination. Claim boundary until fixed: the explicit functions are a valid algebraic counterexample only to determination by the listed finite regularity data."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_framework_point_underdetermination.py",
+  "title": "Gauge-Vacuum Plaquette Framework-Point Underdetermination",
+  "transitive_descendants": 791,
+  "verdict_rationale": null
+}

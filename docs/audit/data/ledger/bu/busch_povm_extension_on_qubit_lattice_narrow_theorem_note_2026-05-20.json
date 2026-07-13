@@ -1,0 +1,478 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.482,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "02e3330c94e0a8220cd6bce2d006103391d306745ebcf1c0a7922d788d18359a",
+  "note_path": "docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.811181+00:00",
+      "audit_date": "2026-05-22T00:09:14.377597+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-busch_povm_extension_on_-002",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited minimal axioms supply the per-site M_2(C) algebra and Z^3 finite-region tensor-product substrate; the source note explicitly imports Busch 2003 as the standard theorem covering dim H \u2265 2. Given that import, the finite-region conclusion follows by direct substitution.",
+      "claim_scope": "Finite-region application of the quoted Busch POVM-extension theorem to the qubit-lattice effect algebra E(H_\u039b) with H_\u039b = tensor_x C^2 and |\u039b| \u2265 1.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T00:09:14.377597+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies and gives m(E) = Tr(\u03c3E) for a unique density matrix \u03c3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether this audit lane treats Busch 2003 as admissible standard mathematical background or requires the theorem text as a retained upstream authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The audited result is a narrow application of a quoted standard theorem to the finite qubit-lattice Hilbert space. The only framework-specific work is verifying H_\u039b has dimension 2^|\u039b| \u2265 2 and effect algebra E(H_\u039b), which follows from the provided minimal axioms plus ordinary finite-dimensional tensor products. The note does not claim to rederive Busch's theorem, and the conclusion is scoped to finite regions rather than the quasi-local limit."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.061294+00:00",
+      "audit_date": "2026-05-23T12:43:31.548037+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T124124Z-2d6d6078-busch_povm_extension_on_-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The axiom-premise authority supplies the finite qubit tensor-product substrate, hence H_\u039b has dimension 2^|\u039b| \u2265 2 and E(H_\u039b) is the standard finite-dimensional effect algebra. With the stated Busch/CFMR theorem as the standard mathematical input, the Born-form conclusion follows directly.",
+      "claim_scope": "Finite-region application of the Busch/CFMR POVM Gleason theorem to the qubit-lattice effect algebra E(H_\u039b) for every nonempty finite \u039b, including the single-qubit dim-2 case.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:43:31.548037+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies to E(H_\u039b) and gives m(E)=Tr(\u03c3E) for a unique density matrix \u03c3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the exact Busch/CFMR hypothesis match to the note's M3 formulation; no runner artifact was provided.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source does not re-prove Busch's theorem, but it honestly scopes the row as applying that named standard POVM-Gleason theorem to the framework substrate. The only framework dependency is the axiom-premise Minimal Axioms note, which correctly yields A_\u039b = M_{2^|\u039b|}(C) and dim H_\u039b \u2265 2 for nonempty finite \u039b. The M3 partition-additivity condition is strong enough to match the effect-additivity needed for the stated theorem by adding complements. No runner was supplied, so the audit is textual rather than computational."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.507589+00:00",
+      "audit_date": "2026-06-05T18:59:38.162754+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.322,
+        "runner_hash": null,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-185711-3519161492-busch_povm_extension_on_qubi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The packet's accepted axiom authority supplies the lattice and one-site qubit carrier, and the note's finite-region setup gives dim H_\u039b = 2^|\u039b| \u2265 2. With Busch's POVM theorem used as the stated standard-math input, the conclusion follows by direct theorem instantiation and finite-dimensional trace duality.",
+      "claim_scope": "Finite-region qubit-lattice effect algebra E(H_\u039b) for |\u039b| \u2265 1, with Busch's dim \u2265 2 POVM theorem applied to obtain the unique density-matrix Born form.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:59:38.162754+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM theorem applies and gives m(E) = Tr(\u03c3E) for all E \u2208 E(H_\u039b).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the audit lane accepts the quoted Busch theorem as standard-math input rather than requiring a separate retained source packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The displayed quantitative identities are internally consistent: tensoring |\u039b| one-qubit sites gives dimension 2^|\u039b|, hence the Busch dim \u2265 2 hypothesis holds for every |\u039b| \u2265 1. The measure assumptions are exactly the POVM effect-algebra additivity hypothesis quoted for Busch's theorem, and the trace representation is unique in finite dimension by nondegeneracy of the trace pairing. No runner is present, but no compute is needed for this finite-dimensional theorem application."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:05.549412+00:00",
+      "archived_for_note_hash": "06ea434076b8d9da4be4bb41d681ee8576c97c24db0e3e7782c8ad759db10e67",
+      "audit_date": "2026-06-05T22:00:44.523462+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.322,
+        "runner_hash": null,
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-220022-f758fe26db-busch_povm_extension_on_qubi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The application to H_\u039b follows from the Quantum axiom plus the stated Busch theorem, but Busch 2003/CFMR 2004 is only named in the note and not provided as a cited authority in the restricted packet. The missing step is the actual upstream theorem statement/proof authority establishing the POVM-additive representation for all complex Hilbert spaces with dim \u2265 2.",
+      "claim_scope": "Finite-region qubit-lattice POVM effect algebra E(H_\u039b) with |\u039b| \u2265 1, conditional on the cited Busch 2003/CFMR 2004 POVM-Gleason theorem.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:00:44.523462+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For any |\u039b| \u2265 1, dim H_\u039b = 2^|\u039b| \u2265 2, so Busch's POVM-extension theorem applies and gives m(E)=Tr(\u03c3E) for a unique density matrix \u03c3.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the Busch 2003/CFMR 2004 theorem authority or a retained standard-math import node to the restricted packet, with the exact hypotheses matching the note's POVM-additivity assumptions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The restricted packet supplies the minimal qubit-on-Z^3 axiom authority, which is accepted as an axiom premise and correctly supports H_\u039b = tensor_x C^2 with dim 2^|\u039b|. The load-bearing mathematical content, however, is an imported named Busch/CFMR POVM-Gleason theorem that is not included as a cited authority in full, so the audit cannot verify the theorem from the permitted inputs. The note is honest about not re-proving Busch, but that makes the chain conditional on a missing standard-math import rather than clean within this packet."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.430815+00:00",
+      "audit_date": "2026-06-13T22:31:03.366796+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 15.808,
+        "runner_hash": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+        "transitive_descendants": 1267
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-222927-e177896081-busch_povm_extension_on_qubi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The single-site dim-2 case is supplied by the retained_bounded M_2(C) effect-Gleason bridge, and the multi-site case follows algebraically from the retained projection-lattice Gleason authority plus effect additivity, homogeneity, and finite spectral decomposition. The Minimal Axioms input is an explicitly accepted axiom premise and is used only for the qubit-on-Z^3 carrier.",
+      "claim_scope": "Finite-region qubit-lattice effect-Gleason representation: every POVM-additive probability measure on E(H_\u039b) for finite |\u039b|>=1 has a unique density-matrix trace form.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T22:31:03.366796+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T17:05:44.730876+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-170409-48b5915cb3-busch_povm_extension_on_qubi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-region effect-Gleason representation on E(M_{2^|\u039b|}(C)) for all finite qubit-lattice regions |\u039b| >= 1, assuming the stated POVM-additivity axioms.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T22:31:03.366796+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-222927-e177896081-busch_povm_extension_on_qubi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-region qubit-lattice effect-Gleason representation: every POVM-additive probability measure on E(H_\u039b) for finite |\u039b|>=1 has a unique density-matrix trace form.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "For |\u039b|=1 the retained M_2(C) effect bridge gives m(E)=Tr(\u03c3E), and for |\u039b|>=2 the restriction to projections plus retained Gleason, homogeneity, partial additivity, and spectral decomposition give m(E)=\u03a3_j \u03bb_j Tr(\u03c3P_j)=Tr(\u03c3E).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the retained_bounded single-site bridge remains accepted as retained-grade under the current ledger; no registered primitive beyond the explicit minimal_axioms premise is load-bearing here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The displayed extension formulas check out: POVM partition additivity implies complement and partial additivity; bounded additivity gives homogeneity; and E=\u03a3_j \u03bb_jP_j then yields Tr(\u03c3E). The cited upstream authorities are retained-grade or accepted-premise inputs, with no open bridge needed inside the stated finite-region scope. The runner is not a standalone proof of arbitrary effect functionals, but its exact and randomized finite-operator checks are consistent with the algebraic proof and contain no external comparator or tuned input."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.815081+00:00",
+      "audit_date": "2026-07-01T12:51:08.999473+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "Given a qubit effect functional m:E(M_2)->[0,1] satisfying M1-M3 POVM additivity, the note proves the unique trace-form representation m(E)=Tr(sigma E) with sigma a density matrix.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite qubit-lattice regions Lambda with |Lambda| >= 2 and H_Lambda = tensor_{x in Lambda} C^2, any countably additive probability measure on P(H_Lambda) has the unique Born trace form by standard Gleason theory.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.566,
+        "runner_hash": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+        "transitive_descendants": 66
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T125108Z-18a58602-busch_povm_extension_on_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The dim-2 case is supplied by the retained_bounded M_2 bridge, and the multi-site case follows from the retained projection-lattice companion plus finite-dimensional spectral decomposition and additivity/homogeneity derived from the POVM axioms. No additional probability, quasi-local, or Born-identification bridge is used beyond the theorem hypotheses.",
+      "claim_scope": "Finite-region effect-Gleason representation on H_Lambda = tensor_x C^2 for all finite |Lambda|>=1, assuming the stated POVM-additive probability measure hypotheses.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T12:51:08.999473+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "For |Lambda|=1 the cited M_2 effect-Gleason bridge gives m(E)=Tr(sigma E), and for |Lambda|>=2 the projection-Gleason representation on projections plus POVM-derived homogeneity and finite spectral decomposition gives m(E)=sum_j lambda_j Tr(sigma P_j)=Tr(sigma E).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the finite-dimensional extension from partial effect additivity to a well-defined real-linear functional; the runner supports but does not independently prove that universal step.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The cited inputs are retained-grade or accepted axiom premises, and the source note's finite-region conclusion follows by standard finite-dimensional operator algebra. The runner source performs real algebraic and numerical sanity checks rather than merely printing passes, although its generated trace-form measures are supporting checks rather than the proof of universality. The universality is supplied by the written additivity-to-linearity/Riesz argument for M_2 and by the retained projection-Gleason authority plus spectral extension for |Lambda|>=2."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.327900+00:00",
+      "audit_date": "2026-07-02T01:51:03.002597+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For a qubit effect functional m:E(M_2)->[0,1] satisfying the stated POVM-additivity hypotheses (M1)-(M3), the note proves the unique density-matrix trace representation m(E)=Tr(sigma E) on E(M_2).",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda| >= 2, any countably additive probability measure on P((C^2)^{tensor Lambda}) has the Born trace form with a unique density matrix.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.566,
+        "runner_hash": "829ff335ed0dd026003c6c6f1f99fcd86150de74b576c1e9e89b81cea1ed1449",
+        "transitive_descendants": 66
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T015102Z-6e427dbb-busch_povm_extension_on_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The single-site case is supplied by a retained-grade bounded qubit bridge, and the multi-site case follows from the retained projection-Gleason authority plus standard finite-dimensional additivity, homogeneity, and spectral decomposition. The probability/POVM additivity assumptions are theorem hypotheses, not derived framework content.",
+      "claim_scope": "Finite-region effect-Gleason theorem on E(M_{2^|Lambda|}(C)): every normalized [0,1]-valued POVM-additive effect functional satisfying M1-M3 is uniquely Tr(sigma E), for all finite |Lambda|>=1.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:51:03.002597+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "For |Lambda|=1 the M_2(C) effect-Gleason bridge gives m(E)=Tr(sigma E), while for |Lambda|>=2 the projection-lattice companion gives m(P)=Tr(sigma P) and homogeneity plus the finite spectral decomposition E=sum_j lambda_j P_j gives m(E)=sum_j lambda_j Tr(sigma P_j)=Tr(sigma E).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the qubit bridge's bounded-Cauchy real-linearity extension; the runner examples alone should not be treated as the proof.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The cited authorities are retained-grade or accepted axiom premises, and the source note's finite-region conclusion follows by algebraic closure from them. The runner source performs real finite-operator sanity checks and does not import external comparator values; its random trace-form examples support the algebra but are not the universal proof. The audited scope does not include a quasi-local inductive-limit theorem or a derivation of the POVM probability axioms themselves."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py",
+  "title": "Busch POVM Extension on the Qubit-Lattice Effect Algebra (Narrow)",
+  "transitive_descendants": 714,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

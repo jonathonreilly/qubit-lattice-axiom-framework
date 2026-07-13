@@ -1,0 +1,1322 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96",
+  "note_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.363961+00:00",
+      "audit_date": "2026-06-19T21:57:43.451310+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.67,
+        "runner_hash": "7a3814f491242f0f450a333d5ae139691214c7fc73c939898370709f7e5561e3",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated ideal finite kinetic stress setup, the conclusion follows by finite orbit symmetry and elementary pressure/energy algebra. The note does not import or claim closure of the full FRW backdrop or actual cosmological-fluid application.",
+      "claim_scope": "Exact finite ideal kinetic EOS labels: signed-permutation massless shell mixtures give w_r=1/3, a massive rest sector gives w_m=0, and nonzero massive shells have positive pressure correction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:57:43.451310+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For a shell closed under signed permutations, the coordinate-square sums are equal and add to n q, so each axis sum is n q / 3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the kinetic stress relations are being treated only as the ideal finite kinetic surface, not as a bridge to actual cosmological fluids.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 74,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 78
+      },
+      "verdict_rationale": "The load-bearing argument is an algebraic identity over finite signed-permutation shells, and the massless, rest-massive, and nonzero-massive formulas follow with the stated kinetic stress definitions. The runner source performs genuine finite orbit and rational arithmetic checks, with only non-load-bearing parent-note string checks in class B and no external comparator. The runner examples are not the whole proof, but the source note's general orbit-sum argument closes the bounded claim as written."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:05.687888+00:00",
+      "audit_date": "2026-07-12T10:18:46.525464+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "7a3814f491242f0f450a333d5ae139691214c7fc73c939898370709f7e5561e3",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00284-frw_c3_eos_component_labels_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-orbit algebra is correct once E=sqrt(m^2+|p|^2) and P_i proportional to sum p_i^2/E are supplied. No cited authority or accepted premise in the restricted packet derives that relativistic kinetic-stress bridge from the framework baseline.",
+      "claim_scope": "Conditional algebraic EOS identities for finite signed-permutation massless shells and a massive rest sector, assuming the relativistic kinetic-stress and dispersion formulas used in the note.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:18:46.525464+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:c9cba4bc4057",
+      "load_bearing_step": "Using E=|p| and P_i proportional to sum_p p_i^2/E, equal axis-square sums give P_i/rho=1/3, while p=0 gives w=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note pairs coordinate axes under signed permutations and sums their squared components on a fixed-norm finite orbit.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the signed-permutation orbit has equal axis-square sums",
+            "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the cubic signed-permutation action to force equal coordinate-square sums.",
+            "outcome": "This closes the finite-shell isotropy step algebraically.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "orbit_symmetry"
+          },
+          {
+            "attempt": "The proof applies 3P_i=rho separately to each shell and adds the weighted terms.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Finite positive mixtures preserve this identity term by term",
+            "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Extend the shell identity to a finite positive mixture of distinct shells.",
+            "outcome": "Positive finite mixtures preserve the identity without selecting a special shell.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "positive_shell_mixture"
+          },
+          {
+            "attempt": "The proof evaluates the rest sector with positive mass and identically vanishing momentum components.",
+            "disposition": "CLOSED",
+            "evidence_locator": "For pressureless rest matter, `p = 0`",
+            "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Restrict the massive sector to the pressureless p=0 boundary condition.",
+            "outcome": "The assumed kinetic formula then yields rho>0 and P_i=0 exactly.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "rest_boundary"
+          },
+          {
+            "attempt": "The note substitutes E^2=m^2+q into w=q/(3E^2) for q>0 and m^2>0.",
+            "disposition": "CLOSED",
+            "evidence_locator": "That positive correction is the boundary that prevents this support note from identifying all massive kinetic ensembles with dust.",
+            "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether a nonzero massive isotropic shell can still be exact dust.",
+            "outcome": "The ratio is strictly positive, closing the attempted extension of exact dust to nonzero-momentum shells.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "massive_momentum_countercheck"
+          },
+          {
+            "attempt": "The restricted premise text was checked for dynamical content beyond c_t=c_s.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It carries no dimensionless dynamical content",
+            "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Use the approved kinetic-isotropy primitive as the missing kinetic-stress authority.",
+            "outcome": "The primitive supplies only regulator-form isotropy and explicitly supplies no dimensionless dynamical content, so it cannot derive E(p) or T^{ij}.",
+            "prior_witness_id": "kinetic_primitive_scope",
+            "route_class": "normalization_or_units",
+            "route_id": "kinetic_primitive_route"
+          },
+          {
+            "attempt": "The supplied minimal-axiom memo was checked for a selected Hamiltonian, transfer operator, or kinetic branch.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Derive the kinetic Hamiltonian and stress tensor directly from Lattice, Qubit, Admissibility, and Record.",
+            "outcome": "The memo explicitly withholds those structures, so this direct route is closed on the current premise text.",
+            "prior_witness_id": "minimal_axiom_dynamics_scope",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "minimal_axiom_dynamics_route"
+          },
+          {
+            "attempt": "The restricted packet was scanned for a theorem deriving E=sqrt(m^2+q) and P_i proportional to sum p_i^2/E.",
+            "disposition": "OPEN",
+            "evidence_locator": "For massless modes, `E = |p| = sqrt(q)`.",
+            "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive a framework-native map from momentum modes to energy density and spatial stress.",
+            "outcome": "No such authority or derivation is supplied; this remains the load-bearing open route.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "derive_kinetic_stress_bridge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "relativistic kinetic-stress and dispersion bridge",
+            "full FRW and actual cosmological-fluid application"
+          ],
+          "evidence_locator": "This note is intentionally small. It supplies ideal kinetic component labels only.",
+          "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "relativistic kinetic-stress and dispersion bridge",
+              "left_closes_right": false,
+              "right": "full FRW and actual cosmological-fluid application",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "relativistic kinetic-stress and dispersion bridge",
+            "full FRW and actual cosmological-fluid application"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "For massless modes, `E = |p| = sqrt(q)`.",
+          "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "For massless modes, `E = |p| = sqrt(q)`.",
+              "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+              "phrase": "E = |p| = sqrt(q)",
+              "promoted_wall": "relativistic kinetic-stress and dispersion bridge"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "while a pressure component is proportional to",
+              "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+              "phrase": "a pressure component is proportional to",
+              "promoted_wall": "relativistic kinetic-stress and dispersion bridge"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "It does not choose a Hamiltonian or transfer operator"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source proof, runner formulas, and accepted-premise descriptions were checked for imported dispersion, stress, Hamiltonian, action, normalization, and physical-fluid identifications.",
+          "unresolved": [
+            "The relativistic kinetic-stress and dispersion bridge is assumed rather than derived."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Relation To Dynamics And Kinetic Branch Selection",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "none_found_reason": "",
+          "scan_scope": "The two accepted-premise witnesses used to rule out direct premise-only kinetic derivations were matched to the missing kinetic-stress residual.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "A dynamical dispersion and kinetic-stress map remains unsupplied.",
+              "evidence_locator": "It carries no dimensionless dynamical content",
+              "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "match": true,
+              "route_id": "kinetic_primitive_route",
+              "witness_id": "kinetic_primitive_scope",
+              "witness_residual": "The primitive fixes c_t/c_s but supplies no dimensionless dynamical content."
+            },
+            {
+              "claim_residual": "A framework-native kinetic Hamiltonian and stress tensor remain unsupplied.",
+              "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "minimal_axiom_dynamics_route",
+              "witness_id": "minimal_axiom_dynamics_scope",
+              "witness_residual": "The four axioms select no Hamiltonian or transfer operator."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "This note is intentionally small. It supplies ideal kinetic component labels only.",
+          "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+          "none_found_reason": "",
+          "scan_scope": "The note's negative and scope-limiting language was checked against the resolutions actually proved or inspected.",
+          "statements": [
+            {
+              "evidence_locator": "This is not zero.",
+              "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+              "phrase": "This is not zero.",
+              "tested_resolutions": [
+                "one finite isotropic massive shell with q>0 and m^2>0"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This note is intentionally small.",
+              "evidence_path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+              "phrase": "This note is intentionally small.",
+              "tested_resolutions": [
+                "ideal finite kinetic component-label surface"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes c_t=c_s only and explicitly withholds dynamical content, so it does not supply E(p) or the stress tensor.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms do not select a Hamiltonian, kinetic branch, action, or physical stress observable.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise evaluation at a realized state supplies neither kinetic dynamics nor an energy-stress functional.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference cannot supply the dimensionless EOS map or relativistic dispersion.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton determinant-counting obligation is unrelated to kinetic stress or FRW component labels.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton eta readout obligation supplies no momentum-to-stress bridge.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This theta/quark determinant readout obligation is unrelated to relativistic kinetic stress.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom, approved-primitive, open-obligation, convention, definition, and scope index was checked for a retained kinetic-stress/dispersion bridge.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest defense is that cubic lattice symmetry plus the approved c_t=c_s kinetic-isotropy primitive should make the standard relativistic dispersion and kinetic stress automatic.",
+          "evidence_locator": "It carries no dimensionless dynamical content",
+          "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+          "resolution": "The supplied primitive explicitly limits itself to regulator-form graining and disclaims dynamical content, while the minimal axioms select no Hamiltonian or transfer operator. The defense therefore does not close the missing physical bridge in this packet.",
+          "resolved": true,
+          "route_id": "derive_kinetic_stress_bridge"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18:previous_audit:0",
+              "evidence_locator": "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Prior audit accepted the shell algebra but did not resolve the hidden kinetic-stress premise.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Unrelated charged-lepton counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Unrelated eta-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Unrelated theta determinant-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Unrelated foundational-campaign no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite-sweep versus full-Newton scope boundary; no EOS bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Gauge-coupling source-boundary repair; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Textbook-import and axis-selection boundaries; no retained kinetic-stress theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Unrelated multi-lane inherited no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Electroweak normalization boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Plaquette coefficient audit boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Lensing observable-bridge failures; unrelated to EOS labels.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Carrier antisymmetry registry boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Charged-lepton selector no-gos; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Spatial-dimension selection boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Lorentz-theorem scope warning that does not derive the needed kinetic stress.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Metric reconstruction boundary; no stress bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Family radial-basin scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Local Wilson scorecard scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Flavor readout route pruning; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Free-Dirac bridge packet indicates a potentially relevant class but supplies no authority in this restricted packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Gauge environment contraction boundaries; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Gauge-action isotropy boundary; does not supply matter dispersion or stress.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Dispersion-to-observable boundary in gravity; no retained matter EOS bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Weak-field gravity scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "C1 absolute-scale walls are independent of this C3 kinetic-label bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Hypercharge normalization boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Multi-lane campaign boundaries; no C3 kinetic-stress closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Atomic-scale kinetic and coupling gates; not an EOS authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Quark-mass selector walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Asymptotic-limit boundary; unrelated to finite-shell identities.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Lensing readout obstruction; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite-path lensing surrogate failure; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Static-source readout boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Clock/readout boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Empty larger-cell no-go ledger; no EOS content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Planning-selector boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Physical-time identification boundary; no kinetic-stress derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Neutrino mass construction walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Cosmological neutrino and Hubble gates remain separate from C3 labels.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite Newtonian replay scope; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite recompute artifact boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Coupling-authority boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite packet-memory scope; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite differential-system window boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Clifford carrier-selection walls; no supplied kinetic action.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Planck carrier-selection history; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Gauge bootstrap boundaries; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Plaquette diagnostic boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Record-selector boundary confirms arithmetic cannot supply physical authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Strong-CP and AC registrability walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Transfer-Hamiltonian locality and axis-selection walls do not supply the kinetic stress.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Source-measure readout boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Statistics forcing remains withdrawn and does not derive kinetic dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Minimal-surface kinetic-law nonselection directly confirms the missing dynamics wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "SU(3) cube encoder boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Documentation synchronization issue; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Family-card scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Theta mass-readout walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Theta gauge-readout walls; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Theta positive-gate inventory; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Theta insertion-selection wall; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Theta defect-closure wall; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "AC determinant-power selection; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "AC Record occupancy nonsupply; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "AC formation/readout nonsupply; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Artifact-visibility issue; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Record-only scalar-readout nonderivation reinforces that Record cannot supply kinetic stress.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Finite two-row wave implication boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Wide-lattice continuum scope boundary; unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "mechanism": "Physical-readout renaming warning reinforces the need for a derived stress observable.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "relativistic kinetic-stress and dispersion bridge",
+          "full FRW and actual cosmological-fluid application"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18": {
+              "accepted_premise_type": null,
+              "content_sha256": "60704bba7e7d80e26c77992ab5b5527cf834db69f4c962debddeae60a8287af9",
+              "cross_cycle_candidate_ids": [
+                "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18": {
+              "accepted_premise_type": null,
+              "content_sha256": "81cbddc2fdce2fd1de91f7c7cdf25fe57e8f3265d6d954c78b191521eba3f694",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "090b6bd63c9fdeecb08686f3a08574d40d4ce59e346868d06566601834968e96",
+              "effective_status": null,
+              "path": "docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Finite positive mixtures preserve this identity term by term",
+                "For massless modes, `E = |p| = sqrt(q)`.",
+                "For pressureless rest matter, `p = 0`",
+                "That positive correction is the boundary that prevents this support note from identifying all massive kinetic ensembles with dust.",
+                "This is not zero.",
+                "This note is intentionally small.",
+                "This note is intentionally small. It supplies ideal kinetic component labels only.",
+                "the signed-permutation orbit has equal axis-square sums",
+                "while a pressure component is proportional to"
+              ]
+            },
+            "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+              "effective_status": null,
+              "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It carries no dimensionless dynamical content"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not choose a Hamiltonian or transfer operator",
+                "Relation To Dynamics And Kinetic Branch Selection"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: derive_kinetic_stress_bridge remains OPEN.",
+          "N3: the relativistic kinetic-stress and dispersion formulas are hidden admissions rather than derived inputs."
+        ],
+        "narrowed_claim_scope": "Conditional algebraic EOS identities for finite signed-permutation massless shells and a massive rest sector, assuming the relativistic kinetic-stress and dispersion formulas used in the note.",
+        "next_route": {
+          "reason_untested": "The restricted packet contains no retained theorem deriving the momentum-to-energy-and-stress map from the framework baseline.",
+          "route_id": "derive_kinetic_stress_bridge"
+        },
+        "prior_claim_scope": "Exact finite ideal kinetic EOS labels: signed-permutation massless shell mixtures give w_r=1/3, a massive rest sector gives w_m=0, and nonzero massive shells have positive pressure correction.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained source deriving the relativistic dispersion and kinetic stress tensor from the framework surface, cite it directly, and update the runner to exercise that derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 25,
+        "C": 0,
+        "D": 0,
+        "total_pass": 78
+      },
+      "verdict_rationale": "Issue: the runner and proof hard-code the relativistic dispersion and kinetic-stress formulas that connect momentum shells to rho and P_i. Why this blocks: the accepted premises explicitly do not supply a Hamiltonian or dynamical kinetic law, so the correct shell arithmetic is not a framework-derived EOS theorem. Repair target: cite or derive a retained relativistic kinetic-stress/dispersion bridge and make the runner instantiate that bridge rather than assume it. Claim boundary until fixed: the note establishes exact conditional algebra for the stated ideal finite ensembles."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18.py",
+  "title": "FRW C3 EOS Component Labels Kinetic Bridge Bounded Support",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

@@ -1,0 +1,130 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "alpha_s_cmt_coupling_map_derivation_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (bounded under named admissions)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_ew_color_projection_theorem",
+    "alpha_s_derived_narrow_theorem_note_2026-05-10",
+    "alpha_s_derived_note",
+    "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7a4f1c164ae9ef1613fb40f178d25793f234eda77ef7912b15147338ff573b3e",
+  "note_path": "docs/ALPHA_S_CMT_COUPLING_MAP_DERIVATION_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:36.992298+00:00",
+      "audit_date": "2026-07-10T03:32:43.008559+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "alpha_s_derived_narrow_theorem_note_2026-05-10": "Exact algebraic tadpole-power identities P1, P2, and the listed corollaries over positive real alpha_bare and u_0, conditional only on the retained abstract definitions alpha_LM = alpha_bare/u_0 and alpha_s(v) = alpha_bare/u_0^2.",
+          "alpha_s_derived_note": "Exact forward arithmetic for alpha_s(v) and the alpha_LM identity over declared boundary inputs B1-B4; the M_Z running readout is only a bounded quarantined corollary.",
+          "yt_ew_color_projection_theorem": "Packet-scoped exact K_EW(kappa_EW) family and no-go boundary: the current packet does not derive the connected-trace specialization kappa_EW = 0.",
+          "yt_vertex_power_operator_counting_lemma_note_2026-05-17": "Conditional on the staggered-Dirac nearest-neighbor operator, the link-exponential convention, and the stated coupling-map counting surface, the single-link vertex D' has link degree 1 and the current-current vacuum-polarization term has two D' insertions, giving relative count n_link(VP)=2 versus hopping n_link=1."
+        },
+        "dep_claim_type": {
+          "alpha_s_derived_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "alpha_s_derived_note": "bounded_theorem",
+          "yt_ew_color_projection_theorem": "no_go",
+          "yt_vertex_power_operator_counting_lemma_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alpha_s_derived_narrow_theorem_note_2026-05-10": "retained",
+          "alpha_s_derived_note": "retained_bounded",
+          "yt_ew_color_projection_theorem": "retained_no_go",
+          "yt_vertex_power_operator_counting_lemma_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "alpha_s_derived_narrow_theorem_note_2026-05-10",
+          "alpha_s_derived_note",
+          "yt_ew_color_projection_theorem",
+          "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "45b6cff12c2e2915f4e5a8c4616f27aec32987adc4d30608813b1be9ce3d5129",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00025-alpha_s_cmt_coupling_map_der",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes if (I1)-(I3) are assumed. However, the supplied YT_EW_COLOR_PROJECTION_THEOREM authority is a kappa-family no-go and does not state or prove the claimed CMT correlator identity (I1), so the result does not follow from the cited packet.",
+      "claim_scope": "The exact symbolic implication from the admitted CMT correlator identity and equal-kinematic-factor coupling conventions to alpha_eff = alpha_bare/u_0^{n_link}.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:32:43.008559+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:alpha_s_derived_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Substituting (I2) and (I3) into (I1), cancelling the nonzero kinematic factor K_U, and solving gives alpha_eff = alpha_bare/u_0^{n_link}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: Replace the YT_EW citation with a one-hop retained authority whose supplied text actually establishes the CMT correlator identity, then rerun the same symbolic certificate.",
+      "open_dependency_paths": [
+        "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
+        "docs/ALPHA_S_DERIVED_NOTE.md",
+        "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the load-bearing CMT identity is attributed to YT_EW_COLOR_PROJECTION_THEOREM.md, but that supplied authority contains only the EW kappa-family no-go and no such identity. Why this blocks: the runner correctly verifies downstream algebra but directly instantiates I1, so it cannot certify the missing upstream premise. Repair target: wire a retained one-hop authority that actually states and supports I1, or explicitly rescope I1 as an admitted premise. Claim boundary until fixed: the inverse-power map is a valid algebraic consequence conditional on I1-I3, not a derivation from the currently cited retained packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_alpha_s_cmt_coupling_map_derivation.py",
+  "title": "alpha_s CMT-Coupling-Map Derivation Theorem (bounded, narrow)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

@@ -1,0 +1,152 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_sm_embedding_theorem",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms_2026-04-11",
+    "native_gauge_closure_note",
+    "yt_explicit_systematic_budget_note"
+  ],
+  "direct_in_degree": 35,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 27.06,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "19fc3e59317b529ce3f8f412f35acdd1fc382cbae04544bd37ba6209d6e0f77a",
+  "note_path": "docs/CL3_SM_EMBEDDING_THEOREM.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.810990+00:00",
+      "audit_date": "2026-05-02T21:32:18.114356+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 11.281,
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "fresh-cl3-sm-embedding-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Cl(3) algebraic identities close, but the physical carrier/readout bridge does not. The fiber weak action, hypercharge coefficients, matter labels, and chiral sector are selected rather than derived from minimal_axioms_2026-04-11, whose current ledger status is meta rather than retained-grade theorem input.",
+      "claim_scope": "Exact algebraic checks for a chosen 8D Cl(3) taste representation, chosen fiber SU(2), chosen symm/antisymm hypercharge operator, and bounded L-sector determinant pairing; not a derived SM embedding.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T21:32:18.114356+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The proof defines the SM readout by taking physical SU(2)_weak = {I4 tensor sigma_i/2} and Y = (+1/3)P_symm + (-1)P_antisymm, then reads the eigenspaces as quark/lepton weak doublets.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-audit if a retained axis-selection plus hypercharge-normalization theorem is supplied and the runner is changed to derive, not set, the SM readout.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 95,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 95
+      },
+      "verdict_rationale": "Issue: the theorem introduces the SM content by selected identifications: fiber = SU(2)_weak, Y = (+1/3)P_symm - P_antisymm, symm/antisymm blocks = quark/lepton carriers, and even parity = L-sector. Why this blocks: the runner verifies that these selected operators have the advertised algebra and spectra, but it does not derive why these are the physical SM carrier, gauge action, hypercharge, chirality, or matter readouts from the dependency. Repair target: a retained theorem deriving the carrier/readout map and hypercharge normalization from minimal primitives, with a runner that constructs those choices rather than setting them. Claim boundary until fixed: exact Cl(3) algebra, central omega, abstract su(2), selected-operator commutation/eigenvalue checks, and bounded L-sector determinant support."
+    },
+    {
+      "archived_at": "2026-05-05T07:51:30.014917+00:00",
+      "archived_for_note_hash": "ce5a8b5e37a14f0297875e044e6dc40e421d313d3e15603b1fab40a96a09c829",
+      "audit_date": "2026-05-04T23:54:54.539100+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 14.695,
+        "runner_hash": "136a875283bac7d12c588df8ddd0524dba1482781444e1c97ab986934c1347f5",
+        "transitive_descendants": 292
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-cl3_sm_embedding_theorem-016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford algebra, projector spectra, and commutation checks close as algebraic identities in the runner. The stronger conclusion that these dimensions fix physical bare gauge couplings and that the fiber algebra is the physical weak SU(2) imports a normalization/identification rule not closed by the restricted packet.",
+      "claim_scope": "Audited the restricted packet's algebraic Cl(3) representation checks, hypercharge block spectrum, fiber SU(2) commutation, and L-sector determinant support, including the claimed coupling assignment by subalgebra dimension.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-04T23:54:54.539100+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The number of independent generators fixes the coupling: g2^2 = 1/dim(Cl+(3)) = 1/4 and g_Y^2 = 1/dim(Cl+(3)+{omega}) = 1/5.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained authority deriving the coupling normalization g^2 = 1/N_gen and the fiber-to-physical-SU(2) identification from current retained axioms.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+        "docs/YT_EXPLICIT_SYSTEMATIC_BUDGET_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 87,
+        "B": 0,
+        "C": 0,
+        "D": 8,
+        "total_pass": 95
+      },
+      "verdict_rationale": "The runner genuinely constructs the stated Clifford, projector, SU(2), SU(3), and L-sector matrices, but several headline checks are algebraic confirmations after defining the embedding rather than a first-principles derivation of physical gauge couplings. The cited authority provided is explicitly superseded/meta and not retained-grade. The note also names external closure for the fiber = weak SU(2) identification and broader running/bridge budget, neither of which is present in the restricted packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/verify_cl3_sm_embedding.py",
+  "title": "Cl(3) \u2192 SM Embedding Theorem: Cl\u207a(3) \u2283 SU(2)\u00d7U(1) with SM Quantum Numbers",
+  "transitive_descendants": 754,
+  "verdict_rationale": null
+}

@@ -1,0 +1,230 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5edadbb1bc4a6b4992eecff1048309717fdccbb3a68a24e102c4c0f296e4025f",
+  "note_path": "docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T08:20:08.510015+00:00",
+      "audit_date": "2026-06-18T12:07:33.880132+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "2000ba6b2315f173c2202784ebfbc501e16052725ff04afc01b843bf9d04cf13",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the tested momenta, C3 spatial orbits, Wilson masses, signed branches, and sector sums directly from the displayed finite surface rather than importing target values. The cited bulk note is retained_bounded and only supplies compatible scoping/open-path context, while the minimal-axioms authority is an accepted premise and is not a downgrade.",
+      "claim_scope": "Finite free-bulk APBC Wilson-eta sector sums on L in {2,3,4,6,8}, density tails on L in {3,4,6,8}, L_t in {4,8}, r in {0.5,1}, m in {-2.5,-1.5,-0.5,0.5}, for the two stated Wilson-mass variants; no boundary, R-eta, delta-input, fixed-r, or large-L claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T12:07:33.880132+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+      "load_bearing_step": "The finite APBC momentum-mode enumeration using the displayed Wilson dispersions and C3 orbit character accounting gives eta_omega - eta_omega2 = 0 and the stated density tables on the tested window.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check the C3 orbit character accounting and finite-window thresholds if the tested Wilson surface or window is changed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 21,
+        "C": 7,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing finite computation is class C: the runner computes the mode sums and density candidates from the closed-form dispersion and orbit accounting, with no helper imports and no hard-coded contested density values. The K-odd cancellation follows from equal omega and omega2 content on every size-three orbit and zero doublet content on fixed orbits; the density and 2/9-distance claims are finite-window enumerations supported by the completed output. The no-go discipline gate is adequately scoped to the narrowed free-bulk sector-counting boundary, with boundary spectral corrections and direct multiset-to-geometry left open."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.466110+00:00",
+      "audit_date": "2026-06-21T16:50:42.535194+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Exact bare-bulk scoping result on L_s=2, L_t in {2,4}, APBC, mean-field, massless closed-torus staggered Dirac: eta_APS is zero, and the d=4 value 1/8 is only the existing A(d)=B(d)=C(d) identity collapse, not an independent APS-eta witness.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "2000ba6b2315f173c2202784ebfbc501e16052725ff04afc01b843bf9d04cf13",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite claims close from the supplied closed-form dispersion, antiperiodic mode convention, and C3 orbit sector accounting. The runner source actually enumerates the tested modes and parameters, computes the sector etas and densities, and checks the scoped text/AST guards rather than merely printing asserted PASS lines.",
+      "claim_scope": "Finite free-bulk Wilson-eta computation on L in {2,3,4,6,8} for K-odd checks, L in {3,4,6,8} for density tails, L_t in {4,8}, r in {0.5,1}, m in {-2.5,-1.5,-0.5,0.5}, and the two displayed Wilson-mass variants; no boundary, R-eta, or large-L claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:50:42.535194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For the displayed antiperiodic momentum modes, Wilson-mass variants, and C3 orbit sector accounting, direct finite summation gives eta_omega - eta_omega2 = 0 on the tested grid and the printed density tails stay far from 2/9 at L=8.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only the intended C3 fixed-orbit sector convention and that the displayed Wilson dispersion remains the declared surface; no missing compute artifact is present in this packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 21,
+        "C": 7,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing step is a direct finite computation over the stated free-bulk Wilson surface, and the runner source matches the claimed computation. The retained_bounded bulk note is used only for compatible scoped context and preserved opens, while the minimal-axioms authority is an accepted premise node under the rubric carve-out. The note does not import an external comparator or promote the density-tail observations into a large-L, boundary-geometry, or R-eta conclusion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.907148+00:00",
+      "audit_date": "2026-07-09T09:40:58.303443+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Exact bare-bulk scoping result on L_s=2, L_t in {2,4}, APBC, mean-field, massless closed-torus staggered Dirac: eta_APS is zero, and the d=4 value 1/8 is only the existing A(d)=B(d)=C(d) identity collapse, not an independent APS-eta witness.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2000ba6b2315f173c2202784ebfbc501e16052725ff04afc01b843bf9d04cf13",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-noether-20260709-equivariant-wilson-eta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source stays inside the finite tested free-bulk surface and leaves APS boundary geometry, R-eta, large-L limits, and readout interpretations outside the claim. The runner computes the sector eta values and density tables from the displayed Wilson dispersion rather than importing a target density.",
+      "claim_scope": "Finite free-bulk Wilson-eta sector checks on L in {2,3,4,6,8}, density tails on L in {3,4,6,8}, L_t in {4,8}, r in {0.5,1}, m in {-2.5,-1.5,-0.5,0.5}, for the two stated Wilson-mass variants; no APS, R-eta, large-L, or readout claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T09:40:58.303443+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the tested free-bulk window, sector-resolved Wilson-eta asymmetries are sub-extensive, so bulk sector counting supplies no fixed-locus-density angle.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check if future edits broaden the claim to APS boundary geometry, R-eta, physical mass/readout, or a large-L limit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 21,
+        "C": 7,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "Clean within the bounded finite-window scope. The runner verifies sector-zero cancellation, K-odd cancellation, finite density-tail behavior, no L=8 near-hit to 2/9, and the no-delta/textual boundary guards, with SUMMARY: PASS=29 FAIL=0 and py_compile passing. Residual risk is wording hygiene only: sub-extensive and the title must remain finite tested-window language, not an asymptotic density-vanishing theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
+  "title": "Equivariant Wilson-Eta Densities Vanish on the Tested Window - Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

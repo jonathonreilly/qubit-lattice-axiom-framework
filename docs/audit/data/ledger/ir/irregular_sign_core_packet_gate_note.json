@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "irregular_sign_core_packet_gate_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "weak_coupling_retention_note_2026-04-11",
+    "gravity_sign_audit_2026-04-10"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.807,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "83288739a09171dd406ac4b7b893e6b483de48b977926e6f2f05b6142531e3fa",
+  "note_path": "docs/IRREGULAR_SIGN_CORE_PACKET_GATE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.661780+00:00",
+      "audit_date": "2026-05-29T05:50:30.156563+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_sign_audit_2026-04-10": "Finite configured 1D well/hill diagnostic for the stipulated identity and parity on-site Hamiltonian forms at n=61, mass=0.30, dt=0.12, steps=20; excludes lapse closure, physical gravity-sign derivation, graph self-gravity, irregular-graph portability, and derivation of the couplings from baseline axioms.",
+          "weak_coupling_retention_note_2026-04-11": "Frozen finite 60-run audit surface over random geometric, growing, and layered cycle graph families at the listed sizes, seeds 42..46, and G=5,10, checking shell-margin and norm-conservation counts only."
+        },
+        "dep_claim_type": {
+          "gravity_sign_audit_2026-04-10": "bounded_theorem",
+          "weak_coupling_retention_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_sign_audit_2026-04-10": "retained_bounded",
+          "weak_coupling_retention_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "gravity_sign_audit_2026-04-10",
+          "weak_coupling_retention_note_2026-04-11"
+        ],
+        "load_bearing_score": 4.807,
+        "runner_hash": "1c69c515b731ca1d74fdf4676c0f78a1e17619c8cab781b5bb664008de740371",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-irregular-sign-core-packet-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the configured graph families and core_packet observable, solves the two sign evolutions, computes the three margin families, and applies the declared 80% positive-fraction gates. The cached output gives 30/30 for all metrics at mu2=0.1 and minimum 28/30 = 93.3% at mu2=0.001, so both screening gates and the cross-screening gate close within the bounded surface.",
+      "claim_scope": "Bounded same-surface irregular sign-separator gate for the centered non-oscillating core_packet observable on the configured random_geometric(side=8), growing(n_target=64), and layered_cycle(layers=8,width=8) graph families, seeds 42-46, G in {5.0,10.0}, mu2 in {0.1,0.001}, window steps [2,11), and metrics ball1_margin, ball2_margin, depth_margin, with an 80% positive-fraction gate. Arbitrary packet portability, off-center/transport directionality, universal graph/G coverage, and causal claims about shell_packet interference or underlying sign physics are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T05:50:30.156563+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gravity_sign_audit_2026-04-10:retained_bounded->unaudited",
+      "load_bearing_step": "The runner computes positive-fraction gates for ball1_margin, ball2_margin, and depth_margin at mu2=0.1 and mu2=0.001, requiring the minimum positive fraction at each screening level to be at least 80% and both screening gates to pass.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should preserve the bounded same-surface gate scope and not promote shell_packet-causation, packet portability, transport directionality, or universal irregular-graph sign claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Clean under the bounded gate scope. Independent arithmetic from the runner output verifies the gate fractions: 30/30 = 100% at mu2=0.1 and a minimum 28/30 = 93.3% at mu2=0.001, both above the stated 80% threshold; the cross-screening gate is therefore a direct conjunction. Residual risk is interpretive scope: this audit does not retain the source's broader shell_packet-causation or underlying-sign-physics language, only the configured centered core_packet separator gate."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_irregular_sign_core_packet_gate.py",
+  "title": "Irregular Sign Core-Packet Gate Note",
+  "transitive_descendants": 13,
+  "verdict_rationale": null
+}

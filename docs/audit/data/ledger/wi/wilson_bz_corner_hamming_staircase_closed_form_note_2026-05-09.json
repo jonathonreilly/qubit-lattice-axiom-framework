@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+    "three_generation_structure_note",
+    "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "caad13c7bfdfcb204bd291877785e08c76a78be02aae59a1ed4e8e86543a4753",
+  "note_path": "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.993899+00:00",
+      "audit_date": "2026-06-18T08:13:36.633507+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07": "On the supplied staggered-Dirac BZ-corner/taste-cube surface, the eight binary corners decompose as 1+3+3+1 by Hamming weight; the hw=1 triplet carries the finite M_3(C) projector/cycle algebra with no proper subspace preserving both structures; epsilon only complements BZ-corner bits and is not a chirality identification.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_structure_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_structure_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+          "three_generation_structure_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "0be78bbcdb50116a42c8f7dd8acf5ac18f1d167078de278c05a95f68ffc32e82",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof reduces to exact evaluation of cos(0) and cos(pi), binomial counting of bit-vectors, and permutation invariance of Hamming weight. All cited one-hop authorities in the packet are retained_bounded, and no external comparator or tuned numerical input is used.",
+      "claim_scope": "Exact finite Wilson BZ-corner Hamming-weight staircase on the cited retained bounded {0,1}^4 corner surface, including S_4 equivariance, rectangular-rescaling cancellation for dimensionless W/r, and the Z^3 spatial corollary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T08:13:36.633507+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07:retained_bounded->unaudited",
+      "load_bearing_step": "For each component n_mu in {0,1}, 1 - cos(n_mu*pi) = 2*n_mu, so W(n)/r = sum_mu 2*n_mu = 2*hw(n), with multiplicities binomial(4,k).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No relevant registered primitive is load-bearing; re-check only if T3 is later broadened from dimensionless Wilson shifts W/r to physical anisotropic Wilson mass normalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 89,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 89
+      },
+      "verdict_rationale": "The load-bearing identity is a genuine algebraic closure over the provided retained bounded Wilson/BZ-corner surface. The runner source enumerates the finite carriers, symbolically evaluates the Wilson sums, checks S_4/C_3 equivariance, verifies the rectangular-rescaling cancellation, and emits a certificate; it does not import PDG data, fitted constants, or a hidden calibrated value. This is not a renaming or numerical match, and it does not reduce to a single parent restatement because the audited package includes the closed-form enumeration, equivariance, lattice-rescaling identity, and spatial corollary."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.092392+00:00",
+      "audit_date": "2026-06-21T13:09:08.606539+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07": "Finite bounded BZ-corner algebraic support: the supplied eight-corner {0,1}^3 carrier decomposes as 1+3+3+1 by Hamming weight; the hw=1 sector carries the exact projector/C3-generated M_3(C) algebra with no proper nonzero invariant subspace, and epsilon acts by bit-complement rather than diagonal Hamming-parity chirality.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_structure_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_structure_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+          "three_generation_structure_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "0be78bbcdb50116a42c8f7dd8acf5ac18f1d167078de278c05a95f68ffc32e82",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by exact evaluation of cos(0) and cos(pi), finite bit-vector counting, and permutation invariance of Hamming weight. The rectangular-lattice statement closes within the note's Wilson-corner convention because k_mu*a_mu = n_mu*pi removes all spacing dependence.",
+      "claim_scope": "Finite closed-form Wilson-corner staircase on the admitted Z^3+t APBC minimal-block surface: W(n)/r = 2*hw(n) on {0,1}^4, binomial multiplicities, S_4 equivariance, rectangular-rescaling lattice independence, and the n_t=0 Z^3 corollary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T13:09:08.606539+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07:retained_bounded->unaudited",
+      "load_bearing_step": "For n_mu in {0,1}, 1 - cos(n_mu*pi) = 2*n_mu, so W(n)/r = sum_mu 2*n_mu = 2*hw(n), with Hamming-weight multiplicities binomial(4,k).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 89,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 89
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the stated Wilson-corner inputs, not a definition, comparator match, or fitted numerical claim. The runner source performs exact symbolic evaluation, enumerates all 16 corners, verifies binomial counts, checks all S_4 permutations, checks the C_3[111] and Z^3 corollary, and symbolically verifies the rectangular-rescaling cancellation. The cited one-hop authorities supplied in the packet are retained_bounded, and the note's boundaries avoid importing Higgs-gap, realization-gate, or physical-species conclusions."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py",
+  "title": "Wilson Term BZ-Corner Hamming-Weight Staircase Closed-Form Note",
+  "transitive_descendants": 4,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,118 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "alt_connectivity_family_operator_cauchy_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go (bounded numerical no-go for the ensemble-size",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "alt_connectivity_family_basin_note",
+    "alt_connectivity_family_failure_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "17bc67935447196d9a25fbe338472b8a51eec4f293702c823a56a1b02572fc8a",
+  "note_path": "docs/ALT_CONNECTIVITY_FAMILY_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:25.868124+00:00",
+      "audit_date": "2026-05-10T18:54:29.518140+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "alt_connectivity_family_basin_note": "Finite bounded sweep showing that the parity-rotated sector-transition alternative connectivity family has 32/45 passing rows over the stated 9 drift values and 5 seeds on the no-restore grown slice, with no claim of seed-wide, geometry-generic, or unique-family closure.",
+          "alt_connectivity_family_failure_note": "Diagnosis that the 13 failing rows in the tested alternative connectivity basin fail by sign-orientation reversal, not by zero leakage, neutral leakage, or weak-scaling failure."
+        },
+        "dep_claim_type": {
+          "alt_connectivity_family_basin_note": "bounded_theorem",
+          "alt_connectivity_family_failure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "alt_connectivity_family_basin_note": "retained_bounded",
+          "alt_connectivity_family_failure_note": "retained_bounded"
+        },
+        "deps": [
+          "alt_connectivity_family_basin_note",
+          "alt_connectivity_family_failure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7da6acbd349773a3902ba40fb74a117d5098032503f422074dc91d7633d612d4",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e133c-ea26-7021-ba76-4a794221dba2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The completed runner computes the observables, Cauchy increments, fits, and gate failures rather than printing only constants, and its stdout matches the note's reported numbers. The closure is only for this finite registered harness/gate; it does not prove absence of all possible continuum bridges or rigorously establish a heavy-tail law.",
+      "claim_scope": "Bounded no-go for the tested seed-ensemble operator-Cauchy adaptation at drift 0.10, seeds 0..63, source_z in {2.0,3.0,4.0}, and the stated 15-component observable vector/gate.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-10T18:54:29.518140+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Both ensemble-Cauchy fits fail decisively: all-seeds has r = +0.1775, R^2 = 0.0318 and on-basin has r = +0.0585, R^2 = 0.0032, so neither satisfies the stated r < -0.4 and R^2 >= 0.85 gate.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should keep the retained scope limited to the tested ensemble-Cauchy gate and not promote the heavy-tail mechanism or absence of any alternative refinement axis beyond the supplied runner/note evidence.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The bounded no-go follows from completed runner evidence: both ensemble variants fail the stated exponent and R^2 gates, with a clean zero-source guard. The cited basin and failure notes are retained_bounded and support the seed-selective/sign-flip context used in the diagnosis. The clean scope must remain finite and method-specific; the heavy-tail/no-h-like-axis discussion is explanatory support, not an audited universal theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/alt_connectivity_family_operator_cauchy.py",
+  "title": "ALT-Connectivity Grown DAG Family Operator-Cauchy Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

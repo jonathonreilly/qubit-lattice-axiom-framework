@@ -1,0 +1,82 @@
+{
+  "audit_date": "2026-07-12T19:01:41Z",
+  "audit_invocation_history": [
+    "014c857b260c74e439b80de8ed5f7cfe"
+  ],
+  "audit_invocation_id": "014c857b260c74e439b80de8ed5f7cfe",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12": "For a supplied finite complex matrix K, ordered independent Grassmann variables, and the stated Berezin orientation, the audited theorem covers the block-Pfaffian determinant identity, coordinate-congruence invariance of the single-sector Gaussian value, the conjugate-sector direct-sum modulus square, and equality with the ordinary realification determinant.",
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9."
+    },
+    "dep_claim_type": {
+      "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12": "positive_theorem",
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12": "retained",
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained"
+    },
+    "deps": [
+      "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+      "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    ],
+    "load_bearing_score": 0.0,
+    "runner_hash": "d7b36ff5ab7848f490ccf51ed2333892d2169f3e1337eb15d4955250af72908f",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-gpt-5.6-sol-xhigh-c3-final-chain-fresh-context-20260712",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Direct rational 2x2 inversion independently gives R1+R2=I, B=I/3, h=2/9, and tr(B)=3h. The retained determinant-power identity then supplies the stated single-sector, coordinate-rewrite, conjugate-pair, and realification consequences, while the remaining phase and character formulas follow exactly from scalar exponentiation.",
+  "claim_id": "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12",
+  "claim_scope": "Finite algebra of the supplied C3 normal action: exact resolvents, the h-trace identity, scalar exponential determinant and root phases, supplied determinant-power cases, and integer determinant-character weights within the stated principal-lift domain.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": "2026-07-12T19:01:41Z",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+    "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "From the exact resolvents R1+R2=I, hence B=I/3; therefore E=exp(iB/3) satisfies E^3=U1 and arg det(E)=2/9=h.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "182aafc32b6b6e43edf7163282aab4da6a832e5ffdefce17a524962c3baae5f6",
+  "note_path": "docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md",
+  "notes_for_re_audit_if_any": "Recheck branch conventions if a later source broadens the principal-lift domain.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 34,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 34
+  },
+  "runner_path": "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py",
+  "title": "AC_phi_lambda C3 Resolvent Determinant-Holonomy Coupling",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The restricted packet closes as exact finite algebra over two retained dependencies. Independent Fraction-based matrix inversion reproduced R1, R2, B, h, and tr(B); a separate complex check reproduced the determinant/root phases, conjugate cancellation, oriented rank-two Pfaffian determinant power, and character kernels. Residual risk is confined to later physical carrier, normalization, readout, occupancy, and r-selection targets that the source places outside this theorem scope."
+}

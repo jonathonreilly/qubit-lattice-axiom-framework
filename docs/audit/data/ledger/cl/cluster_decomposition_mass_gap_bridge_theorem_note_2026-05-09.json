@@ -1,0 +1,1610 @@
+{
+  "audit_date": "2026-07-13T02:45:05.289567+00:00",
+  "audit_invocation_history": [
+    "953770e6b135412c86923f93ebe1420f",
+    "ea4b304e402d400a9d99d0169fdc0113"
+  ],
+  "audit_invocation_id": "ea4b304e402d400a9d99d0169fdc0113",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 12.066,
+    "runner_hash": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0",
+    "transitive_descendants": 757
+  },
+  "audit_status": "audit_in_progress",
+  "auditor": "codex-audit-batch-A-20260713-1ee0343f",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": "awaiting_cross_confirmation",
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite-dimensional spectral and trace-distance calculations close under the stated hypotheses. The restricted packet does not establish the canonical transfer matrix, its positive gap, or the identification of the formal transfer insertion with a physical local correlator.",
+  "claim_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+  "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a positive Hermitian transfer matrix with a well-defined Hamiltonian logarithm and unique top eigenvalue; no derivation of the canonical transfer matrix, its gap, the physical local-correlator identification, spatial clustering, or infinite-volume/continuum clustering was audited.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-07-13T02:45:05.294097+00:00",
+  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-13T02:45:05.294097+00:00",
+      "audit_invocation_id": "ea4b304e402d400a9d99d0169fdc0113",
+      "auditor": "codex-audit-batch-B-20260713-dabba915",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a positive Hermitian transfer matrix with a well-defined Hamiltonian logarithm and unique top eigenvalue; no derivation of the canonical transfer matrix, its gap, the physical local-correlator identification, spatial clustering, or infinite-volume/continuum clustering was audited.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "verdict": "audited_clean"
+    },
+    "second_audit": null,
+    "status": "awaiting_second"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 5,
+  "effective_status": "audit_in_progress",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "audit_in_progress",
+  "load_bearing_score": 12.066,
+  "load_bearing_step": "Cauchy\u2013Schwarz bounds the excited-state spectral sum by exp(-n \u0394_T)\u2016A\u2020|0\u27e9\u2016\u2016B|0\u27e9\u2016 \u2264 exp(-n \u0394_T)\u2016A\u2016\u2016B\u2016.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
+  "note_hash": "6efb8b670324283b221f5d7062b39231c326b4b248ae70db60c3189913ce870a",
+  "note_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained direct dependencies deriving the canonical positive-definite transfer matrix and unique top eigenvalue and identifying the formal transfer insertion with the physical local correlator, then re-audit the physical clustering statement.",
+  "open_dependency_paths": [
+    "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+    "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+  ],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-30T22:12:17.433707+00:00",
+      "archived_for_note_hash": "a829e3fad3c8372fd610ecaf062c40408b459438c91f651a8b6ac68cf9a8ebfe",
+      "audit_date": "2026-05-29T01:51:05.261081+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.817,
+        "runner_hash": "0f2696b53fb45094c656a77540dea95d7c5e8cc02b33ee14ef5cf55900660d10",
+        "transitive_descendants": 901
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260529-cluster-mass-gap-adjoint-downgrade",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The scoped final inequality remains true after the local adjoint correction, and the runner verifies the final bounds, but the source proof contains a false displayed load-bearing Cauchy-Schwarz intermediate line. The row also remains bounded because Delta_T > 0 and the spatial-clustering lift are not derived here.",
+      "claim_scope": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with nondegenerate top eigenvalue Delta_T > 0. This row does not derive Delta_T > 0 on A_min and does not prove spatial cluster decomposition, infinite-volume clustering, or continuum clustering.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T01:51:05.261081+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T12:16:10.389784+00:00",
+          "auditor": "codex-audit-loop-019e11d0-7974-7573-824d-6949dc0211d1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block temporal transfer-matrix clustering bound conditional on a positive transfer-matrix gap \u0394_T > 0 and explicit excited-state thermal weight q_beta; no derivation of the gap or spatial cluster decomposition was audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-10T12:17:16.592370+00:00",
+          "auditor": "codex-audit-loop-019e11d1-9411-7f33-8c57-677cd24b7c63",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The B.14 Cauchy-Schwarz estimate of the excited spectral sum is false as written for general bounded A,B: it uses ||A|0>|| ||B^dagger|0>||, while the correct estimate is ||P_perp A^dagger|0>|| ||P_perp B|0>|| <= ||A|| ||B||.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: Correct B.14's Cauchy-Schwarz line to use ||P_perp A^dagger|0>|| ||P_perp B|0>|| <= ||A|| ||B||, then rerun the bridge check and re-audit the bounded finite-dimensional temporal lemma; positive promotion still requires retained-grade Delta_T > 0 and a retained spatial-clustering lift.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "A five-judge panel agreed that audited_clean should not stand while B.14 contains a false adjoint placement for the stated scope of arbitrary bounded A,B. A concrete two-dimensional check with T=diag(1,r), A=|0><1|, and B=|1><0| gives term_abs=1 while the written intermediate product ||A|0>|| ||B^dagger|0>|| is 0; the corrected adjoint placement restores the final ||A|| ||B|| bound. This is a local proof-line repair, not a failure of the corrected finite-dimensional lemma, and it is not a basis for positive-theorem promotion because Delta_T > 0 and spatial clustering remain explicit open inputs."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.880912+00:00",
+      "audit_date": "2026-05-30T22:30:24.031778+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.342,
+        "runner_hash": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0",
+        "transitive_descendants": 917
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-222822-4f97992e-cluster_decomposition_ma",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the spectral decomposition, corrected Cauchy-Schwarz placement, and trace-distance estimate prove the displayed ground-state and thermal bounds. The open mass-gap and spatial-clustering problems are explicitly outside the audited conclusion.",
+      "claim_scope": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T22:30:24.031778+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-30T22:26:43.339982+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-222418-db00cb41-cluster_decomposition_ma",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional conditional temporal transfer-matrix lemma: assuming a positive Hermitian normalized transfer matrix with unique top eigenvalue and \u0394_T>0, the ground-state and finite-temperature temporal connected-correlator bounds (B.7) and (B.8) follow; no derivation of \u0394_T>0 or spatial clustering is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-30T22:30:24.031778+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-222822-4f97992e-cluster_decomposition_ma",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The excited spectral sum is bounded by (\u03bb_1/M_T)^n via Cauchy-Schwarz as \u2016A\u2020|0\u27e9\u2016\u2016B|0\u27e9\u2016 \u2264 \u2016A\u2016\u2016B\u2016, giving exp(-n\u0394_T)\u2016A\u2016\u2016B\u2016, with the thermal term then controlled by \u2016\u03c1_\u03b2-P_0\u2016_1=2q_\u03b2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the bounded scope: this audit covers the abstract finite-dimensional T\u0303^n temporal correlator, not a derivation of the mass gap, transfer-matrix existence from A_min, or spatial clustering.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing proof is a finite-dimensional algebraic spectral argument over the theorem assumptions, not a numerical match or imported physical premise. The runner source genuinely tests the corrected adjoint placement, spectral identity, ground-state bound, thermal q_\u03b2 bound, and no-gap counterexample rather than merely printing expected results. Independent formula checks found the displayed exponential factor, trace-norm identity, 6q_\u03b2 thermal correction, and finite-D Boltzmann population bound consistent with the note's definitions. The clean verdict is limited to the conditional transfer-matrix lemma and does not certify \u0394_T>0 on A_min or spatial cluster decomposition."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:06.968291+00:00",
+      "audit_date": "2026-07-11T18:56:57.350263+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.774,
+        "runner_hash": "370ae4055c497df85870e36357f136e8c3e63b056efb40f9c73b50c9d15517a0",
+        "transitive_descendants": 618
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00071-cluster_decomposition_mass_g",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional spectral and trace-distance inequalities are correct on their stated operator hypotheses. The broader canonical-physics wording remains conditional because the packet supplies no one-hop authority for reconstructing T and H\u0303, deriving \u0394_T>0, or identifying Tr(\u03c1_\u03b2 A T\u0303^n B) with the advertised local thermal correlator.",
+      "claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a positive Hermitian transfer matrix with a well-defined Hamiltonian logarithm and unique top eigenvalue; no derivation of the canonical transfer matrix, its gap, the physical local-correlator identification, spatial clustering, or infinite-volume/continuum clustering was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:56:57.350263+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "After inserting the spectral resolution of T\u0303 and removing the top-eigenvector term, Cauchy\u2013Schwarz gives |\u03a3_{k\u22651}(\u03bb_k/M_T)^n\u27e80|A|k\u27e9\u27e8k|B|0\u27e9| \u2264 exp(-n\u0394_T)\u2016A\u2016\u2016B\u2016.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note derives B.6\u2013B.8 analytically, and the runner checks the corrected adjoint placement, spectral identity, ground-state inequality, thermal inequality, and a degenerate-top counterexample.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Spectral decomposition, Cauchy-Schwarz, and trace-distance control",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct finite-dimensional spectral decomposition and trace-distance control.",
+            "outcome": "CLOSED for the formal conditional temporal lemma, but it does not construct the canonical transfer matrix, derive its gap, or establish spatial or limiting claims.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "spectral_closure"
+          },
+          {
+            "attempt": "The restricted packet was checked for the claimed reflection-positivity and spectrum-condition derivations.",
+            "disposition": "OPEN",
+            "evidence_locator": "T : H_phys \u2192 H_phys",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Reconstruct a positive Hermitian physical transfer matrix and a self-adjoint logarithmic Hamiltonian from the framework surface.",
+            "outcome": "OPEN: those objects are imported from support artifacts that were not supplied as cited authorities.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "transfer_reconstruction"
+          },
+          {
+            "attempt": "The proof and runner were inspected for an operator-insertion or periodic thermal-transfer derivation.",
+            "disposition": "OPEN",
+            "evidence_locator": "For `X_n := A T\u0303^n B`",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Identify the formal functional Tr(\u03c1_\u03b2 A T\u0303^n B) with the advertised local finite-temperature temporal correlator.",
+            "outcome": "OPEN: the note defines X_n and proves a norm bound for it, but supplies no retained physical correlator-identification theorem.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "thermal_insertion_bridge"
+          },
+          {
+            "attempt": "The source was checked for a proof of strict positivity or irreducibility of the canonical transfer matrix.",
+            "disposition": "OPEN",
+            "evidence_locator": "Perron-Frobenius on the positive transfer matrix proving non-degeneracy",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Prove top-eigenvalue nondegeneracy through positivity-improving or irreducibility hypotheses and Perron\u2013Frobenius.",
+            "outcome": "OPEN: the mechanism is named only as a future candidate and no irreducibility proof is provided.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "perron_irreducibility"
+          },
+          {
+            "attempt": "The packet was checked for a convergence proof and a positive quantitative rate at the stated coupling.",
+            "disposition": "OPEN",
+            "evidence_locator": "lattice strong-coupling expansion at `g_bare = 1` showing",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use a convergent lattice strong-coupling expansion to derive a positive decay rate.",
+            "outcome": "OPEN: the source lists this as repair work and provides no expansion or convergence certificate.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "strong_coupling_gap"
+          },
+          {
+            "attempt": "The packet was checked for a retained confinement theorem and a justified m_gap\u2013\u03c3 implication.",
+            "disposition": "OPEN",
+            "evidence_locator": "a structural confinement theorem on `A_min` giving",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive positive string tension and bridge it to a Hamiltonian mass gap.",
+            "outcome": "OPEN: both the positive string tension and its mass-gap bridge are merely proposed.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "confinement_gap"
+          },
+          {
+            "attempt": "The restricted packet was checked for a supplied retained theorem and verified hypotheses.",
+            "disposition": "OPEN",
+            "evidence_locator": "a retained Hastings-Koma-style gap-plus-LR theorem with constants",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply a retained gap-plus-Lieb\u2013Robinson clustering theorem with verified constants.",
+            "outcome": "OPEN: the source expressly says such an additional retained result is required.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "gap_lr_spatial"
+          },
+          {
+            "attempt": "The packet was checked for a spatial transfer operator, its spectrum, and its relation to local spatial insertions.",
+            "disposition": "OPEN",
+            "evidence_locator": "a spatial transfer-matrix argument",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct and gap a transfer matrix in a spatial direction.",
+            "outcome": "OPEN: no spatial operator or gap is constructed.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "spatial_transfer_matrix"
+          },
+          {
+            "attempt": "The proof and runner were checked for uniform-in-volume estimates or a limiting-state construction.",
+            "disposition": "OPEN",
+            "evidence_locator": "No infinite-volume limit or continuum limit enters.",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Prove volume-uniform constants and pass finite-block clustering to the thermodynamic limit.",
+            "outcome": "OPEN: all arguments are finite-dimensional and no uniform limit is attempted.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "thermodynamic_uniformity"
+          },
+          {
+            "attempt": "The packet was checked for lattice-spacing-dependent uniform estimates and a continuum limiting argument.",
+            "disposition": "OPEN",
+            "evidence_locator": "No infinite-volume limit or continuum limit enters.",
+            "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Control the gap and correlator normalization under a continuum scaling limit.",
+            "outcome": "OPEN: the continuum limit is explicitly outside the proof.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "continuum_scaling"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+            "physical local-correlator identification for A T\u0303^n B",
+            "positive gap or top-eigenvalue nondegeneracy",
+            "spatial clustering bridge",
+            "infinite-volume uniformity",
+            "continuum-limit control"
+          ],
+          "evidence_locator": "The bridge does not derive `\u0394_T > 0`.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+              "left_closes_right": false,
+              "right": "physical local-correlator identification for A T\u0303^n B",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+              "left_closes_right": false,
+              "right": "positive gap or top-eigenvalue nondegeneracy",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+              "left_closes_right": false,
+              "right": "spatial clustering bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+              "left_closes_right": false,
+              "right": "infinite-volume uniformity",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+              "left_closes_right": false,
+              "right": "continuum-limit control",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical local-correlator identification for A T\u0303^n B",
+              "left_closes_right": false,
+              "right": "positive gap or top-eigenvalue nondegeneracy",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical local-correlator identification for A T\u0303^n B",
+              "left_closes_right": false,
+              "right": "spatial clustering bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical local-correlator identification for A T\u0303^n B",
+              "left_closes_right": false,
+              "right": "infinite-volume uniformity",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical local-correlator identification for A T\u0303^n B",
+              "left_closes_right": false,
+              "right": "continuum-limit control",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "positive gap or top-eigenvalue nondegeneracy",
+              "left_closes_right": false,
+              "right": "spatial clustering bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "positive gap or top-eigenvalue nondegeneracy",
+              "left_closes_right": false,
+              "right": "infinite-volume uniformity",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "positive gap or top-eigenvalue nondegeneracy",
+              "left_closes_right": false,
+              "right": "continuum-limit control",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "spatial clustering bridge",
+              "left_closes_right": false,
+              "right": "infinite-volume uniformity",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "spatial clustering bridge",
+              "left_closes_right": false,
+              "right": "continuum-limit control",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "infinite-volume uniformity",
+              "left_closes_right": false,
+              "right": "continuum-limit control",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+            "physical local-correlator identification for A T\u0303^n B",
+            "positive gap or top-eigenvalue nondegeneracy",
+            "spatial clustering bridge",
+            "infinite-volume uniformity",
+            "continuum-limit control"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The gap input `\u0394_T > 0` is what is missing on `A_min`.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "after importing the reflection-positivity support artifact",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "after importing the reflection-positivity support artifact",
+              "promoted_wall": "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "**Conditional input:** `\u0394_T > 0`",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "Conditional input: \u0394_T > 0",
+              "promoted_wall": "positive gap or top-eigenvalue nondegeneracy"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "For `X_n := A T\u0303^n B`",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "For X_n := A T\u0303^n B",
+              "promoted_wall": "physical local-correlator identification for A T\u0303^n B"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "purely spatial cluster-decomposition theorem still requires",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "purely spatial cluster-decomposition theorem still requires"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "No infinite-volume limit or continuum limit enters.",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "No infinite-volume limit or continuum limit enters"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The theorem hypotheses, imported support-artifact language, local-correlator wording, gap declarations, and finite-block/limit exclusions were checked.",
+          "unresolved": [
+            "No one-hop authority was supplied for the reconstructed transfer matrix and Hamiltonian.",
+            "No theorem identifies the formal thermal insertion with the advertised local correlator.",
+            "The positive-gap input remains undeveloped."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The bridge does not derive `\u0394_T > 0`.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+          "none_found_reason": "No N1 route was marked RULED OUT BY PRIOR; the source's no-gap discussion demonstrates necessity of the hypothesis but does not rule out deriving the gap by another mechanism.",
+          "scan_scope": "The source note was checked for witnesses used to rule out an N1 route; none of the N1 routes is marked RULED OUT BY PRIOR.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Repair targets for full closure (still open).",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+          "none_found_reason": "",
+          "scan_scope": "All statements excluding gap derivation, spatial clustering, infinite-volume clustering, and continuum clustering were checked against the resolutions actually treated by the proof and runner.",
+          "statements": [
+            {
+              "evidence_locator": "The bridge does not derive `\u0394_T > 0`.",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "The bridge does not derive \u0394_T > 0.",
+              "tested_resolutions": [
+                "finite-dimensional spectral implication assuming \u0394_T>0",
+                "degenerate-top finite counterexample"
+              ],
+              "untested_resolutions": [
+                "Perron\u2013Frobenius irreducibility",
+                "strong-coupling gap derivation",
+                "confinement-to-gap derivation"
+              ]
+            },
+            {
+              "evidence_locator": "The bridge does **not** prove the parent note's spatial L2-as-stated.",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "The bridge does not prove the parent note's spatial L2-as-stated.",
+              "tested_resolutions": [
+                "temporal transfer-matrix separation"
+              ],
+              "untested_resolutions": [
+                "gap-plus-Lieb\u2013Robinson spatial theorem",
+                "spatial transfer-matrix construction"
+              ]
+            },
+            {
+              "evidence_locator": "No infinite-volume limit or continuum limit enters.",
+              "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "phrase": "No infinite-volume limit or continuum limit enters.",
+              "tested_resolutions": [
+                "fixed finite-dimensional block"
+              ],
+              "untested_resolutions": [
+                "thermodynamic-limit uniformity",
+                "continuum scaling limit"
+              ]
+            }
+          ],
+          "unresolved": [
+            "Gap-producing mechanisms remain untested.",
+            "Both proposed spatial mechanisms remain untested.",
+            "Infinite-volume and continuum resolutions remain untested."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no transfer operator, dynamical mass gap, correlator readout, or limiting theorem.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms explicitly do not select a Hamiltonian, transfer operator, kinetic branch, or downstream theory consequence.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A realized-state reference supplies neither a state-selection law nor spectral or dynamical content.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "The scale reference only converts units and cannot establish a dimensionless transfer gap or clustering theorem.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The owner-governed AC occupancy/readout boundary is flavor-specific and supplies no transfer-matrix, gap, clustering, or limit content.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g_bare entry is a non-accepted rescaling convention; it does not prove strong-coupling convergence or a gap.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the transfer spectrum and is not an accepted premise.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Every candidate in the supplied primitive, owner-governed, Tier-A, convention, definition, and scope partial-closure index was dispositioned.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The claim can be read purely as an abstract conditional theorem: once finite-dimensional T, its unique top eigenvector, and \u0394_T>0 are hypotheses, spectral decomposition and trace distance prove the displayed bounds without any missing physics.",
+          "evidence_locator": "The identity content of (B) is closed-form finite-block spectral theory.",
+          "evidence_path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+          "resolution": "This steelman succeeds for the narrowed formal functional and confirms the algebraic lemma. It does not establish the note's canonical reconstructed-transfer language, physical thermal-correlator identification, gap input, spatial extension, or limiting extensions.",
+          "resolved": true,
+          "route_id": "spectral_closure"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:0",
+              "evidence_locator": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Prior audit found the incorrect B.14 adjoint placement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:1",
+              "evidence_locator": "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Prior clean audit lacked the required no-go discipline packet.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Flavor occupancy/readout retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Strong-CP theta retirement.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Owner-governed AC residual adoption.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Unrelated foundational no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite sweep versus full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Packet-memory and coupling-boundary repair.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Imported textbook and RP-axis firewalls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Hadron string-tension retention remained bounded.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Coupling-normalization identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Beta-six comparator firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Lensing observable no-go portfolio.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Carrier antisymmetry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Charged-lepton selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Conditional Lorentz scope firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Reconstructed-H/LR authority and finite-runner firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Replay-only boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Local Wilson versus full environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Flavor tracial-route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Gaussian analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Wilson environment and transfer-operator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Time-generator and orientation-split boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Gravity Fermat-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Weak-field gravity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Absolute-scale and Clifford-carrier obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Hypercharge normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite pure-gauge string-tension evidence does not close dynamical screening.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Atomic scale and threshold boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Quark mass obstruction portfolio.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite checks do not prove uniform lattice asymptotics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Lensing observable obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite-path geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Transfer-step count is not automatically physical time.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Empty local no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Planning versus theorem selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Update tick is not automatically physical time.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Neutrino construction exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Neutrino scale dependencies.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite replay versus universal law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Frozen-log boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Coupling readout-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite packet versus infinite theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite-window and thermodynamic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Clifford carrier selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Rank-four carrier boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Reflection-positivity status and minimal-block-to-bulk gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Perron strict-positivity firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Packet data versus selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Strong-CP and AC registrability.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Locality of -log(T) and axis selection are not automatic.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite tangent versus source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Statistics-forcing withdrawal.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Minimal axioms do not select the kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "SU(3) quotient encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Documentation mismatch, not theorem obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Single slot versus full-card theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Theta mass-side boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Theta gauge-side boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Theta positive-carrier gates.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Theta G3 routes.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Theta G1 routes.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "AC determinant-power selection.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "AC record-orbit nonsupply.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "AC R-eta nonsupply.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Artifact-visibility gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Record-only mass-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Hard-coded table boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Finite packet versus continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "mechanism": "Physical-readout renaming firewall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "canonical positive-Hermitian transfer-matrix and self-adjoint logarithm construction",
+          "physical local-correlator identification for A T\u0303^n B",
+          "positive gap or top-eigenvalue nondegeneracy",
+          "spatial clustering bridge",
+          "infinite-volume uniformity",
+          "continuum-limit control"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
+              "accepted_premise_type": null,
+              "content_sha256": "c45cfb2cb2c20e6c4b79a364cd4cac0f9c4a2b13e3d1f77be9979084c388c9b4",
+              "cross_cycle_candidate_ids": [
+                "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:0",
+                "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:0",
+                "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": {
+              "accepted_premise_type": null,
+              "content_sha256": "63110a9d5aac6cd4f941254cc7b2413fe14c50573cc25f682c5a984635bd57cc",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "6efb8b670324283b221f5d7062b39231c326b4b248ae70db60c3189913ce870a",
+              "effective_status": null,
+              "path": "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "**Conditional input:** `\u0394_T > 0`",
+                "For `X_n := A T\u0303^n B`",
+                "No infinite-volume limit or continuum limit enters.",
+                "Perron-Frobenius on the positive transfer matrix proving non-degeneracy",
+                "Repair targets for full closure (still open).",
+                "Spectral decomposition, Cauchy-Schwarz, and trace-distance control",
+                "T : H_phys \u2192 H_phys",
+                "The bridge does **not** prove the parent note's spatial L2-as-stated.",
+                "The bridge does not derive `\u0394_T > 0`.",
+                "The gap input `\u0394_T > 0` is what is missing on `A_min`.",
+                "The identity content of (B) is closed-form finite-block spectral theory.",
+                "a retained Hastings-Koma-style gap-plus-LR theorem with constants",
+                "a spatial transfer-matrix argument",
+                "a structural confinement theorem on `A_min` giving",
+                "after importing the reflection-positivity support artifact",
+                "lattice strong-coupling expansion at `g_bare = 1` showing",
+                "purely spatial cluster-decomposition theorem still requires"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: eight distinct positive closure routes remain OPEN.",
+          "N3: the canonical transfer reconstruction, physical correlator bridge, and positive gap remain unsupported inputs.",
+          "N5: spatial, thermodynamic-limit, continuum, and gap-producing resolutions were not tested."
+        ],
+        "narrowed_claim_scope": "Finite-dimensional bounds for the formal transfer-insertion correlator \u27e8A T\u0303^n B\u27e9, including the q_\u03b2 correction, conditional on a positive Hermitian transfer matrix with a well-defined Hamiltonian logarithm and unique top eigenvalue; no derivation of the canonical transfer matrix, its gap, the physical local-correlator identification, spatial clustering, or infinite-volume/continuum clustering was audited.",
+        "next_route": {
+          "reason_untested": "The packet supplies no one-hop reflection-positivity or spectrum-condition authority, so the framework-specific transfer matrix and Hamiltonian must be established before the remaining gap and correlator-identification questions can be audited.",
+          "route_id": "transfer_reconstruction"
+        },
+        "prior_claim_scope": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with nondegenerate top eigenvalue Delta_T > 0. This row does not derive Delta_T > 0 on A_min and does not prove spatial cluster decomposition, infinite-volume clustering, or continuum clustering.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow every headline and B.2\u2013B.3 reference to the formal finite-block functional \u27e8A T\u0303^n B\u27e9, add a dated downstream-hygiene line to this note's own boundary, and register retained one-hop authorities before restoring canonical local-correlator language.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The corrected B.14 adjoint placement is valid, and the displayed ground-state bound, 6q_\u03b2 trace-distance correction, and finite-D population estimate follow algebraically. The runner genuinely exercises those identities and a no-gap counterexample, though it assumes constructed transfer matrices with prescribed gaps rather than deriving the framework transfer matrix or gap. Because the restricted packet provides no cited authorities while the note imports reflection positivity, the spectrum condition, and a physical transfer-insertion interpretation, only the narrowed abstract finite-block lemma closes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 5,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 5
+  },
+  "runner_path": "scripts/cluster_decomposition_mass_gap_bridge_check.py",
+  "title": "Mass-Gap Bridge for Cluster Decomposition on Cl(3) \u2297 Z^3",
+  "transitive_descendants": 757,
+  "verdict_rationale": "The corrected adjoint placement makes the ground-state estimate valid, and the thermal 6q_\u03b2 estimate follows from trace-distance bounds; the runner source genuinely exercises all five advertised checks. The result nevertheless depends on explicitly unestablished transfer-matrix, gap, and physical-correlator inputs, so it does not close as a framework-derived clustering theorem. Its valid retained content is the conditional formal finite-block implication."
+}

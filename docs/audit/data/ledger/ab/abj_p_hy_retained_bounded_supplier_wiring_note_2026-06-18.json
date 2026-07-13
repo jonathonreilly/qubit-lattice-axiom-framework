@@ -1,0 +1,230 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hypercharge_identification_note",
+    "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+    "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.907,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "556f05f47bb5d3f26238745824a45ea39b5ba0f2cea545ea45fc0c4a95425ef8",
+  "note_path": "docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:24.965332+00:00",
+      "archived_for_note_hash": "1473187f7e0c8f8f1e4428ec071f5fc5fdd1927596b225adba7404d0f5b45b64",
+      "audit_date": "2026-07-07T21:19:54.219200+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hypercharge_identification_note": "Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included."
+        },
+        "dep_claim_type": {
+          "hypercharge_identification_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hypercharge_identification_note": "retained_bounded"
+        },
+        "deps": [
+          "hypercharge_identification_note"
+        ],
+        "load_bearing_score": 14.34,
+        "runner_hash": "000218b0644fde19da4ea60d12628846f3d3c8f0279d4fef64b896fa3093c34b",
+        "transitive_descendants": 1295
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260707T175800Z-abj_p_hy_supplier_wiring",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational B1 trace arithmetic closes over the supplied LH Y values, and the authority source text states the bounded LH surface and exclusions. The completed runner nevertheless fails the status-bearing ledger-scope boundary guard, so the retained-bounded supplier edge is not fully verified from the current source/status packet.",
+      "claim_scope": "Narrow ABJ B1 supplier wiring: use the retained-bounded hypercharge LH-doublet surface Y(Q_L)=+1/3 and Y(L_L)=-1 for exact left-handed anomaly traces, without closing P-ABJ, P-COMP, P-REC, B-AXIS, or full-spectrum hypercharge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T21:19:54.219200+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Then the B1 input `(2,3)_{+1/3} + (2,1)_{-1}` is a retained-bounded supplier edge rather than an unsupported local premise.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: re-audit after the hypercharge authority claim_scope or this wiring note is narrowed so the status-bearing retained-bounded scope explicitly covers only the LH-doublet surface and excludes full-spectrum hypercharge/anomaly cancellation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Issue: the runner reports `[FAIL] ledger scope explicitly keeps full-spectrum boundaries` while the source note's load-bearing supplier edge relies on that bounded-status firewall. Why this blocks: CL3 retained boundaries are status/scope artifacts, not source prose alone, so the note cannot cleanly claim a retained-bounded P-HY edge that excludes full-spectrum hypercharge/anomaly claims until that guard passes. Repair target: update the status-bearing hypercharge scope or narrow the wiring note/runner expectation so the retained-bounded edge states only the verified LH-doublet surface and explicit exclusions. Claim boundary until fixed: the exact LH arithmetic and source-text citation are valid local support, but effective retained-bounded supplier wiring remains conditional."
+    },
+    {
+      "archived_at": "2026-07-10T17:07:21.868533+00:00",
+      "audit_date": "2026-07-10T12:47:50.745456+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hypercharge_identification_note": "Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included."
+        },
+        "dep_claim_type": {
+          "hypercharge_identification_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hypercharge_identification_note": "retained_bounded"
+        },
+        "deps": [
+          "hypercharge_identification_note"
+        ],
+        "load_bearing_score": 11.337,
+        "runner_hash": "e5e00b1ace48ad66925e50e30cbc31682339d8d85b17915069c1b960cc5d1c65",
+        "transitive_descendants": 1292
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-124556-b32a85dc-abj_p_hy_retained_bounde-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The documentation edge and rational trace arithmetic close given the supplied hypercharges, but the cited authority explicitly leaves the matter assignment and especially the absolute alpha=1/3 normalization dependent on upstream authorities not included in the restricted packet.",
+      "claim_scope": "Cross-note wiring of the ABJ B1 left-handed input to Y(Q_L)=+1/3 and Y(L_L)=-1, together with exact evaluation of the five displayed anomaly traces; no full-spectrum or remaining-bridge closure was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T12:47:50.745456+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:e5e00b1a->e9b64ef0",
+      "load_bearing_step": "The B1 input (2,3)_{+1/3} + (2,1)_{-1} is a bounded supplier edge rather than an unsupported local premise because the hypercharge-identification source supplies those left-handed values.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct dependency edges to the retained L2 matter-assignment and L3 alpha=1/3 normalization authorities, and add a dated downstream-hygiene line to this note's own Boundary so its hash drift re-enters the row for re-audit.",
+      "open_dependency_paths": [
+        "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Issue: the supplier edge inherits the matter assignment and alpha=1/3 normalization from an authority whose supplied text explicitly describes those links as imported or conditional. Why this blocks: retained-bounded ledger status and scope matching verify the cross-note edge, but they do not close the imported physical identification and normalization within this packet. Repair target: expose retained-grade one-hop authorities for L2 and L3, particularly the alpha=1/3 normalization bridge, or an explicit accepted-premise flag covering that boundary. Claim boundary until fixed: all five displayed anomaly traces are exact once Y(Q_L)=+1/3 and Y(L_L)=-1 are supplied."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:26.947584+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "cross_confirmation_disagreement",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Exact left-handed B1 anomaly-trace arithmetic on (2,3)_{+1/3}+(2,1)_{-1}, together with direct dependency closure to the retained-grade hypercharge, matter-assignment, and alpha=1/3 normalization surfaces; no full-spectrum hypercharge, anomaly-cancellation, or anomaly-to-inconsistency conclusion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:47:03.454228+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-10T17:47:03.454228+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00001-abj_p_hy_retained_bounded_su",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact left-handed B1 anomaly-trace arithmetic on (2,3)_{+1/3}+(2,1)_{-1}, together with direct dependency closure to the retained-grade hypercharge, matter-assignment, and alpha=1/3 normalization surfaces; no full-spectrum hypercharge, anomaly-cancellation, or anomaly-to-inconsistency conclusion.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:52:33.071053+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00004-abj_p_hy_retained_bounded_su",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact bounded supplier wiring and anomaly-trace corollary of the retained-bounded LH hypercharge-identification surface; no independent hypercharge, completion, or anomaly-to-inconsistency derivation was audited.",
+          "claim_type": "decoration",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_decoration"
+        },
+        "status": "disagreement"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "no_go_discipline_cross_confirmation_packet_invalid",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
+  "title": "ABJ P-HY Retained-Bounded Supplier Wiring",
+  "transitive_descendants": 1357,
+  "verdict_rationale": null
+}

@@ -1,0 +1,178 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_formation_front_is_the_domain_wall_free_field_bounded_theorem_note_2026-07-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1fa628d9e0345df90934d549dc0c05d972c849338f99434c457cbc6a92cf6f49",
+  "note_path": "docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-09T23:48:22.351739+00:00",
+      "audit_date": "2026-07-09T06:52:29.813009+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": "Finite free-field linear-algebra diagnostic: from the current minimal-axiom spatial Z^3/M_2(C) input plus explicitly imposed diagnostic chiral embedding, Wilson-Dirac regulator, and record-time mass wall, the runner verifies naive Cl(3,0) doubling, direct Wilson chiral breaking, one localized Weyl species on the wall and the opposite species on the anti-wall, zero net torus chirality, and a gapped uniform bulk; no gauge coupling, interaction, anomaly matching, dynamical wall origin, electroweak structure, or framework derivation of the higher-dimensional regulator is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "4e837e9b9f1a2e278b37e9b6a378ba96c054533bb7ec5b80f415aa2d2ba09656",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-model runner completes and supports the qualitative edge/localization/chirality checks, but the source note's computed witness table is stale relative to the current runner output. In particular, the w=1.5 localization row and the projected-velocity anticommutator error no longer match the executed runner.",
+      "claim_scope": "Bounded finite free-field diagnostic over the supplied occupancy-to-mass map m(s)=M(2 theta(s)-1), checking whether the resulting record-occupancy front localizes a chiral edge with chirality tied to the occupancy-gradient sign and projected Cl(3,0) Weyl-cone velocities; no derivation of the occupancy-to-mass bridge, record-production dynamics, gauge coupling, anomaly inflow, Standard Model content, or physical persistence dynamics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T06:52:29.813009+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "runner_hash_changed:4e837e9b->d37f0c3e",
+      "load_bearing_step": "At free-field level and under the stated occupancy-to-mass bridge, a monotone record-occupancy front can play the role of the prior diagnostic's record-time mass wall.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "After refreshing the computed witness table/cache or aligning the runner, re-check only the supplied-map finite free-field diagnostic boundary; do not treat the repaired row as deriving record-production dynamics, the occupancy-to-mass bridge, gauge coupling, anomaly inflow, or Standard Model content.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "Issue: the source note's computed witness values are stale relative to the current runner output: at w=1.5 the runner now reports peaks [32, 31], probability xi 0.736150, R^2 0.999235, while the note reports [31, 32], 0.771490, 0.991982; the projected Clifford error also differs (current 1.308e-15 vs note 1.256e-15). Why this blocks: the bounded theorem is presented with specific measured finite-runner witnesses, so the source as written cannot be certified clean against its own executable artifact. Repair target: refresh the source note/cache to the current runner output, or change the runner and rerun so the note and executable witness agree. Claim boundary until fixed: the current runner still supports the qualitative supplied-map free-field diagnostic, but the audited source note cannot be cited for the stale numerical witness table."
+    },
+    {
+      "archived_at": "2026-07-10T03:41:30.035747+00:00",
+      "audit_date": "2026-07-10T03:21:29.736979+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": "Finite free-field linear-algebra diagnostic: from the current minimal-axiom spatial Z^3/M_2(C) input plus explicitly imposed diagnostic chiral embedding, Wilson-Dirac regulator, and record-time mass wall, the runner verifies naive Cl(3,0) doubling, direct Wilson chiral breaking, one localized Weyl species on the wall and the opposite species on the anti-wall, zero net torus chirality, and a gapped uniform bulk; no gauge coupling, interaction, anomaly matching, dynamical wall origin, electroweak structure, or framework derivation of the higher-dimensional regulator is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "d37f0c3ed9693424c3e0d88d204935e5febadae9924ad5d2f1ce5266fbddd696",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00013-record_formation_front_is_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the stated spectral and projected-operator witnesses, but the occupancy-to-mass identification m(s)=M(2 theta(s)-1) is an explicit bridge not derived or otherwise closed by the cited authorities. Thus the diagnostic closes only conditional on that additional modeled premise.",
+      "claim_scope": "Finite free-field linear-algebra verification that an explicitly supplied monotone occupancy profile, under the assumed occupancy-to-mass map, produces localized opposite-chirality domain-wall modes and a projected Cl(3,0) Weyl cone.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:21:29.736979+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:domain_wall_chiral_edge_from_achiral_cl3_bulk_free_field_bounded_theorem_note_2026-07-04:retained_bounded->unaudited",
+      "load_bearing_step": "Diagonalizing the finite Wilson-Dirac operator with the modeled mass profile m(s)=M(2 theta(s)-1) yields a near-zero chiral Weyl subspace localized at the occupancy midpoint, with chirality reversed when the occupancy gradient is reversed.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and cite a retained derivation, bounded admission, or owner-governed premise establishing the occupancy-to-mass map and the admissible occupancy profile, then re-audit the unchanged finite-operator computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The source computes a nontrivial finite spectrum rather than printing or importing the claimed results, so the load-bearing numerical step is class C. The retained bounded parent supports the domain-wall operator construction, and the minimal axioms are an accepted premise, but neither supplies the occupancy profile or derives its identification with the mass wall. The note accurately limits its claim, yet the rubric requires an explicit unclosed bridge to remain conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/record_formation_front_chiral_edge_2026_07_05.py",
+  "title": "Record-Occupancy Front as a Diagnostic Domain Wall: Free-Field Bounded Theorem",
+  "transitive_descendants": 2,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

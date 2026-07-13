@@ -1,0 +1,1327 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bd019a4a2ba0827b428c4af6db1720b2a0f27f0b1a0aaf8f065d0f90fb69163f",
+  "note_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:30.715358+00:00",
+      "audit_date": "2026-07-09T08:53:25.542296+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "add1832ae4f882495806091ba563d60cb28d995a996ebe9f0400b9f3a5b54d16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-born-gleason-conditional-20260709",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports the R1 dimension-2 loophole witness, bookkeeping identities, and finite rejectors, but the framework does not derive or register the graded-constraint primitive, H4 composite menu eligibility, or the Gleason bridge as an adopted theorem.",
+      "claim_scope": "Bridge-conditional Born trace-form result: if a lawful graded record-conditioned weight exists and full neighbor-composite projection menus are eligible, the named Gleason bridge forces composite Born form and single-site restrictions; the graded primitive, H4 menu ontology, and bridge adoption are not established here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T08:53:25.542296+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The claim depends on H1-H4, especially H4's full neighbor-composite projection-menu eligibility, plus the named Gleason theorem bridge to force w(E)=Tr(rho E) on M4.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or audit a retained bridge/primitive-registration theorem for the graded constraint, H4 composite menu eligibility, and the Gleason import boundary, then re-audit the Born-form bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 12,
+        "C": 6,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "Issue: the load-bearing Born-form conclusion is explicitly conditional on a graded weight primitive, full neighbor-composite projection-menu eligibility including entangled projections, and the named Gleason bridge input. Why this blocks: minimal axioms supply site-local M2 and nearest-neighbor structure, but not a pair-level projection-menu ontology or the adoption theorem needed to apply Gleason as framework content. Repair target: add/audit a retained bridge theorem or primitive registration specifying H1-H4 and the Gleason import boundary, including how composite menus are eligible under records. Claim boundary until fixed: the note validly isolates the finite R1 loophole, R2/R3 consequence under the bridge assumptions, and R4 symmetry consequence under an additional premise; it does not close Born weights from current framework axioms."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:46.009918+00:00",
+      "audit_date": "2026-07-12T04:11:17.796971+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "add1832ae4f882495806091ba563d60cb28d995a996ebe9f0400b9f3a5b54d16",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00378-born_form_from_lawful_graded",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implication closes on its stated assumptions, but the framework chain does not establish H1, H4's full entangled composite-menu ontology, or adoption of the Gleason bridge as framework content.",
+      "claim_scope": "Conditional mathematical implication only: assuming H1-H4 and the named Gleason bridge, the composite grading has Born trace form, its single-site restrictions have Born form, and the explicit one-site rogue assignment cannot extend to that composite measure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T04:11:17.796971+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:b13871558d0c",
+      "load_bearing_step": "Because the bonded pair has Hilbert dimension 4, Gleason's theorem applied under H1-H4 gives w(E)=Tr(rho E), and restricting to P tensor I gives w(P tensor I)=Tr(rho_1 P).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note constructs the antipodal hemisphere assignment and gives an exact three-direction contradiction with every 2x2 trace form.",
+            "disposition": "CLOSED",
+            "evidence_locator": "R1 (single-site exception, constructive).",
+            "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply frame-function constraints directly on the one-site M2 projection lattice.",
+            "outcome": "CLOSED as a route to forcing Born form from H1-H3 alone; dimension two admits the exhibited rogue assignment.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "direct_m2_frame"
+          },
+          {
+            "attempt": "The note applies the named dimension-at-least-three trace-form theorem and checks the embedded partial-trace identity.",
+            "disposition": "OPEN",
+            "evidence_locator": "R2 (composite rescue).",
+            "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Lift the grading to the full projection lattice of a bonded M2 tensor M2 composite and apply Gleason in dimension four.",
+            "outcome": "OPEN as framework closure: it succeeds mathematically only after H4 supplies all composite and entangled menus.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "neighbor_composite_gleason"
+          },
+          {
+            "attempt": "The source separates lattice availability of a neighbor from H4's projection-measure strength.",
+            "disposition": "CLOSED",
+            "evidence_locator": "adjacency alone pays for nothing here without H4's strength.",
+            "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use nearest-neighbor adjacency and the site-local tensor-product identification without importing full composite-menu eligibility.",
+            "outcome": "CLOSED negatively: adjacency alone does not supply a pair possibility domain, entangled alternatives, or menu eligibility.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "adjacency_only"
+          },
+          {
+            "attempt": "The note derives rho=I/d and the resulting one-half and one-quarter weights under that extra premise.",
+            "disposition": "OPEN",
+            "evidence_locator": "R4 (zero-information limit).",
+            "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Impose invariance under every composite unitary automorphism so the density operator lies in the scalar commutant.",
+            "outcome": "OPEN as a framework route because full unitary invariance is separately assumed and not derived from H1-H4 or the axioms.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "full_unitary_symmetry"
+          },
+          {
+            "attempt": "The source audits its own boundary and explicitly withholds any derivation of the conditioning values.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "The value of `rho` is determined by conditioning, here by records, but this note does not derive those values.",
+            "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the density operator or its numerical weights directly from record conditioning.",
+            "outcome": "UNTESTED; no record-to-weight or record-to-rho law is supplied in the restricted packet.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "record_conditioned_values"
+          },
+          {
+            "attempt": "The source enumerates the pair-selection, configuration-dependence, coexistence, and entangled-alternative specification burden.",
+            "disposition": "OPEN",
+            "evidence_locator": "no primitive is approved, registered, edited, or enlarged here.",
+            "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Register the graded constraint and full composite-menu specification as an approved premise.",
+            "outcome": "OPEN because the source expressly does not approve or register the primitive.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "primitive_registration"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "lawful normalized noncontextual additive grading H1-H3 is not supplied",
+            "full neighbor-composite projection-menu ontology H4 is not supplied",
+            "Gleason is a named bridge input rather than a framework-derived or registered bridge"
+          ],
+          "evidence_locator": "The grading primitive and entangled-menu eligibility are assumed here, not adopted.",
+          "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "lawful normalized noncontextual additive grading H1-H3 is not supplied",
+              "left_closes_right": false,
+              "right": "full neighbor-composite projection-menu ontology H4 is not supplied",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "lawful normalized noncontextual additive grading H1-H3 is not supplied",
+              "left_closes_right": false,
+              "right": "Gleason is a named bridge input rather than a framework-derived or registered bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full neighbor-composite projection-menu ontology H4 is not supplied",
+              "left_closes_right": false,
+              "right": "Gleason is a named bridge input rather than a framework-derived or registered bridge",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "lawful normalized noncontextual additive grading H1-H3 is not supplied",
+            "full neighbor-composite projection-menu ontology H4 is not supplied",
+            "Gleason is a named bridge input rather than a framework-derived or registered bridge"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "N3 hidden-wall scan:",
+          "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "H1 (grading exists).",
+              "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+              "phrase": "H1 (grading exists).",
+              "promoted_wall": "lawful normalized noncontextual additive grading H1-H3 is not supplied"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "H4 (composite menus realized).",
+              "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+              "phrase": "H4 (composite menus realized).",
+              "promoted_wall": "full neighbor-composite projection-menu ontology H4 is not supplied"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Gleason's theorem (1957) \u2014 named bridge input only",
+              "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+              "phrase": "Gleason's theorem (1957) \u2014 named bridge input only",
+              "promoted_wall": "Gleason is a named bridge input rather than a framework-derived or registered bridge"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Probability, dynamics, readout contexts, and physical observable bridges remain downstream.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "These axioms do not supply probabilities, weights, dynamics, update rules, or record-production processes."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source hypotheses, primitive-status statements, bridge declaration, minimal-axiom boundaries, and runner load-bearing path were checked for undeclared weighting, menu, dynamics, readout, and symmetry inputs.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "N4 bridge-source honesty:",
+          "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+          "none_found_reason": "No prior-witness route is used in N1, so no residual matching witness is required.",
+          "scan_scope": "No N1 route was marked RULED OUT BY PRIOR; all route dispositions were obtained directly from the supplied source, runner, and premise boundaries.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "N7 scope guard:",
+          "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+          "none_found_reason": "",
+          "scan_scope": "The phrases asserting the one-site exception and its nonextension were checked against the exact resolutions actually covered by the construction and the composite bridge.",
+          "statements": [
+            {
+              "evidence_locator": "R1 (single-site exception, constructive).",
+              "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+              "phrase": "single-site exception, constructive",
+              "tested_resolutions": [
+                "rank-1 projections and antipodal binary menus in M2, with rank 0 and identity extensions"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "The R1 rogue functions do not extend to any grading that satisfies H1-H4 on the neighbor composite.",
+              "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+              "phrase": "The R1 rogue functions do not extend to any grading that satisfies H1-H4 on the neighbor composite.",
+              "tested_resolutions": [
+                "full projection lattice of M4 with all finite orthogonal resolutions eligible"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only kinetic-form isotropy and no probability, grading, readout, or composite-menu structure.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "It supplies Z3 adjacency and one-site M2 but explicitly withholds weighting, context selection, and pair-level composite-menu ontology.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies a pointwise realized-state reference but explicitly supplies no measure, weighting, probability rule, or state-contingent value.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units conversion supplies none of the dimensionless grading or menu structure required here.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton determinant-counting obligation is unrelated to projection grading and composite menu eligibility.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation does not supply a normalized projection measure or pair-menu ontology.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This theta-sector determinant readout obligation is orthogonal to the Born-form bridge assumptions.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom and approved-primitive registry, open-obligation candidates, and definition or scope surfaces were checked for any premise that supplies grading, composite menus, or the Gleason adoption boundary.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The lattice already provides neighboring M2 sites, their tensor product is M4, and standard Gleason mathematics therefore appears to force the Born form without a new physical premise.",
+          "evidence_locator": "H4 is a substantive physical hypothesis, not axiom content.",
+          "evidence_path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+          "resolution": "The tensor-product dimension makes the mathematical theorem applicable only after a single grading is defined on the full composite projection lattice and every entangled resolution is eligible. Those are precisely H4's additional physical ontology and are not consequences of adjacency or the one-site axiom.",
+          "resolved": true,
+          "route_id": "neighbor_composite_gleason"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04:previous_audit:0",
+              "evidence_locator": "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Prior audit identified the same unregistered grading, composite-menu, and Gleason bridge boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated charged-lepton counting obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated charged-lepton readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated theta-sector determinant readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "No relevant Born-grading wall is recorded.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Finite gravity-sweep scope boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Coupling-runner boundary is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "General textbook-import caution is analogous but does not supply or retire the Gleason bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated inherited particle and scale no-go routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated coupling-hypothesis boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Shares the word Born but concerns scattering and detector-centroid observables, not Born probability form.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated carrier-registry exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated charged-lepton selector routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated spatial-dimension bound.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated metric reconstruction bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated finite-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated Wilson environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated flavor-tracial selector route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated analytic-vector bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated gauge-environment computation routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated gauge isotropy mechanisms.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated gravity observable bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated weak-field gravity scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated hypercharge normalization degeneracy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated cross-lane physics boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated atomic-scale and coupling gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated quark mass and selector gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated lattice-limit uniformity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated physical source-readout selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated temporal source and rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated planning-selector warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated physical-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated neutrino construction routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated neutrino and cosmology gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated finite-lattice distance-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated finite recompute scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated coupling and bare-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated decoherence and gravity bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated finite-order differential-equation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated Clifford carrier-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated rank-four carrier selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated plaquette-bootstrap constraints.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated plaquette diagnostic correction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Record does not manufacture a selector or metric from supplied finite data.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "General registrability boundaries are analogous but do not supply the grading primitive or H4.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated locality and temporal-axis walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Confirms that minimal axioms do not select downstream kinetic laws; analogously, they do not supply the present grading law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated SU3 quotient approximation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated documentation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated family-card scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Record wording does not supply a determinant readout; this is analogous to the missing record-to-weight bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Axioms withhold weighting and context selection, supporting rather than retiring the present boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated theta assembly gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "The absence of action, measure, weighting, and context bridges is structurally applicable and remains unresolved.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated branch closedness and dynamics wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated determinant horn selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Record does not supply orbit weighting, analogous to the absent grading primitive.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Record formation does not supply weights, rates, or a readout law, directly reinforcing the present conditioning boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Record additivity alone does not fix scalar readout dependence, structurally supporting the missing record-to-weight bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated finite numerical-family scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated continuum and distance-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "mechanism": "Unrelated physical-readout renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "lawful normalized noncontextual additive grading H1-H3 is not supplied",
+          "full neighbor-composite projection-menu ontology H4 is not supplied",
+          "Gleason is a named bridge input rather than a framework-derived or registered bridge"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": {
+              "accepted_premise_type": null,
+              "content_sha256": "9e198ae640c04b767fb1338da344a35fa966368050b9da1a7a4e8b29cf970fc7",
+              "cross_cycle_candidate_ids": [
+                "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": {
+              "accepted_premise_type": null,
+              "content_sha256": "76a0d46a314e54c21aee42ec17effe17871ace0179f869bb1e037e25c60c3b43",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "bd019a4a2ba0827b428c4af6db1720b2a0f27f0b1a0aaf8f065d0f90fb69163f",
+              "effective_status": null,
+              "path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Gleason's theorem (1957) \u2014 named bridge input only",
+                "H1 (grading exists).",
+                "H4 (composite menus realized).",
+                "H4 is a substantive physical hypothesis, not axiom content.",
+                "N3 hidden-wall scan:",
+                "N4 bridge-source honesty:",
+                "N7 scope guard:",
+                "R1 (single-site exception, constructive).",
+                "R2 (composite rescue).",
+                "R4 (zero-information limit).",
+                "The R1 rogue functions do not extend to any grading that satisfies H1-H4 on the neighbor composite.",
+                "The grading primitive and entangled-menu eligibility are assumed here, not adopted.",
+                "The value of `rho` is determined by conditioning, here by records, but this note does not derive those values.",
+                "adjacency alone pays for nothing here without H4's strength.",
+                "no primitive is approved, registered, edited, or enlarged here."
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Probability, dynamics, readout contexts, and physical observable bridges remain downstream."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains OPEN and UNTESTED routes: neighbor-composite physical eligibility, full-unitary symmetry, record-conditioned values, and primitive registration are not closed."
+        ],
+        "narrowed_claim_scope": "Conditional mathematical implication only: assuming H1-H4 and the named Gleason bridge, the composite grading has Born trace form, its single-site restrictions have Born form, and the explicit one-site rogue assignment cannot extend to that composite measure.",
+        "next_route": {
+          "reason_untested": "The restricted packet contains no approved or retained registration specifying H1-H4, record-conditioned pair eligibility, entangled alternatives, and the Gleason import boundary.",
+          "route_id": "primitive_registration"
+        },
+        "prior_claim_scope": "Bridge-conditional Born trace-form result: if a lawful graded record-conditioned weight exists and full neighbor-composite projection menus are eligible, the named Gleason bridge forces composite Born form and single-site restrictions; the graded primitive, H4 menu ontology, and bridge adoption are not established here.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: register or retain a source that supplies H1 and H4, including record-conditioned composite-menu eligibility and the Gleason import boundary, then rerun this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The exact M2 rogue construction, the dimension-4 Gleason consequence, the partial-trace restriction, and the R3 contradiction are mathematically sound within the declared premises. The runner genuinely checks the finite algebraic consequences but does not prove Gleason or derive the grading and composite-menu premises. Minimal axioms supply site-local M2 and adjacency, while explicitly withholding weights and pair-level entangled menu eligibility, so the result cannot be promoted beyond its bridge-conditional scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/born_form_composite_gleason_bridge_2026_07_04.py",
+  "title": "Born Form From Lawful Graded Constraint via Composite Gleason (Bridge Note)",
+  "transitive_descendants": 6,
+  "verdict_rationale": null
+}

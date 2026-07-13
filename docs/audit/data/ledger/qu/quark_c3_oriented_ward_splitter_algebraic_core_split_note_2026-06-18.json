@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_theorem_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "933dcb21ca8c612161de7c8d85ee768b00b12fffbd32f339d2c9187191d2985d",
+  "note_path": "docs/QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:39.661372+00:00",
+      "audit_date": "2026-06-21T13:51:08.561037+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "e6740378ea7740a8700ad6bbcff8f255acab7a240b230bdb6631c1055d0aadac",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained cited parent supplies the C^3 carrier, translation-character basis, and cyclic C3 action. The stated normal form, reflection parity, spectrum, and scalar readout condition then follow by standard finite-dimensional matrix algebra without importing physical quark carrier, source, readout, or mass data.",
+      "claim_scope": "Finite-dimensional C^3 algebra for an oriented order-three cycle: the Hermitian C3 commutant, reflection-odd splitter, Fourier spectrum, and scalar-only diagonal C3-equivariant readout.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T13:51:08.561037+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "three_generation_observable_theorem_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:three_generation_observable_theorem_note:retained->unaudited",
+      "load_bearing_step": "The complex commutant of the order-three cyclic permutation on C^3 is the circulant algebra u I + v C + w C^2, and Hermiticity imposes u real and w = conjugate(v).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the decoration-versus-clean classification under the algebraic decoration policy; no algebraic blocker was found.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 11,
+        "C": 21,
+        "D": 8,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The algebra is correct on the restricted packet: the commutant is the circulant algebra, the Hermitian basis and Fourier eigenvalues follow with the stated normalization, and the diagonal readout scalar condition follows from commuting with a transitive cycle. The runner source performs real matrix checks rather than merely printing constants, and it includes firewall checks against quark masses, fitted Yukawas, CKM inputs, and physical source laws. Under the rubric tie-breaker, all load-bearing work is class A with no external comparator checks and reduces to one retained upstream parent plus standard mathematics, so the proper audit status is decoration rather than an independent clean theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_c3_oriented_ward_splitter_algebraic_core_split_2026_06_18.py",
+  "title": "Quark C3-Oriented Ward Splitter Algebraic Core Split",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

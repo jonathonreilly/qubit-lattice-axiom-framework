@@ -1,0 +1,182 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_positive_parent_axis_obstruction_note_2026-04-18",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "default_positive_theorem",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_full_lattice_schur_inheritance_note_2026-04-18"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.484,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dd244282ca0f69856f05425b12188476421d779a18d7dfe227d8fadb45d42380",
+  "note_path": "docs/KOIDE_POSITIVE_PARENT_AXIS_OBSTRUCTION_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T13:40:53.233262+00:00",
+      "audit_date": "2026-05-03T03:14:53.792767+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "koide_full_lattice_schur_inheritance_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_full_lattice_schur_inheritance_note_2026-04-18"
+        ],
+        "load_bearing_score": 6.858,
+        "transitive_descendants": 40
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-raman-3rd-019debd3-b25e-74c1-8817-d6993e81b032",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The obstruction follows by exact linear algebra: a Hermitian circulant has equal diagonal entries and nonzero off-diagonal parameter `b`, while imposing axis-diagonality forces `b = 0` and hence a scalar matrix. The retained one-hop Schur-inheritance authority extends the same circulant obstruction to larger carriers reduced by the standard equivariant Schur/effective-operator map.",
+      "claim_scope": "No-go for obtaining a nondegenerate charged-lepton hierarchy from a positive `C_3[111]`-covariant parent under the current axis-basis `U_e = I_3` readout, including the retained Schur/effective-operator reduction class.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-03T03:14:53.792767+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:koide_full_lattice_schur_inheritance_note_2026-04-18:retained->unaudited",
+      "load_bearing_step": "`M` circulant and axis-diagonal iff `M` is a scalar multiple of `I`, so no nontrivial charged-lepton hierarchy can arise from a positive `C_3`-covariant parent while keeping the current axis-diagonal readout.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future uses preserve the scoped boundary: this is not a global no-go against new readout primitives, non-Schur reductions, non-isolated carriers, or controlled `C_3` breaking.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The audited claim is a scoped no-go, not a positive charged-lepton closure. Its load-bearing step is an exact algebraic intersection result for circulant and axis-diagonal matrices, and the cited retained authority supplies the one-hop full-carrier Schur-inheritance extension. The runner checks the exact matrix identities and adds one observed-mass channel sanity check; no hidden numerical tuning or symbol renaming is needed for the no-go within the stated `U_e = I_3`/Schur-reduction scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.037898+00:00",
+      "audit_date": "2026-06-12T00:02:34.973566+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_full_lattice_schur_inheritance_note_2026-04-18": "For a C_3-covariant block parent on V = T_1 \u2295 W, standard Schur reduction onto T_1 preserves C_3 covariance, so the reduced operator is circulant and an axis-diagonal readout is scalar."
+        },
+        "dep_claim_type": {
+          "koide_full_lattice_schur_inheritance_note_2026-04-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_full_lattice_schur_inheritance_note_2026-04-18": "retained_bounded"
+        },
+        "deps": [
+          "koide_full_lattice_schur_inheritance_note_2026-04-18"
+        ],
+        "load_bearing_score": 11.634,
+        "runner_hash": "bd96afacd3e0b96c965278101bedf0fef08fce7d77a16aeec953b91a94e95e1d",
+        "transitive_descendants": 280
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-235923-a0d6826e1c-koide_positive_parent_axis_o",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The small-carrier claim closes by solving the off-diagonal equations of a Hermitian circulant: zero off-diagonals force the single complex circulant coefficient to vanish, leaving aI_3. The larger-carrier extension is exactly the cited retained_bounded Schur-inheritance result, so closure is bounded to that reduction/readout class and not to alternative readouts or symmetry-breaking routes.",
+      "claim_scope": "Within the retained T_1 charged-lepton lane with U_e = I_3 axis readout, and within the cited C_3-equivariant Schur/effective reduction class for larger carriers, a nondegenerate positive C_3[111]-covariant parent cannot supply the physical charged-lepton hierarchy.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:02:34.973566+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T23:58:40.194772+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-235453-44ad65f93a-koide_positive_parent_axis_o",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scoped obstruction: for a positive Hermitian `C_3[111]`-covariant parent on the retained regular triplet, with masses read as axis-basis diagonal entries (`U_e = I_3`) and the standard equivariant Schur reduction class, nondegenerate charged-lepton hierarchy cannot be obtained from that parent/readout route.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-12T00:02:34.973566+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-235923-a0d6826e1c-koide_positive_parent_axis_o",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the retained T_1 charged-lepton lane with U_e = I_3 axis readout, and within the cited C_3-equivariant Schur/effective reduction class for larger carriers, a nondegenerate positive C_3[111]-covariant parent cannot supply the physical charged-lepton hierarchy.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A 3x3 Hermitian circulant that is diagonal in the axis basis has b = 0, hence is a scalar multiple of I_3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No registered primitive is load-bearing; re-check if the Tier-A staggered-Dirac admission, the U_e = I_3 readout premise, or the Schur/equivariant reduction class changes.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing step is a pure algebraic identity, and an independent check of the off-diagonal equations and Fourier-basis conditions confirms that nondegenerate spectra necessarily create axis-basis off-diagonals. The runner source performs actual symbolic matrix computations for the algebra; its Part 2 iff statement is secured by the independent real/imaginary solve rather than by the runner's syntactic nonzero assertion alone. The Schur inheritance dependency is supplied as retained_bounded/Tier-A-bounded context, so the clean result is a bounded theorem rather than an unbounded physical closure. The obstruction is scoped to the current axis readout and C_3-equivariant Schur/effective reduction; the packet explicitly leaves new readout, non-Schur reduction, non-isolated carrier, and controlled-breaking routes open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_positive_parent_axis_obstruction.py",
+  "title": "Koide Positive-Parent Axis Obstruction Note",
+  "transitive_descendants": 715,
+  "verdict_rationale": null
+}

@@ -1,0 +1,509 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_color_automorphism_theorem"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e1881bb68985ed6e02752f5bce69958cd95f0abb3c8ca9abb2eef3a75a6edec8",
+  "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:30:26.221285+00:00",
+      "audit_date": "2026-05-11T18:10:56.196340+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding and Fierz adjoint channel-count fraction on the 3D symmetric base carrier, excluding physical SM color identification and EW readout closure."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependency is retained_bounded for the algebraic SU(3) embedding only, and the source note confines this row to the exact algebraic K1-K3 Casimir result. The live runner reproduced the cached PASS result for all seven finite-matrix checks.",
+      "claim_scope": "Algebraic K1-K3 Casimir theorem only on the cited 3-dimensional symmetric base carrier V_3 supplied by cl3_color_automorphism_theorem: for the standard Gell-Mann generators T^a=lambda^a/2 with Tr[T^a T^b]=(1/2)delta_ab, C_2=sum_a T^a T^a is central, scalar on the irreducible carrier, and has value 4/3. This excludes physical SM color identification, universal physical color-charge readouts, continuum/lattice-action claims, and all parent K4/C1-C5 phenomenological corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T18:10:56.196340+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Finite-dimensional SU(3) generator algebra on the cited V_3 carrier: trace normalization, Lie closure, C_2 proportionality to identity, and value 4/3 checked against the Gell-Mann realization and the source trace proof.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if the row is read as physical SM quark color, if parent K4/C1-C5 color-factor corollaries are made load-bearing, or if cl3_color_automorphism_theorem is narrowed below the algebraic SU(3) embedding on V_3.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "C": 7,
+        "total": 7
+      },
+      "verdict_rationale": "Within the narrowed algebraic scope, the proof is standard finite-dimensional SU(3) representation algebra: centrality follows from antisymmetry of f^{abc}, Schur scalar follows from irreducibility of the cited carrier, and the value follows from the trace normalization. The runner verifies the concrete Gell-Mann realization, including trace normalization, closure, scalar Casimir, and 4/3 value. The note explicitly defers the physical-color bridge and downstream color-factor physics, so no unsupported phenomenological content is ratified."
+    },
+    {
+      "archived_at": "2026-05-22T22:55:23.508361+00:00",
+      "audit_date": "2026-05-22T17:09:02.004368+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 2.822,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170835Z-9c6b5a8a-su3_casimir_fundamental_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted algebraic scope, the result follows from the cited retained-bounded authority supplying the SU(3) fundamental Gell-Mann action and normalization, plus standard Schur/trace/Casimir algebra. The open physical-color bridge in the cited authority is not consumed by this narrow claim.",
+      "claim_scope": "Algebraic K1-K3 quadratic Casimir centrality, Schur scalarity, and value 4/3 on the cited 3D symmetric SU(3) fundamental carrier V_3, with no physical SM color identification audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T17:09:02.004368+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:cl3_color_automorphism_theorem:bounded_theorem->positive_theorem",
+      "load_bearing_step": "From the cited normalization, Tr[C_2]=\u03a3_a Tr[T^aT^a]=8\u00b7(1/2)=4, while Schur scalarity gives Tr[C_2]=3 c_2(3), hence c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the physical-color bridge remains outside the audited claim scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is a correct algebraic closure over the single upstream CL3 color automorphism authority and standard representation theory. The runner genuinely constructs the Gell-Mann matrices and verifies Hermiticity, trace normalization, closure, scalar Casimir, and the 4/3 value, but all checks are algebraic identity checks on already supplied inputs rather than a first-principles framework computation. There are no external comparator checks and no physical readout is imported. Under the decoration policy, a one-parent algebraic consequence with only class A checks is audited_decoration rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.415439+00:00",
+      "audit_date": "2026-05-23T00:00:09.482261+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base of the 8D taste carrier, commutation with fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn = 8/9; physical SM color and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 2.822,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T235844Z-42a98a84-su3_casimir_fundamental_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed algebraic chain closes from the retained CL3 authority's Gell-Mann fundamental action on V_3 plus standard Schur/Casimir algebra. No physical SM color identification is used in the audited scope.",
+      "claim_scope": "Algebraic SU(3) fundamental Casimir on the cited V_3: C_2 is central, Schur-scalar, and equals 4/3 under Tr[T^a T^b] = (1/2) delta^{ab}; no physical color readout audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-23T00:00:09.482261+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "Using the cited Gell-Mann normalization, Schur gives C_2 = c_2(3) I_3 and the trace identity 3 c_2(3) = sum_a Tr[T^a T^a] = 8*(1/2) = 4 gives c_2(3) = 4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the ledger parent claim id for docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md is cl3_color_automorphism_theorem and that decoration classification is intended for this narrow algebraic corollary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is an exact algebraic corollary once the single upstream CL3 note supplies the 3D carrier, canonical Gell-Mann generators, and trace normalization. It does not derive that carrier or any physical color bridge, and it uses no external comparator. The runner verifies the 3x3 Gell-Mann normalization, closure, and Casimir value, so it supports the algebraic corollary but does not add an independent first-principles computation."
+    },
+    {
+      "archived_at": "2026-05-23T15:58:55.034204+00:00",
+      "audit_date": "2026-05-23T15:30:50.749553+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) action on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the displayed fiber SU(2) and base-sector Y, and the resulting SU(3) Fierz/channel-count fraction 8/9 on that carrier only."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 2.822,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153029Z-11024c57-su3_casimir_fundamental_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supplies the SU(3) fundamental Gell-Mann embedding and trace normalization on V_3; centrality, Schur scalarity, and the 4/3 value then follow by standard algebra and trace counting. The open physical-color bridge in the cited authority is not consumed by this narrowed algebraic claim.",
+      "claim_scope": "Algebraic centrality, Schur-scalar property, and value C_2=4/3 for the SU(3) fundamental action on the cited 3D symmetric base subspace V_3, with no physical color identification audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-23T15:30:50.749553+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:cl3_color_automorphism_theorem:bounded_theorem->positive_theorem",
+      "load_bearing_step": "From the cited trace normalization and Schur scalar relation, Tr[C_2]=8*(1/2)=4 and Tr[C_2]=3*c_2(3), so c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that decoration is intended for narrow algebraic corollaries of a single retained-bounded parent, and that the parent\u2019s open physical-color bridge remains outside this claim scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is a genuine algebraic consequence of one retained-bounded upstream authority plus standard Lie-algebra facts. The runner actually instantiates the Gell-Mann matrices, verifies trace normalization and closure, and computes the Casimir, but it does not derive a new framework primitive from first principles beyond the cited SU(3) carrier. With zero external comparator checks and a chain reducing to one upstream parent plus standard mathematics, the rubric classifies this as decoration rather than an independent positive theorem."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.088358+00:00",
+      "audit_date": "2026-05-23T16:12:35.278523+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 2.822,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T161055Z-d980d76e-su3_casimir_fundamental_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained upstream authority supplies the algebraic SU(3) fundamental action on V_3 with Tr[T^aT^b]=(1/2)\u03b4^{ab}. Standard Lie-algebra centrality, Schur's lemma, and trace arithmetic then establish K1-K3 without using the deferred physical-color bridge.",
+      "claim_scope": "On the cited algebraic 3D symmetric base carrier V_3, the normalized Gell-Mann fundamental generators have C_2=\u03a3_a T^aT^a central, scalar, and equal to (4/3)I_3; no physical SM color readout was audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-23T16:12:35.278523+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "After Schur scalarity, equating Tr[C_2]=\u03a3_a Tr[T^aT^a]=8\u00b7(1/2)=4 with Tr[C_2]=3c_2(3) gives c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner docstring contains broader physical-quark examples outside the audited source scope; the code and source proof only support the algebraic V_3 Casimir result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The derivation closes as exact algebra over a single retained upstream SU(3) embedding plus standard representation theory. The runner directly instantiates canonical Gell-Mann matrices and checks Hermiticity, normalization, closure, scalarity, and the 4/3 trace result, so it supports class A algebraic consistency rather than first-principles Cl(3) computation. Because the audited content is a standard Casimir corollary of the upstream algebraic carrier with no external comparator or physical bridge consumed, it is classified as algebraic decoration rather than a standalone positive theorem."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.202750+00:00",
+      "audit_date": "2026-06-13T01:20:50.225580+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-011859-4195cc445b-su3_casimir_fundamental_alge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded authority supplies the algebraic SU(3) fundamental action on V_3 and the trace normalization; Schur's lemma and total antisymmetry then give K1-K2, and the independent trace count gives K3. The deferred physical-color identification in the cited authority is outside this claim scope and is not used.",
+      "claim_scope": "Algebraic SU(3) quadratic Casimir on the cited 3-dimensional symmetric base carrier V_3: centrality, Schur scalar property, and value 4/3 in the Gell-Mann normalization Tr[T^a T^b] = (1/2) delta^{ab}.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T01:20:50.225580+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "After K1 and Schur scalar give C_2 = c_2(3) I_3, the trace identity Tr[C_2] = sum_a Tr[T^a T^a] = 8/2 = 4 and Tr[c_2(3) I_3] = 3 c_2(3) implies c_2(3) = 4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing derivation is a genuine algebraic closure from the supplied SU(3) fundamental generators and normalization: centrality follows by antisymmetric-symmetric contraction, Schur's lemma gives scalarity, and the trace count fixes the scalar as 4/3. The runner source actually instantiates the Gell-Mann matrices and checks hermiticity, normalization, closure, scalarity, and the Casimir value; its checks are algebraic, not external comparator or tuned-scale matches. No physical SM color bridge, lattice action quantity, fitted value, or observational input is consumed."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.484580+00:00",
+      "audit_date": "2026-06-16T02:00:51.456277+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "f511ee46636717071e76c460eb49a6b91771ba79198953e4ba19d97f37690898",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-015813-8ed76e0027-su3_casimir_fundamental_alge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-bounded authority supplies the algebraic SU(3) fundamental action on V_3 and the trace normalization. The proof then closes by standard Lie-algebra antisymmetry, Schur's lemma, and exact trace arithmetic; the cited authority's deferred physical-color bridge is outside this claim scope.",
+      "claim_scope": "Algebraic K1-K3 quadratic Casimir on the cited 3D symmetric base carrier V_3 with Gell-Mann normalization Tr[T^aT^b]=(1/2)delta^{ab}; no physical SM color identification audited or consumed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-16T02:00:51.456277+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:f511ee46->779130b7",
+      "load_bearing_step": "Centrality follows because i f^{abc}(T^aT^c+T^cT^a) is an antisymmetric-symmetric contraction, and then Schur plus Tr[C_2]=8\u00b7(1/2)=4=3c_2(3) gives c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope restricted to algebraic V_3; the runner docstring contains non-load-bearing physical-quark language not claimed by the source note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing math is a genuine algebraic closure over the cited SU(3) fundamental embedding: the centrality contraction has the correct antisymmetry/symmetry structure, and the independent trace route gives 3c_2=4. The runner instantiates the Gell-Mann generators and verifies Hermiticity, normalization, closure, scalar Casimir behavior, and the 4/3 value, but the clean verdict does not rely on stdout alone. No PDG, fitted value, calibrated scale, or physical-quark readout enters the audited claim."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.989080+00:00",
+      "audit_date": "2026-06-18T10:43:56.594911+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "779130b7152dd7745e5240f3004dda3a78865d826b535cff2f9849f6c3a4325f",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority supplies the SU(3) fundamental action on V_3 and the trace normalization. Standard antisymmetry, Schur's lemma, and trace arithmetic then establish centrality, scalar action, and value 4/3 within the stated algebraic scope.",
+      "claim_scope": "Algebraic K1-K3 quadratic Casimir statement on the cited 3D symmetric base carrier V_3 with Gell-Mann normalization; no physical SM color identification or readout audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T10:43:56.594911+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:779130b7->8e147988",
+      "load_bearing_step": "Using Schur's lemma, C_2=c_2(3)I_3, and the cited normalization gives Tr(C_2)=sum_a Tr(T^aT^a)=8/2=4=3c_2(3), hence c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the decoration-vs-clean policy boundary; the algebraic K1-K3 derivation itself closes within the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is a standard algebraic consequence of the single one-hop retained-bounded authority's representation and normalization plus admitted mathematics. The runner explicitly instantiates the Gell-Mann matrices and checks hermiticity, trace normalization, closure, scalar Casimir behavior, and the 4/3 value without external comparators. Because the chain reduces to one upstream algebraic embedding plus standard mathematics and adds no independent physical readout, the decoration tie-break applies rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.725998+00:00",
+      "audit_date": "2026-06-21T15:56:05.717277+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "8e1479880d23eda98ff469f9e3c56423b9f3ce47ac6301c6330fbb40f769b304",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated algebraic scope, the cited CL3 authority supplies the fundamental Gell-Mann action on V_3 and the trace normalization; K1-K3 then follow by antisymmetry, Schur's lemma, and the trace identity. The open physical-color bridge in the cited authority is explicitly outside this claim's audited scope.",
+      "claim_scope": "Algebraic SU(3) fundamental Casimir K1-K3 on the cited V_3 carrier: C_2 is central, scalar, and equals 4/3 in the Tr[T^aT^b]=(1/2)\u03b4^{ab} normalization, with no physical-color readout audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T15:56:05.717277+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Equating Tr[C_2]=\u03a3_a Tr[T^aT^a]=4 with Tr[C_2]=3c_2(3) after Schur scalarity gives c_2(3)=4/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check non-load-bearing validation prose drift: the source note says PASS=7, while the supplied runner output has 5 PASS tests plus one INFO check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The presented derivation is a correct exact algebraic corollary of the one-hop CL3 embedding plus standard finite-dimensional Lie algebra facts. The runner directly checks the finite 3x3 Gell-Mann identities and does not import external comparators or fitted data. However, the claim reduces to a single upstream retained_bounded algebraic parent plus standard mathematics and adds no independent physical bridge, comparator, or new framework content, so the conservative rubric classifies it as decoration rather than a standalone clean theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/su3_casimir_fundamental_check.py",
+  "title": "SU(3) Quadratic Casimir on V_3 \u2014 Algebraic K1-K3 Narrow Theorem",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

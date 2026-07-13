@@ -1,0 +1,153 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cpt_squared_is_identity_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.468,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "beee6682c23ef51ca92defe19432b080774f4ab7256cf698c2e0cd2acc72d7c0",
+  "note_path": "docs/CPT_SQUARED_IS_IDENTITY_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:35:38.962231+00:00",
+      "audit_date": "2026-05-02T23:22:14.529819+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebra follows from the retained CPT note's real C, real P, T=K, and (CP)^2=I, plus standard antiunitary linear algebra. It is a corollary of that construction rather than an independent retained physics result.",
+      "claim_scope": "Algebraic corollary of the retained CPT construction: with real CP, (CP)^2 = I, and T = K, the antiunitary CPT operator satisfies (CPT)^2 = I on the scoped H_phys surface.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-02T23:22:14.529819+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cpt_exact_note",
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->retained_pending_chain",
+      "load_bearing_step": "(CPT)^2 = (CP T)(CP T) = CP (T CP) T = CP CP T T = (CP)^2 T^2 = I.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit only if the note is broadened into a selection-rule, Majorana, gauge-action, or independent physical consequence claim.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the scoped identity is true, but its load-bearing content is ordinary algebra on the single retained parent CPT construction. Why this blocks separate retained-theorem status: the note adds no independent observable, comparator, bridge, or compression beyond cpt_exact_note. Repair target: box it as a citeable corollary under the CPT exact theorem, or add a genuinely independent physical consequence if separate status is needed. Claim boundary until fixed: (CPT)^2 = I is an exact algebraic corollary of the retained CPT operator definitions."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.034759+00:00",
+      "audit_date": "2026-05-22T03:16:00.607471+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 10.95,
+        "runner_hash": "3373c5acb60b26f8186744e0f9324f9bb541f59f266b1195d9e07d1fdc8a2003",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "claude-audit-loop-2026-05-19-cpt-squared",
+      "auditor_confidence": "high",
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7-1m",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Closes by pure algebra from cpt_exact_note's retained inputs ((CP)^2 = I and reality of C, P giving (CP)*=CP) plus standard antiunitary commutation T*U = U**T and complex-conjugation involution K^2 = I. Runner constructs C, P from first principles and verifies (CP)^2=I, T^2=I, and (CPT)^2 psi = psi on 1 generic and 5 random complex states at residual 0.000e+00 each.",
+      "claim_scope": "(CPT)^2 = I exactly on H_phys with no phase factor, where CPT = C*P*T composes the framework's sublattice parity C, spatial inversion P, and complex conjugation T as specified in cpt_exact_note.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T03:16:00.607471+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cpt_exact_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": "(CPT)^2 = (CP)(T*CP)*T = (CP)*(CP*)*T*T = (CP)^2 * T^2 = I*I = I, using (CP)^2=I cited from CPT_EXACT_NOTE, reality of CP making (CP)*=CP, and T^2=K^2=I.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Borderline clean-vs-decoration. The involution identity is a genuine structural property of the antiunitary CPT operator (not a pure ornament like a Brocard/Weitzenbock restatement), but the chain reduces cleanly to one retained parent + universal mathematics with zero (D) checks. Strict tiebreaker applied. If the framework adds an independent (D) comparator (e.g., a falsifiable selection rule derived from (CPT)^2=I), re-audit for promotion to clean.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing step is class (A): a pure algebraic identity check over inputs taken from a single retained parent claim (cpt_exact_note: (CP)^2=I and reality of CP) plus universal mathematics (antiunitary commutation T*U=U**T, K^2=I). The runner contains zero (D) external-comparator checks, and the chain reduces to one parent claim. By the audit rubric's tiebreaker (zero (D) checks AND single-parent reduction => audited_decoration), and consistent with ALGEBRAIC_DECORATION_POLICY section 1 (algebraic dependence, no new comparator, no compression -- expansion of cpt_exact_note's CP and T properties into a derived (CPT)^2 identity), this is decoration of cpt_exact_note. The derivation is correct on its own terms; the verdict reflects the rubric's classification of single-parent zero-D algebraic corollaries, not a defect in the math."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cpt_squared_is_identity_check.py",
+  "title": "(CPT)\u00b2 = Identity on the Framework's CPT Structure",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

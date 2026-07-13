@@ -1,0 +1,324 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "self_consistency_forces_poisson_note",
+    "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+    "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16",
+    "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+    "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
+    "gravity_clean_derivation_note",
+    "finite_rank_source_to_metric_theorem_note",
+    "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3baa04a86260f295f95e83d4c01ba7922c55a313694e0adafd714e74025fb8e5",
+  "note_path": "docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:38.084647+00:00",
+      "archived_for_note_hash": "0a723f24c43dc9a693890537d495cf7e6f2de60c005758e923b91991ba9f8156",
+      "audit_date": "2026-06-08T15:31:52.956115+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_clean_derivation_note": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_clean_derivation_note",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a9aee4b10536ca657d98fa8894ca6c0f8a0ca4753e4711646cc0c505358cdf61",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-152853-ac3ef58449-gravity_premise4_refractive_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic step only closes after importing two bridges not supplied in the packet: the field must enter the test-particle Hamiltonian as H->H+phi, and k/k0 must be identified with the Fermat index/action. For the exact lattice dispersion lambda=2-2cos(k) along an axis, the fixed-energy solution is k=arccos(1-(E-phi)/2), so the stated sqrt coefficient is a continuum small-k approximation rather than the exact consequence of the displayed lattice formula.",
+      "claim_scope": "Audited whether the provided shifted-dispersion argument derives the weak-field Fermat-index form n=1-c*phi and the 1/b geodesic deflection from the restricted cited inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T15:31:52.956115+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At fixed energy E, the asserted shifted dispersion lambda(k)+phi=E gives k(x)=k0*sqrt(1-phi/E), so n=k/k0=1-phi/(2E)+O(phi^2) and S=int n dl.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation of H->H+phi and the Fermat identification n=k/k0, include the Kubo-comparison authority if T6 remains in scope, and restate T1 with either the exact lattice arccos coefficient or an explicit small-k limit.",
+      "open_dependency_paths": [
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner performs algebraic/numerical checks of the assumed shifted-dispersion model and the standard 1/r geodesic integral, but it does not derive the field-coupling or Fermat-action bridge from the cited authorities. The cited gravity-chain note explicitly records S=L(1-phi) as an input, and the provided self-consistency note does not independently supply H->H+phi; using it here would re-import the premise being derived. The exact lattice-dispersion formula in T1 is also overstated, since n=sqrt(1-phi/E) follows only in the continuum/small-k approximation. The 1/b geodesic calculation is standard algebra conditional on phi=a/r and the Fermat coupling, while the Kubo-comparison authority is not provided."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:25.253943+00:00",
+      "archived_for_note_hash": "f302e101c02aeb930be661d276162a157d119f53a9f0c5bf1a295ccdd8d52b5f",
+      "audit_date": "2026-06-12T02:28:28.993496+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_clean_derivation_note": "Bounded weak-field composition: given the Z^3 graph-Laplacian Poisson operator, the retained weak-field source/readout/test-response bridge, and the retained Z^3 Green-kernel asymptotic, the note derives a 1/r potential and bilinear inverse-square force in lattice units.",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "Audited the specified Fam1 lensing harness edge-kernel mechanism: computed signed edge coefficients have negligible monopole, localized support, a small-window -1.43 replay at H=0.25, steeper signed large-b falloff, and a non-cancelling |c| control returning 1/b. No continuum asymptotic exponent, exact dipole theorem, other-family result, or standard lensing claim was audited.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_clean_derivation_note": "retained_bounded",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_clean_derivation_note",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "32d83b10448eb2f2651fb17ce79f914ffc7ea181f83ea801182757d763a55c4d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-022616-e7dcae0645-gravity_premise4_refractive_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The lattice-dispersion algebra itself checks, including the arccos relation and small-k expansion. The restricted packet does not close the physical bridge H->H+phi plus n=k/k0 as a retained Fermat/test-mass response, and the 1/b lensing step assumes the a/r potential rather than deriving that authority inside the packet.",
+      "claim_scope": "Algebraic dispersion support: conditional on H->H+phi, fixed-energy eikonal reading n=k/k0, and an assumed phi=a/r potential, the axis lattice dispersion gives n=1-phi/(2E)+... and geometric deflection magnitude proportional to 1/b.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:28:28.993496+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied field shift and fixed-energy dispersion lambda_axis(k)+phi=E, define the Fermat/WKB index as n(phi)=k(phi)/k(0), yielding n=1-phi/(2E)+... and S=int n dl.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop derivation of H->H+phi and the WKB/Fermat identification n=k/k0; if T4 remains a lattice-lensing claim, include the retained a/r source-potential or Green-kernel authority in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md",
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner performs real algebraic and integral checks, but they are class-A checks over supplied inputs, not a first-principles derivation of the physical Fermat bridge. The source note explicitly says the n=k/k0 identification remains a supplied eikonal/WKB interpretation and that the note does not promote premise (4) to retained status. The cited self-consistency authority is retained_bounded but, in the restricted text, it does not itself derive the Hamiltonian shift or the Fermat action from lattice dispersion; it uses a weak-field action/input surface. Therefore the bounded support statement is useful but conditional, not clean."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:44.690452+00:00",
+      "archived_for_note_hash": "d44ac9f1f380c7e24768a56c36dd8489232e94cbd94206e0e4fad8ece3022c23",
+      "audit_date": "2026-06-14T03:13:15.269999+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_source_to_metric_theorem_note": "Fixed 15^3 Dirichlet finite-lattice certificate for the runner-defined seven-site finite-rank source, exterior harmonic/Schur boundary algebra, shell-averaged radial harmonic projection, and bounded static isotropic residual reduction.",
+          "gravity_clean_derivation_note": "Bounded weak-field composition: given the Z^3 graph-Laplacian Poisson operator, the retained weak-field source/readout/test-response bridge, and the retained Z^3 Green-kernel asymptotic, the note derives a 1/r potential and bilinear inverse-square force in lattice units.",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "Exact Z^3 graph-Laplacian heat-kernel resolvent identity and Bessel factorization, plus the leading 1/(4*pi|x|) Green asymptotic routed through the retained stronger lattice-correction theorem for the same kernel; direct local-CLT proof and physical G_Newton calibration are excluded.",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "Audited the specified Fam1 lensing harness edge-kernel mechanism: computed signed edge coefficients have negligible monopole, localized support, a small-window -1.43 replay at H=0.25, steeper signed large-b falloff, and a non-cancelling |c| control returning 1/b. No continuum asymptotic exponent, exact dipole theorem, other-family result, or standard lensing claim was audited.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "finite_rank_source_to_metric_theorem_note": "bounded_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "bounded_theorem",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_source_to_metric_theorem_note": "retained_bounded",
+          "gravity_clean_derivation_note": "retained_bounded",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "retained_bounded",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_source_to_metric_theorem_note",
+          "gravity_clean_derivation_note",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "52f8c81b09f939894b8467be3519a2bb1992515b0fb43a08d14165da85d0b221",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-031059-280cbfb58f-gravity_premise4_refractive_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The lattice dispersion algebra and 1/b integral close, but the restricted packet does not derive the physical Fermat/eikonal bridge n=k/k0 or fully establish H->H+phi from the cited authorities. Those are explicit supplied bridges, so retained status does not propagate through them.",
+      "claim_scope": "Bounded algebraic support that, after assuming H->H+phi and the Fermat/eikonal identification n=k/k0 for a fixed-energy axis-lattice scalar packet, the small-k response has form n=1-c phi and the geometric phi=a/r ray calculation has 1/b scaling.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:13:15.269999+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the supplied field shift and eikonal reading, fixed-energy lattice dispersion lambda_axis(k)+phi=E gives n(phi)=k(phi)/k(0)=sqrt(1-phi/E)+O(E,phi)=1-phi/(2E)+...",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop theorem deriving the fixed-energy eikonal/Fermat identification n=k/k0 and the Hamiltonian potential shift H->H+phi for this lattice packet, or narrow the row to pure conditional algebra that assumes both.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner performs real algebraic and numerical checks of the arccos dispersion map, small-k expansion, Fermat-action algebra, and 1/b integral, with source/status checks for the comparison authorities. Independent math agrees with the displayed small-k relation and the 1/b magnitude scaling, but these only follow after the note assumes the eikonal identification of local wavenumber ratio with Fermat index. The packet itself repeatedly states that this physical bridge and the Newtonian normalization remain outside the retained derivation, so the queued bounded theorem is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:19.307691+00:00",
+      "archived_for_note_hash": "bf46c7195ff937b76e0eaf488618066fab054d0f2caf0e41b581931de76aac7e",
+      "audit_date": "2026-06-16T03:01:29.696625+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_source_to_metric_theorem_note": "Fixed 15^3 Dirichlet finite-lattice certificate for the runner-defined seven-site finite-rank source, exterior harmonic/Schur boundary algebra, shell-averaged radial harmonic projection, and bounded static isotropic residual reduction.",
+          "gravity_clean_derivation_note": "Bounded weak-field composition: given the Z^3 graph-Laplacian Poisson operator, the retained weak-field source/readout/test-response bridge, and the retained Z^3 Green-kernel asymptotic, the note derives a 1/r potential and bilinear inverse-square force in lattice units.",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "Exact Z^3 graph-Laplacian heat-kernel resolvent identity and Bessel factorization, plus the leading 1/(4*pi|x|) Green asymptotic routed through the retained stronger lattice-correction theorem for the same kernel; direct local-CLT proof and physical G_Newton calibration are excluded.",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "Audited the specified Fam1 lensing harness edge-kernel mechanism: computed signed edge coefficients have negligible monopole, localized support, a small-window -1.43 replay at H=0.25, steeper signed large-b falloff, and a non-cancelling |c| control returning 1/b. No continuum asymptotic exponent, exact dipole theorem, other-family result, or standard lensing claim was audited.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "finite_rank_source_to_metric_theorem_note": "bounded_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "bounded_theorem",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_source_to_metric_theorem_note": "retained_bounded",
+          "gravity_clean_derivation_note": "retained_bounded",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07": "retained_bounded",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_source_to_metric_theorem_note",
+          "gravity_clean_derivation_note",
+          "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
+          "lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "f43ec1e7b0345fbb09fb7724c6f83f8bd924c1b4cd4a0c3a7b97a56f45d0ab71",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-025349-dcd270b9be-gravity_premise4_refractive_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic checks close once lambda(k)+phi=E and n=k/k0 are assumed: the arccos relation, first-order expansion, Fermat action, and integral giving 2a/b are correct. The restricted packet does not derive the physical Hamiltonian-shift bridge or the physical eikonal/Fermat bridge from the cited authorities.",
+      "claim_scope": "Conditional algebra from the axis lattice dispersion to n=1-phi/(2E) and the 1/b Fermat deflection of phi=a/r, assuming the Hamiltonian shift H->H+phi and the fixed-energy eikonal/Fermat identification n=k/k0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:01:29.696625+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With the supplied shift lambda(k)+phi=E and supplied Fermat/eikonal reading n(phi)=k(phi)/k(0), the axis dispersion gives k(phi)=arccos(1-(E-phi)/2) and n=1-phi/(2E)+... in the weak-field small-k limit.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a retained theorem for the additive Hamiltonian shift and the fixed-energy eikonal/Fermat identification n=k/k0, then re-audit the same algebraic packet.",
+      "open_dependency_paths": [
+        "docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md",
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Issue: the runner verifies dispersion and Fermat algebra after assuming lambda(k)+phi=E and n=k/k0, but the restricted authorities do not derive those physical bridge inputs. Why this blocks: the refractive-index/action conclusion depends on reading a local lattice wavenumber ratio as the Fermat optical index, so retained status cannot propagate through that open identification. Repair target: add a retained bridge theorem deriving H->H+phi for this scalar packet and the fixed-energy WKB/Fermat map n=k/k0, including sign and normalization conventions. Claim boundary until fixed: the arccos dispersion expansion and 1/b deflection calculation are sound conditional algebra only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py",
+  "title": "Premise (4) Refractive-Index Support From Lattice Dispersion (Bounded Boundary Packet)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,370 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_e_channel_endpoint_quotient_law_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/_frontier_loader.py",
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+    "scripts/frontier_discrete_dtn_shell_kernel.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_flux_fixed_matching_theorem.py",
+    "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+    "scripts/frontier_oh_schur_boundary_action.py",
+    "scripts/frontier_one_parameter_reduced_shell_law.py",
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py",
+    "scripts/frontier_quark_endpoint_readout_constraints.py",
+    "scripts/frontier_quark_mass_ratio_full_solve.py",
+    "scripts/frontier_quark_projector_parameter_audit.py",
+    "scripts/frontier_quark_projector_ray_phase_completion.py",
+    "scripts/frontier_quark_up_amplitude_candidate_scan.py",
+    "scripts/frontier_radial_shell_matching_law.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_sewing_shell_source.py",
+    "scripts/frontier_star_shell_projector.py",
+    "scripts/frontier_tensor_boundary_drive_two_channel.py",
+    "scripts/frontier_tensor_support_center_excess_law.py",
+    "scripts/frontier_tensor_universal_kernel.py",
+    "scripts/frontier_tensorial_einstein_regge_completion.py",
+    "scripts/frontier_universal_shell_profile.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.609,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "380496e6e61f9cbfd1e638447a2e44f3173cf01000d3e0e8ae0cbd3cc9432817",
+  "note_path": "docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.813274+00:00",
+      "audit_date": "2026-05-02T18:30:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.285,
+        "transitive_descendants": 38
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "claude-opus-4.7-1m:cluster2-narrow-2026-05-02-quark-e-quotient",
+      "auditor_confidence": "high",
+      "auditor_family": "claude-opus",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The 15/8 quotient is selected as the nearest small rational in the declared search class, not derived from the retained Route-2 tensor readout. Promotion to retained requires deriving the quotient from an exact tensor observable and removing the nearest-rational scan.",
+      "claim_scope": "Bounded low-rational rationalization on the live anchored E-channel branch: inside a controlled low-rational endpoint class, gamma_E(center)/gamma_E(shell) is best rationalized by 15/8, implying r_E = 21/4 and D_E = 21/8. Excludes any exact derivation of these values from a retained Route-2 tensor readout theorem; the shell-multiplicity bridge a_T/a_E = -2 and T-channel r_T = -1 remain candidate/imported premises.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T18:30:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Inside a controlled low-rational endpoint class, gamma_E(center)/gamma_E(shell) is best rationalized by 15/8, implying r_E=21/4 and D_E=21/8 near the live bounded endpoint branch.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-audit if a retained Route-2 tensor readout theorem is added that derives gamma_E(center)/gamma_E(shell) = 15/8 exactly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Re-audit confirms the original numerical-match verdict: nearest-rational selection inside a chosen class, not an exact derivation. Scope narrowed from the migration backfill to a bounded low-rational rationalization."
+    },
+    {
+      "archived_at": "2026-05-16T18:54:42.649895+00:00",
+      "archived_for_note_hash": "5080f7727d027a9d077b897a71e11bc93bfd76778dd0032ecc470daec67fcd3f",
+      "audit_date": "2026-05-05T05:26:30.308223+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.055,
+        "runner_hash": "82273f6e97490d2ee6484f7a975c3f8944b4e317bb39190c4fb704b7a19d8a76",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-quark_e_channel_endpoint-145",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from q_E=15/8 to r_E=21/4 closes, but the load-bearing identification q_E=15/8 is only a nearest-rational match to an imported live endpoint value. The packet does not derive the endpoint quotient or the shell-multiplicity bridge a_T/a_E=-2 from retained first-principles tensor machinery.",
+      "claim_scope": "Audited the bounded endpoint-rationalization claim that the live E-channel quotient near 1.876246 selects 15/8 in a numerator<=96, denominator<=32 rational scan, yielding r_E=21/4 and conditionally D_E=21/8.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:26:30.308223+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Inside the controlled low-rational endpoint class, the live E-channel shell/center quotient is best rationalized by 15/8, implying r_E = 21/4 and D_E = 21/8 under the shell-multiplicity bridge.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained first-principles derivation of gamma_E(center)/gamma_E(shell)=15/8, and separately close the a_T/a_E=-2 bridge before promoting the denominator law.",
+      "open_dependency_paths": [
+        "scripts/frontier_quark_endpoint_readout_constraints.py",
+        "scripts/frontier_quark_projector_parameter_audit.py",
+        "scripts/frontier_quark_up_amplitude_candidate_scan.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner does compute the rational scan and the downstream algebra, but its central step is selecting 15/8 because it is close to the imported live endpoint quotient within a chosen low-rational class. The endpoint values, anchored solve, and shell/intercept ratio are imported from other modules not included as retained authorities in the packet. The note itself correctly says this is bounded and not a theorem; it does not close the missing derivation of 15/8 from exact tensor machinery."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:39.783710+00:00",
+      "archived_for_note_hash": "31b250635a725af41c104084f433fcab0eb8e394d89006996f8934d4f0323d2a",
+      "audit_date": "2026-05-16T21:31:05.390047+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Audited the reduced Route-2 E-channel no-go: after granting the stated T-side candidates and the restricted carrier/readout family, minimal carrier linearity and shell normalization do not force rho_E=21/4."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 12.628,
+        "runner_hash": "a0c4b66b259e63092402fcdc18e0c7c11d456d7508dbd0ecfd9ca880a4219e5b",
+        "transitive_descendants": 790
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260516-213044-20260516T213044Z-bb05298a-quark_e_channel_endpoint-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from q_E=15/8 to r_E=21/4 and D_E=21/8 closes, but the load-bearing identification q_E=15/8 is a nearest-rational match to an imported live endpoint value. The missing step is a retained derivation of the E-center endpoint ratio, and separately the a_T/a_E=-2 bridge for the denominator law.",
+      "claim_scope": "Given the imported live endpoint quotient and the specified low-rational scan bounds, the packet audits the bounded rationalization q_E=15/8 and its algebraic consequences r_E=21/4 and, conditionally on a_T/a_E=-2, D_E=21/8.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T21:31:05.390047+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Inside the controlled low-rational endpoint class, the nearest E-channel shell/center quotient to the live value gamma_E(center)/gamma_E(shell)=1.876246... is 15/8.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained first-principles derivation of gamma_E(center)/gamma_E(shell)=15/8, then separately close the a_T/a_E=-2 shell-multiplicity bridge before promoting D_E=21/8.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 6,
+        "C": 0,
+        "D": 6,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The runner performs real arithmetic checks, but its central step is a low-rational nearest-neighbor selection around the live endpoint quotient supplied by endpoint_readout(), not a first-principles derivation. The cited retained no-go explicitly says rho_E remains free in the restricted Route-2 carrier/readout class unless an additional E-center primitive is supplied. Therefore the bounded candidate is traceable and internally consistent, but the theorem chain does not close."
+    },
+    {
+      "archived_at": "2026-07-07T18:55:31.778913+00:00",
+      "archived_for_note_hash": "7d1c3c07431db7d96546a3036e1e9ab62dc9fe29931facf53be20f42373ae99c",
+      "audit_date": "2026-06-21T10:53:40.854521+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Within the exact restricted Route-2 carrier/readout family, after granting rho_T = -1 and alpha_T/alpha_E = -2, minimal carrier naturality leaves rho_E free; rho_E = 21/4 requires an additional E-center endpoint ratio or equivalent primitive."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 11.285,
+        "runner_hash": "29072ff33b8625bbef3f350ed64ef179f6bdbcc269312be4f6979e48eb3ba889",
+        "transitive_descendants": 77
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-quark_e_channel_endpoint_quotient_law_note_2026-04-19-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from q_E = 15/8 to r_E = 21/4 closes, and D_E = 21/8 closes if a_T/a_E = -2 is granted. The packet does not derive q_E = 15/8 from retained tensor machinery or close the a_T/a_E = -2 shell-multiplicity bridge.",
+      "claim_scope": "Bounded endpoint rationalization of the live E-channel quotient by 15/8, with exact downstream algebra to r_E = 21/4 and conditional D_E = 21/8.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T10:53:40.854521+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Inside the controlled low-rational endpoint class, the live E-channel shell/center quotient is nearest to 15/8, which implies r_E = 21/4 and, with a_T/a_E = -2, D_E = 21/8.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Promotion requires a retained derivation of gamma_E(center)/gamma_E(shell) = 15/8 and, for D_E, a retained shell-multiplicity theorem deriving a_T/a_E = -2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 14,
+        "C": 0,
+        "D": 2,
+        "total_pass": 22
+      },
+      "verdict_rationale": "Issue: the load-bearing q_E = 15/8 identification is selected as the nearest low-rational match to the imported live endpoint value q_E = 1.876246..., not derived. Why this blocks: the cited retained no-go states that rho_E remains free in the restricted Route-2 carrier/readout class unless an additional E-center primitive is supplied. Repair target: derive gamma_E(center)/gamma_E(shell) = 15/8 from retained tensor/readout machinery, and derive a_T/a_E = -2 before promoting the denominator law. Claim boundary until fixed: the exact algebraic implications of the candidate are valid as a bounded numerical match."
+    },
+    {
+      "archived_at": "2026-07-09T23:35:38.943368+00:00",
+      "audit_date": "2026-07-07T18:59:48.930606+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Within the exact restricted Route-2 carrier/readout family, after granting rho_T = -1 and alpha_T/alpha_E = -2, minimal carrier naturality leaves rho_E free; rho_E = 21/4 requires an additional E-center endpoint ratio or equivalent primitive."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 13.629,
+        "runner_hash": "8fb7aa9dcfb22cf1182a351d457be0813c4c1ba04514c9299eb024508f9af4bd",
+        "transitive_descendants": 139
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260707-185948-2d03b01f-quark_e_channel_endpoint-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conditional algebra closes: q_E=15/8 gives r_E=21/4, q_T=5/6 gives r_T=-1, and a_T/a_E=-2 gives b_E/b_T=21/8. The missing steps are not in the conditional chain but remain the derivations of ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT themselves.",
+      "claim_scope": "Under supplied premises ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, the affine endpoint identities imply r_E = 21/4 and D_E = |b_E/b_T| = 21/8, while the retained Route-2 no-go keeps ENDPOINT-QE non-derived in the restricted carrier/readout class.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T18:59:48.930606+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+      "load_bearing_step": "Under ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT, exact endpoint algebra gives r_E = 6*(15/8 - 1) = 21/4 and b_E/b_T = (r_E a_E)/(r_T a_T) = 21/8.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Issue / the row depends on supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT. Why this blocks / the conditional algebra closes but the premises are not derived in the restricted packet. Repair target / provide retained derivations for the E endpoint quotient, T endpoint quotient, and shell coefficient ratio, or keep citations downstream explicitly conditional with a dated downstream-hygiene line in this note's own boundary. Claim boundary until fixed / cite only as exact conditional endpoint algebra under the three named supplied premises.",
+      "open_dependency_paths": [
+        "docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#ENDPOINT-QE",
+        "docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#ENDPOINT-RT",
+        "docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md#SHELL-MULT"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "Manual algebra independently confirms the load-bearing equations: 6*(15/8-1)=21/4, 6*(5/6-1)=-1, and (21/4)/((-1)*(-2))=21/8. The runner source implements this with exact Fraction arithmetic and separates motivation-tier numerical replay from load-bearing checks. However the theorem explicitly imports ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT as supplied premises, and the cited retained no-go states the E-channel value remains free unless an additional E-center primitive is supplied. Thus the bounded conditional result is valid only under those admissions, not an unconditional retained derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:39.661577+00:00",
+      "audit_date": "2026-07-10T01:40:25.131635+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "Within the exact channelwise restricted Route-2 readout class, with the stated carrier columns and granted T-side ratios, rho_E is unconstrained and rho_E=21/4 requires an additional E-center datum."
+        },
+        "dep_claim_type": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "no_go"
+        },
+        "dep_effective_status": {
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28": "retained_no_go"
+        },
+        "deps": [
+          "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        ],
+        "load_bearing_score": 13.629,
+        "runner_hash": "8fb7aa9dcfb22cf1182a351d457be0813c4c1ba04514c9299eb024508f9af4bd",
+        "transitive_descendants": 139
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-quark_e_channel_endpoint-035",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The rational algebra closes exactly once the three named premises are granted. The cited retained no-go supports the non-derivation boundary but does not derive those premises.",
+      "claim_scope": "Under supplied ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT premises, exact endpoint algebra yields r_E = 21/4 and D_E = 21/8; the retained Route-2 no-go keeps ENDPOINT-QE non-derived within the restricted carrier/readout class.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:40:25.131635+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28:retained_no_go->unaudited",
+      "load_bearing_step": "ENDPOINT-QE + ENDPOINT-RT + SHELL-MULT implies r_E = 21/4 and D_E = |b_E/b_T| = 21/8 by the exact affine endpoint identities.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT from retained-grade framework inputs, then rerun the exact conditional-algebra checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "Issue: The runner hard-codes q_E = 15/8, q_T = 5/6, and a_T/a_E = -2 as supplied Fraction inputs and checks their exact consequences. Why this blocks: The retained no-go establishes that restricted Route-2 primitives leave rho_E free, while no cited authority derives any of the three premises, so unconditional closure is unavailable. Repair target: Supply retained-grade derivations of ENDPOINT-QE, ENDPOINT-RT, and SHELL-MULT. Claim boundary until fixed: The exact conditional implications r_E = 21/4 and D_E = 21/8, together with the stated no-go boundary, are valid."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_e_channel_endpoint_quotient_law.py",
+  "title": "Quark E-Channel Endpoint Quotient Law",
+  "transitive_descendants": 137,
+  "verdict_rationale": null
+}

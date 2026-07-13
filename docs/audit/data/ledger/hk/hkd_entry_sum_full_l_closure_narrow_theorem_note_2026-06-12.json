@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-06-18T13:16:31.617961+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": "Under the centered minimal_delta convention for chart periods q_i >= 2, d^2 mod 2 agrees with chart parity for all 3D chart cosets iff all q_i are even; for (L/2,L,L/2) with even L and periods >= 2 this is L = 0 mod 4."
+    },
+    "dep_claim_type": {
+      "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": "retained"
+    },
+    "deps": [
+      "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12"
+    ],
+    "load_bearing_score": 4.5,
+    "runner_hash": "1625130762f336e5ce8e7146b4ee3ba474a6898bdc270f3001b719a9ce96cce5",
+    "transitive_descendants": 15
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12-first",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained cited period-parity lemma gives parity preservation iff all periods are even, and this family has all periods even exactly when L = 0 mod 4. The runner source genuinely computes the dense finite anchors and exact combinatorial support counts; frozen values are used as regression gates, not as the sole computation.",
+  "claim_id": "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12",
+  "claim_scope": "For the d=3 step-2 chart family K-periods=(L/2,L,L/2), the combinatorial kept-decimated support existence criterion is audited for even L >= 8, with dense Schur/H_kd anchor agreement only for L in {8,10,12,14,16,18}.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-18T13:16:31.617961+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "Since d2 = sum_i delta_i^2 = sum_i delta_i mod 2, a misaligned survivor exists exactly when some chart period is odd; for (L/2,L,L/2) with even L this is exactly L != 0 mod 4.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "52a5e8f5e4f251545b3c2e60c452292d7c431f52cdfe120d1922f6049ecf8a50",
+  "note_path": "docs/HKD_ENTRY_SUM_FULL_L_CLOSURE_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check the passage from the retained period-parity lemma to the specific left-even/right-odd/d2-even HKD survivor cell, since that is the narrowest point where an overbroad parity-mismatch reading could enter.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 7,
+    "B": 0,
+    "C": 10,
+    "D": 0,
+    "total_pass": 17
+  },
+  "runner_path": "scripts/frontier_hkd_entry_sum_full_l_closure_2026_06_12.py",
+  "title": "HKD Entry-Support Full-L Period-Parity Criterion for the d=3 Step-2 Chart Family",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The full-L part is an algebraic parity closure over a retained upstream lemma, and the bounded dense-anchor bridge is computed self-contained from the stated Hamiltonian/Schur construction for the finite anchor grid. No external comparator, tuned empirical value, open bridge, or non-retained dependency is used. The theorem\u2019s scope is correctly bounded: it does not claim dense Hamiltonian magnitude closure beyond the listed anchors."
+}

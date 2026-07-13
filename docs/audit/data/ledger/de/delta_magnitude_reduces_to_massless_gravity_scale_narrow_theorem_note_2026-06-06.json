@@ -1,0 +1,127 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (IR-scale routing + form robustness; the magnitude value itself remains open)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "newton_law_derived_note",
+    "scale_reference_primitive",
+    "staggered_self_consistent_two_body_note_2026-04-11",
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c17d2707bc4454d36e3579c28357fa0a0bceff2ca4ca0d177776dd931df0c8b2",
+  "note_path": "docs/DELTA_MAGNITUDE_REDUCES_TO_MASSLESS_GRAVITY_SCALE_NARROW_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.315259+00:00",
+      "audit_date": "2026-06-07T00:08:22.247782+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "newton_law_derived_note": "Given the supplied scalar kernel G(r)=1/(4 pi r) and formal source-linearity phi=M G, the note proves the inverse-square scalar gradient magnitude |grad phi|=M/(4 pi r^2), while making no physical force-law claim.",
+          "scale_reference_primitive": null,
+          "staggered_self_consistent_two_body_note_2026-04-11": "Finite open 3D staggered lattices with sides 12, 14, 16; separations d=3..7; mass=0.30; G=50.0; mu2=0.001; dt=0.08; steps=6; sigma=0.80, testing exact partner-force attraction and blocked-centroid mutual motion."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "newton_law_derived_note": "bounded_theorem",
+          "scale_reference_primitive": "meta",
+          "staggered_self_consistent_two_body_note_2026-04-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "newton_law_derived_note": "retained_bounded",
+          "scale_reference_primitive": "meta",
+          "staggered_self_consistent_two_body_note_2026-04-11": "retained_bounded"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "newton_law_derived_note",
+          "scale_reference_primitive",
+          "staggered_self_consistent_two_body_note_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "192985a7aab88be42857764da0d1c1fb782e12f3fd4ac1af5ca7610b86675bf9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-000559-f4808f0ffe-delta_magnitude_reduces_to_m",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed formulas give delta_ij=(-G/mu^2+G/(8+mu^2))/N, so its leading magnitude diverges with the zero-mode IR regulator while the corner contribution is finite. Independently, eps((pi,-pi,0)) and permutations equals 8, C+C^2=J-I for the 3-cycle, and the real single-hop second-order matrix has a real I plus J-I form.",
+      "claim_scope": "Audited the narrow algebraic claim that, given delta_ij=(Vq(0)-Vq(k_i-k_j))/N with Vq(q)=-G/(eps(q)+mu^2) and eps(Delta k)=8 for the generation-corner pairs, the magnitude is IR-scale-routed, the J-I form is corner-protected, the real single-hop coupling is K-real, and robustness is only conditional on a supplied hierarchy window.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:08:22.247782+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:scale_reference_primitive:7f3f712d->601c0206",
+      "load_bearing_step": "As mu^2 -> 0, the q=0 monopole |Vq(0)|=G/mu^2 diverges while the corner term |Vq(Delta k)|=G/(8+mu^2) tends to G/8, so the delta magnitude is carried by the gravity mediator IR scale rather than fixed as a flavor value.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that future uses preserve the narrow scope: the finite corner term is IR-safe in the mu^2 -> 0 limit, not exactly mu^2-independent at finite regulator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing content is algebraic and closes over the supplied delta/Vq form, retained bounded mediator and K-real cone inputs, and the accepted scale-reference primitive. The runner source performs actual finite checks rather than merely printing constants, and an independent check reproduces the IR limit, corner eps=8, C+C^2=J-I, and real single-hop K-real form. The note does not claim the physical magnitude value, full complex-hopping K-reality, r/Q, or an unsupplied hierarchy window, so the named open surfaces remain outside the audited closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/delta_magnitude_massless_gravity_scale_runner.py",
+  "title": "The Magnitude of the Interaction Asymmetry `delta` Routes to the Massless-Gravity IR Scale; the Form is Corner-Protected \u2014 Narrow Theorem",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

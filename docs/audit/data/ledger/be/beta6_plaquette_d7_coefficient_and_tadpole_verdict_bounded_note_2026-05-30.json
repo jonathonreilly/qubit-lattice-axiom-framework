@@ -1,0 +1,163 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_beta6_connected_coefficient_2026_05_30.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.087,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5f2fbe62bf3e0c534bfab001b71fbadfa30cc8afe87064c60b5c31703f330f4f",
+  "note_path": "docs/BETA6_PLAQUETTE_D7_COEFFICIENT_AND_TADPOLE_VERDICT_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:38.545985+00:00",
+      "archived_for_note_hash": "6b22d443064b1589884f9f22a2f51fde4263b1de32d0d3bf5b985a0d8458d972",
+      "audit_date": "2026-06-01T21:35:56.041526+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "Exact bounded strong-coupling result d_6 = 7/5668704 for Delta(beta) = P_full - P_1plaq, plus finite GF(3) support reduction showing no size-6 or size-7 distinct action support contributes beyond cube-shell multiplicities."
+        },
+        "dep_claim_type": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e536150e66fdd3d041cd023d8ed1d807484a65a65314994ee34b9f71b49d2f8f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260601-213323-abc3f8a9-beta6_plaquette_d7_coeff",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The upstream d_5, d_6, and support-reduction authority is retained_bounded, and the displayed ratio arithmetic checks. However, the provided completed runner cache stops at maxorder=6 with PASS=18 and does not execute the V5/maxorder=7 d_7 computation claimed by the note.",
+      "claim_scope": "Exact bounded d_7 coefficient for Delta(beta) on the four cube-shell support, plus the arithmetic falsification of the specific prediction d_7^pred = (d_6/d_5)d_6.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-01T21:35:56.041526+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The exact order-beta^7 connected coefficient is d_7 = 5/17006112, equivalently 5/68024448 per cube shell, so d_7/d_6 = 5/21 differs from d_6/d_5 = 7/12 and falsifies the specified single-ratio geometric/tadpole ansatz.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the full primary runner source and a completed cache for `python3 scripts/frontier_beta6_connected_coefficient_2026_05_30.py 7`, or an independent certificate of the four cube-shell order-7 multiplicity sum.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 9,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The displayed formulas following the asserted d_7 are arithmetically consistent: 4*(5/68024448)=5/17006112, d_7/d_6=5/21, and the relative miss against 49/68024448 is 29/49. The load-bearing exact d_7 value itself is not certified by the provided completed output: the cache reports only d_5 and d_6, while the source note claims a maxorder=7 PASS=22 run. The visible runner source also has the optimized Fraction-engine middle omitted in the packet, so the restricted packet cannot verify that the order-7 coefficient is computed rather than asserted."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.186590+00:00",
+      "audit_date": "2026-06-12T23:31:07.636815+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "Bounded exact strong-coupling coefficients for Delta(beta)=P_full-P_1plaq through beta^7, including the finite GF(3) support reduction to cube-shell multiplicity terms and the arithmetic single-ratio falsification d_7/d_6 != d_6/d_5."
+        },
+        "dep_claim_type": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 7.358,
+        "runner_hash": "0dd340b81de3f925eba1dd917522913cec4c99ff3250f84c88af3ffb19237dfb",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-232734-d5aa985d09-beta6_plaquette_d7_coefficie",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited upstream authority is retained_bounded and supplies the d_5/d_6 anchors plus the size-6/7 support reduction. The provided runner wrapper delegates to source code that constructs exact SU(3) Haar projectors, exact moments/cumulants, and Fraction-arithmetic cube-shell multiplicity sums; the ansatz falsification then follows by direct rational arithmetic.",
+      "claim_scope": "Audited the bounded exact coefficient d_7 = 5/17006112 for Delta(beta)=P_full-P_1plaq through order beta^7, and the resulting falsification of the specific single-ratio geometric/tadpole continuation d_7=(d_6/d_5)d_6; no beta=6 plaquette closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:31:07.636815+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "After the GF(3) support reduction to the four cube shells, the exact order-7 cube-shell multiplicity sum gives d_7 = 5/17006112, so d_7/d_6 = 5/21 rather than d_6/d_5 = 7/12.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the GF(3) low-weight cycle certificate and the optimized Fraction d_7 path; no open dependency identified.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 22
+      },
+      "verdict_rationale": "The load-bearing coefficient is not merely printed: the helper source computes it from framework primitives via exact invariant-projector link integrals, set-partition cumulants, GF(3) support filtering, and optimized Fraction contraction, then compares the computed rational to the displayed value. Independent arithmetic checks confirm the displayed per-shell aggregation, ratios, prediction 49/68024448, and relative misses 29/49 and 29/20. The Monte Carlo checks are non-load-bearing validation only, and no external comparator or beta=6 closure is imported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_beta6_d7_maxorder7_packet_2026_06_05.py",
+  "title": "Beta=6 SU(3) Plaquette D7 Coefficient and Geometric-Ratio Verdict",
+  "transitive_descendants": 16,
+  "verdict_rationale": null
+}

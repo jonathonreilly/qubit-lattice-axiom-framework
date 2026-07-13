@@ -1,0 +1,119 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_canonical_textbook_weak_measure_equivalence_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_optional_textbook_comparison_note",
+    "universal_qg_pl_weak_form_note",
+    "universal_qg_pl_sobolev_interface_note",
+    "universal_qg_external_fe_smooth_equivalence_note",
+    "universal_qg_abstract_gaussian_completion_note",
+    "universal_qg_pl_field_interface_note"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.077,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ba0a6384e3a4c4a8a9a55cb9f91e9ac99a6bf7cd3a28a8f8b156bfacdd7162dc",
+  "note_path": "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.496004+00:00",
+      "archived_for_note_hash": "b9374b7e783b813410eacc7f1d838a66b5329b898a5d6917ef308cafcf2c1ee5",
+      "audit_date": "2026-05-06T13:18:16.760717+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "universal_qg_optional_textbook_comparison_note": null
+        },
+        "dep_claim_type": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 12.997,
+        "runner_hash": null,
+        "transitive_descendants": 510
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-06-universal-qg-canonical-textbook-weak-measure",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The direct ledger dependency is only the optional textbook comparison meta note, which explicitly carries no theorem authority. The runner verifies basis-invariance and textbook weak/Gaussian algebra after importing PL weak-form, PL Sobolev carrier, Gaussian completion, and external FE/Galerkin bridge premises that are not direct retained-grade dependencies.",
+      "claim_scope": "Canonical equivalence between the project-native PL weak Gaussian Sobolev completion and the standard textbook closed-coercive weak Sobolev/Gaussian cylinder formulation on the completed carrier.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T13:18:16.760717+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "the closed coercive PL weak bilinear form determines the standard textbook weak operator, stationary solution, and Gaussian cylinder/Cameron-Martin covariance on the same completed carrier",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py as the runner and replace the metadata-only optional comparison dependency with direct retained-grade dependencies for the PL weak form, PL Sobolev carrier, PL field/Gaussian completion, and external FE/Galerkin smooth equivalence; then re-audit this canonical textbook weak/measure equivalence scope.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_PL_WEAK_FORM_NOTE.md",
+        "docs/UNIVERSAL_QG_PL_SOBOLEV_INTERFACE_NOTE.md",
+        "docs/UNIVERSAL_QG_EXTERNAL_FE_SMOOTH_EQUIVALENCE_NOTE.md",
+        "docs/UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md",
+        "docs/UNIVERSAL_QG_PL_FIELD_INTERFACE_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the note promotes a canonical textbook weak/measure equivalence, but the current ledger cites only a meta packaging hub and not the actual PL weak, Sobolev, Gaussian, and FE/Galerkin authority rows. Why this blocks: the runner's completed checks demonstrate finite algebraic consistency and basis independence only after those premises are imported. Repair target: wire scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py as the runner and add direct retained-grade dependencies for the PL weak form, PL Sobolev interface, PL field/Gaussian completion, and external FE/Galerkin smooth equivalence. Claim boundary until fixed: the coordinate/basis-invariance checks pass, but retained status must wait for those upstream theorem rows to be direct retained-grade authorities."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_canonical_textbook_weak_measure_equivalence.py",
+  "title": "Universal QG Canonical Textbook Weak/Measure Equivalence",
+  "transitive_descendants": 134,
+  "verdict_rationale": null
+}

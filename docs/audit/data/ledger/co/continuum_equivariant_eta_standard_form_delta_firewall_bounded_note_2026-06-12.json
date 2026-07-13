@@ -1,0 +1,245 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8935913fce2e87f1f3112d91a209ecd9aa075c7b6c39d80c6211ca27ea9bb73b",
+  "note_path": "docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T08:28:26.634415+00:00",
+      "audit_date": "2026-06-18T11:34:02.484187+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "73d1fec8cd83314f21e1818a1c8e9cc717627412e60526669f8f1315958e5590",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained fixed-locus weights and the note's explicitly supplied standard localization formulas, the exact arithmetic closes to 2/9 and the formula-level delta firewall follows. The runner source also performs a finite matrix scan for the tested chiral circulant family, with spectral flow 0 and flat eta in that bounded setup.",
+      "claim_scope": "Bounded audit of the standard-form localization evaluation on C3[111] weights and the supplied C3-circulant chiral mass-family scan showing no delta selection on this tested surface; not an R-eta derivation, refutation, or universal no-go.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T11:34:02.484187+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Evaluating the standard Lefschetz/cotangent localization formulas on the retained C3[111] transverse weights (1,2) gives 2/9, and those formulas have no a, B, delta, or operator-coupling input.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the bounded scope: the mass-family scan uses the runner-instantiated tested family, not a universal statement over all a and B.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 12,
+        "C": 3,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic evaluation over retained-grade inputs, not a fitted numerical match or symbol renaming. The runner source genuinely computes the localization expressions and the finite tested-family scan, and no helper imports are missing. The cited retained_bounded authorities are used only within their closed weight/Kahler-Dirac scope; their separately declared exclusions are not consumed by this bounded claim."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.441887+00:00",
+      "audit_date": "2026-06-21T16:32:48.384250+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "73d1fec8cd83314f21e1818a1c8e9cc717627412e60526669f8f1315958e5590",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited fixed-locus authority supplies retained C3 weights (1,2), and the source/runner algebra correctly evaluates the displayed localization forms to 2/9 with no delta dependence. The matrix-family checks close only the stated tested-route boundary, not a universal no-go over all continuum mechanisms.",
+      "claim_scope": "Bounded evaluation of the standard equivariant-eta/Lefschetz formulas on retained C3[111] weights and the runner-specified C3-circulant chiral family, showing 2/9 localization and no delta selection in that tested route.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:32:48.384250+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Evaluate the quoted standard localization formulas on the retained C3[111] weights (1,2), yielding 2/9 with no a, B, delta, or operator-coupling input; the tested D(delta)=sigma_chiral tensor H(delta) circulant family then has paired eigenbranches with zero net spectral flow and flat eta(delta).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the runner constants A_MASS=-2*cos(0.42), B_MASS=1 are intended as part of the bounded tested-family surface; the arbitrary-a,B zero-crossing statement is not audited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing work is exact algebra and finite matrix evaluation over retained-grade inputs, not an external comparator, definition, or tuned empirical match. The runner source genuinely computes the localization expressions, checks anti-circularity, and evaluates the chiral circulant family rather than merely printing expected PASS lines. Direct dependencies are retained_bounded or the accepted minimal-axiom meta premise, and no helper artifact is missing. The clean scope is bounded to the standard formulas and the runner-specified tested family."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.542307+00:00",
+      "audit_date": "2026-07-10T03:53:30.778863+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Bounded finite-dimensional algebraic theorem: the Z2^d-indexed per-hypercube component space C^{2^d} is graded-isomorphic to Lambda*(C^d), D_KD=d-delta has the stated nilpotency, parity-reversal, Hodge-Laplacian, and Hermiticity identities, and at even d the 2^d count factors into spinor/taste with the d=4 spinor factor matching the retained Cl(3) chirality-pair count. This does not audit any physical staggered-Dirac dynamical equivalence, continuum/species reduction, or statistics-forcing claim."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "73d1fec8cd83314f21e1818a1c8e9cc717627412e60526669f8f1315958e5590",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00048-continuum_equivariant_eta_st",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The localization arithmetic closes, but the continuum-operator and regularized-eta interpretation does not. The cited K\u00e4hler-Dirac authority expressly leaves the physical dynamical identification open, while the runner computes only a finite 6-by-6 mass matrix and its unregularized spectral sign count.",
+      "claim_scope": "Exact 2/9 localization arithmetic and delta-independence, together with spectral-flow and sign-asymmetry diagnostics for the explicitly supplied finite chiral-doubled mass family.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:53:30.778863+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Substituting the retained (1,2) weights into the localization expressions gives 2/9 independently of delta, while the supplied chiral-doubled matrix family has zero net signed crossings and flat spectral sign asymmetry.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow C3-C4 and the runner-facing boundary to finite 6-by-6 chiral-doubled matrix spectral flow and sign-count flatness, and add a dated downstream-hygiene line stating that this row must not be cited as a continuum eta/index theorem.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "Issue: C1-C2 are sound exact arithmetic, but C3 computes D = sigma_z tensor H for a hard-coded finite matrix, and eta_asymmetry is merely the positive-minus-negative eigenvalue count rather than a regularized continuum K\u00e4hler-Dirac eta invariant; C4b also sets delta_forced_by_eta to false instead of deriving it. Why this blocks: the cited K\u00e4hler-Dirac authority explicitly disclaims the physical/dynamical operator identification, and the runner checks that authority text without constructing D_KD or a continuum regularization. Repair target: derive and implement the continuum operator/eta bridge from retained inputs, or narrow C3-C4 to finite-matrix sign-symmetry diagnostics. Claim boundary until fixed: the 2/9 localization evaluation, its delta-independence, and zero spectral flow/sign imbalance for the explicitly defined finite family remain supported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_continuum_equivariant_eta_delta_firewall_2026_06_12.py",
+  "title": "Continuum Equivariant Eta Standard-Form Evaluation and Delta Firewall -- Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

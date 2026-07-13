@@ -1,0 +1,1344 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_classical_semigroup_boundary_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": "exact-support / negative-route-pruning boundary",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "default_positive_theorem",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 17,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4bf3e8fa9fa2f4f35ed51c489524493047f8231418d87ee043033ff61bf47514",
+  "note_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.260059+00:00",
+      "audit_date": "2026-07-10T16:18:55.433771+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.024,
+        "runner_hash": "b891830b12262a53cc5fc6bb88dd814f9aafcb93da18582cf4be79673371e263",
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-record_classical_sem-judge-1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note gives a self-contained algebraic closure from the stipulated finite function algebra: its atom idempotents force all derivations to vanish, and its automorphisms are precisely permutations. The runner performs actual enumeration and linear-algebra checks rather than importing or printing the contested conclusions; its append/count and Markov examples also support the stated boundary. The operative claim is a no-go result excluding intrinsic continuous reversible post-record dynamics, with the positive algebraic facts serving as its proof.",
+      "claim_scope": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T16:18:55.433771+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T17:35:41.442599+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-173520-857934c4b3-record_classical_semigroup_b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite post-record classical algebras C^O have only discrete permutation automorphisms and zero derivations; append/count updates are irreversible translations, while continuous Markov rates and stable points require supplied ensemble dynamics.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-09T23:37:30.351281+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-record_classical_semigro-040",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional on modeling a supplied finite post-record alphabet by the complex function algebra C^O, the audit checked its reversible automorphisms, derivations, append/count translations, and dependence of Markov stationary points on supplied rates.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-10T16:18:55.433771+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-record_classical_sem-judge-1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.",
+          "claim_type": "no_go",
+          "first_auditor_error": "It classified the row as a positive_theorem despite the source note's explicit negative-route-pruning purpose and its load-bearing conclusion that nontrivial connected reversible dynamics cannot exist on the stipulated finite record algebra.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The note gives a self-contained algebraic closure from the stipulated finite function algebra: its atom idempotents force all derivations to vanish, and its automorphisms are precisely permutations. The runner performs actual enumeration and linear-algebra checks rather than importing or printing the contested conclusions; its append/count and Markov examples also support the stated boundary. The operative claim is a no-go result excluding intrinsic continuous reversible post-record dynamics, with the positive algebraic facts serving as its proof.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The idempotent derivation equations force Der(C^O)=0, while Aut(C^O)=Sym(O) is finite, excluding any nontrivial connected reversible flow within the finite record algebra.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The note gives a self-contained algebraic closure from the stipulated finite function algebra: its atom idempotents force all derivations to vanish, and its automorphisms are precisely permutations. The runner performs actual enumeration and linear-algebra checks rather than importing or printing the contested conclusions; its append/count and Markov examples also support the stated boundary. The operative claim is a no-go result excluding intrinsic continuous reversible post-record dynamics, with the positive algebraic facts serving as its proof."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:26.447198+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Conditional on a supplied finite alphabet O and the standard unital complex-linear interpretation of A=C^O, the finite record algebra has permutation automorphisms and zero derivations; nonzero append/count updates are irreversible, while Markov rates and stationary points require supplied ensemble dynamics.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T16:20:33.809858+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-12T16:20:33.809858+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00143-record_classical_semigroup_b",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional on a supplied finite alphabet O and the standard unital complex-linear interpretation of A=C^O, the finite record algebra has permutation automorphisms and zero derivations; nonzero append/count updates are irreversible, while Markov rates and stationary points require supplied ensemble dynamics.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "Applied D(e_i)=D(e_i^2)=2e_iD(e_i) together with the orthogonal-idempotent equations componentwise; the runner also solved the complete C^3 linear system.",
+                "disposition": "CLOSED",
+                "evidence_locator": "These equations force every component of every `D(e_i)` to vanish",
+                "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Seek a nonzero infinitesimal flow by solving the Leibniz rule on primitive idempotents.",
+                "outcome": "Every component of every D(e_i) vanishes, so the route is closed for complex-linear derivations.",
+                "route_class": "algebraic_rearrangement",
+                "route_id": "idempotent_derivation"
+              },
+              {
+                "attempt": "Classified unital complex-algebra automorphisms by their action on primitive atoms and checked their finite separation from the identity.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Aut(A) = Sym(O).",
+                "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Try to obtain a connected reversible flow through the atom-permutation symmetry group.",
+                "outcome": "The automorphism group is finite and discrete, so its identity component is trivial.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "permutation_symmetry"
+              },
+              {
+                "attempt": "Tested suffix append and its induced translation by count(v), including the zero-count preimage obstruction.",
+                "disposition": "CLOSED",
+                "evidence_locator": "If `count(v) != 0`, translation by `count(v)` is not onto `N^O`",
+                "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Move the dynamics from the fixed atom algebra to histories O* or count vectors N^O.",
+                "outcome": "This supplies genuine post-record evolution, but every nonzero count translation is not surjective and therefore is not a reversible automorphism.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "history_count_carrier"
+              },
+              {
+                "attempt": "Constructed a supplied two-state rate generator, checked a stochastic semigroup step, and checked that its inverse has negative entries.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Continuous Markov dynamics can be supplied on the ensemble layer.",
+                "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use a continuous Markov semigroup as a candidate continuous post-record dynamics.",
+                "outcome": "Continuous dynamics exists on probability ensembles, but it is supplied by Q and is not an intrinsic reversible automorphism or realized-atom write.",
+                "route_class": "dynamical_or_effective_action",
+                "route_id": "markov_effective_flow"
+              },
+              {
+                "attempt": "Applied the tested Markov matrix to a realized basis atom and compared the result with the one-hot atoms.",
+                "disposition": "CLOSED",
+                "evidence_locator": "a supplied Markov semigroup step is stochastic but not a realized atom write",
+                "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Interpret a stochastic transition of a basis atom as the writing of another realized atom.",
+                "outcome": "The result is a nontrivial ensemble distribution, so changing the readout interpretation does not turn the Markov step into an atom permutation or write.",
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "atom_write_readout"
+              },
+              {
+                "attempt": "Compared the runner's n=3 enumeration with the note's arbitrary-finite-O primitive-idempotent and zero-preimage arguments.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Let `A = C^O` with pointwise multiplication and unit `1`.",
+                "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Challenge whether the C^3 computation is an accidental small-alphabet result.",
+                "outcome": "The finite computation is illustrative; the analytic proof applies to every supplied finite O, so no larger finite alphabet reopens the scoped route.",
+                "route_class": "numerical_or_finite_case",
+                "route_id": "finite_case_escape"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "No nontrivial connected reversible complex-algebra flow exists on the finite function algebra C^O.",
+                "A nonempty suffix append induces a non-surjective count translation and is not a reversible automorphism of N^O.",
+                "The finite alphabet and its function algebra do not select Markov rates, relaxation laws, or stationary dial points."
+              ],
+              "evidence_locator": "This finite algebra has a sharp dynamics boundary:",
+              "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+              "pairwise_checks": [
+                {
+                  "independent": true,
+                  "left": "No nontrivial connected reversible complex-algebra flow exists on the finite function algebra C^O.",
+                  "left_closes_right": false,
+                  "right": "A nonempty suffix append induces a non-surjective count translation and is not a reversible automorphism of N^O.",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "No nontrivial connected reversible complex-algebra flow exists on the finite function algebra C^O.",
+                  "left_closes_right": false,
+                  "right": "The finite alphabet and its function algebra do not select Markov rates, relaxation laws, or stationary dial points.",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "A nonempty suffix append induces a non-surjective count translation and is not a reversible automorphism of N^O.",
+                  "left_closes_right": false,
+                  "right": "The finite alphabet and its function algebra do not select Markov rates, relaxation laws, or stationary dial points.",
+                  "right_closes_left": false
+                }
+              ],
+              "unresolved": [],
+              "walls": [
+                "No nontrivial connected reversible complex-algebra flow exists on the finite function algebra C^O.",
+                "A nonempty suffix append induces a non-surjective count translation and is not a reversible automorphism of N^O.",
+                "The finite alphabet and its function algebra do not select Markov rates, relaxation laws, or stationary dial points."
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Boundaries",
+              "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "For a supplied finite post-record alphabet `O`",
+                  "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "phrase": "supplied finite post-record alphabet"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "They require supplied transition rates or a supplied generator.",
+                  "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "phrase": "supplied transition rates or a supplied generator"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Stable dial locations are properties of the supplied generator/functional.",
+                  "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "phrase": "properties of the supplied generator/functional"
+                },
+                {
+                  "classification": "retained_authority",
+                  "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+                  "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                  "phrase": "does not choose a Hamiltonian or transfer operator"
+                }
+              ],
+              "scan_scope": "Checked the supplied-alphabet qualification, rate/generator language, stable-point language, source boundaries, runner assumptions, and the accepted minimal-axiom dynamics exclusions.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "## Proof Sketch",
+              "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+              "none_found_reason": "No N1 route was ruled out solely by a prior-cycle witness; every listed route was tested within the restricted source and runner packet.",
+              "scan_scope": "Checked all N1 routes for reliance on prior witnesses and compared the note's algebraic, append, and generator residuals directly with its runner.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## Dynamics Implication",
+              "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+              "scan_scope": "Checked every negative or resolution-level statement against the algebra, carrier, and ensemble resolution actually tested.",
+              "statements": [
+                {
+                  "evidence_locator": "there is no nontrivial connected reversible Hamiltonian-like flow on the finite post-record algebra itself",
+                  "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "phrase": "there is no nontrivial connected reversible Hamiltonian-like flow on the finite post-record algebra itself",
+                  "tested_resolutions": [
+                    "finite atom algebra C^O",
+                    "complex-linear derivations",
+                    "unital complex-algebra automorphisms"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "nonzero append translations are not automorphisms of `N^O`",
+                  "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "phrase": "nonzero append translations are not automorphisms of `N^O`",
+                  "tested_resolutions": [
+                    "all nonzero translations on N^O via the zero-count preimage obstruction"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "The finite record algebra does not select between them.",
+                  "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "phrase": "The finite record algebra does not select between them.",
+                  "tested_resolutions": [
+                    "same two-letter alphabet with symmetric and two asymmetric supplied generators"
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "This primitive fixes a kinetic-form ratio and expressly supplies no dynamics, generator, rate, selector, or downstream Lorentz theorem; it does not alter any scoped wall.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The minimal axioms permit records but expressly withhold Hamiltonians, transition probabilities, update laws, and record-production dynamics; they are consistent with rather than an escape from the scoped boundary.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Pointwise reference to a realized state supplies neither a state-selection rule nor a Markov generator, so it cannot create intrinsic continuous dynamics or select a stationary point.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "A dimensionful units conversion has no bearing on finite-algebra automorphisms, derivations, count surjectivity, or generator selection.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This charged-lepton occupancy-counting obligation concerns a physical determinant/counting readout and does not supply a continuous automorphism or Markov generator for C^O.",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This charged-lepton readout identity is unrelated to the finite-product-algebra theorem and cannot select post-record rates or reverse append translations.",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This theta-sector determinant-readout obligation supplies none of the algebraic or dynamical structures needed to defeat the scoped result.",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "kind": "open_gate"
+                }
+              ],
+              "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+              "evidence_path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Checked every candidate from the supplied foundation/open-obligation partial-closure index, plus convention, definition, and scope-reframe classes.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "A finite alphabet plainly supports nontrivial continuous stochastic semigroups, so the asserted absence of continuous post-record dynamics may appear false.",
+              "evidence_locator": "Continuous Markov dynamics can be supplied on the ensemble layer.",
+              "evidence_path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+              "resolution": "The steelman succeeds only after changing layers: a supplied Markov generator evolves ensemble probabilities, sends a one-hot atom to a distribution, and has a non-stochastic inverse. It therefore does not furnish a connected reversible automorphism of the realized finite atom algebra and confirms rather than defeats the scoped distinction.",
+              "resolved": true,
+              "route_id": "markov_effective_flow"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "record_classical_semigroup_boundary_2026-06-06:previous_audit:0",
+                  "evidence_locator": "record_classical_semigroup_boundary_2026-06-06:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Prior audit reached the same conditional finite-algebra no-go but was invalidated because the discipline packet was missing; the present N1-N8 record supplies that missing check.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Charged-lepton occupancy-counting gate; unrelated to finite-algebra dynamics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Charged-lepton readout gate; unrelated to the scoped walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Theta cross-sector readout gate; unrelated to the scoped walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Unrelated inherited particle-physics no-go inventory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite gravity-sweep scope boundary, not a post-record algebra mechanism.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Packet-memory and gauge-coupling scope cautions, unrelated to this theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Atomic and temporal-axis audit cautions, not an escape from finite function-algebra facts.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Broad inherited particle and scale no-go registry, unrelated to this scoped algebra.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Gauge-coupling normalization boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Plaquette coefficient and comparator boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Lensing observable and finite-path route exclusions, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Carrier antisymmetry and registry-exhaustion issue, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Charged-lepton selector routes, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Spatial-dimension selection boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Lorentz-theorem scope caution, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Emergent metric and global-theorem scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Radial-family finite replay scope, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Local Wilson normalization scope, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Flavor tracial-carrier pruning, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Analytic-vector and audit-retag boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Gauge environment-contraction routes, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Gauge temporal-generator and eta-sign routes, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Fermat and gravity-comparator boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Weak-field gravity scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Absolute-scale and Clifford-carrier obstructions, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "U(1) normalization and species-readout ambiguity, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Cross-lane mass, scale, and coupling barriers, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Atomic scale and threshold transport obstructions, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Quark mass and readout-selector obstructions, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Uniform asymptotic-limit requirement, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Signed detector-adjoint versus nonnegative path-sum obstruction, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Centered-surrogate geometry mismatch, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Static-source readout and hierarchy selector boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Transfer-step versus physical-clock caution, adjacent but does not alter the finite algebra result.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Empty matter-cone no-go ledger, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Planning-priority versus theorem-selection warning, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Update tick does not derive physical time; consistent with but not needed for this scoped no-go.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Neutrino construction and selector exclusions, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Neutrino-scale and Hubble dependency boundaries, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite-lattice versus universal distance-law scope, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Frozen-log and finite-basin scope warning, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Coupling authority and register/read distinction, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite packet-memory versus decoherence theorem boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite coefficient grid versus arbitrary-degree theorem, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Clifford carrier-selection obstruction, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Rank-four carrier and Hodge-dual selection obstruction, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Plaquette bootstrap and solver-boundary inventory, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "One-plaquette diagnostic and positivity-language correction, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite packet arithmetic cannot supply a selector or tangent metric; this directly echoes the distinction between record algebra and supplied dynamics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Record registrability and physical readout bridges; adjacent terminology but no continuous-dynamics escape.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Locality and temporal-axis selection walls, unrelated to finite post-record automorphisms.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite Fisher tangent versus physical source semantics, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Statistics-forcing and CCR scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Minimal axioms do not select a kinetic law; consistent with the dynamics boundary but concerns a different pre-record carrier.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "SU(3) quotient-encoder scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Documentation synchronization issue, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Family-card finite scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Record does not supply determinant-channel readout; adjacent readout boundary but not this dynamics wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Record and admissibility do not provide gauge action or weighting, but no finite-algebra escape follows.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Theta carrier and assembly gates, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Theta phase-insertion selection wall, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Theta branch-closedness and suppression wall, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Determinant-power horn selection, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Record does not supply K/CPT occupancy or determinant power; readout-specific and not a dynamics escape.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Record formation supplies occurrence but not event rates, weights, time metric, or production dynamics; this directly echoes the supplied-generator wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Artifact-visibility issue with no theorem-level no-go, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Record-only scalar-readout underdetermination, adjacent but unrelated to continuous algebra dynamics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Hard-coded table and finite-family scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Finite lattice versus continuum scope boundary, unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "mechanism": "Yukawa readout renaming and audit-process boundary, unrelated.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "2153fdca289d4ad1d4445f6e1719962f73ccfce29c73a7cfa1d7e0bcee5240ea",
+                  "cross_cycle_candidate_ids": [
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "record_classical_semigroup_boundary_2026-06-06:previous_audit:0"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/record_classical_semigroup_boundary_2026-06-06",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "record_classical_semigroup_boundary_2026-06-06:previous_audit:0"
+                  ]
+                },
+                "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "8a5e6fb6835deef43a1f4ac11a11f33cdd5d8db68444ad08164ae2715ba8f8f0",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ],
+                  "path": "audit-packet://partial-closure-index/record_classical_semigroup_boundary_2026-06-06",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "\"schema\": \"no_go_partial_closure_index_v1\"",
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ]
+                },
+                "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+                  "accepted_premise_type": "axiom_or_approved_primitive",
+                  "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+                  "effective_status": null,
+                  "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                  "roles": [
+                    "framework_premise"
+                  ],
+                  "verified_locators": [
+                    "It does not choose a Hamiltonian or transfer operator"
+                  ]
+                },
+                "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "4bf3e8fa9fa2f4f35ed51c489524493047f8231418d87ee043033ff61bf47514",
+                  "effective_status": null,
+                  "path": "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "## Boundaries",
+                    "## Dynamics Implication",
+                    "## Proof Sketch",
+                    "Aut(A) = Sym(O).",
+                    "Continuous Markov dynamics can be supplied on the ensemble layer.",
+                    "For a supplied finite post-record alphabet `O`",
+                    "If `count(v) != 0`, translation by `count(v)` is not onto `N^O`",
+                    "Let `A = C^O` with pointwise multiplication and unit `1`.",
+                    "Stable dial locations are properties of the supplied generator/functional.",
+                    "The finite record algebra does not select between them.",
+                    "These equations force every component of every `D(e_i)` to vanish",
+                    "They require supplied transition rates or a supplied generator.",
+                    "This finite algebra has a sharp dynamics boundary:",
+                    "a supplied Markov semigroup step is stochastic but not a realized atom write",
+                    "nonzero append translations are not automorphisms of `N^O`",
+                    "there is no nontrivial connected reversible Hamiltonian-like flow on the finite post-record algebra itself"
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_classical_semigroup_boundary_2026_06_06.py",
+  "title": "Record Classical Semigroup Boundary",
+  "transitive_descendants": 47,
+  "verdict_rationale": null
+}

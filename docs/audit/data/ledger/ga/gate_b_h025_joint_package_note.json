@@ -1,0 +1,213 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gate_b_h025_joint_package_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_farfield_note",
+    "gate_b_grown_distance_law_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "333464621f5fcf9a9fb0c2e5e7822cb065edcef8ea533a7dc0f11bdb852dab6d",
+  "note_path": "docs/GATE_B_H025_JOINT_PACKAGE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.235106+00:00",
+      "audit_date": "2026-04-30T19:27:05.924651+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The registered runner did not complete inside the 30-second leaf audit budget, so current executable closure is not established.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:gate_b_farfield_note,gate_b_grown_distance_law_note",
+      "load_bearing_step": "check, not as a canonical-family theorem",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the primary runner timed out during the restricted leaf audit. Why this blocks: the audit cannot verify the load-bearing computation or replay surface from the current registered runner. Repair target: provide a frozen log or a faster/sliced runner that completes under the audit budget and checks the load-bearing step. Claim boundary until fixed: safe to cite as a bounded note whose executable closure is pending."
+    },
+    {
+      "archived_at": "2026-05-27T13:58:59.469638+00:00",
+      "audit_date": "2026-05-27T03:31:09.040642+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_grown_distance_law_note": "Bounded replay of the exact-grid versus moderate-drift grown-geometry distance-law tail on the runner-defined h=0.5, W=10, L=12, four-seed, z=3..7 family."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_grown_distance_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_grown_distance_law_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_grown_distance_law_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "523f8a7cab48a65cce2335d237cd49ef792619f4acb8c3ea952b4131040a958a",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current SHA-pinned runner cache for the registered primary runner does not reproduce the source note's Born table entries. It prints 2.71e-15 for exact grid and 3.08e-15 for grown drift=0.2, while the source and legacy log print 2.62e-15 and 2.94e-15.",
+      "claim_scope": "Bounded compact h=0.25 exact-grid versus grown drift=0.2 single-seed replay of Born, d_TV, MI, and decoherence observables on the runner-defined geometry; not a canonical-family theorem or full Gate B closure claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T03:31:09.040642+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:523f8a7c->8fc593c0",
+      "load_bearing_step": "The frozen compact replay table says the exact grid has Born 2.62e-15 and the grown drift=0.2 row has Born 2.94e-15 while matching d_TV, MI, and decoherence observables qualitatively.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: reconcile the source table with logs/runner-cache/gate_b_h025_joint_package.txt, or register an assertion-gated certificate for the legacy log and rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "runner_result": "gate_b_h025_joint_package.py cache exit_code=0, status=ok, sha256=523f8a7cab48a65cce2335d237cd49ef792619f4acb8c3ea952b4131040a958a; current cache table prints exact grid Born=2.71e-15 and grown drift=0.2 Born=3.08e-15, not the source table's 2.62e-15 and 2.94e-15.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the source note's load-bearing replay table is stale relative to the current SHA-pinned runner cache for the registered primary runner. Why this blocks: a retained bounded numerical row must match its current registered runner artifact; otherwise downstream users cannot tell whether the authoritative table is the legacy log or the current cache. Repair target: update the source table to the current runner-cache values, or register a certificate tying the legacy log to the intended runner hash and explain why that artifact is authoritative; preferably add assertion-gated checks for the table. Claim boundary until fixed: the qualitative finite observation that both rows remain Born-clean at machine precision and in the same d_TV/MI/decoherence regime still appears supported, but this exact bounded table is not audit-clean as written."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.484705+00:00",
+      "audit_date": "2026-05-28T06:32:23.507349+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_grown_distance_law_note": "Bounded replay of the exact-grid versus moderate-drift grown-geometry distance-law tail on the runner-defined h=0.5, W=10, L=12, four-seed, z=3..7 family."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_grown_distance_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_grown_distance_law_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_grown_distance_law_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "8fc593c0f34c5744805ceafd8dc6265719ce37df64f4fd45f0c56e2d46822b53",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "descartes-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-gate-b-h025-joint-package",
+      "auditor_confidence": "medium_high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes only for the finite compact single-seed h=0.25 replay: the one-hop dependencies are retained_bounded, the runner computes the observables before checking expected values, the cached output is SHA-pinned and complete, and the source note explicitly rejects a full same-family closure proof.",
+      "claim_scope": "SHA-pinned bounded compact h=0.25 replay for scripts/gate_b_h025_joint_package.py, sha256 8fc593c0f34c5744805ceafd8dc6265719ce37df64f4fd45f0c56e2d46822b53, with H=0.25, PW=6, L=3, NL=13, SEEDS=[0], exact-grid and grown drift=0.2/restore=0.7 rows. The retained claim is only that the runner-defined finite geometry, propagation, and readout report Born 2.62e-15 and 2.94e-15, d_TV 0.850 and 0.916, MI 0.655 and 0.770, and decoherence 49.8% and 48.8%, supporting a qualitative compact single-seed same-regime refinement check. It is not an h=0.25 family-survival theorem or full same-family closure proof.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T06:32:23.507349+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:gate_b_farfield_note:retained_bounded->unaudited",
+      "load_bearing_step": "Independent parameter/formula sanity check: H=0.25 and PW=6 give hw=24, 2401 nodes per full layer, 28813 total nodes, 2401 detector nodes, 2401 barrier nodes, exact setup slits A/B with 1127 nodes each and 147 blocked central nodes. EXPECTED_REPLAY is used only after measurement in assert_replay_matches_source_note, not to generate grow, propagate, born_measure, or measure_row values. The Born I3-like inclusion-exclusion is expected to cancel to roundoff for linear propagation; d_TV, MI, and decoherence definitions are range-consistent.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the claim is promoted to h=0.25 family survival, canonical-width closure, multi-seed transfer, or quantitative closeness beyond the two rounded rows; if runner geometry, propagation, slit/binning, MI, d_TV, or decoherence definitions change; or if either one-hop retained h=0.5 dependency loses retained-bounded status.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Clean only under the narrowed finite compact single-seed scope. The runner/cache pins H=0.25, PW=6, L=3, NL=13, SEEDS=[0], exact-grid and grown drift=0.2/restore=0.7 rows, with exit_code=0 after a 93s cached run. Independent parameter and range checks found no formula blocker: the grid/node/slit counts are internally consistent; the hard-coded replay values are post-compute assertions; the Born residual is e-15-scale as expected for linear inclusion-exclusion cancellation; d_TV is normalized total variation, MI is equal-prior binary Jensen-Shannon information, and the decoherence factor uses exp(-LAM^2*sn) with sn >= 0. Cross-row deltas support only qualitative same-regime language, not quantitative closeness beyond the two rounded rows, h=0.25 family survival, canonical-width closure, or multi-seed transfer."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gate_b_h025_joint_package.py",
+  "title": "Gate B h=0.25 Joint Package Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

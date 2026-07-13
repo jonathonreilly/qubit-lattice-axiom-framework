@@ -1,0 +1,94 @@
+{
+  "audit_date": "2026-05-03T03:07:40.116145+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_effective_status": {
+      "cycle_battery_note_2026-04-10": "retained_bounded",
+      "cycle_battery_scaled_note_2026-04-10": "retained_bounded"
+    },
+    "deps": [
+      "cycle_battery_note_2026-04-10",
+      "cycle_battery_scaled_note_2026-04-10"
+    ],
+    "load_bearing_score": 0.0,
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "fresh-agent-leibniz-3rd-019debcd-ae93-78c0-b737-02a5e9d58cb0",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The one-hop dependencies are now retained_bounded and the provided runner output directly supplies the larger sweep rows and dense-shortcut failure boundary. The closure is bounded to the stated graph families, sides, shortcut parameters, and inherited shell-radial force proxy interpretation.",
+  "claim_id": "cycle_break_frontier_note_2026-04-10",
+  "claim_scope": "Bounded computational frontier claim: within the stated staggered cycle-battery runner protocol and inherited battery caveats, raw size through side 18 does not break the retained rows on the three tested families, while random_geometric side=18 extra=5 is the first reported dense-shortcut gauge/current-collapse boundary among the tested cases.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-03T03:07:40.116145+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cycle_battery_note_2026-04-10",
+    "cycle_battery_scaled_note_2026-04-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/frontier_staggered_cycle_battery.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "The runner computes the larger retained sweep and dense-shortcut boundary, finding all side 14/16/18 family rows at 9/9 except random_geometric side=18 extra=5, which drops to 8/9 with gauge FAIL and J_span below threshold.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c72fd459e00414b1d1f9da470753e5b4637872994c1b9527ea3e18ed39763672",
+  "note_path": "docs/CYCLE_BREAK_FRONTIER_NOTE_2026-04-10.md",
+  "notes_for_re_audit_if_any": "Retain the caveated boundary only; future audits should rerun the primary script if stale numerics or protocol drift are suspected.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104849+00:00",
+      "archived_for_note_hash": "99391b2b4aee233a1d60863bbf5965af63fb2e21967abfad8a760555c97931dd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 16,
+    "D": 0,
+    "total_pass": 16
+  },
+  "runner_path": "scripts/frontier_staggered_cycle_break_frontier.py",
+  "title": "Cycle-Bearing Break Frontier Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The scoped bounded claim closes from the supplied note, retained one-hop dependencies, and primary runner output: the larger sweep rows pass, and the named random_geometric side=18 extra=5 boundary is reproduced as 8/9 with native gauge failure and collapsed J_span. This is not promoted beyond the tested protocol: irregular-graph force remains a shell-radial proxy, two-sign behavior limits sign interpretation, and B9 remains characterization only. No external comparator, renaming identity, hidden physical identification, or tuned numerical match is needed for the bounded frontier statement."
+}

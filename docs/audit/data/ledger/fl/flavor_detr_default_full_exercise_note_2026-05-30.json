@@ -1,0 +1,423 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_detr_default_full_exercise_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_function_finite_sector_algebra_2026-06-05",
+    "koide_q23_block_weight_frontier_bounded_note_2026-05-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8ba7f8a9b9f01d1aed7cf9b4b108065b896b857234fde2372bd8b560942f4419",
+  "note_path": "docs/FLAVOR_DETR_DEFAULT_FULL_EXERCISE_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T16:24:06.638183+00:00",
+      "archived_for_note_hash": "672b65eb5c4f1fcb93198b9d73197d562cefa3ba2a07855f5d293bfe75d6578d",
+      "audit_date": "2026-06-03T02:38:27.399494+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a8276521425e54549faccf6b85b55be10900e668c95c93f163f7b0b8e137b3f3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-023551-b1617899-flavor_detr_default_full",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes five finite algebraic/arithmetic checks, but the packet does not close Link 1 Half B: that the physical generation reference state is the beta=0 tracial state tau=Tr/3 rather than a finite-beta Gibbs/KMS state. The CPT J_b -> -J_b carrier exclusion and the trace-ranks-neither/Schur bridge are also asserted rather than derived in the restricted packet.",
+      "claim_scope": "Finite C3/R[Z3] matrix checks support the generation-blind substrate i, quantized C rephasing, and G_U1 commuting with Gamma_chi; the physical Q=1 default remains conditional on the tracial-vacuum and measure-ranking premises.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T02:38:27.399494+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The import is the choice of the (1,1) block/idempotent-count measure on R[Z3]=R\u2295C over the (1,2) dimension/Plancherel count, with the native trace permitting both but not ranking them.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge proving Link 1 Half B, namely that the physical generation vacuum is the beta=0 tracial state tau=Tr/3, and include explicit definitions/checks for the J_b CPT reflection, trace-ranks-neither Schur step, and chirality anticommutation convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source is not a trivial PASS printer: it computes the displayed C3 matrix identities and the Q(r) arithmetic it reports. Those checks are class-A algebra over hard-coded finite operators, not a first-principles derivation of the physical reference state or of the native measure default. The source note itself marks the beta=0 tracial-vacuum identification as unaudited, and the restricted packet supplies no retained authority or derivation for that bridge. The chirality section's nonzero anticommutator check is numerically consistent, but the surrounding anticommutation/off-block wording needs convention repair before a clean audit."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:50.435385+00:00",
+      "archived_for_note_hash": "29c98adc8bbc0a928138ebfe090c6847441ab2c201a23ad05a58fde3ae97cc8c",
+      "audit_date": "2026-06-06T18:06:10.165523+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d54d6e8198ada027475f0c6a877cf8a9b477f4198abadeb620a13eba25dbdd94",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-180430-10f8576188-flavor_detr_default_full_exe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix and counting checks close as algebraic identities, including [iI3,C]=0, alpha quantization, G_U1 commutation with Gamma_chi, ||{G,Gamma_chi}||=2sqrt(2), and Q(1/2)=2/3, Q(1)=1. The broader default claim still requires the unprovided Half-B bridge that the physical generation vacuum is the beta=0 tracial state and that this selects dimension/Plancherel count as the native default.",
+      "claim_scope": "Audited the restricted-packet algebra that substrate i is generation-blind, C^3 quantizes C rephasing, Z2 character values are real, G_U1 is not the chiral splitter, and the two counting conventions map to the stated r and Q values; the physical beta=0 tracial-vacuum default was not closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:06:10.165523+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The residual import is the block-vs-dimension counting-measure choice on R[Z3]=R\u2295C: center/idempotent count (1,1) gives r=1/2 and Q=2/3, while dimension/Plancherel count (1,2) gives r=1 and Q=1, with the trace permitting both but ranking neither.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation that the physical generation reference state is the beta=0 tracial vacuum and that this makes the dimension/Plancherel count the framework-native default.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs real algebraic checks rather than a first-principles framework computation, and independent manual checks agree with the displayed matrix identities and Q arithmetic. However, the source note itself names Link 1 Half B as unaudited: the identification of the physical generation reference state with the beta=0 trace is an imported premise. The runner also prints, rather than derives, the trace-ranking/default-selection claim and the CPT J_b -> -J_b carrier exclusion. Therefore the bounded algebraic obstruction is supported, but the full substrate-forced default conclusion is conditional on an open bridge."
+    },
+    {
+      "archived_at": "2026-06-08T10:14:08.285700+00:00",
+      "archived_for_note_hash": "bbda928660ec3a626fd5719fd9191d7428144168a07d86726cc878a1b8de7eb2",
+      "audit_date": "2026-06-07T17:59:38.620321+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "record_function_finite_sector_algebra_2026-06-05": "Finite additive algebra of a supplied record-sector vector, its incidence-matrix coarse-grainings, scale-invariant ratio/normalized coordinates, and the stated C3/Koide generation-coordinate identities as supplied structural coordinates."
+        },
+        "dep_claim_type": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "record_function_finite_sector_algebra_2026-06-05": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "record_function_finite_sector_algebra_2026-06-05": "retained"
+        },
+        "deps": [
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "record_function_finite_sector_algebra_2026-06-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d743ce8253658eaac751e152c01d9a0fffb04fb824a6da23ab1d2afe29b0f39a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-175651-e8f3030bf7-flavor_detr_default_full_exe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix identities and endpoint arithmetic close on their own terms. The default/reference-state part does not close because the packet does not derive the beta=0 tracial generation vacuum or rank the block-vs-dimension measure.",
+      "claim_scope": "Bounded finite-algebra locator for the det_R/det_C counting fork: the supplied C3/Z2 carrier checks localize equal-block counting as an unranked measure input, with Q=1 only conditional on a supplied beta=0 tracial generation reference.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:59:38.620321+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The tested native structures do not make det_C/equal-block counting automatic, and the trace read is the dimension/Plancherel read only if the beta=0 tracial generation reference is supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation of the beta=0 tracial generation reference, or explicitly narrow the row to the finite locator with no default/reference-state claim.",
+      "open_dependency_paths": [
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Independent algebra reproduces the runner's finite identities: [iI3,C]=0 with zero Hilbert-Schmidt overlap against G_U1, (e^{i\u03b1}C)^3=I only for \u03b1 in 2\u03c0Z/3, the Z2 characters are real, and Q=1/3+(2/3)r gives the stated r/Q endpoints. The runner performs real finite checks, but its boundary guard verifies wording rather than deriving the beta=0 tracial generation reference. The cited Koide authority also explicitly leaves physical equal-block selection open, so the audited result remains conditional rather than clean closure."
+    },
+    {
+      "archived_at": "2026-06-08T12:45:36.573588+00:00",
+      "archived_for_note_hash": "8acdc99ed76979baf8e263011b1501b233a3302f51f247e68bc6aba6f2d7c1a5",
+      "audit_date": "2026-06-08T11:28:41.588801+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "record_function_finite_sector_algebra_2026-06-05": "Finite additive algebra of a supplied record-sector vector, its incidence-matrix coarse-grainings, scale-invariant ratio/normalized coordinates, and the stated C3/Koide generation-coordinate identities as supplied structural coordinates."
+        },
+        "dep_claim_type": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "record_function_finite_sector_algebra_2026-06-05": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "record_function_finite_sector_algebra_2026-06-05": "retained"
+        },
+        "deps": [
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "record_function_finite_sector_algebra_2026-06-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "43b6288d484458f47fd6f97a4823003f098654299c903ed558f7a5bc7fa1dd00",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-112541-a0e97760c9-flavor_detr_default_full_exe",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The C3 commutator, rephasing quantization, real-character, Gamma_chi, and Q endpoint algebra checks close. The holomorphic-carrier exclusion as written also invokes the CPT sign J_b -> -J_b, but the restricted packet gives no definition, cited derivation, or runner assertion for that sign.",
+      "claim_scope": "Bounded finite-algebra locator for the det_C/equal-block versus det_R/dimension-count fork, with no default/reference-state or physical selector claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T11:28:41.588801+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The tested native structures do not supply det_C/equal-block counting automatically; they only localize r=1/2 (Q=2/3) versus r=1 (Q=1) as an unranked counting fork.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained finite-carrier derivation/definition of the CPT corner-reflection sign J_b -> -J_b, or narrow the holomorphic-carrier exclusion to the independently checked real-character algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The supplied retained-grade authorities support the record-function endpoint algebra and the block-versus-dimension counting localization, and an independent algebra check confirms the displayed Q formula, endpoint ratios, C3 rephasing quantization, commutators, and anticommutator norm. The source note also correctly narrows away the beta=0/default/reference-state claim, so that older bridge is not load-bearing here. However the note's no-holomorphic-carrier sentence explicitly relies on the displayed CPT reflection J_b -> -J_b, which is not established inside the restricted packet and is not actually checked by the runner source. The scoped locator is therefore conditionally supported pending that finite-carrier bridge or a narrower wording that drops the unverified CPT sign."
+    },
+    {
+      "archived_at": "2026-06-13T22:19:37.605464+00:00",
+      "audit_date": "2026-06-08T15:19:06.352017+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "record_function_finite_sector_algebra_2026-06-05": "Finite additive algebra of a supplied record-sector vector, its incidence-matrix coarse-grainings, scale-invariant ratio/normalized coordinates, and the stated C3/Koide generation-coordinate identities as supplied structural coordinates."
+        },
+        "dep_claim_type": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "record_function_finite_sector_algebra_2026-06-05": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "record_function_finite_sector_algebra_2026-06-05": "retained"
+        },
+        "deps": [
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "record_function_finite_sector_algebra_2026-06-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1fc00df790b823d0aa8924dbb994ca46424d9adbc4b54e1582c6f67625380a49",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-151707-dfab630a9a-flavor_detr_default_full_exe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite matrix identities and character checks support only the narrowed locator: iI3 is generation-blind, C^3=I restricts continuous rephasing, the checked (Z2)^3 characters are real, and G_U1 is not the chiral splitter. The r/Q endpoint algebra is supplied by retained-grade cited inputs, and the beta=0 reference-state and holomorphic-carrier bridges are explicitly outside scope.",
+      "claim_scope": "Bounded finite-algebra locator for the det_C/equal-block versus det_R/dimension-count fork in the supplied C3/R[Z3], substrate-i, (Z2)^3 corner-character, and G_U1/Gamma_chi checks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T15:19:06.352017+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:record_function_finite_sector_algebra_2026-06-05",
+      "load_bearing_step": "The tested finite structures do not make det_C/equal-block counting automatic; they localize Q=2/3 versus Q=1 as a block-count versus dimension-count fork while ranking neither read.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future edits preserve the bounded scope: tested finite structures, no beta=0 generation-reference promotion, and no load-bearing CPT reflection sign.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over finite matrices, finite characters, and retained-grade endpoint/counting authorities, not a definition substitution or numerical fit. Independent formula checks confirm the displayed commutators, rephasing quantization, real Z2-character signs, anticommutator norm scale, and Q=1/3+(2/3)r endpoints. The source repairs successfully prevent promotion to a default/reference-state theorem or derived holomorphic measure."
+    },
+    {
+      "archived_at": "2026-07-10T17:01:33.931728+00:00",
+      "audit_date": "2026-06-14T02:53:59.387993+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "record_function_finite_sector_algebra_2026-06-05": "Finite additive record-sector readout vector algebra, incidence-matrix coarse-graining, scale-invariant readout coordinates, and the stated generation-coordinate identities for supplied two-block/C3 definitions."
+        },
+        "dep_claim_type": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "record_function_finite_sector_algebra_2026-06-05": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "record_function_finite_sector_algebra_2026-06-05": "retained"
+        },
+        "deps": [
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "record_function_finite_sector_algebra_2026-06-05"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "1fc00df790b823d0aa8924dbb994ca46424d9adbc4b54e1582c6f67625380a49",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-025110-b5e2c17ae7-flavor_detr_default_full_exe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite matrix and character identities close the route-pruning statement only for the tested structures. The retained-grade authorities supply the r/Q endpoint dictionary and the block-vs-dimension fork, while no beta=0 reference-state or physical selector is imported.",
+      "claim_scope": "Bounded finite-algebra locator: within the tested C3/Z2^3 and R[Z3] structures, det_C/equal-block counting is not forced, det_R/dimension and det_C/center-count remain an unranked counting fork, and no default/reference-state claim is made.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:53:59.387993+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+      "load_bearing_step": "The tested native structures do not make det_C/equal-block counting automatic; r=1/2 (Q=2/3) remains a localized counting/measure input unless another retained selector supplies it.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only scope drift: no beta=0/default-state or holomorphic-carrier theorem should be promoted from this finite locator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner performs five finite algebra checks plus one source-boundary guard, not a first-principles physical selector derivation. Independently, C^3 gives e^{3i\u03b1}=1, iI3 has zero Hilbert-Schmidt projection on (C-C^2)/sqrt(3), Z2^3 characters are real \u00b11, ||{G,Gamma_chi}||_F=2sqrt(2), and Q=1/3+(2/3)r gives the stated r=1/2 and r=1 endpoints. The cited retained and retained_bounded authorities support exactly the narrowed counting-fork locator and leave physical weighting selection open, matching the claim scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.133406+00:00",
+      "audit_date": "2026-07-10T17:38:50.888792+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The exact C_3-character power identity, the Q values produced by three stipulated isotype-weight prescriptions, and the counting-versus-splitting localization; no physical selection of the equal-block prescription.",
+          "record_function_finite_sector_algebra_2026-06-05": "Finite additive record-sector readout vector algebra, incidence-matrix coarse-graining, scale-invariant readout coordinates, and the stated generation-coordinate identities for supplied two-block/C3 definitions."
+        },
+        "dep_claim_type": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "record_function_finite_sector_algebra_2026-06-05": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "record_function_finite_sector_algebra_2026-06-05": "retained"
+        },
+        "deps": [
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "record_function_finite_sector_algebra_2026-06-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1fc00df790b823d0aa8924dbb994ca46424d9adbc4b54e1582c6f67625380a49",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00034-flavor_detr_default_full_exe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "X1 establishes only that iI3 is orthogonal to G, while X2 checks rephasing of C itself; neither proves that the native C3 doublet lacks complex structure. Indeed the runner's G=(C-C.T)/sqrt(3) is a polynomial in C and satisfies G^2=-I on the doublet, so the asserted absence of a native complex-line carrier is not established.",
+      "claim_scope": "Finite-algebra claim that the displayed C3 and (Z2)^3 tests exclude automatic det_C/equal-block inheritance while leaving the Q=2/3 and Q=1 reads unranked.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:38:50.888792+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_q23_block_weight_frontier_bounded_note_2026-05-29:retained_bounded->unaudited",
+      "load_bearing_step": "The tested structures do not inherit det_C or force equal-block counting, so r=1/2 (Q=2/3) remains a counting-measure input unless another selector supplies it.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should verify G^2=-(I-J/3) and distinguish the potentially supportable claim that no physical measure is selected from the unsupported claim that no native complex carrier exists.",
+      "open_dependency_paths": [
+        "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the runner converts orthogonality of iI3 to G and quantization of scalar rephasings of C into a broader claim that the tested algebra supplies no native complex-line carrier. Why this blocks: G itself is a native C3-equivariant complex structure on the real doublet, and the runner never proves that its presence cannot support det_C or exhausts the relevant inheritance maps. Repair target: define det_C inheritance precisely and prove the required non-selection statement while accounting for G and exp(theta G). Claim boundary until fixed: the explicit matrix identities, real-character check, chirality distinction, and endpoint arithmetic remain supported, but the carrier-exclusion inference does not."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_detR_default_full_exercise_2026_05_30.py",
+  "title": "Flavor \u2014 det_R/det_C counting fork bounded locator: finite algebra confirmed, no default/reference-state claim",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

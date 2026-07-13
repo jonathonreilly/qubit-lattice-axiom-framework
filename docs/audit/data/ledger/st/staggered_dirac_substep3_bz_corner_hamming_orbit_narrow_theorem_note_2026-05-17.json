@@ -1,0 +1,1285 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 17,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.804,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8fa106e931925f399e95762be1360d31ffe5958e29e8c1e46bd5c0420b680911",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.158717+00:00",
+      "audit_date": "2026-05-22T16:51:27.168474+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.042,
+        "runner_hash": "7f5f6e3cbd6cfe5657d6a4afa7e46b8b0975f76a81d6d3fed9514c6a43825438",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T165106Z-8222d3fe-staggered_dirac_substep3-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof uses only standard finite-set arithmetic and finite-group action facts, with no cited upstream note or physics bridge required. The runner source exhaustively enumerates the 8 vertices and 6 permutations and matches the stated orbit and involution structure.",
+      "claim_scope": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:51:27.168474+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-17T15:52:03.474830+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-155117-a5e2dcef-staggered_dirac_substep3-028",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bare finite-set theorem that the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), with complementation pairing opposite weights into combined S_3 x Z_2 orbits of sizes (2,6).",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T16:51:27.168474+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T165106Z-8222d3fe-staggered_dirac_substep3-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6).",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By S_3-invariance of Hamming weight and transitivity on each L_k, the S_3-orbits on (Z_2)^3 are exactly L_0, L_1, L_2, L_3 with sizes (1, 3, 3, 1).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the retained scope narrow: this ratifies only the abstract {0,1}^3/S_3 orbit theorem, not any downstream physical BZ-corner or generation identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class (A) combinatorial closure over admitted mathematical infrastructure. There are no load-bearing cited authorities, no external comparators, no numerical tuning, and no imported physics premise. The note explicitly scopes out the BZ-corner identification and generation bridge, so the audited claim closes only as the bare finite-set theorem."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:48.355749+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and complementation pairs them into combined S_3 x Z_2 permutation orbits of sizes (2,6).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-11T14:15:55.359873+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T14:15:55.359873+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00010-staggered_dirac_substep3_bz_",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and complementation pairs them into combined S_3 x Z_2 permutation orbits of sizes (2,6).",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "The proof derives |L_k|=binomial(3,k) and checks the partition sum.",
+                "disposition": "CLOSED",
+                "evidence_locator": "the number of such choices is `binomial(3, k)`",
+                "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Identify weight-k binary vectors with k-subsets and count them by binomial coefficients.",
+                "outcome": "The calculation closes exactly with cardinalities (1,3,3,1) summing to eight.",
+                "route_class": "algebraic_rearrangement",
+                "route_id": "direct_binomial_count"
+              },
+              {
+                "attempt": "The proof constructs permutations sending the support of any b in L_k to the support of any b' in L_k.",
+                "disposition": "CLOSED",
+                "evidence_locator": "By (H4) every `S_3` orbit is contained in a single `L_k`; by (H5)",
+                "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use Hamming-weight invariance and transitivity of S_3 on equal-cardinality coordinate subsets.",
+                "outcome": "Every L_k is one orbit, while invariance prevents an orbit from crossing levels.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "orbit_transitivity"
+              },
+              {
+                "attempt": "The runner counts the b_1=0 and b_1=1 classes.",
+                "disposition": "CLOSED",
+                "evidence_locator": "(H5 counter) coordinate-value partition gives (4, 4), not (1, 3, 3, 1)",
+                "evidence_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Replace Hamming weight by a single-coordinate value partition and test whether it reproduces the claimed orbit sizes.",
+                "outcome": "The alternative gives (4,4), not (1,3,3,1), so it cannot replace the Hamming grading.",
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "coordinate_partition_challenge"
+              },
+              {
+                "attempt": "The runner computes the flip orbit of (0,0,0) under the three coordinate generators.",
+                "disposition": "CLOSED",
+                "evidence_locator": "(H6 counter) Z_2^3 coordinate-flip orbit of (0,0,0) is all 8 vectors (single orbit)",
+                "evidence_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Substitute the coordinate-flip subgroup for the coordinate-permutation S_3 action.",
+                "outcome": "The flip action is transitive on all eight vertices and therefore has one orbit rather than four.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "coordinate_flip_group"
+              },
+              {
+                "attempt": "The runner checks 48 weight-preservation cases, 48 commutativity cases, all level orbits, and the combined action.",
+                "disposition": "CLOSED",
+                "evidence_locator": "for sigma in sigmas_S3:",
+                "evidence_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Enumerate every vertex, permutation, and complementation case independently of the symbolic prose proof.",
+                "outcome": "All 55 exact finite checks pass with no failures.",
+                "route_class": "numerical_or_finite_case",
+                "route_id": "finite_exhaustion"
+              },
+              {
+                "attempt": "The source boundary was checked for any load-bearing physical identification.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Does **not** identify `(Z_2)^3` with the BZ-corner set",
+                "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Test whether the theorem depends on relabeling the abstract cube as physical BZ corners or generations.",
+                "outcome": "Those identifications are expressly excluded; the finite-set conclusion requires neither relabeling.",
+                "route_class": "convention_or_relabeling",
+                "route_id": "physical_relabel_challenge"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [],
+              "evidence_locator": "Facts (H1)-(H7) are abstract finite-set / finite-group statements",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": []
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "No carrier of a Cl(3) representation needed for the set-level decomposition.",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "using only standard finite-set / finite-group facts",
+                  "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                  "phrase": "standard finite-set / finite-group facts"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "No physics conventions admitted. No PDG value consumed.",
+                  "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                  "phrase": "No physics conventions admitted"
+                }
+              ],
+              "none_found_reason": "",
+              "scan_scope": "The source, runner, admitted-context declarations, forbidden-import section, and physical-scope exclusions were checked for hidden selectors, fitted constants, framework carriers, BZ identifications, and observational imports.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "There are **no** load-bearing markdown-link upstream dependencies",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR; consequently no prior-witness residual match is required.",
+              "scan_scope": "All N1 routes were directly attempted in the supplied proof or runner, so no route relies on a prior witness.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "The full substep-3 closure of the open gate",
+              "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "none_found_reason": "",
+              "scan_scope": "The source's does-not-claim and open-gap language was checked to distinguish scope exclusions from universal impossibility claims.",
+              "statements": [
+                {
+                  "evidence_locator": "Does **not** identify `(Z_2)^3` with the BZ-corner set",
+                  "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                  "phrase": "Does not identify the abstract cube with physical BZ corners",
+                  "tested_resolutions": [
+                    "The statement is a scope exclusion only; the bare finite-set resolution is the audited resolution."
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "Does **not** identify the `hw = 1` triplet with three SM",
+                  "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                  "phrase": "Does not identify the weight-one triplet with generations",
+                  "tested_resolutions": [
+                    "The statement excludes a physical readout bridge and does not claim that such a bridge is impossible."
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "Does **not** lift the set-level orbit decomposition to a",
+                  "evidence_path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                  "phrase": "Does not lift to the C^8 representation decomposition",
+                  "tested_resolutions": [
+                    "The statement limits the audited resolution to finite-set orbits and makes no no-go assertion about the linear lift."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Kinetic space-time graining is irrelevant to the finite S_3 action on a fixed eight-element set.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The theorem does not consume the lattice, qubit, admissibility, or record axioms.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "No realized state or state-contingent evaluation occurs in the combinatorial theorem.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "The result is dimensionless finite combinatorics and requires no scale reference.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "could_close_wall": false,
+                  "disposition": "The owner-governed boundary concerns AC occupancy and R-eta readout, not the bare orbit theorem or the excluded BZ/species bridges.",
+                  "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "owner_governed"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "could_close_wall": false,
+                  "disposition": "The bare-coupling rescaling convention has no role in the finite group action.",
+                  "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "convention_reframe"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:hypercharge_identification_note",
+                  "could_close_wall": false,
+                  "disposition": "Hypercharge normalization is unrelated to Hamming levels or S_3 orbits.",
+                  "evidence_locator": "convention_reframe:hypercharge_identification_note",
+                  "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "kind": "convention_reframe"
+                }
+              ],
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+              "none_found_reason": "",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "owner_governed_residual",
+                "tier_a_derivation_target",
+                "tier_a_convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "All candidates in the supplied partial-closure index were checked against the bare finite-set theorem and its explicitly excluded physical bridges.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "A different natural symmetry of the cube, generated by coordinate flips, might make the four Hamming levels noncanonical and undercut the asserted orbit decomposition.",
+              "evidence_locator": "(H6 counter) coord-flip orbit count (1) != S_3 orbit count (4)",
+              "evidence_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+              "resolution": "The runner computes that the coordinate-flip group is transitive on all eight vertices, whereas the specifically defined coordinate-permutation S_3 action preserves weight and has exactly the four stated orbits. Thus the theorem is correctly action-specific rather than a claim about arbitrary cube symmetries.",
+              "resolved": true,
+              "route_id": "coordinate_flip_group"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17:previous_audit:0",
+                  "evidence_locator": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Prior audit reached the same bare finite-set closure but lacked the required discipline packet.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "AC_phi_lambda retirement has a narrow occupancy/readout boundary and does not affect the bare theorem.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated theta retirement.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Owner-governed AC residual does not supply the excluded BZ or species bridge.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated foundational-campaign no-go memory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated Newton/source-scaling boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated coupling runner-boundary restrictions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated atomic and reflection-positivity restrictions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated multi-lane physics obstructions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated electroweak normalization boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated plaquette coefficient boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated lensing observable walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Different carrier Z_2-isotypic problem; it does not challenge the explicit finite S_3 action.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated charged-lepton selector obstructions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated spatial-dimension selection boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated emergent-Lorentz boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated causal-order metric bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated radial-orientation scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated Wilson environment boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Physical flavor identification is excluded from this theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated analytic-vector route.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated Wilson character-contraction boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated temporal-generator and isotropy walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated Fermat bridge boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated gravity scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Clifford carrier and absolute-action walls do not enter the set theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated U(1) normalization ambiguity.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated quantitative closure obstructions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated atomic threshold and unit-map walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Quark-generation readout walls do not affect the bare orbit count.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated finite-to-asymptotic boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated signed-adjoint obstruction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated centered-segment falsification.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated source-readout boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated physical-clock readout boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Empty unrelated no-go ledger.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated planning-selector boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated update-tick boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated neutrino construction walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated neutrino scale dependencies.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated finite-lattice distance-law boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated frozen-log boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated coupling authority boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated packet-to-physics bridge boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated finite-grid boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Hamming-degree carrier selection is a distinct physical-representation problem expressly excluded here.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "P_1 versus P_3 selection does not alter the abstract four-level orbit decomposition.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated plaquette bootstrap boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated Haar-integral diagnostic boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated selector-authority boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "AC readout walls concern excluded physical interpretations, not the finite-set result.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated temporal-axis walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated source-semantics boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated statistics-forcing boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "The minimal surface does not force a physical eight-corner kinetic law, but this note expressly audits only the abstract cube once supplied.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated SU(3) quotient-encoder boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated documentation synchronization issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated family-card completeness boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated retired theta mass-side wall.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated retired theta gauge-side wall.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated retired theta carrier gates.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated retired theta phase wall.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated retired theta defect wall.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "AC determinant-power selection is outside the audited combinatorial scope.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Record occupancy nonsupply does not affect the defined S_3 orbit computation.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "R-eta readout nonsupply is outside the audited finite-set scope.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated artifact-visibility issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated record scalar-readout underdetermination.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated hard-coded finite-table boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated continuum/exponent boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "mechanism": "Unrelated Yukawa readout renaming.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+              "none_found_reason": "",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "59f4fb0c61be14b1490226ebac0d221f6083d80cee9f75917a3f3558f269ed72",
+                  "cross_cycle_candidate_ids": [
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17:previous_audit:0",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "no_go_cross_cycle_index_v1",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17:previous_audit:0",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ]
+                },
+                "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "9fa08e1e052d5b90bff5f465b82cb9e4b49dd5776208b58d9236f70f6fc5d6c6",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ],
+                  "path": "audit-packet://partial-closure-index/staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "no_go_partial_closure_index_v1",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ]
+                },
+                "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "8fa106e931925f399e95762be1360d31ffe5958e29e8c1e46bd5c0420b680911",
+                  "effective_status": null,
+                  "path": "docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "By (H4) every `S_3` orbit is contained in a single `L_k`; by (H5)",
+                    "Does **not** identify `(Z_2)^3` with the BZ-corner set",
+                    "Does **not** identify the `hw = 1` triplet with three SM",
+                    "Does **not** lift the set-level orbit decomposition to a",
+                    "Facts (H1)-(H7) are abstract finite-set / finite-group statements",
+                    "No carrier of a Cl(3) representation needed for the set-level decomposition.",
+                    "No physics conventions admitted. No PDG value consumed.",
+                    "The full substep-3 closure of the open gate",
+                    "There are **no** load-bearing markdown-link upstream dependencies",
+                    "the number of such choices is `binomial(3, k)`",
+                    "using only standard finite-set / finite-group facts"
+                  ]
+                },
+                "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "7f5f6e3cbd6cfe5657d6a4afa7e46b8b0975f76a81d6d3fed9514c6a43825438",
+                  "effective_status": null,
+                  "path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+                  "roles": [
+                    "runner"
+                  ],
+                  "verified_locators": [
+                    "(H5 counter) coordinate-value partition gives (4, 4), not (1, 3, 3, 1)",
+                    "(H6 counter) Z_2^3 coordinate-flip orbit of (0,0,0) is all 8 vectors (single orbit)",
+                    "(H6 counter) coord-flip orbit count (1) != S_3 orbit count (4)",
+                    "for sigma in sigmas_S3:"
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_staggered_dirac_substep3_bz_corner_hamming_orbit_2026_05_17.py",
+  "title": "Staggered-Dirac Substep 3 \u2014 BZ-Corner Hamming-Orbit Narrow Theorem",
+  "transitive_descendants": 1263,
+  "verdict_rationale": null
+}

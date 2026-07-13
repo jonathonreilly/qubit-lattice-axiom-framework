@@ -50,6 +50,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 import premise_nodes
+import ledger_io
 import no_go_discipline_gate
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -546,6 +547,7 @@ def main() -> int:
     p.add_argument("--strict", action="store_true", help="Accepted for compatibility; lint is strict by default.")
     args, _ = p.parse_known_args()
 
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         print("FAIL: audit_ledger.json missing", file=sys.stderr)
         return 1

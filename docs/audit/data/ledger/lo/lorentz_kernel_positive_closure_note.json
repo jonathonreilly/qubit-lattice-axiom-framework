@@ -1,0 +1,284 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lorentz_kernel_positive_closure_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "emergent_lorentz_invariance_note",
+    "lorentz_boost_covariance_2d_theorem_note",
+    "lorentz_boost_covariance_3plus1d_theorem_note"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.968,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bec03ab7a8ed51b7fc2d190f6136dabb31982389da7f273b5f682f9166d9753c",
+  "note_path": "docs/LORENTZ_KERNEL_POSITIVE_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369079+00:00",
+      "archived_for_note_hash": "f5c9149412421aab7bde117b6831a88c591582612f522f0bc2b688751aa1a77a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-05T23:05:15.953836+00:00",
+      "audit_date": "2026-05-05T23:03:10.357274+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "angular_kernel_underdetermination_no_go_note": "unaudited",
+          "emergent_lorentz_invariance_note": "audited_conditional",
+          "lorentz_boost_covariance_2d_theorem_note": "audited_conditional",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "unaudited"
+        },
+        "deps": [
+          "angular_kernel_underdetermination_no_go_note",
+          "emergent_lorentz_invariance_note",
+          "lorentz_boost_covariance_2d_theorem_note",
+          "lorentz_boost_covariance_3plus1d_theorem_note"
+        ],
+        "load_bearing_score": 14.778,
+        "runner_hash": "87d3b110b489689654e346ae99257ea23f794d6ce3da3dd1d948ada88586552f",
+        "transitive_descendants": 438
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-lorentz_kernel_positive_-015",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Stone-theorem step closes mathematically once a self-adjoint fixed H_lat and its role as the lane generator are granted. Retained-grade closure does not propagate because the cited H_lat and boost-covariance authorities are conditional or unaudited.",
+      "claim_scope": "On the fixed self-adjoint H_lat boost-covariance surface, the audited step is the Stone-theorem identification of the canonical unitary propagator U(t)=exp(-i t H_lat); the directional-kernel comparison is only a bounded numerical diagnostic on the tested family.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:03:10.357274+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lorentz_boost_covariance_3plus1d_theorem_note:unaudited->audited_conditional",
+      "load_bearing_step": "Applying Stone's theorem to the retained self-adjoint H_lat gives the unique one-parameter unitary group U(t)=exp(-i t H_lat), hence the per-step kernel U(a)=exp(-i a H_lat).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: first promote or replace the conditional/unaudited cited authorities with retained-grade dependencies, then re-audit whether this narrow Stone corollary is clean or merely algebraic decoration.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md",
+        "docs/LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md",
+        "docs/LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md",
+        "docs/ANGULAR_KERNEL_UNDERDETERMINATION_NO_GO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 3,
+        "C": 14,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The load-bearing step is a standard algebraic/operator-theoretic closure over an assumed self-adjoint H_lat, not a new first-principles computation. The runner source does instantiate finite-lattice H_lat and U(t), checks unitarity, group law, dispersion recovery, and performs real directional-family optimizations rather than merely printing constants. However, the claim relies on cited authorities whose effective statuses are audited_conditional or unaudited, and the diagnostic exclusion of one bounded directional family is not a global analytic kernel no-go. Under the rubric, non-retained cited authorities force audited_conditional even though the narrow Stone step itself is sound."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:38.968819+00:00",
+      "audit_date": "2026-05-30T22:48:50.391175+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "lorentz_boost_covariance_2d_theorem_note": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "Continuum-limit SO(3,1) covariance of the spacelike free-scalar 3+1D Hamiltonian-lattice two-point function with bosonic Laplacian dispersion, plus the structural finite-a O(a^2 p^4) cubic-harmonic K4 anisotropy; no Planck pin, finite-a light-cone, interacting-theory, or experimental-readout claim audited."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "lorentz_boost_covariance_2d_theorem_note": "positive_theorem",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "lorentz_boost_covariance_2d_theorem_note": "retained",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "lorentz_boost_covariance_2d_theorem_note",
+          "lorentz_boost_covariance_3plus1d_theorem_note"
+        ],
+        "load_bearing_score": 16.331,
+        "runner_hash": "87d3b110b489689654e346ae99257ea23f794d6ce3da3dd1d948ada88586552f",
+        "transitive_descendants": 910
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260530-224626-8ff6d23d-lorentz_kernel_positive_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped conclusion follows from the cited retained/retained_bounded H_lat surface plus standard Stone-theorem functional calculus. The directional-family optimization is only a diagnostic lane-separation check and is not needed for the Stone closure.",
+      "claim_scope": "On the fixed self-adjoint H_lat boost-covariance surface, the canonical per-step unitary propagator is U(a)=exp(-i a H_lat); the gravity-card directional-measure kernel and any global no-go over all kernels are outside the audited scope.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-30T22:48:50.391175+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "emergent_lorentz_invariance_note",
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:87d3b110->0852e577",
+      "load_bearing_step": "Applying Stone's theorem to the retained self-adjoint H_lat gives the unique strongly continuous unitary group U(t)=exp(-i t H_lat), hence the per-step propagator U(a)=exp(-i a H_lat).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that future wording keeps the directional-measure optimizer as a finite diagnostic only and does not promote it to a global analytic no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 4,
+        "C": 18,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The load-bearing step is a standard mathematical corollary: once H_lat is fixed and self-adjoint, Stone's theorem fixes U(t)=exp(-i t H_lat). The runner source genuinely constructs finite-lattice H_lat and U, checks self-adjointness, unitarity, group law, dispersion recovery, and finite diagnostic non-match claims, with no external comparator checks. Because the audited theorem reduces to one upstream fixed-H_lat parent plus standard mathematics rather than an independent new framework derivation, the appropriate terminal status is decoration rather than audited_clean positive theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.750747+00:00",
+      "audit_date": "2026-06-15T19:37:27.458165+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded.",
+          "lorentz_boost_covariance_2d_theorem_note": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "Continuum-limit SO(3,1) covariance of the spacelike free-scalar 3+1D Hamiltonian-lattice two-point function with bosonic Laplacian dispersion, plus the structural finite-a O(a^2 p^4) cubic-harmonic K4 anisotropy; no Planck pin, finite-a light-cone, interacting-theory, or experimental-readout claim audited."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem",
+          "lorentz_boost_covariance_2d_theorem_note": "positive_theorem",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded",
+          "lorentz_boost_covariance_2d_theorem_note": "retained",
+          "lorentz_boost_covariance_3plus1d_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note",
+          "lorentz_boost_covariance_2d_theorem_note",
+          "lorentz_boost_covariance_3plus1d_theorem_note"
+        ],
+        "load_bearing_score": 19.834,
+        "runner_hash": "0852e577e206c11abd190ae8da12b8b822689757ff276c26d5268e3f7925dc46",
+        "transitive_descendants": 912
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-193254-2e21d226f2-lorentz_kernel_positive_clos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The fixed Hamiltonian has real spectral symbol E_lat, so the finite-lattice operator is self-adjoint and Stone/functional calculus gives the unitary group and group law. The cited boost-covariance and dispersion authorities are retained-grade for this fixed-H_lat surface, and no gravity-card directional-measure conclusion is imported.",
+      "claim_scope": "On the fixed-H_lat boost-covariance lane, the propagator generated by the retained self-adjoint lattice Hamiltonian is U(t)=exp(-i t H_lat), with U(a) as the chosen per-step evaluation; directional-kernel comparisons are bounded diagnostics only.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T19:37:27.458165+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T19:32:12.819340+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-192923-63b58a170b-lorentz_kernel_positive_clos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the fixed retained H_lat boost-covariance surface, the canonical one-parameter unitary evolution is U(t)=exp(-i t H_lat), with per-step value U(a); the gravity-card directional-measure kernel remains outside this closure.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T19:37:27.458165+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-193254-2e21d226f2-lorentz_kernel_positive_clos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the fixed-H_lat boost-covariance lane, the propagator generated by the retained self-adjoint lattice Hamiltonian is U(t)=exp(-i t H_lat), with U(a) as the chosen per-step evaluation; directional-kernel comparisons are bounded diagnostics only.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Applying Stone's theorem to the retained self-adjoint H_lat gives the unique strongly continuous unitary group U(t)=exp(-i t H_lat), hence the one-step kernel U(a)=exp(-i a H_lat).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the t=a per-step wording only if future scope treats time-step identification as physical rather than as evaluation of the Stone group.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 3,
+        "C": 14,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The load-bearing step is a standard algebraic/functional-calculus closure over retained-grade inputs, not a tuned numerical match or a symbol renaming. Independent checks verified the exponential-unitarity/group-law logic, the -a^2 p^4/12 lattice correction, the displayed Symanzik convergence numbers, and representative directional-family residual/defect diagnostics. The optimization evidence is not promoted into a global no-go; the theorem remains correctly scoped to fixed H_lat."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lorentz_kernel_positive_closure.py",
+  "title": "Lorentz Kernel Positive Closure Note",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

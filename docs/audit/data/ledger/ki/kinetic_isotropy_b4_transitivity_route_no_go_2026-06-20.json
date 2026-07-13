@@ -1,0 +1,127 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kinetic_isotropy_primitive",
+    "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+    "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+    "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1bf1091a7b26368cf0072b6364dd59603d645c3c3265305081de3df06bfab295",
+  "note_path": "docs/KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.499415+00:00",
+      "audit_date": "2026-06-21T17:12:59.028246+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14": "Bounded perturbative all-orders marginal-velocity protection inside the supplied exact B4-symmetric Wilson/staggered regulator, with one-loop and representative genuine two-loop checks; nonperturbative effects, continuum-limit claims, per-taste/taste-breaking effects, and broken-B4 continuous-time cases are outside scope.",
+          "kinetic_isotropy_primitive": null,
+          "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "Finite-dimensional positive Hermitian T with eigenvalues in (0,1] uniquely determines H_gen=-(1/\u03c4)log(T), the strongly continuous one-parameter unitary group U(t)=exp(-itH_gen), and the spectral-calculus identity T^n=U(-in\u03c4) for positive integers n.",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "Spatial O_h checks on Z^3 x Z_tau do not force temporal and spatial kinetic coefficients to agree; full SO(4) kinetic wording needs an explicit c_t=c_s or 4D-hypercubic premise."
+        },
+        "dep_claim_type": {
+          "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14": "bounded_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14": "retained_bounded",
+          "kinetic_isotropy_primitive": "meta",
+          "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
+          "kinetic_isotropy_primitive",
+          "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+          "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "86511901800fd765d6e2cd581956973f2b7ffd7d83e7f85ec4c4609fa8d80bf2",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact O_h/B4 invariant-space ranks and the swap-defect identity establish the circularity of the B4/S4 transitivity route. The anisotropic finite-mode positive-transfer witness supports the separately scoped claim that square geometry plus the tested RP route does not select c_t = c_s.",
+      "claim_scope": "Audited the narrow route no-go that B4/S4 axis-transitivity cannot derive OS0 kinetic isotropy because the missing time-space metric swap is equivalent to c_t = c_s, with a finite positive-transfer/RP anisotropic witness against square-geometry-plus-positivity selection.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T17:12:59.028246+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14:retained_bounded->unaudited",
+      "load_bearing_step": "The time-space swap extending spatial O_h to B4 satisfies W^T G W - G = diag(c_s-c_t, c_t-c_s, 0, 0), so treating that swap as a metric symmetry already assumes c_t = c_s.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the RP witness is read only at the stated tested finite-mode scope, not as a full replacement normalization theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing C1/C2 results are exact finite-dimensional group and matrix algebra, and the runner computes the Reynolds ranks and swap defect rather than merely printing constants. C3 supplies a finite positive-transfer anisotropic witness, so the scoped RP-plus-square route is not selective. The kinetic-isotropy primitive is a registered accepted premise and the note preserves it rather than using it to prove the no-go; no cited dependency is non-retained. The packet's N1-N8 no-go gate is narrow enough because it closes only the B4/S4 transitivity route and tested positivity route while leaving future metric-layer derivations open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/kinetic_isotropy_b4_transitivity_route_no_go_2026_06_20.py",
+  "title": "Kinetic Isotropy B4/S4 Transitivity Route No-Go",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

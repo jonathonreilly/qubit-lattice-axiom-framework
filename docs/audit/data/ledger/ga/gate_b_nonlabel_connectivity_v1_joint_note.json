@@ -1,0 +1,240 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gate_b_nonlabel_connectivity_v1_joint_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_nonlabel_connectivity_v1_note",
+    "gate_b_farfield_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b284ad760cf3d5c5f71bf75cd5e3b5de30d38a5b4a4d3587566efd155965ecb0",
+  "note_path": "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_JOINT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T18:28:37.824353+00:00",
+      "audit_date": "2026-04-30T19:27:37.819463+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "- this is a bounded companion, not a universal non-label connectivity theorem",
+      "load_bearing_step_class": "D",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235549+00:00",
+      "audit_date": "2026-05-01T20:05:21.216037+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-01-d522",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Mac mini rerun reproduces the exact-grid and geometry-sector joint-package values, but the runner emits no classified PASS lines and the companion is tied to the conditional Gate B non-label/far-field package. The bounded comparison is current; full Gate B/non-label closure is not.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "deps_changed:dep_added:gate_b_farfield_note,gate_b_nonlabel_connectivity_v1_note",
+      "load_bearing_step": "On the no-restore grown family, the geometry-sector stencil keeps the Born / d_TV / MI / decoherence package in the same qualitative regime as the exact grid, but only as a bounded companion comparison.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
+        "docs/GATE_B_FARFIELD_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the runner reproduces the joint-package table, but it provides descriptive metrics without classified PASS lines and depends on the surrounding Gate B non-label/far-field context. Why this blocks: a clean audit would need explicit threshold checks for Born cleanliness, d_TV/MI/decoherence qualitative agreement, and the bounded-companion boundary, plus clean related Gate B rows. Repair target: add classified PASS lines for each joint observable and the non-closure boundary; re-audit after the Gate B non-label base and far-field rows are clean. Claim boundary until fixed: a bounded current-run joint-package companion on the tested no-restore family, not a universal non-label connectivity theorem."
+    },
+    {
+      "archived_at": "2026-05-10T14:00:52.321635+00:00",
+      "archived_for_note_hash": "4a328c9f80aceef8fdbe3f83c15b5cde5d3d0a58b38870c54c413f4bc9639141",
+      "audit_date": "2026-05-05T23:27:46.744767+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "gate_b_farfield_note": "audited_conditional",
+          "gate_b_nonlabel_connectivity_v1_note": "audited_conditional"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_nonlabel_connectivity_v1_note"
+        ],
+        "load_bearing_score": 9.362,
+        "runner_hash": "48460868e0ccd0af02f253095f73aaf1af17971cc02827203130092d299c02a7",
+        "transitive_descendants": 328
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-gate_b_nonlabel_connecti-056",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner substantively computes the stated observables and supports the bounded numerical comparison. The chain is still conditional because one cited authority, docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md, is explicitly unaudited.",
+      "claim_scope": "A bounded computed comparison of exact-grid versus geometry-sector-stencil Born, d_TV, MI, and decoherence observables at h=0.5, W=10, NL=25, seeds=4, drift=0.2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:27:46.744767+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The geometry-sector stencil stays Born-clean to machine precision and keeps d_TV, MI, and decoherence in the same qualitative regime as the exact grid on this cheap no-restore replay.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md to retained_bounded or better, then re-run this claim audit with the same runner certificate.",
+      "open_dependency_paths": [
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The included runner source builds the exact grid, generates no-restore drifted families, constructs geometry-sector connectivity, propagates amplitudes, and computes Born, d_TV, MI, and decoherence rather than merely printing constants. Its stdout is consistent with the note's bounded qualitative read, aside from an immaterial last-digit Born average discrepancy between the note and cached runner output. However, the packet includes a cited authority marked unaudited, and the source note explicitly depends on the broader Gate B relation remaining bounded rather than closed."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.518527+00:00",
+      "audit_date": "2026-05-28T03:26:32.746930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_farfield_note": "SHA-pinned bounded runner certificate for scripts/gate_b_farfield_harness.py at h=0.5, W=8, NL=25, 12 seeds, z_masses=[3,4,5], reporting 36/36 TOWARD and F~M=1.00 on each declared far-field row under the runner-defined geometry, source, propagation, and readout ingredients only.",
+          "gate_b_nonlabel_connectivity_v1_note": "Bounded non-label connectivity V1 numerical comparison on the declared Gate-B h=0.5, W=10, NL=25, four-seed, z={3,4,5}, drift=0.2 scenario: the geometry-sector forward stencil preserves the far-field signature where naive KNN+floor fails; no universal non-label connectivity theorem, generated-geometry family theorem, or physical Gate-B closure is audited."
+        },
+        "dep_claim_type": {
+          "gate_b_farfield_note": "bounded_theorem",
+          "gate_b_nonlabel_connectivity_v1_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_farfield_note": "retained_bounded",
+          "gate_b_nonlabel_connectivity_v1_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_farfield_note",
+          "gate_b_nonlabel_connectivity_v1_note"
+        ],
+        "load_bearing_score": 7.524,
+        "runner_hash": "48460868e0ccd0af02f253095f73aaf1af17971cc02827203130092d299c02a7",
+        "transitive_descendants": 91
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gate-b-nonlabel-v1-joint-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current one-hop dependencies are retained-bounded, the runner constructs and measures the declared geometries, and the current cached output matches the source's rounded d_TV/MI/decoherence values. The Born mantissa differs from the frozen log only at machine-zero scale, which does not affect the audited Born-clean qualitative claim.",
+      "claim_scope": "Bounded h=0.5, W=10, NL=25, four-seed joint-package comparison between exact grid and no-restore geometry-sector stencil connectivity on the declared Gate-B V1 family: Born-clean to machine precision and same qualitative d_TV/MI/decoherence regime; no universal non-label theorem or physical Gate-B closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:26:32.746930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gate_b_farfield_note:retained_bounded->unaudited",
+      "load_bearing_step": "The runner reports exact-grid and geometry-sector stencil joint-package rows with Born at machine zero and comparable d_TV, MI, and decoherence values: exact grid d_TV=0.458, MI=0.178, decoh=17.2%; geometry-sector d_TV=0.453, MI=0.204, decoh=17.5%.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the source broadens beyond the declared V1 joint-package companion, if d_TV/MI/decoherence rounded values change, or if downstream work treats this as physical Gate-B closure or a universal non-label theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The row closes as a bounded finite-harness companion. The runner constructs the exact and no-restore geometry-sector families, propagates amplitudes, and computes Born/d_TV/MI/decoherence rather than importing the table. Current output preserves the source's load-bearing qualitative comparison: both rows are Born-clean to machine precision and the geometry-sector d_TV/MI/decoherence values stay in the same regime as the exact-grid control. The clean scope excludes full Gate B closure, physical-gravity readout, universal non-label transfer, and any exact significance for the machine-zero Born mantissa."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gate_b_nonlabel_connectivity_v1_joint.py",
+  "title": "Gate B Non-Label Connectivity V1 Joint Note",
+  "transitive_descendants": 15,
+  "verdict_rationale": null
+}

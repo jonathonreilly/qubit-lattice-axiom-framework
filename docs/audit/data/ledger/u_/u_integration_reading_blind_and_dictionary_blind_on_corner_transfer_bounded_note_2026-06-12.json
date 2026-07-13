@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "080dee311d7291282fe4cd3718e442389ee132d0c2ae0f910f8acfb0a8aa0335",
+  "note_path": "docs/U_INTEGRATION_READING_BLIND_AND_DICTIONARY_BLIND_ON_CORNER_TRANSFER_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.173269+00:00",
+      "audit_date": "2026-07-10T04:44:48.473085+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed."
+        },
+        "dep_claim_type": {
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8ff3f15d239e198252785c319aee4d7fff4eae848702081125678badb4f09fe3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00110-u_integration_reading_blind_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The integration identities close once pointwise reading equality and U-independent dictionary scaling are assumed. The packet does not derive the runner-defined conjugation map or rho^4 normalization as the physical hw and Berezin readouts, and the cited registrability authority explicitly leaves that physical-readout identification open.",
+      "claim_scope": "Algebraic preservation, on the runner-defined L_s=2 U(1) witness kernel, of trace equality and a fixed dictionary rescaling under matter-blind Haar weighting, including the asserted species-registrability and occupancy consequences.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:44:48.473085+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "Pointwise equality of the two reading trace data and the U-independent scaling f_rho[U] = rho^kappa f[U] imply, by linearity, that every matter-blind U-integration preserves both relations.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a direct retained theorem deriving the hw-conjugation and dictionary-normalization maps and identifying the resulting trace surface with the claimed registrable species and occupancy readouts; also specify the measurable/integrable matter-blind weight class.",
+      "open_dependency_paths": [
+        "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "Issue: the runner defines reading 2 by complex conjugation and inserts dictionary_scale**4 directly, so its decisive premises are hard-coded on a supplied carrier rather than derived from the cited authorities. Why this blocks: the resulting computations establish a valid conditional algebraic lemma but not the broader claims that the hw choice is unregistrable or that the occupancy dictionary is physically underdetermined. Repair target: supply a retained bridge deriving the corner-transfer reading map, the Berezin normalization exponent, and the relevant registrable-readout identification. Claim boundary until fixed: matter-blind integration preserves the stipulated equality and fixed rescaling of the runner-defined trace datum."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_u_integration_reading_dictionary_blind_2026_06_12.py",
+  "title": "U-integration on the Corner Transfer Is Reading-Blind and Dictionary-Blind",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

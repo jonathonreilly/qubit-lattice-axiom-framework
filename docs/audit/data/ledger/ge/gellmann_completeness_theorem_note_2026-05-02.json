@@ -1,0 +1,466 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gellmann_completeness_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_color_automorphism_theorem"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.555,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "02165e6158041d556520af75ea412fc561f8d912c3271518109c9aef44572b30",
+  "note_path": "docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:30:26.210897+00:00",
+      "audit_date": "2026-05-05T06:12:33.447043+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 8.555,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-gellmann_completeness_th-220",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic basis result follows from the cited trace orthonormality plus the admitted dimension count for su(3). Physical identification with SM color or gluons is not audited as closed here.",
+      "claim_scope": "Given the cited algebraic SU(3) Gell-Mann generators with trace orthonormality, {T^a} is an R-basis for traceless Hermitian 3x3 matrices and iT^a spans su(3).",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-05T06:12:33.447043+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The R-span of 8 linearly independent Gell-Mann generators in the 8-dimensional real space of traceless Hermitian 3x3 matrices is the full space.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers do not treat the physical SM color/gluon corollaries as closed by this decoration result; the cited parent explicitly defers the physical-color bridge.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is a standard linear-algebra consequence of one upstream parent claim supplying the Gell-Mann generators and trace orthonormality, plus admitted definitions of su(3) and its dimension. The runner genuinely computes Hermiticity, tracelessness, orthogonality, rank, reconstruction, and closure, but these are all algebraic identity checks on already specified matrices. There are no external comparator checks and no first-principles derivation beyond the parent SU(3) embedding, so the result is decoration rather than a new clean independent theorem. The broader physical gluon/color readout remains bounded by the cited authority's explicit deferred physical-identification bridge."
+    },
+    {
+      "archived_at": "2026-05-22T22:55:23.496682+00:00",
+      "audit_date": "2026-05-22T16:41:49.960362+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the fiber SU(2) and base-sector Y, and the Fierz channel-count fraction R_conn = 8/9 on End(C^3), excluding physical SM-color and EW-readout identification."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 11.042,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T164127Z-aff1ca91-gellmann_completeness_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The mathematical basis and closure claims follow from the one-hop Gell-Mann input plus the admitted dimension and trace-inner-product facts. The restricted packet does not close the separate physical-SM-color identification, so the audited scope is only the algebraic SU(3) basis result.",
+      "claim_scope": "Given the cited Gell-Mann generators with trace orthonormality, {T^a} is a real basis of traceless Hermitian 3x3 matrices and iT^a spans su(3), with commutator closure in that basis.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T16:41:49.960362+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:cl3_color_automorphism_theorem:bounded_theorem->positive_theorem",
+      "load_bearing_step": "The R-span of 8 linearly independent traceless Hermitian generators in the 8-dimensional space of traceless Hermitian 3x3 matrices is the full space, equivalently R-span{iT^a}=su(3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if a later audit wants to include the physical SM color/gluon-count corollaries; that would require the deferred physical-identification bridge.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing work is elementary linear algebra over a single upstream authority: trace orthonormality gives independence, dimension 8 gives spanning, and projection gives coefficients and commutator closure. The runner directly checks these algebraic identities for hard-coded standard Gell-Mann matrices, with no external comparator or first-principles framework computation. Because the note reduces to one retained-bounded parent plus standard mathematics and has zero class D checks, it is decoration rather than a new clean theorem. Any physical-color or gluon-count reading remains outside this audited algebraic scope because the cited parent explicitly defers that bridge."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.403588+00:00",
+      "audit_date": "2026-05-22T23:48:40.852380+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base of the 8D taste carrier, commutation with fiber SU(2) and base-sector Y, and the SU(3) Fierz channel-count fraction R_conn = 8/9; physical SM color and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T234731Z-1776df0a-gellmann_completeness_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The abstract linear-algebra basis and commutator closure statements follow from trace orthonormality plus dim_R su(3)=8. The restricted packet does not close the physical identification of the cited 3D symmetric-base SU(3) with physical SM color SU(3)_c, which the cited authority explicitly defers.",
+      "claim_scope": "The eight Gell-Mann matrices are an R-basis for traceless Hermitian 3x3 matrices and are asserted to exhaust the framework SU(3)_c color algebra.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:48:40.852380+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "The space of 3x3 traceless Hermitian matrices has real dimension 8, so the eight trace-orthonormal generators T^a form a real basis and hence iT^a span su(3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained theorem identifying the 3D symmetric-base SU(3) with physical SM color SU(3)_c, or narrow the note to the abstract su(3) basis algebra.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely checks standard Gell-Mann matrix hermiticity, tracelessness, trace orthogonality, rank, reconstruction, and commutator closure, but all seven checks are algebraic consistency checks on hard-coded standard matrices. The source note's mathematical basis theorem closes for abstract 3x3 su(3). However, its framework-color, SU(3)_c, no-extra-generator, and gluon-count readouts rely on the only cited authority's deferred physical-color bridge. Retained status therefore does not propagate to that broader identification in this restricted packet."
+    },
+    {
+      "archived_at": "2026-05-23T15:58:55.021577+00:00",
+      "audit_date": "2026-05-23T15:25:29.678522+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) action on the 3D symmetric base subspace of the 8D taste carrier, its commutation with the displayed fiber SU(2) and base-sector Y, and the resulting SU(3) Fierz/channel-count fraction 8/9 on that carrier only."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T152421Z-baa7e7cd-gellmann_completeness_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic basis and commutator-closure argument closes from the cited Gell-Mann inputs plus standard linear algebra. The broader SU(3)_c/gluon interpretation does not close because the cited authority explicitly defers the bridge identifying the 3D symmetric-base SU(3) carrier with physical SM color.",
+      "claim_scope": "Given the cited 3x3 Gell-Mann generators with Tr[T^a T^b] = (1/2)delta^{ab}, they form an R-basis for traceless Hermitian 3x3 matrices and close under commutator; physical SM-color/gluon readout remains conditional.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:25:29.678522+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:cl3_color_automorphism_theorem:bounded_theorem->positive_theorem",
+      "load_bearing_step": "The space of 3x3 traceless Hermitian matrices has real dimension 8, and the eight trace-orthogonal T^a are linearly independent, so their real span is the full space.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide or cite a retained bridge identifying the 3D symmetric-base SU(3) carrier with physical SM color before claiming the SU(3)_c/gluon-count readout.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The mathematical completeness claim is a straightforward algebraic consequence of trace orthogonality and the standard 8-dimensional real space of traceless Hermitian 3x3 matrices. The runner genuinely checks the standard hard-coded Gell-Mann matrices and commutator projections, but it is an algebraic identity check rather than a first-principles framework derivation. The cited CL3 authority is retained_bounded and explicitly states that identifying the symmetric-base SU(3) with physical SM color is deferred, so the source note's SU(3)_c and gluon-count language inherits that open bridge."
+    },
+    {
+      "archived_at": "2026-05-24T22:26:04.038132+00:00",
+      "archived_for_note_hash": "fc565b59ade4c11a9235c459c2532638673bb10ad41138b828cab9cda0313aa6",
+      "audit_date": "2026-05-23T16:10:15.778922+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T160728Z-9f73b526-gellmann_completeness_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic basis and closure result follows from the cited matrices plus standard dimension counting. The physical-color/gluon framing does not close because the sole cited authority explicitly defers the bridge identifying the symmetric-base SU(3) with physical SM color.",
+      "claim_scope": "The eight cited Gell-Mann generators form an R-basis for traceless Hermitian 3x3 matrices and close under commutator, with the note also framing this as exhausting the framework/physical SU(3)_c color generators.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T16:10:15.778922+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The R-span of 8 linearly independent generators T^a in the 8-dimensional real space of 3x3 traceless Hermitian matrices is the full space, equivalently R-span{iT^a}=su(3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite or prove a retained bridge identifying the 3D symmetric-base SU(3) with physical SM color, or narrow this note to the purely algebraic Gell-Mann-basis decoration.",
+      "open_dependency_paths": [
+        "docs/CL3_COLOR_AUTOMORPHISM_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof of Gell-Mann completeness as a statement about standard 3x3 traceless Hermitian matrices is valid elementary linear algebra. The runner source hard-codes the standard Gell-Mann matrices and checks only algebraic identities, so it does not supply any missing physical-identification bridge. Because the note and corollaries read the result as SU(3)_c color/gluon completeness while the cited parent explicitly leaves physical SM color identification open, the full chain is conditional."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.058505+00:00",
+      "audit_date": "2026-05-25T11:28:13.049008+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T112752Z-c7562151-gellmann_completeness_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained authority supplies Hermitian traceless Gell-Mann generators with trace orthonormality, and the admitted standard dimension count gives an 8-dimensional target space. Linear independence plus equal dimension proves spanning, decomposition, closure, and no extra algebraic generators.",
+      "claim_scope": "Algebraic basis/completeness of the eight cited Gell-Mann generators for 3x3 traceless Hermitian matrices, equivalently iT^a spanning mathematical su(3), with commutator closure; no physical SU(3)_c or gluon interpretation audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-25T11:28:13.049008+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "The R-span of 8 linearly independent traceless Hermitian generators in the 8-dimensional real space of traceless Hermitian 3x3 matrices is the full space.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream ledgers preserve the narrowed algebraic scope and do not promote this decoration into a physical SU(3)_c/gluon completeness claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The proof is valid elementary linear algebra over the single retained algebraic parent plus admitted standard facts about su(3). The runner genuinely constructs the Gell-Mann matrices and checks Hermiticity, tracelessness, trace orthogonality, real rank, reconstruction, and commutator closure, but these are all algebraic identity checks rather than first-principles framework computation. Because the audited content is explicitly limited to the algebraic carrier and physical color/gluon/QCD identification is out of scope, no open physical bridge is load-bearing for this row."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.168106+00:00",
+      "audit_date": "2026-06-12T23:53:56.506924+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the 8D taste carrier, its tensor-factor commutation with the defined weak-fiber and block-scalar Y operators, and the SU(3) channel-count fraction R_conn=8/9; no physical SM-color or EW-readout bridge is audited."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 7.172,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-235158-8d5fd2f6d7-gellmann_completeness_theore",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the cited Hermiticity, tracelessness, and trace orthonormality, the Gram matrix is nonsingular and dimension counting gives a basis of the 8-dimensional real traceless-Hermitian space. The coefficient formula and commutator closure then follow from trace projection and the anti-Hermitian, traceless form of commutators.",
+      "claim_scope": "Purely algebraic claim that the eight normalized 3x3 Gell-Mann generators form a real basis of traceless Hermitian matrices, equivalently iT^a span su(3), with commutator closure in that basis; no physical SM color/gluon/QCD identification is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:53:56.506924+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The space of 3x3 traceless Hermitian matrices has real dimension 8, so the real span of the 8 trace-orthonormal, linearly independent Gell-Mann generators is the full space.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the stated algebraic-only perimeter and do not read this as a physical SU(3)_c/gluon-count theorem without a retained bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing argument is elementary linear algebra over the cited normalized Gell-Mann basis, with no fitted value, external comparator, or physical-color bridge imported. The runner hard-codes the standard Gell-Mann matrices and checks algebraic identities, so it supports class A rather than class C; the proof itself supplies the general dimension argument beyond the sampled reconstruction check. The parent's open physical SM-color identification is explicitly excluded from the audited scope, so the narrowed algebraic theorem closes."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.706649+00:00",
+      "audit_date": "2026-06-15T23:33:21.795422+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem"
+        ],
+        "load_bearing_score": 10.172,
+        "runner_hash": "6568c45c9bef6e7663cd6e6c88b5785f3c515f24b82cc4e8b90e87e1a9c5b67f",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260615-233020-8c6a0f717d-gellmann_completeness_theore",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited parent supplies the Hermitian traceless Gell-Mann generators with Tr[T^a T^b]=(1/2)\u03b4^{ab}; the admitted dimension count gives an 8-dimensional traceless-Hermitian space, so the basis, projection formula, and no-extra-generator statements follow by linear algebra. Commutator closure and the sign f^{abc}=-2i Tr[[T^a,T^b]T^c] follow from trace orthogonality and cyclicity.",
+      "claim_scope": "Algebraic corollary that the parent-supplied Gell-Mann generators form an R-basis for traceless Hermitian 3x3 matrices and close under commutator; no physical SU(3)_c, gluon, or QCD-vertex identification is audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-15T23:33:21.795422+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "The R-span of 8 linearly independent Gell-Mann generators in the 8-dimensional real space of traceless Hermitian 3x3 matrices is the full space.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the row is intended to assert physical SU(3)_c/gluon/QCD identification or independent content beyond this algebraic corollary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing math is correct as an exact algebraic consequence of the parent Gell-Mann basis data plus standard dimension and trace-inner-product facts. Independent formula checks confirm the normalization c_a=2Tr[MT^a], the commutator projection sign, the d-symbol anticommutator convention, and the standard SU(3) Casimir side values in the T_F=1/2 convention. The runner hard-codes standard Gell-Mann matrices and performs class-A algebraic consistency checks; it does not add first-principles framework content or an external comparator. Because the claim reduces to one upstream parent plus standard mathematics and the physical bridge is explicitly out of scope, this is algebraic decoration rather than an independent positive-theorem surface."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gellmann_completeness_check.py",
+  "title": "Gell-Mann Completeness: {T^a} Is an R-Basis for su(3)",
+  "transitive_descendants": 46,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

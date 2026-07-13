@@ -1,0 +1,266 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem candidate (narrow theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0415e8fa016999d25b46aad8d3ba933e75e9275787c2d395a228602c28cfde56",
+  "note_path": "docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.832567+00:00",
+      "audit_date": "2026-05-22T00:12:09.276286+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-tomita_tensor_trace_on_f-008",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given A1+A2's per-site M_2(C) algebra and standard finite-dimensional matrix trace facts, the factorization follows algebraically. No runner or numerical computation is load-bearing.",
+      "claim_scope": "For disjoint finite regions \u039b1,\u039b2\u2282Z^3, the finite-region qubit matrix algebra trace \u03c4_{\u039b1\u222a\u039b2} factorizes as \u03c4_{\u039b1}(A)\u03c4_{\u039b2}(B) on simple tensors.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T00:12:09.276286+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "minimal_axioms_2026-05-20",
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "The unique normalized trace on M_{n1 n2}(C) satisfies Tr_{n1 n2}(A \u2297 B)=Tr_{n1}(A)\u00b7Tr_{n2}(B), so the normalized trace on A_{\u039b1\u222a\u039b2} factorizes on simple tensors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether the local audit policy treats standard finite-dimensional matrix-trace facts as ordinary algebraic background or as explicit missing cited authorities.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The mathematical step is a genuine finite-dimensional algebraic identity plus uniqueness of the normalized trace on a full matrix algebra. However the note contributes a localized restatement/application of standard matrix-algebra facts to the single upstream qubit-lattice axiom packet, with zero external comparator checks or first-principles computation. Under the provided decoration tie-break rule, this is audited_decoration rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.088969+00:00",
+      "audit_date": "2026-05-23T12:56:41.423657+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T125611Z-2405af6e-tomita_tensor_trace_on_f-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A1+A2 supply finite-region algebras as finite tensor products of M_2(C), hence simple matrix algebras. The finite-dimensional trace identity and uniqueness of the normalized trace on M_n(C) give the stated factorization without needing a runner.",
+      "claim_scope": "For disjoint finite qubit-lattice regions, the unique tracial state on A_{\u039b_1 \u222a \u039b_2} \u2245 A_{\u039b_1} \u2297 A_{\u039b_2} factorizes on simple tensors as \u03c4_{\u039b_1}(A)\u03c4_{\u039b_2}(B).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:56:41.423657+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The unique normalized trace on M_{n_1 n_2}(C) satisfies Tr_{n_1 n_2}(A \u2297 B)/(n_1 n_2) = (Tr_{n_1} A/n_1)(Tr_{n_2} B/n_2), so the combined tracial state factorizes on simple tensors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check that the statement remains limited to finite-dimensional full matrix factors and simple tensors.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is an elementary finite-dimensional matrix-trace identity plus trace uniqueness on full matrix algebras, applied directly to the axiom-supplied qubit finite-region algebras. The only cited authority is the A1+A2 axiom node, explicitly flagged as axiom_premise, so it does not trigger the not-retained downgrade. The claim is narrow: it does not assert factorization for arbitrary C*-algebras or promote downstream pre-record-state identifications."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.522031+00:00",
+      "audit_date": "2026-06-06T00:47:14.461473+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-004447-47fe01e16e-tomita_tensor_trace_on_finit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom packet supplies the lattice and one-site M2(\u2102) carrier, and the source note defines the finite-region algebras as finite tensor products. The identities M_a(\u2102)\u2297M_b(\u2102)\u2245M_{ab}(\u2102), uniqueness of the normalized trace on M_n(\u2102), and Tr(A\u2297B)=Tr(A)Tr(B) close the stated factorization.",
+      "claim_scope": "For disjoint finite regions \u039b1,\u039b2, with A_\u039b defined as the finite tensor product of one-site M2(\u2102) factors, the unique normalized tracial state on A_{\u039b1\u222a\u039b2} factorizes on simple tensors.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:47:14.461473+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "On simple tensors, Tr_{n1 n2}(A \u2297 B)=Tr_{n1}(A) Tr_{n2}(B), so the normalized trace on M_{n1}(\u2102) \u2297 M_{n2}(\u2102) factorizes as \u03c4(A \u2297 B)=\u03c41(A)\u03c42(B).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor may re-check the harmless overloading of n_i between matrix dimensions in Step 1 and region cardinalities in Step 2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner was supplied, so the judgment is from the source note and cited axiom packet. The displayed identities (1)-(4) are consistent: if |\u039b_i|=m_i then A_{\u039b_i}\u2245M_{2^{m_i}}(\u2102), the union algebra is M_{2^{m_1+m_2}}(\u2102), and the normalized trace denominator factorizes as 2^{m_1+m_2}=2^{m_1}2^{m_2}. The load-bearing step is elementary finite-dimensional matrix algebra, with no external comparator, tuned numerical input, or renaming step."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:33.572572+00:00",
+      "audit_date": "2026-07-10T04:41:27.675783+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00108-tomita_tensor_trace_on_finit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit and Lattice premises supply finite-region algebras isomorphic to full matrix algebras. Trace uniqueness and the elementary tensor-product trace identity then directly establish the stated factorization.",
+      "claim_scope": "For two disjoint finite qubit-lattice regions, the unique tracial state on their combined finite-dimensional matrix algebra factorizes on simple tensors into the regions' unique normalized traces.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:41:27.675783+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "minimal_axioms",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The normalized matrix trace satisfies \u03c4(A \u2297 B) = (Tr A/n\u2081)(Tr B/n\u2082) = \u03c4\u2081(A)\u03c4\u2082(B), because Tr(A \u2297 B) = Tr(A)Tr(B).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing step is an elementary normalized-matrix-trace identity, with no numerical computation or external comparison. The note correctly specializes standard finite-dimensional matrix-algebra mathematics to the single accepted minimal-axioms parent, so it closes but contributes decoration-grade localization rather than an independent framework theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Tomita Tensor-Trace Factorization on Finite-Dim Matrix Algebras (Narrow)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

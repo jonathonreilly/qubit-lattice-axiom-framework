@@ -1,0 +1,597 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+    "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17",
+    "minimal_axioms",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "staggered_only_det_positivity_case_a_note_2026-05-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e049e9e5e3d1765f086c357896222e016549fb1b8c1322a798b0f7829a192e11",
+  "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T16:24:04.971730+00:00",
+      "archived_for_note_hash": "5a08dca81238d0717b4bad922e29e1f4539bca8a9218f497ec5d4af1ac395bb0",
+      "audit_date": "2026-06-06T11:46:06.772042+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5babd67784453ec6fdc6b23070d8ec21af9e2b0f6b4c091f4626baba0b39fb5c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-114353-c43806e1bd-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The sign-fixing continuity algebra closes, but the full P1 scope does not: an arbitrary bilinear c_xy can contain non-nearest-neighbour couplings, so onsite/internal symmetry alone does not imply a nearest-neighbour current. The staggered nearest-neighbour carrier and Kawamoto-Smit phase structure are also admitted rather than closed in the restricted packet.",
+      "claim_scope": "Onsite/internal U(1) lattice Noether continuity and sign fixing for finite number-conserving bilinears, with the nearest-neighbour current checked on the admitted free staggered carrier and site-mixing generators excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:46:06.772042+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The dynamical continuity equation d rho_x/dt + (div^L j)_x = 0 holds operator-exactly for the sign in (4*) and fails for the flipped sign, while the onsite local-alpha variation gives the nearest-neighbour bond current coefficient.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow P1 to nearest-neighbour or explicitly finite-range Hamiltonians on the admitted staggered carrier, or prove a locality-envelope theorem for arbitrary c_xy; also reconcile the current i-factor convention between source formula and runner C2.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner performs substantive symbolic and finite-Fock checks, and an independent bilinear-commutator derivation confirms the U(1) continuity sign for the nearest-neighbour staggered exhibit. However, the theorem statement overextends that result to arbitrary bilinears while still claiming nearest-neighbour locality; the symbolic arbitrary-bilinear current is over all q, not only nearest neighbours. There is also convention drift around the displayed current prefactor in the runner comments/C2 expectation versus the source formula, so the sign-fixed formula should be reconciled before any clean verdict."
+    },
+    {
+      "archived_at": "2026-06-07T08:43:58.536541+00:00",
+      "archived_for_note_hash": "9dc7c55c0308519286ac72fa232d4f6f6ed04b76a332407b0aff67df8a928d00",
+      "audit_date": "2026-06-06T17:38:44.613622+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1fbbdff25d2f28807f470236ed5f5c1d1d12e853e79dbaece61e82b1d363c5f3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-173617-a26cefeaca-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed bilinear commutator algebra and continuity/sign calculation close on their own terms. The full theorem still imports the admitted staggered/Kawamoto-Smit carrier and physical U(1) density surface from an open gate rather than from a retained authority in this restricted packet.",
+      "claim_scope": "Bounded algebraic U(1)/number-current theorem for finite number-conserving bilinear lattice systems: support follows Hamiltonian coefficient support, the admitted staggered nearest-neighbor exhibit has current sign (4*) fixed by d rho/dt + div j = 0, and site-mixing generators are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T17:38:44.613622+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For a symbolic bilinear H=sum_ij c_ij E_ij, i[H,rho_p]=sum_q i(c_qp E_qp - c_pq E_pq), so d rho_p/dt=-(div^L j)_p and the bond current has exactly the c_pq,c_qp support envelope, with the staggered sign selected by this continuity equation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained-grade authority for the admitted staggered Kawamoto-Smit carrier and physical U(1) density bridge, or narrow the audited claim to the purely abstract bilinear continuity theorem.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The core calculation is a genuine class-A algebraic closure: manual expansion of [E_ij,E_pq] gives the current, support envelope, and sign relation claimed in the note. The runner source substantively checks the symbolic identities and finite-Fock staggered sign test, with no missing helpers or obvious hard-coded contested premise. However, the staggered specialization depends on the named admitted Kawamoto-Smit/staggered carrier and associated physical density identification, which are not closed by the one-hop retained authorities provided here. That open carrier bridge prevents audited_clean for the full bounded theorem packet."
+    },
+    {
+      "archived_at": "2026-06-08T10:14:05.672645+00:00",
+      "archived_for_note_hash": "ccc0b0bdaad842cbdfd10b3845e356dc6d082c9d61b8c97e7ad5d2a389539041",
+      "audit_date": "2026-06-07T17:43:02.527086+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "Finite matrix-unit algebra identity: an arbitrary bilinear H has the stated local density continuity equation, global charge conservation, orientation antisymmetry, and coefficient-support current envelope.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ec7bf6240355eefee0032019fdee71f1948797da03c032f16ff0825073c6ea30",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-174106-94907b15d1-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic continuity, support-envelope, and sign-selection checks close conditional on the supplied staggered/Kawamoto-Smit carrier and rho_x = chibar_x chi_x readout. The restricted packet explicitly does not derive that carrier/readout bridge.",
+      "claim_scope": "Arbitrary finite bilinear number-current continuity/support envelope plus the supplied staggered nearest-neighbour onsite U(1) current sign fixed by the lattice continuity equation; site-mixing currents remain out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:43:02.527086+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With rho_x = chibar_x chi_x, the formula-(4*) current satisfies d rho_x/dt + div^L j = 0 operator-exactly on the supplied staggered hop, while the flipped sign violates continuity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite or supply a retained theorem deriving the staggered/Kawamoto-Smit carrier and the physical rho_x = chibar_x chi_x readout bridge.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The matrix-unit continuity and support-envelope identities are genuine algebraic closures, and the runner source performs nontrivial symbolic/operator checks rather than printing constants. The U(1) sign is fixed by continuity once the density, divergence convention, and supplied staggered carrier are accepted. However, the note explicitly consumes the staggered/Kawamoto-Smit exhibit and physical density/readout bridge as admitted rather than derived, so the theorem does not close from retained inputs alone."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:32.718561+00:00",
+      "archived_for_note_hash": "103f6ec3721c27754d20e3f59bbf26cf84bc9ca342ef1c1ef1e0c67d4fc3e2fb",
+      "audit_date": "2026-06-12T02:08:52.432349+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "Finite matrix-unit algebra identity: an arbitrary bilinear H has the stated local density continuity equation, global charge conservation, orientation antisymmetry, and coefficient-support current envelope.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "ec7bf6240355eefee0032019fdee71f1948797da03c032f16ff0825073c6ea30",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-020628-f334ffd422-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The commutator algebra, support-envelope identity, and U(1) sign check close internally by direct algebra. The full chain from retained inputs does not close because the staggered/Kawamoto-Smit carrier and the physical density/readout identification rho_x = chibar_x chi_x remain supplied/open rather than derived in the restricted packet.",
+      "claim_scope": "Algebraic support-envelope and continuity identities for number-conserving bilinears, plus the U(1) current sign on the supplied nearest-neighbor staggered exhibit; site-mixing generator currents are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:08:52.432349+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With rho_x := chibar_x chi_x, the continuity equation d rho_x/dt + (div^L j)_x = 0 holds for j_x^mu = -(1/2) eta_mu(x)[chibar_x chi_{x+mu} + chibar_{x+mu} chi_x] and fails for the opposite sign.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or replace docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md with a retained carrier/readout bridge for the supplied staggered/Kawamoto-Smit exhibit and rho_x = chibar_x chi_x, then re-audit.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing math is an algebraic closure: independently expanding [E_ij,E_pp] gives i[H,rho_p] = sum_{q != p} i(c_qp E_qp - c_pq E_pq), and applying c = iM to the nearest-neighbor staggered hop gives the displayed -1/2 bilateral outflow sign. The runner source genuinely computes symbolic and finite-Fock checks rather than merely printing constants. However the packet explicitly depends on the supplied staggered/Kawamoto-Smit exhibit and physical number-density readout, and it includes docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md with unaudited status. That open carrier/readout bridge prevents a clean verdict from retained inputs alone."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.442150+00:00",
+      "audit_date": "2026-06-16T02:17:54.558165+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "Finite matrix-unit algebra identity: an arbitrary bilinear H has the stated local density continuity equation, global charge conservation, orientation antisymmetry, and coefficient-support current envelope.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "c5795a5b504b522690e16b59746be66ce770c55bdc05eb508f29f07f4b04c191",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-021507-9c997e53e0-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The abstract support and continuity identities follow directly from the matrix-unit commutator, and the staggered sign is the nearest-neighbour specialization with c=iM. The cited non-axiom authorities are retained-grade, and the finite exhibit is not used as a bridge to physical realization.",
+      "claim_scope": "Bounded algebraic audit of the U(1) onsite/internal number-current support envelope and continuity-fixed sign on the supplied finite staggered/Kawamoto-Smit exhibit; site-mixing currents and physical realization/readout are out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T02:17:54.558165+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:c5795a5b->81b4a7a4",
+      "load_bearing_step": "With rho_x := chibar_x chi_x and j^mu_x = -(1/2) eta_mu(x)[chibar_x chi_{x+mu}+chibar_{x+mu} chi_x], the lattice continuity equation d rho_x/dt + sum_mu(j^mu_x - j^mu_{x-mu}) = 0 holds, while the flipped current sign violates it.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers do not read this as a theorem for arbitrary site-mixing currents or as a physical-realization bridge for the staggered carrier.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Independent sign tracing from [E_ij,E_pq] gives d rho_p/dt as net inflow and fixes the outflow-current sign used in formula (4*). The runner source performs symbolic arbitrary-coefficient checks plus a finite CAR continuity witness; it is not merely printing expected PASS lines or importing a contested value. The clean verdict applies only to the bounded U(1)/finite-exhibit scope stated above, with site-mixing generators explicitly left open."
+    },
+    {
+      "archived_at": "2026-06-19T10:11:49.392786+00:00",
+      "archived_for_note_hash": "9e7b8491e2ebab817e6e2984b6dfbcbd7fbacb54818d0c02926a96c1f0e870b9",
+      "audit_date": "2026-06-18T11:01:25.745698+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "Finite matrix-unit algebra identity: an arbitrary bilinear H has the stated local density continuity equation, global charge conservation, orientation antisymmetry, and coefficient-support current envelope.",
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "81b4a7a47556e426102a7ebfb392cd635ce6a34b453a7aa7767715bd653e7819",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The abstract bilinear continuity and support-envelope algebra closes over retained inputs, and the runner performs substantive symbolic/operator checks. The carrier-specific physical staggered density/current still relies on the explicitly admitted Kawamoto-Smit carrier/phase and physical-density bridge, which are named open context rather than closed retained authorities.",
+      "claim_scope": "On the supplied finite matrix-unit/CAR bilinear surface and finite staggered/Kawamoto-Smit exhibit, the onsite U(1) current has the Hamiltonian support envelope, the formula-(4*) sign is fixed by continuity, and site-mixing generators are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T11:01:25.745698+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "With the physical number density rho_x := chibar_x chi_x, the lattice continuity equation d rho_x/dt + div^L j = 0 holds for the formula-(4*) sign and fails for the flipped sign.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a narrow bridge for the finite Kawamoto-Smit carrier/phase and rho_x = chibar_x chi_x physical-density identification, or further narrow the claim to a purely formal finite exhibit with no physical-density/current wording.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing sign step is a genuine algebraic/operator continuity check, not a renaming or numerical comparator. The primary runner source is nontrivial: it verifies the bilinear commutator, symbolic continuity, onsite current locality, fixed-sign continuity, flipped-sign failure, and site-mixing exclusion. However, the source note itself names the staggered/Kawamoto-Smit phase form and the physical density identification as admitted/open carrier context, so the full carrier-specific claim does not close solely from retained authorities."
+    },
+    {
+      "archived_at": "2026-06-21T05:40:56.846069+00:00",
+      "archived_for_note_hash": "f3f1ef990dbd1a3ec375e484f7f4775b233a1aa160d793989add2f9a4b121be1",
+      "audit_date": "2026-06-19T22:47:28.336255+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "Finite matrix-unit algebra identity: an arbitrary bilinear H has the stated local density continuity equation, global charge conservation, orientation antisymmetry, and coefficient-support current envelope.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "81b4a7a47556e426102a7ebfb392cd635ce6a34b453a7aa7767715bd653e7819",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic continuity and sign checks close locally, and the runner performs substantive symbolic/Fock-space checks. The restricted packet still exposes the unaudited staggered-realization gate/Kawamoto-Smit carrier as a one-hop cited authority or admitted carrier context, so dependency closure does not close as an audit-clean theorem.",
+      "claim_scope": "On the supplied finite onsite/internal number-conserving bilinear surface, the U(1) number current inherits Hamiltonian coefficient support and the staggered nearest-neighbour exhibit fixes the current sign by the lattice continuity equation; site-mixing translation currents remain out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T22:47:28.336255+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The dynamical continuity equation d rho_x/dt + (div^L j)_x = 0 holds operator-exactly for the formula-(4*) sign on the finite staggered exhibit and fails for the flipped sign, while the abstract bilinear theorem supplies the support-envelope identity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: remove the markdown dependency edge to the unaudited realization gate if non-load-bearing, or audit that dependency before re-auditing this row.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Issue: the note's local algebraic proof is sound on the constructed finite carrier, but the packet includes docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md as an unaudited one-hop authority/admitted Kawamoto-Smit carrier context. Why this blocks: the rubric requires a conditional verdict when a cited or admitted carrier/bridge is not retained-grade, even if the local computation is otherwise correct. Repair target: remove/backtick the non-load-bearing gate link if the claim is only about a defined finite exhibit, or audit/retain the gate if it is meant to supply the carrier. Claim boundary until fixed: retained-grade support is limited to the abstract bilinear continuity and finite-exhibit sign check, not an audit-clean framework realization claim."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.423951+00:00",
+      "audit_date": "2026-06-21T16:13:58.394903+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "Finite matrix-unit algebra identity: an arbitrary bilinear H has the stated local density continuity equation, global charge conservation, orientation antisymmetry, and coefficient-support current envelope.",
+          "minimal_axioms": null,
+          "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17": "Finite CAR local-density bridge: on the retained one-mode Grassmann/CAR surface, rho_x = chibar_x chi_x is the canonical number projection/U(1) generator and satisfies the finite-lattice matrix-unit density commutator.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17": "decoration",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17": "decoration_under_staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "345a71c49750842f375895eeac3f71e25fcc7d8730f69182329e41d5b2d138fc",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arbitrary-bilinear continuity and support-envelope step is supplied by the retained abstract bilinear theorem, while the local density readout is supplied by the decoration-under-retained CAR bridge. The runner source constructs the finite CAR/staggered operators and checks the fixed sign against the flipped sign, so the bounded U(1) carrier-specific claim closes without the realization gate or site-mixing current.",
+      "claim_scope": "Finite onsite/internal U(1) lattice Noether packet: arbitrary finite-bilinear number continuity/support envelope plus the sign-fixed nearest-neighbour staggered U(1) current, with site-mixing generators excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:13:58.394903+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "With rho_x = chibar_x chi_x mapped to the CAR number projection, the finite staggered current with the -1/2 sign satisfies d rho_x/dt + div^L j_x = 0 operator-exactly while the flipped sign violates it, and the general support envelope is the retained abstract bilinear continuity identity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the bounded U(1)/onsite-internal scope and do not read this as closing arbitrary site-mixing currents.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 4,
+        "D": 2,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing work is exact algebra over retained-grade or accepted-premise inputs, not a definition substitution or tuned numerical comparison. The runner is not merely printing PASS lines: it verifies the bilinear commutator on finite CAR Fock space, symbolic continuity for arbitrary coefficients, the onsite local variational current, and the operator continuity sign test with a flipped-sign falsifier. The clean verdict applies only to the stated bounded scope: U(1)/number onsite-internal current and finite staggered exhibit, not a broad physical realization theorem or a current theorem for site-mixing generators."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py",
+  "title": "Lattice Noether For Onsite/Internal Generators \u2014 Corrected U(1) Sign Via The Continuity Equation Narrow Theorem Note",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

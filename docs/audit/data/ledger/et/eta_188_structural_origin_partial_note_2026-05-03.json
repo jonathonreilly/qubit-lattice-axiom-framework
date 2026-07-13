@@ -1,0 +1,1371 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "eta_188_structural_origin_partial_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (structural decomposition with one isolated phenomenological factor)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/dm_leptogenesis_exact_common.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c5ed36efc98f9355afe0c875640e10aa18712844e32a0e22ab63fa6a17b5e691",
+  "note_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-context",
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.920733+00:00",
+      "audit_date": "2026-05-03T21:12:29.171232+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-eta-188-structural",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note states a bounded decomposition rather than a full structural derivation of every factor. The runner completed with PASS=38 FAIL=0 and verifies the ABC rational cancellation, exact product reconstruction, candidate near-fit mismatch, and explicit isolation of Y0^2 as phenomenological.",
+      "claim_scope": "Within the current framework transport implementation, eta/eta_obs decomposes algebraically into ABC = 516/53009, Y0^2, F_CP, kappa_axiom, and eta_obs, with the four cycle-09 near-fit candidates excluded as exact structural forms.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T21:12:29.171232+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "eta/eta_obs = (516 / 53009) * Y0^2 * F_CP * kappa_axiom / eta_obs",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream use preserves the bounded scope and does not cite this as a full structural derivation of Y0^2, PMNS constants, or kappa_axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The audited bounded claim closes as an algebraic decomposition of the existing transport chain: ABC reduces exactly to 516/53009, the reconstructed product matches the runner's eta/eta_obs value, and the four named near-fit candidates are not exact framework forms. The clean verdict is limited to this bounded scope and does not promote Y0^2, PMNS-chart constants, or the ODE transport functional to first-principles retained derivations beyond the note's admitted residual boundary."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:41.405100+00:00",
+      "audit_date": "2026-07-12T09:38:29.601021+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.822,
+        "runner_hash": "fe21aee816d68f86b5f6f0fc1cf44d7bc7942243eb9b4977623745ebf1de57e0",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00259-eta_188_structural_origin_pa",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic decomposition closes for the constants and transport law encoded in the helper, but the restricted packet supplies no retained authorities deriving several hard-coded thermodynamic, plaquette, PMNS, and transport inputs. Consequently the stronger structural-provenance and unique-admission claims remain unclosed.",
+      "claim_scope": "The runner algebraically decomposes its hard-coded current transport implementation into ABC=516/53009 and Y0^2 F_CP kappa_axiom/eta_obs, and numerically excludes the four named formulas as exact equalities; it does not establish that all non-Y0 factors are retained-derived or that Y0 is the unique nonstructural input.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T09:38:29.601021+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "The current transport implementation factorizes as eta/eta_obs = (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs, with ABC reducing exactly to 516/53009.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Expanded the helper definitions for the thermodynamic product and CP factor and checked the reconstructed product.",
+            "disposition": "CLOSED",
+            "evidence_locator": "eta/eta_obs = (516 / 53009) * Y0^2 * F_CP * kappa_axiom / eta_obs",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the result strictly as an exact factorization of the supplied transport implementation.",
+            "outcome": "CLOSED for the bounded current-code identity: ABC reduces to 516/53009 and the reconstructed value agrees with the implementation.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "current_algebraic_decomposition"
+          },
+          {
+            "attempt": "Computed 17/90 and compared it with the implementation output.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`17/90` introduces a 17 that does not arise from any framework",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test 17/90 as an exact scalar equality rather than as a structural approximation.",
+            "outcome": "CLOSED as an exact identification because the values differ; this does not rule out its use as an approximation.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "rational_candidate_exactness"
+          },
+          {
+            "attempt": "Evaluated the geometric expression and compared it with the transport value.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`sqrt(6)/(4*pi)` is a generic geometric factor",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test the uncorrected sqrt(6)/(4*pi) geometric proposal as the exact output.",
+            "outcome": "CLOSED as an exact equality because its numerical value differs from the implementation result.",
+            "route_class": "topology_or_global_structure",
+            "route_id": "geometric_candidate"
+          },
+          {
+            "attempt": "Evaluated both corrected formulas without fitting any further factor.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The corrections `31/32` or `(7/8)^(1/4)` are introduced ad-hoc",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the 31/32 or APBC multiplicative corrections normalize the geometric proposal to the exact result.",
+            "outcome": "CLOSED as exact equalities because both retain nonzero numerical residuals; their broader structural motivation is not independently audited here.",
+            "route_class": "normalization_or_units",
+            "route_id": "corrected_geometric_candidates"
+          },
+          {
+            "attempt": "Inspected the explicit dependence ABC proportional to 1/g_* and the note's BSM counterfactual.",
+            "disposition": "OPEN",
+            "evidence_locator": "If a different `g_*` were used (e.g., accounting for additional BSM dofs at leptogenesis scale), the ABC rational would change.",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Change the high-temperature degree-of-freedom content and test whether the claimed rational remains structural beyond the fixed SM boundary.",
+            "outcome": "OPEN beyond the fixed implementation: changing g_* changes the rational, so no universal structural-origin statement follows without deriving the matter-content boundary.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "alternative_gstar_content"
+          },
+          {
+            "attempt": "Compared the source's retained-primitive assertions with the cited-authority section and the supplied premise registries.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "All other inputs (`g_* = 427/4`, `g_S = 43/11`, `C_sph = 28/79`",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Verify that every factor labeled structural is actually supplied by an accepted premise or retained one-hop theorem.",
+            "outcome": "UNTESTED by the presented derivation: no cited authorities are supplied for the hard-coded thermodynamic, plaquette, PMNS, or transport inputs.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "retained_provenance_route"
+          },
+          {
+            "attempt": "Inspected the helper and source boundary for an RG evolution or matching computation.",
+            "disposition": "OPEN",
+            "evidence_locator": "`g_weak = 0.653` is the bare weak coupling at the v_EW scale.",
+            "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the v_EW-scale weak coupling and hence Y0 through a retained running law.",
+            "outcome": "OPEN: the helper inserts 0.653 directly and no running theorem is included.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "weak_running_route"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "retained provenance of hard-coded thermodynamic and plaquette inputs",
+            "v_EW-scale weak-coupling running that fixes Y0",
+            "retained derivation of PMNS chart constants",
+            "physical derivation of the decay and washout transport law"
+          ],
+          "evidence_locator": "What remains open (named obstructions):",
+          "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "retained provenance of hard-coded thermodynamic and plaquette inputs",
+              "left_closes_right": false,
+              "right": "v_EW-scale weak-coupling running that fixes Y0",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "retained provenance of hard-coded thermodynamic and plaquette inputs",
+              "left_closes_right": false,
+              "right": "retained derivation of PMNS chart constants",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "retained provenance of hard-coded thermodynamic and plaquette inputs",
+              "left_closes_right": false,
+              "right": "physical derivation of the decay and washout transport law",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "v_EW-scale weak-coupling running that fixes Y0",
+              "left_closes_right": false,
+              "right": "retained derivation of PMNS chart constants",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "v_EW-scale weak-coupling running that fixes Y0",
+              "left_closes_right": false,
+              "right": "physical derivation of the decay and washout transport law",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "retained derivation of PMNS chart constants",
+              "left_closes_right": false,
+              "right": "physical derivation of the decay and washout transport law",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "retained provenance of hard-coded thermodynamic and plaquette inputs",
+            "v_EW-scale weak-coupling running that fixes Y0",
+            "retained derivation of PMNS chart constants",
+            "physical derivation of the decay and washout transport law"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Forbidden-import discipline",
+          "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "PLAQ_MC = 0.5934",
+              "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+              "phrase": "PLAQ_MC",
+              "promoted_wall": "retained provenance of hard-coded thermodynamic and plaquette inputs"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "G_WEAK = 0.653",
+              "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+              "phrase": "G_WEAK",
+              "promoted_wall": "v_EW-scale weak-coupling running that fixes Y0"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "gamma = 0.5\n    e1 = math.sqrt(8.0 / 3.0)",
+              "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+              "phrase": "gamma",
+              "promoted_wall": "retained derivation of PMNS chart constants"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "G_STAR_EXACT = 28.0 + (7.0 / 8.0) * 90.0",
+              "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+              "phrase": "G_STAR_EXACT",
+              "promoted_wall": "retained provenance of hard-coded thermodynamic and plaquette inputs"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "def solve_normalized_transport(",
+              "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+              "phrase": "solve_normalized_transport",
+              "promoted_wall": "physical derivation of the decay and washout transport law"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Scanned the source and helper for observed, primitive, retained, exact, structural, reference, profile, and axiom labels that introduce values or physical laws without supplied derivations.",
+          "unresolved": [
+            "The source calls these inputs retained or structural, but the packet contains no one-hop authorities establishing those statuses."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Falsification of the four cycle-09 candidates",
+          "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+          "none_found_reason": "No N1 route was marked RULED OUT BY PRIOR; the candidate exclusions were tested directly, while the provenance and running routes remain open or untested.",
+          "scan_scope": "Checked the supplied source, runner, helper, premise registries, and indexed prior material for retained-grade witnesses used to rule out any N1 route.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "What the cycle 18 result settles",
+          "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+          "none_found_reason": "",
+          "scan_scope": "Checked falsified, none, unique, structural, closed, resolved, and no-additional-obstruction language against the actual resolutions tested by the runner.",
+          "statements": [
+            {
+              "evidence_locator": "four cycle-09 near-fits are **falsified** as structural identifications",
+              "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+              "phrase": "four cycle-09 near-fits are **falsified** as structural identifications",
+              "tested_resolutions": [
+                "exact scalar equality with the fixed implementation output"
+              ],
+              "untested_resolutions": [
+                "approximate or asymptotic structural interpretations"
+              ]
+            },
+            {
+              "evidence_locator": "**None of these is the actual structural form.**",
+              "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+              "phrase": "**None of these is the actual structural form.**",
+              "tested_resolutions": [
+                "exact numerical equality of each displayed formula"
+              ],
+              "untested_resolutions": [
+                "algebraically equivalent reformulations that include additional factors"
+              ]
+            },
+            {
+              "evidence_locator": "The unique non-structural factor in the entire chain is:",
+              "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+              "phrase": "The unique non-structural factor in the entire chain is:",
+              "tested_resolutions": [
+                "explicit flagging of G_WEAK in the helper"
+              ],
+              "untested_resolutions": [
+                "retained-grade provenance of PLAQ_MC, PMNS constants, thermodynamic factors, and the transport profiles"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The words falsified and unique exceed the resolutions actually certified unless the scope is narrowed to exact equality and the fixed helper implementation."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only kinetic-form isotropy and explicitly supplies no coupling, mixing angle, or dynamics.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms do not supply a Hamiltonian, transition law, coupling, PMNS chart, or leptogenesis transport profile.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies no state-contingent coupling or transport value.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "The primitive supplies a dimensional ruler only and cannot derive the dimensionless factors at issue.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton determinant counting obligation is unrelated to the leptogenesis factorization.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton eta-angle readout obligation does not supply eta_obs, Y0, PMNS constants, or the transport law.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant readout obligation is outside the audited leptogenesis chain.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every indexed axiom, approved primitive, open obligation, convention, definition, and scope candidate for a route that could supply the leptogenesis constants, weak running, PMNS chart, or transport-law walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The note can be read narrowly as making no first-principles claim for the imported constants: it only decomposes the already-defined current transport implementation and excludes four displayed formulas as exact equalities.",
+          "evidence_locator": "Pure-rational ABC closure",
+          "evidence_path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+          "resolution": "That steelman succeeds for the narrowed algebraic claim and supports class A. It does not rescue the broader assertions that all non-Y0 factors are structural, that Y0 is uniquely nonstructural, or that the residual list is complete, because the required retained provenance is absent.",
+          "resolved": true,
+          "route_id": "current_algebraic_decomposition"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "eta_188_structural_origin_partial_note_2026-05-03:previous_audit:0",
+              "evidence_locator": "eta_188_structural_origin_partial_note_2026-05-03:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Prior clean audit of the same bounded implementation-level factorization lacked the required no-go discipline packet.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Charged-lepton determinant occupancy counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Charged-lepton eta-angle readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Quark determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "General inherited lepton and neutrino no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite gravity sweep versus full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Coupling derivations remain outside bookkeeping repairs.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Atomic and temporal audit repair boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Prior DM universal-Yukawa and selector no-go boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Formal coupling identities do not derive physical normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Monte Carlo comparator and coefficient-audit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Lensing observable and tuned-beta boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Explicit preservation of cycle-15 v-scale running residuals.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Charged-lepton selector and Ward routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Dimension-selection bounded support.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Metric-source bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite-family orientation scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Local Wilson data versus full environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Flavor readout route pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Analytic-vector bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Plaquette environment construction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Gauge isotropy and time-generator boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Gravity dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Weak-field gravity scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Absolute-scale and carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "U(1) normalization degeneracy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Cross-lane coupling and mass residual inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Atomic low-energy coupling and threshold gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Quark mass and readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite checks versus asymptotic theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Signed lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite-path lensing surrogate failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Static-source readout and hierarchy boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Temporal source and clock boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Empty matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Planning criteria versus theorem selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Physical-time derivation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "PMNS selector and neutrino mass-basis no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Direct neutrino-Yukawa Ward route remains closed.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite replay versus universal distance law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Frozen-log and finite-basin boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "PLAQ_MC=0.5934 is not certified as an unbounded same-surface theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite packet memory boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite recurrence search versus all-degree theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Clifford carrier-selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Planck carrier and source-domain selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "PLAQ_MC bootstrap and same-surface derivation boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Plaquette diagnostic interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Record axioms do not supply selectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Strong-CP and charged-lepton registrability gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Single-clock locality and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite source semantics and Yukawa readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Minimal axioms do not select a kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "SU(3) cube encoder scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite family-card scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Theta mass-readout gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Theta gauge-action gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Theta positive-closure gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Theta G3 insertion gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Theta G1 closedness gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Charged-lepton determinant-power selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Record does not supply orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Record formation does not select eta readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Artifact-visibility issue without a no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Record-only mass readout no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Hard-coded table matcher versus structural law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Finite lattice rows versus continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "mechanism": "Yukawa readout renaming does not derive a physical coupling.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "retained provenance of hard-coded thermodynamic and plaquette inputs",
+          "v_EW-scale weak-coupling running that fixes Y0",
+          "retained derivation of PMNS chart constants",
+          "physical derivation of the decay and washout transport law"
+        ],
+        "demotion": "bounded-with-corrected-wall-count",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03": {
+              "accepted_premise_type": null,
+              "content_sha256": "41d0db9f6e881b7f9e316c3e20297059d34c546dfd7c5b5f54519b1c2316e149",
+              "cross_cycle_candidate_ids": [
+                "eta_188_structural_origin_partial_note_2026-05-03:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "eta_188_structural_origin_partial_note_2026-05-03:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03": {
+              "accepted_premise_type": null,
+              "content_sha256": "04d62650551195a01ada88a1b34917b4ff9156e371e20a244863d41a5bac297f",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/eta_188_structural_origin_partial_note_2026-05-03",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c5ed36efc98f9355afe0c875640e10aa18712844e32a0e22ab63fa6a17b5e691",
+              "effective_status": null,
+              "path": "docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "**None of these is the actual structural form.**",
+                "All other inputs (`g_* = 427/4`, `g_S = 43/11`, `C_sph = 28/79`",
+                "Falsification of the four cycle-09 candidates",
+                "Forbidden-import discipline",
+                "If a different `g_*` were used (e.g., accounting for additional BSM dofs at leptogenesis scale), the ABC rational would change.",
+                "Pure-rational ABC closure",
+                "The corrections `31/32` or `(7/8)^(1/4)` are introduced ad-hoc",
+                "The unique non-structural factor in the entire chain is:",
+                "What remains open (named obstructions):",
+                "What the cycle 18 result settles",
+                "`17/90` introduces a 17 that does not arise from any framework",
+                "`g_weak = 0.653` is the bare weak coupling at the v_EW scale.",
+                "`sqrt(6)/(4*pi)` is a generic geometric factor",
+                "eta/eta_obs = (516 / 53009) * Y0^2 * F_CP * kappa_axiom / eta_obs",
+                "four cycle-09 near-fits are **falsified** as structural identifications"
+              ]
+            },
+            "scripts/dm_leptogenesis_exact_common.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+              "effective_status": null,
+              "path": "scripts/dm_leptogenesis_exact_common.py",
+              "roles": [
+                "helper"
+              ],
+              "verified_locators": [
+                "G_STAR_EXACT = 28.0 + (7.0 / 8.0) * 90.0",
+                "G_WEAK = 0.653",
+                "PLAQ_MC = 0.5934",
+                "def solve_normalized_transport(",
+                "gamma = 0.5\n    e1 = math.sqrt(8.0 / 3.0)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the alternative-g_* boundary, retained-provenance route, and weak-running route remain OPEN or UNTESTED.",
+          "N3: multiple constants and the physical transport law are inserted in the helper without retained one-hop authorities.",
+          "N5: unique and falsified rhetoric exceeds the resolutions tested unless narrowed to the fixed implementation and exact equality."
+        ],
+        "narrowed_claim_scope": "The runner algebraically decomposes its hard-coded current transport implementation into ABC=516/53009 and Y0^2 F_CP kappa_axiom/eta_obs, and numerically excludes the four named formulas as exact equalities; it does not establish that all non-Y0 factors are retained-derived or that Y0 is the unique nonstructural input.",
+        "next_route": {
+          "reason_untested": "The packet provides no one-hop retained authorities for the values and physical profiles labeled structural; wiring and auditing those dependencies is the cheapest decisive next step.",
+          "route_id": "retained_provenance_route"
+        },
+        "prior_claim_scope": "Within the current framework transport implementation, eta/eta_obs decomposes algebraically into ABC = 516/53009, Y0^2, F_CP, kappa_axiom, and eta_obs, with the four cycle-09 near-fit candidates excluded as exact structural forms.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct retained-grade citations for the thermodynamic constants, PLAQ_MC/alpha_LM chain, PMNS chart constants, and physical transport ODE, then regenerate the note hash and rerun this bounded audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 12,
+        "C": 0,
+        "D": 2,
+        "total_pass": 38
+      },
+      "verdict_rationale": "Issue: the runner verifies an algebraic factorization after the helper hard-codes G_STAR, G_S, C_SPH, PLAQ_MC, PMNS constants, the transport profiles, and g_weak, while no cited authorities establish their retained provenance. Why this blocks: the packet supports a current-code identity but not the claim that Y0^2 is the unique nonstructural factor and every other factor is structural. Repair target: add direct retained-grade dependency edges for each load-bearing primitive and a retained physical transport-law authority, while preserving g_weak running as an explicit conditional input. Claim boundary until fixed: ABC=516/53009 and the non-equality of the four candidate scalars are valid within the fixed implementation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_eta_188_structural_origin.py",
+  "title": "Structural Origin of eta/eta_obs = 0.1888 \u2014 Partial Closing Note",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

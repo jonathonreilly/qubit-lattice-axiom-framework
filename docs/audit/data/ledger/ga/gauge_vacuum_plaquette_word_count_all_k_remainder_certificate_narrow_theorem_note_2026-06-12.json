@@ -1,0 +1,188 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+    "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
+    "gauge_vacuum_plaquette_word_count_rescaled_tail_support_note_2026-06-18"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+    "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
+    "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "efdb1cb8280ee7acc44f65b380d3a58009e583690a0176e771a1f4ed42be3f13",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T23:51:32.521604+00:00",
+      "audit_date": "2026-06-13T02:15:26.706296+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12": "Finite NMAX=4, MODE_MAX=80 tensor-word packet and NMAX=7, MODE_MAX=200 source readout: certify the W_eta^8 Birkhoff/Hilbert eigenvector bracket, reproduce the finite measured word-count ladder through k=20, and explicitly withhold any certified B(k) tail bound for the measured entrywise-power ladder.",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12": "Finite packet only: tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200, same-label matrix-element adjacent bond, eta_inf boundary, theta identification, source perturbation coefficients, and measured k=2..20 envelope."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12": "bounded_theorem",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12": "retained_bounded",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "781c1130978d784fbb00748f9b992d6179b6cc1f38a71ecd1b801085556dec76",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-021322-c1e8f1fc8b-gauge_vacuum_plaquette_word_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite packet computations and arithmetic checks are substantive, but the uniform all-k remainder split is not proved in the restricted packet. The runner estimates key constants from finite windows (`k=2..18`, checks `k=2..20`, dominance through 80) rather than supplying a theorem controlling the Neumann/source perturbation tails for all k.",
+      "claim_scope": "Finite-packet word-count remainder certificate for tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200, same-label matrix-element adjacent bond, and the eta_inf boundary, asserting the displayed `|R_k| <= c3 theta_3^k` all-k word-axis envelope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:15:26.706296+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "The packet split `x_k - chi_pair = theta^(k-1) sigma_slice + e_k`, with `||e_k||_1 <= q_l1_alpha_constant * theta^(k-1) * alpha^k`, is propagated through the source perturbation bound to `|R_k| <= c3 * theta_3^k`.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add an independent uniform-in-k certificate for the scaled vector remainder and source Perron perturbation, or narrow the theorem to the finite checked window.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The primary runner genuinely instantiates the finite packet operators and recomputes the displayed scale, derivative, bracket, and residual-window quantities; independent arithmetic checks confirm identities such as `theta_3 = theta * alpha`, `c3 = c_linear + c_quadratic`, and the displayed k=9/k=20 brackets. However, the load-bearing all-k inequality rests on a sampled finite-window constant and measured residual checks, not on an independent uniform-in-k perturbation theorem. The cited upstream theta note explicitly left proof-grade all-k tail-remainder closure as a remaining finite-packet target, and this packet does not close that bridge."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:43.966335+00:00",
+      "archived_for_note_hash": "366a36a4045e019f736d40a6cf2de9234d5e860baabdae0b6b7346afa8d0ccc1",
+      "audit_date": "2026-06-18T09:54:36.656322+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12": "Finite NMAX=4, MODE_MAX=80 eta-weighted D-dressed W_eta power-block Birkhoff certificate, with source NMAX=7, MODE_MAX=200 readout checks; no certified B(k) bound for the measured entrywise-power P_inf-P_k tail.",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12": "Finite-packet theta identity and measured k=2..20 envelope for the word-count ladder at tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200, same-label adjacent bond, and eta_inf boundary; no all-k, untruncated, L_perp, physical 3D environment, analytic P(6), or repinning claim audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12": "bounded_theorem",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12": "retained_bounded",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+          "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "781c1130978d784fbb00748f9b992d6179b6cc1f38a71ecd1b801085556dec76",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes the finite packet quantities and verifies the residual envelope on the measured window, but the constants controlling `e_k` are obtained from a finite `k=2..18` scan rather than a proved uniform all-k bound. The missing step is an all-k entrywise-power eigenvector/remainder theorem that justifies the `q_l1_alpha_constant` and denominator/source perturbation bounds beyond the checked window.",
+      "claim_scope": "Finite-packet word-count ladder remainder certificate for tensor NMAX=4, tensor MODE_MAX=80, source NMAX=7, source MODE_MAX=200, matrix-element same-label adjacent bond, and eta_inf boundary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T09:54:36.656322+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The packet split `x_k - chi_pair = theta^(k-1) sigma_slice + e_k`, with `||e_k||_1 <= q_l1_alpha_constant * theta^(k-1) * alpha^k`, is propagated through the source perturbation bound to conclude `|R_k| <= c3 * theta_3^k`.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 add a proof or independently checked runner certificate for the uniform all-k bound on `x_k - chi_pair` and its propagation through the source Perron perturbation.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the all-k remainder certificate depends on a uniform bound for the scaled source-vector residual `e_k`, but the runner only samples that bound over a finite window and then verifies measured rows through `k=20`. Why this blocks: the cited theta authority explicitly leaves proof-grade all-k tail/remainder closure open, and the primary runner does not supply the missing uniform Neumann/eigenvector perturbation proof. Repair target: prove a finite-packet all-k entrywise-power denominator and source-perturbation theorem, or narrow the note to the measured finite window. Claim boundary until fixed: the displayed constants and measured-window residual checks are supported, but the stated all-k certificate is not closed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
+  "title": "Gauge-Vacuum Plaquette Word-Count All-k Remainder Certificate Narrow Theorem Note",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,1432 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+    "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
+    "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
+    "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.238,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "55e520187265dd5ba1a2a685791a3373706f32c483f9370385009f06030f0559",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T19:14:10.167894+00:00",
+      "archived_for_note_hash": "eae43851154a164f252a717600b624cb8253a0ba8b007395057a75f44a5b7da8",
+      "audit_date": "2026-04-30T17:50:00.547943+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-20260430-phase-a-connected-hierarchy",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The point of contention was class A versus C. The source and runner establish an exact source-derivative identity over shifted variables; that is algebraic closure of the connected-hierarchy theorem, not a first-principles numerical compute, so the first auditor's A/clean reading holds over the second auditor's C classification.",
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The uniform source shift gives d/d beta = sum_r d/dJ_r, hence d_beta C_n = sum_r C_(n+1).",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The point of contention was class A versus C. The source and runner establish an exact source-derivative identity over shifted variables; that is algebraic closure of the connected-hierarchy theorem, not a first-principles numerical compute, so the first auditor's A/clean reading holds over the second auditor's C classification."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.679520+00:00",
+      "audit_date": "2026-05-23T13:59:42.018511+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.961,
+        "runner_hash": "18e09d760dcfea6c4d2853322eefc2bf54e545870c9bf203081f6be2ac10b6b0",
+        "transitive_descendants": 996
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T135941Z-gauge_vacuum_plaquette_connected_hierarc-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The load-bearing statement is an algebraic consequence of the finite source-deformed Wilson partition function and commutation of finite source derivatives. It is not a definition-only renaming, a tuned numerical match, or dependent on an external comparator. The note's explicit admission that beta=6 nonperturbative hierarchy closure remains open limits the downstream application, but it does not block the exact finite-source hierarchy theorem itself. | The decisive step is the source-shift identity for the finite source-deformed Wilson partition function, followed by ordinary finite source differentiation. That is a class A algebraic identity, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves beta=6 nonperturbative closure open, and that open problem is not part of the ratified theorem scope. Helper-runner imports affect auxiliary onset arithmetic, not the load-bearing finite connected-hierarchy theorem. | The load-bearing step is the chain-rule identity for W_L[J; beta]=W_tilde(beta+J_p), so it is class A algebra rather than a definition-only renaming or numerical match. No cited authority is required for the finite Wilson source-surface identity, and the note's open beta=6 nonperturbative closure is explicitly outside the ratified scope. The helper-imported onset arithmetic is not needed to establish the exact connected hierarchy and should not widen the clean claim. | The finite-source hierarchy follows directly by algebra from Z_L[J; beta] depending on beta and J_p only through y_p=beta+J_p. This is not a definition substitution, numerical match, or external comparator check, and it does not require the still-open explicit beta=6 nonperturbative closure. The second audit supplies the applyable scoped tuple and correctly classifies the claim as a positive theorem at the finite hierarchy identity scope. | The restricted packet supports the exact hierarchy as an algebraic consequence of the source-deformed finite Wilson partition function depending on beta and J_p only through y_p = beta + J_p. That is class A algebraic closure, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves nonperturbative beta_eff closure at beta=6 open, so the correct retained scope is the finite-source identity and cumulant hierarchy, not analytic plaquette closure. The helper-imported onset arithmetic is ancillary to this scoped theorem and does not block the positive_theorem classification for the hierarchy itself.",
+      "claim_scope": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T13:59:42.018511+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "claim_type_reaudit": {
+          "audit_date": "2026-05-02T17:32:12.937000+00:00",
+          "auditor": "codex-fresh-hooke-connected-hierarchy-20260502",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Finite Wilson source-surface identity: d_beta C_n(p1,...,pn; beta)=sum_r C_{n+1}(p1,...,pn,r; beta), with no claimed beta=6 hierarchy closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "first_audit": {
+          "audit_date": "2026-04-29T11:42:43.733732+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-23T13:55:45.199241+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T135457Z-3c99b4b6-gauge_vacuum_plaquette_c-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and its connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure at beta=6 remains outside scope.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-23T13:59:42.018511+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T135941Z-gauge_vacuum_plaquette_connected_hierarc-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Incomplete for the current applyable tuple: it recorded verdict and class but not claim_type, scope, or load-bearing text.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The load-bearing statement is an algebraic consequence of the finite source-deformed Wilson partition function and commutation of finite source derivatives. It is not a definition-only renaming, a tuned numerical match, or dependent on an external comparator. The note's explicit admission that beta=6 nonperturbative hierarchy closure remains open limits the downstream application, but it does not block the exact finite-source hierarchy theorem itself. | The decisive step is the source-shift identity for the finite source-deformed Wilson partition function, followed by ordinary finite source differentiation. That is a class A algebraic identity, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves beta=6 nonperturbative closure open, and that open problem is not part of the ratified theorem scope. Helper-runner imports affect auxiliary onset arithmetic, not the load-bearing finite connected-hierarchy theorem. | The load-bearing step is the chain-rule identity for W_L[J; beta]=W_tilde(beta+J_p), so it is class A algebra rather than a definition-only renaming or numerical match. No cited authority is required for the finite Wilson source-surface identity, and the note's open beta=6 nonperturbative closure is explicitly outside the ratified scope. The helper-imported onset arithmetic is not needed to establish the exact connected hierarchy and should not widen the clean claim. | The finite-source hierarchy follows directly by algebra from Z_L[J; beta] depending on beta and J_p only through y_p=beta+J_p. This is not a definition substitution, numerical match, or external comparator check, and it does not require the still-open explicit beta=6 nonperturbative closure. The second audit supplies the applyable scoped tuple and correctly classifies the claim as a positive theorem at the finite hierarchy identity scope. | The restricted packet supports the exact hierarchy as an algebraic consequence of the source-deformed finite Wilson partition function depending on beta and J_p only through y_p = beta + J_p. That is class A algebraic closure, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves nonperturbative beta_eff closure at beta=6 open, so the correct retained scope is the finite-source identity and cumulant hierarchy, not analytic plaquette closure. The helper-imported onset arithmetic is ancillary to this scoped theorem and does not block the positive_theorem classification for the hierarchy itself.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because beta enters only as the common shifted source y_p = beta + J_p, d/d beta = sum_r d/d J_r on the finite Wilson source surface, hence d_beta C_n = sum_r C_{n+1}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The load-bearing statement is an algebraic consequence of the finite source-deformed Wilson partition function and commutation of finite source derivatives. It is not a definition-only renaming, a tuned numerical match, or dependent on an external comparator. The note's explicit admission that beta=6 nonperturbative hierarchy closure remains open limits the downstream application, but it does not block the exact finite-source hierarchy theorem itself. | The decisive step is the source-shift identity for the finite source-deformed Wilson partition function, followed by ordinary finite source differentiation. That is a class A algebraic identity, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves beta=6 nonperturbative closure open, and that open problem is not part of the ratified theorem scope. Helper-runner imports affect auxiliary onset arithmetic, not the load-bearing finite connected-hierarchy theorem. | The load-bearing step is the chain-rule identity for W_L[J; beta]=W_tilde(beta+J_p), so it is class A algebra rather than a definition-only renaming or numerical match. No cited authority is required for the finite Wilson source-surface identity, and the note's open beta=6 nonperturbative closure is explicitly outside the ratified scope. The helper-imported onset arithmetic is not needed to establish the exact connected hierarchy and should not widen the clean claim. | The finite-source hierarchy follows directly by algebra from Z_L[J; beta] depending on beta and J_p only through y_p=beta+J_p. This is not a definition substitution, numerical match, or external comparator check, and it does not require the still-open explicit beta=6 nonperturbative closure. The second audit supplies the applyable scoped tuple and correctly classifies the claim as a positive theorem at the finite hierarchy identity scope. | The restricted packet supports the exact hierarchy as an algebraic consequence of the source-deformed finite Wilson partition function depending on beta and J_p only through y_p = beta + J_p. That is class A algebraic closure, not a definition-only renaming, numerical match, or external comparator. The note explicitly leaves nonperturbative beta_eff closure at beta=6 open, so the correct retained scope is the finite-source identity and cumulant hierarchy, not analytic plaquette closure. The helper-imported onset arithmetic is ancillary to this scoped theorem and does not block the positive_theorem classification for the hierarchy itself."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:12.402917+00:00",
+      "audit_date": "2026-07-11T17:39:25.859852+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.105,
+        "runner_hash": "18e09d760dcfea6c4d2853322eefc2bf54e545870c9bf203081f6be2ac10b6b0",
+        "transitive_descendants": 778
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00035-gauge_vacuum_plaquette_conne",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source-shift identity and resulting finite-volume cumulant hierarchy close algebraically. The packet does not prove the stronger necessity claim that every explicit beta=6 closure must close the full hierarchy or exclude alternative exact representations and direct evaluations.",
+      "claim_scope": "Claim that the exact connected plaquette hierarchy is the necessary remaining obstruction to explicit nonperturbative beta_eff closure on the finite Wilson surface, rather than merely one exact representation of that obstruction.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-11T17:39:25.859852+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Because beta enters as a common source shift, d/d beta equals the sum of all plaquette-source derivatives, implying d C_n/d beta = sum_r C_(n+1).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Applied the chain rule to W_L[J; beta] = W_tilde(beta + J_p) and commuted finite source derivatives.",
+            "disposition": "CLOSED",
+            "evidence_locator": "d/d beta = sum_r d/d J_r",
+            "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the connected hierarchy directly by shifting every plaquette source by beta.",
+            "outcome": "This closes the finite-volume hierarchy identity but does not prove that solving the hierarchy is necessary for every explicit beta=6 evaluation.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "uniform_source_shift"
+          },
+          {
+            "attempt": "Compared the exact strong-coupling slopes of the full and one-plaquette surfaces.",
+            "disposition": "CLOSED",
+            "evidence_locator": "any exact constant-lift reduction P(beta)=P_1plaq(Gamma beta) forces Gamma=1",
+            "evidence_path": "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the interacting plaquette by a one-plaquette function at a constant rescaled coupling.",
+            "outcome": "The candidate Gamma differs from one and produces a slope mismatch, closing that specific constant-lift route.",
+            "prior_witness_id": null,
+            "route_class": "normalization_or_units",
+            "route_id": "constant_lift"
+          },
+          {
+            "attempt": "Checked the restricted packet for the indexed finite-truncation obstruction.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+            "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Close the response using a finite exact truncation of connected cumulants.",
+            "outcome": "The cross-cycle index asserts a prior no-go, but the retained-grade witness or its derivation is not supplied as a one-hop authority, so this route is untested here.",
+            "prior_witness_id": null,
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "finite_hierarchy_truncation"
+          },
+          {
+            "attempt": "The helper computes P_1plaq(beta_eff) and compares it with the hard-coded canonical plaquette.",
+            "disposition": "OPEN",
+            "evidence_locator": "Support-only candidate comparator",
+            "evidence_path": "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Evaluate a one-plaquette block at a proposed beta-dependent bridge value and compare it with the beta=6 target.",
+            "outcome": "The close numerical agreement is explicitly support-only and does not derive the interacting beta_eff map.",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "local_beta6_bridge"
+          },
+          {
+            "attempt": "Inspected the indexed environment-character route and its stated exact boundary.",
+            "disposition": "OPEN",
+            "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+            "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct the multi-link Wilson environment through exact representation or character data instead of closing cumulants recursively.",
+            "outcome": "The static coefficient construction does not yet provide the full compressed two-slice operator, but the route remains explicitly open and therefore defeats an exhaustion claim.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "spatial_environment_character"
+          },
+          {
+            "attempt": "Inspected the indexed finite-window Picard-Fuchs boundary.",
+            "disposition": "OPEN",
+            "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+            "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Seek a direct differential equation for a finite Wilson integral rather than an explicit cumulant-by-cumulant solution.",
+            "outcome": "The supplied index rules out treating the V=1 one-plaquette equation as thermodynamic closure, but it does not exclude a suitable equation for the actual interacting finite evaluation surface.",
+            "prior_witness_id": null,
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "picard_fuchs_direct"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "a nonunit constant coupling lift cannot be the exact reduction law",
+            "no finite exact connected-hierarchy truncation closes the interacting plaquette",
+            "all exact nonhierarchy representations or direct beta=6 evaluations are excluded"
+          ],
+          "evidence_locator": "explicit nonperturbative closure of the hierarchy",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "a nonunit constant coupling lift cannot be the exact reduction law",
+              "left_closes_right": false,
+              "right": "no finite exact connected-hierarchy truncation closes the interacting plaquette",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "a nonunit constant coupling lift cannot be the exact reduction law",
+              "left_closes_right": false,
+              "right": "all exact nonhierarchy representations or direct beta=6 evaluations are excluded",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "no finite exact connected-hierarchy truncation closes the interacting plaquette",
+              "left_closes_right": false,
+              "right": "all exact nonhierarchy representations or direct beta=6 evaluations are excluded",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "The restricted packet does not substantiate the finite-truncation wall with a retained-grade one-hop witness.",
+            "The restricted packet does not exclude alternative exact representations or direct interacting evaluations."
+          ],
+          "walls": [
+            "a nonunit constant coupling lift cannot be the exact reduction law",
+            "no finite exact connected-hierarchy truncation closes the interacting plaquette",
+            "all exact nonhierarchy representations or direct beta=6 evaluations are excluded"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "What this does not close",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "accepted `3 spatial + 1 derived-time` surface",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+              "phrase": "accepted `3 spatial + 1 derived-time` surface"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "previously closed onset theorems give",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+              "phrase": "previously closed onset theorems give"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "exact common slope `chi_1plaq(0) = 1/18`",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+              "phrase": "exact common slope `chi_1plaq(0) = 1/18`"
+            }
+          ],
+          "none_found_reason": null,
+          "scan_scope": "Checked the source note and runner chain for imported geometry, onset coefficients, slopes, bridge factors, physical readouts, and beta=6 boundary data.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "What this does not close",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR; the constant-lift route was judged directly from its supplied helper source and completed output.",
+          "scan_scope": "Checked whether any N1 route was closed solely by a prior retained-grade witness with the same residual.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "That is the right rigorous endpoint for the current plaquette lane.",
+          "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+          "none_found_reason": null,
+          "scan_scope": "Checked necessity, equivalence, blocker, full-hierarchy, and rigorous-endpoint language against the mechanisms actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "explicit nonperturbative closure of `beta_eff(beta)` is equivalent to closing this exact connected plaquette hierarchy",
+              "evidence_path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+              "phrase": "explicit nonperturbative closure of `beta_eff(beta)` is equivalent to closing this exact connected plaquette hierarchy",
+              "tested_resolutions": [
+                "finite-volume uniform-source differentiation",
+                "constant coupling lift",
+                "small-beta onset through the quoted orders"
+              ],
+              "untested_resolutions": [
+                "direct interacting finite-surface integration",
+                "environment-character or representation-space contraction",
+                "exact loop-equation or resummation closure",
+                "an alternative closed equation for P_L or beta_eff"
+              ]
+            },
+            {
+              "evidence_locator": "explicit nonperturbative closure therefore requires the connected plaquette hierarchy, not a single local bridge factor",
+              "evidence_path": "scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py",
+              "phrase": "explicit nonperturbative closure therefore requires the connected plaquette hierarchy, not a single local bridge factor",
+              "tested_resolutions": [
+                "nonzero onset corrections",
+                "one proposed constant local bridge"
+              ],
+              "untested_resolutions": [
+                "nonlocal exact bridge function",
+                "direct beta=6 evaluation without recursive cumulant closure",
+                "closed alternative observable representation"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The universal necessity rhetoric exceeds the tested constant-lift and onset resolutions."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes space-time kinetic-form isotropy but supplies no interacting Wilson cumulants or beta=6 closure.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms explicitly do not supply a gauge action, weighting, source/action bridge, or physical observable closure.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither the Wilson measure nor its connected hierarchy.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference has no bearing on the dimensionless beta=6 plaquette hierarchy.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "Its boundary is confined to AC_phi_lambda occupancy and R-eta readout and is unrelated to Wilson plaquette closure.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g-bare rescaling convention cannot supply an interacting plaquette value or close the hierarchy.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization is unrelated to the pure-gauge Wilson source surface.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "none_found_reason": null,
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every supplied approved primitive, owner-governed residual, live or retired Tier-A surface, convention reframe, and indexed definition/scope surface.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "An exact representation-space construction of the finite Wilson environment could compute P_L(6), and hence beta_eff(6), directly without first producing a closed formula for every connected cumulant.",
+          "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+          "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "resolution": "This objection succeeds against the note's necessity claim: the indexed route is incomplete, but it remains explicitly open and is not excluded by the source-shift identity or the runner's onset arithmetic.",
+          "resolved": true,
+          "route_id": "spatial_environment_character"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:0",
+              "evidence_locator": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Prior audit accepted the algebraic hierarchy identity as the scoped theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:1",
+              "evidence_locator": "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Prior panel explicitly excluded nonperturbative beta_eff closure from its clean scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Retired flavor occupancy and readout admission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Retired strong-CP theta admission.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Owner-governed flavor residual.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Unrelated foundational-campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite gravity-sweep scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Audit-source repair boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "External-textbook and audit-editing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Indexed constant-lift and finite-hierarchy plaquette walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Electroweak coupling-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Warns that finite coefficient harnesses and comparators do not prove beta=6 closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Lensing observable and tuned-input walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Carrier antisymmetry and registry-exhaustiveness walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Charged-lepton selector no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Lorentz-hierarchy rhetoric boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Metric and causal-source scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite replay and basin-language boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Local Wilson normalization does not close the full environment.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Flavor tracial-route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Dirac analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Open exact environment-character and compressed-operator construction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Gauge-isotropy generator and staggered-sign walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Gravity dispersion and Fermat-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Weak-field gravity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Planck carrier and action-unit no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Hypercharge normalization degeneracy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Cross-lane scale and selector boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Atomic scale and threshold walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Quark mass and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Uniform asymptotic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Signed-adjoint versus scalar-potential observable wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite-path lensing geometry wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Temporal readout and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Planning-versus-theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Physical-time derivation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Neutrino mass-construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Neutrino absolute-scale and fork walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite-lattice Newtonian scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Frozen-log and finite-basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Canonical plaquette comparator is not unbounded same-surface closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite packet-memory scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite-order differential-equation scan and wrong-observable boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "P1/P3 carrier-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Bootstrap, mean-field, and minimal-block-to-bulk boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "One-plaquette character diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Record selector and Hessian-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Readout and topology bridge walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite-range transfer and axis-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite Fisher-source semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Minimal-surface kinetic-selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "SU(3) cube quotient is not a faithful Wilson closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Partial family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Theta mass-side readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Theta gauge-sector action and weighting walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Theta topological-carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Theta insertion-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Theta defect-closure walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "AC determinant-power selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "AC record-orbit occupancy wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "AC R-eta formation and rate wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Artifact-visibility issue without a no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Record-only scalar-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Hard-coded finite-row matching boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Finite wide-lattice versus continuum boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "mechanism": "Definition-as-physical-readout boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "none_found_reason": null,
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "a nonunit constant coupling lift cannot be the exact reduction law",
+          "no finite exact connected-hierarchy truncation closes the interacting plaquette",
+          "all exact nonhierarchy representations or direct beta=6 evaluations are excluded"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "2ca464fbddd17036d262a1e03be6e64522c9f01b76f10024842da0a08d6989e6",
+              "cross_cycle_candidate_ids": [
+                "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:0",
+                "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:0",
+                "gauge_vacuum_plaquette_connected_hierarchy_theorem_note:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "9777816ed1bb733ac13e34f6921c081b43545ca9b790834b445bf711e740331a",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "55e520187265dd5ba1a2a685791a3373706f32c483f9370385009f06030f0559",
+              "effective_status": null,
+              "path": "docs/GAUGE_VACUUM_PLAQUETTE_CONNECTED_HIERARCHY_THEOREM_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "That is the right rigorous endpoint for the current plaquette lane.",
+                "What this does not close",
+                "accepted `3 spatial + 1 derived-time` surface",
+                "d/d beta = sum_r d/d J_r",
+                "exact common slope `chi_1plaq(0) = 1/18`",
+                "explicit nonperturbative closure of `beta_eff(beta)` is equivalent to closing this exact connected plaquette hierarchy",
+                "explicit nonperturbative closure of the hierarchy",
+                "previously closed onset theorems give"
+              ]
+            },
+            "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+              "effective_status": null,
+              "path": "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+              "roles": [
+                "helper"
+              ],
+              "verified_locators": [
+                "Support-only candidate comparator"
+              ]
+            },
+            "scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "18e09d760dcfea6c4d2853322eefc2bf54e545870c9bf203081f6be2ac10b6b0",
+              "effective_status": null,
+              "path": "scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "explicit nonperturbative closure therefore requires the connected plaquette hierarchy, not a single local bridge factor"
+              ]
+            },
+            "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "b7aa72f79cfd12f29f19b29f51ba9974024f9b26ab0271057cda1d0256b567ce",
+              "effective_status": null,
+              "path": "scripts/frontier_gauge_vacuum_plaquette_constant_lift_obstruction.py",
+              "roles": [
+                "helper"
+              ],
+              "verified_locators": [
+                "any exact constant-lift reduction P(beta)=P_1plaq(Gamma beta) forces Gamma=1"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 leaves finite truncation untested and multiple alternative exact closure routes open.",
+          "N2 does not support the claimed exhaustion of nonhierarchy closure mechanisms.",
+          "N5 necessity and equivalence rhetoric exceeds the resolutions actually tested."
+        ],
+        "narrowed_claim_scope": "Claim that the exact connected plaquette hierarchy is the necessary remaining obstruction to explicit nonperturbative beta_eff closure on the finite Wilson surface, rather than merely one exact representation of that obstruction.",
+        "next_route": {
+          "reason_untested": "The restricted index leaves the full compressed Wilson environment operator open; constructing it could evaluate P_L(6) directly and test whether explicit closure genuinely requires solving the connected hierarchy.",
+          "route_id": "spatial_environment_character"
+        },
+        "prior_claim_scope": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: split the exact finite-source hierarchy theorem from the unproved nonperturbative-necessity claim, and add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The exact source-shift and connected-cumulant identities are genuine class-A algebra. The runner's claimed necessity result, however, is tested only by positivity of imported onset coefficients; nonzero two- and three-point corrections do not establish that no direct integral, resummation, environment-character, or other exact closure can bypass an explicit hierarchy solution. The safe theorem is therefore narrower than the note's claimed identification of the unique remaining obstruction."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_connected_hierarchy_theorem.py",
+  "title": "Gauge-Vacuum Plaquette Connected-Hierarchy Theorem",
+  "transitive_descendants": 853,
+  "verdict_rationale": null
+}

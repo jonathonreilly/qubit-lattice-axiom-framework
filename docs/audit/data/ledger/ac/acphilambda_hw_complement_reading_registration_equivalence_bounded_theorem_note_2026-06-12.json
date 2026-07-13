@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_hw_complement_reading_registration_equivalence_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+    "minimal_axioms",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.959,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ef7ee51c850bf85083ba5f85b829be1d2be75406f7d53c6a7a8159057266f163",
+  "note_path": "docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:25.704413+00:00",
+      "audit_date": "2026-07-05T14:30:45.873374+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "Within a supplied finite readout context with ORBIT-INDEXING, fixed K/CPT action, sector factorization, and a supplied determinant-character/log-character homomorphism boundary, Record content-determination gives K/CPT orbit constancy for registrable scalar readouts and the homomorphic phase contribution vanishes while log-modulus data survives.",
+          "minimal_axioms": null,
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context."
+        },
+        "dep_claim_type": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04": "retained_bounded",
+          "minimal_axioms": "meta",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+          "minimal_axioms",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 4.822,
+        "runner_hash": "b7ffb93bb126c453edc87fd5a91293f6da5366978a33aa1c5d0f9c375ea36244",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-postw4-row2-seat1",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The claim is bounded to a stipulated finite slot model, and the direct dependencies are retained-grade supplied-context/registrability inputs or meta axiom context. The current runner completes with PASS=17 FAIL=0 and checks complement equivariance, the circulant symmetric spectrum, the orientation-odd line, additive-plus-even erasure, and source dependency boundaries.",
+      "claim_scope": "On the supplied finite three-slot Hermitian circulant slot model, the hw=1 and hw=2 Hamming-complement readings have identical Record-registrable scalar content; no physical species selection or full-dynamics equivalence is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-05T14:30:45.873374+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The readout algebra reduces to symmetric unordered-spectrum data plus the single orientation-odd C3-invariant line (u-v) and frame-dependent components; the frame-dependent terms are not registrable, additive-plus-even registrability kills (u-v), and the symmetric functions agree for the two complement readings.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the finite slot-model stipulation, direct dependency retained-grade statuses, or runner algebra changes; full-dynamics complementation equivariance remains outside this claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The bounded conclusion follows as an algebraic closure over the supplied finite circulant slot model plus retained-bounded registrability and K/CPT supplied-context inputs. The runner does not merely print constants: it symbolically checks the eigenvalue formulas, symmetric-function parity, the (u-v)=-6 sqrt(3) B^3 sin(3 delta) line, complement-orbit order consistency, and the note's dependency firewall. The result is not promoted beyond its stated boundary: physical species selection, full-dynamics complementation equivariance, AC_phi_lambda retirement, and charged-lepton value derivation remain explicitly outside scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py",
+  "title": "AC_phi_lambda hw-complement Reading Registration-Equivalence -- Bounded Theorem",
+  "transitive_descendants": 10,
+  "verdict_rationale": null
+}

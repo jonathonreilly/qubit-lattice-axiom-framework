@@ -1,0 +1,128 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_logdet_factor_4a_source_action_identification_narrow_companion_note_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (narrow ledger-pairing companion). This note",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+    "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+    "yt_source_action_support_packet_note_2026-05-22",
+    "charged_lepton_two_higgs_canonical_reduction_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7f61d6639bcb771ca5cebba211f86225457a8498fadbfc109263a5ccec197d35",
+  "note_path": "docs/FLAVOR_LOGDET_FACTOR_4A_SOURCE_ACTION_IDENTIFICATION_NARROW_COMPANION_NOTE_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.207648+00:00",
+      "audit_date": "2026-07-10T04:04:50.103754+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04": "Finite-n identity for an invertible complex matrix family M(j)=D+diag(j): \u2202W/\u2202j_x = Re Tr[M(j)^(-1)P_x] = Re[M(j)^(-1)]_{xx} for W=log|det M(j)|.",
+          "flavor_logdet_generator_three_factor_provenance_2026-06-04": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04": "positive_theorem",
+          "flavor_logdet_generator_three_factor_provenance_2026-06-04": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04": "retained",
+          "flavor_logdet_generator_three_factor_provenance_2026-06-04": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04",
+          "flavor_logdet_generator_three_factor_provenance_2026-06-04",
+          "yt_source_action_support_packet_note_2026-05-22"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ac67caa5f7e37a9d4182d61fb89e9c99586ed0494e71fb729ba12a61814ed275",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00058-flavor_logdet_factor_4a_sour",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The authorities establish the signed-record RN/action identity and the two-Higgs canonical support theorem separately, but no representation theorem identifies their source generators with one common projector family. Defining matrix site-locality to allow only the (x,x) entry makes diagonal uniqueness tautological rather than establishing that missing cross-surface bridge.",
+      "claim_scope": "The finite, fixed-basis comparison of signed-record source weights with diagonal shifts of the two-Higgs canonical texture; no staggered-Dirac or physical-source identification was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:04:50.103754+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:charged_lepton_two_higgs_canonical_reduction_note:retained->unaudited",
+      "load_bearing_step": "The note identifies the signed-record coupling term -h_x epsilon_x with the matrix-projector coupling j_x P_x and declares them the same algebraic shape across the two surfaces.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Add a retained finite representation theorem mapping the signed-record multiplication generators and two-Higgs generation operators into a common Q_x=P_x source class, then extend the runner to test that map and enumerate every canonical-support-preserving source direction.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The retained authorities support two separate finite constructions, while the claimed common structural class is obtained by renaming the signed-record coupling as a rank-one matrix-projector shift. The runner does not establish that identification: T7 hard-codes the signed-record locality condition, and T6 enumerates only projectors already selected by its definition. T4 also tests only one off-cycle perturbation, although perturbations on the BC cycle support can remain inside A+B C."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_logdet_factor_4a_source_action_identification_2026_06_04.py",
+  "title": "Flavor - log-det generator Factor 4a: physical source-action identification (narrow ledger-pairing companion)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,222 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_derivation_note"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.144,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6f54c3045056798f7f982d8bdfc6f5c82ba6ec5bd28c3e509fd994a7767ef3a7",
+  "note_path": "docs/CKM_MODULI_ONLY_UNITARITY_JARLSKOG_AREA_CERTIFICATE_THEOREM_NOTE_2026-04-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.104755+00:00",
+      "archived_for_note_hash": "e74c6ea04267e8ffd1efd7150635c5a5ad1b9c76f07a1a1aef53f45bfa3735d7",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.884020+00:00",
+      "archived_for_note_hash": "a328f541f0229ff4a24b225a3f7acd86483e0477c4fe62c5572b397453927af6",
+      "audit_date": "2026-04-30T22:17:57.973584+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-high-ready-20260430-20",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The claim closes as finite-dimensional 3x3 algebra. Row and column orthogonality turn the moduli products into unitarity-triangle side lengths, Heron's identity gives the area, Jarlskog quartets give twice the signed area, and the constructive converse builds the third row by the Hermitian cross product; the runner verifies symbolic identities plus a nondegenerate numeric lift and scope guardrails.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For any 3x3 unitary matrix, every row-pair and column-pair Heron certificate computed from the squared moduli equals 4J^2, and conversely a strictly positive 3x3 bistochastic table with one closing row-pair triangle has a unitary lift with |J| = sqrt(R)/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The theorem is a clean model-independent 3x3 algebraic certificate: no Wolfenstein expansion, alpha_s input, CKM numeric comparator, or framework-specific physics is needed. The necessity direction follows from row/column orthogonality and Heron's side-square formula; the sufficiency direction is constructively proved for strictly positive bistochastic tables by closing one row triangle and completing the unitary with the cross-product row. Residual risk is only downstream overuse beyond the stated 3x3 positive/interior setting or as a new numerical CKM prediction, both of which the note explicitly excludes."
+    },
+    {
+      "archived_at": "2026-05-26T14:07:42.864758+00:00",
+      "audit_date": "2026-05-23T19:38:43.858920+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note"
+        ],
+        "load_bearing_score": 10.672,
+        "runner_hash": "cd7d82887d1c76d42ccbafb2160771b8e8b2e53cf6933f6367dcd3e11dbb8b6b",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T193822Z-6ddf7f97-ckm_moduli_only_unitarit-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic CKM certificate closes from standard finite-dimensional unitarity, Heron's formula, and the explicit cross-product construction. The broader lane remains bounded because the note declares open contextual gates, but those gates are not needed for the audited 3x3 matrix theorem itself.",
+      "claim_scope": "Exact 3x3 algebraic statement that unitary squared moduli determine the common unitarity-triangle area and |J|, with a constructive strictly positive bistochastic converse from one closing row triangle.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:38:43.858920+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_derivation_note:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "For a 3x3 unitary matrix, row or column orthogonality makes the products V_ai V_bi^* close into a triangle whose Heron radicand equals 4J^2, and conversely one closing row-pair triangle in a strictly positive bistochastic table constructs a unitary lift.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only whether governance wants the declared contextual staggered-Dirac gate tracked separately from the algebraic CKM certificate; it is not load-bearing for this theorem.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: row and column orthogonality give closed complex triangles, Heron's side-square identity gives the radicand, and the imaginary quartet is the Jarlskog invariant. The runner source performs symbolic identity checks and a numeric constructive lift rather than importing external CKM values or hard-coding the contested result. The cited g_bare authority is retained_bounded, which is retained-grade under the rubric, and the declared open physics gates do not enter the scoped algebraic proof."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.586479+00:00",
+      "audit_date": "2026-05-27T00:54:03.964819+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Assuming canonical Cl(3) connection normalization, scoped Wilson matching beta = 2 N_c / g_bare^2, N_c = 3, beta = 6, and the two retained_bounded 2026-05-03 repair rows, exact algebra gives g_bare^2 = 1 and hence g_bare = 1 on the positive-coupling branch."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note"
+        ],
+        "load_bearing_score": 10.672,
+        "runner_hash": "cd7d82887d1c76d42ccbafb2160771b8e8b2e53cf6933f6367dcd3e11dbb8b6b",
+        "transitive_descendants": 50
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-ckm-moduli-certificate-2026-05-26",
+      "auditor_confidence": null,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed theorem closes from standard finite-dimensional unitary-matrix algebra, Heron's identity, and the explicit cross-product construction. The source boilerplate naming STAGGERED_DIRAC and g_bare is a lane-upgrade guardrail, not load-bearing for this algebraic certificate; the only ledger direct dependency in the packet is retained_bounded and is not used in the proof. No-go discipline check for the bounded-wall language is not blocking because this verdict does not assert a negative wall closure or treat the gate boilerplate as an independent theorem result.",
+      "claim_scope": "Finite-dimensional 3x3 algebraic certificate: unitary squared moduli determine the common Heron certificate, |J|, and unitarity-triangle area; a strictly positive bistochastic table with one closing row-pair triangle admits a unitary lift up to CP-conjugate orientation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T00:54:03.964819+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:g_bare_derivation_note:retained_bounded->unaudited",
+      "load_bearing_step": "Unitary row and column orthogonality make the moduli products close as triangles, giving R_12 = R_13 = R_23 = C_12 = C_13 = C_23 = 4 J^2, and the constructive converse recovers the third row by the Hermitian cross product with |t_i|^2 = c_i.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if the row is later broadened from the finite-dimensional 3x3 certificate to a physical CKM/gauge-lane prediction or if the STAGGERED_DIRAC/g_bare boilerplate is made load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The proof does not import CKM numerical values, alpha_s inputs, PDG comparators, or a hidden phase convention. The runner checks the exact Fourier-unitary case, symbolic Heron identity, symbolic constructive converse, and a numeric nondegenerate bistochastic lift, with no failed checks. This is not decoration because it supplies a standalone algebraic certificate/compression rather than merely expanding a single upstream CKM parameter choice. Clean status applies only to the bounded finite-dimensional certificate, not to any broader physical lane promotion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ckm_moduli_only_unitarity_jarlskog_area_certificate.py",
+  "title": "CKM Moduli-Only Unitarity and Jarlskog Area Certificate Theorem",
+  "transitive_descendants": 49,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,193 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "source_resolved_green_robustness_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "source_resolved_exact_green_pocket_note",
+    "source_resolved_exact_green_scaling_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dd0454249927ed36f2877172c9a952ad4fcb2b47e0308c978de9e38e26974406",
+  "note_path": "docs/SOURCE_RESOLVED_GREEN_ROBUSTNESS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.236975+00:00",
+      "audit_date": "2026-05-02T00:27:39.288764+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner reproduces the note's 9/9 kernel-neighborhood passes and 3/3 cluster-neighborhood passes on the declared exact lattice and source ladder. The note keeps the result bounded to local robustness and excludes generated geometry, refinement beyond the basin, and full self-consistency.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:source_resolved_exact_green_pocket_note,source_resolved_exact_green_scaling_note",
+      "load_bearing_step": "The source-resolved exact Green pocket has a local robustness region: all tested kernel and cluster neighbors preserve zero-source reduction, TOWARD sign, near-linear F~M, and nontrivial amplitude.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The current runner output matches every frozen table entry: all kernel cases pass with 4/4 TOWARD, F~M from 0.998 to 1.002, and mean |green/inst| from 0.934 to 1.421; all cluster cases pass with 4/4 TOWARD, F~M from 0.999 to 1.002, and mean ratios 1.134 to 1.235. Zero-source reduction is exact throughout. Residual risk is the declared locality of the sweep: it is not generated-family transfer, refinement beyond the basin, or a full self-consistent field theory."
+    },
+    {
+      "archived_at": "2026-05-04T12:38:55.381766+00:00",
+      "audit_date": "2026-05-03T21:46:49.738239+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "source_resolved_exact_green_pocket_note": "retained_bounded",
+          "source_resolved_exact_green_scaling_note": "retained_bounded"
+        },
+        "deps": [
+          "source_resolved_exact_green_pocket_note",
+          "source_resolved_exact_green_scaling_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-source-green-robustness",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependencies are retained_bounded, and the current runner completed with output matching the source tables: 9/9 kernel cases and 3/3 cluster cases passed. The result is bounded to the tested lattice family, local parameter grid, source ladder, detector readout, and weak-field normalization.",
+      "claim_scope": "Under the runner-defined exact-lattice weak-field normalization target max |f| = 0.02, the tested local kernel and source-cluster neighborhood around the source-resolved Green pocket passes all finite hard gates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T21:46:49.738239+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:source_resolved_exact_green_pocket_note:retained_bounded->unaudited",
+      "load_bearing_step": "The frozen sweep reports that all 9 kernel-neighborhood cases and all 3 cluster-neighborhood cases pass the zero-source, TOWARD-sign, near-linear F~M, and nontrivial |green/inst| gates.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that the intended claim boundary remains the runner-defined target max |f| normalization; a stronger fixed-gain robustness claim would need a separate runner.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-context",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner computes the finite exact-lattice sweep rather than hard-coding the PASS table, and its completed stdout agrees with the frozen note values within displayed precision. The claim is explicitly bounded and does not assert generated-geometry transfer, refinement, or a full self-consistent field theory. Residual risk is interpretive: the robustness is under the stated target max |f| normalization, not a proof for fixed raw Green amplitude or wider parameter space."
+    },
+    {
+      "archived_at": "2026-05-10T14:40:27.628375+00:00",
+      "audit_date": "2026-05-05T12:23:45.303964+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "source_resolved_exact_green_pocket_note": "retained_bounded",
+          "source_resolved_exact_green_scaling_note": "retained_bounded"
+        },
+        "deps": [
+          "source_resolved_exact_green_pocket_note",
+          "source_resolved_exact_green_scaling_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c2fa26ce9232f6fccd481b85ca4864b77fb44b6e16bde7876811714bd4cfa9e5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependencies are retained_bounded source-resolved Green pocket and scaling controls. The runner constructs each local kernel/cluster case and computes the stated gates directly, so the local robustness claim closes for the fixed exact-lattice sweep.",
+      "claim_scope": "On the fixed h=0.5, W=3, L=20 exact-lattice family and source ladder, the runner computes a local robustness sweep where 9/9 kernel-neighborhood cases and 3/3 cluster-neighborhood cases pass the zero-shift, 4/4 TOWARD, near-linear F~M, and nontrivial |green/inst| gates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T12:23:45.303964+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:source_resolved_exact_green_pocket_note:retained_bounded->unaudited",
+      "load_bearing_step": "The sweep shows a local kernel and source-cluster neighborhood in which zero-source reduction survives, TOWARD sign is 4/4, F~M stays near 1, and the Green/instantaneous ratio remains nontrivial.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if this local robustness region is later used as evidence for generated-geometry transfer, refinement beyond the tested basin, or a full self-consistent field theory.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The cached output matches the source tables: all nine kernel cases pass and all three cluster variants pass, with exact zero shifts, 4/4 TOWARD rows, F~M in the stated near-unit range, and nontrivial response ratios. The note already limits the conclusion to a same-family local robustness sweep and does not claim generated-geometry transfer, refinement beyond the tested basin, or a self-consistent field theory. Within that bounded scope, no hidden bridge or unretained dependency remains."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976998+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/source_resolved_green_robustness.py",
+  "title": "Source-Resolved Green Robustness Sweep",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

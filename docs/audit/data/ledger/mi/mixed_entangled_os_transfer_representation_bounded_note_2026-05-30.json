@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "mixed_entangled_os_transfer_representation_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_only_det_positivity_case_a_note_2026-05-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "481afbce4e9be4c64e0013afa0a702ff61d9d05092627315d6647ed47288a8e3",
+  "note_path": "docs/MIXED_ENTANGLED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.104782+00:00",
+      "audit_date": "2026-05-31T16:34:35.091141+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5c79d2398ebf5f212fe0b1cb65526be46abfdc3f03d213ea44c3218db99accac",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-163219-292d2f4a-mixed_entangled_os_trans",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded finite-carrier scope, the supplied runner instantiates the lattice matrices and compares separate Berezin/Wick and operator/Fock code paths, including det-weighted averaging and non-vacuity controls. The only cited note needed for determinant positivity is marked retained in the restricted packet.",
+      "claim_scope": "Finite-carrier, finite-sample/quadrature gauge-fermion-entangled staggered 2-step transfer representation equality for single-creation Wilson-line-transported observables; no continuum, H1, or full interacting-RP closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T16:34:35.091141+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner's det-weighted finite-sample/quadrature reflected Berezin correlator for F = sum_b W_b(U) chibar_b equals the matching classically U-averaged fermion-Fock Gram on the finite 3+1 carriers, with the determinant weight actually applied.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the C2 wording: the control shows the det-weighted target differs from a flat reference average, not that a consistently flat Berezin/operator average would fail.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 27,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The load-bearing equality is a finite first-principles computation, not a renaming or tuned external comparison. The runner output reports PASS=27 FAIL=0, including P0/P1 equality, determinant positivity, Hermiticity, per-mode-factorized and flat-average controls, single-step indefiniteness, and Schmidt-rank entanglement checks. The source note keeps the conclusion bounded to the finite carrier and explicitly excludes continuum reconstruction, Wilson-boundary positivity, full interacting RP, and the four-fermion observable."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/mixed_entangled_os_transfer_representation_2026-05-30.py",
+  "title": "Gauge-Fermion-Entangled OS Transfer Representation Equality on a Finite 3+1 Staggered Carrier \u2014 Bounded Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

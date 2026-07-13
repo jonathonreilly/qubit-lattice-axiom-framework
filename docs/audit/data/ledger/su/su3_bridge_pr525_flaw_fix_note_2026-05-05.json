@@ -1,0 +1,160 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_bridge_pr525_flaw_fix_note_2026-05-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "095f2d52d20a78e5af24abfdf90de37483b9fbdceb80e1b18d89206ccb66ffcc",
+  "note_path": "docs/SU3_BRIDGE_PR525_FLAW_FIX_NOTE_2026-05-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:55.528993+00:00",
+      "audit_date": "2026-05-22T00:11:42.201699+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "Finite-runner certificate for the displayed ODE catalog for reps (0,0),(1,0),(1,1),(2,0),(2,1),(2,2),(3,0), limited to the bounded ansatz search r<=6, deg<=8 and numerical Bessel-determinant checks at beta in {2,4,6,8}."
+        },
+        "dep_claim_type": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260522-000836-a4678e20-su3_bridge_pr525_flaw_fi-007",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The correction follows algebraically from the stated K-tube exponent shift once \u0394 ln \u03c1 is defined relative to the exponent-12 baseline. The cited retained_bounded authority supplies the c_R(6) values used for the illustrative table, but the denominator conclusion does not require a new physics derivation.",
+      "claim_scope": "Audited only the bounded methodological denominator correction: the Casimir-denominator spread does not test the proportionality asserted by the stated K-tube ansatz for the listed SU(3) irreps at \u03b2=6.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T00:11:42.201699+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The K-tube formula implies \u0394 ln \u03c1_(p,q) = (2/\u03c0) \u00b7 ln(c_R(6) / c_(0,0)(6)), so dividing by ln(c_R/c_(0,0)) rather than C_2(R) gives the constant 2/\u03c0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that \u0394 ln \u03c1 is consistently defined as the exponent-shift contribution relative to the exponent-12 baseline in downstream citations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic consequence of the K-tube formula quoted in the note: subtracting the exponent-12 baseline leaves exactly (2/\u03c0) ln(c_R/c_0). This is sufficient for the bounded claim that PR #525's C_2 denominator was not the denominator implied by that ansatz. The note explicitly does not claim to derive 2/\u03c0 from a one-loop diagram or close the broader plaquette problem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.447099+00:00",
+      "audit_date": "2026-06-08T21:21:41.525321+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "Finite-runner certificate for the seven displayed SU(3) low-rank representatives: order-3 ODE candidates found inside r <= 6, deg <= 8, with finite Taylor and beta = 2,4,6,8 numerical verification."
+        },
+        "dep_claim_type": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": null,
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-211935-2412671235-su3_bridge_pr525_flaw_fix_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebra follows directly from the displayed power-law ansatz relative to the exponent-12 baseline, and independent arithmetic from the cited c_R(6) values reproduces the table ratios and \u0394ln\u03c1/ln(c/c_(0,0)) = 2/\u03c0 to the displayed precision. This does not audit or establish the K-tube ansatz itself or a one-loop Feynman derivation of 2/\u03c0.",
+      "claim_scope": "Audited the bounded methodological correction that PR #525's Casimir-denominator spread is not a test of the proportionality asserted by the stated K-tube ansatz.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T21:21:41.525321+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Taking logs of the stated K-tube ansatz gives \u0394 ln \u03c1_R = (2/\u03c0) ln(c_R(6)/c_(0,0)(6)), so the relevant denominator is ln(c_R/c_(0,0)) rather than C_2(R).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the claim boundary remains limited to the denominator correction; the isolated packet did not contain docs/audit/data/axiom_premise_nodes.json, but no registered primitive appears relevant to this scoped claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The one-hop cited authority is retained_bounded, which is retained-grade under the rubric. Recomputing from the packet values gives the displayed c_R/c_(0,0) ratios and \u0394ln\u03c1 values, and dividing by ln(c_R/c_(0,0)) returns 0.63661977 = 2/\u03c0 for each tested irrep. The note explicitly bounds itself to the denominator correction; broader statements about the physical one-loop origin and MC comparison are not established by this audit."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "PR #525 Methodological Correction: K-Tube Denominator Test",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

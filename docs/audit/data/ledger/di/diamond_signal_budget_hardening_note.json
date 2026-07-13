@@ -1,0 +1,225 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "diamond_signal_budget_hardening_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "moving_source_retarded_portability_note",
+    "diamond_ideal_lockin_detector_theorem_note_2026-06-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c80cc6f585f0f11205dcf7bf82ac1486652754d3ba512d600260d0a8224c770e",
+  "note_path": "docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368014+00:00",
+      "archived_for_note_hash": "f03d114473f0a97cf2c3ef2f88accc4d0ae6f75f0d2153a294f1ad62716b1794",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234729+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic proxy-budget thresholds replay exactly, but they are computed from hard-coded rows imported from a bounded moving-source proxy note and do not include the transfer coefficient into real NV readout units.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:moving_source_retarded_portability_note",
+      "load_bearing_step": "Using a conservative 3sigma readout target, the weakest retained nonzero proxy rows imply centroid-noise target <= 2.888572e-07 and phase-noise target <= 4.363583e-06 rad.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the note hardens the diamond/NV lane by dividing the weakest nonzero proxy observables by three, but the runner hard-codes the moving-source proxy rows and the cited source note is bounded, not audited-retained. Why this blocks: a proxy-unit 3sigma threshold is not a real lab signal budget unless a theorem or calibrated input maps the proxy centroid/phase units into NV readout units and noise floor. Repair target: audit or replace the moving-source proxy input with a retained source computation, then add the missing transfer calibration from proxy units to NV X/Y/phi readout units and rerun the budget from those calibrated quantities. Claim boundary until fixed: the safe claim is a bounded proxy-budget card for the specified grown-row geometry: if the copied proxy values are taken literally, the calculator gives centroid target 2.888572e-07 and phase target 4.363583e-06 rad; it does not establish absolute detectability or a completed lab budget."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:00.635476+00:00",
+      "archived_for_note_hash": "a72f0873702bef0b1e33ba18195f47d3fca4c888db07d63c1f35822b3a1735d1",
+      "audit_date": "2026-05-04T23:53:27.313634+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "moving_source_retarded_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "moving_source_retarded_portability_note"
+        ],
+        "load_bearing_score": 8.714,
+        "runner_hash": "593a2e13976ac6928fe4dcbd67350d24e927e846b1c9133a8b171fa0fca600f2",
+        "transitive_descendants": 296
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260504-234846-c679ece8-diamond_signal_budget_ha-012",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The arithmetic budget follows from the cited retained_bounded moving-source rows by taking nonzero absolute minima and dividing by three. The note also correctly leaves the absolute lab NV budget open because the proxy-to-readout transfer coefficient is missing.",
+      "claim_scope": "A narrow proxy-budget card for one retained moving-source geometry, deriving weakest-observable 3-sigma centroid and phase noise targets from the cited portability note.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-04T23:53:27.313634+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "moving_source_retarded_portability_note",
+      "independence": "cross_family",
+      "load_bearing_step": "Using the weakest retained nonzero centroid and phase observables, divide each by 3 to state conservative 3-sigma readout targets.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that the decoration policy intentionally covers proxy-budget hardening cards whose only new content is arithmetic post-processing of one retained parent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner hard-codes the retained upstream geometry and scaling rows, then performs only standard arithmetic reductions: nonzero minima, maxima, and division by three. There is no first-principles compute and no external comparator check. Because the chain reduces to a single retained_bounded parent claim plus algebraic processing, the appropriate conservative verdict is audited_decoration rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.310207+00:00",
+      "audit_date": "2026-06-21T14:21:20.318358+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "diamond_ideal_lockin_detector_theorem_note_2026-06-17": "Ideal detector-map theorem for a stipulated delayed sinusoid under integer-cycle lock-in averaging; no source-dynamics, NV coupling, absolute calibration, noise, or detectability claim was audited.",
+          "moving_source_retarded_portability_note": "A bounded numerical probe on one portable grown row, drift=0.2 and restore=0.7, with six seeds, exact zero-source baseline, matched v=0 static control, and signed moving-source centroid-y shifts."
+        },
+        "dep_claim_type": {
+          "diamond_ideal_lockin_detector_theorem_note_2026-06-17": "bounded_theorem",
+          "moving_source_retarded_portability_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "diamond_ideal_lockin_detector_theorem_note_2026-06-17": "retained_bounded",
+          "moving_source_retarded_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "diamond_ideal_lockin_detector_theorem_note_2026-06-17",
+          "moving_source_retarded_portability_note"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "2c80463e777d5e4fcfa4f516f99088301769a259a230294356a78ef4933a6c92",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-diamond_signal_budget_hardening_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded proxy card, the moving-source authority supplies the geometry and proxy rows; the note takes the weakest nonzero absolute values and divides by three. The excluded transfer coefficient would be needed only for the disclaimed absolute NV lab budget.",
+      "claim_scope": "Algebraic proxy-budget corollary converting the cited moving-source proxy row's weakest nonzero centroid and phase residues into 3\u03c3 proxy-noise targets for one stated geometry.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T14:21:20.318358+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "moving_source_retarded_portability_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:diamond_ideal_lockin_detector_theorem_note_2026-06-17:retained_bounded->unaudited",
+      "load_bearing_step": "The weakest nonzero proxy centroid and phase residues from the moving-source row are divided by three to state conservative 3\u03c3 proxy-noise targets.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream use does not treat these proxy thresholds as calibrated absolute NV readout units.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing computation is arithmetic over values already present in the retained_bounded moving-source note; the runner hard-codes those rows and computes minima plus 3\u03c3 divisions. The result is a valid proxy-budget corollary inside the stated scope, not an independent diamond/NV amplitude theorem. The missing transfer coefficient is acknowledged and excluded, so it prevents stronger lab-budget readings but does not block the scoped proxy statement."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/diamond_signal_budget_hardening.py",
+  "title": "Diamond Signal Budget Hardening Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

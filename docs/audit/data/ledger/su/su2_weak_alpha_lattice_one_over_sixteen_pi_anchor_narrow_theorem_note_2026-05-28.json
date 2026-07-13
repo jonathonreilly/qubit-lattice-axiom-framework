@@ -1,0 +1,226 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+    "native_gauge_closure_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c1858a3f133203cf7ab14330d5b63e6397bf3d63b3b69c4ada62d6cb4a7b1776",
+  "note_path": "docs/SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-07T15:16:19.707007+00:00",
+      "audit_date": "2026-05-29T07:29:42.447432+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "Conditional algebraic consequences of the assumed bare-coupling inputs g3^2=1, g2^2=1/(d+1), and gY^2=1/(d+2), including the d=3 alpha3/alpha_em ratio 9 and bare weak-angle identity 4/9.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "retained_bounded",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c5ea83c4cb5b49fcbc6732ebe7e1ea1db0a8f2f7839ebbd1a885b0b3dffbbf9d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The two ledger dependencies are retained-grade for this bounded use: the assumed-input row supplies g_2^2=1/(d+1) and native gauge closure supplies SU(2). The rest is exact rational/pi substitution under explicitly named textbook conventions, with no PDG comparator, scale identification, unification claim, or derivation of the assumed coupling.",
+      "claim_scope": "Bounded algebraic anchor: given the Wilson convention beta_W=2N/g_bare^2, the retained_bounded assumed input g_2^2|_lattice=1/(d+1)=1/4 at d=3, the QFT convention alpha=g^2/(4pi), and retained native SU(2) with N=2, the lattice-scale identities alpha_2=1/(16pi), 1/alpha_2=16pi, and beta_W=16 follow; no derivation of the conventions, coupling input, physical scale, or RG running is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T07:29:42.447432+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30:retained_bounded->unaudited",
+      "load_bearing_step": "Substitute g_2^2|_lattice=1/4 into alpha=g^2/(4pi) and N=2 into beta_W=2N/g_bare^2, giving alpha_2|_lattice=1/(16pi), 1/alpha_2=16pi, and beta_W=16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if broadened to derive the Wilson or fine-structure conventions, derive g_2^2=1/(d+1), identify Q_lattice with a physical UV scale, consume RG running as an upstream proof, or claim measured electroweak-scale alpha_2.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing identities are exact substitutions and round-trip correctly: 4pi*alpha_2=1/4, 1/alpha_2=16pi, and beta_W*g_2^2=2N=4. The runner refreshed successfully and verifies the anchor, reciprocal, Wilson beta, numeric readouts, and counterfactual arithmetic; independent arithmetic reproduces the same factors and normalization. The no-go/admission-wall gate passes because the source explicitly bounds the Wilson convention, fine-structure convention, assumed g_2 input, and scale/RG claims rather than promoting them to derived framework facts."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.202610+00:00",
+      "audit_date": "2026-06-09T14:47:57.518080+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "Formal algebra only: assuming d, g_3^2 = 1, g_2^2 = 1/(d + 1), g_Y^2 = 1/(d + 2), and the displayed inverse electromagnetic coupling rule, the bare ratio is 2d + 3 and the bookkeeping weak-angle identity is (d + 1)/(2d + 3), giving 9 and 4/9 at d = 3.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "retained_bounded",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "c5ea83c4cb5b49fcbc6732ebe7e1ea1db0a8f2f7839ebbd1a885b0b3dffbbf9d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-144429-45af019f67-su2_weak_alpha_lattice_one_o",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supplies the coupling value as a retained_bounded formal input, the native SU(2) structure as retained, and the two textbook conventions as named admitted conventions. Independent arithmetic gives (1/4)/(4 pi) = 1/(16 pi), its reciprocal 16 pi, and 2*2/(1/4) = 16; the d and N counterfactuals also match.",
+      "claim_scope": "Conditional algebraic anchor: given the Wilson convention, the QFT fine-structure convention, the assumed retained_bounded input g_2^2|_lattice = 1/(d+1) at d=3, and SU(2) Wilson N=2, the note derives alpha_2|_lattice = 1/(16 pi), reciprocal 16 pi, beta_W = 16, and stated algebraic corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T14:47:57.518080+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30:retained_bounded->unaudited",
+      "load_bearing_step": "Substitute g_2^2|_lattice = 1/4 into alpha = g^2/(4 pi) and N = 2 into beta_W = 2N/g_bare^2, yielding alpha_2|_lattice = 1/(16 pi), 1/alpha_2 = 16 pi, and beta_W = 16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No approved primitive is load-bearing; second auditor should only re-check presentation precision, since the source's alpha decimal is a correct prefix but not a fully written 14-significant-figure decimal.",
+      "open_dependency_paths": [
+        "docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The derivation is not first-principles physics; it is a bounded algebraic substitution over stated inputs. The primary runner source implements symbolic expressions for g_2^2 = 1/(d+1), alpha = g^2/(4 pi), and beta_W = 2N/g^2 and checks the framework instance and counterfactuals with exact SymPy arithmetic; no PDG comparator or tuned scale enters. The coupling input remains an assumed retained_bounded support premise, so the clean verdict applies only to the narrow conditional anchor scope, not to a derivation of g_2^2 = 1/(d+1)."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.439687+00:00",
+      "audit_date": "2026-06-14T02:06:13.368599+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "Formal assumed-input algebraic implication from H1-H4 to alpha_3/alpha_em = 2d + 3 and sin^2(theta_W) = (d + 1)/(2d + 3), including the d = 3 values 9 and 4/9, with no physical EW-normalization bridge audited.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": "retained_bounded",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "c5ea83c4cb5b49fcbc6732ebe7e1ea1db0a8f2f7839ebbd1a885b0b3dffbbf9d",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-020344-7fc3d0c72f-su2_weak_alpha_lattice_one_o",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped theorem closes as exact algebra over the four named inputs. It does not derive the coupling input or the two textbook conventions, but the note correctly scopes those as assumptions/admissions rather than derived content.",
+      "claim_scope": "Conditional algebraic anchor: given the Wilson beta convention, the fine-structure convention, the assumed SU(2)_L lattice coupling g_2^2 = 1/4 at d = 3, and SU(2) dimension N = 2, the note derives alpha_2|_lattice = 1/(16 pi), 1/alpha_2|_lattice = 16 pi, and beta_W|_lattice = 16.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:06:13.368599+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substitute the assumed input g_2^2|_lattice = 1/4 into alpha = g^2/(4 pi) to get alpha_2|_lattice = 1/(16 pi), and substitute N = 2 and g_2^2|_lattice = 1/4 into beta_W = 2N/g_bare^2 to get beta_W|_lattice = 16.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only the presentation precision of the alpha decimal readout; the exact symbolic identities are the load-bearing result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic substitution, not a definition, renaming, external comparator, or tuned numerical match. The cited one-hop authorities are retained-grade for the scoped use: the coupling row supplies the formal assumed input g_2^2 = 1/(d+1), and the native gauge closure supplies SU(2) structure/dimension once SU(2)_L is fixed. Independent arithmetic confirms alpha_2 = (1/4)/(4 pi) = 1/(16 pi), its reciprocal is 16 pi, and beta_W = 2*2/(1/4) = 16."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28.py",
+  "title": "SU(2)_L Lattice-Scale \u03b1_2 = 1/(16\u03c0) Anchor Narrow Theorem",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

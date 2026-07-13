@@ -1,0 +1,1532 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_encoding_portability_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "teleportation_retained_axis_operator_algebra_closure_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/teleportation_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "86c7aa97d3b29ba42041f7a08d361f5739976ff0b572672ce1b4638cd6e47de7",
+  "note_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-06T17:30:16.363290+00:00",
+      "archived_for_note_hash": "78615c5f216d405760da1db1824a8df4f322624c6cbbdb41f9d41b748caa2f8a",
+      "audit_date": "2026-05-02T22:53:22.129163+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-teleportation-encoding-portability-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner output matches the note's finite counts, failure cause, leakage/projector errors, and adapted-control pass results. No external authority is needed for this scoped open gate because the claim is only the audited finite algebraic obstruction.",
+      "claim_scope": "Finite algebraic audit of ideal encoded taste-qubit teleportation over even side lengths 2, 4, 6, and 8 in dimensions 1, 2, and 3, showing current_fixed_x works only for last-axis encodings while axis_adapted_x works for all surveyed encodings.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-02T22:53:22.129163+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Keeping the current row-major pair-hop X while selecting a non-last logical taste axis fails because X flips the last taste bit rather than the selected logical bit.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit only if the claim surface is expanded beyond the finite ideal encoded-qubit audit, e.g. cross-encoding maps, larger/odd geometries, or physical implementation claims.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The correct scoped object is a clean open_gate: it identifies a standalone operator-targeting gap in the current fixed pair-hop X, not a retained broad teleportation theorem. The runner confirms the bounded failure for all non-last logical axes in dimensions 2 and 3 and confirms that retargeting X removes the obstruction across the surveyed cases. The note also preserves the finite, idealized boundary and does not overclaim physical teleportation, matter transfer, or larger lattices."
+    },
+    {
+      "archived_at": "2026-05-07T12:58:46.426981+00:00",
+      "archived_for_note_hash": "b3c5dbddaa9f77d0e20b4991d7be97fa81b596cc018a0516011526d1977ac0d7",
+      "audit_date": "2026-05-07T02:20:53.882596+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "cef4805a9c2020db277472d5acaab22b701b45e9e632eefaf70639f5829db61f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-teleportation-encoding-portability-audit-1-2026-05-07",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded scope, the note's numbers and interpretation match the completed runner stdout: current_fixed_x passes exactly the last logical axis cases and fails 860 non-last-axis cases by flipping the last taste bit, while axis_adapted_x passes all 1330 surveyed encodings. The note does not rely on external comparator data or hidden physical identification and explicitly frames the result as a finite algebraic open operational gate rather than a retained positive physical teleportation claim.",
+      "claim_scope": "Finite algebraic operator-targeting portability audit for ideal encoded taste-qubit state teleportation on dimensions 1,2,3 and even side lengths 2,4,6,8, with same-cell/same-axis/same-spectator registers only; excludes physical implementation, noise, odd sides, larger lattices, cross-encoding maps, matter transfer, and any general teleportation theorem beyond the surveyed operator gate.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-07T02:20:53.882596+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The completed finite runner enumerates the surveyed even KS cell/taste geometries and directly restricts Z plus the fixed/adapted X operators to every declared two-dimensional encoded subspace, establishing the last-axis-only success of current_fixed_x, the non-last-axis zero-restriction/leakage obstruction, and full axis_adapted_x success on the bounded surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Future re-audit should inspect the full runner source only if the claim is promoted beyond this restricted packet, expanded to larger/odd geometries, cross-encoding teleportation maps, or an all-states teleportation theorem rather than the current finite operator audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The scoped open-gate conclusion follows from the supplied runner output and source note: the obstruction is finite, explicit, and numerically matched; the successful adapted control is limited to ideal operator retargeting; and the note consistently disclaims unsupported physical apparatus, cross-encoding portability, larger surfaces, and matter/FTL claims. Random teleportation trials are not sufficient for an unrestricted state theorem, but the note's retained claim is the finite operator-targeting audit, so this does not break closure."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:19.708118+00:00",
+      "audit_date": "2026-05-07T18:01:08.891353+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite RALA algebra closure T1-T8 for dim in {1,2,3}, side in {2,4}, all retained axes, with X_fixed taken as the explicitly defined last-axis taste flip; physical apparatus and downstream teleportation gates are excluded."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "cef4805a9c2020db277472d5acaab22b701b45e9e632eefaf70639f5829db61f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-teleportation-encoding-portability-auditor-20260507-f161",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebraic claim closes as an open gate: the note accurately states the fixed-X obstruction and the axis-adapted control without promoting physical implementation to theorem status. The retained-bounded RALA dependency supplies T5 on dim {1,2,3}, side {2,4}, all axes; this runner additionally supplies case-by-case finite evidence for sides 6 and 8, which is not overstated beyond the surveyed runner surface.",
+      "claim_scope": "Finite algebraic portability audit for ideal encoded taste-qubit teleportation on dim {1,2,3}, even sides {2,4,6,8}, all cells, spectator taste assignments, and logical taste axes: fixed pair-hop X works only on the last logical taste axis, non-last axes are obstructed by zero restricted X/leakage, and axis-adapted X works on the surveyed surface; physical apparatus, noise, durable record, readout, and dynamical preparation remain open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-07T18:01:08.891353+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:teleportation_retained_axis_operator_algebra_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "`current_fixed_x in RALA(a) iff a = d - 1`, with non-last-axis encodings having `P_encoded X_fixed P_encoded = 0` and axis-adapted `X` passing all surveyed encodings.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that sides 6 and 8 are treated only as finite case-by-case runner coverage, while the retained RALA dependency is not overstated beyond its dim {1,2,3}, side {2,4} audited grid.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner computes finite matrix-algebra restrictions, leakage, Bell-projector validity, and ideal teleportation/no-signaling behavior, so the checks are class A algebraic identity checks. I count six aggregate class-A check families rather than 1330 per-case checks: current fixed-X expected Pauli classification, current Bell-projector classification, current accepted teleportation/no-signaling, and the same three families for axis-adapted X. The 860 current_fixed_x failures are expected obstruction evidence because the runner exits 0 only when they are classified as the fixed pair-hop flipping the last axis rather than the selected logical axis. Clean is granted only for the scoped open_gate: physical apparatus, noise, durable records, readout, and preparation remain unresolved."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:19.729934+00:00",
+      "archived_for_note_hash": "3acde4e9070bcd24d37d1a840502381422503aa6df808a1842c632e7e8ebf8f0",
+      "audit_date": "2026-06-07T17:36:32.972321+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "cef4805a9c2020db277472d5acaab22b701b45e9e632eefaf70639f5829db61f",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-173359-8f85b91c62-teleportation_encoding_porta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the KS lattice operators, encoded restrictions, Bell projectors, and teleportation checks directly rather than printing hard-coded outcomes. Independently, even-side row-major pairing flips only eta_{d-1}, so the fixed X is logical exactly for the last retained axis and has zero encoded restriction on non-last axes.",
+      "claim_scope": "Finite ideal encoded taste-qubit portability for dims 1-3, even sides 2,4,6,8, all cells, spectator assignments, and logical axes, comparing fixed last-axis pair-hop X against axis-adapted X; no physical apparatus, noise model, or matter transport is audited.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-07T17:36:32.972321+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The default audit computes over 1330 geometry/cell/spectator/axis cases that current_fixed_x passes exactly the last-axis 470 cases and fails the 860 non-last-axis cases with zero X restriction and sqrt(2) leakage, while axis_adapted_x passes all 1330 cases.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the finite ideal-operator scope and do not broaden this row into a physical implementation claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The finite algebraic/operator-targeting claim closes on its own restricted scope. The cited RALA closure note is retained_bounded and supplies the same necessary-and-sufficient condition, current_fixed_x in RALA(a) iff a=d-1. The note explicitly excludes physical measurement, preparation, noise, durable record, and matter-transfer claims, so those open gates are not imported as dependencies for this row."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.745543+00:00",
+      "audit_date": "2026-06-18T10:49:57.379740+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "4e1e020a909710fd67efcd73211eb105a2fbcce32572be3e47f42f9f5a19b3ed",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-teleportation_encoding_portability_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the KS site operators, encoded subspaces, Bell projectors, and teleportation checks directly rather than printing expected constants, and the output matches the algebraic T5 condition from the retained-bounded cited authority. Physical apparatus, resource-generation dynamics, durable records, noise, and matter transfer are explicitly outside scope.",
+      "claim_scope": "Finite even-side KS cell/taste encoding portability for dimensions 1-3 and side lengths 2,4,6,8 over all cells, spectator choices, and logical axes, limited to ideal same-encoding quantum state teleportation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T10:49:57.379740+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The current fixed pair-hop flips only the last taste bit, so it gives logical X when a=d-1 but has P_encoded X_fixed P_encoded = 0 for non-last axes; retargeting X to the selected axis restores the logical X on every surveyed encoding.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The primary computation genuinely instantiates the finite operator algebra and enumerates the audited grid, giving the stated 470/1330 fixed-X passes, 860 non-last-axis failures, and 1330/1330 axis-adapted passes. The single cited authority is retained_bounded and supplies the same necessary-and-sufficient fixed-X membership condition. The helper boundary check is status/boundary bookkeeping and does not add a hidden physical bridge to the finite operator-targeting claim."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:00.330161+00:00",
+      "audit_date": "2026-07-12T03:19:41.361677+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+        },
+        "dep_claim_type": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "teleportation_retained_axis_operator_algebra_closure_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "4e1e020a909710fd67efcd73211eb105a2fbcce32572be3e47f42f9f5a19b3ed",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00356-teleportation_encoding_porta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Direct basis projection proves that fixed X is logical X exactly on the last taste axis and has zero encoded restriction otherwise. The enumerating runner independently realizes those operators and reproduces the stated failure counts, leakage, Bell-projector errors, and adapted-X controls.",
+      "claim_scope": "Finite ideal taste-qubit operator-portability audit over dimensions 1-3, even sides 2,4,6,8, all cells, spectator assignments, and logical axes, comparing the fixed last-axis pair-hop with an axis-adapted X under same-encoding teleportation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-12T03:19:41.361677+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "For every non-last-axis encoding, the fixed pair-hop flips a spectator taste bit, so its encoded restriction is zero and its leakage norm is sqrt(2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The supplied basis-action calculation evaluates P_encoded X_fixed P_encoded for last and non-last retained axes.",
+            "disposition": "CLOSED",
+            "evidence_locator": "P_encoded X_fixed P_encoded = 0",
+            "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Project the fixed pair-hop directly onto each selected two-dimensional encoded subspace.",
+            "outcome": "For non-last axes the logical bit is unchanged while a spectator bit flips, giving zero restriction and unit leakage per basis column; the route is closed.",
+            "prior_witness_id": "",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "direct_projection"
+          },
+          {
+            "attempt": "The one-hop authority factors logical and environment slots and proves fixed-X membership in RALA for each retained axis.",
+            "disposition": "CLOSED",
+            "evidence_locator": "X_fixed in RALA(a) iff a = d - 1.",
+            "evidence_path": "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the fixed operator belongs to the retained-axis logical operator algebra.",
+            "outcome": "Membership holds if and only if the retained axis is the last taste axis, so representation-theoretic refactoring does not evade the obstruction.",
+            "prior_witness_id": "",
+            "route_class": "symmetry_or_representation",
+            "route_id": "rala_membership"
+          },
+          {
+            "attempt": "The runner enumerates every cell, spectator assignment, and logical axis on all twelve requested geometries.",
+            "disposition": "CLOSED",
+            "evidence_locator": "current_pair_hop_x_flips_last_axis_not_logical_axis",
+            "evidence_path": "scripts/frontier_teleportation_encoding_portability.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Search all available cells and spectator taste sectors for an exceptional non-last-axis encoding.",
+            "outcome": "All 860 non-last-axis cases fail for the same targeting reason; no alternate surveyed cell or spectator sector rescues fixed X.",
+            "prior_witness_id": "",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "sector_sweep"
+          },
+          {
+            "attempt": "The packet separates last-axis encodings, where fixed X works, from genuinely selected non-last-axis encodings.",
+            "disposition": "CLOSED",
+            "evidence_locator": "when the logical taste axis is the last axis;",
+            "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Relabel the last taste axis as the logical axis.",
+            "outcome": "Relabeling produces a different encoding and therefore cannot establish portability of the unchanged fixed operator to a selected non-last axis.",
+            "prior_witness_id": "",
+            "route_class": "convention_or_relabeling",
+            "route_id": "axis_relabel"
+          },
+          {
+            "attempt": "The adapted control constructs I_cells tensor sigma_x on each selected axis and reruns the full survey.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The axis-adapted control shows that this is an operator-targeting failure, not",
+            "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the fixed last-axis hop with an operator targeted to the selected logical taste axis.",
+            "outcome": "The control passes all 1330 encodings, demonstrating that a changed operator fixes the problem but does not refute the scoped obstruction for current_fixed_x.",
+            "prior_witness_id": "",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "axis_adapted_control"
+          },
+          {
+            "attempt": "The supplied calculation forms the Bell candidates from restricted Z and X and evaluates idempotence and branch orthogonality.",
+            "disposition": "CLOSED",
+            "evidence_locator": "worst idempotence and orthogonality errors `2.500e-01`.",
+            "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check whether Bell-projector construction can remain valid despite the vanishing logical-X restriction.",
+            "outcome": "With restricted X equal to zero the candidates become duplicated half-projectors with errors 1/4, so a Bell-level reinterpretation does not rescue the fixed operator.",
+            "prior_witness_id": "",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "bell_level_rescue"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "For selected non-last axes, current_fixed_x flips the last spectator taste bit rather than the logical bit, giving zero encoded restriction and leakage sqrt(2)."
+          ],
+          "evidence_locator": "the pair-hop flips the last taste bit instead of the selected logical bit;",
+          "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "For selected non-last axes, current_fixed_x flips the last spectator taste bit rather than the logical bit, giving zero encoded restriction and leakage sqrt(2)."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "This is a finite algebraic audit.",
+          "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The Bell resource, Bell measurement, and correction gates are ideal logical objects.",
+              "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+              "phrase": "ideal logical objects"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Each test uses the same encoding for Alice's input register",
+              "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+              "phrase": "same encoding"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "T5 supplies the algebraic necessary-and-sufficient condition",
+              "evidence_path": "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
+              "phrase": "RALA T5 authority"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source, runner, helper, authority, and premise surfaces were checked for hidden apparatus, preparation, noise, sector, normalization, record-channel, and cross-encoding assumptions.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "the relative residual is `1.000`.",
+          "evidence_path": "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
+          "none_found_reason": "Every N1 route was tested directly in the restricted packet, so no RULED OUT BY PRIOR witness is required.",
+          "scan_scope": "The fixed-X residual in the source and runner was compared with the RALA T5 residual; no N1 route was ruled out solely by a prior witness.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Larger even lattices are not claimed by this run.",
+          "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative language was checked against its stated dimension, side-length, cell, spectator, axis, and same-encoding resolutions.",
+          "statements": [
+            {
+              "evidence_locator": "The current fixed-cell encoding fails in this bounded sense:",
+              "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+              "phrase": "fails in this bounded sense",
+              "tested_resolutions": [
+                "dimensions 1, 2, and 3",
+                "side lengths 2, 4, 6, and 8",
+                "every surveyed cell",
+                "every spectator assignment",
+                "every selected logical axis"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "does not produce a logical `X`;",
+              "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+              "phrase": "does not produce a logical X",
+              "tested_resolutions": [
+                "non-last logical axes in dimensions 2 and 3 on the complete finite survey"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no taste-axis operator targeting or logical/environment factorization.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms do not select the pair-hop operator or convert a spectator flip into a logical-axis flip.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation does not alter the fixed operator's action on the encoded basis.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference has no bearing on a dimensionless finite operator restriction.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Charged-lepton orbit-counting grain is unrelated to taste-qubit operator targeting.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The charged-lepton h-unit readout obligation supplies no logical taste-axis operator.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant readout obligation is in a different sector and cannot change the fixed pair-hop matrix.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+          "none_found_reason": "The index contained seven candidates, all dispositioned above.",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The complete supplied partial-closure index was checked across approved primitives and open obligations; no convention or definition candidate was listed.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest objection is that a legitimate logical X exists for every selected axis, so the observed failures might be artifacts of an unnecessarily fixed operator.",
+          "evidence_locator": "using `I_cells tensor sigma_x` on the selected logical taste axis passes all 1330 surveyed encodings.",
+          "evidence_path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+          "resolution": "The adapted control indeed passes every surveyed encoding, but this confirms the note's narrowed conclusion: the obstruction concerns current_fixed_x, and replacing it with a different axis-targeted operator changes the audited operator set.",
+          "resolved": true,
+          "route_id": "axis_adapted_control"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_encoding_portability_note:previous_audit:0",
+              "evidence_locator": "teleportation_encoding_portability_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Prior audit identified the same finite fixed-X operator-targeting gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_encoding_portability_note:previous_audit:1",
+              "evidence_locator": "teleportation_encoding_portability_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Prior audit preserved the same-encoding and finite-surface boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_encoding_portability_note:previous_audit:2",
+              "evidence_locator": "teleportation_encoding_portability_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Prior audit classified the 860 expected failures as operator-targeting evidence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_encoding_portability_note:previous_audit:3",
+              "evidence_locator": "teleportation_encoding_portability_note:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Prior audit used retained RALA T5 support for the same condition.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_encoding_portability_note:previous_audit:4",
+              "evidence_locator": "teleportation_encoding_portability_note:previous_audit:4",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Prior audit checked direct finite operator construction and helper bookkeeping.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_retained_axis_operator_algebra_closure_note:previous_audit:0",
+              "evidence_locator": "teleportation_retained_axis_operator_algebra_closure_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "The authority audit confirms the finite RALA membership theorem used here.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Charged-lepton occupancy-counting obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Charged-lepton readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Quark determinant cross-sector readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Newtonian architecture portability boundary, not taste encoding.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Coupling and packet-memory audit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Atomic and temporal-axis audit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Cross-lane flavor, Hubble, and plaquette no-go registry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Electroweak coupling normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Plaquette beta coefficient evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Lensing and Born-scattering observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Carrier antisymmetry and registry-exhaustion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Charged-lepton selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Emergent-metric causal bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Radial-family replay and basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Local Wilson normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Flavor tracial-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Free-Dirac analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Gauge-plaquette environment-character computation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Gauge isotropy and temporal-generator walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Gravity dispersion and Fermat bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Weak-field gravity sign boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Absolute-scale Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Hypercharge normalization and species-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Cross-lane mass, scale, and coupling residuals.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Atomic-scale and threshold-transport walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Quark-mass selector and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Lattice Green-function uniform-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Lensing centroid observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Finite-path lensing geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Static-source magnitude readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Temporal-source magnitude boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Mesoscopic surrogate selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Physical-time interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Neutrino mass-construction no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Neutrino cosmology scale residuals.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Finite Newtonian distance-law replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Finite recompute and basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Coupling authority and physical-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Packet-memory and decoherence bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Picard-Fuchs finite-degree boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Planck Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Planck rank-four carrier-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Plaquette bootstrap and mean-field boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Plaquette diagnostic interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Post-record selector-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Theta and charged-lepton registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Single-clock locality and axis-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Finite Fisher tangent and source semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Staggered kinetic-law selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "SU(3) cube quotient-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Acceptance-suite documentation synchronization issue rather than an operator obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Three-family finite-distance scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Theta mass-orientation readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Theta gauge-sector action/readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Positive theta carrier and insertion gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Theta phase-insertion selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Theta defect-closure selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Charged-lepton determinant-power horn selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Record nonsupply of charged-lepton orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Record-formation nonsupply of R-eta readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Finite-dimensional artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Record-only mass-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Hard-coded finite-table matching boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Wide-lattice continuum and exponent boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "mechanism": "Yukawa physical-readout renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/teleportation_encoding_portability_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "66f4d8156670c7e4f098e2e06710aee61bfcf9b0a5748341f8b44a4f2479e8a5",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "teleportation_encoding_portability_note:previous_audit:0",
+                "teleportation_encoding_portability_note:previous_audit:1",
+                "teleportation_encoding_portability_note:previous_audit:2",
+                "teleportation_encoding_portability_note:previous_audit:3",
+                "teleportation_encoding_portability_note:previous_audit:4",
+                "teleportation_retained_axis_operator_algebra_closure_note:previous_audit:0"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/teleportation_encoding_portability_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "teleportation_encoding_portability_note:previous_audit:0",
+                "teleportation_encoding_portability_note:previous_audit:1",
+                "teleportation_encoding_portability_note:previous_audit:2",
+                "teleportation_encoding_portability_note:previous_audit:3",
+                "teleportation_encoding_portability_note:previous_audit:4",
+                "teleportation_retained_axis_operator_algebra_closure_note:previous_audit:0"
+              ]
+            },
+            "audit-packet://partial-closure-index/teleportation_encoding_portability_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "eaf19db25be6e12e12b886e8f609fd3e1c32aca828b77b00a31f3e1b30793c91",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/teleportation_encoding_portability_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "86c7aa97d3b29ba42041f7a08d361f5739976ff0b572672ce1b4638cd6e47de7",
+              "effective_status": null,
+              "path": "docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Each test uses the same encoding for Alice's input register",
+                "Larger even lattices are not claimed by this run.",
+                "P_encoded X_fixed P_encoded = 0",
+                "The Bell resource, Bell measurement, and correction gates are ideal logical objects.",
+                "The axis-adapted control shows that this is an operator-targeting failure, not",
+                "The current fixed-cell encoding fails in this bounded sense:",
+                "This is a finite algebraic audit.",
+                "does not produce a logical `X`;",
+                "the pair-hop flips the last taste bit instead of the selected logical bit;",
+                "using `I_cells tensor sigma_x` on the selected logical taste axis passes all 1330 surveyed encodings.",
+                "when the logical taste axis is the last axis;",
+                "worst idempotence and orthogonality errors `2.500e-01`."
+              ]
+            },
+            "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "3f6937fc0cb6cd567e102614a626b623da37f397225b11bd89ee44d21659df3c",
+              "effective_status": "retained_bounded",
+              "path": "docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "T5 supplies the algebraic necessary-and-sufficient condition",
+                "X_fixed in RALA(a) iff a = d - 1.",
+                "the relative residual is `1.000`."
+              ]
+            },
+            "scripts/frontier_teleportation_encoding_portability.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "4e1e020a909710fd67efcd73211eb105a2fbcce32572be3e47f42f9f5a19b3ed",
+              "effective_status": null,
+              "path": "scripts/frontier_teleportation_encoding_portability.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "current_pair_hop_x_flips_last_axis_not_logical_axis"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing result is an exact finite-dimensional operator identity, not a hard-coded target or imported physical bridge. The runner constructs the site operators, encoded subspaces, leakage diagnostics, Bell projectors, and teleportation trials, yielding 470/1330 fixed-X acceptances, the expected 860 non-last-axis obstructions, and 1330/1330 adapted-X acceptances. The retained-bounded RALA authority supplies the same necessary-and-sufficient condition, while the note consistently excludes physical apparatus, preparation dynamics, noise, cross-encoding maps, and matter transport."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_encoding_portability.py",
+  "title": "Taste-Qubit Encoding Portability Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

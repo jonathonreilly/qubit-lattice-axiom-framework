@@ -1,0 +1,1362 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (non-reduction theorem on the supplied",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7d8f4cd9cad37e0b783902a357acfb0569e12efcfc91e22aa81cc33dca131e47",
+  "note_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.308977+00:00",
+      "audit_date": "2026-06-10T05:28:03.868461+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.587,
+        "runner_hash": "04a0fa3a15d0782625ac5dac75765e6375281819368f85ee0a8f0dc944b6c7c1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-052509-e797411dd6-four_hats_frame_connection_g",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stabilizer calculation closes by diagonalizing in the supplied frame: determinant-one diagonal phases form T^2, and the off-diagonal su(3) complement has dimension six. For regular V, eigenphase shifts by 2*pi integer triples with zero sum give distinct traceless anti-Hermitian logarithms at unbounded Frobenius distance.",
+      "claim_scope": "Finite-dimensional algebraic non-reduction for the supplied C^3 carrier and displayed frame -> connection -> generator chain; no realized frame, connection, generator, or dynamics is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:28:03.868461+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For a complete frame on C^3 the SU(3) stabilizer is T^2 of dimension 2, leaving six transverse su(3) connection directions, and a regular SU(3) connection has an unbounded integer lattice of traceless anti-Hermitian logarithms, so neither arrow determines its downstream object.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the scope boundary: Record no-go citations are not supplied in this packet and should remain non-load-bearing unless the audited claim is widened to Record endpoint closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The displayed quantitative identities check independently: dim su(3)=8, dim T^2=2, |<e_i|V_diag|e_j>|^2=delta_ij, and the logarithm branches form an unbounded integer lattice subject to zero trace. The runner mostly implements these finite-dimensional algebra checks rather than importing empirical comparators. Its hard-coded Record-endpoint status check is treated as non-load-bearing for this scoped theorem, so the clean verdict applies only to the displayed non-reduction chain on the supplied C^3 carrier, not to any broader claim that future dynamics cannot jointly supply the objects."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:01.989317+00:00",
+      "audit_date": "2026-07-12T09:09:12.884063+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.807,
+        "runner_hash": "04a0fa3a15d0782625ac5dac75765e6375281819368f85ee0a8f0dc944b6c7c1",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00247-four_hats_frame_connection_g",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "For a fixed frame, the runner computes the two-dimensional stabilizer but incorrectly calls its six-dimensional complement the residual connection freedom; absent a specified frame-to-connection map, the frame leaves the entire eight-dimensional SU(3) connection choice open. The further identification of campaign hats and Record endpoints is imported or hard-coded without the cited one-hop authorities.",
+      "claim_scope": "The supplied packet supports non-uniqueness of su(3) logarithms of a regular SU(3) connection and identifies the T^2 stabilizer of a complete frame, but does not establish the stated six-dimensional connection ambiguity or the campaign-level four-hat stratification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T09:09:12.884063+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:c9cba4bc4057",
+      "load_bearing_step": "Arrow 1 not onto AND arrow 2 not onto implies that the frame-to-connection-to-generator chain has two genuine gaps and therefore the four hats occupy distinct chain positions.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Compared the computed T^2 stabilizer with the set of all connections compatible with a supplied frame.",
+            "disposition": "OPEN",
+            "evidence_locator": "A record frame therefore leaves a `6`-dimensional family of `su(3)` connection directions undetermined",
+            "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A complete frame might determine a connection through its stabilizer or orbit geometry.",
+            "outcome": "The calculation determines the stabilizer, not a frame-to-connection map; the stated six-dimensional residual is therefore unsupported.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "frame_selects_connection"
+          },
+          {
+            "attempt": "Evaluated S_ij for a connection diagonal in the supplied frame.",
+            "disposition": "CLOSED",
+            "evidence_locator": "predictability-sieve unistochastic matrix `S_ij = |\u27e8e_i|V|e_j\u27e9|^2 = I3`",
+            "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A stabilizer connection might still produce a nontrivial unistochastic mixing matrix.",
+            "outcome": "This route is closed because the displayed calculation gives S = I3.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "torus_depolarizes"
+          },
+          {
+            "attempt": "Constructed integer phase shifts whose sum is zero and checked that each exponentiates to the same V.",
+            "disposition": "CLOSED",
+            "evidence_locator": "def log_branch(n_shift):",
+            "evidence_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Traceless anti-Hermiticity might select a unique logarithm branch for a regular connection.",
+            "outcome": "This route is closed; infinitely many zero-sum integer shifts remain available.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "unique_logarithm"
+          },
+          {
+            "attempt": "Checked the source note's own steelman and whether the runner excludes joint dynamical selection.",
+            "disposition": "OPEN",
+            "evidence_locator": "a future retained color dynamics could select a pointer frame, connection, and generator jointly",
+            "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A future retained color dynamics could jointly select the frame, connection, and generator.",
+            "outcome": "The source explicitly leaves this route open and the runner contains no dynamics capable of testing it.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "joint_dynamics"
+          },
+          {
+            "attempt": "Compared the current supplied Record wording with the claimed frame endpoint.",
+            "disposition": "CLOSED",
+            "evidence_locator": "context selection, measurement basis selection, Born weights, probability rules",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The Record axiom might supply a pointer-frame or context-selection rule.",
+            "outcome": "The current axiom explicitly withholds context and measurement-basis selection, but the runner's cited retained no-go authority is absent from the packet.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "record_supplies_frame"
+          },
+          {
+            "attempt": "Compared the Record axiom's content with the required Hamiltonian or transfer-generator selection.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Record permanence or formation might determine a continuous-time generator.",
+            "outcome": "The axiom explicitly supplies no Hamiltonian, transfer operator, or dynamics, but the claimed retained embeddability boundary is not included.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "record_supplies_generator"
+          },
+          {
+            "attempt": "Inspected whether the runner derives ADM-1, hat 4, ADM-2, and R1 from mathematical definitions.",
+            "disposition": "OPEN",
+            "evidence_locator": "The four hats sit at distinct chain positions",
+            "evidence_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The campaign labels might be only a relabeling of the three mathematical objects rather than independently established positions.",
+            "outcome": "The runner assumes these assignments in comments and terminal booleans; no supplied authority establishes them.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "hat_mapping"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "frame-to-connection selection",
+            "connection-to-generator branch selection",
+            "campaign-hat-to-object identification",
+            "Record endpoint nonsupply"
+          ],
+          "evidence_locator": "supplied frame, supplied connection, generator branch choice, and retained Record no-go boundaries are distinct",
+          "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "frame-to-connection selection",
+              "left_closes_right": false,
+              "right": "connection-to-generator branch selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "frame-to-connection selection",
+              "left_closes_right": false,
+              "right": "campaign-hat-to-object identification",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "frame-to-connection selection",
+              "left_closes_right": false,
+              "right": "Record endpoint nonsupply",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "connection-to-generator branch selection",
+              "left_closes_right": false,
+              "right": "campaign-hat-to-object identification",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "connection-to-generator branch selection",
+              "left_closes_right": false,
+              "right": "Record endpoint nonsupply",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "campaign-hat-to-object identification",
+              "left_closes_right": false,
+              "right": "Record endpoint nonsupply",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "The claimed six-dimensional arrow-1 residual is not the full connection-selection wall."
+          ],
+          "walls": [
+            "frame-to-connection selection",
+            "connection-to-generator branch selection",
+            "campaign-hat-to-object identification",
+            "Record endpoint nonsupply"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The supplied carrier, supplied `{P_i}`, regular connection `V`, composite-link chain",
+          "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "supplied `C^3` carrier",
+              "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+              "phrase": "supplied `C^3` carrier",
+              "promoted_wall": "frame-to-connection selection"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "composite-link construction that introduces the connection `V`",
+              "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+              "phrase": "composite-link construction",
+              "promoted_wall": "campaign-hat-to-object identification"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "retained Record no-go boundaries are named",
+              "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+              "phrase": "record no-go boundaries",
+              "promoted_wall": "Record endpoint nonsupply"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Supplied carrier, frame, regular connection, composite-link chain, campaign-label assignments, and Record no-go imports.",
+          "unresolved": [
+            "The retained Record no-go notes named by the source are not supplied as one-hop authorities."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "runner re-derives the decisive stabilizer, unistochastic, and logarithm facts",
+          "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+          "none_found_reason": "No prior-witness route was used because the packet supplies no retained-grade one-hop scientific authorities.",
+          "scan_scope": "No N1 route was marked RULED OUT BY PRIOR; direct packet calculations and axiom text were used instead.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "\"does not collapse\" is scoped to the displayed",
+          "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+          "none_found_reason": "",
+          "scan_scope": "Claims that each arrow has an exact residual, the hats are stratified, and the hats do not collapse.",
+          "statements": [
+            {
+              "evidence_locator": "the four hats occupy distinct chain positions and do not collapse onto one missing input",
+              "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+              "phrase": "the four hats occupy distinct chain positions and do not collapse onto one missing input",
+              "tested_resolutions": [
+                "frame stabilizer dimension",
+                "diagonal unistochastic matrix",
+                "multiple logarithm branches"
+              ],
+              "untested_resolutions": [
+                "joint dynamical selection",
+                "campaign-hat-to-object identification",
+                "a defined frame-to-connection map"
+              ]
+            },
+            {
+              "evidence_locator": "there is an EXACT non-trivial gap at each arrow",
+              "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+              "phrase": "there is an EXACT non-trivial gap at each arrow",
+              "tested_resolutions": [
+                "T^2 frame stabilizer",
+                "regular-V logarithm ambiguity"
+              ],
+              "untested_resolutions": [
+                "correct dimension of the connection-selection ambiguity"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The broad stratification rhetoric exceeds the tested algebraic resolutions."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic graining isotropy supplies no color frame, connection, logarithm branch, or campaign-hat mapping.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly withhold Hamiltonian, context-selection, and dynamics content.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state reference supplies no state content or color-object selector.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference is unrelated to the dimensionless selection and branch walls.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Charged-lepton occupancy counting does not supply any object in the color frame-connection-generator chain.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The charged-lepton eta readout obligation is off the scoped color chain.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The cross-sector determinant-readout obligation does not select the local frame, link connection, or logarithm branch.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives and open-gate candidates supplied by the partial-closure index.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A retained color dynamics could select the frame, connection, and generator jointly, making the campaign hats consequences of one dynamical input despite the non-uniqueness of each downstream object from an upstream object alone.",
+          "evidence_locator": "a future retained color dynamics could select a pointer frame, connection, and generator jointly",
+          "evidence_path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+          "resolution": "This steelman succeeds against the broad four-hat non-collapse rhetoric and is explicitly left open by the source; it does not refute the narrower statement that an upstream object alone fails to select a unique downstream object.",
+          "resolved": true,
+          "route_id": "joint_dynamics"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09:previous_audit:0",
+              "evidence_locator": "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Prior clean audit narrowed the result to finite-dimensional algebra and treated Record status as non-load-bearing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated charged-lepton counting wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated charged-lepton readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated determinant-channel wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated inherited foundational no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated archived-evidence and Newton-closure boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated coupling-source repair boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated atomic and temporal-axis cautions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Broad unrelated inherited lane no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated coupling-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated lensing-observable walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Registry-exhaustiveness caution analogous to future primitive selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated spatial-dimension boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated Lorentz-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated metric-reconstruction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated radial-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated Wilson-environment closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated flavor-trace scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Gauge-sector warning against extending local data to global dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Gauge-sector warning that algebraic routes do not select dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated gravity-dispersion bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated gravity-sign boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated absolute-scale and carrier-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous distinction between invariant structure and unselected physical identification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Broad unrelated campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated atomic-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated quark readout and selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite-to-asymptotic inference boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated lensing-observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite-path geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated source-readout selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated temporal-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Empty unrelated ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated planning-versus-theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated time-tick boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated neutrino construction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated neutrino-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite-lattice scope warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite replay scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated coupling-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite-memory inference boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite-window inference boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous failure of dimension or symmetry data to select a physical carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous carrier-selection versus symmetry-data wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated gauge bootstrap boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly analogous warning that Record does not derive selector data.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous separation of Record registrability from physical selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly relevant warning that a transfer object does not automatically select a local generator.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous distinction between algebraic basis and physical response basis.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly relevant countermodel showing minimal axioms do not select kinetic dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Gauge-sector warning against overreading finite encoders.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated partial-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous warning that Record does not supply determinant-channel selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly analogous warning that Record and Admissibility do not supply gauge action or selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Gauge-sector distinction between supplied carrier and physical selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Gauge-sector selection-versus-reduction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly analogous statement that minimal axioms and Record do not derive gauge dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated determinant-power selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly analogous Record nonsupply of downstream orbit structure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Directly analogous distinction between Record formation and a dynamical rate law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated artifact-visibility result.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous countermodel showing Record alone does not determine downstream readout data.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite numerical-packet boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Unrelated finite-lattice scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "mechanism": "Analogous warning that an asserted physical identification is not derived by coefficient checks.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "frame-to-connection selection",
+          "connection-to-generator branch selection",
+          "campaign-hat-to-object identification",
+          "Record endpoint nonsupply"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09": {
+              "accepted_premise_type": null,
+              "content_sha256": "09445153591a53cd917f09acb71df68f0e8093c712c8441d944690838689ad10",
+              "cross_cycle_candidate_ids": [
+                "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09": {
+              "accepted_premise_type": null,
+              "content_sha256": "84cefe6d788b1f5f37c8eb895d857fa840e2fa4b2a13df4baba6321cd98e2cb3",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "7d8f4cd9cad37e0b783902a357acfb0569e12efcfc91e22aa81cc33dca131e47",
+              "effective_status": null,
+              "path": "docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "\"does not collapse\" is scoped to the displayed",
+                "A record frame therefore leaves a `6`-dimensional family of `su(3)` connection directions undetermined",
+                "The supplied carrier, supplied `{P_i}`, regular connection `V`, composite-link chain",
+                "a future retained color dynamics could select a pointer frame, connection, and generator jointly",
+                "composite-link construction that introduces the connection `V`",
+                "predictability-sieve unistochastic matrix `S_ij = |\u27e8e_i|V|e_j\u27e9|^2 = I3`",
+                "retained Record no-go boundaries are named",
+                "runner re-derives the decisive stabilizer, unistochastic, and logarithm facts",
+                "supplied `C^3` carrier",
+                "supplied frame, supplied connection, generator branch choice, and retained Record no-go boundaries are distinct",
+                "the four hats occupy distinct chain positions and do not collapse onto one missing input",
+                "there is an EXACT non-trivial gap at each arrow"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not choose a Hamiltonian or transfer operator",
+                "context selection, measurement basis selection, Born weights, probability rules"
+              ]
+            },
+            "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "04a0fa3a15d0782625ac5dac75765e6375281819368f85ee0a8f0dc944b6c7c1",
+              "effective_status": null,
+              "path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "The four hats sit at distinct chain positions",
+                "def log_branch(n_shift):"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 has OPEN frame-selection, joint-dynamics, and campaign-hat-mapping routes.",
+          "N2's arrow-1 wall is misstated as six-dimensional rather than distinguishing the frame orbit from the full connection-selection ambiguity.",
+          "N3 finds unsupplied campaign and retained-Record authorities.",
+          "N5 finds untested resolutions behind the broad non-collapse rhetoric."
+        ],
+        "narrowed_claim_scope": "The supplied packet supports non-uniqueness of su(3) logarithms of a regular SU(3) connection and identifies the T^2 stabilizer of a complete frame, but does not establish the stated six-dimensional connection ambiguity or the campaign-level four-hat stratification.",
+        "next_route": {
+          "reason_untested": "The packet never defines the frame-to-connection map whose image or fibers would make the arrow-1 surjectivity and residual-dimension statements mathematically well-posed.",
+          "route_id": "frame_selects_connection"
+        },
+        "prior_claim_scope": "Finite-dimensional algebraic non-reduction for the supplied C^3 carrier and displayed frame -> connection -> generator chain; no realized frame, connection, generator, or dynamics is audited.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "Re-check after correcting arrow 1 to distinguish stabilizer dimension, frame-orbit dimension, and the full connection-selection ambiguity, and after supplying the retained Record and campaign-mapping authorities.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The T^2 stabilizer calculation and logarithm-branch witnesses are valid finite-dimensional algebra, although the finite branch list does not itself prove unboundedness without the accompanying integer-family argument. The arrow-1 interpretation conflates the six-dimensional orbit of frames with connection freedom left by a fixed frame; no frame-to-connection map is defined whose surjectivity could be tested. The runner then hard-codes the Record endpoint premises and hat assignments, so the advertised composition does not follow from the restricted packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_four_hats_frame_connection_generator_stratification_2026_06_09.py",
+  "title": "Four-hats stratification: the gauge-link / color-einselection open inputs sit at distinct positions of the frame \u2192 connection \u2192 generator chain (non-reduction, narrow theorem)",
+  "transitive_descendants": 8,
+  "verdict_rationale": null
+}

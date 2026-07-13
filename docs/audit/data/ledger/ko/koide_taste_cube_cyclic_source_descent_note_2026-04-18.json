@@ -1,0 +1,398 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "baec8087e9ec6c348fc195c632a762fd986037f0c6bdf85d8471318a22f39026",
+  "note_path": "docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106147+00:00",
+      "archived_for_note_hash": "9e3b7fd49602986c64d3153b79bcd431c790dbc1c1f390727d729d2cc5d1a224",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.889462+00:00",
+      "archived_for_note_hash": "790e6e03a9b1096ecb259a780f8e827a15f881b22cda89cb26e2fcc90fd921b9",
+      "audit_date": "2026-05-01T03:20:41.969829+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:2026-05-01-koide_taste_cube_cyclic_source_descent_note_2026-04-18",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted-input proof closes as a support theorem: the runner checks the descent identity exactly on all 64 full-cube matrix units and verifies the canonical orbit channels and Schur-compatible response factorization into r0,r1,r2.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Because the T1 projector commutes with the full taste-cube C3[111] cycle, P1 A8(X) P1 = A3(P1 X P1), so full-cube averaging and T1 compression land in the same cyclic B0,B1,B2 response bundle.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The note's claim is bounded to a carrier-reduction/support theorem, not a Koide value-selection theorem. Within that boundary, the algebra closes: T1 is invariant under the full C3 cycle, the full-cube average descends exactly to the T1 cyclic projector on every matrix-unit source, canonical full-cube orbit sources reduce to B0/B1/B2, and Schur-compatible responses factor through the same three response coordinates. Residual risk is only downstream: the note still does not derive the microscopic full-cube source law, the Koide selector, or the mass readout primitive."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.750840+00:00",
+      "archived_for_note_hash": "b0d3526dcad7f9e4384e2fd8e0fb7ced2a01ba790495865b5f38e0cc0595ee89",
+      "audit_date": "2026-05-11T14:38:56.335465+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.228,
+        "runner_hash": "86276c4e56ed7bda73cb8b91866c6a9583d2bf76eff9cb050e1baf73c24ec008",
+        "transitive_descendants": 423
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite averaging and Schur algebra closes locally, and the runner reports PASS=15 FAIL=0. The source note's physical taste-cube and charged-lepton interpretation explicitly depends on the staggered-Dirac realization open gate, which is not wired as a retained direct dependency.",
+      "claim_scope": "Exact finite C8-to-T1 C3 averaging/compression identity and Schur-compatible cyclic response factorization, bounded to the stipulated taste-cube carrier and reduction class and excluding physical charged-lepton closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T14:38:56.335465+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because T_1 is invariant under the full C_3[111] cycle, P_1 A_8(X) P_1 equals A_3(P_1 X P_1), so full-cube averaging and compression descend exactly to the same T_1 cyclic response bundle span_R{B0,B1,B2}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the stated staggered-Dirac realization gate as a direct dependency, and split or separately wire any retained taste-cube/BZ-corner bridge needed for the physical carrier reading.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: the exact C8 averaging/compression identity is proved, but the note frames the result as a physical-lattice Koide charged-lepton source descent while explicitly importing the staggered-Dirac realization target. Why this blocks: without that gate, the audit packet only establishes algebra on a stipulated C8 carrier and Schur reduction, not that this is the retained physical charged-lepton source bank. Repair target: wire and close the staggered-Dirac realization dependency, or split a pure finite C8 representation theorem from the physical application note. Claim boundary until fixed: exact C3 averaging/compression and response factorization for a stipulated C8 taste-cube model only."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:11.604115+00:00",
+      "archived_for_note_hash": "726b39d028847feee94a8b5633de198e412109b281929d9007e742414541b81f",
+      "audit_date": "2026-06-11T14:48:22.968958+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "86276c4e56ed7bda73cb8b91866c6a9583d2bf76eff9cb050e1baf73c24ec008",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-144520-e900c5e632-koide_taste_cube_cyclic_sour",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The descent identity follows by commuting P1 through powers of U, and Schur covariance gives C(A-BD^{-1}B\u2020)=(A-BD^{-1}B\u2020)C. The coefficient normalization is consistent with Re Tr(B0^2)=3 and Re Tr(B1^2)=Re Tr(B2^2)=6, so the r0/3 and r1,r2/6 reconstruction formulas close on the stated Hermitian cyclic basis.",
+      "claim_scope": "Given the taste-cube C3 action, the T1 charged-sector projector, and a positive U-covariant Schur-compatible parent, Hermitian full-cube source responses reduce and factor through the cyclic T1 basis B0,B1,B2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:48:22.968958+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because T1 and its complement are U-invariant, P1 A8(X) P1 = A3(P1 X P1), and for a U-covariant block parent M the Schur complement S(M)=A-BD^{-1}B\u2020 commutes with the restricted 3-cycle C.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md reaches retained-grade; in that pass, keep the claim scoped to Hermitian sources or repair the arbitrary-source wording.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner source genuinely constructs the permutation operators, projectors, cyclic basis, orbit channels, and Schur complements; it is not just printing hard-coded PASS lines. Independent algebra agrees with the exact descent identity, canonical channel reductions, Schur commutation, and 1/3,1/6 coefficient normalizations. However the sole cited authority, docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, is explicitly unaudited/bounded and carries residual premises, so the rubric prevents audited_clean. The supported response-factorization scope is Hermitian sources; arbitrary non-Hermitian sources land in the complex circulant span rather than the real Hermitian span."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:28.960767+00:00",
+      "archived_for_note_hash": "7cfca78a6a00adb9c978a528b4832225e7f7d91523020594b7c48c9853bb5069",
+      "audit_date": "2026-06-13T01:01:57.570435+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "d43c26a81e501387c7a5267d17b0cf43b4b0a6572a329213715400d7608e4c20",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-005939-362bb1bd91-koide_taste_cube_cyclic_sour",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cyclic-average descent is an exact group-averaging/intertwiner identity, and the Schur complement inherits C-covariance by block conjugation. Independently checking the cyclic commutant gives the stated basis and normalizations Tr(B0^2)=3, Tr(B1^2)=Tr(B2^2)=6, so the response factorization follows.",
+      "claim_scope": "Conditional on the full 8-corner taste-cube/T1 charged-sector setup, exact C3[111] averaging and Schur-compatible reduction compress Hermitian full-cube sources to span_R{B0,B1,B2} and responses to (r0,r1,r2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T01:01:57.570435+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because P1 commutes with U and U|_{T1}=C, P1 A8(X) P1 = A3(P1 X P1), and a U-covariant Schur complement on T1 commutes with C.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: obtain a retained-grade audit status for docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, then re-audit this row for clean eligibility.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The displayed algebra closes on its own terms, including the factors 1/3 in the averages, the factor 3 in the orbit channels, and the 1/3, 1/6, 1/6 trace-coordinate normalization. The runner source performs genuine finite linear-algebra checks rather than printing constants, although the universal Schur statement rests on the block-covariance proof, not the random numeric tests alone. The cited staggered-Dirac realization authority is marked effective_status: unaudited and the source note makes the physical charged-lepton interpretation dependent on that gate, so the row is not eligible for audited_clean."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:53.794699+00:00",
+      "archived_for_note_hash": "c6a0d3f02e16b348ac2020837cb08a2edc35f6fd280e09504c88de5d8488e5a0",
+      "audit_date": "2026-06-14T01:52:20.636190+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "12ecd413fa7919443e5f723a1487209676680d86de90002ae7a032d3ad319f5b",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-015026-275a0339cf-koide_taste_cube_cyclic_sour",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The internal matrix-algebra chain closes: the projector-average identity, orbit-channel reductions, cyclic-basis normalizations, and Schur covariance all follow from the stated finite-dimensional setup. The physical interpretation remains conditional on the cited staggered-Dirac realization authority.",
+      "claim_scope": "Finite-dimensional C3 taste-cube averaging and Schur-compatible T1 reduction descend to the same three Hermitian cyclic response channels B0,B1,B2, conditional on the physical staggered-Dirac carrier parent.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T01:52:20.636190+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because T1 is invariant under U, P1 A8(X) P1 = A3(P1 X P1), and a U-covariant Schur-compatible parent has S(M) commuting with C, so the charged-sector response lies in span_R{B0,B1,B2}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or re-audit docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, then re-audit this row for clean bounded closure.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the stated C8/T1/C3 data, not a renaming or tuned numerical match. An independent normalization check gives Gram diag(3,6,6) for B0,B1,B2 and confirms the stated 1/3, 1/6, factor-3 orbit-channel, and sign conventions. However, the one-hop cited authority docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md is explicitly marked unaudited/bounded and carries open residuals, so the row cannot receive audited_clean under the dependency rule."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:22.319565+00:00",
+      "archived_for_note_hash": "76aac0ec715d89bae6be30135284508521c1dd61b22330d8b64d451ab825448a",
+      "audit_date": "2026-06-16T01:41:35.372586+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.17,
+        "runner_hash": "01ed6f3189c0015169b45d2749d31bc9ff451c05e0784472abcc70360a6ca08f",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-013840-cac5a7f148-koide_taste_cube_cyclic_sour",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The group-average identity follows from T_1 and W being invariant under U, so P_1 commutes with U and the compressed conjugation action is C. For a U-covariant block parent with invertible D, block covariance gives C(A-BD^{-1}B\u2020)C^{-1}=A-BD^{-1}B\u2020, and the Hermitian C-commutant has the stated real basis with trace norms 3,6,6.",
+      "claim_scope": "Finite C^8 taste-cube descent under the specified C_3[111] cycle: compression of the full average to T_1 equals T_1 cyclic averaging, the canonical orbit channels reduce to B0,B1,B2, and U-covariant Schur-compatible Hermitian responses factor through (r0,r1,r2); no physical lepton readout, microscopic source law, or Koide selector is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:41:35.372586+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because T_1 is invariant under U, P_1 commutes with U and P_1 A_8(X) P_1 = A_3(P_1 X P_1) for every full-cube operator X; Schur covariance then keeps S(M) in the C-commutant.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the Schur-complement domain convention: the clean statement assumes the displayed D^{-1} exists.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing mathematics is finite-dimensional algebra over structures defined in the packet, not a physical bridge or a fitted comparator. Independent orbit/commutant checks confirm the displayed signs and normalizations: Q0,Qf,Qb compress to I,C,C^2, B2=i(C-C^2) is Hermitian, and the reconstruction coefficients r0/3,r1/6,r2/6 follow from real trace norms 3,6,6. The runner source reconstructs the cycle, projector, matrix units, orbit channels, and Schur/factorization tests rather than importing another note; its random numeric Schur checks are illustrative, while the general step is supplied by the block-covariance argument. No cited authority or approved primitive is load-bearing, and the note explicitly scopes out the microscopic source law, selector, and physical readout."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.157305+00:00",
+      "audit_date": "2026-06-21T15:21:36.062921+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.087,
+        "runner_hash": "39050828c5a799c046ed6608f2cccb73390990984c723d1db949a19eeac1ac8a",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_taste_cube_cyclic_source_descent_note_2026-04-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "All load-bearing objects are defined inside the packet: the finite basis, cycle U, projector P1, T1 cycle C, averaging maps, cyclic basis, and Schur complement. The descent identity follows by finite matrix algebra, and the Schur-compatible response factorization follows from block covariance and cyclic-basis orthogonality.",
+      "claim_scope": "Exact finite C^8 taste-cube statement that C3[111] averaging, T1 compression, and Schur-compatible charged-sector reduction land in the same real cyclic Hermitian span {B0,B1,B2}, excluding the physical charged-lepton readout bridge and Koide selector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:21:36.062921+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Because T1 is invariant under U, P1 commutes with U and U|T1=C, giving P1 A8(X) P1 = A3(P1 X P1); the Schur block covariance then gives C S(M)=S(M) C.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor can spot-check the Schur-complement positive-definite/invertible-D convention; the physical readout and Koide selector are explicitly out of scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The central descent is a genuine algebraic identity over explicitly defined finite matrices, not a physical bridge or numerical fit. The runner source constructs the cycle, projector, matrix units, orbit channels, and Schur samples directly, with no imported contested value or external comparator; the exact matrix-unit checks substantiate the averaging/compression identity. The physical charged-lepton carrier/readout interpretation, microscopic source law, selector law, and mass readout are explicitly outside the audited scope, so they do not block this bounded finite theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_taste_cube_cyclic_source_descent.py",
+  "title": "Koide Taste-Cube Cyclic-Source Descent Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

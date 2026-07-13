@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
+    "cpt_exact_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "13795f52c4ee2381384c0d1d20c1726517baa62fa9eccbc7eb896d848ef909e2",
+  "note_path": "docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.255720+00:00",
+      "audit_date": "2026-05-23T18:16:42.496617+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional finite-lattice free staggered Hamiltonian statement: H=iD is Hermitian, Theta_H=P K preserves H given the stated staggered P spectral-flip identity, and the resulting Theta_H-odd Hamiltonian-sector proxy vanishes in the checked free substrate sectors."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3b47bff12eaeea935b0d787e76d2d8131ac9b3636e2430899cc567c3cfa416a7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T181535Z-d414d33e-hermitian_lift_theta_h_p-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by algebra from the retained-grade C/P-on-D identities in CPT_EXACT_NOTE plus the immediate real-matrix conjugation rule for D and K(i)=-i. The SME-bilinear identification remains explicitly out of scope and is not needed for L1-L4.",
+      "claim_scope": "On the explicit even-periodic staggered lattice construction, \u0398_H=P K is an antiunitary involution preserving H=iD, so the full and direction-resolved \u0398_H-odd Hamiltonian-sector matrices vanish; no SME operator-dictionary claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T18:16:42.496617+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using K(i)=-i, KDK^{-1}=D, and P D P^{-1}=-D, the note computes \u0398_H H \u0398_H^{-1}=-i\u00b7PDP=-i\u00b7(-D)=iD=H.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that future citation-graph parsing keeps the SME bridge as non-load-bearing for this narrowed theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic conjugation identity over retained-grade finite-lattice inputs, not a definition, renaming, external comparator, or tuned numerical match. The runner source builds the framework matrices directly and checks the claimed matrix identities with no helper imports or hidden constants. The cited bridge's open SME-dictionary issue is explicitly excluded from the audited scope, so it does not carry into this bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py",
+  "title": "Hermitian-Lift `\u0398_H = P K` Bounded Narrow Theorem on Framework C, P",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_smooth_gravitational_global_atlas_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_optional_textbook_comparison_note",
+    "universal_qg_smooth_gravitational_local_identification_note",
+    "universal_qg_canonical_textbook_weak_measure_equivalence_note",
+    "universal_gr_positive_background_extension_note",
+    "universal_gr_discrete_global_closure_note",
+    "universal_gr_lorentzian_global_atlas_closure_note"
+  ],
+  "direct_in_degree": 12,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.055,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "65a95cb7fa73b993820c35dbaa82c856baea383eadd9974313a0c09d36a133bc",
+  "note_path": "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_ATLAS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-07T08:10:02.496099+00:00",
+      "archived_for_note_hash": "def890a740f949e487e545a5142c613847c52291997cb490af112a1ff91afb3b",
+      "audit_date": "2026-05-06T13:10:25.789959+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "universal_qg_optional_textbook_comparison_note": null
+        },
+        "dep_claim_type": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "meta"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 13.5,
+        "runner_hash": null,
+        "transitive_descendants": 511
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-06-universal-qg-global-atlas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matching runner passes finite overlap-covariance checks, but the row is wired only to a metadata hub. The runner and source rely on local smooth gravitational identification, canonical weak/Gaussian carrier, and finite-atlas global closure rows that are unaudited or conditional, so the theorem does not close from retained-grade dependencies.",
+      "claim_scope": "Claim that the canonical textbook weak/Gaussian object patches as the same finite-atlas smooth gravitational stationary family on a chosen smooth realization of the project spacetime topology.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-06T13:10:25.789959+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note imports local smooth gravitational identification plus finite-atlas overlap covariance/stationary patching, then identifies the local K_GR(D)-induced weak/Gaussian representatives as one globally patched smooth finite-atlas stationary family.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire scripts/frontier_universal_qg_smooth_gravitational_global_atlas_identification.py as the runner and replace the metadata-only optional comparison dependency with direct retained-grade dependencies for local smooth identification, canonical textbook weak/measure carrier, positive-background K_GR(D), and finite-atlas/discrete global closure.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_LOCAL_IDENTIFICATION_NOTE.md",
+        "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_WEAK_MEASURE_EQUIVALENCE_NOTE.md",
+        "docs/UNIVERSAL_GR_POSITIVE_BACKGROUND_EXTENSION_NOTE.md",
+        "docs/UNIVERSAL_GR_DISCRETE_GLOBAL_CLOSURE_NOTE.md",
+        "docs/UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the smooth finite-atlas gravitational atlas identification is asserted from an already-closed local/global theorem stack, but the ledger wires only universal_qg_optional_textbook_comparison_note, a metadata-only row. The matching runner passes its overlap-covariance/action/stationary/covariance-family checks, yet it explicitly assumes the local smooth identification and finite-atlas global closure are already closed; operational metadata shows those premise rows are unaudited or audited_conditional. Why this blocks: retained status cannot rest on a metadata hub or on non-retained local/global carrier premises. Repair target: wire the actual runner scripts/frontier_universal_qg_smooth_gravitational_global_atlas_identification.py and add direct dependencies for the local smooth gravitational identification, canonical textbook weak-measure carrier, positive-background operator family, and finite-atlas/discrete global closure rows; re-audit after those dependencies are retained-grade. Claim boundary until fixed: the runner supports a finite overlap-covariance diagnostic under stated premises, but this row is not retained proof of a global smooth gravitational atlas identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.977057+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_smooth_gravitational_global_atlas_identification.py",
+  "title": "Universal QG Smooth Gravitational Global Atlas Identification",
+  "transitive_descendants": 132,
+  "verdict_rationale": null
+}

@@ -1,0 +1,413 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "translation_covariance_local_op_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "58a777ba7664edd15d0dd1a2363c695457db0f5bba86a69e4e2c4b327313568f",
+  "note_path": "docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-26T00:44:09.613006+00:00",
+      "archived_for_note_hash": "5f49fd3c06e7f0570e625004584156d594906b9ef068198e750af5416c1b1c67",
+      "audit_date": "2026-05-25T19:33:19.016879+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "577ed60846f34871eaf5606368237a52c9db85bdafa15e30f6be653fe77a5ba0",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193210Z-0e5f45cb-translation_covariance_l-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic conjugation identities close if the regular representation T_a |x;\u03b1\u27e9 = |x+a;\u03b1\u27e9 is admitted. The cited Noether authority supplied here only supports a bounded (2Z)^3 two-step translation/Ward statement on an admitted staggered carrier, not a unitary H_phys regular representation for all a \u2208 Z^3.",
+      "claim_scope": "Algebraic covariance of site projectors, hopping operators, translated local copies, translation-invariant sums, and supports under an assumed regular lattice translation representation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:33:19.016879+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By N1, T_a acts unitarily on H_phys by T_a |x; \u03b1\u27e9 = |x + a; \u03b1\u27e9, so conjugation relabels the site indices of local matrix units.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to retained two-step translations or add a retained bridge theorem supplying the H_phys regular representation for all claimed translations and defining O(x+a) as the translated local copy.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner genuinely computes finite-dimensional permutation-matrix conjugation identities, so it supports the elementary algebra once the translation representation is assumed. It does not verify that the cited N1 authority supplies that representation, and the cited authority explicitly narrows pure translation symmetry to the (2Z)^3 sublattice with bounded admitted carrier inputs. The source note therefore overstates both the upstream dependency and the scope all a \u2208 Z^3."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.089043+00:00",
+      "audit_date": "2026-05-26T02:00:50.574018+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "19291f420841af0e4e918d20c56f39c11e873e92b9b0e12696df1e003a373676",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T020030Z-ce212a1e-translation_covariance_l-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited bridge is explicitly retained-grade and supplies the needed T_a covariance for a_x and a_x^dag on the same tensor-product Fock space. The remaining steps are finite-dimensional linear algebra, product conjugation, and periodic relabeling.",
+      "claim_scope": "Finite periodic tensor-product local M_2(C) operators and finite-support products translate by tensor-factor relabeling under the retained tensor-permutation translation bridge; invariant finite sums commute with T_a.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-26T02:00:50.574018+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Since I, a, a^dag, and n span each local M_2(C) factor, the retained bridge covariance for a_x and a_x^dag plus unitarity gives covariance for n_x and therefore, by linearity, for every single-site matrix M_x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the decoration classification rather than positive_theorem, since the theorem is an immediate algebraic corollary of the single retained bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The source note has one load-bearing retained upstream parent and derives only algebraic consequences of that parent plus the standard local M_2(C) spanning fact. The runner actually constructs finite tensor-product translations and local operators and checks the stated covariance and invariant-sum identities, with one bookkeeping check of the parent ledger status. There are no external comparators, tuned inputs, open identifications, or physics assumptions beyond the retained bridge."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.552603+00:00",
+      "audit_date": "2026-06-05T18:05:24.252860+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic lattice blocks, the tensor-factor permutation translation T_a on H_Lambda = tensor_x C^2_x is unitary, obeys the translation group law, covariantly shifts the defined per-site Pauli ladder operators a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "19291f420841af0e4e918d20c56f39c11e873e92b9b0e12696df1e003a373676",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260605-180335-b75834a06b-translation_covariance_local",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge supplies unitarity and covariance for a_x and a_x^dag. Since I, a, a^dag, and n span M_2(C), conjugation as an algebra automorphism plus periodic relabeling proves the single-site, product, and finite-sum statements.",
+      "claim_scope": "Finite periodic tensor-product Fock-space local M_2(C) operators, finite-support products, density/hopping monomials, and translation-invariant finite sums relabel covariantly under the retained tensor-permutation translations T_a.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-05T18:05:24.252860+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "By linearity in the decomposition M_x = c0 I + c_- a_x + c_+ a_x^dag + c_n n_x, the bridge covariance for a_x and a_x^dag gives T_a M_x T_a^dag = M_{x+a}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The cited bridge is explicitly supplied as retained and gives the needed unitarity plus ladder-operator covariance. A manual matrix-unit check confirms that I, a, a^dag, and n span the local M_2(C), so the displayed identities follow by ordinary linear algebra and finite periodic relabeling. The runner performs one retained-status lookup and five finite matrix algebra checks, with no external comparator, fitted value, or hard-coded contested premise. Because the proof is class-A algebra over one retained parent plus standard mathematics, the rubric classifies it as an algebraic decoration."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.522190+00:00",
+      "audit_date": "2026-06-05T21:41:50.487888+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "19291f420841af0e4e918d20c56f39c11e873e92b9b0e12696df1e003a373676",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260605-213938-68c0c4d61a-translation_covariance_local",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge supplies unitarity and covariance for a_x and a_x^dag. The remaining steps are finite-dimensional linear algebra, conjugation multiplicativity, and periodic relabeling, with no additional physics input.",
+      "claim_scope": "Finite periodic tensor-product Fock space: algebraic covariance under tensor-permutation translations for single-site M_2(C) operators, finite disjoint-support products, density/hopping monomials, and translation-invariant finite sums.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-05T21:41:50.487888+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "After decomposing M_x = c0 I + c_- a_x + c_+ a_x^dag + c_n n_x, the bridge covariance of a_x and a_x^dag gives n_x covariance, so by linearity T_a M_x T_a^dag = M_{x+a}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the positive_theorem-to-decoration classification under the current decoration policy.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The source note reduces to one retained upstream bridge plus standard finite-dimensional algebra. The displayed identities check independently: I, a, a^dag, and n span M_2(C); unitary conjugation carries products to products; and periodic translation relabels finite sums bijectively. The runner source performs one retained-status lookup and finite matrix identity checks without hard-coded contested outputs, but the scientific closure is algebraic rather than a new first-principles computation."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.897630+00:00",
+      "audit_date": "2026-07-01T13:44:38.154377+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "19291f420841af0e4e918d20c56f39c11e873e92b9b0e12696df1e003a373676",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T134438Z-924e5013-translation_covariance_l",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge supplies unitarity and covariance of a_x and a_x^dag under T_a. The remaining steps use only the M_2(C) basis {I,a,a^dag,a^dag a}, conjugation distributing over products, and finite periodic relabeling.",
+      "claim_scope": "Algebraic extension of the retained tensor-product translation bridge to single-site M_2(C) operators, finite-support products, and translation-invariant finite sums on the same finite periodic block.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-01T13:44:38.154377+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "By linearity in the decomposition M_x = c_0 I + c_- a_x + c_+ a_x^dag + c_n n_x, the cited ladder covariance implies T_a M_x T_a^dag = M_{x+a} for every single-site matrix M.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The algebra is correct: the bridge supplies the ladder covariance, I and n follow by unitarity and multiplication, and arbitrary local matrices follow by linearity. Finite products and invariant sums then follow by conjugation and periodic relabeling, with no hidden physical import. The runner genuinely constructs the finite tensor-permutation matrices and checks representative algebraic identities, while its ledger-status check is cross-note bookkeeping. Because this row reduces to one retained parent plus standard finite-dimensional algebra and has zero external comparator checks, the decoration tie-break applies rather than an independent clean-theorem verdict."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.509924+00:00",
+      "audit_date": "2026-07-02T02:51:27.305208+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "19291f420841af0e4e918d20c56f39c11e873e92b9b0e12696df1e003a373676",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T025127Z-0b9a2389-translation_covariance_l",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge supplies unitarity and covariance of a_x and a_x^dag; finite-dimensional linear algebra supplies the M_2(C) span, and conjugation is linear and multiplicative. Within the narrowed tensor-product periodic-block scope, no additional physics input is needed.",
+      "claim_scope": "Finite periodic tensor-product Fock space with tensor-permutation translations; covariance of local M_2(C) single-site operators, finite-support products, invariant sums, density, and hopping monomials.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-02T02:51:27.305208+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "By linearity in the local decomposition M_x = c_0 I + c_- a_x + c_+ a_x^dag + c_n n_x, the bridge covariance for a_x and a_x^dag gives T_a M_x T_a^dag = M_{x+a}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the decoration classification; the finite-dimensional algebra itself closes from the retained bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The mathematical chain is sound: I, a, a^dag, and n span the local M_2(C), and the retained bridge plus linearity/multiplicativity yields the stated covariance identities. The runner corroborates this with finite matrix identity checks and one dependency-status check. However, the claim reduces to one retained upstream parent plus standard algebra and has zero D-class comparator or independent physical content, so the decoration tie-break applies rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.111507+00:00",
+      "audit_date": "2026-07-10T00:05:18.960085+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "19291f420841af0e4e918d20c56f39c11e873e92b9b0e12696df1e003a373676",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-translation_covariance_l-070",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge directly supplies the required ladder-operator covariance and unitarity. Standard finite-dimensional linear algebra, multiplicativity of unitary conjugation, and periodic index relabeling then establish every stated conclusion.",
+      "claim_scope": "Covariance of single-site matrices, finite-support products, densities, hopping monomials, and translation-invariant finite sums under tensor-factor translations on a finite periodic tensor-product space.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T00:05:18.960085+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Using the retained covariance of the local ladder operators, unitarity and linearity extend conjugation covariance from the spanning set I, a, a^dag, and a^dag a to every M in M_2(C), after which conjugation distributes over products and periodic sums.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The proof is correct within its explicitly narrowed tensor-product scope and depends on one retained-grade parent theorem. Its load-bearing work consists entirely of algebraic closure of that parent's covariance identities using a local matrix basis, product conjugation, and finite periodic relabeling. The runner genuinely constructs the operators and verifies five algebraic consequences, while its remaining check verifies the upstream ledger status; there are no external comparator checks."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/translation_covariance_local_op_check.py",
+  "title": "Translation Covariance of Single-Site Tensor Operators",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

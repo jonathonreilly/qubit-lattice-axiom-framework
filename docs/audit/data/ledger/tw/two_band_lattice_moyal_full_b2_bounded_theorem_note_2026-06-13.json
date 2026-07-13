@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "00f60744bb18ef971560832d1946e4369e590ad07558ef46a6b00f51725de0b5",
+  "note_path": "docs/TWO_BAND_LATTICE_MOYAL_FULL_B2_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.120856+00:00",
+      "audit_date": "2026-06-18T15:16:56.145576+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": "Fixed supplied free staggered two-band Harper cell Q=24, Ly=2, t=1, mu=1.7086, T=0.2, with the implemented finite-cell Peierls B^2 perturbation; the audited claim is equality of the finite momentum closed form and direct finite real-space Harper perturbation, not a continuum-Moyal theorem."
+        },
+        "dep_claim_type": {
+          "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": "retained_bounded"
+        },
+        "deps": [
+          "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "ebd8d851d63331445b3af69db450eb4d654b9f290fffff3eed2c6f9996bea296",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner computes the Moyal B^2 source from the stated Hamiltonian, validates it against a finite-difference reconstruction, and compares it to the retained_bounded finite-cell reference. The conclusion is only the bounded one-point-normalized mismatch, not finite-cell closure or a global no-go.",
+      "claim_scope": "Free staggered two-band lattice Hamiltonian at mu=1.7086, T=0.2, m in {0,0.2,0.3,0.5}: implemented full lattice Moyal B^2 comparator versus the Q=24, Ly=2 finite-cell response after one m=0 normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T15:16:56.145576+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner independently reconstructs the implemented B^2 Moyal source and, after fixing the single cell normalization at m=0, finds a maximum off-reference residual of 35.654% at m=0.5.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck the contour-residue normalization/sign convention if this is later promoted beyond the stated one-point-normalized bounded comparator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 5,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The helper runner computes the finite-cell target through a finite momentum sum and checks it against direct real-space Harper perturbation; the primary runner recomputes those reference values rather than relying only on note prose. The primary runner then computes the Moyal B^2 matrices and integrals, checks the load-bearing source matrix by finite differences, and bounds quadrature and pole-reconstruction error. The negative language is scoped to this comparator miss, and the source note supplies an N1-N8 no-go discipline gate rather than overclaiming a universal obstruction."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py",
+  "title": "Two-Band Lattice Moyal Full B2 Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

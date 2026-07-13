@@ -1,0 +1,215 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+    "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+    "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "eed22d5f8453c9b3637d7b9e6f38a3d5b3fd15fb2e8945ff6aaaf83b59095ae0",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T23:51:03.827085+00:00",
+      "audit_date": "2026-06-13T00:55:22.485883+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Abstract finite-truncation SU(3) character-algebra theorem only: for B_N={(p,q):0<=p,q<=N} and an abstract real nonnegative conjugation-symmetric normalized coefficient sequence rho_(p,q), the central class-function convolution operator built from Z=sum d_(p,q) rho_(p,q) chi_(p,q) acts diagonally as C chi_(p,q)=rho_(p,q) chi_(p,q), the coefficients are unique, and the diagonal operator is positive, self-adjoint, and swap-symmetric. This excludes any identification with Wilson action data, beta=6 framework-point coefficients, unmarked spatial environment compression, physical plaquette transfer, or parent residual-environment closure."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "plaquette_self_consistency_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "fae7d43d26bb5540fe114c73e02b92a0b7012ee6f86ae75643d038a29536daee",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-005310-8f933ba509-gauge_vacuum_plaquette_word_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped certificate closes from finite retained inputs plus standard Hilbert-metric/Birkhoff algebra: W_eta has the retained finite support, W_eta^8 is positive, Delta and kappa are finite, and the displayed k/8 constant follows from block contraction plus nonexpansiveness of positive linear maps. The denominator/source perturbation theorem for the entrywise-power K_k ladder is named as outside scope, not used to prove the certified W_eta bracket.",
+      "claim_scope": "Finite NMAX=4, MODE_MAX=80 tensor-word packet and NMAX=7, MODE_MAX=200 source readout: certify the W_eta^8 Birkhoff/Hilbert eigenvector bracket, reproduce the finite measured word-count ladder through k=20, and explicitly withhold any certified B(k) tail bound for the measured entrywise-power ladder.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T00:55:22.485883+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "The ordinary eighth power of the finite dressed operator W_eta is entrywise positive with finite Birkhoff diameter, so Birkhoff contraction gives an eigenvector-level Hilbert bracket for ordinary W_eta iterates.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Primitive registry path was not present in the isolated workspace, but no approved primitive is load-bearing for this finite packet audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing step is a finite-matrix algebraic closure over retained or retained_bounded inputs, not a definition, renaming, tuned comparator match, or imported physical value. Independent formula checks agree with the runner path: the log-row diameter formula is the standard projective diameter, kappa=tanh(Delta/4), and the k/8 constant is a valid weakening of the block-floor contraction bound. The source also correctly separates the ordinary W_eta certificate from the measured entrywise-power word-count ladder, and does not ship the missing measured-tail B(k) bracket."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.955725+00:00",
+      "audit_date": "2026-06-14T01:18:36.401590+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Finite SU(3) character truncation B_N: an abstract normalized nonnegative conjugation-symmetric coefficient sequence rho defines the same diagonal operator as convolution by Z=sum d_(p,q) rho_(p,q) chi_(p,q), with uniqueness and positivity/self-adjoint/swap symmetry; no Wilson-environment identification is audited."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "plaquette_self_consistency_note": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "plaquette_self_consistency_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "fae7d43d26bb5540fe114c73e02b92a0b7012ee6f86ae75643d038a29536daee",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-011618-44325436e3-gauge_vacuum_plaquette_word_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped certificate closes: positivity of the eighth power and the Birkhoff contraction theorem give the stated Hilbert-metric bracket for ordinary W_eta iterates. The measured word-count ladder is explicitly separated from W_eta iterates, and the unproved denominator/source propagation to a measured-tail bracket is not claimed.",
+      "claim_scope": "Finite NMAX=4, MODE_MAX=80 eta-weighted D-dressed W_eta power-block Birkhoff certificate, with source NMAX=7, MODE_MAX=200 readout checks; no certified B(k) bound for the measured entrywise-power P_inf-P_k tail.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T01:18:36.401590+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_tensor_transfer_perron_solve_note:retained_bounded->unaudited",
+      "load_bearing_step": "For the finite packet, W_eta^8 is entrywise positive with finite projective diameter Delta, so kappa=tanh(Delta/4)<1 gives an eigenvector-level Hilbert bracket d_H(v_k,h_inf) <= C_H_kover8*kappa^(k/8) for ordinary W_eta iterates.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Downstream audits should re-check that this row is not reused as a certified measured-tail B(k) bracket.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 4,
+        "C": 8,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The primary runner and helper sources compute the finite matrices from bounded Wilson coefficients, SU(3) fusion recurrences, and Perron solves; the Birkhoff constants are not imported from an external comparator. The independent math check is the standard finite-cone Birkhoff theorem applied to the displayed positive block W_eta^8, with the k/8 bound following from block contraction and nonexpansiveness of nonnegative intermediate powers. The four hard-coded P anchors are cross-checks for ladder reproduction, not load-bearing for the scoped power-block certificate. All cited authorities are retained-grade or retained_bounded for the finite inputs actually used, while the physical 3D and measured-tail propagation residuals are explicitly out of scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
+  "title": "Gauge-Vacuum Plaquette Word-Count Power-Block Birkhoff Certificate Narrow Theorem Note",
+  "transitive_descendants": 3,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

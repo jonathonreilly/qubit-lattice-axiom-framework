@@ -1,0 +1,136 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_link_per_record_step_rate_dial_unit_variance_point_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_rigidity_theorem_note",
+    "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+    "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+    "record_classical_semigroup_boundary_2026-06-06",
+    "scale_reference_primitive"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "05b805c6585759a186efac687d7b7b9e5a26d401b289a31699d5a2c703fbb4e8",
+  "note_path": "docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.571767+00:00",
+      "audit_date": "2026-07-10T16:35:50.472879+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "scale_reference_primitive": "601c0206f5898df1e81b3f95ae1b77dc5cf331dd419eb935e383d1acf6039d90"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "record_classical_semigroup_boundary_2026-06-06": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.",
+          "scale_reference_primitive": null,
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "Inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2, the small-a coefficient matching gives beta g_bare^2 = 2 N_c."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "record_classical_semigroup_boundary_2026-06-06": "no_go",
+          "scale_reference_primitive": "meta",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "record_classical_semigroup_boundary_2026-06-06": "retained_no_go",
+          "scale_reference_primitive": "meta",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "g_bare_rigidity_theorem_note",
+          "record_classical_semigroup_boundary_2026-06-06",
+          "scale_reference_primitive",
+          "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1fc63ab201f7bf7de4c70c4ea5d8f9225fc2cee2c7ea2d40650b134886288c4f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00008-gauge_link_per_record_step_r",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "R0 establishes only tau_eff(beta) = (N_c/beta)(1 + O(1/beta)), while R3 treats tau = N_c/beta as an exact finite-beta identity. The runner implements that step by defining beta_of(tau) = N_c/tau rather than deriving it from the computed Wilson effective rate; it also tests only two kernels and selected representations, so it does not establish the universal complete-invariant claim.",
+      "claim_scope": "Rate additivity, finite tested cross-kernel convergence, rate-blindness at three sampled rates, the Wilson kernel's asymptotic rate and variance laws, and the claimed exact unit-variance/beta=6 correspondence.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:35:50.472879+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "R3 asserts the exact implication tau = 1/2 if and only if beta = N_c/tau = 6 via R0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after the exact finite-beta correspondence is either derived from the constructed Wilson rate or narrowed to an asymptotic/defined-coordinate statement, and after the complete-invariant claim is narrowed to the tested kernels and blocks or supplied with a universal retained-grade bridge.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 28,
+        "C": 23,
+        "D": 0,
+        "total_pass": 74
+      },
+      "verdict_rationale": "The numerical construction supports an asymptotic Wilson rate and shrinking deviations for the sampled kernels, but it does not support the note's exact beta=6 equivalence. Indeed, the reported finite-beta corrections contradict using tau_eff = N_c/beta exactly. The finite cross-kernel experiment also cannot prove that rate is the complete surviving invariant for every kernel in the stated class, especially without the prose-named conditional heat-kernel classification authority."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py",
+  "title": "Gauge-Link Per-Record-Step Rate Dial: Blindness Theorems and the Unit-Variance Point",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

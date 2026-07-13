@@ -1,0 +1,720 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_dimensional_compression_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional D=4 arithmetic support",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+    "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+    "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
+    "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.48,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e28d500133bb378c80e449bffb73fd8812e0e98d3295750bd2288298ba471d20",
+  "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105940+00:00",
+      "archived_for_note_hash": "b8a1dd83b1110167a51ad31a266968da5a1530bfc5490f18a343c16c649578ea",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.812366+00:00",
+      "audit_date": "2026-05-02T18:30:00+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.67,
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "claude-opus-4.7-1m:cluster2-narrow-2026-05-02-hierarchy-dim",
+      "auditor_confidence": "high",
+      "auditor_family": "claude-opus",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical closeness reproduces at the chosen diagnostic inputs but does not derive the physical order parameter or the correction's sign/placement; promotion requires deriving the intensive effective-potential/free-energy density and determinant-to-VEV map.",
+      "claim_scope": "Bounded diagnostic evidence at the runner's chosen inputs: the dimension-4 inverse compression R^(-1/4) ~= 0.96468 lies near the observed prefactor C_obs = v_obs/v_pred ~= 0.96692, while R^(-1/16) is too small. Excludes any derivation of the physical order parameter, the determinant-to-VEV map, or why the residual ratio enters as the inverse fourth root.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T18:30:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Using the same residual ratio R, the dimension-4 inverse compression R^(-1/4) ~= 0.96468 is in the right few-percent range for the observed prefactor C_obs = v_obs/v_pred ~= 0.96692, while the 1/16 root is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-audit if a determinant-to-VEV map deriving the inverse-fourth-root entry is later registered.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Re-audit confirms the original numerical-match verdict: the dimension-4 vs dimension-16 comparison is a magnitude check at chosen inputs, not a theorem fixing the hierarchy normalization. Scope narrowed from the migration backfill to bounded diagnostic evidence."
+    },
+    {
+      "archived_at": "2026-05-16T18:54:42.645566+00:00",
+      "archived_for_note_hash": "402905876eb27f5ee47aafd0d1ba9d50be061be44969871d0451d42c5275bd21",
+      "audit_date": "2026-05-05T06:13:43.160355+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.555,
+        "runner_hash": "2ac6e3156e2666134d88558efafad40869f218753008cf62b6eb7227260e7300",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-hierarchy_dimensional_co-223",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic in the runner matches the note, but the physical bridge identifying the Lt residual as entering a dimension-4 effective potential density with the stated sign and placement is explicitly left open. The comparison also depends on selected numerical inputs rather than a closed derivation from the restricted packet.",
+      "claim_scope": "Audited the bounded numerical diagnostic that a chosen Lt condensate-density residual, when compressed as a dimension-4 density, is closer to the observed v_obs/v_pred prefactor than a direct sixteenth-root scale correction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:13:43.160355+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Using the same residual ratio R, the dimension-4 effective-potential-like inverse fourth root R^(-1/4) ~= 0.96468 is in the right few-percent range, while the inverse sixteenth root R^(-1/16) ~= 0.99105 is too small.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the effective-potential-density bridge showing exactly how the Lt block normalization enters the physical VEV formula, including sign and normalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner genuinely computes the condensate-density ratio from its finite lattice Dirac operator and then performs the advertised root comparisons. However, the load-bearing conclusion is a numerical closeness claim at chosen parameters and against the imported observed prefactor C_obs, not a first-principles closure of the physical determinant-to-VEV map. The note itself caveats that the sign, placement, order parameter derivation, and full determinant-to-VEV theorem remain open."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:07.230316+00:00",
+      "archived_for_note_hash": "2de096876990f4344c7c310adbddbb56a97db068444dd2ac047d43f9c3dcb51a",
+      "audit_date": "2026-06-11T13:44:37.814606+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.37,
+        "runner_hash": "5906ec6e66c2993f3e231ce04ca05e1f85174e1db70dfd12753a41a352fbe3a4",
+        "transitive_descendants": 233
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-134302-acbcf3a4f0-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic from R to R^(-1/4), R^(-1/16), and the D=4 identity checks closes. The full chain does not close because the per-determinant readout and N_taste = 2^D realization are inherited admissions/open or unaudited upstream authorities in the restricted packet.",
+      "claim_scope": "Audited the bounded intra-framework arithmetic: computation of the staggered condensate-density ratio, application of the admitted D=4 exponent, numerical separation from the D=16 alternative, and the D=4-specific identity 1/D = 4/2^D.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:44:37.814606+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the computed condensate-density ratio R, the admitted D=4 per-determinant readout applies the exponent 1/D = 1/4, producing R^(-1/4), while the naive D=16 alternative gives R^(-1/16).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation of the per-determinant D=4 readout/effective-potential-density bridge and retain the staggered-Dirac realization authority; also update the source note scorecard from 4 to 5 if the fifth PASS gate remains.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source genuinely computes the condensate densities by building and inverting the displayed staggered Dirac matrices, and the load-bearing PASS gates are algebraic checks rather than observation-comparator gates. The displayed numerical identities check independently: R^(-1/4) \u2248 0.96468, R^(-1/16) \u2248 0.99105, their ratio differs from unity by about 2.66%, and 1/D = 4/2^D holds only at D=4 among the tested D values. However, the D=4 exponent is explicitly inherited from a heat-kernel/per-determinant readout admission, and the supplied staggered-Dirac authority is marked unaudited, so retained-grade closure does not propagate through this packet. There is also minor source-runner drift: the note says the expected scorecard is 4 pass, while the runner emits 5 pass."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:26.117639+00:00",
+      "archived_for_note_hash": "46e8fa2d74f74c9594e7601d97d69d9c8bbb84d986b2acb48d4499b78386912c",
+      "audit_date": "2026-06-12T23:03:43.995001+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.419,
+        "runner_hash": "8964cc22450a2ec0835078759127c41a839de6ce9179c9ea2059c2b8c5d840af",
+        "transitive_descendants": 241
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-230118-68453d242a-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The standalone arithmetic closes, but the chain to the stated D=4 compression readout does not close from retained inputs in the restricted packet. The missing step is the retained per-determinant/effective-potential-density bridge with exponent, sign, placement, and normalization, plus retained support for N_taste = 2^D in D = 4.",
+      "claim_scope": "Finite arithmetic on the internally computed staggered-Dirac condensate-density ratio R at L_s=2, u0=0.9, m=0.01, mapping it to R^(-1/4) and R^(-1/16), checking their separation, and checking the D=4 identity 1/D = 4/2^D under the admitted readout.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:03:43.995001+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the per-determinant geometric-mean readout v propto |det|^(1/(N_taste * L_t)) with N_taste = 2^D = 16 in D = 4, the residual R is read as the inverse compression R^(-1/D) = R^(-1/4), distinct from R^(-1/16).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is to provide and audit a retained D=4 per-determinant/effective-potential-density readout bridge fixing the exponent, inverse/direct placement, sign, and normalization, with retained support for the N_taste realization input.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md",
+        "docs/HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source genuinely computes the finite condensate-density ratio from the displayed staggered Dirac matrix and the reported arithmetic checks are internally consistent; an independent solve-based recomputation reproduces R, R^(-1/4), R^(-1/16), and the >2% separation. The observed EW comparator is printed only after the PASS gates and is not load-bearing. However, the D=4 readout/exponent is inherited as an admitted bridge rather than derived in the restricted packet, and the provided staggered-Dirac realization authority is explicitly unaudited. Therefore the row is bounded on open or unaudited carrier inputs, not clean."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:47.591740+00:00",
+      "archived_for_note_hash": "132ee2ee43332d3cfb1054878e767fa13a13e8c5e072dd7438c6e84cdc69428a",
+      "audit_date": "2026-06-13T23:54:20.726271+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 10.437,
+        "runner_hash": "0870f0043023db7dd6c16bb34da765f9ac8f31cbc1c4481f811f3529e593180f",
+        "transitive_descendants": 244
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-235142-2cb7d43d20-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The standalone arithmetic on R and the displayed D-identities check out, including the roughly 2.66% D=4/D=16 inverse-compression separation. The chain does not close to a VEV or effective-potential-density readout because the per-determinant readout, sign/placement/normalization bridge, and N_taste realization remain admitted/open rather than derived in the restricted packet.",
+      "claim_scope": "Audited the intra-framework condensate-ratio arithmetic, the D=4 versus D=16 separation, the identity 1/D = 4/2^D at D = 4, and the source/runner firewall excluding observed targets from PASS gates; not a physical VEV derivation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-13T23:54:20.726271+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the admitted per-determinant geometric-mean readout with N_taste = 2^D = 16 in D = 4, the residual R produces the compression factor R^(-1/D) = R^(-1/4), distinct from the naive R^(-1/16) reading.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide and audit the D=4 readout/effective-potential-density bridge deriving exponent, inverse/direct placement, sign, and normalization, with retained support for N_taste = 2^D in D = 4.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source computes the condensate-density ratio and verifies only algebraic consequences and source-firewall conditions; it does not use C_obs, v_obs, or v_pred in the PASS gates. Independent arithmetic agrees with the displayed powers, separation, and D=4 identity, so this is not an external numerical-match closure. However, the load-bearing interpretation of R^(-1/4) as the relevant D=4 readout is imported from admitted/open upstream structure, and the supplied staggered-Dirac authority is explicitly unaudited with residual premises. Therefore the row can only be conditional at this scope."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:21.326657+00:00",
+      "archived_for_note_hash": "83e3a2f9fd476af4aeb287fdf311d7d421ac6f7adce880b45cbb3abd2b553529",
+      "audit_date": "2026-06-15T21:34:21.673266+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 14.443,
+        "runner_hash": "c050617f9db0996022061be26a7a01e253806d2589f7bd579ad414389a199008",
+        "transitive_descendants": 245
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-213235-500f64ccd1-hierarchy_dimensional_compre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed arithmetic closes: independent recomputation from R = 1.1546901938 gives R^(-1/4) = 0.9646807905, R^(-1/16) = 0.9910507799, and a 2.6608% separation, while 1/D = 4/2^D holds at D=4 and fails at D={1,2,3,5,6,8}. The chain does not close as a VEV or effective-potential-density readout because the determinant-to-physical-readout map, including sign, placement, exponent, and normalization, is explicitly left open.",
+      "claim_scope": "Audited the finite arithmetic on the computed condensate-density ratio R: inverse-root compression candidates R^(-1/4) and R^(-1/16), their numerical separation, the D=4 identity 1/D = 4/2^D, and the retained-bounded taste-count citations.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-15T21:34:21.673266+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the per-determinant geometric-mean readout with N_taste = 2^D = 16 at D = 4, the condensate-density residual is read as the inverse compression R^(-1/D) = R^(-1/4), distinct from the naive D=16 reading R^(-1/16), with 1/D = 4/2^D holding only at D = 4 among the tested dimensions.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the D=4 determinant/effective-potential-density readout bridge fixing exponent, sign, placement, and normalization before promoting beyond conditional arithmetic support.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_HEAT_KERNEL_D4_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-05-10.md",
+        "docs/HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the runner and note verify the intra-framework arithmetic, but the step naming R^(-1/4) as the D=4 compression readout still rests on the admitted per-determinant/effective-potential-density bridge. Why this blocks: the retained taste-count authorities supply N_taste=16 and BZ-corner combinatorics, but they do not derive the physical VEV insertion map. Repair target: provide a retained bridge deriving the determinant or effective-potential-density coefficient readout with exponent, inverse/direct placement, sign, and normalization relative to Lt=2. Claim boundary until fixed: conditional D=4 arithmetic support only, with no retained VEV-readout theorem or observation-comparison closure."
+    },
+    {
+      "archived_at": "2026-06-19T10:11:58.003829+00:00",
+      "archived_for_note_hash": "440928b650b8e39be30098d0d18e856d64a990ef6cfe91ec48090ef926ab7121",
+      "audit_date": "2026-06-18T04:14:25.631077+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Fixed positive D=4 density-coefficient readout bridge: exponent, inverse placement, sign, and reference normalization for rho_* = A(L) v(L)^4, with endpoint substitutions only as retained input applications and no physical VEV identification.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "bounded_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "retained_bounded",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 9.937,
+        "runner_hash": "0aaa9c7c19a7b64a66c281e918c0192a25b35d73769abdca082b5d06cd864b48",
+        "transitive_descendants": 244
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_dimensional_compression_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic core closes under the supplied fixed-density coefficient-to-scale bridge and retained taste-count authorities. The chain does not close as a physical VEV or hierarchy readout because no provided authority identifies the electroweak order parameter with the fixed positive D=4 density or selects the physical endpoint coefficient surface.",
+      "claim_scope": "Conditional intra-framework arithmetic: given the computed staggered-Dirac condensate-density ratio R and a positive fixed D=4 coefficient readout, R maps algebraically to R^(-1/4), is distinct from R^(-1/16), and uses the D=4 identity 1/D = 4/2^D.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T04:14:25.631077+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the fixed positive D=4 density-coefficient readout, if R is the endpoint coefficient ratio relative to L_t=2, the scale readout is forced to be R^(-1/4), with the D=4 and D=16 candidates separated by more than 2%.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the physical electroweak order-parameter/readout bridge identifying the fixed D=4 density and endpoint coefficient surface, then re-audit this parent row.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the source proves only conditional D=4 coefficient-to-scale arithmetic, while the physical electroweak fixed-density/order-parameter identification remains open. Why this blocks: retained status cannot propagate from algebraic R^(-1/4) compression to a physical VEV readout without the missing observable bridge and endpoint selection. Repair target: derive and independently audit the physical theorem identifying the EW order parameter with the fixed D=4 density and the relevant A(L) surface. Claim boundary until fixed: the row supports conditional intra-framework D=4 arithmetic only, not a retained physical hierarchy theorem."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:49.234999+00:00",
+      "archived_for_note_hash": "3e26107ad5de063b85f2fa28ee39767f026c113505866f809b6fe5628f0e6afb",
+      "audit_date": "2026-06-19T21:13:13.912779+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Audited the bounded algebraic D=4 fixed-positive-density coefficient-to-scale map, including inverse placement, sign, reference normalization, and endpoint applications to the supplied retained A_2/A_4 and A_inf/A_2 ratios, excluding any electroweak VEV identification.",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "For a supplied positive quartic D=4 density on the retained one-Higgs neutral EW surface, the order-parameter coordinate v is the positive fourth-root coordinate and fixed-density endpoint ratios have inverse fourth-root placement; endpoint selection and absolute scale are outside scope.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "bounded_theorem",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "bounded_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "retained_bounded",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "retained_bounded",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 9.943,
+        "runner_hash": "6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842",
+        "transitive_descendants": 245
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-hierarchy_dimensional_compression_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite R computation and algebraic checks close, but the physical readout chain does not. The packet does not derive that the hierarchy Matsubara endpoint coefficient surface is the physical Higgs density coefficient selected for the VEV map.",
+      "claim_scope": "Conditional intra-framework D=4 compression arithmetic for the runner-defined staggered Dirac condensate-density ratio R; physical endpoint selection and absolute EW scale closure are excluded.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-19T21:13:13.912779+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner-computed condensate-density ratio R = cond(L_t=10)/cond(L_t=2) is used as a positive endpoint coefficient ratio so the supplied D=4 fixed-density readout maps it to R^(-1/4), with that candidate separated from R^(-1/16) by more than 2%.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit a retained endpoint-selection theorem identifying the hierarchy Matsubara endpoint coefficient surface with the physical Higgs density surface and required normalization.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+        "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 5,
+        "C": 1,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the runner computes R and verifies the D=4 arithmetic, but the packet still assumes rather than derives the endpoint coefficient surface needed for physical Higgs-density readout. Why this blocks: the fixed-density and EW order-parameter bridges close algebra and coordinate readout only, and both leave endpoint selection and absolute scale outside scope. Repair target: a retained endpoint-selection theorem identifying the hierarchy Matsubara endpoint coefficient surface with the physical Higgs density surface and its normalization. Claim boundary until fixed: conditional intra-framework D=4 compression arithmetic and candidate separation, with no observed-target or full VEV closure."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.069397+00:00",
+      "audit_date": "2026-06-21T10:19:20.121059+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Algebraic corollary that a positive fixed D=4 density readout rho_* = A(L)v(L)^4 maps coefficient ratios to inverse fourth-root scale ratios, with reference normalization and sign; no physical VEV identification is ratified.",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "Given the retained one-Higgs neutral EW surface and a supplied positive quartic D=4 density, the audited claim is the algebraic q=v^2 substitution and resulting inverse fourth-root fixed-density readout for v ratios, with endpoint selection and absolute EW scale outside scope.",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "Route-local no-go that fixed D=4 fixed-density coefficient-to-scale algebra, even with the EW coordinate bridge for a supplied quartic density, cannot by itself select a physical endpoint coefficient surface or an absolute electroweak scale.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "bounded_theorem",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "no_go",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "retained_bounded",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "retained_no_go",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 10.466,
+        "runner_hash": "6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842",
+        "transitive_descendants": 249
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_dimensional_compression_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional algebra from a supplied positive coefficient ratio to the inverse fourth-root readout closes. The physical hierarchy/VEV chain does not close because the packet still lacks a theorem selecting the hierarchy Matsubara endpoint coefficient surface as the physical Higgs density surface and fixing the absolute normalization.",
+      "claim_scope": "Conditional D=4 arithmetic on the computed condensate-density ratio R: the supplied quartic fixed-density readout maps a supplied positive coefficient ratio to R^(-1/4), distinguishes it from the D=16 root, and checks the D=4 identity 1/D = 4/2^D; physical endpoint selection and absolute EW scale closure were not audited as closed.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T10:19:20.121059+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Under the fixed positive D=4 density-coefficient readout rho_* = A(L)v(L)^4, if R is the endpoint coefficient ratio relative to L_t=2, the scale readout is forced to the inverse fourth-root compression R^(-1/4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and independently audit a framework-native endpoint selector theorem identifying the hierarchy Matsubara endpoint coefficient surface with the physical Higgs density surface and fixing the absolute L_t=2 normalization.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+        "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner genuinely builds the finite staggered Dirac operator, computes the condensate-density ratio, and checks the D=4 versus D=16 arithmetic without using the printed observed EW context in PASS gates. The fixed-density and EW-coordinate bridges support the fourth-root readout for a supplied positive quartic density, and the taste-count dependencies are retained-grade. However, both the parent note and cited bridge/no-go packet explicitly leave endpoint coefficient to physical Higgs density selection and absolute scale open, so retained status cannot propagate to a physical hierarchy closure."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.464462+00:00",
+      "audit_date": "2026-07-01T07:07:00.963604+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Algebraic corollary that a positive fixed D=4 density readout rho_* = A(L)v(L)^4 maps coefficient ratios to inverse fourth-root scale ratios, with reference normalization and sign; no physical VEV identification is ratified.",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "Given the retained one-Higgs neutral EW surface and a supplied positive quartic D=4 density, the audited claim is the algebraic q=v^2 substitution and resulting inverse fourth-root fixed-density readout for v ratios, with endpoint selection and absolute EW scale outside scope.",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "Route-local no-go that fixed D=4 fixed-density coefficient-to-scale algebra, even with the EW coordinate bridge for a supplied quartic density, cannot by itself select a physical endpoint coefficient surface or an absolute electroweak scale.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Algebraic bridge, conditional on the explicit d=4 naive lattice Dirac symbol and the tadpole mean-field Cl(4) block, deriving the structural naive taste count 16 and the mean-field log-determinant W(J) curvature form.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "bounded_theorem",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "no_go",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "retained_bounded",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "retained_no_go",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 9.96,
+        "runner_hash": "6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842",
+        "transitive_descendants": 248
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T070700Z-d8f79ce8-hierarchy_dimensional_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic closes once a positive endpoint coefficient ratio and the fixed-density/EW-coordinate bridges are supplied. The restricted packet still does not prove the hierarchy Matsubara or condensate endpoint coefficient is the physical Higgs-density surface, nor fix the absolute scale.",
+      "claim_scope": "Conditional D=4 dimensional-compression arithmetic on the computed condensate-density ratio R: inverse fourth-root readout, D=16 separation, D=4 taste-count identity, and observed-target firewall; not endpoint selection or absolute VEV closure.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-01T07:07:00.963604+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Under the fixed positive D=4 density-coefficient readout, if R is the endpoint coefficient ratio relative to L_t = 2, then the scale readout is forced to be the inverse fourth-root compression R^(-1/4) at D = 4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: create and audit a retained theorem identifying the hierarchy Matsubara endpoint coefficient surface with the physical Higgs density surface and fixing the absolute L_t = 2 normalization.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+        "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the checked equations establish fixed-density positive-real algebra and intra-framework R arithmetic, but not the physical endpoint selector. Why this blocks: the cited bridges themselves leave endpoint selection and absolute scale open, and the retained selector no-go says fixed-density ratios alone cannot supply them. Repair target: a retained endpoint-selection and absolute-normalization theorem for the physical Higgs-density surface. Claim boundary until fixed: conditional D=4 arithmetic support with no observed-target dependence."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.251745+00:00",
+      "audit_date": "2026-07-01T23:28:45.170254+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Algebraic corollary that a positive fixed D=4 density readout rho_* = A(L)v(L)^4 maps coefficient ratios to inverse fourth-root scale ratios, with reference normalization and sign; no physical VEV identification is ratified.",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "Given the retained one-Higgs neutral EW surface and a supplied positive quartic D=4 density, the audited claim is the algebraic q=v^2 substitution and resulting inverse fourth-root fixed-density readout for v ratios, with endpoint selection and absolute EW scale outside scope.",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "Route-local no-go that fixed D=4 fixed-density coefficient-to-scale algebra, even with the EW coordinate bridge for a supplied quartic density, cannot by itself select a physical endpoint coefficient surface or an absolute electroweak scale.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded algebraic bridge that, under the explicit naive lattice Dirac operator and tadpole mean-field block hypotheses, derives the d=4 naive taste count N_taste=16 and the mean-field log-determinant W(J) curvature form used by the ratio note.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "bounded_theorem",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "no_go",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": "retained_bounded",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": "retained_no_go",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+          "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+          "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 9.96,
+        "runner_hash": "6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842",
+        "transitive_descendants": 248
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T232845Z-acc738b3-hierarchy_dimensional_co",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic compression step closes conditionally, but the restricted packet does not prove that the hierarchy Matsubara/condensate coefficient surface is the physical Higgs-density endpoint or fix the absolute normalization. That endpoint-selection bridge is explicitly left open by the cited bridge and no-go notes.",
+      "claim_scope": "Conditional D=4 arithmetic support: given the computed positive condensate-density ratio R and supplied fixed-density/EW-coordinate bridges, the inverse fourth-root D=4 readout is algebraically distinct from the D=16 alternative; endpoint selection and absolute EW scale closure remain outside the closed scope.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-01T23:28:45.170254+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Under the fixed positive D=4 density-coefficient readout, if R is the endpoint coefficient ratio relative to L_t = 2, then the scale readout is forced to be R^(-1/4), distinct from R^(-1/16).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the endpoint coefficient surface to physical Higgs-density selector, including absolute L_t = 2 normalization, then rerun this parent audit.",
+      "open_dependency_paths": [
+        "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+        "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the runner verifies the D=4/D=16 arithmetic and source firewall, but the load-bearing physical readout still depends on an unproved endpoint coefficient-to-physical-Higgs-density selector. Why this blocks: retained fixed-density and EW-coordinate bridges supply the fourth-root map for a supplied quartic density, not the theorem that the computed hierarchy endpoint coefficient is the physical Higgs density or that the absolute EW scale is selected. Repair target: add and audit a physical endpoint-selection and normalization theorem; until then the safe claim boundary is conditional D=4 arithmetic only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py",
+  "title": "Hierarchy Dimensional Compression Note",
+  "transitive_descendants": 713,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

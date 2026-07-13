@@ -1,0 +1,277 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (exercise location result + route-boundary portfolio)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "car_from_positivity_neutrality_note_2026-06-02",
+    "axiom_first_spin_statistics_theorem_note_2026-04-29",
+    "fermion_parity_z2_grading_theorem_note_2026-05-02",
+    "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "da358c1c730e16a31aae944df3441df697ba393f78e471de51b445501e3cfcb2",
+  "note_path": "docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T21:30:38.273221+00:00",
+      "archived_for_note_hash": "683a370e8423bbff9c2b2e3d261bf431c2ca75b37af1b5f17fe00026b6edf792",
+      "audit_date": "2026-06-11T14:43:42.119552+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "car_from_positivity_neutrality_note_2026-06-02": "Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "Bounded finite witness packet: exact UD_2 homology for C_3,C_4,C_5,K_4,K_5,K_{3,3}; finite L=3,4 Z^3 cube graph nonplanarity and 3-connectivity checks; and the elementary sign-phase consequence for an already-established order-2 class.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "car_from_positivity_neutrality_note_2026-06-02": "no_go",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "car_from_positivity_neutrality_note_2026-06-02": "retained_no_go",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "car_from_positivity_neutrality_note_2026-06-02",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "3e6b08a118c32869faed4a9548ba075a72c3acffb8d106ccca6a4599165740a4",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-144120-84879d6c5a-spin_statistics_fs_admission",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local algebra checks close, and the Record-boundary argument is plausible over the supplied axiom text. The broader admission/no-route conclusion does not close because the packet leaves the multi-loop graded-net cocycle route open and relies on route/no-go/literature assertions not fully established inside the restricted packet.",
+      "claim_scope": "Audited the bounded claim that this packet locates the cross-site fermion exchange sign as not supplied by Cl(3), graph-braid topology, transfer positivity, or Record, while retaining the occupation-parity grading.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:43:42.119552+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The retained Z2 parity grading is a central-sector datum shared by the hard-core-boson and CAR frames, while the cross-site exchange sign is within-sector data that Record explicitly does not supply; therefore CAR is not derived from {Lattice, Quantum, Record}.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: either narrow the claim to the checked Cl(3)/topology/Record/positivity route boundaries, or add a retained bridge theorem closing the multi-loop graded-net route and the omitted no-go dependencies.",
+      "open_dependency_paths": [
+        "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+        "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md",
+        "docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 6,
+        "C": 3,
+        "D": 1,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The runner genuinely computes the Pauli pseudoscalar identities and the maximal-anticommuting nullspace, and the Hom(Z2,U(1)) sign dichotomy is elementary. However, most load-bearing route-closure statements are hard-coded True checks or cross-note/literature assertions rather than independent derivations. The graph-braid authority is explicitly a bounded witness packet, the 3x3x2 H1 value is flagged for re-verification, and the source itself identifies multi-loop graded-net consistency as an unrefuted opening. Therefore the packet supports a narrowed location statement but not a clean theorem that FS is globally a settled admission on the static baseline."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.986196+00:00",
+      "audit_date": "2026-06-14T01:23:25.538926+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "car_from_positivity_neutrality_note_2026-06-02": "Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "Bounded finite witness packet: exact UD_2 homology for C_3,C_4,C_5,K_4,K_5,K_{3,3}; finite L=3,4 Z^3 cube graph nonplanarity and 3-connectivity checks; and the elementary sign-phase consequence for an already-established order-2 class.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "car_from_positivity_neutrality_note_2026-06-02": "no_go",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "car_from_positivity_neutrality_note_2026-06-02": "retained_no_go",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "car_from_positivity_neutrality_note_2026-06-02",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "704ae9e5248b15949a1c53a8ff66c8c3df91069cd664a678d4cef1056bdf07a6",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-012206-5f63a28789-spin_statistics_fs_admission",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Cl(3) obstruction follows by expanding a general 2x2 operator in the Pauli basis, and Hom(Z2,U(1)) is exactly the two roots \u00b11. The Record conclusion follows only for the narrowed boundary statement because the packet leaves multi-loop and continuum routes open.",
+      "claim_scope": "Narrow location certificate: Cl(3) does not provide an inner Z2 CAR grading, an order-two exchange route admits both +1 and -1 phases, and Record does not supply a within-sector exchange-sign datum once the central parity label is in place; no CAR or global spin-statistics closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T01:23:25.538926+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The retained central Z2 parity grading is common to the boson/CAR frames, while the cross-site exchange sign is within-sector data and Record supplies no within-sector data; Cl(3) and Hom(Z2,U(1)) supply no selector for the sign.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that 'central-sector datum' is used only conditionally on the supplied parity label and not as a new derivation of physical superselection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing mathematics is elementary algebra over the provided Pauli, parity, topology, and Record inputs, not a numerical match or definition substitution. The runner genuinely computes the Pauli obstruction and Hom dichotomy, while the remaining checks are scope guards preventing an overclaim. The clean verdict applies only to the bounded location result, not to a global no-go against future spin-statistics routes."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.517720+00:00",
+      "audit_date": "2026-06-21T14:28:33.373416+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame.",
+          "car_from_positivity_neutrality_note_2026-06-02": "Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "Finite N-site tensor-product occupation/Fock space with n_x=a_x^dagger a_x=diag(0,1): F=(-1)^{Q_total} is a Hermitian unitary involution, gives the even/odd Z_2 grading with equal dimensions for N>=1, makes single-site ladder operators odd and bilinears even, with conservation only conditional on even dynamics.",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "Bounded finite witness packet: exact UD_2 homology for C_3,C_4,C_5,K_4,K_5,K_{3,3}; finite L=3,4 Z^3 cube graph nonplanarity and 3-connectivity checks; and the elementary sign-phase consequence for an already-established order-2 class.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "car_from_positivity_neutrality_note_2026-06-02": "no_go",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "positive_theorem",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "car_from_positivity_neutrality_note_2026-06-02": "retained_no_go",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02": "retained",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "car_from_positivity_neutrality_note_2026-06-02",
+          "fermion_parity_z2_grading_theorem_note_2026-05-02",
+          "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "704ae9e5248b15949a1c53a8ff66c8c3df91069cd664a678d4cef1056bdf07a6",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-spin_statistics_fs_admission_located_exercise_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed scope, the Pauli obstruction is directly computed, Hom(Z2,U(1)) gives the elementary two-sign alternative, and the Record axiom explicitly withholds within-sector data. The broader FS/spin-statistics routes are expressly left open and are not part of the audited conclusion.",
+      "claim_scope": "Bounded location certificate only: the Pauli/Cl(3) obstruction, the order-two sign dichotomy without sign selection, and the Record no-within-sector-data boundary once a central parity label is supplied; no CAR derivation, global spin-statistics closure, multi-loop no-go, continuum bridge, or 3x3x2 H1 verification is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T14:28:33.373416+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Cl(3) vector grade is not an inner Z2 CAR grading on the qubit because omega^2 = -I and the only operator anticommuting all three Paulis is 0; topology supplies at most the Hom(Z2,U(1)) = {+1,-1} dichotomy, and Record supplies no within-sector exchange-sign datum once the parity label is in place.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should recheck that downstream consumers preserve the conditional/narrow reading of the central-parity-label boundary and do not cite this row as global spin-statistics or CAR closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 12,
+        "C": 4,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner genuinely instantiates the one-site Pauli algebra and computes the pseudoscalar and all-Pauli anticommutant obstruction rather than only printing expected constants. The topology portion is only the elementary sign dichotomy and the note guards against using it as sign selection; the Record portion is a direct axiom-boundary application, not a derivation of CAR. Clean status applies only to this scoped location certificate, not to the open multi-loop, continuum, or 3x3x2 witness routes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py",
+  "title": "Spin-Statistics / FS: Cross-Site Fermion Sign Location and Open-Route Boundary (Exercise)",
+  "transitive_descendants": 2,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_ward_identity_derivation_theorem",
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+    "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5937154a87cbd23a0f23371d2d8b0162f60544e440d41520d5ad1f127f94679b",
+  "note_path": "docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.085533+00:00",
+      "audit_date": "2026-06-21T15:43:58.091316+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "Audited the narrow direct-route no-go: H_unit as an SU(2)_L scalar singlet on Q_L cannot by itself equivariantly derive a full complex SU(2)_L EWSB doublet; supplied-doublet and neutral-ray uses remain outside this direct derivation.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "no_go",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": "retained_no_go",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "8866f15862d269cd6818751d56f56953a18be695df3569fab0b836f5ef4cac1f",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The orbit/radius and charge-neutrality statements are direct algebra over the supplied EW doublet, while the H_unit scalar limitation is supplied by the retained-grade representation no-go authority. Within the stated supplied-doublet boundary, no additional bridge or observed input is needed.",
+      "claim_scope": "Exact supplied-doublet radial/orbit support: H_unit-compatible scalar support may align with the invariant radius and neutral representative, but not as authority for the full thermal doublet field content or a g_* promotion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:43:58.091316+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15:retained_no_go->unaudited",
+      "load_bearing_step": "For any nonzero supplied doublet H=(a,b)^T, the constructed SU(2) matrix U(H) sends H to (0,rho)^T while preserving H^dag H, and the lower representative is Q-neutral.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the zero-doublet exclusion and SU(2) convention signs; the scoped nonzero supplied-doublet algebra closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 33,
+        "C": 0,
+        "D": 0,
+        "total_pass": 67
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: the runner checks the SU(2) orbit map, invariant radius, Q-neutral representative, radial-versus-four-component dimension count, and H_unit commutator/no-invariant-vector boundary. The cited authorities are retained-grade for the scoped use: H_unit scalar-singlet structure, supplied one-doublet EW bookkeeping, and the representation no-go. The note does not claim to derive the doublet or promote the downstream g_* row, and the runner includes firewall checks against that overread. No external comparator or tuned numerical match is used."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py",
+  "title": "SM g_* H_unit Neutral/Radial Orbit Support",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

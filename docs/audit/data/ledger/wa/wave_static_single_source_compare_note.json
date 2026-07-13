@@ -1,0 +1,243 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_static_single_source_compare_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_retardation_continuum_limit_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.968,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8e65a81c0dfee9cbac86ccb71ead608d7f9a7a849e015874e7d571de35494a05",
+  "note_path": "docs/WAVE_STATIC_SINGLE_SOURCE_COMPARE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370190+00:00",
+      "archived_for_note_hash": "57b992c9ef2d7311c087a58d046a0fad0f82aa91f180a19790fc8f4bcd48b78b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-09T10:55:06.461989+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The live runner reproduces both retained frozen-source tables, including all comparator shifts, relative mismatches, and static residuals. The note scopes the result as a smoke test rather than a continuum or all-source-position claim.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->high",
+      "load_bearing_step": "At coarse H = 0.5, frozen-source comparator quality is source-position dependent: off-center z_phys = 3.0 already shows poor cached comparator agreement while on-axis z_phys = 0.0 is much better for dIeq.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 20,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner supports the note's narrow diagnostic. For z_phys = 3.0, dS tracks dM closely while cached and Newton-style comparators are poor; for z_phys = 0.0, dIeq nearly matches dM while dN remains poor. This cleanly supports the bounded conclusion that the mismatch is not purely a moving-source artifact and that comparator quality depends on source position."
+    },
+    {
+      "archived_at": "2026-05-09T19:08:26.240771+00:00",
+      "archived_for_note_hash": "e0caa202151dc7217bc7f967413327336819b70c13bcaec57287b067c661abc2",
+      "audit_date": "2026-05-09T11:49:02.023402+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.477,
+        "runner_hash": "4c118aba18611aa56c34c8ef9203cb5ba737b2218724ab6dcef0ff740ffe8b58",
+        "transitive_descendants": 125
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0c8f-53c8-7590-95e1-cba554dc8976",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The top-level runner reproduces the note's tables and locally computes the direct static solve, but it imports the retarded solver, cached comparators, Newton comparator, lattice growth, beam propagation, readout, and constants from an unprovided module. The missing closure step is a retained or in-packet construction of those imported quantities.",
+      "claim_scope": "A finite H = 0.5 smoke-test comparison of dM, dI, dIeq, dN, and dS for frozen sources at z_phys = 3.0 and z_phys = 0.0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T11:49:02.023402+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "At H = 0.5 and frozen z_phys = 3.0, the runner reports dM = +0.009857 versus dI = +0.018250, dIeq = +0.003038, dN = +0.013402, and dS = +0.009507, so comparator mismatches are already present without source motion.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the imported wave_retardation_continuum_limit implementation or cite its retained theorem/source note, then rerun the same two frozen-source cases as a self-contained certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the note's conclusion rests on runner-generated dM/dI/dIeq/dN/dS values, while the runner delegates most physical construction and readout to wave_retardation_continuum_limit, which is not included as a cited or retained authority in the restricted packet. Why this blocks: stdout plus top-level arithmetic cannot by itself verify that the compared quantities are the advertised retarded, cached static, Newton-style, and beam-readout objects. Repair target: provide a retained dependency edge or a self-contained sliced runner that constructs solve_wave, make_instantaneous, make_instantaneous_equilibrated, make_imposed_newton, grow, prop_beam, cz, and constants from retained primitives. Claim boundary until fixed: the packet supports a reported finite-run smoke-test table, not a closed theorem that source motion is excluded as the cause of the comparator mismatch."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:40.846713+00:00",
+      "audit_date": "2026-05-10T16:24:42.338751+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "wave_retardation_continuum_limit_note": "Finite H-refinement battery showing that the tested retarded-vs-c-infinity magnitude gaps are not converged for cached-static, equilibrated-static, or imposed-Newton comparators at H = 0.5, 0.35, 0.25, while dM is comparatively stable."
+        },
+        "dep_claim_type": {
+          "wave_retardation_continuum_limit_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_retardation_continuum_limit_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_retardation_continuum_limit_note"
+        ],
+        "load_bearing_score": 8.964,
+        "runner_hash": "4c118aba18611aa56c34c8ef9203cb5ba737b2218724ab6dcef0ff740ffe8b58",
+        "transitive_descendants": 352
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e12b2-21cf-72a3-b14f-869b1d76b796",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The completed runner stdout matches the source note's two H = 0.5 tables and directly supports the bounded smoke-test conclusion. The closure is only for the implemented finite-grid comparators and does not establish a continuum theorem or an independently derived physical c-infinity comparator.",
+      "claim_scope": "At H = 0.5 for the implemented frozen-source runner, the off-center source shows large dM-vs-cached-comparator mismatches without source motion, while the on-axis source is better behaved for dIeq and poor for dN.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:24:42.338751+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T16:21:17.378067+00:00",
+          "auditor": "codex-audit-loop-019e12ae-db4b-70e0-adb4-0e5cfc3dabae",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded H=0.5 frozen-source comparison for z_phys = 3.0 and 0.0, auditing only the reported dM, dI, dIeq, dN, dS rows and the narrow conclusion that off-center comparator mismatches occur without source motion.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-10T16:24:42.336994+00:00",
+          "auditor": "codex-audit-loop-019e12b2-21cf-72a3-b14f-869b1d76b796",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "At H = 0.5 for the implemented frozen-source runner, the off-center source shows large dM-vs-cached-comparator mismatches without source motion, while the on-axis source is better behaved for dIeq and poor for dN.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:wave_retardation_continuum_limit_note:retained_bounded->unaudited",
+      "load_bearing_step": "The frozen-source probe says the moving-source mismatch is not caused purely by source motion; it is already visible for the frozen off-center source at z_phys = 3.0.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the scoped clean verdict remains limited to the implemented H = 0.5 smoke test and does not promote dS into a general exact static-comparator theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Clean for the stated bounded smoke-test scope: the note's numerical claims are current with the supplied runner stdout, and the runner source constructs frozen-source histories, comparator fields, a direct finite-grid static solve, and beam readouts rather than printing the table as constants. The cited authority is retained_bounded for the imported wave-retardation primitives, and the source note explicitly avoids a continuum claim. Residual risk is interpretive: dS is audited only as the implemented direct finite-grid Poisson solve, not as a closed theorem for the unique physical static comparator."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_static_single_source_compare.py",
+  "title": "Wave Static Single-Source Compare",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

@@ -1,0 +1,139 @@
+{
+  "audit_date": "2026-05-12T00:20:01.571961+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "claude_complex_action_grown_companion_note": "Runner-defined grown row only: drift=0.2, restore=0.7, seeds 0 and 1, with the listed gamma sweep and no geometry-generic, continuum, or self-gravity extension."
+    },
+    "dep_claim_type": {
+      "claude_complex_action_grown_companion_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "claude_complex_action_grown_companion_note": "retained_bounded"
+    },
+    "deps": [
+      "claude_complex_action_grown_companion_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "3187c78a5095e0a73958c020c267755f1bad9567d16ab177ff5ffe70ab54bbe9",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-fixed_field_grown_transf-016",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.",
+  "claim_id": "fixed_field_grown_transfer_scout_note",
+  "claim_scope": "Audited only the runner-defined retained grown row at drift=0.2, restore=0.7, seed=0, fixed-field propagation with the listed signed-source cases and zero/neutral controls.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-12T00:20:01.571961+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "claude_complex_action_grown_companion_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The retained grown row preserves a bounded signed-source response in the fixed-field scout while zero-source and neutral same-point controls reduce to printed zero and the +2 source is approximately linear in the +1 source.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "91275b537316b9d8b890871360fe42a6f143d8dcd798f385bba2af16d84ce656",
+  "note_path": "docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check the imported grow implementation if its source is available, since this packet includes the scout runner but not the grow function body.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368323+00:00",
+      "archived_for_note_hash": "fc70a12e5322ffaa6f71e68676bb43480a49a378e904fa33624b43f367ff14b7",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235014+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The live runner recomputes the finite grown-row signed-source table, exact zero/neutral controls, and charge-linearity exponent from the specified row rather than importing the table. The source note explicitly limits the claim to drift=0.2, restore=0.7 fixed-field propagation and excludes geometry-generic or Maxwell-level claims.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:claude_complex_action_grown_companion_note",
+      "load_bearing_step": "the retained grown row preserves the scalar sign response in the fixed-field scout; zero-source and neutral same-point controls reduce to printed zero; the single-source response is approximately linear in source charge",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing claim is a bounded finite computation: on the specified grown row, the runner reproduces zero-source and neutral cancellation, opposite signs for +1 and -1 sources, like/dipole controls, and near-linear +1 to +2 scaling. The companion grown-geometry control values are consistent with the one-hop companion note already audited clean, while the present source note does not use them to derive a geometry-generic theorem. Residual boundary: the source cites a stale companion replay log filename, but the signed-source claim itself closes through the current scout runner and the available companion artifact."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 2,
+    "B": 0,
+    "C": 5,
+    "D": 0,
+    "total_pass": 7
+  },
+  "runner_path": "scripts/fixed_field_grown_transfer_scout.py",
+  "title": "Fixed Field Grown Transfer Scout Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure."
+}

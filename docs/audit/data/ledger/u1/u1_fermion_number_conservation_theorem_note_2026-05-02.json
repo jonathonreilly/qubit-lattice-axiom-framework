@@ -1,0 +1,232 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "u1_fermion_number_conservation_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_lattice_noether_theorem_note_2026-04-29",
+    "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "998a63b9073970f8e0efe8b661bb897144525c6792936d4322471eb5e1a5f054",
+  "note_path": "docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-25T22:48:55.018487+00:00",
+      "archived_for_note_hash": "007912e193e28d7f8386814a956883c5cd0e619d02aa24794cfdc22af3acf4de",
+      "audit_date": "2026-05-25T19:35:27.342941+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "3ca1e84bfca6a993908ac13d87d1d636775aff42e654119f43d673e691f62fb5",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T193350Z-5dd58ebd-u1_fermion_number_conser-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The classical slice-telescoping step follows from N2 plus the periodic discrete divergence theorem on the admitted carrier. The quantum upgrades to [Q\u0302_total,H]=0 on H_phys and an integer spectrum require a closed Hilbert-space/Hamiltonian reconstruction and charge-operator bridge that is not supplied in the restricted packet.",
+      "claim_scope": "On-shell U(1) time-slice charge conservation from the cited lattice Noether N2, together with the asserted Hilbert-space commutator and integer-spectrum upgrades.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:35:27.342941+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Cited N2 gives \u2202^L_\u03bc J^\u03bc_x=0 on shell; summing over a periodic spatial slice telescopes the spatial terms and identifies the temporal remainder with Q_total(t)-Q_total(t-1)=0, then the note asserts the corresponding [Q\u0302_total,H]=0 and integer number-operator spectrum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite or prove the Hilbert-space/Hamiltonian reconstruction bridge identifying the lattice U(1) Noether charge with Q\u0302_total, proving its integer spectrum and [Q\u0302_total,H]=0, or narrow the note to the classical on-shell slice-conservation result.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner checks a toy finite Fock-space Q\u0302 and an H chosen to be block-diagonal in total occupation, so its passes are algebraic consistency checks, not a first-principles computation of the cited lattice Noether current or Hamiltonian reconstruction. The cited Noether authority is retained_bounded and supports the classical U(1) current on the admitted staggered carrier, but it explicitly does not close all quantum-current/anomaly/Hilbert-space identifications. The source note therefore overstates the chain by treating the classical on-shell current conservation as automatically equivalent to [Q\u0302_total,H]=0 and integer fermion-number sectors on H_phys."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.522580+00:00",
+      "audit_date": "2026-06-21T11:54:49.135698+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identities on the admitted staggered/Grassmann Kawamoto-Smit carrier: onsite/internal U(1) and general onsite/internal bilateral current (5), plus the separate (2Z)^3 two-step localized Ward identity (3a); density (3) is support-only.",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": "Given the retained Cl(3) dim_C V = 2 Pauli carrier at each finite ordered site, the abstract Jordan-Wigner operators on H_Lambda = V^{otimes N} satisfy the stated finite-mode CAR, nilpotency, CAR-algebra dimension, and number-operator facts."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": "decoration"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "3ca1e84bfca6a993908ac13d87d1d636775aff42e654119f43d673e691f62fb5",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-u1_fermion_number_conservation_theorem_note_2026-05-02-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The classical slice-sum conservation follows algebraically from cited N2 plus periodic telescoping. The full claim does not close because the packet does not supply a retained bridge from the Grassmann current Q=sum chi_bar chi to a physical Hilbert-space number operator and reconstructed Hamiltonian commutator.",
+      "claim_scope": "Audited the claimed conservation of total U(1) fermion number across time slices, its promotion to a Hilbert-space commutator with H, and the asserted non-negative integer spectrum of Q\u0302_total.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:54:49.135698+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Sum N2's on-shell local lattice divergence over a periodic spatial slice so spatial terms telescope and the temporal part gives Q_total(t)-Q_total(t-1)=0, then promote this to [Q\u0302_total,H]=0 and an integer number-operator spectrum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained classical-current-to-Hilbert-space charge/Hamiltonian bridge, or narrow the claim to classical on-shell slice conservation on the cited N2 carrier.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: Step 3's quantum promotion and Step 4's integer-spectrum claim use a classical-to-quantum/Hilbert-space number-operator bridge that is not closed by the cited N2 packet. Why this blocks: the runner assumes Q is diagonal by occupation number and assumes a U(1)-symmetric H is block-diagonal, so it checks consistency after the contested operator/Hamiltonian bridge has been imposed. Repair target: cite or prove a retained theorem identifying the integrated Grassmann U(1) charge with Q\u0302_total on H_phys and deriving the reconstructed H action/commutator from the cited lattice dynamics. Claim boundary until fixed: the on-shell classical lattice slice conservation on the admitted N2 carrier remains supported."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.510263+00:00",
+      "audit_date": "2026-07-02T02:55:37.392685+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identity on the admitted Kawamoto-Smit/Grassmann nearest-neighbor carrier: onsite/internal current (5), its U(1) specialization (4), and the exact localized two-step (2Z)^3 Ward identity (3a); density (3), site-mixing symmetries, taste shifts, anomaly closure, and Hilbert-sector corollaries are not theorem-grade in this audit.",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": "Given the retained Cl(3) dim_C V = 2 Pauli carrier at each finite ordered site, the abstract Jordan-Wigner operators on H_Lambda = V^{otimes N} satisfy the stated finite-mode CAR, nilpotency, CAR-algebra dimension, and number-operator facts."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": "decoration"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17": "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "3ca1e84bfca6a993908ac13d87d1d636775aff42e654119f43d673e691f62fb5",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T025537Z-73c8bcb2-u1_fermion_number_conser",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The slice-conservation step follows algebraically on the admitted N2 staggered-carrier surface. The operator claims require a retained bridge identifying the Grassmann current charge with a physical H_phys number operator and Hamiltonian evolution; the JW bridge supplied here is abstract and explicitly leaves that physical identification open.",
+      "claim_scope": "Integrated U(1) charge conservation from the cited N2 lattice Noether current, plus the claimed Hilbert-space commutator and integer-spectrum extensions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T02:55:37.392685+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "After summing the N2 local divergence over a spatial slice, the note asserts Q_total(t)-Q_total(t-1)=0 and then promotes the charge to a Hilbert-space operator with [Q_hat_total,H]=0 and integer number-operator spectrum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained physical-Hilbert/operator bridge for Q_hat and H_phys, or split the note so only the bounded slice-conservation corollary is audited.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: F2 and F3 use an unproved operator/Hamiltonian and physical Fock-space identification beyond the cited N2 current. Why this blocks: the runner hard-codes a Fock-basis Q and block-diagonal U(1)-symmetric H, so it checks consistency after the bridge rather than deriving the bridge. Repair target: cite or prove a retained bridge from Q=sum chi_bar chi on the Noether carrier to Q_hat=sum n_x on H_phys with the reconstructed H. Claim boundary until fixed: F1 is a bounded algebraic corollary of N2 on the admitted carrier."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/u1_fermion_number_conservation_check.py",
+  "title": "U(1) Fermion-Number Conservation from Cited Lattice Noether N2",
+  "transitive_descendants": 45,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

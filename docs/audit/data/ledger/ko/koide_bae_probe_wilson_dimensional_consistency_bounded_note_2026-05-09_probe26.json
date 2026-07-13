@@ -1,0 +1,122 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_bae_probe_wilson_dimensional_consistency_bounded_note_2026-05-09_probe26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+    "complete_prediction_chain_2026_04_15",
+    "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+    "koide_circulant_character_derivation_note_2026-04-18",
+    "koide_circulant_wilson_target_note_2026-04-18",
+    "koide_a1_probe_operator_class_bounded_note_2026-05-08_probe6",
+    "koide_a1_probe_retained_u1_hunt_bounded_obstruction_note_2026-05-09_probe14"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a8a173e721e9ac1719a6671918ea9e320c9ef2c3f6e7f237207ea4a43d2d1b11",
+  "note_path": "docs/KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T07:52:43.407165+00:00",
+      "archived_for_note_hash": "43a638f77eba5f17beba553e2f5aafc472f95037ccf8a2d358172cd401977113",
+      "audit_date": "2026-05-09T17:13:17.138439+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Standalone algebraic identities relating a C_3 circulant Hermitian H = aI + bC + bbar C^2 over R x C to the C_3 character coefficients of its eigenvalue triple."
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "b7eff49bd01848706256e7d7afa5d9f127feb5d926dc77cf38b995929dd67772",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0db8-ba7f-7650-85aa-60c98194f12d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The scalar-rescaling algebra closes, but the restricted packet does not close the premise that all Wilson-chain structural factors act on H only as C3[111]-trivial scalars. The missing step is a retained operator-action bridge for APBC, u0, alpha_LM^16, alpha_LM^2, and the no-U(1)_b residue.",
+      "claim_scope": "Audited the bounded obstruction that the specific m_tau Wilson chain cannot force BAE if its APBC, u0, alpha_LM^16, and alpha_LM^2 factors act as C3[111]-trivial scalars on the Brannen circulant.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T17:13:17.138439+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Each Wilson-chain structural factor acts on H as a scalar rescaling H -> rH; scalar rescalings preserve |b|^2/a^2, so they cannot force BAE.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply the retained operator-action theorem or include the upstream retained authorities proving these Wilson-chain factors are C3[111]-trivial scalars on H, then rerun the audit.",
+      "open_dependency_paths": [
+        "docs/COMPLETE_PREDICTION_CHAIN_2026_04_15.md",
+        "docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md",
+        "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md",
+        "docs/KOIDE_CIRCULANT_WILSON_TARGET_NOTE_2026-04-18.md",
+        "docs/KOIDE_A1_PROBE_OPERATOR_CLASS_BOUNDED_NOTE_2026-05-08_probe6.md",
+        "docs/KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 69
+      },
+      "verdict_rationale": "Issue: the algebraic ratio-preservation argument is valid, but the packet does not provide the retained Wilson/taste/tadpole/APBC/probe authorities that force those factors to act only as C3[111]-trivial scalars on H; the runner sets those actions as scalar multiplications and includes several hard-coded summary checks. Why this blocks: without that retained bridge, the obstruction is conditional on an imported operator-action premise rather than derived from the cited inputs. Repair target: provide a narrow retained theorem or full retained dependencies constructing the APBC, u0, alpha_LM^16, and alpha_LM^2 actions on A^{C3} and proving absence of C3-isotype grading or U(1)_b content. Claim boundary until fixed: the packet supports only the conditional algebraic statement that scalar rescalings preserve |b|^2/a^2 and therefore cannot force BAE."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cl3_koide_bae_probe_wilson_dimensional_consistency_2026_05_09_probe26.py",
+  "title": "Koide BAE Probe 26 \u2014 Wilson-Chain Dimensional Consistency Bounded Obstruction",
+  "transitive_descendants": 706,
+  "verdict_rationale": null
+}

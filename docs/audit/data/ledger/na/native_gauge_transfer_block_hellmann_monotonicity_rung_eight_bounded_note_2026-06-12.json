@@ -1,0 +1,181 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+    "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e3485659509a839b423086f8e6a0d1b1fb497136a000226971442f941bd59c58",
+  "note_path": "docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T07:43:49.467274+00:00",
+      "audit_date": "2026-06-16T03:25:49.094220+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Gauge-only SU(3) Wilson one-link weight/kernel: non-negative character coefficients for all irreps and beta>=0, hence PSD convolution/Gram kernel; no fermion, mixed OS, or full interacting RP closure."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "42878d628a5500d9a444cb8221ca14a93f8a3789acae4a4799247a45fe025ed5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-032215-708cec2857-native_gauge_transfer_block_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-matrix product rule, commutation of J with exp(beta J/2), quotient derivative for normalized Wilson coefficients, and Hellmann-Feynman identity establish the split from the cited inputs. H8-J, H8-D, and shell/tail transfer are explicitly outside the closed scope.",
+      "claim_scope": "Exact finite-block product-rule/Hellmann split for T_beta = E_beta D_beta E_beta with the Wilson coefficient derivative recurrence, plus finite-grid witnesses; no all-beta, half-line, continuum, or physical beta=6 monotonicity theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:25:49.094220+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+      "load_bearing_step": "For finite blocks, the product-rule/Hellmann-Feynman calculation gives d log(lambda_i)/d beta = <v_i,J v_i> + <v_i,E_beta D'_beta E_beta v_i>/lambda_i, so the ratio derivative target is exactly Delta_J + Delta_D <= 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream claims do not treat the finite-grid H8-J/H8-D witnesses as an all-beta or half-line theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic finite-block identity, not a physical-beta or half-line monotonicity theorem. Independent formula checks confirm the shift cancellation, 1/2 product-rule factors, J-part reduction, quotient normalization, and displayed table sums/signs. The runner source recomputes the finite-grid witnesses from coefficient recurrence and eigensolves rather than hard-coding the contested premise. The cited authorities are retained-grade for the limited inputs used; their open physical environment/Perron questions are not imported by this scoped finite-block claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.182766+00:00",
+      "audit_date": "2026-06-21T12:44:08.534767+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "Structural beta=6 source-sector factorization T_src(6)=exp(3J) D_6 exp(3J) and matrix-element formula with D_6/kappa fixed but not evaluated.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 5.524,
+        "runner_hash": "42878d628a5500d9a444cb8221ca14a93f8a3789acae4a4799247a45fe025ed5",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared finite-block scope, the derivative split follows algebraically from the cited J recurrence and source-sector factorization under simple isolated eigenvalues, and the runner recomputes the stated finite-grid sign witnesses from the matrix operator. The uniform H8-J/H8-D domination and shell/tail transfer steps are explicitly outside the audited conclusion.",
+      "claim_scope": "Finite-block product-rule/Hellmann-Feynman derivative split for T_beta = E_beta D_beta E_beta, shifted-scalar cancellation in lambda_1/lambda_0, and finite-grid post-peak diagnostic witnesses; no eventual monotonicity, half-line gap theorem, or physical beta = 6 claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:44:08.534767+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The product rule gives dT_beta/dbeta = (1/2)(J T_beta + T_beta J) + E_beta D_beta' E_beta, and Hellmann-Feynman converts the log-ratio derivative target into Delta_J + Delta_D <= 0 on the finite block.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The load-bearing step is class A: differentiating E_beta D_beta E_beta and applying Hellmann-Feynman gives the displayed decomposition, while the scalar shift cancels in the ratio derivative. The cited authorities are retained-grade or retained_bounded, and no cited authority carries an open identification needed for this finite-block identity. The runner builds J, computes Wilson coefficient tables through the helper, checks the derivative recurrence, verifies the matrix split against direct differentiation and finite differences, and reports finite-grid signs without external comparators or tuned inputs. This clean verdict is only for the bounded finite-block decomposition and witnessed grid; eventual monotonicity remains unproved."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py",
+  "title": "Native Gauge Transfer Block-Hellmann Monotonicity Rung Eight Bounded Note",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

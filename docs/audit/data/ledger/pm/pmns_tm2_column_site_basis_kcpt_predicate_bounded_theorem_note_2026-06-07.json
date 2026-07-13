@@ -1,0 +1,170 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "28e61289f301f031f8b308c24941c5eca87327c7fb434ac4935a535da63b13f7",
+  "note_path": "docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:31:03.916931+00:00",
+      "archived_for_note_hash": "1a03780e4574aa7f5e1d8e1923522f28d6cf2a968c5f374be21b3fea404d56d8",
+      "audit_date": "2026-06-08T11:48:02.591714+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a5bf14b2a6503b321f8f7e8060e1e9271aec2ec04f2c70f73ff487af81f98b8a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260608-114537-4a204dd553-pmns_tm2_column_site_basis_k",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic matrix identities P0=J/3=P_char(0), conj(P_char1)=P_char2, conj(P_char2)=P_char1, and the K-real span_R{I,S} check out. The missing step is an independent retained bridge deriving or defining physical K/CPT or time-reversal K-reality as this site-basis complex conjugation, rather than asserting the identity by name.",
+      "claim_scope": "Audited the bounded finite C3 site-basis algebra: RECORD dephasing onto P0 plus P1 yields one trimaximal singlet column, K-real C3-invariant monitors lie in span_R{I,S}, and site-basis conjugation fixes the singlet character projector while swapping the two nontrivial character projectors; realized monitor K-evenness was not derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T11:48:02.591714+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The K/CPT conjugation is site-basis complex conjugation in the fixed Z^3 site-occupation basis, transported by the complex C3 Fourier, fixing P_char(0) and swapping P_char(1) with P_char(2).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "A second audit should re-check whether a retained primitive or bridge theorem explicitly equates K/CPT on the hw=1 site basis with site-basis complex conjugation; none is present in this packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner performs real finite C3 algebra checks and its 12 PASS claims match the displayed formulas, signs, factors, projectors, and degeneracies under an independent matrix audit. However, the theorem's new load-bearing move is the identification of the prior K-reality residual with site-basis K/CPT conjugation. In the restricted packet, that identity is not derived from a retained K/CPT bridge; it is introduced as the chosen name for site-basis complex conjugation. Thus the algebraic consequences are sound, but the claimed residual identification is a renaming rather than a derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.940058+00:00",
+      "audit_date": "2026-06-18T14:02:26.031339+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "a5bf14b2a6503b321f8f7e8060e1e9271aec2ec04f2c70f73ff487af81f98b8a",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix identities checked by the runner close, including P0=J/3=Pchar(0) and conjugation swapping the nontrivial character projectors. The step that makes the residual predicate the canonical lattice K/CPT predicate is a chosen identification, not derived from a retained independent K/CPT bridge in the restricted packet.",
+      "claim_scope": "Audited the finite C3 algebra for the TM2 singlet projector, RECORD P0/P1 dephasing, K-real two-block degeneracy, and the asserted identification of the residual K-reality predicate with site-basis conjugation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:02:26.031339+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_einselection_2sector_modulo_kreality_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The TM2 column's K-reality residual is identified with the site-basis K/CPT real-structure: site-basis complex conjugation transported by the C3 Fourier fixes Pchar0 and swaps Pchar1 with Pchar2.",
+      "load_bearing_step_class": "F",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether a separate retained K/CPT site-basis bridge exists outside this restricted packet; if so, it would need to be wired as a direct authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: the runner verifies the finite C3/projector/conjugation algebra, but the load-bearing conclusion equating the prior K-reality residual with site-basis K/CPT is an identification of concepts. Why this blocks: the cited authorities do not independently derive that this site-basis conjugation is the physical K/CPT predicate required by the residual. Repair target: add or cite a bridge theorem deriving the K/CPT/site-basis predicate from retained primitives rather than choosing it. Claim boundary until fixed: the note can support the explicit finite algebra and predicate definition, not a derived non-arbitrary K/CPT bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py",
+  "title": "The PMNS TM2 Trimaximal Column's K-Reality Residual is the Site-Basis K/CPT Predicate (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

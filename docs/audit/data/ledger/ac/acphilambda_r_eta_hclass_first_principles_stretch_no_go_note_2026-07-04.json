@@ -1,0 +1,126 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_r_eta_hclass_first_principles_stretch_no_go_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "ac_reta_hclass_hunit_readout_derivation_obligation",
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "08c15bdc0c2fc2ccd750ca2752260ae02ec2521a70bc0307103c42058a63ed09",
+  "note_path": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:36.954505+00:00",
+      "audit_date": "2026-07-10T03:47:07.600599+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "26c79edfd01b15141efacd928162135e1539cfb3a7d032bd6ea3ab06af482bc1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00041-acphilambda_r_eta_hclass_fir",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite alpha-family establishes the narrow algebraic underdetermination, but the claim does not close as a statement about the current repository surface. Its Tier-A premise is stale, and the packet omits the owner-governed AC residual boundary needed to determine whether h-class is now supplied there.",
+      "claim_scope": "The bounded algebraic obstruction showing that Record additivity, C3 covariance, and fixed-locus arithmetic do not by themselves select the fixed-locus-density readout class.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T03:47:07.600599+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "C3 covariance forces the three additive coefficients to be equal but leaves their common coefficient alpha free, so several admissible readouts exist and only alpha = 2/27 yields the fixed-locus density 2/9.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite and include the current owner-governed AC residual boundary, rematch whether it supplies h-class, add a dated current-registry hygiene line to this note's own boundary, update the runner to handle retired_derivation_targets, and rerun.",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md",
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The algebraic counterfamily is sound and independently judgeable despite the incomplete run. However, the runner crashes because it expects a live AC entry under derivation_targets, while the cited registry states that the live Tier-A set is empty and AC_phi_lambda was retired through owner governance. Without the current owner-governed premise boundary, the note's current-surface and residual-status claims cannot be rematched."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py",
+  "title": "AC_phi_lambda R-eta h-Class First-Principles Stretch No-Go",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

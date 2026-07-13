@@ -668,6 +668,14 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
     module.REPO_ROOT = tmp_root
     module.DATA_DIR = tmp_root / "docs" / "audit" / "data"
     module.LEDGER_PATH = module.DATA_DIR / "audit_ledger.json"
+    # Writers persist through the sharded ledger; point the module's OWN
+    # bound ledger_io instance at the fixture data dir so tests never touch
+    # the real repository shards. (_import force-fresh-imports, so a fresh
+    # ledger_io here would be a different instance than the one the module
+    # under test bound at its import.) Without shards present, ledger_io
+    # falls back to the fixture monolith.
+    if hasattr(module, "ledger_io"):
+        module.ledger_io.DATA = module.DATA_DIR
     if hasattr(module, "GRAPH_PATH"):
         module.GRAPH_PATH = module.DATA_DIR / "citation_graph.json"
     # audit_lint reads these at main() time; without redirecting them the lint
@@ -8726,7 +8734,10 @@ class AuditDataFilesCoverPipelineSurfacesTest(unittest.TestCase):
         def covered(path: str) -> bool:
             return any(
                 path == allowed or path.startswith(allowed + "/")
-                for allowed in runner.AUDIT_DATA_FILES
+                for allowed in (
+                    *runner.AUDIT_DATA_FILES,
+                    *runner.GENERATED_UNTRACKED_FILES,
+                )
             )
 
         uncovered = sorted(path for path in announced if not covered(path))
@@ -10410,6 +10421,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         m.REPO_ROOT = self.tmp_root
         m.DATA_DIR = self.tmp_root / "docs" / "audit" / "data"
         m.LEDGER_PATH = m.DATA_DIR / "audit_ledger.json"
+        m.ledger_io.DATA = m.DATA_DIR
         return m
 
     def test_restore_refuses_stale_axiom_premise_hash(self):
@@ -13569,3 +13581,99 @@ class BatchOrchestratorRetargetFlagTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LedgerIoTest(unittest.TestCase):
+    """Sharded-ledger IO invariants (2026-07-13 repo-size forward fix)."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.data = Path(self._tmp.name) / "docs" / "audit" / "data"
+        self.data.mkdir(parents=True)
+        self.m = _import("ledger_io")
+        self.m.DATA = self.data
+
+    def _ledger(self):
+        return {
+            "schema_version": 1,
+            "stats": {"n": 2},
+            "rows": {
+                "row_a": {"claim_id": "row_a", "audit_status": "unaudited"},
+                "row_b.with.dots": {"claim_id": "row_b.with.dots",
+                                    "audit_status": "audited_clean"},
+            },
+        }
+
+    def test_save_load_round_trip_and_minimal_change(self):
+        ledger = self._ledger()
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(sorted(summary["changed"]),
+                         ["row_a", "row_b.with.dots"])
+        self.assertTrue(summary["meta_changed"])
+        self.assertEqual(self.m.load_ledger(), ledger)
+        # Idempotent second save touches nothing.
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(summary, {"changed": [], "removed": [],
+                                   "meta_changed": False})
+        # One-row change touches exactly one shard.
+        ledger["rows"]["row_a"]["audit_status"] = "audited_conditional"
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(summary["changed"], ["row_a"])
+        # Row removal deletes its shard.
+        del ledger["rows"]["row_b.with.dots"]
+        summary = self.m.save_ledger(ledger)
+        self.assertEqual(summary["removed"], ["row_b.with.dots"])
+        self.assertFalse(
+            (self.data / "ledger" / "ro" / "row_b.with.dots.json").exists()
+        )
+        # Cache matches the canonical monolith serialization byte-for-byte.
+        cache = (self.data / "audit_ledger.json").read_text(encoding="utf-8")
+        self.assertEqual(cache, json.dumps(self.m.load_ledger(), indent=2,
+                                           sort_keys=True) + "\n")
+
+    def test_ensure_cache_refuses_foreign_write_and_refreshes_stale(self):
+        ledger = self._ledger()
+        self.m.save_ledger(ledger)
+        cache = self.data / "audit_ledger.json"
+        # Foreign direct write to the cache is refused loudly.
+        blob = json.loads(cache.read_text())
+        blob["rows"]["row_a"]["audit_status"] = "audited_clean"
+        cache.write_text(json.dumps(blob, indent=2, sort_keys=True) + "\n")
+        with self.assertRaises(SystemExit):
+            self.m.ensure_cache()
+        self.assertIn("generated cache", self.m.verify() or "")
+        # Discarding the foreign cache lets materialization proceed from
+        # shards (the authoritative state).
+        cache.unlink()
+        self.assertTrue(self.m.ensure_cache())
+        self.assertIsNone(self.m.verify())
+        self.assertEqual(
+            self.m.load_ledger()["rows"]["row_a"]["audit_status"],
+            "unaudited",
+        )
+        # Direct shard edits (e.g. git pull) refresh the cache silently.
+        shard = self.data / "ledger" / "ro" / "row_a.json"
+        row = json.loads(shard.read_text())
+        row["audit_status"] = "audited_failed"
+        shard.write_text(json.dumps(row, indent=2, sort_keys=True) + "\n")
+        self.assertTrue(self.m.ensure_cache())
+        self.assertIn('"audited_failed"', cache.read_text())
+
+    def test_shard_path_rejects_unsafe_ids(self):
+        for bad in ("", ".", "..", "a/b"):
+            with self.assertRaises(ValueError):
+                self.m.shard_path(bad)
+
+    def test_migrate_refuses_when_shards_exist(self):
+        self.m.save_ledger(self._ledger())
+        with self.assertRaises(SystemExit):
+            self.m.migrate()
+
+    def test_unsharded_fallback_reads_monolith(self):
+        (self.data / "audit_ledger.json").write_text(
+            json.dumps(self._ledger(), indent=2, sort_keys=True) + "\n"
+        )
+        self.assertFalse(self.m.sharded())
+        self.assertEqual(self.m.load_ledger()["rows"]["row_a"]["claim_id"],
+                         "row_a")

@@ -36,6 +36,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 cd "${REPO_ROOT}"
 
+echo "==> 0-ledger/16 ledger_io.py --materialize (sharded ledger -> monolith read cache)"
+python3 docs/audit/scripts/ledger_io.py --materialize
+
 echo "==> 0/16 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)"
 python3 docs/audit/scripts/check_axiom_premise_clean.py
 

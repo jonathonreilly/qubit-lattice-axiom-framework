@@ -1,0 +1,209 @@
+{
+  "audit_date": "2026-05-29T06:17:16.528267+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "asymmetry_persistence_pilot_note": "Audited only the sparse npl=30, xyz_range=12.0, connect_radius=4.0, 16-seed primary-runner results for N=40, N=60, and sparse N=80 failure using the included gap_topological_asymmetry readout source."
+    },
+    "dep_claim_type": {
+      "asymmetry_persistence_pilot_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "asymmetry_persistence_pilot_note": "retained_bounded"
+    },
+    "deps": [
+      "asymmetry_persistence_pilot_note"
+    ],
+    "load_bearing_score": 2.585,
+    "runner_hash": "e39f93682f3659b7a5343d0b24e228be936c0fe492dfd68697de0939ba5887d2",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The current source scope is only the qualitative N=80 runner-output comparison; the cached stdout contains the required N=80 rows, and the helper sources show the configured graph generation, propagation, collapse, and purity readouts used for that comparison.",
+  "claim_id": "asymmetry_persistence_collapse_note",
+  "claim_scope": "Narrow qualitative observation from the completed N=80 configured runner output only: asymmetry-persistence lowers the unitary pur_min readout at the nonzero thresholds, while the stochastic-collapse readout does not show a uniform lowering relative to the unpruned baseline; N=100 rows and any collapse-pocket claim are excluded.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-29T06:17:16.528267+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "asymmetry_persistence_pilot_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/asymmetry_persistence_pilot.py",
+    "scripts/gap_topological_asymmetry.py",
+    "scripts/gap_topological_asymmetry_layernorm_combo.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 6.585,
+  "load_bearing_step": "At N=80 and thresholds 0.10/0.20, pers_pmin is 0.981 versus base_pmin 0.998 and pers_LN is 0.889/0.881 versus base_LN 0.954, while pers_col is 0.286/0.281 versus base_col 0.264 and persCol_LN is 0.235/0.236 versus col_LN 0.235.",
+  "load_bearing_step_class": "D",
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
+  "note_hash": "d3f72f53eddb7ab6ac4cb417028200ee717add8993b147b10e2cafb824086ab3",
+  "note_path": "docs/ASYMMETRY_PERSISTENCE_COLLAPSE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-10T16:52:16.235080+00:00",
+      "archived_for_note_hash": "c3ea31ae7c17152d9fc68d55803f00514efe1c39f21211ca6938e203fd96711a",
+      "audit_date": "2026-04-30T20:33:28.349249+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-stale-rationale-20260430-11",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner is registered, but it did not complete within the 60s audit-loop runtime budget during re-audit. Until the runner is optimized, marked as intentionally slow with a reason, or replaced by a bounded proof artifact, the frozen replay cannot be checked in the standard audit loop.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The generated asymmetry-persistence geometry remains useful in the unitary lane, is not a broad collapse-side win, and retains only one narrow layernorm-assisted collapse pocket.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "compute_required: rerun within compute budget or supply cached completed artifact.",
+      "open_dependency_paths": [
+        "runner_timeout_60s:scripts/asymmetry_persistence_collapse_pilot.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The stale missing-runner blocker is resolved because the row has a registered primary runner. The row remains conditional for a live Category 7 blocker: scripts/asymmetry_persistence_collapse_pilot.py did not complete within the 60s audit-loop wall-time budget during targeted re-audit. Claim boundary remains the source note's bounded pilot read until the runner is repaired, inventoried as genuinely slow with a reason, or replaced by a compact audit artifact."
+    },
+    {
+      "archived_at": "2026-05-24T15:53:42.135369+00:00",
+      "archived_for_note_hash": "0dbb525ed31227ebba321a7baa2102fbd29ea97db5e48b895508830ab8194659",
+      "audit_date": "2026-05-10T17:49:55.237717+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e39f93682f3659b7a5343d0b24e228be936c0fe492dfd68697de0939ba5887d2",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-019e1300-e9d8-74b3-97f4-71752dd6c083",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The supplied runner source/stdout do not match the note's stated configuration or tables: the runner defaults/stdout use 12 realizations while the note states 10, and completed N=80 collapse entries already differ numerically. The asserted N=100 threshold 0.10 pocket is not present in the supplied stdout because the run timed out, and the imported generator/propagator infrastructure is not supplied as a one-hop authority.",
+      "claim_scope": "Finite computational sweep claim for dense generated 3D graphs at the stated N, thresholds, seeds, collapse probability, and normalization lanes, asserting unitary persistence benefit, no generic collapse rescue, and one narrow layernorm-assisted N=100 collapse pocket.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T17:49:55.237717+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note's load-bearing step is that the Strongest retained rows tables are deterministic stdout of the registered runner and that the narrow conclusion is supported directly by those rows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check after the note, runner defaults, completed stdout artifact, and one-hop infrastructure dependencies are synchronized.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note's bounded tables are stale relative to the supplied runner source/stdout, and the runner depends on unlisted imported infrastructure for graph generation, propagation, layernorm, and pruning. Why this blocks: the conclusion depends on exact finite rows, especially the N=100 layernorm collapse pocket, but the current packet neither reproduces those rows nor supplies the imported closure authority. Repair target: align the runner/note configuration, provide a completed cached log or sliced deterministic runner for the stated sweep, and cite/audit the imported infrastructure. Claim boundary until fixed: the packet only supports partial qualitative observations from the completed N=80 stdout, not the full bounded claim."
+    },
+    {
+      "archived_at": "2026-05-28T09:41:24.281201+00:00",
+      "archived_for_note_hash": "50ef2ed98da1ff4ce438224b1871e2183b0186d2d2cd9071edcacd605fcfaa46",
+      "audit_date": "2026-05-28T05:29:06.421414+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "e39f93682f3659b7a5343d0b24e228be936c0fe492dfd68697de0939ba5887d2",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "carver-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-asymmetry-persistence-collapse",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The completed N=80 stdout supports the scoped qualitative direction, but the source itself places the regulated-propagator and pruning-rule closure in admitted-context helper imports, and the row has no direct retained or accepted-premise dependency edges for those helpers.",
+      "claim_scope": "N=80 qualitative observation only: nonzero persistence thresholds show lower unitary pur_min versus baseline, including the layernorm lane; stochastic-collapse rows do not show a uniform detector-purity lowering versus baseline. N=100 rows and the N=100 layernorm-assisted pocket are out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T05:29:06.421414+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note's claim that asymmetry-persistence is a unitary decoherence aid at N=80 and is not a generic stochastic-collapse rescue at N=80.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire retained or explicitly admitted closure authorities for the helper closure bracket, especially the asymmetry-persistence generator, pruning rule, regulated propagator, and purity machinery; also clarify that thr=0.00 is an equality/control row rather than a lower-purity persistence threshold.",
+      "open_dependency_paths": [
+        "scripts/asymmetry_persistence_pilot.py",
+        "scripts/gap_topological_asymmetry.py",
+        "scripts/gap_topological_asymmetry_layernorm_combo.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the N=80 qualitative table supports lower unitary pur_min only at the nonzero persistence thresholds, while the helper closure bracket for the generator, pruning rule, regulated propagator, and purity machinery is not wired as retained or accepted authority. Why this blocks: without those dependency edges, a clean bounded verdict would retain a computed observation whose load-bearing machinery is explicitly admitted-context rather than closed in the audit graph. Repair target: add retained or explicitly admitted authority for the three helper surfaces and clarify the thr=0.00 control wording. Claim boundary until fixed: the completed N=80 stdout locally supports the narrow qualitative observation, but N=100 rows and any collapse-pocket claim remain out of scope and the row stays conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "relabel_date": "2026-05-06T17:45:26.976759+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 1,
+    "runner_status": "ok"
+  },
+  "runner_path": "scripts/asymmetry_persistence_collapse_pilot.py",
+  "title": "Asymmetry Persistence + Collapse Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": "Within the narrowed scope, the completed N=80 stdout supports both qualitative statements: nonzero asymmetry-persistence thresholds lower the unitary pur_min readout, including the layernorm variant, and the stochastic-collapse columns do not show a generic lowering relative to baseline. The verdict does not use the runner's N=100 rows, does not assert a quantitative threshold row, does not assert a collapse pocket, and does not promote the helper model to a physical mechanism beyond this configured bounded simulation surface."
+}

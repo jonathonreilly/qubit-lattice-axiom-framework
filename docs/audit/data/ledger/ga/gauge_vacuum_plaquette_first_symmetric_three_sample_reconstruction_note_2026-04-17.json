@@ -1,0 +1,110 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.883,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8ad29f00984a24bf4fcf4439e17e84e5f77f80a64b777eb7d9285763a83dcfde",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_RECONSTRUCTION_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:41:06.955763+00:00",
+      "archived_for_note_hash": "3b6010b9eecbae39a812f54b879ef133012288147696709c077bb7e13c1384c4",
+      "audit_date": "2026-06-05T17:49:18.554217+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17": "Algebraic orbit-basis reduction of a finite conjugation-closed retained sector, assuming the retained coefficient vector is conjugation-symmetric and the reduced orbit-evaluation matrix is full rank."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17"
+        ],
+        "load_bearing_score": 6.383,
+        "runner_hash": null,
+        "transitive_descendants": 58
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-174738-45344a0825-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained authority reduces this sector to a 3 x 3 symmetric orbit-sampling inversion whenever F is invertible. Independent SU(3) character evaluation with the K-pairing dimension weights gives F_A2 = 0, |det(F)| = 10.8103216939706, and cond(F) = 1.95759880627947, so the stated inversion is valid.",
+      "claim_scope": "Audited the explicit three-sample reconstruction of the first conjugation-symmetric retained witness sector from the named rational-angle marked holonomies.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:49:18.554217+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the three explicit marked holonomies W_A, W_B, W_C, the symmetric orbit-evaluation matrix F has det(F) != 0, so a = F^(-1) Z.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the K-pairing dimension-weight convention because no runner source was included.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic character-evaluation check over the retained upstream sampling-reduction theorem, not a new physical premise or numerical fit. The one cited authority is retained-grade in the packet, and the explicit determinant/conditioning values recompute independently from the stated holonomies and orbit basis. No external comparator or open bridge is imported. No runner source or stdout was available, so the verdict rests on the independent algebraic check rather than runner PASS output."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+  "title": "Gauge-Vacuum Plaquette First Symmetric Three-Sample Reconstruction",
+  "transitive_descendants": 58,
+  "verdict_rationale": null
+}

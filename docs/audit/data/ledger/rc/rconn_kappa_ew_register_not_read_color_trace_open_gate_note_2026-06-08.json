@@ -1,0 +1,1966 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "rconn_derived_note",
+    "ew_current_fierz_channel_decomposition_note_2026-05-01",
+    "graph_first_su3_integration_note",
+    "native_gauge_closure_note",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 16,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.087,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f72939702b95518566e70d59f36da8929cd151e6f5b85527a9b3973354832f8f",
+  "note_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-10T02:22:08.466513+00:00",
+      "archived_for_note_hash": "8b888e0eea99fde6df20e244d04f8721b3f26023b3b4a9be20995a5122cc6a68",
+      "audit_date": "2026-06-09T13:58:48.499248+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "b2d142794895636d0f89c58c6e8f0def25c866cbad0aaec2c5b235deafae3aaf",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-135640-e25fe57847-rconn_kappa_ew_register_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Fierz algebra and 8/9 specialization close, but the physical selector does not. The missing step is a retained theorem applying register-not-read to this color operator-trace split and excluding the I/sqrt(N_c) trace channel as unregistered reference.",
+      "claim_scope": "Exact SU(N_c) Fierz trace/traceless decomposition and channel-count support for the conditional \u03ba_EW = 0 route.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-09T13:58:48.499248+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If a future retained theorem proves that register-not-read governs the color operator-trace channel, then the registered channel is the traceless connected channel and \u03ba_EW = 0, giving R_conn = F_adj = (N_c^2 - 1)/N_c^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: retain a theorem that register-not-read governs this color operator-trace split and treats the trace channel as unregistered reference.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The source and runner correctly verify the class-A algebra: S=(1/N_c)|Tr G|^2 is the trace component, C=2\u03a3_A|Tr[G t^A]|^2 is the traceless adjoint component, and the traceless channel-count fraction is (N_c^2-1)/N_c^2=8/9 at N_c=3. These checks do not derive the physical EW readout selector. The note explicitly states that Record does not supply the needed color-trace readout context, so \u03ba_EW=0 remains conditional on a missing bridge theorem."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:27.909225+00:00",
+      "archived_for_note_hash": "f19e06527a54c02e7b21b2a143660cbbadd5d5772ab1ab6505fe1a7f460f3bd3",
+      "audit_date": "2026-06-10T03:41:28.770267+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 6.459,
+        "runner_hash": "85823fab886834f01e78fdb0b3779da12d5593af24b892d7735a52688e6510cd",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-033905-ffb49b6984-rconn_kappa_ew_register_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra checks independently: the Fierz identity follows from the orthonormal color-operator basis, and the singlet twirl is not a nontrivial finite central-sector block partition on the irreducible color triplet. The missing physical readout and weighting rule is explicitly withheld by the cited Record/Quantum axiom boundary, so the scoped demotion follows.",
+      "claim_scope": "Audited the route-demotion claim that exact Fierz trace/traceless algebra and F_adj = 8/9 survive, while the register-not-read color-trace shortcut does not close the physical kappa_EW = 0 selector on the current axiom surface.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-10T03:41:28.770267+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A central-sector partition can supply sectors and counts but not the physical singlet-channel weight, and the current Record/Quantum axiom surface supplies no readout context, weighting rule, normalization, probability, dynamics, or observable bridge; therefore the Fierz split cannot be turned into a kappa_EW = 0 selector by register-not-read alone.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream rows do not reuse this clean route-demotion as a clean derivation of kappa_EW = 0; no listed approved primitive is load-bearing here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The claim is not a positive closure of kappa_EW = 0; it is a scoped open-gate route demotion. The displayed quantitative identities check out: F_adj = (N_c^2 - 1)/N_c^2 gives 8/9 at N_c = 3, R_phys(0) = F_adj, R_phys(1) = 1, and the twirl/partition distinction is finite algebra rather than a fitted comparator. The Record/Quantum axiom citation is used only negatively and correctly. The runner performs substantive finite algebra checks plus text-boundary checks, with no external PDG/lattice comparator or tuned numerical match."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.513799+00:00",
+      "audit_date": "2026-06-18T06:03:31.914035+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 7.926,
+        "runner_hash": "4f5ebe2e01fb0f0fda1afaf3478d71be3cd6878084fa4e91ba908b0b97a054e2",
+        "transitive_descendants": 42
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the scoped open-gate route demotion, not for a positive \u03ba_EW = 0 selector. RCONN_DERIVED leaves \u03ba_EW free, the Fierz authority supplies only exact channel algebra, and the Record axiom supplies no readout or weighting bridge.",
+      "claim_scope": "Audited that the exact SU(N_c) Fierz trace/traceless decomposition and 8/9 channel-count support survive, while register-not-read does not select \u03ba_EW = 0 or a physical R_conn = 8/9 on the current Record/axiom surface.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T06:03:31.914035+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Because the singlet trace map is a twirl rather than a finite central-sector partition, and because Record supplies no readout context, weighting, normalization, probability, or observable bridge, register-not-read cannot set the free \u03ba_EW weight to 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check runner-count hygiene: the source note says PASS=18 while the provided runner/cache report PASS=20; the discrepancy is not load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The source and cited authorities consistently separate exact Fierz/channel-count algebra from physical EW readout selection. The finite algebra supports the twirl-versus-partition and count-versus-weight distinctions, and the Minimal Axioms Record boundary expressly withholds the missing readout, weighting, and observable bridge. The runner computes the algebraic checks and verifies the source/firewall wording; no PDG value, tuned scale, new primitive, or hidden positive selector is used. The note's PASS=18 runner-count text is stale relative to the included PASS=20 runner, but that artifact drift is not load-bearing for the audited route-demotion."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.890222+00:00",
+      "audit_date": "2026-07-01T12:29:34.081052+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 8.524,
+        "runner_hash": "4f5ebe2e01fb0f0fda1afaf3478d71be3cd6878084fa4e91ba908b0b97a054e2",
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T122934Z-70c5d5de-rconn_kappa_ew_register_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For this scoped open gate, the chain closes: RCONN leaves kappa_EW free, the Fierz authority supplies only exact channel algebra, and the accepted Record/minimal axiom premise supplies no weighting, readout context, or observable bridge. The positive kappa_EW=0 selector remains open and is not claimed.",
+      "claim_scope": "Audited the scoped route-demotion claim: exact SU(N_c) Fierz trace/traceless algebra and F_adj=(N_c^2-1)/N_c^2 survive, but register-not-read on the color trace channel does not by itself select kappa_EW=0 or physical R_conn=8/9 on the current Record/minimal-axiom surface.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-01T12:29:34.081052+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Merely relabeling the Fierz singlet trace channel as unregistered does not close kappa_EW; a separate finite readout context plus physical weighting or observable-bridge rule is still needed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the non-load-bearing runner metadata drift: the source note expects PASS=18, while the supplied runner/cache reports PASS=20.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing claim is a finite-algebra and axiom-boundary route demotion, not a derivation of kappa_EW=0. The twirl-vs-partition and count-vs-weight distinctions are standard algebraic checks over retained inputs, and the Record premise is used only for its explicit absence of readout/weighting structure. The source note's No-Go Discipline section is narrow enough: it prunes the register-not-read shortcut while explicitly preserving future theorem, convention, or approved-admission routes. No external comparator or tuned input is used."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.500199+00:00",
+      "audit_date": "2026-07-02T01:09:06.893408+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 8.524,
+        "runner_hash": "4f5ebe2e01fb0f0fda1afaf3478d71be3cd6878084fa4e91ba908b0b97a054e2",
+        "transitive_descendants": 45
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T010906Z-471161d7-rconn_kappa_ew_register_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped route-demotion follows from finite algebra plus retained/accepted inputs: the Fierz split gives a fixed channel-count fraction, while RCONN keeps \u03ba_EW as a free physical weight and the minimal Record axiom supplies no readout or weighting rule. The wider \u03ba_EW selector remains explicitly open rather than being claimed closed.",
+      "claim_scope": "Exact SU(N_c) Fierz trace/traceless algebra and F_adj=(N_c^2-1)/N_c^2 remain valid support, but register-not-read alone does not select \u03ba_EW=0 or physically derive R_conn=8/9 on the current Record/axiom surface.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T01:09:06.893408+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The register-not-read shortcut does not close \u03ba_EW = 0 because the singlet trace map is a twirl rather than a finite central-sector partition, channel count is not physical weight, and Record supplies no EW readout/weighting bridge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner/source-note PASS-count prose is stale: the source says 18 expected passes while the supplied runner output reports 20; re-check artifact accounting, but it is not load-bearing for the scoped verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class A algebraic boundary check over retained-grade Fierz/RCONN inputs plus the accepted minimal-axiom Record boundary. The runner actually computes the Fierz decomposition, twirl/partition distinction, and free-\u03ba_EW behavior, with text checks for the axiom and firewall language. The cited authority with open EW matching language is not used as a positive bridge; that missing bridge is exactly the open gate being preserved. The note's N1-N8 no-go discipline is scoped to the register-not-read shortcut and leaves future bridge routes open."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.233924+00:00",
+      "audit_date": "2026-07-10T01:38:52.983208+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "rconn_derived_note": "Narrow current-packet no-go: exact SU(3) Fierz/channel-count algebra gives F_adj = 8/9, but the packet does not derive the physical connected-trace selector kappa_EW = 0; K_EW = 9/8 is only the connected-trace specialization."
+        },
+        "dep_claim_type": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "rconn_derived_note": "no_go"
+        },
+        "dep_effective_status": {
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "rconn_derived_note": "retained_no_go"
+        },
+        "deps": [
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "graph_first_su3_integration_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "rconn_derived_note"
+        ],
+        "load_bearing_score": 14.044,
+        "runner_hash": "4f5ebe2e01fb0f0fda1afaf3478d71be3cd6878084fa4e91ba908b0b97a054e2",
+        "transitive_descendants": 65
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-rconn_kappa_ew_register_-032",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained inputs leave \u03ba_EW free, while finite-dimensional algebra shows that the singlet twirl is not a nontrivial central-sector partition and that channel count does not determine channel weight. The accepted Record premise supplies neither the missing physical readout context nor the weighting rule.",
+      "claim_scope": "The exact Fierz trace/traceless decomposition and adjoint channel-count fraction survive, but register-not-read does not derive \u03ba_EW = 0 or physically select R_conn = 8/9 on the current axiom surface.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T01:38:52.983208+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-09T23:36:44.380251+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-rconn_kappa_ew_register_-039",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the cited color-algebra and Record-axiom surface, register-not-read does not by itself select kappa_EW = 0; only the exact Fierz decomposition and adjoint channel-count fraction are established.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T01:38:52.983208+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-rconn_kappa_ew_register_-032",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The exact Fierz trace/traceless decomposition and adjoint channel-count fraction survive, but register-not-read does not derive \u03ba_EW = 0 or physically select R_conn = 8/9 on the current axiom surface.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "A central-sector partition supplies sectors and counts but not the physical singlet-channel weight, while Record supplies no EW readout/weighting bridge, so register-not-read cannot set \u03ba_EW = 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Maintenance only: reconcile the documented PASS=18 expectation with the cached PASS=20 result and update the runner's historical MINIMAL_AXIOMS_2026-06-05.md path to the superseding MINIMAL_AXIOMS_2026-06-29.md authority; neither discrepancy changes the scoped conclusion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The narrowly scoped route-demotion follows by genuine algebraic closure over retained-grade inputs and the accepted minimal-axiom premise. The runner computes the Fierz and partition-map identities rather than merely printing the contested conclusion, and it imports no fitted or external comparator value. The note explicitly preserves the wider \u03ba_EW gate instead of overclaiming a universal no-go."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:24.724750+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Exact SU(N_c) Fierz trace/traceless algebra and F_adj=(N_c^2-1)/N_c^2 remain valid support, while register-not-read alone does not select \u03ba_EW=0 or physically derive R_conn=8/9 on the current Record/axiom surface.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-12T16:29:39.032491+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-12T16:29:39.032491+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00142-rconn_kappa_ew_register_not_",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact SU(N_c) Fierz trace/traceless algebra and F_adj=(N_c^2-1)/N_c^2 remain valid support, while register-not-read alone does not select \u03ba_EW=0 or physically derive R_conn=8/9 on the current Record/axiom surface.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "Compared E_sing(M)=(Tr M/N_c)I with nontrivial block-dephasing maps and the only symmetry-central trivial partition.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Twirl is not a finite central-sector partition.",
+                "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Identify the singlet trace projection with a finite central-sector block partition.",
+                "outcome": "Nontrivial partitions preserve diagonal blocks and fail color centrality; the trivial central partition is the identity rather than the singlet twirl.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "finite_partition"
+              },
+              {
+                "attempt": "Held F_adj fixed while varying \u03ba_EW in R_phys=F_adj+\u03ba_EW(1-F_adj).",
+                "disposition": "CLOSED",
+                "evidence_locator": "Count is not weight.",
+                "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use the adjoint dimension fraction 8/9 as the physical singlet-channel weighting rule.",
+                "outcome": "The count remains fixed while the observable changes, so channel count does not determine the physical weight.",
+                "route_class": "normalization_or_units",
+                "route_id": "count_as_weight"
+              },
+              {
+                "attempt": "Checked the current accepted Record premise against the required context, decomposition, weighting, and observable map.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Record does not supply the missing readout context.",
+                "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Obtain the color-trace readout context and weighting directly from Record.",
+                "outcome": "Record supplies fixed additive scalar readout of record content but no context-selection, central-sector, weighting, or physical EW bridge.",
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "record_context"
+              },
+              {
+                "attempt": "Compared the local-algebra scope with the additional physical observable identification required by \u03ba_EW.",
+                "disposition": "CLOSED",
+                "evidence_locator": "The Quantum axiom likewise supplies no physical observable bridge.",
+                "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use the local Qubit/operator algebra itself to identify the physical EW observable with the traceless channel.",
+                "outcome": "The local algebra supplies no rule selecting the EW-current observable or its singlet weight.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "qubit_observable_bridge"
+              },
+              {
+                "attempt": "The runner verified both \u03ba_EW=0 and \u03ba_EW=1 specializations on the same exact Fierz surface.",
+                "disposition": "CLOSED",
+                "evidence_locator": "kappa_EW_is_free_weight_not_count",
+                "evidence_path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Infer \u03ba_EW=0 from finite checks of the Fierz identity and its endpoint specializations.",
+                "outcome": "Both endpoints are algebraically consistent, so finite Fierz checks cannot select one physical endpoint.",
+                "route_class": "numerical_or_finite_case",
+                "route_id": "finite_endpoint_selection"
+              },
+              {
+                "attempt": "Separated operator-basis labeling from the missing physical weighting rule.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Merely relabeling the Fierz singlet trace channel as unregistered does not close `\u03ba_EW`.",
+                "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Relabel the singlet trace component as unregistered and assign it zero physical weight.",
+                "outcome": "Relabeling does not derive \u03ba_EW and would assign the zero weight by fiat.",
+                "route_class": "convention_or_relabeling",
+                "route_id": "singlet_relabel"
+              },
+              {
+                "attempt": "Checked the restricted authorities and complete supplied premise registry for such a bridge.",
+                "disposition": "CLOSED",
+                "evidence_locator": "not ruled out, and kept as the open gate.",
+                "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Supply a retained physical EW readout theorem or an explicitly approved premise that identifies the registered channel with the traceless channel.",
+                "outcome": "No such bridge is present in the current packet; the mechanism remains a valid future reopen condition but cannot close the current shortcut.",
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "future_readout_bridge"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "finite color-sector readout context",
+                "physical EW observable bridge",
+                "singlet-channel weighting rule"
+              ],
+              "evidence_locator": "the missing finite readout context, physical observable bridge, and weighting rule are independent.",
+              "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+              "pairwise_checks": [
+                {
+                  "independent": true,
+                  "left": "finite color-sector readout context",
+                  "left_closes_right": false,
+                  "right": "physical EW observable bridge",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "finite color-sector readout context",
+                  "left_closes_right": false,
+                  "right": "singlet-channel weighting rule",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "physical EW observable bridge",
+                  "left_closes_right": false,
+                  "right": "singlet-channel weighting rule",
+                  "right_closes_left": false
+                }
+              ],
+              "unresolved": [],
+              "walls": [
+                "finite color-sector readout context",
+                "physical EW observable bridge",
+                "singlet-channel weighting rule"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "No PDG value, fitted number, new axiom, new primitive, or Tier-A admission is load-bearing in this note.",
+              "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+              "hits": [
+                {
+                  "classification": "retained_authority",
+                  "evidence_locator": "the compact semisimple part is:",
+                  "evidence_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+                  "phrase": "N_c = 3"
+                },
+                {
+                  "classification": "retained_authority",
+                  "evidence_locator": "The SU(`N_c`) Fierz completeness identity is exact.",
+                  "evidence_path": "docs/RCONN_DERIVED_NOTE.md",
+                  "phrase": "Fierz completeness identity"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "A choice not fixed by the supplied structure remains a named conditional or open dependency.",
+                  "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                  "phrase": "Record axiom boundary"
+                },
+                {
+                  "classification": "hidden_admission",
+                  "evidence_locator": "physical EW-current readout selector free",
+                  "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                  "phrase": "physical EW readout",
+                  "promoted_wall": "physical EW observable bridge"
+                }
+              ],
+              "none_found_reason": "",
+              "scan_scope": "Checked the named uses of N_c=3, Fierz algebra, Record, physical EW readout, PDG values, fits, axioms, primitives, admissions, probability, and dynamics across the source, authorities, runner, and premise registry.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "the current packet does not derive the selector `kappa_EW = 0`.",
+              "evidence_path": "docs/RCONN_DERIVED_NOTE.md",
+              "none_found_reason": "All N1 closures were attempted directly within the supplied source, runner, accepted premise, and retained one-hop authorities; none was marked RULED OUT BY PRIOR.",
+              "scan_scope": "Checked whether any N1 route depended on a prior no-go witness and compared the source residual with the retained Rconn no-go residual.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "It is not a no-go against every possible `\u03ba_EW = 0` derivation.",
+              "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+              "none_found_reason": "",
+              "scan_scope": "Checked every negative and closure phrase for whether it was limited to the register-not-read shortcut and current premise surface.",
+              "statements": [
+                {
+                  "evidence_locator": "does not close the `\u03ba_EW = 0` selector on the current surface",
+                  "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                  "phrase": "does not close the \u03ba_EW = 0 selector on the current surface",
+                  "tested_resolutions": [
+                    "finite central-sector partition",
+                    "channel count as physical weight",
+                    "Record-supplied readout context",
+                    "local-algebra observable bridge",
+                    "finite endpoint selection",
+                    "singlet relabeling"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "it does not close the wider `\u03ba_EW` gate.",
+                  "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                  "phrase": "does not close the wider \u03ba_EW gate",
+                  "tested_resolutions": [
+                    "scope firewall distinguishing route demotion from global impossibility"
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "It fixes c_t/c_s only and explicitly supplies no selector or readout bridge.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The current Record premise supplies additive readout of record content but expressly withholds context selection, weighting, central-sector decomposition, and physical-observable identification.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "It permits pointwise evaluation but supplies neither state content nor weighting, probability, or an observable selector.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "It is a dimensionful units conversion carrying no dimensionless selector or readout content.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This concerns charged-lepton K/CPT occupancy counting, not the EW color singlet/adjoint readout selector, and it remains open rather than premise-grade.",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This concerns a charged-lepton eta-angle readout and supplies no retained EW color-channel weighting theorem.",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This is a separate theta determinant cross-sector obligation and remains open; it does not identify the EW-current singlet weight.",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "kind": "open_gate"
+                }
+              ],
+              "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+              "evidence_path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+              "none_found_reason": "",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Reviewed every candidate in the supplied partial-closure index across accepted axioms/primitives and open obligations, plus convention and scope-reframe possibilities.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "A retained theorem for the actual lattice EW-current construction could show that the registered observable is precisely the traceless connected channel, thereby forcing \u03ba_EW=0.",
+              "evidence_locator": "a retained physical EW readout theorem might identify the registered channel with the traceless connected channel and set `\u03ba_EW = 0`.",
+              "evidence_path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+              "resolution": "That argument would defeat the wider open gate, and the source explicitly preserves it; however, no such theorem or accepted primitive occurs in the restricted packet, so it does not defeat the scoped current-surface route demotion.",
+              "resolved": true,
+              "route_id": "future_readout_bridge"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:0",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Earlier audit correctly separated Fierz support from the missing physical selector.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:1",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Earlier clean route-demotion audit.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:2",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Earlier clean audit invalidated by premise change; current premise was rechecked.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:3",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Earlier clean current-surface route demotion.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:4",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Earlier clean algebraic-boundary audit.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:5",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Earlier clean result invalidated only by missing discipline packet; current N1-N8 packet repairs that process defect.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:0",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unaudited historical Rconn entry provides no contrary retained bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:1",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unaudited historical Rconn entry provides no contrary retained bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:2",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior conditional audit identified unratified color-projection authority.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:3",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior audit distinguished channel count from dynamical Rconn weighting.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:4",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior audit found the dynamical coefficient and correction bound underived.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:5",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior renaming verdict identified the channel-count-to-observable bridge as open.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:6",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior conditional audit named matching rule M.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:7",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior audit limited 8/9 to imported algebra plus conditional consistency.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:8",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior audit collapsed selector routes to the same matching-rule residual.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:9",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior audit found hard-coded 8/9 only a consistency target.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:10",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Prior audit preserved the unresolved \u03ba_EW selector.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "rconn_derived_note:previous_audit:11",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Retained narrow no-go directly matches the current selector residual.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "ew_current_fierz_channel_decomposition_note_2026-05-01:previous_audit:0",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Exact Fierz support with matching rule excluded.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "ew_current_fierz_channel_decomposition_note_2026-05-01:previous_audit:1",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Exact channel fraction remains separate from EW matching.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "ew_current_fierz_channel_decomposition_note_2026-05-01:previous_audit:2",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Clean algebraic derivation with physical matching excluded.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "graph_first_su3_integration_note:previous_audit:0",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unaudited historical SU3 entry is unrelated to the EW readout selector.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "graph_first_su3_integration_note:previous_audit:1",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unaudited historical SU3 entry is unrelated to the EW readout selector.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:0",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Historical native-gauge audit is unrelated to singlet weighting.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:1",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Historical dependency-packet defect does not supply a readout bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:2",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Historical native-gauge runner contradiction is unrelated to \u03ba_EW.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:3",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Historical selector-dependency issue is not an EW-current selector theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:4",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Structural gauge aggregation does not determine physical singlet weight.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:5",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unaudited bounded-gauge entry supplies no EW bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:6",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Bounded structural gauge closure excludes full physical EW identification.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "native_gauge_closure_note:previous_audit:7",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Clean bounded gauge algebra still supplies no physical EW readout.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Separate charged-lepton occupancy/counting gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Separate charged-lepton eta readout gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Separate theta determinant readout gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated inherited foundational no-gos.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated Newton/architecture observable-boundary no-gos.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous warning that finite algebra does not close a physical bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated external-math and audit-governance boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Broad unrelated inherited route ledger.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous prohibition on treating formal identities as physical EW normalization.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated plaquette coefficient-comparator boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated lensing observable bridges.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous warning that future primitives can reopen registry-scoped results.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated charged-lepton selector routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated dimension-selection boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated Lorentz-scope firewall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated emergent-metric physical bridge boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated finite replay boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated local-to-environment Wilson firewall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous narrowly scoped tracial route pruning that preserves alternate readouts.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated analytic-vector route.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated Wilson-integral route boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated time-generator and anisotropy no-gos.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated gravity observable bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated gravity scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated absolute-scale and carrier walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous distinction between algebraic generator structure and physical normalization/readout.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Broad unrelated campaign walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated atomic-scale and threshold gates.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Directly echoes that R_conn=8/9 does not supply the typed Route-2 physical bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated asymptotic-limit wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated detector-observable reduction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated finite-path surrogate failure.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous missing physical static-source readout selector.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous per-record readout-selector boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Empty unrelated no-go ledger.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated planning-selector boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated time-readout boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated neutrino selector routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated neutrino/cosmology gates.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated finite-lattice scope restriction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated cache/recompute boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Direct echo that register-not-read physical-versus-bare selection is not derived.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated packet-memory physical bridges.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated finite-window and wrong-observable boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated carrier-selection walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated projector/carrier selection history.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated plaquette bootstrap walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated plaquette diagnostic error.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Directly analogous warning that finite arithmetic and Record do not supply selector authority.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous Record/readout registrability boundary and governance reopen route.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated axis-selection walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous distinction between a finite basis and the physical EW response basis.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated statistics-forcing boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous current-premise nonselection result preserving future supplier routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated Wilson cube encoding boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated documentation synchronization issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated scope-overextension warning.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous finding that updated Record text is not a determinant-channel readout bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous withholding of source/action, weighting, context selection, and physical observable content.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated theta carrier/readout gates.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous absence of action, measure, weighting, and context bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous result that readout does not manufacture missing structural selection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous count-versus-physical-horn selection boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Directly analogous Record nonsupply of occupancy and weighting.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous Record-formation nonsupply of rate or readout selection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated artifact-visibility issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous countermodel showing Record-only readout does not exclude an unregistered context scale.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated hard-coded finite-table boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Unrelated finite-lattice scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                  "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "mechanism": "Analogous renaming failure where a physical readout map is asserted rather than derived.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "946bf787fdee9a3661930db255aa36db9eaf7b2d27221442a5626ad6e7fd122c",
+                  "cross_cycle_candidate_ids": [
+                    "ew_current_fierz_channel_decomposition_note_2026-05-01:previous_audit:0",
+                    "ew_current_fierz_channel_decomposition_note_2026-05-01:previous_audit:1",
+                    "ew_current_fierz_channel_decomposition_note_2026-05-01:previous_audit:2",
+                    "graph_first_su3_integration_note:previous_audit:0",
+                    "graph_first_su3_integration_note:previous_audit:1",
+                    "native_gauge_closure_note:previous_audit:0",
+                    "native_gauge_closure_note:previous_audit:1",
+                    "native_gauge_closure_note:previous_audit:2",
+                    "native_gauge_closure_note:previous_audit:3",
+                    "native_gauge_closure_note:previous_audit:4",
+                    "native_gauge_closure_note:previous_audit:5",
+                    "native_gauge_closure_note:previous_audit:6",
+                    "native_gauge_closure_note:previous_audit:7",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "rconn_derived_note:previous_audit:0",
+                    "rconn_derived_note:previous_audit:1",
+                    "rconn_derived_note:previous_audit:10",
+                    "rconn_derived_note:previous_audit:11",
+                    "rconn_derived_note:previous_audit:2",
+                    "rconn_derived_note:previous_audit:3",
+                    "rconn_derived_note:previous_audit:4",
+                    "rconn_derived_note:previous_audit:5",
+                    "rconn_derived_note:previous_audit:6",
+                    "rconn_derived_note:previous_audit:7",
+                    "rconn_derived_note:previous_audit:8",
+                    "rconn_derived_note:previous_audit:9",
+                    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:0",
+                    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:1",
+                    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:2",
+                    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:3",
+                    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:4",
+                    "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08:previous_audit:5"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "\"schema\": \"no_go_cross_cycle_index_v1\""
+                  ]
+                },
+                "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "315dd99d04e83bbd188d9c9ceac24dbf2603da0d6ebd05f039c1adbc5f346f6b",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ],
+                  "path": "audit-packet://partial-closure-index/rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "\"schema\": \"no_go_partial_closure_index_v1\"",
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ]
+                },
+                "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "c37bff23f3452c42245d4f310a2a593d4c88d0cfd4d361e45068d2d64c5a97ed",
+                  "effective_status": "retained",
+                  "path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+                  "roles": [
+                    "authority"
+                  ],
+                  "verified_locators": [
+                    "the compact semisimple part is:"
+                  ]
+                },
+                "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+                  "accepted_premise_type": "axiom_or_approved_primitive",
+                  "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+                  "effective_status": "meta",
+                  "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                  "roles": [
+                    "authority",
+                    "framework_premise"
+                  ],
+                  "verified_locators": [
+                    "A choice not fixed by the supplied structure remains a named conditional or open dependency."
+                  ]
+                },
+                "docs/RCONN_DERIVED_NOTE.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "a16e4d22dcd6f4fa2d7f082424876b30635bdb09c01f16e50891e16ae34d2443",
+                  "effective_status": "retained_no_go",
+                  "path": "docs/RCONN_DERIVED_NOTE.md",
+                  "roles": [
+                    "authority"
+                  ],
+                  "verified_locators": [
+                    "The SU(`N_c`) Fierz completeness identity is exact.",
+                    "the current packet does not derive the selector `kappa_EW = 0`."
+                  ]
+                },
+                "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "f72939702b95518566e70d59f36da8929cd151e6f5b85527a9b3973354832f8f",
+                  "effective_status": null,
+                  "path": "docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "Count is not weight.",
+                    "It is not a no-go against every possible `\u03ba_EW = 0` derivation.",
+                    "Merely relabeling the Fierz singlet trace channel as unregistered does not close `\u03ba_EW`.",
+                    "No PDG value, fitted number, new axiom, new primitive, or Tier-A admission is load-bearing in this note.",
+                    "Record does not supply the missing readout context.",
+                    "The Quantum axiom likewise supplies no physical observable bridge.",
+                    "Twirl is not a finite central-sector partition.",
+                    "a retained physical EW readout theorem might identify the registered channel with the traceless connected channel and set `\u03ba_EW = 0`.",
+                    "does not close the `\u03ba_EW = 0` selector on the current surface",
+                    "it does not close the wider `\u03ba_EW` gate.",
+                    "not ruled out, and kept as the open gate.",
+                    "physical EW-current readout selector free",
+                    "the missing finite readout context, physical observable bridge, and weighting rule are independent."
+                  ]
+                },
+                "scripts/frontier_rconn_kappa_ew_register_not_read.py": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "4f5ebe2e01fb0f0fda1afaf3478d71be3cd6878084fa4e91ba908b0b97a054e2",
+                  "effective_status": null,
+                  "path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
+                  "roles": [
+                    "runner"
+                  ],
+                  "verified_locators": [
+                    "kappa_EW_is_free_weight_not_count"
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_rconn_kappa_ew_register_not_read.py",
+  "title": "Rconn Kappa EW Register-Not-Read Color-Trace Open Gate",
+  "transitive_descendants": 67,
+  "verdict_rationale": null
+}

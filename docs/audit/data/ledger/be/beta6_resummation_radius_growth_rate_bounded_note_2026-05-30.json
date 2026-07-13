@@ -1,0 +1,332 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem / negative_route_pruning (a conditional lower bound",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4667a007b1ea325dcfe79c164d97991bbefd41d8388b950b828d6814413e9059",
+  "note_path": "docs/BETA6_RESUMMATION_RADIUS_GROWTH_RATE_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:38.949719+00:00",
+      "archived_for_note_hash": "b21294bb8d2bd0f64bd89a5c97a845343354fa0a366d65d83e42009aa7613415",
+      "audit_date": "2026-06-03T02:06:41.674026+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "2218bb7b4d4ce4198b72c6b9e8ed5b0fb99ed274e06124579c13c7ca67f6abb7",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-020347-3510d51d-beta6_resummation_radius",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The geometric threshold follows algebraically only after a structural bridge proves the asserted per-cube F,n scaling for all K-built clusters, and the restricted packet supplies only single-cube/two-cube anchors. Also, under the note's own Euler law 18^(1-F) with F=4k+2, the displayed factor should be 18^{-(4k+1)}, not 18^{-(4k+2)}, unless an extra constant suppression is supplied.",
+      "claim_scope": "Conditional K-built Euler-sector radius threshold R_Euler(g_K)>6 iff g_K<81, not a full Delta(beta) convergence theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T02:06:41.674026+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The k-cube K-built contribution is bounded by g_K^k 18^{-(4k+2)} |beta|^{4k+1}, so the k-sum is geometric with ratio g_K 18^{-4}|beta|^4 and gives R_Euler(g_K)=18/g_K^(1/4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained proof or explicit narrowed definition showing the K-built sector has the required per-cube F,n scaling or an equivalent bound with the same radius ratio, and repair the Euler exponent in the displayed contribution bound.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The runner correctly checks the low-order recurrence/cumulant/cube coefficients it actually computes and verifies the arithmetic threshold g_crit=(18/6)^4=81. It does not prove the load-bearing all-cluster K-built bridge that every contributing k-cube cluster has the fixed per-cube Euler/action increment used in the geometric series. The source also contains an off-by-one Euler exponent in the displayed contribution bound: F=4k+2 gives 18^{1-F}=18^{-(4k+1)}, not 18^{-(4k+2)}. The full claim remains conditional on a retained cluster-expansion/product bound for g_K and a separate baryon-channel bound."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:47.401381+00:00",
+      "archived_for_note_hash": "6b2773e3ba0e449a965e7f883fbd76be5e85dd31b750bacbf4e887dd9545f6f3",
+      "audit_date": "2026-06-05T20:05:45.824256+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9b81ce8127845f0ff864bc4e5221cbb6c801671cab68135750151f7c8a7a4eb6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-200159-3db4bc56c6-beta6_resummation_radius_gro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic threshold, cubical face counts, exponent correction, and compact-deficit factor check out. The actual tree-sector convergence claim still needs an external asymptotic theorem controlling the tree cluster-count/cumulant growth product g_tree, and no proof of g_tree < 81 is supplied.",
+      "claim_scope": "Conditional tree-like K-built radius threshold under an assumed exponential growth product g_tree = lambda_tree rho_tree, plus the finite 2x2x1 compact K-built counterexample to the all-K-built fixed-increment bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:05:45.824256+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The tree-sector contribution is bounded by g_tree^k * 18^{-(4k+1)} * |beta|^{4k+1}, so the k-sum converges when g_tree * 18^{-4} * |beta|^4 < 1, giving R_tree(g_tree) = 18 / g_tree^{1/4} and the beta=6 threshold g_tree < 81.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply an audited tree-cluster/cumulant growth theorem establishing the required g_tree control, and add separate compact-deficit and baryon-sector bounds before widening the scope beyond the tree-like sector.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 16,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The independent formula check confirms the displayed cumulants, cube-sector coefficients d5 through d9, F = 6k - 2s, the tree exponent 18^{-(4k+1)}, g_crit = 81, and the compact-deficit weakening factor 9. The runner performs substantive finite algebra/incidence checks; because the required JSON has no E bucket, D includes both the zero-evidence block and the cubical/threshold block. However, the load-bearing control of actual tree-sector proliferation is an explicit unproved asymptotic input, and compact-deficit plus baryon sectors remain outside the bound. The packet supports a conditional reduction and finite obstruction, not a closed beta=6 radius theorem."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:55.470566+00:00",
+      "audit_date": "2026-06-07T17:46:04.945004+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-174334-1579fbd73c-beta6_resummation_radius_gro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the result follows from the cubical incidence identities F=6k-2s and n=F-1 plus elementary geometric-series convergence. The actual bounds on g_tree, compact face-deficit growth, and the >=3-face sector are explicitly outside the conclusion, not hidden closure steps.",
+      "claim_scope": "Audited only the conditional tree-like K-built radius threshold and the finite compact-deficit counterexample; no all-K-built convergence theorem, beta=6 plaquette value, or full connected-series closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T17:46:04.945004+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:plaquette_v1_picard_fuchs_ode_note_2026-05-05:retained_bounded->unaudited",
+      "load_bearing_step": "For tree-like K-built clusters, s=k-1 gives F=4k+2 and n=4k+1, so the k-sum has geometric ratio g_tree(|beta|/18)^4 and R_tree(g_tree)=18/g_tree^(1/4), with R_tree>6 exactly when g_tree<81; the compact 2x2x1 block has k=4, s=4, F=16, n=15.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream use preserves the bounded scope and does not promote the result to all-K-built or full beta=6 convergence without separate growth bounds.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The load-bearing math is an algebraic closure over the stated cubical identities and conditional growth parameter: tree adjacency gives the stated exponent, and solving g_tree(6/18)^4<1 gives g_tree<81. The compact obstruction is independently finite: a 2x2x1 four-cube block has one excess shared face, reducing F and n by 2 while preserving boundary link incidence two. The cited authorities are retained-grade in the packet, and the J-zero/cube-coefficient material is contextual rather than necessary for the audited theorem scope. The clean verdict is only for this bounded certificate and does not retire the three open growth inputs."
+    },
+    {
+      "archived_at": "2026-06-09T08:57:39.110088+00:00",
+      "archived_for_note_hash": "63dbbcb04bf7a01833567cb6486789620a2cc331b173a119ffde77d440c3a807",
+      "audit_date": "2026-06-08T20:25:19.481815+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-202155-7cb3961599-beta6_resummation_radius_gro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The tree-ratio algebra and compact 2x2x1 incidence check are correct on their own terms. The restricted packet does not close the general Euler-weighted tree-cluster majorant or the open growth input g_tree<81, and the source note has a runner scorecard drift: PASS=28 in Section 6 versus PASS=32 in the supplied cache.",
+      "claim_scope": "Conditional algebraic tree-sector radius threshold and finite compact-deficit obstruction; no all-K-built, full-series, or beta=6 plaquette closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T20:25:19.481815+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For tree-like K-built clusters, the bound is geometric in k with ratio g_tree 18^{-4}|beta|^4, hence R_tree(g_tree)=18/g_tree^{1/4} and R_tree>6 exactly when g_tree<81; compact K-built clusters are not covered because the 2x2x1 block has F=16,n=15 instead of F=18,n=17.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: first reconcile the source scorecard to the supplied PASS=32 cache, then re-audit with a retained source or explicit scoped premise for the general Euler-weighted tree-sector majorant.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 20,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Independent algebra confirms F=6k-2s, the tree specialization F=4k+2,n=4k+1, the compact 2x2x1 obstruction F=16,n=15, the deficit factor 9 at beta=6, and the threshold g_crit=(18/6)^4=81. However, the runner hard-codes the general Euler-18 cluster-weight form rather than deriving the full tree-sector cluster-expansion majorant from a retained in-packet source. The source also contains a quantitative runner/source mismatch: Section 6 reports SCORECARD PASS=28 while the supplied runner cache reports PASS=32. No registered primitive in the provided registry summary is relevant to this SU(3) cluster statement."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.201579+00:00",
+      "audit_date": "2026-06-09T12:33:28.088604+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "1413e2f4e92df6cb59983a24345da92a7d330574a9c8495b8034825a069b77a1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-123116-915c3dce8a-beta6_resummation_radius_gro",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cubical identities F=6k-2s, tree specialization s=k-1, n=F-1, and geometric-series threshold independently give the stated tree-sector formula and g_crit=81. The compact four-cube block has one excess shared face, giving F=16 and n=15, so the all-K-built extension is correctly blocked rather than claimed.",
+      "claim_scope": "Audited only the conditional tree-sector geometric product threshold R_tree(g_tree)=18/g_tree^(1/4), the beta=6 threshold g_tree<81, and the finite compact K-built 2x2x1 deficit obstruction; no full beta=6 convergence or plaquette value is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T12:33:28.088604+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "In the tree-like K-built sector, the contribution is bounded by a geometric k-sum with ratio g_tree |beta|^4 / 18^4, so R_tree(g_tree)=18/g_tree^(1/4) and R_tree>6 exactly when g_tree<81; the 2x2x1 four-cube block has k=4, s=4, F=16, n=15 and refutes the all-K-built fixed-increment bridge.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the conditional scope and do not convert the non-load-bearing J-zero/cube-sector evidence into a full radius theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The load-bearing theorem is an algebraic closure over the stated sector definitions and retained-grade upstream recurrence/cumulant inputs, with the actual growth product g_tree left explicit rather than imported. The runner source performs exact rational/symbolic checks and finite cubical incidence enumeration rather than merely printing the threshold; the independent formula check confirms the Euler exponent, threshold 81, and deficit factor 9. The note also preserves the required negative boundary by not promoting the result to all K-built clusters or to the full connected series."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
+  "title": "Beta=6 SU(3) Wilson Delta(beta) \u2014 Tree-Sector Product Bound and Compact-Deficit Obstruction",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

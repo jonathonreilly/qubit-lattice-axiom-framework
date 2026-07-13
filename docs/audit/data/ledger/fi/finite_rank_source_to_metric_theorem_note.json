@@ -1,0 +1,252 @@
+{
+  "audit_date": "2026-05-27T01:35:32.559501+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 8.229,
+    "runner_hash": "c8345808be123fe4fb96c74fcffae3971b4167b789737ad161ee5c210d213b43",
+    "transitive_descendants": 74
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-darwin-2nd",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner locally constructs the Laplacian, support projector, Woodbury finite-rank solve, Schur DtN matrix, radial projection, and finite-difference static isotropic residual diagnostic without helper imports or dependencies. The META pass lines are excluded from the scientific chain because they only check transient audit ledger/queue state and are not load-bearing physics.",
+  "claim_id": "finite_rank_source_to_metric_theorem_note",
+  "claim_scope": "Fixed 15^3 Dirichlet finite-lattice certificate for the runner-defined seven-site finite-rank source, exterior harmonic/Schur boundary algebra, shell-averaged radial harmonic projection, and bounded static isotropic residual reduction.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-27T01:35:32.559501+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 5,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 8.748,
+  "load_bearing_step": "On the fixed 15^3 Dirichlet lattice, with the seven-site support and finite-rank matrix defined in the runner, the finite-rank source reproduces the exterior field and its shell-averaged radial harmonic projection gives a bounded static isotropic residual reduction.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "04d49f8729b06015e07fdec6aadd89254ea3273ef8392026d8dc783ed8f67e06",
+  "note_path": "docs/FINITE_RANK_SOURCE_TO_METRIC_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": "Future runner hygiene should remove or separate the transient META checks so the post-audit runner summary remains stable, but this does not affect the finite-lattice scientific certificate audited here.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.811970+00:00",
+      "audit_date": "2026-05-01T05:13:09.386436+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.587,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded claim actually made, the runner verifies the exact finite-rank field reconstruction, exterior harmonicity, Schur boundary-action stationarity, and a strongly improved coarse scalar/isotropic residual while preserving the stated blocker that full tensorial 3+1 closure is missing. The note does not overclaim full nonlinear GR.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The finite-rank Woodbury/Dyson identity produces the exact renormalized exterior field, the same shell trace is stationary for the Schur boundary action, and shell averaging gives only a bounded scalar/isotropic metric reduction with the tensorial 3+1 map explicitly left open.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The scoped architecture closes at the grade stated in the note: exact finite-rank source-to-exterior and exact boundary-action stationarity, followed by bounded coarse scalar/isotropic metric evidence. The runner exits 0 and reproduces the stated R_match=5.0 residual improvement while explicitly reporting the nonzero direct 3+1 residual as a blocker. Residual risk is the acknowledged missing tensorial matching/completion principle, which is outside this row's bounded claim boundary."
+    },
+    {
+      "archived_at": "2026-05-11T13:06:18.360425+00:00",
+      "archived_for_note_hash": "fc7fb222c1b9af0fecaa298cce7c47d2bf4e2bbae09bac4f03c68513f55488ca",
+      "audit_date": "2026-05-05T06:12:10.802881+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.555,
+        "runner_hash": "4b5ed4655be16854dc6d62bea05b5e23857f662c63a007a765b7be83ac2d3b9a",
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-finite_rank_source_to_me-219",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact Woodbury-style source-to-exterior identity closes as an algebraic check, but the bounded source-to-metric claim imports the coarse-grained exterior law, Schur boundary action, isotropic metric residual construction, and thresholds through unprovided runner modules. The missing step is a retained-grade derivation or fully provided verification of that scalar-to-metric reduction from the restricted packet alone.",
+      "claim_scope": "The note supports exact finite-rank source-to-exterior algebraic closure and an explicitly bounded scalar/isotropic coarse-grained metric residual improvement, while disclaiming full tensorial 3+1 GR closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:12:10.802881+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Shell averaging the exact finite-rank exterior field and projecting it onto the radial harmonic law phi_eff(r)=a/r gives a static isotropic metric candidate with strongly reduced vacuum residual.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the imported runner modules and retained authority notes for the finite-rank operator, Schur boundary action, coarse-grained exterior law, and isotropic metric residual map, or inline an independent derivation of the bounded scalar-to-metric reduction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner output reports four successful algebraic/bounded checks, and the main finite-rank identity is a standard algebraic closure rather than a first-principles computation. However, the source note cites no retained authorities while relying on existing finite-rank operators, bridge/action laws, Schur boundary action machinery, coarse-graining, and the isotropic Einstein-residual evaluator. Because those dependencies are not provided in the restricted packet and the runner source delegates the load-bearing computations to imported modules whose source is absent, the chain does not close as audited_clean."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.036403+00:00",
+      "archived_for_note_hash": "9ae43651f654a1079ed615291109c97ec9c2bbd06dc678daf58142f4c589ef2f",
+      "audit_date": "2026-05-11T13:19:16.553549+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes represented in the runner, the Schur-complement DtN boundary energy generates the checked shell trace stationarity equations."
+        },
+        "dep_claim_type": {
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 10.817,
+        "runner_hash": "4b5ed4655be16854dc6d62bea05b5e23857f662c63a007a765b7be83ac2d3b9a",
+        "transitive_descendants": 450
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-finite-rank-source-to-metric",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Schur boundary-action dependency is retained_bounded, and the live runner reproduces the stated exact/bounded checks. But the finite-rank operator construction and coarse-grained exterior law are still imported from frontier modules with no dedicated retained authority notes in the one-hop chain, so the scalar-to-metric reduction does not close from the restricted packet alone.",
+      "claim_scope": "Exact finite-rank source-to-exterior Woodbury reconstruction plus exact Schur boundary stationarity and bounded scalar/isotropic coarse-grained metric residual improvement on the currently imported finite-rank grid. This excludes full tensorial 3+1 matching, full nonlinear GR, and any retained-grade promotion of the imported finite-rank operator or coarse-grained exterior-law modules.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T13:19:16.553549+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner imports finite-rank source construction, coarse-grained exterior-law projection, and Schur boundary action modules, then reports exact Woodbury reconstruction, Schur stationarity, and a bounded coarse residual improvement on that imported grid.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 add retained-grade authority notes for scripts/frontier_finite_rank_gravity_residual.py and scripts/frontier_coarse_grained_exterior_law.py, or inline those derivations into this note/runner so the finite-rank source construction and coarse-grained exterior law close inside the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the runner passes, but two load-bearing pieces are module imports rather than retained cited authorities: scripts/frontier_finite_rank_gravity_residual.py for the finite-rank operator/source construction and scripts/frontier_coarse_grained_exterior_law.py for the radial harmonic projection and residual map. Why this blocks: a clean retained_bounded source-to-metric row would otherwise inherit the correctness of those constructions without an audited theorem or inlined derivation. Repair target: add retained-grade notes for those two modules or inline their derivations/checks into this row's restricted packet, then re-audit the scalar-to-metric reduction. Claim boundary until fixed: the live runner supports a reproducible exact/bounded diagnostic on the imported grid, while full tensorial 3+1 closure and retained source-to-metric theorem status remain unclosed."
+    },
+    {
+      "archived_at": "2026-05-26T11:18:29.922627+00:00",
+      "archived_for_note_hash": "b4031c56b945a91835da345f7bcb5efbef8313a4b72c7bd7eb18bf714e832eb1",
+      "audit_date": "2026-05-25T11:14:03.037329+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.",
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Given an invertible bare lattice Hamiltonian H_0, finite support projector P, finite-rank support matrix W, and invertible I - W G_S, the helper computes the exact finite-rank Woodbury/Dyson renormalized support source and exterior field.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes represented in the runner, the Schur-complement DtN boundary energy generates the checked shell trace stationarity equations."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "finite_rank_gravity_residual_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 8.229,
+        "runner_hash": "4b5ed4655be16854dc6d62bea05b5e23857f662c63a007a765b7be83ac2d3b9a",
+        "transitive_descendants": 74
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T111101Z-94e3c078-finite_rank_source_to_me-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact algebraic checks close on the provided retained-bounded inputs, and the runner reports the bounded residual improvement. The scalar-to-metric step still imports the finite-rank support choice and coarse-grained exterior/metric residual map through helper-wrapper authorities rather than deriving those bridges within the packet.",
+      "claim_scope": "Exact Woodbury source-to-exterior reconstruction and Schur boundary stationarity, plus bounded coarse-grained isotropic residual improvement on the imported finite-rank grid; no tensorial 3+1 or full nonlinear GR closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:14:03.037329+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Shell averaging the exact finite-rank exterior field and projecting it onto the radial harmonic law phi_eff(r)=a/r gives a static isotropic metric candidate with coarse residual 7.028e-06 versus direct residual 1.039e-02 on the imported finite-rank grid.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: inline or attach retained-grade derivations of the finite-rank support operator and coarse-grained exterior/metric residual map from the accepted axiom, rather than relying on bounded helper-wrapper imports.",
+      "open_dependency_paths": [
+        "docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md",
+        "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner output is consistent with the narrowed bounded diagnostic: Woodbury reconstruction and Schur stationarity pass at machine precision, and the coarse residual improves by about 1.48e3 on the imported grid. But the load-bearing source-to-metric reduction relies on imported helper-wrapper constructions for the finite-rank operator and the shell-average/radial-harmonic metric map, both of which explicitly do not derive their framework inputs from the axiom. The note also correctly excludes full tensorial 3+1 closure, so the broader source-to-metric theorem remains conditional rather than clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 2,
+    "C": 9,
+    "D": 0,
+    "total_pass": 11
+  },
+  "runner_path": "scripts/frontier_finite_rank_source_to_metric_theorem.py",
+  "title": "Finite-Rank Source-to-Metric Self-Contained Finite-Lattice Certificate",
+  "transitive_descendants": 75,
+  "verdict_rationale": "Within the explicitly bounded scope, the conclusion follows from the self-contained finite computation: the finite-rank identities close to machine precision, exterior harmonicity and Schur stationarity are computed directly, and the radial harmonic projection produces the stated residual reduction. The note explicitly excludes full nonlinear GR, continuum limits, universal source-to-metric claims, tensorial 3+1 matching, and derivation of the support choice, so those unclosed extensions are not part of the audited claim. The 8 META lines are a non-load-bearing runner artifact to ignore for scientific closure, not a blocker."
+}

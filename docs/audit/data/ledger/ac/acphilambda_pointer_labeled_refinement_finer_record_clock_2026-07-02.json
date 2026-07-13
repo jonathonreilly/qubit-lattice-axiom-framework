@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_pointer_labeled_refinement_finer_record_clock_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+    "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
+    "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5bde40d47fed70bfe3c0f4a3fb99949f84975b03fd9094e5b84ec51a088ab656",
+  "note_path": "docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:36.954213+00:00",
+      "audit_date": "2026-07-10T03:29:10.036816+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04": "Conditional on the stated C3-circulant lepton Yukawa and modulus-only objective V_mod = log|det M|, the clean determinant-modulus route does not select the non-degenerate physical phase \u03b4\u22482/9; its stationary candidates are \u03b4=k\u03c0/3 and are degenerate.",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15": "For the supplied C3 pointer S=C+C^2 and the Stage-1 circulant record-preserving generator, singlet/doublet block weights are conserved under H-evolution and the two-sector record preserves doublet-internal coherence."
+        },
+        "dep_claim_type": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "bounded_theorem",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04": "no_go",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "retained_bounded",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04": "retained_no_go",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15": "retained_bounded"
+        },
+        "deps": [
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+          "koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04",
+          "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "840c594c7645fbb7ad0f6826028aea6ccf8f3d28b798b36e68044d1822117a2b",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00021-acphilambda_pointer_labeled_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "At delta = pi/3, the cited modulus authority says the spectrum is stationary and degenerate, but the asserted doublet-clock rate is 2 sqrt(3)|b|sin(pi/3) = 3|b|, which is nonzero for |b| > 0. Thus general spectral degeneracy is not equivalent to degeneracy of the specifically labeled chi_1-chi_2 doublet.",
+      "claim_scope": "Pointer-labeled C3 spectral reconstruction, character-basis dephasing identities, the doublet-coherence phase rate, and the asserted identification of modulus-stationary degeneracy with a stopped doublet clock.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:29:10.036816+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15:retained_bounded->unaudited",
+      "load_bearing_step": "The retained modulus row's degenerate stationary points are the dial settings where the doublet clock stops.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Restrict the stopped-clock statement to chi_1-chi_2 degeneracy at delta in pi Z, distinguish the other stationary pair-degeneracies, state |b| > 0 before claiming recovery of delta, and add runner cases at delta = pi/3, 2pi/3, and |b| = 0.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 54,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 114
+      },
+      "verdict_rationale": "The symbolic runner correctly verifies the labeled eigenvalue formulas, dephasing-map algebra, and doublet-coherence rate. However, it tests the stopped clock only at delta = 0 and pi and omits the cited stationary points delta = pi/3 and 2pi/3, where a different eigenvalue pair is degenerate while the doublet clock runs. The note repeats the resulting false degeneracy-equals-stopped-clock identification in its claimed consequences, so the bounded claim does not close as written."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py",
+  "title": "AC_phi_lambda Pointer-Labeled Refinement And The Finer-Record Doublet Clock",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

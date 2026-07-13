@@ -1,0 +1,160 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "977e63e8f3345c34aa65cd53bf6ef035a62b5ab0592078e4629d07cbda226bd4",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_FINITE_BOX_BOUNDED_COEFFICIENT_NARROW_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:30:14.469078+00:00",
+      "archived_for_note_hash": "d99cf678a0084716136fa60e8e0aba6ce986d05d8fe3943831de69c861e22f8f",
+      "audit_date": "2026-05-10T23:42:59.130843+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6a438ec910b2c88575d721d9fe02472e77806a7117f6e5ff7724197e4d4f6f1e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-019e1444-58e4-70e2-87a5-df9263929d48",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-box algebra and retained coefficient import close narrowly. The advertised coincidence with R_6^env does not close as a theorem because R_6^env is defined/identified with the diagonal rho(6) object rather than derived from an independent source-sector kernel or retained physical bridge.",
+      "claim_scope": "Finite box B={0<=p,q<=4}: N1/N2 close as elementary diagonal-operator and Peter-Weyl convolution algebra over the retained bounded rho_(p,q)(6) table, but the R_6^env coincidence is only a definition/renaming of the stripped finite-box residual factor, not an independently derived residual-environment theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T23:42:59.130843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The last coincidence is a definitional fact at finite-box scope: the decomposition stripping defines the finite-box residual factor's action on chi_(p,q) by a real diagonal scalar, and the bounded coefficient companion supplies the numerical values of that sequence on B.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: to promote N3 beyond renaming, supply a retained theorem or independent runner deriving the stripped R_6^env eigenvalues from an independently constructed K_6^src and D_6^loc rather than defining K_6^src with R[rho(6)].",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "N1 is immediate from defining a real nonnegative diagonal operator, and N2 is standard finite-box Peter-Weyl convolution algebra. The direct dependency is operationally retained_bounded, so the rho_(p,q)(6) table can be consumed as bounded numerical input. The load-bearing N3 residual-factor statement, however, is explicitly definitional: the runner builds K_6^src using R[rho(6)] and strips it back, so it verifies packaging rather than independently deriving the residual environment. Thus the safe result is a bounded algebraic core plus a definition, not a clean bounded residual-environment theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.309455+00:00",
+      "audit_date": "2026-06-18T12:52:00.618735+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "6a438ec910b2c88575d721d9fe02472e77806a7117f6e5ff7724197e4d4f6f1e",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The N1/N2 algebra and use of retained_bounded coefficient inputs close. The residual-environment identification does not close as an independent theorem because R_6^env/K_src are defined or constructed from the same diagonal R[rho(6)] that is then stripped back.",
+      "claim_scope": "Finite box 0 <= p,q <= 4: Peter-Weyl diagonal convolution and structural properties of R[rho] hold, with rho(6) coefficients imported from the retained_bounded companion; the residual-environment coincidence is only definitional packaging.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T12:52:00.618735+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "The decomposition stripping defines the finite-box residual factor's action on chi_(p,q) by a real diagonal scalar, and the bounded companion's rho_(p,q)(6) values determine that sequence on B.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit only if a revised note independently constructs K_6^src/R_6^env rather than defining K_src from R[rho(6)].",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Issue: N3's residual-environment coincidence is obtained by defining/constructing R_6^env and the runner's K_src from the same diagonal R[rho(6)] that is later recovered. Why this blocks: the finite Peter-Weyl algebra and retained_bounded coefficient input are valid, but they do not independently derive the residual environment factor. Repair target: construct K_6^src and the stripping map from an independently audited source-sector/local-factor theorem, then show the stripped eigenvalues equal the companion rho values. Claim boundary until fixed: finite-box diagonal convolution and bounded coefficient bookkeeping are supported; residual-environment identification remains definitional packaging."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow.py",
+  "title": "Gauge-Vacuum Plaquette Residual-Environment Finite-Box Bounded-Coefficient Narrow Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,233 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_asymmetry_2over9_forced_weight_2026-05-31",
+    "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+    "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+    "m2_tensor_d4_dimension_256_bounded_note_2026-05-26",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+    "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/lepton_brannen_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ea6825a587c7cdb27b14f7f7a751303f60b77b2f103d5885475bc2ba9eaf4940",
+  "note_path": "docs/LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:51.744616+00:00",
+      "archived_for_note_hash": "ebbf0b12fe707efce20465c693ab9292bbbab6abe6cce44f555ab9c63ee058d5",
+      "audit_date": "2026-06-03T01:26:42.701571+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 10.045,
+        "runner_hash": "fc33101f1c11e2f1580c84bf8c9b441a1de76f1de45113aa528d357699a4f39c",
+        "transitive_descendants": 746
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260603T012642Z-lepton_brannen_bae_delta",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'open_gate', 'D'). Representative rationale: The runner computes the conditional algebra and PDG comparator, but the load-bearing gate is still an external comparator at an assumed phase and coefficient, not a framework derivation. The source note also displays delta_PDG - 2/9 as 0.000047... while the provided masses and runner give 0.000048265..., so it is not clean as written. The appropriate status is conditional open-gate verification, not retained lepton-mass closure.",
+      "claim_scope": "Conditional Brannen/Koide sqrt(2) ansatz arithmetic at trial delta=2/9 and its PDG charged-lepton comparator; no derivation of the phase, coefficient, or scale is audited.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-03T01:26:42.701571+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T07:02:49.619242+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited open gate: conditional Brannen/Koide dimensionless ratios at assumed delta=2/9 and coefficient sqrt(2), plus the stated PDG charged-lepton comparator, are reproduced; no derivation of delta=2/9, sqrt(2), the scale a, absolute lepton masses, or neutrino-sector content is audited or retained.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "D",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-03T01:24:58.402635+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260603-012236-df7a4a52-lepton_brannen_bae_delta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional Brannen/Koide sqrt(2) ansatz arithmetic at trial delta = 2/9 and its PDG charged-lepton comparator; no derivation of the phase, coefficient, or scale was audited.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "D",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-03T01:26:42.701571+00:00",
+          "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260603T012642Z-lepton_brannen_bae_delta",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional Brannen/Koide sqrt(2) ansatz arithmetic at trial delta=2/9 and its PDG charged-lepton comparator; no derivation of the phase, coefficient, or scale is audited.",
+          "claim_type": "open_gate",
+          "first_auditor_error": "Missed the stale displayed phase-gap value and treated a class D external-comparator/open-input gate as clean as written.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'open_gate', 'D'). Representative rationale: The runner computes the conditional algebra and PDG comparator, but the load-bearing gate is still an external comparator at an assumed phase and coefficient, not a framework derivation. The source note also displays delta_PDG - 2/9 as 0.000047... while the provided masses and runner give 0.000048265..., so it is not clean as written. The appropriate status is conditional open-gate verification, not retained lepton-mass closure.",
+          "load_bearing_step_class": "D",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Given the assumed sqrt(2) Brannen/Koide form and trial phase delta=2/9, the sorted ratios are close to the PDG-extracted charged-lepton ratios, with delta_PDG close to 2/9.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "other: correct the displayed PDG phase gap to delta_PDG - 2/9 = 0.000048265...; any theorem upgrade still needs retained or admitted derivations of delta=2/9 and the sqrt(2) BAE coefficient.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 7,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Five-judge panel round 1 majority 5/5 selected ('second', 'audited_conditional', 'open_gate', 'D'). Representative rationale: The runner computes the conditional algebra and PDG comparator, but the load-bearing gate is still an external comparator at an assumed phase and coefficient, not a framework derivation. The source note also displays delta_PDG - 2/9 as 0.000047... while the provided masses and runner give 0.000048265..., so it is not clean as written. The appropriate status is conditional open-gate verification, not retained lepton-mass closure."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:33.445071+00:00",
+      "archived_for_note_hash": "4e45c744ea44ada578676a01213367173e10bcda1002c8668ebb9c8065a81ea2",
+      "audit_date": "2026-06-05T18:10:22.591909+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.407,
+        "runner_hash": "fc33101f1c11e2f1580c84bf8c9b441a1de76f1de45113aa528d357699a4f39c",
+        "transitive_descendants": 14
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-181000-6cbba886c8-lepton_brannen_bae_delta_two",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports the stated open-gate/comparator claim: the retained algebraic authorities cover the Brannen/Koide identities, while the runner independently computes the delta=2/9 ratios and PDG comparator arithmetic. The physical derivations of delta=2/9, sqrt(2), and the dimensionful scale are explicitly outside scope and remain open.",
+      "claim_scope": "Audited only the conditional delta=2/9 Brannen-BAE ratio computation and its PDG charged-lepton comparator, not any derivation of the phase, sqrt(2) coefficient, or mass scale.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T18:10:22.591909+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At the stipulated trial phase delta = 2/9, the Brannen-BAE ratios are positive and their sorted values are close to PDG charged-lepton square-root ratios, with delta_PDG - 2/9 = 0.000048265... radians.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "Re-check only whether future downstream rows incorrectly promote this open comparator into a phase, coefficient, or scale derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 8,
+        "total_pass": 17
+      },
+      "verdict_rationale": "As an open_gate claim, the note does not overclaim a retained lepton-mass theorem or a framework derivation of the phase, BAE coefficient, or scale. The cited retained algebraic authorities are sufficient for the conditional Koide/Brannen identities, and the runner source actually computes the trial ratios, Q checks, PDG-normalized square-root ratios, scale residual, and phase gap rather than merely printing PASS. The load-bearing empirical closeness is class D, but it is presented as an observational comparator only, so the audited claim closes within its stated scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py",
+  "title": "Charged-Lepton Brannen-BAE Delta-Two-Ninths Open Gate",
+  "transitive_descendants": 8,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

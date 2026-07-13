@@ -1,0 +1,265 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_bridge_support_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_scalar_temporal_completion_theorem_note",
+    "scalar_3plus1_temporal_ratio_note",
+    "gauge_vacuum_plaquette_constant_lift_obstruction_note"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.304,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "40f8978ecf95b590d369276fa858baec19abd5a9ed47e7a0455bf8e7543df22d",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T02:03:24.100770+00:00",
+      "archived_for_note_hash": "34bc7d50f7a962b243b62563f3ec23d7cfc06d95b69e585046cbe4153ee2025b",
+      "audit_date": "2026-04-30T11:40:46.029057+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-critical-sweep-20260430",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md, SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md, GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The bridge is materially stronger, but not fully closed; the missing closure is the boundary character data rho_(p,q)(6) of the unmarked Wilson environment.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md",
+        "docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md, SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md, GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+    },
+    {
+      "archived_at": "2026-05-02T18:58:56.858532+00:00",
+      "archived_for_note_hash": "937a69d024b5ba8a0b372bdb96f740805994c422ee81f966752c249cd8332e26",
+      "audit_date": "2026-05-01T18:26:09.724648+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-cbc9",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the local one-plaquette response, temporal ratio, four-link scaling, incidence factor, and candidate numerics, but the physical-vacuum reduction does not close because the actual 3D spatial-environment boundary data and several upstream support/conditional dependencies remain unresolved.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note composes exact local/source/class-level pieces into a sharp beta=6 support candidate while explicitly stating that the physical 3D boundary character measure Z_6^env, equivalently the tensor-transfer Perron state, remains open.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md",
+        "docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the bridge support stack verifies exact local/source ingredients and a numerically sharp candidate, but it explicitly does not derive the physical 3D Wilson environment boundary character measure or the full interacting plaquette reduction at beta=6. Why this blocks: downstream rows cannot cite this note as a retained physical plaquette theorem; it remains conditional on support/conditional temporal and environment-transfer inputs plus the open tensor-transfer Perron solve. Repair target: evaluate the actual Z_6^env boundary character coefficients or equivalent Perron eigenvector for the 3D spatial Wilson environment and clean the upstream temporal/environment dependencies. Claim boundary until fixed: use this row only as support for exact local pieces, constant-lift obstruction context, and candidate numerics near the canonical same-surface value."
+    },
+    {
+      "archived_at": "2026-05-10T13:32:07.356279+00:00",
+      "archived_for_note_hash": "4bb4612cdd000f0bdd93b85ffdddb1249a0859e83fedc3d4ac58c923e952ff25",
+      "audit_date": "2026-05-05T23:16:30.572016+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "retained_no_go",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "audited_conditional",
+          "scalar_3plus1_temporal_ratio_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "scalar_3plus1_temporal_ratio_note"
+        ],
+        "load_bearing_score": 12.235,
+        "runner_hash": "20ac6a52fddf47b303cb30023aa116674b4835663d087ff1316ca89ec19de5be",
+        "transitive_descendants": 425
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-gauge_vacuum_plaquette_b-033",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact algebraic support pieces close as support, but the full bridge does not close because the physical boundary character coefficients rho_(p,q)(6) for Z_6^env are not derived. The packet also cites an unaudited support authority for the tensor-transfer Perron solve.",
+      "claim_scope": "Audited the bridge-support stack only: local one-plaquette source response, temporal completion ratio, four-link plaquette rescaling, 3+1 incidence factor, and the stated open residual environment gap.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:16:30.572016+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The exact local/source/class-level ingredients compose to the support candidate beta_eff = beta * (3/2) * (2 / sqrt(3))^(1/4), while the physical 3D environment boundary character measure Z_6^env remains open and blocks full analytic promotion.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit or replace the tensor-transfer Perron solve authority and provide a closed derivation of the physical Z_6^env boundary character coefficients rho_(p,q)(6).",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 1,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner genuinely checks several algebraic/local identities and a cross-note temporal ratio, but the contested physical promotion is explicitly disclaimed by the note. The canonical 0.5934 comparison is an external/imported support comparator, not a derivation. Because the tensor-transfer Perron solve authority is marked unaudited/support and the physical Z_6^env measure remains open, retained status cannot propagate to a clean full bridge claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.671620+00:00",
+      "audit_date": "2026-05-24T20:21:30.655105+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_scalar_temporal_completion_theorem_note": "Exact temporal-completion ratio for the accepted Wilson nearest-neighbor local bosonic scalar gauge-source class with one uniform plaquette weight on the minimal APBC 3 spatial + 1 derived-time block.",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "Rules out the exact constant-lift Wilson plaquette reduction P(beta)=P_1plaq(Gamma_cand beta) with Gamma_cand=(3/2)(2/sqrt(3))^(1/4), using the beta=0 strong-coupling slope.",
+          "scalar_3plus1_temporal_ratio_note": "Exact evaluation of A_inf/A_2=2/sqrt(3) for the specified minimal APBC 3+1 scalar bridge kernel, excluding observable-level dimension-4 insertion."
+        },
+        "dep_claim_type": {
+          "gauge_scalar_temporal_completion_theorem_note": "positive_theorem",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "no_go",
+          "scalar_3plus1_temporal_ratio_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_scalar_temporal_completion_theorem_note": "retained",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note": "retained_no_go",
+          "scalar_3plus1_temporal_ratio_note": "retained"
+        },
+        "deps": [
+          "gauge_scalar_temporal_completion_theorem_note",
+          "gauge_vacuum_plaquette_constant_lift_obstruction_note",
+          "scalar_3plus1_temporal_ratio_note"
+        ],
+        "load_bearing_score": 13.997,
+        "runner_hash": "96cfa9c6348eeeae32929f3c1fa5109d1c4aa48987120cbfa64656e390ff3d45",
+        "transitive_descendants": 1021
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202111Z-7f9d1df8-gauge_vacuum_plaquette_b-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed scope, the six exact ingredients follow as algebraic or finite numerical checks plus retained upstream scalar-ratio input. The support comparator is correctly labeled support-only and is not used to prove the full interacting plaquette law.",
+      "claim_scope": "Audited only the finite scalar/local support packet at beta=6, not the full interacting Wilson-environment plaquette bridge or canonical P(6) closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T20:21:30.655105+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-24T20:20:44.395355+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202024Z-7f9d1df8-gauge_vacuum_plaquette_b-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite scalar/local support packet at beta = 6 and its support-only comparator, not the full interacting Wilson plaquette reduction law.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-24T20:21:30.655105+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202111Z-7f9d1df8-gauge_vacuum_plaquette_b-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the finite scalar/local support packet at beta=6, not the full interacting Wilson-environment plaquette bridge or canonical P(6) closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The bounded packet closes the six finite local/scalar ingredients: local source-response, additivity, Bessel/Weyl one-plaquette agreement, the retained scalar ratio, four-link scaling, and the 3+1 incidence factor, with the beta=6 candidate kept support-only.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that future consumers preserve the narrowed support-only scope and do not promote the beta_eff comparator to a physical interacting plaquette theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The source note is carefully narrowed to runner-backed local/scalar ingredients and explicitly excludes the open physical Wilson-environment solve. The runner genuinely computes the SU(3) one-plaquette Bessel/Weyl/source checks and the four-link scaling check; it imports the scalar completion ratio from a retained upstream helper and imports the canonical plaquette only for a support comparator. No cited authority in the load-bearing bounded packet is non-retained, and the retained no-go authority is used only to keep the full constant-lift bridge out of scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+  "title": "Gauge-Vacuum Plaquette Scalar-Bridge Finite Support Packet",
+  "transitive_descendants": 78,
+  "verdict_rationale": null
+}

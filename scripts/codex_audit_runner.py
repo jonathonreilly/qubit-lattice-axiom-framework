@@ -60,6 +60,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 # prompt and the deterministic pipeline cannot drift.
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
+import ledger_io
 import no_go_discipline_gate
 import audit_invocation
 import compute_audit_dispatch_queue
@@ -674,6 +675,7 @@ def load_dispatch_targets(
 
 
 def load_ledger_rows() -> dict[str, dict]:
+    ledger_io.ensure_cache()
     return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))["rows"]
 
 
@@ -1312,8 +1314,21 @@ def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
 
 # Files that the audit pipeline regenerates and that should be committed
 # alongside any verdict-write to keep main internally consistent.
-AUDIT_DATA_FILES = [
+# Pipeline-generated caches that are deliberately UNTRACKED (gitignored)
+# since the 2026-07-13 ledger sharding: they are materialized locally by
+# run_pipeline.sh / ledger_io.py and must never be staged or demanded as
+# committed surfaces. The sharded ledger under docs/audit/data/ledger/ is
+# the tracked source of truth and is covered by the docs/audit/data prefix.
+GENERATED_UNTRACKED_FILES = [
     "docs/audit/AUDIT_LEDGER.md",
+    "docs/audit/data/audit_ledger.json",
+    "docs/audit/data/ledger_cache_manifest.json",
+    "docs/audit/data/citation_graph.json",
+    "docs/audit/data/audit_queue.json",
+    "docs/audit/data/runner_classification.json",
+]
+
+AUDIT_DATA_FILES = [
     "docs/audit/AUDIT_DISPATCH_QUEUE.md",
     "docs/audit/AUDIT_QUEUE.md",
     "docs/audit/data",

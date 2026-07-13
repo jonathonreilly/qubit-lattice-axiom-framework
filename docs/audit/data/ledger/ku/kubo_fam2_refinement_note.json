@@ -1,0 +1,137 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kubo_fam2_refinement_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kubo_continuum_limit_families_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/kubo_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "57abcb3daf54a3b4cefc4b7730b768b46c525b199af83acd88845a14bed1f68b",
+  "note_path": "docs/KUBO_FAM2_REFINEMENT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368897+00:00",
+      "archived_for_note_hash": "f58f4f55ff50c6bb74e3eac79598860b8e574110a7575920ea82491d8f740208",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.828918+00:00",
+      "audit_date": "2026-05-19T15:32:14.564105+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "kubo_continuum_limit_families_note": "For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%."
+        },
+        "dep_claim_type": {
+          "kubo_continuum_limit_families_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kubo_continuum_limit_families_note": "retained_bounded"
+        },
+        "deps": [
+          "kubo_continuum_limit_families_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "4167eab8c5de2ad3a15deb5cd77fdec1f03da6f72d01a8a4861912180b9e59bb",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-152136-02e6f5c5-kubo_fam2_refinement_not-025",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The provided runner source actually calls grow() and true_kubo_at_H() for the new H=0.20 point, and the cached stdout reports the claimed +4.5082 value. The prior Fam2 and Fam1/Fam3 comparison values are present in the retained_bounded cited authority, and the percent changes are straightforward arithmetic.",
+      "claim_scope": "Audited the bounded numerical claim that Fam2 is not converged on the tested H ladder {0.5, 0.35, 0.25, 0.20} and that the H=0.20 point weakens the near-term rescue story, without proving divergence or isolating restore as the cause.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T15:32:14.564105+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:kubo_continuum_limit_families_note:retained_bounded->unaudited",
+      "load_bearing_step": "At the new refinement point H=0.20, the Fam2 runner computes kubo_true = +4.5082, making the H=0.25 to H=0.20 change a 36.4% crash and leaving Fam2 off the ~5.97 Fam1/Fam3 value.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that the imported kubo_continuum_limit helper definitions used at runtime match the excerpted definitions in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing new refinement value is computed by the runner rather than printed as a hard-coded contested result. The known older Fam2 values and Fam1/Fam3 target are imported from the cited retained_bounded family-portability note, and the note's conclusion is carefully bounded to tested-ladder non-convergence and weakened rescue, not mathematical divergence. The mechanistic weak-lattice-pull interpretation is explicitly labeled as plausible but not isolated, so it is not needed for closure of the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/kubo_fam2_refinement.py",
+  "title": "Fam2 Single-Family Refinement \u2014 Strong Negative on the Tested Ladder",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

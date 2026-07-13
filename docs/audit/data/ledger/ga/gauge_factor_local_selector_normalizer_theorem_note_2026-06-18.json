@@ -1,0 +1,211 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem / exact-support boundary.",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.358,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ba510ba8f066b96a3aeb206fd03ed905f75116a588bfcf224878d7716e608535",
+  "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.066474+00:00",
+      "audit_date": "2026-06-21T12:00:52.420966+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "Exact finite-dimensional route-pruning result: on the supplied C^3 x C^2 carrier, conjugation-invariant carrier algebra data and irreducibility/scalar-commutant criteria do not select the factorwise dim-12 embedding over its unitary conjugates or over full u(6)."
+        },
+        "dep_claim_type": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "e138031d0582518463a85b63f8aecb21dd21a9512f2b8d27e2460a5917d7c344",
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-gauge_factor_local_selector_normalizer_theorem_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra closes: expanding in product matrix bases, any nonlocal su(3) x su(2) component violates factor-algebra preservation, leaving precisely the 12-dimensional local span. The runner computes the constraint nullity, span ranks, complement, and Lie closure rather than merely printing the expected result.",
+      "claim_scope": "Exact finite-matrix normalizer theorem on the supplied H = C^3 x C^2 carrier under the supplied factor-observable preservation rule; it does not derive MR_color, the physical source of the rule, or chiral su(2)_L.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:00:52.420966+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "If i[X, End(C^3) x I_2] and i[X, I_3 x End(C^2)] preserve the two supplied factor observable algebras, then X is exactly in u(3) x I_2 + I_3 x u(2), with shared identity counted once.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream use preserves the bounded scope and does not treat this as deriving the factor-observable preservation rule or the parent physical gauge-selection bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The audited claim is a bounded class-A matrix-algebra theorem over explicitly supplied finite carrier and factor algebras. The cited no-go authority is retained_no_go and is compatible with this positive bounded result: invariant carrier data cannot select the embedding, while a supplied factor-observable preservation rule can. The clean verdict applies only to the exact normalizer consequence of that supplied rule, not to any derivation of the physical bridge, MR_color, gauge dynamics, or chirality."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.248074+00:00",
+      "audit_date": "2026-07-02T03:23:58.157820+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "On the explicitly supplied H = C^3 x C^2 carrier, finite-dimensional invariant/commutant data do not select the factorwise su(3)+su(2)+u(1) embedding over non-factor-local unitary conjugates, and scalar-commutant irreducibility also does not distinguish it from u(6)."
+        },
+        "dep_claim_type": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 6.322,
+        "runner_hash": "e138031d0582518463a85b63f8aecb21dd21a9512f2b8d27e2460a5917d7c344",
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T032358Z-20e2c9aa-gauge_factor_local_selec",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by decomposing End(C^3 x C^2) into local and traceless cross-factor tensors: preservation of the base factor forces each fiber-traceless coefficient to commute with all End(C^3), eliminating the cross complement, and the resulting local span preserves both factors. The physical origin of the carrier and preservation rule is explicitly outside the scoped theorem.",
+      "claim_scope": "On the supplied H = C^3 x C^2 carrier with factor observable algebras End(C^3) x I_2 and I_3 x End(C^2), factor-algebra-preserving Hermitian generators are exactly the 12-dimensional factorwise u(3)+u(2) span, with su(3) x su(2) the 24-dimensional non-preserving complement.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T03:23:58.157820+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "Then the full real solution space is exactly u(3) x I_2 + I_3 x u(2), with the shared identity counted once.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the tensor-product convention and that the nullity-plus-decomposition argument covers arbitrary nonzero cross-complement combinations, not just the displayed basis tensors.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is a finite-dimensional algebraic normalizer calculation over explicitly supplied factor algebras; it does not use MR_color, chirality, dynamics, observed data, or a hidden selector. The runner source builds Hermitian bases, forms the preservation constraint matrix, verifies nullity 12, local/cross dimensions 12/24, full span 36, Lie closure, and source-scope firewall text. The cited no-go authority is retained_no_go and is used only for consistency context, while the named physical walls are explicit scope exclusions, so the bounded theorem closes."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.561625+00:00",
+      "audit_date": "2026-07-10T00:07:23.047671+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "Given a supplied H = C^3 x C^2 carrier, carrier-level conjugation-invariant algebraic data, irreducibility, and scalar-commutant criteria do not select the specific factorwise su(3)+su(2)+u(1) embedding over non-factor-local conjugates; scalar-commutant criteria also do not distinguish it from full u(6)."
+        },
+        "dep_claim_type": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 5.255,
+        "runner_hash": "e138031d0582518463a85b63f8aecb21dd21a9512f2b8d27e2460a5917d7c344",
+        "transitive_descendants": 26
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-gauge_factor_local_selec-072",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The computed constraint nullity is 12, while the explicitly constructed 12-dimensional local span satisfies every constraint, proving equality. Its 24-dimensional cross-factor complement completes u(6) and has trivial intersection with the normalizer.",
+      "claim_scope": "The finite-dimensional normalizer theorem on the supplied C^3 x C^2 carrier under the explicit requirement that commutator derivations preserve both factor observable algebras separately.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T00:07:23.047671+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The simultaneous commutator normalizer of End(C^3) x I_2 and I_3 x End(C^2) inside Hermitian u(6) is exactly u(3) x I_2 + I_3 x u(2), with dimension 12.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing result is a genuine finite-matrix algebra closure, and the runner constructs the relevant bases and constraint map rather than merely printing the claimed dimensions. The retained no-go authority is contextual rather than a contested numerical or physical input. The clean verdict is confined to the stated bounded theorem and does not extend to deriving the carrier split, the physical preservation rule, MR_color, chirality, or gauge dynamics."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
+  "title": "Gauge Factor-Local Selector Normalizer Theorem",
+  "transitive_descendants": 28,
+  "verdict_rationale": null
+}

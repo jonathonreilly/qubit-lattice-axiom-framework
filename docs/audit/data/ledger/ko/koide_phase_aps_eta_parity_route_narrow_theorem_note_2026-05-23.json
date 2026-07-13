@@ -1,0 +1,128 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23",
+    "koide_aps_block_by_block_forcing_note_2026-04-21",
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+    "koide_q_delta_linking_relation_theorem_note_2026-04-20"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8cb73f62d0149d9e92a02907e042e0f842d79b825272e264ba049385114cb2b5",
+  "note_path": "docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:30.036787+00:00",
+      "audit_date": "2026-07-10T02:15:09.453976+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "Bounded C3 local-density statement: the C3[111] cyclic operator fixes p=3, transverse weights (1,2) up to swap, and local Lefschetz density 2/9; global PL/ABSS applicability and physical selected-line readout are excluded.",
+          "koide_q_delta_linking_relation_theorem_note_2026-04-20": "Algebraic evaluation of the spectral ratio functional as Q_3 = 2/3 on the retained circulant-character parent\u2019s a_0\u00b2 = 2|z|\u00b2 locus, together with the formal companion identity Delta_3 = Q_3/3 = 2/9; no locus selection or physical identification was audited.",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "Finite-linear-algebra claim that for H(a,b)=aI+bC+conj(b)C^2, C3 is preserved for all delta, transpositions send delta to -delta, and generic sin(delta)!=0 breaks axis-exchange parity while preserving C3 and lifting the S3 degeneracy."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "bounded_theorem",
+          "koide_q_delta_linking_relation_theorem_note_2026-04-20": "decoration",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "retained_bounded",
+          "koide_q_delta_linking_relation_theorem_note_2026-04-20": "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23": "retained_bounded"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "koide_aps_block_by_block_forcing_note_2026-04-21",
+          "koide_q_delta_linking_relation_theorem_note_2026-04-20",
+          "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+        ],
+        "load_bearing_score": 3.822,
+        "runner_hash": "30ee4cc7fdb4746b94f98b88fcb2ef44dcdd98db3dd468fa62e9ff9a1752685b",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_phase_aps_eta_pari-079",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local root-of-unity arithmetic closes, but the cited APS authority retains only a local fixed-point density and explicitly leaves global ABSS applicability and the ambient APS invariant open. Parity supplies two fixed loci and neither the authorities nor the runner proves that eta is parity-odd or canonically selects the delta=0 branch.",
+      "claim_scope": "The supplied C3 fixed-locus inputs algebraically give the local density 2/9, while the circulant phase is parity-odd with fixed loci at 0 and pi; global APS identification, eta parity, canonical branch selection, and the physical identification delta = eta_APS remain unproved.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:15:09.453976+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24:retained_no_go->unaudited",
+      "load_bearing_step": "For the forced transverse weights (1,2), the fixed-point sum evaluates to 2/9 and is treated as an APS eta spectral asymmetry rather than a 2pi-periodic angle.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow this note to the retained local-density calculation and parity fixed-locus comparison, removing ambient APS-eta, parity-odd eta, canonical-basepoint, and route-reopening assertions, then re-run the audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The runner computes the finite sum and nearby weight alternatives correctly, although the claimed weight forcing is inserted as an unconditional True rather than independently derived. More importantly, the retained APS authority supports only the local density 2/9 and expressly withholds the global ABSS/ambient-eta bridge used by this note's route-reopening language. The parity authority proves delta maps to -delta, but it does not establish eta's parity transformation or select 0 rather than pi as a canonical physical basepoint."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py",
+  "title": "Koide Phase delta=2/9: the APS-eta + Parity Route (re-opening the phase)",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

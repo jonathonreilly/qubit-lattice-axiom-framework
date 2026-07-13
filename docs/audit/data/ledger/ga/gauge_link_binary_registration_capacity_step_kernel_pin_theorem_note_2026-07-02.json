@@ -1,0 +1,133 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "graph_first_su3_integration_note",
+    "g_bare_rigidity_theorem_note",
+    "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+    "record_classical_semigroup_boundary_2026-06-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "74bc998187afd277d10bb46b4c12ce6ce1190e23117bb2bbfa0705cf3721ffe4",
+  "note_path": "docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T17:04:23.334379+00:00",
+      "audit_date": "2026-07-10T16:33:09.997347+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "minimal_axioms": null,
+          "record_classical_semigroup_boundary_2026-06-06": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "Within the explicit finite qubit controlled-copy model with a fresh blank record fragment, theta = pi/4 and a fixed record-basis calibration, the kick induces the projective write isometry W with K_r = P_r, while later kicks on fresh fragments leave completed record labels invariant."
+        },
+        "dep_claim_type": {
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "minimal_axioms": "meta",
+          "record_classical_semigroup_boundary_2026-06-06": "no_go",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "minimal_axioms": "meta",
+          "record_classical_semigroup_boundary_2026-06-06": "retained_no_go",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_rigidity_theorem_note",
+          "graph_first_su3_integration_note",
+          "minimal_axioms",
+          "record_classical_semigroup_boundary_2026-06-06",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "96206a4c50d116fb5926d1dc0db5f470d73cda429072b38915ac17ea4437af7c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00006-gauge_link_binary_registrati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rank argument bounds an orthogonal partition to two cells but does not establish a unique sharp binary instrument or identify it with {P_3,P_1}. The restricted authorities supply neither that record-to-gauge-sector bridge nor an exclusion of unsharp or alternative binary registrations.",
+      "claim_scope": "Binary rank capacity, the fixed {P_3,P_1} kernel calculation, its composed moments, and the informative-fraction mixture on the finite native carrier.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:33:09.997347+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Because the native {P_3,P_1} partition saturates the binary record capacity, the admissibility-supported family collapses to {delta,T_V}, pinning the informative-step kernel.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite a retained gauge-link record-instrument/readout theorem mapping admissible record possibilities uniquely to {P_3,P_1} and excluding unsharp or alternative binary instruments; extend the runner to test that uniqueness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 10,
+        "D": 7,
+        "total_pass": 60
+      },
+      "verdict_rationale": "Issue: The inference from at most two orthogonal cells to the unique family {delta,T_V} is unsupported; binary POVMs can be unsharp, and binary projective contexts need not equal {P_3,P_1}. Why this blocks: the cited axiom supplies no measurement/readout context or map from admissible site possibilities to gauge-central sectors, while the controlled-copy authority covers only its explicit P_0/P_1 model. Repair target: a retained theorem deriving the unique gauge-link record instrument {P_3,P_1} and excluding other binary effects or contexts, with a runner that tests this uniqueness. Claim boundary until fixed: the runner validates T_V, its moments, and the lazy-mixture algebra only after {P_3,P_1} has been fixed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_link_binary_registration_capacity_step_kernel_pin_2026_07_02.py",
+  "title": "Gauge-Link Record Step: Binary Registration Capacity Pins the Native Step Kernel",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

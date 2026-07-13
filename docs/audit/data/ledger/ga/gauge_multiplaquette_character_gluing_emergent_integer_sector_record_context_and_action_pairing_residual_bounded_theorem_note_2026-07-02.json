@@ -1,0 +1,125 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.468,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "baf7a0cb041a0f7a0bc7635a7ac06f13293c49693fd3ea5d21845d9708308c85",
+  "note_path": "docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:38.244098+00:00",
+      "audit_date": "2026-07-09T05:46:45.578792+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.907,
+        "runner_hash": "ca695f5643be5a62a82b6c11067c74b51c7de3f02c6891b0dbc413bfef8eaf2e",
+        "transitive_descendants": 14
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite witness-surface algebra closes and the runner reports TOTAL: PASS=30 FAIL=0. The broader physical-surface wall-sharpening depends on W_theta_Q_context, Tier-A theta registry text, no-winding carrier context, and companion center-grading/no-go context that are named or quoted but not wired as direct ledger dependencies in the restricted packet.",
+      "claim_scope": "Finite 2D U(1) character-gluing/winding witness construction and SU(2)/SU(3) matched-label contrast, plus the asserted narrowing of the physical 4D SU(3) W_theta_Q_context residual to carrier plus action-level pairing selection.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T05:46:45.578792+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:retained->unaudited",
+      "load_bearing_step": "The corollary asserts that what does not transfer to the physical 4D SU(3) surface is exactly the carrier and the action-level pairing selection for e^{i theta Q}.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the named wall/context authorities as direct dependencies, or narrow/split the claim so this row covers only the finite witness-surface bounded theorem.",
+      "open_dependency_paths": [
+        "docs/audit/data/tier_a_admissions.json",
+        "campaign theta sector Born-measure bridge note named in source but not wired in ledger deps",
+        "2026-06-11 no-winding carrier note named in source but not wired in ledger deps",
+        "companion center-grading/no-go context named in source but not wired in ledger deps"
+      ],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "source_boundary_guards": 6,
+        "total_fail": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "Issue: the finite 2D U(1) and SU(2)/SU(3) witness computations pass, but the scoped claim also asserts a physical 4D SU(3) wall-sharpening against authorities not wired as direct dependencies. Why this blocks: from the two provided dependencies alone, a hostile reviewer cannot verify that carrier plus action-level pairing selection is exactly the residual of W_theta_Q_context. Repair target: add direct dependency edges for the Tier-A theta registry, campaign theta bridge, no-winding carrier note, and companion center-grading/no-go context, or split/narrow the row to the finite witness theorem only. Claim boundary until fixed: the finite witness algebra and non-uniqueness contrast are supported; the physical-wall sharpening remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py",
+  "title": "Multi-Plaquette Character Gluing Derives the Emergent Integer Sector-Record Context Exactly on the Finite 2D U(1) Surface \u2014 Branch-Datum-Free, With the Theta Pairing Coming From the Action Slot \u2014 and Sharpens the Remaining Theta Q-Context Wall to Action-Level Pairing Selection on the Physical 4D SU(3) Surface (Bounded Theorem)",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

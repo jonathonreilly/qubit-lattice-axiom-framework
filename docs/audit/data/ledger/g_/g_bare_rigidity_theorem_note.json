@@ -1,0 +1,496 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_rigidity_theorem_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note",
+    "native_gauge_closure_note"
+  ],
+  "direct_in_degree": 17,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_su3_holonomy_exponential_bridge.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.702,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a9d3a45950911f285fb44224dfd53e9f21ceef98b4bf67af683c01064045497f",
+  "note_path": "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-06T17:18:21.473770+00:00",
+      "archived_for_note_hash": "25395cb8b3a6aa932093144eec973794608cbcdba46a379004f77ef9fd6988ee",
+      "audit_date": "2026-04-30T17:50:00.551899+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.64,
+        "transitive_descendants": 281
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judge-20260430-phase-b-g-bare",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The first auditor's renaming concern is real, but the second verdict better captures the blocker: the no-free-coupling conclusion is conditional on upstream SU(3) embedding, trace normalization, and physical holonomy identification that are not closed in this row. Thus the conditional/F reading holds.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-29T12:03:02.194444+00:00",
+          "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+          "auditor_family": "codex-gpt-5.5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "F",
+          "verdict": "audited_renaming"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T11:45:00.753873+00:00",
+          "auditor": "codex-fresh-context-20260430-02-g-bare",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "F",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.551899+00:00",
+          "auditor": "codex-judge-20260430-phase-b-g-bare",
+          "auditor_family": "codex-gpt-5",
+          "first_auditor_error": "It labeled the final notation as renaming but missed that the stronger blocker is the unprovided upstream bridge to the physical holonomy normalization.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The first auditor's renaming concern is real, but the second verdict better captures the blocker: the no-free-coupling conclusion is conditional on upstream SU(3) embedding, trace normalization, and physical holonomy identification that are not closed in this row. Thus the conditional/F reading holds.",
+          "load_bearing_step_class": "F",
+          "previous_auditor_family": "codex-current",
+          "second_auditor_error": null,
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The note identifies standard g_bare=1 notation with the canonical holonomy U=exp(i A^a T_a a) after assuming a concrete SU(3) embedding and fixed Hilbert-space trace form.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/SU3_CANONICAL_CLOSURE_NOTE.md",
+        "docs/SU3_FORMAL_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The first auditor's renaming concern is real, but the second verdict better captures the blocker: the no-free-coupling conclusion is conditional on upstream SU(3) embedding, trace normalization, and physical holonomy identification that are not closed in this row. Thus the conditional/F reading holds."
+    },
+    {
+      "archived_at": "2026-05-22T01:27:46.278561+00:00",
+      "archived_for_note_hash": "f791389f50661b505316a70f4add8b5bb929896b8dae12053385bd04727b06f6",
+      "audit_date": "2026-05-17T12:35:49.026908+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 only: the quadratic Casimir \u03a3_a T^aT^a on the cited SU(3) fundamental V_3 with Gell-Mann normalization equals (4/3)I_3; physical quark color-factor readouts are excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note",
+          "su3_casimir_fundamental_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 13.206,
+        "runner_hash": "190446792af723b7514d38d6f0efcefbca4320926d71b62b07ca697075ff5264",
+        "transitive_descendants": 834
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-123528-20260517T123528Z-d347993c-g_bare_rigidity_theorem_-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic normalization statement closes, but the physical conclusion that this removes an independent bare gauge coupling imports the holonomy identification as an explicit premise not closed by the restricted packet. The cited Casimir authority is also marked as decoration rather than retained-grade authority.",
+      "claim_scope": "Conditional algebraic rigidity of the canonical SU(3) generator normalization on the cited concrete triplet block, assuming the fixed Hilbert-space trace form and the physical holonomy identification A_op = sum_a A^a T_a.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-17T12:35:49.026908+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A uniform scalar dilation T_a -> lambda T_a with lambda != 1 is not an allowed ambiguity of the canonical normalization, because it changes the fixed trace form and fixed Casimir.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade one-hop bridge proving the physical holonomy identification A_op = sum_a A^a T_a in the canonical normalized basis, and replace or ratify the decoration Casimir dependency as retained-grade authority.",
+      "open_dependency_paths": [
+        "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The runner genuinely checks algebraic identities for the embedded Gell-Mann generators, trace normalization, Casimir preservation under orthogonal rotations, and change under scalar dilation. Those checks support the canonical-normalization rigidity claim as class A algebra over supplied inputs. However, the source note explicitly conditions the physical g_bare = 1 conclusion on a holonomy identification step, and that bridge is not provided as a closed cited authority in this restricted packet. In addition, one cited authority, docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md, is labeled decoration rather than retained-grade."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:25.848492+00:00",
+      "audit_date": "2026-05-22T02:32:30.167333+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 13.982,
+        "runner_hash": "190446792af723b7514d38d6f0efcefbca4320926d71b62b07ca697075ff5264",
+        "transitive_descendants": 1010
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-g_bare_rigidity_theorem_-003",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic normalization-rigidity step closes over the supplied embedding and fixed trace form. The broader physical conclusion that this fixes the bare gauge coupling as g_bare=1 depends on the admitted holonomy/connection identification, which is explicitly not derived in the restricted packet.",
+      "claim_scope": "Canonical-normalization rigidity of the supplied su(3) generator embedding in End(V), with holonomy identification and the C_2=4/3 cite treated as admitted upstream context rather than derived here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T02:32:30.167333+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:graph_first_su3_integration_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Under the supplied canonical generator embedding, the fixed Hilbert-space trace form permits orthogonal basis rotations but not a uniform scalar dilation T_a -> lambda T_a because dilation changes Tr(T_a T_b)=delta_ab/2 and the Casimir.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained theorem deriving the physical lattice holonomy U = exp(i A_op a) from the framework discrete gauge primitives, or keep the row scoped only to canonical trace-form normalization rigidity.",
+      "open_dependency_paths": [
+        "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The runner genuinely checks algebraic identities for the embedded Gell-Mann generators, trace Gram matrix, orthogonal rotations, scalar dilations, and coefficient rescalings. Those checks support the narrowed class-A canonical-normalization rigidity claim over the supplied embedding. However, the source note explicitly admits the physical holonomy identification step and imports the Casimir value as a decoration cite, so the full g_bare=1 physical reading does not close inside this packet."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.402224+00:00",
+      "audit_date": "2026-05-22T16:34:00.025592+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 14.042,
+        "runner_hash": "190446792af723b7514d38d6f0efcefbca4320926d71b62b07ca697075ff5264",
+        "transitive_descendants": 1053
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T163338Z-e3d7da2d-g_bare_rigidity_theorem_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrowed algebraic normalization statement closes over the supplied embedding, but the broader g_bare/physical-holonomy conclusion does not close inside this packet because the holonomy identification A_op=sum_a A^a T_a and U=exp(i A_op a) is explicitly admitted rather than derived.",
+      "claim_scope": "Canonical-normalization rigidity over the admitted SU(3) generator embedding in End(V), including trace-Gram invariance under orthogonal basis rotation and failure of scalar dilation to preserve the fixed trace form.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:34:00.025592+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "Under the supplied canonical generator embedding, the fixed Hilbert-space trace form gives Tr(T_a T_b)=delta_ab/2, so orthogonal rotations preserve the normalization while scalar dilations T_a -> lambda T_a do not.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained theorem deriving the lattice holonomy U=exp(i A_op a) from the framework discrete gauge primitives, or a source narrow that removes the physical g_bare conclusion and keeps only trace-form normalization rigidity over the supplied embedding.",
+      "open_dependency_paths": [
+        "docs/G_BARE_RIGIDITY_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The runner genuinely computes the trace Gram matrix, Casimir behavior, orthogonal-rotation invariance, scalar-dilation failure, and coefficient rescaling on explicit Gell-Mann generators embedded into the stated commutant; these are algebraic class-A checks, not external numerical matches. However, the note itself narrows the retained scope and explicitly admits the physical holonomy identification as upstream context. N3 flags the hidden load in the terms canonical, standard notation, and physical gauge connection, and N6 does not close that bridge within the restricted packet. Therefore the algebraic core is sound only conditionally on the admitted embedding and holonomy bridge."
+    },
+    {
+      "archived_at": "2026-05-24T22:11:53.791706+00:00",
+      "archived_for_note_hash": "2760beaf8c12a54ffaf602f2a81675c52e851da449bdbd3e41fb00bda0137d53",
+      "audit_date": "2026-05-23T15:08:52.185205+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 13.794,
+        "runner_hash": "190446792af723b7514d38d6f0efcefbca4320926d71b62b07ca697075ff5264",
+        "transitive_descendants": 887
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T150744Z-638d93ee-g_bare_rigidity_theorem_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrowed algebraic normalization subclaim closes over the supplied embedding. The broader physical g_bare=1 conclusion does not close from this packet because the holonomy identification A_op=sum_a A^a T_a and U=exp(i A_op a) is explicitly admitted rather than derived by a cited retained bridge theorem.",
+      "claim_scope": "Canonical trace-form normalization rigidity of the supplied SU(3) generator embedding in End(V), including orthogonal-rotation invariance and scalar-dilation failure; holonomy identification and C_2=4/3 are admitted or cited context, not independently audited as derived here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:08:52.185205+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the supplied generator embedding and fixed Hilbert-space trace form, orthogonal basis rotations preserve Tr(T_a T_b)=delta_ab/2 while any uniform scalar dilation T_a -> lambda T_a changes that fixed trace form, so lambda != 1 is not an allowed canonical-normalization ambiguity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation or retained cite for U=exp(i A_op a) from the framework's discrete gauge primitives, or narrow the claim text to the purely algebraic canonical-normalization statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The runner performs genuine finite-dimensional algebra checks on the supplied Gell-Mann embedding: trace Gram matrix, Casimir consistency, orthogonal-rotation invariance, scalar-dilation change, and coefficient rescaling. These support the narrowed class-A normalization-rigidity statement, with no external comparator or tuned numerical input. However, the source explicitly admits the physical holonomy identification as upstream/open work, and the Casimir value is a decoration cite rather than a derived load-bearing result in this note. Negative/admission gate N3/N6 flags the standard/canonical holonomy language as a bridge not closed by a convention or retained theorem inside the restricted packet."
+    },
+    {
+      "archived_at": "2026-05-26T10:41:58.491658+00:00",
+      "archived_for_note_hash": "0d039e1648730e44d104838535bea63fe9b89e203c5915b5a5281ea7bc3606f1",
+      "audit_date": "2026-05-25T10:23:41.104379+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 13.836,
+        "runner_hash": "4c066b1d8b457c4a0ef512a1234cdefa3df5bd96c92de1363e59b4dcb7bfa062",
+        "transitive_descendants": 913
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102320Z-cb13c097-g_bare_rigidity_theorem_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic normalization-rigidity step closes on the supplied embedding, but the free-coupling-removal conclusion depends on the explicitly admitted holonomy form (HF). No cited authority in the restricted packet derives that holonomy form from the framework primitives.",
+      "claim_scope": "Conditional gauge-normalization rigidity over the supplied SU(3) embedding and fixed Hilbert-space trace form, assuming rather than deriving the lattice holonomy form U = exp(i A_op a).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T10:23:41.104379+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the admitted holonomy form (HF), the fixed Hilbert-space trace form fixes the canonical generator normalization up to orthogonal rotations, while scalar dilations T_a -> lambda T_a change the trace Gram matrix and Casimir and therefore are not allowed ambiguities.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained derivation or retained cite for U = exp(i A_op a) from the framework's discrete gauge primitives, or keep the row explicitly conditional on (HF).",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 45,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "The runner genuinely checks finite-dimensional algebra: commutant membership, trace normalization, Casimir behavior, orthogonal rotations, scalar dilations, and coefficient rescaling. However, the note itself makes the lattice holonomy form an admitted upstream premise, and retained status does not propagate through that open identification. No-Go Discipline gate check: N3/N6 identify the hidden-wall language around 'standard notation' and the convention/reframe path does not close the missing holonomy bridge inside this packet."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.402789+00:00",
+      "audit_date": "2026-05-26T18:33:55.268892+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 13.275,
+        "runner_hash": "db2d18436d13b2cce202c7b80aab4e72ae8d8a2ff6e6fb3ca42c3f4e8d1cd0e2",
+        "transitive_descendants": 875
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-g-bare-rigidity-second-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop dependencies supply the concrete `su(3)` surface and fixed Hilbert-space operator setting, and the source proves the remaining finite-link logarithm plus trace-form rigidity by finite-dimensional algebra. The text explicitly bounds the result away from continuum/global/Wilson/beta/phenomenological coupling claims.",
+      "claim_scope": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T18:33:55.268892+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T18:29:27.033109+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-rigidity-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-link SU(3) coordinate-rigidity: given the retained concrete su(3) embedding in End(V), the fixed Hilbert trace form, and a selected finite-link logarithm branch, the canonical trace-normalized generator basis has no continuous scalar dilation ambiguity. The g_bare = 1 wording is only this coordinate-normalization statement, not a continuum, dynamical, Wilson-action, or phenomenological coupling claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T18:33:55.268748+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-rigidity-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By the finite-link bridge `(HF)`, each finite `SU(3)` link holonomy admits the coefficient-vector expression `U = exp(i A^a T_a a)` in the fixed canonical generator basis; by clauses 1-4, that basis carries no further scalar-normalization freedom within the fixed trace form.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No-go/admission gate applied as a scope check: the current claim does not ship a no-go or independent wall list, and historical admissions are either retired for finite links or explicitly excluded from the audited scope. A later audit should re-check if future text promotes the finite-link coordinate statement into continuum, Wilson/beta, global-branch, or phenomenological coupling normalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 48,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The runner and helper do not hard-code a physical coupling target; they check canonical generator embedding, trace Gram normalization, scalar-dilation failure, and finite-link logarithm reconstruction inside `SU(3)`. The source's strongest permissible conclusion is bounded and coordinate-level: `g_bare = 1` denotes the canonical finite-link generator normalization after the trace form is fixed. It does not claim a dynamical fixed point, a continuum gauge coupling, Wilson/beta normalization, a branch-global logarithm, or phenomenological coupling values. Residual risk is only scope drift in future wording, not failure of the bounded finite-link algebra presented here."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_g_bare_rigidity_theorem.py",
+  "title": "Gauge-Normalization Rigidity Theorem",
+  "transitive_descendants": 1177,
+  "verdict_rationale": null
+}

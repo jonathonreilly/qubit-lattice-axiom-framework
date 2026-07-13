@@ -1,0 +1,234 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (canonical one-step route obstruction; external",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+    "kinetic_isotropy_primitive"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e8dd3e5f9d6afdf10ee949bcd5841daa2ee8ffcdfe24a71fe7718e46fa4c9981",
+  "note_path": "docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T10:02:50.721428+00:00",
+      "audit_date": "2026-06-10T21:40:19.769872+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Audited the supplied/displayed carrier support and J/W budgets, the in-note finite-range LR lemma with v_LR=2eqWR, the unconditional framework hopping-H LR bound, and F5 only as a conditional implication under an explicit exact-H locality hypothesis."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "4302ec62536f069eac4ddbc8a24661bae7a0bc3ec5ffc3c900da3e16d5a5ffac",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-213703-c71d959605-microcausality_exact_h_expan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge supplies the canonical budget J_max=|m|+78 and matter floor, while the registered kinetic-isotropy primitive supplies only the \u03be=1 surface. The load-bearing radius, divergence, matrix-chain separation, and gap arithmetic are derived from explicit Pauli/finite-matrix computations and exact arithmetic rather than imported comparator thresholds.",
+      "claim_scope": "Narrow canonical-surface obstruction to closing the exact-H bridge by one-step norm-convergent BCH/Magnus/cluster/small-step expansion from the retained action-density budget; not a no-go for quasilocal H or spectral/non-one-step routes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:40:19.769872+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "For the minimal non-commuting pair X=s\u03c3x and Y=s\u03c3z, the BCH/log series has radius |s*|=1.80117..., while the retained canonical matter floor 2.3 and full budget 78 exceed that radius and the ln 2 sufficient ball, with direct series divergence at those scales.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the prose normalization of the chain coupling ratio \u03bb=12 versus the hop coefficient 1/2; it is not load-bearing for the canonical budget obstruction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 2,
+        "C": 9,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing obstruction is a genuine first-principles computation over explicit finite operator algebra plus retained budget inputs, so it is class C. The only non-retained upstream is the registered kinetic-isotropy primitive, which is an accepted premise and is used only to identify \u03be=1. The no-go discipline gate passes for the narrowed route claim: the note leaves spectral, resummed, differently factorized, and other non-one-step constructions open."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.075864+00:00",
+      "audit_date": "2026-06-11T15:34:06.641879+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "F1-F2c carrier support/J/W budgets, F3-L1/L2 finite-range LR lemma with derived constants, and F4 unconditional tensor-product nearest-neighbor hopping-H microcausality bound; F5 only as an explicit conditional/open exact-H context."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "4302ec62536f069eac4ddbc8a24661bae7a0bc3ec5ffc3c900da3e16d5a5ffac",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-153110-510bc96bb6-microcausality_exact_h_expan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge note supplies the budget J_max = |m| + 78 and matter floor, while the registered kinetic-isotropy primitive supplies only the canonical xi = 1 surface. Independent checks reproduce the trace identity, singularity radius, gap factors, and xi thresholds, so the stated route obstruction follows without relying on the unaudited spectral-route context.",
+      "claim_scope": "Audited only the narrowed obstruction: canonical one-step norm-convergent BCH/Magnus/small-step expansion routes using the landed per-site budget do not close the exact-H bridge on the canonical xi = 1 surface; spectral, resummed, differently factorized, and off-surface anisotropic routes remain outside the claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:34:06.641879+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "The canonical matter floor 2.3 and full budget 78 exceed the derived minimal-pair BCH radius |s*| = 1.80117 and the ln 2 sufficient ball, and the BCH series terms diverge at those canonical scales even though the exact log exists.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream summaries preserve the route-class narrowing and do not convert this into a global obstruction to exact-H quasilocality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 2,
+        "C": 9,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source genuinely computes the load-bearing radius, series behavior, finite-chain method/object separation, and budget arithmetic rather than printing constants, and its checks match an independent scalar/matrix audit of the key formulas. The only non-retained upstream item is the kinetic-isotropy primitive, which is explicitly registered as an accepted premise and is used only to identify xi = 1. The free-surface spectral note is cited as non-load-bearing context, not as evidence for the obstruction. The no-go discipline gate passes only for the narrowed route obstruction, not for any global exact-H no-go."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.261050+00:00",
+      "audit_date": "2026-07-02T06:36:15.258351+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded support/J/W budgets on the supplied/displayed carrier surface, the finite-range LR lemma with derived v_LR=2eqWR, the unconditional tensor-product NN hopping-H LR bound, and F5 only as a conditional exact-H implication."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "4302ec62536f069eac4ddbc8a24661bae7a0bc3ec5ffc3c900da3e16d5a5ffac",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T063615Z-efe74dab-microcausality_exact_h_e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded bridge note supplies the canonical budget J_max = |m| + 78, and the registered kinetic-isotropy primitive supplies the xi = 1 surface. The Pauli-pair radius, canonical-scale divergence, and budget ratios are computed from explicit matrices/exact arithmetic, and the conclusion is narrowed to the norm-convergent one-step route only.",
+      "claim_scope": "Canonical xi = 1 one-step norm-convergent BCH/Magnus/small-step expansion methods using the landed per-site norm budget do not establish quasilocality of H = -log(T)/a_tau; spectral, resummed, differently factorized, and other non-one-step routes remain out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T06:36:15.258351+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "For X = s sigma_x and Y = s sigma_z, tr(e^X e^Y)/2 = cosh^2(s) gives nearest BCH singularity |s*| = 1.80117, while the canonical matter floor 2.3 and full budget 78 exceed that radius and the ln 2 sufficient ball, so the one-step norm-convergent expansion route does not close at xi = 1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean verdict scoped to canonical one-step norm-convergent expansion proofs; it should not be read as proving or denying exact-H quasilocality by spectral or non-perturbative routes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 2,
+        "C": 9,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source does substantive computation rather than just printing expected PASS lines: it derives the Pauli trace identity, computes Taylor/root-test behavior, checks divergence at the cited canonical scales, and tests an explicit layered-chain method/object separation. Independent arithmetic reproduces |s*| = 1.8011719796, 2.3/|s*| = 1.27695, 78/|s*| = 43.305, and 78/ln2 = 112.53. The no-go discipline passes for the narrowed route obstruction because the note explicitly leaves spectral, resummed, alternative-factorization, and interacting/gauged extensions open instead of claiming a global exact-H no-go."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py",
+  "title": "Microcausality Exact-H Bridge: Canonical One-Step Expansion Route Obstruction",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,217 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+    "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+    "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
+    "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+    "scripts/gauge_vacuum_plaquette_strip_word_deep_ladder_product_axis_bounded_2026_06_12.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+    "scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py",
+    "scripts/su3_fundamental_fusion_cg_b4.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "83701317fdb9ae87d0f42d1b981077bf9337c4e9cbf6a273d7faafbb4f047531",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SU3_CG_LIBRARY_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-18T01:40:24.887239+00:00",
+      "audit_date": "2026-06-14T16:34:02.090724+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12": "Audited only the finite beta=6 tensor-word reread at tensor NMAX=4, MODE_MAX=80 with matrix-element adjacent-word contraction, trivial-slice unit-vector boundary readout, and existing source-sector NMAX=7, MODE_MAX=200 composition; no full spatial Wilson environment, rim-boundary eta, L_perp limit, untruncated convergence, analytic plaquette, or canonical repinning was audited.",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Finite SU(3) character truncation B_N: an abstract normalized nonnegative conjugation-symmetric coefficient sequence rho defines the same diagonal operator as convolution by Z=sum d_(p,q) rho_(p,q) chi_(p,q), with uniqueness and positivity/self-adjoint/swap symmetry; no Wilson-environment identification is audited."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12": "bounded_theorem",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12": "retained_bounded",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "56c69479439f1964e8e179af98c7a4cc6a328f967a46a655985b7fa0c220559d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-163112-9fce65ed56-gauge_vacuum_plaquette_su3_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped claim is finite: the runner constructs the CG isometries, verifies the representation/intertwiner/projector/completeness identities, derives the 1/9 projector factor independently of column phases, and computes the finite windowed Perron readout. The full physical 3D environment, infinite-volume limit, conjugate-symmetrized window, and higher-channel closures are explicitly outside the audited scope.",
+      "claim_scope": "Finite B4/W53 SU(3) fundamental-fusion CG-library construction and oriented fundamental-window k=2 readout at beta=6, tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T16:34:02.090724+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "Using the computed SU(3) CG projectors, the allowed B4 fundamental-window bond has phase-insensitive factor F(a,b;c,d)=1/9 and its insertion into the finite W44 k=2 direct solve gives P=0.445084590711323, a displacement of -4.286243497957531e-03 from the zero-window anchor.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the hard-coded W44 anchor remains non-load-bearing because the zero-window direct replay reproduces it to 2e-15.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 2,
+        "C": 6,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "All cited one-hop authorities are retained-grade or retained-bounded, and the source note keeps the conclusion inside the finite packet those authorities support. The runner source is not a print-only certificate: it constructs the SU(3) irreps and isometries, checks the algebraic identities, builds the window bond from projectors, and performs the finite direct solve; the reported windowed number is not imported from an external comparator or tuned scale. The hard-coded W44 anchor is guarded by an independently computed zero-window replay on the same path, so the reported sign and magnitude do not rest solely on the literal constant."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.954219+00:00",
+      "audit_date": "2026-06-18T12:55:01.829231+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12": "Finite beta=6, tensor NMAX=4/MODE_MAX=80 adjacent-word matrix-element contraction with trivial-slice boundary readout, composed into the existing finite source-sector NMAX=7/MODE_MAX=200 Perron machinery; no full rim-boundary eta_beta^env or untruncated spatial Wilson environment is audited.",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Finite SU(3) character truncation B_N: an abstract normalized nonnegative conjugation-symmetric coefficient sequence rho defines the same diagonal operator as convolution by Z=sum d_(p,q) rho_(p,q) chi_(p,q), with uniqueness and positivity/self-adjoint/swap symmetry; no Wilson-environment identification is audited."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12": "bounded_theorem",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12": "retained_bounded",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "56c69479439f1964e8e179af98c7a4cc6a328f967a46a655985b7fa0c220559d",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade bounded inputs supply the finite Wilson coefficients, fusion/Schur normalization language, adjacent-word inverse-dimension bond, and source-sector readout machinery. The primary runner and included helpers compute the new CG projectors, 1/9 bond factor, zero-window control, and windowed Perron readout directly on the finite packet; the full 3D/untruncated environment residuals are explicitly outside scope.",
+      "claim_scope": "Finite B4 plus one-step-closure SU(3) CG-isometry construction and the finite beta=6, tensor NMAX=4/MODE_MAX=80, source NMAX=7/MODE_MAX=200 oriented fundamental-window k=2 insertion/readout on the W44 pair-label surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T12:55:01.829231+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "The runner builds the B4 SU(3) fundamental/antifundamental CG isometry library, evaluates the allowed window projector factor as 1/9, inserts B_window = B_0 + (c_fund(6)/c_0(6)) B_f into the W44 k=2 direct solve, and reports P = 0.445084590711323 with displacement -0.004286243497957531 from the zero-window/W44 anchor.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the W44 anchor provenance and primitive-registry file availability; no listed primitive appears load-bearing for this finite SU(3) packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 2,
+        "C": 10,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The load-bearing finite computation is not a definition, renaming, or external numerical match: the code constructs SU(3) irreps from generators, aligns CG isometries by intertwiner equations, computes the phase-insensitive projector bond from VV^dag and WW^dag, and performs the k=2 direct Perron solve. The hard-coded W44 anchor is guarded by an independent zero-window replay on the same direct path, so the new windowed value is not merely asserted from prior prose. The note\u2019s residual ledger correctly leaves boundary truncation, higher channels, conjugate windows, mode extension, and analytic infinite-volume control open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_2026_06_12.py",
+  "title": "Gauge-Vacuum Plaquette SU3 CG Library Window Displacement Bounded Note",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,131 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_internal_link_contraction_derived_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+    "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+    "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+    "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+    "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+    "scripts/gauge_vacuum_plaquette_two_strip_environment_rho_composed_readout_bounded_2026_06_12.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3813b8875179a95f567cd1f2d5579064d6c2f722a8cf05eb40fd6597e5084010",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_INTERNAL_LINK_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:38.309236+00:00",
+      "audit_date": "2026-06-14T00:32:10.957569+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1-P3 at double precision.",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "Finite NMAX=4, MODE_MAX=80, beta=6, 25-state tensor-word packet: one explicitly constructed matrix has nonnegative entries, conjugation-swap symmetry, and nonnegative unit-vector boundary readout; no full spatial-environment boundary-character law is audited.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Finite SU(3) character truncation B_N: an abstract normalized nonnegative conjugation-symmetric coefficient sequence rho defines the same diagonal operator as convolution by Z=sum d_(p,q) rho_(p,q) chi_(p,q), with uniqueness and positivity/self-adjoint/swap symmetry; no Wilson-environment identification is audited."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "bounded_theorem",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "bounded_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10": "retained_bounded",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note": "retained_bounded",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
+          "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 6.892,
+        "runner_hash": "6e57371784bdaa8d010a3eb6e972810bf71cbe806ba4966b5e4f3eebaf5df556",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-003011-7d5b9cba2f-gauge_vacuum_plaquette_inter",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Schur convolution identity supplies the inverse-dimension factor for the connected trace, and the finite packet authority supplies the normalized central coefficient d_lambda D_lambda. Multiplying them gives the claimed D_lambda coefficient within the stated finite scalar class-channel scope.",
+      "claim_scope": "Finite beta=6 two-strip class-channel internal-link convention on tensor B_4/MODE_MAX=80 and source NMAX=7/MODE_MAX=200: the internal channel weight is D_lambda, not d_lambda D_lambda.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T00:32:10.957569+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "The connected shared-link Haar contraction multiplies the central coefficient d_lambda D_lambda by 1/d_lambda, giving D_lambda delta_(lambda,mu) chi_lambda(AB).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the geometric interpretation that this internal link is a single connected convolution coefficient, not a product of two independent plaquette coefficients.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained or retained_bounded one-hop inputs, not a new definition or numerical match. The displayed normalization chain is consistent: central boundary coefficient d_lambda D_lambda, connected Haar factor 1/d_lambda, derived internal coefficient D_lambda. The runner source checks the exact small-channel dimension factors and reproduces the finite dimension-stripped branch; the hard-coded readout constants are branch-regression checks, not the load-bearing derivation. The source explicitly excludes the full 3D environment, slab limit, L_perp limit, analytic P(6), repinning, and future non-class 6j/intertwiner normalization object."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_vacuum_plaquette_internal_link_contraction_derived_2026_06_12.py",
+  "title": "Gauge-Vacuum Plaquette Internal-Link Contraction Derived Narrow Theorem",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

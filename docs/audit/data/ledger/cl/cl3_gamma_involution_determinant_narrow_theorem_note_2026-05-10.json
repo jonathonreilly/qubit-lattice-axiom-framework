@@ -1,0 +1,1401 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0f9cb59abdcbbabb80c726e34ffb0a33a6b19b2c1c9e0c2ce32d1ae4660fa9fb",
+  "note_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-21T21:59:09.297211+00:00",
+      "audit_date": "2026-05-11T01:49:02.258110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure algebraic audit of Cl(3,0): omega^2 = -1 and centrality, real-algebra isomorphism Cl(3,0) ~= M_2(C), complexified split into two M_2(C) summands, and two-dimensional complex irreducible readout, with no physical lattice or Hilbert-space bridge claimed."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e14b7-c0f8-7110-94e8-400d03424323",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Cl(3) to M_2(C) authority is retained, and the remaining steps are direct 2x2 matrix algebra. The source note explicitly excludes the lattice determinant bridge, so the open physical readout admission is not required for this scoped claim.",
+      "claim_scope": "Audited the narrow finite-dimensional algebraic claim that the Pauli-realized Cl(3) gamma-involution on M_2(C) is the 2x2 adjugate, gives the gamma-norm determinant identity, has the stated grade signs, and does not by itself derive the full lattice determinant readout.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-11T01:49:02.258110+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_scope_changed:cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "For all M in M_2(C), gamma(M) := sigma_2 M^T sigma_2 equals adj(M), so M gamma(M) = det(M) I_2 and the identity coefficient is det(M).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "none",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing determinant identity follows from an explicit symbolic adjugate computation and the standard cofactor identity. The grade-action signs are likewise checked directly in the Pauli realization, and the full-lattice readout is correctly treated as a boundary rather than claimed closure. No hidden physics import or external comparator is used inside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.750969+00:00",
+      "audit_date": "2026-05-21T22:14:28.716814+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260521-221407-ab828979-cl3_gamma_involution_det-012",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant and grade-action identities follow by direct 2x2 matrix algebra once the retained upstream Cl(3,0)\u2245M_2(C) Pauli realisation is admitted. The lattice-readout statement is only a negative boundary disclaimer, not a claimed closure.",
+      "claim_scope": "Audited the finite-dimensional algebraic identities for the \u03b3-involution \u03b3(M)=\u03c3_2 M^T \u03c3_2 on M_2(C) under the retained Cl(3,0)\u2245M_2(C) Pauli realisation, including the stated boundary that this does not derive the full lattice determinant readout.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-21T22:14:28.716814+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "For any 2x2 complex matrix M, \u03c3_2 M^T \u03c3_2 equals adj(M), hence M\u00b7\u03b3(M)=det(M)\u00b7I_2 and the scalar component is det(M).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: audited as an algebraic decoration under the CL3 complexification/split parent; re-audit only if the note is split into an independent determinant-readout bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The proof is a genuine class-A algebraic check over the retained one-hop Cl(3) complexification/split authority plus standard 2x2 matrix algebra. The runner source actually computes symbolic and exact rational matrix identities and does not import PDG values, fitted constants, or hidden numerical comparators. Under the rubric tie-breaker, because the audit has only algebraic checks, zero external comparator checks, and reduces to one upstream retained parent plus standard mathematics, the terminal verdict is audited_decoration rather than audited_clean."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:02.889093+00:00",
+      "audit_date": "2026-07-12T10:01:44.228779+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central-idempotent split, and 2-dimensional irreducible complex modules; no physical Hilbert-space or lattice-realization bridge was audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00274-cl3_gamma_involution_determi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The adjugate identity closes, but the claimed grade-0 projection does not: under the real-algebra identification Cl(3,0)\u2245M\u2082(C), a complex scalar zI\u2082 decomposes as Re(z)\u00b71+Im(z)\u00b7\u03c9, so its Clifford grade-0 component is Re(z), not z. The runner instead reads the matrix entry prod[0,0], which is the complex scalar-matrix coefficient and does not verify the asserted Clifford grade projection.",
+      "claim_scope": "Audited the adjugate and grade-action identities, the claimed Clifford grade-0 gamma-norm identity, and the stated non-lift to the full lattice determinant readout.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:01:44.228779+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "From M\u00b7\u03b3(M)=det(M)\u00b7I\u2082, the note identifies the Clifford scalar (grade-0 / identity-coefficient) component \u27e8M\u00b7\u03b3(M)\u27e9\u2080 with det(M).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note and symbolic runner directly compute \u03b3(M)=adj(M) and M\u03b3(M)=det(M)I\u2082.",
+            "disposition": "CLOSED",
+            "evidence_locator": "M \u00b7 \u03b3(M) = \u03b3(M) \u00b7 M = det(M) \u00b7 I_2",
+            "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the 2\u00d72 symplectic-adjoint identity alone to obtain determinant information.",
+            "outcome": "This closes the complex scalar-matrix identity for one M, but it neither validates the real Clifford grade-0 projection nor supplies a coupled-lattice readout.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "n1_adjugate_only"
+          },
+          {
+            "attempt": "The runner computes the determinant and product of per-block gamma norms on a 4\u00d74 block-diagonal matrix.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Construct D_lat = M_1 \u2295 M_2 (4x4 block diagonal). Compute",
+            "evidence_path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Extend the calculation to a block-diagonal direct sum of two M\u2082(C) elements.",
+            "outcome": "Factorization holds only because the carrier is block diagonal and therefore does not derive the readout for a coupled lattice operator.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "n1_block_factorization"
+          },
+          {
+            "attempt": "The runner constructs D_hop with nonzero hopping and compares det(D_hop) with det(M\u2081)det(M\u2082).",
+            "disposition": "CLOSED",
+            "evidence_locator": "gap: det(D_hop) \u2260 det(M_1)\u00b7det(M_2) when hopping H is nonzero",
+            "evidence_path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Add off-diagonal hopping between the two 2\u00d72 blocks and test per-block determinant factorization.",
+            "outcome": "The explicit nonzero gap closes the naive per-site product route, but it is only one finite witness and not an exhaustion of tensor-product involution constructions.",
+            "prior_witness_id": null,
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "n1_hopping_coupling"
+          },
+          {
+            "attempt": "The source separates mass-dimension conversion and mode count from the single-element Clifford calculation.",
+            "disposition": "OPEN",
+            "evidence_locator": "mass-dim conversion.",
+            "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the reciprocal mode-count power from determinant mass dimension and the lattice block size.",
+            "outcome": "No supplied authority or runner derives the exponent 1/(N_taste\u00b7L_t), so this route remains open.",
+            "prior_witness_id": null,
+            "route_class": "normalization_or_units",
+            "route_id": "n1_mode_normalization"
+          },
+          {
+            "attempt": "The source identifies this observable fork but supplies no theorem selecting either readout.",
+            "disposition": "OPEN",
+            "evidence_locator": "square-root sub-choice.",
+            "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use eigenvalues of D\u2020D rather than D, producing a separate square-root convention.",
+            "outcome": "The choice remains open and cannot be inferred from the per-element gamma involution.",
+            "prior_witness_id": null,
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "n1_ddagger_readout"
+          },
+          {
+            "attempt": "The note names zeta regularization as future work but performs no construction or exclusion test.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "possible paths include zeta-regularization on",
+            "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct a tensor-product or zeta-regularized extension of the involution on the full lattice operator.",
+            "outcome": "This genuinely distinct route is untested, so the boundary cannot be promoted to an exhaustive no-go.",
+            "prior_witness_id": null,
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "n1_zeta_tensor_extension"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "single-element adjugate data do not determine a coupled lattice determinant",
+            "the reciprocal mode-count normalization is not supplied by Cl(3) algebra",
+            "the D versus D\u2020D observable choice is not supplied by Cl(3) algebra"
+          ],
+          "evidence_locator": "None of (1)-(3) is forced by the per-element \u03b3-norm identity.",
+          "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "single-element adjugate data do not determine a coupled lattice determinant",
+              "left_closes_right": false,
+              "right": "the reciprocal mode-count normalization is not supplied by Cl(3) algebra",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "single-element adjugate data do not determine a coupled lattice determinant",
+              "left_closes_right": false,
+              "right": "the D versus D\u2020D observable choice is not supplied by Cl(3) algebra",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "the reciprocal mode-count normalization is not supplied by Cl(3) algebra",
+              "left_closes_right": false,
+              "right": "the D versus D\u2020D observable choice is not supplied by Cl(3) algebra",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "single-element adjugate data do not determine a coupled lattice determinant",
+            "the reciprocal mode-count normalization is not supplied by Cl(3) algebra",
+            "the D versus D\u2020D observable choice is not supplied by Cl(3) algebra"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The final item is an explicit boundary disclaimer.",
+          "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "per-determinant geometric-mean readout",
+              "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "per-determinant geometric-mean readout",
+              "promoted_wall": "the reciprocal mode-count normalization is not supplied by Cl(3) algebra"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Real-algebra isomorphism.",
+              "evidence_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "Real-algebra isomorphism"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "No physics conventions admitted.",
+              "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "No physics conventions admitted."
+            }
+          ],
+          "scan_scope": "Checked the source, retained one-hop authority, runner source, and supplied premise registries for hidden readout, carrier, normalization, lattice-action, and projection assumptions.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "This is the boundary of the \u03b3-norm identity's applicability.",
+          "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR, so no witness-to-residual match is required.",
+          "scan_scope": "Checked all N1 routes for reliance on prior retained no-go witnesses; every route was assessed directly in this packet.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "boundary statement, not as a closure.",
+          "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "scan_scope": "Checked every negative applicability statement for whether it asserts a local boundary or a global impossibility.",
+          "statements": [
+            {
+              "evidence_locator": "It is **NOT** an identity for the framework's full staggered-Dirac determinant",
+              "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "It is NOT an identity for the framework's full staggered-Dirac determinant",
+              "tested_resolutions": [
+                "single 2\u00d72 element",
+                "4\u00d74 block-diagonal direct sum",
+                "4\u00d74 matrix with off-diagonal hopping"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "is **not** derived from the per-element identity.",
+              "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "is not derived from the per-element identity",
+              "tested_resolutions": [
+                "algebraic scope comparison",
+                "block-diagonal determinant factorization",
+                "finite hopping counterexample to per-block factorization"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes c_t=c_s only and explicitly supplies no readout bridge, determinant normalization, or dynamics.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms supply M\u2082(C) as a one-site possibility algebra but explicitly withhold kinetic, source/action, and physical-observable selection.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise evaluation at a realized state supplies neither a determinant channel nor a mode-count readout.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It is only a physical-units ruler and explicitly carries no dimensionless readout bridge or selector.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton orbit-counting grain, not the Clifford scalar projection or lattice determinant exponent audited here.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns a charged-lepton eta-angle readout and supplies no tensor-product gamma involution or determinant normalization.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "It is an unresolved cross-sector quark determinant readout obligation, not retained evidence closing this single-element-to-lattice bridge.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every supplied approved primitive and open-obligation candidate for content that could supply the determinant projection, lattice mode normalization, coupled carrier, or observable selection.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A suitably defined tensor-product symplectic involution or zeta-regularized determinant norm might extend the local adjugate identity and independently yield a full-lattice geometric-mean readout.",
+          "evidence_locator": "possible paths include zeta-regularization on",
+          "evidence_path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "resolution": "The restricted packet neither constructs nor excludes such an extension. This steelman therefore defeats any exhaustive no-go reading, while remaining consistent with the narrower statement that the per-element identity alone does not supply the extension.",
+          "resolved": true,
+          "route_id": "n1_zeta_tensor_extension"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_locator": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Prior clean audit of the same finite-dimensional identity and lattice boundary; it did not detect the grade-0 versus complex scalar-coefficient conflation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:1",
+              "evidence_locator": "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Prior decoration audit of the same algebraic scope; its dependency-based disposition does not resolve the scalar-projection error.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_locator": "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Prior audit of the retained real-algebra and complexification authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Charged-lepton determinant-counting grain obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Charged-lepton eta readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Cross-sector physical determinant-readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated foundational-campaign no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite gravity-sweep boundary, unrelated to Clifford determinant projection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Audit-source boundary against promoting finite packet memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Atomic and reflection-positivity audit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Broad prior campaign route memory with no matching gamma-involution residual.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Formal coupling-identity boundary unrelated to determinant grade projection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Plaquette coefficient evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Lensing observable-route no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Carrier-symmetry registry boundary unrelated to the local Clifford scalar projection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Charged-lepton selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Emergent-metric finite-runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite radial-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Local Wilson normalization scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Flavor-tracial selector pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Analytic-vector route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Gauge-environment character-contraction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Cl(3) pseudoscalar and staggered-sign gauge-isotropy boundaries; distinct from the determinant involution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Gravity dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Weak-field gravity scope exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Cl\u2084 carrier and absolute-action-scale no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Hypercharge normalization and species-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Cross-lane physics campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Atomic scale and coupling-transport no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Quark mass and flavor-readout no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite-to-asymptotic lattice Green-function boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Signed-adjoint lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite-path lensing geometry counterexample.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Physical source-readout and hierarchy-value boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Temporal source/readout selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Empty larger-cell no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Planning-target selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Physical-time and speed readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Neutrino mass-construction no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Neutrino/cosmology scale boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite-lattice Newtonian-distance scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Frozen-log and finite-basin evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Coupling and physical-versus-bare selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite packet-memory versus physical theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite-grid-to-global differential-equation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Cl\u2084 carrier selection and intertwiner boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Rank-four Clifford-carrier selection no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Plaquette bootstrap and minimal-block boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Plaquette character-evaluation diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record axiom versus selector-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Physical determinant-readout bridges in strong-CP and charged-lepton contexts.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Locality and temporal-axis selection no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite Fisher tangent versus physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Minimal-surface nonselection of staggered kinetic law and corner structure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "SU(3) quotient-encoder scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Documentation synchronization issue rather than a scientific no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Determinant-channel readout and phase-erasure bridge wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Gauge-sector action/readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta carrier and phase-insertion gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta phase-insertion selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta closed-branch carrier wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Explicit prior boundary that determinant algebra alone does not choose a physical determinant power.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record axioms do not select determinant power.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record formation does not select an eta readout or event rate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Artifact-visibility issue with no theorem-level no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record-only readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Hard-coded finite-table and family-transfer boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite wide-lattice data versus continuum theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "mechanism": "Definition-as-physical-readout warning.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "single-element adjugate data do not determine a coupled lattice determinant",
+          "the reciprocal mode-count normalization is not supplied by Cl(3) algebra",
+          "the D versus D\u2020D observable choice is not supplied by Cl(3) algebra"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10": {
+              "accepted_premise_type": null,
+              "content_sha256": "bcdf845f2a2e61837817695510ad22766c95c93a7ce17335e44fbba59d314943",
+              "cross_cycle_candidate_ids": [
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "cl3_complexification_split_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10:previous_audit:1",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10": {
+              "accepted_premise_type": null,
+              "content_sha256": "335b93ff2ba4a963aa9fe451b7d382182024ea951c7c70ebb81026f87039fcce",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "4680139373bd50a87fa48bea3a00e14feb38fd91d3d75e423c67f8b4b5b19a89",
+              "effective_status": "retained",
+              "path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "Real-algebra isomorphism."
+              ]
+            },
+            "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "0f9cb59abdcbbabb80c726e34ffb0a33a6b19b2c1c9e0c2ce32d1ae4660fa9fb",
+              "effective_status": null,
+              "path": "docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It is **NOT** an identity for the framework's full staggered-Dirac determinant",
+                "M \u00b7 \u03b3(M) = \u03b3(M) \u00b7 M = det(M) \u00b7 I_2",
+                "No physics conventions admitted.",
+                "None of (1)-(3) is forced by the per-element \u03b3-norm identity.",
+                "The final item is an explicit boundary disclaimer.",
+                "This is the boundary of the \u03b3-norm identity's applicability.",
+                "boundary statement, not as a closure.",
+                "is **not** derived from the per-element identity.",
+                "mass-dim conversion.",
+                "per-determinant geometric-mean readout",
+                "possible paths include zeta-regularization on",
+                "square-root sub-choice."
+              ]
+            },
+            "scripts/frontier_cl3_gamma_involution_determinant_narrow.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "19d4078185477c26b23359bae0c2fc31a7384a5b5bc8f8b03a6a714a03b4b603",
+              "effective_status": null,
+              "path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Construct D_lat = M_1 \u2295 M_2 (4x4 block diagonal). Compute",
+                "gap: det(D_hop) \u2260 det(M_1)\u00b7det(M_2) when hopping H is nonzero"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains two OPEN routes and one UNTESTED tensor/zeta-extension route, so the boundary has not passed route exhaustion.",
+          "The source and runner conflate a complex scalar-matrix coefficient with the real Clifford grade-0 projection."
+        ],
+        "narrowed_claim_scope": "Audited the adjugate and grade-action identities, the claimed Clifford grade-0 gamma-norm identity, and the stated non-lift to the full lattice determinant readout.",
+        "next_route": {
+          "reason_untested": "The packet names but does not construct or exclude a tensor-product or zeta-regularized extension; this is the next concrete route needed before any exhaustive non-lift claim.",
+          "route_id": "n1_zeta_tensor_extension"
+        },
+        "prior_claim_scope": "Audited the narrow finite-dimensional algebraic claim that the Pauli-realized Cl(3) gamma-involution on M_2(C) is the 2x2 adjugate, gives the gamma-norm determinant identity, has the stated grade signs, and does not by itself derive the full lattice determinant readout.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "Correct the theorem to use the complex scalar-matrix coefficient rather than the Clifford grade-0 component, or restrict the domain so det(M) is real; then update the runner to test the chosen projection explicitly and re-audit the full-lattice boundary separately.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The symbolic computation correctly proves \u03b3(M)=adj(M), M\u03b3(M)=det(M)I\u2082, and the stated sign action in the Pauli representation. However, the note conflates the complex coefficient of a scalar matrix with the real Clifford grade-0 projection; for example det(M)=i gives iI\u2082=\u03c9, whose grade-0 component is zero rather than i. The runner reproduces this conflation by defining scalar_part as prod[0,0], so its PASS result does not repair the false gamma-norm premise as written."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_cl3_gamma_involution_determinant_narrow.py",
+  "title": "Cl(3) \u03b3-Involution Determinant Identity \u2014 Narrow Theorem",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

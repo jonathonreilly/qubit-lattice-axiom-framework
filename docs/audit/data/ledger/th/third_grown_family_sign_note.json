@@ -1,0 +1,200 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "third_grown_family_sign_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "third_grown_family_boundary_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.6,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "76508c7d99853cc8c8c636ebfc4ec5fc3aa0d60cc78b121b7cd1e5fa890a4a33",
+  "note_path": "docs/THIRD_GROWN_FAMILY_SIGN_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369931+00:00",
+      "archived_for_note_hash": "5d89f19420863b0743e6065aa413441fde75aa03e61dfd869f2ebebcfcbe0661",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.237112+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces the 5/15 bounded-basin result exactly, but the boundary note is unaudited and the claim remains a finite sampled basin over selected drifts/seeds rather than a closed family-wide theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:third_grown_family_boundary_note",
+      "load_bearing_step": "The family has a real bounded basin: 5/15 rows pass with exact zero and neutral controls, correct sign orientation on retained rows, and near-linear charge scaling.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/THIRD_GROWN_FAMILY_BOUNDARY_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: The current runner confirms the reported bounded basin, but the note's retained interpretation depends on an unaudited boundary note and on treating five passing drift/seed rows as a real basin rather than a finite sampled pocket. Why this blocks: exact controls and sign orientation close for the passing rows, but they do not prove a stable family-level basin or an independent geometry theorem beyond the tested grid. Repair target: audit the boundary note and add a holdout/tolerance harness or theorem defining the basin over a drift interval and seed family, not just the sampled rows. Claim boundary until fixed: safe to claim the live sweep has 5/15 passing rows, exact zero and neutral controls on the table, drift coverage 0.1/0.2/0.3 among passes, and mean exponent 0.999842; not safe to claim audit-clean retained third-grown-family closure beyond that finite bounded pocket."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:05.169366+00:00",
+      "audit_date": "2026-05-05T04:26:19.051507+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "third_grown_family_boundary_note": "retained_bounded"
+        },
+        "deps": [
+          "third_grown_family_boundary_note"
+        ],
+        "load_bearing_score": 9.729,
+        "runner_hash": "a60a7780284a647829629cbfd8b6d0a2e44f948ff0b1c52e13a0b1fd5b1444d7",
+        "transitive_descendants": 299
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-second-third_grown_family_sign_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cached SHA-fresh runner output matches the note's counted pass set, drift coverage, and mean exponent, and the one-hop boundary dependency is retained_bounded. The conclusion must remain bounded to the tested finite sweep and does not support a family-wide or geometry-generic theorem.",
+      "claim_scope": "Finite bounded computational claim that the third no-restore grown-family slice has five signed-source passing rows over drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], with exact zero/neutral controls and near-linear charge scaling on the passing rows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:26:19.051507+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T04:24:43.367314+00:00",
+          "auditor": "codex-fresh-first-third_grown_family_sign_note-20260505",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Bounded computational existence of a signed-source basin for the runner-defined third grown-family slice on the tested drift/seed grid, with exact zero and neutral controls and near-linear double-source response on the passing rows.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T04:26:19.049683+00:00",
+          "auditor": "codex-fresh-second-third_grown_family_sign_note-20260505",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Finite bounded computational claim that the third no-restore grown-family slice has five signed-source passing rows over drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], with exact zero/neutral controls and near-linear charge scaling on the passing rows.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "previous_auditor_family": "codex-gpt-5",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:third_grown_family_boundary_note:retained_bounded->unaudited",
+      "load_bearing_step": "The family has a real bounded basin: 5/15 tested rows pass exact zero and neutral controls, correct +1/-1 sign orientation, and near-linear double-source scaling.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that future audits preserve the finite tested-row scope and do not promote this result to a family-wide or geometry-generic claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner constructs the third cross-quadrant load-balanced connectivity, computes zero, plus, minus, neutral, double-source responses for all 15 drift/seed rows, and marks five rows as passing without hard-coded target pass values. The source note's numeric claims match the cached runner output: 5/15 passed rows, drift coverage [0.1, 0.2, 0.3], and mean passing exponent 0.999842. The upstream boundary note is retained_bounded and supports the narrow interpretation that edge failures are structural rather than control leakage."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.977047+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/THIRD_GROWN_FAMILY_SIGN_SWEEP.py",
+  "title": "Third Grown Family Sign Note",
+  "transitive_descendants": 96,
+  "verdict_rationale": null
+}

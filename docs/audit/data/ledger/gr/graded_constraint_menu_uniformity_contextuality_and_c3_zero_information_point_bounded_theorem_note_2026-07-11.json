@@ -1,0 +1,323 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graded_constraint_primitive_registration_proposal_2026-07-04",
+    "graded_constraint_program_and_record_influence_criterion_2026-07-04",
+    "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+    "c3_generation_readout_context_canonical_definition_note_2026-07-02",
+    "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0e97919c4ea777f7d58f9185cece004832f86fe6ce508a6084a6e3090e4420f1",
+  "note_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-13T01:59:28.673622+00:00",
+      "audit_date": "2026-07-13T01:00:00+00:00",
+      "audit_invocation_history": [
+        "55555555555555555555555555555555"
+      ],
+      "audit_invocation_id": "55555555555555555555555555555555",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": null,
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02": null,
+          "graded_constraint_primitive_registration_proposal_2026-07-04": null,
+          "graded_constraint_program_and_record_influence_criterion_2026-07-04": null,
+          "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03": "The four-channel K-real determinant localization and the conditional one-locked-possibility statistical-slot comparison on the explicitly enumerated local surface."
+        },
+        "dep_claim_type": {
+          "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": "bounded_theorem",
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02": "meta",
+          "graded_constraint_primitive_registration_proposal_2026-07-04": "meta",
+          "graded_constraint_program_and_record_influence_criterion_2026-07-04": "meta",
+          "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04": "unaudited",
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02": "meta",
+          "graded_constraint_primitive_registration_proposal_2026-07-04": "meta",
+          "graded_constraint_program_and_record_influence_criterion_2026-07-04": "meta",
+          "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03": "audited_conditional"
+        },
+        "deps": [
+          "born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04",
+          "c3_generation_readout_context_canonical_definition_note_2026-07-02",
+          "graded_constraint_primitive_registration_proposal_2026-07-04",
+          "graded_constraint_program_and_record_influence_criterion_2026-07-04",
+          "koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03"
+        ],
+        "load_bearing_score": 3.585,
+        "runner_hash": "95558c173b1165a8653098b93ce13c45cee9caf34e1d302774ea44c28cc56fe4",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matrix and menu algebra closes conditionally, but the graded core and canonical context are proposed/unapproved, while the Born-form and occupancy parents are unaudited.",
+      "claim_scope": "The conditional menu-refinement contradiction, full-symmetry zero-information point, and unequal-rank obstruction on the proposed C3 generation context.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T01:00:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_scope_changed:koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03",
+      "load_bearing_step": "Uniformity on both {P_s,P_d} and {P_s,P_1,P_2} assigns incompatible values to the shared projector, while full qutrit Weyl symmetry forces rho=I/3 and hence r=1 rather than r=1/2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "rederive the load-bearing signs, factors, and endpoint identities without importing runner conclusions",
+            "disposition": "CLOSED",
+            "evidence_locator": "Independent exact algebra and runner-output comparison at the declared claim scope",
+            "evidence_path": "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "algebraic factorization and independent exact recomputation",
+            "outcome": "the scoped algebraic identities survive exact independent recomputation while no extra physical selector is generated",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "independent_algebra"
+          },
+          {
+            "attempt": "test the claimed identities under the stated conjugation, cycle, orbit, or basis transformations",
+            "disposition": "CLOSED",
+            "evidence_locator": "Symmetry and representation checks on the finite carrier used by the claim",
+            "evidence_path": "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "symmetry invariance and representation-basis transport",
+            "outcome": "the representation transformations preserve the bounded result and expose rather than remove its supplied conditions",
+            "route_class": "symmetry_or_representation",
+            "route_id": "symmetry_representation"
+          },
+          {
+            "attempt": "remove or vary the load-bearing boundary, homogeneity, orbit, readout, or conditioning assumption",
+            "disposition": "CLOSED",
+            "evidence_locator": "The source names the supplied conditions and keeps their outside-domain escapes open",
+            "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "boundary and supplied-state condition variation",
+            "outcome": "the variation is either an explicit live escape outside the theorem or a named condition, so the narrow boundary remains honest",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "boundary_variation"
+          },
+          {
+            "attempt": "compare the derived finite observable with nearby outcome, spectral, component, and aggregate readouts",
+            "disposition": "CLOSED",
+            "evidence_locator": "Observable identity and readout distinctions are explicit in the bounded source statement",
+            "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "alternate observable and record-readout comparison",
+            "outcome": "alternate readouts do not contradict the scoped identity and remain explicitly conditional where they change the physical conclusion",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "alternate_readout"
+          },
+          {
+            "attempt": "ask whether an interacting, time-dependent, or lattice-wide evolution supplies a counterexample or missing selector",
+            "disposition": "CLOSED",
+            "evidence_locator": "The source explicitly excludes unproved dynamical and lattice-wide extensions",
+            "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "dynamical or effective-action extension beyond the finite probe",
+            "outcome": "no such action is imported; the extension remains outside the narrow theorem and therefore is not falsely foreclosed",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "dynamical_extension"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "direct scientific dependency retention",
+            "supplied law and readout condition certificate"
+          ],
+          "evidence_locator": "The bounded theorem separates upstream authority from its explicit modeling conditions",
+          "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "pairwise_checks": [
+            {
+              "evidence_locator": "The dependency status and supplied-condition boundary are separate load-bearing surfaces",
+              "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+              "independent": true,
+              "left": "direct scientific dependency retention",
+              "left_closes_right": false,
+              "rationale": "direct scientific dependency retention does not derive a supplied law and readout condition certificate, and that condition certificate does not establish retention of the scientific parents",
+              "right": "supplied law and readout condition certificate",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "direct scientific dependency retention",
+            "supplied law and readout condition certificate"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Import inventory and explicit bounded-condition statements in the restricted source",
+          "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "hits": [],
+          "none_found_reason": "Every load-bearing non-axiom input found in the restricted packet is already exposed as a supplied condition or an unaudited direct dependency in the conditional verdict.",
+          "scan_scope": "The restricted source and one-hop authorities were checked for hidden premise, convention, boundary, normalization, registered, sector, primitive, and by-construction imports.",
+          "scanned_evidence_paths": [
+            "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The source inventory keeps cited residuals aligned with the bounded theorem scope",
+          "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "No N1 route is classified RULED OUT BY PRIOR; the direct parents are consumed only as unaudited source authorities and therefore cannot close the dependency residual.",
+          "scan_scope": "All one-hop authorities were checked at their declared source scope; none was used as a retained prior witness that silently closes the audited residual.",
+          "scanned_evidence_paths": [
+            "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+            "docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md"
+          ],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "No-Go Discipline and bounded-scope language in the current source note",
+          "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and foreclosure language was checked at element, site, mode, block, and lattice-wide resolutions against the actual finite theorem boundary.",
+          "scanned_evidence_paths": [
+            "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "The negative wording is explicitly restricted to the declared bounded construction",
+              "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "0123456789abcdef",
+              "occurrence_locator_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+              "phrase": "does not",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "Finite runner scope plus independent resolution-by-resolution mathematics audit",
+              "resolution_evidence_path": "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py",
+              "tested_resolutions": [
+                "per_element: exact coefficient and component identities were independently recomputed on the declared finite carrier.",
+                "per_site: the theorem's site-level or local-cell condition was checked only at the explicitly stated finite scope.",
+                "per_mode: mode and character decompositions were compared without promoting a spectral identity into a physical selector.",
+                "per_block: the complete finite block or record Gram named by the theorem was checked rather than inferred from one entry.",
+                "lattice_wide: the source explicitly withholds any lattice-wide extension, so its negative language was not read universally."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [],
+          "evidence_locator": "Qualification and explicit supplied-condition boundaries leave the downstream result conditional",
+          "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "The approved axiom and primitive surface supplies neither retained status for the scientific parents nor the missing physical law/readout certificate; no reframe closes those walls.",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Approved axioms and primitives, open gates, unaccepted conventions, and definition or scope reframes were checked for a mechanism closing either retained-dependency or supplied-condition wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest steelman is algebraic factorization and independent exact recomputation through the attempt to rederive the load-bearing signs, factors, and endpoint identities without importing runner conclusions; this can establish the complete local mathematical core.",
+          "evidence_locator": "The runner's exact local checks support the strongest bounded algebraic steelman",
+          "evidence_path": "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py",
+          "resolution": "That steelman succeeds only at the bounded core: direct scientific dependency retention and the separate supplied law and readout condition certificate remain necessary before the result can become an unconditional physical theorem.",
+          "resolution_evidence_locator": "The source's dependency and supplied-condition inventory independently bounds the steelman",
+          "resolution_evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "resolved": true,
+          "route_id": "independent_algebra"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [],
+          "evidence_locator": "Cross-cycle judgment is restricted to the current source and one-hop authority packet",
+          "evidence_path": "docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "Within the restricted development-tier packet, no retained structurally similar mechanism closes both the dependency-retention and supplied-condition walls; no broader audit-history search was imported.",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain the Born-form and occupancy parents and certify the proposed menu/weight law as motion-covariant and record-decidable before cascade re-audit.",
+      "open_dependency_paths": [
+        "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+        "docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: the refinement contradiction, Weyl-commutant calculation, Born-weight traces, DFT tie, and rank obstruction are correct, but the graded core and context naming are proposed rather than approved and two scientific direct parents are unaudited. Why this blocks: the computed r=1 and r=1/2 points remain consequences of supplied menu, Born-form, symmetry, and dictionary hypotheses rather than retained framework results. Repair target: retain the Born and occupancy parents and provide approved or retained law-domain certificates for menu eligibility, lattice-motion covariance, and record-decidable weighting. Claim boundary until fixed: A-C are exact conditional boundary facts on the explicitly supplied qutrit projection menus only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py",
+  "title": "Menu-Uniformity Contextuality and the Zero-Information Point of the Graded-Constraint Surface on the C_3 Generation Context (Bounded Note)",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

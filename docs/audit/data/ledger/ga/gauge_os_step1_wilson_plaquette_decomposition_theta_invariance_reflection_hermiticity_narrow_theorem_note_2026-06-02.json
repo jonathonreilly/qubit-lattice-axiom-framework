@@ -1,0 +1,1405 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.598,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7d47bf0043f133145cdfb40853175905aae3b7af2dc0b470a462e18decd97045",
+  "note_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:13:00.364306+00:00",
+      "archived_for_note_hash": "43a5eecb2e3af4c15216196b03faefbe1c49527de636e5d29ea0854207ef3220",
+      "audit_date": "2026-06-03T04:14:52.225308+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Standalone compact-group temporal-gauge Wilson mixed-kernel factorization over spatial links, per-link Peter-Weyl convolution diagonalization, trivial-channel normalization, and marked/non-marked compression on tensor-product Peter-Weyl marked-link basis functions, excluding SU(3), beta=6, source-sector, transfer-operator, and physical-framework claims."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "87f7be5f947160dfb48e1209f06ae6465d089d268a288cdaab47117d892af729",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-041204-a986e1b1-gauge_os_step1_wilson_pl",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic decomposition would close after a boundary-condition repair, but as written the finite periodic Lambda=(Z/L)^4 setting is not reconciled with the stated P_mixed characterization. For even L>2, temporal plaquettes wrapping from t=L/2-1 to -L/2 also straddle the plus/minus endpoint partition, while the note says P_mixed consists only of the t=-1 to t=0 cross-slice plaquettes.",
+      "claim_scope": "Pure-gauge Wilson plaquette temporal-gauge decomposition with S_+ reality, time-symmetric theta-invariance, and symmetrized observable reflection-Hermiticity, as checked on a 2^4 SU(3) lattice.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T04:14:52.225308+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By the disjoint partition P_+ \u2294 P_- \u2294 P_mixed = P and the theta-bijection P_+ to P_-, S_W[U] = S_+(U) + theta(S_+)(U) + S_mixed(U).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: restrict the theorem and runner to the tested L=2 or to a nonperiodic/infinite-time setting, or amend section 2.2 and the verifier to include the periodic wraparound mixed boundary for general even L.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 4,
+        "C": 5,
+        "D": 4,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The D1-D3 proof is a genuine class-A algebraic argument over the Wilson-action definitions and the retained mixed-kernel authority, and the runner performs nontrivial finite SU(3) checks rather than only printing constants. However, the source defines a finite periodic lattice Lambda=(Z/L)^4 and then describes P_mixed as only the t=-1/t=0 reflection-plane plaquettes. Under the note's own endpoint-sign partition, periodic wraparound temporal plaquettes at the opposite time seam are also mixed for general even L, and the L=2 runner does not expose that missing boundary family. The theorem therefore needs a scope or boundary-convention repair before it can be clean as stated."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.608417+00:00",
+      "audit_date": "2026-06-06T22:53:01.458180+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 10.99,
+        "runner_hash": "07034b2204117dd0dabcc26225a3fa55985c85beb54214071b75b2d40a5f730f",
+        "transitive_descendants": 1016
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-225048-e5be5d2ef9-gauge_os_step1_wilson_plaque",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The decomposition follows from an exhaustive plaquette-set partition plus Re Tr g = Re Tr g^{-1} for reflected temporal plaquette orientation. The D2 and D3 subclaims close algebraically from Theta U = U on C_sym, Theta^2 = id, and the displayed symmetrization F(U)=f(U)+conj(f(Theta U)).",
+      "claim_scope": "Pure-gauge Wilson plaquette action in temporal gauge admits the stated P_+, P_-, and P_mixed half-action decomposition; S_+ is real and Theta-invariant on Theta-symmetric configurations; symmetrized Wilson-loop observables satisfy reflection-Hermiticity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T22:53:01.458180+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T23:18:39.966183+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260605-231611-5e672d360d-gauge_os_step1_wilson_plaque",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure-gauge Wilson plaquette action in temporal gauge U_0=I with \u0398(t,x)=(-1-t,x): the P_+/P_-/P_mixed decomposition, S_+ reality and \u0398-invariance on C_sym, and reflection-Hermiticity for symmetrized OS observables.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T22:53:01.458180+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-225048-e5be5d2ef9-gauge_os_step1_wilson_plaque",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure-gauge Wilson plaquette action in temporal gauge admits the stated P_+, P_-, and P_mixed half-action decomposition; S_+ is real and Theta-invariant on Theta-symmetric configurations; symmetrized Wilson-loop observables satisfy reflection-Hermiticity.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By the disjoint plaquette partition and the identification S_-(U)=Theta(S_+)(U)=S_+(Theta U), the Wilson action decomposes as S_W[U]=S_+(U)+Theta(S_+)(U)+S_mixed(U).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the finite-periodic temporal-plaquette orientation for L>2; the clean closure uses Re Tr orientation-reversal invariance, while the runner's L=2 case does not exercise same-side temporal plaquettes in P_+.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 4,
+        "C": 5,
+        "D": 14,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing content is elementary lattice combinatorics and complex trace algebra, with the only load-bearing cited authority marked retained and used only for the mixed-kernel temporal-gauge factorization context. The runner performs nontrivial finite-lattice checks rather than merely printing constants, and its PASS=33 FAIL=0 is consistent with the source. I read D3 under the note's explicit narrowing in section 4.2: arbitrary positive-half Wilson loops are not claimed to be reflection-Hermitian, only the symmetrized OS-Hermitian class is."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:11.500456+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Pure-gauge Wilson plaquette configurations already restricted to U_0=I on a finite even periodic lattice: the two-boundary P_+/P_-/P_mixed decomposition, reality and \u0398-invariance of S_+ on \u0398-fixed configurations, and reflection-Hermiticity of the explicitly symmetrized observable class.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:58:58.180236+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T18:58:58.180236+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00069-gauge_os_step1_wilson_plaque",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure-gauge Wilson plaquette configurations already restricted to U_0=I on a finite even periodic lattice: the two-boundary P_+/P_-/P_mixed decomposition, reality and \u0398-invariance of S_+ on \u0398-fixed configurations, and reflection-Hermiticity of the explicitly symmetrized observable class.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "Partitioned every plaquette into P_+, P_-, or P_mixed and compared the corresponding action sums.",
+                "disposition": "CLOSED",
+                "evidence_locator": "This is the OS Step 1 decomposition (D1).",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Direct disjoint-set decomposition of the Wilson plaquette sum.",
+                "outcome": "The source proves the identity and the runner checks all 96 plaquettes, including both periodic boundary families.",
+                "route_class": "algebraic_rearrangement",
+                "route_id": "partition_algebra"
+              },
+              {
+                "attempt": "Substituted U_i(-1-t,x\u20d7)=U_i(t,x\u20d7) into the spatial-link plaquette products.",
+                "disposition": "CLOSED",
+                "evidence_locator": "This proves (D2): `S_+(U)` is real and \u0398-invariant",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Restrict to the \u0398-fixed configuration class and test half-action invariance.",
+                "outcome": "\u0398U=U on the relevant links, so S_+(\u0398U)=S_+(U); no full-space invariance is inferred.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "theta_fixed_class"
+              },
+              {
+                "attempt": "Evaluated F(U)=f(U)+conj(f(\u0398U)) and used \u0398\u00b2=id.",
+                "disposition": "CLOSED",
+                "evidence_locator": "`F(\u0398U) = conj(F(U))`, proving (21).",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Construct an OS-Hermitian observable by adding the conjugated reflected loop.",
+                "outcome": "The construction gives F(\u0398U)=conj(F(U)); it does not assert the identity for arbitrary unsymmetrized loops.",
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "observable_symmetrization"
+              },
+              {
+                "attempt": "Enumerated 96 plaquettes and directly evaluated the action, reflection, and loop identities.",
+                "disposition": "CLOSED",
+                "evidence_locator": "all `6 \u00b7 2^4 = 96` plaquettes enumerated;",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Explicit seeded SU(3) evaluation on the smallest periodic 2^4 cell complex.",
+                "outcome": "All stated finite checks pass; the calculation corroborates rather than replaces the general algebra.",
+                "route_class": "numerical_or_finite_case",
+                "route_id": "finite_su3_exhibit"
+              },
+              {
+                "attempt": "Checked whether this packet supplies the Haar-integrated sesquilinear and mixed-kernel positivity argument.",
+                "disposition": "CLOSED",
+                "evidence_locator": "This note does NOT re-derive the abstract Cauchy-Schwarz lemma.",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Attempt to promote the configuration-space identities to the full interacting reflection-positivity inequality.",
+                "outcome": "It explicitly does not; that argument remains separate, so the narrow theorem does not overclaim it.",
+                "route_class": "dynamical_or_effective_action",
+                "route_id": "full_rp_overreach"
+              },
+              {
+                "attempt": "Compared the claimed action surface with the explicitly excluded staggered-Dirac sector.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Does NOT extend beyond pure-gauge Wilson plaquette action.",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Attempt to extend the pure-gauge decomposition automatically to the fermion-coupled action.",
+                "outcome": "The source confines the theorem to the pure-gauge Wilson action and leaves the fermion half to a separate companion.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "fermion_extension"
+              },
+              {
+                "attempt": "Checked the source for a continuum limit, uniform estimate, or reconstruction theorem.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Does NOT claim continuum / OS reconstruction.",
+                "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Attempt to infer continuum OS reconstruction from the finite-lattice identities.",
+                "outcome": "None is claimed; the result remains a lattice decomposition theorem.",
+                "route_class": "lattice_scale_or_limit",
+                "route_id": "continuum_lift"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "full interacting reflection-positivity inequality",
+                "fermion-coupled action extension",
+                "continuum or OS-reconstruction lift"
+              ],
+              "evidence_locator": "## \u00a75. Honest scope: what this companion does NOT supply",
+              "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+              "pairwise_checks": [
+                {
+                  "independent": true,
+                  "left": "full interacting reflection-positivity inequality",
+                  "left_closes_right": false,
+                  "right": "fermion-coupled action extension",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "full interacting reflection-positivity inequality",
+                  "left_closes_right": false,
+                  "right": "continuum or OS-reconstruction lift",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "fermion-coupled action extension",
+                  "left_closes_right": false,
+                  "right": "continuum or OS-reconstruction lift",
+                  "right_closes_left": false
+                }
+              ],
+              "unresolved": [],
+              "walls": [
+                "full interacting reflection-positivity inequality",
+                "fermion-coupled action extension",
+                "continuum or OS-reconstruction lift"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "## Honest scope (read this first)",
+              "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+              "hits": [
+                {
+                  "classification": "retained_authority",
+                  "evidence_locator": "Conclusion (T1) (temporal-gauge tensor factorization).",
+                  "evidence_path": "docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
+                  "phrase": "mixed-kernel factorization"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "Define the **time-symmetric configuration class**",
+                  "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                  "phrase": "time-symmetric configuration class"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "The full `U`-integrated reflection-positivity statement",
+                  "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                  "phrase": "full `U`-integrated reflection-positivity statement"
+                }
+              ],
+              "none_found_reason": "",
+              "scan_scope": "Temporal-gauge, boundary-condition, retained-authority, observable-localization, admission, and downstream-positivity language in the source, authority, and runner.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "Three substeps, all proved inline.",
+              "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+              "none_found_reason": "No N1 route relies on a prior witness; each disposition is supported directly by the source or included runner.",
+              "scan_scope": "All N1 routes were directly attempted in this packet; no route was marked RULED OUT BY PRIOR and therefore no prior witness is load-bearing.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## \u00a78. No-Go Discipline Scope Check",
+              "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+              "none_found_reason": "",
+              "scan_scope": "All negative and resolution language in the honest-scope, boundary, no-go-discipline, and honest-status sections.",
+              "statements": [
+                {
+                  "evidence_locator": "Does NOT derive the full interacting `SU(3)` reflection positivity inequality.",
+                  "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                  "phrase": "Does NOT derive the full interacting `SU(3)` reflection positivity inequality.",
+                  "tested_resolutions": [
+                    "finite periodic temporal-gauge D1-D3 configuration-space identities"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "Does NOT extend beyond pure-gauge Wilson plaquette action.",
+                  "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                  "phrase": "Does NOT extend beyond pure-gauge Wilson plaquette action.",
+                  "tested_resolutions": [
+                    "pure-gauge Wilson plaquette action only"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "Does NOT claim continuum / OS reconstruction.",
+                  "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                  "phrase": "Does NOT claim continuum / OS reconstruction.",
+                  "tested_resolutions": [
+                    "finite lattice decomposition"
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Kinetic graining isotropy neither proves the Haar-integrated RP argument nor supplies fermion or continuum closure.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The four axioms supply no gauge measure, transfer kernel, fermion action, or continuum reconstruction theorem.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Pointwise realized-state evaluation is unrelated to the Wilson-measure and continuum walls.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "A units reference supplies no dimensionless RP, fermion, or continuum argument.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "could_close_wall": false,
+                  "disposition": "The AC_phi_lambda occupancy/readout boundary is unrelated and does not supply a fermion RP theorem.",
+                  "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "owner_governed"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "could_close_wall": false,
+                  "disposition": "Bare-coupling rescaling is a non-accepted convention and is irrelevant to the \u03b2-independent decomposition.",
+                  "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "convention_reframe"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:hypercharge_identification_note",
+                  "could_close_wall": false,
+                  "disposition": "Hypercharge normalization has no connection to the scoped pure-gauge plaquette identities.",
+                  "evidence_locator": "convention_reframe:hypercharge_identification_note",
+                  "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "kind": "convention_reframe"
+                }
+              ],
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+              "none_found_reason": "",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "owner_governed_residual",
+                "tier_a_derivation_target",
+                "tier_a_convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "All candidates in the supplied primitive, owner-governed, Tier-A, convention, definition, and scope-reframe index.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "The strongest objection is that a Wilson loop localized in t\u22650 should itself become reflection-Hermitian by orientation reversal, making the symmetrization unnecessary and supporting the wider introductory wording.",
+              "evidence_locator": "Reflection-Hermiticity `F(\u0398U) = conj(F(U))` is not an automatic property",
+              "evidence_path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+              "resolution": "The source correctly rejects that inference in \u00a74.2: reflection changes the configuration and half-space, whereas trace orientation reversal only conjugates a reversed loop. The proved identity is therefore restricted to F(U)=f(U)+conj(f(\u0398U)).",
+              "resolved": true,
+              "route_id": "observable_symmetrization"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:0",
+                  "evidence_locator": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Earlier audit found the opposite periodic seam omitted; the current source and runner repair it.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:1",
+                  "evidence_locator": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:1",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Earlier clean scientific audit was invalidated only by missing no-go-discipline serialization.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Retired AC_phi_lambda governance boundary; unrelated to the scoped gauge theorem.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Retired strong-CP theta target; unrelated to the scoped gauge theorem.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Owner-governed AC occupancy/readout premise; unrelated to the scoped gauge theorem.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Unrelated foundational-campaign inventory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite gravity-sweep scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Gauge-coupling runner restrictions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Textbook-import and unique-axis restrictions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Historical cross-lane obstruction inventory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Electroweak normalization boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "\u03b2=6 comparator firewall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Lensing observable and tuned-parameter walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Carrier antisymmetry and registry walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Charged-lepton selector no-gos.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Spatial-dimension selection boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Emergent-Lorentz scope restriction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Causal-metric bridge boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Replay and basin-language restriction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Local scorecard versus environment closure.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Flavor tracial-route boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Free-Dirac analytic-vector failure.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Plaquette environment-operator walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Gauge isotropy and temporal-generator walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Gravity Fermat-bridge boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Weak-field gravity boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Absolute-scale and Clifford-carrier walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Hypercharge normalization degeneracy.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Multi-lane campaign demotions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Atomic-scale and threshold walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Quark-mass selector walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite checks versus asymptotics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Signed-adjoint lensing obstruction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Centered-path surrogate failure.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Static-source readout boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Clock-rate and magnitude boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Empty matter-cone ledger.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Planning versus theorem selection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Physical-time emergence boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Neutrino construction no-gos.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Neutrino/cosmology scale walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite Newtonian replay scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Frozen-log and finite-basin restrictions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Conditional coupling boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite packet-memory overreach.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite grid versus arbitrary degree.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Clifford-carrier selection walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "P_1 versus P_3 selection wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Plaquette bootstrap and mean-field walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Truncated-character diagnostic boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Record-versus-selector boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Strong-CP and AC registrability walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Locality and axis-selection walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite tangent versus source semantics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Spin-statistics forcing withdrawal.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Minimal-surface kinetic nonselection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "SU(3) quotient-encoder boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Documentation synchronization issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Partial family-card boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Theta mass-orientation walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Gauge-sector theta walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Theta positive-route gates.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "CP-odd phase insertion nonselection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Closed-branch theta wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "AC determinant-power selection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Record does not select AC occupancy.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Record formation does not select R-eta.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Artifact visibility, not an obstruction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Record-only mass-readout countermodel.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Hard-coded finite-row boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Finite wide-lattice versus continuum.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "mechanism": "Yukawa definition/renaming failure.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+              "none_found_reason": "",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "619369504501722606f5b02a38a8fc607d42bce53e62c23e6e004c7b50dcb205",
+                  "cross_cycle_candidate_ids": [
+                    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:0",
+                    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:1",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:0",
+                    "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02:previous_audit:1",
+                    "no_go_cross_cycle_index_v1",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ]
+                },
+                "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "4bcf476d668b7854c4f44b48614c86cb2ac661afb57232bb516e3cf0451263fb",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ],
+                  "path": "audit-packet://partial-closure-index/gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "no_go_partial_closure_index_v1",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ]
+                },
+                "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "7d47bf0043f133145cdfb40853175905aae3b7af2dc0b470a462e18decd97045",
+                  "effective_status": null,
+                  "path": "docs/GAUGE_OS_STEP1_WILSON_PLAQUETTE_DECOMPOSITION_THETA_INVARIANCE_REFLECTION_HERMITICITY_NARROW_THEOREM_NOTE_2026-06-02.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "## Honest scope (read this first)",
+                    "## \u00a75. Honest scope: what this companion does NOT supply",
+                    "## \u00a78. No-Go Discipline Scope Check",
+                    "Define the **time-symmetric configuration class**",
+                    "Does NOT claim continuum / OS reconstruction.",
+                    "Does NOT derive the full interacting `SU(3)` reflection positivity inequality.",
+                    "Does NOT extend beyond pure-gauge Wilson plaquette action.",
+                    "Reflection-Hermiticity `F(\u0398U) = conj(F(U))` is not an automatic property",
+                    "The full `U`-integrated reflection-positivity statement",
+                    "This is the OS Step 1 decomposition (D1).",
+                    "This note does NOT re-derive the abstract Cauchy-Schwarz lemma.",
+                    "This proves (D2): `S_+(U)` is real and \u0398-invariant",
+                    "Three substeps, all proved inline.",
+                    "`F(\u0398U) = conj(F(U))`, proving (21).",
+                    "all `6 \u00b7 2^4 = 96` plaquettes enumerated;"
+                  ]
+                },
+                "docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "abe6a7484775e8ce98e68c67f286988104b78aafd86ac01dc845b16643b51e4e",
+                  "effective_status": "retained",
+                  "path": "docs/GAUGE_TEMPORAL_GAUGE_MIXED_KERNEL_SPATIAL_LINK_FACTORIZATION_NARROW_THEOREM_NOTE_2026-05-10.md",
+                  "roles": [
+                    "authority"
+                  ],
+                  "verified_locators": [
+                    "Conclusion (T1) (temporal-gauge tensor factorization)."
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_verifier.py",
+  "title": "Gauge OS Step 1 \u2014 Wilson Plaquette Action Decomposition, \u0398-Invariance, and Reflection-Hermiticity (Narrow Companion Theorem)",
+  "transitive_descendants": 774,
+  "verdict_rationale": null
+}

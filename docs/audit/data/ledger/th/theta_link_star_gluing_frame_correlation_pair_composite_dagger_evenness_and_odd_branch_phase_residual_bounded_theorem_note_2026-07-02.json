@@ -1,0 +1,118 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_link_star_gluing_frame_correlation_pair_composite_dagger_evenness_and_odd_branch_phase_residual_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (exact finite gluing constructions plus a",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.468,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a79fdbff53fbb43be15e65e181b75450234682131f11cd895d0bf73c187c79a3",
+  "note_path": "docs/THETA_LINK_STAR_GLUING_FRAME_CORRELATION_PAIR_COMPOSITE_DAGGER_EVENNESS_AND_ODD_BRANCH_PHASE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.955556+00:00",
+      "audit_date": "2026-07-09T23:57:02.440014+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 6.459,
+        "runner_hash": "54c84e3eed7e2555f0642a96d14f70b35ca030367cda25a4223082cc0c1d70c1",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-theta_link_star_gluing_f-061",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "A real-valued class weight on a general compact group need not satisfy w(g\u2020) = w(g); for example, positive real class functions on U(1) can contain an inversion-odd sine component. The runner tests only SU(2), where inversion preserves conjugacy classes, so it cannot establish the advertised group-general theorem or its SU(3) transfer.",
+      "claim_scope": "Exact finite SU(2) pair, star, and chain calculations, together with the asserted extension of dagger-evenness to every compact group with real class weights.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:57:02.440014+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16:retained_no_go->unaudited",
+      "load_bearing_step": "Substituting V \u2192 V\u2020 and using w(X\u2020) = w(X) for real class weights gives G(S\u2081\u2020,\u2026,S\u2096\u2020) = G(S\u2081,\u2026,S\u2096), which combined with the SU(2) symmetric-trace identity makes the star pairwise-reducible.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Replace \u201creal class weights\u201d by an explicit dagger-even condition w(g\u2020)=w(g) in the group-general theorem and downstream SU(3) statements, narrow \u201cexactly joint-orbit data\u201d to factorization through diagonal orbits unless an orbit-separation theorem is supplied, then re-audit the revised note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The 14 runner checks genuinely support the stated finite SU(2) examples and algebraic identities, with no external comparator or imported numerical premise. However, the load-bearing generalization incorrectly treats real-valued centrality as dagger-evenness; an explicit inversion-even hypothesis is missing. Moreover, diagonal-conjugation invariance and one independent-conjugation witness establish factorization through joint orbits and nontrivial joint dependence, but not that the observables separate or expose precisely all diagonal-orbit data."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_link_star_frame_correlation_gluing_2026_07_02.py",
+  "title": "Link-Star Gluing Frame Theorems: the Relative Frame Rides the Composite Holonomy (Pairs and Chains), Stars Are Exactly Diagonal-Conjugation Objects, and Real-Weight Gluing Is Orientation-Reversal-Even \u2014 so the SU(2) Star Reduces to Pairwise Classes and the Orientation-Odd Branch Requires a Phase Insertion (Bounded Theorem)",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

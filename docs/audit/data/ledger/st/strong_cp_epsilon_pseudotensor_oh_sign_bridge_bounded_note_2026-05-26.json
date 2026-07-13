@@ -1,0 +1,161 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.468,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a58c458678bafd5907daab987ba54012cd44b807054e4fc627cd0559969fb717",
+  "note_path": "docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-18T02:48:59.189669+00:00",
+      "audit_date": "2026-05-29T07:27:35.255093+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "Pure Cl(3)/finite-cubic-group support lemma: every signed-permutation matrix R in O_h extends to a Cl(3) algebra automorphism on generators, the pseudoscalar I=gamma_1 gamma_2 gamma_3 transforms as det(R) I, and the pure pseudoscalar line has zero O_h-average. Strong-CP/action-class/continuum bridges are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "retained_bounded"
+        },
+        "deps": [
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "691fa04a7206db7b8c312856883664feb62d54ee5933df7d14466e91e5498b92",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The epsilon pseudotensor identity is exact for the 48 signed permutations, and the Q[F] sign law follows by direct index contraction. Wilson plaquette invariance follows from plaquette relabeling plus Re tr(U_P^dagger)=Re tr(U_P), while the strong-CP/action-class consequences remain explicitly conditional and out of scope.",
+      "claim_scope": "Bounded O_h sign bridge: with O_h acting as signed spatial permutations and fixing Euclidean time, the Wilson plaquette contribution is invariant under link/plaquette relabeling, epsilon^{ijk} transforms by det(R), and any rank-two tensor slot Q[F]=epsilon^{ijk}F_{0i}F_{jk} transforms by det(R); coefficient exclusion is only conditional on a separately proved O_h-invariant action class and slot covariance.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T07:27:35.255093+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26:retained_bounded->audit_in_progress",
+      "load_bearing_step": "Using R_{ia}R_{jb}R_{kc} epsilon_{abc}=det(R) epsilon_{ijk}, a rank-two tensor transform gives Q[R.F]=epsilon^{ijk}R_{ia}F_{0a}R_{jb}R_{kc}F_{bc}=det(R)Q[F].",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if broadened to full strong-CP/theta retirement, full Wilson+staggered+scalar action-class O_h-invariance, covariance of a concrete lattice topological-charge discretization, continuum theta_QCD bridging, or exclusion of CP-odd terms outside the determinant-odd epsilon F F slot.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing tensor sign law is an exact finite-group/index identity, independently re-derived from the Levi-Civita determinant formula and rank-two transformation rule. The runner's random Wilson/F samples are only sanity checks, but the source proof states the analytic reason, and the all-48 epsilon enumeration supports the finite-group part. The no-go/admission-wall gate passes because the note does not assert strong-CP closure, full action-class O_h-invariance, topological-charge discretization covariance, continuum theta bridging, or exclusion of CP-odd slots outside the stated determinant-odd epsilon F F form."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.395082+00:00",
+      "audit_date": "2026-06-18T07:30:23.303458+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited."
+        },
+        "dep_claim_type": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": "retained_bounded"
+        },
+        "deps": [
+          "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
+        ],
+        "load_bearing_score": 6.144,
+        "runner_hash": "691fa04a7206db7b8c312856883664feb62d54ee5933df7d14466e91e5498b92",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The epsilon identity is exact finite signed-permutation algebra, and the rank-two tensor transformation contracts directly with it. Wilson invariance follows from plaquette permutation plus Re tr(U_P^dagger)=Re tr(U_P); concrete topological-charge discretization covariance is correctly left outside the audited scope.",
+      "claim_scope": "Audited the bounded algebraic O_h sign bridge: Wilson plaquette invariance under signed spatial permutations, the epsilon pseudotensor sign law, and the determinant-odd transformation of epsilon^{ijk}F_{0i}F_{jk} for an already O_h-covariant rank-two F; coefficient exclusion is only the stated conditional consequence.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T07:30:23.303458+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "If F_{0i} transforms as a spatial vector and F_{jk} as an antisymmetric spatial rank-two tensor, then the R factors in epsilon^{ijk} F_{0i} F_{jk} contract to the determinant character, so Q[R.F] = det(R) Q[F].",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if a later claim broadens this from abstract rank-two F covariance to a named lattice topological-charge discretization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing identity is a genuine algebraic closure over signed permutation matrices, not a definition or numerical fit. The cited upstream authority is retained_bounded and is used only as companion determinant-character context, while the epsilon and Wilson statements close from finite O_h tensor algebra and standard plaquette orientation behavior. The runner is substantive rather than print-only: it enumerates O_h, checks epsilon on all 48 elements, and samples Wilson and abstract F transformations; it does not prove named lattice topological-charge covariance, but the note explicitly keeps that as a separate antecedent."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/strong_cp_epsilon_pseudotensor_oh_sign_runner.py",
+  "title": "Strong-CP Epsilon-Pseudotensor O_h Sign Bridge -- Bounded Note",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

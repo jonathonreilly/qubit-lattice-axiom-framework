@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17",
+    "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.65,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "85d3f40f0c380ecebbb79f29d13baf5d2876a705f06ea68b4e03a31b20d7afa6",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.953750+00:00",
+      "audit_date": "2026-05-25T19:24:41.058021+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17": "Finite-box H_B with 0 <= p,q <= 3: algebraic uniqueness of the stripped residual operator from finite K, J, D data, plus the beta=6 circular Wilson-rho round-trip check; no all-weight or physical unmarked-environment identification is audited.",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Bounded finite-box computation of normalized single-link SU(3) Wilson boundary character coefficients rho_(p,q)(6) for 0<=p,q<=4, plus finite symmetry, positivity, and diagonal-action checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17": "retained_bounded",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17",
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "load_bearing_score": 6.5,
+        "runner_hash": "b5330efb84b5ddf4933d5fc2b3976ac2d92b445e3ea731b6cebe0194e35ac9cf",
+        "transitive_descendants": 63
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T192240Z-b3ed75e0-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the finite box, the cited retained_bounded convolution identity gives a one-to-one map from normalized Peter-Weyl coefficients to convolution eigenvalues on the orthonormal character basis. Equality with the uniquely stripped diagonal residual therefore forces coefficient equality; the note does not need or claim all-weight spatial-environment closure.",
+      "claim_scope": "Finite-box B={0<=p,q<=4} inverse Peter-Weyl uniqueness of the normalized truncated SU(3) central character expansion realizing the diagonal residual operator on H_B, with beta=6 witness consistency only at bounded scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:24:41.058021+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_residual_environment_finite_box_stripping_uniqueness_narrow_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "Using the finite-box convolution-on-characters identity, equality C_(Z'|_B)=R_beta^env|_B implies rho'_(p,q) chi_(p,q)=rho_(p,q) chi_(p,q), hence rho'_(p,q)=rho_(p,q) for every weight in B and the normalized truncated class function is unique.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that 'positive' is interpreted as positive-type/nonnegative Peter-Weyl coefficients rather than pointwise positivity of the truncated finite character sum.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing inverse step is a genuine finite-dimensional algebraic closure over retained_bounded inputs: block 17 supplies uniqueness of R_beta^env|_B, and the bounded companion supplies the convolution-on-characters identity and rho(6) witness data. The runner source mostly checks coefficient/eigenvalue inversion and perturbation behavior; the beta=6 witness check imports the companion coefficients, so it is cross-note consistency rather than first-principles computation. No non-retained load-bearing dependency is required for the stated finite-box uniqueness claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow.py",
+  "title": "Gauge-Vacuum Plaquette Spatial-Environment Character-Measure Finite-Box Convolution-Realization Uniqueness Narrow Note",
+  "transitive_descendants": 70,
+  "verdict_rationale": null
+}

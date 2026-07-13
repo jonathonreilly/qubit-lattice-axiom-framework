@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite enumeration + symbolic coefficient",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+    "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3271dd829a4fa6055e7cf46c947a50bbc2c9aba0b0d7a7e979e0c5469dfc1bcf",
+  "note_path": "docs/THETA_MULTI_PLAQUETTE_CROSS_PLANE_ABSENCE_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.400715+00:00",
+      "audit_date": "2026-06-13T03:13:15.280522+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "Finite enumeration of rooted non-backtracking edge-simple closed loops at the origin in Z^3 for lengths 4 and 6 under the stipulated unit-neighborhood link-support license.",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": "Conditional exclusion of a local cross-plane F tilde F slot only inside the supplied additive per-plaquette action class A = sum_P f(U_P)."
+        },
+        "dep_claim_type": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "bounded_theorem",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09": "retained_bounded",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "4f0adb520d42c939f038c12831f00d4a83b1e091693da453ddb4c018338eeb90",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-031107-16a9eef6a1-theta_multi_plaquette_cross_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-combinatorial and symbolic steps close from the retained_bounded license and per-plaquette cross-plane authorities. The theorem remains explicitly conditional on those local support classes and does not derive the license, dynamics, winding sectors, or theta closure.",
+      "claim_scope": "Audited only the bounded local-support claim: verbatim unit-neighborhood link-support admits only single plaquettes, and the stated pairwise-proximate plaquette-product weakening excludes complementary-plane pairs and hence local cross-plane coefficients.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T03:13:15.280522+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "Under the verbatim license every licensed closed-loop support collapses to a single plaquette, and under the pairwise-proximity weakening no licensed plaquette product can contain a complementary plane pair, so no cross-plane F tilde F monomial can appear.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The runner does real finite enumeration and symbolic coefficient checks rather than merely printing expected verdicts, and the two dependency-pin checks are limited to verifying the consumed upstream text. Independently, the verbatim-license distance-2 argument confines closed supports to the finite plaquette classification, while the complementary-plane W exclusion follows from projecting one plaquette to a unit square and the complementary plaquette to one integer point, with no L1-radius-1 point covering all four corners. The coefficient criterion is also algebraic: a product of one-plane factors has a cross-plane mixed coefficient only when both complementary plane variables occur. The source states the remaining chain-connected and global-winding complements, so the audited scope is narrow rather than overclosed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_theta_multi_plaquette_cross_plane_narrowing_2026_06_11.py",
+  "title": "Theta Multi-Plaquette Cross-Plane Absence Narrowing Under the Adjacency License",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

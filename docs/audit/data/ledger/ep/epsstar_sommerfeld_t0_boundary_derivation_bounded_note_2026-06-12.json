@@ -1,0 +1,1364 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
+    "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
+    "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5a913f0d441a7687252493b2a58114d6cad3e489de0cd3d1c0f7875439aba7d0",
+  "note_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.895678+00:00",
+      "audit_date": "2026-06-19T22:54:37.977200+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "Sampled finite-lattice d=2 staggered square-lattice sign-boundary collapse at q=24, GL=160 for T=0.2 and m in {0.2,0.35,0.5,0.8}, with m=0, T-direction, quadrature, endpoint-recompute, and q=32 spot controls; no continuum or interpretive epsilon-curve claim.",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": "Finite-cell sampled PT-boundary result on Q=24, Ly=2, N=48, GL=20 for m={0,0.2,0.3,0.5} and T={0.15,0.2,0.3,0.4}, with bounded mean collapse, monotone sampled eps*(T), disclosed m-trend, and regression characterizations only.",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "Finite Q=24, Ly=2 staggered Harper one-particle cell at T=0.2, mu=1.7086, B=1e-3 finite-difference reference, masses m=0,0.2,0.3,0.5, and fixed 2e-2 tolerance; not a continuum, flux-quantized, strict B->0, or boundary-root theorem."
+        },
+        "dep_claim_type": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": "bounded_theorem",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": "retained_bounded",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "bf7a84215a3d15c889535de221621af177df540d11e008f71724d9044b43cebd",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the finite Harper/PT matrices, computes the boundary roots, T=0 surface root, regression slopes, and Sommerfeld coefficient rather than importing the contested mismatch. The one-hop cited authorities are marked retained_bounded, and the claim stays inside the declared finite-grid scope.",
+      "claim_scope": "On the fixed finite one-particle two-band Harper/PT grid with Q=24, Ly=2, GL=20, eta=0.05, and the listed temperature samples, the located T=0 m=0 branch matches the low-T extrapolated branch within tolerance, but the fixed-kernel occupation-smearing Sommerfeld coefficient does not reproduce the m=0 or wave-10 T^2 slopes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T22:54:37.977200+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The fixed Sommerfeld calculation from the same T=0 surface gives alpha_analytic = -9.266358431847, opposite in sign and far mismatched from the computed finite-T m=0 slope d = 3.877078419951.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the Sommerfeld coefficient formula and eta/h sensitivity before promoting beyond the declared fixed-grid, fixed-kernel bounded statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 3,
+        "C": 6,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing mismatch is a direct finite-dimensional computation from the runner's constructed operators and is confirmed by the printed runner output and arithmetic consistency of the reported fits. The frozen anchors are provenance checks, not the contested result. The no-go language is narrowed to the fixed T=0 occupation-smearing coefficient, and the note explicitly leaves full T-differentiation open, so the negative claim is not over-broad within its bounded scope."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:40.458131+00:00",
+      "audit_date": "2026-07-12T05:24:50.954883+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "Sampled finite-lattice d=2 staggered square-lattice sign-boundary collapse at q=24, GL=160 for T=0.2 and m in {0.2,0.35,0.5,0.8}, with m=0, T-direction, quadrature, endpoint-recompute, and q=32 spot controls; no continuum or interpretive epsilon-curve claim.",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": "Finite-cell sampled PT-boundary result on Q=24, Ly=2, N=48, GL=20 for m={0,0.2,0.3,0.5} and T={0.15,0.2,0.3,0.4}, with bounded mean collapse, monotone sampled eps*(T), disclosed m-trend, and regression characterizations only.",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "Finite Q=24, Ly=2 staggered Harper one-particle cell at T=0.2, mu=1.7086, B=1e-3 finite-difference reference, masses m=0,0.2,0.3,0.5, and fixed 2e-2 tolerance; not a continuum, flux-quantized, strict B->0, or boundary-root theorem."
+        },
+        "dep_claim_type": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": "bounded_theorem",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": "retained_bounded",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12",
+          "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
+          "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "bf7a84215a3d15c889535de221621af177df540d11e008f71724d9044b43cebd",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00413-epsstar_sommerfeld_t0_bounda",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the finite-grid coefficient and sampled slope mismatches. The chain does not establish that explicit kernel T-dependence is the uniquely necessary repair, because full T-differentiation and stability under alternative fixed-kernel regularizations or limiting procedures remain untested.",
+      "claim_scope": "On the fixed Q=24, Ly=2, GL=20, eta=0.05 finite one-particle grid, the implemented regularized fixed-kernel coefficient has the opposite sign from the sampled m=0 and wave-10 T^2-fit slopes; the stronger inference that every correct derivation must retain explicit kernel T-dependence is not closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T05:24:50.954883+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:eaaa81e74a4c",
+      "load_bearing_step": "The implemented fixed-kernel Sommerfeld coefficient alpha_analytic = -9.266358431847 has the opposite sign from the computed positive finite-T m=0 and wave-10 T^2 slopes.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner bisected the declared T=0 branch and interpolated the three listed low-T roots in T^2 and T^4.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The fixed T = 0 Fermi-surface branch is close to the low-T root extrapolation.",
+            "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Locate the regularized sharp-occupation T=0 boundary and compare it with a low-temperature polynomial extrapolation.",
+            "outcome": "CLOSED as an endpoint comparison only; it does not determine or exclude alternative T^2 coefficients.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "t0_branch_endpoint"
+          },
+          {
+            "attempt": "The runner differentiates the Gaussian surface functions and computes alpha_analytic from the resulting response derivative and T^2 coefficient.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The naive Sommerfeld coefficient computed from the same T = 0 surface object does **not** match the computed finite-T `mu*_PT(0,T)^2` slope.",
+            "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply the occupation-smearing Sommerfeld expansion to the held-fixed regularized T=0 response kernel.",
+            "outcome": "CLOSED negatively for the implemented finite-grid prescription because the coefficient has the opposite sign from the fitted m=0 slope.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "fixed_kernel_sommerfeld"
+          },
+          {
+            "attempt": "The runner recomputes the four-temperature, four-mass collapse table and fits eps*(T)^2 to c+dT^2.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The wave-10 `eps*(T)^2 = c + d T^2` slope is also not consistent with that fixed analytic coefficient.",
+            "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Compare the same analytic coefficient with the mean-collapse eps*(T)^2 regression rather than only the m=0 root sequence.",
+            "outcome": "CLOSED negatively for this comparator because its positive fitted slope is also inconsistent with the negative analytic coefficient.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "wave10_shared_slope"
+          },
+          {
+            "attempt": "The runner compares the m=0 fitted slope with the wave-10 mean-collapse slope and the note checks the known monotone mass trend.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The m-grid mean slope also differs from the m = 0 slope by `0.459` relative, consistent with the already disclosed m-trend pollution rather than a clean shared coefficient.",
+            "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the sampled mass-grid mean as a possible coefficient source instead of the m=0 sector alone.",
+            "outcome": "CLOSED as a clean shared-coefficient route on this grid because the coherent mass trend makes the average a polluted comparator.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "mass_grid_average"
+          },
+          {
+            "attempt": "The source names this calculation as the follow-on route, but neither the runner nor the restricted authorities execute it.",
+            "disposition": "OPEN",
+            "evidence_locator": "The partial closure path is explicit: differentiate the full finite-T response, including the kernel's T-dependence.",
+            "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Differentiate the complete finite-temperature response, retaining every explicit T-dependent part of its kernel.",
+            "outcome": "OPEN; it may produce the correct coefficient and has not been adjudicated.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "full_t_differentiation"
+          },
+          {
+            "attempt": "The restricted packet was checked for such a stability or limiting calculation; it supplies only eta=0.05, GL=20, and one derivative step.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "This is a finite-grid, regularized Fermi-surface quadrature, not a continuum surface-integral theorem.",
+            "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Vary the Gaussian width, derivative step, quadrature order, or limiting prescription while retaining a fixed T=0 kernel.",
+            "outcome": "UNTESTED; therefore the packet cannot exclude all fixed-kernel repairs or elevate the observed mismatch into a unique causal diagnosis.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "fixed_kernel_limit_stability"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "implemented_fixed_kernel_coefficient_mismatch_on_the_declared_finite_grid"
+          ],
+          "evidence_locator": "There is one collapsed residual: the fixed T = 0 kernel omits explicit T-dependence of the response.",
+          "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "implemented_fixed_kernel_coefficient_mismatch_on_the_declared_finite_grid",
+              "left_closes_right": false,
+              "right": "causal_exclusion_of_other_fixed_kernel_repairs",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "The numerical mismatch is supported, but the causal-exclusion wall is not established by the restricted packet."
+          ],
+          "walls": [
+            "implemented_fixed_kernel_coefficient_mismatch_on_the_declared_finite_grid",
+            "causal_exclusion_of_other_fixed_kernel_repairs"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "N3 hidden-wall scan.",
+          "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "\"Measured\" means computed from the finite runner grid here, not observed data.",
+              "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "phrase": "measured"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "\"Sommerfeld\" is restricted to the fixed-kernel occupation smearing coefficient.",
+              "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "phrase": "Sommerfeld"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "a correct derivation must retain the kernel's own explicit T-dependence.",
+              "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "phrase": "a correct derivation must retain the kernel's own explicit T-dependence",
+              "promoted_wall": "causal_exclusion_of_other_fixed_kernel_repairs"
+            }
+          ],
+          "scan_scope": "The source's uses of measured, Sommerfeld, T = 0, finite-T, derivation, correct derivation, and must retain were checked against the runner and supplied authorities.",
+          "unresolved": [
+            "The necessity wording assumes that no alternative fixed-kernel regularization or limiting prescription can repair the coefficient."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "N4 residual matching.",
+          "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+          "scan_scope": "The parent sampled surface, the two-band response authority, and the current runner were checked for residuals matching the finite-grid mismatch and the stronger causal-exclusion claim.",
+          "unresolved": [
+            "No supplied witness matches the stronger claim that every fixed-kernel repair is excluded."
+          ],
+          "witnesses": [
+            {
+              "claim_residual": "The wave-10 slope is a comparator and does not agree with the implemented fixed-kernel coefficient.",
+              "evidence_locator": "This is a regression description of the extracted curve, not a derivation of a continuum law.",
+              "evidence_path": "docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md",
+              "match": true,
+              "route_id": "wave10_shared_slope",
+              "witness_id": "parent_surface_regression",
+              "witness_residual": "The parent supplies only a sampled mean-collapse regression with a coherent mass trend."
+            },
+            {
+              "claim_residual": "The current runner applies a particular finite-grid regularized T=0 coefficient construction.",
+              "evidence_locator": "The calculation is finite dimensional: it expands the Peierls phase directly",
+              "evidence_path": "docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+              "match": true,
+              "route_id": "fixed_kernel_sommerfeld",
+              "witness_id": "two_band_response_machinery",
+              "witness_residual": "The authority supplies finite two-band Peierls response machinery, not a theorem selecting the T=0 regularization or its limiting behavior."
+            },
+            {
+              "claim_residual": "The implemented coefficient fails to reproduce the sampled finite-T slopes.",
+              "evidence_locator": "The sign is opposite and the relative mismatch is `3.390`, so the runner gates the mismatch as the finding.",
+              "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "match": true,
+              "route_id": "fixed_kernel_sommerfeld",
+              "witness_id": "current_runner_sign_mismatch",
+              "witness_residual": "The computed fixed-kernel coefficient is negative while both sampled slopes are positive."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "N5 rhetoric audit.",
+          "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+          "scan_scope": "The negative and necessity language was checked at finite-grid, regularization, mass-sector, temperature-sample, lattice-limit, and continuum resolutions.",
+          "statements": [
+            {
+              "evidence_locator": "The negative statement is only about the fixed T = 0 occupation-smearing coefficient on the finite m = 0 axis.",
+              "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "phrase": "the fixed T = 0 occupation-smearing coefficient on the finite m = 0 axis",
+              "tested_resolutions": [
+                "Q=24, Ly=2, GL=20, eta=0.05, derivative step 0.02, and the listed temperatures"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "a correct derivation must retain the kernel's own explicit T-dependence.",
+              "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "phrase": "a correct derivation must retain the kernel's own explicit T-dependence",
+              "tested_resolutions": [
+                "one fixed Gaussian regularization and one finite grid"
+              ],
+              "untested_resolutions": [
+                "other eta values",
+                "other derivative steps",
+                "higher PT quadrature orders",
+                "lattice-size or continuum limiting prescriptions",
+                "full finite-T differentiation"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The necessity statement exceeds the tested numerical resolution."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes a space-time kinetic-form ratio but supplies no Harper response kernel, Sommerfeld coefficient, regulator limit, or boundary-slope theorem.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms supply no Hamiltonian, response kernel, temperature dependence, or kinetic branch capable of selecting the disputed coefficient.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither the finite-temperature kernel nor a regularization or coefficient selector.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful unit conversion cannot determine this dimensionless finite-grid response coefficient or its T dependence.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton occupancy-counting obligation is unrelated to the Harper/PT boundary coefficient.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation supplies no finite-temperature response or fixed-kernel limit theorem.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This determinant-readout obligation is unrelated to the finite Harper/PT response calculation.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom and approved-primitive registry plus every indexed open obligation were checked for content capable of closing the coefficient-causality wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The sign failure may be an artifact of the mixed sharp-occupation/Gaussian-surface prescription, eta=0.05, derivative step 0.02, or finite GL=20 table; a controlled fixed-kernel limiting calculation could yield a different coefficient without introducing explicit kernel T-dependence.",
+          "evidence_locator": "the sign failure may only say the held-fixed kernel is the wrong coordinate choice.",
+          "evidence_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+          "resolution": "This objection succeeds against the note's causal necessity wording because no stability calculation is supplied. It does not overturn the narrower fact that the implemented finite-grid coefficient mismatches the sampled slopes.",
+          "resolved": true,
+          "route_id": "fixed_kernel_limit_stability"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12:previous_audit:0",
+              "evidence_locator": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Prior audit accepted the finite mismatch but lacked the no-go discipline packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated charged-lepton occupancy-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated charged-lepton readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated quark determinant-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite-sweep results do not supply broader Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated packet-memory and coupling-boundary cautions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated textbook-import and temporal-axis restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated multi-lane inherited no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated coupling-identity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Comparator and cache checks cannot substitute for a coefficient derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Method-specific failures leave different observable and regularization routes open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated carrier-representation route inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated finite-dimension selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated conditional Lorentz-theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite algebra checks do not prove a global theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Single-row evidence must not be generalized to a wider basin.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated local Wilson scorecard boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A narrow failed route does not exclude alternate carriers or readouts.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated analytic-vector route rejection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Method-specific finite failures do not constitute a global computational no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A scoped failed mechanism must leave other operators and dynamics open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated gravity observable-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated weak-field gravity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated action-unit and carrier no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated hypercharge normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated multi-lane scale, mass, and selector boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated atomic-scale and threshold-transport no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated quark-mass and selector no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite checks do not establish a uniform limiting theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A finite-harness no-go explicitly leaves signed and full-response derivations open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A surrogate failure is scoped to its literal finite geometry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated physical-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated temporal-source and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated planning-priority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated physical-time interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated neutrino mass-construction no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated neutrino and cosmology dependency boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite-lattice replay must not become a universal theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite frozen rows cannot support an unbounded basin claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated coupling and readout-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite checked windows do not imply an infinite-limit theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A finite coefficient scan does not establish arbitrary-degree exclusion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated Clifford-carrier selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated Hodge-dual carrier and source-domain boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated plaquette bootstrap and solver boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated plaquette diagnostic correction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated Record selector-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated strong-CP and charged-lepton registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated transfer-generator locality and axis-selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite tangent arithmetic does not select physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A countermodel no-go is narrowed to kinetic-law selection and preserves downstream alternatives.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated SU(3) quotient-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A single finite slot does not establish a full family theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated determinant-channel readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated gauge-action and theta readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated positive theta-carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated theta insertion-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated theta defect-closure wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated determinant-power horn selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated Record orbit-occupancy wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated Record formation/readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated artifact-visibility issue with no no-go claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated Record-only readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "A hard-coded finite table cannot establish a continuous or structural law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Finite lattice rows exclude continuum and universal-law claims.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "mechanism": "Unrelated physical-readout renaming wall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "implemented_fixed_kernel_coefficient_mismatch_on_the_declared_finite_grid"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
+              "accepted_premise_type": null,
+              "content_sha256": "110e5d0deace630502616404b1a81389690db6321b4a86ea5748b60163a0eb4e",
+              "cross_cycle_candidate_ids": [
+                "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
+              "accepted_premise_type": null,
+              "content_sha256": "5e0328cea89e1f8f296e81a285e78e50733b5f337e577ff5ac53f1b7621c21ea",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "73c3c06b922c6a413b466f318524b380b24ef579b799e72dccf6b24d26ee717b",
+              "effective_status": "retained_bounded",
+              "path": "docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "This is a regression description of the extracted curve, not a derivation of a continuum law."
+              ]
+            },
+            "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "5a913f0d441a7687252493b2a58114d6cad3e489de0cd3d1c0f7875439aba7d0",
+              "effective_status": null,
+              "path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "\"Measured\" means computed from the finite runner grid here, not observed data.",
+                "\"Sommerfeld\" is restricted to the fixed-kernel occupation smearing coefficient.",
+                "N3 hidden-wall scan.",
+                "N4 residual matching.",
+                "N5 rhetoric audit.",
+                "The fixed T = 0 Fermi-surface branch is close to the low-T root extrapolation.",
+                "The m-grid mean slope also differs from the m = 0 slope by `0.459` relative, consistent with the already disclosed m-trend pollution rather than a clean shared coefficient.",
+                "The naive Sommerfeld coefficient computed from the same T = 0 surface object does **not** match the computed finite-T `mu*_PT(0,T)^2` slope.",
+                "The negative statement is only about the fixed T = 0 occupation-smearing coefficient on the finite m = 0 axis.",
+                "The partial closure path is explicit: differentiate the full finite-T response, including the kernel's T-dependence.",
+                "The sign is opposite and the relative mismatch is `3.390`, so the runner gates the mismatch as the finding.",
+                "The wave-10 `eps*(T)^2 = c + d T^2` slope is also not consistent with that fixed analytic coefficient.",
+                "There is one collapsed residual: the fixed T = 0 kernel omits explicit T-dependence of the response.",
+                "This is a finite-grid, regularized Fermi-surface quadrature, not a continuum surface-integral theorem.",
+                "a correct derivation must retain the kernel's own explicit T-dependence.",
+                "the sign failure may only say the held-fixed kernel is the wrong coordinate choice."
+              ]
+            },
+            "docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c586742f725f64c3b373a7734f90d8da8839618490a79da962fcbd825fe02916",
+              "effective_status": "retained_bounded",
+              "path": "docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "The calculation is finite dimensional: it expands the Peierls phase directly"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 leaves full finite-T differentiation OPEN and fixed-kernel regularization/limit stability UNTESTED.",
+          "N2-N5 do not establish the causal-exclusion wall behind the statement that every correct derivation must retain explicit kernel T-dependence."
+        ],
+        "narrowed_claim_scope": "On the fixed Q=24, Ly=2, GL=20, eta=0.05 finite one-particle grid, the implemented regularized fixed-kernel coefficient has the opposite sign from the sampled m=0 and wave-10 T^2-fit slopes; the stronger inference that every correct derivation must retain explicit kernel T-dependence is not closed.",
+        "next_route": {
+          "reason_untested": "The packet supplies only one eta, derivative step, quadrature order, and finite-lattice prescription, so this is the cheapest route for determining whether the observed mismatch supports a unique causal diagnosis.",
+          "route_id": "fixed_kernel_limit_stability"
+        },
+        "prior_claim_scope": "On the fixed finite one-particle two-band Harper/PT grid with Q=24, Ly=2, GL=20, eta=0.05, and the listed temperature samples, the located T=0 m=0 branch matches the low-T extrapolated branch within tolerance, but the fixed-kernel occupation-smearing Sommerfeld coefficient does not reproduce the m=0 or wave-10 T^2 slopes.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: split the computed finite-grid mismatch from the causal necessity claim, test the named full-T and fixed-kernel stability routes, and add a dated downstream-hygiene line to this note's own boundary so its hash drift re-enters the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 4,
+        "C": 5,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The finite-grid sign mismatch is computed, but the note promotes it into the stronger causal statement that a correct derivation must retain the kernel's explicit T-dependence. The no-go packet leaves full T-differentiation open and provides no eta, derivative-step, quadrature, or limiting-procedure stability test excluding other fixed-kernel repairs. The claim is therefore supported only for the specific eta=0.05, GL=20 implementation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py",
+  "title": "eps* Sommerfeld/T=0 Boundary Check on the m = 0 Axis (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

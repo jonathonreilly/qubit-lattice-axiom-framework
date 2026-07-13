@@ -1,0 +1,707 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "single_axiom_hilbert_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.875,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ad65f3183c8d8ae1d9a206a0b688b04481f38eb40b96ce36f201b203cb09f191",
+  "note_path": "docs/SINGLE_AXIOM_HILBERT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.813526+00:00",
+      "audit_date": "2026-04-30T22:04:45.317575+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.67,
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-14",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner gives small-system support demos, but the claimed one-axiom reduction still imports extra structure: local dimension, a Hermitian/local Hamiltonian, the local interaction restriction, and the probability/readout convention. The note's own caveats acknowledge that the Hamiltonian and locality qualifier do real work beyond the bare Hilbert tensor product.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The two axioms reduce to one: a finite-dimensional Hilbert space with local tensor product structure.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "local_dimension_and_hamiltonian_specification",
+        "hermitian_local_interaction_restriction",
+        "born_rule_readout_postulate"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the numerical tests support a compression heuristic, but they do not derive graph, unitarity, Born probabilities, and gravity/locality from a single bare axiom. Why this blocks: the conclusion still requires specifying the Hamiltonian, Hermiticity, local interaction support, local dimension, and the Born/readout rule; the runner is a set of small random demonstrations rather than a closure theorem, and its locality test even reports a failed near/far gradient while passing a weaker spread comparison. Repair target: state a formal single-axiom package that includes or derives the Hamiltonian/locality/probability structures, then prove graph recovery and unitarity/Born/locality consequences as theorems rather than small-system demos. Claim boundary until fixed: finite tensor-product Hilbert spaces with local Hermitian Hamiltonians provide useful support for framework compression; they do not by themselves reduce the current framework to one closed axiom."
+    },
+    {
+      "archived_at": "2026-05-11T13:20:51.510219+00:00",
+      "archived_for_note_hash": "ef3f3f0aba2e8e0f5f27b7fd101c6678a4714c159eff9f66f2d1180eaf8abb29",
+      "audit_date": "2026-05-05T01:02:41.014118+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.675,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 288
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260505-005357-f2a031da-single_axiom_hilbert_not-016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close from the single axiom alone because the Hamiltonian, its Hermiticity, its local support restriction, and the rule for reading interaction support as graph topology are additional inputs. The note itself acknowledges that H and the local-interaction qualifier do real load-bearing work beyond the tensor-product Hilbert space.",
+      "claim_scope": "Audited whether the provided note and runner derive the finite graph plus unitary-evolution axioms from only a finite local tensor-product Hilbert space.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T01:02:41.014118+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A finite-dimensional Hilbert space with local tensor product structure is claimed to encode graph topology, locality, unitarity, and the Born rule as one axiom.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check whether a revised claim explicitly makes the Hamiltonian plus locality restriction part of the axiom; that would change the scope but still would not by itself derive the graph or dynamics from Hilbert space alone.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner numerically demonstrates consequences after constructing Hamiltonians with selected support, choosing Born-rule probabilities, and comparing unitary/Lindblad examples, but it does not derive those structures from the single Hilbert-space axiom. The conclusion mainly repackages several specifications into the phrase \"local tensor product Hilbert space\" and then reads graph/locality/unitarity back out of the added Hamiltonian data. This is a definitional compression rather than a first-principles derivation from the stated axiom."
+    },
+    {
+      "archived_at": "2026-05-16T12:56:46.112445+00:00",
+      "archived_for_note_hash": "2e9ee6e20454ab4962d5a98fa3cc96ad63e19b6a4fd512a0479cf086ed377fa8",
+      "audit_date": "2026-05-11T13:30:48.286087+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 13.811,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 448
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-20260511-single-axiom-hilbert",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The four numerical consequences follow once the admitted inputs are supplied, but the note does not derive the local Hamiltonian, locality restriction, Born readout, or graph-extraction rule from the bare tensor-product Hilbert-space axiom.",
+      "claim_scope": "Bounded operational Hilbert-surface demonstration: after local dimension, a local Hermitian Hamiltonian, Born readout, and the support-equals-edges extraction rule are supplied, the runner verifies graph-support recovery, I3=0 under Born p=2, unitary-vs-Lindblad behavior, and tensor-product locality. The advertised single-axiom reduction is a definitional compression of those admitted inputs, not a derivation from bare tensor-product Hilbert space.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T13:30:48.286087+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Packaging the admitted inputs `(local d, local H, Born readout, support = edges rule)` under the phrase `a finite Hilbert space with local tensor product structure` is a class-E definitional compression, not a derivation of those inputs from a smaller axiom set.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-audit only if the note is rewritten as a bounded admitted-input operational claim or a retained theorem derives the local H, Born readout, locality restriction, and support-to-edges rule from the proposed axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the single-axiom conclusion packages several independent specifications as one phrase, then reads locality, graph support, unitarity, and Born behavior back out of those specifications. Why this blocks: the runner verifies consequences after constructing local Hamiltonians, choosing the Born readout, and defining graph edges from support; it does not derive those structures from the stated Hilbert-space axiom alone. Repair target: provide a retained derivation of local Hermitian H, the locality restriction, Born readout, and the support-to-edges extraction rule from the claimed axiom, or state the row only as an operational consequence under admitted inputs. Claim boundary until fixed: the four small-system demonstrations are valid diagnostics under the named inputs, but the single-axiom reduction is not retained science."
+    },
+    {
+      "archived_at": "2026-05-23T17:05:14.427055+00:00",
+      "archived_for_note_hash": "111a543b633c08e6034ad79a399f49367a3df299e782b663075821ee445bb3f1",
+      "audit_date": "2026-05-16T13:06:28.632326+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 14.615,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 783
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260516-130607-0c2ebbc0-single_axiom_hilbert_not-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded chain closes on its own narrowed terms because the runner constructs exactly the admitted structures and checks the corresponding graph, Born-rule I3, unitary/Lindblad, and tensor-product locality behaviours. It does not close as a derivation from a bare single Hilbert-space axiom, because the Hamiltonian, locality restriction, Born readout, and graph-extraction rule are admitted inputs.",
+      "claim_scope": "Audited only the bounded operational claim that, after admitting local dimension, a local Hermitian Hamiltonian, Born readout, and the support-equals-edges extraction rule, the four small-system numerical consequences are mechanically demonstrated by the runner.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T13:06:28.632326+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The four admitted inputs `(local d, local H, Born readout, \"support = edges\" rule)` can be packaged together under the phrase \"a finite Hilbert space with local tensor product structure\"; the consequences are then read out under those admissions.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check that downstream ledgers preserve this as class-E definitional compression and do not promote the runner synthesis language to a positive single-axiom theorem.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner performs real small-system computations, but those computations operate after the contested ingredients have already been supplied: local Hamiltonian support, Hermiticity, Born readout, tensor factorization, and the support-to-graph convention. The note's own narrowed framing correctly identifies the single-axiom phrasing as definitional compression rather than first-principles closure. The stdout synthesis still overstates the result as a unified single axiom, but the source note explicitly scopes the audited claim to the admitted-input package."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.084230+00:00",
+      "audit_date": "2026-05-23T19:35:08.554825+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 10.65,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 70
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T193446Z-a7e6e451-single_axiom_hilbert_not-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner mechanically checks the four stated consequences after the admitted structures are supplied. It does not derive the local Hamiltonian, Hermiticity/locality restriction, Born readout, or graph-extraction rule from a smaller Hilbert-space axiom.",
+      "claim_scope": "Audited only the scope-narrowed claim that, after admitting local dimension, a local Hermitian Hamiltonian, Born readout, and the support-equals-edges extraction convention, the runner's four numerical demonstrations follow mechanically.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:35:08.554825+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The four admitted inputs `(local d, local H, Born readout, \"support = edges\" rule)` can be packaged together under the phrase \"a finite Hilbert space with local tensor product structure\".",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether runner_check_breakdown should classify the four small-system numerical demonstrations as D-style comparator checks or as non-rubric mechanical simulations, but this does not affect the class-E verdict.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The source note correctly narrows the claim to a class-E definitional compression: the contested physical ingredients are admitted and then bundled under the label local tensor product Hilbert space. The runner does perform nontrivial numerical checks, but those checks operate after constructing local Hamiltonians, imposing Born probabilities, and using the support-extraction convention. Therefore the note is valid as a bounded operational demonstration under admitted inputs, not as a derivation of those inputs from a single axiom."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.547475+00:00",
+      "audit_date": "2026-06-05T17:03:22.119153+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 10.67,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260605-170300-8ec4e7db05-single_axiom_hilbert_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The small numerical checks follow once the admitted structures and conventions are supplied, but the advertised compression into one Hilbert-space axiom is definitional. The missing step is a derivation of the local Hamiltonian, locality restriction, Born readout, and graph-extraction rule from the bare tensor-product Hilbert space rather than admitting them.",
+      "claim_scope": "Given the explicitly admitted local dimension, local Hermitian Hamiltonian, Born readout, and support-as-edges extraction convention, the runner checks four small-system operational consequences.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:03:22.119153+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Packaging the admitted inputs (local d, local Hermitian H, Born readout, and support=edges rule) as a finite Hilbert space with local tensor product structure yields the four checked consequences.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only whether the intended scoped claim remains the bounded admitted-input operational check rather than a renewed single-axiom derivation claim.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner performs real small-system computations, but each test is driven by structures inserted as inputs: selected Hamiltonian support, Born p=2 readout, Hermitian/unitary dynamics, and tensor-product factorization. Test 1 is support recovery under a defining extraction rule; Test 2 verifies the algebraic cancellation of third-order interference for squared amplitudes; Test 3 and Test 4 compare chosen dynamics/factorizations rather than deriving them. The source note itself correctly frames the result as class-E definitional compression, so the chain is not a first-principles derivation from a single smaller axiom."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:50.559671+00:00",
+      "archived_for_note_hash": "235583c9061c495b234c361935ba499708fdae230f07e9307efb0be64e4eafca",
+      "audit_date": "2026-06-05T21:07:35.061944+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 10.67,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260605-210556-8ba0750901-single_axiom_hilbert_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain closes only after the Hamiltonian, Hermiticity/locality restriction, Born readout, and graph-extraction rule are supplied as inputs. It does not close as a derivation from the bare tensor-product Hilbert-space axiom because those inputs do the load-bearing work.",
+      "claim_scope": "Bounded operational check that four toy numerical consequences are evaluated after local dimension, local Hermitian Hamiltonian, Born readout, and support-as-edges extraction are stipulated.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:07:35.061944+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The four admitted inputs `(local d, local H, Born readout, \"support = edges\" rule)` are packaged together under the phrase `a finite Hilbert space with local tensor product structure`.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check Test 4 source/runner drift if the claim is ever promoted beyond definitional-compression scope; the runner output itself reports `Locality gradient ... False` while the note table says distance dependence decays with graph distance.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner constructs the Hamiltonian support, readout rule, and local/unfactored comparison directly, then verifies consequences inside that stipulated setup. Test 1 is support recovery under a supplied extraction definition, Test 2 uses the Born p=2 rule as the probability rule, and Test 3 uses Hermiticity to get unitary evolution. The source correctly narrows this to definitional compression, not first-principles reduction; additionally, Test 4's printed distance-gradient check is false/nonmonotone even though the runner still reports PASS from a spread-ratio criterion."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:53.003364+00:00",
+      "archived_for_note_hash": "a0e40b9ef8b033ed8b9ee52d145fc9494a30f59124449cee6221bc86eeebbdf9",
+      "audit_date": "2026-06-18T04:37:29.910968+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null,
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 11.392,
+        "runner_hash": "d130e70af9bb0ca04cf177671b3a7847f8b756d64162f44340525e3b2e4d93f3",
+        "transitive_descendants": 83
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-single_axiom_hilbert_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed operational chain closes after the four inputs are stipulated: the code builds those structures and performs mechanical checks. It does not close as a first-principles derivation of those structures from bare tensor-product Hilbert space.",
+      "claim_scope": "Under stipulated local dimension, local Hermitian Hamiltonian, Born readout, and support-equals-edges extraction rule, the runner mechanically checks graph recovery, Born-rule I_3 = 0, unitary-vs-Lindblad behavior, and a tensor-product locality toy comparison.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:37:29.910968+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Packaging the four admitted inputs together gives the phrase \"a finite Hilbert space with local tensor product structure\"; the runner then evaluates the four consequences under that package.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check Test 4 source/runner drift before any stronger locality claim; current verdict covers only the definitional-compression framing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the runner constructs local Hamiltonians, Born probabilities, and support extraction, then repackages those stipulated structures as the single local tensor-product Hilbert-space surface. Why this blocks: none of the cited authorities or code derives the local Hermitian H, locality restriction, Born p=2 readout, or support-equals-edges rule from the bare tensor-product Hilbert space. Repair target: derive those inputs from a strictly smaller retained framework surface and repair the Test 4 source/runner drift. Claim boundary until fixed: the note supports only the definitional-compression/bounded operational consequences under the admitted package."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.516353+00:00",
+      "audit_date": "2026-06-21T10:50:03.309897+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.426,
+        "runner_hash": "7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-single_axiom_hilbert_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed admitted-input chain closes only as an operational/definitional package: the runner performs finite matrix and support checks after the four inputs are supplied. It does not close as a derivation from a bare tensor-product Hilbert-space axiom; deriving the local Hamiltonian, locality restriction, Born readout, and graph-extraction rule would be the missing stronger step.",
+      "claim_scope": "Under the admitted local factor dimensions, stipulated local Hermitian Hamiltonian, Born p=2 readout, and support-as-edges extraction rule, the runner checks four small-system operational consequences; no derivation of those inputs is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T10:50:03.309897+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The four admitted inputs are packaged under the phrase \"a finite Hilbert space with local tensor product structure,\" and the runner then mechanically evaluates the four consequences under that package.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check any future promotion for derivations of the admitted H/Born/support inputs, and re-check Test 4's spread metric before using it beyond the toy operational contrast.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the source's load-bearing move is to bundle local d, local Hermitian H, Born readout, and support-as-edges into a named Hilbert packet. Why this blocks clean derivation status: the runner verifies finite consequences only after those premises are supplied, so it is not a first-principles computation from the bare tensor-product structure or from MINIMAL_AXIOMS. Repair target: derive the local Hamiltonian/locality restriction, Born readout, and graph-extraction rule from retained inputs; until then the safe claim is the narrowed operational check under admitted inputs."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.892371+00:00",
+      "audit_date": "2026-07-01T07:43:56.388693+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.426,
+        "runner_hash": "7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T074356Z-bc802e80-single_axiom_hilbert_not",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The first three checks close as internal finite-matrix/algebraic checks on supplied inputs, but Test 4's localization claim does not close as written. The runner computes the local participation ratio from unnormalized site-occupancy marginals and compares it to a normalized 64-state random-Hamiltonian participation ratio, so the stated spread ratio is not a valid comparable localization metric.",
+      "claim_scope": "Bounded operational check that the four finite runner consequences follow after stipulating local factor dimensions, a local Hermitian Hamiltonian, Born p=2 readout, and the support-as-edges extraction rule; no derivation of those inputs is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:43:56.388693+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Under the four named admitted inputs `(local d, local H, Born readout, support = edges rule)`, the four numerical consequences follow mechanically as evaluated by the runner.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: repair Test 4 with comparable normalized participation-ratio distributions on the same sample space, or narrow the audited claim to the first three checks plus the explicit definitional-compression statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner does real finite computations rather than merely printing constants, but it supplies the Hamiltonian, Born rule, and graph-extraction convention as inputs and therefore is not a class-C derivation from the framework baseline. More importantly, the fourth claimed consequence depends on a pass/fail metric that is not normalized consistently: the listed local site probabilities sum to about 2.27, yet `PR_local = 1/sum(p_i^2)` is interpreted as a participation ratio and compared to a different 64-state distribution. The full four-consequence bounded claim therefore needs a Test 4 metric repair or a narrower scope before it closes."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.503522+00:00",
+      "audit_date": "2026-07-02T00:09:10.740183+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 11.426,
+        "runner_hash": "7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c",
+        "transitive_descendants": 85
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T000910Z-595e2b16-single_axiom_hilbert_not",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped finite operational checks close under the explicitly admitted inputs. They do not derive the local Hamiltonian, locality restriction, Born readout, or graph-extraction rule from a bare tensor-product Hilbert-space axiom or from the minimal framework axioms.",
+      "claim_scope": "Audited only the scoped operational packet: given local factor dimensions, a supplied Hermitian local Hamiltonian, Born p=2 readout, and the support-as-edges convention, the small-system runner checks graph recovery, I_3=0, unitary-vs-Lindblad contrast, and bounded localization contrast.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T00:09:10.740183+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The four admitted inputs `(local d, local Hermitian H, Born readout, support = edges extraction rule)` are packaged as a local tensor-product Hilbert-space packet from which the four runner checks are evaluated.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if future source text or citations restore a bare single-axiom derivation claim or broaden Test 4 beyond the finite spread/localization contrast.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner performs real finite numerical checks, but only after the local Hamiltonian, Hermiticity/locality restriction, Born readout, and support-extraction convention are supplied. The note now states that packaging those inputs as a local tensor-product Hilbert-space packet is class-E definitional compression, not a first-principles derivation. The cited minimal-axioms authority is an accepted axiom premise, but it does not supply dynamics, probability/Born weights, context selection, or Hamiltonian support, so no stronger closure follows from it."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:33.027574+00:00",
+      "audit_date": "2026-07-09T23:47:49.944155+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 10.909,
+        "runner_hash": "7ea5ad4c646799e8c7a6a511efd4a37d15b534a99894288174f7ee6b42c1093c",
+        "transitive_descendants": 84
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-single_axiom_hilbert_not-047",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Test 4 compares a quantity computed from six overlapping, unnormalized qubit-occupation marginals with a participation ratio computed from a normalized distribution over 64 mutually exclusive basis states. A valid localization comparison on a common normalized outcome space is missing, so the asserted four-consequence chain does not close.",
+      "claim_scope": "The four fixed-seed operational checks under an admitted local factorization, local Hermitian Hamiltonian, Born p=2 readout, and support-as-edges convention, without deriving those inputs or reducing the framework axioms.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:47:49.944155+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The four admitted inputs are packaged as \u201ca finite Hilbert space with local tensor product structure,\u201d under which all four numerical consequences are asserted to follow mechanically.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Replace Test 4 with a localization statistic computed from normalized distributions on the same outcome space, then rerun and re-audit; also keep Test 3's conclusion limited to the fixed strong-dephasing toy control.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Tests 1 and 2 genuinely check support recovery and the Born-rule I_3 cancellation, and Test 3 computes the stated fixed-toy unitary/dephasing behavior. Test 4's reported 29x spread ratio is not a valid participation-ratio comparison because its two inputs use different, differently normalized sample spaces; consequently it does not establish the claimed bounded-localization consequence. The broader \u201csingle axiom\u201d packaging is also explicitly definitional rather than a derivation, although the note now disclaims that stronger interpretation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_single_axiom_hilbert.py",
+  "title": "Local Tensor Product Hilbert Space + Local Hamiltonian + Born Readout: Operational Reduction Note",
+  "transitive_descendants": 82,
+  "verdict_rationale": null
+}

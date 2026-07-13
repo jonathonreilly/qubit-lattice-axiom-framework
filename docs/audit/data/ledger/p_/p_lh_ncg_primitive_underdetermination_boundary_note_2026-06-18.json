@@ -1,0 +1,1512 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "231e17fbbc256ac2972bc7787ba027c141f8d1a8f0a4081d979923bf9486b033",
+  "note_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.509377+00:00",
+      "audit_date": "2026-06-21T12:53:49.279347+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.459,
+        "runner_hash": "ce55d50af52009dae1554346c1b767b4876e2d31edbcf6c3152a5f12deea6ab7",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited minimal axiom premise supplies only the one-site M_2(C)/Cl(3) carrier and explicitly omits gauge group, particle content, readout bridge, real structure, and finite Dirac data. The runner constructs the Pauli block and exhibits alternative compatible finite-action, J, and D/order-one choices, so the scoped underdetermination conclusion follows.",
+      "claim_scope": "Audited only the finite Pauli/Cl(3) current-minimal-baseline boundary that the P-LH NCG finite algebra, KO-dim-6 real structure, and order-one data are not selected without an added derivation or approved primitive.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:53:49.279347+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Lattice + Quantum + Record do not determine the NCG finite algebra, order-one condition, or KO-dim-6 real structure used by the P-LH route.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the narrow scope: this audits route-pruning for the current finite Pauli baseline, not a universal no-go against NCG primitive approval or alternate SM LH/RH derivations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 32,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The runner source is substantive rather than a PASS printer: it instantiates Pauli matrices, projectors, antiunitary choices, and finite D choices, then checks the relevant commutator and noncommutator witnesses. The only upstream authority is the registered minimal-axiom premise, which is accepted under the rubric and does not contain the NCG packet. Within the note's stated finite Pauli/current-baseline scope, the negative boundary closes; the note does not claim to derive or rule out all SM LH/RH routes."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.495289+00:00",
+      "audit_date": "2026-07-02T04:35:29.378503+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.459,
+        "runner_hash": "ce55d50af52009dae1554346c1b767b4876e2d31edbcf6c3152a5f12deea6ab7",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T043529Z-d9c21840-p_lh_ncg_primitive_under",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli-block algebra substantively witnesses the three named NCG choices are not selected by the minimal baseline. As a clean bounded negative row, however, the packet lacks a policy-compliant N1 alternative-route enumeration: it lists only three tested route classes and expressly leaves other SM LH/RH routes untested.",
+      "claim_scope": "Bounded underdetermination of the NCG finite algebra, KO-dim-6 real structure, and order-one condition on the accepted one-site M_2(C)/Cl(3) finite Pauli baseline; no SM LH/RH derivation or primitive approval is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:35:29.378503+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Lattice + Quantum + Record do not determine the NCG finite algebra, order-one condition, or KO-dim-6 real structure used by the P-LH route.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the row to a non-exhaustive three-witness finite-Pauli underdetermination support note, or add a policy-compliant No-Go Discipline N1 with at least five distinct attack routes before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 32,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The finite Pauli computations support the local underdetermination witnesses: Cl+(3) is insensitive to the rho sign, two J choices with different chirality signs exist, and order-one behavior depends on extra D/opposite-action data. The minimal axiom premise is accepted and supplies only the one-site M_2(C)/Cl(3) possibility algebra, not the NCG packet. But current no-go discipline applies to this bounded wall-bearing negative claim, and N1 requires at least five distinct attack routes; the source gate gives only three and states it does not test every possible SM LH/RH route. That prevents audited_clean for the claim as framed."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.570122+00:00",
+      "audit_date": "2026-07-10T02:12:29.163006+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.307,
+        "runner_hash": "ce55d50af52009dae1554346c1b767b4876e2d31edbcf6c3152a5f12deea6ab7",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-p_lh_ncg_primitive_under-077",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom premise supplies M_2(C)/Cl(3,0) but none of the disputed NCG structures. Explicit matrix witnesses then establish non-uniqueness and dependence on additional choices within the note's bounded scope.",
+      "claim_scope": "On the finite rho-plus direct-sum rho-minus Pauli test block, the minimal one-qubit lattice axioms do not uniquely select the finite-algebra action, chirality sign of the real structure, or order-one data; no conclusion is asserted for every SM LH/RH route.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:12:29.163006+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The same finite Pauli baseline admits inequivalent finite-algebra actions and real structures, while the order-one verdict changes with separately chosen Dirac and opposite-action data, so the baseline does not determine the NCG packet.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A later maintenance audit should update the runner's historical MINIMAL_AXIOMS_2026-06-05.md reference to the superseding 2026-06-29 authority; the bounded algebraic conclusion is unchanged by the added Admissibility axiom.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 32,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The load-bearing result is a genuine algebraic non-uniqueness argument, not a definition, empirical comparison, or tuned numerical match. The runner constructs and checks the alternative actions, antiunitaries, and Dirac choices rather than merely printing the claimed outcome. The cited axiom memo is an accepted premise and does not introduce an open dependency, while its newer Admissibility axiom adds no NCG selection data."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:01.381662+00:00",
+      "audit_date": "2026-07-12T09:19:54.817619+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.307,
+        "runner_hash": "ce55d50af52009dae1554346c1b767b4876e2d31edbcf6c3152a5f12deea6ab7",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00249-p_lh_ncg_primitive_underdete",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The three local algebraic witnesses are sound, but the required no-go discipline does not close: the source tests only three wall families and leaves dynamics/readout and larger-retained-sector selection routes untested.",
+      "claim_scope": "On the four-dimensional rho-plus direct-sum rho-minus Pauli block, the displayed alternatives witness non-uniqueness of the finite action, real-structure chirality sign, and order-one behavior; dynamics, readout selection, larger finite sectors, and other SM LH/RH routes were not audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T09:19:54.817619+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "On the displayed finite Pauli block, alternative finite-algebra actions, antiunitary real structures, and finite Dirac/opposite-action choices give different NCG data while preserving the same one-site Cl(3) baseline.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner compares all three Cl+(3) bivectors and the volume element in rho-plus and rho-minus.",
+            "disposition": "CLOSED",
+            "evidence_locator": "chirality is distinguished but Cl+(3) action is not",
+            "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the even-Clifford action and volume element to select the chiral representation and thereby the NCG packet.",
+            "outcome": "CLOSED on the tested block: the bivectors agree while the volume signs differ, so the even action alone does not select the packet.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "cl_even_chirality"
+          },
+          {
+            "attempt": "The runner constructs commuting left and right su(2) actions and the scalar-right alternative.",
+            "disposition": "CLOSED",
+            "evidence_locator": "baseline also admits PS-like finite action",
+            "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Select the SM-like finite action uniquely instead of the Pati-Salam-like action on the same chiral block.",
+            "outcome": "CLOSED on the tested block: both finite actions are compatible with the displayed baseline representation.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "finite_action_choice"
+          },
+          {
+            "attempt": "The runner constructs J=K and J=SK, checks J squared, and checks their opposite chirality commutation signs.",
+            "disposition": "CLOSED",
+            "evidence_locator": "KO-dim-6 sign is an extra selection among admissible J choices",
+            "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use antiunitary and chirality relations to force the KO-dim-6 real-structure sign.",
+            "outcome": "CLOSED on the tested block: both choices satisfy J squared equals plus one, and the baseline supplies no selector between them.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "real_structure_sign"
+          },
+          {
+            "attempt": "The runner compares D=0 with an off-diagonal mixing D and evaluates double commutators.",
+            "disposition": "CLOSED",
+            "evidence_locator": "order-one verdict depends on extra D/opposite-action data",
+            "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use a finite Dirac operator and opposite action to force the order-one condition.",
+            "outcome": "CLOSED as a forcing route on the tested data: vacuous and nonzero double-commutator cases coexist because D and the opposite action are extra choices.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "order_one_dynamics"
+          },
+          {
+            "attempt": "No enlarged-sector construction or exclusion calculation is supplied; the source explicitly grants this possibility.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "a larger retained finite sector selects the NCG data",
+            "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Enlarge the retained finite sector beyond the four-dimensional Pauli test block so multiplicities or dynamics might select the NCG data.",
+            "outcome": "The route remains UNTESTED and could invalidate any claim extending beyond the four-dimensional test block.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "larger_finite_sector"
+          },
+          {
+            "attempt": "No readout-context model or countermodel pair is computed; the source names this as a future bridge.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "dynamics, a readout context, or a larger retained finite sector selects the NCG data",
+            "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Let a derived readout context select the finite algebra, real structure, or opposite-action data.",
+            "outcome": "The route remains UNTESTED and is outside the displayed finite-block calculation.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "readout_context_selection"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "finite-algebra selection",
+            "KO-dim-6 real-structure selection",
+            "order-one finite-D/opposite-action selection"
+          ],
+          "evidence_locator": "the three witnessed walls are independent missing choices: finite algebra, antiunitary sign, and finite Dirac/opposite-action data",
+          "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "finite-algebra selection",
+              "left_closes_right": false,
+              "right": "KO-dim-6 real-structure selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "finite-algebra selection",
+              "left_closes_right": false,
+              "right": "order-one finite-D/opposite-action selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "KO-dim-6 real-structure selection",
+              "left_closes_right": false,
+              "right": "order-one finite-D/opposite-action selection",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "finite-algebra selection",
+            "KO-dim-6 real-structure selection",
+            "order-one finite-D/opposite-action selection"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No particle content, gauge group, spectral triple, or NCG primitive is imported.",
+          "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+          "hits": [
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "The full one-site possibility domain has algebraic presentation `M_2(C)`.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "M_2(C)"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Admissibility is not a dynamics axiom.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "Admissibility"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "explicit finite Pauli matrices",
+              "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+              "phrase": "explicit finite Pauli matrices"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source premises, current minimal-axiom authority, runner inputs, finite matrices, Admissibility language, and exclusions of particle, gauge, spectral-triple, and NCG data were checked.",
+          "unresolved": [
+            "The primary runner reads the superseded 2026-06-05 memo and does not instantiate the newer Admissibility axiom, although the current authority states that Admissibility supplies no dynamics or Dirac operator."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "BLOCK 6: target blocker coverage",
+          "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+          "none_found_reason": "",
+          "scan_scope": "Each computed witness was compared with the corresponding finite-algebra, real-structure, or order-one residual asserted by the source.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The baseline does not select the finite algebra.",
+              "evidence_locator": "SM-vs-PS choice is not determined by Cl+(3) equality",
+              "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+              "match": true,
+              "route_id": "finite_action_choice",
+              "witness_id": "w_finite_action",
+              "witness_residual": "Both SM-like and Pati-Salam-like actions occur on the same block."
+            },
+            {
+              "claim_residual": "The baseline does not select the KO-dim-6 sign.",
+              "evidence_locator": "both J choices live on the same finite baseline block",
+              "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+              "match": true,
+              "route_id": "real_structure_sign",
+              "witness_id": "w_real_structure",
+              "witness_residual": "Two J choices have different chirality signs on the same block."
+            },
+            {
+              "claim_residual": "Order-one behavior is not determined without finite-D/opposite-action data.",
+              "evidence_locator": "same baseline admits vacuous and nonvacuous D choices",
+              "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+              "match": true,
+              "route_id": "order_one_dynamics",
+              "witness_id": "w_order_one",
+              "witness_residual": "D=0 and off-diagonal D give different double-commutator behavior."
+            },
+            {
+              "claim_residual": "The even local action alone does not select the chiral NCG packet.",
+              "evidence_locator": "chirality is distinguished but Cl+(3) action is not",
+              "evidence_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+              "match": true,
+              "route_id": "cl_even_chirality",
+              "witness_id": "w_even_chirality",
+              "witness_residual": "The even-Clifford bivectors coincide while volume signs differ."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The claim is not that P-LH is false and not that NCG cannot be used.",
+          "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+          "none_found_reason": "",
+          "scan_scope": "The source's negative headline, route-pruning consequence, and caveats about P-LH, NCG, and other SM LH/RH routes were checked.",
+          "statements": [
+            {
+              "evidence_locator": "the current baseline does not determine the NCG packet without an added derivation or approved primitive input",
+              "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+              "phrase": "the current baseline does not determine the NCG packet without an added derivation or approved primitive input",
+              "tested_resolutions": [
+                "four-dimensional finite Pauli representation",
+                "two displayed finite actions",
+                "two displayed antiunitaries",
+                "zero and off-diagonal finite-D choices"
+              ],
+              "untested_resolutions": [
+                "derived dynamics",
+                "derived readout context",
+                "larger retained finite sector"
+              ]
+            },
+            {
+              "evidence_locator": "It does not test every possible SM LH/RH route.",
+              "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+              "phrase": "It does not test every possible SM LH/RH route.",
+              "tested_resolutions": [
+                "finite-algebra selection",
+                "KO-dim-6 sign selection",
+                "order-one selection"
+              ],
+              "untested_resolutions": [
+                "other SM LH/RH routes"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The headline must remain restricted to the displayed finite Pauli block unless the granted dynamics, readout, larger-sector, and alternate-route resolutions are tested."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes only c_t/c_s and supplies no finite algebra, real structure, finite D, or opposite action.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "It supplies the baseline M_2(C)/Cl(3) possibility algebra but explicitly requires a retained bridge or approved primitive for further structure.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only a realized-state reference and no state content or NCG selector.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It is a units conversion with zero dimensionless structural content relevant to the NCG packet.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton occupancy counting, not finite-algebra, KO-sign, or order-one selection.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns an eta-angle readout identity and contains no NCG-packet derivation.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns cross-sector determinant readout and does not select the finite algebra, real structure, or order-one data.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom and approved-primitive registry, open-obligation candidates, and available scope/reclassification surfaces were checked against all three NCG walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A future dynamics, readout context, or larger retained finite sector could correlate chirality, multiplicity, real structure, and opposite-action data and thereby select the NCG packet.",
+          "evidence_locator": "a future bridge could show that dynamics, a readout context, or a larger retained finite sector selects the NCG data",
+          "evidence_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+          "resolution": "The source concedes this possibility, and the runner does not refute it. It is resolved only by narrowing the audited result to the displayed four-dimensional finite Pauli block, not as a global no-new-axioms exclusion.",
+          "resolved": true,
+          "route_id": "larger_finite_sector"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:0",
+              "evidence_locator": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Earlier clean verdict for the same finite-Pauli boundary.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:1",
+              "evidence_locator": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Earlier conditional verdict identifying insufficient N1 route coverage.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:2",
+              "evidence_locator": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Earlier clean finite-block verdict invalidated when the discipline packet was missing.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated occupancy-counting obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated eta-readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated determinant-readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "General no-go inventory without an NCG witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated gravity finite-sweep boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated runner and coupling firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated external-proof and axis firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Historical route inventory without direct NCG retirement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated coupling-identity firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated plaquette evidence firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated lensing-route exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Registry incompleteness and future-carrier caveat echo the larger-sector route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Charged-lepton selector history without NCG derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated dimension-bound firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated Lorentz scope firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-runner/global-theorem firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated replay and basin firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated local-versus-global Wilson firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Finite-carrier route-pruning scope caveat.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated analytic-vector rejection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated gauge computational-route ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Clifford route boundaries without an NCG selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated gravity bridge firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated weak-field gravity firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Clifford-carrier nonselection echoes dimension matching without an intertwiner.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Representation data leave normalization and species selection free.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Cross-lane inventory without direct NCG retirement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated atomic-scale underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated quark source/readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-check/asymptotic firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated fixed-harness lensing no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-path surrogate failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Physical-readout selector remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated temporal readout firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Empty no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated planning-priority firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated time-emergence firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated neutrino-route history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated neutrino/cosmology firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-lattice Newtonian firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-replay firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated coupling/readout firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-memory scope firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-grid/global firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Clifford-carrier underselection echoes the larger-carrier caveat.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Rank matching without a selected Clifford carrier echoes finite-block nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated gauge-bootstrap constraints.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated plaquette interpretation firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Record does not derive a selector, echoing the readout-selection route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Registrability boundaries without an NCG derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Dynamics and axis-selection nonforcing echo the general selector caveat.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-tangent/physical-source firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "One-site algebra does not force statistics, echoing representation nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Current axioms do not select a kinetic law, echoing the dynamics route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated SU(3) encoder firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Documentation mismatch rather than a scientific obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated partial-card/global-claim firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Updated axioms do not supply determinant readout, echoing readout nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Admissibility and Record do not supply action/readout selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated topological gauge-carrier firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated theta action/readout nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Admissibility is not dynamics or selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Algebra alone leaves a physical selector open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Current axioms do not supply K/CPT occupancy or determinant selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Record formation does not select readout assignments.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Artifact-visibility gap rather than a no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Record-only readout underdetermination echoes the readout-context caveat.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite packet/structural-selector firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated finite-lattice/continuum firewall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "mechanism": "Unrelated definition/readout-identification firewall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "finite-algebra selection",
+          "KO-dim-6 real-structure selection",
+          "order-one finite-D/opposite-action selection"
+        ],
+        "demotion": "partial-attempt-with-named-untested-routes",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": {
+              "accepted_premise_type": null,
+              "content_sha256": "29ba362de314848ff5da656bfcba6eb536b1292d11eec091fcfb61e71fa01ed9",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:0",
+                "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:1",
+                "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:2",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:0",
+                "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:1",
+                "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:previous_audit:2",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": {
+              "accepted_premise_type": null,
+              "content_sha256": "3aeb18e4fe08f25dd6ec9c0644da82ff7b9698be3f91be747aa92ed3fd1d52fd",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Admissibility is not a dynamics axiom.",
+                "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+              ]
+            },
+            "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "231e17fbbc256ac2972bc7787ba027c141f8d1a8f0a4081d979923bf9486b033",
+              "effective_status": null,
+              "path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It does not test every possible SM LH/RH route.",
+                "No particle content, gauge group, spectral triple, or NCG primitive is imported.",
+                "The claim is not that P-LH is false and not that NCG cannot be used.",
+                "a future bridge could show that dynamics, a readout context, or a larger retained finite sector selects the NCG data",
+                "a larger retained finite sector selects the NCG data",
+                "dynamics, a readout context, or a larger retained finite sector selects the NCG data",
+                "explicit finite Pauli matrices",
+                "the current baseline does not determine the NCG packet without an added derivation or approved primitive input",
+                "the three witnessed walls are independent missing choices: finite algebra, antiunitary sign, and finite Dirac/opposite-action data"
+              ]
+            },
+            "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "ce55d50af52009dae1554346c1b767b4876e2d31edbcf6c3152a5f12deea6ab7",
+              "effective_status": null,
+              "path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "BLOCK 6: target blocker coverage",
+                "KO-dim-6 sign is an extra selection among admissible J choices",
+                "SM-vs-PS choice is not determined by Cl+(3) equality",
+                "baseline also admits PS-like finite action",
+                "both J choices live on the same finite baseline block",
+                "chirality is distinguished but Cl+(3) action is not",
+                "order-one verdict depends on extra D/opposite-action data",
+                "same baseline admits vacuous and nonvacuous D choices"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: only the three displayed finite-block wall families are substantively computed; larger-sector and readout/dynamics selection routes remain untested.",
+          "N3: the runner targets the superseded 2026-06-05 memo and does not directly exercise the current Admissibility surface.",
+          "N5: the source explicitly leaves other SM LH/RH routes and future dynamics/readout/larger-sector resolutions untested."
+        ],
+        "narrowed_claim_scope": "On the four-dimensional rho-plus direct-sum rho-minus Pauli block, the displayed alternatives witness non-uniqueness of the finite action, real-structure chirality sign, and order-one behavior; dynamics, readout selection, larger finite sectors, and other SM LH/RH routes were not audited.",
+        "next_route": {
+          "reason_untested": "The source expressly grants that a larger retained finite sector could select the NCG data, but neither the note nor runner constructs or excludes such a selector.",
+          "route_id": "larger_finite_sector"
+        },
+        "prior_claim_scope": "Audited only the finite Pauli/Cl(3) current-minimal-baseline boundary that the P-LH NCG finite algebra, KO-dim-6 real structure, and order-one data are not selected without an added derivation or approved primitive.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: add substantive calculations for at least two independent attack classes\u2014especially a fixed-Admissibility/global-lattice model comparison and a dynamics/readout or larger-finite-sector selection test\u2014or narrow the source headline to the three displayed finite-block witnesses, then rerun the no-go audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 34,
+        "B": 29,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The runner substantively constructs Pauli matrices, competing finite actions, two antiunitaries, and distinct finite-D choices; it is not a PASS printer. The current accepted axiom memo still supplies M_2(C)/Cl(3) without an NCG packet, so the displayed local underdetermination witnesses survive the axiom reset. However, the binding N1 gate requires five genuinely tested mechanism classes, while the note explicitly grants untested dynamics, readout-context, larger-sector, and alternate-route possibilities; audited_clean is therefore unavailable."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+  "title": "P-LH NCG Primitive Underdetermination Boundary",
+  "transitive_descendants": 6,
+  "verdict_rationale": null
+}

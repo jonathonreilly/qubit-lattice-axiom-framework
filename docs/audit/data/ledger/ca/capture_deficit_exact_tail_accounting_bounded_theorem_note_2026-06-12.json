@@ -1,0 +1,122 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+    "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+    "realized_state_primitive"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a230ed129b3c0be2150c33777c7faa7f992c85871cb4949c7c79266059c9e48f",
+  "note_path": "docs/CAPTURE_DEFICIT_EXACT_TAIL_ACCOUNTING_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.294946+00:00",
+      "audit_date": "2026-06-18T11:12:58.333106+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "Audited the exact finite L=3, NC=3, tau=0.35, T=256, supplied-seed realized-state computation of centered determinant-phase Hankel ranks at windows 64/128 and thresholds 1e-5, 1e-6, 1e-7, plus gated coupled-gap counts.",
+          "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12": "Exact finite L=3 one-body gauge-link system for the four supplied realized states K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466; only the three-tone coupling-weight concentration ordering and cyclic-null comparison are audited.",
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+          "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "1968dfc2d1f4b79853bc5f6b728cba3c9c53d1daf46f89ff87703dc3f78d3140",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-bounded authorities supply the realized-state family, capture ordering, and Hankel capture machinery; the realized-state primitive is an accepted pointwise-evaluation premise. Within that bounded surface, the tail identity is standard SVD/Frobenius algebra and the runner verifies the finite tables without extending to generic seeds, larger L, or asymptotics.",
+      "claim_scope": "Exact finite L=3 realized-state check for K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466 at tau=0.35, T=256, Hankel window 64: the order-4 capture deficit equals the Hankel-Frobenius SVD tail fraction and the ascending tail order is K6,K5,K3,K4.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T11:12:58.333106+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:realized_state_primitive:5ae28ea8->0515188f",
+      "load_bearing_step": "Because C4 is defined as the top-four Hankel singular-energy fraction, 1-C4 equals the normalized sum of singular energies with j>4, equivalently the relative Frobenius error of the best rank-4 truncated SVD.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the Hankel window-64 convention and confirm no generic-seed or larger-Fock-space claim is being inferred.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 5,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The load-bearing equality is a genuine algebraic closure of the landed Hankel capture definition, not a new physical bridge or an external comparator match. The runner source constructs the finite L=3 Hamiltonian, realized states, determinant-phase increments, Fourier reconstruction, and Hankel SVDs; the frozen constants serve as regression anchors while the deficit-tail equality is computed directly. The dependencies are retained-grade or accepted primitive premises, so no open dependency remains inside the explicitly bounded finite scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_capture_tail_exact_law_2026_06_12.py",
+  "title": "Capture Deficit Exact Tail Accounting: Bounded L=3 Realized-State Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

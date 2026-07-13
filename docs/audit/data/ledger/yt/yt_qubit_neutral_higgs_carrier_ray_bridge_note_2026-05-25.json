@@ -1,0 +1,552 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+    "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
+    "minimal_axioms",
+    "yt_source_action_support_packet_note_2026-05-22",
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.087,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "794e39a7a093723a16e5a8d48a0023c42adb8356513769eaf89fa647a0d50b11",
+  "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.091448+00:00",
+      "audit_date": "2026-05-29T06:04:48.891327+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.0,
+        "runner_hash": "92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited qubit algebra supplies the Pauli/projector surface, the retained source-action packet supplies the signed-record source, the retained EW theorem supplies H_0, Y_H=1/2 and Q=T_3+Y, and the prior ratio gate supplies coordinate-scale cancellation.",
+      "claim_scope": "Exact finite Pauli/projector and retained EW one-Higgs bookkeeping carrier-ray bridge: the signed-record sigma_z source is affinely equivalent to the P_- occupation source, and P_- is the neutral Higgs ray; radial source-coordinate scale cancels only by the prior ratio gate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T06:04:48.891327+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "epsilon = sigma_z = P_+ - P_- = I - 2 P_- gives exp(h epsilon)=exp(h) exp(-2h P_-), while Q=T_3+Y annihilates H_0=(0,v/sqrt(2))^T and charges the upper ray.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "fail": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "The independent check gives P_-=diag(0,1), P_+=diag(1,0), sigma_z=I-2P_-, and exp(h sigma_z)=exp(h)exp(-2hP_-), so normalized signed-record sources are P_- occupation sources with j=-2h. With T_3=diag(1/2,-1/2), Y=I/2, Q=diag(1,0), the retained EW vacuum H_0=(0,v/sqrt(2))^T lies uniquely in ker Q and is fixed by P_-. The radial tangent remains in that ray, and the only remaining Jacobian cancels by the already audited source-coordinate ratio gate. This does not derive the physical Y_T transfer surface, top coefficient, top Yukawa carrier, hypercharge/top authority, g_2(v), m_t, v=246 GeV, or Y_T closure."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.555146+00:00",
+      "audit_date": "2026-06-05T17:32:37.766869+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 7.085,
+        "runner_hash": "92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-173109-1d3d3070b2-yt_qubit_neutral_higgs_carri",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli/projector identities and the EW doublet charge calculation close the stated carrier-ray equivalence from the cited inputs. The result remains scoped to carrier support and does not close physical top/W transfer rows or physical-scale g_2 authority.",
+      "claim_scope": "Exact support that the signed one-qubit record source is affinely equivalent to the P_- occupation source and that P_- is the neutral carrier ray of the retained one-Higgs doublet, with no positive Y_T closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:32:37.766869+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "epsilon = sigma_z = P_+ - P_- = I - 2 P_-, so exp(h epsilon) = exp(h) exp(-2 h P_-), and the EW lower component P_- is the neutral ray annihilated by Q.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the source/runner minimal-axiom date drift: the packet supplies the 2026-06-04 superseding axiom memo while the source note and runner still point at 2026-05-20.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+        "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "The load-bearing mathematics is a direct algebraic closure: sigma_z differs from P_- occupation only by an identity term and affine source rescaling, and the cited EW theorem fixes the lower Higgs component as Q-neutral. The runner performs the relevant matrix checks rather than merely printing constants, while its status and firewall checks are bookkeeping rather than derivation. The source note correctly keeps the conclusion bounded and does not promote the carrier-ray bridge into a physical Y_T derivation."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.492012+00:00",
+      "audit_date": "2026-06-05T21:27:00.196405+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 7.085,
+        "runner_hash": "92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-212426-962f97bcbf-yt_qubit_neutral_higgs_carri",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated carrier-ray scope, the algebra closes from the cited one-qubit/projector structure and retained electroweak Higgs bookkeeping. The note does not close physical Y_T, same-surface transfer rows, top coefficient authority, or physical-scale g_2 authority.",
+      "claim_scope": "Exact bounded support that the signed one-qubit source in the sigma_z readout basis is affinely equivalent to a P_- occupation source, and that P_- is the neutral carrier ray of the retained one-Higgs electroweak doublet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:27:00.196405+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained->unaudited",
+      "load_bearing_step": "Since epsilon = sigma_z = P_+ - P_- = I - 2 P_-, exp(h epsilon) differs from exp(-2h P_-) only by the record-independent factor exp(h), and P_- is the Q-neutral lower Higgs ray.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream rows do not treat this carrier-ray support as physical same-surface source/Higgs transfer authority.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+        "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic identity: sigma_z equals I - 2P_-, and the exponential source weights differ only by a normalized-away scalar factor with source coordinate j = -2h. Independently checking the displayed matrices gives Q = diag(1, 0), so the lower ray is uniquely neutral and the radial tangent stays in that ray. The cited support dependencies are retained_bounded and adequate for this bounded support claim, while the note correctly leaves physical Y_T closure outside scope."
+    },
+    {
+      "archived_at": "2026-06-19T10:12:18.104325+00:00",
+      "archived_for_note_hash": "2688d633c7558be718f97dd1c52bb1d55c094ee9f5b4eed86d19c6eb86b48c1f",
+      "audit_date": "2026-06-18T04:58:04.398073+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "minimal_axioms": null,
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between a product Radon-Nikodym source family on signed one-site records and an equivalent source-coupled site-diagonal local action; no neutral EW/Higgs authority, physical Y_T closure, matching/running, or retained-proposal status is audited.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 9.407,
+        "runner_hash": "92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6",
+        "transitive_descendants": 29
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite projector and EW neutrality identities close as algebra. The broader carrier-ray bridge still needs a retained same-surface theorem identifying the qubit readout P_- carrier with the EW Higgs doublet P_- carrier as a physical source surface.",
+      "claim_scope": "Algebraic support for the affine equivalence between the signed one-qubit record and lower-component occupation, plus the neutrality of the lower ray in the retained one-Higgs EW doublet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:58:04.398073+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "epsilon = sigma_z = P_+ - P_- = I - 2P_-, so exp(h epsilon)=exp(h) exp(-2 h P_-) and the signed-record source is the P_- occupation source; in the EW doublet, P_- H_0 = H_0 and Q H_0 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained same-surface carrier theorem identifying the qubit P_- source ray with the neutral EW Higgs doublet ray, then re-audit the bounded support claim.",
+      "open_dependency_paths": [
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+        "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "Issue: The runner verifies the local projector algebra and EW doublet neutrality, but it does not derive an authority that the qubit readout basis and the EW Higgs doublet basis are the same physical carrier surface. Why this blocks: the minimal axiom authority explicitly does not supply gauge group, particle content, or a physical observable bridge, while the Y_T source-action and source-coordinate notes remain support-only for neutral EW/Higgs source identification. Repair target: add or cite a retained same-surface carrier theorem connecting the qubit P_- source ray to the EW neutral Higgs ray. Claim boundary until fixed: epsilon = I - 2P_- and lower-ray EW neutrality remain valid exact support."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:47.951090+00:00",
+      "archived_for_note_hash": "6ee28158887a22b2d31fdf372606a1e6dc836b7d0f9dca20bbd66623adbbcbeb",
+      "audit_date": "2026-06-19T21:40:28.801756+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "minimal_axioms": null,
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "Bounded two-dimensional algebra showing the signed-record source is affinely equivalent to lower-projector occupation and that the EW lower Higgs doublet ray is neutral, without identifying the qubit and EW carrier surfaces.",
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "minimal_axioms": "meta",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "bounded_theorem",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "minimal_axioms": "meta",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "retained_bounded",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 7.907,
+        "runner_hash": "bd3d1ff663244949c397d77c9eedca7fd123aed0e6a8bd265d3ff4bdebc13534",
+        "transitive_descendants": 14
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli/projector identities and EW charge action follow directly from the provided one-qubit and one-Higgs inputs. The physical same-surface carrier identification is explicitly outside the audited scope.",
+      "claim_scope": "Bounded algebraic support: signed-record source equivalence to lower-projector occupation in the one-site qubit algebra plus neutrality of the lower one-Higgs EW ray, excluding any physical same-surface qubit/Higgs carrier identification or Y_T closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:40:28.801756+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The signed record satisfies epsilon = sigma_z = P_+ - P_- = I - 2P_-, so exp(h epsilon) is equivalent up to a record-independent factor to a lower-projector occupation source, and the one-Higgs EW lower ray satisfies P_- H_0 = H_0 and Q H_0 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the minimal-axiom path/date mismatch: the source and runner mention 2026-05-20 while the packet supplies 2026-06-05; the one-qubit algebra used here is supplied by the provided authority.",
+      "open_dependency_paths": [
+        "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
+        "docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md",
+        "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 67
+      },
+      "verdict_rationale": "The load-bearing content is finite algebra over supplied retained-grade or accepted-premise inputs, and the runner actually instantiates the relevant matrices rather than hard-coding a physical target value. The B-class runner checks verify dependency status, boundary language, and firewalls; there is no external comparator or tuned numerical scale. The clean verdict applies only to the stated bounded-support scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.525966+00:00",
+      "audit_date": "2026-06-21T12:25:00.085055+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "minimal_axioms": null,
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": "Exact projector algebra on the declared one-Higgs electroweak doublet: the neutral Higgs ray is the zero spectral projector of Q_H and the signed epsilon_H source is affinely equivalent to neutral-ray occupation.",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "Exact bounded algebra showing the signed two-point source is affinely equivalent to lower-projector occupation and that the lower one-Higgs doublet ray is neutral, without identifying the qubit and EW carrier surfaces.",
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": "bounded_theorem",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "bounded_theorem",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": "retained_bounded",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "retained_bounded",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 9.454,
+        "runner_hash": "d5f879ca58ae209a4d7f5ada21868242f91831878fb0690c7f1da6c5c6d1cc76",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped bounded claim follows from finite Pauli/projector algebra plus the retained-bounded EW neutral-projector same-surface carrier theorem and source-coordinate ratio gate. The remaining top coefficient, top transfer row, scalar normalization, and physical-scale g_2 questions are explicitly outside this claim scope.",
+      "claim_scope": "Bounded source-side support: signed-record epsilon source is affinely equivalent to lower-projector occupation, and the lower projector is the neutral charge-spectral projector on the retained one-Higgs carrier; no positive Y_T, top-response, scalar-normalization, or physical-scale g_2 closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:25:00.085055+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18:retained_bounded->unaudited",
+      "load_bearing_step": "The same-surface carrier theorem supplies the missing step by functional calculus of Q_H: P_- = P_neut = 1_0(Q_H) on the one-Higgs carrier, so the signed-record source epsilon = I - 2P_- is affinely equivalent to neutral-ray occupation on that bounded support surface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the verdict scoped to bounded source-side support and not read it as positive Y_T closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 56,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "The load-bearing step is algebraic closure over retained-grade bounded authorities, with the minimal-axiom citation covered by the registered premise carve-out. The runner does real symbolic matrix checks for the Pauli projectors, EW charge projector, radial tangent neutrality, and top/W Jacobian cancellation, while its cross-note checks enforce the bounded boundary and firewall language. No external comparator, tuned numerical input, or positive Y_T closure is used."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.514660+00:00",
+      "audit_date": "2026-07-02T04:00:59.336130+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "minimal_axioms": null,
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": "Exact algebraic identification, on the declared one-Higgs EW doublet with Y_H = 1/2, of the neutral carrier ray as 1_0(Q_H)=P_- and of exp(h epsilon_H) as an affine neutral-occupation source with j=-2h.",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "Bounded algebraic support that the signed-record source coordinate is affinely equivalent to lower-projector occupation and that the declared EW lower Higgs doublet ray is neutral, without identifying the two carrier surfaces.",
+          "yt_source_action_support_packet_note_2026-05-22": "Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": "bounded_theorem",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "bounded_theorem",
+          "yt_source_action_support_packet_note_2026-05-22": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "minimal_axioms": "meta",
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": "retained_bounded",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": "retained_bounded",
+          "yt_source_action_support_packet_note_2026-05-22": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "minimal_axioms",
+          "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
+          "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+          "yt_source_action_support_packet_note_2026-05-22",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 8.0,
+        "runner_hash": "d5f879ca58ae209a4d7f5ada21868242f91831878fb0690c7f1da6c5c6d1cc76",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T040059Z-9d87c6d5-yt_qubit_neutral_higgs_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded support scope, the finite Pauli/projector identities and EW neutral-ray identities follow algebraically from the provided matrices. The same-surface carrier identification is supplied by a retained-bounded cited authority, while top response and physical-scale Y_T closure are explicitly outside scope.",
+      "claim_scope": "Bounded source-side support that the signed-record epsilon source is affinely equivalent to P_- occupation, the one-Higgs lower ray is neutral, and the cited same-surface spectral-projector theorem identifies that ray as 1_0(Q_H), without positive Y_T closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:00:59.336130+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18:retained_bounded->unaudited",
+      "load_bearing_step": "The separate same-surface theorem supplies the missing step by functional calculus of Q_H: P_- = P_neut = 1_0(Q_H) on the one-Higgs carrier.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only if the same-surface carrier authority changes status or the claim scope is expanded to include downstream top-response or physical-scale Y_T closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 56,
+        "C": 0,
+        "D": 0,
+        "total_pass": 76
+      },
+      "verdict_rationale": "Independent matrix checks confirm epsilon = I - 2P_-, exp(h epsilon) = exp(h) exp(-2h P_-), Q_H = diag(1,0), and P_- = I - Q_H on the retained one-Higgs carrier. The runner's algebraic checks cover these equations, and its remaining passes are dependency, artifact, and scope guards rather than first-principles physics. All load-bearing non-axiom authorities used for the bounded support scope are retained_bounded, and the minimal-axiom dependency is an accepted premise. The note does not close positive Y_T; that is a scoped exclusion, not an unclosed dependency of this bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
+  "title": "Y_T Qubit Neutral-Higgs Carrier-Ray Bridge",
+  "transitive_descendants": 16,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

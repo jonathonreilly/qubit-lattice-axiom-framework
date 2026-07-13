@@ -1,0 +1,252 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "sm_identity_triangulation_convergence_note_2026-05-23",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+    "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
+    "graph_first_su3_integration_note",
+    "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9a82af274363d9130cb85117ca43831da35fb544da5d0277ec04a6f359700782",
+  "note_path": "docs/SM_IDENTITY_TRIANGULATION_CONVERGENCE_NOTE_2026-05-23.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-24T22:26:05.315456+00:00",
+      "archived_for_note_hash": "c246c439ed56aea9fb00990ead81100e7f77453c0e9b151f5fd4cea541619062",
+      "audit_date": "2026-05-23T20:30:28.169542+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "Bounded anomaly-only no-selection result: the displayed one-generation rational hypercharge family cancels the listed perturbative anomaly traces for arbitrary N_c, Witten parity restricts one generation to odd N_c rather than N_c=3, generation count and nonzero hypercharge scaling remain unselected, vectorlike additions remain anomaly-free, and no map to the BAE operator-coefficient condition is supplied. No positive Standard Model carrier derivation is audited.",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "Audited the conditional rational-algebra enumeration of (A1)-(A3) with y_4 = 0 and y_1 > 0, plus the stated charge readout under Q = T_3 + Y/2 using the note's declared left-handed hypercharges.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract finite-dimensional matrix-algebra theorem on C^3 only: for the cyclic permutation C and three diagonal involutions T_1,T_2,T_3 with distinct joint sign characters, the sign projectors P_i are rank-1 orthogonal projectors, E_ij=P_i C^{(i-j) mod 3} P_j gives all matrix units, the generated associative algebra equals M_3(C), no proper nonzero invariant subspace exists, and the Burnside rank-one/irreducibility hypotheses are exhibited. This excludes any identification with Cl(3), Z^3, BZ-corner hw=1 triplets, staggered-Dirac, taste-cube, generation physics, charged-lepton flavor, CKM, or PMNS content."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "bounded_theorem",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "retained_bounded",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "76ad4e16493be5ba31a5263913e3b561528b02592476ad3297664f4d39c3d1af",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T202823Z-b355f709-sm_identity_triangulatio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The N_c = 3 to SM-hypercharge substitution closes as exact rational algebra. The n_gen = 3 part does not close because the cited Burnside narrow theorem proves only an abstract M_3(C) statement and explicitly does not identify C^3 with physical generations.",
+      "claim_scope": "Audited the one-hop composition of the anomaly-family, graph-first SU(3), Burnside C^3, and hypercharge-enumeration rows into a conditional SM hypercharge and generation-count triangulation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T20:30:28.169542+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The graph-first row fixes N_c = 3 and the Burnside row fixes n_gen = 3, so substituting N_c = 3 into the anomaly-allowed family lands on the unique SM hypercharge tuple and charge spectrum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite a retained physical bridge from the abstract C^3 Burnside theorem to n_gen = 3, or narrow this row to the N_c = 3 hypercharge convergence without the generation-count conclusion.",
+      "open_dependency_paths": [
+        "docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner performs real exact-rational checks for the anomaly family, N_c = 3 substitution, charge spectrum, normalization freedom, and ledger status guards. However, it hard-codes n_gen = 3 as imported from the Burnside row even though that cited authority deliberately strips physical generation semantics and disclaims identifying C^3 with generation physics. Thus the full triangulation claim overreaches the restricted cited packet, although the hypercharge-at-N_c=3 algebraic component is sound within the stated template and normalization residuals."
+    },
+    {
+      "archived_at": "2026-06-03T00:53:51.269479+00:00",
+      "audit_date": "2026-05-25T12:34:44.424300+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "Bounded anomaly-only no-selection result: the displayed one-generation rational hypercharge family cancels the listed perturbative anomaly traces for arbitrary N_c, Witten parity restricts one generation to odd N_c rather than N_c=3, generation count and nonzero hypercharge scaling remain unselected, vectorlike additions remain anomaly-free, and no map to the BAE operator-coefficient condition is supplied. No positive Standard Model carrier derivation is audited.",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "Audited the conditional rational-algebra enumeration of (A1)-(A3) with y_4 = 0 and y_1 > 0, plus the stated charge readout under Q = T_3 + Y/2 using the note's declared left-handed hypercharges.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract finite-dimensional matrix-algebra theorem on C^3 only: for the cyclic permutation C and three diagonal involutions T_1,T_2,T_3 with distinct joint sign characters, the sign projectors P_i are rank-1 orthogonal projectors, E_ij=P_i C^{(i-j) mod 3} P_j gives all matrix units, the generated associative algebra equals M_3(C), no proper nonzero invariant subspace exists, and the Burnside rank-one/irreducibility hypotheses are exhibited. This excludes any identification with Cl(3), Z^3, BZ-corner hw=1 triplets, staggered-Dirac, taste-cube, generation physics, charged-lepton flavor, CKM, or PMNS content."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "bounded_theorem",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "retained_bounded",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d5aec57ba58851eb090c45ca691940aad5def75f9652641a7dc99d1d75275a93",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T123424Z-9f7c652e-sm_identity_triangulatio-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed hypercharge statement follows by exact rational substitution from retained-grade cited inputs. The source correctly demotes the Burnside generation-count import and does not use it load-bearing for the audited claim.",
+      "claim_scope": "Conditional N_c=3 hypercharge convergence from the loose anomaly family to the retained hypercharge-enumeration tuple, excluding any physical generation-count claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T12:34:44.424300+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10:retained->audit_in_progress",
+      "load_bearing_step": "Substituting N_c = 3 into the anomaly-allowed family yields the SM hypercharge tuple and left-Weyl charge spectrum {0, \u00b11/3, \u00b12/3, \u00b11}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that future edits do not re-promote the context-only Burnside n_gen = 3 import into the audited claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing step is a straightforward algebraic closure: take the retained anomaly family, insert the independently retained graph-first N_c = 3 selector, and compare the resulting rational tuple to the retained hypercharge-enumeration tuple. The runner source performs exact rational arithmetic rather than merely printing constants, and its ledger checks are cross-note status checks rather than external numerical comparators. The two residuals are explicitly scoped as hypotheses/residual freedoms, and the generation-count bridge is excluded from the narrowed claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.744509+00:00",
+      "audit_date": "2026-06-03T11:08:53.386505+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "Bounded anomaly-only no-selection result: the displayed one-generation rational hypercharge family cancels the listed perturbative anomaly traces for arbitrary N_c, Witten parity restricts one generation to odd N_c rather than N_c=3, generation count and nonzero hypercharge scaling remain unselected, vectorlike additions remain anomaly-free, and no map to the BAE operator-coefficient condition is supplied. No positive Standard Model carrier derivation is audited.",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "Audited the conditional rational-algebra enumeration of (A1)-(A3) with y_4 = 0 and y_1 > 0, plus the stated charge readout under Q = T_3 + Y/2 using the note's declared left-handed hypercharges.",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "Abstract C^3 matrix-algebra theorem: the specified C and diagonal involutions generate all matrix units and hence M_3(C), with irreducibility and Burnside corollaries."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "bounded_theorem",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly": "retained_bounded",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "koide_y_substrate_anomaly_forcing_note_2026-05-08_probey_substrate_anomaly",
+          "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
+          "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d5aec57ba58851eb090c45ca691940aad5def75f9652641a7dc99d1d75275a93",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-110617-b855b7f7-sm_identity_triangulatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic substitution and charge-spectrum calculation close exactly over the retained-grade cited inputs. The two residuals are explicitly outside the claimed derivation, and the Burnside generation-count material is context-only rather than load-bearing.",
+      "claim_scope": "Conditional hypercharge convergence only: given the cited anomaly family, the retained graph-first N_c=3 selector, and the stated template/normalization conventions, the N_c=3 specialization matches the unique doubled-Y SM hypercharge tuple and left-Weyl charge spectrum; no physical generation-count claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T11:08:53.386505+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting the retained graph-first selector value N_c = 3 into the anomaly-allowed hypercharge family gives Y(Q_L)=1/3, Y(L_L)=-1 and (u_R,d_R,e_R,nu_R)=(4/3,-2/3,-2,0), matching the uniqueness row's SM tuple and charge spectrum.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that future edits do not reintroduce the physical generation-count conclusion as load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing step is a rational algebraic closure over independent retained or retained_bounded inputs, not a tuned numerical comparator or a definition substitution. The runner source performs the anomaly cancellations, N_c=3 substitution, charge-spectrum check, and normalization-rescaling check with exact Fraction arithmetic, while using ledger/status checks only as cross-note input verification. The narrowed source explicitly excludes the physical generation-count identification, so the Burnside row's open physical bridge is not part of this audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_sm_identity_triangulation_convergence.py",
+  "title": "SM-Identity Triangulation Convergence",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

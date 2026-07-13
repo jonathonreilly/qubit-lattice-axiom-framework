@@ -1,0 +1,155 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "33d6794cdfacf037c466de2f05bb8ba7c02849852f1a7ac439c6dbf3223eee5e",
+  "note_path": "docs/CPT_PARTICLE_ANTIPARTICLE_LIFETIME_EQUALITY_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:35:38.962214+00:00",
+      "audit_date": "2026-05-02T23:17:06.305117+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited CPT exact note supplies CPT invariance of the free staggered Hamiltonian, but it explicitly leaves interacting extensions open. The source note needs an additional retained theorem mapping that CPT surface to decay-channel or resonance-pole dynamics before a lifetime prediction follows.",
+      "claim_scope": "Particle-antiparticle total-width and lifetime equality for unstable single-particle resonances, conditional on a retained bridge from the framework's CPT-invariant free Hamiltonian to CPT-invariant interacting resonance pole dynamics.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T23:17:06.305117+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->retained_pending_chain",
+      "load_bearing_step": "The physical antiparticle pole on the same retarded-Green-function sheet is the reflection back into the lower half-plane, so Im E_pole(antiparticle) = Im E_pole(particle) = -Gamma/2.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-audit after a retained interacting/resonance CPT bridge exists; the runner should compute the decay-width bridge rather than defining the antiparticle block as the CPT conjugate.",
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the proof's pole-reflection and universality steps import the physical resonance/effective-Hamiltonian bridge rather than deriving it from the retained free CPT theorem. Why this blocks: unstable lifetimes require interacting decay dynamics or an S-matrix/resolvent pole theorem, while the cited authority is scoped to the free staggered Hamiltonian and notes interacting extension as open. Repair target: add a retained theorem and runner that construct CPT-invariant resonance pole dynamics or total decay widths from the framework, without setting the antiparticle block by hand. Claim boundary until fixed: a toy CPT-symmetric non-Hermitian effective Hamiltonian with antiparticle block defined as the CPT conjugate has equal width magnitudes."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.034501+00:00",
+      "audit_date": "2026-05-22T03:23:36.684679+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained"
+        },
+        "deps": [
+          "cpt_exact_note"
+        ],
+        "load_bearing_score": 10.45,
+        "runner_hash": "8b42590d89a93d11e0a554e6d2d00e6944a18a135769175dc123d657925a9f61",
+        "transitive_descendants": 988
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "claude-audit-loop-2026-05-19-cpt-lifetime",
+      "auditor_confidence": null,
+      "auditor_family": "claude-opus",
+      "auditor_model": "claude-opus-4-7-1m",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": "Steps 1-3 close algebraically from [CPT, H] = 0 (parent) plus antiunitarity acting on the resolvent. No external comparator computed. Runner sets H_eff_a := (H_eff_p)* by construction and verifies eigenvalue conjugacy -- this is operator-algebra tautology under antiunitarity, not an independent check.",
+      "claim_scope": "Particle/antiparticle decay-width equality Gamma_p = Gamma_a (equivalently tau_p = tau_a) for unstable resonances of the cited Cl(3) staggered Hamiltonian, derived as an algebraic operator-theoretic consequence of [CPT, H] = 0 applied to the complex resolvent pole structure.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T03:23:36.684679+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cpt_exact_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "algebraic_corollary_of_parent",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "decoration_parent_match: cpt_exact_note. Box jointly with mass-equality and Hamiltonian-spectrum-conjugacy companion notes under one CPT-corollaries inventory; matches the pattern just applied to cpt_squared_is_identity_theorem_note_2026-05-02.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing chain (Steps 1-3 of the source note) is operator algebra applied directly to the parent claim [CPT, H] = 0 from cpt_exact_note: apply CPT antiunitarily to the resolvent G(z), use (CPT)^{-1} z (CPT) = z* to send the pole at E_real - i*Gamma/2 to its complex conjugate, then read off Gamma_a = Gamma_p. No new physical observable, sector selection, unit map, or measurement is introduced. Step 4 ('universality') is a restatement that Steps 1-3 used no species-specific input.\nWhy this blocks audited_clean: Per ALGEBRAIC_DECORATION_POLICY.md sec.1, the three decoration criteria all hold. (1) Algebraic dependence: pure operator algebra (antiunitarity, complex conjugation of pole) over the single retained parent. (2) No new comparator: the runner constructs the antiparticle block by H_eff_a := H_eff_p.conj() -- the CPT image by construction -- and then verifies that conjugation preserves |Im|. This is structural consistency, not an external comparator; no PDG, no lattice QCD, no D-class check. Corollaries C1/C2 (K^0/K-bar^0, muon lifetimes) are gestured at in prose but are not computed by the runner. (3) No compression: the result does not let the parent be stated more sharply, nor does it expose a new structural integer; it merely names one consequence of [CPT, H] = 0. The single-parent dependency (deps = [cpt_exact_note] only) and the lack of any D-class runner check both match the policy's mechanical detection heuristics (sec.2). The 'resonance pole convention' and 'CPT operator action on resonance states' are admitted-context inputs by the note's own admission, not new derived bridges. This is the textbook Lueders 1954 corollary of CPT invariance, sister to cpt_squared_is_identity (just audited_decoration on 2026-05-18) and the companion mass-equality note.\nRepair target: box this and its sibling mass-equality / Hamiltonian-spectrum-CPT-conjugate notes into a single 'algebraic corollaries of cpt_exact_note' rollup per sec.3a of the decoration policy. Re-promotion would require attaching a real (D)-class external comparator (e.g., computing K^0 vs K-bar^0 width within the framework from species-specific dynamics and comparing to PDG), per sec.5.\nClaim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact corollary of cpt_exact_note remains true on its own terms; it just does not constitute an independent retained theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cpt_particle_antiparticle_lifetime_check.py",
+  "title": "Particle/Antiparticle Lifetime Equality from Cited CPT",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

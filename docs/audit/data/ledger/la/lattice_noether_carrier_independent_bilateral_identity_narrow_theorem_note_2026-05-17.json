@@ -1,0 +1,335 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6c0b080b3be807faf8660e2eb211b8ec383b6a8e91c229707bf721ac66d1390a",
+  "note_path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T12:13:12.973861+00:00",
+      "archived_for_note_hash": "5689a146be5a79e590b53d09af0288750bb1162d5006d1bd2fdd13b9863cae99",
+      "audit_date": "2026-05-25T20:04:16.827934+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1aedbb16f745ffbf1826e456805d81b6eda8117fa32061998e373148769d8cc5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T200042Z-9aaf53ea-lattice_noether_carrier_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The AxisInv reindexing algebra closes once the finite Grassmann bilinear action and site-local/internal generator hypotheses are assumed. The restricted packet does not close the import of that Grassmann/action surface from A1+A2, and [T,M]=0 alone is too weak for the local-alpha step because nonlocal lattice-index generators need not commute with the site envelope.",
+      "claim_scope": "Algebraic bilateral Noether identity for an assumed finite Grassmann nearest-neighbour action with real axis-invariant carrier and site-local/internal symmetry generator T; KS identification, Wilson terms, and translation-current claims are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T20:04:16.827934+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By AxisInv, the reindexed backward coefficient satisfies c_mu(x' + mu_hat) = c_mu(x'), so the forward and backward local-alpha terms combine into the bilateral current (5), whose divergence vanishes for arbitrary alpha on shell.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained finite-Grassmann bilinear/partition theorem as a one-hop dependency and narrow T2 to site-local/internal generators, or add a separate Ward theorem for lattice-index generators.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner source performs genuine finite-matrix algebra checks, all eight exhibits pass, and no external comparator or tuned numerical target is hard-coded. However the source note's claim of no admitted context inputs overstates the restricted packet: MINIMAL_AXIOMS_2026-05-03 explicitly treats Grassmann/fermion-bilinear lanes as gated, and no retained one-hop authority for the finite-Grassmann variational surface is provided here. The proof also silently needs T to be site-local/internal, not merely any field-index generator satisfying [T,M]=0. The result is therefore a plausible bounded algebraic theorem after narrowing, but the presented positive-theorem chain does not close."
+    },
+    {
+      "archived_at": "2026-05-30T08:15:09.043430+00:00",
+      "archived_for_note_hash": "955807287ad47195d459cb22bf824448b49dfc33b79e37d090c87f7f1da9bb8f",
+      "audit_date": "2026-05-29T23:40:18.542027+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1aedbb16f745ffbf1826e456805d81b6eda8117fa32061998e373148769d8cc5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-233751-40292bce-lattice_noether_carrier_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The AxisInv reindexing algebra itself closes, and the runner checks the finite matrix/Wick contractions. The restricted packet explicitly admits, but does not supply as a one-hop retained dependency, the finite-Grassmann bilinear/partition theorem and action surface needed for the local-alpha variational derivation from A1+A2.",
+      "claim_scope": "Conditional algebraic closure of the bilateral lattice-Noether current for AxisInv nearest-neighbour carriers, given a finite Grassmann bilinear action S_F=chi_bar M chi and site-local/internal generators T with [T,M]=0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T23:40:18.542027+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The backward-hop reindexing uses AxisInv, c_mu(x'+mu_hat)=c_mu(x'), so the backward coefficient matches the forward coefficient and combines into the bilateral current (5).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite and provide the retained finite-Grassmann bilinear/partition theorem as a one-hop dependency, explicitly narrow T2 to site-local/internal generators, and reconcile the admitted-input section with that dependency.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing mathematical step is a genuine class-A algebraic identity: AxisInv is exactly what makes the backward-hop coefficient match the forward-hop coefficient. The eight runner exhibits perform real finite-dimensional checks and all pass, but they verify the conditional algebraic core rather than deriving the finite-Grassmann/action surface from the cited framework inputs. The note also needs its scope kept to site-local/internal generators; no Ward theorem for lattice-index generators is supplied. Therefore the bounded core is credible, but the claim does not close from the restricted one-hop inputs as an audited-clean theorem."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:24.196062+00:00",
+      "archived_for_note_hash": "121f96de89e9c9eea8d6538611d437c885dc5d90862492a9d1cd0242e2d8f06a",
+      "audit_date": "2026-05-30T11:31:40.883150+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only.",
+          "minimal_axioms_2026-05-03": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1aedbb16f745ffbf1826e456805d81b6eda8117fa32061998e373148769d8cc5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-112800-fe1ce76e-lattice_noether_carrier_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The reindexing algebra closes for an already-given finite Grassmann bilinear action and site-local/internal generator. The restricted packet does not close the import of that Grassmann/action surface from A1+A2, and T2 remains worded broader than the proof for nonlocal field-index generators.",
+      "claim_scope": "Algebraic AxisInv bilateral-current identity for a nearest-neighbour finite Grassmann bilinear action, with site-local/internal T satisfying [T,M]=0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T11:31:40.883150+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The backward hop reindex uses AxisInv, c_mu(x' + mu_hat) = c_mu(x'), so the forward and backward coefficients combine into the bilateral current (5).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained authority closing the finite-Grassmann bilinear/action surface from A1+A2, or explicitly scope the theorem as bounded on an admitted S_F=chi_bar M chi input; also narrow T2 to site-local/internal generators.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The AxisInv anti-Hermiticity characterization and the (7b) to (7b') reindexing are algebraically correct, and the runner performs real finite-matrix checks rather than printing constants. But the note itself admits the finite-Grassmann bilinear/action surface as unsupplied while later claiming no admitted inputs; the supplied substep-1 authority remains bounded and explicitly leaves the physical Z^3 Grassmann bridge open. Also, the local-alpha proof only supports site-local/internal generators, while T2 is still stated for any field-index generator satisfying [T,M]=0. The audited core is therefore conditional, not clean."
+    },
+    {
+      "archived_at": "2026-06-04T19:35:13.616427+00:00",
+      "archived_for_note_hash": "fc40f7b0e3da3f2fb211c5ab0e2f804780be02bcf27da451a8e12f60c7cf50e2",
+      "audit_date": "2026-05-31T16:29:17.063186+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "511c683859e8a7e8fa84bf8fb0d1e5610ffeb907085c6495378eebcbfaae5941",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-162519-f01dd57a-lattice_noether_carrier_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The AxisInv reindexing and anti-Hermiticity algebra close on the stated finite matrix surface. However the displayed Wick-contracted on-shell convention is not closed from the cited exp(-chi_bar M chi) Berezin determinant convention.",
+      "claim_scope": "Finite-Grassmann nearest-neighbour bilateral Noether identity for real axis-translation-invariant carriers and site-local/internal generators T with [T,M]=0, excluding M_KS identification and lattice-index-shifting Ward identities.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T16:29:17.063186+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By AxisInv, the reindexed backward coefficient satisfies c_mu(x' + mu_hat) = c_mu(x'), so the backward and forward hop terms combine into the bilateral current J^mu_x(T).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly define the Wick-contraction sign convention for <chi_bar_a chi_b> from the cited Berezin surface, then update the on-shell convention and runner comments/source consistently.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner genuinely computes finite lattice matrix checks and all eight exhibits pass; it is not just printing constants. The core AxisInv formula family checks algebraically, but the note states <chi_bar_a chi_b> = Minv_{b,a} under exp(-chi_bar M chi), while differentiating Z = det(M) gives the ordered bilinear with the opposite sign unless an extra expectation convention is introduced. The divergence test is insensitive to that overall sign, so the headline identity may survive, but strict formula inventory blocks audited_clean as written."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.436026+00:00",
+      "audit_date": "2026-06-06T00:02:27.419960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals."
+        },
+        "dep_claim_type": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3f8ba0dcafe3f046adf2cb9fbc8d1df0ad77a696fc8658276d55da2b139993a3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-000005-99291b2890-lattice_noether_carrier_inde",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The backward-hop reindexing is a direct algebraic consequence of AxisInv and yields the displayed bilateral current; summation by parts then gives zero divergence on the stated equations of motion. The one-hop Berezin authority supplies the finite Grassmann determinant/bilinear convention, and no staggered-Dirac carrier gate is imported.",
+      "claim_scope": "Algebraic finite-Grassmann bilateral Noether identity for nearest-neighbour carriers with c_mu(x + mu_hat)=c_mu(x), restricted to site-local/internal generators T satisfying [T,M]=0 and excluding physical M_KS identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:02:27.419960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By AxisInv, c_mu(x' + mu_hat) = c_mu(x'), so the reindexed backward coefficient matches the forward coefficient and the local-alpha variation combines into the bilateral current (5).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should confirm the conventional implicit noncoincident-nearest-neighbour assumption for finite periodic examples, since L=1 or L=2 tori would need separate wording for the hop parametrization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity over the explicitly defined carrier class, not a definition substitution or numerical match. The cited authority is retained_bounded and is used only for the finite Berezin calculus/sign convention, while the carrier-independent reindexing is proven inside the note. The runner source performs symbolic and finite-matrix checks for the sign convention, anti-Hermiticity characterization, carrier sweeps, and divergence identities rather than merely printing expected constants."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
+  "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

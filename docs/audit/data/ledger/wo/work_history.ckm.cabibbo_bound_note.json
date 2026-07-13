@@ -1,0 +1,214 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "work_history.ckm.cabibbo_bound_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.644,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4b058cd1f457f5e92d1315727e02c8c79c0127fcddb9b92b3e3496c66fca74a6",
+  "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:32:40.459098+00:00",
+      "archived_for_note_hash": "66b180ef72e33494a257197b85ef6c51334a56fdece9b411073b7d19c70fa7a4",
+      "audit_date": "2026-05-16T21:32:12.914805+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "work_history.ckm.ckm_mass_basis_nni_note": null
+        },
+        "dep_claim_type": {
+          "work_history.ckm.ckm_mass_basis_nni_note": "meta"
+        },
+        "dep_effective_status": {
+          "work_history.ckm.ckm_mass_basis_nni_note": "meta"
+        },
+        "deps": [
+          "work_history.ckm.ckm_mass_basis_nni_note"
+        ],
+        "load_bearing_score": 11.628,
+        "runner_hash": "545453b4272f2665125efb9b5dd41036759d638f9d8d1c9ebcf8e602443fa7bd",
+        "transitive_descendants": 790
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260516-213152-20260516T213152Z-25496fe8-work_history.ckm.cabibbo-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical value is produced only after importing PDG quark masses and fitted O(1) NNI coefficients calibrated from CKM data. The missing step is an internal derivation of those masses and coefficients from retained framework axioms.",
+      "claim_scope": "Audited the bounded Cabibbo claim that the mass-basis NNI flavor package reports |V_us| \u2248 0.2251 versus PDG 0.2243.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T21:32:12.914805+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "From the mass-basis NNI route, |V_us| = 0.2251 compared with PDG 0.2243, ratio 1.004.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check whether the live non-work-history CKM_MASS_BASIS_NNI_NOTE.md has a retained-grade replacement; in this restricted packet the provided one-hop authority is explicitly historical/meta and imports-dependent.",
+      "open_dependency_paths": [
+        "docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 5,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner does compute a CKM matrix and reports |V_us| = 0.22512, consistent with the source note. However, the computation uses hard-coded PDG masses, PDG comparators, and fitted geometric coefficients imported from another calibrated CKM route. The cited authority explicitly says the CKM comparison table is an imports-dependent numerical consistency check, not a first-principles derivation."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:27.759458+00:00",
+      "archived_for_note_hash": "92938bc4487651b00c974053bdbe460e983f0eca5dc7451c1b236fab3bd30e7e",
+      "audit_date": "2026-06-18T05:31:01.114343+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "work_history.ckm.ckm_mass_basis_nni_note": null
+        },
+        "dep_claim_type": {
+          "work_history.ckm.ckm_mass_basis_nni_note": "meta"
+        },
+        "dep_effective_status": {
+          "work_history.ckm.ckm_mass_basis_nni_note": "meta"
+        },
+        "deps": [
+          "work_history.ckm.ckm_mass_basis_nni_note"
+        ],
+        "load_bearing_score": 8.228,
+        "runner_hash": "545453b4272f2665125efb9b5dd41036759d638f9d8d1c9ebcf8e602443fa7bd",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-work_history.ckm.cabibbo_bound_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source builds NNI matrices from hard-coded PDG masses and imported fitted coefficients and computes |V_us| = 0.225117, matching the cache and source note. The closure is only the stated imports-dependent numerical match; the masses and NNI coefficients are not derived.",
+      "claim_scope": "Audited the bounded Cabibbo numerical-match statement that the mass-basis NNI runner, using imported PDG masses and fitted NNI coefficients, computes |V_us| approximately 0.2251 against PDG 0.2243.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:31:01.114343+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Within the mass-basis NNI flavor package, the framework gives |V_us| = 0.2251, compared with the PDG value 0.2243.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "Re-check if a future packet supplies retained derivations of the quark masses and fitted NNI coefficients; no compute gap in this packet.",
+      "open_dependency_paths": [
+        "docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 6,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The source note explicitly says the Cabibbo number load-bears PDG quark masses, PDG comparators, and calibrated NNI/flavor coefficients. The runner performs real matrix diagonalization, but the load-bearing numerical agreement depends on those hard-coded external and fitted inputs, so it is class G rather than a first-principles framework computation. Promotion would require deriving the quark mass hierarchy and NNI coefficients from retained framework dynamics."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.866633+00:00",
+      "audit_date": "2026-06-21T11:43:19.286286+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17": "Exact algebraic identities T1-T4 for positive masses and arbitrary positive geometric-basis NNI coefficients under the displayed definitions c_13^geom=c_12 c_23 and Phi_ij(c)=c sqrt(m_i/m_j)."
+        },
+        "dep_claim_type": {
+          "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17": "retained"
+        },
+        "deps": [
+          "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17"
+        ],
+        "load_bearing_score": 8.228,
+        "runner_hash": "545453b4272f2665125efb9b5dd41036759d638f9d8d1c9ebcf8e602443fa7bd",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-work_history.ckm.cabibbo_bound_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded numerical-match chain closes on its own stated terms: the runner source and cache compute |V_us| = 0.225117 from explicit imported masses and fitted coefficients. It does not close a first-principles derivation of quark masses, NNI coefficients, or the CKM matrix, which the source note explicitly excludes.",
+      "claim_scope": "At imported PDG quark masses and fitted NNI coefficients, the mass-basis NNI runner outputs |V_us| \u2248 0.2251 versus PDG 0.2243; the cited retained authority supplies only the structural identities T1-T4.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:43:19.286286+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17:retained->unaudited",
+      "load_bearing_step": "The reported |V_us| = 0.2251 is a Cabibbo-scale consistency result inside the mass-basis NNI package that load-bears PDG quark masses, PDG comparators, and calibrated NNI/flavor coefficients.",
+      "load_bearing_step_class": "G",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if a later packet supplies retained derivations of the quark mass inputs and fitted NNI coefficients and asks to promote beyond numerical-match scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 5,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The retained cited authority supports only algebraic NNI identities T1-T4 for arbitrary positive masses and coefficients. The Cabibbo value is produced in the calibrated runner block using hard-coded PDG quark masses, PDG CKM comparators, and fitted O(1) NNI coefficients, so the load-bearing step is class G rather than class C. The source note correctly scopes the result as bounded/import-dependent numerical support and does not justify promotion beyond that boundary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
+  "title": "Historical Cabibbo Bound Note",
+  "transitive_descendants": 49,
+  "verdict_rationale": null
+}

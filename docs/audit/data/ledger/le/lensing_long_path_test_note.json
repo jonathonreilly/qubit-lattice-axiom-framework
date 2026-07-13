@@ -1,0 +1,138 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lensing_long_path_test_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lensing_finite_path_explanation_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/kubo_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.728,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fc8c0a34b29ab986a55e5141a42b38b578d5ea27de9f38c0e3b51c94bb6536eb",
+  "note_path": "docs/LENSING_LONG_PATH_TEST_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369036+00:00",
+      "archived_for_note_hash": "cbdcbfd1e6a94981dab0a3f07498fa8adbea3c7fe8ea28b8845c12b4f992dc0b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.551069+00:00",
+      "audit_date": "2026-06-08T19:27:09.856314+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lensing_finite_path_explanation_note": "Negative boundary only: the centered finite-path angle surrogate is not a first-principles literal-harness detector-centroid kubo_true explanation; no positive layer-weighted bridge is audited."
+        },
+        "dep_claim_type": {
+          "lensing_finite_path_explanation_note": "no_go"
+        },
+        "dep_effective_status": {
+          "lensing_finite_path_explanation_note": "retained_no_go"
+        },
+        "deps": [
+          "lensing_finite_path_explanation_note"
+        ],
+        "load_bearing_score": 6.728,
+        "runner_hash": "6c97ab1fe30b85a83357e7cea950013ff286e3a1765a4daa3bdea9a667d6583b",
+        "transitive_descendants": 52
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-192500-fb864f0a62-lensing_long_path_test_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner recomputes the T_phys=7.5 kubo_true values from the DAG/Kubo propagator and the helper source does not hard-code the contested short-path slope. The T_phys=15 comparison slope is supplied by a retained_no_go cited authority, and no open positive layer-weighted bridge is needed to falsify the surrogate prediction.",
+      "claim_scope": "Bounded Lane L++ check that the centered finite-path Fermat surrogate's short-path regime-transition prediction fails for the kubo_true detector-centroid observable at T_phys=7.5, H=0.25 on b in {3,4,5,6}; the coarse T_phys=45 run is only diagnostic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:27:09.856314+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lensing_finite_path_explanation_note:retained_no_go->unaudited",
+      "load_bearing_step": "At H=0.25, the T_phys=7.5 kubo_true fit gives slope -1.4356 on b in {3,4,5,6}, essentially matching the retained T_phys=15 slope near -1.43 while the finite-path formula predicts -1.7336 at T_phys=7.5.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should keep the scope narrow: the clean result covers the short-path falsifier of the centered surrogate, not the speculative explanation of the remaining L-independent slope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Independent recomputation of the displayed finite-path formula slopes gives -1.7336, -1.4188, and -1.0776 for L_eff=5, 10, and 30, matching the packet. Independently fitting the stdout T_phys=7.5, H=0.25 kubo_true values gives slope -1.4356 with R2=0.9985, also matching the packet. The runner source instantiates the lattice/DAG propagation and first-order Kubo calculation rather than reading the contested value from another note. The audited conclusion is limited to falsifying this finite-path surrogate's regime-transition prediction, not deriving the unknown positive mechanism for the observed slope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lensing_long_path_test.py",
+  "title": "Lensing Long-Path Test \u2014 Falsifies the Finite-Path Explanation",
+  "transitive_descendants": 52,
+  "verdict_rationale": null
+}

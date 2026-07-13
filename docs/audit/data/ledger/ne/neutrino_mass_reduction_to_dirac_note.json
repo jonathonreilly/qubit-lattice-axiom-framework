@@ -1,0 +1,363 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "neutrino_mass_reduction_to_dirac_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "charged_lepton_two_higgs_canonical_reduction_note",
+    "higgs_vacuum_explicit_systematic_note",
+    "higgs_mass_derived_note"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 16.162,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7055a5cfb4223e80468508edb5a526063dc9164cbe9fda2d15cce82f2c61eb1b",
+  "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369254+00:00",
+      "archived_for_note_hash": "6de41ba3abed9193517e29485935bdaf04e614ccb7c4ce92df634184e4e9fcc9",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-09T17:03:06.110960+00:00",
+      "audit_date": "2026-05-08T02:36:56.536882+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note"
+        ],
+        "load_bearing_score": 14.107,
+        "runner_hash": "ffde360be41d33ba7e5e66b982bcb53b37bf5e35f4e5dbe7685399f69a1f7341",
+        "transitive_descendants": 194
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt55-xhigh-019e0571-6a75-7801-906e-e7e104f43fe9",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction itself is coherent once the Higgs doublet, matter representations, and M_R,current = 0 are granted. The restricted packet does not close those imported inputs, and the note explicitly marks the Higgs/CW electroweak-scalar lane as admitted but open/bounded.",
+      "claim_scope": "Audited the stated reduction that, assuming the retained Majorana zero boundary and an admitted electroweak Higgs doublet lane, neutrino mass in general can be treated as a Dirac Yukawa activation problem while Majorana/seesaw closure still needs a charge-2 primitive.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T02:36:56.536882+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "Because the retained current-stack Majorana matrix is exactly zero, the current neutrino-mass closure problem reduces to deriving the Dirac Yukawa activation law Y_nu on the admitted Higgs lane.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained-grade upstream authorities for the Higgs/CW electroweak-scalar lane, one-generation matter closure, three-generation matter structure, and three-generation Majorana current-stack zero matrix, then re-audit whether the reduction is merely algebraic over those retained inputs.",
+      "open_dependency_paths": [
+        "Higgs / CW electroweak-scalar lane"
+      ],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner labels all checks as class C, but its source mainly performs finite-dimensional algebra after hard-coding the SU(2), hypercharge, generation, Higgs, and Majorana-zero premises; it does not compute the reduction from the Cl(3) axiom. The note itself states that the theorem is conditional on an admitted Higgs/CW electroweak-scalar lane and also imports retained toolkit inputs not included in the restricted authority packet. Therefore the presented chain is a conditional reduction, not a closed positive theorem from retained inputs alone."
+    },
+    {
+      "archived_at": "2026-05-10T07:52:43.409135+00:00",
+      "archived_for_note_hash": "84bb8a9024f86858f7b1a9bd37c45bdee0fa1db9018b76faef214c6c8254048d",
+      "audit_date": "2026-05-09T17:08:35.942355+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note"
+        ],
+        "load_bearing_score": 14.472,
+        "runner_hash": "ffde360be41d33ba7e5e66b982bcb53b37bf5e35f4e5dbe7685399f69a1f7341",
+        "transitive_descendants": 250
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0db5-db4d-7211-b10a-e50b36f7e515",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction closes only after importing the admitted Higgs/CW electroweak-scalar lane and the retained Majorana zero law, neither of which is supplied as a retained cited authority in the restricted packet. The missing step is a retained upstream theorem providing the Higgs doublet lane and the Majorana zero boundary as closed inputs.",
+      "claim_scope": "Audited the reduction from M_R,current = 0 plus an admitted Higgs electroweak doublet to the statement that the remaining neutrino-mass object is the Dirac Yukawa matrix Y_nu, not a charge-2 Majorana primitive.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T17:08:35.942355+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Once the admitted Higgs doublet and the retained Majorana zero law are assumed, neutrino-mass closure reduces to deriving the Dirac Yukawa activation law Y_nu.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add retained-grade cited authorities for the Higgs/CW electroweak-scalar lane, one-/three-generation matter inputs, and the three-generation Majorana zero theorem, or keep the claim explicitly conditional on those dependencies.",
+      "open_dependency_paths": [
+        "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
+        "docs/publication/ci3_z3/PUBLICATION_MATRIX.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Issue: the note explicitly conditions the theorem on an admitted/open Higgs/CW electroweak-scalar lane and also relies on upstream Majorana-zero and matter-structure inputs not included as cited retained authorities in this packet. Why this blocks: the reduction is algebraically plausible, but the current packet does not close the carrier needed for the Dirac Yukawa channel or the upstream boundary M_R,current = 0. Repair target: cite retained-grade Higgs-doublet, matter-structure, and Majorana-zero authorities, or mark the theorem as conditional on those open inputs. Claim boundary until fixed: this is only a conditional reduction saying that if those lanes are admitted, the remaining mass-closing object is Y_nu."
+    },
+    {
+      "archived_at": "2026-05-15T13:06:49.181601+00:00",
+      "archived_for_note_hash": "513e40b8aaa7c32689adf8bebd2b669355bcd35ab3de7b77a962b0865c41036a",
+      "audit_date": "2026-05-10T16:29:24.237975+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "publication.ci3_z3.derivation_atlas": null,
+          "publication.ci3_z3.publication_matrix": null
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "publication.ci3_z3.derivation_atlas": "meta",
+          "publication.ci3_z3.publication_matrix": "meta"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "publication.ci3_z3.derivation_atlas": "meta",
+          "publication.ci3_z3.publication_matrix": "meta"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "publication.ci3_z3.derivation_atlas",
+          "publication.ci3_z3.publication_matrix"
+        ],
+        "load_bearing_score": 14.959,
+        "runner_hash": "ffde360be41d33ba7e5e66b982bcb53b37bf5e35f4e5dbe7685399f69a1f7341",
+        "transitive_descendants": 351
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e12b4-e3f3-7ee2-9e48-3797830b164a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local SU(2)/hypercharge and neutral-mass block algebra is valid after assuming the Higgs doublet and the Majorana zero law. Retained-grade closure is blocked because the Higgs/CW electroweak-scalar lane is explicitly admitted/open or identification-conditioned in the supplied packet.",
+      "claim_scope": "Conditional gauge-structural reduction: given M_R,current=0 and an admitted electroweak Higgs doublet for lepton Yukawas, neutrino mass can live on the Dirac Yukawa lane, while Majorana/seesaw closure still needs a charge-2 primitive.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:29:24.237975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Because the retained current-stack Majorana matrix is exactly zero, the current neutrino-mass closure problem reduces to deriving the Dirac Yukawa activation law.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained - audit/retain the Higgs/CW electroweak-scalar doublet lane, or add a direct retained dependency for the one-Higgs lepton Yukawa carrier if that is the intended repair; then recheck the Mat_3(C) wording against any retained Z_3 support constraints.",
+      "open_dependency_paths": [
+        "docs/publication/ci3_z3/DERIVATION_ATLAS.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "Issue: the theorem imports the electroweak Higgs-doublet lane as an admitted input. Why this blocks: without a retained-grade Higgs/Yukawa scalar authority, the conclusion is only a conditional reduction, not a retained-stack theorem. Repair target: retain or directly cite a retained Higgs-doublet/one-Higgs Yukawa gauge-selection theorem adequate to supply the scalar carrier. Claim boundary until fixed: with M_R,current=0 and admitted H, the remaining mass object is Y_nu; no Y_nu texture, masses, or PMNS data are derived."
+    },
+    {
+      "archived_at": "2026-05-17T17:15:36.333677+00:00",
+      "archived_for_note_hash": "eab019355d21aa029c7934ca3c2ee9ee0c608bffb31d67c0b1c538529c0f1a90",
+      "audit_date": "2026-05-15T14:56:02.989564+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings.",
+          "publication.ci3_z3.publication_matrix": null
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem",
+          "publication.ci3_z3.publication_matrix": "meta"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained",
+          "publication.ci3_z3.publication_matrix": "meta"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note",
+          "publication.ci3_z3.publication_matrix"
+        ],
+        "load_bearing_score": 15.218,
+        "runner_hash": "ffde360be41d33ba7e5e66b982bcb53b37bf5e35f4e5dbe7685399f69a1f7341",
+        "transitive_descendants": 420
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260515-145520-773586f3-neutrino_mass_reduction_-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction itself is coherent, but it imports the admitted Higgs/CW electroweak-scalar lane and the retained Majorana-zero/matter inputs through package-level authorities rather than fully retained one-hop theorem notes. The missing retained-grade closure is the Higgs scalar lane and explicit upstream Majorana-zero/matter authority packet in the restricted inputs.",
+      "claim_scope": "Audited the conditional algebraic reduction from an admitted Higgs-assisted Dirac Yukawa channel plus M_R,current = 0 to the statement that general neutrino mass closure can proceed through Y_nu, with charge-2 input required only for Majorana/seesaw closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-15T14:56:02.989564+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given an admitted electroweak Higgs doublet and the retained law M_R,current = 0_(3 x 3), the neutral-fermion mass problem reduces to deriving the Dirac Yukawa matrix Y_nu, while a charge-2 primitive is needed only for Majorana/seesaw mass.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade one-hop theorem notes for the Higgs/CW electroweak-scalar lane, the three-generation Majorana zero law, and the matter-structure inputs, or relabel this as explicitly conditional on those admitted/bounded dependencies.",
+      "open_dependency_paths": [
+        "docs/publication/ci3_z3/PUBLICATION_MATRIX.md",
+        "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner performs finite-dimensional algebra checks for SU(2) contraction uniqueness, 3x3 texture freedom, and the pure Dirac block spectrum, and these support the reduction on its own terms. However, the source note explicitly conditions the theorem on an admitted Higgs/CW lane, and the supplied publication matrix marks the neutrino boundary/support packet as bounded secondary and the Higgs/vacuum package as identification-conditioned. Under the rubric, that open/admitted dependency prevents a clean retained-grade verdict even though the internal algebraic reduction is sound."
+    },
+    {
+      "archived_at": "2026-05-18T09:35:15.442047+00:00",
+      "archived_for_note_hash": "829e8a9a6628ea650225ee75728cfdcd45923cbe68619265333dae5738ae3996",
+      "audit_date": "2026-05-17T18:24:30.087692+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "Audited the algebraic reduction and parameter count for a charged-lepton two-Higgs texture with two distinct effective Z_3 offsets, up to generation relabeling and charged-lepton field rephasings."
+        },
+        "dep_claim_type": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_two_higgs_canonical_reduction_note": "retained"
+        },
+        "deps": [
+          "charged_lepton_two_higgs_canonical_reduction_note"
+        ],
+        "load_bearing_score": 16.172,
+        "runner_hash": "ffde360be41d33ba7e5e66b982bcb53b37bf5e35f4e5dbe7685399f69a1f7341",
+        "transitive_descendants": 815
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-182407-41cdea85-neutrino_mass_reduction_-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction is internally sound given the stated inputs. The restricted packet does not provide retained-grade upstream authorities for the one-generation matter reps, three-generation structure, Majorana zero theorem, or the admitted Higgs/CW lane, and the source explicitly marks the Higgs lane as admitted/open-bounded.",
+      "claim_scope": "Conditional reduction of the retained neutrino-mass problem to the Higgs-assisted Dirac Yukawa lane, assuming the stated matter representations, M_R,current = 0, and the admitted Higgs/CW electroweak-scalar lane.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T18:24:30.087692+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Once the admitted Higgs doublet is supplied and M_R,current = 0, the remaining neutral-fermion mass-closing object is the Dirac Yukawa matrix Y_nu rather than a new charge-2 Majorana primitive.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade upstream packets for the Higgs/CW electroweak-scalar lane, the one-generation matter closure, the three-generation matter structure, and the M_R,current = 0 theorem, or scope this row explicitly as conditional on those inputs.",
+      "open_dependency_paths": [
+        "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
+        "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
+        "docs/HIGGS_MASS_DERIVED_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner performs real algebraic checks of the SU(2) invariant, hypercharge cancellation, three-generation matrix basis, and pure-Dirac block spectrum, but these are consistency checks after importing the required representations and M_R,current = 0. The source note itself states that the theorem is conditional on an admitted Higgs/CW electroweak-scalar lane rather than a closed zero-input result. Since the restricted packet does not include retained-grade support for the load-bearing upstream inputs, the reduction cannot be certified clean from this packet alone."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_neutrino_mass_reduction_to_dirac.py",
+  "title": "Neutrino Mass Reduction To The Dirac Lane",
+  "transitive_descendants": 809,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

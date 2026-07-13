@@ -1,0 +1,636 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.605,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "79a7a517aaa8c6bb66499cb7ec5c3202b54c740a7d05ca938858b8e84e8440dd",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.508966+00:00",
+      "audit_date": "2026-06-21T06:46:55.269761+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "Finite positive-diagonal source-block countermodel and non-injective source-to-record assignment showing T1-d's determinant-only readout and source-disjoint-to-record-disjoint clauses are not derivable from the current Record/minimal axioms plus determinant algebra."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 10.85,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 922
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated mathematical classifier closes on its finite positive-diagonal scope by induction for direct-sum additivity and the continuous Cauchy equation for determinant-only readout. The note does not claim to derive the physical readout context or source-to-record clause.",
+      "claim_scope": "Finite positive diagonal direct-sum additive scalar readout families are one-site sums, and the cross-dimension determinant-only quotient is exactly the continuous logarithmic family, with a dimension constant only when n is supplied separately.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:46:55.269761+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:44:33.983235+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal classifier: continuous direct-sum additive scalar readout families are one-site sums, and a single determinant-only readout across dimensions is exactly the logarithmic quotient, with dimension constants requiring separate dimension data.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:46:55.269761+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal direct-sum additive scalar readout families are one-site sums, and the cross-dimension determinant-only quotient is exactly the continuous logarithmic family, with a dimension constant only when n is supplied separately.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "For n=2, determinant-only gives phi(x)+phi(y)=F(xy)=phi(xy), so continuity makes phi a multiplicative-to-additive homomorphism and hence phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check scope discipline: this is a finite positive-diagonal classifier, not a source-to-record or physical readout-context theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing step is standard exact algebra/analysis over the supplied finite positive diagonal surface, not a definition substitution or numerical match. The retained no-go authority is used only to preserve the boundary that T1-d is not Record-derived, while the accepted Minimal Axioms premise is cited correctly for what Record withholds. The runner performs symbolic and finite witness checks for the algebra and separate textual guardrail checks; it does not hard-code a contested physical bridge as if it were derived."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.886134+00:00",
+      "audit_date": "2026-06-30T18:33:18.472766+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "T1-d's determinant-only scalar readout quotient and source-block-to-record disjointness clause are not derivable from the current minimal axioms plus determinant direct-sum algebra and the retained positive determinant branch lemma."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 10.85,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 922
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T183318Z-c70ced9a-observable_principle_t1d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The mathematical classifier follows from block additivity, determinant multiplicativity on positive diagonal tuples, and the standard continuous Cauchy homomorphism result after log coordinates. The cited no-go and axiom memo support the guardrail that source-to-record disjointness and physical determinant readout remain separate bridges.",
+      "claim_scope": "Finite positive diagonal continuous direct-sum additive scalar readouts are one-site sums, and the across-dimension determinant-only quotient is exactly c log(det), with any dimension constant requiring separate n data; no T1-d physical readout bridge is derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T18:33:18.472766+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T18:30:38.927552+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T183038Z-26253ee7-observable_principle_t1d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source-block classifier: continuous direct-sum additive scalar readouts are one-site sums, and the global determinant-only quotient is exactly the logarithmic family, with the source-to-record bridge left outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T18:33:18.472766+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T183318Z-c70ced9a-observable_principle_t1d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal continuous direct-sum additive scalar readouts are one-site sums, and the across-dimension determinant-only quotient is exactly c log(det), with any dimension constant requiring separate n data; no T1-d physical readout bridge is derived.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "Assuming W_n is determinant-only across dimensions gives phi(x)+phi(y)=W_2(x,y)=F(xy)=phi(xy), so continuity forces phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the dated minimal-axiom aliasing if the registry changes; the relevant Record/source-action withholding is present in the provided current axiom packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing step is exact finite algebra plus the standard theorem that continuous additive functions on R are linear. The runner checks representative symbolic additivity, determinant-only witnesses, dimension-label separation, and source-note guardrails; it does not claim first-principles physics. The note is correctly bounded: it classifies the local positive-diagonal readout surface and explicitly does not derive T1-d from Record or close the source-to-record bridge."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.496273+00:00",
+      "audit_date": "2026-07-02T10:14:37.409570+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "T1-d's determinant-only readout quotient and source-block-to-record-disjointness clause are not derivable from the minimal Record/Lattice/Qubit/Admissibility premises plus finite determinant direct-sum algebra and the retained positive determinant branch."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 10.85,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 922
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T101437Z-257bd5fd-observable_principle_t1d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The mathematical classifier follows from tuple concatenation additivity plus the standard continuous homomorphism result on R_{>0}. The note explicitly does not derive the T1-d physical bridge or source-to-record clause, so no unclosed bridge is used inside the audited bounded scope.",
+      "claim_scope": "Finite positive diagonal readout families satisfying continuity and block-direct-sum additivity are one-site sums, and imposing one determinant-only scalar across dimensions selects exactly c log det, with dimension labels and source-to-record disjointness left outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T10:14:37.409570+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T10:11:36.818295+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T101136Z-4be0d116-observable_principle_t1d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source-block readout families satisfying continuity and direct-sum additivity classify as one-site sums; global determinant-only readout selects the logarithmic quotient while source-to-record disjointness remains outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T10:14:37.409570+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T101437Z-257bd5fd-observable_principle_t1d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal readout families satisfying continuity and block-direct-sum additivity are one-site sums, and imposing one determinant-only scalar across dimensions selects exactly c log det, with dimension labels and source-to-record disjointness left outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "Block additivity gives W_n(x_1,...,x_n)=sum_i phi(x_i), and determinant-only readout then gives phi(x)+phi(y)=phi(xy), so continuity forces phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check the 2026-06-05 to 2026-06-29 minimal-axiom alias consistency; the finite classifier proof itself is exact.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing proof is exact finite mathematics: recursive splitting proves the one-site sum form, and the determinant-only condition reduces to the continuous multiplicative-to-additive Cauchy equation. The accepted minimal-axiom premise is used only for the guardrail that Record does not supply source/action or physical-observable identification, and the retained no-go supplies the matching independence wall. No-Go Discipline passes for this narrow bounded scope because the note preserves the two residual bridge pieces rather than claiming to close them."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.943658+00:00",
+      "audit_date": "2026-07-02T22:06:01.000729+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bec23a13ccffcf107d26ab30b311100e073bcbf38917c2ab6037786ab9b9f6f6"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "T1-d's determinant-only readout quotient and source-disjoint-to-record-disjoint clause are independent of Record additivity, determinant direct-sum algebra, continuity on finite positive source blocks, and the positive determinant branch in the restricted packet."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 15.232,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 1202
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T220600Z-95fb8722-observable_principle_t1d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The classification follows by finite induction and the continuous multiplicative-to-additive Cauchy equation on R_{>0}. The physical T1-d readout-context and source-to-record bridge are explicitly outside the audited scope.",
+      "claim_scope": "Finite positive diagonal source blocks: continuous direct-sum-additive scalar readout families are one-site sums, and the global determinant-only quotient is exactly the logarithmic family, with dimension-label freedom kept outside determinant-only data.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T22:06:01.000729+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T22:03:46.085643+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T220346Z-b15ace95-observable_principle_t1d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source blocks with a supplied continuous direct-sum additive scalar readout family: the family is a one-site sum, and the single determinant-only quotient across dimensions is exactly c log det, with k n requiring an added dimension label.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T22:06:01.000729+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T220600Z-95fb8722-observable_principle_t1d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source blocks: continuous direct-sum-additive scalar readout families are one-site sums, and the global determinant-only quotient is exactly the logarithmic family, with dimension-label freedom kept outside determinant-only data.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "Block additivity repeatedly splits W_n into one-site terms, and determinant-only across dimensions gives phi(x)+phi(y)=phi(xy), so continuity forces phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream citations preserve this bounded scope and do not cite the classifier as deriving the full T1-d physical bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing mathematics is exact algebra over the stated finite positive-diagonal assumptions, not a definition substitution or tuned numerical match. The accepted minimal-axiom premise is registry-allowed, and the other cited authority is retained_no_go; no open dependency is used to prove the bounded classifier. The runner checks the algebraic decomposition, determinant quotient witnesses, dimension-label exception, and guardrail text; the source remains correctly bounded and does not claim to derive T1-d from Record."
+    },
+    {
+      "archived_at": "2026-07-04T10:59:07.860560+00:00",
+      "audit_date": "2026-07-03T19:03:13.393321+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "Scoped no-go that current minimal axioms plus determinant/direct-sum algebra and the real-positive determinant branch do not derive T1-d determinant-only scalar readout or source-disjoint-to-record-disjoint assignment."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 15.235,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 1204
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-20260703-t1d-positive-diagonal-classifier",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded mathematical theorem closes by induction from block additivity and the continuous multiplicative-to-additive Cauchy equation. The note explicitly does not derive T1-d from Record, close the Observable Principle parent, or supply a physical readout/source/action bridge.",
+      "claim_scope": "Continuous direct-sum additive scalar readouts on finite positive diagonal source blocks are one-site sums; determinant-only readout across dimensions is exactly c log det, with dimension constants requiring n as extra data and source-to-record disjointness left outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-03T19:03:13.393321+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-03T18:59:54.821755+00:00",
+          "auditor": "codex-audit-loop-20260703-gpt-5.5-xhigh",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite positive-diagonal classifier: supplied continuous source-block additive readout families decompose as one-site sums; determinant-only readout across dimensions is exactly the logarithmic quotient; an added dimension constant requires dimension as separate data; the source-to-record disjointness bridge remains separate.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-03T19:03:13.393187+00:00",
+          "auditor": "codex-audit-loop-fresh-context-20260703-t1d-positive-diagonal-classifier",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Continuous direct-sum additive scalar readouts on finite positive diagonal source blocks are one-site sums; determinant-only readout across dimensions is exactly c log det, with dimension constants requiring n as extra data and source-to-record disjointness left outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "Block additivity gives W_n(x_1,...,x_n)=sum_i phi(x_i), and determinant-only across dimensions forces phi(x)+phi(y)=phi(xy), hence by continuity phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only if later edits or downstream citations treat this classifier as deriving T1-d from Record or closing the parent Observable Principle row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing classifier is an exact algebraic/analytic result on the supplied finite positive diagonal surface. The runner completed with TOTAL: PASS=33 FAIL=0 and its checks cover the one-site decomposition, determinant quotient, dimension-constant boundary, source-to-record non-closure, and guardrail text. This is clean only as a bounded mathematical support theorem, not as the missing T1-d bridge or parent Observable Principle closure."
+    },
+    {
+      "archived_at": "2026-07-08T03:44:31.801802+00:00",
+      "audit_date": "2026-07-08T03:35:08.598264+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "Finite local no-go: Record finite additivity plus determinant direct-sum multiplicativity, continuity, and the positive determinant branch do not derive T1-d's determinant-only readout quotient or source-blocks-to-records disjointness clause."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 14.999,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 1022
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:019f3fc8-522b-72d1-84fe-5444034d261b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof is a closed finite algebra/functional-equation argument over the stated positive diagonal hypotheses. It explicitly does not derive T1-d, source-to-record disjointness, or a physical readout context.",
+      "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T03:35:08.598264+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T03:34:09.577860+00:00",
+          "auditor": "codex-audit-loop:019f3fc8-522c-7181-865e-f256eb1b6f6b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-08T03:35:08.598146+00:00",
+          "auditor": "codex-audit-loop:019f3fc8-522b-72d1-84fe-5444034d261b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16:retained_no_go->unaudited",
+      "load_bearing_step": "Set phi(t)=W_1(t), so block additivity gives W_n(x_1,...,x_n)=sum_i phi(x_i); if W_n=F(prod_i x_i) across dimensions then phi(x)+phi(y)=phi(xy), and continuity forces phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the scope remains confined to finite positive diagonal source blocks and does not claim closure of the T1-d source-to-record bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing mathematics closes: concatenation additivity recursively decomposes every W_n into one-site terms, and the determinant-only condition reduces to the continuous multiplicative-to-additive Cauchy equation on R_{>0}. The cited no-go is retained-grade and supports the boundary that determinant-only readout and source-block-to-record disjointness are not Record-derived; the minimal axiom memo is an accepted premise and is used only for that boundary. The runner checks the symbolic identities, determinant witnesses, dimension-label obstruction, and note guardrails; it does not hard-code a physical bridge that the note claims to prove."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.522430+00:00",
+      "audit_date": "2026-07-08T03:53:11.113530+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "Finite local no-go: Record finite additivity plus determinant direct-sum multiplicativity, continuity, and the positive determinant branch do not derive T1-d's determinant-only readout quotient or source-blocks-to-records disjointness clause."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "no_go"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": "retained_no_go"
+        },
+        "deps": [
+          "minimal_axioms",
+          "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+        ],
+        "load_bearing_score": 14.999,
+        "runner_hash": "64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27",
+        "transitive_descendants": 1022
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:019f3fc8-522b-72d1-84fe-5444034d261b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof is a closed finite algebra/functional-equation argument over the stated positive diagonal hypotheses. It explicitly does not derive T1-d, source-to-record disjointness, or a physical readout context.",
+      "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T03:53:11.113530+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T03:52:17.248698+00:00",
+          "auditor": "codex-audit-loop:019f3fc8-522c-7181-865e-f256eb1b6f6b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-08T03:53:11.113406+00:00",
+          "auditor": "codex-audit-loop:019f3fc8-522b-72d1-84fe-5444034d261b",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite positive diagonal source-block readouts: continuous direct-sum additive families decompose into one-site sums, and the global determinant-only quotient selects exactly the logarithmic one-site family, with source-to-record disjointness left as a separate bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Set phi(t)=W_1(t), so block additivity gives W_n(x_1,...,x_n)=sum_i phi(x_i); if W_n=F(prod_i x_i) across dimensions then phi(x)+phi(y)=phi(xy), and continuity forces phi(x)=c log x.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the scope remains confined to finite positive diagonal source blocks and does not claim closure of the T1-d source-to-record bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing mathematics closes: concatenation additivity recursively decomposes every W_n into one-site terms, and the determinant-only condition reduces to the continuous multiplicative-to-additive Cauchy equation on R_{>0}. The cited no-go is retained-grade and supports the boundary that determinant-only readout and source-block-to-record disjointness are not Record-derived; the minimal axiom memo is an accepted premise and is used only for that boundary. The runner checks the symbolic identities, determinant witnesses, dimension-label obstruction, and note guardrails; it does not hard-code a physical bridge that the note claims to prove."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
+  "title": "Observable-Principle T1-d Positive-Diagonal Readout Classifier",
+  "transitive_descendants": 1100,
+  "verdict_rationale": null
+}

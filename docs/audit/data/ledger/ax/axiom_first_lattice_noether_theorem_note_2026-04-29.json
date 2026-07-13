@@ -1,0 +1,1557 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+    "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+    "minimal_axioms",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+    "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+    "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+    "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 16.027,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8fe0c14907967d145165aa6517bed61243812266ff6c9529a8879e732c066e1d",
+  "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T19:40:05.753720+00:00",
+      "audit_date": "2026-04-30T15:13:16.748556+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The note gives a self-contained structural proof on the stated A_min objects, and the registered runner completed successfully on the load-bearing algebraic checks.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3: the stated finite-lattice/Cl(3) theorem is proved on the listed A_min objects and checked by the registered runner.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The load-bearing theorem is structural rather than a tuned numerical match: support \u2014 branch-local theorem note on A_min; runner passing; audit-pending.. The registered runner completed successfully and its classified PASS surface is {'A': 0, 'B': 0, 'C': 2, 'D': 0, 'total_pass': 2}. Residual risk is limited to the support/branch-local scope stated by the note; this does not promote the row beyond its author-declared tier."
+    },
+    {
+      "archived_at": "2026-05-03T11:17:38.916183+00:00",
+      "audit_date": "2026-05-02T22:34:31.527912+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.5,
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The claimed Z^3 translation/momentum current does not follow from the stated infinitesimal Noether formula: ordinary one-site translation is not the same symmetry checked by the runner, which only tests two-site shifts to avoid staggered phase modulation. The runner also verifies expectation-level identities from M^{-1}, not the advertised classical on-shell current for arbitrary fields or the general discrete-symmetry theorem.",
+      "claim_scope": "Attempted general lattice Noether theorem asserting ordinary Z^3 translation momentum conservation, fermion-number current conservation, and a general on-shell current formula for one-parameter Lie or discrete symmetries of the canonical staggered action.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:34:31.527912+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "For Z^3 translation, the generator is T^mu_xy = delta_{y,x+mu} - delta_{y,x-mu}; substituting into the general current formula gives the staggered momentum density, and M_KS commutes with discrete translation up to the staggered phase factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after the note separates internal U(1) from lattice translation/shift symmetries and the runner checks the exact claimed on-shell currents.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "Issue: the note applies a continuous infinitesimal Noether current formula to ordinary Z^3 translations and then claims a conserved staggered momentum density, but the staggered action is only checked under two-site shifts and the required one-site/phase-compensated translation current is not derived. Why this blocks: downstream lanes would cite momentum and general current conservation as if they were established on A_min, while the runner only confirms narrower U(1) and two-step/expectation-level identities. Repair target: split out the internal U(1) current, define the correct staggered translation or shift symmetry, derive its lattice Ward identity/current explicitly, and update the runner to test the same on-shell observable claimed in the note. Claim boundary until fixed: U(1) phase commutation and a finite expectation-level divergence check pass, but the advertised general lattice Noether theorem is not retained."
+    },
+    {
+      "archived_at": "2026-05-03T19:49:42.760531+00:00",
+      "archived_for_note_hash": "48830647401175ba36d084ecb66f06c1e67b5e4f20128ce376cb38807ddf1ad2",
+      "audit_date": "2026-05-03T14:53:28.507881+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-hostile-noether-auditor-2026-05-03",
+      "auditor_confidence": 0.88,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The U(1) bilinear phase symmetry is plausibly exhibited, but the full theorem chain does not close for the stated Z^3 translation and general-current claims. The note states pure Z^3 translation conservation, while the runner deliberately checks only two-site shifts to avoid staggered phase modulation and never verifies the claimed momentum current P.",
+      "claim_scope": "The note claims an axiom-first lattice Noether theorem on A_min, including Z^3 translation momentum conservation, global U(1) fermion-number conservation, and a general lattice Noether current identity.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T14:53:28.507881+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Step 4 asserts that substituting the Z^3 translation generator into the general current formula yields the staggered momentum density and that M_KS commutes with discrete translation up to staggered phase factors; Step 2 asserts without a full derivation that promoting alpha_x produces the current formula (5).",
+      "load_bearing_step_class": "misidentified_symmetry_and_proxy_runner",
+      "notes_for_re_audit_if_any": "Re-audit after the note distinguishes one-site translations, two-step translations, and staggered shift/taste symmetries, and after the runner checks the same current and same symmetry claimed in the theorem rather than a configured proxy.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "E1": "checks [iI, M]=0 for the free pure-staggered matrix",
+        "E2": "checks S M S^T = M only for shifts by 2 in each direction, not the claimed one-site Z^3 translation symmetry",
+        "E3": "checks divergence of an expectation-value current built from M^{-1}, not the note's arbitrary classical on-shell Grassmann field identity",
+        "E4": "checks equality of trace(M^{-1}) slice sums",
+        "hard_bridge_proved": false
+      },
+      "verdict_rationale": "Issue: The load-bearing translation step identifies the staggered Kogut-Susskind action as Z^3-translation invariant and derives momentum conservation from that identification, but the runner itself restricts E2 to two-step shifts because one-step shifts encounter staggered phase modulation; it also does not compute the momentum-density divergence in equation (3). The local runner passed E1-E4, but those exhibits are U(1) commutation, two-step translation invariance, an M^{-1} expectation-current divergence, and slice trace equality. Why this blocks: The scoped claim includes Z^3 translation symmetry -> discrete momentum conservation and a general Noether identity, so verifying U(1) commutation plus two-step shift invariance plus M^{-1} current expectations cannot establish the stated theorem. A hostile referee can reject the claimed N1/N3 closure without disputing the runner output. Repair target: State the exact staggered symmetry group, including any required phase/taste transformation, derive its local Noether current from the finite Grassmann action with site-dependent parameters, and add a runner that verifies the actual P-current divergence or the exact symbolic finite-lattice identity for arbitrary on-shell fields. Claim boundary until fixed: The note may safely claim a numerical exhibit of free pure-staggered U(1) phase invariance and two-step translation invariance on small periodic lattices, plus an expectation-value current-divergence check; it may not claim the full A_min lattice Noether theorem or Z^3 momentum conservation as retained."
+    },
+    {
+      "archived_at": "2026-05-03T23:08:07.921698+00:00",
+      "archived_for_note_hash": "fe9fcea6e1ccffe12ec2fe24063157798a13624520269736d276b2c6746247f7",
+      "audit_date": "2026-05-03T19:58:52.382206+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "fresh-agent-turing",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Equation (5) does not algebraically specialize to the stated currents: as written, the y-sum multiplies a bilinear independent of y, so the two-site translation generator has zero row sum rather than producing (3). The cited A_min dependency is also marked superseded and says the staggered/Grassmann realization used here is no longer a current primitive axiom.",
+      "claim_scope": "A lattice Noether theorem on the stated A_min surface for (2Z)^3 sublattice momentum and global U(1) fermion-number currents.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T19:58:52.382206+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The proof claims that substituting the two-site translation generator and the U(1) phase generator into equation (5) gives the currents (3) and (4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after equation (5), the N1 specialization, and the superseded A_min dependency are repaired.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md"
+      ],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the load-bearing specialization of the general current formula (5) to (N1) and (N2) does not close algebraically, and the runner passes only symmetry/current exhibits rather than checking that (5) derives (3) and (4). Why this blocks: the theorem claims explicit conserved currents follow from the presented general identity, but the identity as written cannot yield the stated sublattice-momentum current. Repair target: provide a corrected local-parameter variation deriving the actual currents, add a runner check for the corrected derivation/divergence of (3), and cite a retained/current dependency for the staggered surface. Claim boundary until fixed: the runner supports U(1) commutation, two-step shift invariance, and a finite-lattice U(1) current exhibit on the pure staggered model, not the full stated theorem."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.491425+00:00",
+      "archived_for_note_hash": "b3e7434905f36aed67d90a500d6bf47f1f91177f5428094aad548e64796a50c6",
+      "audit_date": "2026-05-04T10:31:20.669109+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-2026-05-04",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the finite pure-staggered Noether exhibits, but the row's only one-hop authority is MINIMAL_AXIOMS_2026-04-11.md, which is explicitly superseded and says the staggered/Grassmann realization is no longer a current primitive axiom. The theorem therefore does not yet close on the current axiom surface from the restricted packet.",
+      "claim_scope": "Axiom-first lattice Noether theorem for the pure staggered finite-Grassmann action: (2Z)^3 sublattice momentum and global U(1) fermion-number current conservation on shell.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-04T10:31:20.669109+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The theorem is established for the two physically-load-bearing symmetries of A_min: (2Z)^3 sublattice translation and global U(1) phase symmetry of the canonical staggered action.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit after the note cites the current axiom set and explicit retained/open-gate carrier rows for the staggered finite-Grassmann action.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the proof and runner close for the pure staggered finite-Grassmann carrier, but the cited A_min authority is superseded and recategorizes that carrier as an open modeling gate rather than a current axiom. Why this blocks: a theorem advertised as axiom-first on current A_min cannot inherit retained-grade status from a historical axiom file that explicitly says not to cite it as current. Repair target: rebase the theorem on MINIMAL_AXIOMS_2026-05-03.md plus retained/open-gate rows that establish the staggered/Grassmann realization and the exact (2Z)^3 symmetry carrier. Claim boundary until fixed: the runner supports a branch-local Noether identity on the pure staggered model, not a ratified current-framework axiom-first theorem."
+    },
+    {
+      "archived_at": "2026-05-10T12:37:29.436906+00:00",
+      "archived_for_note_hash": "b07d0c56550229d9610962051afb3211eda0acb36a6448354070cf7a7d759bfc",
+      "audit_date": "2026-05-05T04:17:46.752555+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "minimal_axioms_2026-04-11": "meta",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-04-11",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 12.603,
+        "runner_hash": "791053d1688ee9e1618f13eb731ec5d81227f8cf04973c9eb9af003442ddeae4",
+        "transitive_descendants": 274
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-axiom_first_lattice_noet-016",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic U(1) current check closes over the admitted staggered action, but the current framework memo recategorizes that staggered-Dirac/Grassmann realization as an open gate rather than a retained axiom. The packet also does not substantively verify the claimed (5) -> (3) momentum-current reduction; the runner checks two-step invariance but only checks bilateral-current closure for U(1).",
+      "claim_scope": "Conditional algebraic lattice Noether identity for the admitted finite staggered-Dirac/Grassmann action on Z^3, including U(1) current conservation and two-site sublattice translation symmetry checks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:17:46.752555+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The local-alpha variation of the nearest-neighbour staggered action gives the bilateral current J^{\u03bc,A}_x = (1/2) \u03b7_\u03bc(x)[\u03c7\u0304_x T\u0302^A \u03c7_{x+\u03bc\u0302}+\u03c7\u0304_{x+\u03bc\u0302} T\u0302^A \u03c7_x], whose divergence vanishes on shell.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: close or explicitly admit the staggered-Dirac realization gate, then add a direct algebraic or runner-level verification of the (5) -> (3) sublattice momentum-current specialization.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The note depends on the staggered-Dirac/Grassmann action as a load-bearing input, while the current cited authority explicitly says this is an open derivation target and lists lattice_noether among lanes that should be treated as bounded until that gate closes. The runner performs real algebraic/numerical consistency checks for U(1), two-step translation invariance, and U(1) current divergence, but it is not a first-principles derivation from A1+A2. It also does not actually verify the advertised momentum-current closure (5) -> (3), despite the note relying on that specialization for N1."
+    },
+    {
+      "archived_at": "2026-05-10T15:58:56.605214+00:00",
+      "archived_for_note_hash": "8285cbf8c55e1a69e36d857668095f5f8b49c1f06e1678ffd6cf6598002509b8",
+      "audit_date": "2026-05-10T12:41:34.443651+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 16.369,
+        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+        "transitive_descendants": 660
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e11e7-cded-7770-b78c-b79fcc974494",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The variational and runner checks close on the admitted staggered carrier, but the carrier itself is explicitly an open gate in the cited framework memo. The note also carries a structural g_bare canonical-normalization gate, so the result is conditional on named admitted inputs rather than closed from retained-grade axioms alone.",
+      "claim_scope": "A bounded lattice Noether identity for U(1) fermion-number current and (2Z)^3 sublattice-momentum current on the admitted staggered/Grassmann carrier, not a derivation of that carrier from A1+A2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T12:41:34.443651+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Given the admitted staggered/Grassmann action, promoting the symmetry parameter to a site-dependent lattice field yields the bilateral current (5), with U(1) current (4) by substitution and the (2Z)^3 momentum current (3) by a discrete Ward-identity route verified directly.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained canonical parent theorem deriving the staggered-Dirac/Grassmann carrier from A1+A2, with the runner depending on that construction rather than taking M_KS as admitted.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the note explicitly imports the staggered-Dirac realization gate, and also names the g_bare canonical-normalization gate, while the cited authority classifies these as open derivation targets. Why this blocks: the Noether algebra may be valid on the admitted carrier, but the restricted packet does not derive that carrier from A1+A2, so retained status cannot propagate through the open identification. Repair target: package and audit a retained derivation of the staggered-Dirac carrier, and separately close or remove the structural g_bare dependency if it is not load-bearing. Claim boundary until fixed: bounded theorem on the admitted staggered/Grassmann carrier only."
+    },
+    {
+      "archived_at": "2026-05-11T12:54:39.431353+00:00",
+      "archived_for_note_hash": "63af6010dc0b9f1bf711b1c231644644168151713113e8d7baac98ffe7b47ff9",
+      "audit_date": "2026-05-10T16:01:49.590566+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 16.459,
+        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+        "transitive_descendants": 703
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e129e-c89b-7951-98b8-79bcf364c924",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The U(1) infinitesimal-current algebra closes on the admitted carrier, but the discrete-translation current (3) is introduced by a sketched finite-shift Ward bridge rather than derived. The E6 runner only checks a free periodic expectation-value instance, not the stated on-shell identity for the admitted canonical action.",
+      "claim_scope": "Bounded lattice Noether identity for U(1) phase current and proposed (2Z)^3 sublattice momentum current on the admitted staggered-Dirac/Grassmann carrier.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:01:49.590566+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Promoting this finite shift to a site-dependent discrete shift parameter yields a finite-difference Ward identity with the canonical staggered sublattice-momentum density P^mu_x and hence partial^L_mu P^mu_x = 0 on shell.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem \u2014 derive the localized finite-translation Ward identity that produces current (3), or split N1 out as a verified free-block exhibit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the N1 bridge from two-site discrete translation symmetry to the specific local momentum density (3) is asserted, not proved. Why this blocks: the claim advertises N1-N3 as a bounded theorem, but the only direct support for N1 is a numerical free-block expectation check rather than a derivation of the local Ward current for arbitrary on-shell fields on the admitted carrier. Repair target: add a discrete Ward theorem deriving (3) from localized two-site translation on the admitted staggered action, or narrow the clean claim to N2/N3 plus an E6 free-block exhibit. Claim boundary until fixed: U(1) current and bilateral infinitesimal Noether identity on the admitted staggered carrier."
+    },
+    {
+      "archived_at": "2026-05-24T22:38:38.910870+00:00",
+      "archived_for_note_hash": "e29e4eb163fbfcab5bd193e3d504019fc1457564eeb522ead9fd4c8e6158e293",
+      "audit_date": "2026-05-11T23:05:10.393534+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 17.092,
+        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+        "transitive_descendants": 771
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.",
+      "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T23:05:10.393534+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T13:01:23.833595+00:00",
+          "auditor": "codex-audit-loop-20260511-axiom-first-lattice-noether-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded lattice Noether identity on the explicitly admitted staggered/Grassmann carrier only: U(1) fermion-number current and (2Z)^3 sublattice momentum current for the pure staggered action, with the translation case handled by a discrete Ward identity and direct divergence check. This does not audit a derivation of the staggered-Dirac carrier from A1+A2, a positive theorem after gate closure, anomaly cancellation, one-site taste-shift currents, full energy-momentum tensor conservation, or any g_bare-dependent quantitative gauge result.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-11T22:45:41.220497+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-axiom_first_lattice_noet-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-11T23:05:10.393534+00:00",
+          "auditor": "codex-judicial-gpt-5.5-20260511-230510-axiom_first_lattice_noet-001",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded lattice Noether identities for U(1) fermion number and (2Z)^3 sublattice momentum on the admitted staggered/Grassmann carrier.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It treated closure on the admitted carrier as audited_clean, despite the rubric's audited_conditional rule for explicit unclosed carrier/open-gate imports.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 6
+          },
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Promoting the symmetry parameter to a site-dependent lattice field yields a current-divergence Ward identity whose on-shell arbitrariness forces \u2202^L_\u03bc J^\u03bc_x = 0, with the discrete translation case handled by the analogous finite-difference Ward identity and direct E6 check for P^\u03bc_x.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: package and audit the staggered-Dirac realization derivation target, then re-audit whether this bounded theorem can be retagged clean on closed inputs.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The internal Noether manipulation and runner exhibits are algebraic checks on the admitted staggered carrier, so class A is appropriate. However the restricted packet explicitly says the staggered-Dirac/Grassmann carrier is an open gate and is imported as an admitted context input rather than derived from the provided axioms. Under the rubric, an explicit unclosed carrier import requires audited_conditional even if the bounded identity closes on that carrier."
+    },
+    {
+      "archived_at": "2026-05-25T16:13:15.654933+00:00",
+      "archived_for_note_hash": "a412faf2b10685654f5fae8f7563bce0dc6e12917f78f84618cb875bbbe5a351",
+      "audit_date": "2026-05-25T10:27:42.627006+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-03": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 18.315,
+        "runner_hash": "fd58381824adb69037ac18189818ba89ca3ebb06547718a2bdf13546431e4389",
+        "transitive_descendants": 900
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T102442Z-f77f585c-axiom_first_lattice_noet-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The U(1) and bilateral infinitesimal-current portions close algebraically on the admitted staggered matrix. The full N1 translation-current claim does not close from the provided authorities because Step 4b does not derive the finite-shift Ward rearrangement to (3), and E6 is only a finite-block expectation-value check rather than an arbitrary on-shell symbolic derivation.",
+      "claim_scope": "Bounded lattice Noether identities for the U(1) current, the infinitesimal bilateral current, and the (2Z)^3 sublattice-momentum density on the admitted nearest-neighbour KS-phase staggered/Grassmann carrier; no derivation of that carrier from A1+A2 was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T10:27:42.627006+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "From the two-site shift symmetry [M,S^(2mu)]=0, promoting the finite shift to a site-dependent envelope is asserted to yield sum_x omega_x d^L_mu P^mu_x=0 on shell, with P^mu_x the canonical staggered sublattice-momentum density (3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained symbolic Step 4b proof deriving (3) from the site-dependent two-shift Ward identity for arbitrary on-shell fields, and cite or close the KS-phase-form source if seeking stronger retention.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner performs six non-external identity checks on the hard-coded staggered matrix and supports the scoped algebraic claims over that admitted carrier. However, the packet still relies on the residual KS-phase-form carrier and on the Step 4b site-dependent finite-shift Ward bridge to identify the conserved translation current as (3). Neither item is supplied by a retained authority in the restricted packet. No-Go discipline N3/N6 leaves those as hidden or unratified admissions, so audited_clean is not available."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.059196+00:00",
+      "audit_date": "2026-05-25T18:59:16.113026+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 17.786,
+        "runner_hash": "3abf8e69064af6cd8947baeaefa6e1b415b956169668c7567bd2d637ee8e96e5",
+        "transitive_descendants": 882
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185741Z-1e003f16-axiom_first_lattice_noet-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "At the stated bounded scope, the derivation is a finite-dimensional algebraic closure on the admitted staggered carrier. It does not establish an unbounded positive theorem from A1+A2 because the KS-phase/staggered carrier remains scoped as admitted input.",
+      "claim_scope": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T18:59:16.113026+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T18:57:14.824372+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185443Z-1e003f16-axiom_first_lattice_noet-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded theorem on the admitted finite Grassmann/Kawamoto-Smit staggered carrier: U(1) fermion-number current (4), general infinitesimal bilateral current (5), and exact (2Z)^3 two-step Ward identity (3a), with density (3) support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-25T18:59:16.113026+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185741Z-1e003f16-axiom_first_lattice_noet-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "The local-envelope variation of the staggered bilinear rearranges to the bilateral current (5), while the central two-step generator satisfies the exact Ward identity (3a) and vanishes on shell because it commutes with the admitted staggered operator.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses do not promote density (3), C1/C3 Hilbert-space language, or the KS-phase carrier beyond this bounded scoped theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source actually constructs the staggered matrix, shift operators, currents, and two-step generator; it is not a print-only or external-comparator runner. E5 verifies the U(1) specialization and E7 verifies the repaired load-bearing two-step Ward identity; E6 is explicitly support-only, matching the note's narrowed scope. The cited Grassmann authority is retained_bounded and the framework memo is an accepted axiom premise, so the bounded on-carrier algebraic claim closes."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.497195+00:00",
+      "audit_date": "2026-06-05T16:51:44.426104+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 14.533,
+        "runner_hash": "3abf8e69064af6cd8947baeaefa6e1b415b956169668c7567bd2d637ee8e96e5",
+        "transitive_descendants": 261
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260605-164920-dc5bcc7668-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The two-step Ward identity (3a) is algebraically consistent on the admitted carrier, but the U(1) specialization does not close as written: -i*(i/2)=+1/2, not -1/2. Thus the asserted algebraic route from (5) to the displayed current (4) has a sign error.",
+      "claim_scope": "Bounded lattice Noether statement on the admitted finite Grassmann/Kawamoto-Smit staggered carrier: U(1) bilateral current closure plus exact two-step (2Z)^3 Ward identity, with the old momentum density (3) support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:51:44.426104+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Step 4a asserts that substituting the U(1) generator T_hat = iI into the bilateral current (5) and applying the convention J_real := -i J_imag gives the stated fermion-number current (4), J = -(1/2) eta_mu(x)[chibar_x chi_{x+mu}+chibar_{x+mu} chi_x].",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Fix the U(1) sign convention or the displayed current (4), then re-audit with a symbolic E5 check that cannot pass vacuously when the bilateral field monomial is nonzero.",
+      "open_dependency_paths": [
+        "KS-phase-form"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner source performs real computations for E1-E7, but E5 does not establish the contested symbolic sign: it compares propagator expectation values on a small free block where the tested symmetric nearest-neighbor bilinear is effectively zero, so the sign defect is not exposed. An independent algebraic check of the displayed U(1) specialization shows the stated convention factor gives the opposite sign from (4). Separately, the KS-phase-form remains an explicit admitted structural input, so a repaired version would still need that admission handled according to bounded-tier rules."
+    },
+    {
+      "archived_at": "2026-06-06T08:22:54.269281+00:00",
+      "archived_for_note_hash": "a30fd6532a3fa61a5a83654a52f965cad74c0aa0a6ba48ee30801465578423c2",
+      "audit_date": "2026-06-05T21:05:21.586691+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 14.533,
+        "runner_hash": "3abf8e69064af6cd8947baeaefa6e1b415b956169668c7567bd2d637ee8e96e5",
+        "transitive_descendants": 261
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-210143-049abcb57e-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The two-step Ward identity closes algebraically on the admitted KS-phase carrier, but the packet does not close the residual KS-phase-form structural admission. Also, the displayed U(1) specialization has a sign inconsistency: -i times the i-generator current in Step 4a gives +1/2 times the bilateral form, not equation (4)'s -1/2.",
+      "claim_scope": "Bounded algebraic Noether identities on the admitted finite-Grassmann staggered KS-phase carrier: U(1) current conservation and the exact (2Z)^3 two-step Ward identity, with density (3) support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:05:21.586691+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Localizing the symmetry parameter gives the bilateral current formula (5), and for the discrete translation branch the central two-step generator satisfies [M_KS,D^(2\u03c1)]=0 so \u03b4_\u03c9 S_F=\u03a3_x \u03c9_x[-(\u03c7\u0304D)_x(M\u03c7)_x+(\u03c7\u0304M)_x(D\u03c7)_x]=0 on shell.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: fix the U(1) sign convention or formula (4), restrict N3 to onsite/internal generators or prove the local-envelope step for site-mixing generators, and replace E5 with an arbitrary-bilinear symbolic check.",
+      "open_dependency_paths": [
+        "KS-phase-form (residual structural admission; no retained authority path supplied in packet)"
+      ],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner is not a trivial printout: E1-E7 perform finite-matrix algebra checks, and E7 substantively supports the narrowed two-step Ward identity. However, E5 does not independently verify the claimed algebraic sign in (5)->(4); it evaluates a propagator surface where the symmetric link bilinear cancels, so the sign error is invisible. In addition, the theorem remains bounded on the explicit KS-phase-form admission, and N3's local-alpha derivation is justified only for onsite/internal generators unless an extra argument handles arbitrary site-mixing T_xy."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:05.084835+00:00",
+      "archived_for_note_hash": "682e4df451a65e218268ca182ef7c2d81da0b4fc931e15c68b450e60515f6b37",
+      "audit_date": "2026-06-06T11:23:41.332898+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 14.566,
+        "runner_hash": "edb70cbd92e71d6f3f702adb638c93e6ce83d70e47809b9a683d5b6eb061f076",
+        "transitive_descendants": 267
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-111936-dd3e86d0d7-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded scope, the algebra closes from the retained finite-Grassmann surface plus the explicitly admitted KS staggered carrier. It does not close as an unbounded positive theorem from the minimal axioms until the KS-phase/staggered-carrier admission is retired by a retained derivation.",
+      "claim_scope": "Bounded finite-lattice Noether identity on the explicitly admitted Grassmann/Kawamoto-Smit staggered carrier: U(1) current (4), bilateral current (5) for local infinitesimal generators, and exact central two-step Ward identity (3a) for (2Z)^3 translations; density (3) is support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:23:41.332898+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T11:19:03.015158+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-111546-464f8b1329-axiom_first_lattice_noether_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-lattice Noether result on the admitted Grassmann/Kawamoto-Smit staggered carrier: U(1) fermion-number current (4)/(5) and exact (2Z)^3 central two-step Ward identity, with density (3) support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T11:23:41.332898+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-111936-dd3e86d0d7-axiom_first_lattice_noether_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-lattice Noether identity on the explicitly admitted Grassmann/Kawamoto-Smit staggered carrier: U(1) current (4), bilateral current (5) for local infinitesimal generators, and exact central two-step Ward identity (3a) for (2Z)^3 translations; density (3) is support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The local-parameter variation of the admitted staggered bilinear splits into the bilateral hop current (7c), while the two-step translation branch is the exact localized identity (3a) whose coefficients are equations-of-motion terms.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the bounded scope: a positive retag still needs retained KS-phase/staggered-carrier closure, and N3 should remain read as a local-infinitesimal-generator statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is class A: finite-dimensional algebra on the specified staggered operator, not a first-principles derivation of that carrier from the axioms. Independent sign and factor checks confirm the forward/backward reindexing gives the plus-sign bilateral current, the U(1) convention maps the i/2 current to (4), and the matrix variation gives (3a) for D=(S(+2rho)-S(-2rho))/2. The runner source genuinely constructs M, shift operators, current contractions, and localized-envelope checks; E6 is correctly scoped as support-only and does not promote density (3)."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:03.617315+00:00",
+      "archived_for_note_hash": "3f306c8046fbd62606cb1ff5f605204dd3569a3667dc4c3bf21ce027d34d2299",
+      "audit_date": "2026-06-06T16:42:29.436846+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 14.675,
+        "runner_hash": "8fe3782f37aa4931a51711dd192d0cccee53ae6e50a6c7fcd5897852054e5c92",
+        "transitive_descendants": 288
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-164020-28d553c9e9-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local-alpha bilateral-current algebra and the two-step Ward identity close on the admitted KS staggered operator. The restricted packet does not provide retained authority deriving the KS-phase staggered carrier itself from the framework axioms; the retained substep-1 authority supplies Grassmann/Berezin algebra but not the KS phase form.",
+      "claim_scope": "Bounded algebraic lattice Noether identities on the explicitly admitted finite Grassmann staggered carrier with KS phases: onsite/internal current including U(1), plus the exact (2Z)^3 two-step Ward identity; the old momentum density is support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T16:42:29.436846+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Promoting the onsite/internal parameter to a local lattice field gives \u03b4S_F[\u03b1]=\u03a3_{x,\u03bc}(1/2)\u03b7_\u03bc(x)[\u03c7\u0304_x t^A\u03c7_{x+\u03bc}+\u03c7\u0304_{x+\u03bc}t^A\u03c7_x](\u03b1_{x+\u03bc}-\u03b1_x), and the two-step translation branch is instead the localized Ward identity generated by D^(2\u03c1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained-grade derivation of the KS-phase-form staggered carrier, or provide restricted-packet evidence that this residual is an approved bounded-tier admission for this row.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The displayed sign and factor structure in the onsite/internal current checks out: reindexing the backward staggered hop gives the plus-sign bilateral form, and the U(1) real-current convention gives the stated minus sign. The runner source performs genuine matrix, symbolic, and arbitrary-field checks rather than merely printing expected values. However, those checks instantiate the KS-phase staggered carrier as input, and the packet explicitly leaves the residual KS-phase-form/staggered-Dirac carrier as an admitted open structural input rather than a retained derivation."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.166405+00:00",
+      "audit_date": "2026-06-08T18:48:30.046916+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited."
+        },
+        "dep_claim_type": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 15.271,
+        "runner_hash": "8fe3782f37aa4931a51711dd192d0cccee53ae6e50a6c7fcd5897852054e5c92",
+        "transitive_descendants": 308
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-184517-4bf6e4e8a7-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The forward/backward hop reindexing gives the plus-sign bilateral coefficient because eta_mu(x+e_mu)=eta_mu(x), and integration by parts gives the stated divergence law up to an irrelevant overall sign. The two-step shift generator is skew-adjoint and commutes with the staggered operator, giving (3a) on shell; this closes only in the bounded admitted-carrier scope.",
+      "claim_scope": "Bounded finite-lattice algebraic Noether identities on the admitted KS staggered/Grassmann carrier: the onsite/internal nearest-neighbor current including U(1), and the separate (2Z)^3 two-step Ward identity; canonical density (3) is support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T18:48:30.046916+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-08T18:44:44.366453+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260608-184107-6eb1cc0f25-axiom_first_lattice_noether_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded algebraic lattice Noether identity for onsite/internal infinitesimal symmetries of the admitted nearest-neighbor finite-Grassmann staggered carrier, plus the exact localized Ward identity for central two-step (2Z)^3 translations; density (3) is support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-08T18:48:30.046916+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260608-184517-4bf6e4e8a7-axiom_first_lattice_noether_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-lattice algebraic Noether identities on the admitted KS staggered/Grassmann carrier: the onsite/internal nearest-neighbor current including U(1), and the separate (2Z)^3 two-step Ward identity; canonical density (3) is support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained_bounded->unaudited",
+      "load_bearing_step": "Promoting the onsite/internal parameter to a site field gives the bilateral local-envelope identity (7c), while the separate two-step generator D^(2rho) commuting with M gives the localized Ward identity (3a), so the corresponding divergence/variation vanishes on shell.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Before any positive_theorem retag, re-audit the full staggered-Dirac/KS-phase carrier closure and the Cauchy-surface charge interpretation; those are outside this bounded clean verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing formulas are algebraic identities over the retained/accepted packet inputs and the explicitly bounded KS carrier scope. An independent sign/factor check agrees with (7a)-(7c), the U(1) t=i real-current convention, and the two-step Ward identity (3a). The runner source performs actual matrix, symbolic, and local-envelope checks rather than printing constants, and it uses no external comparator or tuned numerical input. This verdict does not promote the full staggered-Dirac realization gate or the support-only density (3)."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:02.658428+00:00",
+      "archived_for_note_hash": "d2a4d870fafe63d298c39ade5a35d23c250868ee9c0b82013d48b9b6ba331722",
+      "audit_date": "2026-06-11T21:57:46.211291+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited."
+        },
+        "dep_claim_type": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 16.48,
+        "runner_hash": "8fe3782f37aa4931a51711dd192d0cccee53ae6e50a6c7fcd5897852054e5c92",
+        "transitive_descendants": 1009
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-215512-04b2c87345-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local-envelope algebra itself closes on the admitted carrier: the plus-sign bilateral current and the two-step Ward identity follow by finite matrix/Grassmann algebra. The restricted packet still does not close the full staggered-Dirac/Kawamoto-Smit carrier and residual KS-phase-form realization from retained baseline authorities.",
+      "claim_scope": "Audited the bounded Noether identity on the admitted finite Grassmann staggered nearest-neighbor carrier: onsite/internal generators yield the bilateral conserved current and U(1) current, while (2Z)^3 translations yield the exact localized two-step Ward identity; the canonical momentum density (3) is support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T21:57:46.211291+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Promoting the onsite/internal parameter to a local envelope gives the reindexed bilateral variation (7c), and the discrete translation branch is instead the localized two-step Ward identity (3a) from a generator D^(2rho) commuting with M_KS.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: close the full staggered-Dirac/Kawamoto-Smit kinetic carrier, including the residual KS-phase-form structural input, with retained-grade authority or keep this row bounded/conditional.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Independent sign and factor checks of (7c), the U(1) specialization, and (3a) match the source note, and the runner source performs finite matrix/direct-variation checks rather than merely printing expected results. There is no external comparator or tuned numerical match. The claim remains conditional because the theorem consumes an admitted staggered/Grassmann KS carrier and residual KS-phase/kinetic realization not fully closed by the restricted packet; the eta and chirality bridge notes support sign surfaces but do not close the whole carrier gate."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:20.922364+00:00",
+      "archived_for_note_hash": "7e687f85a99c6c2969fe451436fd1a403fbdbe514adbb5f358b0903b5f6a957d",
+      "audit_date": "2026-06-12T20:38:20.731752+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited."
+        },
+        "dep_claim_type": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 19.86,
+        "runner_hash": "8fe3782f37aa4931a51711dd192d0cccee53ae6e50a6c7fcd5897852054e5c92",
+        "transitive_descendants": 928
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-203412-3ef1118929-axiom_first_lattice_noether_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-Grassmann/local-envelope algebra closes on the admitted KS staggered carrier. The retained-grade chain from framework axioms to that carrier still does not close because the residual KS-phase/staggered-realization input routes through an unaudited gate.",
+      "claim_scope": "Bounded lattice Noether identity on the admitted staggered/Grassmann KS carrier: onsite/internal infinitesimal symmetries give the bilateral current (5), U(1) gives the real current (4), and (2Z)^3 two-step translations give the exact Ward identity (3a), with density (3) support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T20:38:20.731752+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Promoting the onsite/internal parameter to a local field gives the bilateral variation (7c), and the translation branch is separately reduced to the localized two-step Ward identity (3a) using [M_KS,D^(2rho)]=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade closure for the KS-phase-form/staggered-Dirac carrier route, or keep this row bounded/conditional.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner source computes the stated commutators, local-envelope identities, symbolic U(1) sign convention, and two-step Ward identity rather than merely printing PASS lines. An independent variation/reindexing check agrees with the plus-sign bilateral current and the real-current factor J_real = i J_phase. However the source still consumes the KS staggered carrier/phase form through STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, marked unaudited in the packet, and explicitly keeps that structural input admitted rather than retained. The result is therefore conditional/bounded on that admitted carrier, not clean from retained inputs alone."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.424101+00:00",
+      "audit_date": "2026-06-21T06:28:28.920209+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "For any stated realized-class finite-range sublattice-periodic Hermitian hopping kernel whose zero branches satisfy hypothesis (Z), the defined half-filled free-Fermi band-integral probe has u(T)=g_eff(7/8)(\u03c0^2/30)T^4+O(T^5) with finite g_eff=sum |det V|^-1; the extended-surface and quadratic-zero examples certify that both clauses of (Z) are load-bearing.",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Given retained-bounded FSB-K with FSB-CL intact and the retained Z certificate, the finite-g_eff CL requirement distinguishes the two constructed K0/K1 kinetic kernels: K1 satisfies CL, K0 violates it, and phi = -1 is selected only within the declared two-class surface and free-Fermi probe boundary.",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over the one-qubit C^2 site carrier, translation and proper-cubic covariance up to site-local U(1) frame collapse the kinetic family to the two flux classes {+1,-1}; the site-local absorbing frame exists and is unique up to gauge times global frame on the flux(-1) branch; the final flux(-1) selector is not forced by the stated constraints.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the two explicitly constructed Z^3 nearest-neighbor kernels, the flux-(-1) Kawamoto-Smit kernel satisfies the stated point-like linear-cone condition (Z) with eight corner zeros and V = 2I, while the flux-(+1) scalar kernel violates (Z) by an extended zero surface and singular cone direction."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 19.872,
+        "runner_hash": "a2979bff0a5ea8a11ec7b59f48dee73e59a9b5eeb712bbc40c6c11825dc3542d",
+        "transitive_descendants": 936
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_lattice_noether_theorem_note_2026-04-29-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded carrier scope, the local-alpha algebra and two-step Ward identity follow from the supplied finite-Grassmann surface and KS nearest-neighbor phase structure. The result does not promote the full staggered-Dirac realization gate or the support-only momentum density (3).",
+      "claim_scope": "Bounded finite-lattice Noether identities on the admitted staggered/Grassmann Kawamoto-Smit carrier: onsite/internal U(1) and general onsite/internal bilateral current (5), plus the separate (2Z)^3 two-step localized Ward identity (3a); density (3) is support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:28:28.920209+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T06:24:59.136069+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_lattice_noether_theorem_note_2026-04-29-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-lattice Grassmann/Kawamoto-Smit Noether algebra: onsite/internal current (5), U(1) current (4), and exact (2Z)^3 two-step Ward identity (3a) on the admitted staggered carrier; density (3) is support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:28:28.920209+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_lattice_noether_theorem_note_2026-04-29-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-lattice Noether identities on the admitted staggered/Grassmann Kawamoto-Smit carrier: onsite/internal U(1) and general onsite/internal bilateral current (5), plus the separate (2Z)^3 two-step localized Ward identity (3a); density (3) is support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "The proof promotes an onsite/internal symmetry parameter to a site field to obtain the bilateral local-alpha identity (7c), while treating two-step translation separately through the exact localized Ward identity (3a) generated by D^(2rho).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the Cauchy-surface/charge-conservation wording remains non-load-bearing relative to the finite divergence identity and that bounded-tier carrier treatment is preserved.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is algebraic closure over the admitted/retained staggered carrier, not a numerical fit or renaming. The runner source actually constructs the staggered matrix, local U(1) variations, two-step shift generator, and source-boundary checks; it does not merely print expected PASS lines. The theorem is clean only as a bounded theorem on the named carrier, with the translation branch narrowed to (3a) and (3) left support-only."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.804752+00:00",
+      "audit_date": "2026-06-30T17:32:57.837545+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "For any supplied finite-range sublattice-periodic Hermitian one-particle hopping kernel on the stated Z^3 single-ladder surface whose zero set is a nonempty finite set of linear cones satisfying (Z), the half-filled free-Fermi probe has u(T)=g_eff(7/8)(pi^2/30)T^4+O(T^5), with g_eff=sum |det V_jb|^{-1}; the row does not certify thermal equilibrium, kernel realization, or which branch satisfies (Z).",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Within the explicitly scoped K0/K1 kinetic surface, retained_bounded FSB-K plus the retained (Z) certificate and self-contained mode-sum computations show K1 has finite g_eff while K0 has T^-2 divergent g_eff, selecting phi = -1 at the chain's retained-bounded grade.",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C^2 qubit carrier, with translation/proper-cubic covariance up to site-local U(1) frame and site-local absorption scope, the kinetic classes collapse to flux \u00b11; P-SD is derived on the flux(-1) branch; the flux(-1) selector is not forced because K0 satisfies the imposed constraints.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic B}, the physical per-site dimension 2 excludes B, admits G, and G carries the Berezin determinant readout; statistics forcing is not audited or claimed.",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the explicitly constructed NN K1/K0 lattice kernels on the retained finite one-particle/Fock surface, K1 satisfies the restated finite point-like linear-cone hypothesis (Z) with V=2I, C=2/3, r=1 and the stated cone weights, while K0 has an exact zero line and singular cone direction."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 19.872,
+        "runner_hash": "a2979bff0a5ea8a11ec7b59f48dee73e59a9b5eeb712bbc40c6c11825dc3542d",
+        "transitive_descendants": 936
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T172917Z-5a7c411d-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded Noether algebra itself closes as a class-A finite Grassmann/KS identity, but current audit-loop math-audit policy does not allow audited_clean when the restricted source packet contains wrong quantitative prose or stale runner counts. The source note's '(2Z)^3 index-2' statement is mathematically wrong for Z^3, and the kinetic-class runner count drifts from the cited authority's PASS=28, so the second audit's non-clean verdict is the applyable conservative result.",
+      "claim_scope": "Bounded lattice Noether identity on the admitted finite Grassmann Kawamoto-Smit carrier: onsite/internal generators give the bilateral conserved current and U(1) real current; the (2Z)^3 translation branch is the localized two-step Ward identity, with density (3) support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T17:32:57.837545+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T17:24:53.393860+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T172453Z-15bb48d2-axiom_first_lattice_noet",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-Grassmann/Kawamoto-Smit lattice Noether identities on the admitted staggered carrier: the onsite/internal bilateral current, its U(1) specialization, and the (2Z)^3 central two-step Ward identity, with density (3) support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-30T17:29:08.091126+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T172908Z-382bb522-axiom_first_lattice_noet",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded lattice Noether identity on the admitted finite Grassmann Kawamoto-Smit carrier: onsite/internal generators give the bilateral conserved current and U(1) real current; the (2Z)^3 translation branch is the localized two-step Ward identity, with density (3) support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-30T17:32:57.837545+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T172917Z-5a7c411d-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit correctly identified the load-bearing algebra but missed source-packet quantitative drift that blocks terminal clean status under the current math-audit rules.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The bounded Noether algebra itself closes as a class-A finite Grassmann/KS identity, but current audit-loop math-audit policy does not allow audited_clean when the restricted source packet contains wrong quantitative prose or stale runner counts. The source note's '(2Z)^3 index-2' statement is mathematically wrong for Z^3, and the kinetic-class runner count drifts from the cited authority's PASS=28, so the second audit's non-clean verdict is the applyable conservative result.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: correct the source-packet drift to index-8 for (2Z)^3 in Z^3 and PASS=28 for the kinetic-class runner citation, then re-audit the same bounded class-A core.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The bounded Noether algebra itself closes as a class-A finite Grassmann/KS identity, but current audit-loop math-audit policy does not allow audited_clean when the restricted source packet contains wrong quantitative prose or stale runner counts. The source note's '(2Z)^3 index-2' statement is mathematically wrong for Z^3, and the kinetic-class runner count drifts from the cited authority's PASS=28, so the second audit's non-clean verdict is the applyable conservative result."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.312750+00:00",
+      "audit_date": "2026-07-01T21:19:42.028362+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "Conditional asymptotic theorem: for any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit/Fock surface whose zero set is finite and linearly conical, the declared half-filled free-Fermi probe has u(T)=g_eff(7/8)(\u03c0\u00b2/30)T\u2074+O(T\u2075), with g_eff=\u03a3|det V_jb|^{-1}; the row does not derive equilibrium, kernel realization, branch selection, or hypothesis (Z) for a physical kernel.",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Within the stipulated two-class kinetic surface and using retained-bounded FSB-K plus the retained Z-certificate, the finite-g_eff CL criterion is satisfied by K1 and violated by K0, so the selected surface member has plaquette flux phi = -1; surface forcing, thermal equilibrium, and wholesale P-KIN retirement remain outside scope.",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over one-site M_2(C), with translation/proper-cubic covariance up to local U(1) frame and simply connected topology imposed, the kinetic systems collapse to flux +/-1 classes; the P-SD absorbing frame exists and is unique on flux(-1); the flux(-1) selector is not forced because K0 also satisfies the constraints.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic CCR B}, the accepted qubit/M_2(C) per-site premise plus retained dim_C H_x = 2 row exclude B by dimension and leave G, with the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the explicitly defined NN scalar K0 and Kawamoto-Smit K1 hopping kernels on periodic Z^3 one-particle blocks, K1 has the stated exact point-like linear-cone zero-set data and K0 has the stated extended zero-line/singular-cone violation; no flux selection, FSB-K theorem content, or thermal conclusion was audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 19.872,
+        "runner_hash": "a2979bff0a5ea8a11ec7b59f48dee73e59a9b5eeb712bbc40c6c11825dc3542d",
+        "transitive_descendants": 936
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T211942Z-dcf8f277-axiom_first_lattice_noet",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed sign, reindexing, and matrix-ordering steps close as finite algebra once the staggered/Grassmann KS carrier and phase form are admitted. The proof does not derive that carrier from the axioms, so the correct scope remains bounded rather than positive.",
+      "claim_scope": "Bounded finite-lattice Noether identity on the admitted Kawamoto-Smit/Grassmann nearest-neighbor carrier: onsite/internal current (5), its U(1) specialization (4), and the exact localized two-step (2Z)^3 Ward identity (3a); density (3), site-mixing symmetries, taste shifts, anomaly closure, and Hilbert-sector corollaries are not theorem-grade in this audit.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T21:19:42.028362+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T21:16:24.970828+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T211624Z-fefecc71-axiom_first_lattice_noet",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded lattice Noether identity on the admitted finite Grassmann/Kawamoto-Smit staggered carrier: the onsite/internal U(1) bilateral current and the separate (2Z)^3 two-step Ward identity close; the old momentum density is support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T21:19:42.028362+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T211942Z-dcf8f277-axiom_first_lattice_noet",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-lattice Noether identity on the admitted Kawamoto-Smit/Grassmann nearest-neighbor carrier: onsite/internal current (5), its U(1) specialization (4), and the exact localized two-step (2Z)^3 Ward identity (3a); density (3), site-mixing symmetries, taste shifts, anomaly closure, and Hilbert-sector corollaries are not theorem-grade in this audit.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "Promoting the onsite/internal symmetry parameter to a site field gives the bilateral local-alpha variation (7c), while the discrete translation branch is instead the exact localized two-step Ward identity (3a), both vanishing on shell for arbitrary envelopes on the admitted staggered/Grassmann carrier.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the bounded carrier scope and do not cite support-only density (3) or the Hilbert-space charge-sector corollaries as theorem-grade outputs of this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing proof is an algebraic closure over the admitted carrier, not a numerical match or definition substitution. The runner source constructs the staggered matrix and two-step generators, checks the U(1) sign directly on arbitrary sampled fields, verifies the symbolic arbitrary-bilinear sign identity, and checks the localized two-step Ward identity; E8 is only a source-dependency boundary check. All provided direct dependencies are accepted-premise or retained-grade, including retained_bounded bounded suppliers, so the bounded theorem chain closes while not promoting the carrier itself."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.411882+00:00",
+      "audit_date": "2026-07-02T09:00:10.424956+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class finite-range sublattice-periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying hypothesis (Z) has u(T)=sum |det V|^-1 (7/8)(pi^2/30) T^4 + O(T^5); the explicit non-(Z) witness kernels only certify that both clauses of (Z) are load-bearing.",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "Exact support for the eta Z_2 scalar base connection on the Z^3 coordinate graph, uniform plaquette curvature -1, and rectangular base-loop holonomy (-1)^area, without asserting a UD_2 braid-class bridge.",
+          "minimal_axioms": null,
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Within the licensed K0/K1 two-class kinetic surface, retained-bounded FSB-K plus the retained (Z) certificate select K1/phi = -1 by the finite-g_eff thermal/spectral criterion; this does not prove the kinetic surface wholesale or thermal equilibrium of the realized dynamics.",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, with Omega(x)=epsilon(x)Omega_global and edgewise anticommutation for arbitrary nearest-neighbor odd stencils.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly restricted two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic oscillator B}, the physical per-site dimension 2 excludes B, admits G, and G carries the cited Berezin determinant readout; no statistics forcing or hard-core-boson exclusion is audited.",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 one-particle kernels on the Z^3 finite periodic/Bloch surface, K1 satisfies the restated point-like linear-cone (Z) condition with zeros {0,pi}^3 and V=2I, while K0 has an extended zero surface/zero line and a singular tangent cone; no flux selection or thermal conclusion is audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "positive_theorem",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06": "retained",
+          "minimal_axioms": "meta",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+          "minimal_axioms",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 19.872,
+        "runner_hash": "a2979bff0a5ea8a11ec7b59f48dee73e59a9b5eeb712bbc40c6c11825dc3542d",
+        "transitive_descendants": 936
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T090010Z-e21b115d-axiom_first_lattice_noet",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The onsite current derivation is a direct finite Grassmann bilinear variation: the backward-hop reindexing gives the plus-sign bilateral form, and U(1) multiplication by i gives the displayed real-current sign. The translation claim is correctly narrowed to the D^(2\u03c1) localized Ward identity; no theorem-grade derivation of the old density (3) is asserted.",
+      "claim_scope": "Bounded lattice Noether identities on the admitted finite-Grassmann Kawamoto-Smit staggered carrier: the onsite/internal U(1) bilateral current closes with the stated sign, and the (2Z)^3 translation branch closes only as the exact two-step Ward identity, with density (3) support-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T09:00:10.424956+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T08:56:59.535317+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T085659Z-04fd734e-axiom_first_lattice_noet",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-Grassmann lattice Noether identities on the admitted staggered/Kawamoto-Smit carrier: onsite/internal U(1) and internal current closure plus the separate (2Z)^3 two-step Ward identity; the canonical momentum density is support-only and site-mixing/full carrier-selection claims are out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T09:00:10.424956+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T090010Z-e21b115d-axiom_first_lattice_noet",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded lattice Noether identities on the admitted finite-Grassmann Kawamoto-Smit staggered carrier: the onsite/internal U(1) bilateral current closes with the stated sign, and the (2Z)^3 translation branch closes only as the exact two-step Ward identity, with density (3) support-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "Promoting an onsite/internal symmetry parameter to a site field gives \u03b4S_F[\u03b1]=\u03a3_{x,\u03bc}(1/2)\u03b7_\u03bc(x)[\u03c7\u0304_x t^A\u03c7_{x+\u03bc}+\u03c7\u0304_{x+\u03bc}t^A\u03c7_x](\u03b1^A_{x+\u03bc}-\u03b1^A_x), while the discrete translation branch is separately the localized two-step Ward identity with D^(2\u03c1) commuting with M_KS.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check downstream uses do not cite the support-only density (3), Cauchy-surface charge language, or Hilbert-space superselection corollaries as theorem-grade content beyond this bounded Noether identity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The mathematical core is an algebraic closure over the admitted staggered/Grassmann carrier and retained-grade one-hop inputs; retained_bounded dependencies are acceptable for the bounded claim tier. The runner source computes the finite staggered operator, symbolic U(1) sign identity, direct local-envelope variation, and field-level two-step Ward identity rather than merely printing constants. The clean verdict is scoped to the bounded carrier theorem only: it does not promote the staggered carrier from admitted to axiom-derived, and it leaves the canonical momentum density (3) as support-only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_lattice_noether_check.py",
+  "title": "Axiom-First Lattice Noether's Theorem on Cl(3) \u2297 Z^3",
+  "transitive_descendants": 737,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

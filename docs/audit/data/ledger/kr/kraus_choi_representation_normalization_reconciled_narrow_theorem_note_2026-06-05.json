@@ -1,0 +1,339 @@
+{
+  "audit_date": "2026-07-11T22:29:03.496521+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "load_bearing_score": 9.311,
+    "runner_hash": "d27e0e8dbc183b546ce45112994ee8edb82d25549fad36d2e681d2f2c9083ff1",
+    "transitive_descendants": 448
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00349-kraus_choi_representation_no",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Direct matrix-unit expansion proves the reconstruction and partial-trace identities for arbitrary finite d, while spectral decomposition of a positive Choi matrix gives the stated Kraus operators and operator-sum map. The accepted Qubit premise supplies the finite-region matrix-algebra substrate without adding an open physical bridge.",
+  "claim_id": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+  "claim_scope": "Finite-dimensional Kraus\u2013Choi correspondence on finite qubit-region matrix algebras, using the unnormalized Choi convention consistently for reconstruction, Kraus extraction, CP/TP conditions, and the two stated mixed-convention scaling failures.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": "2026-07-11T22:29:03.496521+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-07-11T22:05:46.907293+00:00",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00339-kraus_choi_representation_no",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite-dimensional Kraus\u2013Choi correspondence on M_d(\u2102), applied to finite qubit regions, using one unnormalized Choi convention consistently for reconstruction, Kraus extraction, complete positivity, trace preservation, and the two stated mixed-convention errors.",
+      "claim_type": "positive_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-07-11T22:29:03.496521+00:00",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00349-kraus_choi_representation_no",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Finite-dimensional Kraus\u2013Choi correspondence on finite qubit-region matrix algebras, using the unnormalized Choi convention consistently for reconstruction, Kraus extraction, CP/TP conditions, and the two stated mixed-convention scaling failures.",
+      "claim_type": "positive_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 10.006,
+  "load_bearing_step": "Under the unnormalized maximally entangled-vector convention, expanding the Choi matrix in matrix units gives exactly \u03a6(\u03c1)=Tr\u2081[(\u03c1\u1d40\u2297\ud835\udfd9)C_\u03a6] and K_a=\u221a\u03bb_a\u00b7reshape(v_a)\u1d40, with no additional d-factor.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d677232f48c2aebf009eae2a75b763d5deddc87bfad85c5f208aea104939dc69",
+  "note_path": "docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.502695+00:00",
+      "audit_date": "2026-06-06T12:05:01.037530+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d27e0e8dbc183b546ce45112994ee8edb82d25549fad36d2e681d2f2c9083ff1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-120352-4fcc77130b-kraus_choi_representation_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed identities close by direct finite-dimensional index algebra: the partial trace gives sum_ij rho_ij Phi(E_ij)=Phi(rho), and the spectral vectors of a PSD Choi matrix vectorize the Kraus operators with the stated transpose convention. The accepted minimal axiom supplies only the finite qubit matrix algebra substrate; no extra physical bridge is used.",
+      "claim_scope": "Audited the single-convention unnormalized Choi normalization bookkeeping for finite-region qubit algebras A_Lambda ~= M_d(C), including inverse map, Kraus extraction, CP/TP conditions, and the stated mixed-convention d-factor failures.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T12:05:01.037530+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "With unnormalized |Omega>=sum_i |i>|i|, C_Phi=sum_ij |i><j| tensor Phi(|i><j|) reconstructs by Phi(rho)=Tr_1[(rho^T tensor I) C_Phi] and yields Kraus operators K_a=sqrt(lambda_a) reshape(v_a)^T with no extra d or sqrt(d) factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the vectorization transpose convention and the output-vs-input partial trace labels, since those are the only likely places for a convention slip.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 16,
+        "C": 4,
+        "D": 4,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The note's load-bearing work is normalization reconciliation, not a new empirical or tuned numerical claim. The runner source genuinely computes the symbolic M_2 inverse identity, random Stinespring CPTP checks for d=2 and d=4, named channel checks, and explicit normalized/unnormalized mismatch guards; it does not merely print constants or import a contested premise. The all-d statement is the standard finite-dimensional Kraus-Choi algebra with the unnormalized convention, and the packet's accepted axiom premise correctly supplies the qubit finite-region carrier."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.880295+00:00",
+      "audit_date": "2026-07-01T12:54:25.038005+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.443,
+        "runner_hash": "d27e0e8dbc183b546ce45112994ee8edb82d25549fad36d2e681d2f2c9083ff1",
+        "transitive_descendants": 86
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T125425Z-b5489b93-kraus_choi_representatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The normalization factors follow by direct matrix-unit contraction and vectorization order: Tr(rho^T |i><j|)=rho_ij and (I tensor K)|Omega> has components K_{m,i}. CP/TP conditions then follow from standard finite-dimensional linear algebra and the accepted qubit-site premise.",
+      "claim_scope": "Finite-dimensional Kraus-Choi correspondence on M_d(C), applied to finite qubit regions A_Lambda ~= tensor_x M_2(C), with unnormalized Choi convention and consistent d-factor bookkeeping.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T12:54:25.038005+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Under the unnormalized convention |Omega> = sum_i |i>|i>, C_Phi = sum_ij |i><j| tensor Phi(|i><j|) is paired with Phi(rho)=Tr_1[(rho^T tensor I)C_Phi] and K_a=sqrt(lambda_a) reshape(v_a)^T, with no d or sqrt(d) factors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the tensor-index ordering convention for reshape(v)^T and Tr_2 over the output factor, since those are the only plausible normalization-slip points.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The restricted packet states a narrow finite-dimensional theorem and fixes one Choi convention end-to-end. Independent factor checks confirm the inverse formula, Kraus reshape transpose, and output/input partial trace identities have the stated normalization. The runner performs substantive symbolic and finite numeric algebra checks, including the two mixed-convention failure modes, with no external comparator or tuned input."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.457222+00:00",
+      "audit_date": "2026-07-02T01:54:29.728342+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.443,
+        "runner_hash": "d27e0e8dbc183b546ce45112994ee8edb82d25549fad36d2e681d2f2c9083ff1",
+        "transitive_descendants": 86
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T015429Z-53a58090-kraus_choi_representatio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Expanding rho=sum_ab rho_ab E_ab gives Tr_1[(rho^T\u2297I)C_Phi]=sum_ab rho_ab Phi(E_ab)=Phi(rho). The reshape transpose follows from (I\u2297K)|Omega> components, and Tr_2 C_Phi=I_d is exactly trace preservation on the matrix units.",
+      "claim_scope": "Finite-dimensional Kraus-Choi correspondence on M_d, applied to finite qubit regions, with one unnormalized Choi convention and consistent d-factor bookkeeping for inverse, Kraus extraction, CP, and TP conditions.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:54:29.728342+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "With the unnormalized |Omega> convention, C_Phi=sum_ij |i><j|\u2297Phi(|i><j|), Phi(rho)=Tr_1[(rho^T\u2297I)C_Phi], K_a=sqrt(lambda_a) reshape(v_a)^T, and TP iff Tr_2 C_Phi=I_d, all with no extra d or sqrt(d) factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the finite-region tensor-product substrate alignment with the current minimal-axiom wording; the Kraus-Choi normalization algebra itself closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing content is a finite-dimensional algebraic normalization reconciliation, not a tuned numerical match or a new physical bridge. The cited minimal axiom node is an accepted premise for the qubit matrix substrate, and the remaining steps are standard matrix-algebra identities under the chosen unnormalized convention. The runner source performs real symbolic and numerical checks of the inverse, partial traces, Kraus extraction, CP boundary, and mixed-convention failure factors; it does not merely print hard-coded pass counts."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.107520+00:00",
+      "audit_date": "2026-07-08T23:29:07.825337+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.629,
+        "runner_hash": "d27e0e8dbc183b546ce45112994ee8edb82d25549fad36d2e681d2f2c9083ff1",
+        "transitive_descendants": 69
+      },
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-audit-loop-20260708",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": "cross_confirmation_disagreement",
+      "chain_closes": true,
+      "chain_closure_explanation": "The source fixes one convention and proves the d-factor bookkeeping directly from finite-dimensional matrix algebra over the qubit substrate; the runner verifies exact M2 reconstruction, randomized M2/M4 CPTP round trips, named qubit channels, CP boundary behavior, and both mixed-convention failure modes.",
+      "claim_scope": "Finite-region Kraus-Choi correspondence on the qubit matrix algebra using one unnormalized Choi convention end-to-end, including the matching inverse, Kraus extraction, and CP/TP normalization conditions.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:53:47.431423+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T23:29:07.825337+00:00",
+          "auditor": "codex-audit-loop-20260708",
+          "auditor_family": "codex-current",
+          "auditor_model": "gpt-5-codex",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-region Kraus-Choi correspondence on the qubit matrix algebra using one unnormalized Choi convention end-to-end, including the matching inverse, Kraus extraction, and CP/TP normalization conditions.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:07:07.988447+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00011-kraus_choi_representation_no",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The finite-dimensional Kraus\u2013Choi reconstruction, CP, TP, and Kraus-extraction identities under the consistently unnormalized Choi convention, including their finite-region qubit-algebra specialization.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "disagreement"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "With the unnormalized maximally entangled vector, the Choi matrix has no 1/d prefactor, the inverse map has no d-factor, and Kraus extraction absorbs the eigenvalue with no extra sqrt(d).",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:medium->critical: first-pass audit (auditor=codex-audit-loop-20260708, family=codex-current, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 19,
+        "D": 1,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The audited claim is a normalization-reconciliation theorem, not a new physical dynamics claim. Within that boundary, the unnormalized Choi convention, inverse formula, Kraus extraction, and TP/CP conditions close from finite-dimensional linear algebra on the qubit algebra supplied by the minimal axioms. The runner computes the load-bearing links and the two mixed-convention counterchecks rather than merely printing the target conclusion; residual risk is limited to the explicitly excluded thermodynamic-limit and record-dynamics applications."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 2,
+    "B": 16,
+    "C": 4,
+    "D": 4,
+    "total_pass": 26
+  },
+  "runner_path": "scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py",
+  "title": "Kraus\u2013Choi Correspondence With Reconciled Choi Normalization (Narrow)",
+  "transitive_descendants": 726,
+  "verdict_rationale": "The formulas are a genuine algebraic normalization closure, not a definition, tuned numerical match, or external-comparator inference. The runner source performs substantive symbolic and numerical calculations, including exact M\u2082 reconstruction, d=2 and d=4 round trips, named channels, a non-CP boundary example, and both mixed-convention scaling defects; it does not hard-code the conclusions. Although the finite tests alone would not establish the universal theorem, the all-d result follows directly from the displayed matrix-unit and spectral-decomposition algebra."
+}

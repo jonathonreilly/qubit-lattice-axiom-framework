@@ -1,0 +1,213 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "523383e5457aa6dd68ba1a774d9f7303baba1c573d2b467fbf5b89463815cbe4",
+  "note_path": "docs/RP_TWO_STEP_TRANSFER_MATRIX_SINGULAR_MODE_C2_TIGHTENING_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:23.858147+00:00",
+      "audit_date": "2026-06-06T00:28:19.205292+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "95117356ed78357c1d7ad107fb2809fe0b1b96faf3cbfbe57cd3931118835c1a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260606-002715-35dfd4062a-rp_two_step_transfer_matrix_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded parent supplies the singular-mode matrix convention. Direct 2x2 algebra gives characteristic polynomial lambda^2+2m lambda-1, roots of opposite sign, and non-negative squared eigenvalues for T_even(m)^2.",
+      "claim_scope": "Conditional singular-mode algebra: assuming the parent half-step convention T_even(m)=[[-2m,1],[1,0]] for m>0 at sin(p)=0, the one-step matrix is indefinite and its square has non-negative spectrum.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-06T00:28:19.205292+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Since T_even(m) is real symmetric with eigenvalues -m\u00b1sqrt(m^2+1), T_even(m)^2 has eigenvalues lambda_+^2 and lambda_-^2, both non-negative.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the claim-type retag from seeded bounded_theorem to decoration under the algebraic-decoration policy.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The note adds only standard algebra to one retained-grade upstream parent: trace/determinant give the stated roots, the inequalities hold for every m>0, and squaring a diagonalizable real-symmetric matrix squares its eigenvalues. The runner performs finite numerical checks of the same algebra for sample masses and does not import external comparators or tuned values. The result does not prove the parent Grassmann/Berezin bridge or any broader RP theorem, so the proper classification is algebraic decoration of the parent claim."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.950064+00:00",
+      "audit_date": "2026-06-07T01:28:21.289992+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "95117356ed78357c1d7ad107fb2809fe0b1b96faf3cbfbe57cd3931118835c1a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260607-012723-e1128b5edc-rp_two_step_transfer_matrix_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited parent, marked retained_bounded, supplies the singular-mode matrix convention. From that input, the determinant, eigenvalue signs, and squared-spectrum conclusion follow by standard 2x2 real-symmetric matrix algebra.",
+      "claim_scope": "Conditional on the parent singular-mode half-step matrix convention, for m > 0 the 2x2 singular-mode one-step matrix is indefinite and its two-step square has non-negative spectrum.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-07T01:28:21.289992+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "The characteristic polynomial of T_even(m) is lambda^2 + 2m lambda - 1, with roots -m +/- sqrt(m^2+1), so T_even has one negative eigenvalue while T_even(m)^2 has squared, non-negative eigenvalues.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the inferred parent claim_id matches the ledger row name for docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The packet closes only as an algebraic tightening over a single retained_bounded parent convention plus standard mathematics. The runner performs finite 2x2 algebra checks at sampled positive masses and does not import external comparators or introduce a new first-principles construction. The source note's own scope excludes the Grassmann/Berezin bridge, gauge extensions, and any lift of the parent status. Under the tie-break rule, this is decoration rather than an independent clean bounded theorem."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:31.286774+00:00",
+      "audit_date": "2026-07-10T04:31:42.937166+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "95117356ed78357c1d7ad107fb2809fe0b1b96faf3cbfbe57cd3931118835c1a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00095-rp_two_step_transfer_matrix_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained_bounded parent supplies the singular-mode matrix, and its characteristic polynomial, eigenvalue signs, and squared spectrum follow by elementary algebra. No Grassmann/Berezin bridge or broader reflection-positivity conclusion is needed or established.",
+      "claim_scope": "Conditional on the retained parent's singular-mode half-step matrix convention, the audit covers only the finite 2x2 algebra showing that T_even(m) is indefinite and T_even(m)^2 has non-negative spectrum for m > 0.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:31:42.937166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Since the real-symmetric matrix T_even(m) has eigenvalues lambda_+(m) and lambda_-(m), its square has eigenvalues lambda_+(m)^2 and lambda_-(m)^2, both non-negative.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner genuinely evaluates the stated matrices and eigenvalue formulas, but all load-bearing checks are algebraic identities over the single retained parent convention. With no external-comparator checks and no independent framework-level construction, the row is a correct algebraic decoration of the parent claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_rp_two_step_transfer_matrix_singular_mode_c2_tightening_2026_06_02.py",
+  "title": "RP Two-Step Transfer Matrix Singular-Mode C2 Tightening",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,329 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gluon_tree_level_masslessness_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_closure_note",
+    "graph_first_su3_integration_note",
+    "g_bare_structural_normalization_theorem_note_2026-04-18"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0de564b6848297b0fd5607b0291b16c6ada2fa206132190146bf3d42031f3d69",
+  "note_path": "docs/GLUON_TREE_LEVEL_MASSLESSNESS_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-11T08:32:51.396496+00:00",
+      "archived_for_note_hash": "1c43bd220fb99e1fdaf9c1cf8b02cb7607214b5fc782e736155d1393ff1ac0ea",
+      "audit_date": "2026-05-02T23:27:26.640691+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited dependencies retain bounded structural su(3) closure on graph-first/cubic surfaces, but they do not themselves construct a local Lorentz-covariant Yang-Mills connection, gauge action, or propagator for framework gluons. The runner verifies the standard Yang-Mills algebra after assuming that bridge, not the bridge from the retained framework structure.",
+      "claim_scope": "Tree-level gluon masslessness on the framework's structural SU(3) surface, conditional on a retained bridge from graph-first su(3) closure to a local Lorentz-covariant Yang-Mills SU(3) gauge connection/action and propagator.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T23:27:26.640691+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "Let A_mu^a be the SU(3) gauge connection on the framework's retained SU(3) gauge action surface, obeying the standard non-abelian gauge transformation law; then A_mu^a A^{a mu} is not gauge invariant unless m=0 and the kinetic inverse propagator has pole p^2=0.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge theorem and runner deriving the local SU(3) gauge connection/action and quadratic propagator surface from the graph-first structural su(3) closure.",
+      "open_dependency_paths": [
+        "docs/NATIVE_GAUGE_CLOSURE_NOTE.md",
+        "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the proof imports the standard SU(3) gauge-connection transformation law, Lorentz-covariant Yang-Mills kinetic term, and propagator surface as if they were already retained framework outputs. Why this blocks: structural su(3) closure is not by itself a theorem that the framework has a local Yang-Mills gauge field A_mu^a with the standard action and tree-level propagator. Repair target: add a retained bridge theorem and runner deriving the local SU(3) gauge connection/action and quadratic propagator surface from the graph-first structural su(3) closure. Claim boundary until fixed: in an assumed standard SU(3) Yang-Mills theory, the explicit mass term A_mu^a A^{a mu} is gauge-noninvariant and the tree-level kinetic propagator is massless."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:25.850189+00:00",
+      "audit_date": "2026-05-11T17:07:05.463401+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "941a654bb1d50ef0efd8cb91a07bc95293c2efc7836b71301563a8366ea7d826",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited dependencies retain bounded structural graph-first SU(3), but they do not construct the local Lorentz-covariant Yang-Mills connection, gauge transformation law, action, or propagator for framework gluons. The runner verifies the standard Yang-Mills algebra after that bridge is assumed, not the bridge from the retained graph structure.",
+      "claim_scope": "Tree-level framework gluon masslessness claim: identify the retained graph-first structural SU(3) surface with a local Lorentz-covariant SU(3) Yang-Mills connection/action, then use the standard no-gauge-invariant-mass-term algebra to infer a p^2 = 0 gluon propagator pole.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-11T17:07:05.463401+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:graph_first_su3_integration_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Let A_mu^a be the SU(3) gauge connection on the framework's retained SU(3) gauge action surface; then the absence of a gauge-invariant quadratic mass term forces the tree-level gluon propagator pole to p^2 = 0.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem - derive the local Lorentz-covariant SU(3) Yang-Mills connection/action/propagator from the retained graph-first SU(3) surface, then rerun the masslessness audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the load-bearing bridge is the assertion that the retained structural SU(3) surface supplies a local Lorentz-covariant Yang-Mills connection/action with the standard transformation law and propagator. Why this blocks: NATIVE_GAUGE_CLOSURE_NOTE and GRAPH_FIRST_SU3_INTEGRATION_NOTE retain a bounded graph-first su(3) commutant structure, not the framework-to-Yang-Mills field/action bridge needed for tree-level gluon masslessness. Repair target: add a retained bridge theorem deriving the local SU(3) gauge connection, F_mu_nu action, gauge transformation law, and quadratic propagator from the graph-first surface. Claim boundary until fixed: the standard Yang-Mills algebra theorem is supported given an admitted SU(3) connection, but framework gluon masslessness is conditional."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.403799+00:00",
+      "audit_date": "2026-05-22T17:17:21.496468+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "941a654bb1d50ef0efd8cb91a07bc95293c2efc7836b71301563a8366ea7d826",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T171630Z-58079cef-gluon_tree_level_massles-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic Yang-Mills calculation closes after assuming a local Lorentz-covariant SU(3) connection, transformation law, gauge action, and propagator. The cited graph-first authorities establish structural su(3) closure on the retained surface, but they do not supply the missing bridge from that structural su(3) to the local Yang-Mills connection used by the theorem.",
+      "claim_scope": "Conditional standard Yang-Mills result: given a local Lorentz-covariant SU(3) gauge connection with the usual non-abelian transformation law and kinetic term, no gauge-invariant quadratic gluon mass term exists and the tree-level propagator pole is at p^2=0.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T17:17:21.496468+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "Given the standard SU(3) gauge transformation law for a local connection A_mu^a, the variation of (1/2)m^2 A_mu^a A^{a mu} leaves the residual term (m^2/g) A_mu^a partial^mu omega^a, so the mass term is gauge invariant only when m=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained bridge theorem constructing the local Lorentz-covariant SU(3) Yang-Mills connection, gauge action, and propagator from the graph-first structural su(3) surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner genuinely checks algebraic consistency of the standard SU(3) Yang-Mills masslessness argument and does not merely print constants, but it starts from hard-coded Gell-Mann/SU(3) connection data rather than deriving the contested framework bridge. The proof's load-bearing step is a valid class-A algebraic identity conditional on the admitted gauge transformation law. The restricted cited authorities are retained-grade for structural su(3), yet they do not construct the local Lorentz-covariant Yang-Mills gauge field and action needed for G1-G3 to be a theorem on the framework surface."
+    },
+    {
+      "archived_at": "2026-05-29T12:08:49.769690+00:00",
+      "archived_for_note_hash": "db117aee38f03d7703dab0e2798365a6d75519d287597a22dcca8de87c4f30a7",
+      "audit_date": "2026-05-23T15:39:42.058239+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "941a654bb1d50ef0efd8cb91a07bc95293c2efc7836b71301563a8366ea7d826",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153903Z-67ef776b-gluon_tree_level_massles-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Yang-Mills algebra (G1)-(G3) closes once the local SU(3) connection and standard transformation law are assumed. The cited retained authorities provide structural graph-first su(3) closure, but do not construct the missing bridge to a local Lorentz-covariant Yang-Mills connection, gauge action, or propagator on the framework surface.",
+      "claim_scope": "Standard tree-level Yang-Mills algebra: assuming a local Lorentz-covariant SU(3) connection with the standard non-abelian transformation law and kinetic action, no gauge-invariant quadratic gluon mass term exists and the tree-level propagator pole is at p\u00b2 = 0.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:39:42.058239+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the standard SU(3) gauge transformation, the mass-term variation leaves the residual term (m\u00b2/g) A_mu^a \u2202^mu omega^a, which is nonzero for arbitrary local omega unless m = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and audit a bridge theorem constructing a local Lorentz-covariant Yang-Mills SU(3) connection, gauge action, and propagator from the retained graph-first structural su(3) surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing calculation is a genuine algebraic check of the standard gauge-variation identity and the runner substantively verifies the displayed algebra rather than merely printing constants. However, the broader framework claim imports an admitted Yang-Mills-surface bridge not supplied by either cited authority. Thus the note supports the conditional standard SU(3) tree-level theorem, but not the claimed closure from retained graph-first structural SU(3) to framework gluon masslessness."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:21.567295+00:00",
+      "archived_for_note_hash": "4f977cbd301b925215d6fa7a87cf7632c134f4e9c3c9bb0293207d602f523bc1",
+      "audit_date": "2026-05-29T23:02:22.142406+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "941a654bb1d50ef0efd8cb91a07bc95293c2efc7836b71301563a8366ea7d826",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-225923-87e4e19a-gluon_tree_level_massles",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Yang-Mills algebraic core closes once the local SU(3) connection, transformation law, and F^2 gauge action are admitted. The cited authorities retain only structural graph-first su(3)/nonabelian closure and do not construct the local Lorentz-covariant Yang-Mills connection, gauge action, or propagator needed to place the theorem on the live framework surface.",
+      "claim_scope": "Tree-level Yang-Mills algebra on an admitted local Lorentz-covariant SU(3) connection: no gauge-invariant gluon mass term and the covariant-gauge kinetic propagator has pole at p^2 = 0; not a derivation of that Yang-Mills surface from the graph-first SU(3) authorities.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T23:02:22.142406+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The variation of L_mass leaves the residual term (m^2/g) A_mu^a partial^mu omega^a, which integrates by parts to a nonzero bulk term for arbitrary local omega unless m = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and audit a retained bridge constructing the local Lorentz-covariant Yang-Mills SU(3) connection, gauge action, and propagator from the graph-first structural su(3) surface; also tighten G2 wording so full nonabelian F^2 is not described as strictly quadratic in A rather than as the gauge-invariant action whose free quadratic part gives the tree-level propagator.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner source performs real algebraic checks: it computes SU(3) structure constants from Gell-Mann matrices, checks antisymmetry pairings, tests nonzero mass-term variation on generic fields, and verifies the displayed p^2 pole form. Those checks support the standard Yang-Mills theorem on the admitted surface, but they are class (A), not a first-principles construction from the graph-first framework. Because the bridge from the retained structural SU(3) surface to a local Lorentz-covariant Yang-Mills connection/action/propagator is explicitly not supplied, the cited chain does not close."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gluon_tree_level_massless_check.py",
+  "title": "Tree-Level Gluon Masslessness on a Bounded SU(3) Yang-Mills Surface",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,185 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
+    "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+    "realized_state_primitive"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d67b1e057edd401064da026bbe613b9d0568f9cb620a95b1adf1558e98fb0241",
+  "note_path": "docs/HARMONIC_DEPTH_WEIGHT_DISTRIBUTION_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.361827+00:00",
+      "audit_date": "2026-06-14T16:36:45.259644+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": "Free-sector L=3 supplied state family for det-phase increment capture by exact-tone least-squares projection over orders o=1..8, with tau=0.35, T=256, K in {3,4,5,6}, and K=5 seeds 4242 and 99.",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "Audited the exact finite L=3, NC=3, tau=0.35, T=256, supplied-seed realized-state computation of centered determinant-phase Hankel ranks at windows 64/128 and thresholds 1e-5, 1e-6, 1e-7, plus gated coupled-gap counts.",
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "0cb773b3112fc696a6e58ea71148a5997287cad6ba6f85a61d1ca66939a397fd",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-163442-0e04ef7bad-harmonic_depth_weight_distri",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source instantiates the finite L=3 Hamiltonian, seeded occupied subspaces, phase trajectory, Hankel summaries, and eigenbasis-pair coupling weights rather than merely printing constants. Independent arithmetic from the displayed weights verifies the shares, participation ratios, entropies, gap-second moments, cyclic-null values, and all stated orderings.",
+      "claim_scope": "Exact finite L=3 one-body gauge-link system for the four supplied realized states K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466; only the three-tone coupling-weight concentration ordering and cyclic-null comparison are audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T16:36:45.259644+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "For each realized state, the eigenbasis-pair weights w_g are aggregated over the three coupled gaps, and the resulting concentration order K=6 -> K=5 -> K=3 -> K=4 matches the order-4 det-phase capture order.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the eigenbasis convention in the w_g expression against the runner implementation if independently rerunning the finite operator calculation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 4,
+        "C": 5,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing numerical step is a finite first-principles computation on the scoped realized states, with retained-bounded upstream depth/rank anchors and the realized-state primitive used only for pointwise evaluation. The hard-coded frozen tables in the runner act as regression checks after computed records are built, not as the sole source of the quantities. No external comparator, tuned empirical scale, renaming, or widened causal/generative interpretation is needed for the bounded claim as stated."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.212805+00:00",
+      "audit_date": "2026-07-10T15:46:11.218939+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b"
+        },
+        "dep_claim_scope": {
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": "The five explicitly seeded free-sector L=3 trajectories with tau=0.35 and T=256, evaluated against nested signed-gap tone spans through order 8.",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "Audited the exact finite L=3, NC=3, tau=0.35, T=256, supplied-seed realized-state computation of centered determinant-phase Hankel ranks at windows 64/128 and thresholds 1e-5, 1e-6, 1e-7, plus gated coupled-gap counts.",
+          "realized_state_primitive": null
+        },
+        "dep_claim_type": {
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "bounded_theorem",
+          "realized_state_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12": "retained_bounded",
+          "realized_state_primitive": "meta"
+        },
+        "deps": [
+          "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12",
+          "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
+          "realized_state_primitive"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "0cb773b3112fc696a6e58ea71148a5997287cad6ba6f85a61d1ca66939a397fd",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00008-harmonic_depth_weight_distri",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner independently computes the tone weights, concentration metrics, and their agreement with fixed-order capture. It does not establish the claimed total harmonic-depth ordering: the cited depth authority only distinguishes K=6 from states censored beyond order 8 and supplies no K=5 \u2192 K=3 \u2192 K=4 depth ranking.",
+      "claim_scope": "The exact L=3 one-body system at four fixed realized states, testing equal three-tone support and whether the coupling-weight concentration ranking matches the descending order-4/window-64 capture ranking.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:46:11.218939+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "The computed concentration order K=6 \u2192 K=5 \u2192 K=3 \u2192 K=4 matches the order-4 capture table and is therefore asserted to match the landed det-phase depth ordering.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check after the note replaces \"depth ordering\" with \"order-4/window-64 capture ordering\" or adds a completed common-threshold depth computation for all four states.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 5,
+        "C": 15,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Issue: The load-bearing computation establishes a correlation with capture at one fixed order and window, while the bounded claim promotes that ranking to the det-phase depth ordering. Why this blocks: the retained depth authority supplies K=6's order-4 saturation and censored statements for the other states, not the asserted total depth ranking. Repair target: compute the same formal depth for all four states or prove that fixed-order capture ranking is equivalent to depth ranking. Claim boundary until fixed: the runner supports equal three-tone support and a concentration ranking matching descending order-4/window-64 capture for these four fixed states."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_depth_weight_distribution_2026_06_12.py",
+  "title": "Harmonic Depth Weight-Distribution Ordering: Bounded L=3 Realized-State Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

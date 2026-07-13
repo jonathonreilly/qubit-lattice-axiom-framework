@@ -1,0 +1,450 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_kms_condition_theorem_note_2026-05-01",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+    "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+    "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+    "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.466,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7063970d98e78c6584f49133a4bd11f8a5e2cb09539fdcf0fcf857ea15190f87",
+  "note_path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:08:17.633128+00:00",
+      "archived_for_note_hash": "a47a4d5be907cbad5d085d997c24e0be07dd4cbe209e7978986f5ce52ab9b2bd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-17T10:29:42.336628+00:00",
+      "archived_for_note_hash": "d9f3beb26c24dae62873ea26be40507ffa7965f5102c06722902d40422f774ed",
+      "audit_date": "2026-06-15T20:47:33.456262+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "Self-contained finite-matrix CPT identities for the explicitly supplied pure KS matrix family on even finite 4D blocks with periodic/APBC wrap signs; framework selection of the KS carrier and the SU(3) gauge-sector lift are not audited as in-block claims.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 17.074,
+        "runner_hash": "c373c9009966dd65ba8bbc896ce5bee1fcd13481a6e44ba3e4b7af5c26cc05ac",
+        "transitive_descendants": 380
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260615-204521-18f133e217-axiom_first_kms_condition_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional cyclic-trace KMS identity closes for a supplied bounded H and beta. The claimed RP/spectrum bridge does not close as written because the provided current spectrum authority defines the positive transfer object as the two-step T := T_hat^2 with H = -(1/(2 a_tau)) log(T/M_T), not the source note's single-step normalization.",
+      "claim_scope": "Finite-dimensional KMS identity, strip analyticity, path-integral trace correspondence, and claimed uniqueness for the RP/spectrum reconstructed transfer-matrix Hilbert space at beta_th = L_tau a_tau.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T20:47:33.456262+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note identifies the periodic transfer trace with the Gibbs trace by taking T = exp(-a_tau H), beta_th = L_tau a_tau, so Z_beta = tr(exp(-beta_th H)) = tr(T^{L_tau}), and then proves F(t+i beta_th)=G(t) by finite-dimensional cyclicity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after the source is rebased onto the current two-step RP/spectrum normalization and the path-integral insertion bookkeeping is proved or scoped to blocked observables.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the source's load-bearing normalization T = exp(-a_tau H) and beta_th = L_tau a_tau contradict the provided spectrum authority, which says the positive RP object is T := T_hat^2 advancing two lattice steps and H = -(1/(2 a_tau)) log(T/M_T). Why this blocks: Z = tr(T^{L_tau}) = tr(exp(-beta_th H)) and the single-slice path-integral correspondence do not follow as written, and the runner only checks a generic single-step model that hard-codes the stale normalization. Repair target: add a blocked-time KMS bridge or rescope beta_th/time-period/operator claims to the two-step transfer matrix. Claim boundary until fixed: the finite-dimensional Gibbs KMS cyclic-trace identity itself is valid for a supplied bounded H and beta."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.887500+00:00",
+      "audit_date": "2026-06-18T03:26:17.721642+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "Self-contained finite-matrix CPT identities for the explicitly supplied pure KS matrix family on even finite 4D blocks with periodic/APBC wrap signs; framework selection of the KS carrier and the SU(3) gauge-sector lift are not audited as in-block claims.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.047,
+        "runner_hash": "e44a992ec3c5db242bd4111790a24fd12267939a367bf432e92ce8c52d86a421",
+        "transitive_descendants": 373
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-axiom_first_kms_condition_theorem_note_2026-05-01-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained-bounded RP input supplying finite H_phys and positive two-step T, and the retained-bounded spectrum input supplying self-adjoint H with the stated blocked-time normalization, the KMS identity and uniqueness are finite-dimensional trace and matrix-unit algebra. No external comparator, fitted value, or continuum KMS theorem is used.",
+      "claim_scope": "Finite-block even-L_tau two-step RP transfer-matrix setting: the Gibbs state on finite H_phys with T=T_hat^2 and H=-(1/(2a_tau))log(T/M_T) satisfies the finite-dimensional KMS strip identity, trace/Gibbs slice cyclicity, strip analyticity, and invariant-KMS uniqueness.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:26:17.721642+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T03:22:58.181850+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-axiom_first_kms_condition_theorem_note_2026-05-01-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional KMS theorem for the normalized two-step RP transfer matrix: given finite H_phys, positive two-step transfer T with H = -(1/(2a_tau)) log(T/M_T), even L_tau, and beta_th = L_tau a_tau, the Gibbs trace satisfies the path-integral trace identity up to the stated vacuum-energy normalization, KMS strip identity, strip analyticity bound, and finite-matrix uniqueness.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T03:26:17.721642+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-axiom_first_kms_condition_theorem_note_2026-05-01-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block even-L_tau two-step RP transfer-matrix setting: the Gibbs state on finite H_phys with T=T_hat^2 and H=-(1/(2a_tau))log(T/M_T) satisfies the finite-dimensional KMS strip identity, trace/Gibbs slice cyclicity, strip analyticity, and invariant-KMS uniqueness.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cpt_theorem_stretch_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "After expanding alpha_{t+i beta_th}(B), cyclicity of the finite trace moves e^{beta_th H} to the front and gives F_{A,B}(t+i beta_th) = Z^{-1} tr(e^{-beta_th H} alpha_t(B) A) = G_{A,B}(t).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the M_T=1/vacuum-energy normalization if future source text distinguishes absolute partition functions from normalized Gibbs expectations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing calculation is an exact finite-dimensional algebraic closure over the supplied RP/spectrum transfer-matrix inputs: matrix exponentials, cyclic trace, and matrix units prove (K2)\u2013(K4), while T^N_tau = exp(-beta_th H) follows after the stated vacuum-energy normalization. The runner source genuinely checks the generic finite-PSD-H identities and slice cyclicity rather than printing constants, but it correctly does not attempt to rederive RP or the spectrum condition. The direct non-axiom dependencies in the restricted packet are retained_bounded, which is retained-grade under the rubric; the minimal axiom memo is an accepted premise."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.423681+00:00",
+      "audit_date": "2026-06-21T07:51:17.139849+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "Bounded finite-matrix theorem for the explicitly supplied pure KS carrier M=mI+M_KS on finite even 4D blocks with periodic/APBC wrap signs: \u0398_CPT is an involution and satisfies \u0398_CPT M \u0398_CPT^{-1}=M^*, with the fermion-sector determinant/action/Theta_CPT-odd expectation consequences on that carrier only.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.07,
+        "runner_hash": "e44a992ec3c5db242bd4111790a24fd12267939a367bf432e92ce8c52d86a421",
+        "transitive_descendants": 379
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_kms_condition_theorem_note_2026-05-01-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the cited retained-bounded RP/spectrum inputs supply finite-dimensional \\(H_{phys}\\), positive two-step \\(T\\), and self-adjoint bounded-below \\(H\\), the KMS strip identity, analyticity, trace cyclicity for slice insertions, and finite matrix-unit uniqueness are standard finite-matrix algebra. The path-integral correspondence is audited only at the finite transfer-matrix trace/cyclicity level supplied by that RP surface.",
+      "claim_scope": "Finite-dimensional KMS theorem for the Gibbs state generated by the RP/spectrum two-step transfer matrix on \\(H_{phys}\\), with even raw \\(L_\tau\\), \\(\beta_{th}=N_\tau(2a_\tau)\\), and the declared \\(M_T=1\\) vacuum-energy normalization.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-21T07:51:17.139849+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T07:47:05.117549+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_kms_condition_theorem_note_2026-05-01-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional KMS theorem for the normalized two-step RP transfer object on even raw Euclidean-time blocks, using the cited RP finite-H_phys and spectrum-condition Hamiltonian inputs.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T07:51:17.139849+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_kms_condition_theorem_note_2026-05-01-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional KMS theorem for the Gibbs state generated by the RP/spectrum two-step transfer matrix on \\(H_{phys}\\), with even raw \\(L_\tau\\), \\(\beta_{th}=N_\tau(2a_\tau)\\), and the declared \\(M_T=1\\) vacuum-energy normalization.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "By cyclicity of the finite-dimensional trace, \\(F_{A,B}(t+i\beta_{th})=(1/Z)tr(e^{-\beta_{th}H}\\alpha_t(B)A)=G_{A,B}(t)\\).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the harmless but easy-to-misread \\(M_T=1\\) normalization convention: absolute partition functions differ by \\(M_T^{N_\tau}\\) before vacuum-energy normalization, while normalized Gibbs expectations and KMS identities are unchanged.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The proof's load-bearing step is a genuine finite-dimensional algebraic closure over the supplied retained-grade RP and spectrum inputs, not a numerical match or definition substitution. The runner source actually computes the KMS endpoint identity, strip boundedness on a finite matrix model, matrix-unit uniqueness equations, and transfer-trace cyclicity on generic finite \\(H\\ge 0\\); it does not merely print expected values. It also correctly does not claim to rederive RP or the spectrum condition, which are upstream inputs. No external comparator or tuned empirical value is used."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.795297+00:00",
+      "audit_date": "2026-06-30T19:37:48.760836+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "Finite-block finite-range Cl(3)=M_2(C) lattice Hamiltonians satisfy the stated Lieb-Robinson commutator bound, lattice light cone, and finite Cl(3) norm constant; L2 is audited only as conditional/open transfer-gap routing, not as closed spatial clustering.",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "Finite-matrix fermion-sector CPT identities (CPT1)-(CPT5) for the explicitly supplied pure staggered KS carrier on even finite 4D blocks with periodic/APBC wrap signs, excluding framework derivation of the carrier and excluding the SU(3) Wilson-plaquette gauge-sector lift.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.07,
+        "runner_hash": "e44a992ec3c5db242bd4111790a24fd12267939a367bf432e92ce8c52d86a421",
+        "transitive_descendants": 379
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T193748Z-0bfba7ed-axiom_first_kms_conditio",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained-grade RP input supplying finite-dimensional H_phys and the two-step transfer matrix, plus the retained-grade spectrum input supplying self-adjoint H with T=e^{-2a_tau H} after normalization, K1-K4 reduce to finite-dimensional trace cyclicity, functional calculus, and matrix-unit algebra. The partition-function equality uses the stated vacuum-energy normalization M_T=1, which is consistent with the cited spectrum normalization surface.",
+      "claim_scope": "Finite-dimensional KMS theorem for the Gibbs state generated by the RP-reconstructed two-step positive transfer matrix on H_phys, with even raw Euclidean time length and \u03b2_th=L_tau a_tau, assuming the cited RP transfer-matrix and spectrum-condition inputs.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T19:37:48.760836+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T19:35:15.691022+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T193515Z-33a31cd2-axiom_first_kms_conditio",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional KMS theorem for the Gibbs state on the RP two-step transfer-matrix Hilbert space, including transfer-trace slice cyclicity, strip analyticity, and uniqueness, given the cited RP/spectrum inputs supplying finite H_phys and T=e^{-2a_tau H} after normalization.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T19:37:48.760836+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T193748Z-0bfba7ed-axiom_first_kms_conditio",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional KMS theorem for the Gibbs state generated by the RP-reconstructed two-step positive transfer matrix on H_phys, with even raw Euclidean time length and \u03b2_th=L_tau a_tau, assuming the cited RP transfer-matrix and spectrum-condition inputs.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Using finite-dimensional cyclicity and the commutation of functions of H, the proof transforms F_{A,B}(t+i\u03b2_th) into (1/Z) tr(e^{-\u03b2_th H} \u03b1_t(B) A)=G_{A,B}(t).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the M_T=1/vacuum-energy normalization is consistently interpreted as using the normalized two-step transfer object for the exact partition-function display.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing KMS identity is a genuine finite-dimensional algebraic closure over the cited retained-grade RP and spectrum-condition authorities, not a definition or numerical match. The runner independently checks the same structural trace, strip, uniqueness, and slice-cyclicity identities on a generic finite-dimensional positive Hamiltonian, though it does not rederive the upstream RP/spectrum inputs. No non-retained dependency or external comparator is needed within the audited finite-block scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_kms_condition_check.py",
+  "title": "Axiom-First KMS Condition for the Reconstructed Gibbs State",
+  "transitive_descendants": 706,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

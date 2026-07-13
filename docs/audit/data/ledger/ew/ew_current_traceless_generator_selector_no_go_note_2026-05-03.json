@@ -1,0 +1,357 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ew_current_matching_rule_open_gate_note_2026-05-03",
+    "ew_current_fierz_channel_decomposition_note_2026-05-01",
+    "axiom_first_lattice_noether_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.524,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ad4852f94957e2362ef300a20dd11616bf025d8b5db04442d401cb0c87025b82",
+  "note_path": "docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.067385+00:00",
+      "audit_date": "2026-05-25T19:57:47.131002+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only.",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4753905e6fb3ef2deaaa08aef639a804b62ea8473aa2bc8cc3ccde68ea5cc27f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T195549Z-dda9c63e-ew_current_traceless_gen-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited gate and Fierz authority define kappa_EW as the coefficient of the color singlet channel S, and the T3/M=I_color witness gives Tr(T3)=0 but Tr(T3^2)S=3/2. This refutes the proposed implication without needing a broader positive EW-current theorem.",
+      "claim_scope": "Narrow no-go that EW-generator tracelessness alone cannot derive the connected-trace selector kappa_EW=0 for the EW current matching gate.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-25T19:57:47.131002+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Tr_internal(Q_EW)=0 kills ordinary Wick-disconnected one-current loops, but the connected color-Fierz singlet channel is weighted by Tr_internal(Q_EW^2), which is nonzero in the T3, M=I_color counterexample.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream uses preserve the route-specific scope and do not cite this as a positive derivation of kappa_EW=0.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing work is an exact algebraic counterexample: T3 has zero linear trace but nonzero quadratic trace, and M=I_color is purely Fierz-singlet. The runner computes these rational identities and also verifies that kappa_EW remains distinct at kappa=0 and kappa=1. No-Go Discipline passes for the narrow boundary: packet-based attacks via ordinary Wick loops, quadratic trace collapse, singlet-channel vanishing, color-adjoint vertex insertion, and kappa-readout equivalence are each blocked, while broader positive selector routes are explicitly out of scope."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:22.338304+00:00",
+      "audit_date": "2026-06-06T11:30:21.359255+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identity on the explicitly admitted Grassmann/Kawamoto-Smit staggered carrier: U(1) current (4), bilateral current (5) for local infinitesimal generators, and exact central two-step Ward identity (3a) for (2Z)^3 translations; density (3) is support-only.",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "4753905e6fb3ef2deaaa08aef639a804b62ea8473aa2bc8cc3ccde68ea5cc27f",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-3b445bcf28-ew_current_traceless_generat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The explicit witness Q_EW = T3 and M = I_color has Tr(T3) = 0 but Tr(T3^2) S(I_color) = 3/2. This closes only the trace-based selector route and leaves the source note's named alternative positive routes open.",
+      "claim_scope": "Route-specific no-go: tracelessness of the internal EW generator kills ordinary Wick-disconnected one-current loops but does not eliminate the color-Fierz singlet inside connected two-current contractions, so it cannot by itself derive kappa_EW = 0.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-06T11:30:21.359255+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The connected two-current color-Fierz singlet is weighted by Tr_internal(Q_EW^2), not Tr_internal(Q_EW)^2, so a traceless nonzero EW generator can leave a nonzero singlet contribution.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream wording preserves the route-specific boundary and does not cite this as a global no-go for all EW matching selectors.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing counterexample is exact algebra over the cited Fierz decomposition: M = I_color is purely singlet, while T3 is traceless with nonzero quadratic trace. The cited gate, Fierz authority, and bounded Noether/current context are retained-grade within the restricted packet, and the runner source performs exact rational checks rather than merely printing PASS. The clean verdict is narrow: it ratifies failure of the traceless-generator route, not a global impossibility theorem for EW current matching."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.207774+00:00",
+      "audit_date": "2026-06-08T19:52:37.459593+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice algebraic Noether identities on the admitted KS staggered/Grassmann carrier: the onsite/internal nearest-neighbor current including U(1), and the separate (2Z)^3 two-step Ward identity; canonical density (3) is support-only.",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "4753905e6fb3ef2deaaa08aef639a804b62ea8473aa2bc8cc3ccde68ea5cc27f",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-a3fa7ac524-ew_current_traceless_generat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic counterexample satisfies the proposed route's antecedent, Tr_internal(Q_EW)=0, while leaving a nonzero connected color-singlet contribution. This closes only the stated trace-selector route and does not claim that all future EW matching selectors are impossible.",
+      "claim_scope": "Route-specific no-go: EW-generator tracelessness kills ordinary Wick-disconnected one-current loops but does not derive the connected color-Fierz-singlet readout coefficient kappa_EW=0.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-08T19:52:37.459593+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The connected same-fermion-line singlet channel is weighted by Tr_internal(Q_EW^2), not Tr_internal(Q_EW)^2, so T3 with M=I_color has Tr(T3)=0 while the singlet contribution Tr(T3^2) S(I_color)=3/2 is nonzero.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream summaries preserve the route-specific scope and do not quote this as an absolute EW matching no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing step is an exact finite-dimensional trace and Fierz-channel calculation over the cited kappa_EW and S/C definitions. Independently, Tr diag(1/2,-1/2)=0, Tr diag(1/2,-1/2)^2=1/2, and for M=I_3 the Fierz singlet is (1/3)|Tr I_3|^2=3 with zero adjoint channel, giving a nonzero 3/2 connected singlet. The source note preserves the no-go boundary by leaving other positive routes open, so the clean verdict applies only to this route-specific obstruction."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.467406+00:00",
+      "audit_date": "2026-06-21T11:51:03.982173+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identities on the admitted staggered/Grassmann Kawamoto-Smit carrier: onsite/internal U(1) and general onsite/internal bilateral current (5), plus the separate (2Z)^3 two-step localized Ward identity (3a); density (3) is support-only.",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 7.454,
+        "runner_hash": "4753905e6fb3ef2deaaa08aef639a804b62ea8473aa2bc8cc3ccde68ea5cc27f",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-ew_current_traceless_generator_selector_no_go_note_2026-05-03-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The counterexample closes algebraically: with Q_EW=T3 and M=I_color, Tr(Q_EW)=0 while Tr(Q_EW^2)S(I_color)=3/2 and C(I_color)=0. Thus the trace-based route targets the wrong disconnected object.",
+      "claim_scope": "Narrow route-specific no-go: internal EW-generator tracelessness removes ordinary Wick-disconnected one-current loops but does not derive the connected-trace EW readout selector kappa_EW=0.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T11:51:03.982173+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Tr_internal(Q_EW)=0 can coexist with a nonzero connected color Fierz singlet contribution weighted by Tr_internal(Q_EW^2), so it cannot imply kappa_EW=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the narrow scope boundary: this ratifies the traceless-generator selector no-go, not a universal no-go for EW current matching.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The proof is an exact algebraic counterexample over the cited Fierz decomposition and the gate's kappa_EW parametrization. The runner computes the rational trace and channel values directly and separately verifies source/gate wording; it uses no external comparator or tuned numerical input. The cited authorities are retained-grade for this narrow use, and the source note explicitly leaves broader positive EW matching routes open."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.382918+00:00",
+      "audit_date": "2026-07-02T03:33:28.222412+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identity on the admitted Kawamoto-Smit/Grassmann nearest-neighbor carrier: onsite/internal current (5), its U(1) specialization (4), and the exact localized two-step (2Z)^3 Ward identity (3a); density (3), site-mixing symmetries, taste shifts, anomaly closure, and Hilbert-sector corollaries are not theorem-grade in this audit.",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "The audited claim is that, for the four-premise packet stated in the note, the EW matching factor remains K_EW(kappa_EW)=1/(8/9+kappa_EW/9), so the 9/8 value is only the connected-trace specialization kappa_EW=0."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01": "decoration_under_graph_first_su3_integration_note",
+          "ew_current_matching_rule_open_gate_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29",
+          "ew_current_fierz_channel_decomposition_note_2026-05-01",
+          "ew_current_matching_rule_open_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 7.454,
+        "runner_hash": "4753905e6fb3ef2deaaa08aef639a804b62ea8473aa2bc8cc3ccde68ea5cc27f",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T033328Z-5a49f5df-ew_current_traceless_gen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Fierz decomposition and kappa_EW parametrization support the finite counterexample Q_EW=T3 and M=I_color: Tr(Q_EW)=0 while Tr(Q_EW^2) S(I_color)=3/2. That is enough to falsify the proposed implication without claiming that all positive EW matching routes fail.",
+      "claim_scope": "Route-specific no-go: tracelessness of an EW generator kills ordinary one-current disconnected loops but cannot derive kappa_EW=0 for the connected color Fierz-singlet channel.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T03:33:28.222412+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The missing EW matching coefficient is attached to the color Fierz singlet channel inside the connected two-current fermion-line contraction, and that channel is weighted by Tr_internal(Q_EW^2), not by Tr_internal(Q_EW)^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should preserve the route-specific scope and not read this as a universal no-go for EW current matching.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing result is a direct algebraic counterexample over retained-grade inputs: the linear trace and quadratic same-line trace are distinct, and the color-singlet Fierz channel can remain nonzero. The runner checks the same arithmetic and verifies cited-note surface text; it is not first-principles class C, but class A is sufficient for this narrow no-go. No-Go Discipline is satisfied at the audited scope because the note explicitly leaves the actual positive selector routes open and rejects only the traceless-generator route."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ew_current_traceless_generator_selector_no_go.py",
+  "title": "EW Current Traceless-Generator Selector No-Go Proposal Note",
+  "transitive_descendants": 22,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

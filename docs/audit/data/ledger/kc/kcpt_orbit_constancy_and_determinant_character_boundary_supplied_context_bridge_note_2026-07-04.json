@@ -1,0 +1,222 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.15,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "55a0fc3db9a18fb802ebc04129f3542919ab57a7d8ab2301860b23f9b3c61a0c",
+  "note_path": "docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-04T16:11:41.728294+00:00",
+      "audit_date": "2026-07-04T15:22:33.651562+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "0f59e220b10d98e4819de0a0e2f05defea3e7c10f34a8240c7fd4af0ca77bf97"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.807,
+        "runner_hash": "3b48cf2a03e62264d284d481ddbd750440215725dfbe80da3b0a90f0bba689cd",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-wave0-kcpt-20260704",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note keeps ORBIT-INDEXING, K/CPT action, determinant datum, and homomorphism boundary as explicit supplied-context hypotheses. Under that scoped boundary, T1 is direct content-functionality and T2 is exact even-plus-odd algebra, with no stronger readout-context derivation claimed.",
+      "claim_scope": "Bounded supplied-context bridge: from supplied ORBIT-INDEXING plus Record content-determination, registrable scalar readouts are K/CPT-orbit constant; inside the supplied determinant-character/log-character homomorphism boundary, even plus odd erases the homomorphic phase functional while log-modulus data survives.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T15:22:33.651562+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:0f59e220->c8201cb1",
+      "load_bearing_step": "ORBIT-INDEXING supplies content(y)=content(x), Record content-determination gives I(y)=I(x), and the supplied R-valued additive phase homomorphism is odd while T1 makes it K-even, so g(-x)=-g(x)=g(x) and g(x)=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only for scope drift: this clean verdict covers the supplied-context bridge and does not derive the supplied readout context, K/CPT structure, determinant datum, homomorphism boundary, P-dep, or any physical observable identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The scoped bounded theorem closes because the note uses the current Record axiom only for content-determination and finite additivity, while placing orbit indexing and determinant-character/log-character structure outside the derived content as supplied hypotheses. The T2 phase-erasure conclusion follows from additive homomorphism oddness plus T1 K-evenness, and the note's negative controls correctly exclude K-even non-homomorphic phase functionals. The runner passes all 33 checks and supports the algebraic and textual boundary guards without hard-coding a stronger closure. Residual risk is only downstream scope drift, not a defect in this source note."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.003495+00:00",
+      "audit_date": "2026-07-04T16:15:26.943194+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.307,
+        "runner_hash": "3b48cf2a03e62264d284d481ddbd750440215725dfbe80da3b0a90f0bba689cd",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-kcpt-round3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The minimal axiom dependency supplies the accepted Record content-determination and finite additivity premises, while K/CPT indexing, phase action, sector factorization, and homomorphism boundary are explicit supplied-context hypotheses. From those inputs the proof is ordinary finite algebra: equal content gives equal readout, homomorphism gives oddness, and even plus odd over R forces zero.",
+      "claim_scope": "Within a supplied finite readout context with ORBIT-INDEXING, fixed K/CPT action, sector factorization, and a supplied determinant-character/log-character homomorphism boundary, Record content-determination gives K/CPT orbit constancy for registrable scalar readouts and the homomorphic phase contribution vanishes while log-modulus data survives.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-04T16:15:26.943194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "ORBIT-INDEXING plus Record content-determination gives I(y)=I(x); T1 orbit constancy makes g K-even while the homomorphism makes g odd, so even and odd together force g(x)=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No repair required for this scoped claim; a later auditor should re-check only that downstream uses preserve the supplied-context boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Within the stated bounded supplied-context scope, the note does not claim to derive K/CPT structure, context selection, determinant-character structure, physical observables, or the determinant boundary from Record. The only cited dependency is the minimal axiom accepted premise, and the proof uses it only for content-determined scalar readout and finite additivity. The current runner completed with SUMMARY PASS=33 FAIL=0 and checks the finite algebra, symbolic even/odd closure, negative controls, hostile non-homomorphic guards, and source-boundary text guards. Residual risk is downstream overuse: later notes must not cite this as deriving the supplied context itself."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:29.075750+00:00",
+      "audit_date": "2026-07-11T22:06:36.299632+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.333,
+        "runner_hash": "3b48cf2a03e62264d284d481ddbd750440215725dfbe80da3b0a90f0bba689cd",
+        "transitive_descendants": 56
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00347-kcpt_orbit_constancy_and_det",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows algebraically from the stated supplied-context hypotheses and the accepted Record axiom: equal record content gives equal scalar readout, and homomorphism oddness combined with orbit evenness forces zero. No context-selection or physical-observable conclusion is needed for this bounded scope.",
+      "claim_scope": "Within the explicitly supplied finite readout context, ORBIT-INDEXING plus Record content-determination gives K/CPT-orbit constancy, and a supplied R-valued determinant-character homomorphism vanishes while K-even log-modulus data remains allowed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T22:06:36.299632+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The homomorphic phase functional is odd, while T1 makes it K-even, so g(-x)=-g(x)=g(x) forces g(x)=0 for every phase datum.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The note correctly confines ORBIT-INDEXING, K/CPT action, sector factorization, and the determinant-character boundary to supplied hypotheses rather than attributing them to Record. Its load-bearing even-plus-odd argument is an exact algebraic closure, and the negative controls correctly show why K-evenness alone does not erase non-homomorphic phase dependence. The runner completes 33 checks and substantively tests the finite algebra and scope guards; its illustrative fixed family is not used to derive a stronger physical claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
+  "title": "K/CPT Orbit Constancy And Determinant-Character Boundary Supplied-Context Bridge",
+  "transitive_descendants": 70,
+  "verdict_rationale": null
+}

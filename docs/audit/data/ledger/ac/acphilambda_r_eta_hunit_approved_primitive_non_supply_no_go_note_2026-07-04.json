@@ -1,0 +1,215 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive",
+    "ac_reta_hclass_hunit_readout_derivation_obligation"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a4acc783bd23fd4e4ba5a2e3611e0a351bbbad9a36d7798e268808b8496a3a8e",
+  "note_path": "docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.278893+00:00",
+      "audit_date": "2026-07-10T03:47:03.899057+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a14b438d08cd4fe7210dd30ac981fd6665958df4a2c8d2aa6427abeb90f2034b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00042-acphilambda_r_eta_hunit_appr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primitive texts support the narrow non-supply inference, but the packet does not provide the exact approved-premise registry or carrier-elimination authority in full, and the runner crashes before checking either. The current Tier-A authority also contradicts the note's claim that R-eta remains a live Tier-A atom.",
+      "claim_scope": "Bounded audit of whether the listed minimal axioms and approved primitives, supplemented by the stated carrier-elimination context, already supply the R-eta h-unit identity coefficient beta = 1.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T03:47:03.899057+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "The four accepted premises supply only their separately typed declared content, so none licenses the angle-readout coefficient beta = 1, while eliminating scanned c != 1 carriers does not derive the identity member without exhaustiveness and an identity rule.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update the runner for the current Tier-A schema, include the exact axiom-premise and owner-governed registry snapshots plus the carrier-elimination authority, amend this note's current-surface/Tier-A boundary, and rerun the full verifier.",
+      "open_dependency_paths": [
+        "docs/audit/data/axiom_premise_nodes.json",
+        "docs/RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md",
+        "docs/audit/data/owner_governed_premise_nodes.json"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The accepted primitive declarations consistently withhold the required phase/readout bridge, so the central type-mismatch argument is plausible. However, the runner completes only fourteen file-presence checks before a KeyError caused by the current zero-live-target Tier-A schema; none of its registry, source-pin, algebra, or type checks executes. The note's current-surface and live-Tier-A language is stale relative to the supplied registry authority, preventing certification of the claim as written."
+    },
+    {
+      "archived_at": "2026-07-11T22:02:51.516897+00:00",
+      "archived_for_note_hash": "289005391c00b2278874fc6bd6060c42fb5ed0d41390113316d8495947b44822",
+      "audit_date": "2026-07-10T15:51:36.814237+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b",
+          "scale_reference_primitive": "601c0206f5898df1e81b3f95ae1b77dc5cf331dd419eb935e383d1acf6039d90"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null,
+          "scale_reference_primitive": null
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "scale_reference_primitive": "meta"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive",
+          "scale_reference_primitive"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a14b438d08cd4fe7210dd30ac981fd6665958df4a2c8d2aa6427abeb90f2034b",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00014-acphilambda_r_eta_hunit_appr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The premise-boundary texts support the logical non-supply argument, but the restricted packet does not provide the current axiom-premise registry contents needed to prove that those four nodes are exhaustive. The runner aborts before that check because it assumes a now-removed live Tier-A derivation-target entry.",
+      "claim_scope": "Bounded no-go against deriving the R-eta h-unit coefficient beta = 1 from the four named approved axioms/primitives plus nonexhaustive rival-carrier elimination; broader owner-governed premise surfaces were not audited.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T15:51:36.814237+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The declared contents of the four approved axioms and primitives supply no angle-readout bridge, and eliminating several nonidentity conversion carriers cannot derive beta = 1 without an exhaustive carrier theorem and a licensed identity rule.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update the runner for the retired Tier-A schema, rerun it against the current axiom-premise and owner-governed registries, and include output establishing the exact approved-premise node set while separately accounting for AC owner-governance retirement.",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The substantive inference is a sound class-(A) bounded no-go if the approved-premise registry contains only the four asserted nodes. That exhaustiveness is load-bearing and is neither independently exposed in the packet nor verified by the failed runner. The supplied Tier-A authority also records later AC retirement through owner governance, so the repaired check must distinguish approved axioms/primitives from the newer owner-governed surface."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py",
+  "title": "AC_phi_lambda R-eta h-Unit Approved-Primitive Non-Supply No-Go",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

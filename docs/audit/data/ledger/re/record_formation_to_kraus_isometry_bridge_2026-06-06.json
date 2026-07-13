@@ -1,0 +1,374 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+    "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+    "persistent_record_as_kraus_operator_note_2026-05-20"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.988,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6b91c5bdb710d96ac8fb2fba73276bbd8466d35cf3e72c09cca4abe474a47c78",
+  "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-20T08:42:29.953603+00:00",
+      "archived_for_note_hash": "bff773dab878d5a30a902ee5ace663eb6604bb16f0172ee337d8595729f17b9f",
+      "audit_date": "2026-06-18T05:34:06.642218+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "Finite-dimensional algebra only: an assumed normalized isometry W decomposed in an orthonormal record basis yields Kraus blocks with identity resolution, a CPTP unconditional map, and normalized positive nonzero selective states.",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Finite qubit S+E model: pointer-population persistence iff [H_int, Pi_S] = 0, plus sufficient redundant record formation for the stated local controlled-copy interaction with fresh/idle fragments under the explicit Darwinism record bridge."
+        },
+        "dep_claim_type": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "bounded_theorem",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "retained_bounded",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_as_kraus_operator_note_2026-05-20",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 7.17,
+        "runner_hash": "1328e681e1e26eecbddf8fc2265a9c040399fc615ac562dcfaef5ce1f21a566f",
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-record_formation_to_kraus_isometry_bridge_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated finite projective write model, the projector identity proves the normalized isometry, projective Kraus blocks, CPTP dephasing map, and repeat-read branch stability. The closure is conditional on the supplied ideal write/register premises and does not derive those premises from arbitrary persistent dynamics.",
+      "claim_scope": "Finite projective pointer model with supplied stable pointer projectors, orthonormal record labels, and an ideal pointer-label write; no general dynamics-to-isometry or Born-probability derivation was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:34:06.642218+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By the projector resolution and orthonormal record labels, W^dagger W = sum_{r,s} P_r^dagger P_s <r|s> = sum_r P_r = I, and contracting with <r| gives K_r = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the ideal pointer-label record-write isometry from the finite controlled-copy/fresh-fragment dynamics, or narrow the ledger scope to the already-supplied projective write premise.",
+      "open_dependency_paths": [
+        "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+        "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 29,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "The load-bearing step is genuine finite-dimensional projector algebra, and the runner actually constructs the projectors, W, extracted blocks, Choi positivity, branch normalization, and repeat-read stability. That supports the class A algebraic closure for the supplied projective record-write model. The restricted packet does not derive the blank record register plus ideal pointer-label write from the pointer-non-demolition dynamics, and the upstream Kraus authority explicitly leaves the general W bridge open. The result is therefore conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.514193+00:00",
+      "audit_date": "2026-06-21T11:31:36.380433+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "Finite-dimensional algebra only: an assumed normalized isometry W decomposed in an orthonormal record basis yields Kraus blocks with identity resolution, a CPTP unconditional map, and normalized positive nonzero selective states.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "Exact finite two-pointer-sector controlled-copy algebra: in the explicit fresh-fragment qubit model at theta = pi/4, orthogonal fragment labels calibrate to the projective write isometry W and extracted blocks K_r = P_r, without claiming arbitrary dynamics or physical Hamiltonian selection.",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Finite qubit S+E model: pointer-population persistence iff [H_int, Pi_S] = 0, plus sufficient redundant record formation for the stated local controlled-copy interaction with fresh/idle fragments under the explicit Darwinism record bridge."
+        },
+        "dep_claim_type": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "bounded_theorem",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "retained_bounded",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_as_kraus_operator_note_2026-05-20",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 6.383,
+        "runner_hash": "e9a9ee33578833576432b686ee0dac7070a9ab03989f4b8d607319a1e62ba2a8",
+        "transitive_descendants": 58
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-record_formation_to_kraus_isometry_bridge_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared finite pointer model, the controlled-copy authority supplies the orthogonal calibrated write isometry W and the finite Kraus authority supplies the normalized-isometry-to-instrument algebra. The remaining target-note step is direct projector algebra, and it does not claim arbitrary persistent-record dynamics or a probability law from counts.",
+      "claim_scope": "Exact finite-model bridge: retained bounded pointer sectors plus the controlled-copy/fresh-fragment write isometry give the projective record-write W, whose extracted blocks form the projective Kraus/CPTP instrument.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:31:36.380433+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Using P_r P_s = delta_rs P_r and <r|s> = delta_rs, W^dagger W = sum_r P_r = I and <r|W = P_r, so the induced map is rho -> sum_r P_r rho P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the bounded finite-model scope is preserved and not read as a general persistent-dynamics-to-W theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 75
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade bounded inputs: orthogonal projectors and orthonormal record labels make W an isometry and give K_r = P_r. The runner source actually constructs the qubit projectors, W, extracted blocks, Choi positivity, dephasing channel, selective branches, and repeat-read checks; its hard-coded boundary flags are scope guards, not load-bearing derivations. The clean verdict applies only to the explicitly bounded finite controlled-copy/pointer model stated in the claim scope."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.890562+00:00",
+      "audit_date": "2026-07-01T13:14:54.686433+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "Finite-dimensional algebra only: an assumed normalized isometry W decomposed in an orthonormal record basis yields Kraus blocks with identity resolution, a CPTP unconditional map, and normalized positive nonzero selective states.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "Within the explicit finite qubit controlled-copy/fresh-fragment model, the pi/4 kick plus fixed record-basis calibration induces the projective record-write isometry and extracted blocks K_r=P_r.",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Audited the explicit finite qubit model claim: pointer-population persistence iff [H_int, Pi_S]=0; the displayed controlled-copy coupling forms redundant objective pointer records under the stated Darwinism and fresh/idle-fragment hypotheses; QND alone and OS-transfer membership are not record-formation proofs."
+        },
+        "dep_claim_type": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "bounded_theorem",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "retained_bounded",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_as_kraus_operator_note_2026-05-20",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 7.209,
+        "runner_hash": "e9a9ee33578833576432b686ee0dac7070a9ab03989f4b8d607319a1e62ba2a8",
+        "transitive_descendants": 73
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T131454Z-1c6d24de-record_formation_to_krau",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited controlled-copy write-isometry note supplies W for the explicit finite model, and the cited finite Kraus note supplies the isometry-to-instrument algebra. The remaining conclusions are direct finite-dimensional projector identities.",
+      "claim_scope": "Within the explicit finite projective pointer/fresh-fragment model supplied by the cited retained_bounded notes, the calibrated record-write isometry yields projective Kraus blocks K_r=P_r, the pointer-dephasing CPTP update, and repeat-readable selective branches.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T13:14:54.686433+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Given orthogonal pointer projectors and orthonormal record labels, W|psi> = sum_r P_r|psi> tensor |r> satisfies W^dagger W = sum_r P_r = I and has extracted blocks K_r = <r|W = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that any later use preserves the explicit finite pointer/fresh-fragment scope, especially if generalized beyond the qubit controlled-copy authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 75
+      },
+      "verdict_rationale": "The load-bearing work is algebraic closure over retained_bounded finite-model inputs, not a definition substitution or tuned numerical match. The runner source actually constructs the projective W, extracts K_r, checks CPTP/dephasing/branch stability properties, and verifies source-boundary text rather than merely printing the conclusion. The clean verdict is only for the bounded finite pointer-model bridge and not for arbitrary persistent-record dynamics."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.500721+00:00",
+      "audit_date": "2026-07-02T02:14:41.010352+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "Finite-dimensional algebra only: an assumed normalized isometry W decomposed in an orthonormal record basis yields Kraus blocks with identity resolution, a CPTP unconditional map, and normalized positive nonzero selective states.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "In the explicit finite qubit controlled-copy model at theta=pi/4, the fresh-fragment kick induces the calibrated projective write isometry W|psi> = P_0|psi> tensor |0> + P_1|psi> tensor |1>, with extracted blocks K_r = P_r.",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Bounded finite S + E_1..E_n qubit-model theorem: given the quantum-Darwinism record convention and the explicit controlled-copy/fresh-fragment hypotheses, pointer conservation is necessary for all-state pointer persistence and the displayed local coupling forms redundant objective pointer records."
+        },
+        "dep_claim_type": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "bounded_theorem",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "retained_bounded",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_as_kraus_operator_note_2026-05-20",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 7.209,
+        "runner_hash": "e9a9ee33578833576432b686ee0dac7070a9ab03989f4b8d607319a1e62ba2a8",
+        "transitive_descendants": 73
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T021440Z-749092aa-record_formation_to_krau",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained_bounded upstream inputs supplying stable pointer projectors, orthogonal record labels, and the controlled-copy derivation of the write isometry in the explicit finite model, the remaining conclusions are finite-dimensional projector algebra. The result is clean only at that bounded finite-model scope, not for arbitrary persistent-record dynamics.",
+      "claim_scope": "Exact finite projective-pointer bridge in the explicit controlled-copy/fresh-fragment model: the derived record-write isometry has projective Kraus blocks, a CPTP dephasing update, normalized repeat-stable branches, and orthogonal one-hot labels.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T02:14:41.010352+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "By the projector resolution and orthonormal record labels, W^dagger W = sum_{r,s} P_r^dagger P_s <r|s> = sum_r P_r = I, so W is a normalized isometry and K_r = <r|W = P_r.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that future source wording does not generalize the controlled-copy source-side derivation beyond the explicit finite pointer model supplied by the 2026-06-18 authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 43,
+        "B": 32,
+        "C": 0,
+        "D": 0,
+        "total_pass": 75
+      },
+      "verdict_rationale": "The load-bearing proof is a genuine algebraic closure over retained-grade bounded inputs: orthogonal projectors resolving the identity make W an isometry and make the extracted Kraus blocks exactly P_r. Manual recomputation confirms the normalization, block extraction, CPTP dephasing map, selective branch positivity/normalization, and repeat-read stability. The runner source performs the relevant projector/Kraus/channel checks; its source-anchor and boundary-flag checks are supporting evidence only and do not broaden the claim beyond the explicit finite model."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.849891+00:00",
+      "audit_date": "2026-07-10T15:36:37.857768+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "Finite-dimensional algebra only: an assumed normalized isometry W decomposed in an orthonormal record basis yields Kraus blocks with identity resolution, a CPTP unconditional map, and normalized positive nonzero selective states.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "Within the explicit finite qubit controlled-copy model with a fresh blank record fragment, theta = pi/4 and a fixed record-basis calibration, the kick induces the projective write isometry W with K_r = P_r, while later kicks on fresh fragments leave completed record labels invariant.",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "Exact all-state flow and unitary-step pointer-persistence commutator criteria, the explicit finite controlled-copy record construction, and its stated counterexample and transfer-sector boundaries, conditional on the supplied carrier, pointer, Darwinism, singleton-readout, and fresh-or-idle-fragment hypotheses."
+        },
+        "dep_claim_type": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "bounded_theorem",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_as_kraus_operator_note_2026-05-20": "retained_bounded",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_as_kraus_operator_note_2026-05-20",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+          "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 6.407,
+        "runner_hash": "e9a9ee33578833576432b686ee0dac7070a9ab03989f4b8d607319a1e62ba2a8",
+        "transitive_descendants": 59
+      },
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00004-record_formation_to_kraus_is",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded controlled-copy authority algebraically derives the orthogonal record labels and calibrated W, while the retained-bounded Kraus authority and the note's projector calculation establish the resulting instrument properties. Closure is only for the stated finite controlled-copy/fresh-fragment model.",
+      "claim_scope": "The explicit finite qubit pointer model with fresh blank fragments and the cited controlled-copy dynamics yields a calibrated projective record-write isometry and hence a projective Kraus/CPTP instrument with repeat-stable selective branches.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:53:47.442602+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-10T15:36:37.857768+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00004-record_formation_to_kraus_is",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The explicit finite qubit pointer model with fresh blank fragments and the cited controlled-copy dynamics yields a calibrated projective record-write isometry and hence a projective Kraus/CPTP instrument with repeat-stable selective branches.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:persistent_record_as_kraus_operator_note_2026-05-20:retained_bounded->audit_in_progress",
+      "load_bearing_step": "At theta = pi/4 the controlled-copy kick produces orthogonal record states, so a fixed record-basis calibration gives W|psi> = sum_r P_r|psi> tensor |r>, and projector completeness then gives W^dagger W = sum_r P_r = I.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:medium->critical: first-pass audit (auditor=codex-cli-gpt-5.6-sol-parallel-20260710T153334Z-4f7da8c1-00004-record_formation_to_kraus_is, family=codex-gpt-5.6, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 38,
+        "C": 0,
+        "D": 0,
+        "total_pass": 75
+      },
+      "verdict_rationale": "The load-bearing bridge is a direct finite-dimensional operator calculation over independent retained-bounded inputs, not a definition, tuned numerical match, or external comparison. The supplied proof correctly derives orthogonal controlled-copy record states, and the subsequent isometry, Kraus resolution, CPTP map, and repeat-read properties follow algebraically. The primary runner independently checks the downstream projector/Kraus algebra, although its controlled-copy-to-W scope flag is hard-coded; that link remains established by the fully supplied cited-authority proof."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
+  "title": "Record Formation to Kraus Isometry Bridge",
+  "transitive_descendants": 717,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

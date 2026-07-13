@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.959,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "64a99cb31dbe828c50560b924b61229b491b4c03e6acc7ddde8165c6b0cd462e",
+  "note_path": "docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.385746+00:00",
+      "audit_date": "2026-07-10T03:36:12.971521+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "8a48c62226d440afcd7b116e0870a9121296cc172a0c8a59f95fd294e9fe2314",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00029-reta_algebraic_irreducibilit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "I1-I3 and I4a-I4b close algebraically, but I4c does not: neither the note nor a cited authority specifies the claimed spectral scalar or derives its complete stationary set. The runner assumes delta=n*pi/3 and only checks that 2/9 is not in that assumed set.",
+      "claim_scope": "The algebraic no-pin characterization of cos(3 delta) versus L_3(1,2) on the supplied circulant, including the claimed failure of covariance, determinant-phase, and spectral-stationary pinning routes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:36:12.971521+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24:retained_no_go->unaudited",
+      "load_bearing_step": "Because cos(3 delta) is a free operator coordinate while L_3(1,2)=2/9 is parameter-free, no retained polynomial relation pins the former to the latter, so R-eta is a genuine readout admission on the supplied surface.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: specify the conjugation-even spectral scalar and replace the assumed stationary-set check with a symbolic derivation of all stationary points.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 9,
+        "C": 0,
+        "D": 1,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: I4c imports an unspecified \u201cretained nondegenerate conjugation-even spectral-scalar branch,\u201d while the runner hard-codes its stationary set rather than computing it. Why this blocks: without restrictions on the spectral scalar, conjugation-even functions of cos(3 delta) can have additional nondegenerate interior stationary points, so the three-route no-pin claim and resulting admission characterization are not established. Repair target: specify the scalar action and derive its complete stationary set symbolically, or cite a retained authority proving that result. Claim boundary until fixed: the invariant formulas, fixed-locus arithmetic, covariance, determinant positivity, and operational freedom of cos(3 delta) remain supported on the supplied surface."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py",
+  "title": "R-eta Algebraic Irreducibility as a Genuine Readout Admission - Bounded Note",
+  "transitive_descendants": 10,
+  "verdict_rationale": null
+}

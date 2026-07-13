@@ -1,0 +1,207 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lorentz_boost_covariance_2d_theorem_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "emergent_lorentz_invariance_note"
+  ],
+  "direct_in_degree": 12,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.492,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "89beb705ac5ac1ba84d4220be8ccc435dceca47db979587efcc5ea2b2a951231",
+  "note_path": "docs/LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369070+00:00",
+      "archived_for_note_hash": "badc82eee6dd3c93e9b7a4456eea3124e354d339c47668c0852bff809f1d9f19",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.963027+00:00",
+      "archived_for_note_hash": "1864a78f4e08c08750d22537dbe081a47ca2f0d7e648733497cedc8bc98c5386",
+      "audit_date": "2026-05-05T22:57:45.951664+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "audited_conditional"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note"
+        ],
+        "load_bearing_score": 14.781,
+        "runner_hash": "6860c87f411913f450123781a6381b46696b48488b2dfc0d25fc1eeb07618c0b",
+        "transitive_descendants": 439
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-lorentz_boost_covariance-008",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local free-scalar argument is supported by standard Fourier/Bessel identities and numerical checks, but the restricted packet includes docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md as a one-hop cited authority with effective_status audited_conditional. Missing step: either retain that dependency or split the 1+1D theorem so it no longer cites a non-retained authority for closure.",
+      "claim_scope": "Audited the 1+1D free massive scalar Hamiltonian-lattice spectral two-point function with E_lat^2 = m^2 + (4/a^2)sin^2(pa/2), its spacelike continuum K_0 form, and SO(1,1) covariance of that continuum limit; finite-a covariance, interactions, and timelike i-epsilon structure are outside scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T22:57:45.951664+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "In the continuum limit a -> 0, W_lat(Delta t, Delta x; a, m) -> K_0(m sqrt(-s^2))/(2 pi) for spacelike s^2 < 0, so the limit depends only on the SO(1,1)-invariant interval s^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit or remove/split the EMERGENT_LORENTZ_INVARIANCE_NOTE.md dependency before requesting retained-grade closure for this scoped 1+1D theorem.",
+      "open_dependency_paths": [
+        "docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 14,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "Issue: a direct cited authority, docs/EMERGENT_LORENTZ_INVARIANCE_NOTE.md, is audited_conditional rather than retained-grade. Why this blocks: the rubric does not allow retained closure to propagate through a non-retained one-hop authority, even though the bounded 1+1D free-scalar core appears mostly self-contained. Repair target: ratify the dependency or remove/split the citation so the audited claim depends only on its own spectral integral and standard mathematics. Claim boundary until fixed: a conditional free-scalar continuum-limit covariance statement, not a retained theorem with all cited authority closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.714386+00:00",
+      "audit_date": "2026-05-29T20:00:42.782470+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "emergent_lorentz_invariance_note": "Free cubic Cl(3)/Z^3 staggered-lattice structural dispersion: low-momentum isotropy, leading O(a^2 p^4) dimension-6 anisotropic correction, checked free-H/dispersion CPT/P support only on that surface, and normalized l=4 cubic-harmonic angular signature; Planck readout and full SME interpretation excluded."
+        },
+        "dep_claim_type": {
+          "emergent_lorentz_invariance_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "emergent_lorentz_invariance_note": "retained_bounded"
+        },
+        "deps": [
+          "emergent_lorentz_invariance_note"
+        ],
+        "load_bearing_score": 15.828,
+        "runner_hash": "6860c87f411913f450123781a6381b46696b48488b2dfc0d25fc1eeb07618c0b",
+        "transitive_descendants": 908
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-detailed-lorentz-20260529-second-lorentz_boost_covariance",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note\u2019s core theorem closes from standard algebraic properties of the continuum relativistic dispersion, invariant on-shell measure dp/E, and the spacelike K_0 form. The cited 3+1D dispersion note is contextual rather than load-bearing for this 1+1D free-scalar proof.",
+      "claim_scope": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-29T20:00:42.782470+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T19:59:23.473332+00:00",
+          "auditor": "codex-cli-detailed-lorentz-20260529-lorentz_boost_covariance",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Continuum-limit free massive scalar 1+1D Hamiltonian-lattice two-point function at fixed spacelike separation, with finite-a boost covariance explicitly excluded.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-29T20:00:42.782470+00:00",
+          "auditor": "codex-cli-detailed-lorentz-20260529-second-lorentz_boost_covariance",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited scope is the free massive scalar 1+1D Hamiltonian-lattice spectral two-point function at fixed physical (\u0394t, \u0394x, m), restricted to spacelike separations, and its strict a -> 0 continuum SO(1,1) covariance.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:emergent_lorentz_invariance_note:retained_bounded->unaudited",
+      "load_bearing_step": "In the continuum limit a -> 0, the lattice spectral integral with E_lat(p) converges to the continuum massive-scalar integral W_cont(\u0394t,\u0394x;m)=K_0(m sqrt(-s^2))/(2\u03c0) for spacelike s^2<0, which depends only on the SO(1,1) invariant s^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check the analytic convergence justification beyond the finite numerical sweeps, especially interchange of the a -> 0 limit with the oscillatory integral, but no open dependency blocks the stated spacelike free-scalar theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 39
+      },
+      "verdict_rationale": "The runner source performs nontrivial numerical and algebraic checks of the lattice dispersion, continuum limit, invariant measure, K_0 spacelike form, and boost covariance; it is not a print-only or tuned numerical-match runner. Several final Part 7 checks are assertive summaries, but the load-bearing analytic and numerical checks occur earlier and support the restricted theorem surface. The only cited authority is retained_bounded and is not needed as a load-bearing premise for the 1+1D free-scalar covariance result, so no dependency downgrade is triggered."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lorentz_boost_2d.py",
+  "title": "1+1D SO(1,1) Boost Covariance of the Path-Sum 2-Point Function",
+  "transitive_descendants": 719,
+  "verdict_rationale": null
+}

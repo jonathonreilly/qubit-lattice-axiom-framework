@@ -1,0 +1,576 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+    "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+    "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.486,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "41d11f5cde65a572dddbd9d4ab776f1f916deb77cde86cd251f3ea6de9a0062d",
+  "note_path": "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:07.521688+00:00",
+      "archived_for_note_hash": "3afe03f4f9329317c6381b11bac353ebf2e121473fd471135f7b48c26da54881",
+      "audit_date": "2026-06-06T18:25:00.912837+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0f2b16be20acf4367ccb6631c17bb8c0d3c8379248429b00c2a2c84df88a824c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-182237-441c14c33d-higgs_lattice_taste_count_an",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic identities close under the local hypotheses, but the restricted packet does not close the APBC finite/thermodynamic bridge: the note's APBC grid statement is wrong for finite odd L and the runner does not test APBC. The W(J) bridge also lacks a retained one-hop authority that the actual mean-field lattice operator has the uniform +/- i 2u_0 paired spectrum, rather than only a generic real-antisymmetric toy spectrum.",
+      "claim_scope": "Algebraic bridge for the free naive d=4 corner-zero taste count and the mean-field log-determinant curvature formula under a uniform paired-spectrum hypothesis.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:25:00.912837+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The naive d=4 symbol has zeros at the Brillouin-zone corner set {0,pi}^4 giving N_taste=16, and a real-source determinant over uniform conjugate pairs +/- i 2u_0 gives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: repair the APBC finite-versus-continuum taste-count statement, add an APBC runner check, and provide a retained one-hop derivation or explicitly bounded hypothesis for the actual mean-field operator's uniform +/- i 2u_0 paired spectrum.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 43,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 43
+      },
+      "verdict_rationale": "Manual formula checks confirm the core class-A algebra: D(p)^dag D(p)=(sum sin^2 p_mu)I, the continuum corner count is 2^4, the per-pair determinant is J^2+a^2, and differentiating the displayed W(J) gives N_tot/(4u_0^2). The packet is not clean as written because the APBC cross-check contains a false finite-grid statement and the runner omits that case. The cited authorities also do not by themselves establish the actual mean-field operator's uniform +/- i 2u_0 spectrum, so the bridge remains conditional on an unclosed carrier/spectrum premise."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:55.481588+00:00",
+      "archived_for_note_hash": "1491be2d87301c7d7904e596aa848f2619ce65af0b7565b27792b4fc243f6603",
+      "audit_date": "2026-06-07T00:37:31.236605+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a0afac87be35c9804df330e08b5c3fca4e46c5d0320ce0ec68118b9f32565bb5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-003444-cb51bff8b7-higgs_lattice_taste_count_an",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra closes after assuming d=4 and the uniform paired spectrum. The restricted packet does not close d=4 from the cited Clifford authority, which only gives even total dimension/d_t odd under d_s=3, and it explicitly does not derive the actual mean-field operator's uniform +/- i 2u_0 spectrum.",
+      "claim_scope": "Audited the algebraic taste-count and Berezin log-det curvature bridge for the free naive d=4 lattice symbol, conditional on the stated uniform conjugate-paired +/- i 2u_0 mean-field spectrum.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:37:31.236605+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The naive symbol has 2^d corner zeros, giving N_taste=16 at d=4, and under a uniform paired spectrum +/- i 2u_0 each pair gives W(J)=(N_tot/2) log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained one-hop authority for total d=4 and for the actual mean-field uniform +/- i 2u_0 spectrum, or narrow the row to a purely conditional algebra lemma.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 50,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "The taste-count and W(J) calculus identities are correct as class-A conditional algebra, and the runner meaningfully checks those identities. However, the runner hard-codes d=4 and treats the uniform a=2u_0 paired spectrum as an explicit supplied hypothesis, so it does not close the two premises needed to use this as a retained repair bridge for the parent ratio note. The cited Clifford note does not supply total d=4 on its own."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.222223+00:00",
+      "audit_date": "2026-06-07T16:35:04.769713+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Audited only the abstract finite-site algebraic comparison between the Grassmann and bosonic one-pair-per-site candidates, using retained Cl(3) dim-2 and retained_bounded Berezin determinant inputs; no physical lattice Hilbert-space identification was audited.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "bounded_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained_bounded",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 3.67,
+        "runner_hash": "d6e9f097a67a3eb7d16f04a91c347085a953cf850fd21f28b7a8ef427e51f279",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-163229-894460ad45-higgs_lattice_taste_count_an",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The taste-count and W(J) formulas follow by Clifford algebra, finite Berezin determinant algebra, paired-spectrum determinant algebra, and elementary differentiation. The cited authorities in the restricted packet are retained-grade, and no physical Higgs-mass identification or full non-mean-field spectrum is used.",
+      "claim_scope": "Audited the bounded algebraic bridge that, for the stated free naive d=4 lattice Dirac operator and tadpole mean-field Cl(4) taste block, derives N_taste=16 and W(J)=(N_tot/2)log(J^2+4u_0^2) with curvature W''(0)=N_tot/(4u_0^2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T16:35:04.769713+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16:retained_bounded->unaudited",
+      "load_bearing_step": "D(p)^dag D(p)=(sum_mu sin^2 p_mu)I gives the 2^d corner-zero taste count, and D_mf=i u_0 sum_mu gamma_mu with D_taste^2=4I gives det(D_mf+JI)=(J^2+4u_0^2)^2 and W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the parent-row handoff: this verdict audits the structural Brillouin-zone naive taste count, not a finite-APBC exact-zero count.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing steps are genuine class-A algebraic/counting closures over retained-grade inputs and explicitly stated bounded hypotheses. Independent checking confirms the factors, signs, multiplicities, determinant form, and curvature normalization. The runner source performs actual Clifford, Berezin, spectral, and calculus checks rather than merely printing constants, and the packet imports no PDG, lattice-MC, fitted, or tuned numerical comparator."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.495806+00:00",
+      "audit_date": "2026-06-15T21:23:19.529055+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Internal complex Clifford-algebra chirality parity: the volume element has commutation sign (-1)^(n-1), an internal gamma_5 exists iff p+q is even, and with d_s=3 this forces d_t odd.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate surface {single-pair Grassmann G, free bosonic CCR B}, the physical one-qubit per-site Hilbert dimension excludes B, admits G, and gives G the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 13.511,
+        "runner_hash": "d6e9f097a67a3eb7d16f04a91c347085a953cf850fd21f28b7a8ef427e51f279",
+        "transitive_descendants": 257
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-212112-6618ee0884-higgs_lattice_taste_count_an",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The taste count follows from the Clifford scalar-square identity and the Brillouin-zone zero set {0,pi}^4; the APBC finite-grid caveat is scoped as regulator behavior, not the structural species count. The W(J) form follows from the retained Berezin determinant identity plus the explicit mean-field Clifford block and elementary differentiation.",
+      "claim_scope": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:23:19.529055+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-12T01:09:46.024626+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-010813-a7e58416f1-higgs_lattice_taste_count_an",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Two algebraic bridges only: the structural free-naive d=4 Brillouin-zone taste count and the Berezin/tadpole-mean-field W(J) curvature form under the explicit mean-field block; no physical Higgs-mass claim or full non-mean-field spectrum is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T21:23:19.529055+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-212112-6618ee0884-higgs_lattice_taste_count_an",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:clifford_chirality_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The Clifford identities give D(p)^dag D(p)=(sum_mu sin^2 p_mu)I, hence 2^4 naive corner zeros, and D_taste^2=4I, hence det(D_mf+JI_4)=(J^2+4u_0^2)^2 and W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the APBC caveat: this audit accepts the structural Brillouin-zone naive taste count, not a finite-APBC exact-zero count.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing steps are exact algebraic/counting/calculus identities over retained-grade inputs and the note's explicit bounded hypotheses. The runner source performs substantive symbolic and numerical checks rather than merely printing constants, and the cached output reports 53 PASS / 0 FAIL. No external comparator, fitted value, PDG/lattice-MC number, or tuned input scale is load-bearing."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.873554+00:00",
+      "audit_date": "2026-07-01T07:03:11.618345+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Audited the complex Clifford-algebra identity omega gamma_mu = (-1)^(n-1) gamma_mu omega, the internal chirality involution iff p+q is even, and the conditional specialization d_s=3 implies d_t odd.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic B}, the physical per-site dimension 2 excludes B, admits G, and G carries the Berezin determinant readout; statistics forcing is not audited or claimed.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 9.544,
+        "runner_hash": "d6e9f097a67a3eb7d16f04a91c347085a953cf850fd21f28b7a8ef427e51f279",
+        "transitive_descendants": 263
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T070311Z-bccb1a1b-higgs_lattice_taste_coun",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The taste-count result follows from the Clifford cancellation in the naive symbol and elementary Brillouin-zone zero counting. The W(J) form follows from the retained Berezin determinant identity plus the explicitly scoped mean-field block spectrum and direct differentiation; no physical Higgs-mass or full non-mean-field spectral claim is used.",
+      "claim_scope": "Algebraic bridge, conditional on the explicit d=4 naive lattice Dirac symbol and the tadpole mean-field Cl(4) block, deriving the structural naive taste count 16 and the mean-field log-determinant W(J) curvature form.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:03:11.618345+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T06:59:49.260956+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T065949Z-eb3aa32a-higgs_lattice_taste_coun",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic audit of the naive d=4 taste count N_taste=16 and the Berezin/log-det mean-field W(J) curvature form for the explicit Cl(4) tadpole block; no physical Higgs-mass identification, physical species-realization claim, or full non-mean-field spectrum is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T07:03:11.618345+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T070311Z-bccb1a1b-higgs_lattice_taste_coun",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Algebraic bridge, conditional on the explicit d=4 naive lattice Dirac symbol and the tadpole mean-field Cl(4) block, deriving the structural naive taste count 16 and the mean-field log-determinant W(J) curvature form.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:clifford_chirality_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The naive Dirac symbol has zeros exactly on {0,pi}^d, giving N_taste=2^4=16 at d=4, and the tadpole mean-field block D_mf=i u_0 sum_mu gamma_mu has characteristic polynomial (lambda^2+4u_0^2)^2, so W(J)=(N_tot/2) log(J^2+4u_0^2) and W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the APBC wording only: this clean verdict treats N_taste=16 as the structural naive Brillouin-zone corner species count, not as an exact finite-APBC zero count.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing steps are exact algebraic/counting/calculus closures over retained-grade or retained-bounded one-hop inputs and the note's explicit bounded hypotheses. The runner source performs substantive symbolic and numerical checks of the Clifford zero count, Berezin determinant form, paired determinant algebra, mean-field characteristic polynomial, and curvature formula, with only metadata/dependency checks outside the algebraic path. The scope discipline is adequate: finite APBC exact-zero behavior is separated from the structural naive Brillouin-zone taste count, and no physical Higgs-mass identification is claimed."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.428897+00:00",
+      "audit_date": "2026-07-01T23:24:38.495155+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Pure Clifford-algebra parity theorem: the volume element commutes for odd n and anticommutes for even n, so an internal Clifford-algebra chirality involution exists iff p+q is even; with accepted Z^3 spatial count this implies d_t is odd.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the explicitly declared two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic CCR B}, the accepted qubit/M_2(C) per-site premise plus retained dim_C H_x = 2 row exclude B by dimension and leave G, with the cited Berezin determinant readout; no statistics-forcing claim is audited.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 9.544,
+        "runner_hash": "d6e9f097a67a3eb7d16f04a91c347085a953cf850fd21f28b7a8ef427e51f279",
+        "transitive_descendants": 263
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T232438Z-60fba85f-higgs_lattice_taste_coun",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The taste count follows from the Clifford cancellation D(p)^dag D(p)=(sum sin^2 p_mu)I and the Brillouin-zone corner count. The W(J) form follows from the retained Berezin determinant identity plus the explicit Cl(4) mean-field block; no physical Higgs-mass identification or non-mean-field spectrum is claimed.",
+      "claim_scope": "Audited the bounded algebraic bridge that, under the explicit naive lattice Dirac operator and tadpole mean-field block hypotheses, derives the d=4 naive taste count N_taste=16 and the mean-field log-determinant W(J) curvature form used by the ratio note.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:24:38.495155+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T23:22:36.052186+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T232236Z-9b0058dd-higgs_lattice_taste_coun",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the algebraic d=4 naive-lattice taste count and the Berezin/log-det mean-field W(J) form, conditional on the stated free naive operator, d=4 setting, and explicit tadpole mean-field block.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T23:24:38.495155+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T232438Z-60fba85f-higgs_lattice_taste_coun",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded algebraic bridge that, under the explicit naive lattice Dirac operator and tadpole mean-field block hypotheses, derives the d=4 naive taste count N_taste=16 and the mean-field log-determinant W(J) curvature form used by the ratio note.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:clifford_chirality_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "The free naive symbol has zeros at {0,pi}^d giving N_taste=16 at d=4, and the tadpole mean-field block D_mf=i u_0 sum_mu gamma_mu has det(D_mf+JI_4)=(J^2+4u_0^2)^2, so W(J)=(N_tot/2)log(J^2+4u_0^2) and W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the APBC wording versus the repaired target phrase d=4/Z^4 APBC, but the note explicitly narrows this to structural Brillouin-zone taste counting rather than finite APBC exact zeros.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing content is algebraic/counting/calculus closure over retained-grade or retained-bounded inputs. The runner source actually constructs Clifford matrices, enumerates the corner zeros, verifies the Berezin determinant formula for small N, derives the mean-field characteristic polynomial, and differentiates W(J), rather than merely printing expected constants. The APBC caveat is handled as a regulator distinction: the theorem audits the structural continuum Brillouin-zone naive taste count, not finite APBC exact-zero counting. The result remains bounded to the named naive-operator and tadpole mean-field hypotheses."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.546196+00:00",
+      "audit_date": "2026-07-10T03:10:08.792191+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "For an internal element of the complex Clifford algebra Cl(p,q), a chirality involution exists exactly when n=p+q is even; conditionally taking the total algebra as Cl(d_s,d_t), the accepted Z^3 spatial premise then forces d_t to be odd.",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "Finite Grassmann-calculus identity: given explicit anticommutation and Berezin integration rules, the quadratic partition equals det(M) and odd-odd insertions are antisymmetric as algebra elements/Berezin integrals.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 9.15,
+        "runner_hash": "d6e9f097a67a3eb7d16f04a91c347085a953cf850fd21f28b7a8ef427e51f279",
+        "transitive_descendants": 283
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-030416-4dce9418-higgs_lattice_taste_coun-025",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The corner calculation proves the infinite-volume naive-symbol species count, but the note itself shows that a strict finite APBC grid does not contain 16 exact zeros and supplies no retained bridge identifying that structural count with the ratio note's Z^4 APBC multiplicity. Likewise, the cited inputs do not derive the full mean-field lattice operator as repeated copies of D_mf=i u_0 sum_mu gamma_mu, which is needed to extend the verified 4x4 determinant to arbitrary N_tot.",
+      "claim_scope": "The algebraic naive-Brillouin-zone doubler count and determinant curvature within the explicitly assumed uniform Cl(4) tadpole mean-field block.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:10:08.792191+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "From the naive symbol's corner zeros one obtains N_taste=2^4=16, while the assumed block D_mf=i u_0 sum_mu gamma_mu and the Berezin determinant identity yield W(J)=(N_tot/2) log(J^2+4u_0^2) and W''(0)=N_tot/(4u_0^2).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop derivation identifying the ratio note's finite Z^4 APBC multiplicity with the continuum naive-corner species count, and derive the full N_tot-mode operator as repeated D_mf blocks from the stated lattice operator under the mean-link truncation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The runner genuinely verifies the stated Clifford, counting, determinant, and calculus identities rather than merely printing expected constants. Those checks establish the conclusions conditional on the naive infinite-volume species interpretation and the posited uniform mean-field block. They do not close the APBC multiplicity identification or derive the N_tot-mode mean-field operator from the cited tadpole authority, so the claimed repair is incomplete."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
+  "title": "Higgs Lattice \u2014 d=4 Taste Count N_taste=16 and Mean-Field W(J) Form Bridge Narrow Theorem Note",
+  "transitive_descendants": 716,
+  "verdict_rationale": null
+}

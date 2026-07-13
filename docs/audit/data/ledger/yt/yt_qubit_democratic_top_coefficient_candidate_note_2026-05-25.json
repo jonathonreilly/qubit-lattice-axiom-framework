@@ -1,0 +1,1391 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "41c2323369a48af7ba209b8bff86f845099c8a27fe70c549a099a79c6a2c9637",
+  "note_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T11:53:38.649558+00:00",
+      "audit_date": "2026-05-25T20:14:17.486460+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "fd622f8fb596098d855a7e059c4e2b042f9cc6a2569a10b18acbdb4f2599c2e3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T201356Z-14601ab0-yt_qubit_democratic_top_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional invariant-vector result follows by standard linear algebra once the six-component carrier and full S_6 democracy are taken as the scoped setup. The physical bridge identifying this amplitude with the top Yukawa coefficient remains explicitly outside the claimed closure.",
+      "claim_scope": "Audited only the finite-dimensional democratic-source statement: an S_6-invariant unit vector on a six-component Q_L carrier has component amplitude 1/sqrt(6), not its identification with y_33 or y_t.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T20:14:17.486460+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:fd622f8f->37a2ea85",
+      "load_bearing_step": "The unique unit vector in C^6 invariant under all S_6 permutations is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or supply a retained response theorem deriving strict top coefficient = democratic Q_L component amplitude.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 37,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "The mathematical component-amplitude result is a clean algebraic consequence of S_6 invariance and unit normalization, and the runner source genuinely checks that finite-dimensional computation rather than merely printing PASS. However, the note's physical relevance depends on an explicitly open bridge: strict top coefficient equals democratic Q_L component amplitude. Under the no-go discipline gate for a bounded residual admission, N1 cannot enumerate five same-packet attack routes that close or independently test that bridge; the restricted packet only states the bridge is future work."
+    },
+    {
+      "archived_at": "2026-05-29T12:09:00.326730+00:00",
+      "archived_for_note_hash": "f68373ee60eb16ec56df495a23e862308fdd72c73116a572e88f34e842a5f296",
+      "audit_date": "2026-05-28T09:07:51.042040+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "37a2ea85293c75b2b90eeb3f8549a30ccc01288968e32688211e206a66e3eb77",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-yt-democratic-top-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The S_6-invariant unit-vector calculation closes exactly, and an independent symbolic check reproduces the 1/sqrt(6) component amplitude. The top-coefficient claim remains conditional because the physical response bridge equating the top coefficient with this democratic Q_L component amplitude is explicitly open.",
+      "claim_scope": "Exact finite-dimensional S_6-democratic vector calculation on C^6 giving component amplitude 1/sqrt(6), evaluated only as a candidate support surface for the still-open top-response bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T09:07:51.042040+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "If the top coefficient is the component amplitude of the unique permutation-invariant unit source on the six Q_L color-isospin components, then every component amplitude is 1/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the strict top response coefficient equals the democratic Q_L component amplitude, or split this into a pure exact support lemma with explicit direct dependencies for the Q_L carrier dimension.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "Issue: the democratic C^6 amplitude calculation is exact, but the row's top-coefficient significance depends on the open premise that the strict top response coefficient equals this democratic Q_L source component. Why this blocks: the restricted packet proves a normalized invariant-vector amplitude, not a physical Yukawa/readout theorem or response bridge. Repair target: derive a retained response theorem identifying the strict top coefficient with the democratic Q_L component amplitude, or narrow this row to a pure exact support lemma with graph-visible carrier-dimension inputs. Claim boundary until fixed: 1/sqrt(6) is an exact democratic-source amplitude candidate, not an audited top-coefficient closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.916181+00:00",
+      "audit_date": "2026-05-29T22:04:10.544278+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "37a2ea85293c75b2b90eeb3f8549a30ccc01288968e32688211e206a66e3eb77",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-audit-ready-20260529-yt_qubit_democratic_top_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The invariant-vector calculation closes as standard linear algebra once the six-component Q_L carrier and full S_6 democracy are taken as the stated setup. The physical bridge equating this amplitude with the top Yukawa response is explicitly outside the audited load-bearing scope.",
+      "claim_scope": "Audited only the finite-dimensional support lemma that an S_6-democratic unit source on a six-component Q_L carrier has component amplitude 1/sqrt(6), not the physical identification with y_33 or y_t.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T22:04:10.544278+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The unique S_6-permutation-invariant unit vector on the six Q_L color-isospin components is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream ledger handling preserves the bounded scope and does not promote the admitted y_33 response bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 42,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "The repaired note cleanly limits its load-bearing claim to the finite-dimensional S_6-invariant unit-vector lemma. The runner source actually performs symbolic checks of equality constraints, normalization, component amplitudes, and permutation invariance rather than merely printing constants. The note explicitly admits that the response bridge to y_33 remains open and does not use that bridge as a load-bearing step."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:24.590727+00:00",
+      "audit_date": "2026-07-12T10:34:37.891137+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "37a2ea85293c75b2b90eeb3f8549a30ccc01288968e32688211e206a66e3eb77",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00295-yt_qubit_democratic_top_coef",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional algebra closes on an assumed six-component carrier. The restricted packet neither cites a retained derivation identifying that carrier with physical Q_L nor supplies the explicitly open response bridge equating its component amplitude with y_33.",
+      "claim_scope": "Conditional finite-dimensional lemma: assuming V=C^6 is the Q_L color-isospin carrier, the unique S_6-invariant unit vector has each component 1/sqrt(6); the identification with y_33 or y_t was not established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T10:34:37.891137+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:c9cba4bc4057",
+      "load_bearing_step": "For V = C^6, S_6 invariance forces all components equal, and unit normalization therefore gives each component amplitude 1/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The note and symbolic runner solve the adjacent-transposition constraints, normalize the vector, and evaluate its components.",
+            "disposition": "CLOSED",
+            "evidence_locator": "u_dem = (1/sqrt(6)) sum_i e_i.",
+            "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use full S_6 permutation invariance and unit normalization to force an equal-component source.",
+            "outcome": "This closes the abstract C^6 amplitude calculation but does not identify C^6 with the physical Q_L carrier or the amplitude with the top response.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "s6_invariant_vector"
+          },
+          {
+            "attempt": "The restricted premise surface was checked for a Q_L carrier or sector-selection theorem.",
+            "disposition": "OPEN",
+            "evidence_locator": "source/action and physical-observable identification;",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive that the physical Q_L source domain is exactly the six-dimensional color-isospin carrier used in the lemma.",
+            "outcome": "The source asserts the dimension, but no one-hop authority derives the physical carrier identification; the minimal axioms do not supply source/action or physical-observable structure.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "ql_carrier_derivation"
+          },
+          {
+            "attempt": "The note and runner boundary were inspected for an operator, response functional, or effective-action calculation of this equality.",
+            "disposition": "OPEN",
+            "evidence_locator": "strict top coefficient = democratic Q_L component amplitude",
+            "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive a dynamical response theorem mapping the democratic Q_L source amplitude to the strict top coefficient.",
+            "outcome": "No such calculation is present; the note explicitly names the equality as the next theorem.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "top_response_dynamics"
+          },
+          {
+            "attempt": "The restricted packet was checked for completed measurement data or a physical observable definition.",
+            "disposition": "OPEN",
+            "evidence_locator": "or the direct measurement route must measure the coefficient.",
+            "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Measure y_33 directly through an independently defined physical observable instead of identifying it with the democratic source component.",
+            "outcome": "The note lists direct measurement only as a future alternative and supplies neither a measurement nor a retained observable bridge.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "direct_coefficient_measurement"
+          },
+          {
+            "attempt": "The note explicitly separates its democratic amplitude from the old Ward/H_unit identification and refuses to define y_t through it.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This candidate does not define `y_t`",
+            "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Declare the normalized component or an H_unit matrix element to be the top Yukawa coefficient.",
+            "outcome": "A relabeling would not derive a physical response and is correctly excluded by the note.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "ward_hunit_relabel"
+          },
+          {
+            "attempt": "The source and premise registry were checked for a normalization or source/action bridge fixing this map.",
+            "disposition": "OPEN",
+            "evidence_locator": "physical top response coefficient equals this democratic source amplitude.",
+            "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Supply a normalization theorem showing that the unit source normalization is the physical Yukawa-response normalization with no additional factor.",
+            "outcome": "No such bridge is supplied; unit normalization fixes the mathematical vector norm only.",
+            "route_class": "normalization_or_units",
+            "route_id": "normalization_bridge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "physical identification of the six-dimensional carrier with Q_L color-isospin components",
+            "dynamical or observable bridge from democratic component amplitude to y_33"
+          ],
+          "evidence_locator": "top Yukawa coefficient = democratic Q_L source component amplitude.",
+          "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "physical identification of the six-dimensional carrier with Q_L color-isospin components",
+              "left_closes_right": false,
+              "right": "dynamical or observable bridge from democratic component amplitude to y_33",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "physical identification of the six-dimensional carrier with Q_L color-isospin components",
+            "dynamical or observable bridge from democratic component amplitude to y_33"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "What Still Does Not Close",
+          "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Q_L carrier dimension = N_iso * N_color = 2 * 3 = 6.",
+              "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+              "phrase": "Q_L carrier dimension = N_iso * N_color = 2 * 3 = 6.",
+              "promoted_wall": "physical identification of the six-dimensional carrier with Q_L color-isospin components"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "physical top response coefficient equals this democratic source amplitude.",
+              "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+              "phrase": "physical top response coefficient equals this democratic source amplitude.",
+              "promoted_wall": "dynamical or observable bridge from democratic component amplitude to y_33"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Further physical structure requires a retained derivation or bridge",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "Further physical structure requires a retained derivation or bridge"
+            }
+          ],
+          "scan_scope": "The source note, runner source, current minimal axioms, and approved-premise registry were scanned for carrier, source/action, physical-observable, response, readout, normalization, measurement, and retained-bridge assumptions.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "No new axiom, import, or retained bridge is introduced.",
+          "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+          "none_found_reason": "No retained-grade one-hop prior witness in the restricted packet derives either missing physical identification, so no prior-witness route was used.",
+          "scan_scope": "No N1 route was marked RULED OUT BY PRIOR; the restricted packet was nevertheless checked for prior witnesses purporting to derive the physical Q_L carrier or top-response bridge.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The next theorem would have to prove a response bridge:",
+          "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+          "scan_scope": "All closure, open-premise, blocker, admission, and non-claim language was checked against the resolutions actually tested by the runner.",
+          "statements": [
+            {
+              "evidence_locator": "This is not yet a Y_T closure because the missing premise is still open:",
+              "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+              "phrase": "This is not yet a Y_T closure because the missing premise is still open:",
+              "tested_resolutions": [
+                "finite-dimensional S_6 invariance on an assumed C^6 carrier",
+                "unit normalization and component projection"
+              ],
+              "untested_resolutions": [
+                "physical derivation of the Q_L carrier identification",
+                "dynamical response theorem for y_33",
+                "direct physical coefficient measurement"
+              ]
+            },
+            {
+              "evidence_locator": "This packet does not claim:",
+              "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+              "phrase": "This packet does not claim:",
+              "tested_resolutions": [
+                "source-note firewall and absence-of-overclaim string checks"
+              ],
+              "untested_resolutions": [
+                "physical Yukawa/readout closure"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The physical carrier derivation, response theorem, and direct-measurement resolutions remain untested."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only the kinetic-form ratio c_t/c_s and expressly supplies no coupling, selector, or readout bridge.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms supply the lattice, one-site algebra, admissibility, and record clauses but expressly withhold source/action and physical-observable identifications.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither a Q_L carrier nor a Yukawa response map.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference cannot supply the missing dimensionless carrier, response, or normalization identification.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton K/CPT occupancy counting, not the Q_L carrier or top response.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This is a charged-lepton eta-angle readout obligation and does not supply the top-response bridge.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns a strong-CP cross-sector determinant readout and does not identify the democratic Q_L amplitude with y_33.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom and approved-primitive registry, open-obligation registry, and indexed definition/scope surfaces were checked for any candidate that supplies the Q_L carrier or physical top-response bridge.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "If no color-isospin component is distinguished, full permutation symmetry uniquely forces the normalized democratic vector, and choosing the top color/up-isospin component then appears to yield 1/sqrt(6) directly.",
+          "evidence_locator": "Every component, including the top color/up-isospin component after a readout choice, has amplitude `1/sqrt(6)`.",
+          "evidence_path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+          "resolution": "The first implication is exact, but the final physical reading assumes both that the relevant source domain is the asserted Q_L C^6 carrier and that the strict top response reads a component amplitude with the same normalization. Those are precisely the two missing bridges, so the steelman does not establish physical y_33.",
+          "resolved": true,
+          "route_id": "s6_invariant_vector"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:0",
+              "evidence_locator": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Prior audit accepted the algebraic amplitude but found the physical bridge and discipline-route coverage open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:1",
+              "evidence_locator": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Prior audit found the democratic amplitude exact but the physical response bridge missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:2",
+              "evidence_locator": "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "A prior clean result scoped only the abstract support lemma but was invalidated because the mandatory no-go discipline packet was absent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Charged-lepton occupancy counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Charged-lepton eta readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Strong-CP determinant readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Unrelated campaign ledger containing charged-lepton and other inherited no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Gravity architecture-portability bridge boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite positive support does not itself close a physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Atomic and temporal-axis audit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Large inherited no-go catalog, including distinct charged-lepton Yukawa routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Gauge-coupling formal-identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Plaquette beta=6 computation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Lensing observable and finite-path route boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Carrier symmetry does not manufacture an unregistered physical primitive.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Charged-lepton Ward and selector no-gos concern a different physical sector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Causal-metric source packet boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite-family orientation evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Local Wilson normalization cannot close an environment theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Formal flavor carriers are not automatically physical sectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Free-Dirac analytic-vector and audit-retag boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Gauge-environment computation boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Gauge-isotropy and temporal-generator boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Gravity dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Weak-field gravity sign scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Planck and absolute-scale carrier obstructions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "A formal commutant line does not select physical normalization or species.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Campaign-level mass, coupling, and scale boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Atomic-scale and threshold-transport boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Quark carrier and symmetry data do not by themselves supply physical Yukawa readouts.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite lattice checks do not establish a uniform asymptotic theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Lensing observable no-go on a finite harness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite-path lensing geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Physical source/readout bridge not derived by a formal magnitude result.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Temporal source and readout-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Empty larger-cell no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Planning priority cannot act as theorem-grade selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Update tick does not derive physical time.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Neutrino and PMNS selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Neutrino mass-scale and cosmology boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite gravity replay does not establish a universal distance law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Frozen-log and finite-basin evidence boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Coupling and register-versus-read boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite packet behavior does not derive decoherence or gravity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite-grid differential-equation evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Dimension matching alone does not identify a physical carrier or intertwiner.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Carrier-rank matching and physical support selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Plaquette bootstrap and solver boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Plaquette character-evaluation diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite normalized data do not supply selector or physical authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Readout and registrability bridges in unrelated strong-CP and charged-lepton lanes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Temporal-axis and transfer-generator boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "A six-dimensional tangent basis is not already the physical Y_T response basis, and 1/sqrt(6) is not a measured top coefficient.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Minimal axioms do not select a physical kinetic law or downstream carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "SU(3) quotient-encoder scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Determinant-channel readout boundary in the theta lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Gauge-sector theta readout/action boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Positive theta-carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Theta phase-insertion gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Theta defect-closure gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Charged-lepton determinant-power horn selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Record axioms do not supply K/CPT occupancy selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Record formation does not supply rate or eta readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Unrelated artifact-visibility gap rather than a no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Record-only reasoning cannot eliminate an unregistered readout scale.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite numerical matching does not establish a structural amplitude law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Finite raw rows do not establish a continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "mechanism": "Defining an H_unit matrix element as y_t is a renaming rather than a physical readout derivation.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "physical identification of the six-dimensional carrier with Q_L color-isospin components",
+          "dynamical or observable bridge from democratic component amplitude to y_33"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25": {
+              "accepted_premise_type": null,
+              "content_sha256": "460db6075db0327bc43765eb351efcbbd72949ab343f5b81b763d2a140af12bb",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:0",
+                "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:1",
+                "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:2"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:0",
+                "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:1",
+                "yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25:previous_audit:2"
+              ]
+            },
+            "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25": {
+              "accepted_premise_type": null,
+              "content_sha256": "8aef6f5ea469c9876c9c8669cd09bbf3ebb1c477c703f20eb3b23bbda9a197b0",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Further physical structure requires a retained derivation or bridge",
+                "source/action and physical-observable identification;"
+              ]
+            },
+            "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "41c2323369a48af7ba209b8bff86f845099c8a27fe70c549a099a79c6a2c9637",
+              "effective_status": null,
+              "path": "docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Every component, including the top color/up-isospin component after a readout choice, has amplitude `1/sqrt(6)`.",
+                "No new axiom, import, or retained bridge is introduced.",
+                "Q_L carrier dimension = N_iso * N_color = 2 * 3 = 6.",
+                "The next theorem would have to prove a response bridge:",
+                "This candidate does not define `y_t`",
+                "This is not yet a Y_T closure because the missing premise is still open:",
+                "This packet does not claim:",
+                "What Still Does Not Close",
+                "or the direct measurement route must measure the coefficient.",
+                "physical top response coefficient equals this democratic source amplitude.",
+                "strict top coefficient = democratic Q_L component amplitude",
+                "top Yukawa coefficient = democratic Q_L source component amplitude.",
+                "u_dem = (1/sqrt(6)) sum_i e_i."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 has four open mechanism classes: physical Q_L carrier derivation, dynamical response, direct measurement, and physical normalization.",
+          "N5 identifies untested physical carrier, response-theorem, and measurement resolutions."
+        ],
+        "narrowed_claim_scope": "Conditional finite-dimensional lemma: assuming V=C^6 is the Q_L color-isospin carrier, the unique S_6-invariant unit vector has each component 1/sqrt(6); the identification with y_33 or y_t was not established.",
+        "next_route": {
+          "reason_untested": "The restricted packet contains no response operator, effective action, or physical readout theorem whose evaluation could establish the named equality.",
+          "route_id": "top_response_dynamics"
+        },
+        "prior_claim_scope": "Audited only the finite-dimensional democratic-source statement: an S_6-invariant unit vector on a six-component Q_L carrier has component amplitude 1/sqrt(6), not its identification with y_33 or y_t.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite a retained authority deriving the six-dimensional Q_L color-isospin carrier, keep the y_33 response bridge explicitly non-load-bearing, and rerun the restricted audit packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 28,
+        "C": 0,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "The runner genuinely solves the permutation-invariance equations and verifies normalization and component amplitudes, so the C^6 lemma is exact rather than a printed constant. However, its authority checks read ledger entries and files not supplied as one-hop authorities, while the physical Q_L carrier identification and top-response bridge remain underived. The runner's candidate_available and bridge_closed values are hard-coded boundary declarations, not computations of either missing bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py",
+  "title": "Y_T Qubit Democratic Top-Coefficient Candidate",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

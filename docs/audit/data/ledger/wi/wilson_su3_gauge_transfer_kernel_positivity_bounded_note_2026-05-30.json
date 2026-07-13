@@ -1,0 +1,250 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+    "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.735,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "095d6aeaeb8a71e20e29e98c8e7423e41526288ff0678b467e05cc9953fb3635",
+  "note_path": "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:50:15.420060+00:00",
+      "audit_date": "2026-06-01T21:18:42.517605+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Standalone compact-group temporal-gauge Wilson mixed-kernel factorization over spatial links, per-link Peter-Weyl convolution diagonalization, trivial-channel normalization, and marked/non-marked compression on tensor-product Peter-Weyl marked-link basis functions, excluding SU(3), beta=6, source-sector, transfer-operator, and physical-framework claims.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Abstract finite-truncation SU(3) character-algebra theorem only: for B_N={(p,q):0<=p,q<=N} and an abstract real nonnegative conjugation-symmetric normalized coefficient sequence rho_(p,q), the central class-function convolution operator built from Z=sum d_(p,q) rho_(p,q) chi_(p,q) acts diagonally as C chi_(p,q)=rho_(p,q) chi_(p,q), the coefficients are unique, and the diagonal operator is positive, self-adjoint, and swap-symmetric. This excludes any identification with Wilson action data, beta=6 framework-point coefficients, unmarked spatial environment compression, physical plaquette transfer, or parent residual-environment closure."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260601-211617-72324952-wilson_su3_gauge_transfe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic expansion closes from SU(3) representation-ring non-negative multiplicities and Schur/Peter-Weyl convolution diagonalization. The explicitly open mixed OS transfer and fermion premises are outside the note's scoped gauge-only conclusion.",
+      "claim_scope": "Gauge-sector Wilson SU(3) one-link weight w(U)=exp((beta/3) Re Tr U): non-negative character coefficients for all irreps and beta>=0, hence PSD one-link convolution/transfer kernel; no full mixed gauge+fermion RP closure audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-01T21:18:42.517605+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "Equation (13): c_lambda(beta)=sum_{n>=0} (1/n!)(beta/(2N_c))^n m_lambda^{(n)}, with every m_lambda^{(n)} a non-negative SU(3) tensor-product multiplicity, so c_lambda(beta)>=0 for beta>=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the operator-positivity versus finite-Gram equivalence wording, though the positive character expansion gives the Gram PSD route directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure, not a definition or numerical match: powers of chi_3+chi_3bar decompose with non-negative integer multiplicities, and the beta>=0 exponential has non-negative scalar weights term by term. The c_lambda/d_lambda convolution normalization and exp(-beta) kernel scalar are consistent with the cited retained convolution/factorization authorities. The runner source performs exact character, CG, and power-expansion checks plus direct Haar/Gram and negative-control checks; it does not hard-code the contested premise or import external comparators."
+    },
+    {
+      "archived_at": "2026-06-13T23:51:03.960766+00:00",
+      "audit_date": "2026-06-07T00:02:09.651989+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Abstract finite-truncation SU(3) character-algebra theorem only: for B_N={(p,q):0<=p,q<=N} and an abstract real nonnegative conjugation-symmetric normalized coefficient sequence rho_(p,q), the central class-function convolution operator built from Z=sum d_(p,q) rho_(p,q) chi_(p,q) acts diagonally as C chi_(p,q)=rho_(p,q) chi_(p,q), the coefficients are unique, and the diagonal operator is positive, self-adjoint, and swap-symmetric. This excludes any identification with Wilson action data, beta=6 framework-point coefficients, unmarked spatial environment compression, physical plaquette transfer, or parent residual-environment closure."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-000031-bbf4e6185f-wilson_su3_gauge_transfer_ke",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof reduces the Wilson weight to a non-negative exponential series in the direct-sum character chi_3 + chi_3bar. SU(3) tensor-product multiplicities are non-negative integers, so every fixed character coefficient is a convergent sum of non-negative terms; the PSD convolution-kernel conclusion then follows by Peter-Weyl/Schur diagonalization.",
+      "claim_scope": "For SU(3) and beta >= 0, the single-link Wilson gauge weight w(U)=exp((beta/3) Re Tr U) has non-negative character coefficients, hence its convolution transfer kernel is PSD in the gauge-link sector only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T00:02:09.651989+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "Equation (13): c_lambda(beta) is the sum over n of (beta/(2 N_c))^n/n! times the multiplicity of chi_lambda in (chi_box + chi_boxbar)^n, and those multiplicities are non-negative integers.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the harmless normalization wording in section 5: the physical convolution eigenvalue is c_lambda/d_lambda, while the cited abstract rho sequence may require a positive d_lambda or c_0 normalization depending on which operator is being identified; this does not affect the audited sign claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing derivation is a genuine algebraic closure from standard SU(3) representation-ring positivity and compact-group character orthogonality, not a definition, renaming, or tuned numerical match. The two cited authorities are marked retained and are used only for convolution/factorization structure; the sign theorem itself is independently supplied by the character-ring argument. The runner source performs nontrivial exact character-algebra checks, Monte Carlo integral checks, Gram PSD checks, and a negative-control deformation; it does not merely print expected constants or import the contested sign claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.767757+00:00",
+      "audit_date": "2026-06-21T07:43:48.705638+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "Finite SU(3) character truncation B_N: an abstract normalized nonnegative conjugation-symmetric coefficient sequence rho defines the same diagonal operator as convolution by Z=sum d_(p,q) rho_(p,q) chi_(p,q), with uniqueness and positivity/self-adjoint/swap symmetry; no Wilson-environment identification is audited."
+        },
+        "dep_claim_type": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+          "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 16.581,
+        "runner_hash": "df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3",
+        "transitive_descendants": 382
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The proof closes by standard SU(3) representation-ring algebra: chi_3 + chi_3bar is the character of 3 direct-sum 3bar, its powers decompose with non-negative Clebsch-Gordan multiplicities, and the beta >= 0 exponential is a non-negative weighted sum of those powers. The retained cited authorities supply the convolution diagonalization/factorization context, while the note explicitly excludes the full mixed gauge+fermion RP theorem.",
+      "claim_scope": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T07:43:48.705638+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-14T00:11:11.882789+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260614-000855-6e73d2a15c-wilson_su3_gauge_transfer_ke",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Gauge-only SU(3) Wilson one-link weight/kernel: non-negative character coefficients for all irreps and beta>=0, hence PSD convolution/Gram kernel; no fermion, mixed OS, or full interacting RP closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T07:43:48.705638+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Equation (13): c_lambda(beta) = sum_{n>=0} (1/n!) (beta/(2 N_c))^n m_lambda^{(n)}, with every m_lambda^{(n)} a non-negative SU(3) tensor-product multiplicity, hence c_lambda(beta) >= 0 for beta >= 0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the c_lambda versus c_lambda/d_lambda normalization in the convolution-eigenvalue equivalence, but no blocker is apparent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure, not a definition, renaming, tuned numerical match, or external comparator import. The runner source performs real exact rational character-algebra checks plus Monte Carlo and Gram-matrix sanity checks, and it does not hard-code the contested positivity premise. The finite runner does not by itself prove all irreps, but the note's representation-ring argument does, and the stated scope remains limited to the gauge kernel."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py",
+  "title": "Wilson SU(3) Temporal-Gauge Transfer-Kernel Positivity (Bounded)",
+  "transitive_descendants": 851,
+  "verdict_rationale": null
+}

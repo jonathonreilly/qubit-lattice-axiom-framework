@@ -1,0 +1,378 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+    "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b15e09f7dd7ba382945e59462d25a2c60886b21b65d05b68e71f2993ee20c1f2",
+  "note_path": "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-07T15:15:57.293731+00:00",
+      "archived_for_note_hash": "c53ca6b92c8a1584582d4b42eb0a8f6600b8f4f9fd1fd9e8a7b19d99c22ca1e2",
+      "audit_date": "2026-06-07T00:47:03.870988+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "Audited the no-go that the finite L=3 Wilson-Dirac support model with body-diagonal Z3 action does not canonically select a unique physical rank-one eigenline, and leaves an endpoint-lift residual.",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "Audited the no-go claim that marked relative cobordism, using only retained Wilson/APS-derived boundary marks, cannot close the Koide delta because the mark is scalar on M_zeta and the endpoint section remains unbased.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "retained_no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "retained_no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "221a2d6adc028723ed131aa35fda016c41230f1b5b4f8c36f8cec1b83fb70444",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-23e3e8aef4-koide_gamma5_factor_bridge_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The tensor-factor commutation, A-commutation, K-evenness, and spin-vs-generation rank distinction close algebraically from the packet. The full no-go depends on the unprovided companion G2 bridge/parity premise establishing the exact selector requirement, so that premise is not closed in the restricted packet.",
+      "claim_scope": "The natural tensor embedding gamma5_spin \u2297 I_gen is partition-blind on the C^3 generation factor and cannot by itself supply a generation-factor C3-breaking selector under the stated T/K-odd noncommuting-with-S requirement.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-07T00:47:03.870988+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the natural embedding, [gamma5_spin \u2297 I_gen, I_spin \u2297 S] = 0 exactly, and gamma5 is real/K-even on the generation factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the companion G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A source/runner or restate the T/K-odd noncommuting selector requirement as an audited retained premise, then re-audit the scoped factor-bridge claim.",
+      "open_dependency_paths": [
+        "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Independent algebra confirms the runner's core checks: (A\u2297I)(I\u2297B)=A\u2297B=(I\u2297B)(A\u2297I), C has eigenvalues 1, omega, omega^2, so S=C+C^2 has eigenvalues 2,-1,-1, and P+/- partition the C^2 spin factor rather than C^3. The runner source genuinely constructs these finite matrices and does not merely print constants or use external numerical comparators. The provided one-hop authorities are retained-grade for the rank-two-sector context, but the packet cites an additional companion G2 bridge for the load-bearing selector requirement without providing it. The result is clean as a scoped algebraic obstruction to the natural embedding, but conditional as a full no-go claim tied to that requirement."
+    },
+    {
+      "archived_at": "2026-06-13T22:51:46.308662+00:00",
+      "audit_date": "2026-06-13T02:41:13.438494+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "Narrow no-go for deriving the \u03b4=0/K-reality selector from A=i(C-C^2) or from the cited emergent-time route; the 2-block partition given K-reality is also checked as weight-clean.",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "Audited the no-go that the finite L=3 Wilson-Dirac support model with body-diagonal Z3 action does not canonically select a unique physical rank-one eigenline, and leaves an endpoint-lift residual.",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "Audited the no-go claim that marked relative cobordism, using only retained Wilson/APS-derived boundary marks, cannot close the Koide delta because the mark is scalar on M_zeta and the endpoint section remains unbased.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "retained_no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "retained_no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "retained_no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-ff6c74986e-koide_gamma5_factor_bridge_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The scoped algebraic no-go itself follows from the tensor-product identity (O_site x I)(I x O_gen) = O_site x O_gen = (I x O_gen)(O_site x I), plus entrywise reality of gamma5. The source as written does not cleanly close because its validation line reports PASS=14 while the included completed runner/source reports 20 passing checks.",
+      "claim_scope": "Audited only the narrow factor-bridge claim that the natural tensor embedding gamma5_spin x I_gen cannot supply the generation-factor K-odd, non-commuting-with-S selector; rooted spin-generation-entangled carriers remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-13T02:41:13.438494+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "For the natural embedding gamma5_spin x I_gen, [gamma5_spin x I_gen, I_spin x S] = 0 exactly, and gamma5 is real/K-even on the generation factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: reconcile the source note validation count with the included runner output (PASS=20, FAIL=0 rather than PASS=14, FAIL=0), then re-audit the same scoped algebraic claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing math is a genuine class-A algebraic identity over retained-grade inputs, independently checked without relying on the runner implementation. The no-go discipline check supports only the stated narrow route: the natural tensor embedding is partition-blind, while rooted spin-generation entanglement remains an explicit open frontier. However, the restricted packet contains source-runner drift in a displayed validation number: the note says PASS=14, FAIL=0, but the included runner output and source account for PASS=20, FAIL=0. Under the formula-inventory rule, that stale quantitative validation entry prevents an audited_clean verdict as written."
+    },
+    {
+      "archived_at": "2026-06-19T10:11:59.402646+00:00",
+      "archived_for_note_hash": "8268e617c6276f2715fc3b857686270ed58e1f352730d6cbcdc0216b5ed894fc",
+      "audit_date": "2026-06-14T03:27:42.877463+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "Narrow no-go: A=i(C-C^2) and conjugation-even emergent time cannot derive the K-reality/delta=0 selector on the stated C3 circulant generation family; the 2-block partition given K-reality is weight-clean, and no value of r is derived.",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "Audited the no-go that the finite L=3 Wilson-Dirac support model with body-diagonal Z3 action does not canonically select a unique physical rank-one eigenline, and leaves an endpoint-lift residual.",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "Audited the no-go claim that marked relative cobordism, using only retained Wilson/APS-derived boundary marks, cannot close the Koide delta because the mark is scalar on M_zeta and the endpoint section remains unbased.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "retained_no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "retained_no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "retained_no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-a9622366cf-koide_gamma5_factor_bridge_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained companion authority supplies the scoped requirement that the selector be T/K-odd and non-commuting with S on the generation factor. The finite tensor-product algebra independently gives (O_site \u2297 I)(I \u2297 O_gen)=(O_site \u2297 O_gen)=(I \u2297 O_gen)(O_site \u2297 I), and gamma5 is real, so the natural embedding fails the stated requirement.",
+      "claim_scope": "Audited only the natural tensor-factor embedding gamma5_spin \u2297 I_gen on C^2 \u2297 C^3 as a candidate generation-factor T/K-odd selector; rooted or spin-generation-entangled carriers remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-14T03:27:42.877463+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the natural embedding, [gamma5_spin \u2297 I_gen, I_spin \u2297 S] = 0 exactly and conj(gamma5)=gamma5, so the on-site gamma5 is partition-blind and K-even on the generation factor.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the narrow scope: gamma5_spin \u2297 I_gen only, not any carrier where gamma5 acquires a generation-factor component.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing step is a direct finite-dimensional algebraic identity, not a tuned numerical match or definition substitution. Independent checks recover C^3=I, eig(S)={2,-1,-1}, eig(A)={0,\u00b1sqrt(3)}, exact cross-factor commutation, and K-evenness of gamma5 under conjugation. The runner source computes the relevant matrices rather than merely printing constants, and the helper runner does not introduce an external comparator on the parent load-bearing path. The no-go is clean only in the stated narrow sense: it does not close the explicitly named rooted/spin-generation-entangled frontier."
+    },
+    {
+      "archived_at": "2026-06-21T08:22:59.358398+00:00",
+      "audit_date": "2026-06-19T23:12:24.153200+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "Narrow no-go: A=i(C-C^2) and conjugation-even emergent time cannot derive the K-reality/delta=0 selector on the stated C3 circulant generation family; the 2-block partition given K-reality is weight-clean, and no value of r is derived.",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "Audited the no-go that the finite L=3 Wilson-Dirac support model with body-diagonal Z3 action does not canonically select a unique physical rank-one eigenline, and leaves an endpoint-lift residual.",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "Audited the no-go claim that marked relative cobordism, using only retained Wilson/APS-derived boundary marks, cannot close the Koide delta because the mark is scalar on M_zeta and the endpoint section remains unbased.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "retained_no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "retained_no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "retained_no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-koide_gamma5_factor_bridge_no_go_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The tensor-factor commutator identity is exact and independently recomputes to zero; gamma5 acts on the spin C^2 factor while S acts on the generation C^3 factor. Given the retained companion requirement that the selector be generation-factor T/K-odd and non-commuting with S, the scoped no-go follows.",
+      "claim_scope": "Audited only the natural on-site embedding gamma5_spin \u2297 I_gen on C^2 \u2297 C^3 as a proposed generation-factor C3-breaking selector; rooted or spin-generation-entangling carriers remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-19T23:12:24.153200+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "With the natural tensor embedding, [gamma5_spin \u2297 I_gen, I_spin \u2297 S] = 0 exactly, and gamma5 is real/K-even on the generation factor, so it cannot supply the required generation-factor T/K-odd non-commuting selector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should confirm the ledger keeps the companion G2 bridge as a direct load-bearing dependency, since it supplies the selector requirement used here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing step is finite tensor-product algebra, not a definition, fitted numerical match, or external comparator check. The runner genuinely instantiates C, S, A, gamma5, and the tensor embeddings; an independent recomputation confirms C^3=I, eig(S)={-1,-1,2}, both commutators vanish, and gamma5 is K-even. The no-go is narrow and explicitly excludes rooted/spin-generation-entangled carriers, so the open frontier is not imported as a premise."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.071670+00:00",
+      "audit_date": "2026-06-21T17:31:02.089679+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "Narrow audit of the finite C_3 algebra showing that the 2-block partition given K-reality is weight-clean and that the specific A=i(C-C^2) current/emergent-time route cannot derive the delta=0 selector; it does not audit a global no-go against all K-reality derivations or C_3-breaking T-odd sources.",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "Audited the no-go that the finite L=3 Wilson-Dirac support model with body-diagonal Z3 action does not canonically select a unique physical rank-one eigenline, and leaves an endpoint-lift residual.",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "Audited the no-go claim that marked relative cobordism, using only retained Wilson/APS-derived boundary marks, cannot close the Koide delta because the mark is scalar on M_zeta and the endpoint section remains unbased.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06": "retained_no_go",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24": "retained_no_go",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24": "retained_no_go",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
+          "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
+          "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3c0a819bc6cc8ab34f52b8d8dfe1fdfb0bf963fb02326b40b3743e8e4244f952",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_gamma5_factor_bridge_no_go_note_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from exact tensor-product algebra plus the retained companion requirement that the selector be T/K-odd and non-commuting with S on the generation factor. The runner source constructs C, S, A, gamma5, and the Kronecker embeddings directly and checks the commutators, K-parity, and factor/rank distinction without external comparators.",
+      "claim_scope": "Audited only the natural on-site tensor embedding gamma5_spin \u2297 I_gen on C^2 \u2297 C^3 as a generation-factor C3-breaking selector; rooted or continuum spin-generation-entangling carriers remain outside scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T17:31:02.089679+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06:retained_no_go->unaudited",
+      "load_bearing_step": "For the natural tensor embedding, [gamma5_spin \u2297 I_gen, I_spin \u2297 S] = 0 exactly and gamma5_spin \u2297 I_gen is real/K-even, so it cannot supply the required generation-factor T/K-odd non-commuting selector.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the natural-embedding scope and do not cite this as a global exclusion of spin-generation-entangling gamma5 carriers.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic identity: operators acting on disjoint tensor factors commute, and gamma5_spin \u2297 I_gen is real/K-even under the stated conjugation. All cited authorities used as dependencies are retained-grade, and the helper runner/source supports the companion T-odd and non-commuting-with-S requirement without importing numerical comparators. The no-go is properly narrow: it rules out the natural tensor embedding and explicitly does not claim to exclude a rooted carrier that entangles spin into the generation index."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_gamma5_factor_bridge_no_go.py",
+  "title": "On-site Clifford \u03b3\u2085 = \u03b3\u2085_spin \u2297 I_gen is Partition-Blind on the Generation Factor \u2014 Factor-Bridge No-Go",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

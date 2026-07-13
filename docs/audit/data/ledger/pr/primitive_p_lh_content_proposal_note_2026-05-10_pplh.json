@@ -1,0 +1,261 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9d96f10b5561b2c753fac440f0d9b8a7cdb39d87ac90401775255e8b4b4ca318",
+  "note_path": "docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:31:15.418067+00:00",
+      "archived_for_note_hash": "aeef3de342538c628c752c1dd14aa81a0c7616c639f790aae38340caf7c46d21",
+      "audit_date": "2026-05-10T22:27:44.392025+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.5,
+        "runner_hash": "82934f9ff9b22487e66dc438f4f905ac2a230f3eb62923e9aefe3f0f6e3d3237",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e13ff-4322-7591-8d6a-1949ed7212ab",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports the scoped open-gate claim: the note repeatedly disclaims theorem or primitive promotion, treats the three proposals as candidate imports, and states the same net no-closure conclusion in the comparative table, net design conclusion, and honest verdict. No direct ledger dependencies are listed, and the sibling probes are expressly contextual rather than load-bearing dependencies.",
+      "claim_scope": "Open-gate design note recording three candidate substrate-side primitives, P-LH-1 order-one, P-LH-2 asymmetric action, and P-LH-3 KO-dim-6 real structure, for selecting SM LH/RH content over Pati-Salam, while explicitly making no status promotion and concluding that none is a clean single-primitive closure on existing physical Cl(3)/Z^3 inputs alone.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-10T22:27:44.392025+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Net verdict: design-note records three candidate primitives; none is a clean single-primitive closure on the existing physical Cl(3)/Z^3 inputs.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The audited claim is not that SM LH/RH content has been derived, but that the note honestly records three candidate substrate-side primitives and preserves the open-gate boundary. Within that scope the chain closes: P-LH-1 is conditional on importing NCG algebra/order-one structure, P-LH-2 is identified as circular/minimality-failing, and P-LH-3 is identified as insufficient alone. The runner output is consistent with this scoped status and reports 53 passing structural/procedural checks with no external comparator or numerical tuning."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:21.600840+00:00",
+      "archived_for_note_hash": "138aa585d48116aac8906bdc77f89e520b4b6de96b7330c9410356fc4db8851e",
+      "audit_date": "2026-06-18T07:38:23.757611+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.892,
+        "runner_hash": "d0cf9a8a8147da990b124316b03c580324a21f60449f0c3ef78bf14da2fca3f3",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-primitive_p_lh_content_proposal_note_2026-05-10_pplh-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet supports toy Pauli-representation consistency checks and the source-boundary caveat, but it does not derive the order-one condition, KO-dim-6 real structure, or finite algebra from the registered framework baseline. The missing step is a framework-native bridge theorem for those NCG primitives.",
+      "claim_scope": "Open-gate audit of three proposed substrate-side primitives for selecting SM LH/RH content over Pati-Salam, including the negative synthesis that no single candidate closes the gap from the existing physical Cl(3)/Z^3 context alone.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T07:38:23.757611+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "None of the three candidates is a clean single-primitive solution on the existing physical Cl(3)/Z^3 inputs alone; the strongest path is {P-LH-1 + P-LH-3}, which imports order-one, KO-dim-6 J, and the finite algebra C \u2295 Cl\u207a(3) \u2295 M_3(C).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit a source artifact deriving or explicitly registering the order-one condition, KO-dim-6 real structure, and finite algebra from the physical Cl(3)/Z^3 baseline.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "Issue: the claimed best route depends on unapproved NCG structures: order-one, KO-dim-6 J, and C \u2295 Cl\u207a(3) \u2295 M_3(C). Why this blocks: the runner checks small structural identities and hard-coded comparative verdicts, but does not derive those primitives from the physical Cl(3)/Z^3 baseline. Repair target: supply and audit a framework-native derivation or approved primitive-registry update for the imported NCG ingredients. Claim boundary until fixed: the note is valid only as an open-gate design map, not a framework-derived SM LH/RH content theorem or primitive approval."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.512771+00:00",
+      "audit_date": "2026-06-21T12:58:56.662090+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": "Audited only the finite Pauli/Cl(3) current-minimal-baseline boundary that the P-LH NCG finite algebra, KO-dim-6 real structure, and order-one data are not selected without an added derivation or approved primitive."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18"
+        ],
+        "load_bearing_score": 6.892,
+        "runner_hash": "d0cf9a8a8147da990b124316b03c580324a21f60449f0c3ef78bf14da2fca3f3",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-primitive_p_lh_content_proposal_note_2026-05-10_pplh-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet supports the open-gate/firewall conclusion, but it does not close a framework-derived SM LH/RH selector. The missing step is a retained bridge theorem or approved primitive registration for the finite algebra, order-one condition, and KO-dim-6 real structure, or a different approved selector route.",
+      "claim_scope": "Open-gate design map of P-LH-1, P-LH-2, and P-LH-3 for SM LH/RH content selection, with the audited scope limited to the negative source-boundary claim that no candidate is currently an approved framework-native single-primitive derivation.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T12:58:56.662090+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:retained_bounded->unaudited",
+      "load_bearing_step": "None of the three candidates is a clean single-primitive solution on the existing physical Cl(3)/Z^3 inputs alone; the strongest route is the imported NCG packet with order-one, KO-dim-6 J, and the finite algebra C \u2295 Cl\u207a(3) \u2295 M_3(C).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained framework-native derivation or explicit primitive-registry approval for C \u2295 Cl\u207a(3) \u2295 M_3(C), the order-one condition, and KO-dim-6 J, or replace them with a different approved SM LH/RH selector.",
+      "open_dependency_paths": [
+        "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The substantive runner checks are finite Pauli/block algebra consistency checks; many verdict/table/pass lines hard-code the candidate status or source-boundary caveats rather than deriving the NCG primitives from the baseline. The primitive registry supplied in the packet approves minimal_axioms, scale_reference_primitive, kinetic_isotropy_primitive, and realized_state_primitive only; it does not approve order-one, KO-dim-6 J, or the finite algebra as primitives. The retained-bounded 2026-06-18 boundary reinforces that the no-new-axioms route is underdetermined, so the safe audited result is conditional/open rather than clean closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.103950+00:00",
+      "audit_date": "2026-07-10T03:20:39.881547+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": "On the finite rho-plus direct-sum rho-minus Pauli test block, the minimal one-qubit lattice axioms do not uniquely select the finite-algebra action, chirality sign of the real structure, or order-one data; no conclusion is asserted for every SM LH/RH route."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18"
+        ],
+        "load_bearing_score": 4.585,
+        "runner_hash": "d0cf9a8a8147da990b124316b03c580324a21f60449f0c3ef78bf14da2fca3f3",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00012-primitive_p_lh_content_propo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited boundary supports only underdetermination of the NCG data on the current baseline. A framework-native derivation or approved registration of the finite algebra, order-one condition, and KO-dimension-6 real structure is still missing.",
+      "claim_scope": "The note maps three proposed NCG selectors and, using a retained-bounded underdetermination result, correctly leaves SM-versus-Pati-Salam selection open on the accepted Cl(3)/Z^3 baseline; it admits no primitive or theorem.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T03:20:39.881547+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18:retained_bounded->unaudited",
+      "load_bearing_step": "The current Cl(3)/Z^3 baseline admits both SM-like and Pati-Salam-like finite actions and does not determine the finite algebra, order-one condition, or KO-dimension-6 real structure required by the proposed NCG route.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained framework-native derivation or explicit approved registration of the finite algebra, order-one condition, and KO-dimension-6 real structure, with a runner that evaluates the general order-one and commutant conditions.",
+      "open_dependency_paths": [
+        "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The retained-bounded authority substantively supports keeping the gate open, but it does not supply the missing NCG structures. Of the runner's 55 reported passes, only elementary Pauli and block-matrix identities are actually evaluated; decisive P-LH-1 and P-LH-3 conclusions are hard-coded or inferred from imposed algebra choices rather than a general order-one or Pati-Salam exclusion calculation. The packet therefore supports an honest conditional design map, not a framework-derived selector."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
+  "title": "P-LH-Content Open Gate \u2014 Three Candidate Substrate-Side Selectors of SM LH/RH Content over Pati-Salam (pPlh)",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

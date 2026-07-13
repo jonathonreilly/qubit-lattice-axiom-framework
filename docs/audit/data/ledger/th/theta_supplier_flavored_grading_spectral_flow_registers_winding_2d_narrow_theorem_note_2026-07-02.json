@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_supplier_flavored_grading_spectral_flow_registers_winding_2d_narrow_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite 2D flavored-grading spectral-flow registration theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
+    "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a54ea029751461e7c00a81aedee44939ad5bc1008b12c2ef59b1d5d1553c8a3a",
+  "note_path": "docs/THETA_SUPPLIER_FLAVORED_GRADING_SPECTRAL_FLOW_REGISTERS_WINDING_2D_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.985589+00:00",
+      "audit_date": "2026-07-10T03:25:38.113257+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30": "The standard massless nearest-neighbor staggered site-parity epsilon heat-trace index A_t[U]=Tr(epsilon exp(-t D^dag D)) vanishes for all t>0 on equal-sublattice finite even periodic 4D hypercubic tori with arbitrary U(1) link phases; only that same-surface epsilon-index route to P1' is pruned.",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": "Audited only the bounded internal correction: on the free/flat staggered operator on Z_4 x Z_2^3, with an L=4 robustness check, the eps-gap identity and A[1,1]=0 show that the existing residual should target a chi != 0 or Q != 0 background, not treat absence of GW as the demonstrated internal obstruction.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30": "no_go",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30": "retained_no_go",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+          "abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "e90f38ffa6622c15df1f1168fc9882cdf4a255b2923267313081b57aab5e97a5",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00016-theta_supplier_flavored_grad",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner explicitly constructs the link shifts, staggered operator, flavored grading, and Hermitian families, then diagonalizes them with a zero-gap guard; it does not import or merely print the spectral counts. The retained upstream no-go results are compatible with this distinct flavored-flow functional and are not needed to manufacture its numerical result.",
+      "claim_scope": "Exact operator identities plus machine-verified flavored spectral-flow registration on periodic 2D U(1) staggered lattices with L in {8,12}, Q in {-2,-1,0,1,2}, the stated mass grids, one gauge transform, and the two seeded fixed-flux deformations.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:25:38.113257+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Direct diagonalization of H(m) on the enumerated finite backgrounds gives flow(m) = N_neg(H(+m)) - N_neg(H(-m)) = -2Q throughout the tested mass grid.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A future broadening from the two seeded deformations to all fixed-flux link configurations would require a separate theorem or independently certified computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 0,
+        "C": 24,
+        "D": 0,
+        "total_pass": 60
+      },
+      "verdict_rationale": "The load-bearing registration is a genuine finite-dimensional first-principles computation, while the Hermiticity, commutation, conjugation, covariance, and fixed-grading blindness checks are algebraic or independently computed controls. The expected -2Q target is not an externally calibrated value or tuned-scale match. Clean status applies only to the explicitly enumerated finite family; the packet does not prove invariance under every fixed-flux deformation or any 4D, SU(3), continuum, physical-theta, or record/readout identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py",
+  "title": "Theta Supplier: Flavored-Grading Spectral Flow Registers the Winding Integer on the 2D Staggered Surface",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

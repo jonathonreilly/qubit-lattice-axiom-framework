@@ -1,0 +1,311 @@
+{
+  "audit_date": "2026-07-12T00:29:59.777017+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+      "minimal_axioms_2026-05-03": null
+    },
+    "dep_claim_type": {
+      "linear_response_true_kubo_note": "bounded_theorem",
+      "minimal_axioms_2026-05-03": "meta"
+    },
+    "dep_effective_status": {
+      "linear_response_true_kubo_note": "retained_bounded",
+      "minimal_axioms_2026-05-03": "meta"
+    },
+    "deps": [
+      "linear_response_true_kubo_note",
+      "minimal_axioms_2026-05-03"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "b1bb8992e9e2f7dde60344b97475a5a6196975614b6684c1549cd2c8b8d8de2a",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00425-linear_response_derivation_n",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "For this archival open-gate scope, the SHA-pinned runner genuinely parses the frozen rows and independently recomputes the reported statistics. It does not establish a literal Kubo derivation, which the audited scope expressly excludes.",
+  "claim_id": "linear_response_derivation_note",
+  "claim_scope": "Frozen 44-family detector-only linear-response heuristic record: r=0.5605 overall, r=0.7248 off-scaffold, 36/44 no-fit sign agreement, the explicitly fitted 35/44 threshold result, and the firewall excluding literal first-order Kubo or closed-derivation reuse.",
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": "2026-07-12T00:29:59.777017+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "linear_response_true_kubo_note",
+    "minimal_axioms_2026-05-03"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "open_gate",
+  "effective_status_reason": "audited_open_gate",
+  "helper_runner_paths": [
+    "scripts/global_coherence_off_scaffold.py",
+    "scripts/independent_generators_heldout.py",
+    "scripts/universality_classifier.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "open_gate",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The frozen-log verifier parses the 44 family rows and recomputes the overall and groupwise Pearson correlations, 36/44 sign agreement, fitted threshold result, and measured-response ceiling.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c079c513c1490339022b4461e0f0317f4ae22c2960b4758df7b7c5f7413062c0",
+  "note_path": "docs/LINEAR_RESPONSE_DERIVATION_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-audit if downstream use drops the fitted-threshold caveat, cites 79.5% as no-fit evidence, or promotes the detector-only heuristic to literal Kubo or closed derivation status.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369048+00:00",
+      "archived_for_note_hash": "c38f5daca1abbd66b001840eb4257a28efb9340a8e9927ecbcab12d32e4e4f97",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-11T08:41:20.649656+00:00",
+      "archived_for_note_hash": "a4f7f9a1939d37a77305216a40a2fc96592028f5fa498e9c1225903a9c633230",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces the reported correlations and sign agreement, but the note itself says this detector-only reweighting is not the literal first-order Kubo term <z*deltaH>_0 and omits the edge action perturbation and path-phase cross terms.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The first-moment Kubo predictor is defined as cz_weighted_by_1/|z-z_src| - cz_free and treated as a no-fit, derivation-adjacent predictor for measured d(cz)/ds across 44 families.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide a symbolic or numerical true-Kubo derivation that differentiates the path-sum at s=0, includes the edge action perturbation and phase cross-terms, and compares that literal first-order observable on the same 44-family set.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: The source elevates a detector-only |amp|^2/|z-z_src| reweighting into a candidate retained-grade first-moment Kubo/first-principles predictor while explicitly admitting it is not the literal first-order Kubo expression <z*deltaH>_0. Why this blocks: the replayed r=0.5605 overall, r=0.7248 off-scaffold, and 36/44 sign agreement establish a no-fit heuristic correlation, but they do not derive the predictor from the propagator plus action or include the missing deltaH=kL delta f edge/path-phase terms. Repair target: provide a symbolic or numerical true-Kubo derivation that differentiates the path-sum at s=0, includes the edge action perturbation and phase cross-terms, and compares that literal first-order observable on the same 44-family set. Claim boundary until fixed: it is safe to claim the archived/live heuristic replay gives r=0.56 overall, r=0.72 off-scaffold, 81.8% no-fit sign agreement, and a 79.5% in-sample tuned threshold result; it is not yet safe to claim a retained derivation-grade or literal first-order Kubo predictor from this note alone."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:59.379203+00:00",
+      "archived_for_note_hash": "06a41999ae55937f9cd39d81d93a996e13de29f371d89b2de26b4414f0a713ab",
+      "audit_date": "2026-05-11T17:23:22.331495+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "linear_response_true_kubo_note",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ca169ee3ff6ba0478608671512fdafa85003521bd896e55230d2d41ef0bb1986",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "As an open gate, the row closes because it accurately preserves the heuristic metrics and their boundary: detector reweighting is not the literal <z*deltaH>_0 term and remains a derivation-adjacent lane. The current live runner did not finish within the practical audit budget, but the source packet includes a completed frozen log; timeout is not used as a non-clean verdict.",
+      "claim_scope": "Open-gate record for the detector-only first-moment linear-response heuristic: the frozen completed log supports the reported 44-family heuristic metrics (r=0.5605 overall, r=0.7248 off-scaffold, 36/44 sign agreement), but the note does not audit this heuristic as the literal first-order Kubo theorem or as a closed compact-principle derivation. The retained-bounded true-Kubo sibling is a separate dependency and closure path.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-11T17:23:22.331495+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The heuristic is directionally correct and generalizes off-scaffold, but the literal first-order Kubo calculation is the subject of a separate lane.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check if the row is retagged from open_gate to positive_theorem or if a sliced deterministic runner replaces the frozen completed log for the 44-family heuristic metrics.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The safe claim is not a retained positive theorem; it is an open-gate heuristic record with explicit non-closure language and a named true-Kubo closure lane. The completed frozen log supports the reported correlation and sign-agreement numbers, while the source note itself excludes the tuned threshold number from no-fit evidence and states that path-phase terms are missing from the heuristic. Residual risk is operational reproducibility of the slow runner; that does not change the open-gate boundary because the row is not being promoted to a theorem."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:45.633353+00:00",
+      "archived_for_note_hash": "e4a42e68291647aaa88df47f46d0d6108ac61ca5e735fe19aa8286ddfe2e0b9c",
+      "audit_date": "2026-06-07T18:30:08.369037+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "linear_response_true_kubo_note",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a9cf81c0c65884de910fb2c84e40178a83e70553858e8361fcbd6f53e99044c8",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-182824-03a3ed5eef-linear_response_derivation_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the scoped open-gate metric record: the runner parses the frozen 44-family log and recomputes the reported correlations, group counts, sign agreement, tuned threshold result, and measured-response ceiling. It does not close a literal Kubo derivation, but the source note explicitly keeps that outside this claim's perimeter.",
+      "claim_scope": "Open-gate heuristic record: the frozen 44-family log supports the reported detector-only heuristic metrics, including r=0.5605 overall, r=0.7248 off-scaffold, and 36/44 no-fit sign agreement, while excluding the heuristic from literal first-order Kubo theorem status.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-07T18:30:08.369037+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note defines kubo_heuristic = cz_weighted - cz_free from detector |amp|^2 reweighted by the field-profile proxy and compares it with measured finite-difference d(cz)/ds across the 44-family frozen log.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that future citations preserve the no-fit/tuned split and do not use this heuristic record as the literal first-order Kubo theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing evidence is an algebraic/statistical verification of a frozen heuristic log, not a first-principles derivation. The provided runner source actually parses rows and recomputes the reported Pearson correlations, sign count, in-sample threshold, and ceiling rather than merely printing constants. The cited true-Kubo note is used as boundary and repair-path context, while the audited claim remains an open-gate detector-only heuristic record. On that narrowed scope, the reported numbers and non-promotion boundary are supported."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.621501+00:00",
+      "audit_date": "2026-06-18T10:07:33.748873+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "linear_response_true_kubo_note",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "b1bb8992e9e2f7dde60344b97475a5a6196975614b6684c1549cd2c8b8d8de2a",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-linear_response_derivation_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the declared open-gate scope, the chain closes: the runner parses the frozen 44-family log and recomputes the reported correlations, sign counts, threshold summary, measured-response ceiling, and source-boundary firewall. It does not close, and does not claim to close, the literal `<z*deltaH>_0` Kubo theorem.",
+      "claim_scope": "Frozen 44-family detector-only linear-response heuristic record: reported Pearson correlations, 36/44 no-fit sign agreement, fitted-threshold caveat, and firewall against treating the heuristic as the literal first-order Kubo theorem.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T10:07:33.748873+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The detector-only heuristic `kubo_heuristic = cz_weighted - cz_free`, computed from free detector amplitudes reweighted by `1/|z-z_src|`, is compared against the finite-difference measured response across the frozen 44-family log.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check if a downstream row cites this packet as the literal first-order Kubo theorem, a closed first-principles derivation, or no-fit evidence for the in-sample tuned threshold.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The primary runner source is a frozen-log verifier, not a first-principles derivation runner, and its checks match that limited role: `SCORECARD PASS=15 FAIL=0`. The source note preserves the no-fit versus tuned split and repeatedly forbids reuse as a literal first-order Kubo theorem or closed compact-principle derivation. The clean verdict is therefore clean only at `open_gate` scope: a reproducible detector-only heuristic record with explicit downstream firewall."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 10,
+    "B": 5,
+    "C": 0,
+    "D": 0,
+    "total_pass": 15
+  },
+  "runner_path": "scripts/linear_response_derivation.py",
+  "title": "Linear-Response Derivation-Adjacent Analysis \u2014 Partial Positive",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The runner performs statistical and consistency checks over the frozen dataset rather than merely printing expected constants, and all 15 checks pass. The source preserves the essential no-fit versus in-sample-tuned distinction and explicitly forbids treating the detector reweighting as the literal first-order Kubo expression. The clean verdict therefore applies only to the narrowed open-gate heuristic record, not to broader first-principles or compact-principle language elsewhere in the note."
+}

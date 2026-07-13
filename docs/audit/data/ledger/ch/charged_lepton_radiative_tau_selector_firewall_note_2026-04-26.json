@@ -1,0 +1,1369 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/dm_leptogenesis_exact_common.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a972d2a9e5ce125c9f59cc4d6cdeb1c505a6db185ce1987bc754b5a89aedb3a8",
+  "note_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T11:44:47.836327+00:00",
+      "archived_for_note_hash": "c5f31f72d8b28bcd3aa35bc61affd26e64b1b46537115e49bd1b34ae8da3154f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-27T11:49:36.875306+00:00",
+      "archived_for_note_hash": "6569438f336f8c6b42702301a916e24291b59a0e625770c147a452aceeccf0af",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.572494+00:00",
+      "audit_date": "2026-04-27T11:49:39.135441+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The no-go closes because the radiative factor is identical under generation relabeling. The note preserves the tau numerical match as support/comparator only and does not turn it into a standalone y_tau theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The electroweak charged-lepton Casimir vector is (1, 1, 1) across e, mu, tau, so the radiative alpha_LM/(4pi) scale is generation-blind and cannot select tau without an extra primitive.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 4,
+        "C": 0,
+        "D": 8,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner checks that the Casimir and radiative y value are identical for all three charged-lepton generations, and that applying the same rule universally cannot fit electron and muon masses. The PDG tau agreement is explicitly fenced as comparator-only. The audited-clean result is only the standalone tau-selector no-go, not charged-lepton mass closure."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:50.201014+00:00",
+      "audit_date": "2026-07-12T04:05:32.956591+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "fe6105f9724c6122391aa3d603dd81e7b94f824fb80869d54b686b7954752362",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00380-charged_lepton_radiative_tau",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact equal-Casimir vector and common multiplicative scale are permutation invariant, so they provide no generation discriminator. Selecting tau requires an additional generation-indexed selector, ratio, source, or observational input, which lies outside the scoped standalone rule.",
+      "claim_scope": "For the standalone rule y_i = alpha_LM C_i/(4pi) with C_e=C_mu=C_tau=1 and no generation-indexed input, the rule cannot select tau; its numerical tau agreement is comparator-only.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T04:05:32.956591+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "The radiative Casimir vector is (C_e, C_mu, C_tau) = (1, 1, 1), so generation relabeling leaves it invariant and it cannot by itself identify the third charged-lepton eigenvalue.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The supplied runner evaluates the same charged-lepton Casimir construction for e, mu, and tau and compares the exact fractions.",
+            "disposition": "CLOSED",
+            "evidence_locator": "same Casimir is assigned to e, mu, tau",
+            "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use electroweak representation data to obtain generation-dependent charged-lepton Casimirs.",
+            "outcome": "All three values are exactly one, so this representation route supplies no tau discriminator.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "casimir_split"
+          },
+          {
+            "attempt": "The runner reverses the Casimir tuple and checks equality with the original tuple.",
+            "disposition": "CLOSED",
+            "evidence_locator": "generation relabeling leaves the radiative Casimir vector invariant",
+            "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try to identify tau through ordering or permutation of the equal Casimir entries.",
+            "outcome": "The vector is unchanged under the tested generation relabeling; algebraic rearrangement cannot identify one entry.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "permutation_selector"
+          },
+          {
+            "attempt": "The runner multiplies every generation's equal Casimir by the same radiative value and tests the resulting Yukawa values.",
+            "disposition": "CLOSED",
+            "evidence_locator": "radiative y value is identical for all charged-lepton generations",
+            "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use alpha_LM, 1/(4pi), or the electroweak scale to split the generations.",
+            "outcome": "The values remain identical; changing a common normalization can change the common scale but cannot break generation degeneracy.",
+            "route_class": "normalization_or_units",
+            "route_id": "common_normalization"
+          },
+          {
+            "attempt": "The runner compares the same predicted mass with all three embedded PDG comparators.",
+            "disposition": "CLOSED",
+            "evidence_locator": "observed masses are comparators, not proof inputs",
+            "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat closeness of the universal radiative mass to the observed tau mass as the tau selector.",
+            "outcome": "The match is close only for tau, but this identifies tau by observational comparison and does not derive a selector from the radiative rule.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "pdg_match"
+          },
+          {
+            "attempt": "The runner checks its declared proof-input keys against PDG masses and heaviest-generation labels.",
+            "disposition": "CLOSED",
+            "evidence_locator": "PDG masses and heaviest-generation labels are not proof-input keys",
+            "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the literal label tau or the phrase heaviest observed generation as a proof input.",
+            "outcome": "Those labels are excluded from the proof inputs; importing one would select from data or convention rather than from the generation-blind Casimir.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "tau_label"
+          },
+          {
+            "attempt": "The restricted source was checked for whether such a law is part of the standalone relation.",
+            "disposition": "CLOSED",
+            "evidence_locator": "a retained full ratio law that makes the assignment unavoidable",
+            "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Add a charged-lepton ratio law or source-domain readout that makes the tau assignment unavoidable.",
+            "outcome": "The source explicitly identifies this as additional required content; adding it would change the premise set and therefore does not refute the scoped standalone no-go.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "ratio_readout"
+          },
+          {
+            "attempt": "The supplied premise registry was checked for selector, context-selection, or dimensionless mass-ratio content.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It still supplies no context-selection rule",
+            "evidence_path": "docs/audit/data/axiom_premise_nodes.json",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Obtain a tau selector by re-reading an existing axiom or approved primitive as generation-selection content.",
+            "outcome": "The registered premises expressly withhold such content, so registry reclassification does not supply a selector.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "premise_registry_selector"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The standalone radiative inputs are generation-blind and contain no tau selector."
+          ],
+          "evidence_locator": "The calculation does not contain a tau selector.",
+          "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "The standalone radiative inputs are generation-blind and contain no tau selector."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "They are not proof inputs.",
+          "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The runner prints PDG charged-lepton masses only as comparators.",
+              "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+              "phrase": "PDG charged-lepton masses"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "PLAQ_MC = 0.5934",
+              "evidence_path": "scripts/dm_leptogenesis_exact_common.py",
+              "phrase": "PLAQ_MC"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "generation-selection / loop-normalization / source-domain law",
+              "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+              "phrase": "generation-selection / loop-normalization / source-domain law"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source note, runner, helper constants, proof-input set, PDG comparator fields, and supplied premise registry were checked for hidden generation labels, fitted scales, source laws, or readout selectors.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The calculation does not contain a tau selector.",
+          "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+          "none_found_reason": "No RULED OUT BY PRIOR route is used, so no prior-witness residual matching is required.",
+          "scan_scope": "No N1 route was ruled out solely by a prior witness; all listed routes were tested against the current restricted source, runner, helper, or accepted-premise text.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "This firewall does not kill the radiative scale.",
+          "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+          "none_found_reason": "",
+          "scan_scope": "The negative statements were checked at the generation-vector, standalone-rule, and charged-lepton-spectrum resolutions actually tested by the exact runner.",
+          "statements": [
+            {
+              "evidence_locator": "Therefore it cannot select the tau eigenvalue without an",
+              "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+              "phrase": "cannot select the tau eigenvalue",
+              "tested_resolutions": [
+                "three-entry charged-lepton Casimir vector under generation relabeling"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "but it is not a standalone retained y_tau theorem",
+              "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+              "phrase": "not a standalone retained y_tau theorem",
+              "tested_resolutions": [
+                "standalone alpha_LM/(4pi) rule with generation-blind electroweak Casimir"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "not the observed electron/muon/tau hierarchy",
+              "evidence_path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+              "phrase": "not the observed electron/muon/tau hierarchy",
+              "tested_resolutions": [
+                "universal predicted mass compared separately with electron, muon, and tau comparator masses"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes only spacetime kinetic-form isotropy and supplies no mass ratio, coupling, or selector.",
+              "evidence_locator": "This primitive supplies only the kinetic form ratio",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms supply no context-selection, physical readout, or downstream theory selector.",
+              "evidence_locator": "It still supplies no context-selection rule",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies a pointwise realized-state slot but no state content or selection rule, hence no tau label.",
+              "evidence_locator": "Supplies the slot, never the content",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It converts units and explicitly carries no dimensionless selector or mass-ratio content.",
+              "evidence_locator": "carries no dimensionless content and does not assert a/l_P=1",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This gate concerns count-once occupancy of a K/CPT orbit, not selection among e, mu, and tau generations.",
+              "evidence_locator": "physical charged-lepton matter action counts the K/CPT orbit",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This gate concerns an R-eta density/angle readout and does not provide a third-generation selector.",
+              "evidence_locator": "physical charged-lepton readout is the fixed-locus density class",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This cross-sector determinant gate addresses strong-CP readout, not charged-lepton generation selection.",
+              "evidence_locator": "same physical channel that controls the quark determinant readout",
+              "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives and open gates returned by the supplied partial-closure index were checked for generation-selection, charged-lepton ratio, or tau-specific readout content.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The common radiative mass lands extremely close to the tau comparator while missing electron and muon badly, so numerical uniqueness might appear to identify tau.",
+          "evidence_locator": "universal radiative mass is close only to tau comparator",
+          "evidence_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+          "resolution": "The uniqueness arises only after supplying the observed charged-lepton masses and comparing labels. The radiative rule itself remains universal and produces no internal generation discriminator, so the comparator match cannot refute the standalone selector no-go.",
+          "resolved": true,
+          "route_id": "pdg_match"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:0",
+              "evidence_locator": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Earlier unaudited cycle contains no substantive result to inherit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:1",
+              "evidence_locator": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Earlier unaudited cycle contains no substantive result to inherit.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:2",
+              "evidence_locator": "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Prior clean reasoning identified the same narrow selector boundary, but its discipline packet was missing and the current audit independently rechecks it.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Charged-lepton orbit counting rather than generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Charged-lepton R-eta readout rather than generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Quark determinant cross-sector readout, unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Adjacent direct charged-lepton Ward no-go, not the radiative generation-invariance mechanism.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Newton/architecture evidence boundary unrelated to charged-lepton generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Gauge-coupling runner-boundary repair unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Atomic-stability and temporal-axis audit boundaries unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Cross-cycle ledger explicitly preserves the radiative tau selector firewall absent a new premise.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Bare-coupling identity boundary unrelated to generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Plaquette beta coefficient evidence boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Lensing observable-route exclusions unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Carrier swap-invariance registry boundary does not supply a lepton-generation selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "The dedicated charged-lepton ledger records the radiative tau selector route as closed absent new structural content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Spatial-dimension upper-bound boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Lorentz-hierarchy scope boundary unrelated to charged-lepton selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Emergent-metric evidence boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite-family radial-orientation scope boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Wilson-environment scope boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Formal flavor-trace route pruning does not add a physical charged-lepton selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Analytic-vector proof-route boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Gauge-environment computation routes unrelated to generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Gauge isotropy and temporal-generator walls unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Gravity dispersion bridge boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Weak-field gravity scope boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Planck/Hubble carrier and scale walls do not provide a lepton-generation selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Hypercharge normalization and species-name ambiguity reinforce that representation data alone do not select a species, but do not retire the tau wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Campaign ledger records direct charged-lepton gauge-anchor routes as closed and requires new structural content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Atomic-scale mass and coupling gates unrelated to the tau selector wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Quark-mass ledger cites an analogous colorless-lepton generation-primitive obstruction but supplies no tau selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Lattice Green-function limit boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Lensing observable no-go unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite-path lensing surrogate boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "A separate 4pi readout/source boundary does not supply charged-lepton generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Temporal source/readout boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Empty matter-cone no-go ledger supplies no relevant retirement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Planning-criterion boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Physical-time bridge boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Neutrino construction routes do not supply charged-lepton generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Cross-lane ledger records the charged-lepton gauge-anchor route as closed, without adding a tau selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite-lattice Newtonian scope boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite recompute artifact boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Coupling-authority and plaquette boundary does not distinguish generations.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Decoherence/gravity packet-memory boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite-grid Picard-Fuchs scope boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Clifford carrier-selection boundary unrelated to lepton generations.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Planck P_A carrier selection does not supply tau generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Plaquette bootstrap limitations unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Plaquette diagnostic boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "It confirms supplied packet arithmetic is not selector authority but does not add or retire a tau selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Charged-lepton registrability and determinant-counting routes are distinct from generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Temporal-axis and transfer-range walls unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Source-measure and top-response basis boundary supplies no tau selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Spin-statistics boundary unrelated to charged-lepton generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Kinetic-law nonselection is structurally analogous but does not supply a lepton-generation selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "SU(3) quotient-encoder scope boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Documentation synchronization issue unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite family-card scope boundary unrelated to charged-lepton masses.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Theta mass-orientation readout boundary unrelated to tau generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Theta gauge-sector readout boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Theta positive-gate boundaries unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Theta phase-insertion boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Theta defect-closure boundary unrelated to tau selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Charged-lepton determinant-power horn selection is not generation selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Record-orbit occupancy nonsupply does not distinguish e, mu, and tau.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Record-formation R-eta nonsupply does not distinguish lepton generations.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "A gravitational Casimir localization artifact gap is unrelated to electroweak generation blindness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Record-only mass readout underdetermination supplies no tau selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Finite table-matcher boundary unrelated to charged-lepton selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Wide-lattice finite-scope boundary unrelated to charged leptons.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "mechanism": "Top-Yukawa physical-readout renaming boundary is adjacent but does not supply a tau selector.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26": {
+              "accepted_premise_type": null,
+              "content_sha256": "1e97cf442de2d78304570dbc7a6918a8b82f3db3d95a8a8545c55ed120d4e644",
+              "cross_cycle_candidate_ids": [
+                "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:0",
+                "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:1",
+                "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:2",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:0",
+                "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:1",
+                "charged_lepton_radiative_tau_selector_firewall_note_2026-04-26:previous_audit:2",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26": {
+              "accepted_premise_type": null,
+              "content_sha256": "d4bf7437706fbe35c029cbb16c1a0084817e9c02b308d27a14a24a4949413319",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/charged_lepton_radiative_tau_selector_firewall_note_2026-04-26",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "It still supplies no context-selection rule",
+                "Supplies the slot, never the content",
+                "This primitive supplies only the kinetic form ratio",
+                "carries no dimensionless content and does not assert a/l_P=1",
+                "physical charged-lepton matter action counts the K/CPT orbit",
+                "physical charged-lepton readout is the fixed-locus density class",
+                "same physical channel that controls the quark determinant readout"
+              ]
+            },
+            "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "a972d2a9e5ce125c9f59cc4d6cdeb1c505a6db185ce1987bc754b5a89aedb3a8",
+              "effective_status": null,
+              "path": "docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "The calculation does not contain a tau selector.",
+                "The runner prints PDG charged-lepton masses only as comparators.",
+                "Therefore it cannot select the tau eigenvalue without an",
+                "They are not proof inputs.",
+                "This firewall does not kill the radiative scale.",
+                "a retained full ratio law that makes the assignment unavoidable",
+                "but it is not a standalone retained y_tau theorem",
+                "not the observed electron/muon/tau hierarchy"
+              ]
+            },
+            "docs/audit/data/axiom_premise_nodes.json": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+              "effective_status": null,
+              "path": "docs/audit/data/axiom_premise_nodes.json",
+              "roles": [
+                "premise_registry"
+              ],
+              "verified_locators": [
+                "It still supplies no context-selection rule"
+              ]
+            },
+            "scripts/dm_leptogenesis_exact_common.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41",
+              "effective_status": null,
+              "path": "scripts/dm_leptogenesis_exact_common.py",
+              "roles": [
+                "helper"
+              ],
+              "verified_locators": [
+                "PLAQ_MC = 0.5934"
+              ]
+            },
+            "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "fe6105f9724c6122391aa3d603dd81e7b94f824fb80869d54b686b7954752362",
+              "effective_status": null,
+              "path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "PDG masses and heaviest-generation labels are not proof-input keys",
+                "generation relabeling leaves the radiative Casimir vector invariant",
+                "generation-selection / loop-normalization / source-domain law",
+                "observed masses are comparators, not proof inputs",
+                "radiative y value is identical for all charged-lepton generations",
+                "same Casimir is assigned to e, mu, tau",
+                "universal radiative mass is close only to tau comparator"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-audit if a new retained generation-indexed primitive or full charged-lepton ratio law is added to the claimed standalone premise set.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 9,
+        "C": 0,
+        "D": 2,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The scoped no-go is an exact algebraic symmetry result: multiplying the vector (1,1,1) by any common radiative normalization preserves generation degeneracy. The runner genuinely computes the Casimir equality and permutation invariance; its hard-coded coupling, electroweak scale, and PDG masses affect only the comparator checks, not the selector obstruction. This verdict does not retain alpha_LM/(4pi) as a tau-mass derivation or establish a charged-lepton hierarchy."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py",
+  "title": "Charged-Lepton Radiative Tau Selector Firewall",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1330 @@
+{
+  "audit_date": "2026-07-13T02:33:54.063740+00:00",
+  "audit_invocation_history": [
+    "c987e67c929243b6b2254e906f227c2f",
+    "37aada54596f4391ac78959a9977ef62"
+  ],
+  "audit_invocation_id": "37aada54596f4391ac78959a9977ef62",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 18.247,
+    "runner_hash": "4840fdfc9a8c676e7a32e877f28fbd7e4b27c2e5bb42a7fe78313e3867cb4975",
+    "transitive_descendants": 1717
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260713-55ea4c47",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The explicit Pauli calculations and conditional unitary-refinement argument close, but the exhaustive classification does not: the note invokes the Wedderburn decomposition without deriving it, while the runner checks only the two canonical representations and their represented idempotents.",
+  "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+  "claim_scope": "The Pauli realization and central-pseudoscalar identities, together with the claimed exhaustive two-class dimension-two classification and the conditional unitary refinement.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-07-13T02:33:54.063740+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 15,
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
+  "helper_runner_paths": [],
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
+  "load_bearing_score": 18.248,
+  "load_bearing_step": "The classification step Cl(3,0) tensor_R C \u2245 M_2(C) \u2295 M_2(C), with each chirality summand having a unique two-dimensional irreducible module, establishes the exhaustive two-class classification.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
+  "note_hash": "ab7e2329251e54327560c35ac806ef5e3776378a7eea31277992d6b49e22d9cb",
+  "note_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": "other: add an explicit algebra-level derivation that the eight-dimensional complexified Clifford algebra decomposes through the central idempotents into two four-dimensional ideals, prove each ideal is isomorphic to M_2(C), and extend the runner to verify the basis, multiplication, dimensions, and kernels before re-audit.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.782277+00:00",
+      "audit_date": "2026-05-22T15:08:08.944954+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.055,
+        "runner_hash": "0a54ce2e3169dbce1e27d2489d023d38c4f03a434f63908adf0fea8afc9ee0db",
+        "transitive_descendants": 1063
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260522T150808Z-cl3_pauli_irrep_uniqueness_narrow_theore-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem.",
+      "claim_scope": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T15:08:08.944954+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T01:50:09.593772+00:00",
+          "auditor": "codex-audit-loop-019e14b9-64f6-7df0-bb0e-ae950acf8c94",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional complex representation theory of the real Clifford algebra Cl(3,0) generated by gamma_i with {gamma_i,gamma_j}=2 delta_ij I: Pauli irreps exist, omega is central with omega^2=-I, and the faithful irreducible complex reps are exactly the two 2-dimensional chiralities.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-22T15:04:19.222413+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T150356Z-ce6e982d-cl3_pauli_irrep_uniquene-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Standalone finite-dimensional algebraic theorem that Cl(3,0) has exactly two faithful irreducible complex Pauli representations, both 2-dimensional, distinguished by the central pseudoscalar eigenvalue +/- i.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-22T15:08:08.944954+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260522T150808Z-cl3_pauli_irrep_uniqueness_narrow_theore-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Used the older bounded_theorem typing for a narrow scoped algebraic result; under clarified A1 the absence of admitted bridges or open dependencies makes this a positive_theorem.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with summands distinguished by omega = +/- i, yields exactly the two faithful irreducible complex 2-dimensional representations.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 56,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: second / audited_clean / positive_theorem / class A; J2: second / audited_clean / positive_theorem / class A; J3: second / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class A; J5: second / audited_clean / positive_theorem / class A. Majority rationale: The restricted claim is exact local Clifford/Pauli representation theory and closes from the stated generator relations plus standard finite-dimensional algebra. The source note explicitly excludes physical Hilbert-space identification and staggered-fermion bridges, so those exclusions bound scope but do not make the local algebra theorem conditional. Under clarified A1, the Cl(3,0)/Pauli local-algebra content is part of the closed qubit-algebra surface, so positive_theorem is the correct type. The runner performs exact class-A algebra checks and imports no external comparator or fitted premise. | The restricted claim is exact finite-dimensional Clifford/Pauli representation theory and does not import a physical Hilbert-space identification, staggered-fermion bridge, or open framework gate. Its load-bearing step is ordinary algebraic classification plus Schur's lemma, supported by exact local checks in the runner and no external comparator or tuned input. Under the clarified A1 context, this local Cl(3,0)/Pauli representation scope is a closed local-algebra theorem, so positive_theorem is the correct typing rather than bounded_theorem. | The restricted claim is an exact algebraic theorem about the local Clifford/Pauli representation surface, with no imported physical Hilbert-space bridge or open gate. Under the clarified A1 context, this local algebraic scope is not merely bounded by an admitted premise; it is the closed local-algebra content of the framework and qualifies as positive_theorem. The runner supports the algebraic checks with exact symbolic matrix computations and introduces no external comparator or tuned input. | The restricted claim is purely local algebra: it assumes only the Cl(3,0) generator relations and proves Pauli existence, omega centrality with omega^2 = -I, and the two irreducible chirality sectors. Under the clarified A1 context, this is not an admitted physical bridge or conditional Hilbert-space identification; it is a closed local-algebra theorem. The runner checks are exact algebraic A-class checks and introduce no external comparator, tuned value, or cross-note premise. | Both audits agree that the derivation closes and that the load-bearing step is class A algebraic representation theory. The disagreement is claim_type: under clarified A1, this exact local Cl(3,0)/Pauli representation scope has no admitted physical bridge, open dependency, or external comparator, so it is a positive_theorem rather than merely bounded. The note's exclusions of physical Hilbert-space identification and staggered-fermion content are scope controls, not unclosed premises for the audited local theorem."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:03.977950+00:00",
+      "audit_date": "2026-07-11T12:19:48.493843+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.225,
+        "runner_hash": "0a54ce2e3169dbce1e27d2489d023d38c4f03a434f63908adf0fea8afc9ee0db",
+        "transitive_descendants": 1691
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T120935Z-e9b7665b-00002-cl3_pauli_irrep_uniqueness_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic classification up to complex-linear isomorphism closes from Cl(3,0) as the real algebra M_2(C), its complexification, and Schur's lemma. The stronger unitary-equivalence statement needs a supplied compatible Hermitian/*-representation structure; otherwise a non-unitary similarity of the Pauli matrices need not be unitarily equivalent in the fixed inner product.",
+      "claim_scope": "The Clifford relations imply Pauli existence, central omega with square -I, and exactly two 2-dimensional irreducible complex representations up to complex-linear isomorphism; unitary uniqueness was not established.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-11T12:19:48.493843+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Each chirality summand maps to M_2(C), so Schur's lemma forces dimension 2 and unitary uniqueness.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The displayed anticommutation expansion and exact Pauli multiplication were checked.",
+            "disposition": "CLOSED",
+            "evidence_locator": "omega^2 overall: full expansion equals -I",
+            "evidence_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Reorder the six Clifford factors directly to test whether the pseudoscalar square could have the opposite sign.",
+            "outcome": "Three relevant swaps give omega^2=-I; the note's isolated phrase \"six sign flips\" is erroneous wording but the displayed derivation and runner close the sign attack.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "omega_sign_attack"
+          },
+          {
+            "attempt": "The four possible sign assignments for c_1,c_2 in {+1,-1} were tested against the off-diagonal anticommutator.",
+            "disposition": "CLOSED",
+            "evidence_locator": "dim=1 representations cannot satisfy off-diagonal (Cl3)",
+            "evidence_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Try scalar images gamma_i=c_i in a one-dimensional complex representation.",
+            "outcome": "Every assignment gives anticommutator +2 or -2 rather than zero, so dimension one is excluded.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "one_dimensional_rep"
+          },
+          {
+            "attempt": "The source's M_2(C) summand classification was applied to each chirality sector.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Each summand maps to `M_2(C)` and acts on `C^2`",
+            "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat a higher-dimensional carrier, such as a direct sum of Pauli modules, as a possible irreducible counterexample.",
+            "outcome": "A direct sum is reducible, while the unique simple module of each M_2(C) summand has complex dimension two.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "higher_dimensional_irrep"
+          },
+          {
+            "attempt": "Centrality, Schur's lemma, and omega^2=-I were applied to the scalar action of omega.",
+            "disposition": "CLOSED",
+            "evidence_locator": "so `s = \u00b1i`. The two cases correspond to the two chirality summands",
+            "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Seek an additional irreducible sector with a central pseudoscalar eigenvalue other than +i or -i.",
+            "outcome": "The scalar must satisfy s^2=-1, leaving only the two chirality values.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "third_chirality"
+          },
+          {
+            "attempt": "The central omega eigenvalues were compared under the proposed equivalence.",
+            "disposition": "CLOSED",
+            "evidence_locator": "rho_+ and rho_- have distinct central eigenvalues +i vs -i",
+            "evidence_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt to identify rho_+ and rho_- by a change of basis or chirality relabeling.",
+            "outcome": "Conjugation fixes scalar operators, so +iI cannot be carried to -iI; the two algebraic representations are inequivalent.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "chirality_relabel_equivalence"
+          },
+          {
+            "attempt": "Taking S=diag(2,1) and gamma_i'=S sigma_i S^{-1} preserves every Clifford relation and chirality, while gamma_1' is not Hermitian or normal in the original inner product and therefore cannot be a unitary conjugate of sigma_1.",
+            "disposition": "OPEN",
+            "evidence_locator": "Up to unitary equivalence there are exactly two such irreps",
+            "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Change the Hilbert metric implicitly by conjugating the Pauli representation with an invertible but non-unitary matrix.",
+            "outcome": "This supplies a same-chirality algebraic representation not unitarily equivalent with respect to the fixed standard inner product; the note contains no *-representation or compatible-inner-product hypothesis that excludes it.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "nonunitary_similarity"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "unitary-equivalence overreach without a supplied *-representation or compatible Hermitian structure"
+          ],
+          "evidence_locator": "Up to unitary equivalence there are exactly two such irreps",
+          "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "unitary-equivalence overreach without a supplied *-representation or compatible Hermitian structure"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No physical-Hilbert-space identification is claimed",
+          "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Schur's lemma forces dimension 2 and unitary uniqueness",
+              "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "unitary uniqueness",
+              "promoted_wall": "unitary-equivalence overreach without a supplied *-representation or compatible Hermitian structure"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The physical identification of `H_x` with the Cl(3) faithful irrep.",
+              "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "physical identification of H_x"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The representation signature, uniqueness language, proof classification step, runner assertions, corollaries, and scope exclusions were checked for unstated inner products, *-homomorphism assumptions, physical-Hilbert-space bridges, or imported classifications.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "## Cited dependencies",
+          "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": "No N1 route was ruled out by prior authority, and the supplied cross-cycle candidates contain no witness proving unitary uniqueness for arbitrary algebra representations.",
+          "scan_scope": "The source, runner, prior audit entry, retirement records, and supplied cross-cycle no-go ledgers were checked for a prior witness addressing arbitrary non-* similarities of the Pauli representation.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "exactly two such irreps",
+          "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "none_found_reason": "",
+          "scan_scope": "The phrases forbidden, inequivalent, uniqueness, exactly two, faithful, and unitary equivalence were checked against the calculations and stated hypotheses.",
+          "statements": [
+            {
+              "evidence_locator": "confirming `dim = 1` is forbidden",
+              "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "dim = 1 is forbidden",
+              "tested_resolutions": [
+                "all scalar sign assignments allowed by gamma_i^2=I"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "is NOT unitarily equivalent to `rho_+`",
+              "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "NOT unitarily equivalent",
+              "tested_resolutions": [
+                "unitary conjugation would preserve the scalar central omega eigenvalue"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "Schur's lemma forces dimension 2 and unitary uniqueness",
+              "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "unitary uniqueness",
+              "tested_resolutions": [
+                "non-unitary similarity of the Pauli representation"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no representation inner product, adjoint operation, or *-homomorphism requirement.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The Qubit axiom supplies the algebraic presentation M_2(C), but not a fixed Hermitian metric or a requirement that representations preserve *.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A realized-state reference has no bearing on equivalence of abstract Clifford representations.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units conversion cannot supply a *-representation or compatible Hilbert metric.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "The owner-governed AC boundary concerns occupancy and R-eta readout and explicitly supplies no above-C3 chirality content.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The bare-coupling rescaling convention is unrelated to representation equivalence.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge normalization cannot provide the missing Hermitian/* structure.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved-primitive, owner-governed, Tier-A, convention, definition, and scope candidates listed by the partial-closure index were checked for a compatible inner product or *-representation premise.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because every algebraic irrep is similar to a Pauli irrep, one can transport the standard inner product along the similarity and then call the resulting equivalence unitary.",
+          "evidence_locator": "Within each summand, Schur's lemma forces dimension 2 and unitary uniqueness.",
+          "evidence_path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+          "resolution": "That argument succeeds only after assigning each representation a transported compatible inner product. The theorem instead states a representation merely as rho:Cl(3,0)->End(V), supplies no such metric or * condition, and asserts unitary equivalence without defining the needed Hilbert structure.",
+          "resolved": true,
+          "route_id": "nonunitary_similarity"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_locator": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "A prior audit accepted the same algebraic theorem but did not test the distinction between algebraic and unitary equivalence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Retired occupancy and R-eta premises do not supply representation-theoretic * structure.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "The retired theta premise concerns gauge and determinant phases, not Clifford-module inner products.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Owner governance retired a downstream readout boundary without adding a *-representation premise.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Unrelated charged-lepton, neutrino, and area-law routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite gravity-sweep and Newton-closure boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Gauge-coupling runner-boundary repairs do not address Clifford representations.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Atomic-stability and reflection-positive-axis cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Its Cl_4 carrier obstruction concerns a different rank-four physical block and does not prove a Cl_3 unitary classification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Electroweak normalization identities are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Plaquette coefficient and comparator cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite Z_2 carrier invariance does not constrain the Hermitian structure of Cl_3 representations.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Charged-lepton selector no-gos are downstream and unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Spatial-dimension selection does not address module equivalence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Lorentz-hierarchy scope controls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Causal-metric reconstruction boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Radial-basin replay boundaries do not address Cl_3.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Wilson-loop environment closure is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Flavor-tracial selector pruning is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Analytic-vector failure in a Wigner bridge does not supply the missing * hypothesis.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Gravity dispersion and Fermat bridges are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Weak-field sign conventions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Its Cl_4 rank-four carrier and scale gates concern a distinct physical construction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Campaign-level mass, scale, and mixing obstructions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Atomic-scale transport and unit-map obstructions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Quark source/readout underdetermination is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Uniform lattice Green-function asymptotics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Signed lensing-centroid reductions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite-path lensing surrogate failure is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Static-source readout selection is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Temporal source and clock-rate boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "The empty matter-cone no-go ledger supplies no relevant witness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Planning-priority and objective-selection cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Physical-time and emergent-c boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Neutrino mass-matrix construction routes are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Neutrino and cosmological scale gates are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite Newtonian-distance replay scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Live-recompute and bounded-basin requirements are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Coupling and plaquette-readout boundaries are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite packet-memory and decoherence cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Finite-degree Picard-Fuchs exclusions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Its Cl_4 module-matching failure illustrates a carrier-identification issue but does not resolve the present Cl_3 unitary-equivalence assumption.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Plaquette bootstrap and reflection-positivity dependencies are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Character-expansion diagnostic corrections are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record selector and Hessian boundaries do not supply a Clifford * operation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Strong-CP and R-eta registrability routes are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Transfer-generator locality and temporal-axis selection are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Fisher tangent and physical source semantics are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "The downstream withdrawal of statistics forcing does not alter the abstract Cl_3 algebraic classification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "SU(3) cube-encoder limitations are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Family-card distance scope is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta determinant-readout walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta gauge-sector selection walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta positive-gate obstructions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta insertion-selection walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Theta defect-closure walls are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "AC determinant-power selection is unrelated to Cl_3 unitary equivalence.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record-orbit occupancy nonsupply is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record-formation and R-eta nonsupply are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Record-only mass-readout underdetermination is unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "Wide-lattice continuum-scope cautions are unrelated.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "mechanism": "A Yukawa readout renaming failure is unrelated to the algebraic Clifford classification.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "unitary-equivalence overreach without a supplied *-representation or compatible Hermitian structure"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
+              "accepted_premise_type": null,
+              "content_sha256": "f22968bca9d158d83e770dc267ecaa47b9fe19a7744864e998e7c1c8681c28e8",
+              "cross_cycle_candidate_ids": [
+                "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
+              "accepted_premise_type": null,
+              "content_sha256": "9638069a809da041ec0aae90afa6e4d7be29f879b2441d843c264c7b632cd8b2",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c9989cdb05e2d526d7b0b8b3d51857031893f5452db04ab26f2961c77df88e16",
+              "effective_status": null,
+              "path": "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Cited dependencies",
+                "Each summand maps to `M_2(C)` and acts on `C^2`",
+                "No physical-Hilbert-space identification is claimed",
+                "Schur's lemma forces dimension 2 and unitary uniqueness",
+                "The physical identification of `H_x` with the Cl(3) faithful irrep.",
+                "Up to unitary equivalence there are exactly two such irreps",
+                "Within each summand, Schur's lemma forces dimension 2 and unitary uniqueness.",
+                "confirming `dim = 1` is forbidden",
+                "exactly two such irreps",
+                "is NOT unitarily equivalent to `rho_+`",
+                "so `s = \u00b1i`. The two cases correspond to the two chirality summands"
+              ]
+            },
+            "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "0a54ce2e3169dbce1e27d2489d023d38c4f03a434f63908adf0fea8afc9ee0db",
+              "effective_status": null,
+              "path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "dim=1 representations cannot satisfy off-diagonal (Cl3)",
+                "omega^2 overall: full expansion equals -I",
+                "rho_+ and rho_- have distinct central eigenvalues +i vs -i"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: nonunitary_similarity remains open and supplies a counterexample to unitary uniqueness under the representation definition actually stated."
+        ],
+        "narrowed_claim_scope": "The Clifford relations imply Pauli existence, central omega with square -I, and exactly two 2-dimensional irreducible complex representations up to complex-linear isomorphism; unitary uniqueness was not established.",
+        "next_route": {
+          "reason_untested": "The source and runner test only the canonical Hermitian Pauli representatives and never quantify over non-* similarities; the next repair must either exclude those representations explicitly or weaken equivalence to complex-linear isomorphism.",
+          "route_id": "nonunitary_similarity"
+        },
+        "prior_claim_scope": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: replace \"unitary equivalence\" and \"unitary uniqueness\" with complex-linear equivalence, or add an explicit *-representation/compatible-Hermitian-inner-product hypothesis and prove the unitary classification; also correct the proof's \"six sign flips\" wording, since the displayed derivation uses three swaps.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 56,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 56
+      },
+      "verdict_rationale": "The runner genuinely performs 56 exact algebraic checks for the canonical Pauli realizations, pseudoscalar relations, chirality projectors, and finite-dimensional probes. It does not establish uniqueness for arbitrary representations, and Schur's lemma plus the Wedderburn decomposition yields complex-linear equivalence, not unitary equivalence without a *-representation or compatible-inner-product hypothesis. Thus the algebraic core is sound, but U3 is broader than the supplied assumptions."
+    },
+    {
+      "archived_at": "2026-07-13T01:54:00.098605+00:00",
+      "audit_date": "2026-07-13T01:17:12.667182+00:00",
+      "audit_invocation_history": [
+        "90646b35a53443aeba854e29c699ee74"
+      ],
+      "audit_invocation_id": "90646b35a53443aeba854e29c699ee74",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.247,
+        "runner_hash": "4840fdfc9a8c676e7a32e877f28fbd7e4b27c2e5bb42a7fe78313e3867cb4975",
+        "transitive_descendants": 1717
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260713-177122c7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet verifies the Clifford relations, pseudoscalar identities, two explicit Pauli representations, and the conditional unitary-equivalence upgrade. It does not derive the load-bearing Wedderburn decomposition or prove that these are all irreducible complex representations; excluding dimension one does not exclude other candidate dimensions.",
+      "claim_scope": "The Clifford relations give Pauli realizations, a central pseudoscalar with square `-I`, two 2-dimensional complex irreducible chirality classes, and unitary uniqueness within each chirality under the stated `*`-representation hypothesis.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T01:17:12.667182+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The classification step `Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C)` gives two chirality summands, each with the unique 2-dimensional irreducible `M_2(C)` module.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "no_go_result"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite and include a retained authority for the complexification split and unique irreducible `M_2(C)` module, or add a self-contained basis-and-ideal proof and extend the runner to certify the universal classification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 94,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 94
+      },
+      "verdict_rationale": "The algebraic identities U1 and U2 and the U3b unitary refinement are correctly supported on their stated hypotheses. Universal U3a classification, however, is imported as the standard decomposition `Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C)` while the runner only evaluates idempotents in the two already-chosen Pauli representations. The auxiliary dimension-one no-go is proved, but it does not establish exhaustion of irreducible dimensions or chirality classes."
+    },
+    {
+      "archived_at": "2026-07-13T01:57:52.825819+00:00",
+      "audit_date": "2026-07-13T01:17:12.670792+00:00",
+      "audit_invocation_history": [
+        "2181d25f31f04558845ba59ea9db41c8"
+      ],
+      "audit_invocation_id": "2181d25f31f04558845ba59ea9db41c8",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.247,
+        "runner_hash": "4840fdfc9a8c676e7a32e877f28fbd7e4b27c2e5bb42a7fe78313e3867cb4975",
+        "transitive_descendants": 1717
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260713-1dcd968d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet verifies the two displayed Pauli representations and their inequivalence but does not establish the asserted Wedderburn decomposition or exhaust all irreducible complex representations. The unitary-refinement argument is valid only after that unproved U3a classification step.",
+      "claim_scope": "The Pauli realization and central-pseudoscalar identities, together with the claimed exhaustive two-class dimension-two classification and the conditional unitary refinement.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T01:17:12.670792+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The classification step Cl(3,0) tensor_R C ~= M_2(C) oplus M_2(C), with each summand having the unique 2-dimensional irreducible module, yields exactly two irreducible complex representations.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire a retained Cl(3,0) complexification and irreducible-module classification authority as a direct dependency, or incorporate its complete proof and an exhaustive runner certificate into this note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 94,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 94
+      },
+      "verdict_rationale": "Issue: U3a invokes the standard Wedderburn decomposition, while the runner evaluates central idempotents only inside two already selected Pauli representations and never proves the algebra decomposition or module exhaustion. Why this blocks: those finite checks establish existence and inequivalence, not that every faithful irreducible complex representation is two-dimensional and belongs to exactly one of those classes. Repair target: add a self-contained algebra-basis and Wedderburn proof or wire a retained exact classification authority, with a certificate covering decomposition and irreducible-module exhaustion. Claim boundary until fixed: Pauli existence, omega squared equal to minus identity, centrality, inequivalence of the displayed representations, and the conditional unitary-upgrade algebra remain supported; the dimension-one exclusion is a local algebraic contradiction and does not establish the missing exhaustive classification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 94,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 94
+  },
+  "runner_path": "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
+  "title": "Cl(3) Pauli Irrep Uniqueness Narrow Theorem",
+  "transitive_descendants": 1719,
+  "verdict_rationale": "The asserted representation-theory result is consistent with the displayed canonical examples, and the runner validates the Clifford relations, pseudoscalar identities, chirality distinction, and Hermitian-intertwiner refinement exactly. However, those finite matrix checks do not prove that the abstract complexification has no additional simple summands or irreducible modules; evaluating the central idempotents after passing to the two proposed irreps is not an algebra-level proof of the invoked decomposition. The universal dimension-two and exactly-two conclusions therefore depend on an unproved standard-classification input in the restricted packet."
+}

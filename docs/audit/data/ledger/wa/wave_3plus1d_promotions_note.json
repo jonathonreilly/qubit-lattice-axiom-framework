@@ -1,0 +1,1417 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_3plus1d_promotions_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "76270898d12838a29dca58328a40b3e2c39992775ebf6ff8439d70d332fa9f78",
+  "note_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370050+00:00",
+      "archived_for_note_hash": "1f0d4796926424f2e3d12a1c55c940f9d4dadfa0af02e2f06a97fa2c912cb9e5",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-11T09:00:23.228197+00:00",
+      "archived_for_note_hash": "31d316d6e29fc7f4ea19b06190f852bb4af4c60b94eefe6cb8c477e8817791d9",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces the finite lightcone and M-vs-I tables, but the literal instantaneous/c=infinity interpretation does not close: the I branch is a stitched finite-time frozen c=1 wave-solve comparator, not a derived elliptic Poisson or c->infinity solution.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note identifies the M branch as standard retarded (3+1)D wave evolution and the I branch as an instantaneous, c=infinity comparator stitched layer-by-layer from cached late-time static solves, then claims a 26-31% retarded-vs-instantaneous gap across three grown families.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: replace the I branch with an actual layerwise elliptic/Poisson instantaneous solve, or prove and numerically bound convergence of the frozen-wave late-time slice to the c->infinity comparator; then add hard assertions for the lightcone and gap gates and audit the Lane 8 radiation lane separately for the combined three-signature statement.",
+      "open_dependency_paths": [
+        "instantaneous_c_infinity_comparator_not_derived_from_Poisson_or_c_limit",
+        "docs/WAVE_3PLUS1D_RADIATION_NOTE.md_combined_three_signature_closure_not_audited_in_this_claim",
+        "runner_prints_thresholds_without_hard_assertions"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the runner supports the displayed finite computation, but the source labels the stitched frozen-source branch as an instantaneous c=infinity comparator without proving that this NL=30 late-time finite-c wave slice equals the instantaneous field. Why this blocks: a hostile physicist can accept first_dt=r for r=2..8 and a 26-31% difference between retarded moving-source evolution and the frozen-slice comparator, but cannot infer the literal retarded-vs-instantaneous wave claim or the all-three scalar-wave closure from this runner alone. Repair target: replace the I branch with an actual layerwise elliptic/Poisson instantaneous solve, or prove and numerically bound convergence of the frozen-wave late-time slice to the c->infinity comparator; then add hard assertions for the lightcone and gap gates and audit the Lane 8 radiation lane separately for the combined three-signature statement. Claim boundary until fixed: it is safe to claim a strict finite (3+1)D lattice lightcone to r=8 and a reproducible 26-31% gap between retarded moving-source wave evolution and this specific stitched frozen-source c=1 static-slice comparator on three grown families at v/c=0.23."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.404471+00:00",
+      "audit_date": "2026-05-11T16:04:35.206744+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner directly evolves the stated (3+1)D wave stencil, measures first arrivals, builds the moving-source retarded history, builds the stitched frozen comparator, and recomputes the three family gaps. This closes the bounded finite-comparator claim only; it does not derive an elliptic Poisson or c->infinity instantaneous branch.",
+      "claim_scope": "Finite (3+1)D wave-operator promotion: delta-pulse first arrival satisfies first_dt = r for r=2..8, and the moving-source retarded history differs from the layerwise stitched late-time-frozen comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; no true c->infinity instantaneous comparator or combined three-signature closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T16:04:35.206744+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The strict (3+1)D lightcone has first_dt = r to r = 8, and the moving-source (3+1)D retarded wave history differs from the stitched late-time-frozen comparator by 26-31% across Fam1/Fam2/Fam3.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck only if later work cites this as a true c->infinity instantaneous result or as closing the combined lightcone+retardation+radiation story without the separate comparator repair.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The live runner and frozen cache reproduce the source note's two bounded tables: strict lightcone arrival first_dt=r for r=2..8 and M-I gaps of 30.44%, 26.47%, and 30.72% across the three grown families. The note explicitly states that the I branch is a stitched late-time frozen c=1 wave-solve comparator rather than a derived c->infinity solution, so the audited scope excludes the literal instantaneous interpretation and the combined three-signature closure. Residual risk is the absence of hard assertions in the runner and future misuse of this row as a true instantaneous-comparator theorem."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:15.871824+00:00",
+      "audit_date": "2026-07-12T03:18:32.970068+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00359-wave_3plus1d_promotions_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite tables are genuinely computed, but the stitched NL=30 frozen-wave slice is not shown to equal a layerwise elliptic or c->infinity field. The physical-operator identification and Lane-8 radiation result are also not derived or supplied in this packet.",
+      "claim_scope": "Finite (3+1)D wave-operator result: delta-pulse first arrival is first_dt = r for r=2..8, and the moving-source history differs from the stitched late-time-frozen c=1 comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; a true c->infinity comparator, framework derivation of the physical operator, and combined Lane-8 closure are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T03:18:32.970068+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:f1a901e1a90e",
+      "load_bearing_step": "The runner computes first_dt = r for r = 2..8 and three 26\u201331% gaps between the moving-source wave history and the layerwise stitched late-time-frozen comparator.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner source was checked for an elliptic or Poisson solve; _make_instantaneous instead calls _solve_wave_3plus1d and selects its final finite-time slice.",
+            "disposition": "OPEN",
+            "evidence_locator": "layerwise elliptic/Poisson solve",
+            "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct the instantaneous field by solving the spatial elliptic equation independently on every source layer.",
+            "outcome": "The decisive comparator construction is absent.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "elliptic_comparator"
+          },
+          {
+            "attempt": "The note and runner were checked for a convergence theorem, relaxation sweep, tail bound, or asserted comparator error.",
+            "disposition": "OPEN",
+            "evidence_locator": "prove convergence of the frozen-wave late-time slice",
+            "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Prove uniform convergence of the frozen finite-c late-time slice to the intended instantaneous comparator with a numerical error bound below the reported gap.",
+            "outcome": "No convergence calculation or error bound is present.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "frozen_limit_bound"
+          },
+          {
+            "attempt": "The complete runner was inspected and its cached output was compared with both source tables.",
+            "disposition": "CLOSED",
+            "evidence_locator": "layer-by-layer-stitched late-time frozen `c=1` wave-solve",
+            "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Restrict the claim to the exact finite operator and the specifically defined stitched frozen-wave comparator.",
+            "outcome": "This bounded route closes: seven arrivals and three comparator gaps are computed rather than printed as constants.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_frozen_scope"
+          },
+          {
+            "attempt": "The primitive boundary was compared with the source's physical-operator language.",
+            "disposition": "CLOSED",
+            "evidence_locator": "this primitive fixes only the one dimensionless graining ratio",
+            "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the approved kinetic-isotropy primitive to identify the simulated wave operator as the full physical dynamical law.",
+            "outcome": "The primitive fixes only kinetic-form isotropy and expressly supplies no dynamics or downstream Lorentz theorem, so it cannot close this lift.",
+            "route_class": "normalization_or_units",
+            "route_id": "kinetic_primitive_lift"
+          },
+          {
+            "attempt": "The minimal-axiom dynamics boundary was checked against the runner's imposed PDE and source/readout choices.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Admissibility is not a dynamics axiom.",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the four minimal axioms as selecting the wave equation, source law, and beam observable.",
+            "outcome": "The registered axioms do not select a dynamics, kinetic branch, source/action bridge, or physical observable bridge.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "minimal_axiom_dynamics"
+          },
+          {
+            "attempt": "The restricted packet was checked for the Lane-8 source, runner, output, or retained one-hop authority.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "Combined with Lane 8",
+            "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Combine the two present tables with an independently audited Lane-8 radiation-falloff result on the same operator.",
+            "outcome": "No Lane-8 authority is supplied, so the combined three-signature statement cannot be tested here.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "lane8_combination"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The stitched finite-c frozen-wave slice is not proved equivalent to a true instantaneous c->infinity comparator.",
+            "The supplied framework premises do not select the simulated PDE and beam readout as the physical operator and observable.",
+            "The Lane-8 radiation authority needed for the combined three-signature claim is absent."
+          ],
+          "evidence_locator": "the combined three-signature statement",
+          "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "The stitched finite-c frozen-wave slice is not proved equivalent to a true instantaneous c->infinity comparator.",
+              "left_closes_right": false,
+              "right": "The supplied framework premises do not select the simulated PDE and beam readout as the physical operator and observable.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "The stitched finite-c frozen-wave slice is not proved equivalent to a true instantaneous c->infinity comparator.",
+              "left_closes_right": false,
+              "right": "The Lane-8 radiation authority needed for the combined three-signature claim is absent.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "The supplied framework premises do not select the simulated PDE and beam readout as the physical operator and observable.",
+              "left_closes_right": false,
+              "right": "The Lane-8 radiation authority needed for the combined three-signature claim is absent.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "The stitched finite-c frozen-wave slice is not proved equivalent to a true instantaneous c->infinity comparator.",
+            "The supplied framework premises do not select the simulated PDE and beam readout as the physical operator and observable.",
+            "The Lane-8 radiation authority needed for the combined three-signature claim is absent."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Generated-audit context makes a precise scope distinction",
+          "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "instantaneous, c=\u221e",
+              "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+              "phrase": "instantaneous, c=\u221e",
+              "promoted_wall": "The stitched finite-c frozen-wave slice is not proved equivalent to a true instantaneous c->infinity comparator."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "physical (3+1)D operator",
+              "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+              "phrase": "physical (3+1)D operator",
+              "promoted_wall": "The supplied framework premises do not select the simulated PDE and beam readout as the physical operator and observable."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Combined with Lane 8",
+              "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+              "phrase": "Combined with Lane 8",
+              "promoted_wall": "The Lane-8 radiation authority needed for the combined three-signature claim is absent."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source's instantaneous, physical-operator, same-operator, and combined-closure phrases were checked against the runner and all supplied premise boundaries.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The strict (3+1)D lightcone result is independent",
+          "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+          "none_found_reason": "No prior-ruled N1 route was asserted.",
+          "scan_scope": "No N1 route was marked RULED OUT BY PRIOR; supplied premise boundaries were tested directly rather than used as prior no-go witnesses.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "A future Section-B rigorization",
+          "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and closure language concerning the comparator, physical interpretation, and combined three-signature statement was checked at finite-lattice, limit, and external-lane resolutions.",
+          "statements": [
+            {
+              "evidence_locator": "not yet a derived elliptic/Poisson `c->infinity` solution",
+              "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+              "phrase": "not yet a derived elliptic/Poisson c->infinity solution",
+              "tested_resolutions": [
+                "The exact NL=30 stitched frozen-wave comparator implemented by the runner"
+              ],
+              "untested_resolutions": [
+                "A genuine layerwise elliptic comparator",
+                "A controlled late-time or c->infinity convergence limit"
+              ]
+            },
+            {
+              "evidence_locator": "combined three-signature statement (lightcone + retardation + radiation falloff) remains conditional",
+              "evidence_path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+              "phrase": "combined three-signature statement (lightcone + retardation + radiation falloff) remains conditional",
+              "tested_resolutions": [
+                "Finite lightcone arrivals",
+                "Finite gaps against the stitched frozen-wave comparator"
+              ],
+              "untested_resolutions": [
+                "The Lane-8 radiation authority",
+                "The true instantaneous-comparator interpretation"
+              ]
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies c_t=c_s kinetic-form graining only, not the wave dynamics, comparator limit, source law, beam readout, or Lane-8 result.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms explicitly withhold dynamics, kinetic selection, source/action, and physical-observable bridges.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise reference to a realized state does not supply a PDE, comparator, boundary condition, or observable map.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful ruler cannot derive the dimensionless comparator identity or the missing dynamical and Lane-8 authorities.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton counting obligation is unrelated to the wave comparator, operator bridge, and radiation lane.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation does not construct the wave-field comparator or beam observable.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This strong-CP cross-sector readout obligation is orthogonal to every wall in the audited wave claim.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied partial-closure index were checked against the three corrected walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A sufficiently relaxed static c=1 wave solve might numerically approximate the desired instantaneous spatial solution closely enough that the 26\u201331% gaps remain decisive.",
+          "evidence_locator": "late-time slice of a",
+          "evidence_path": "scripts/wave_3plus1d_promotions.py",
+          "resolution": "That possibility is plausible but unevidenced: NL=30 is fixed, the runner performs no relaxation sweep or residual estimate, and it never compares its final wave slice with an elliptic solution. The steelman therefore supports a repair route, not the current literal c->infinity identification.",
+          "resolved": true,
+          "route_id": "elliptic_comparator"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wave_3plus1d_promotions_note:previous_audit:0",
+              "evidence_locator": "wave_3plus1d_promotions_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "An unaudited historical state supplies no scientific closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wave_3plus1d_promotions_note:previous_audit:1",
+              "evidence_locator": "wave_3plus1d_promotions_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "The prior conditional audit identified the same frozen-wave-versus-c->infinity comparator wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "wave_3plus1d_promotions_note:previous_audit:2",
+              "evidence_locator": "wave_3plus1d_promotions_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A prior clean verdict covered only the narrowed finite result and was invalidated for a missing no-go-discipline packet.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Charged-lepton occupancy counting.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Charged-lepton h-class readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Strong-CP determinant-channel readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Unrelated lepton, neutrino, and area-law no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite configured wave sweeps do not imply full physical-law closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite positive evidence does not supply a missing physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Unrelated atomic and temporal-axis import restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Unrelated inherited framework-lane obstructions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Electroweak normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Gauge-plaquette coefficient packet boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A tuned beam parameter and phase propagation do not independently derive a detector-observable bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Carrier registry and antisymmetric-operator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Charged-lepton selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Kinetic-form support does not imply unconditional Lorentz or dynamical closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A finite null-cone calculation does not establish a global physical causal theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Single-row evidence cannot establish a wider basin.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Local Wilson scorecard boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Flavor-carrier route pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Free-Dirac analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Gauge-plaquette environment computation boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Gauge-action isotropy does not follow from limited algebraic carriers.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Dispersion does not supply a full physical observable bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Nonlinear gravity and Newton-constant exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Absolute-scale and Clifford-carrier obstructions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Hypercharge normalization and species-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Unrelated cross-lane scale, mass, and selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Atomic scale and threshold-transport boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Quark-mass and flavor-readout obstructions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite fixed-parameter relaxation checks do not prove a uniform asymptotic or limiting Green-function statement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A scalar-potential surrogate can differ from the actual detector-centroid observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A centered finite-path surrogate is not automatically the literal harness geometry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Static-source readout is not derived by a finite source calculation alone.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Transfer-step count is not automatically a physical clock rate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "The empty ledger records no directly reusable no-go for this claim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Planning targets are not theorem-grade selectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "An update tick and imposed lattice c are not automatically physical time and physical light speed.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Neutrino mass-construction no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Neutrino and cosmological scale boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A finite-lattice replay is not a universal distance-law theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A finite family packet does not establish an unbounded basin law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Coupling and register-versus-read selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A finite checked window does not imply an infinite-time memory theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A finite computation cannot silently supply an unbounded theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Clifford-carrier selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Rank matching and carrier selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Gauge-bootstrap and mean-field boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "One-plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite packet arithmetic is not selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Strong-CP and charged-lepton registrability boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Strict locality and temporal-axis selection are not automatic.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite source semantics do not prove a physical response basis.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "The current minimal axioms do not select a nonzero kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "SU(3) cube-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "One missing slot cannot support a full multi-family card.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Theta mass-channel readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Theta gauge-action selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Theta positive-gate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Theta phase-insertion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Theta defect-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Charged-lepton determinant-power selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Record does not supply charged-lepton orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Record formation does not supply event-rate readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "No theorem-level no-go was attempted in that lane.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Record-only mass-readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite cross-family wave rows do not establish a continuous family law or structural parameter selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "Finite lattice rows do not imply a continuum theorem or universal exponent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "mechanism": "A physical readout identity cannot be supplied by renaming.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The stitched finite-c frozen-wave slice is not proved equivalent to a true instantaneous c->infinity comparator.",
+          "The supplied framework premises do not select the simulated PDE and beam readout as the physical operator and observable.",
+          "The Lane-8 radiation authority needed for the combined three-signature claim is absent."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "8673672983fd65ca8d3b407c007adf8fe997f2c78e9e0fa17bc638cf55c27458",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "wave_3plus1d_promotions_note:previous_audit:0",
+                "wave_3plus1d_promotions_note:previous_audit:1",
+                "wave_3plus1d_promotions_note:previous_audit:2"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/wave_3plus1d_promotions_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "audit-unlock-20260612/NO_GO_LEDGER.md",
+                "axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "impact-campaign-20260429/NO_GO_LEDGER.md",
+                "lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "no_go_cross_cycle_index_v1",
+                "nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "wave_3plus1d_promotions_note:previous_audit:0",
+                "wave_3plus1d_promotions_note:previous_audit:1",
+                "wave_3plus1d_promotions_note:previous_audit:2",
+                "wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/wave_3plus1d_promotions_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "af1198ab82763424d9226a4fc78b3f1b78effcd442051a4de80de25adafcf0f4",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/wave_3plus1d_promotions_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+              "effective_status": null,
+              "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "this primitive fixes only the one dimensionless graining ratio"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Admissibility is not a dynamics axiom."
+              ]
+            },
+            "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "76270898d12838a29dca58328a40b3e2c39992775ebf6ff8439d70d332fa9f78",
+              "effective_status": null,
+              "path": "docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "A future Section-B rigorization",
+                "Combined with Lane 8",
+                "Generated-audit context makes a precise scope distinction",
+                "The strict (3+1)D lightcone result is independent",
+                "combined three-signature statement (lightcone + retardation + radiation falloff) remains conditional",
+                "instantaneous, c=\u221e",
+                "layer-by-layer-stitched late-time frozen `c=1` wave-solve",
+                "layerwise elliptic/Poisson solve",
+                "not yet a derived elliptic/Poisson `c->infinity` solution",
+                "physical (3+1)D operator",
+                "prove convergence of the frozen-wave late-time slice",
+                "the combined three-signature statement"
+              ]
+            },
+            "scripts/wave_3plus1d_promotions.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "9b9851c6a24777b5aecdf659ecbccd7c1dd0b2b0181231c2eac6f9e01df652fd",
+              "effective_status": null,
+              "path": "scripts/wave_3plus1d_promotions.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "late-time slice of a"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains two OPEN repair routes and one UNTESTED combined-lane route.",
+          "N5 identifies untested elliptic, convergence, and Lane-8 resolutions.",
+          "The positive source does not provide the five-closed-route basis required for a no-go-discipline PASS."
+        ],
+        "narrowed_claim_scope": "Finite (3+1)D wave-operator result: delta-pulse first arrival is first_dt = r for r=2..8, and the moving-source history differs from the stitched late-time-frozen c=1 comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; a true c->infinity comparator, framework derivation of the physical operator, and combined Lane-8 closure are excluded.",
+        "next_route": {
+          "reason_untested": "The current runner never constructs the layerwise elliptic field; implementing that independent comparator is the shortest decisive test of the disputed M-vs-I interpretation.",
+          "route_id": "elliptic_comparator"
+        },
+        "prior_claim_scope": "Finite (3+1)D wave-operator promotion: delta-pulse first arrival satisfies first_dt = r for r=2..8, and the moving-source retarded history differs from the layerwise stitched late-time-frozen comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; no true c->infinity instantaneous comparator or combined three-signature closure is audited.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "runner_artifact_issue: replace the stitched I branch with a layerwise elliptic/Poisson solve or add a proved and numerically asserted frozen-wave-to-c->infinity convergence bound, then separately supply the physical-operator bridge and Lane-8 audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the runner computes the displayed finite tables but its I branch remains a late-time slice of a finite-c wave solve, not a derived instantaneous c->infinity solution. Why this blocks: the literal retardation claim, physical-operator language, and combined three-signature closure do not follow from the restricted packet. Repair target: implement a layerwise elliptic/Poisson comparator or prove a runner-asserted convergence bound, supply the operator bridge, and audit Lane 8 separately. Claim boundary until fixed: retain only the strict finite lightcone result and the three-family gap against the specifically defined frozen-wave comparator."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_3plus1d_promotions.py",
+  "title": "(3+1)D Promotions of Lane 5 (Lightcone) and Lane 6 (Retarded vs Instantaneous)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1436 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gravity_full_self_consistency_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.049,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b7258f1d34a5c9ce8b24be69f0c2892d881b27dfdd404926c37dea266893cc16",
+  "note_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.105873+00:00",
+      "archived_for_note_hash": "8c6cd12ab306063fefa80aaf0b3facd50c3f74e90ef8af5fae5565d3ea70870e",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.812294+00:00",
+      "audit_date": "2026-04-30T22:50:07.717790+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.587,
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-38",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The operator inversion L = G_0^{-1} = H is exact once the closure condition L^{-1}=G_0 is assumed, and the runner checks that algebra and sparsity. The audit packet does not derive that physical self-consistency condition from Cl(3) on Z^3 or an audited retained authority, so the candidate retained-grade conclusion remains conditional on that premise.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The framework's self-consistency closure condition requires L^{-1} = G_0, which determines L = G_0^{-1} = H = -Delta_lat (Poisson).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "unratified_self_consistency_closure_condition:L^{-1}=G_0"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: the decisive step is the unratified physical closure condition L^{-1}=G_0; the note itself says this is not a theorem of pure algebra, while no audited authority derives it from the framework axiom. Why this blocks: the runner verifies the exact inversion/sparsity consequences after that condition is imposed, but it cannot turn the condition into a retained theorem. Repair target: supply and audit a theorem deriving the field Green's function equals the propagator Green's function from Cl(3) on Z^3, and register/classify the primary runner. Claim boundary until fixed: safe as an exact conditional Poisson-forcing theorem given L^{-1}=G_0, not as unconditional full-framework closure."
+    },
+    {
+      "archived_at": "2026-05-10T13:05:00.497633+00:00",
+      "archived_for_note_hash": "7a749d2cf4576fe5b9f6e5af1baaac73fc5029252d033af94b7fd6eef0fdc63b",
+      "audit_date": "2026-05-05T04:34:08.184538+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.077,
+        "runner_hash": null,
+        "transitive_descendants": 269
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-gravity_full_self_consis-050",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic inversion closes only after accepting L^{-1}=G_0. The restricted packet does not derive that equality from Cl(3) on Z^3; it asserts it as the framework closure condition.",
+      "claim_scope": "Audited whether the note derives Poisson on Z^3 with no operator-class restriction from Cl(3) on Z^3 plus the asserted self-consistency identity L^{-1}=G_0.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:34:08.184538+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Self-consistency requires L^{-1} = G_0, so L = G_0^{-1} = H = -Delta_lat.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check whether a separate retained bridge theorem derives L^{-1}=G_0 from the stated framework axiom rather than imposing it as a closure identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing move identifies the field Green's function L^{-1} with the propagator Green's function G_0. Once that identity is stipulated, L=G_0^{-1}=H is an algebraic consequence, but the identity itself is not independently derived in the packet. No runner source or stdout is available to upgrade the claim to first-principles computation, and the note's numerical checks as described only verify the stipulated closure and its inversion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.081035+00:00",
+      "audit_date": "2026-05-10T13:29:37.992704+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.817,
+        "runner_hash": null,
+        "transitive_descendants": 637
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e1213-7b42-79d1-acb5-b6ffdb4696be",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated conditional scope, the conclusion follows by inversion of the stipulated identity together with the definition `G_0 = H^{-1}`. The note does not claim, and this audit does not validate, a derivation of `L^{-1} = G_0` from the Cl(3)-on-Z^3 axiom.",
+      "claim_scope": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T13:29:37.992704+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T13:28:34.509843+00:00",
+          "auditor": "codex-audit-loop-019e1211-fc97-7f23-bbc0-80515f71d60d",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional algebraic implication that the stipulated closure identity `L^{-1}=G_0` and `G_0=H^{-1}` imply `L=H=-Delta_lat`, without deriving the closure identity from `Cl(3)` on `Z^3`.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-10T13:29:37.992371+00:00",
+          "auditor": "codex-audit-loop-019e1213-7b42-79d1-acb5-b6ffdb4696be",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "By class-A inversion of A2: `L = G_0^{-1} = H = -Delta_lat`.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should verify that downstream citations preserve the bounded conditional scope and do not treat this row as deriving `L^{-1} = G_0` from A1.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The audited claim is explicitly bounded to the conditional implication under the stipulated closure identity. The load-bearing step is a genuine class-A algebraic inversion over the stated hypotheses, so the scoped conclusion closes. No runner stdout or runner source was supplied, so the numerical checks described inside the note are not credited; they are also not necessary for the scoped algebraic implication. The bridge theorem deriving A2 from A1 remains outside this row's clean scope."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:20.357969+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated two-sided inverse identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat` and hence inherits the stated NN, TI, and SA properties.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T13:21:01.795917+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-12T13:21:01.795917+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00053-gravity_full_self_consistenc",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated two-sided inverse identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat` and hence inherits the stated NN, TI, and SA properties.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "Checked whether the displayed inverse identities algebraically imply the scoped operator equality.",
+                "disposition": "CLOSED",
+                "evidence_locator": "By class-A inversion of A2: `L = G_0^{-1} = H = -Delta_lat`.",
+                "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Invert the stipulated equality of Green operators.",
+                "outcome": "The route closes the conditional claim exactly but supplies no derivation of A2.",
+                "prior_witness_id": null,
+                "route_class": "algebraic_rearrangement",
+                "route_id": "n1_direct_inversion"
+              },
+              {
+                "attempt": "Compared the proposed identification with the supplied Lattice and Admissibility content.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Admissibility is not a dynamics axiom.",
+                "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use cubic-lattice adjacency and covariance to try to identify the field operator with the hopping operator.",
+                "outcome": "The premises constrain locality and admissibility but explicitly do not select a Hamiltonian or transfer operator, so they do not derive A2.",
+                "prior_witness_id": null,
+                "route_class": "symmetry_or_representation",
+                "route_id": "n1_lattice_symmetry"
+              },
+              {
+                "attempt": "Inspected the four fixed-point motivation bullets and their stated evidentiary status.",
+                "disposition": "CLOSED",
+                "evidence_locator": "These four bullets are **physical-modelling motivation**, not a class-A or class-B proof.",
+                "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use the density-field-propagator feedback loop to derive equality of the two Green functions.",
+                "outcome": "The note classifies the loop as modelling motivation and does not provide a fixed-point theorem deriving A2.",
+                "prior_witness_id": null,
+                "route_class": "dynamical_or_effective_action",
+                "route_id": "n1_fixed_point_dynamics"
+              },
+              {
+                "attempt": "Checked whether the Record premise supplies a source/action or physical-observable bridge.",
+                "disposition": "CLOSED",
+                "evidence_locator": "source/action and physical-observable identification;",
+                "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use fixed scalar record readout to identify the source response with the propagator response.",
+                "outcome": "The premise explicitly leaves those bridges outside the axioms and therefore cannot establish A2.",
+                "prior_witness_id": null,
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "n1_record_readout"
+              },
+              {
+                "attempt": "Compared A2 with the complete supplied-foundation declaration and registered premise nodes.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Axioms and approved primitives are the complete supplied foundation.",
+                "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Check whether A2 is already an accepted axiom or approved primitive.",
+                "outcome": "A2 is not registered; reclassification cannot silently turn it into a derived bridge.",
+                "prior_witness_id": null,
+                "route_class": "dependency_or_registry_reclassification",
+                "route_id": "n1_premise_registry"
+              },
+              {
+                "attempt": "Checked the declared content of the scale-reference primitive.",
+                "disposition": "CLOSED",
+                "evidence_locator": "This is a units conversion, not a physics axiom.",
+                "evidence_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Use the Planck scale reference to identify the two operators.",
+                "outcome": "It is only a units conversion and supplies no dimensionless dynamical or operator-identification content.",
+                "prior_witness_id": null,
+                "route_class": "normalization_or_units",
+                "route_id": "n1_scale_normalization"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "A retained derivation of `L^{-1} = G_0` from the accepted framework premises is absent."
+              ],
+              "evidence_locator": "The hypothesis A2 (`L^{-1} = G_0`) is **stipulated**, not derived from A1",
+              "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+              "pairwise_checks": [],
+              "unresolved": [],
+              "walls": [
+                "A retained derivation of `L^{-1} = G_0` from the accepted framework premises is absent."
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "A2 is treated here as a stipulated identification, not as a derived consequence of A1.",
+              "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+              "hits": [
+                {
+                  "classification": "hidden_admission",
+                  "evidence_locator": "**A2 (stipulated, not derived in this note): closure identification**",
+                  "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                  "phrase": "closure identification",
+                  "promoted_wall": "A retained derivation of `L^{-1} = G_0` from the accepted framework premises is absent."
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "The earlier phrasing \"framework's own closure requirement\" is retained below for context",
+                  "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                  "phrase": "framework's own closure requirement"
+                }
+              ],
+              "none_found_reason": "",
+              "scan_scope": "The source note's assumptions, closure language, heuristic fixed-point discussion, numerical-check claims, and the supplied premise declarations were checked for hidden derivation inputs.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "The runner output supports the conditional class-A inversion `L = H` *given A2*",
+              "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+              "none_found_reason": "All N1 routes were tested directly against the restricted packet, so no RULED OUT BY PRIOR witness requires residual matching.",
+              "scan_scope": "The note's claimed runner role and the residual open bridge were compared; no prior witness was used to rule out an N1 route.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "This note records only the bounded conditional implication",
+              "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+              "none_found_reason": "",
+              "scan_scope": "Negative and boundary language was checked at the conditional algebraic, axiom-derived, operator-class, and broader-gravity resolutions.",
+              "statements": [
+                {
+                  "evidence_locator": "Without the stipulated identity, this note makes no claim about which operator classes can or cannot arise.",
+                  "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                  "phrase": "Without the stipulated identity, this note makes no claim about which operator classes can or cannot arise.",
+                  "tested_resolutions": [
+                    "scope of this source note",
+                    "operator-class conclusion with A2 removed"
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "This note **does not** close that question unconditionally.",
+                  "evidence_path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                  "phrase": "This note **does not** close that question unconditionally.",
+                  "tested_resolutions": [
+                    "unconditional framework derivation",
+                    "conditional inversion under A2"
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Kinetic-form isotropy fixes `c_t/c_s`; it supplies no field-propagator closure identity.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The minimal axioms supply lattice structure and admissibility but explicitly do not choose dynamics or a Hamiltonian.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Pointwise evaluation at a realized state does not identify two response operators.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "A dimensionful ruler cannot derive the dimensionless operator closure A2.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This charged-lepton counting obligation is unrelated to gravity response closure.",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This charged-lepton angle-readout obligation supplies no equality between gravity and propagator Green functions.",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "This strong-CP cross-sector readout obligation is unrelated to A2.",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "kind": "open_gate"
+                }
+              ],
+              "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+              "evidence_path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+              "none_found_reason": "",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "All candidates supplied by the partial-closure index were checked against the missing A2 bridge.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "Because the accepted substrate has nearest-neighbor cubic adjacency and a covariant nearest-neighbor admissibility rule, one might argue that the unique natural linear field response is the same graph-Laplacian response used by the propagator.",
+              "evidence_locator": "It does not choose a Hamiltonian or transfer operator",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "resolution": "The premise text expressly separates admissibility from dynamics and says it does not choose a Hamiltonian or transfer operator. Naturalness or symmetry therefore does not establish the exact inverse-operator identity A2, although A2 remains a valid explicit hypothesis for the scoped theorem.",
+              "resolved": true,
+              "route_id": "n1_lattice_symmetry"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "gravity_full_self_consistency_note:previous_audit:0",
+                  "evidence_locator": "gravity_full_self_consistency_note:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Earlier unaudited state supplied no scientific disposition.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "gravity_full_self_consistency_note:previous_audit:1",
+                  "evidence_locator": "gravity_full_self_consistency_note:previous_audit:1",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Earlier conditional verdict audited a broader unconditional closure scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "gravity_full_self_consistency_note:previous_audit:2",
+                  "evidence_locator": "gravity_full_self_consistency_note:previous_audit:2",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Earlier renaming verdict treated A2 as the load-bearing asserted identification in a broader scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "gravity_full_self_consistency_note:previous_audit:3",
+                  "evidence_locator": "gravity_full_self_consistency_note:previous_audit:3",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Earlier clean conditional audit matches the present scientific scope but lacked the required discipline packet.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Unrelated charged-lepton counting gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Unrelated charged-lepton readout gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Unrelated strong-CP readout gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "No gravity closure wall is recorded.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite Newton-observable closure boundaries do not derive or refute A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Gauge-coupling runner-boundary repair is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Atomic and temporal-axis boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "The listed flavor, Planck, and gauge no-gos do not address A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Coupling identities are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Plaquette coefficient evidence is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Lensing observable-bridge walls are downstream and do not settle A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Carrier registry exhaustiveness is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Charged-lepton selector walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Spatial-dimension selection is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Lorentz-restoration scope is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Metric reconstruction boundaries are downstream and unrelated to the conditional inversion.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Radial orientation evidence is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Wilson normalization scope is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Flavor selector pruning is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Analytic-vector and audit-tag boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Gauge-environment contraction walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Temporal-generator and gauge-anisotropy walls do not identify gravity Green functions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Fermat and dispersion bridges are downstream of Poisson closure.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Weak-field sign and nonlinear-gravity boundaries do not derive A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Absolute-scale and Clifford-carrier obstructions are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Hypercharge normalization ambiguity is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Cross-lane mass, coupling, and scale walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Atomic scale and threshold walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Quark mass and readout walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Uniform asymptotic control of a lattice Green kernel is distinct from the stipulated inverse identity.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Detector-centroid observable reduction is downstream and unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite-path lensing geometry is downstream and unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Static-source readout normalization does not establish A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Temporal source/readout selection is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "No relevant no-go is recorded.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Planning criteria are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Physical-time emergence is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Neutrino construction no-gos are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Neutrino and cosmological scale gates are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite-lattice distance-law scope is downstream and does not affect the conditional operator equality.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite recomputation scope is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Coupling authority boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite packet-memory gravity evidence does not derive the operator closure identity.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite differential-equation scans are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Clifford carrier-selection walls do not provide the field-propagator bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Rank-four carrier selection is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Plaquette bootstrap walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Plaquette diagnostic semantics are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Record-selector authority boundaries support the absence of a generic readout bridge but do not independently settle A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Strong-CP and charged-lepton registrability walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Temporal-axis and locality boundaries are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite Fisher tangent semantics are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Statistics forcing is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "The countermodel-based result that the minimal axioms do not select a kinetic law echoes the failure of lattice structure alone to derive A2.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Gauge quotient encoding is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Documentation synchronization is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite family-card scope is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Theta mass-readout walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Theta gauge-action walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Theta positive-gate walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Theta insertion-selection walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Theta defect-closure walls are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Determinant-power selection is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Record-orbit occupancy is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Record-formation readout is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite-dimensional artifact visibility is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Record-only mass readout countermodels are unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Finite numerical table matching is unrelated.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "Continuum and universal distance-law boundaries are downstream.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "mechanism": "A physical-readout renaming wall is analogous in form but concerns an unrelated Yukawa identification.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+              "evidence_path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+              "none_found_reason": "",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/gravity_full_self_consistency_note": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "80f2c0bc50c299a9063cdd21f40738fb1a8ce93c015f4d763c2f2034192a4516",
+                  "cross_cycle_candidate_ids": [
+                    "gravity_full_self_consistency_note:previous_audit:0",
+                    "gravity_full_self_consistency_note:previous_audit:1",
+                    "gravity_full_self_consistency_note:previous_audit:2",
+                    "gravity_full_self_consistency_note:previous_audit:3",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/gravity_full_self_consistency_note",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                    "gravity_full_self_consistency_note:previous_audit:0",
+                    "gravity_full_self_consistency_note:previous_audit:1",
+                    "gravity_full_self_consistency_note:previous_audit:2",
+                    "gravity_full_self_consistency_note:previous_audit:3",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+                  ]
+                },
+                "audit-packet://partial-closure-index/gravity_full_self_consistency_note": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "bcba13b5525f79c98cc18f134a780d15e66a6e25e849aecac9ea7727d9841b80",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ],
+                  "path": "audit-packet://partial-closure-index/gravity_full_self_consistency_note",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "\"schema\": \"no_go_partial_closure_index_v1\"",
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ]
+                },
+                "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "b7258f1d34a5c9ce8b24be69f0c2892d881b27dfdd404926c37dea266893cc16",
+                  "effective_status": null,
+                  "path": "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "**A2 (stipulated, not derived in this note): closure identification**",
+                    "A2 is treated here as a stipulated identification, not as a derived consequence of A1.",
+                    "By class-A inversion of A2: `L = G_0^{-1} = H = -Delta_lat`.",
+                    "The earlier phrasing \"framework's own closure requirement\" is retained below for context",
+                    "The hypothesis A2 (`L^{-1} = G_0`) is **stipulated**, not derived from A1",
+                    "The runner output supports the conditional class-A inversion `L = H` *given A2*",
+                    "These four bullets are **physical-modelling motivation**, not a class-A or class-B proof.",
+                    "This note **does not** close that question unconditionally.",
+                    "This note records only the bounded conditional implication",
+                    "Without the stipulated identity, this note makes no claim about which operator classes can or cannot arise."
+                  ]
+                },
+                "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+                  "accepted_premise_type": "axiom_or_approved_primitive",
+                  "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+                  "effective_status": null,
+                  "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+                  "roles": [
+                    "framework_premise"
+                  ],
+                  "verified_locators": [
+                    "Admissibility is not a dynamics axiom.",
+                    "Axioms and approved primitives are the complete supplied foundation.",
+                    "It does not choose a Hamiltonian or transfer operator",
+                    "source/action and physical-observable identification;"
+                  ]
+                },
+                "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+                  "accepted_premise_type": "axiom_or_approved_primitive",
+                  "content_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+                  "effective_status": null,
+                  "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+                  "roles": [
+                    "framework_premise"
+                  ],
+                  "verified_locators": [
+                    "This is a units conversion, not a physics axiom."
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Conditional Poisson Forcing under the Self-Consistency Identification (Bounded)",
+  "transitive_descendants": 748,
+  "verdict_rationale": null
+}

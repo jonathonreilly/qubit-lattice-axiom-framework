@@ -1,0 +1,93 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_remaining_open_item_attack_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "teleportation_native_record_apparatus_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_teleportation_native_record_apparatus.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b90dc20f38e4d433a5a1a889b896110d643158347a37c7a6b668d71cc7bfac2e",
+  "note_path": "docs/TELEPORTATION_REMAINING_OPEN_ITEM_ATTACK_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T12:32:48.494186+00:00",
+      "archived_for_note_hash": "85435415736560b831719af655ea45e57724110a3f2dc27ead16a0bfd9d7cc51",
+      "audit_date": "2026-05-03T02:00:50.045558+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-ohm-2nd-019deb8e-fd17-7120-8190-6d2fa351afc7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note and runner identify finite-side targets and requirement envelopes, but they do not prove the all-even-side signed-branch induction, derive the selector completion from the original axiom, or map the envelopes to fabricated controller/material noise models. The runner also operationally imports the native record apparatus, whose current effective status is audited_conditional.",
+      "claim_scope": "State-only teleportation remaining-open-item planning artifact: selector completion minimality, side-12 signed-branch induction target, and controller/material requirement envelopes are explicit obligations, not unconditional closure.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-03T02:00:50.045558+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The lane remains planning / conditional theory, not unconditional nature-grade closure.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "Re-check if the row is narrowed to a clean open-gate inventory rather than support for retaining the teleportation lane, or if the missing induction, selector derivation, implementation bridge, and conditional operational import are closed.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_NATIVE_RECORD_APPARATUS_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the load-bearing promotion path remains conditional on three explicit open obligations: an underived selector completion, an unproved all-even signed-branch induction beyond side 12, and controller/material envelopes not tied to a physical implementation model. Why this blocks: the runner checks finite metrics and target specifications after setting the relevant certificate/envelope data, but does not compute the missing theorem or hardware bridge. Repair target: prove gap(L)*L^2 >= 0.390 and Bell*(L) >= 0.999702 for every even L >= 4 on the signed G=-1000 branch, derive or independently justify the selector completion, close the native record apparatus dependency, and connect the controller/material thresholds to an actual noise/material model. Claim boundary until fixed: state-only teleportation planning artifact with explicit acceptance surfaces; no matter, mass, charge, energy, object, or faster-than-light transport claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_remaining_open_item_attack.py",
+  "title": "Teleportation Remaining-Open-Item Attack Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,331 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (a gauge classification / residual resolution)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+    "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+    "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+    "three_generation_observable_theorem_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6fa3ae98d2a8598f17e161c12b24ead0e995a2aab4b2c1f4e20b08e168730697",
+  "note_path": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T08:57:46.473224+00:00",
+      "archived_for_note_hash": "12ba9532793dbecb5bb2ebac9e998987dd031e57770c104cbf96dc461f443b16",
+      "audit_date": "2026-06-08T20:33:07.543610+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "One-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface: determinant-magnitude positivity is trivial-representation and orientation sign is the sign-representation route whose positive level set is C_3.",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "Audited the bounded group-theory claim that an assumed orientation-preserving subgroup criterion on the S_3 action on C^3 selects C_3 = A_3 and that generic C_3-invariant Hermitian operators can have three distinct eigenvalues.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "On an even periodic finite L^3 lattice, with the standard staggered \u03b7 phases treated as a Z2 lattice gauge field, all six axis orderings are gauge-equivalent and the \u03b7 convention does not physically break S3.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "8809c256b0959c9797a7e18507581a9e0b8133a49475c4d7b62324b308887358",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-202957-8a6315341f-flavor_absolute_handedness_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The narrow absolute-handedness gauge classification closes algebraically from retained S3 unbrokenness plus the sign-representation transformation of Delta. The broader physical-survivor claim does not close because the packet does not supply the physical readout bridge for 2/9 or the multi-sector bridge identifying the relative orientation with the physical CP/mixing observable.",
+      "claim_scope": "Full bounded claim that absolute flavor handedness is gauge and that the surviving physical flavor data are the magnitude |delta|=2/9 and inter-sector relative orientation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T20:33:07.543610+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because R maps the realized record to an equal-mass relabeling and R is an unbroken S3 transposition, sign(Delta) is odd under an unbroken symmetry and therefore is not gauge-invariant.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the row to the absolute sign(Delta) gauge classification, or add retained bridges for the physical 2/9 readout and the multi-sector relative-orientation CP/mixing identification.",
+      "open_dependency_paths": [
+        "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 3,
+        "C": 0,
+        "D": 1,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Independent algebra checks confirm the core signs and factors: a transposition flips the Vandermonde sign, all A3 elements preserve it, +delta and -delta are relabeled mass multisets, Q=2/3 follows from the cosine sums, and L3(1,2)=2/9 follows from (omega-1)(omega^2-1)=3. The runner is substantive for these finite checks, with the PDG comparison isolated as non-load-bearing. However, the cited Koide fixed-locus authority explicitly leaves the physical single-summand readout open, so it cannot by itself support the statement that 2/9 is the physical magnitude. The relative-orientation-as-physical-CP statement is likewise an invariant-candidate statement unless a retained multi-sector/shared-axis readout bridge is supplied."
+    },
+    {
+      "archived_at": "2026-06-21T08:17:10.995617+00:00",
+      "audit_date": "2026-06-09T13:02:54.332366+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "One-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface: determinant-magnitude positivity is trivial-representation and orientation sign is the sign-representation route whose positive level set is C_3.",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "Audited the bounded group-theory claim that an assumed orientation-preserving subgroup criterion on the S_3 action on C^3 selects C_3 = A_3 and that generic C_3-invariant Hermitian operators can have three distinct eigenvalues.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "On an even periodic finite L^3 lattice, with the standard staggered \u03b7 phases treated as a Z2 lattice gauge field, all six axis orderings are gauge-equivalent and the \u03b7 convention does not physically break S3.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "69a290602e5eb964fbd43f6ea44aeef84fa6faacaf4170becb84cf8419f05c90",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-125955-8d669291f9-flavor_absolute_handedness_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained-bounded full S_3 staggered-axis gauge equivalence, R is an allowed orientation-reversing relabeling. Independently, the Vandermonde sign alternates under transpositions and lambda_k(-delta)=lambda_-k(delta), so the two absolute orientations differ only by that relabeling while the stated survivor readouts remain open.",
+      "claim_scope": "Bounded gauge classification only: the absolute flavor handedness sign(Delta) on the stated Brannen 3-vector surface is gauge; the physical 2/9 magnitude readout, CKM/PMNS relative-orientation bridge, generation count, and r=1/2 derivation are not audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T13:02:54.332366+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+      "load_bearing_step": "Because R maps the realized record to an equal-mass relabeling and R is an unbroken gauge-equivalent axis permutation, sign(Delta) is odd under R and therefore is not a gauge-invariant observable.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the scoped-boundary convention: the Brannen p_k(delta) cone is used as the bounded surface being classified, not as a newly derived physical mass-readout bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 5,
+        "C": 0,
+        "D": 1,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic closure over retained-grade inputs, not a tuned numerical match or a definition substitution. The independent check confirmed the S_3 parity counts, Vandermonde alternation, plus/minus-delta mass relabeling, Q=2/3 identity, and L_3(1,2)=2/9 arithmetic without relying on the runner implementation. The PDG comparison is explicitly non-load-bearing, and the source boundary correctly leaves the physical single-summand and relative-orientation readout bridges open."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.063493+00:00",
+      "audit_date": "2026-06-21T16:53:12.672401+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "Audited only the finite S_3 one-dimensional character/sign-magnitude claim: determinant-magnitude positivity selects all of S_3, and the sign/orientation character is the one-dimensional route whose positive subset is C_3.",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "Audited the bounded group-theory claim that an assumed orientation-preserving subgroup criterion on the S_3 action on C^3 selects C_3 = A_3 and that generic C_3-invariant Hermitian operators can have three distinct eigenvalues.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "Finite even periodic L^3 staggered-eta kinematics: all S3 axis orderings have the same Z2 plaquettes and Polyakov holonomies and are related by site-local Z2 gauge transformations.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "69a290602e5eb964fbd43f6ea44aeef84fa6faacaf4170becb84cf8419f05c90",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-bounded staggered-axis authority supplies unbroken physical S3, including the transposition R. Finite S3 parity/Vandermonde algebra plus the Brannen mass relabeling establishes the stated gauge classification without using PDG or the open magnitude/relative-orientation readout bridges.",
+      "claim_scope": "Audited only the bounded gauge classification that absolute flavor handedness sign(Delta) is gauge on the retained unbroken S3 staggered hw=1 surface; magnitude |Delta| and inter-sector relative orientation are left as open readout candidates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:53:12.672401+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23:retained_bounded->unaudited",
+      "load_bearing_step": "Because R is an unbroken S3 transposition symmetry and sign(Delta) is odd under R while +delta and -delta are equal-mass R-relabelings, absolute flavor handedness is not gauge-invariant and is gauge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream rows do not use this verdict to promote |Delta| or relative orientation to physical readouts.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 5,
+        "C": 0,
+        "D": 1,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over retained-grade inputs: unbroken R from the retained-bounded S3 authority, the sign-representation behavior of the Vandermonde handedness, and the explicit +delta/-delta relabeling identity. The runner source actually computes the S3 parity checks, Vandermonde sign flip, relabeling, invariant candidates, and source-boundary guards; its one PDG comparison is labeled and non-load-bearing. The note does not consume the open physical 2/9 readout or CP/mixing bridge, and its scope statements keep those out of the audited conclusion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.112606+00:00",
+      "audit_date": "2026-07-10T04:00:51.312035+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "Finite S3 axis-ordering surface: among one-dimensional character/sign-magnitude constraints, determinant-magnitude positivity is S3-invariant and cannot select C3, while the sign/orientation character has positive level set A3 = C3; no physical orientation-positivity bridge is audited.",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "Audited the bounded group-theory claim that an assumed orientation-preserving subgroup criterion on the S_3 action on C^3 selects C_3 = A_3 and that generic C_3-invariant Hermitian operators can have three distinct eigenvalues.",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "Finite even periodic L^3 staggered-eta kinematics: all S3 axis orderings have the same Z2 plaquettes and Polyakov holonomies and are related by site-local Z2 gauge transformations.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+          "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+          "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "69a290602e5eb964fbd43f6ea44aeef84fa6faacaf4170becb84cf8419f05c90",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00056-flavor_absolute_handedness_i",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited authority establishes R as a physical symmetry up to a gauge correction of the staggered convention, not that R itself is a gauge redundancy on flavor records. An operator may be odd under an unbroken global physical symmetry and remain gauge-invariant, so a bridge identifying the R-related flavor assignments as gauge-equivalent is missing.",
+      "claim_scope": "The claimed classification of absolute sign(\u0394) as gauge, given the retained full S3 axis symmetry and the \u00b1\u03b4 mass-relabeling identity, while magnitude and relative-orientation readouts remain open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:00:51.312035+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Because R maps the realized record to an equal-mass relabeling and is an unbroken physical symmetry, sign(\u0394) is not gauge-invariant and absolute handedness is gauge.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit only if a restricted-packet theorem establishes that R acts as a gauge redundancy on the complete physical flavor record, rather than merely as an unbroken global symmetry accompanied by a gauge correction of \u03b7.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 5,
+        "C": 0,
+        "D": 1,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The runner correctly checks the mass-multiset identity, Vandermonde transformation law, and several invariant quantities. Its gauge-verdict check merely passes when oddness under R is found; it encodes rather than proves the invalid implication that oddness under an unbroken physical symmetry entails gauge non-invariance. Gauge-equivalence of staggered \u03b7 conventions does not by itself make the accompanying spatial permutation a gauge transformation on the physical flavor carrier."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_flavor_absolute_handedness_is_gauge.py",
+  "title": "Absolute Flavor Handedness Is Gauge; Magnitude and Relative-Orientation Readouts Remain Open",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

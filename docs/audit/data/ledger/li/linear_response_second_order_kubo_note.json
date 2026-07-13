@@ -1,0 +1,336 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "linear_response_second_order_kubo_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "linear_response_true_kubo_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/global_coherence_off_scaffold.py",
+    "scripts/independent_generators_heldout.py",
+    "scripts/universality_classifier.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0b981eac3bd89b5e532396e096d15d3019d7844317eca2e220e25a48872c1124",
+  "note_path": "docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369052+00:00",
+      "archived_for_note_hash": "5acd51e7ea6465a597450bc324f8d8170db801c4c5a488a14d8b5d9f419a83cb",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-11T08:41:20.649668+00:00",
+      "archived_for_note_hash": "a29eaabbf73f3ea5bfe23690964a8a1b57b44c4cc6dffc09c6c9143378441da3",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces the second-order null result, but the note extrapolates that finite computation into a boundary claim about the Taylor-expansion approach and higher Taylor orders without a convergence/no-go theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Adding the second-order term 1/2*kubo2*s^2 does not increase the strict linearity-regime subset and slightly worsens the aggregate residual at s=0.008 in the 44-family replay.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: either narrow the source claim to the computed second-order null result, or add a theorem/computation bounding the Taylor remainder or demonstrating non-convergence/non-analyticity for the failing families, with the first-order and range-of-validity inputs explicitly audited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: The runner verifies that the specific second-order correction does not improve the 44-family battery, but the note also claims a broader boundary of the Kubo-Taylor approach and says the failing nonlinearities are not fixed by more Taylor terms at s=0. Why this blocks: a second-order replay cannot rule out third or higher orders, prove non-analyticity, or establish that all Taylor expansions around s=0 fail for the structural families. Repair target: either narrow the source claim to the computed second-order null result, or add a theorem/computation bounding the Taylor remainder or demonstrating non-convergence/non-analyticity for the failing families, with the first-order and range-of-validity inputs explicitly audited. Claim boundary until fixed: it is safe to claim the live artifact reproduces +0 growth in the linearity-regime subset (15/44 to 15/44), sum |residual| worsening from 5.6090 to 5.7221 at s=0.008, and the listed per-family second-order pathologies; it is not safe to claim a retained no-go for all higher Taylor terms from this note alone."
+    },
+    {
+      "archived_at": "2026-05-17T12:16:39.143095+00:00",
+      "archived_for_note_hash": "a68d0aa00ae229df18101448c76b4acc88ab9200525db07ecfb7fe4125fb78b0",
+      "audit_date": "2026-05-11T17:25:49.575935+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "linear_response_true_kubo_note",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6fa481bbc3ca85b62a391cf4629d7eb3f7e0dbe961bad47324686e6096803417",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The completed frozen log supports the finite second-order null result, but the source extrapolates from that finite second-order replay to a higher-order Taylor/no-go boundary without a remainder bound, convergence analysis, third-or-higher-order computation, or non-analyticity theorem. The current live runner/cache timeout is not used as evidence for the non-clean verdict.",
+      "claim_scope": "Claimed boundary theorem for the Kubo-Taylor route: the runner-supported finite computation shows that adding the second-order term to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and slightly worsens aggregate residuals, while the source further claims this demonstrates a broader Taylor-expansion boundary for the failing families. The audit does not ratify the broader all-orders/no-Taylor extrapolation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-11T17:25:49.575935+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Adding more Taylor terms at s = 0 would not work either, because the failing families' nonlinearities are not analytic perturbations of the linear regime.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the finite second-order null replay, or provide a remainder/convergence/non-analyticity theorem or higher-order computation covering the failing families.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the finite runner evidence establishes only a second-order null result on the 44-family battery, while the source claims a broader boundary for higher Taylor orders and Taylor expansion at s=0. Why this blocks: a second-order failure does not prove that third and higher orders, a resummed series, a different expansion point, or an analytic remainder cannot change the failing-family behavior. Repair target: either narrow the note to the computed second-order null result or add a theorem/computation bounding the Taylor remainder or demonstrating non-convergence/non-analyticity for the named failing families. Claim boundary until fixed: it is safe to cite the finite second-order replay numbers, not the all-orders Taylor no-go."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:46.782465+00:00",
+      "archived_for_note_hash": "8ff5e354405b0c11958edeb2e1a40784a6c27b95dc95ab861f0a8d17770eb729",
+      "audit_date": "2026-05-23T18:20:01.804656+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "linear_response_true_kubo_note",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6fa481bbc3ca85b62a391cf4629d7eb3f7e0dbe961bad47324686e6096803417",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T181743Z-fb17a8f8-linear_response_second_o-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner constructs the A, B, and C propagators, recomputes measured finite-difference deltas on the declared panel, and reports the note's 15/44 subset count, residual totals, and focus-family ratios. The conclusion follows for the finite second-order replay only.",
+      "claim_scope": "Finite second-order Kubo null replay on the named 44-family runner panel at strengths s in {0.001, 0.002, 0.004, 0.008}; no all-orders Taylor no-go is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T18:20:01.804656+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "At the cached truncation order, adding 1/2*kubo2*s^2 to the first-order Kubo prediction does not change the linearity-regime subset count (15/44) and grows the aggregate s=0.008 residual from 5.6090 to 5.7221.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only if the claim is expanded beyond the finite second-order runner replay into an all-orders Taylor boundary statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The runner source performs an internal computation rather than printing hard-coded contested outputs, and the helper prediction dictionaries are not load-bearing for the reported Kubo residual comparison. The cited first-order Kubo authority is retained_bounded and is not used to import the numerical null result. The negative-claim gate supports only the finite replay: recurrence, panel selection, measurement convention, residual metric, and zero-denominator/counting attack routes are resolved at the runner-output level, while all-orders Taylor/no-higher-rescue language remains outside this audit scope."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:11.176719+00:00",
+      "archived_for_note_hash": "e22e4f086894a89c185b4d0fc4e2b50f4cb16a190c4b829a180c90be1c463a35",
+      "audit_date": "2026-06-18T10:14:21.780520+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable."
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded"
+        },
+        "deps": [
+          "linear_response_true_kubo_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "6fa481bbc3ca85b62a391cf4629d7eb3f7e0dbe961bad47324686e6096803417",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-linear_response_second_order_kubo_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner/cache support the finite second-order null result, but the source still preserves broader all-orders/no-higher-order Taylor-boundary language. The missing step is a remainder/convergence/non-analyticity theorem or an explicit higher-order computation covering the failing families.",
+      "claim_scope": "Finite second-order Kubo null replay on the 44-family panel, plus the source note's accompanying broader Kubo-Taylor boundary language.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:14:21.780520+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Adding 1/2*kubo2*s^2 to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and increases the s=0.008 aggregate residual from 5.6090 to 5.7221 on the named runner.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: remove or segregate the residual all-orders Taylor/no-higher-order language in the conclusion sections, or add a retained remainder/non-analyticity/higher-order computation covering the failing families.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the completed runner substantively computes A/B/C propagators and supports the reported second-order null replay, but the note also extrapolates that finite result into structural claims about all higher Taylor orders. Why this blocks: a second-order replay cannot by itself rule out higher-order terms, a different expansion point, or a controlled non-perturbative treatment. Repair target: narrow all citable conclusion text to the finite second-order replay, or add a retained remainder/non-analyticity/higher-order theorem. Claim boundary until fixed: the supported result is only that the implemented second-order term does not improve the declared 44-family finite panel at the cached strengths."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.642979+00:00",
+      "audit_date": "2026-06-21T15:26:51.279650+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "linear_response_true_kubo_note": "For the specified finite path-sum propagator exp(i k L(1 - s/r_edge)) times the stated weights, the parallel perturbation recurrence computes the exact first derivative d(cz)/ds at s = 0 for the stated detector centroid observable."
+        },
+        "dep_claim_type": {
+          "linear_response_true_kubo_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "linear_response_true_kubo_note": "retained_bounded"
+        },
+        "deps": [
+          "linear_response_true_kubo_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "83aa67d59d196015c1dc3e858f91f9494be93306d37ee8c8604797c9faec6e6c",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-linear_response_second_order_kubo_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner source genuinely computes the A, B, and C propagators, regenerates the 44-family panel through the supplied helper generators, measures centroid shifts at the four strengths, and derives the reported ratios, residuals, and linearity counts without hard-coding the contested outcome. The cached stdout matches the narrowed source claim.",
+      "claim_scope": "Finite second-order Kubo replay on the named 44-family runner panel at strengths s in {0.001, 0.002, 0.004, 0.008}; no all-orders Taylor or alternative-basepoint claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:26:51.279650+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Adding the computed second-order term 0.5*kubo2*s^2 to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and increases the aggregate absolute residual at s=0.008 from 5.6090 to 5.7221.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only the denominator wording around 15/41 versus 15/44 if the claim is later cited outside the exact runner-output scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Within the narrowed finite-computation scope, the chain closes from the supplied runner and helper code. The runner does not merely print constants: it constructs the family panel, computes kubo1 and kubo2, evaluates measured finite-strength responses, and reports the null result. The source note explicitly excludes the broader all-orders Taylor no-go, so the absence of a higher-order remainder theorem is not a defect in the audited claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/linear_response_second_order_kubo.py",
+  "title": "Second-Order Kubo Extension \u2014 Finite Second-Order Null Replay (Binding)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

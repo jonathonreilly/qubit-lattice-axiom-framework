@@ -1,0 +1,838 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_spin_statistics_theorem_note_2026-04-29",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+    "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+    "assumption_derivation_ledger"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.466,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "63a946e6dc6f8001b969894aa94d7bca382a6c45957bfa8c3e2307cb4d5c1187",
+  "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:08:20.768707+00:00",
+      "audit_date": "2026-04-30T15:13:13.286879+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The note itself leaves the wilson-plaquette su(3) lift as a residual stretch rather than a closed cpt theorem, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Axiom-First CPT Theorem (Stretch Attempt) on Cl(3) \u2297 Z^3: bounded \u2014 branch-local stretch note on canonical A_min; fermion-sector runner passing; Wilson-plaquette SU(3) lift residual stated; audit-pending.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Issue: the note itself leaves the Wilson-plaquette SU(3) lift as a residual stretch rather than a closed CPT theorem. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-09T10:55:06.459184+00:00",
+      "audit_date": "2026-05-02T22:31:31.066659+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 3.307,
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-cpt-stretch-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports the bounded pure-staggered fermion-sector identities, but the stated theorem also claims full S_F+S_G invariance and partition/observable consequences. Those depend on the deferred SU(3) Wilson-plaquette representation-level CPT identity, so the full chain does not close.",
+      "claim_scope": "Runner-backed pure-staggered fermion-sector CPT identities on canonical A_min finite Z^3 blocks: Theta_CPT^2 = id, Theta_CPT M Theta_CPT^-1 = M^*, epsilon-Hermiticity, and det(M) real; excludes full SU(3) Wilson-plaquette gauge-sector CPT invariance, full S_F+S_G action invariance, partition-function symmetry, H_phys lift, and downstream CPT-even discharge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:31:31.066659+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "The extension from the checked fermion-sector CPT identities to the full canonical A_min action requires an explicit SU(3) Wilson-link/plaquette CPT operator-level lift, which the note says is asserted by inspection and deferred.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: construct the CPT action on SU(3) Wilson links/plaquettes and tie it to S_G, Z, H_phys, and CP-odd observables.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Issue: the fermion-sector identities close on the bounded runner surface, but the full-action CPT theorem imports a deferred SU(3) Wilson-plaquette operator lift and prior physical-Hilbert/partition-function consequences. Why this blocks: the ledger cannot retain the broader canonical action invariance or CPT-even Observable Principle discharge from a runner that explicitly excludes the gauge-sector algebraic lift. Repair target: construct the CPT action on SU(3) Wilson links/plaquettes and tie it to S_G, Z, H_phys, and CP-odd observables. Claim boundary until fixed: pure-staggered finite-block fermion-sector CPT identities are runner-backed, while full canonical action CPT remains conditional."
+    },
+    {
+      "archived_at": "2026-05-10T07:52:51.877106+00:00",
+      "audit_date": "2026-05-09T11:07:32.680769+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.566,
+        "runner_hash": "54bb3bcc1f16ba069a6ed790d62513361bcdd7d57750fbdf102f9cb200e48dbe",
+        "transitive_descendants": 133
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e0c6b-5c08-7a61-8061-8e7945274c61",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fermion-sector finite-block identities close in the runner, but the full canonical action claim does not close because the SU(3) Wilson-plaquette operator-level CPT lift is explicitly deferred and no retained authority is supplied in the restricted packet.",
+      "claim_scope": "Audited the bounded CPT stretch claim for canonical pure-staggered fermions on Z^3 plus the claimed extension to the SU(3) Wilson plaquette gauge sector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-09T11:07:32.680769+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The note asserts that the Wilson plaquette gauge action is CPT-invariant by inspection because Re tr U_P is unchanged under U_P -> U_P^*.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: close the SU(3) Wilson-link CPT operator-level lift and rerun a gauge-sector certificate rather than relying on inspection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the gauge-sector CPT step is asserted at the scalar Re-trace level and the note explicitly says the full SU(3) representation-level identity is deferred. Why this blocks: CPT3-CPT5 for the full canonical action require the CPT action on gauge-link configuration space, not only the pure-staggered fermion block checks. Repair target: add a retained theorem and runner constructing the CPT map on SU(3) Wilson links and proving Re tr plaquette invariance in representation-level generality. Claim boundary until fixed: retained only as a fermion-sector finite-block/pure-staggered CPT exhibit, not a closed full A_min CPT theorem."
+    },
+    {
+      "archived_at": "2026-05-11T13:20:51.503163+00:00",
+      "archived_for_note_hash": "c25afe3cec59c53fa3f8775c3695958a22f6f91c38c51a97a6cfdebf59a4ed6b",
+      "audit_date": "2026-05-10T13:59:59.541286+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.665,
+        "runner_hash": "54bb3bcc1f16ba069a6ed790d62513361bcdd7d57750fbdf102f9cb200e48dbe",
+        "transitive_descendants": 286
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e122f-9067-7800-9ee9-3b3637619c35",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet contains no cited authority and the source note explicitly defers the full algebraic-general SU(3) Wilson plaquette CPT identity, yet CPT3-CPT5 are stated for the full canonical action. The runner only checks small pure-staggered fermion blocks and does not construct gauge links or the plaquette CPT action.",
+      "claim_scope": "Fermion-sector CPT identities for the pure staggered finite Z^3 blocks are numerically exhibited; full canonical action CPT invariance including the SU(3) Wilson plaquette operator-level lift is not closed in the supplied packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T13:59:59.541286+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "\"For the gauge sector, the Wilson plaquette S_G = \u03b2 \u03a3_P Re[1 - (1/N_c) tr U_P] is CPT-invariant by inspection\" while the note also states the full SU(3) operator-level lift is deferred.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad \u2014 split the clean pure-staggered fermion-sector CPT identity from the deferred SU(3) Wilson-plaquette extension, or close the gauge-sector operator-level lift directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the full-action CPT claim depends on the Wilson-plaquette SU(3) CPT lift, which is asserted by inspection and explicitly deferred. Why this blocks: CPT3-CPT5 are stated beyond the fermion-sector identities the runner actually verifies. Repair target: split a clean bounded fermion-sector theorem or add a direct SU(3) link/plaquette CPT theorem with an algebraic proof and runner that constructs the link transformation. Claim boundary until fixed: retain only the finite pure-staggered fermion-sector operator identities on the tested/canonical block class."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:32.070416+00:00",
+      "archived_for_note_hash": "e6d95b700712f8b14f71141fc1a4f955c329bf75e20363c52557f3d476b40e05",
+      "audit_date": "2026-06-11T13:33:25.985461+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "minimal_axioms_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms_2026-05-03": "meta"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms_2026-05-03"
+        ],
+        "load_bearing_score": 11.512,
+        "runner_hash": "54bb3bcc1f16ba069a6ed790d62513361bcdd7d57750fbdf102f9cb200e48dbe",
+        "transitive_descendants": 364
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260611-133023-0a76583196-axiom_first_cpt_theorem_stre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra does not close the stated target: the note's composition line ends at M-dagger, not M^*, and gamma5/epsilon-Hermiticity does not by itself imply the target identity. The runner's canonical L=2 periodic blocks are degenerate because forward and backward staggered hops coincide and cancel, so the tested matrix is just m I; the missing step is a non-degenerate proof or computation of the stated CPT covariance for the actual KS hopping operator.",
+      "claim_scope": "Fermion-sector CPT identities (CPT1)-(CPT5) for the admitted pure staggered Dirac carrier, with the SU(3) Wilson-plaquette lift deferred and not audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:33:25.985461+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The asserted fermion-sector operator identity Theta_CPT M Theta_CPT^{-1} = M^* for the admitted pure staggered Dirac operator.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after the note either narrows explicitly to the trivial L=2 mass-only exhibit or supplies a corrected non-degenerate staggered CPT construction, including boundary conventions and a runner that tests nonzero KS hopping.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner does perform finite matrix checks, but the passing canonical cases are not load-bearing: on a 2^3 periodic staggered block, M_KS cancels identically and det(M)=m^8, matching the printed values. Independent inspection of the formulas shows the source proof also conflates the target M^* identity with an M-dagger expression. Thus the in-block theorem is not established even before considering the deferred gauge-sector lift or the open staggered-realization gate."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:02.198487+00:00",
+      "archived_for_note_hash": "2af54dca71705c3148090291899e84e5481dad0f457a3a524a363e951e230fc6",
+      "audit_date": "2026-06-11T23:47:11.109592+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 11.531,
+        "runner_hash": "2cc6a72a4777486bb28978cff38ee9bc75f3b72cc3b113206bfc62f027a34c55",
+        "transitive_descendants": 369
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-234420-cf8aa7a58c-axiom_first_cpt_theorem_stre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-matrix algebra for CPT1-CPT4 closes on the stated pure staggered carrier: the epsilon, bond-centered reflection, and sign-field identities compose correctly. The packet does not close the admitted staggered-Dirac/finite-Grassmann carrier from retained-grade inputs, and CPT5 additionally needs a bridge from CP-odd local bilinears to oddness under the full Theta_CPT map or a narrower statement.",
+      "claim_scope": "Fermion-sector CPT identities for the pure admitted staggered Dirac carrier on even finite 4D blocks with periodic or antiperiodic wrap signs, excluding the SU(3) Wilson-plaquette gauge-sector lift.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T23:47:11.109592+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The corrected composition carries the epsilon sign field inside the antiunitary map, so Theta_CPT M Theta_CPT^{-1} = E(\u03a3_PT R_b M R_b^{-1}\u03a3_PT)E = E M^T E = M = M^*.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: re-audit after the staggered_dirac_realization_gate authority is retained or explicitly packet-registered as an accepted bounded admission, and narrow CPT5 to Theta_CPT-odd/T-even observables or supply the missing CP-odd-to-Theta_CPT-odd bridge.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 114,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 114
+      },
+      "verdict_rationale": "The runner source genuinely builds the staggered matrices, sign fields, bond-centered reflection permutations, determinants, falsifiers, and diagnostics; it is not a print-only or hard-coded PASS runner. An independent algebra check confirms the repaired composition lands at M^* on the real pure-staggered carrier. However the load-bearing carrier is supplied by docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, which the packet marks unaudited/open, so the result cannot be audited clean from retained-grade authorities. The CPT5 wording is also broader than the demonstrated kernel statement: the packet proves vanishing for Theta_CPT-odd kernels, not every CP-odd local bilinear without an added T-even/CP-to-CPT bridge."
+    },
+    {
+      "archived_at": "2026-06-15T11:20:28.881501+00:00",
+      "archived_for_note_hash": "bdd418099d0df9c93d71b2397bb73759f323a0af64a969abcc1ceace93434f85",
+      "audit_date": "2026-06-12T21:33:31.175237+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "minimal_axioms": null,
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 11.555,
+        "runner_hash": "c73307ecd338a6986dd1e3dd44fbcc601bb55e0c9e89015364230c98f58661a3",
+        "transitive_descendants": 375
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260612-axiom_first_cpt_theorem_stretch_note_202-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope.",
+      "claim_scope": "Bounded fermion-sector CPT identities on the explicitly admitted pure staggered finite-matrix carrier M=mI+M_KS on even 4D periodic/APBC blocks; no Wilson fermion term and no in-block SU(3) Wilson-plaquette lift.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T21:33:31.175237+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-12T21:20:37.180916+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-211537-8adf031390-axiom_first_cpt_theorem_stre",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded fermion-sector CPT identity on the explicitly admitted pure staggered finite-matrix carrier M=mI+M_KS on even 4D periodic/APBC blocks; no Wilson fermion term and no in-block SU(3) Wilson-plaquette gauge-sector lift.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-12T21:25:18.274498+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260612-212114-2a25d28ddf-axiom_first_cpt_theorem_stre",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded fermion-sector CPT identities (CPT1)-(CPT5) for the pure real staggered Dirac operator on even finite 4D blocks with periodic/APBC wrap signs, assuming the admitted staggered Grassmann carrier; no SU(3) Wilson-plaquette or full-action CPT lift is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-12T21:33:31.175237+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260612-axiom_first_cpt_theorem_stretch_note_202-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded fermion-sector CPT identities on the explicitly admitted pure staggered finite-matrix carrier M=mI+M_KS on even 4D periodic/APBC blocks; no Wilson fermion term and no in-block SU(3) Wilson-plaquette lift.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none material; it should have stated explicitly that clean is only at bounded scope on the registered admitted carrier, not unbounded retained closure.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "It downgraded solely because the staggered carrier parent is unaudited, without applying the rubric's registered Tier-A bounded-admission treatment for the explicitly scoped admitted carrier.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "With Theta_CPT := (E Sigma_PT R_b)K, the corrected composition gives Theta_CPT M Theta_CPT^{-1}=E(Sigma_PT R_b M R_b^{-1} Sigma_PT)E=E M^T E=M=M^*.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a finite-matrix algebraic identity on the scoped pure staggered carrier, and the runner source genuinely constructs nondegenerate matrices, sign fields, bond-centered reflections, and falsification legs rather than printing expected results. The second audit correctly recognized the carrier is admitted, but treated the registered Tier-A bounded admission as an unretained dependency blocker; under the supplied rubric, a bounded row may audit clean on such an accepted bounded-tier admission while remaining effective-status bounded until that admission is retired. The SU(3) Wilson-plaquette lift, full-action CPT, and CP-odd-to-Theta_CPT-odd bridge are explicitly outside or narrowed from the audited scope."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.886982+00:00",
+      "audit_date": "2026-06-15T11:31:48.853809+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson branch is excluded on the dim-2 one-qubit/Cl(3) substep-1 surface; hard-core-vs-CAR selection is not claimed, and Grassmann calculus results are conditional on the declared Grassmann frame.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.304,
+        "runner_hash": "6250e19761525a77826dd92b7537f72c4d54d0cc5d0d4503c7fae79239070f52",
+        "transitive_descendants": 1263
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-112659-2f65a72ac7-axiom_first_cpt_theorem_stre",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bond-centered reflection preserves wrap-crossing status, while eta_mu(r(x)) = (-1)^mu eta_mu(x) and the Sigma_PT sign product supplies the same (-1)^mu factor, giving the PT transpose identity. The epsilon field then converts M^T back to M, so the composite antiunitary identity and the determinant/Theta_CPT-odd finite-Gaussian consequences follow within the stated carrier scope.",
+      "claim_scope": "Self-contained finite-matrix CPT identities for the explicitly supplied pure KS matrix family on even finite 4D blocks with periodic/APBC wrap signs; framework selection of the KS carrier and the SU(3) gauge-sector lift are not audited as in-block claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T11:31:48.853809+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T11:26:19.762941+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-112132-a396d5058d-axiom_first_cpt_theorem_stre",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-matrix CPT theorem for the explicitly supplied pure staggered KS carrier M=mI+M_KS on even finite 4D blocks with periodic/APBC wrap signs and bond-centered reflection; excludes derivation/selection of this carrier as the physical framework operator and excludes the SU(3) gauge/full-action lift.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T11:31:48.853809+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-112659-2f65a72ac7-axiom_first_cpt_theorem_stre",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Self-contained finite-matrix CPT identities for the explicitly supplied pure KS matrix family on even finite 4D blocks with periodic/APBC wrap signs; framework selection of the KS carrier and the SU(3) gauge-sector lift are not audited as in-block claims.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_spin_statistics_theorem_note_2026-04-29:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Theta_CPT M Theta_CPT^{-1} = E (Sigma_PT R_b M R_b^{-1} Sigma_PT) E = E M^T E = M = M^* for the explicit real pure-KS carrier.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the CPT5 wording that normalized fermion expectations are taken where the finite Gaussian normalization is defined.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 114,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 119
+      },
+      "verdict_rationale": "The load-bearing theorem is finite-matrix algebra over an explicit carrier, not an assertion that the framework derives or selects that carrier. The runner constructs the matrices, checks non-degenerate blocks, boundary/sign falsifiers, determinant and odd-kernel consequences, and includes source-boundary guards; it uses no external comparator or tuned numerical input. An independent exact small-block check of APBC and mixed-boundary cases agrees with the stated sign and factor chain. The deferred SU(3) Wilson-plaquette and staggered-realization gates are expressly outside this audited scope."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.423378+00:00",
+      "audit_date": "2026-06-21T07:41:36.894643+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson/CCR realization is excluded on the finite dim-2 substep-1 per-site carrier; hard-core bosons and CAR-vs-hard-core selection are out of scope, and Grassmann determinant/exchange consequences are conditional on the declared Grassmann frame.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.089,
+        "runner_hash": "6250e19761525a77826dd92b7537f72c4d54d0cc5d0d4503c7fae79239070f52",
+        "transitive_descendants": 384
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_cpt_theorem_stretch_note_2026-04-29-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-matrix algebra closes from the explicit carrier definitions: E anticommutes with the hop part, the signed bond-centered reflection transposes M with the stated boundary convention, and their composition lands at M^*. The supplied runner source constructs the matrices on non-degenerate blocks, checks the boundary/sign identities, and includes falsifiers rather than merely printing expected PASS lines.",
+      "claim_scope": "Bounded finite-matrix theorem for the explicitly supplied pure KS carrier M=mI+M_KS on finite even 4D blocks with periodic/APBC wrap signs: \u0398_CPT is an involution and satisfies \u0398_CPT M \u0398_CPT^{-1}=M^*, with the fermion-sector determinant/action/Theta_CPT-odd expectation consequences on that carrier only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T07:41:36.894643+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T07:38:23.233924+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_cpt_theorem_stretch_note_2026-04-29-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-matrix fermion-sector CPT identities (CPT1)-(CPT5) for the explicitly supplied pure KS carrier M = mI + M_KS on even finite 4D blocks with periodic/APBC wrap signs and bond-centered reflection; no framework-selection or SU(3) gauge-sector full-action CPT lift is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T07:41:36.894643+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_cpt_theorem_stretch_note_2026-04-29-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-matrix theorem for the explicitly supplied pure KS carrier M=mI+M_KS on finite even 4D blocks with periodic/APBC wrap signs: \u0398_CPT is an involution and satisfies \u0398_CPT M \u0398_CPT^{-1}=M^*, with the fermion-sector determinant/action/Theta_CPT-odd expectation consequences on that carrier only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The corrected composition \u0398_CPT := (E \u03a3_PT R_b)K gives \u0398_CPT M \u0398_CPT^{-1} = E(\u03a3_PT R_b M R_b^{-1}\u03a3_PT)E = E M^T E = M = M^*.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the standard Grassmann-measure step extending the checked Theta_CPT-odd bilinear example to arbitrary local Theta_CPT-odd fermion-sector observables, but the finite kernel identity itself closes cleanly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 119,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 119
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic identity over the explicitly defined finite KS matrix family, not a numerical match or definition substitution. The only framework authority used as baseline context is the accepted minimal-axiom premise; the staggered realization and SU(3) gauge-sector material is kept non-load-bearing for this in-block theorem. The runner source matches the proof surface by testing nonzero KS hopping, APBC/periodic boundary conventions, the corrected E-including composition, determinant reality, and falsification legs."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.794887+00:00",
+      "audit_date": "2026-06-30T19:32:11.911181+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "Finite-block finite-range Cl(3)=M_2(C) lattice Hamiltonians satisfy the stated Lieb-Robinson commutator bound, lattice light cone, and finite Cl(3) norm constant; L2 is audited only as conditional/open transfer-gap routing, not as closed spatial clustering.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) substep-1 surface; Grassmann calculus consequences are conditional on the declared Grassmann frame, and hard-core-vs-CAR selection is not audited as decided.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.089,
+        "runner_hash": "6250e19761525a77826dd92b7537f72c4d54d0cc5d0d4503c7fae79239070f52",
+        "transitive_descendants": 384
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T193211Z-80de0f7d-axiom_first_cpt_theorem_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The carrier, boundary signs, bond-centered reflection, epsilon field, and sigma_PT field are explicit theorem inputs, and the displayed algebra closes the kernel identity without using the deferred realization or gauge-sector gates. The runner source constructs the finite matrices and checks the nondegenerate algebraic identities rather than merely printing expected passes.",
+      "claim_scope": "Finite-matrix fermion-sector CPT identities (CPT1)-(CPT5) for the explicitly supplied pure staggered KS carrier on even finite 4D blocks with periodic/APBC wrap signs, excluding framework derivation of the carrier and excluding the SU(3) Wilson-plaquette gauge-sector lift.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T19:32:11.911181+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T19:28:14.474501+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T192814Z-545bf84d-axiom_first_cpt_theorem_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-matrix fermion-sector CPT identities (CPT1)-(CPT5) on the explicitly supplied pure staggered KS carrier on even 4D finite blocks with periodic/APBC wraps and bond-centered reflection; no framework derivation of the KS carrier or SU(3) gauge-sector lift is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T19:32:11.911181+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T193211Z-80de0f7d-axiom_first_cpt_theorem_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-matrix fermion-sector CPT identities (CPT1)-(CPT5) for the explicitly supplied pure staggered KS carrier on even finite 4D blocks with periodic/APBC wrap signs, excluding framework derivation of the carrier and excluding the SU(3) Wilson-plaquette gauge-sector lift.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "The corrected composite antiunitary map Theta_CPT = (E Sigma_PT R_b) K gives Theta_CPT M Theta_CPT^{-1} = E(Sigma_PT R_b M R_b^{-1} Sigma_PT)E = E M^T E = M = M^* for the explicit real pure-KS matrix family.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the implicit physical-observable convention in CPT5, but the finite KS matrix identities and scoped bounded theorem close.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 114,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 119
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic finite-matrix closure on an explicitly supplied KS family: epsilon-Hermiticity gives E M^T E = M, the bond-centered signed reflection gives Sigma_PT R_b M R_b^{-1} Sigma_PT = M^T, and the composite antiunitary therefore lands at M^*. The cited minimal-axiom authority is an accepted premise and is not used to smuggle in Grassmann, CPT, or carrier-selection content. The staggered-realization gate and SU(3) Wilson-plaquette lift are explicitly non-load-bearing and outside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.411381+00:00",
+      "audit_date": "2026-07-02T11:30:21.408279+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "assumption_derivation_ledger": null,
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "Finite-block finite-range Cl(3)=M_2(C) local Hamiltonians on the lattice substrate satisfy the stated Lieb-Robinson commutator envelope, lattice light-cone corollary, and finite Cl(3) norm/J_* bound; L2 is audited only as conditional/open routing requiring separate gap or spatial-clustering authority.",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "Under the explicit canonical-CCR hypothesis, the free-boson realization is excluded on the finite one-qubit/Cl(3) per-site surface; Grassmann CAR, Berezin determinant, and exchange-sign consequences are audited only conditional on the declared Grassmann frame, with hard-core-vs-CAR selection out of scope.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "assumption_derivation_ledger": "meta",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "assumption_derivation_ledger",
+          "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spin_statistics_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 12.089,
+        "runner_hash": "6250e19761525a77826dd92b7537f72c4d54d0cc5d0d4503c7fae79239070f52",
+        "transitive_descendants": 384
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T113021Z-61078072-axiom_first_cpt_theorem_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-matrix algebra for CPT1-CPT4 closes: the epsilon field inside V = E Sigma_PT R_b repairs the M^dagger versus M^* gap. CPT5 is broader than the proof: antiunitary oddness gives <O> = -<O>* unless an added real/Hermitian observable condition is supplied, so zero expectation does not follow for arbitrary complex local insertions.",
+      "claim_scope": "Explicit pure-staggered finite KS matrix CPT identities on even finite 4D blocks with periodic/APBC wrap signs, including the claimed fermion-sector vanishing for any Theta_CPT-odd local observable; no framework derivation of the KS carrier and no SU(3) gauge-sector lift audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T11:30:21.408279+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_cluster_decomposition_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Theta_CPT := (E Sigma_PT R_b) K gives Theta_CPT M Theta_CPT^{-1} = E(Sigma_PT R_b M R_b^{-1} Sigma_PT)E = E M^T E = M = M^*.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow CPT5 to real/Hermitian Theta_CPT-odd fermion-sector observables, or add a proof covering arbitrary complex local insertions; CPT1-CPT4 can remain the clean finite-matrix core.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 114,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 119
+      },
+      "verdict_rationale": "The runner genuinely constructs the explicit KS matrices, bond-centered reflection, sign fields, determinant checks, and falsifiers; it is not just printing expected constants. The algebraic CPT2 core is sound on the stated finite carrier and the analytic sign/boundary derivation matches the code. The remaining blocker is scope: the source states CPT5 for any Theta_CPT-odd local observable, while the runner checks only real odd bilinear kernels and the antiunitary symmetry argument needs an extra real/Hermitian condition to force vanishing rather than pure-imaginary expectation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_cpt_check.py",
+  "title": "Axiom-First CPT Theorem (Stretch Attempt) on Cl(3) \u2297 Z^3",
+  "transitive_descendants": 706,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

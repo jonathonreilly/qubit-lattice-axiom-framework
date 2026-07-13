@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-06-21T16:09:51.913668+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "architecture_portability_sweep_note": "Finite runner-backed portability sweep for source-mass scaling and attraction sign on the four specified small architectures, with Born-rule I_3 checked only on ordered and staggered 3D lattices; not a Newton-law or distance-law closure."
+    },
+    "dep_claim_type": {
+      "architecture_portability_sweep_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "architecture_portability_sweep_note": "retained_bounded"
+    },
+    "deps": [
+      "architecture_portability_sweep_note"
+    ],
+    "load_bearing_score": 4.5,
+    "runner_hash": "968bbee77b58c19c455dd1092d8144ab2fa58fa95c0d9a5823f52b97df302082",
+    "transitive_descendants": 15
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-architecture_portability_live_reaudit_bridge_note_2026-06-18-first",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited Architecture Portability Sweep authority is retained_bounded and states exactly the finite scope, measurements, gates, and exclusions used by the bridge. The bridge runner verifies the archive boundary, live-note boundary, cache status, runner SHA, and scoped cache results rather than asserting stronger Newton, Wilson Born-rule, or effective-status claims.",
+  "claim_id": "architecture_portability_live_reaudit_bridge_note_2026-06-18",
+  "claim_scope": "Source-side bridge establishing that the old April 11 architecture-portability packet remains failed historical evidence while the live sweep is an executable bounded finite source-mass and attraction portability companion over the four configured rows, with Born I_3 only for ordered and staggered rows.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (source-side finite configured-sweep bridge;",
+  "claim_type_last_reviewed": "2026-06-21T16:09:51.913668+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "architecture_portability_sweep_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "The live packet repairs the archived audit blocker at the source-artifact level by supplying a bounded configured sweep, cached runner output, per-architecture measurements, and explicit finite-scope boundaries.",
+  "load_bearing_step_class": "B",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b32c30aa38dedf3e8c43037947f7e4e9915f0d2194a6dd18a4c57c5f10161d1d",
+  "note_path": "docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": "Second auditor should keep the bridge distinct from an upstream re-audit of scripts/frontier_architecture_portability_sweep.py; this verdict covers only the narrowed source-side bridge packet.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 51,
+    "C": 0,
+    "D": 0,
+    "total_pass": 51
+  },
+  "runner_path": "scripts/architecture_portability_live_reaudit_bridge_2026_06_18.py",
+  "title": "Architecture Portability Live Re-Audit Bridge",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The claim is clean only as a source-side bridge: it does not independently rederive the architecture-portability physics, and it does not claim full Newton closure or retained effective status. The load-bearing work is cross-artifact verification against a retained_bounded cited sweep plus SHA-pinned cache output, so class B is the right classification rather than first-principles class C. Within that narrowed scope, the cache, boundary language, and exclusions match the source note and no open dependency is imported."
+}

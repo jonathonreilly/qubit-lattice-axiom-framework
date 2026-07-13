@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+  ],
+  "direct_in_degree": 13,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.996,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2174772091b7d137c10e8e5695099f7ff88ea370e25ea549c433b0252eb99ed0",
+  "note_path": "docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.343621+00:00",
+      "audit_date": "2026-06-16T01:11:12.300253+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02"
+        ],
+        "load_bearing_score": 8.248,
+        "runner_hash": "a0bd42b9f9736e9594cccadef155685c0754f5d663be6934aa4782355479e99d",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-010915-150119868e-brannen_circulant_is_forced_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebra closes: the cyclic shift has distinct eigenvalues, so its complex commutant is span{I,C,C^2}; Hermiticity imposes the paired coefficients a in R and C^2 coefficient conj(b). Since S=C+C^2 is also a polynomial in C, every such H commutes with S.",
+      "claim_scope": "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:11:12.300253+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The Hermitian commutant of the supplied 3x3 cyclic shift C is exactly the three-real-dimensional set H = aI + bC + conj(b)C^T, with a real and b complex.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that (|b|, delta) is treated only as a polar coordinate label for b, with the usual phase degeneracy at |b|=0, not as an additional coupling-selection theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner source performs an actual finite-dimensional commutator/nullspace computation and reconstructs the resulting basis as Brannen circulants, rather than merely printing expected constants. An independent algebraic check gives the same result from the centralizer of the cyclic shift and the Hermiticity condition, and the pointer non-demolition statement follows because S is a polynomial in C. The result uses only supplied C3 action, locality/displacement structure, Hermiticity, and supplied pointer data; it does not claim to select the action, pointer, r, delta, or any coupling value."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_brannen_circulant_forced_c3_covariant_form_2026_06_15.py",
+  "title": "Brannen circulant is the forced C3-covariant record-preserving generation form",
+  "transitive_descendants": 721,
+  "verdict_rationale": null
+}

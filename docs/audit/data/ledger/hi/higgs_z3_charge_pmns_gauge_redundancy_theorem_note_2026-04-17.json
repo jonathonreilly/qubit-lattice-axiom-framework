@@ -1,0 +1,234 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_theorem_note",
+    "neutrino_dirac_z3_support_trichotomy_note"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.12,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bfaaa0e65b82c8e6112b9e0bc92983d8e02efc31a61373ef7674bff39f4a7b59",
+  "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368700+00:00",
+      "archived_for_note_hash": "1c16adf98dd1a9891cfb59c68f7c6c7dbe2cb18530f2eb57220fda68335c8534",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.812401+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.383,
+        "transitive_descendants": 117
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner passes 73/73 checks and verifies the advertised support masks, diagonal Y_eY_e^dagger structure, branch-wise PMNS modulus invariance on representative coupling choices, and explicit right-handed cyclic absorption. The chain does not close at retained theorem grade because the runner and note import the conjugate Z3 triplets, the retained Z3 support trichotomy, and the PMNS convention U_PMNS=U_nu^dagger U_e without registered one-hop dependencies; one of those upstream inputs has already been audited only conditionally. The final status-upgrade checks are also literal True summary assertions, not independent verification that the package citation chain has been repaired.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "The theorem demotes q_H=0 from a physical PMNS conditional to a gauge representative by showing that the q_H=0,+1,-1 Z3-trichotomy supports are right-handed cyclic column relabelings, so Y_e Y_e^dagger is identical on the same left-handed axes and PMNS moduli are insensitive to q_H up to the separately tracked sigma_hier row permutation.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md_not_registered_one_hop_dependency",
+        "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md_not_registered_or_prior_audited_conditional",
+        "docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md_not_registered_one_hop_dependency",
+        "single_Higgs_definite_Z3_charge_premise_not_independently_audited_here",
+        "package_citation_chain_status_upgrade_CONDITIONAL_to_GAUGE_not_independently_verified",
+        "sigma_hier_observational_row_permutation_remains_open",
+        "branch_choice_A_BCC_or_basin_signature_condition_remains_open"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 6,
+        "C": 67,
+        "D": 0,
+        "total_pass": 73
+      },
+      "verdict_rationale": "The linear-algebra mechanism is credible: for the stated Z3 triplet charges and single-Higgs definite charge, the three allowed charged-lepton Yukawa supports are diagonal/forward-cyclic/backward-cyclic, and the cyclic branches are right-multiplications of the diagonal branch by e_R permutation matrices. That makes Y_eY_e^dagger and hence the left-handed PMNS contribution insensitive to q_H. The runner passes every numerical and structural check. The blocker is authority and scope. The audit row has no registered one-hop dependencies for the three retained inputs the note explicitly relies on, and the status claim that q_H=0 is now GAUGE(retained) in the DM flagship closure chain is asserted by the runner rather than audited against a registered citation-chain state. To repair the claim, register and audit the three-generation Z3 triplets, the Z3 support trichotomy, and the charged-lepton U_e/PMNS convention as one-hop dependencies; add a symbolic universal check or proof over arbitrary complex y_i rather than only representative samples; and separately verify the package-state update that removes q_H from the flagship conditionals. What can safely be claimed now is conditional: assuming the retained trichotomy and PMNS convention, q_H branches are PMNS-equivalent under right-handed basis relabeling, while sigma_hier, branch-choice/A-BCC, Yukawa magnitudes, and the flagship closure remain open or separate."
+    },
+    {
+      "archived_at": "2026-05-05T07:51:30.018614+00:00",
+      "archived_for_note_hash": "7250fb79f24a243583b4941ecaa4c8da9152c09f8036dcd01d062a72073adda3",
+      "audit_date": "2026-05-05T04:43:09.053371+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.066,
+        "runner_hash": "a6ceca28c04895ab4436029e5e6c68f64e1408e9392cc3d6c518991f996ad9af",
+        "transitive_descendants": 267
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-higgs_z3_charge_pmns_gau-068",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic right-permutation identity closes once the stated trichotomy inputs are granted, but those inputs are imported from upstream notes that are not provided in the restricted packet. The claim therefore does not derive from the declared axiom alone within this audit packet.",
+      "claim_scope": "Audited the algebraic PMNS invariance of the three definite-Higgs-Z_3-charge charged-lepton Yukawa support branches, assuming the stated Z_3 triplets, trichotomy support rule, and PMNS convention.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:43:09.053371+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Y_e[q_H = \u00b11] = Y_e[q_H = 0] \u00b7 P_\u00b1, so the q_H = \u00b11 branches differ only by a right-handed e_R basis permutation and leave Y_e Y_e\u2020, U_e, and |U_PMNS| unchanged.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the cited upstream retained authorities in the restricted packet, or add a derivation of the Z_3 triplets, support rule, and PMNS convention from the declared axiom.",
+      "open_dependency_paths": [
+        "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md",
+        "NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
+        "CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 73,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 73
+      },
+      "verdict_rationale": "The runner genuinely checks finite-dimensional algebraic identities for the hard-coded Z_3 triplets and support rule; it is not merely printing constants. However, the hard-coded Q_L, Q_R, support rule, and PMNS convention are load-bearing imported premises, while section 2 provides no cited retained authorities for them. Thus the audited packet proves only a conditional algebraic closure, not first-principles closure from Cl(3) on Z^3."
+    },
+    {
+      "archived_at": "2026-05-25T09:45:01.123506+00:00",
+      "archived_for_note_hash": "dab0b4e17461affc88e9780e4c7d03c44b85b24d9fafc7e83b4c2d033515f449",
+      "audit_date": "2026-05-24T20:51:53.191942+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "three_generation_observable_theorem_note": "Finite-dimensional algebraic theorem on C^3 with the specified diagonal translation characters and cyclic C3 map: the generated algebra is M_3(C) and no proper exact linear quotient preserving that full algebra exists."
+        },
+        "dep_claim_type": {
+          "three_generation_observable_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "three_generation_observable_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 12.19,
+        "runner_hash": "a6ceca28c04895ab4436029e5e6c68f64e1408e9392cc3d6c518991f996ad9af",
+        "transitive_descendants": 412
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T205130Z-876e41a3-higgs_z3_charge_pmns_gau-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The linear-algebra step itself closes from the stated charge/support data, and the runner genuinely checks those identities. The restricted packet does not provide the one-hop authorities for the Z_3 support trichotomy or the charged-lepton PMNS convention, so the cited-input chain is incomplete.",
+      "claim_scope": "Audited the algebraic claim that, assuming the stated Z_3 charge triplets, support rule, and PMNS convention, the three definite-Higgs-charge branches are right-handed basis relabelings with identical Y_e Y_e\u2020 on L_L axes.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-24T20:51:53.191942+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The branches q_H = \u00b11 satisfy Y_e[\u00b11] = Y_e[0] \u00b7 P_\u00b1 with P_\u00b1 acting only on right-handed e_R axes, so Y_e Y_e\u2020 and hence the left-handed PMNS observable are q_H-invariant.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the full retained-status authority packets for NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md and CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md, or narrow the claim so the charge/support rule and PMNS convention are explicit assumptions.",
+      "open_dependency_paths": [
+        "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
+        "docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 73,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 73
+      },
+      "verdict_rationale": "The runner source is not a print-only certificate: it constructs the support masks from Q_L, Q_R, and q_H, builds Y_e, verifies Y_e Y_e\u2020 invariance, and checks the right-handed permutation identities. Those checks are class A algebra over imported retained inputs, not first-principles computation. However, two load-bearing upstream inputs named in the note are not present in the restricted cited-authority packet, so the audit cannot verify that the support rule and PMNS convention are retained-grade within this chain."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_higgs_z3_charge_pmns_gauge_redundancy_theorem.py",
+  "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
+  "transitive_descendants": 786,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+    "higgs_mass_from_axiom_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ca831aba25d1922d64ea5aeb08db6e448e2e21e2557cb368b68f23d3fbc9f7ea",
+  "note_path": "docs/WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.762612+00:00",
+      "audit_date": "2026-06-18T15:24:43.463198+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "03ba4fad7912a29328432d750c5172507ecbf1c53bf88050f36cbd50e9f76db4",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained Wilson shift W(n)=2r hw(n) and retained unshifted staggered conjugate pair represented by J(u_0), the eigenvalue shift and determinant formula follow by direct 2x2 characteristic-polynomial algebra. The Hamming-weight multiplicities are exactly the cited binomial corner count.",
+      "claim_scope": "Finite algebraic spectrum, multiplicity grouping, determinant, and half-log V_taste^W formula for the explicitly constructed Wilson-shifted staggered direct-sum operator on the APBC minimal-block corner labels.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T15:24:43.463198+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For each corner, adding the Wilson scalar shift W(n)=2r hw(n) to the staggered real two-plane J(u_0) gives O_n=W(n)I_2+J(u_0), whose eigenvalues are 2r hw(n) +/- 2 i u_0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check only that the claimed scope remains limited to the constructed spectral bridge and is not read as an independent physical derivation of the Wilson coefficient, u_0, or continuum Higgs observable.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 9,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over two retained-bounded inputs, not a definition, external comparator, or tuned numerical match. Independent inspection confirms the 2x2 block has characteristic polynomial (lambda-2r hw(n))^2+4u_0^2 and that grouping over {0,1}^4 gives the stated binomial product. The runner mostly checks finite algebra and source markers rather than first-principles lattice construction, but that matches the note's bounded construction-only scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py",
+  "title": "Wilson Plus Staggered Minimal-Block Spectrum Bridge",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,298 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+    "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9db9fd5915295e6f06f2087f42c57d1cebc83bca1a69dcd4b1c5b614ee35eb85",
+  "note_path": "docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-03T00:38:52.861125+00:00",
+      "audit_date": "2026-05-27T05:02:51.705186+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "The audited claim is only the algebraic equivalence Q(v)=2/3 iff a_0^2=2|z|^2 for any positive real 3-vector under the unitary C_3 character decomposition, plus its immediate closed-form/geometric corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "100dda444c3728e83950f4947a9e8ef3facd102b9fa496afb5ff25af5889c7bf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "All direct dependencies are retained-grade and supply exactly the algebraic surfaces used: circulant/character sums, the scoped equal-weight Frobenius extremum, and the positive-vector cone equivalence for chamber-limited interpretation. The runner verifies the exact 2/3 ratio, non-extremal controls, existence of a positive chamber, and non-positivity of some phases with PASS=9 FAIL=0.",
+      "claim_scope": "Bounded signed-algebra bridge only: assuming the retained C_3 circulant/character eigenvalue identities and the scoped equal-weight Frobenius extremum a^2 = 2|b|^2, the signed algebraic ratio Q_alg(lambda) = (sum_k lambda_k^2)/(sum_k lambda_k)^2 equals 2/3 when the denominator is nonzero. The positive-vector Koide interpretation is limited to positive eigenvalue chambers and no physical charged-lepton readout, phase selection, mass-square-root identification, or downstream Koide closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T05:02:51.705186+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "Using the retained Fourier identities sum(lambda_k)=3a and sum(lambda_k^2)=3a^2+6|b|^2, substitute the scoped Frobenius-extremum condition a^2=2|b|^2 to get Q_alg(lambda)=6a^2/9a^2=2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "runner_result": "runner_sha256=100dda444c3728e83950f4947a9e8ef3facd102b9fa496afb5ff25af5889c7bf; exit_code=0; PASS=9 FAIL=0; verifies Q_alg=2/3 at a^2=2|b|^2, non-extremal controls, one positive chamber, and non-positivity of other phases.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "No-go/admission gate: the row does not claim a no-go, a global positive-spectrum theorem, or a physical charged-lepton Koide derivation. Within the stated signed algebraic scope, the derivation closes by direct substitution from retained inputs and exact rational runner checks. Residual risk is explicitly outside scope: selecting the equal-weight Frobenius functional as physical, proving lambda_k=sqrt(m_k), choosing a phase chamber, or promoting any downstream Koide parent requires separate retained bridge work."
+    },
+    {
+      "archived_at": "2026-06-04T20:16:28.892661+00:00",
+      "audit_date": "2026-06-03T10:45:17.097261+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "100dda444c3728e83950f4947a9e8ef3facd102b9fa496afb5ff25af5889c7bf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-104231-f346fe34-koide_q_two_thirds_frobe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "From the cited C3 identities, sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2, so Q_alg = (3a^2 + 6|b|^2)/(9a^2). With the cited scoped extremum a^2 = 2|b|^2 and nonzero denominator, this reduces to 2/3.",
+      "claim_scope": "Assuming the retained C3 circulant Fourier identities and the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the signed ratio Q_alg(lambda) equals 2/3 whenever the denominator is nonzero; positive Koide interpretation is chamber-limited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T10:45:17.097261+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "At the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the Fourier identities give Q_alg(lambda) = (3a^2 + 6|b|^2)/(3a)^2 = 2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md validation formula for Herm_circ(d) sign-irrep multiplicity, then re-audit this bounded bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The bounded algebraic bridge itself is a class-A substitution over retained inputs, and the primary runner checks the exact rational ratio plus positive/non-positive chamber boundaries without external comparators. However, the restricted packet is not clean under the formula-inventory guard: the cited kappa authority's validation section displays the Herm_circ(d) sign-irrep count as d mod 2, contradicting its own statement, proof, and table where the sign count is 1 for even d and 0 for odd d. That upstream displayed parity formula must be repaired before this packet can receive audited_clean."
+    },
+    {
+      "archived_at": "2026-06-21T08:24:33.925637+00:00",
+      "audit_date": "2026-06-06T18:35:21.990828+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "100dda444c3728e83950f4947a9e8ef3facd102b9fa496afb5ff25af5889c7bf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-183421-023f7504d9-koide_q_two_thirds_frobenius",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The eigenvalue formula independently gives sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2 by root-of-unity cancellation. Substituting the retained scoped extremum a^2 = 2|b|^2 gives Q_alg = 6a^2/9a^2 = 2/3 for a != 0.",
+      "claim_scope": "Assuming the retained C_3 circulant eigenvalue algebra and the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, with nonzero denominator, the signed algebraic ratio Q_alg(lambda) equals 2/3; positive-vector Koide interpretation is only chamber-limited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:35:21.990828+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "At the scoped equal-weight Frobenius extremum a^2 = 2 |b|^2, the Fourier identities give lambda_0^2 + lambda_1^2 + lambda_2^2 = 6 a^2 and (lambda_0 + lambda_1 + lambda_2)^2 = 9 a^2, hence Q_alg(lambda) = 2/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream use preserves the bounded scope: signed algebraic Q, nonzero denominator, and no global positive-spectrum or physical charged-lepton readout claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, renaming, numerical fit, or external comparator. The runner source computes the rational formula from the stated Fourier/Frobenius identities and includes non-extremal and positivity-boundary controls. The source note keeps the canonical physical Frobenius-weighting question, positive-spectrum readout, and charged-lepton identification outside the audited conclusion."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.079660+00:00",
+      "audit_date": "2026-06-21T17:39:07.290717+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "Pure algebraic equivalence on positive real 3-vectors under the stated unitary C_3 character decomposition: Q(v)=2/3 iff a_0^2=2|z|^2, with the displayed sigma and 45-degree corollaries.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}."
+        },
+        "dep_claim_type": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "100dda444c3728e83950f4947a9e8ef3facd102b9fa496afb5ff25af5889c7bf",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited circulant theorem supplies the needed Fourier sums, and the cited Frobenius theorem supplies the scoped extremum a^2 = 2|b|^2. Substitution gives the claimed ratio exactly, with the denominator excluded by the stated domain/positive-energy extremum scope.",
+      "claim_scope": "Assuming the retained C_3 circulant eigenvalue algebra and the retained equal-weight Frobenius extremum a^2 = 2|b|^2, the signed algebraic ratio Q_alg(lambda) equals 2/3; positive-vector Koide interpretation is chamber-limited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:39:07.290717+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At the scoped equal-weight Frobenius extremum a^2 = 2|b|^2, the Fourier identities give lambda_0^2+lambda_1^2+lambda_2^2 = 6a^2 and (lambda_0+lambda_1+lambda_2)^2 = 9a^2, hence Q_alg(lambda)=2/3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that any future physical Koide/readout broadening remains outside this bounded algebraic verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is exact algebra over retained-grade cited inputs, not a definition, external comparator, or tuned numerical match. The runner checks the same rational formula under several exact extremal and non-extremal cases and includes chamber-boundary sanity checks; it does not import PDG data or a physical charged-lepton readout. The open question in the Frobenius authority concerns canonical physical weighting selection, but this row explicitly confines itself to the scoped equal-weight algebraic extremum and signed ratio."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/koide_q_two_thirds_frobenius_extremum_runner.py",
+  "title": "Koide Q = 2/3 Frobenius-Extremum Algebraic Bridge",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

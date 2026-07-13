@@ -1,0 +1,529 @@
+{
+  "audit_date": "2026-05-24T20:35:17.186937+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims."
+    },
+    "dep_claim_type": {
+      "graph_first_selector_derivation_note": "positive_theorem",
+      "graph_first_su3_integration_note": "positive_theorem",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration"
+    },
+    "dep_effective_status": {
+      "graph_first_selector_derivation_note": "retained",
+      "graph_first_su3_integration_note": "retained",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+    },
+    "deps": [
+      "graph_first_selector_derivation_note",
+      "graph_first_su3_integration_note",
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    ],
+    "load_bearing_score": 28.42,
+    "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+    "transitive_descendants": 968
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T203338Z-005ca289-left_handed_charge_match-01",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The retained graph-first SU(3) integration authority supplies the selected-axis weak-fiber/base decomposition and the 6 and 2 block multiplicities. The stated ratio then follows by the displayed tracelessness equation, while the +1/3,-1 normalization and SM-Y labeling are explicitly outside the load-bearing claim.",
+  "claim_id": "left_handed_charge_matching_note",
+  "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the selected-axis (2,3) and (2,1) LH-doublet blocks, using only the 6+2 multiplicities and tracelessness; no absolute normalization, SM hypercharge identification, charge formula, or anomaly closure audited.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (audit-pipeline retag from author-hint",
+  "claim_type_last_reviewed": "2026-05-24T20:35:17.186937+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": "graph_first_su3_integration_note",
+  "deps": [
+    "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+    "graph_first_selector_derivation_note",
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 38,
+  "effective_status": "decoration_under_graph_first_su3_integration_note",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+  "load_bearing_score": 29.422,
+  "load_bearing_step": "Tracelessness on the LH-doublet multiplicities gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
+  "note_hash": "606a2ec8e8178a4dad64a5f9feb247f36d649c024306954b96ba4c291d5b036e",
+  "note_path": "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check only that decoration parenting should attach directly to graph_first_su3_integration_note rather than the intermediate narrow-ratio decoration note.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369001+00:00",
+      "archived_for_note_hash": "a1610d1d35a7224ca53a6b64ff3538e772a4aa25d741c4a5867114246019e2ee",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T11:23:54.963265+00:00",
+      "archived_for_note_hash": "aabe2f548d9b5b5f33f28a2bc4195db827a6a862d2685eedd4034acaff3b830e",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-02T14:40:53.194018+00:00",
+      "audit_date": "2026-05-01T02:13:10.343652+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 17.555,
+        "transitive_descendants": 265
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-left_handed_charge_matching_note-reraudit-after-graph_first_selector_derivation_note",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the structural projector/eigenvalue calculation, but the physical readout as Standard Model left-handed charge still imports the hypercharge formula and quark/lepton block identification beyond the two graph-first dependencies. The source note itself excludes a full anomaly-complete U(1)_Y derivation from this claim boundary.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:graph_first_su3_integration_note:retained->retained_bounded",
+      "load_bearing_step": "On that same selected-axis surface, the unique traceless abelian direction gives the left-handed eigenvalue pattern `+1/3` on the quark-doublet block and `-1` on the lepton-doublet block. The charge formula `Q = T_3 + Y/2` then matches the left-handed doublet charges on the safe retained surface.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 11,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Issue: the charge-matching step identifies the structural 3+1 abelian eigenspaces with the Standard Model Q_L/L_L hypercharge readout using Q = T_3 + Y/2, but that physical matter/hypercharge bridge is not derived in the allowed graph-first dependencies. Why this blocks: the current inputs prove a traceless U(1)-like eigenvalue ratio on the selected-axis surface, not an anomaly-complete or independently normalized physical charge theorem. Repair target: a retained theorem deriving the matter assignment, U(1)_Y normalization/readout, and anomaly-complete chiral completion from the graph-first surface. Claim boundary until fixed: the selected-axis surface has a structural 3+1 split with a traceless abelian direction whose normalized eigenvalues have the left-handed SM ratio +1/3:-1."
+    },
+    {
+      "archived_at": "2026-05-02T17:57:24.734159+00:00",
+      "archived_for_note_hash": "28f7ea2e62d8f4ff540838e8bd9eaee4f85e26b597301fd57dee3e930ada7279",
+      "audit_date": "2026-05-02T16:32:30.491709+00:00",
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-left-handed-charge-ohm",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained-bounded dependencies and runner close the graph-theoretic weak SU(2), SU(3), 3+1 split, and traceless abelian eigenvalue ratio. They do not derive the physical identification of that abelian factor and the two blocks with Standard Model hypercharge, quark doublets, lepton doublets, or electromagnetic charge.",
+      "claim_scope": "Selected-axis graph surface charge-pattern matching: a weak-doublet 3+1 split admits a traceless abelian eigenvalue ratio +1/3 on the triplet block and -1 on the singlet block.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T16:32:30.491709+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Q = T_3 + Y/2 then matches the left-handed doublet charges on the bounded surface.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check only if a later one-generation closure theorem is supplied as an audited retained dependency and the runner derives the hypercharge normalization and matter assignment without hard-coding Y_hyp.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 99,
+        "D": 0,
+        "total_pass": 111
+      },
+      "verdict_rationale": "Issue: the hard step identifies the graph traceless abelian direction and its 3+1 eigenspaces with the Standard Model left-handed Y assignments via Q = T_3 + Y/2. Why this blocks: the runner constructs Y_hyp = (1/3)Pi_+ - Pi_- and verifies its algebraic properties, but it does not derive the physical hypercharge/electric-charge bridge or matter assignment; the SM labels are a naming match. Repair target: derive a retained theorem mapping the graph abelian generator and 3+1 blocks to anomaly-compatible SM hypercharge and matter carriers, with a runner that computes the normalization/assignment rather than setting Y_hyp. Claim boundary until fixed: the safe statement is an algebraic selected-axis pattern match, not an independent U(1)_Y or left-handed SM charge derivation."
+    },
+    {
+      "archived_at": "2026-05-03T13:40:53.233526+00:00",
+      "audit_date": "2026-05-02T18:19:48.207874+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 20.55,
+        "transitive_descendants": 264
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-fresh-pr291-left-handed-charge-matching-2026-05-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The row closes only as a convention-normalized consequence of the retained ratio theorem and retained selected-axis/block decomposition. It does not close as an independent physical charge-matching theorem because the absolute scale is fixed by convention and SM hypercharge identification is explicitly excluded.",
+      "claim_scope": "Convention-normalized restatement of the retained LH-doublet traceless abelian eigenvalue ratio: (+1/3, -1) on the (2,3) and (2,1) LH-doublet blocks, with SM hypercharge/electric-charge identification out of scope.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-02T18:19:48.207874+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "Use the retained 1:(-3) ratio from 6*alpha + 2*beta = 0, then choose the conventional normalization beta = -1, giving alpha = +1/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit as a stronger theorem only if a future claim derives an absolute normalization from nonconventional premises or explicitly audits the downstream SM hypercharge/electric-charge identification.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 111,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 111
+      },
+      "verdict_rationale": "Issue: the retained parent theorem already supplies the only nonconventional content, the scale-free 1:(-3) ratio from multiplicities and tracelessness. Why this blocks independent retained status: this note adds beta=-1 and alpha=+1/3 by convention, with no independent comparator, SM charge identification, or new physical closure. Repair target: derive the absolute normalization from nonconventional retained premises or move the downstream SM hypercharge/electric-charge identification into its own audited theorem. Claim boundary until fixed: cite this row only as a boxed convention-normalized corollary of the retained ratio theorem."
+    },
+    {
+      "archived_at": "2026-05-07T13:07:09.062540+00:00",
+      "archived_for_note_hash": "59b54bd795a2785fb43d485dabbf8577c43140df9417c9961fff22c68a0079be",
+      "audit_date": "2026-05-05T23:19:16.473096+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "audited_conditional"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 23.704,
+        "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+        "transitive_descendants": 416
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-left_handed_charge_match-040",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic ratio closes from the retained graph-first 6+2 split, but the cited narrow ratio authority is explicitly unaudited and says the specific normalization (+1/3, -1) is outside its own closed result. The exact eigenvalue pattern therefore depends on an admitted normalization convention not independently closed by the restricted packet.",
+      "claim_scope": "Eigenvalue pattern (+1/3, -1) on the (2,3) and (2,1) LH-doublet blocks of the graph-first selected-axis commutant, with scale fixed by the lepton-doublet = -1 convention and no SM hypercharge identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:19:16.473096+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Tracelessness on the LH-doublet multiplicities gives 6\u00b7\u03b1 + 2\u00b7\u03b2 = 0, hence \u03b2 = \u22123\u03b1, and the convention \u03b2 = \u22121 fixes \u03b1 = +1/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or independently audit the narrow ratio theorem and add a closed normalization statement for the lepton-doublet = -1 convention before re-auditing the exact (+1/3, -1) claim.",
+      "open_dependency_paths": [
+        "docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 111,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 111
+      },
+      "verdict_rationale": "The runner genuinely constructs the graph operators, verifies the selected-axis weak su(2), residual swap, 6+2 split, commutant dimensions, su(3) closure, and the traceless (+1/3, -1) operator. However, the exact scale is fixed by a convention rather than derived, and one cited authority, LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md, is marked unaudited and explicitly excludes specific eigenvalues from its closed scope. The safe algebraic ratio 1:(-3) is supported, but the full stated exact-pattern claim remains conditional on normalization governance."
+    },
+    {
+      "archived_at": "2026-05-17T12:03:13.015294+00:00",
+      "archived_for_note_hash": "6e819179b3a3647c9ab7df566af8548e23453ed30d4d602efd772cd742ee7ca0",
+      "audit_date": "2026-05-12T00:26:35.698034+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 28.002,
+        "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+        "transitive_descendants": 724
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260512-002551-332e8573-left_handed_charge_match-002",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The structural ratio closes from the cited retained graph-first and narrow-ratio authorities. The absolute normalization (+1/3, -1) does not close as a derived result because \u03b2 = -1 is an explicit convention imported by the source note.",
+      "claim_scope": "Convention-normalized eigenvalue pattern (+1/3, -1) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with SM hypercharge identification out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-12T00:26:35.698034+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The eigenvalue ratio 1:(-3) follows from 6\u03b1 + 2\u03b2 = 0, and the absolute pattern (+1/3, -1) is obtained by the explicit convention \u03b2 = -1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade authority deriving the absolute normalization \u03b2 = -1 from nonconventional premises, or narrow this row to the scale-free 1:(-3) ratio only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 111,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 111
+      },
+      "verdict_rationale": "The runner genuinely checks the graph-first selected-axis construction, the 6+2 split, tracelessness, and the displayed convention-normalized eigenvalues. However, the exact eigenvalue pattern depends on the explicit \u03b2 = -1 normalization convention, which the note itself says is not derived within the restricted authority chain. Thus the ratio result is clean algebra over retained inputs, but the exact-pattern claim remains conditional on accepting that convention or supplying a separate retained normalization theorem."
+    },
+    {
+      "archived_at": "2026-05-22T15:26:25.975092+00:00",
+      "audit_date": "2026-05-17T12:34:35.511012+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "The canonical 2^3 cube axis-shift triplet yields a derived quartic selector whose normalized minima select exactly one taste-cube axis, without identifying the downstream abelian factor.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 28.307,
+        "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+        "transitive_descendants": 895
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-123435-20260517T123310Z-096ddbc2-left_handed_charge_match-judicial",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio.",
+      "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T12:34:35.511012+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-17T12:32:32.031023+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-123210-20260517T123210Z-27371f15-left_handed_charge_match-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scale-free eigenvalue ratio \u03b1:\u03b2 = 1:(-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-17T12:33:09.442642+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-123247-20260517T123247Z-7cacbded-left_handed_charge_match-targeted",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-17T12:34:35.511012+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260517-123435-20260517T123310Z-096ddbc2-left_handed_charge_match-judicial",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks on the graph-first selected-axis surface, with no absolute normalization or SM hypercharge identification audited.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none/materially correct",
+          "independence": "judicial_review",
+          "judgment_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 111,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 111
+          },
+          "second_auditor_error": "treated stale prior conditional language or downstream normalization/SM-identification caveats as an open dependency for the narrowed ratio despite the cited authorities being marked retained_bounded and the disputed identifications being out of scope",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_claim_type_changed:graph_first_selector_derivation_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Tracelessness over the retained 6-state Sym\u00b2/(2,3) block and 2-state Anti\u00b2/(2,1) block gives 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "None.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 111,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 111
+      },
+      "verdict_rationale": "The narrowed claim is only the scale-free ratio, and that follows algebraically from the retained-bounded selected-axis decomposition and the 6+2 multiplicities. The absolute (+1/3, -1) normalization and SM hypercharge identification are explicitly excluded from the load-bearing scope. The runner source performs algebraic matrix and rank checks; its hard-coded convention-normalized Y_hyp checks are corollary-level and not needed for the ratified ratio."
+    },
+    {
+      "archived_at": "2026-05-23T01:44:11.116135+00:00",
+      "archived_for_note_hash": "be3f98273aab1763d5ad4041740f27fe2b03dc1ff1801ff96f2d515e0f130921",
+      "audit_date": "2026-05-22T16:08:28.690337+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 28.629,
+        "runner_hash": "d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58",
+        "transitive_descendants": 1119
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T160602Z-26786b9c-left_handed_charge_match-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic ratio follows from the stated 6 and 2 multiplicities, but the one-hop narrow-ratio authority is not retained-grade in this packet and explicitly carries an open staggered-Dirac admitted-context gate.",
+      "claim_scope": "Scale-free eigenvalue ratio \u03b1 : \u03b2 = 1 : (-3) on the (2,3) and (2,1) LH-doublet blocks under the graph-first selected-axis commutant decomposition; no absolute normalization or SM hypercharge identification audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T16:08:28.690337+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The structural ratio is forced by tracelessness on the LH-doublet (6+2) state count: 6\u03b1 + 2\u03b2 = 0, hence \u03b2 = -3\u03b1 and \u03b1 : \u03b2 = 1 : (-3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: ratify the narrow-ratio authority and its staggered-Dirac realization gate, or replace that dependency with a retained-grade direct authority for the 6+2 tracelessness ratio.",
+      "open_dependency_paths": [
+        "docs/LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 111,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 111
+      },
+      "verdict_rationale": "The narrowed load-bearing content is a genuine class-A algebraic closure once the graph-first 6+2 decomposition is accepted. The runner performs finite graph/operator checks of the selected-axis weak su(2), residual swap, 6/2 projectors, commutant, and convention-normalized Yhyp pattern; it uses no external comparator. However, the cited narrow-ratio authority is not retained-grade and states an admitted dependency on the staggered-Dirac realization open gate, so clean retained closure does not propagate here."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 111,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 111
+  },
+  "runner_path": "scripts/frontier_graph_first_su3_integration.py",
+  "title": "Left-Handed Charge Matching on the Selected-Axis Surface",
+  "transitive_descendants": 1371,
+  "verdict_rationale": "The audited load-bearing content is a class-A algebraic corollary of the graph-first selected-axis commutant decomposition: once the 6-state and 2-state blocks are supplied, tracelessness uniquely fixes the scale-free ratio. The runner substantively verifies the graph-first decomposition and related finite-dimensional algebra, with no external comparator checks. The note does not close a new physical identification beyond the upstream graph-first SU(3) parent and explicitly demotes the absolute hypercharge-like pattern to a convention-fixed, non-load-bearing corollary."
+}

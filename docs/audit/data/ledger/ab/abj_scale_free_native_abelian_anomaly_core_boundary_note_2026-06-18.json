@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-06-21T06:10:08.172181+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": "For each selected axis of the graph-first C^8 taste cube, the complementary-axis swap defines projectors with ranks 6 and 2 and a traceless hypercharge-like left-handed abelian eigenvalue surface with spectrum +1/3^6 and -1^2."
+    },
+    "dep_claim_type": {
+      "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": "decoration"
+    },
+    "dep_effective_status": {
+      "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": "decoration_under_graph_first_su3_integration_note"
+    },
+    "deps": [
+      "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23"
+    ],
+    "load_bearing_score": 11.131,
+    "runner_hash": "7a50309701d1a90899aae27dac0bc62acfc30245fedd80784e2b2b6f27ed5ab4",
+    "transitive_descendants": 1120
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18-first",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited parent supplies the 6/2 split and 1:-3 traceless abelian ratio; the audited note only rescales that ratio and evaluates standard finite anomaly sums. The completion branch is an explicit algebraic witness whose displayed traces match the left-handed values with the stated opposite-chirality sign.",
+  "claim_id": "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18",
+  "claim_scope": "Scale-free algebraic anomaly identities and the displayed SU(2)-singlet cancellation witness on the retained graph-first 6+2 left-handed abelian surface, excluding physical U(1) gauging and downstream bridge claims.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-21T06:10:08.172181+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+  "deps": [
+    "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+  "load_bearing_score": 10.907,
+  "load_bearing_step": "Using the 6 and 2 multiplicities with charges a and -3a gives Tr[Y_a]=0, Tr[Y_a^3]=-48a^3, Tr[SU(3)^2Y_a]=a, Tr[SU(2)^2Y_a]=0, and substituting (4a,-2a,-6a,0) gives matching opposite-chirality anomalies.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8fdd377582a6e57e785c324c75ad5f88d1a1811c60bd1642b8c962c581063e3b",
+  "note_path": "docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check that the restricted parent content is accepted as supplying the (2,3) and (2,1) representation bookkeeping used in the mixed anomaly sums.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 36,
+    "B": 18,
+    "C": 0,
+    "D": 0,
+    "total_pass": 54
+  },
+  "runner_path": "scripts/frontier_abj_scale_free_native_abelian_anomaly_core_2026_06_18.py",
+  "title": "ABJ Scale-Free Native Abelian Anomaly Core Boundary",
+  "transitive_descendants": 1357,
+  "verdict_rationale": "The load-bearing work is exact algebra over the single retained-grade decorated parent and standard T(F)=1/2 normalization. The runner source performs symbolic and rational arithmetic for the anomaly identities and witness, while the remaining PASS checks are source-firewall string checks rather than independent physics derivations. No external comparator, fitted normalization, or tuned scale is used. Because the chain is a class-A corollary of one upstream surface rather than a new first-principles computation, the conservative verdict is audited_decoration."
+}

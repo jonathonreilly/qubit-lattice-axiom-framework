@@ -1,0 +1,177 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "action_uniqueness_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "action_power_scaling_sweep_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.454,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "982859030c522e770a8886a19faaf6f26e9414f23e73d224982b67dadd4c7a0d",
+  "note_path": "docs/ACTION_UNIQUENESS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.234416+00:00",
+      "audit_date": "2026-04-30T20:32:50.656123+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-stale-rationale-20260430-10",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner is now registered and exits 0, but its runtime output contains no classified A/B/C/D PASS lines. The bounded fixed-family universality-class computation is therefore still not exposed in an audit-checkable runner format.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "deps_changed:dep_added:action_power_scaling_sweep_note",
+      "load_bearing_step": "On the fixed ordered-lattice family, weak-field-linear phase-valley actions share a Newtonian-like F proportional to M mass-scaling class, while other tested action powers land in different mass-scaling classes.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "runner_output_missing_classified_a_b_c_d_pass_lines:scripts/action_universality_probe.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The stale missing-runner rationale is resolved by the registered runner_path, but the audit remains conditional because running scripts/action_universality_probe.py emits zero classified A/B/C/D PASS lines. The source note may still be cited only as a bounded fixed-family universality-class replay; the runner output format does not yet support an audit-clean verdict under the load-bearing step classifier."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:25.777050+00:00",
+      "audit_date": "2026-05-19T14:27:35.619250+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "action_power_scaling_sweep_note": "Bounded replay on the fixed 3D ordered dense lattice with h=0.5, W=10, L=12, kernel 1/L^2 with h^2 measure, field s/r, and S=L(1-f^p), showing F\u221dM=p for p in {0.5, 0.75, 1.0, 1.5, 2.0} and monotonic tail steepening without promoting a universal tail law."
+        },
+        "dep_claim_type": {
+          "action_power_scaling_sweep_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "action_power_scaling_sweep_note": "audit_in_progress"
+        },
+        "deps": [
+          "action_power_scaling_sweep_note"
+        ],
+        "load_bearing_score": 14.454,
+        "runner_hash": "8fd9d0d7d21a8b8e27429666885a8a96f967e4971911cdc8db2d0156d2dfcc4f",
+        "transitive_descendants": 991
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-action_uniqueness_note-008",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The included runner source genuinely constructs the lattice, field, slit geometry, propagation, Born diagnostic, TOWARD counts, and log-log mass-scaling fit rather than printing expected constants. Its completed output matches the note's load-bearing table for the scoped tested actions.",
+      "claim_scope": "Fixed 3D ordered dense lattice with h=0.5, W=8, L=12, 1/L^2 kernel with h^2 measure, field s/r, and the tested representative action laws.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-19T14:27:35.619250+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-03T18:37:21.573479+00:00",
+          "auditor": "codex-current",
+          "auditor_family": "codex-gpt-5",
+          "auditor_model": null,
+          "auditor_reasoning_effort": null,
+          "claim_scope": "Bounded fixed-family replay on the ordered 3D dense lattice with h=0.5, W=8, L=12, kernel 1/L^2 with h^2 measure, field s/r, and the tested action laws S=L, S=L(1+f), S=L(1-f^0.5), S=L(1-f), S=L(1-f^2), S=L exp(-f), S=L/(1+f), and S=-Lf, showing that phase valleys give TOWARD response and that the measured F\u221dM exponent follows the weak-field power for the tested valley-power cases, with weak-field-linear valleys giving F\u221dM=1.00.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-19T14:27:35.619250+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260519-141901-30b1a9aa-action_uniqueness_note-008",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Fixed 3D ordered dense lattice with h=0.5, W=8, L=12, 1/L^2 kernel with h^2 measure, field s/r, and the tested representative action laws.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the fixed ordered-lattice family, valley actions stay TOWARD and the F~M exponent follows the weak-field power of f, with weak-field-linear valleys giving F~M = 1.00.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the tested fixed-family scope and do not promote the informal phrase 'any action linear in f' to an all-g(f) theorem without a broader proof or sweep.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Within the stated fixed-family and tested-action scope, the claim is supported by a first-principles numerical computation from the model operators and fixed parameters. The cited companion sweep is retained_bounded and independently supports the same F~M = p pattern for S = L(1-f^p) on a closely matched fixed family. The clean result should not be read as proving arbitrary g(f) universality or architecture-independent tail laws."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/action_universality_probe.py",
+  "title": "Action Universality: F\u221dM exponent = power of f in the action",
+  "transitive_descendants": 30,
+  "verdict_rationale": null
+}

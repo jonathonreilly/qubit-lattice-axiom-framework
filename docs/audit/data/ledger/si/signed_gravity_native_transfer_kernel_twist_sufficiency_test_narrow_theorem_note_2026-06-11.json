@@ -1,0 +1,115 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "107b19446f375eddf852e3b3e46d880a2551ac1bd24dbad2393d77d3a412f25c",
+  "note_path": "docs/SIGNED_GRAVITY_NATIVE_TRANSFER_KERNEL_TWIST_SUFFICIENCY_TEST_NARROW_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.085287+00:00",
+      "audit_date": "2026-06-13T03:01:45.913275+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "becbfca7d81943f666fdd0a86a6ab3c00b06f42cd21e28159bc977fa101d6c32",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-025922-656190f022-signed_gravity_native_transf",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source and runner close the scoped finite-matrix claim: the positivity-floor inequality independently explains the empty in-gap window, and the runner source actually diagonalizes the constructed finite operators rather than printing constants. The conclusion is route-local and does not exclude Wilson-mass, domain-wall, interacting, gauged, 3D-lift, or derived symmetric-spectrum mechanisms.",
+      "claim_scope": "Finite-dimensional audit of the native free staggered two-step log kernel on the tested U(1)-holonomy cylinders, showing same-parity holonomy-odd content but no zero-centered in-gap edge tower for theta in {0, 0.6, 1.0, pi} and sizes 20x30 and 28x40.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T03:01:45.913275+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "Because K = 2 arcsinh(sqrt(m^2 + H_hop^2)) with H_hop^2 >= 0 has spec(K) >= 2 arcsinh(m), every tested zero-centered window |lambda| <= bulk_gap/2 lies below the spectral floor, so the in-gap edge-tower set is empty.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the bounded route-local scope and do not read this as a no-go for derived symmetric-spectrum boundary carriers.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing failure of the sufficiency chain is not a tuned numerical match: it follows algebraically from the positive transfer-log spectral floor, with the finite runner confirming the relevant windows and spectra on all tested carriers. The cited retained-bounded authorities supply the two-step transfer/log normalization used by the bounded test, and no external comparator or empirical input is used. The no-go wording is properly narrowed to the native free kernel on this sufficiency route, with the missing edge tower identified as the single wall."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/signed_gravity_native_transfer_kernel_twist_sufficiency_2026_06_11.py",
+  "title": "Native Transfer-Kernel Twist Sufficiency Test: the Actual Two-Step Log-Generator Has the Holonomy-Odd Tail but No In-Gap Edge Tower",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

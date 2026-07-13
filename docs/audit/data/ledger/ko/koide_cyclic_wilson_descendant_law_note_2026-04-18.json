@@ -1,0 +1,204 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_cyclic_wilson_descendant_law_note_2026-04-18",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_dweh_cyclic_compression_note_2026-04-18"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
+    "scripts/frontier_dm_wilson_to_dweh_local_chain_path_algebra_target_2026_04_18.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.484,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "eeecac1592415c8aecf1bdfa92c9e15f6cc1d8e2e34008c52cdf381ae567b4f0",
+  "note_path": "docs/KOIDE_CYCLIC_WILSON_DESCENDANT_LAW_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106060+00:00",
+      "archived_for_note_hash": "ed56c904a86c592ae31f929445cb2f76c6fb120c9534a3d14d1311637f9b1ee1",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:51.254392+00:00",
+      "audit_date": "2026-05-03T02:47:45.674605+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 8.17,
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-laplace-3rd-019debbb-6abe-72e2-a3c1-13e50668a00f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained one-hop cyclic compression dependency supplies the same canonical P_cyc carrier and reconstruction, and the present runner verifies adjacent-chain containment, orthogonality, reconstruction, and scalar-equation translation algebraically. The scoped theorem does not claim to derive the microscopic Wilson responses, selector mechanism, or final physical readout.",
+      "claim_scope": "The adjacent-chain cyclic sector is a three-real-dimensional Hermitian carrier with canonical response reconstruction, and the Koide cone on that carrier is equivalently the scalar response equation 2*r0^2 = r1^2 + r2^2.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T02:47:45.674605+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "The cyclic basis B0, B1, B2 is orthogonal with trace norms 3, 6, 6, so three real responses r0, r1, r2 reconstruct H_cyc = (r0/3)B0 + (r1/6)B1 + (r2/6)B2 and translate the Koide cone to 2*r0^2 = r1^2 + r2^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Within the conservative claim boundary, this is an algebraic structural theorem: the cyclic carrier is present in the adjacent-chain algebra, three trace responses reconstruct its unique projected Hermitian target, and Koide is exactly one scalar equation in those responses. The PDG charged-lepton witness is illustrative rather than load-bearing, so the D checks are not needed for closure. The note explicitly excludes microscopic Wilson-law production, selector enforcement, and readout interpretation, so those are not credited as derived."
+    },
+    {
+      "archived_at": "2026-07-13T00:45:03.151638+00:00",
+      "audit_date": "2026-05-05T10:10:44.436433+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "koide_dweh_cyclic_compression_note_2026-04-18": "retained"
+        },
+        "deps": [
+          "koide_dweh_cyclic_compression_note_2026-04-18"
+        ],
+        "load_bearing_score": 10.665,
+        "runner_hash": "0831a337ea3524a4fa59e27c38c4197a177c406974786eeb7f1998904282e36a",
+        "transitive_descendants": 286
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-second-koide_cyclic_wilson_descendant_law_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped theorem is an exact finite-dimensional algebra statement over the cyclic basis and real trace pairing. It does not claim to derive the microscopic Wilson response law, selector mechanism, or charged-lepton readout, and those exclusions are explicit in the note.",
+      "claim_scope": "Algebraic cyclic-sector theorem: the adjacent-chain cyclic Hermitian sector has basis B0=I, B1=C+C^2, B2=i(C-C^2); three real trace responses reconstruct the unique cyclic Hermitian target, and the Koide cone is the scalar response equation 2 r0^2=r1^2+r2^2.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T10:10:44.436433+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T10:07:06.933787+00:00",
+          "auditor": "codex-fresh-first-koide_cyclic_wilson_descendant_law_note-20260505",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Exact algebraic cyclic descendant-law construction: the adjacent-chain algebra contains B0,B1,B2; cyclic projection has the three-response reconstruction formula; the Koide cone is the scalar response equation 2 r0^2 = r1^2 + r2^2.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T10:10:44.435359+00:00",
+          "auditor": "codex-fresh-second-koide_cyclic_wilson_descendant_law_note-20260505",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Algebraic cyclic-sector theorem: the adjacent-chain cyclic Hermitian sector has basis B0=I, B1=C+C^2, B2=i(C-C^2); three real trace responses reconstruct the unique cyclic Hermitian target, and the Koide cone is the scalar response equation 2 r0^2=r1^2+r2^2.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-gpt-5",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given any local Wilson first-variation law dW_W on the Hermitian image of the adjacent-chain algebra, the cyclic descendant is determined by r0=dW_W(B0), r1=dW_W(B1), r2=dW_W(B2) and reconstructs H_cyc=(r0/3)B0+(r1/6)B1+(r2/6)B2, with Koide becoming 2 r0^2 = r1^2 + r2^2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if the audited scope is broadened to claim derivation of the microscopic Wilson responses, the selector mechanism, or the final charged-lepton readout; those are explicitly outside this clean theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing step is not a physical readout or numerical fit; it is the orthogonal-basis reconstruction of the C3-cyclic Hermitian subspace and the algebraic substitution of a=r0/3, x=r1/6, y=r2/6 into the Koide cone. The cached runner exits 0 with PASS=19 FAIL=0 and checks basis containment, cyclic projection, response reconstruction, and the scalar Koide rewrite; the four D-class checks are only an observed charged-lepton witness, not needed for theorem closure. The note clearly limits its scope by stating that the microscopic Wilson law, selector mechanism, and final readout primitive are not derived here, so the positive theorem closes at the stated algebraic target-law level."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976918+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_cyclic_wilson_descendant_law.py",
+  "title": "Koide Cyclic Wilson-Descendant Law",
+  "transitive_descendants": 715,
+  "verdict_rationale": null
+}

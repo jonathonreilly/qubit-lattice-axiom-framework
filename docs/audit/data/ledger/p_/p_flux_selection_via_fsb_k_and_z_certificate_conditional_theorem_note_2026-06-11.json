@@ -1,0 +1,619 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+    "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+    "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+    "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.562,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "039bf8f516095f44d1535966d8fd9b55db7267cebbe1561efb9228279c7ad3c0",
+  "note_path": "docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T22:17:17.042463+00:00",
+      "audit_date": "2026-06-13T02:50:24.615689+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "For any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit one-particle surface whose zero set is finite and linearly conical in the sense of (Z), the half-filled free-Fermi probe has the stated T^4 asymptotic with finite cone-weighted g_eff=sum |det V_jb|^-1; no realized-kernel selection or thermal-equilibrium derivation is audited.",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential 3+1D thermal hypotheses, the fermionic per-internal-degree energy-density integral is exactly 7/8 of the bosonic one, giving rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4; Standard Model inventory counts remain external.",
+          "minimal_axioms": null,
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "Kernel-geometry certificate only: the constructed flux-(-1) Kawamoto-Smit NN kernel satisfies the stated point-like linear-cone hypothesis (Z) with eight zero branches, V=2I, (C,r)=(2/3,1), and the declared normalization covariance; the constructed flux-(+1) scalar NN kernel violates (Z) by an extended zero set and singular cone direction. No flux selection or thermal conclusion is audited.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "96c1d5beddacbe8ce8b7327908205bd244ed7e742a98c0b6ed04de12adb7f7e1",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-024727-6b835c55b4-p_flux_selection_via_fsb_k_a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional inference and the discriminating computations close on the stated assumptions, including the independent SB coefficient/scaling check. The effective selection does not close at current grades because C1, the FSB-K retained-grade premise, is explicitly open in the source note and runner rationale.",
+      "claim_scope": "Audited the conditional composer: IF the FSB-K row retains with its quantifier and FSB-CL intact, then using the retained (Z) certificate, the finite-g_eff criterion selects K1/phi=-1 over K0 within the stated two-class kinetic surface; no current-grade selection is established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:50:24.615689+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+      "load_bearing_step": "If FSB-K is retained with its realized-kernel quantifier and FSB-CL intact, then applying it through the retained Z-K1/Z-K0 geometry certificate makes finite g_eff hold for K1 and fail for K0, so the finite-species-density requirement selects the flux -1 kernel within the two-class surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit FSB-K to retained grade with its realized-kernel quantifier and Corollary FSB-CL intact, then rerun this composer for cascade resolution.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 4,
+        "D": 3,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source is substantive: it rebuilds the two kernels, recomputes fluxes, zero counts, mode-sum g_eff behavior, falsification legs, and the label-free selection pipeline rather than merely printing expected constants. The core math is consistent: the Fermi integral gives 7*pi^2/240, eight V=2I cones give sum |det V|^-1 = 1 per site, and rescaling by h/2 gives the factor 8 central-difference plateau. However the row is deliberately conditional on FSB-K reaching retained grade with its quantifier and FSB-CL intact, so the audit cannot return a current clean selection."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:59.369642+00:00",
+      "archived_for_note_hash": "8b6f9b2162162e0ebda32200754b862ed1c352a2ff2476e853a019986c4b7133",
+      "audit_date": "2026-06-13T23:41:11.229111+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "For any stated realized-class finite-range sublattice-periodic Hermitian hopping kernel whose zero branches satisfy hypothesis (Z), the defined half-filled free-Fermi band-integral probe has u(T)=g_eff(7/8)(\u03c0^2/30)T^4+O(T^5) with finite g_eff=sum |det V|^-1; the extended-surface and quadratic-zero examples certify that both clauses of (Z) are load-bearing.",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "minimal_axioms": null,
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the two explicitly constructed Z^3 nearest-neighbor kernels, the flux-(-1) Kawamoto-Smit kernel satisfies the stated point-like linear-cone condition (Z) with eight corner zeros and V = 2I, while the flux-(+1) scalar kernel violates (Z) by an extended zero surface and singular cone direction.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.305,
+        "runner_hash": "96c1d5beddacbe8ce8b7327908205bd244ed7e742a98c0b6ed04de12adb7f7e1",
+        "transitive_descendants": 1264
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260613-233851-bd48e04c38-p_flux_selection_via_fsb_k_a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The compositional math is coherent and the runner source performs real spectral/mode-sum computations rather than merely printing constants. The current source packet still makes C1 an open retained-grade dependency, so the current-grade selection does not close until FSB-K is retained with the named content intact.",
+      "claim_scope": "Audited the conditional composer: FSB-K plus the retained Z certificate selects K1/flux -1 within the stated two-class kinetic surface only if C1 is retained with its quantified FSB-CL content intact; no current-grade selection is certified by this row.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T23:41:11.229111+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "IF C1 (FSB-K retained with its realized-kernel quantifier and FSB-CL intact), using the retained Z certificate, then CL is satisfied by K1 and violated by K0, so within the two-class surface phi = -1 is selected.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit FSB-K to retained grade with the realized-kernel quantifier and Corollary FSB-CL intact, then re-audit this composer for cascade closure.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 4,
+        "D": 3,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing calculation is a genuine framework-internal computation/composition: the K1 cone data gives sum |det V|^-1 = 8/8 = 1 in unit hopping and 8 after the h/2 scale change, while K0's codimension-one zero surface gives u ~ T^2 and hence g_eff ~ T^-2. The Fermi coefficient also checks independently: (1/(2 pi^2)) * 7 pi^4/120 = 7 pi^2/240 = (7/8)(pi^2/30). However the audited claim is explicitly conditional on C1, and the source note/runner state C1 is not yet retained at current grades, so the row cannot receive a terminal clean verdict as an effective selection."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.509339+00:00",
+      "audit_date": "2026-06-15T19:25:18.626044+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "For any stated realized-class finite-range sublattice-periodic Hermitian hopping kernel whose zero branches satisfy hypothesis (Z), the defined half-filled free-Fermi band-integral probe has u(T)=g_eff(7/8)(\u03c0^2/30)T^4+O(T^5) with finite g_eff=sum |det V|^-1; the extended-surface and quadratic-zero examples certify that both clauses of (Z) are load-bearing.",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "minimal_axioms": null,
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the two explicitly constructed Z^3 nearest-neighbor kernels, the flux-(-1) Kawamoto-Smit kernel satisfies the stated point-like linear-cone condition (Z) with eight corner zeros and V = 2I, while the flux-(+1) scalar kernel violates (Z) by an extended zero surface and singular cone direction.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.861,
+        "runner_hash": "ffeca3bacd7c0f93de39be8b53b30915e926ee43432cd57dc01967baf82cee3f",
+        "transitive_descendants": 929
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-192130-e4d53fe17d-p_flux_selection_via_fsb_k_a",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained FSB-K theorem supplies the finite-g_eff conclusion for every (Z) kernel, and the retained Z certificate supplies K1's exact (Z) data plus K0's zero-surface violation. Independent checks of the SB coefficient, cone determinant weights, K0 L=4 zero count, and divergence exponents agree with the packet; the residual thermal-probe and two-class-surface limits are declared scope boundaries.",
+      "claim_scope": "Given retained-bounded FSB-K with FSB-CL intact and the retained Z certificate, the finite-g_eff CL requirement distinguishes the two constructed K0/K1 kinetic kernels: K1 satisfies CL, K0 violates it, and phi = -1 is selected only within the declared two-class surface and free-Fermi probe boundary.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T19:25:18.626044+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T19:20:47.932208+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-191807-49910ba4dd-p_flux_selection_via_fsb_k_a",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the stated two-kernel K0/K1 surface, and at the retained-bounded grade of FSB-K plus the retained Z-certificate, the finite-`g_eff` CL requirement selects K1/`phi=-1`; wholesale P-KIN retirement, thermal equilibrium, and the normative force of CL beyond the stated B-Z2 scope are not audited as closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T19:25:18.626044+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-192130-e4d53fe17d-p_flux_selection_via_fsb_k_a",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given retained-bounded FSB-K with FSB-CL intact and the retained Z certificate, the finite-g_eff CL requirement distinguishes the two constructed K0/K1 kinetic kernels: K1 satisfies CL, K0 violates it, and phi = -1 is selected only within the declared two-class surface and free-Fermi probe boundary.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "By C1 applied through retained Z-K1, K1 has finite g_eff with cone-weight sum 8 per cell / 1 per site, while K0 violates finite T^4 bookkeeping with g_eff ~ T^-2, so exactly one licensed kernel satisfies CL and its computed flux is -1.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the target/context no-go and kinetic-surface pointers remain non-load-bearing for this bounded selection claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 5,
+        "C": 4,
+        "D": 3,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing computation is not a renaming or tuned numerical match: the runner reconstructs the two kernels, verifies the geometry/thermal discriminator, and reads the flux only after selection. The one-hop retained-grade inputs are sufficient for the bounded composition, with minimal axioms treated as accepted premises and retained_bounded rows eligible under the rubric. The conclusion is clean only at the stated bounded grade: it does not derive thermal equilibrium, make either normalization canonical, or retire P-KIN beyond the two-class surface."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.886404+00:00",
+      "audit_date": "2026-06-30T17:03:19.276087+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "For any supplied finite-range sublattice-periodic Hermitian one-particle hopping kernel on the stated Z^3 single-ladder surface whose zero set is a nonempty finite set of linear cones satisfying (Z), the half-filled free-Fermi probe has u(T)=g_eff(7/8)(pi^2/30)T^4+O(T^5), with g_eff=sum |det V_jb|^{-1}; the row does not certify thermal equilibrium, kernel realization, or which branch satisfies (Z).",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "minimal_axioms": null,
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the explicitly constructed NN K1/K0 lattice kernels on the retained finite one-particle/Fock surface, K1 satisfies the restated finite point-like linear-cone hypothesis (Z) with V=2I, C=2/3, r=1 and the stated cone weights, while K0 has an exact zero line and singular cone direction.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.384,
+        "runner_hash": "ffeca3bacd7c0f93de39be8b53b30915e926ee43432cd57dc01967baf82cee3f",
+        "transitive_descendants": 944
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T165610Z-b0d946df-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The clean bounded verdict is correct: the non-axiom load-bearing authorities are retained-grade, the minimal axiom node is an accepted premise, and the source keeps the conclusion within the two-class surface and free-Fermi probe scope. The decisive selection is not a definition or tuned match; the runner constructs the K0/K1 kernels, computes zero geometry and low-temperature g_eff behavior, then reads off the flux of the unique finite-g_eff kernel. Because that discriminating pass/fail leg uses first-principles spectral and mode-sum computation rather than only a formal identity over inputs, class C is the correct load-bearing class.",
+      "claim_scope": "Within the explicitly scoped K0/K1 kinetic surface, retained_bounded FSB-K plus the retained (Z) certificate and self-contained mode-sum computations show K1 has finite g_eff while K0 has T^-2 divergent g_eff, selecting phi = -1 at the chain's retained-bounded grade.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T17:03:19.276087+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T16:52:02.324807+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T165202Z-ae36433a-p_flux_selection_via_fsb",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicitly scoped K0/K1 kinetic surface, retained_bounded FSB-K plus the retained (Z) certificate and self-contained mode-sum computations show K1 has finite g_eff while K0 has T^-2 divergent g_eff, selecting phi = -1 at the chain's retained-bounded grade.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-30T16:55:59.075191+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T165559Z-f2dc39ec-p_flux_selection_via_fsb",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given retained_bounded FSB-K and the retained Z certificate, the finite-g_eff CL requirement selects K1/phi=-1 over K0 within the stated two-class kinetic surface; wholesale P-KIN, thermal-equilibrium/KMS, and axiom-forcing of REQ are outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-30T17:03:19.276087+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T165610Z-b0d946df-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The clean bounded verdict is correct: the non-axiom load-bearing authorities are retained-grade, the minimal axiom node is an accepted premise, and the source keeps the conclusion within the two-class surface and free-Fermi probe scope. The decisive selection is not a definition or tuned match; the runner constructs the K0/K1 kernels, computes zero geometry and low-temperature g_eff behavior, then reads off the flux of the unique finite-g_eff kernel. Because that discriminating pass/fail leg uses first-principles spectral and mode-sum computation rather than only a formal identity over inputs, class C is the correct load-bearing class.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "The second audit understates the load-bearing class as A. The final theorem application is a logical composition over retained inputs, but the row's discriminating selection leg relies on first-principles kernel/spectral/mode-sum computations, so class C is the better audit classification.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check downstream citations preserve the bounded scope: within-surface phi selection only, not wholesale P-KIN retirement or derived thermal-equilibrium/KMS dynamics.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The clean bounded verdict is correct: the non-axiom load-bearing authorities are retained-grade, the minimal axiom node is an accepted premise, and the source keeps the conclusion within the two-class surface and free-Fermi probe scope. The decisive selection is not a definition or tuned match; the runner constructs the K0/K1 kernels, computes zero geometry and low-temperature g_eff behavior, then reads off the flux of the unique finite-g_eff kernel. Because that discriminating pass/fail leg uses first-principles spectral and mode-sum computation rather than only a formal identity over inputs, class C is the correct load-bearing class."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.495250+00:00",
+      "audit_date": "2026-07-01T21:05:29.306314+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "Conditional asymptotic theorem: for any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit/Fock surface whose zero set is finite and linearly conical, the declared half-filled free-Fermi probe has u(T)=g_eff(7/8)(\u03c0\u00b2/30)T\u2074+O(T\u2075), with g_eff=\u03a3|det V_jb|^{-1}; the row does not derive equilibrium, kernel realization, branch selection, or hypothesis (Z) for a physical kernel.",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "minimal_axioms": null,
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the explicitly defined NN scalar K0 and Kawamoto-Smit K1 hopping kernels on periodic Z^3 one-particle blocks, K1 has the stated exact point-like linear-cone zero-set data and K0 has the stated extended zero-line/singular-cone violation; no flux selection, FSB-K theorem content, or thermal conclusion was audited.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.384,
+        "runner_hash": "ffeca3bacd7c0f93de39be8b53b30915e926ee43432cd57dc01967baf82cee3f",
+        "transitive_descendants": 944
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T210158Z-92b8d90c-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The row's load-bearing move is a logical/algebraic composition of retained-grade inputs: instantiate retained-bounded FSB-K on the kernel certified by the retained Z row, exclude K0 by the retained Z-K0 geometry plus the stated finite-g_eff criterion, then read off the selected kernel's computed flux. The runner contains genuine framework computations, but for this composer row they corroborate and re-check the retained inputs rather than making the primary derivation a new first-principles computation. The bounded clean verdict is appropriate because all load-bearing authorities are retained-grade or accepted premise nodes and the conclusion is explicitly limited to within-surface selection.",
+      "claim_scope": "Within the stipulated two-class kinetic surface and using retained-bounded FSB-K plus the retained Z-certificate, the finite-g_eff CL criterion is satisfied by K1 and violated by K0, so the selected surface member has plaquette flux phi = -1; surface forcing, thermal equilibrium, and wholesale P-KIN retirement remain outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T21:05:29.306314+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T20:56:27.606269+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T205627Z-3107fd78-p_flux_selection_via_fsb",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the stipulated two-class kinetic surface and using retained-bounded FSB-K plus the retained Z-certificate, the finite-g_eff CL criterion is satisfied by K1 and violated by K0, so the selected surface member has plaquette flux phi = -1; surface forcing, thermal equilibrium, and wholesale P-KIN retirement remain outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-01T21:01:44.968530+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T210144Z-edb7ffe0-p_flux_selection_via_fsb",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded within-surface composer: retained-bounded FSB-K plus the retained Z certificate select phi = -1 by the finite-g_eff requirement on the licensed K0/K1 surface, without claiming wholesale P-KIN retirement or thermal-equilibrium dynamics.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-01T21:05:29.306314+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T210158Z-92b8d90c-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The row's load-bearing move is a logical/algebraic composition of retained-grade inputs: instantiate retained-bounded FSB-K on the kernel certified by the retained Z row, exclude K0 by the retained Z-K0 geometry plus the stated finite-g_eff criterion, then read off the selected kernel's computed flux. The runner contains genuine framework computations, but for this composer row they corroborate and re-check the retained inputs rather than making the primary derivation a new first-principles computation. The bounded clean verdict is appropriate because all load-bearing authorities are retained-grade or accepted premise nodes and the conclusion is explicitly limited to within-surface selection.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit overclassified the row's load-bearing step as C by emphasizing the runner's self-contained recomputation; the audited claim is a retained-input composer, so the decisive inference is class A closure over independent retained authorities, not a new first-principles derivation from the baseline.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Preserve the within-surface-only scope and the declared free-Fermi probe boundary in downstream citations.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The row's load-bearing move is a logical/algebraic composition of retained-grade inputs: instantiate retained-bounded FSB-K on the kernel certified by the retained Z row, exclude K0 by the retained Z-K0 geometry plus the stated finite-g_eff criterion, then read off the selected kernel's computed flux. The runner contains genuine framework computations, but for this composer row they corroborate and re-check the retained inputs rather than making the primary derivation a new first-principles computation. The bounded clean verdict is appropriate because all load-bearing authorities are retained-grade or accepted premise nodes and the conclusion is explicitly limited to within-surface selection."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.496481+00:00",
+      "audit_date": "2026-07-02T08:40:58.955623+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class finite-range sublattice-periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying hypothesis (Z) has u(T)=sum |det V|^-1 (7/8)(pi^2/30) T^4 + O(T^5); the explicit non-(Z) witness kernels only certify that both clauses of (Z) are load-bearing.",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "minimal_axioms": null,
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 one-particle kernels on the Z^3 finite periodic/Bloch surface, K1 satisfies the restated point-like linear-cone (Z) condition with zeros {0,pi}^3 and V=2I, while K0 has an extended zero surface/zero line and a singular tangent cone; no flux selection or thermal conclusion is audited.",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "positive_theorem",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11": "retained",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "minimal_axioms",
+          "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.384,
+        "runner_hash": "ffeca3bacd7c0f93de39be8b53b30915e926ee43432cd57dc01967baf82cee3f",
+        "transitive_descendants": 944
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T084058Z-12fc03bb-p_flux_selection_via_fsb",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from retained-grade inputs: FSB-K gives the conditional finite-g_eff theorem for (Z)-kernels, and the retained Z certificate supplies K1 pass/K0 fail geometry. The runner source also reconstructs the kernels and recomputes fluxes, zero counts, cone data, and g_eff behavior rather than merely echoing constants.",
+      "claim_scope": "Within the licensed K0/K1 two-class kinetic surface, retained-bounded FSB-K plus the retained (Z) certificate select K1/phi = -1 by the finite-g_eff thermal/spectral criterion; this does not prove the kinetic surface wholesale or thermal equilibrium of the realized dynamics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T08:40:58.955623+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T08:35:13.508311+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T083513Z-dd423c75-p_flux_selection_via_fsb",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the explicitly constructed two-class K0/K1 kinetic surface, using retained-bounded FSB-K and the retained Z certificate, the free-Fermi finite-g_eff requirement selects K1/phi = -1; this does not audit wholesale P-KIN forcing or thermal-equilibrium dynamics.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T08:40:58.955623+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T084058Z-12fc03bb-p_flux_selection_via_fsb",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Within the licensed K0/K1 two-class kinetic surface, retained-bounded FSB-K plus the retained (Z) certificate select K1/phi = -1 by the finite-g_eff thermal/spectral criterion; this does not prove the kinetic surface wholesale or thermal equilibrium of the realized dynamics.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "Since retained-grade FSB-K supplies finite g_eff for every realized-class kernel satisfying (Z), and the retained (Z) certificate says K1 satisfies (Z) while K0 violates it, exactly K1 satisfies the finite-species-density requirement within the licensed two-class surface, so phi = -1 is selected.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check if FSB-K or the Z-certificate status/content changes, or if a future claim tries to use this row for wholesale P-KIN retirement rather than within-surface selection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 9,
+        "C": 7,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing selection is a first-principles finite-object computation composed with retained-grade theorem inputs, not a definition, renaming, tuned numerical match, or external comparator. The runner checks the contested bridge by constructing both kernels, verifying spectra/zero geometry, computing the FSB-K mode sums, and running a label-free selection whose selected kernel has computed flux -1. The remaining limits are explicitly scoped boundaries: the two-class surface, free-Fermi probe currency, finite-grid controls, and future dependency status changes."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py",
+  "title": "P-FLUX Selection via FSB-K and the (Z) Certificate \u2014 `\u03c6 = \u22121` at Retained FSB-K Grade",
+  "transitive_descendants": 755,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,137 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.072,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ba90bbb603ce1b887f4db3422b8f264e744627e07310b755a67f289a5a0ca7be",
+  "note_path": "docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.160902+00:00",
+      "audit_date": "2026-06-13T22:17:16.258151+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 15.809,
+        "runner_hash": "b09235f6fbf09865a81414b8855ad9d50f161c0906f72fb77a63ced98b84742a",
+        "transitive_descendants": 1268
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-221538-00b35cf1fc-gstar_thermal_seven_eighths_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed series expansions reduce the two integrals to Gamma(4) zeta(4) and Gamma(4) eta(4), and the eta-zeta identity at s=4 gives the 7/8 ratio. The phase-space prefactor is common to both statistics and gives the stated per-degree coefficients; Standard Model inventory counts remain outside this audited scope.",
+      "claim_scope": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T22:17:16.258151+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-10T04:37:43.987483+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260610-043556-5bd3b5bb14-gstar_thermal_seven_eighths_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the stated massless, zero-chemical-potential 3+1D thermal hypotheses, the fermionic per-internal-degree energy-density integral is exactly 7/8 of the bosonic one, giving rho_B=(pi^2/30)T^4 and rho_F=(7/8)(pi^2/30)T^4; Standard Model inventory counts remain external.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T22:17:16.258151+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-221538-00b35cf1fc-gstar_thermal_seven_eighths_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using eta(4) = (1 - 2^(-3)) zeta(4), the Fermi integral is I_F = (7/8) I_B, and the common phase-space prefactor then gives rho_F = (7/8) rho_B per internal degree of freedom.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should preserve the narrow scope: the parent Standard Model inventory counts are premises for downstream g_* arithmetic, not derived by this bridge note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The load-bearing mathematics is a direct algebraic and integral identity: Gamma(4)=6, zeta(4)=pi^4/90, eta(4)=(7/8)zeta(4), so I_F/I_B=7/8. Independent checking of the displayed coefficients confirms pi^4/15, 7*pi^4/120, pi^2/30, and 7*pi^2/240. The cited eta/zeta authority is retained-grade, and the runner source performs symbolic arithmetic rather than using external comparator data or a tuned numerical match."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_gstar_thermal_seven_eighths_bridge_2026_06_06.py",
+  "title": "`g_*` Thermal `7/8` Stefan-Boltzmann Integral Bridge",
+  "transitive_descendants": 760,
+  "verdict_rationale": null
+}

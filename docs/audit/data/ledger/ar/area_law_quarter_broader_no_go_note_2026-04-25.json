@@ -1,0 +1,171 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "area_law_quarter_broader_no_go_note_2026-04-25",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "bh_entropy_derived_note",
+    "bh_entropy_rt_ratio_widom_no_go_note",
+    "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
+    "planck_boundary_density_extension_theorem_note_2026-04-24"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.729,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2b5f3ebc0ae148ecb7827e0aef98b0520ac093d96ffe9c57572b4adeef921caf",
+  "note_path": "docs/AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367630+00:00",
+      "archived_for_note_hash": "b625ac009a47ba81411e5c0a8b13e78e58eeffc4f8aad5595f2b8e90f15621a1",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T03:20:50.099663+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "bh_entropy_derived_note": "unaudited"
+        },
+        "deps": [
+          "bh_entropy_derived_note"
+        ],
+        "load_bearing_score": 12.37,
+        "transitive_descendants": 116
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local coarea/fiber-count no-go proof closes within the stated simple-fiber Widom assumptions, but the row's registered one-hop dependency is the bounded BH entropy lane, so retained propagation is not closed through the audit graph.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:bh_entropy_derived_note:bounded->audited_conditional",
+      "load_bearing_step": "Under the single-interval fiber hypothesis, N_Gamma(q) <= 2 almost everywhere, so I_x <= 2(2*pi)^(d-1) and c_Widom <= 1/6; c_Widom = 1/4 would require average crossing count 3.",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [
+        "docs/BH_ENTROPY_DERIVED_NOTE.md_registered_dependency_effective_status_bounded"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "Issue: the simple-fiber no-go algebra is correct, but the claim is registered as depending on `bh_entropy_derived_note`, whose current/effective status is bounded rather than retained. Why this blocks: the audit graph cannot ratify this candidate retained-grade row as clean while its only registered one-hop dependency remains a bounded companion lane, even though the local fiber-count theorem itself excludes 1/4 inside the stated class. Repair target: either register and clean-audit the actual retained Widom/no-go and boundary-rank normalization authorities needed by this theorem, or remove the bounded BH companion from the load-bearing dependency set if it is only contextual. Claim boundary until fixed: it is safe to claim an exact conditional no-go for flat-cut simple-fiber Widom carriers and Schur/direct-sum descendants under consistent boundary-rank normalization: they have c_Widom <= 1/6 and cannot yield 1/4; the result does not rule out multi-pocket/multi-band, non-Fermi-liquid, gapped horizon-sector, or separately derived primitive-boundary carriers."
+    },
+    {
+      "archived_at": "2026-05-10T13:05:00.492954+00:00",
+      "archived_for_note_hash": "64f8ac9fd39256c9599098cbdadfb3cfa1b7cb68c251341f8860b62b6e2db398",
+      "audit_date": "2026-05-05T22:58:08.167460+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "bh_entropy_derived_note": "audited_conditional"
+        },
+        "deps": [
+          "bh_entropy_derived_note"
+        ],
+        "load_bearing_score": 14.281,
+        "runner_hash": "7eb1bbf87b2b1f2657e5d591d8053351bd492d1740a92cd8fb3a6d5b39660cf4",
+        "transitive_descendants": 439
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-area_law_quarter_broader-009",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The internal coarea/fiber-count algebra closes once the Widom-Gioev-Klich coefficient formula and the simple-fiber hypothesis are accepted. The restricted packet does not independently close the imported Widom asymptotic authority, and the cited BH_ENTROPY_DERIVED_NOTE.md is marked audited_conditional.",
+      "claim_scope": "For straight-cut translation-invariant free-fermion Widom carriers with at most one occupied k_x interval per transverse momentum fiber, plus consistently normalized finite Schur/species direct sums, the normalized Widom coefficient is bounded by 1/6 and cannot equal 1/4.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-05T22:58:08.167460+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the single-interval hypothesis, N_Gamma(q) <= 2 almost everywhere, so I_x(Gamma) <= 2(2*pi)^(d-1) and c_Widom <= 1/6, making c_Widom = 1/4 impossible in the simple-fiber class.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained-grade upstream theorem or restricted-packet derivation for the Widom-Gioev-Klich coefficient formula and normalization used here.",
+      "open_dependency_paths": [
+        "docs/BH_ENTROPY_DERIVED_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing no-go step is a genuine algebraic/geometric bound: average crossing count at most 2 gives c <= 2/12 = 1/6, while c = 1/4 requires average crossing count 3. The runner mostly verifies this algebra and includes one direct midpoint quadrature for the 3D cubic example; it is not merely printing pass constants. However, the derivation imports the Widom-Gioev-Klich asymptotic coefficient formula and cites an authority whose effective status is audited_conditional, so the restricted packet does not support audited_clean under the rubric."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_area_law_quarter_broader_no_go.py",
+  "title": "Area-Law Quarter Broader No-Go Note",
+  "transitive_descendants": 74,
+  "verdict_rationale": null
+}

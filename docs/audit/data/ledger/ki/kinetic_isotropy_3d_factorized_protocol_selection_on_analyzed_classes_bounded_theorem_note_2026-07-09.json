@@ -1,0 +1,132 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kinetic_isotropy_3d_factorized_protocol_selection_on_analyzed_classes_bounded_theorem_note_2026-07-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09",
+    "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10",
+    "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cf34226b18369eaf50353c551782f7876e92008aa7ca8281498adc8ba583d441",
+  "note_path": "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:32.004750+00:00",
+      "audit_date": "2026-07-10T13:00:14.833054+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": null,
+          "minimal_axioms": null,
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09": null,
+          "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": "On the supplied site-licensed, period-2, one-axis unitary-tick surface, and conditional on a tick--Admissibility realization bridge, one-site covariance modulo local U(1) frames plus off-site support selects exactly the p/s and q/r mover strata, giving windings +1 and -1 and |v|=1 edge/tick without selecting a winding sign."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09": "bounded_theorem",
+          "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": "unaudited",
+          "minimal_axioms": "meta",
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09": "unaudited",
+          "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09": "audited_conditional"
+        },
+        "deps": [
+          "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10",
+          "minimal_axioms",
+          "staggered_site_license_tick_dichotomy_bounded_theorem_note_2026-06-09",
+          "tick_cell_selection_by_translation_and_variation_clauses_narrow_theorem_note_2026-07-09"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f06f011aa6cf7d899d8a6c6a3fc5e43f6ef15694a08a97a9bd195b0cc56b16d9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-125707-5f13fbd6-kinetic_isotropy_3d_fact-001",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-inventory calculation closes, but the physical necessary-filter reading does not: the packet supplies rather than derives the 3D protocol\u2013Admissibility realization bridge and composite-word dispersiveness condition.",
+      "claim_scope": "Finite-inventory computation of three algebraic predicates on ten constructed period-2 protocols, including the representative-level P_WEIGHT counterexample; protocol realization and inventory completeness were not audited as established conclusions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T13:00:14.833054+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Applying zero constituent-factor modulus defect, nonvacuous all-axis factor support, and composite-word dispersiveness to the named ten protocols yields exactly {P_SYM, P_SYM_OCT, P_REORDER, P_WEIGHT}.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the supplied 3D protocol\u2013Admissibility and composite-word-dispersiveness bridge, then re-audit after the direct unaudited theorem dependencies reach retained grade.",
+      "open_dependency_paths": [
+        "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md",
+        "docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+        "docs/STAGGERED_SITE_LICENSE_TICK_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 22,
+        "D": 0,
+        "total_pass": 42
+      },
+      "verdict_rationale": "Issue: The runner genuinely constructs the ten representatives and supports the four-member algebraic survivor set and P_WEIGHT divergence, but the physical reading imports a supplied 3D protocol\u2013Admissibility bridge and word-level dispersiveness condition; two direct theorem authorities are unaudited and the one-axis authority is audited_conditional. Why this blocks: the accepted minimal axioms explicitly do not select a transfer protocol, and no retained-grade cited theorem supplies either missing identification. Repair target: derive and audit the 3D realization bridge and word-level dispersiveness condition, then retain the unaudited 3D and dichotomy dependencies. Claim boundary until fixed: the finite-inventory predicate calculation and narrow P_WEIGHT counterexample stand algebraically, with no realized-protocol selection or class-completeness conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/kinetic_isotropy_3d_factorized_protocol_selection_2026_07_09.py",
+  "title": "Conditional 3D Protocol-Factor Filtering on the Analyzed Period-2 Classes",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

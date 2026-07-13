@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow_bounded_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_from_axiom_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.209,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "412c4d0508f9ff97a5c48fa7e035668aaed097dfad843186fb59e92b6bd4f0bd",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_ROUTE_E_TAO_CROSS_DISCIPLINARY_NARROW_BOUNDED_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.487078+00:00",
+      "audit_date": "2026-07-10T00:06:15.075616+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_from_axiom_note": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block."
+        },
+        "dep_claim_type": {
+          "observable_principle_from_axiom_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_from_axiom_note": "retained_bounded"
+        },
+        "deps": [
+          "observable_principle_from_axiom_note"
+        ],
+        "load_bearing_score": 7.209,
+        "runner_hash": "47a1ef71a197a0a62dfd19df8884e3235eae33b65987617bcdefdf954f050d47",
+        "transitive_descendants": 36
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-observable_principle_p1_-071",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner hard-codes the candidate classifications and checks only representative algebra; it does not establish the cited literature-wide claim that each discipline supplies no other applicable theorem. The note also incorrectly says F_0=r^0 is additive, although F_0=1 violates binary additivity.",
+      "claim_scope": "The ten-candidate Route E classification and its claimed F_p obstruction to deriving scalar additivity from determinant factorization alone.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T00:06:15.075616+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_from_axiom_note:retained_bounded->unaudited",
+      "load_bearing_step": "Every surveyed candidate either invokes logarithms to obtain additivity or uses additive functorial structure inapplicable to scalar real-valued partition functions, so none derives the required scalar additivity from independence.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit after correcting the p=0 statement and supplying restricted-packet evidence or independent arguments for each candidate classification and for the claimed exhaustiveness of the L/D dichotomy.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The determinant, logarithm, and nonzero-power calculations are valid algebraic examples, but the runner encodes rather than derives the load-bearing ten-discipline classification. It neither audits the cited disciplinary authorities nor proves that the stated L/D dichotomy exhausts their potentially applicable constructions. The explicit false p=0 additivity statement additionally prevents the claim from closing on its own terms."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_observable_principle_p1_bridge_route_e_tao_cross_disciplinary_narrow.py",
+  "title": "Observable-Principle P1 Bridge \u2014 Route E Tao-style Cross-Disciplinary Narrow Bounded Note",
+  "transitive_descendants": 36,
+  "verdict_rationale": null
+}

@@ -1,0 +1,189 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "sm_relativistic_dof_count_import_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.982,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "14ca250db8402f5bab238354f8c653bd7f58f3a88086e74374940081c031cb23",
+  "note_path": "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-26T10:41:59.974453+00:00",
+      "archived_for_note_hash": "bdd6146b189aa9646e8a4a119527fb050659963915114e400347540ba30cdf13",
+      "audit_date": "2026-05-22T23:26:23.084241+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.18,
+        "runner_hash": null,
+        "transitive_descendants": 289
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T232602Z-4332cd86-sm_relativistic_dof_coun-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic 28 + (7/8)*90 = 106.75 is straightforward, and the cited retained authority supports the 7/8 ratio. The restricted packet does not include a retained authority deriving or auditing the SM particle-content bookkeeping that supplies the 28 bosonic and 90 fermionic counts.",
+      "claim_scope": "A named non-derivation import wrapper for the Standard-Model relativistic effective degree-of-freedom count g_* = 106.75 at electroweak-scale relativistic temperatures.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:26:23.084241+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At temperatures above the electroweak scale, the Standard Model has g_*(T) = 28 + (7/8) * 90 = 106.75, with 28 bosonic and 90 fermionic relativistic degrees of freedom.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide a retained one-hop authority or bounded import note for the SM particle-content bookkeeping yielding 28 bosonic and 90 fermionic relativistic degrees of freedom.",
+      "open_dependency_paths": [
+        "docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note is explicit that it is a named non-derivation import, not a framework derivation of the Standard Model content or of the 28 + 90 count. The only provided one-hop retained authority supports the 7/8 fermion/boson factor, not the SM degrees-of-freedom inventory. Textbook references are named but not provided as retained-grade audit inputs in the restricted packet, so the imported count remains an open dependency rather than a closed theorem from the supplied authorities."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.750364+00:00",
+      "audit_date": "2026-05-28T02:15:32.426246+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2."
+        },
+        "dep_claim_type": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 9.477,
+        "runner_hash": "714decb544f077fe780563f30351a64ae5f86709f1df5579e8640bccbb025fb5",
+        "transitive_descendants": 251
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-sm-relativistic-dof-20260528-r2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Fresh-context arithmetic check confirms bosons 16+6+2+4=28, fermions 72+12+6=90, (7/8)*90=315/4, and 28=112/4, so the exact total is 427/4=106.75.",
+      "claim_scope": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T02:15:32.426246+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T00:00:00+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-sm-relativistic-dof-pass1-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-28T02:15:32.426085+00:00",
+          "auditor": "codex-audit-loop-fresh-context-sm-relativistic-dof-20260528-r2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite arithmetic certificate that the explicitly declared Standard Model relativistic inventory, with bosonic total 28, fermionic total 90, and fermion weight 7/8, gives g_* = 427/4 = 106.75; no framework derivation of the inventory, thermal equilibrium, cosmology, or downstream leptogenesis closure is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Given g_bosonic=28, g_fermionic=90, and fermion weight 7/8, compute g_* = 28 + (7/8)*90 = 427/4 = 106.75.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "No re-audit needed unless the source broadens beyond declared-inventory arithmetic or claims the SM inventory/cosmology as derived.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The bounded finite arithmetic certificate closes over the declared inventory and retained 7/8 weight. Residual risk is outside this verdict: the SM particle inventory, thermal-equilibrium assumptions, cosmology, downstream leptogenesis use, and framework derivation of particle content are not audited here."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_sm_relativistic_dof_finite_inventory.py",
+  "title": "Standard-Model Relativistic Degrees-of-Freedom Count \u2014 Finite Inventory Arithmetic",
+  "transitive_descendants": 714,
+  "verdict_rationale": null
+}

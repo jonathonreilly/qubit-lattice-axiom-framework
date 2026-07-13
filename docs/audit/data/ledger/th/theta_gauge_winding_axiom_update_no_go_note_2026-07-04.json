@@ -1,0 +1,140 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_gauge_winding_axiom_update_no_go_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "strong_cp_theta_zero_note",
+    "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
+    "realized_state_primitive",
+    "kinetic_isotropy_primitive"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "18cde6f4bf63082da861253a3c4bc86f5da587cee93a0d2b4f91fa58efcbadb9",
+  "note_path": "docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.400532+00:00",
+      "audit_date": "2026-07-10T02:23:36.520806+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited.",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": "Conditional exclusion of a local cross-plane F tilde F slot only inside the supplied additive per-plaquette action class A = sum_P f(U_P)."
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive",
+          "strong_cp_theta_zero_note",
+          "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09"
+        ],
+        "load_bearing_score": 3.5,
+        "runner_hash": "59aa69aa75c98cf728d822122225b11b3fdeaba1ff93c4e2888c551629b44147",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_gauge_winding_axio-083",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted axiom and primitive authorities explicitly restrict their content, while the retained-bounded theta authorities preserve the stated action/Q/readout gaps. This closes the narrow repository-surface non-supply claim, but only as cross-note boundary verification.",
+      "claim_scope": "Historical bounded non-supply result: the stated axioms and approved primitives do not themselves provide the gauge-action, Q-sector, branch/readout, or weighting structure needed for the theta gauge-side winding account; no universal exclusion or retirement is established.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T02:23:36.520806+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "The four axioms and approved primitives do not supply a gauge measure/action, topological-sector functional, branch or section choice, or nonvacuous theta-gauge weighting law.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained-grade independence or countermodel theorem demonstrating the non-entailment of gauge Q/readout/weighting structure from the complete approved premise set, and mark the Tier-A registry citation as historical non-load-bearing context in this note.",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 133,
+        "C": 0,
+        "D": 0,
+        "total_pass": 157
+      },
+      "verdict_rationale": "The runner performs 133 textual, ledger, and cross-note checks plus 24 exact finite or symbolic sanity checks; it contains no first-principles class-C closure and no external-comparator checks. Its finite U(1), SU(2), and mixed-derivative calculations support the stated boundaries but are not the load-bearing proof of non-supply. Moreover, the cited Tier-A registry authority is meta rather than retained-grade, so the rubric prevents an audited-clean verdict even though the narrowly scoped bookkeeping conclusion follows."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_gauge_winding_axiom_update_no_go_2026_07_04.py",
+  "title": "Theta Gauge Winding Axiom-Update No-Go",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

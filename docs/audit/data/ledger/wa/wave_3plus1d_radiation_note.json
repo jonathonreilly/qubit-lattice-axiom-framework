@@ -1,0 +1,135 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_3plus1d_radiation_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_3plus1d_promotions_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c39bfb58a9fe72440468e99aa425774dfec4d8e837d2968741052f5a88874fdb",
+  "note_path": "docs/WAVE_3PLUS1D_RADIATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370054+00:00",
+      "archived_for_note_hash": "02f3aa59292d4cd1b8d4ef4587b981ea1bb22aa0a87c8ca4c7891ab73f69b7bd",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.412557+00:00",
+      "audit_date": "2026-05-11T18:37:05.705999+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "wave_3plus1d_promotions_note": "Finite (3+1)D wave-operator promotion: delta-pulse first arrival satisfies first_dt = r for r=2..8, and the moving-source retarded history differs from the layerwise stitched late-time-frozen comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; no true c->infinity instantaneous comparator or combined three-signature closure is audited."
+        },
+        "dep_claim_type": {
+          "wave_3plus1d_promotions_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_3plus1d_promotions_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_3plus1d_promotions_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "b04495ccee8f10c13ab9fb265ee13fc488c6ee78d92ba9be5da0019eeb5a6a23",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the 7-point 3D wave stencil and directly reproduces the note's lightcone, falloff, frequency, DFT, and null tables. The direct dependency is retained_bounded only for its finite lightcone/stitched-comparator scope, so this audit does not promote the combined three-signature story beyond the radiation-falloff lane.",
+      "claim_scope": "Finite (3+1)D wave-equation radiation falloff on the registered NL=30, 19^3 transverse grid: delta-pulse first_dt=r for r=2..8, sinusoidal-drive peak slope -1.139 at f=0.10, frequency sweep slopes {-1.260,-1.139,-0.790,-0.983}, drive-frequency DFT dominance, and exact f=0 null; excludes full scalar-wave closure, backreaction, beam-side observables, and true c->infinity instantaneous-comparator claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T18:37:05.705999+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Promoting the spatial Laplacian from 2D to 3D gives a finite-run radiation amplitude falloff with log-log slope -1.139 at drive f=0.10, with drive-frequency dominance and exact zero-source nulls on the registered 19^3 transverse cube.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck only if later work cites this row as closing the full (3+1)D scalar-wave story, true instantaneous c->infinity retardation, backreaction, or beam-side observables rather than the finite radiation-falloff diagnostics audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The bounded claim closes because the live runner and cached/log artifacts match the note's finite numerical tables: first_dt=r to r=8, radiation slope -1.139 at f=0.10, frequency-sweep slopes clustered around -1, drive-frequency DFT dominance, and zero-source nulls. The source's own claim boundary excludes the full scalar-wave story and routes the promotion lane separately; the retained dependency is also scoped to finite lightcone and stitched-comparator facts rather than a true c->infinity comparator. Residual risk is finite-domain and near-field interpretation, not a blocker for the stated bounded finite-run result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_3plus1d_radiation.py",
+  "title": "(3+1)D Wave-Equation Radiation: Full Spatial Laplacian",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

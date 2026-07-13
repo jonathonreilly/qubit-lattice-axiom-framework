@@ -1,0 +1,172 @@
+{
+  "audit_date": "2026-05-11T15:47:24.543919+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "global_coherence_off_scaffold_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+    },
+    "dep_claim_type": {
+      "global_coherence_off_scaffold_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "global_coherence_off_scaffold_note": "retained_bounded"
+    },
+    "deps": [
+      "global_coherence_off_scaffold_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "368a22334d13e5904e8b9af70806701195dea31700483fc6fe05176b792e16d6",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.",
+  "claim_id": "global_coherence_predictor_note",
+  "claim_scope": "Historical scaffolded global-coherence finite replay: free_coh >= 7.9597e-04 gives 7/9 scaffolded held-out accuracy versus 6/9 for the old two-property rule, with the retained off-scaffold dependency limiting this to scaffold-specific evidence and closing the classifier lane.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-11T15:47:24.543919+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "global_coherence_off_scaffold_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/independent_generators_heldout.py",
+    "scripts/universality_classifier.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The live replay asserts the archived scaffolded 7/9 free_coh result against the old 6/9 two-property rule, while the source note's 2026-04-07 update and dependency restrict that result to scaffold-specific historical evidence.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "18feae857e1c48d96b3c19556b1626a8fedcc49d60b0a7368f01ac7072571717",
+  "note_path": "docs/GLOBAL_COHERENCE_PREDICTOR_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-audit if cited without the off-scaffold reversal, or if the scope is widened to a generator-agnostic coherence theorem or simple-classifier exhaustion theorem.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368494+00:00",
+      "archived_for_note_hash": "f446080b15e27270db8555745ace454ee6f071b7e67700d235a8f143834f03b9",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T12:12:50.873667+00:00",
+      "archived_for_note_hash": "f5ea18884cef03886e1df49b272783fb6ff16993e1d8469e84bcbaa57b2f58f6",
+      "audit_date": "2026-04-30T01:26:09.026107+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The candidate retained-grade partial-positive claim is stale relative to the note's own update and its one-hop off-scaffold dependency. The source now says the revival was scaffold-specific and kept for record, not a live retained predictor theorem.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The single-property free_coh >= 7.96e-04 rule improves cross-generator accuracy from 6/9 to 7/9 on scaffolded data, but the 2026-04-07 off-scaffold update says the advantage disappears and the classifier lane is closed.",
+      "load_bearing_step_class": "G",
+      "open_dependency_paths": [
+        "docs/GLOBAL_COHERENCE_OFF_SCAFFOLD_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the row still presents a candidate retained-grade partial predictor even though the source note's lead update and the one-hop off-scaffold authority state that the advantage collapsed to 5/9 and the classifier program is closed. Why this blocks: the current packet contradicts the retained surface; at most the scaffolded 7/9 result remains historical finite evidence. Repair target: change the source status to bounded/retired or split out a historical scaffolded-observation note, then register and run the predictor/off-scaffold runners if a finite-result audit is desired. Claim boundary until fixed: safe to say free_coh was a scaffold-specific empirical predictor candidate that failed off-scaffold; not safe to retain it as a live global coherence predictor."
+    },
+    {
+      "archived_at": "2026-05-11T09:50:45.943917+00:00",
+      "archived_for_note_hash": "2f240a64449669d4761bdbe4619d820372a17e16ed9c03724599c2dd37c6061e",
+      "audit_date": "2026-05-03T03:02:17.791116+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "global_coherence_off_scaffold_note": "retained_bounded"
+        },
+        "deps": [
+          "global_coherence_off_scaffold_note"
+        ],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-bacon-3rd-019debc8-b7e9-72d3-9a8d-e85ec479aaf8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop dependency is now closed and retained, but the primary scaffolded 7/9 versus 6/9 computation is load-bearing and has no current replay output. The runner was terminated after about six minutes with no stdout, so the computation is unreplayed in this audit session.",
+      "claim_scope": "Historical bounded scaffold-specific claim that one global free-beam coherence threshold improved the original scaffolded cross-generator comparator from 6/9 to 7/9, while the retained off-scaffold dependency limits the result to non-general finite evidence.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T03:02:17.791116+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note's load-bearing step is the scaffolded held-out comparison that free_coh >= 7.96e-04 scored 7/9 versus 6/9 for the old two-property rule, later bounded by the retained off-scaffold 5/9 null-advantage dependency.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide a successful registered runner replay or archived deterministic output for the scaffolded swept/cross-generator comparison.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the dependency block is repaired, but the primary runner produced no live replay output for the scaffolded comparator numbers. Why this blocks: audited_clean requires the bounded computation or held-out comparison to close from the provided evidence without unreplayable load-bearing support, and the 7/9 versus 6/9 scaffolded result is exactly the load-bearing step. Repair target: provide a successful registered runner replay or archived deterministic output for the scaffolded swept/cross-generator comparison. Claim boundary until fixed: historical scaffold-specific finite evidence only, with no promotion to a live classifier closure theorem or simple-classifier exhaustion result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 1,
+    "B": 0,
+    "C": 0,
+    "D": 1,
+    "total_pass": 2
+  },
+  "runner_path": "scripts/global_coherence_predictor.py",
+  "title": "Global Free-Beam Coherence Predictor \u2014 Modest Revival",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here."
+}

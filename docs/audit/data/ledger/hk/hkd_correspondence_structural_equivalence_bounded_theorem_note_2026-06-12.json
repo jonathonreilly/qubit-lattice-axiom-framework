@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "32bcc51665ea4e20bf4ae8f147ad2c775d14a5ebb0407f656b6b3ac1820f8c3c",
+  "note_path": "docs/HKD_CORRESPONDENCE_STRUCTURAL_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:31.962167+00:00",
+      "audit_date": "2026-07-09T10:04:29.078107+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4a8e0ee5c971d4370e53d07e3ddfdd3e93aecfc3ac48b1a8a65efddc86bef0ec",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-gridsentry-20260709",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the finite step-2 Schur output and entry decomposition for every listed L, then verifies the protected/unprotected equivalences and the L=10 witness. The claim does not import a downstream verdict or assert full-L or physical-observable closure.",
+      "claim_scope": "Fixed-grid bounded verification for the synthetic d=3 step-2 chart family with K-periods (L/2,L,L/2) on L in {8,10,12,14,16,18}.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T10:04:29.078107+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "On the full listed grid, zero misaligned survivor entries is equivalent both to H_kd_after < 1e-14 and to all K-chart periods being even.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The bounded fixed-grid claim closes in the restricted packet because the verifier computes the Schur output, survivor decomposition, protection equivalences, and L=10 counter-witness directly for the listed grid, with TOTAL: PASS=18 FAIL=0 and py_compile passing. Residual risk is limited to the bounded synthetic-family scope and numerical dense-linear-algebra implementation; no full-L theorem or physical observable bridge is audited here."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py",
+  "title": "H_kd Vanishing Is Equivalent to Zero Misaligned Survivor Entries for the d=3 Step-2 Chart Family on L = {8,10,12,14,16,18} (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

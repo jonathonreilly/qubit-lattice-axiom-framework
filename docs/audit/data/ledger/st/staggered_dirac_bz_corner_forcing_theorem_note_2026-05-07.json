@@ -1,0 +1,554 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_structure_note",
+    "s3_taste_cube_decomposition_note",
+    "site_phase_cube_shift_intertwiner_note",
+    "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+    "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+  ],
+  "direct_in_degree": 42,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 30.482,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a86ce8a41b50532d6f5380a5fb803cd8b85ddbb486482e04a9b174af3ac3cb5e",
+  "note_path": "docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:32:01.705070+00:00",
+      "archived_for_note_hash": "accd0ad589281ba583b4f3db29525393325e14ea78fb86c1f627c016ff430ec1",
+      "audit_date": "2026-06-15T20:06:34.047267+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "Substep-1 block theorem: free CCR boson excluded and single-pair Grassmann unique only within the two-candidate dim-2 surface; unconditional statistics forcing is false; given GL(F), Grassmann/CAR is the unique survivor in the explicit three-candidate list.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative.",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "Exact finite-dimensional algebra theorem on the retained hw=1 carrier H_hw=1 ~= C^3 with basis X_1, X_2, X_3: the coordinate projectors D_3 together with the C3[111] cycle generate M_3(C), and the only subspaces invariant under both retained structures are 0 and C^3. Equivalently, there is no nontrivial proper quotient preserving both translation-character separation and the C3[111] cycle. Physical-species interpretation, SM-generation identification, full staggered-carrier/substrate realization, and broader matter-content closure are out of scope.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "positive_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02": "retained",
+          "three_generation_observable_theorem_note": "retained",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+          "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+          "three_generation_observable_theorem_note",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 36.306,
+        "runner_hash": "b8a1cff3e3cbbb92e6042e422e83aebb70312909fa530ea0bbb7718694d63b4c",
+        "transitive_descendants": 894
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260615T200633Z-staggered_dirac_bz_corner_forcin",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The 1+3+3+1 Hamming count, distinct hw=1 translation characters, C3 cycle, and inherited M_3(C)/no-proper-quotient algebra are finite class-A checks over the supplied cube. But the source and runner also assert that position-space K-S sublattice/chirality parity corresponds to even/odd Hamming weight; the restricted packet only supplies epsilon as position-space parity, and the site-phase bridge makes the corresponding phase operators shift BZ... | J2: The finite {0,1}^3 Hamming-count and the hw=1 translation-character/C3 algebraic support close as class-A finite algebra over the cited retained inputs. However the source and runner also include the sublattice/chirality grading claim that even/odd Hamming weight corresponds to position-space sublattice parity; the restricted site-phase bridge instead says site-phase multiplication shifts BZ-corner labels by xor operations, so this identificat... | J3: The finite cube algebra itself checks out independently: {0,1}^3 has Hamming counts 1+3+3+1, the hw=1 translation characters are the three distinct sign triples, the C3 coordinate cycle is a genuine 3-cycle, and the cited projector-plus-cycle algebra generates M_3(C). The non-clean issue is the source's extra sublattice/chirality identification: the provided K-S authority supplies position-space epsilon parity, while the provided site-phase br... | J4: The finite cube arithmetic itself closes: {0,1}^3 has binomial Hamming counts 1+3+3+1, the hw=1 corners have the three distinct translation characters, and diagonal projectors plus a 3-cycle generate M_3(C). However, the source also asserts a sublattice/chirality grading by even/odd Hamming weight. In the restricted packet, the K-S note supplies position-space epsilon parity, while the site-phase bridge states that phase multiplication shifts... | J5: The finite cube arithmetic itself checks independently: {0,1}^3 has 8 corners, binomial Hamming multiplicities 1+3+3+1, hw=1 translation characters {(-1,+1,+1),(+1,-1,+1),(+1,+1,-1)}, and the C3 coordinate cycle closes the retained M_3(C) algebraic setup. The source also makes the quantitative chirality/sublattice-parity identification 'hw even = sublattice A, hw odd = sublattice B' from Block 03; the provided K-S authority supplies position-s...",
+      "claim_scope": "BZ-corner Hamming-weight decomposition and inherited hw=1 M_3(C) support, as written with the claimed even/odd Hamming-weight sublattice/chirality identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T20:06:34.047267+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T20:00:26.788284+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-195736-49c96754c0-staggered_dirac_bz_corner_fo",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the supplied retained-bounded K-S staggered-Dirac/corner-structure surface, the eight binary BZ-corner labels decompose by Hamming weight as 1+3+3+1, and the hw=1 triplet carries the retained translation-character/C3 algebraic M_3(C) no-proper-quotient support; no physical-generation identification or full realization-gate closure is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-15T20:04:04.717040+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-200109-0cf8c10e28-staggered_dirac_bz_corner_fo",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "BZ-corner Hamming-weight decomposition on the supplied staggered-Dirac/K-S surface, together with inherited hw=1 M_3(C) / no-proper-quotient algebraic support.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-15T20:06:34.047267+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260615T200633Z-staggered_dirac_bz_corner_forcin",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "BZ-corner Hamming-weight decomposition and inherited hw=1 M_3(C) support, as written with the claimed even/odd Hamming-weight sublattice/chirality identification.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "It narrowed the audited scope past a math-bearing source claim and did not account for the sublattice/chirality even-odd Hamming identification that the provided one-hop authorities do not prove. | The first audit treated the APBC/sublattice-chirality material as harmless boundary context and did not inventory the displayed sublattice-parity identity as part of the source claim and runner checks. | The first audit treated APBC/corner algebra narrowing as sufficient and did not audit the displayed sublattice/chirality formula against the site-phase bridge in the packet. | It treated the sublattice/chirality Hamming-parity sentence as harmless boundary context and did not reconcile it with the provided site-phase bridge formula P_mu |X_alpha> = |X_(alpha xor e_mu)>; under the required formula inventory pass, that unsupported displayed grading prevents audited_clean. | The first audit narrowed past a math-bearing sentence in the source and treated APBC/sublattice parity as non-load-bearing context, despite the strict formula-inventory requirement and the restricted packet's site-phase bridge tension with the claimed Hamming-parity chirality assignment.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The 1+3+3+1 Hamming count, distinct hw=1 translation characters, C3 cycle, and inherited M_3(C)/no-proper-quotient algebra are finite class-A checks over the supplied cube. But the source and runner also assert that position-space K-S sublattice/chirality parity corresponds to even/odd Hamming weight; the restricted packet only supplies epsilon as position-space parity, and the site-phase bridge makes the corresponding phase operators shift BZ... | J2: The finite {0,1}^3 Hamming-count and the hw=1 translation-character/C3 algebraic support close as class-A finite algebra over the cited retained inputs. However the source and runner also include the sublattice/chirality grading claim that even/odd Hamming weight corresponds to position-space sublattice parity; the restricted site-phase bridge instead says site-phase multiplication shifts BZ-corner labels by xor operations, so this identificat... | J3: The finite cube algebra itself checks out independently: {0,1}^3 has Hamming counts 1+3+3+1, the hw=1 translation characters are the three distinct sign triples, the C3 coordinate cycle is a genuine 3-cycle, and the cited projector-plus-cycle algebra generates M_3(C). The non-clean issue is the source's extra sublattice/chirality identification: the provided K-S authority supplies position-space epsilon parity, while the provided site-phase br... | J4: The finite cube arithmetic itself closes: {0,1}^3 has binomial Hamming counts 1+3+3+1, the hw=1 corners have the three distinct translation characters, and diagonal projectors plus a 3-cycle generate M_3(C). However, the source also asserts a sublattice/chirality grading by even/odd Hamming weight. In the restricted packet, the K-S note supplies position-space epsilon parity, while the site-phase bridge states that phase multiplication shifts... | J5: The finite cube arithmetic itself checks independently: {0,1}^3 has 8 corners, binomial Hamming multiplicities 1+3+3+1, hw=1 translation characters {(-1,+1,+1),(+1,-1,+1),(+1,+1,-1)}, and the C3 coordinate cycle closes the retained M_3(C) algebraic setup. The source also makes the quantitative chirality/sublattice-parity identification 'hw even = sublattice A, hw odd = sublattice B' from Block 03; the provided K-S authority supplies position-s...",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none material | none material | none material | none material | none material",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: either add a one-hop bridge proving the BZ-corner Hamming-parity chirality/sublattice identification, or narrow the note and runner to the closed Hamming-count plus hw=1 M_3(C) algebraic support. | missing_bridge_theorem: add a one-hop theorem proving the claimed BZ-corner Hamming-parity chirality/sublattice identification, or narrow the note and runner to the closed Hamming-count plus hw=1 M_3(C) support. | missing_bridge_theorem: add a one-hop bridge proving the BZ-corner Hamming-parity chirality/sublattice identification, or narrow the note and runner to the closed Hamming-count plus hw=1 M_3(C) support. | missing_bridge_theorem: add a one-hop theorem proving the claimed BZ-corner Hamming-parity chirality/sublattice identification, or narrow the source and runner to the closed Hamming-count plus hw=1 M_3(C) algebraic support. | missing_bridge_theorem: add a direct theorem proving the BZ-corner Hamming-parity chirality/sublattice identification, or narrow the source and runner to the closed Hamming-count plus hw=1 M_3(C) algebraic support.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 5/5 ratified the second tuple (audited_conditional, bounded_theorem, class A). Vote breakdown: J1: second / audited_conditional / bounded_theorem / A; J2: second / audited_conditional / bounded_theorem / A; J3: second / audited_conditional / bounded_theorem / A; J4: second / audited_conditional / bounded_theorem / A; J5: second / audited_conditional / bounded_theorem / A. Majority rationale: J1: The 1+3+3+1 Hamming count, distinct hw=1 translation characters, C3 cycle, and inherited M_3(C)/no-proper-quotient algebra are finite class-A checks over the supplied cube. But the source and runner also assert that position-space K-S sublattice/chirality parity corresponds to even/odd Hamming weight; the restricted packet only supplies epsilon as position-space parity, and the site-phase bridge makes the corresponding phase operators shift BZ... | J2: The finite {0,1}^3 Hamming-count and the hw=1 translation-character/C3 algebraic support close as class-A finite algebra over the cited retained inputs. However the source and runner also include the sublattice/chirality grading claim that even/odd Hamming weight corresponds to position-space sublattice parity; the restricted site-phase bridge instead says site-phase multiplication shifts BZ-corner labels by xor operations, so this identificat... | J3: The finite cube algebra itself checks out independently: {0,1}^3 has Hamming counts 1+3+3+1, the hw=1 translation characters are the three distinct sign triples, the C3 coordinate cycle is a genuine 3-cycle, and the cited projector-plus-cycle algebra generates M_3(C). The non-clean issue is the source's extra sublattice/chirality identification: the provided K-S authority supplies position-space epsilon parity, while the provided site-phase br... | J4: The finite cube arithmetic itself closes: {0,1}^3 has binomial Hamming counts 1+3+3+1, the hw=1 corners have the three distinct translation characters, and diagonal projectors plus a 3-cycle generate M_3(C). However, the source also asserts a sublattice/chirality grading by even/odd Hamming weight. In the restricted packet, the K-S note supplies position-space epsilon parity, while the site-phase bridge states that phase multiplication shifts... | J5: The finite cube arithmetic itself checks independently: {0,1}^3 has 8 corners, binomial Hamming multiplicities 1+3+3+1, hw=1 translation characters {(-1,+1,+1),(+1,-1,+1),(+1,+1,-1)}, and the C3 coordinate cycle closes the retained M_3(C) algebraic setup. The source also makes the quantitative chirality/sublattice-parity identification 'hw even = sublattice A, hw odd = sublattice B' from Block 03; the provided K-S authority supplies position-s..."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.986591+00:00",
+      "audit_date": "2026-06-18T02:21:23.371666+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "Substep-1 block theorem: free CCR boson excluded and single-pair Grassmann unique only within the two-candidate dim-2 surface; unconditional statistics forcing is false; given GL(F), Grassmann/CAR is the unique survivor in the explicit three-candidate list.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 35.355,
+        "runner_hash": "86cd6ef3a20799dc049bbea4cb951a2dcf4ef381eb27cde8a4afe80def9d6bf7",
+        "transitive_descendants": 925
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-021040-5a6921b6-staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing claims are exact finite enumeration and matrix-algebra checks over the provided BZ-corner carrier, and the runner source actually computes the projectors, ranks, span dimension, matrix units, invariant subsets, and epsilon bit-complement action. The physical-species and Hamming-parity-as-chirality readings are explicitly fenced out, and the one-hop load-bearing authorities are retained-grade within this bounded scope.",
+      "claim_scope": "On the supplied staggered-Dirac BZ-corner/taste-cube surface, the eight binary corners decompose as 1+3+3+1 by Hamming weight; the hw=1 triplet carries the finite M_3(C) projector/cycle algebra with no proper subspace preserving both structures; epsilon only complements BZ-corner bits and is not a chirality identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T02:21:23.371666+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T02:18:42.376201+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-021040-5a6921b6-staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-algebra theorem on the supplied staggered-Dirac BZ-corner carrier: {0,1}^3 splits by Hamming weight as 1+3+3+1; the hw=1 sector has M_3(C) generated by translation projectors plus C_3[111] and no proper invariant quotient; no physical-generation or chirality identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T02:21:23.371666+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-021040-5a6921b6-staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the supplied staggered-Dirac BZ-corner/taste-cube surface, the eight binary corners decompose as 1+3+3+1 by Hamming weight; the hw=1 triplet carries the finite M_3(C) projector/cycle algebra with no proper subspace preserving both structures; epsilon only complements BZ-corner bits and is not a chirality identification.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:staggered_dirac_grassmann_forcing_theorem_note_2026-05-07:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The finite {0,1}^3 BZ-corner carrier splits by Hamming weight as 1+3+3+1, and on the hw=1 sector the translation-character projectors together with the C_3[111] cycle recover all nine matrix units E_ij, so they generate M_3(C) with no proper invariant subspace.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that later consumers preserve the bounded APBC/BZ-corner scope and do not promote this finite algebraic triplet to physical generations or chirality closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The proof reduces to finite algebra on the explicit binary corner carrier, not a fitted numerical comparison or a definition substitution. The runner is not merely printing PASS lines: it enumerates the corners, constructs translation matrices and projectors, verifies matrix-unit recovery and generated span dimension 9, checks invariant coordinate subsets under the C3 cycle, and verifies epsilon as bit complement. The retained-bounded upstream material supplies the bounded BZ-corner surface, while the note does not import the open physical-species, full-gate, or chirality identifications."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.086991+00:00",
+      "audit_date": "2026-06-21T07:11:23.828340+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "Audited the bounded three-part substep-1 claim: free-CCR bosons are excluded on the retained dim-2 per-site space within the two-candidate surface; Grassmann/CAR is selected within {free boson, hard-core boson, Grassmann/CAR} conditional on GL(F); unconditional statistics forcing is false.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 35.319,
+        "runner_hash": "86cd6ef3a20799dc049bbea4cb951a2dcf4ef381eb27cde8a4afe80def9d6bf7",
+        "transitive_descendants": 902
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from retained bounded corner-surface inputs plus exact finite enumeration and matrix algebra on the restricted carrier. The note fences off physical-generation and chirality/sublattice identifications, so those unclosed readings are not part of the audited claim.",
+      "claim_scope": "Finite bounded BZ-corner algebraic support: the supplied eight-corner {0,1}^3 carrier decomposes as 1+3+3+1 by Hamming weight; the hw=1 sector carries the exact projector/C3-generated M_3(C) algebra with no proper nonzero invariant subspace, and epsilon acts by bit-complement rather than diagonal Hamming-parity chirality.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T07:11:23.828340+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T07:08:20.501064+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-algebra theorem on the supplied staggered-Dirac Z^3 APBC BZ-corner carrier: the eight corners split by Hamming weight as 1+3+3+1, and the hw=1 triplet has the stated M_3(C) and no-proper-subspace structure; no physical-generation or chirality identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T07:11:23.828340+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite bounded BZ-corner algebraic support: the supplied eight-corner {0,1}^3 carrier decomposes as 1+3+3+1 by Hamming weight; the hw=1 sector carries the exact projector/C3-generated M_3(C) algebra with no proper nonzero invariant subspace, and epsilon acts by bit-complement rather than diagonal Hamming-parity chirality.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:staggered_dirac_grassmann_forcing_theorem_note_2026-05-07:retained_bounded->unaudited",
+      "load_bearing_step": "On the supplied {0,1}^3 BZ-corner carrier, Hamming weight gives 1+3+3+1, and on hw=1 the translation-character projectors together with the C3[111] cycle recover all nine matrix units, generating M_3(C) with no proper invariant quotient.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean scope bounded to the supplied BZ-corner carrier and re-check that downstream consumers do not promote hw=1 to physical generations or Hamming parity to chirality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source genuinely computes the finite carrier, Hamming counts, translation characters, rank-one projectors, C3 cycle, matrix-unit recovery, span dimension 9, invariant-subspace exclusion, and epsilon bit-complement boundary. The cited one-hop authorities are retained or retained_bounded, and the source does not rely on the older M3/no-quotient notes as opaque proof. The clean verdict is bounded to this exact algebraic BZ-corner surface and does not promote the full staggered-realization gate, physical-species reading, or chirality identification."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.479876+00:00",
+      "audit_date": "2026-06-30T19:09:23.380823+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "Bounded substep-1 block theorem: free CCR boson is excluded on the retained dim-2 per-site space and single-pair Grassmann is the two-candidate survivor; within {free boson, hard-core boson, Grassmann/CAR}, GL(F) conditionally selects Grassmann/CAR; unconditional statistics forcing is not claimed.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 35.319,
+        "runner_hash": "86cd6ef3a20799dc049bbea4cb951a2dcf4ef381eb27cde8a4afe80def9d6bf7",
+        "transitive_descendants": 902
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T190923Z-9ce35be3-staggered_dirac_bz_corne",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained bounded corner-carrier/Kawamoto-Smit inputs, the theorem reduces to exact finite enumeration and matrix algebra. The physical-species and chirality identifications are explicitly excluded, so no unclosed bridge is needed for the audited scope.",
+      "claim_scope": "Finite bounded support on the supplied staggered-Dirac BZ-corner carrier: {0,1}^3 decomposes by Hamming weight as 1+3+3+1; the hw=1 sector carries the exact M_3(C) algebra generated by translation projectors and C3[111]; no proper nonzero subspace preserves both; epsilon complements all BZ bits rather than giving a diagonal chirality label.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T19:09:23.380823+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T19:06:06.991321+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T190606Z-02cb9348-staggered_dirac_bz_corne",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the retained bounded staggered-Dirac BZ-corner surface, the finite carrier {0,1}^3 has the 1+3+3+1 Hamming-weight decomposition, and the hw=1 triplet carries the exact M_3(C) projector/cycle algebra with no proper invariant quotient; no physical-generation or chirality identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T19:09:23.380823+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T190923Z-9ce35be3-staggered_dirac_bz_corne",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite bounded support on the supplied staggered-Dirac BZ-corner carrier: {0,1}^3 decomposes by Hamming weight as 1+3+3+1; the hw=1 sector carries the exact M_3(C) algebra generated by translation projectors and C3[111]; no proper nonzero subspace preserves both; epsilon complements all BZ bits rather than giving a diagonal chirality label.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:staggered_dirac_grassmann_forcing_theorem_note_2026-05-07:retained_bounded->unaudited",
+      "load_bearing_step": "Enumerating the binary BZ-corner carrier {0,1}^3 gives the 1+3+3+1 Hamming-weight split, and on hw=1 the translation-character projectors together with the C3[111] cycle recover all nine matrix units E_ij, hence generate M_3(C) with no proper invariant quotient preserving both structures.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that APBC is being used as bounded corner-carrier convention and not as an additional hidden finite-torus spectral claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source genuinely constructs the eight binary corners, translation matrices, projectors, C3 cycle, matrix-unit products, invariant coordinate subsets, and epsilon bit-complement action; it is not merely printing a PASS line. Independent algebra confirms the key steps: binomial Hamming counts give 1+3+3+1, distinct joint translation characters give rank-one projectors, and transitivity of the 3-cycle recovers all E_ij and forbids proper invariant coordinate subsets. All load-bearing upstream inputs are retained-grade or retained-bounded, and the audited scope does not import the open SM-generation or Hamming-parity/chirality bridge."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:46.086013+00:00",
+      "audit_date": "2026-07-02T10:49:51.438182+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "s3_taste_cube_decomposition_note": "Abstract finite-group representation theorem for the tensor-position permutation action of S_3 on C^8 = (C^2)^{\\otimes 3}; no framework taste-cube carrier or physical flavor interpretation is audited.",
+          "site_phase_cube_shift_intertwiner_note": "Exact intertwining of cube-shift operators on C^8 with lattice site-phase operators restricted to the eight BZ-corner subspace, including the induced Hadamard joint eigensystem.",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "Substep-1 bounded block theorem: free CCR boson excluded on the retained dim-2 per-site space within the two-candidate surface; Grassmann/CAR selected only conditionally on GL(F) within {free boson, hard-core boson, Grassmann/CAR}; unconditional statistics forcing is false.",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "Under the declared nearest-neighbor P-KIN plus site-local unitary P-SD surface on simply connected Z^3 regions, scalarizable phase systems are exactly the Clifford -1 cocycle solutions and form one local Z2/U(1) gauge class containing the Kawamoto-Smit representative.",
+          "three_generation_structure_note": "On the registered Tier-A admitted staggered-Dirac/Wilson Z^3 surface, the BZ-corner Wilson spectrum has Hamming degeneracy 1+3+3+1 with hw=1 as the unique lightest nonzero triplet, and the direct dependency supplies only the exact M_3(C)/no-proper-quotient statement for that triplet; no-rooting, physical species, SM-generation, CKM, chirality, substrate-physicality, and full matter-content claims are out of scope."
+        },
+        "dep_claim_type": {
+          "s3_taste_cube_decomposition_note": "positive_theorem",
+          "site_phase_cube_shift_intertwiner_note": "positive_theorem",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "bounded_theorem",
+          "three_generation_structure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "s3_taste_cube_decomposition_note": "retained",
+          "site_phase_cube_shift_intertwiner_note": "retained",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07": "retained_bounded",
+          "three_generation_structure_note": "retained_bounded"
+        },
+        "deps": [
+          "s3_taste_cube_decomposition_note",
+          "site_phase_cube_shift_intertwiner_note",
+          "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+          "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+          "three_generation_structure_note"
+        ],
+        "load_bearing_score": 35.319,
+        "runner_hash": "86cd6ef3a20799dc049bbea4cb951a2dcf4ef381eb27cde8a4afe80def9d6bf7",
+        "transitive_descendants": 902
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T104951Z-83dd7e5e-staggered_dirac_bz_corne",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite binary-corner enumeration, translation characters, C3 cycle, matrix-unit generation, invariant-subspace check, and epsilon complement action all close by direct finite algebra. The result is clean only at the bounded carrier/algebraic-triplet scope and does not audit physical generation or chirality identification.",
+      "claim_scope": "On the cited bounded staggered-Dirac Z^3 BZ-corner carrier, the eight binary corners split as 1+3+3+1 by Hamming weight; the hw=1 sector carries the finite M_3(C) projector/cycle algebra with no proper invariant quotient, and epsilon acts by bit-complement rather than diagonal chirality.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T10:49:51.438182+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T10:46:00.057990+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T104600Z-25f82ec9-staggered_dirac_bz_corne",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the supplied staggered-Dirac BZ-corner carrier {0,1}^3 for Z^3 APBC, the corners split by Hamming weight as 1+3+3+1; the hw=1 sector has translation characters plus C_3[111] generating M_3(C) with no proper invariant subspace/quotient. No SM-generation or chirality identification is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T10:49:51.438182+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T104951Z-83dd7e5e-staggered_dirac_bz_corne",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the cited bounded staggered-Dirac Z^3 BZ-corner carrier, the eight binary corners split as 1+3+3+1 by Hamming weight; the hw=1 sector carries the finite M_3(C) projector/cycle algebra with no proper invariant quotient, and epsilon acts by bit-complement rather than diagonal chirality.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:staggered_dirac_grassmann_forcing_theorem_note_2026-05-07:retained_bounded->unaudited",
+      "load_bearing_step": "The translation-character projectors on the hw=1 triplet together with the C3[111] cycle recover all nine matrix units P_i C3^k P_j, so the generated algebra is M_3(C), and no proper nonzero coordinate subspace is C3-invariant.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the bounded scope and do not promote the hw=1 algebraic triplet to physical SM generations or chirality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing content is a genuine finite algebraic closure over the supplied retained/retained-bounded staggered-Dirac corner surface, not a definition, numerical match, or external comparator. The runner source actually enumerates {0,1}^3, constructs the translation matrices, rank-one projectors, C3 action, span rank, invariant subsets, and epsilon bit-complement map. The source note fences off the broader physical-species and Hamming-parity/chirality readings, so those open gate questions are outside this audited bounded scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/probe_bz_corner_decomposition.py",
+  "title": "Staggered-Dirac Substep 3 \u2014 BZ-Corner Three-Generation Forcing (Block 04)",
+  "transitive_descendants": 714,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

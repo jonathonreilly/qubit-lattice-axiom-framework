@@ -1,0 +1,174 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "ward_bogoliubov_no_continuous_ssb_low_d_bridge_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "27d917d3fe5b9c38ddd227646efba6fa50d02a922aadbf3f34c8c6c9a93bacae",
+  "note_path": "docs/WARD_BOGOLIUBOV_NO_CONTINUOUS_SSB_LOW_D_BRIDGE_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.523644+00:00",
+      "audit_date": "2026-06-13T03:23:15.201265+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "a3c9c8c602e140d1159decb33e1985ec2ec444471c8dfb50d87cb67eab6599b3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-032056-e1ceb8f40a-ward_bogoliubov_no_continuou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The independent commutator algebra gives the Ward identity, the field double commutator h sum_x S^x_x, and a bond double-commutator bounded by J N E(k); Fourier completeness gives the N^2/2 sum rule. With the retained IR threshold and finite beta, the assembled bound squeezes the thermodynamic-limit order parameter to zero as h -> 0.",
+      "claim_scope": "Finite-temperature nearest-neighbor U(1)-symmetric XY qubit Hamiltonian with transverse field on periodic d-dimensional sublattices, proving the commutator-normalized no-continuous-SSB weak-field conclusion for d <= 2 using the retained lattice IR-sum threshold.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T03:23:15.201265+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Combining (B1)-(B4) per mode gives m(h)^2 (1/N) sum_k 1/(J E(k)+h|m(h)|) <= beta/4, and the retained d <= 2 IR divergence then forces m(h) -> 0 as h -> 0 after the thermodynamic limit.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The runner source genuinely constructs the finite qubit spin operators, Gibbs state, Fourier modes, commutators, lattice sums, and falsifiers; it does not merely print constants or import the contested conclusion. A separate manual check of the signs, factors, Fourier normalization, beta/4 coefficient, field regulator, and E(k)=2 sum_mu(1-cos k_mu) kernel agrees with the note. The minimal axiom citation is an accepted-premise input, and the Coleman-Mermin-Wagner IR threshold authority is retained_bounded, so no non-retained dependency blocks this bounded theorem."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:33.695863+00:00",
+      "audit_date": "2026-07-10T04:47:17.412857+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a3c9c8c602e140d1159decb33e1985ec2ec444471c8dfb50d87cb67eab6599b3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00112-ward_bogoliubov_no_continuou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The qubit commutator algebra and bond-norm estimate establish the regulated lattice kernel bound, while the retained IR-threshold authority supplies the required d <= 2 divergence. Since |m| <= 1/2, the implicit regulator h|m| tends to zero with h, completing the weak-field conclusion.",
+      "claim_scope": "For the displayed nearest-neighbor U(1)-symmetric XY qubit Hamiltonian on finite periodic d-dimensional blocks, the audited chain proves the finite-volume order-parameter bound and, for fixed finite beta and d <= 2, vanishing transverse magnetization in the thermodynamic-limit-first weak-field limit.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:47:17.412857+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "The first-principles double-commutator bound 0 <= <[[Q_k,H],Q_{-k}]> <= N(J E(k)+h|m(h)|), combined with the Ward identity, Bogoliubov inequality, and mode sum rule, yields m(h)^2 S_Lambda(h|m(h)|) <= beta/4.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should preserve the narrow reading of the stated class as the displayed nearest-neighbor XY Hamiltonian and re-check the implicit use of the elementary qubit bound |m| <= 1/2 in the final limit argument.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The runner genuinely constructs the spin operators, Hamiltonians, Gibbs states, Fourier modes, and commutators; it does not merely print expected results or import a calibrated value. The analytic B1-B5 chain agrees with those computations and closes from the accepted lattice/qubit premise plus the independently retained IR threshold. The clean scope is the explicitly displayed nearest-neighbor XY family, not arbitrary finite-range U(1)-symmetric interactions."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
+  "title": "Ward/Bogoliubov Commutator-Normalized No-Continuous-SSB Bridge at d <= 2 (Finite Temperature)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

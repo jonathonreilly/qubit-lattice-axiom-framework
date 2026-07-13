@@ -1,0 +1,304 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+    "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
+  ],
+  "direct_in_degree": 25,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 21.97,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "da7aa1d876d02b53afcef66c614af6c467a55558f9828f1ca30f89983cc9790c",
+  "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368805+00:00",
+      "archived_for_note_hash": "052959de5e99865cb7c9955ef2bb28bae10457a8d31791e4723972ae41812028",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T15:10:53.967347+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the exact Herm_circ(3) block-total algebra and the finite d scan, but the retained closure claim depends on unaudited MRU/bridge notes and on a canonical choice between block-total and determinant log-laws that the source itself still lists as a residue.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The block-total Frobenius-squared functional E_I(H) = ||pi_I(H)||_F^2 is claimed to be the retained 1:1 real-isotype measure that discharges the MRU measure-choice residue and supplies an independent operator-side kappa = 2 closure route.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md",
+        "docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 13,
+        "D": 3,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the live runner verifies the block-total Frobenius formulas, kappa = 2 equal-weight extremum, d = 3 multiplicity pattern, and PDG consistency, but the note promotes this to a no-residue retained closure while citing MRU/bridge authorities that are not audit-clean and while later admitting a remaining choice between block-total and det log-laws. Why this blocks: existence of a natural (1,1) Frobenius functional does not by itself select that functional as the canonical physical extremal principle, discharge the determinant-law alternative, or close the spectrum-side Koide input. Repair target: audit-retain the MRU quotient/weight-class and spectrum-operator bridge inputs, and add a theorem plus runner that selects block-total over the determinant/rank law without importing the target kappa. Claim boundary until fixed: safely claim the runner-verified exact algebra on Herm_circ(3): E_+ = 3a^2, E_perp = 6|b|^2, equal-weight block-total extremum gives kappa = 2, d = 3 has the checked one-trivial-plus-one-doublet pattern, and PDG masses are consistent; do not claim the measure-choice residue is discharged or that the operator-side closure is retained."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.492675+00:00",
+      "archived_for_note_hash": "6ca19fd47d8bce0e65833cb5c8884d13c9deaefb56c60e6b976f6d8b515eb202",
+      "audit_date": "2026-05-03T18:19:22.692204+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the algebra after the block-total energy functional and equal-weight log-law are selected. It does not derive why that quotient carrier/log-law is the canonical physical choice rather than the determinant/rank-weighted law, and the note itself later records this as a remaining extremal-convention residue.",
+      "claim_scope": "Block-total Frobenius energies on Herm_circ(3) are asserted to supply the MRU 1:1 real-isotype measure and an operator-side kappa=2 route, with E_+ = 3 a^2, E_perp = 6 |b|^2, and d=3 multiplicity uniqueness.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T18:19:22.692204+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note asserts that the MRU law follows as the equal-weight extremum on the geometrically unique quotient carrier, leaving no remaining measure choice.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-check if the MRU quotient closure and obstruction notes are explicitly retained dependencies that derive the carrier/log-law selection; if so, the remaining algebraic portion may be clean under a narrower scope.",
+      "open_dependency_paths": [
+        "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_fail": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: the algebraic checks prove E_+ = 3 a^2, E_perp = 6 |b|^2, d=3 uniqueness, and kappa=2 conditional on choosing the block-total 1:1 law, but the load-bearing physical/canonical selection of that law is imported rather than derived in this row. Why this blocks: the conclusion that the measure choice is resolved with no residue does not follow from the runner or the self-contained proof, especially because the note acknowledges a competing natural determinant law with kappa=1. Repair target: add or cite a retained dependency theorem that derives the quotient carrier and equal-weight block-total log-law as the canonical scalar-lane extremal principle, or narrow this claim to the conditional algebraic theorem. Claim boundary until fixed: if the block-total Frobenius law is selected, the formulas, equal-weight extremum kappa=2, and d=3 multiplicity uniqueness are runner-supported."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:29.998600+00:00",
+      "archived_for_note_hash": "4c25d7a324bd037024224376f038a4b97ffd2def9e1d7c75793326384cbe2504",
+      "audit_date": "2026-06-15T21:31:54.389388+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "The audited claim is only the formal positive two-slot constrained log-volume theorem: with rho_plus^2 + rho_perp^2 = E_tot, L = log(rho_plus) + log(rho_perp) has its unique interior constrained maximum at equal squared radii, so the explicitly defined kappa = 2 rho_plus^2/rho_perp^2 equals 2 there.",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": "Audited only the unreduced 3x3 C3 isotypic-scalar determinant obstruction: determinant/log-volume multiplicities select kappa=1, not MRU; the SO(2) quotient route is context only."
+        },
+        "dep_claim_type": {
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 24.395,
+        "runner_hash": "c569fe3885e403925c612b5e4bcaaf75c06ac4fa5a9fc310b6d79ca54d7977b1",
+        "transitive_descendants": 237
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-212851-31e3ab575c-koide_kappa_block_total_frob",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Frobenius formulas and equal-weight extremum close algebraically for a stipulated block-total law. The cited authorities do not derive the physical SO(2) quotient or canonical scalar-lane 1:1 measure, so the claimed no-residue operator-side closure imports an extra bridge.",
+      "claim_scope": "Audited the claim that block-total Frobenius energies on `Herm_circ(3)` provide the 1:1 MRU real-isotype measure and close operator-side `kappa = 2`, including the stated `d = 3` uniqueness.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:31:54.389388+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The block-total law `S_block(H) = log E_+ + log E_perp` at fixed `E_+ + E_perp` extremizes at `E_+ = E_perp`, hence `3 a^2 = 6 |b|^2` and `kappa = a^2/|b|^2 = 2`, with the `(1,1)` weights justified as one scalar per real isotype.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the scalar-lane SO(2) quotient or canonical block-total measure principle from retained inputs, then correct the sign-multiplicity parity formula and re-audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md",
+        "docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 16
+      },
+      "verdict_rationale": "Issue: The local `E_+`, `E_perp`, and equal-weight extremum are valid algebra, but the note elevates the chosen block-total law to the canonical physical scalar-lane measure using an SO(2)-quotient bridge that both cited authorities explicitly withhold; the proof sketch also writes the sign multiplicity as `d mod 2` where the table and algebra require even-parity sign. Why this blocks: Without the carrier-identification or canonical-measure theorem, the conclusion that the operator-side measure choice is resolved and closes `kappa = 2` does not follow from the cited retained-bounded inputs. Repair target: Add an independently audited theorem deriving the scalar-lane SO(2) quotient or canonical block-total extremal principle from retained inputs, and correct the displayed all-`d` sign-multiplicity formula. Claim boundary until fixed: The packet supports the bounded algebra that the stipulated block-total law on `Herm_circ(3)` has its equal-weight extremum at `kappa = 2`."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.946669+00:00",
+      "audit_date": "2026-06-18T04:08:30.196508+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "The audited claim is only the formal positive two-slot constrained log-volume theorem: with rho_plus^2 + rho_perp^2 = E_tot, L = log(rho_plus) + log(rho_perp) has its unique interior constrained maximum at equal squared radii, so the explicitly defined kappa = 2 rho_plus^2/rho_perp^2 equals 2 there.",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": "Audited only the unreduced 3x3 C3 isotypic-scalar determinant obstruction: determinant/log-volume multiplicities select kappa=1, not MRU; the SO(2) quotient route is context only."
+        },
+        "dep_claim_type": {
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+          "koide_mru_weight_class_obstruction_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 20.901,
+        "runner_hash": "42311ed232d9e3150664de1bb270a3a1ed3cda17c37d31c278e9025194b9ae52",
+        "transitive_descendants": 238
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Frobenius norm formulas, constrained log extremum, and Hermitian-circulant multiplicity formula are exact algebra within the stipulated block-total carrier. The physical canonical-measure or scalar-lane quotient claim is explicitly outside the audited scope.",
+      "claim_scope": "Bounded finite-algebra claim on Herm_circ(d): the stipulated block-total Frobenius carrier gives one scalar slot per real isotype, yields kappa = 2 at d = 3 under the equal-weight log law, and d = 3 is unique for one trivial plus one doublet real-isotype pattern.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T04:08:30.196508+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T04:05:29.964726+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite algebra of the stipulated block-total Frobenius carrier on Herm_circ(d): the d=3 block-total formulas, equal-weight kappa=2 extremum, and d=3 uniqueness of the one-trivial-plus-one-doublet multiplicity pattern.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T04:08:30.196508+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-algebra claim on Herm_circ(d): the stipulated block-total Frobenius carrier gives one scalar slot per real isotype, yields kappa = 2 at d = 3 under the equal-weight log law, and d = 3 is unique for one trivial plus one doublet real-isotype pattern.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For H = a I + b C + bbar C^2, the block-total Frobenius slots are E_+ = 3 a^2 and E_perp = 6 |b|^2, so maximizing log E_+ + log E_perp at fixed E_+ + E_perp gives E_+ = E_perp and hence kappa = a^2/|b|^2 = 2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that future uses do not promote the bounded block-total carrier calculation into a canonical physical scalar-measure theorem without a separate bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic computation and optimization, not a numerical comparator or symbol renaming. The runner source visibly computes the projector identities, Frobenius formulas, finite multiplicity scan, synthetic consistency checks, and law separation; its PDG line is diagnostic only and not a PASS gate. The cited retained_bounded authorities are used only for the MRU weight context, while the source itself excludes physical canonicity of the block-total carrier from the theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py",
+  "title": "Koide kappa Block-Total Frobenius Measure Theorem",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

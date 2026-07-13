@@ -1,0 +1,403 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+    "free_dirac_poincare_representation_bounded_note_2026-05-30",
+    "free_field_os_wightman_reconstruction_conditional_theorem_note_2026-05-30"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.466,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "99d6bc4ada9f866f616b40cd5e98e579fe91748a464d76a68df8560062151e2b",
+  "note_path": "docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.075119+00:00",
+      "audit_date": "2026-06-03T01:56:39.145721+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification, in the retained positive-chirality Pauli realization of the one-qubit Cl(3,0) local algebra, of the per-site Pauli su(2) generators S_i = sigma_i/2 with the Hermitian infinitesimal Spin(3) lift generator data."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "6148703830c85b2ead6f6a372e8e0089bd8c4bf21d738c157c509a734674ff5c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-015327-88f88cce-koide_onsite_boost_recon",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the commutators, chirality Casimirs, kernel covariance, and scalar exclusion are algebraic representation-theory consequences of the Pauli/Cl(3,0) inputs. The massive positive-energy Dirac field and CAR application are explicitly left as the named partner-chirality/doubling residual.",
+      "claim_scope": "Finite on-site Cl(3,0) Pauli/bivector construction of so(3,1), chiral Weyl covariance of p0+p.sigma, little-group exclusion of a scalar carrier for spin-1/2 content, and identification of partner-chirality massive doubling as the remaining residual; not OS/Wightman reconstruction or CAR forcing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T01:56:39.145721+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "The spin-1/2 one-particle content of S(p) forces a faithful carrier containing j=1/2, the chiral Weyl C^2, and excludes the trivial scalar J=K=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the same bounded scope: the clean result does not certify OS reconstruction, spectrum condition rung C, massive partner-chirality field delivery, or CAR forcing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The load-bearing content is finite Clifford/Pauli and SL(2,C) representation algebra, not a numerical fit or definition substitution. The cited one-hop authorities are retained or retained_bounded, and the note does not rely on context-only unaudited reconstruction siblings to assert unconditional closure. The runner performs substantive matrix checks for the scoped finite claims, while the note honestly excludes the field-theoretic massive doubling and CAR selection from its conclusion."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.537001+00:00",
+      "audit_date": "2026-06-05T19:44:27.445615+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "In the retained one-qubit Pauli realization H_x = C^2, the per-site Pauli su(2) generators S_i = sigma_i/2 and the Clifford/Spin(3) infinitesimal generators, after the standard anti-Hermitian-to-Hermitian convention B_i = i S_i, are the same operator triple."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "6148703830c85b2ead6f6a372e8e0089bd8c4bf21d738c157c509a734674ff5c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-194117-73a44ec705-koide_onsite_boost_reconstru",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli bivector commutators, Weyl Casimirs, chiral kernel covariance, and J^2=3/4 versus scalar J^2=0 exclusion are finite algebraic/representation-theoretic checks over retained Clifford inputs. The source does not claim unconditional CAR or massive-field reconstruction, and leaves the partner-chirality positive-energy massive field as a residual.",
+      "claim_scope": "Finite Pauli/Cl(3,0) algebra establishes an on-site faithful chiral Weyl so(3,1) carrier and excludes the scalar carrier for the stated spin-1/2 kernel; massive Dirac delivery remains the named partner-chirality residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:44:27.445615+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "The spin-1/2 kernel/covariance content forces a carrier whose rotation restriction has J^2 = 3/4, so the faithful chiral Weyl C^2 carrier is allowed while the scalar J=K=0 carrier is excluded.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check the S7c Dirac-matrix convention, but the retained Cl(3,0)->Cl(3,1) authority, not that exhibit, carries the residual algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Within the bounded scope, the load-bearing selection is a genuine algebraic closure, not a definition, renaming, tuned numerical match, or external comparator check. All graph-visible cited authorities used load-bearing are retained-grade, and the runner source performs finite Pauli/Clifford and covariance checks rather than importing fitted data. The note's residual boundary is explicit: the massive Dirac partner-chirality/doubling field-theoretic realization is not claimed here."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.501250+00:00",
+      "audit_date": "2026-06-05T22:18:37.285413+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Operator-level identification on the retained one-qubit Pauli Cl(3,0) realization: the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Spin(3) generators from the Clifford action are the same Hermitian operator triple on C^2."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "6148703830c85b2ead6f6a372e8e0089bd8c4bf21d738c157c509a734674ff5c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-221610-2dbc6b91b6-koide_onsite_boost_reconstru",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded qubit-surface claim closes by Pauli matrix algebra, SL(2,C) Weyl covariance, and the SO(3) Casimir distinction between j=1/2 and j=0 carriers. The massive positive-energy Dirac field and CAR forcing are explicitly left outside the closed scope as the partner-chirality/doubling residual.",
+      "claim_scope": "Finite Pauli/Cl(3,0) construction of a chiral Weyl boost carrier on C^2, covariance of p0 + p.sigma, faithful-over-scalar selection for spin-1/2 content, and reduction of the massive Dirac closure to the named partner-chirality residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:18:37.285413+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "The spin-1/2 one-particle/kernel content must restrict to j=1/2 under the rest-frame SO(3) little group, so the Pauli carrier with J^2 = 3/4 hosts it while the scalar carrier J=K=0 has J^2 = 0 and cannot.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the bounded scope and do not treat the named partner-chirality/massive-field residual as already closed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Independent sign and factor checks match the packet: K_i = i sigma_i/2 gives [K_i,K_j] = -i epsilon_ijk J_k, the N/Ntilde Casimirs give one Weyl chirality, and exp(eta.sigma/2) implements the stated p0 + p.sigma covariance. The scalar alternative fails because its rotation Casimir is zero and it cannot covariantly transport the Pauli-valued kernel. All provided one-hop authorities are retained-grade, and the source does not claim the open massive partner-chirality field realization is closed."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.445302+00:00",
+      "audit_date": "2026-07-02T03:36:10.232271+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "In the canonical one-qubit Pauli/Cl(3,0) realization on C^2, the per-site Pauli spin generators S_i = sigma_i/2 coincide operator-level with the Clifford bivector/Spin(3) infinitesimal generator data, with proper cubic rotations checked by SU(2) conjugation."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+        ],
+        "load_bearing_score": 7.358,
+        "runner_hash": "6148703830c85b2ead6f6a372e8e0089bd8c4bf21d738c157c509a734674ff5c",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T033610Z-5f5269ea-koide_onsite_boost_recon",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli bivector identities, Lorentz commutators, Weyl Casimirs, and scalar-vs-Weyl little-group comparison close by algebra over retained-grade Clifford/SU(2) inputs plus standard representation theory. The note explicitly does not claim CAR forcing or full massive Dirac reconstruction, so the partner-chirality field realization is outside the audited closure.",
+      "claim_scope": "Finite Pauli/Cl(3,0) algebra establishes Grassmann-free on-site so(3,1) boosts, a faithful single-chirality Weyl carrier, covariance of the chiral kinetic kernel, and scalar exclusion for spin-1/2 content, while leaving massive partner-chirality field delivery as the named residual.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T03:36:10.232271+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27:retained_bounded->unaudited",
+      "load_bearing_step": "The spin-1/2 one-particle content forces a carrier with rotation Casimir J^2=3/4, so the faithful chiral Weyl C^2 carrier is allowed while the scalar J=K=0 carrier with J^2=0 is excluded.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The runner source genuinely computes the Pauli identities, boost-sign closure, Weyl Casimirs, finite-boost kernel covariance checks, scalar covariance failure, and the chirality-doubling residual; it is not a print-only certificate. All graph-visible upstream authorities in the restricted packet are retained-grade. The bounded scope is correctly limited to the massless chiral boost/selection surface and names the massive partner-chirality delivery as residual rather than claiming it closed. The source includes an N1-N8 no-go discipline gate adequate for this bounded residual framing."
+    },
+    {
+      "archived_at": "2026-07-10T09:00:47.594760+00:00",
+      "archived_for_note_hash": "a5bca02125e92c2a914414c97f9e45a413ea08fe0a0a8421d29c495edc559dae",
+      "audit_date": "2026-07-10T01:57:55.304773+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "Bounded algebraic verification of the textbook continuum free massive Dirac Poincare sector, including boost signs, mass-shell measure, Dirac spectrum, CAR finite-mode lower bound, and bispinor boost covariance.",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "Canonical Pauli realization gamma_i=sigma_i on C^2: internal S_i=sigma_i/2 and the self-adjoint infinitesimal Spin(3) unitary generators are the same 2x2 operators, with Clifford bivectors B_i=i*S_i."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "bounded_theorem",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30": "retained_bounded",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "free_dirac_poincare_representation_bounded_note_2026-05-30",
+          "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+        ],
+        "load_bearing_score": 5.907,
+        "runner_hash": "6148703830c85b2ead6f6a372e8e0089bd8c4bf21d738c157c509a734674ff5c",
+        "transitive_descendants": 14
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-koide_onsite_boost_recon-063",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite Pauli, Clifford, Casimir, and massless-kernel covariance identities close. The selection does not: no supplied theorem derives on-shell Wigner spin-1/2 content merely from a nonzero traceless part of an inverse quadratic form, and the massive SO(3) rest-frame argument cannot establish the stated massless-chiral conclusion, whose little group has no rest frame.",
+      "claim_scope": "The audit covered the on-site Pauli-bivector so(3,1) algebra, its chiral Weyl representation and massless kinetic-kernel covariance, the asserted faithful-versus-scalar selection, and the explicitly residual massive partner-chirality construction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:57:55.304773+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The statistics-blind kernel numerator is asserted to have spin-1/2 one-particle content, so the rest-frame little-group Casimir excludes the scalar carrier and forces the faithful chiral Weyl carrier.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving the kernel's on-shell Wigner or helicity content and its scalar-versus-Weyl intertwiners without assuming the carrier, and replace the massive-rest-frame argument or narrow the conclusion consistently before re-audit.",
+      "open_dependency_paths": [
+        "docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md",
+        "docs/FREE_FIELD_OS_WIGHTMAN_RECONSTRUCTION_CONDITIONAL_THEOREM_NOTE_2026-05-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The runner genuinely verifies the elementary bivector algebra, chiral Casimirs, and covariance of the massless kernel p0+p.sigma. Its load-bearing S5 selection is not computed: ok_scalar is hard-coded true and the selection check merely repeats ok_carrier, while S4 omits the massive numerator invoked in the argument. A reconstruction/intertwiner bridge establishing the claimed one-particle spin content without presupposing the Lorentz carrier is therefore still required."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/koide_onsite_boost_reconstruction_2026_06_02.py",
+  "title": "On-Site Weyl Boost Reconstruction: the Grassmann-Free so(3,1) Carrier and the Faithful-vs-Scalar Selection in R (reduces-to-residual)",
+  "transitive_descendants": 706,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

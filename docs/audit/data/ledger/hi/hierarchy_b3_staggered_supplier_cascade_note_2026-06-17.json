@@ -1,0 +1,445 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kinetic_isotropy_primitive",
+    "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+    "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+    "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "72ddfb1453967d2d698895dcf73f75106ba7edd1da341219abf46e163ba17d09",
+  "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.069311+00:00",
+      "audit_date": "2026-06-21T09:13:01.423347+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Given retained-bounded FSB-K with FSB-CL intact and the retained Z certificate, the finite-g_eff CL requirement distinguishes the two constructed K0/K1 kinetic kernels: K1 satisfies CL, K0 violates it, and phi = -1 is selected only within the declared two-class surface and free-Fermi probe boundary.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over the one-qubit C^2 site carrier, translation and proper-cubic covariance up to site-local U(1) frame collapse the kinetic family to the two flux classes {+1,-1}; the site-local absorbing frame exists and is unique up to gauge times global frame on the flux(-1) branch; the final flux(-1) selector is not forced by the stated constraints."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 9.077,
+        "runner_hash": "3913e133288ad1627437afbdd1e747b90072256ad563a7fea63028bffc9d6b3d",
+        "transitive_descendants": 269
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_b3_staggered_supplier_cascade_note_2026-06-17-second",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes within the stated bounded B3 surface. The packet supplies accepted or retained-grade authorities for the graining, count, boundary policing, and branch selection, and the runner source performs exact finite algebra for the count, Hamming staircase, characteristic polynomial, and determinant degree.",
+      "claim_scope": "Bounded source-side B3 dependency repair: the hierarchy exponent carrier N = 16 is sourced by the kinetic-isotropy primitive, retained 2^d species-count theorem, retained regulator-dependence boundary no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming hierarchy formula closure or using labeled-generation residuals.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T09:13:01.423347+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T09:10:00.839537+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_b3_staggered_supplier_cascade_note_2026-06-17-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded source-side dependency repair for hierarchy B3: the N=16 carrier and determinant-degree match are sourced from the accepted kinetic-isotropy primitive, retained 2^d species-count theorem, retained regulator-dependence no-go boundary, and retained-bounded P-FLUX branch selection within its licensed surface, without claiming B4/B5 or hierarchy closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T09:13:01.423347+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_b3_staggered_supplier_cascade_note_2026-06-17-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded source-side B3 dependency repair: the hierarchy exponent carrier N = 16 is sourced by the kinetic-isotropy primitive, retained 2^d species-count theorem, retained regulator-dependence boundary no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming hierarchy formula closure or using labeled-generation residuals.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "On the four-direction OS0 block, the hierarchy B3 exponent carrier is the unlabeled 2^4 = 16 count and matching determinant u0-degree 16, while the full staggered-Dirac parent gate's generation-labeling residual is not consumed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the current ledger status for the kinetic-class forcing row, since the cited-authority header marks it retained_bounded while the cached runner text reports the source as visible at status=unaudited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over retained-grade and accepted-primitive inputs, not an empirical comparator, tuned numerical match, or symbol renaming. The source and runner explicitly preserve the firewall: B4 and B5 remain open, regulator-independent promotion is blocked by the retained no-go, and the parent staggered realization gate's labeling residual is non-load-bearing. The bounded conclusion follows from the restricted packet without importing external physics or a full hierarchy closure."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.464373+00:00",
+      "audit_date": "2026-06-30T19:54:11.510098+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Within the explicitly scoped K0/K1 kinetic surface, retained_bounded FSB-K plus the retained (Z) certificate and self-contained mode-sum computations show K1 has finite g_eff while K0 has T^-2 divergent g_eff, selecting phi = -1 at the chain's retained-bounded grade.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C^2 qubit carrier, with translation/proper-cubic covariance up to site-local U(1) frame and site-local absorption scope, the kinetic classes collapse to flux \u00b11; P-SD is derived on the flux(-1) branch; the flux(-1) selector is not forced because K0 satisfies the imposed constraints."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 9.077,
+        "runner_hash": "3913e133288ad1627437afbdd1e747b90072256ad563a7fea63028bffc9d6b3d",
+        "transitive_descendants": 269
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T195411Z-2c23d46a-hierarchy_b3_staggered_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite carrier algebra closes: 2^4 = 16, the Hamming staircase is binomial, and D^2 = -4I gives det(u_0 D + m) = (m^2 + 4u_0^2)^8 with u_0-degree 16 at m = 0. The upstreams used for scope policing and branch selection are retained-grade or an approved primitive, and the note does not promote the excluded parent labeling residual.",
+      "claim_scope": "B3 source-side dependency repair for the hierarchy exponent carrier: accepted kinetic-isotropy graining, retained 2^4 count, determinant-degree recomputation, retained regulator-dependence boundary, and retained-bounded P-FLUX branch selection within its licensed surface; no B4/B5 or full hierarchy closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T19:54:11.510098+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T19:50:48.448892+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T195048Z-c1d00008-hierarchy_b3_staggered_s",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded B3 source-side supplier repair: the hierarchy exponent carrier is sourced by the OS0 four-direction surface, retained 2^4 count, determinant-degree 16 algebra, regulator-dependence boundary policing, and P-FLUX branch selection within its licensed surface; B4, B5, regulator-independent promotion, and generation-labeling remain out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T19:54:11.510098+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T195411Z-2c23d46a-hierarchy_b3_staggered_s",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "B3 source-side dependency repair for the hierarchy exponent carrier: accepted kinetic-isotropy graining, retained 2^4 count, determinant-degree recomputation, retained regulator-dependence boundary, and retained-bounded P-FLUX branch selection within its licensed surface; no B4/B5 or full hierarchy closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "For the hierarchy B3 surface, the load-bearing carrier is only the four-direction OS0/KS-surface integer N = 2^4 = 16 and the matching det(u_0 D + m) degree 16; regulator dependence and P-FLUX branch selection are consumed only at their retained bounded scopes, and labeled-generation residuals are not used.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check ledger-grade inputs and hierarchy-note source wiring if the hierarchy honest-status note or P-FLUX chain changes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The math-bearing part is a direct algebraic closure over the defined four-direction block and independently retained species-count input. The kinetic-isotropy dependency is an approved primitive, while the regulator no-go and P-FLUX composer are consumed at their retained-grade bounded scopes. The negative dependency claim is narrow: it excludes the parent staggered species-labeling residual only as load-bearing for this B3 exponent carrier, not as a possible downstream generation-label input."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.251635+00:00",
+      "audit_date": "2026-07-01T23:03:12.565684+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Within the stipulated two-class kinetic surface and using retained-bounded FSB-K plus the retained Z-certificate, the finite-g_eff CL criterion is satisfied by K1 and violated by K0, so the selected surface member has plaquette flux phi = -1; surface forcing, thermal equilibrium, and wholesale P-KIN retirement remain outside scope.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over one-site M_2(C), with translation/proper-cubic covariance up to local U(1) frame and simply connected topology imposed, the kinetic systems collapse to flux +/-1 classes; the P-SD absorbing frame exists and is unique on flux(-1); the flux(-1) selector is not forced because K0 also satisfies the constraints."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 9.077,
+        "runner_hash": "3913e133288ad1627437afbdd1e747b90072256ad563a7fea63028bffc9d6b3d",
+        "transitive_descendants": 269
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T230312Z-5b4bc409-hierarchy_b3_staggered_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated B3-only scope, the cited inputs supply the needed four-direction surface, the 2^4 count, the regulator-dependence boundary, and the KS branch-selection route. The runner independently verifies the finite algebra for the count, Hamming staircase, D^2=-4I, characteristic polynomial, and determinant degree 16.",
+      "claim_scope": "Bounded B3 dependency repair: source the hierarchy-row exponent carrier N=16 from the accepted kinetic-isotropy primitive, retained 2^d count, retained regulator-dependence no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming B4/B5 closure or labeled-generation realization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:03:12.565684+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T22:59:11.336223+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T225911Z-7054abf3-hierarchy_b3_staggered_s",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the bounded B3 dependency repair: kinetic isotropy supplies the four-direction surface, retained 2^d count plus finite determinant algebra supply N=16/u_0-degree 16, retained no-go polices regulator-independent promotion, and retained-bounded P-FLUX supplies branch selection within its licensed surface; B4, B5, formula closure, and labeled-generation residuals remain outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T23:03:12.565684+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T230312Z-5b4bc409-hierarchy_b3_staggered_s",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded B3 dependency repair: source the hierarchy-row exponent carrier N=16 from the accepted kinetic-isotropy primitive, retained 2^d count, retained regulator-dependence no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming B4/B5 closure or labeled-generation realization.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "On the four-direction OS0 block, the B3 exponent carrier is only the unlabeled d=4 count 2^4=16 plus the matching minimal-block determinant u0-degree 16, so the parent staggered-realization species-labeling residual is non-load-bearing for this B3 surface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream hierarchy consumers cite this only for the B3 exponent-carrier surface, not for B4/B5 closure or labeled-generation realization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The load-bearing step is finite algebra over retained-grade and accepted-premise inputs, not a definition, empirical comparator, or tuned numerical match. The kinetic-isotropy primitive is explicitly registered as an accepted premise, while the non-primitive cited authorities are retained-grade in the packet. The note preserves the regulator-dependence no-go and B4/B5 boundaries rather than promoting the B3 carrier to formula closure or regulator independence."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:46.071221+00:00",
+      "audit_date": "2026-07-02T11:51:55.265672+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "Abstract finite-algebra no-go for the substitution bridge F(R)=C * alpha^(N_species(R)) with fixed C and alpha: unequal species-count readouts force unequal bridge outputs, so regulator independence requires O1/O2/O3 or fails.",
+          "kinetic_isotropy_primitive": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "Within the licensed K0/K1 two-class kinetic surface, retained-bounded FSB-K plus the retained (Z) certificate select K1/phi = -1 by the finite-g_eff thermal/spectral criterion; this does not prove the kinetic surface wholesale or thermal equilibrium of the realized dynamics.",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced."
+        },
+        "dep_claim_type": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "bounded_theorem",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10": "retained_no_go",
+          "kinetic_isotropy_primitive": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11": "retained_bounded",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+          "kinetic_isotropy_primitive",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 9.077,
+        "runner_hash": "3913e133288ad1627437afbdd1e747b90072256ad563a7fea63028bffc9d6b3d",
+        "transitive_descendants": 269
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T115155Z-72534453-hierarchy_b3_staggered_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded scope, the accepted kinetic-isotropy primitive supplies the four-direction OS0 surface, retained authorities supply the 2^d count, regulator-dependence boundary, and P-FLUX branch selection, and the finite determinant-degree check closes algebraically. The note explicitly leaves regulator-independent promotion, B4, B5, and generation-labeling outside the conclusion.",
+      "claim_scope": "B3 source-side dependency repair only: source the hierarchy exponent carrier N=16 and the matching u0-degree from the four-direction kinetic surface, retained 2^d count, retained regulator-dependence boundary, and retained-bounded P-FLUX branch selection, without formula closure or labeled-generation use.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T11:51:55.265672+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T11:47:11.956987+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T114711Z-a790b142-hierarchy_b3_staggered_s",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded source-side B3 dependency repair: the hierarchy row's exponent carrier is sourced by kinetic isotropy, the retained 2^4 count, determinant u0-degree 16, the retained regulator-dependence no-go as boundary, and the P-FLUX branch line within its licensed surface.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T11:51:55.265672+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T115155Z-72534453-hierarchy_b3_staggered_s",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "B3 source-side dependency repair only: source the hierarchy exponent carrier N=16 and the matching u0-degree from the four-direction kinetic surface, retained 2^d count, retained regulator-dependence boundary, and retained-bounded P-FLUX branch selection, without formula closure or labeled-generation use.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "On the four-direction OS0 block, the hierarchy B3 exponent carrier is only the unlabeled 2^4=16 count plus the matching determinant degree det(u0 D + m) = (m^2 + 4 u0^2)^8, so the full staggered-Dirac parent gate's species-labeling residual is non-load-bearing for this B3 surface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that later hierarchy-row edits have not introduced a labeled-generation use into the B3 consumer surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The positive content is exact finite algebra plus composition over retained-grade inputs and an accepted primitive. The runner source performs the 2^d, Hamming, D^2=-4I, characteristic-polynomial, and determinant-degree checks rather than merely printing PASS, and the determinant identity follows independently from D^2=-4I on a 16-dimensional antisymmetric block. The boundary/no-go language is narrow: the retained regulator-dependence no-go remains active, P-FLUX is consumed only within its licensed surface, B4/B5 remain open, and the excluded parent labeling residual is not used by the unlabeled exponent-carrier step."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
+  "title": "Hierarchy B3 Staggered Supplier Cascade - Source-Side Dependency Repair",
+  "transitive_descendants": 723,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

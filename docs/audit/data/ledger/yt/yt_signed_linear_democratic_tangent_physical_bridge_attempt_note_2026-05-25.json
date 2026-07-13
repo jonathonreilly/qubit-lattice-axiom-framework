@@ -1,0 +1,110 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_signed_linear_democratic_tangent_physical_bridge_attempt_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "90684a84fde60a7bfb9f26305601b574a1702160d5105ccaaf689491da049b35",
+  "note_path": "docs/YT_SIGNED_LINEAR_DEMOCRATIC_TANGENT_PHYSICAL_BRIDGE_ATTEMPT_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T11:53:32.829427+00:00",
+      "archived_for_note_hash": "508e76c540953af89f6b1fedcd70888cdbd19815a9ea47a9dd5e5cbb5ed445f2",
+      "audit_date": "2026-05-25T20:19:06.621268+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25": "The current qubit-on-Z^3 baseline plus the enumerated scale-blind support structures does not select the primitive physical source/action unit lambda=1 for the top Yukawa tangent."
+        },
+        "dep_claim_type": {
+          "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25": "no_go"
+        },
+        "dep_effective_status": {
+          "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25": "retained_no_go"
+        },
+        "deps": [
+          "yt_primitive_unit_source_action_physical_premise_no_go_note_2026-05-25"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c616c5d6e7fa1e8ab4ca737125dfde662efba54947cc22749bb953fbc25b8286",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T201844Z-5afc4927-yt_signed_linear_democra-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded obstruction closes algebraically, but the positive physical Yukawa bridge does not close. The missing step is a retained derivation or accepted theorem that the physical top Yukawa deformation is the primitive unit signed-record source/action tangent.",
+      "claim_scope": "Audited the bounded claim that the normalized democratic signed-linear tangent gives y_33=1/sqrt(6) only under an explicit primitive-unit physical source/action premise, and otherwise leaves an exact lambda obstruction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T20:19:06.621268+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Without the primitive-unit physical-source premise, the family dS_lambda/ds|0 = lambda * sum_i u_dem(i) O_i preserves the cited structural supports while giving y_33(lambda)=lambda/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or admit the primitive unit physical source/action tangent premise for the normalized top trilinear, or supply an independent direct top-response coefficient measurement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 52,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 52
+      },
+      "verdict_rationale": "The runner verifies algebraic normalization, the democratic tangent component, and the lambda counterfamily; it does not derive the primitive physical source unit from the restricted inputs. The cited no-go authority is retained_no_go and directly matches the residual, but the source note itself keeps the key identification open. No-Go Discipline is satisfied within the packet: multiple routes are enumerated, the wall collapses to the source-unit premise, hidden premise language is explicit, the residual matches, the negative scope is narrow, convention/direct-response closure paths remain open, the steelman does not defeat the current-surface obstruction, and the analogy to prior scale-blind walls is same-packet only."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py",
+  "title": "Y_T Signed-Linear Democratic Tangent Physical-Bridge Attempt",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

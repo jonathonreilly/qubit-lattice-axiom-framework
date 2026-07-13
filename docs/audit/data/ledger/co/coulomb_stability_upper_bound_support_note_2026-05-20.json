@@ -1,0 +1,256 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "coulomb_stability_upper_bound_support_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c802a479d96d80839bcec10a50dd0452bb751d2d5400aac527a112a4c0959629",
+  "note_path": "docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-24T22:11:53.353553+00:00",
+      "archived_for_note_hash": "2edba92eddb1aa12fb709112e5e9394be5756e0a20c80c242f56bb8e52a4a645",
+      "audit_date": "2026-05-21T22:06:19.212519+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-coulomb_stability_upper_-020",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The scaling step is algebraic once the continuum Hamiltonian and trial-state scaling are assumed. The restricted packet does not close the general d-dimensional Coulomb-law premise, the sector/gauge identification, or the d=3/d=4 spectral and domain facts from retained in-packet authorities.",
+      "claim_scope": "The audit covers the bounded continuum-QM scaling claim for the assumed Hamiltonian H_d = -(hbar^2/2m) Delta_d - alpha/r^(d-2), not a framework-internal derivation of the all-d Coulomb law, EM sector, coupling, or full spectral classification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T22:06:19.212519+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For normalized scaled trial states, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive potential term dominates as lambda -> infinity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained restricted-packet derivation or authority for the d-dimensional continuum Coulomb Hamiltonian, sector identification, and required d=3/d=4 spectral/domain facts, or narrow the claim to an explicitly assumed-standard-QM lemma.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note's central instability argument is a valid algebraic scaling argument under the stated continuum Hamiltonian assumption, so this is not a failed derivation on its own terms. But the cited authority is explicitly bounded to cache-backed d=3/d=4 rows and does not retain a universal continuum Coulomb law or the electromagnetic sector bridge. The source note also imports standard d-dimensional quantum mechanics and spectral/domain classification as admitted background rather than deriving them in the restricted packet. Therefore the claim remains conditional on those explicit imported premises."
+    },
+    {
+      "archived_at": "2026-05-29T12:08:47.101339+00:00",
+      "archived_for_note_hash": "6a731cf7fd039ca4feaca666db8f29150833ea455ff82b80092f855c3389ee55",
+      "audit_date": "2026-05-25T11:55:40.706111+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T115413Z-eda813d7-coulomb_stability_upper_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic scaling step follows from the admitted Hamiltonian and trial-state expectations, but those are explicit external premises rather than retained results in the restricted packet. The missing closures are the general-d Coulomb Hamiltonian, standard d-dimensional continuum QM/domain facts, and the Coulomb/scalar or electromagnetic-sector identification.",
+      "claim_scope": "Conditional on admitted external premises P1-P3, the trial-state scaling argument identifies d=4 as the Coulomb critical dimension, with d>=5 unbounded below and d=3 hydrogenic behavior imported from standard continuum QM.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:55:40.706111+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the scaled trial state, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive potential term outgrows the kinetic term as lambda -> infinity.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained bridge theorems or cited retained dependencies deriving P1, P2, and P3, or keep the claim explicitly conditional on those external admissions.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic scaling once P1-P3 are admitted. However, the cited Dimensional Gravity Table is retained_bounded only for cache-backed d=3/d=4 rows and does not retain the universal general-d Coulomb law needed for P1; P2 and P3 are also external admissions with no retained derivation in the packet. No-Go Discipline check N3/N4 keeps these admissions explicit and prevents treating the bounded support note as retained closure. The note is valid as conditional support, not as a clean framework-internal theorem."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:17.893707+00:00",
+      "archived_for_note_hash": "b094064eae3cdffa210707fe12a1feec9e0b3a3841e2215d5642b76b6e5da19c",
+      "audit_date": "2026-05-29T21:49:22.110691+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-coulomb_stability_upper_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic scaling step closes inside the admitted P1-P2 premises. The retained chain does not close because P1, P2, and P3 are explicit external admissions not derived from the cited retained-bounded authority or any supplied bridge theorem.",
+      "claim_scope": "Conditional algebraic scaling lemma: assuming the admitted general-d Coulomb Hamiltonian, scaled-trial-state expectations, and Coulomb/scalar sector identification, the trial-state scaling marks d = 4 as critical, d >= 5 as unbounded below, and d = 3 as admitted hydrogenic background.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:49:22.110691+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the scaled trial state, <H_d>_{psi_lambda} = lambda^2 T - lambda^(d-2) U, so for d >= 5 the attractive term dominates as lambda -> infinity and the Hamiltonian is unbounded below.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained bridge theorems or retained cited dependencies deriving P1, P2, and P3, or keep the claim explicitly conditional on those external admissions.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is a class A algebraic dominance check over stated scaling inputs. However, the note itself identifies the general-d Coulomb Hamiltonian, d-dimensional continuum quantum mechanics scalings and spectrum, and Coulomb/scalar sector identification as admitted external premises. The only cited authority is retained_bounded for cache-backed d = 3 and d = 4 table rows and does not supply the missing general-d Coulomb/QM bridge. No runner source or stdout is available, but the verdict does not depend on compute noncompletion because the conditional algebra can be judged from the note text."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.980273+00:00",
+      "audit_date": "2026-05-31T14:03:48.629408+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "9be7f0102bab08c2763210570e9031da5cd7f9f2fa9b9b5c6e7bc09bd269b90e",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-140240-602a7508-coulomb_stability_upper_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The radial Laplacian coefficient, norm preservation, kinetic scaling, Green-kernel potential scaling, and exponent comparison all follow by direct algebra and change of variables from the stated form definitions. The conclusion is only the bounded scaling lemma, not a physical electromagnetic-sector or hydrogen-spectrum theorem.",
+      "claim_scope": "Bounded continuum-math lemma for the stated Green-kernel quadratic form on smooth compactly supported test functions away from the origin: dilation scaling gives ultraviolet collapse for d >= 5, marginal scaling at d = 4, and no collapse from this scaling test at d = 3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T14:03:48.629408+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The dilation identity Q_d[psi_lambda] = lambda^2 T - lambda^(d-2) U implies Q_d[psi_lambda] -> -infinity for every integer d >= 5 because d - 2 > 2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should re-check that downstream uses do not promote this bounded scaling lemma into physical electromagnetic-sector or full hydrogenic spectral closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 53,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 53
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the displayed continuum form and dilation, not a definition, renaming, external comparator, or tuned numerical match. Independent formula inventory checks confirm the displayed radial identity Delta r^a = a(a+d-2)r^(a-2), the a=2-d Green-kernel substitution, the L2 Jacobian cancellation, the lambda^2 kinetic scaling, and the lambda^(d-2) potential scaling. The runner source performs the same finite exponent and arithmetic checks rather than merely printing cached pass text. The clean verdict applies only to the bounded Green-kernel scaling lemma as scoped in the note."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_coulomb_stability_scaling_repair.py",
+  "title": "Coulomb Stability Upper-Bound Support",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

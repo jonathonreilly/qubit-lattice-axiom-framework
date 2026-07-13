@@ -1,0 +1,118 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (exact finite non-sourcing theorems with a",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e891525fde44267defa8d1495cf0bc160e440cf248fc4c1ce36513c3c01bee93",
+  "note_path": "docs/THETA_GLUING_FLOW_NONSOURCING_PAIR_LEVEL_SEED_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.955500+00:00",
+      "audit_date": "2026-07-10T04:37:42.240824+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "bc854ceb83bc29910bdd19afdad87a4fccb3bd6828156019e32089c7784e9fe5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00101-theta_gluing_flow_nonsourcin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner omits plane labels by construction and then substitutes one scalar glued value for every oriented plane pair; it does not derive a plane-uniform coefficient tensor from an orientation-resolved gluing integral. It also does not establish the claimed all-star, all-representation inheritance from its finite truncation.",
+      "claim_scope": "Finite checks in the {1,F,Fbar} SU(3) truncation for one three-leg star, one plane-uniform scalar epsilon assembly, and the displayed same- and opposed-orientation pair channels.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:37:42.240824+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_transfer_operator_character_recurrence_note:retained->unaudited",
+      "load_bearing_step": "The glued pair functional is plane-label-free, so flow-generated pair couplings are plane-uniform and their epsilon assembly vanishes identically because the summed epsilon tensor is zero.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Add an orientation-resolved derivation from the Haar gluing integral to the complete plane-pair coefficient tensor, together with an analytic all-star/all-representation inheritance proof, then re-run the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The nine checks are genuine finite algebraic/numerical checks rather than printed constants or external comparisons, and they support the encoded truncated model. However, B1 does not test plane-blindness independently, while B3 assumes the uniformity needed for cancellation and omits the distinct oriented pair operators. The general theorem and its application to the framework weighting class therefore require an unprovided orientation-resolved bridge and the explicitly open seed-class premise."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py",
+  "title": "The Gluing Flow Does Not Source the Theta-Parity Pair Term: Real Class-Weight Seeds Produce Plane-Blind Couplings That Vanish Identically Under the Epsilon Assembly, and Phased Seeds Are Transported, Never Created \u2014 the Theta Admission's Gauge-Side Kernel Localizes at the Seed Class (Bounded Theorem)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

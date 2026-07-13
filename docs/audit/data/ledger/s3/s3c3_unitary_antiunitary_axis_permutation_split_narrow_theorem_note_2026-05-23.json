@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "54ba111da5a529d2224523a6725ea7f709d666c7a52ccdedc7c515223ea2bbea",
+  "note_path": "docs/S3C3_UNITARY_ANTIUNITARY_AXIS_PERMUTATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-23.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:32.560058+00:00",
+      "audit_date": "2026-05-25T12:33:45.649795+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8e20d34262b9c73113240f99bb045a5f3424e990044f24a68db9821e441598b6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T123324Z-272ee90a-s3c3_unitary_antiunitary-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from the retained Cl(3,0) Pauli realization, omega = iI, permutation parity, and the elementary fact that complex-linear unitary conjugation fixes scalar iI. The note explicitly excludes the downstream physical premise that generation-sector symmetries must be unitary.",
+      "claim_scope": "Audited the finite-dimensional Pauli/Cl(3,0) algebra claim that even axis permutations are unitarily realizable while odd permutations reverse the central volume form and cannot be complex-linear unitary on the fixed generator triple.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-25T12:33:45.649795+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_complexification_split_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Since omega = e1 e2 e3 = iI, an odd axis permutation sends omega to -omega, while any C-linear unitary conjugation preserves iI, so no unitary realizes a transposition on the fixed Pauli generator triple.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the decoration classification is intended for this kind of finite algebraic extension rather than reserving bounded_theorem for new algebraic lemmas.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner genuinely computes the Pauli matrix identities, permutation signs, the explicit 3-cycle unitary, and the no-unitary contradiction for transpositions; it does not import fitted values, observational comparators, or hidden helper code. The load-bearing content is a class A algebraic closure over one retained upstream Cl(3,0) authority plus standard finite linear algebra. Because the packet has zero external comparator checks and reduces to a single retained parent claim with standard mathematics, the conservative rubric classifies it as audited_decoration rather than audited_clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_s3c3_unitary_antiunitary_axis_permutation_split.py",
+  "title": "Unitary/Antiunitary Axis-Permutation Split on the One-Qubit Operator Algebra",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

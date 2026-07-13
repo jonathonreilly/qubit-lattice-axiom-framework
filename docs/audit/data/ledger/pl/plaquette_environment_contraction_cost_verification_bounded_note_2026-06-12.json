@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+    "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
+    "su3_wigner_l3_treewidth_infeasible_2026-05-04"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "73bb2ba8821508bb16e38c80a7d2b6095ddade7e90819ad4e00f70083f5b091d",
+  "note_path": "docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.979652+00:00",
+      "audit_date": "2026-06-18T10:28:26.104168+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "Audited only the finite-box packet on 0 <= p,q <= NMAX at beta = 6: computed normalized single-link Wilson coefficients, their replacement of the prior witness, and finite packaging in exp(3J) D_6^loc C_(Z_6^packet) exp(3J).",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "Finite L_s=3 PBC 3D cube geometry and induced tensor-network incidence/index bookkeeping: site/link/plaquette counts, four-plaquette link incidence, link-labeled plaquette adjacency count/degree, and 324 tensor slots, with retained Block 2 rank-8 projector used only as an upstream primitive.",
+          "su3_wigner_l3_treewidth_infeasible_2026-05-04": "Audited only the finite L_s=3 PBC link-adjacency graph construction and the two implemented node-elimination heuristics, min-degree and min-fill; no global treewidth lower bound or exclusion of better/rank-aware contraction strategies is included."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "bounded_theorem",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "bounded_theorem",
+          "su3_wigner_l3_treewidth_infeasible_2026-05-04": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note": "retained_bounded",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03": "retained_bounded",
+          "su3_wigner_l3_treewidth_infeasible_2026-05-04": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
+          "su3_wigner_intertwiner_block3_theorem_note_2026-05-03",
+          "su3_wigner_l3_treewidth_infeasible_2026-05-04"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "8c74e0f582b8830386f6f06d47f9920f649f754c71e6b2c25c1472a8ec786cf3",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the finite L_s=3 marked environment, graph brackets, stabilizer quotient, LR support counts, and cost table directly rather than importing the contested cost numbers. The conclusion is explicitly bounded to tested direct original-graph methods and does not claim computation of rho_(p,q), exact treewidth, or a global contraction no-go.",
+      "claim_scope": "Bounded cost verification for the marked L_s=3 periodic spatial Wilson environment at NMAX in {2,3,4}: raw dense original-graph contraction and support-only sparse estimates exceed 4 GiB, while the orbit quotient is not an exact original-graph contraction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:28:26.104168+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note:retained_bounded->unaudited",
+      "load_bearing_step": "For the original factor-primal graph, all tested exact-on-box direct cells are over budget, while the orbit quotient is feasible only as a non-exact diagnostic.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check the graph-width lower-bound and stabilizer-orbit implementation if later wording broadens beyond this tested bounded cost scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 12,
+        "D": 0,
+        "total_pass": 17
+      },
+      "verdict_rationale": "The finite geometry counts, marked plaquette removal, graph-width brackets, and memory estimates are computed from visible runner code with no helper imports or external comparator constants. The displayed cost magnitudes are consistent with the reported best clique size 41 and the 4 GiB clique-size ceilings, and the source correctly treats sparse support as an estimate and the orbit quotient as non-exact. The No-Go Discipline section narrows the negative wording to tested direct original-graph methods and leaves rank-aware, stabilizer-block, stronger optimizer, and approximate routes open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py",
+  "title": "Plaquette Environment Contraction Cost Verification, Bounded",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

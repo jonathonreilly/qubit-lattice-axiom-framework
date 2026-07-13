@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "bbd7605e23654b769287b4c2f7de35411cd90ee057c3e6638a2ecc1c237d6c92",
+  "note_path": "docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T22:04:33.566938+00:00",
+      "audit_date": "2026-07-10T18:22:29.020166+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "91c60a02617cecaa9188bba7ba374925872974ac0383a03d9fe89cd882e9ee3a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T181128Z-79c35c5e-00004-tick_admissibility_realizati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The two conditional algebraic implications close under the stated finite-ring assumptions, and the supplied witnesses are valid. The chain from framework Admissibility to a physically realized tick remains open because REAL, the tick's existence and choice, and the binary one-component carrier are stipulated rather than derived.",
+      "claim_scope": "On the stipulated even binary ring, translation covariance plus the fixed-assignment part of REAL implies tick covariance modulo local U(1) frames and M(U)=0; nonempty rule variation plus conditioning faithfulness implies O(U)=true.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T18:22:29.020166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "Translation invariance of V(A) makes v_x(d)=v(d), so the site-independent assignment F makes U0[x,x+d] depend only on displacement and therefore T U0 T^dag=U0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a cited independently audited theorem deriving the existence and admissible choice of REAL(U; A, F), including its carrier and conditioning-faithfulness content, from accepted framework premises.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The analytic covariance argument is a correct algebraic closure, and the runner genuinely computes its finite examples, sharpness witnesses, and gauge constructions rather than merely printing expected results. However, the result is explicitly conditional on the named REAL predicate and other stipulated surface structure. Neither the source note nor its accepted axiom authority derives the existence or physical selection of such a realized tick, so the result cannot serve as the requested physical realization theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
+  "title": "Conditional Equivariant Tick-Realization Lemma on a Binary Ring",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

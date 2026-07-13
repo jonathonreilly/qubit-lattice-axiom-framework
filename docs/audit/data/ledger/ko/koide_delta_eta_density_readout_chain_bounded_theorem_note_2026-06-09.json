@@ -1,0 +1,184 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (a conditional theorem chain; the single conditional input is a named, proposed identification \u2014 no new number, no new primitive)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+    "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+    "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "abb3a3eb9d03acb781327b9ce93c6b943761e33a0519f8b29766854d7c00d502",
+  "note_path": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-05T11:24:52.606657+00:00",
+      "archived_for_note_hash": "9bddbcf5d9805bc0e3430d775c5916b4cb696b7854502c9519e2d6f88cb9b2ad",
+      "audit_date": "2026-07-05T10:54:14.698548+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ce4c4c74b88139e6d57454853c913020e0d4fa1f62bac9f6aa1fe984fe8ae7b5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260705-105214-544d10ce-koide-delta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact fixed-locus arithmetic L3(1,2)=2/9 closes, but the map from that density to the registered charged-lepton phase magnitude is the proposed R-eta readout identification. A retained theorem deriving R-eta, and any required physical carrier/readout bridge, is missing.",
+      "claim_scope": "Audited the claimed conditional chain from retained C3 fixed-locus density L3(1,2)=2/9 to |delta|=2/9 under the proposed R-eta readout identification and supplied charged-lepton circulant class; period-fork and mass comparisons were treated as diagnostics only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-05T10:54:14.698548+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "R-eta: the registered C3-breaking phase magnitude is the fixed-locus spectral density, read directly as the angle, |delta| = L3(1,2).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained readout theorem deriving R-eta and the required charged-lepton carrier/readout surface from retained premises; then rerun this audit with the runner checking that theorem rather than passing R-eta by stipulation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 11,
+        "C": 0,
+        "D": 3,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: the load-bearing equality |delta|=L3(1,2) is the proposed R-eta readout identification, not a theorem supplied by the cited authorities or runner. Why this blocks: the retained fixed-locus note proves L3(1,2)=2/9 and the registrability note supports sign erasure, but neither derives that the charged-lepton phase magnitude must read the local density directly as an angle; the runner marks R-eta true by stipulation and uses PDG checks only as comparators. Repair target: add or audit a retained readout theorem deriving R-eta, plus any needed carrier/readout bridge, from retained premises rather than setting the equality. Claim boundary until fixed: R-eta plus the supplied circulant class implies |delta|=2/9, with period-fork and mass comparisons as diagnostics only."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.854149+00:00",
+      "audit_date": "2026-07-05T11:52:59.432013+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "Bounded no-go that the listed retained periodic finite/lattice phase sources and finite-Wilson constructions do not derive the literal 2/9-radian selected-line bridge; the Type-B-to-radian identification remains primitive.",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "Bounded orientation-invariance theorem for the stipulated AC_phi_lambda Hermitian circulant class: conjugation maps H(delta) to H(-delta), the unordered spectrum is invariant under delta -> -delta by the k -> -k relabel, and within the retained_bounded unordered-mass-multiset registrability bridge the sign of delta is not additional registrable content."
+        },
+        "dep_claim_type": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24": "retained_no_go",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09": "retained_bounded"
+        },
+        "deps": [
+          "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+          "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "702fba6ff9b40ce244f42f9372f7f942ebd90fc312fe8012bf01c58b31b15d09",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-20260705-koide-delta-eta",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the conditional scope only, the chain closes: the fixed-locus density arithmetic is retained-grade and rechecked, the R-eta premise is explicit rather than hidden, and the conclusion follows by substitution. This audit does not treat R-eta itself or the physical carrier identification as derived.",
+      "claim_scope": "Conditional bounded implication that, assuming the declared R-eta readout-identification premise and the supplied circulant/K-orbit surface, the retained C3 fixed-locus density gives |delta| = 2/9; comparator and period-fork diagnostics are not derivation inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-05T11:52:59.432013+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The conditional implication: declared R-eta premise |delta| = L_3(1,2) plus retained E1 arithmetic L_3(1,2) = 2/9 implies |delta| = 2/9 exactly.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check on future hash drift that R-eta remains outside the audited conclusion, that r = 1/2 and PDG comparisons remain comparator-only, and that the claim is not widened into an unconditional derivation of the readout identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 13,
+        "C": 0,
+        "D": 3,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The note has narrowed the claim to a bounded conditional theorem rather than an unconditional readout derivation. The runner recomputes the retained L_3(1,2)=2/9 arithmetic, verifies that R-eta is explicitly declared as supplied-not-derived, and checks the formal implication without using PDG comparator agreement as an input. Direct dependencies are retained-grade under the provided metadata, so no open dependency path blocks the scoped bounded claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py",
+  "title": "The |\u03b4| = 2/9 Theorem Chain: Retained Fixed-Locus Arithmetic + One Named Readout Identification",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

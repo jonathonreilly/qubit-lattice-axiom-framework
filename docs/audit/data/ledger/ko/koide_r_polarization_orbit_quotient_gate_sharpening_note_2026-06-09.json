@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_r_polarization_orbit_quotient_gate_sharpening_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "23b495ae6dc78ac1084c55c86e75dfc8271c0f306c6f582539c66a582cff18d0",
+  "note_path": "docs/KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:30.097942+00:00",
+      "audit_date": "2026-07-10T04:17:20.004566+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04": "Conditional four-cell det_C-vs-det_R fork algebra on R[Z_3] = R (+) C: supplied real versus holomorphic polarization fixes the doublet slot count and the listed conditional (r, Q) branch values, without deriving or preferring a polarization.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c68c09cb111aa50e10bff2902a351166e7f697a44372ea453f4e982ea80d3906",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00074-koide_r_polarization_orbit_q",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current accepted Record authority supplies fixed records and additive scalar readout, but expressly places K/CPT orbit structure and central-sector decomposition outside the axiom. Consequently, the algebraic orbit computation alone cannot entail that physical record readouts factor through those orbits.",
+      "claim_scope": "The finite R[Z3] algebra classifies compatible complex structures as \u00b1J and computes the K-orbit partition, while the claimed Record-based readout factorization remains conditional on separate K/CPT readout-context authority.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T04:17:20.004566+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04:retained_bounded->unaudited",
+      "load_bearing_step": "Every record-readout is a function on K/CPT orbits, so the computed orbit partition {e0}, {e1,e2} entails conjugation-invariance and excludes phase-resolved doublet readouts.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and retain a readout-context theorem supplying the central-sector decomposition, fixed K/CPT conjugation, and orbit-valued readout rule, then replace the runner's hard-coded Record checks with checks constructed from that authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 8,
+        "C": 0,
+        "D": 1,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Issue: the runner hard-codes the superseded premise that a Record outcome is a K/CPT orbit, including a check(True), rather than deriving it from the supplied current authority. Why this blocks: MINIMAL_AXIOMS_2026-06-29 explicitly identifies K/CPT orbit structure as downstream readout-context content, so the asserted phase exclusion and gate unification do not follow from the restricted inputs. Repair target: supply a retained theorem constructing the central-sector readout context, fixed conjugation, and orbit-factorization rule. Claim boundary until fixed: the \u00b1J classification, K pairing, and conditional consequences of an assumed orbit-valued readout remain supportable."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_r_polarization_orbit_quotient_2026_06_09.py",
+  "title": "Koide r-Polarization Gate Sharpening: the Record K/CPT-Orbit Quotient Is the Complex-Slot Quotient",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

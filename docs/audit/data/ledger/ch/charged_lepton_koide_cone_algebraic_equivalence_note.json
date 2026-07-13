@@ -1,0 +1,141 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "charged_lepton_koide_cone_algebraic_equivalence_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "three_generation_observable_theorem_note",
+    "observable_principle_from_axiom_note"
+  ],
+  "direct_in_degree": 45,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 31.986,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "59e0a770b302e2e146f9a3f3aa5dcc5e84a71439979bdd1ab7ed385901367ac1",
+  "note_path": "docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367713+00:00",
+      "archived_for_note_hash": "fb0caaa3cd1990452d82507dce889c838f790843410c4c778daf6d0e462067de",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.380782+00:00",
+      "audit_date": "2026-07-08T21:18:39.868258+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_from_axiom_note": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block.",
+          "three_generation_observable_theorem_note": "Finite-dimensional algebra on C^3: explicit rank-one translation-character projectors P_i and a cyclic order-3 C3 map generate all matrix units E_ij and hence M_3(C); irreducibility and no-proper-quotient apply only to quotients preserving that finite algebra. Physical species, substrate ontology, flavor hierarchy, CKM/PMNS closure, Grassmann-carrier construction, and full staggered-carrier realization are out of scope."
+        },
+        "dep_claim_type": {
+          "observable_principle_from_axiom_note": "bounded_theorem",
+          "three_generation_observable_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_from_axiom_note": "retained_bounded",
+          "three_generation_observable_theorem_note": "retained"
+        },
+        "deps": [
+          "observable_principle_from_axiom_note",
+          "three_generation_observable_theorem_note"
+        ],
+        "load_bearing_score": 33.972,
+        "runner_hash": "1b9c7907956d3255d386e88ce66754e81d5f2e63a90a91cdcc4761546a70c6b0",
+        "transitive_descendants": 354
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-20260708",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Plancherel/Fourier algebra closes exactly and the runner passes 32/0 while explicitly reporting KOIDE_FORCING_RESOLVED=FALSE. The result is a correct reparameterization/support lemma, not an independent physical theorem or Koide derivation.",
+      "claim_scope": "Audited the exact algebraic equivalence between Koide's Q = 2/3 condition and the C3-character equal-weight cone for a positive three-vector on the named three-generation carrier; no forcing of the vector, mass values, or Koide cone was audited.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-08T21:18:39.868258+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "three_generation_observable_theorem_note",
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:observable_principle_from_axiom_note:retained_bounded->unaudited",
+      "load_bearing_step": "For a positive three-vector decomposed into C3 characters, Koide Q = 2/3 is equivalent to the equal-character-weight condition a_0^2 = 2|z|^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Box as an algebraic Koide-cone corollary under three_generation_observable_theorem_note unless a later row attaches an independent physical comparator or a retained forcing theorem for the equal-character-weight condition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The exact equivalence is mathematically correct: the C3 Fourier decomposition gives |v|^2 = a_0^2 + 2|z|^2 and (sum v_i)^2 = 3a_0^2, so Q = 2/3 iff a_0^2 = 2|z|^2. It adds no independent observable, comparator, or forcing mechanism beyond the named carrier algebra, and the runner itself says all three cone-forcing candidates fail on the current minimal block. Under the algebraic-decoration policy, this should be boxed as a support corollary rather than retained as a separate positive theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_charged_lepton_observable_curvature.py",
+  "title": "Charged-Lepton Koide-Cone Algebraic Equivalence",
+  "transitive_descendants": 716,
+  "verdict_rationale": null
+}

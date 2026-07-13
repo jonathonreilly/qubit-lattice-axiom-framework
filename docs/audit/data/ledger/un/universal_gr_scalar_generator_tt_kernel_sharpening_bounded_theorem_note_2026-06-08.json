@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_polarization_frame_bundle_blocker_note",
+    "universal_gr_supermetric_normal_form_note",
+    "universal_gr_invariant_frame_obstruction_note"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1df1a9512a380cf7bce7fb9401b4d38a9d8504e7ee88fed134c9edbec9d46f04",
+  "note_path": "docs/UNIVERSAL_GR_SCALAR_GENERATOR_TT_KERNEL_SHARPENING_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:33:32.488872+00:00",
+      "audit_date": "2026-06-08T16:19:24.276501+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "universal_gr_invariant_frame_obstruction_note": "Finite-dimensional algebraic checks for the canonical basis/projector/rotation matrices implemented in the runner; atlas exhaustion and a universal invariant section selector are outside the audited scope.",
+          "universal_gr_polarization_frame_bundle_blocker_note": "Bounded blocker claim that the current universal-GR stack determines a frame-orbit family of candidate localizations, not a canonical Pi_curv projector bundle.",
+          "universal_gr_supermetric_normal_form_note": "Given W[J]=log det(D+J)-log det D and positive invariant background D=diag(a,b,b,b), the local Hessian on symmetric 3+1 perturbations equals the inverse-metric contraction and has the stated canonical diagonal normal form."
+        },
+        "dep_claim_type": {
+          "universal_gr_invariant_frame_obstruction_note": "bounded_theorem",
+          "universal_gr_polarization_frame_bundle_blocker_note": "bounded_theorem",
+          "universal_gr_supermetric_normal_form_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "universal_gr_invariant_frame_obstruction_note": "retained_bounded",
+          "universal_gr_polarization_frame_bundle_blocker_note": "retained_bounded",
+          "universal_gr_supermetric_normal_form_note": "retained"
+        },
+        "deps": [
+          "universal_gr_invariant_frame_obstruction_note",
+          "universal_gr_polarization_frame_bundle_blocker_note",
+          "universal_gr_supermetric_normal_form_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6554475c9479f638df868053ba7ae5bb5e5f645170a52a288f81ba6b65e06972",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-161628-90f4bba345-universal_gr_scalar_generato",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain rule gives D_g^2 W=W''(s) grad(s)\u2297grad(s) because s is linear in g, and grad(s) paired with h_TT is qhat^T h_TT qhat=0. The projector-average and trace/shear degeneracy checks are finite SO(3) tensor algebra; the audit scope does not use or claim full Einstein/Regge gluing.",
+      "claim_scope": "Audited the bounded per-mode metric-source Hessian theorem for the scalar lattice-Laplacian and Cl(3)-Dirac determinant symbols, together with the finite tensor-algebra TT-projector frame-dependence and isotropic-average facts.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T16:19:24.276501+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_gr_polarization_frame_bundle_blocker_note:retained_bounded->unaudited",
+      "load_bearing_step": "Since s(q)=g_ij qhat_i qhat_j is linear in g, the per-mode metric-Hessian is H_mode=W''(s)(qhat qhat)\u2297(qhat qhat), so any q-transverse traceless perturbation has zero quadratic overlap.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the off-diagonal symmetric-metric coordinate convention in T1; under the matrix/Frobenius convention used for the Hessian it does not affect the rank or TT-kernel conclusion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing result is a genuine algebraic closure over the determinant-through-s(q) input, not a definition or numerical fit. The runner source performs symbolic and finite-dimensional tensor checks for the rank-1 Hessian, TT kernel, Dirac-symbol analogue, TT-projector frame dependence, sphere average, and supermetric degeneracy; the SO(3) commutant statement also checks independently from Sym^2(R^3)=1\u22955. The clean verdict is limited to the bounded W-route sharpening and does not certify a native Pi_curv or full GR dynamics identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_gr_scalar_generator_tt_kernel_sharpening.py",
+  "title": "The Scalar Observable Generator's Metric-Hessian is Rank-1 Longitudinal; the TT Graviton Block is in its Exact Kernel (Sharpening of the Universal-GR Polarization-Frame Blocker)",
+  "transitive_descendants": 13,
+  "verdict_rationale": null
+}

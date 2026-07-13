@@ -1,0 +1,669 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+    "minimal_axioms",
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_atomic_hydrogen_lattice_companion.py",
+    "scripts/frontier_atomic_helium_hartree_companion.py",
+    "scripts/frontier_atomic_helium_jastrow_companion.py",
+    "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "19a8b386a004016f522789b67066d991c558a40de17cc5160f128d6ba6bbd403",
+  "note_path": "docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T21:26:09.268723+00:00",
+      "archived_for_note_hash": "ea890a9ecab337677464a0535255265be7cf7e9a23fd6355021fb520418d329a",
+      "audit_date": "2026-04-30T19:06:47.379577+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.459,
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-ca82-second-slice-c-fresh-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note relies on preserved but unregistered scripts and upstream kinetic/Coulomb/EW surfaces that are not present as one-hop ledger deps.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The surviving hydrogen and helium material is best read as bounded atomic sanity checks on the current lattice Hamiltonian surface, not as exact closure or a live package claim surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the bounded numerical companion values are not backed by a registered runner in this row, and the upstream surfaces named in prose are not ledger deps. Why this blocks: the audit packet cannot independently verify the finite-box spectra, Hartree bound, Jastrow improvement, or authority inheritance. Repair target: register the companion runners and ledger deps, or narrow the row to historical narrative with no numerical authority. Claim boundary until fixed: preserved work-history and route context, not an audit-closed atomic companion result."
+    },
+    {
+      "archived_at": "2026-05-10T16:47:25.555102+00:00",
+      "archived_for_note_hash": "ea890a9ecab337677464a0535255265be7cf7e9a23fd6355021fb520418d329a",
+      "audit_date": "2026-05-05T06:32:30.153383+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.807,
+        "runner_hash": null,
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-work_history.atomic.hydr-254",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note asserts first-principles lattice computations, but the restricted packet provides no cited authority, runner output, or runner source to verify that the quoted numbers were actually computed from the stated operators. The missing step is a completed runner/source certificate showing the scripts instantiate the claimed Hamiltonians and produce the quoted readouts.",
+      "claim_scope": "Audited only the note's bounded claim that finite-box hydrogen and helium companion numerics on the stated lattice Hamiltonian surface give the quoted sanity-check ratios, without promoting continuum closure or exact atomic predictions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T06:32:30.153383+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The preserved hydrogen, helium Hartree, and helium Jastrow scripts compute finite-box lattice spectra/energy ratios on the retained Cl(3)/Z^3 kinetic-plus-Coulomb surface and produce the quoted bounded companion readouts.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the preserved runner source plus completed stdout/cached certificates and include the one-hop retained lattice kinetic and Coulomb-kernel authority notes in the restricted packet.",
+      "open_dependency_paths": [
+        "retained lattice kinetic operator / graph Hamiltonian route",
+        "retained or accepted Coulomb-kernel route on Z^3"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "On the note text alone, the load-bearing step is a bounded first-principles numerical compute claim rather than a definition, renaming, or external comparator. However, no runner output or source code is included, so the restricted packet cannot independently verify that the computation was performed as stated or that the numbers are replayable. The conclusion also depends on upstream retained lattice kinetic/Coulomb surfaces that are named but not provided as cited authorities in the packet."
+    },
+    {
+      "archived_at": "2026-05-18T11:39:54.847424+00:00",
+      "archived_for_note_hash": "a774d89dec651b001bd1f201d50864d01c8530d145d1b84b2cb9bd7fccc9ad18",
+      "audit_date": "2026-05-10T16:52:00.874831+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.17,
+        "runner_hash": null,
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e12cd-3829-7a83-b45a-29e434434cf1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close because the restricted packet provides no one-hop lattice-kinetic or Coulomb-kernel authority and no runner source/stdout certificate tying the quoted numbers to the stated Hamiltonians. The note itself acknowledges this pinning and dependency-edge gap.",
+      "claim_scope": "Bounded work-history companion asserting finite-box hydrogen and helium lattice numerical sanity checks on a retained kinetic-plus-Coulomb surface, without promoting continuum or exact atomic closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T16:52:00.874831+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note asserts that preserved hydrogen, helium Hartree, and helium Jastrow/VMC scripts instantiate the lattice kinetic-plus-Coulomb Hamiltonians and produce the quoted bounded atomic readouts.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct one-hop dependencies for the retained lattice kinetic and Coulomb-kernel authority notes, and include completed cached runner certificates/source for the hydrogen, helium Hartree, and helium Jastrow companion scripts.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing numerical computation is only asserted, not certified by supplied runner source/stdout or one-hop retained operator authorities. Why this blocks: a bounded theorem over a lattice Hamiltonian requires the Hamiltonian definitions and completed computation artifacts inside the restricted chain. Repair target: wire the canonical lattice-kinetic and Coulomb-kernel authority notes as direct dependencies and provide cached stdout/source certificates for all three companion scripts. Claim boundary until fixed: diagnostic work-history numerics only, not retained bounded authority."
+    },
+    {
+      "archived_at": "2026-05-19T11:19:03.096662+00:00",
+      "archived_for_note_hash": "5471fcb9b92a94af1e9ce527fb19e22ca9e43a9c4faa85bfc6927f882c10b799",
+      "audit_date": "2026-05-18T12:26:17.449530+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.17,
+        "runner_hash": null,
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-work_history.atomic.hydr-027",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet contains no runner stdout, no runner source, no helper source, and no cited upstream lattice-kinetic or Coulomb-kernel authority. The missing step is a completed source/stdout certificate or equivalent self-contained derivation showing the stated operators produce the quoted readouts.",
+      "claim_scope": "Diagnostic work-history atomic companion numerics only: quoted hydrogen ratios, helium Hartree row, and Jastrow/VMC ratio, not retained authority for a hydrogen or helium derivation chain.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T12:26:17.449530+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note preserves hydrogen lattice-spectrum, helium Hartree, and one-parameter Jastrow/VMC numerical readouts as diagnostic work-history numerics on a claimed lattice kinetic-plus-Coulomb surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the preserved runner source plus completed stdout/cached certificates and include the one-hop retained lattice kinetic and Coulomb-kernel authority notes in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source note itself narrows the claim to diagnostic work-history numerics and explicitly disclaims retained bounded authority. Although the asserted load-bearing computation would be class C if verified, the packet provides no stdout, source, or one-hop authority notes to verify that the scripts instantiate the claimed Hamiltonians or produce the quoted values. This is not a terminal physics failure, but the presented chain does not close from the restricted inputs."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:16.207041+00:00",
+      "archived_for_note_hash": "eda4c9aad30a8e1dd237b79e1a7cd68aa6e8c34100a23101730223e5779934e4",
+      "audit_date": "2026-05-31T13:22:59.287884+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "broad_gravity_derivation_note": "Conditional algebraic k-cancellation for stationary paths and phase-rate ratios from the supplied weak-field action/readout, with no physical gravity bridge audited.",
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "broad_gravity_derivation_note": "bounded_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "broad_gravity_derivation_note": "retained_bounded",
+          "gravity_clean_derivation_note": "retained_bounded",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "broad_gravity_derivation_note",
+          "gravity_clean_derivation_note",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "e27bccd78558ce0b83140c8793a5f2a3b96d452b7cc8dba845dfaecf7afb3446",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-132018-f2aba6cc-work_history.atomic.hydr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The hydrogen primary runner source/cache genuinely computes a finite-box lattice eigenproblem, but the restricted packet does not close the upstream operator authority chain. The missing steps are a current retained axiom/lattice-kinetic authority, the cited Coulomb-kernel authority, and complete verifiable Hartree/Jastrow runner artifacts for the helium readouts.",
+      "claim_scope": "Diagnostic work-history numerics for the finite-box hydrogen lattice spectrum and helium Hartree/Jastrow readouts at declared lattice parameters, not absolute spectroscopy, continuum closure, or a retained atomic derivation chain.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T13:22:59.287884+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The companion runners instantiate H_g = -\u0394_Z^3 - g/|r|, reuse the same Coulomb kernel for helium, and report the finite-box hydrogen ratios plus Hartree/Jastrow helium readouts.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: re-audit with the current axiom premise, a retained lattice-kinetic authority that actually derives -\u0394_Z\u00b3 from Cl(3)/Z\u00b3, the Coulomb-kernel authority source/cache, complete Hartree/Jastrow runner sources and SHA-pinned cached stdout, and either remove or justify the d=3 finite-Rydberg-series bound-state statement.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
+        "scripts/frontier_dm_coulomb_from_lattice.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The primary hydrogen runner is not a trivial printer: it builds the graph Laplacian, applies a regularized -g/r potential, diagonalizes the sparse Hamiltonian, and produces the quoted hydrogen ratios. However, the cited authorities supplied here do not themselves close the claimed Cl(3)/Z^3 -> -\u0394_Z^3 and Z^3 Green-function -> Coulomb-kernel chain: the axiom note is superseded/meta, the clean-gravity note is explicitly conditional, and the Coulomb runner authority is named but not provided. The helium Hartree and Jastrow claims are supported only by excerpts/stdout tails rather than full source/cache in the runner packet. The formula inventory also leaves the d=3 bound-state/finite-Rydberg-series assertion unsupported by the provided authority packet."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:43.753360+00:00",
+      "archived_for_note_hash": "2780944d9140fff86c1be59ec7b68bb44859cf9c8671746ad155731625e5deaf",
+      "audit_date": "2026-06-12T01:15:53.221227+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "broad_gravity_derivation_note": "Conditional algebraic k-cancellation for stationary paths and phase-rate ratios from the supplied weak-field action/readout, with no physical gravity bridge audited.",
+          "gravity_clean_derivation_note": "Bounded weak-field composition: given the Z^3 graph-Laplacian Poisson operator, the retained weak-field source/readout/test-response bridge, and the retained Z^3 Green-kernel asymptotic, the note derives a 1/r potential and bilinear inverse-square force in lattice units.",
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "Narrow companion repair: source the parent atomic finite-box scalar `-Delta_lat` from the retained `Z^3` graph-Laplacian/Green-kernel authority, check the Coulomb-kernel arithmetic, and disambiguate it from the staggered Dirac-square operator without claiming continuum Rydberg closure or absolute-eV predictions.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null,
+          "minimal_axioms_2026-04-11": null
+        },
+        "dep_claim_type": {
+          "broad_gravity_derivation_note": "bounded_theorem",
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "dep_effective_status": {
+          "broad_gravity_derivation_note": "retained_bounded",
+          "gravity_clean_derivation_note": "retained_bounded",
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta",
+          "minimal_axioms_2026-04-11": "meta"
+        },
+        "deps": [
+          "broad_gravity_derivation_note",
+          "gravity_clean_derivation_note",
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "e27bccd78558ce0b83140c8793a5f2a3b96d452b7cc8dba845dfaecf7afb3446",
+        "transitive_descendants": 25
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-011416-864ce5802b-work_history.atomic.hydrogen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The visible hydrogen source genuinely builds the finite-box operator and computes eigenvalues rather than hard-coding the quoted ratios. The helium Hartree and Jastrow portions do not close in this restricted packet because only snippets with ellipses and stdout tails are provided, so stdout alone cannot verify that those quoted readouts were computed from the stated operators.",
+      "claim_scope": "Diagnostic finite-box work-history numerics for the scalar Z^3 graph-Laplacian Coulomb hydrogen runner and the declared helium Hartree/Jastrow companion readouts, with no continuum-limit, absolute-eV, exact-helium, or retained derivation-chain authority audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:15:53.221227+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's load-bearing step is that the companion runners instantiate the finite-box scalar graph-Laplacian Coulomb Hamiltonian and same-kernel helium ansatz, then cached stdout pins the quoted hydrogen ratios, helium Hartree row, and one-parameter Jastrow/VMC improvement.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the full helium Hartree and Jastrow runner sources and complete runner-cache certificates in the restricted packet, then rerun the audit under the narrowed diagnostic finite-box scope.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "scripts/frontier_atomic_helium_hartree_companion.py",
+        "scripts/frontier_atomic_helium_jastrow_companion.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The hydrogen numerical readouts are supported by visible source code plus cached output, and the scalar graph-Laplacian/Coulomb operator route is bounded through the lattice-Green and dependency-repair notes. However, the full helium Hartree and Jastrow runner sources are not present, and the prompt explicitly forbids treating stdout alone as authoritative for class C. The packet also contains stale or superseded kinetic/axiom rhetoric, especially the 2026-04-11 axiom citation and broad-gravity kinetic wording, though the narrowed repair note largely walls that off from the audited scope."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:25.698931+00:00",
+      "archived_for_note_hash": "50bd5a6c846975c2fbdb3fb72528159dbe467260dcb766266f15650e33fe9e14",
+      "audit_date": "2026-06-14T00:35:23.732267+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "Narrow repair of the parent atomic finite-box dependency chain: source the scalar -Delta_lat stencil and Coulomb kernel from the retained Z^3 lattice Green authority, and disambiguate that scalar operator from the staggered Dirac-square surface without claiming continuum, eV, helium-cache, or finite-Rydberg closure.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "2ff64cbfd70876e4942ce8d31b9a19af261bc99f86c4625ada91fa14b3b2e7dd",
+        "transitive_descendants": 25
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260614-003249-9b346c527f-work_history.atomic.hydrogen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet closes source/cache visibility and the hydrogen finite-box readouts, but the helium Hartree energy formula does not close as the stated product-state expectation. With V_H solved from the one-electron density rho, the pair Coulomb integral is sum rho V_H, while the runner defines E_J = 0.5 sum rho V_H and subtracts only that half in E_var = 2 epsilon - E_J, so the quoted Hartree ratio and Jastrow-improvement baseline are not verified on their own terms.",
+      "claim_scope": "Diagnostic finite-box runner readouts for the hydrogen level ratios and r0, the helium Hartree finite-box row, and the one-parameter Jastrow/VMC ratio only; no continuum-limit, absolute-eV, exact-helium, general multi-electron, or retained atomic-authority claim was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T00:35:23.732267+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The companion runners instantiate the finite-box scalar graph-Laplacian Coulomb operators, with the helium Hartree runner using the product-state formula E_var = 2 epsilon - E_J and the Jastrow runner using a VMC local-energy estimator, to produce the quoted hydrogen/helium readouts.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Correct the helium Hartree Coulomb-integral normalization, rerun the Hartree and Jastrow baselines, and have a second auditor re-check the non-load-bearing finite-Rydberg/d=3-selection prose is quarantined outside the scoped claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 5,
+        "C": 5,
+        "D": 15,
+        "total_pass": 105
+      },
+      "verdict_rationale": "The primary packet verifier and helper caches are present and SHA-pinned, so this is not a compute-required or runner-artifact case. The independent formula check finds a load-bearing factor-of-two error in the helium Hartree Coulomb-energy normalization. Because the source claim includes the helium Hartree upper-bound row and the Jastrow improvement relative to that baseline, the narrowed bounded claim does not close even under its diagnostic finite-box scope."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:38.668470+00:00",
+      "archived_for_note_hash": "33ea7ff31652dd548241bb12ae0d8306aaf422d2281100111d3db4cb2e3f5b52",
+      "audit_date": "2026-06-16T00:14:31.639472+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "Narrow repair of the parent atomic finite-box dependency chain: source the scalar -Delta_lat stencil and Coulomb kernel from the retained Z^3 lattice Green authority, and disambiguate that scalar operator from the staggered Dirac-square surface without claiming continuum, eV, helium-cache, or finite-Rydberg closure.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 9.2,
+        "runner_hash": "da0a9010453567446208a0b6dc115d94a18ad30565981b4cab69ae99e65a5175",
+        "transitive_descendants": 25
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-001112-ca5eda9a28-work_history.atomic.hydrogen",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source/cache artifacts close the narrow provenance claim that these scripts produced the quoted finite-box numbers. The physics chain from the cited Z^3 Green-function asymptote to the exact finite-box regularized 1/max(r,0.5) kernel, Dirichlet-box prescription, finite-lattice scaling language, and continuum cusp/VMC-bound language is not supplied in the restricted packet.",
+      "claim_scope": "Diagnostic finite-box replay of the hydrogen ratios at N=60,g=1, the helium Hartree row at N=30,g_EM=0.5,g_nuc=1, the fixed-seed one-parameter Jastrow/VMC scan at N=20, and the packet source/cache visibility only; no continuum, absolute-eV, exact-helium, or general multi-electron closure was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T00:14:31.639472+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The companion runners instantiate the finite-box scalar graph-Laplacian Hamiltonians with a Coulomb-form kernel and compute/cache the quoted hydrogen ratios, helium Hartree row, and one-parameter Jastrow/VMC improvement.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: audit a finite-box Coulomb-kernel/origin-regularization/Dirichlet-boundary bridge and a discrete Jastrow local-energy/cusp bridge, or narrow the row to source-cache replay only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 6,
+        "C": 11,
+        "D": 28,
+        "total_pass": 107
+      },
+      "verdict_rationale": "Issue: the runners genuinely compute the displayed finite-box numbers, but several formulas used to present them require more than the cited asymptotic Green-kernel authority: exact use of -g/max(r,0.5) at all separations, finite-box boundary/origin regularization, finite-lattice coupling scaling, and the continuum Kato-cusp argument for a discrete VMC ansatz. Why this blocks: the note is scoped as physics numerics on the retained lattice kinetic plus Coulomb-kernel surface, not merely as a provenance statement that a script printed numbers, so those bridges must be closed for a clean bounded theorem. Repair target: add an audited finite-box kernel/regularization and discrete Jastrow estimator bridge, or explicitly narrow the claim to artifact replay without kernel-derivation language. Claim boundary until fixed: the packet supports reproducible work-history readouts and cache visibility, not retained-grade closure that the displayed finite-box Hamiltonians and Jastrow factor follow from the cited authorities."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.525465+00:00",
+      "audit_date": "2026-06-18T07:33:45.951058+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "Narrow repair of the parent atomic finite-box dependency chain: source the scalar -Delta_lat stencil and Coulomb kernel from the retained Z^3 lattice Green authority, and disambiguate that scalar operator from the staggered Dirac-square surface without claiming continuum, eV, helium-cache, or finite-Rydberg closure.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.144,
+        "runner_hash": "4fa2986c0a8af629e00e959a8b73f135cf35677c7340ea42ecdd4ca1dd66784e",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed finite-box scope, the helper sources compute from the cited graph-Laplacian and Coulomb-kernel operators rather than merely printing constants, and the current zero-exit caches are SHA-matched to those sources. The Hartree one-density pair normalization and Jastrow cusp factor also pass direct source-level factor checks; broader physics claims are explicitly outside scope.",
+      "claim_scope": "Diagnostic finite-box numerics only: hydrogen level ratios and r0 on the declared lattice operator, helium Hartree product-state row with repaired one-density pair normalization, and N=20 one-parameter Jastrow/VMC improvement; no continuum-limit, absolute-eV, exact-helium, multi-electron, or retained atomic-authority claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T07:33:45.951058+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The preserved helper runners instantiate the finite-box Z^3 graph-Laplacian Coulomb Hamiltonians and their SHA-pinned caches produce the quoted hydrogen ratios, helium Hartree row, Hartree pair-normalization guard, and Jastrow/VMC improvement.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that runner-local finite-Rydberg/d=3-selection prose remains non-load-bearing and outside the audited scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 69,
+        "C": 20,
+        "D": 0,
+        "total_pass": 117
+      },
+      "verdict_rationale": "The restricted packet now includes full helper sources, SHA-current cached outputs, and a packet verifier tying the source note to those artifacts. The cited upstream authorities are retained-grade or accepted axiom premises under the rubric, and the load-bearing computation is the finite-box numerical evaluation of the declared operators, not an external comparator match. Historical Hartree/full-CI and Rydberg-style targets are checkpoints only; they are not needed for the scoped claim to close."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.513966+00:00",
+      "audit_date": "2026-07-02T04:20:19.580553+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "Narrow companion repair: route the scalar Z^3 graph-Laplacian stencil through the retained lattice Green-function source, derive the symbolic Coulomb kernel from its asymptote, and distinguish that scalar operator from the staggered Dirac square on the stated finite torus.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 6.144,
+        "runner_hash": "4fa2986c0a8af629e00e959a8b73f135cf35677c7340ea42ecdd4ca1dd66784e",
+        "transitive_descendants": 24
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T042019Z-5e997d27-work_history.atomic.hydr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed finite-box scope, the retained_bounded scalar graph-Laplacian and lattice Green-kernel authorities supply the operators, and the helper sources/caches compute the stated readouts rather than merely printing constants. The Hartree one-density pair convention and total-density conversion are checked by a direct pair-integral certificate; broader continuum and exact-helium claims are outside the audited scope.",
+      "claim_scope": "Diagnostic finite-box numerical companion only: pinned hydrogen graph-Laplacian Coulomb readouts, helium Hartree product-state row with guarded pair normalization, and one-parameter Jastrow/VMC improvement, excluding continuum-limit, absolute-eV, exact-helium, and general multi-electron authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:20:19.580553+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "The companion helper runners instantiate the finite-box scalar graph Laplacian with the Z^3 Coulomb kernel and compute the quoted hydrogen ratios, helium Hartree row with repaired one-density pair normalization, and fixed-seed Jastrow/VMC improvement in SHA-pinned zero-exit caches.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "No no-go wall is certified; second auditors should keep finite-Rydberg/d=3-selection and historical FCI/Rydberg comparator prose outside the scoped claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 85,
+        "C": 15,
+        "D": 0,
+        "total_pass": 117
+      },
+      "verdict_rationale": "The primary packet verifier is mostly artifact visibility, but the included helper runners perform the finite eigenvalue, SCF, normalization, and VMC computations that support the scoped numerical claim. Independent checks of the sign/factor flow are consistent: G(r) -> 1/(4 pi r) gives V=-g/r, the one-density Hartree pair is sum rho V_H[rho], the total-density quarter-form matches one pair, and the Jastrow cusp coefficient is g_EM/4 for kinetic term -2 Delta_rel. The clean verdict is only for the bounded diagnostic finite-box readouts and does not certify the historical comparator prose or any status lift beyond that scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.866533+00:00",
+      "audit_date": "2026-07-10T01:53:27.903237+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "The nearest-neighbor scalar graph-Laplacian stencil and Coulomb-kernel normalization are verified, and a finite 4^3-torus counterexample distinguishes that scalar operator from the staggered Dirac square; no physical derivation of the kinetic choice, continuum-limit closure, or atomic-spectrum theorem is audited.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "bounded_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": "retained_bounded",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "4fa2986c0a8af629e00e959a8b73f135cf35677c7340ea42ecdd4ca1dd66784e",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-work_history.atomic.hydr-059",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded dependencies supply the graph-Laplacian and Coulomb-kernel surface, while the complete SHA-matched helper sources genuinely diagonalize, iterate the Hartree equations, and perform the fixed-seed VMC scan. The repaired direct pair-integral certificate closes the previously ambiguous Hartree normalization within the declared finite-box convention.",
+      "claim_scope": "Diagnostic finite-box readouts for the explicitly declared hydrogen, helium product-state, and one-parameter Jastrow calculations; no continuum limit, absolute-eV spectroscopy, exact-helium result, or retained atomic derivation authority was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:53:27.903237+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The companion runners instantiate the declared finite-box graph-Laplacian and regularized Coulomb Hamiltonians and compute the quoted hydrogen ratios, helium Hartree row, and Jastrow/VMC ratio improvement.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should confirm that the continuum Rydberg, d=3-selection, continuum-cusp, and historical full-CI language remains non-load-bearing and outside any future expansion of this finite-box claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 20,
+        "C": 19,
+        "D": 6,
+        "total_pass": 69
+      },
+      "verdict_rationale": "The quoted finite-box values are computed from instantiated operators rather than supplied as computational inputs; the hard-coded values occur in regression checks after the calculations. Full helper sources and current zero-exit caches are present, including the Hartree normalization guard and Jastrow inheritance check. Historical continuum, Hartree, and full-CI values are non-load-bearing comparators and do not enlarge the narrowly stated diagnostic claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py",
+  "title": "Hydrogen / Helium Atomic Companion Note",
+  "transitive_descendants": 17,
+  "verdict_rationale": null
+}

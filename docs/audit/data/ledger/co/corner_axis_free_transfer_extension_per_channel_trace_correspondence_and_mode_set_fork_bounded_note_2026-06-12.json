@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "corner_axis_free_transfer_extension_per_channel_trace_correspondence_and_mode_set_fork_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c1df94d6f96a93e12a5d1f540e4ffdca414000c1e3822c57024a5190e944aef9",
+  "note_path": "docs/CORNER_AXIS_FREE_TRANSFER_EXTENSION_PER_CHANNEL_TRACE_CORRESPONDENCE_AND_MODE_SET_FORK_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:37.555742+00:00",
+      "audit_date": "2026-07-10T03:55:04.454377+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope.",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e15cdefd5c79121fbcaead339bd6bb4c7ed736488ee2ad4969eb623a44056fbc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00049-corner_axis_free_transfer_ex",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The transfer, positivity, trace, Berezin, and K-covariance subchain closes algebraically. The full claim does not establish why per-channel and per-K-orbit counting exhaust the admissible occupancies, or independently supply the rho-map normalization; the runner hard-codes both branches and pi_over_g = 1.",
+      "claim_scope": "The free U=1 finite-volume construction on supplied positive channel masses: per-channel and tensor-product two-step positivity, finite-Fock trace/Berezin correspondence, K-channel relabeling, and conditional branchwise mode-count bookkeeping.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:55:04.454377+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "For t = direct_sum_k t_k, Tr Gamma(t) = det(1+t) = product_k det(1+t_k), which forces positive kernel normalization to one within each stipulated mode-set branch, after which the stipulated doublet counts map to r = 1 or r = 1/2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite and include a retained authority deriving the exhaustive per-channel/per-K-orbit occupancy dichotomy and the rho-map normalization, then rerun the audit.",
+      "open_dependency_paths": [
+        "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner genuinely checks the finite-dimensional transfer and trace identities rather than merely printing expected results. However, its fork_bookkeeping function stipulates Z_d = 2 or 1 and pi_over_g = 1, so it verifies consequences of the proposed fork rather than deriving its exhaustiveness or normalization. The registrability authority explicitly leaves weighting, normalization, physical-readout identification, and related occupancy content outside its theorem, so it cannot close that missing bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_corner_axis_free_transfer_extension_2026_06_12.py",
+  "title": "Corner-Axis Free Transfer Extension: Per-Channel Construction, Trace Correspondence, and the Mode-Set Fork",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

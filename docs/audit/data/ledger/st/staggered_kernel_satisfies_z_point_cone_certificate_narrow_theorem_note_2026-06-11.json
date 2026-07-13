@@ -1,0 +1,506 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.064,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2853537169665cdaad85c26c95ec71957ae97ac85aae70b7fcdc2b6c873cc52f",
+  "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.518891+00:00",
+      "audit_date": "2026-06-13T23:14:52.017260+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.306,
+        "runner_hash": "cbdc4c31bf04c9215b83457928f43620f0bdd83aae65a9e93ad15b4e8127a5c2",
+        "transitive_descendants": 1265
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-231116-f356ea8be0-staggered_kernel_satisfies_z",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The kernel geometry follows from exact symbolic algebra and finite spectral computations on the constructed hopping operators, with the cone inequality checked by an independent elementary bound. The only upstream inputs needed are the accepted lattice/qubit premise and the retained finite Fock-space bridge; no selection or thermal conclusion is imported.",
+      "claim_scope": "For the two explicitly constructed Z^3 nearest-neighbor kernels, the flux-(-1) Kawamoto-Smit kernel satisfies the stated point-like linear-cone condition (Z) with eight corner zeros and V = 2I, while the flux-(+1) scalar kernel violates (Z) by an extended zero surface and singular cone direction.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T23:14:52.017260+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T15:02:53.387394+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-145837-fd105964f0-staggered_kernel_satisfies_z",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Kernel-geometry certificate only: the constructed flux-(-1) Kawamoto-Smit NN kernel satisfies the stated point-like linear-cone hypothesis (Z) with eight zero branches, V=2I, (C,r)=(2/3,1), and the declared normalization covariance; the constructed flux-(+1) scalar NN kernel violates (Z) by an extended zero set and singular cone direction. No flux selection or thermal conclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T23:14:52.017260+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-231116-f356ea8be0-staggered_kernel_satisfies_z",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the two explicitly constructed Z^3 nearest-neighbor kernels, the flux-(-1) Kawamoto-Smit kernel satisfies the stated point-like linear-cone condition (Z) with eight corner zeros and V = 2I, while the flux-(+1) scalar kernel violates (Z) by an extended zero surface and singular cone direction.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The constructed 8x8 K1 Bloch symbol satisfies the exact identity H_c(kappa)^2 = 4(cos^2(k1/2) + cos^2(k2/2) + c^2 cos^2(k3/2)) I_8, which gives the zero set and cone data.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "No repair needed; a downstream audit of FSB-K should separately verify that its definition of (Z) is the one consumed here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 16,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The runner source genuinely constructs the K0 and K1 operators, verifies the symbolic Bloch identity, ties the Bloch spectra to finite lattice eigensolves, and separately checks the K0 zero-line obstruction. The displayed cone coefficient, determinant, normalization scaling, K0 zero counts, and falsification witnesses are consistent with direct algebraic checks. The FSB-K theorem itself is not consumed, only the local definition of (Z), so no unretained theorem dependency is needed for this kernel-geometry claim."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.894756+00:00",
+      "audit_date": "2026-06-30T16:48:49.795913+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.886,
+        "runner_hash": "cbdc4c31bf04c9215b83457928f43620f0bdd83aae65a9e93ad15b4e8127a5c2",
+        "transitive_descendants": 945
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T164523Z-31d3b0f9-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The clean verdict is correct for the narrowed kernel-geometry claim: the packet supplies accepted lattice/Fock premises, explicit kernel construction, runner source, and completed output, and the proof does not import flux selection, FSB-K theorem content, or thermal claims. The decisive step is not merely checking an identity already present in an upstream theorem; the runner constructs the finite/Bloch operators from the framework lattice surface and computes the zero-set and cone data not present in the cited inputs, so class C is the better load-bearing classification.",
+      "claim_scope": "For the explicitly constructed NN K1/K0 lattice kernels on the retained finite one-particle/Fock surface, K1 satisfies the restated finite point-like linear-cone hypothesis (Z) with V=2I, C=2/3, r=1 and the stated cone weights, while K0 has an exact zero line and singular cone direction.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-30T16:48:49.795913+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T16:38:38.762664+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T163838Z-39ddfe31-staggered_kernel_satisfi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 kernels on periodic Z^3 one-particle blocks, K1 satisfies the stated point-like linear-cone hypothesis (Z) with eight corner branches and V=2I (V=I for h/2), while K0 has an extended zero set with a zero-line direction forcing singular cone data; no flux selection or thermal conclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-30T16:45:07.861411+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T164507Z-93fea9b2-staggered_kernel_satisfi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed NN K1/K0 lattice kernels on the retained finite one-particle/Fock surface, K1 satisfies the restated finite point-like linear-cone hypothesis (Z) with V=2I, C=2/3, r=1 and the stated cone weights, while K0 has an exact zero line and singular cone direction.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-30T16:48:49.795913+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T164523Z-31d3b0f9-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "The first audit underclassified the load-bearing step as class A. The Bloch-square identity is algebraic once the symbol is built, but the audited claim's work is the first-principles construction-and-computation of the K1/K0 kernel geometry from the accepted lattice/Fock surface, not an identity check over an already supplied retained input.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The clean verdict is correct for the narrowed kernel-geometry claim: the packet supplies accepted lattice/Fock premises, explicit kernel construction, runner source, and completed output, and the proof does not import flux selection, FSB-K theorem content, or thermal claims. The decisive step is not merely checking an identity already present in an upstream theorem; the runner constructs the finite/Bloch operators from the framework lattice surface and computes the zero-set and cone data not present in the cited inputs, so class C is the better load-bearing classification.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only the reduced-cell kappa versus unfolded {0,pi}^3 corner wording if this row is later reused in a broader momentum-convention claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The clean verdict is correct for the narrowed kernel-geometry claim: the packet supplies accepted lattice/Fock premises, explicit kernel construction, runner source, and completed output, and the proof does not import flux selection, FSB-K theorem content, or thermal claims. The decisive step is not merely checking an identity already present in an upstream theorem; the runner constructs the finite/Bloch operators from the framework lattice surface and computes the zero-set and cone data not present in the cited inputs, so class C is the better load-bearing classification."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.506217+00:00",
+      "audit_date": "2026-07-01T20:52:34.592287+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.886,
+        "runner_hash": "cbdc4c31bf04c9215b83457928f43620f0bdd83aae65a9e93ad15b4e8127a5c2",
+        "transitive_descendants": 945
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T205234Z-bab4f9cd-staggered_kernel_satisfi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Bloch-square identity, zero-set characterization, cone bound, determinant weights, and K0 zero-line obstruction follow by exact finite algebra and elementary trigonometry from the constructed kernels. The cited axiom premise and retained Fock bridge supply only the lattice/operator setting; the audit treats the (Z) definition as restated in the packet and does not consume downstream selection or thermal claims.",
+      "claim_scope": "For the explicitly defined NN scalar K0 and Kawamoto-Smit K1 hopping kernels on periodic Z^3 one-particle blocks, K1 has the stated exact point-like linear-cone zero-set data and K0 has the stated extended zero-line/singular-cone violation; no flux selection, FSB-K theorem content, or thermal conclusion was audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-01T20:52:34.592287+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T20:47:46.819082+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T204746Z-95969432-staggered_kernel_satisfi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed nearest-neighbor K1 and K0 one-particle kernels on Z^3, K1 satisfies the restated point-like linear-cone hypothesis (Z) with eight corner branches and V=2I, while K0 has an extended zero set and a singular cone direction; no flux selection or thermal conclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T20:52:34.592287+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T205234Z-bab4f9cd-staggered_kernel_satisfi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly defined NN scalar K0 and Kawamoto-Smit K1 hopping kernels on periodic Z^3 one-particle blocks, K1 has the stated exact point-like linear-cone zero-set data and K0 has the stated extended zero-line/singular-cone violation; no flux selection, FSB-K theorem content, or thermal conclusion was audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The 8x8 Bloch symbol obeys H(kappa)^2 = 4 sum_mu cos^2(kappa_mu/2) I_8, hence E=0 iff p in {0,pi}^3 and every zero branch has cone V=2 I_3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the bookkeeping label that the restated (Z) matches the external FSB-K definition if a downstream audit needs that exact cross-note label; the kernel geometry itself is self-contained in this packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 2,
+        "C": 10,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing Bloch-square identity is directly checked from the 2^3-cell hopping symbol, and an independent trigonometric audit confirms the zero set, cone matrix, determinant/weight scaling, and K0 zero-line singularity. The runner constructs the finite lattice matrices and symbolic Bloch symbols rather than merely printing constants, ties them to finite eigensolver spectra, and includes falsification witnesses that would fail under wrong cone data. The clean scope is the kernel-geometry certificate under the restated (Z), not a realized-flux selection, not FSB-K's theorem, and not any thermal composition."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.504457+00:00",
+      "audit_date": "2026-07-02T08:30:12.858693+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.886,
+        "runner_hash": "cbdc4c31bf04c9215b83457928f43620f0bdd83aae65a9e93ad15b4e8127a5c2",
+        "transitive_descendants": 945
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T083012Z-c0ec669a-staggered_kernel_satisfi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The matrix identity, zero-set equations, cone bound, and K0 zero-line/singularity follow by exact algebra and finite spectral enumeration from the explicitly defined nearest-neighbor kernels. The cited minimal axiom node is an accepted premise and the finite Fock bridge is retained; the note does not use them to select a realized flux branch or import FSB-K theorem content.",
+      "claim_scope": "For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 one-particle kernels on the Z^3 finite periodic/Bloch surface, K1 satisfies the restated point-like linear-cone (Z) condition with zeros {0,pi}^3 and V=2I, while K0 has an extended zero surface/zero line and a singular tangent cone; no flux selection or thermal conclusion is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-02T08:30:12.858693+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T08:26:35.400742+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T082635Z-a2b1593c-staggered_kernel_satisfi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed nearest-neighbor K1 Kawamoto-Smit hopping kernel on Z^3, the packet proves finite eight-branch massless geometry with cone V=2I and the stated normalization covariance; for the constructed scalar K0 kernel, it proves an extended zero surface/line and singular tangent cone.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T08:30:12.858693+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T083012Z-c0ec669a-staggered_kernel_satisfi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 one-particle kernels on the Z^3 finite periodic/Bloch surface, K1 satisfies the restated point-like linear-cone (Z) condition with zeros {0,pi}^3 and V=2I, while K0 has an extended zero surface/zero line and a singular tangent cone; no flux selection or thermal conclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "The 8x8 K1 Bloch symbol satisfies H(kappa)^2 = 4 sum_mu cos^2(kappa_mu/2) I_8, hence the band form E = 2 sqrt(sum_mu sin^2 p_mu), zeros exactly at {0,pi}^3, and the local identity sin^2(c+q)=sin^2 q gives the cone V=2I with (C,r)=(2/3,1).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the non-load-bearing FSB-K definition-text match if the downstream composer tries to consume more than the restated (Z) definition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 2,
+        "C": 8,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing K1 claim is an exact algebraic closure over the constructed Bloch symbol, and the independent checks of the signs, factors, zero-set counts, cone constant, determinant weights, and K0 tangent/normal speeds agree with the note. The runner source performs symbolic matrix, trig, inequality, and finite spectral checks rather than merely printing the contested results. Textual checks for the FSB-K definition and own-file discipline are non-load-bearing for the audited kernel geometry scope. The residual boundaries are properly scoped: no flux selection, no thermal content, and no canonical-normalization claim beyond the stated scale covariance."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.287902+00:00",
+      "audit_date": "2026-07-10T16:26:09.423110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 10.225,
+        "runner_hash": "cbdc4c31bf04c9215b83457928f43620f0bdd83aae65a9e93ad15b4e8127a5c2",
+        "transitive_descendants": 422
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-staggered_kernel_sat-judge-1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner genuinely constructs the lattice kernels and symbolic Bloch matrix, verifies the matrix-square identity algebraically, and derives the zero and cone data rather than printing or importing the contested results. The quantitative cone inequality is valid, and the K0 obstruction follows independently from an exact trigonometric zero-line identity. The accepted lattice premise and retained finite-volume operator bridge suffice for this narrowly scoped theorem about the defined matrices; neither physical flux selection nor FSB-K theorem content is needed.",
+      "claim_scope": "For the explicitly constructed Kawamoto\u2013Smit K1 and scalar nearest-neighbor K0 kernels, K1 has eight point-like linear cones with (V,C,r)=(2I\u2083,2/3,1), while K0 has an exact zero line and fails hypothesis (Z); no realized-flux selection or thermal conclusion is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:26:09.423110+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-09T23:11:40.567002+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-staggered_kernel_satisfi-015",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed Kawamoto\u2013Smit K1 and scalar nearest-neighbor K0 kernels, K1 has eight point-like linear cones with (V,C,r)=(2I\u2083,2/3,1), while K0 has an exact zero line and fails hypothesis (Z); no realized-flux selection or thermal conclusion is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-10T01:26:34.033684+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-staggered_kernel_satisfi-015",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly defined K1 and K0 hopping matrices, K1 has eight unfolded zero branches with the stated isotropic linear cones under the declared conventions, whereas K0 has an extended zero set incompatible with an invertible cone matrix.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-10T16:26:09.423110+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-staggered_kernel_sat-judge-1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly constructed Kawamoto\u2013Smit K1 and scalar nearest-neighbor K0 kernels, K1 has eight point-like linear cones with (V,C,r)=(2I\u2083,2/3,1), while K0 has an exact zero line and fails hypothesis (Z); no realized-flux selection or thermal conclusion is audited.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "",
+          "independence": "judicial_review",
+          "judgment_rationale": "The runner genuinely constructs the lattice kernels and symbolic Bloch matrix, verifies the matrix-square identity algebraically, and derives the zero and cone data rather than printing or importing the contested results. The quantitative cone inequality is valid, and the K0 obstruction follows independently from an exact trigonometric zero-line identity. The accepted lattice premise and retained finite-volume operator bridge suffice for this narrowly scoped theorem about the defined matrices; neither physical flux selection nor FSB-K theorem content is needed.",
+          "load_bearing_step_class": "C",
+          "second_auditor_error": "The conditional verdict appears to treat physical realization, flux-branch licensing, or FSB-K theorem retention as load-bearing, although the audited scope is only the geometry of two explicitly defined kernels and expressly excludes branch selection and thermal conclusions.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The explicitly constructed K1 Bloch matrix satisfies H(\u03ba)\u00b2=4\u2211\u03bc cos\u00b2(\u03ba\u03bc/2)I\u2088, yielding its finite isotropic-cone zero set, while the exact K0 zero line forces any candidate cone matrix to be singular.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The runner genuinely constructs the lattice kernels and symbolic Bloch matrix, verifies the matrix-square identity algebraically, and derives the zero and cone data rather than printing or importing the contested results. The quantitative cone inequality is valid, and the K0 obstruction follows independently from an exact trigonometric zero-line identity. The accepted lattice premise and retained finite-volume operator bridge suffice for this narrowly scoped theorem about the defined matrices; neither physical flux selection nor FSB-K theorem content is needed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
+  "title": "Staggered Kernel Satisfies (Z) \u2014 Point-Like Isotropic Linear-Cone Zero-Set Certificate for the Flux-(\u22121) Realized Kernel, with the Companion (Z)-Violation Certificate for the Flux-(+1) Kernel (Narrow Theorem)",
+  "transitive_descendants": 756,
+  "verdict_rationale": null
+}

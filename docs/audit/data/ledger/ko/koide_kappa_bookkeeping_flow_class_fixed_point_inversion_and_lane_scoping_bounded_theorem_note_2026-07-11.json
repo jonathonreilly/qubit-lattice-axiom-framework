@@ -1,0 +1,316 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12",
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+    "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d48a6110afd86e8a71ae8ab87aece5107201d98010a5c5659ab1ed110e2d88ea",
+  "note_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-13T01:58:58.963564+00:00",
+      "audit_date": "2026-07-13T00:50:00+00:00",
+      "audit_invocation_history": [
+        "44444444444444444444444444444444"
+      ],
+      "audit_invocation_id": "44444444444444444444444444444444",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15": null,
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": null,
+          "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12": null
+        },
+        "dep_claim_type": {
+          "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15": "no_go",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15": "unaudited",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "unaudited",
+          "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12": "unaudited"
+        },
+        "deps": [
+          "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "7cb575145d57dfa318be0a9e07974aef3b77d44d587fd41e147878d9719df70d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes, but independent agreement conditioning and physical bookkeeping are supplied, and all three direct scientific dependencies remain unaudited.",
+      "claim_scope": "The positive-kappa bookkeeping flow class, its fixed set and conjugacy, the kappa=1,2 evaluations, and conditional fixed-point inversion with report-only comparators.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T00:50:00+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09:unaudited->audited_conditional",
+      "load_bearing_step": "With x=p_d/p_s=kappa r, independent agreement conditioning sends x to x^2 and therefore induces f_kappa(r)=kappa r^2, whose positive fixed point is 1/kappa.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "conditional_wall_rationale",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "rederive the load-bearing signs, factors, and endpoint identities without importing runner conclusions",
+            "disposition": "CLOSED",
+            "evidence_locator": "Independent exact algebra and runner-output comparison at the declared claim scope",
+            "evidence_path": "scripts/frontier_koide_kappa_flow_class_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "algebraic factorization and independent exact recomputation",
+            "outcome": "the scoped algebraic identities survive exact independent recomputation while no extra physical selector is generated",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "independent_algebra"
+          },
+          {
+            "attempt": "test the claimed identities under the stated conjugation, cycle, orbit, or basis transformations",
+            "disposition": "CLOSED",
+            "evidence_locator": "Symmetry and representation checks on the finite carrier used by the claim",
+            "evidence_path": "scripts/frontier_koide_kappa_flow_class_2026_07_11.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "symmetry invariance and representation-basis transport",
+            "outcome": "the representation transformations preserve the bounded result and expose rather than remove its supplied conditions",
+            "route_class": "symmetry_or_representation",
+            "route_id": "symmetry_representation"
+          },
+          {
+            "attempt": "remove or vary the load-bearing boundary, homogeneity, orbit, readout, or conditioning assumption",
+            "disposition": "CLOSED",
+            "evidence_locator": "The source names the supplied conditions and keeps their outside-domain escapes open",
+            "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "boundary and supplied-state condition variation",
+            "outcome": "the variation is either an explicit live escape outside the theorem or a named condition, so the narrow boundary remains honest",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "boundary_variation"
+          },
+          {
+            "attempt": "compare the derived finite observable with nearby outcome, spectral, component, and aggregate readouts",
+            "disposition": "CLOSED",
+            "evidence_locator": "Observable identity and readout distinctions are explicit in the bounded source statement",
+            "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "alternate observable and record-readout comparison",
+            "outcome": "alternate readouts do not contradict the scoped identity and remain explicitly conditional where they change the physical conclusion",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "alternate_readout"
+          },
+          {
+            "attempt": "ask whether an interacting, time-dependent, or lattice-wide evolution supplies a counterexample or missing selector",
+            "disposition": "CLOSED",
+            "evidence_locator": "The source explicitly excludes unproved dynamical and lattice-wide extensions",
+            "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "dynamical or effective-action extension beyond the finite probe",
+            "outcome": "no such action is imported; the extension remains outside the narrow theorem and therefore is not falsely foreclosed",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "dynamical_extension"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "direct scientific dependency retention",
+            "supplied law and readout condition certificate"
+          ],
+          "evidence_locator": "The bounded theorem separates upstream authority from its explicit modeling conditions",
+          "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "pairwise_checks": [
+            {
+              "evidence_locator": "The dependency status and supplied-condition boundary are separate load-bearing surfaces",
+              "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+              "independent": true,
+              "left": "direct scientific dependency retention",
+              "left_closes_right": false,
+              "rationale": "direct scientific dependency retention does not derive a supplied law and readout condition certificate, and that condition certificate does not establish retention of the scientific parents",
+              "right": "supplied law and readout condition certificate",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "direct scientific dependency retention",
+            "supplied law and readout condition certificate"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Import inventory and explicit bounded-condition statements in the restricted source",
+          "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "hits": [],
+          "none_found_reason": "Every load-bearing non-axiom input found in the restricted packet is already exposed as a supplied condition or an unaudited direct dependency in the conditional verdict.",
+          "scan_scope": "The restricted source and one-hop authorities were checked for hidden premise, convention, boundary, normalization, registered, sector, primitive, and by-construction imports.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+            "docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md",
+            "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+            "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md"
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The source inventory keeps cited residuals aligned with the bounded theorem scope",
+          "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "No N1 route is classified RULED OUT BY PRIOR; the direct parents are consumed only as unaudited source authorities and therefore cannot close the dependency residual.",
+          "scan_scope": "All one-hop authorities were checked at their declared source scope; none was used as a retained prior witness that silently closes the audited residual.",
+          "scanned_evidence_paths": [
+            "docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md",
+            "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+            "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md"
+          ],
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "No-Go Discipline and bounded-scope language in the current source note",
+          "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and foreclosure language was checked at element, site, mode, block, and lattice-wide resolutions against the actual finite theorem boundary.",
+          "scanned_evidence_paths": [
+            "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md"
+          ],
+          "statements": [
+            {
+              "evidence_locator": "The negative wording is explicitly restricted to the declared bounded construction",
+              "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+              "occurrence_count": 1,
+              "occurrence_group_id": "0123456789abcdef",
+              "occurrence_locator_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+              "phrase": "does not",
+              "resolution_classes_checked": [
+                "per_element",
+                "per_site",
+                "per_mode",
+                "per_block",
+                "lattice_wide"
+              ],
+              "resolution_evidence_locator": "Finite runner scope plus independent resolution-by-resolution mathematics audit",
+              "resolution_evidence_path": "scripts/frontier_koide_kappa_flow_class_2026_07_11.py",
+              "tested_resolutions": [
+                "per_element: exact coefficient and component identities were independently recomputed on the declared finite carrier.",
+                "per_site: the theorem's site-level or local-cell condition was checked only at the explicitly stated finite scope.",
+                "per_mode: mode and character decompositions were compared without promoting a spectral identity into a physical selector.",
+                "per_block: the complete finite block or record Gram named by the theorem was checked rather than inferred from one entry.",
+                "lattice_wide: the source explicitly withholds any lattice-wide extension, so its negative language was not read universally."
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [],
+          "evidence_locator": "Qualification and explicit supplied-condition boundaries leave the downstream result conditional",
+          "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "The approved axiom and primitive surface supplies neither retained status for the scientific parents nor the missing physical law/readout certificate; no reframe closes those walls.",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Approved axioms and primitives, open gates, unaccepted conventions, and definition or scope reframes were checked for a mechanism closing either retained-dependency or supplied-condition wall.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The strongest steelman is algebraic factorization and independent exact recomputation through the attempt to rederive the load-bearing signs, factors, and endpoint identities without importing runner conclusions; this can establish the complete local mathematical core.",
+          "evidence_locator": "The runner's exact local checks support the strongest bounded algebraic steelman",
+          "evidence_path": "scripts/frontier_koide_kappa_flow_class_2026_07_11.py",
+          "resolution": "That steelman succeeds only at the bounded core: direct scientific dependency retention and the separate supplied law and readout condition certificate remain necessary before the result can become an unconditional physical theorem.",
+          "resolution_evidence_locator": "The source's dependency and supplied-condition inventory independently bounds the steelman",
+          "resolution_evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "resolved": true,
+          "route_id": "independent_algebra"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [],
+          "evidence_locator": "Cross-cycle judgment is restricted to the current source and one-hop authority packet",
+          "evidence_path": "docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+          "none_found_reason": "Within the restricted development-tier packet, no retained structurally similar mechanism closes both the dependency-retention and supplied-condition walls; no broader audit-history search was imported.",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain all three direct parents and add the record-decidable, motion-covariant physical bookkeeping bridge before cascade re-audit.",
+      "open_dependency_paths": [
+        "docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md",
+        "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+        "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Issue: the odds-map, fixed-point, projective-chart, conjugacy, inversion, and comparator arithmetic are correct, but independent agreement conditioning and physical kappa identification have no retained certificates and all three direct parents are unaudited. Why this blocks: the exact map class cannot select a physical lane coefficient or support any comparator inference. Repair target: retain the parents and derive a lattice-motion-covariant, record-decidable agreement/readout law that fixes kappa. Claim boundary until fixed: kappa is only a supplied positive bookkeeping coefficient and the displayed decimal table is report-only arithmetic."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_kappa_flow_class_2026_07_11.py",
+  "title": "The Kappa Bookkeeping Flow Class and Conditional Fixed-Point Inversion",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

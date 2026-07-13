@@ -1,0 +1,1389 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9c6b1f53fe15968b493e0560a4f5793151a76491a5dc237619097ee55c7e6e14",
+  "note_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.905626+00:00",
+      "audit_date": "2026-07-09T06:29:25.059659+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "584abf6e5dc607427590f46d233b5ea7b05f2a61ac46c4c0db0f64c7ab3c7100",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-2026-07-09-color-composition-polar-transport",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the explicitly conditional scope, the load-bearing step is standard finite-dimensional matrix algebra and polar decomposition over supplied C^3 data. The source and runner preserve that the supplied carrier and supplied bilinear are hypotheses, not derived framework content.",
+      "claim_scope": "Bounded finite-dimensional conditional theorem: for supplied endpoint C^3 carriers and a supplied full-rank cross-site bilinear, polar decomposition gives an endpoint-frame-covariant unitary transport, determinant/Z3 bookkeeping, Wilson-form trace invariance under the stated orientation convention, and the rank-boundary witnesses; no C^3 carrier, physical color identification, full-rank sector selection, gauge dynamics, action, probability, Wilson positivity, confinement, chiral bridge, or hypercharge bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T06:29:25.059659+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given supplied endpoint C^3 carriers and a supplied full-rank bilinear M(x,y), the finite-dimensional polar decomposition M=UP gives a unique unitary U whose endpoint-frame transformation is U' = g_y U g_x^dagger.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if downstream use broadens this beyond the supplied-C3/supplied-full-rank-bilinear conditional algebra, or cites it as deriving the color carrier, a physical full-rank sector, R5 transport closure, gauge dynamics, Wilson positivity, confinement, chiral weak coupling, or hypercharge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner returns TOTAL PASS=10 FAIL=0, with exact rational/signed-permutation witnesses for polar covariance, determinant/Z3 bookkeeping, Wilson-form trace invariance, rank exhibits, and rank-boundary discontinuity, plus seeded numerical controls and boundary quote checks. The source's open SUPPLIED-C3 and SUPPLIED-BILINEAR premises are included in the audited theorem statement and are explicitly excluded from downstream citation as derived content. Thus the bounded algebraic conditional claim closes, while the physical color, R5, dynamics, and gauge-action bridges remain outside scope."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:09.306951+00:00",
+      "audit_date": "2026-07-12T09:58:47.514511+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.0,
+        "runner_hash": "584abf6e5dc607427590f46d233b5ea7b05f2a61ac46c4c0db0f64c7ab3c7100",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00275-color_composition_rule_matte",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional polar-decomposition implication closes algebraically once SUPPLIED-C3, SUPPLIED-BILINEAR, and full rank are assumed. The framework-to-hypothesis chain does not close because the restricted packet derives neither supplied carrier nor supplied bilinear, and the determinant-reduced Wilson-invariance sentence additionally requires coherent Z3 branch covariance not verified by the runner.",
+      "claim_scope": "Conditional finite-dimensional polar algebra for supplied endpoint C^3 carriers and a supplied full-rank cross-site bilinear: endpoint-frame covariance, determinant/Z3 bookkeeping, polar-link Wilson-trace invariance, and the stated rank-boundary witnesses; no carrier, bilinear, rank-sector, R5, gauge-dynamics, or physical-color bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T09:58:47.514511+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "For a supplied full-rank map M between supplied endpoint C^3 carriers, uniqueness of the polar decomposition implies U' = g_y U g_x^dagger and P' = g_x P g_x^dagger.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Checked the restricted source and accepted-premise text for a carrier construction or identification.",
+            "disposition": "OPEN",
+            "evidence_locator": "R-supplied-c3: SUPPLIED-C3 itself is open.",
+            "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Realize the supplied C^3 endpoint carrier from the bonded-pair or qubit-domain structure.",
+            "outcome": "The source explicitly leaves the identification as an open realization bridge, so this route remains untested rather than negatively closed.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "c3_realization"
+          },
+          {
+            "attempt": "Checked the theorem statement, dependencies, and runner for an operator construction rather than an assumed matrix.",
+            "disposition": "OPEN",
+            "evidence_locator": "R-supplied-bilinear: SUPPLIED-BILINEAR itself is open",
+            "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct the cross-site bilinear as a local covariant physical field operator.",
+            "outcome": "The matrix is supplied data and no local or covariant matter-operator derivation is given.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "bilinear_operator"
+          },
+          {
+            "attempt": "Checked whether the exact rank witnesses are accompanied by a physical sector-selection theorem.",
+            "disposition": "OPEN",
+            "evidence_locator": "R-rank-selection: this note requires full-rank `M(x,y)` and does not derive which physical states or sectors supply it.",
+            "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Select a physical state or occupancy sector in which the supplied bilinear is full rank.",
+            "outcome": "The runner distinguishes ranks but supplies no physical selection rule.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "rank_sector"
+          },
+          {
+            "attempt": "Compared the determinant-reduction claim with the runner, which checks one rational branch and polar-unitary Wilson invariance but not generic branch-covariant reduced loops.",
+            "disposition": "OPEN",
+            "evidence_locator": "R-z3-center: determinant reduction to `SU(3)` has an exact `Z_3` cube-root ambiguity.",
+            "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Choose or transport cube-root branches coherently so determinant-reduced links have an exact loop transformation law.",
+            "outcome": "No canonical branch or coherent branch transformation rule is supplied, leaving the reduced-link invariance statement conditional.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "z3_covariance"
+          },
+          {
+            "attempt": "Checked the source and runner for any evolution equation, action functional, measure, or autonomous closure.",
+            "disposition": "OPEN",
+            "evidence_locator": "R-non-autonomy: the induced link remains matter-state-dependent. The dynamics wall is not closed.",
+            "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive an autonomous gauge connection, generator, rate, or action from the matter-dependent polar link.",
+            "outcome": "The source expressly excludes these objects and the runner only checks kinematic matrix identities.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "autonomous_dynamics"
+          },
+          {
+            "attempt": "Compared the domains of T1 and the stated R5 residual within the restricted source.",
+            "disposition": "OPEN",
+            "evidence_locator": "R5-transport: NOT addressed. T1 is a different conditional transport lemma",
+            "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Identify supplied color-frame transport with the qubit-domain presentation comparison required by R5.",
+            "outcome": "The note distinguishes the two transport problems and supplies no intertwining identification.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "r5_identification"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "supplied_c3",
+            "supplied_bilinear",
+            "rank_selection",
+            "z3_branch_covariance",
+            "non_autonomous_dynamics",
+            "r5_transport"
+          ],
+          "evidence_locator": "## Residuals and scope boundary (not a T-claim)",
+          "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "supplied_c3",
+              "left_closes_right": false,
+              "right": "supplied_bilinear",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_c3",
+              "left_closes_right": false,
+              "right": "rank_selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_c3",
+              "left_closes_right": false,
+              "right": "z3_branch_covariance",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_c3",
+              "left_closes_right": false,
+              "right": "non_autonomous_dynamics",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_c3",
+              "left_closes_right": false,
+              "right": "r5_transport",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_bilinear",
+              "left_closes_right": false,
+              "right": "rank_selection",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_bilinear",
+              "left_closes_right": false,
+              "right": "z3_branch_covariance",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_bilinear",
+              "left_closes_right": false,
+              "right": "non_autonomous_dynamics",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "supplied_bilinear",
+              "left_closes_right": false,
+              "right": "r5_transport",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "rank_selection",
+              "left_closes_right": false,
+              "right": "z3_branch_covariance",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "rank_selection",
+              "left_closes_right": false,
+              "right": "non_autonomous_dynamics",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "rank_selection",
+              "left_closes_right": false,
+              "right": "r5_transport",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "z3_branch_covariance",
+              "left_closes_right": false,
+              "right": "non_autonomous_dynamics",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "z3_branch_covariance",
+              "left_closes_right": false,
+              "right": "r5_transport",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "non_autonomous_dynamics",
+              "left_closes_right": false,
+              "right": "r5_transport",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "supplied_c3",
+            "supplied_bilinear",
+            "rank_selection",
+            "z3_branch_covariance",
+            "non_autonomous_dynamics",
+            "r5_transport"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The four axioms supply neither premise.",
+          "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "at each site under discussion, a three-complex-dimensional color carrier is supplied as endpoint data.",
+              "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "SUPPLIED-C3",
+              "promoted_wall": "supplied_c3"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "a full-rank cross-site bilinear map M(x,y): C_x^3 -> C_y^3 between the supplied carriers is itself supplied data.",
+              "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "SUPPLIED-BILINEAR",
+              "promoted_wall": "supplied_bilinear"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Reverse orientation is a stipulation, not a consequence",
+              "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "reverse orientation"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "standard finite-dimensional polar decomposition.",
+              "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "phrase": "standard finite-dimensional polar decomposition"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "Checked supplied, assumed, candidate, stipulation, branch-choice, identification, dynamics, action, and transport language in the source, runner, accepted premises, and registries.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "## Residuals and scope boundary (not a T-claim)",
+          "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "none_found_reason": "All N1 routes remain open restricted-packet obligations, so no RULED OUT BY PRIOR witness is invoked.",
+          "scan_scope": "Checked the source residual list, runner witnesses, accepted-premise boundaries, and cross-cycle candidates; no N1 route was ruled out by a prior retained witness.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Non-autonomy boundary and untouched walls (scope, not a T-claim)",
+          "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "none_found_reason": "The source labels its negative language as scope metadata rather than a T-claim and does not claim exhaustive impossibility at any resolution.",
+          "scan_scope": "Checked uses of no-go, obstruction, wall, not addressed, not closed, and does not derive for theorem-level negative-resolution rhetoric.",
+          "statements": [],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes kinetic-form isotropy only and supplies neither a C^3 carrier, cross-site bilinear, rank selector, nor branch covariance.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms explicitly withhold the additional carrier, operator, dynamics, and readout structure required here.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise access to a realized state supplies no state content, bilinear, full-rank condition, or selection theorem.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference is unrelated to the carrier, bilinear, rank, branch, and transport-identification walls.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton K/CPT counting and does not derive the color carrier or bilinear.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This is an unrelated charged-lepton readout obligation and supplies none of the present hypotheses.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns a strong-CP cross-sector readout and does not supply endpoint carriers, a link bilinear, or coherent Z3 link branches.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every candidate supplied by the partial-closure index across axioms, approved primitives, open obligations, conventions, definitions, and scope reframes.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Because each site already has an M_2(C) possibility algebra and the source names the bonded-pair arena as a candidate, the needed C^3 color carrier might be implicit rather than genuinely supplied.",
+          "evidence_locator": "The four axioms supply neither premise.",
+          "evidence_path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+          "resolution": "The accepted axiom text supplies only the one-site M_2(C) possibility domain, while the source explicitly calls the bonded-pair identification an open realization bridge and states that the four axioms supply neither premise.",
+          "resolved": true,
+          "route_id": "c3_realization"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06:previous_audit:0",
+              "evidence_locator": "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "A prior clean verdict accepted the bounded algebra but was invalidated because the mandatory no-go-discipline packet was missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Charged-lepton occupancy-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Charged-lepton eta readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Strong-CP determinant readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite gravity-sweep scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Runner-boundary and coupling-derivation caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "External textbook and axis-selection cautions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Large unrelated flavor, Planck, and plaquette no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Formal coupling-identity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Plaquette coefficient-source caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Lensing observable-route no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Carrier-registry exhaustiveness caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Charged-lepton selector no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Dimension-selection scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Conditional Lorentz-theorem scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Metric reconstruction scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Replay-only and basin-language caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Local Wilson data must not be promoted to full environment or gauge closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Flavor tracial-route scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Analytic-vector route rejection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Formal Wilson packaging and local data do not derive a physical gauge environment.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Specific gauge-isotropy routes do not establish general gauge dynamics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Gravity dispersion bridge scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Weak-field gravity scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Planck carrier-selection and action-unit no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "A formal carrier or commutant does not by itself select physical hypercharge identification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Cross-lane mass, scale, and observable no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Atomic-scale and threshold no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Quark mass and readout no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite checks versus asymptotic theorem caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite-path lensing surrogate failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Temporal source and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Planning-priority versus theorem caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Update-tick versus physical-time caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Neutrino construction no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Neutrino and cosmology cross-lane no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite Newtonian replay scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Frozen-log and finite-basin caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Conditional coupling-authority caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite packet-memory scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite-window versus all-degree theorem caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Dimension or symmetry matching does not select a physical carrier or intertwiner.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Carrier-selection and representation-identification no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Plaquette bootstrap and imported-dynamics cautions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Plaquette diagnostic interpretation caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Supplied finite data do not become accepted primitives or selectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Registrability and strong-CP bridge no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Locality and axis-selection no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite tangent algebra does not supply physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Minimal axioms do not select a kinetic law or physical carrier realization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Formal SU3 encoder does not become a retained Wilson theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Single-slot computation versus full-card scope caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Determinant-channel readout remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite gauge algebra does not select an action or physical gauge sector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Formal gauge carriers do not supply physical assembly or weighting.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "No action, measure, weighting, or context bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Admissibility does not supply dynamics or selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Determinant algebra does not select a physical horn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record does not supply K/CPT occupancy or determinant selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record formation does not supply rates or action.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Artifact-visibility issue rather than a scientific obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Record-only readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Hard-coded matcher and two-row extrapolation caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Finite lattice rows versus continuum or universal law caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "mechanism": "Definition or physical-readout renaming cannot substitute for a bridge theorem.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "supplied_c3",
+          "supplied_bilinear",
+          "rank_selection",
+          "z3_branch_covariance",
+          "non_autonomous_dynamics",
+          "r5_transport"
+        ],
+        "demotion": "bounded-with-corrected-wall-count",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06": {
+              "accepted_premise_type": null,
+              "content_sha256": "d4d276ac0734a1d56fd4434c645dea8517e6e8561a83f40bd88d6846f8efd8f6",
+              "cross_cycle_candidate_ids": [
+                "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06": {
+              "accepted_premise_type": null,
+              "content_sha256": "234b115e27c00b373d657f77c84ee107836ffeda50d7a3aa06bb0f9301b02669",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "9c6b1f53fe15968b493e0560a4f5793151a76491a5dc237619097ee55c7e6e14",
+              "effective_status": null,
+              "path": "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Residuals and scope boundary (not a T-claim)",
+                "Non-autonomy boundary and untouched walls (scope, not a T-claim)",
+                "R-non-autonomy: the induced link remains matter-state-dependent. The dynamics wall is not closed.",
+                "R-rank-selection: this note requires full-rank `M(x,y)` and does not derive which physical states or sectors supply it.",
+                "R-supplied-bilinear: SUPPLIED-BILINEAR itself is open",
+                "R-supplied-c3: SUPPLIED-C3 itself is open.",
+                "R-z3-center: determinant reduction to `SU(3)` has an exact `Z_3` cube-root ambiguity.",
+                "R5-transport: NOT addressed. T1 is a different conditional transport lemma",
+                "Reverse orientation is a stipulation, not a consequence",
+                "The four axioms supply neither premise.",
+                "a full-rank cross-site bilinear map M(x,y): C_x^3 -> C_y^3 between the supplied carriers is itself supplied data.",
+                "at each site under discussion, a three-complex-dimensional color carrier is supplied as endpoint data.",
+                "standard finite-dimensional polar decomposition."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains six open routes and therefore does not establish an exhaustive negative result.",
+          "The source intentionally presents residual walls as scope metadata rather than closed no-go mechanisms.",
+          "The determinant-reduced Wilson-trace statement lacks a verified coherent Z3 branch transformation rule."
+        ],
+        "narrowed_claim_scope": "Conditional finite-dimensional polar algebra for supplied endpoint C^3 carriers and a supplied full-rank cross-site bilinear: endpoint-frame covariance, determinant/Z3 bookkeeping, polar-link Wilson-trace invariance, and the stated rank-boundary witnesses; no carrier, bilinear, rank-sector, R5, gauge-dynamics, or physical-color bridge is audited.",
+        "next_route": {
+          "reason_untested": "The packet names the bonded-pair arena only as a candidate and contains no retained intertwiner or realization theorem from the accepted one-site M_2(C) structure to endpoint C^3 color carriers.",
+          "route_id": "c3_realization"
+        },
+        "prior_claim_scope": "Bounded finite-dimensional conditional theorem: for supplied endpoint C^3 carriers and a supplied full-rank cross-site bilinear, polar decomposition gives an endpoint-frame-covariant unitary transport, determinant/Z3 bookkeeping, Wilson-form trace invariance under the stated orientation convention, and the rank-boundary witnesses; no C^3 carrier, physical color identification, full-rank sector selection, gauge dynamics, action, probability, Wilson positivity, confinement, chiral bridge, or hypercharge bridge is audited.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add retained authorities deriving both the endpoint C^3 carrier and the physical full-rank cross-site bilinear, and either prove coherent Z3 branch covariance for determinant-reduced loop traces or narrow that sentence to polar-unitary links.",
+      "open_dependency_paths": [
+        "docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner performs genuine exact and numerical algebra checks rather than merely printing expected constants, and its polar covariance, polar-link Wilson trace, determinant, rank, and discontinuity witnesses support the conditional mathematics. However, the load-bearing C^3 carrier and cross-site bilinear are explicit unregistered supplied premises rather than consequences of the accepted framework premises. Moreover, exact Wilson-trace invariance after determinant reduction is not established for arbitrary independent cube-root choices; at most it follows after additional coherent Z3 branch bookkeeping."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/color_composition_rule_matter_bilinear_polar_transport_2026_07_06.py",
+  "title": "Color Composition Rule From Matter-Bilinear Polar Transport: Conditional Bounded Theorem",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

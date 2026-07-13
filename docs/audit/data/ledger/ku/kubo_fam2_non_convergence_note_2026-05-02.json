@@ -1,0 +1,325 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "kubo_fam2_non_convergence_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "kubo_continuum_limit_families_note",
+    "kubo_fam2_refinement_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "38d044d6e998db6318fd68aba8f218037a9deebcfced55a462bd48813c88b7e1",
+  "note_path": "docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T12:08:51.507781+00:00",
+      "archived_for_note_hash": "17928eefa988a8e8cb35d52c8c4183ede109147a909b183b8dd5bfa4e7a70fa4",
+      "audit_date": "2026-05-19T15:37:28.871031+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "kubo_continuum_limit_families_note": "For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%.",
+          "kubo_fam2_refinement_note": "Audited the bounded numerical claim that Fam2 is not converged on the tested H ladder {0.5, 0.35, 0.25, 0.20} and that the H=0.20 point weakens the near-term rescue story, without proving divergence or isolating restore as the cause."
+        },
+        "dep_claim_type": {
+          "kubo_continuum_limit_families_note": "bounded_theorem",
+          "kubo_fam2_refinement_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kubo_continuum_limit_families_note": "retained_bounded",
+          "kubo_fam2_refinement_note": "retained_bounded"
+        },
+        "deps": [
+          "kubo_continuum_limit_families_note",
+          "kubo_fam2_refinement_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a2b0e2a40860ac6b405582af0dfd98f596773551cc3f6f5b2abb5b509c477e71",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260519-153419-d5be05e0-kubo_fam2_non_convergenc-024",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited authorities support that Fam2 is non-convergent on the tested H ladder and that the easy near-term rescue is weakened. They do not prove the exhaustive obstruction claim that only the three named non-perturbative routes could resolve the residual.",
+      "claim_scope": "Audited the note as a named-obstruction/open-gate claim documenting why the Fam2 residual remains unresolved after the retained bounded Fam2 refinement evidence.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-19T15:37:28.871031+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Fam2 non-convergence cannot be resolved analytically without solving the full microscopic DAG growth equations, constructing a phase diagram, or analyzing the discretization scheme non-perturbatively, none of which is derivable from A_min.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or replace the exhaustive claim that the Fam2 residual requires one of the three named non-perturbative analyses; otherwise scope the note explicitly to documented possible obstruction routes.",
+      "open_dependency_paths": [
+        "docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md",
+        "docs/KUBO_FAM2_REFINEMENT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The runner is only a structural/text-presence check and does not derive the obstruction or compute the underlying physics. Both cited authorities are retained_bounded and support the observed Fam2 instability, but they explicitly leave open later settling, mechanism isolation, and finer-H behavior. The source note honestly marks the surface as a stretch attempt with proposal_allowed false, so the audit can retain it only as conditional/open-gate documentation, not as a closed positive theorem."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:23.844539+00:00",
+      "archived_for_note_hash": "f6db482e9ea98af3a65f08ac4cb1919bf02f17f5be105a101ca7b0f57e7b30d9",
+      "audit_date": "2026-05-29T23:36:14.127389+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "kubo_continuum_limit_families_note": "For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%.",
+          "kubo_fam2_refinement_note": "Audited the bounded numerical claim that Fam2 is not converged on the tested H ladder {0.5, 0.35, 0.25, 0.20} and that the H=0.20 point weakens the near-term rescue story, without proving divergence or isolating restore as the cause."
+        },
+        "dep_claim_type": {
+          "kubo_continuum_limit_families_note": "bounded_theorem",
+          "kubo_fam2_refinement_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kubo_continuum_limit_families_note": "retained_bounded",
+          "kubo_fam2_refinement_note": "retained_bounded"
+        },
+        "deps": [
+          "kubo_continuum_limit_families_note",
+          "kubo_fam2_refinement_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "8a84e8733986dd992bac2c22b914728db400152b6c8c85cac77f36ccd84c2975",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260529-233422-3ee7adc9-kubo_fam2_non_convergenc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-H values and percentage drifts are supported by the retained_bounded cited authorities, and the arithmetic checks out. The source note explicitly removes the unsupported exhaustive 'only these routes' bridge from the audited load-bearing scope.",
+      "claim_scope": "Fam2 is documented as non-convergent on H \u2208 {0.50, 0.35, 0.25, 0.20}; O1-O3 are candidate obstruction routes only, with the exhaustive obstruction claim explicitly admitted as non-load-bearing.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-29T23:36:14.127389+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Fam2 data on the tested H ladder are non-monotone with 12.2% and 36.4% oscillations, so the note scopes the result to a documented open residual with three named, non-exhaustive candidate obstruction routes.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers do not cite the admitted exhaustive O1/O2/O3 characterization as load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "As scoped, this is an open-gate/status claim rather than a proof of Fam2 divergence or an exhaustive obstruction theorem. The runner is a structure and text-presence check, not a first-principles physics computation, but the quantitative non-convergence comes from retained_bounded upstream authorities whose displayed numbers are internally consistent. Because the note admits the missing bridge theorem for exhaustiveness and makes it non-load-bearing, the audited chain closes for the narrower documented-residual claim."
+    },
+    {
+      "archived_at": "2026-06-05T09:04:50.019267+00:00",
+      "archived_for_note_hash": "2474e569b062cbdc2c65f14fa848fb8a01cbe3bfaddb0efc21db118e5df6f096",
+      "audit_date": "2026-05-31T16:23:57.823079+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "87db7a7dd6d0051d3bd94b22db1f47cf44453dbc036fd6239b6111327a8bb8f3",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-162237-151c724a-kubo_fam2_non_convergenc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The monotonicity conclusion follows arithmetically from the displayed Fam2 sequence, but the restricted packet does not independently support the displayed Kubo table values. The missing step is a data-producing computation, cached certificate, or retained cited source for those finite samples.",
+      "claim_scope": "Open-gate inventory asserting only that the displayed finite Fam2 samples are non-monotone, do not visibly settle to the Fam1/Fam3 sampled value, and motivate three non-exhaustive follow-up routes.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-31T16:23:57.823079+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Fam2 values bounce rather than moving monotonically toward the Fam1 and Fam3 sampled value, so the simple 'Fam2 only needs finer H' reading is not supported by the sampled data.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the data-producing runner output or cited refinement authority that independently supports the Recorded Finite Data table values, then re-audit the finite non-monotonicity step.",
+      "open_dependency_paths": [
+        "docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md",
+        "docs/KUBO_FAM2_REFINEMENT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The runner source is a text-presence checker: it verifies labels, disclaimers, family parameters, and obstruction-route prose, but it does not recompute or independently check the displayed Fam1/Fam2/Fam3 Kubo sample values. The open-gate scope is appropriately non-exhaustive and does not claim a resolved mechanism, but the quantitative Recorded Finite Data table is load-bearing for the non-monotonicity conclusion. Because those table entries are imported without a closed computation or supplied retained authority, the chain is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-17T10:30:39.071157+00:00",
+      "archived_for_note_hash": "43872af9435b70d880246e798c7405ae2b6238836ad157c12bbcfdd9e813038a",
+      "audit_date": "2026-06-05T23:57:57.717993+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "kubo_continuum_limit_families_note": "For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%.",
+          "kubo_fam2_refinement_note": "Audited the bounded numerical claim that Fam2 is not converged on the tested H ladder {0.5, 0.35, 0.25, 0.20} and that the H=0.20 point weakens the near-term rescue story, without proving divergence or isolating restore as the cause."
+        },
+        "dep_claim_type": {
+          "kubo_continuum_limit_families_note": "bounded_theorem",
+          "kubo_fam2_refinement_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kubo_continuum_limit_families_note": "retained_bounded",
+          "kubo_fam2_refinement_note": "retained_bounded"
+        },
+        "deps": [
+          "kubo_continuum_limit_families_note",
+          "kubo_fam2_refinement_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0ccf5766daadf4d3dc68e02e10ed856e85ad5f9682c565f8d5a5d443f9c75618",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-235649-0be7c3a012-kubo_fam2_non_convergence_no",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Fam2 sequence +6.6588 -> +6.3168 -> +7.0883 -> +4.5082 has step signs -, +, -, so it is non-monotone and not visibly settling near ~+5.97. The note labels O1-O3 only as possible, non-exhaustive routes, so no stronger mechanism theorem is required.",
+      "claim_scope": "Audited the open-gate inventory claim that finite Fam2 Kubo samples at H in {0.50, 0.35, 0.25, 0.20} are non-monotone, do not support the simple near-term settling-to-Fam1/Fam3 reading, and motivate three non-exhaustive possible obstruction routes.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T23:57:57.717993+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The recorded Fam2 refinement data are non-monotone over the sampled H schedule, so the simple reading that Fam2 only needs finer H to settle near the Fam1/Fam3 value is not supported.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the retained_bounded parent statuses or cached Fam2 refinement data change.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 57,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 57
+      },
+      "verdict_rationale": "Both cited authorities are retained_bounded, which is retained-grade under the rubric. The primary runner is not a first-principles physics computation; it checks note boundaries, cache freshness, and consistency of the recorded finite data, with 57 class-A passes. Independent inspection of the displayed values supports the non-monotonicity and the rejection of the shallow settling interpretation within the sampled ladder. The note does not claim an exhaustive trichotomy, a no-go theorem, or a Fam2 continuum limit."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.231381+00:00",
+      "audit_date": "2026-06-18T13:37:56.482616+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "kubo_continuum_limit_families_note": "For the specified static grown-DAG Kubo harness, seed 0, families Fam1/Fam2/Fam3, and refinements H = 0.50, 0.35, 0.25, the cached runner computes Fam1/Fam2/Fam3 fine-H kubo_true values +5.986043, +7.088251, +5.954676, with last-step drifts 0.2%, 12.2%, and 6.4%, and max family deviation 11.7%.",
+          "kubo_fam2_refinement_note": "Audited the bounded numerical claim that Fam2 is not converged on the tested H ladder {0.5, 0.35, 0.25, 0.20} and that the H=0.20 point weakens the near-term rescue story, without proving divergence or isolating restore as the cause."
+        },
+        "dep_claim_type": {
+          "kubo_continuum_limit_families_note": "bounded_theorem",
+          "kubo_fam2_refinement_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "kubo_continuum_limit_families_note": "retained_bounded",
+          "kubo_fam2_refinement_note": "retained_bounded"
+        },
+        "deps": [
+          "kubo_continuum_limit_families_note",
+          "kubo_fam2_refinement_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "19caba2ebb90cf84d71d6b908aa4b1c0420830cc60f05d6de647573aa3d87593",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-kubo_fam2_non_convergence_note_2026-05-02-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained_bounded notes supply the Fam2 finite sequence and the Fam1/Fam3 comparator; non-monotonicity and lack of visible settling are direct checks on those values. The source note explicitly disclaims a Fam2 continuum theorem, an exhaustive obstruction trichotomy, and a resolved mechanism.",
+      "claim_scope": "Finite sampled-H open-gate inventory: records Fam2 non-monotone Kubo behavior on the provided ladder, rejects only the visible near-term settling-to-Fam1/Fam3 interpretation, and names three non-exhaustive possible follow-up routes.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T13:37:56.482616+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The recorded Fam2 refinement data are non-monotone over H={0.50,0.35,0.25,0.20}, so the simple 'Fam2 only needs finer H to settle near the Fam1/Fam3 value' reading is not supported by the sampled data.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check if either cited parent/context note status changes or the SHA-pinned Fam2 refinement cache no longer supports the finite values recorded here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 70,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 70
+      },
+      "verdict_rationale": "The primary runner is a class-A consistency/provenance checker rather than a first-principles Kubo computation, but that matches the scoped open-gate claim. The provided retained_bounded authorities and SHA-fresh cache support the finite values, and the note's conclusion is only the finite-sequence inventory plus non-exhaustive route listing. No hidden convergence target, fitted coefficient, or same-surface forcing argument is imported in the audited claim scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_kubo_fam2_non_convergence_stretch.py",
+  "title": "Kubo Fam2 Non-Convergence Possible-Obstruction Inventory",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

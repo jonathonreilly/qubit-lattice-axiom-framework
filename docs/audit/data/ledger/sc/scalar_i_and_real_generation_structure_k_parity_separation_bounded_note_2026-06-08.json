@@ -1,0 +1,379 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+    "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d5b5c5ada8a4f028f857ac72be6dc9f5591dc23de6e1c8e677a493c2d86ebbab",
+  "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:08.805832+00:00",
+      "archived_for_note_hash": "cad3da4b058fe78392a81f02e65fa8ff64adf7301c5ab36114fbb7d192cdbe73",
+      "audit_date": "2026-06-09T14:09:35.740619+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "Finite records-level unification: on the stated Brannen Born triple, the mirror phase sign and the S3\u2192C3 count orientation are the same S3 sign-representation Z2; realized handedness, |\u03b4|=2/9, and the r=1/2 cone are not derived.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2b5727accb2ca36217cb361630c7db6bc5823ae8aeb79eb13d15aa487b64ab18",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260609-140618-15b9d79cb9-scalar_i_and_real_generation",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli, tensor-central-i, circulant conjugation, and J_cs matrix identities close as finite algebra. The Vandermonde part does not close: the cited generation Vandermonde \u0394(p) is label-sensitive and is odd under \u03b4 -> -\u03b4, while the runner sorts eigenvalues and thereby tests a different K-even discriminant convention.",
+      "claim_scope": "Finite K-parity comparison, under supplied entrywise conjugation, between scalar-i/phase objects and real generation-orientation objects including J_cs and the Vandermonde orientation sign.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T14:09:35.740619+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The scalar-i phase objects are K-odd under supplied entrywise conjugation, while the real generation complex structure and Vandermonde orientation sign are K-even, so the two are separate K-parity sectors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the labeled generation Vandermonde \u0394(p) from the cited orientation note under K-induced \u03b4 -> -\u03b4; a repair could narrow the claim to scalar-i versus J_cs or replace the sorted-spectrum check with the cited labeled orientation object.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The retained-bounded orientation authority defines the generation Vandermonde \u0394(p) and states that \u0394 is odd under \u03b4 -> -\u03b4. The source and runner also use entrywise conjugation of the C3 circulant phase as \u03b4 -> -\u03b4, so the cited orientation sign is not K-even under that induced transformation. The runner's Vandermonde check uses sorted eigvalsh(M_delta), which removes the label orientation and makes the sign conventionally fixed, so it does not verify the load-bearing orientation-sign claim. Thus the stated sector separation including the Vandermonde/generation-orientation lever does not follow from the restricted packet, even though the narrower scalar-i versus J_cs algebra is correct."
+    },
+    {
+      "archived_at": "2026-06-13T22:14:41.041394+00:00",
+      "audit_date": "2026-06-10T05:54:12.872916+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "Finite records-level unification: on the stated Brannen Born triple, the mirror phase sign and the S3\u2192C3 count orientation are the same S3 sign-representation Z2; realized handedness, |\u03b4|=2/9, and the r=1/2 cone are not derived.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "1913c91c832d4ba34169fe6885a113245706bab115fde4a1578acca17bc79ce6",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-055208-b9e0ebf502-scalar_i_and_real_generation",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli, tensor, circulant, and C3 permutation-matrix identities close as finite algebra under the supplied entrywise conjugation. The note keeps the supplied-K/readout-context premise explicit and does not ask Record or the cited retained-bounded orientation note to derive a realized K/CPT structure, handedness, phase magnitude, or empirical selector.",
+      "claim_scope": "Finite matrix audit of K-parity separation between supplied scalar-i/phase data and real C3 generation complex structure J_cs, including labeled Vandermonde oddness and sorted-spectrum multiset evenness under delta -> -delta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:54:12.872916+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08:retained_bounded->unaudited",
+      "load_bearing_step": "Under the supplied entrywise conjugation K, the scalar-i cluster is K-odd while J_cs=(C-C^2)/sqrt(3) is real/K-even and squares to -(I-P_triv), with the labeled Vandermonde orientation sign flipping under delta -> -delta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No relevant approved primitive is load-bearing; a second auditor should re-check only the supplied-K scope boundary and the distinction between labeled Vandermonde orientation data and K-even J_cs data.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Independent symbolic checks confirm sigma_x sigma_y sigma_z = i I_2, shared tensor centrality, K-oddness of the scalar-i sector, and J_cs^2 = -(I-P_triv) with P_triv=(I+C+C^2)/3. Direct recomputation of the Born-weight Vandermonde at the runner sample gives Delta(+0.2222)=0.04674385427177509 and Delta(-0.2222)=-0.04674385427177523, while the sorted spectrum is unchanged as a multiset. The cited authorities are retained-grade or accepted-premise scope material, and no helper-runner opacity or external comparator is present."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:45.991268+00:00",
+      "archived_for_note_hash": "8ef8303cdccc258a234e4e71792e32a8b9256af04ea46afdf638a8c264de86f5",
+      "audit_date": "2026-06-16T03:47:34.867270+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "Finite records-level algebra identifying the Brannen mirror-phase sign with the S3 permutation orientation sign on the three generation Born weights; realized handedness, magnitude 2/9, and the r=1/2 firewall are not audited as derived.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "1913c91c832d4ba34169fe6885a113245706bab115fde4a1578acca17bc79ce6",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-034501-74d9860d44-scalar_i_and_real_generation",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from explicit Pauli-matrix, tensor-product, C3-circulant, and Vandermonde identities in the supplied K context. Independent recomputation confirmed the signs, factors, J_cs square identity, sample Delta values, and sorted-spectrum multiset control.",
+      "claim_scope": "Finite algebraic check that supplied entrywise conjugation separates scalar-i/phase data as K-odd from the real C3 generation complex structure J_cs as K-even, with the labeled Vandermonde orientation flipping under delta -> -delta.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:47:34.867270+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the supplied entrywise conjugation, the scalar-i cluster is reversed while the real generation complex structure J_cs=(C-C^2)/sqrt(3) is fixed and satisfies J_cs^2=-(I-P_triv).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the supplied-K scope and that the orientation authority is used for labeled Vandermonde parity, not for realized handedness or phase magnitude.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner source performs actual finite matrix and vector computations rather than printing a bare pass count, and the contested statement is algebraic rather than an empirical or tuned numerical match. The cached runner reports PASS=9 FAIL=0, and an independent route verifies sigma_x sigma_y sigma_z=iI_2, tensor central equality, K-odd scalar-i data, real K-even J_cs with J_cs^2=-(I-P_triv), Delta(0.2222)=0.04674385, Delta(-0.2222)=-0.04674385, and the K-even sorted-spectrum control. The source keeps the readout context and K/CPT structure supplied rather than attributing them to Record, so no hidden Record bridge is imported."
+    },
+    {
+      "archived_at": "2026-06-21T08:17:44.271889+00:00",
+      "audit_date": "2026-06-18T14:44:55.715818+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "Finite records-level algebra identifying the Brannen mirror-phase sign with the S3 permutation orientation sign on the three generation Born weights; realized handedness, magnitude 2/9, and the r=1/2 firewall are not audited as derived.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "1913c91c832d4ba34169fe6885a113245706bab115fde4a1578acca17bc79ce6",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli, tensor-central, C3 circulant, J_cs square, and Vandermonde sign claims follow by direct finite algebra under the stated supplied K. The cited authorities provide accepted or retained-grade context, and the note does not claim Record supplies K, readout, dynamics, or physical realization.",
+      "claim_scope": "Finite matrix K-parity separation: scalar-i and C3 phase data are K-odd under supplied conjugation, real J_cs is K-even, and the labeled Vandermonde orientation is K-odd while sorted-spectrum data are multiset-even.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:44:55.715818+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08:retained_bounded->unaudited",
+      "load_bearing_step": "Under the supplied entrywise conjugation, the scalar-i/phase cluster is K-odd while the real generation complex structure J_cs=(C-C^2)/sqrt(3) is K-even and satisfies J_cs^2=-(I-P_triv).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the supplied-K/readout-context scope and do not treat it as derived from Record.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner source performs actual finite matrix computations rather than printing constants or importing a contested value. The load-bearing parity separation is an algebraic closure over the supplied conjugation, the one-site operator context, and retained C3/orientation authorities. No empirical comparator, selector, fitted scale, or unretained dependency is used."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.515467+00:00",
+      "audit_date": "2026-06-21T15:40:56.110638+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "On the stated Brannen Born triple, sign(\u0394) is the S3 orientation sign that distinguishes \u03b4 from \u2212\u03b4 after the C3 chamber is fixed; realized handedness, |\u03b4|=2/9, and the r=1/2 cone are not derived.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "1913c91c832d4ba34169fe6885a113245706bab115fde4a1578acca17bc79ce6",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated parities follow by direct finite algebra from the supplied conjugation, Pauli matrices, C3 permutation matrix, and retained orientation/circulant contexts. The note keeps the supplied-K/readout-context boundary explicit and does not claim Record derives that context.",
+      "claim_scope": "Finite supplied-K matrix calculation separating scalar-i/phase K-odd data from the real generation complex structure J_cs, with labeled Vandermonde orientation treated as K-odd and sorted-spectrum data only as a K-even multiset control.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:40:56.110638+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08:retained_bounded->unaudited",
+      "load_bearing_step": "Under the supplied entrywise conjugation K(X)=conj(X), the scalar-i cluster is K-odd while J_cs=(C-C^2)/sqrt(3) is real K-even and squares to -(I-P_triv), with the labeled Vandermonde orientation flipping under delta -> -delta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the supplied-K scope and do not cite this as a Record-derived K/CPT construction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing content is algebraic: entrywise conjugation sends iI, sigma_y, and the volume product to their negatives, fixes the real J_cs, and swaps the labeled delta orientation by the stated transposition. The runner actually instantiates the finite matrices and Born/Vandermonde expressions rather than merely printing constants; the one textual guardrail check is non-load-bearing. All cited non-axiom authorities are retained-grade, and the axiom-premise dependency is within its accepted boundary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
+  "title": "Scalar-i and Real J_cs Structure Have Different K-Parity",
+  "transitive_descendants": 1,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

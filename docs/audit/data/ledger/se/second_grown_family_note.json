@@ -1,0 +1,260 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "second_grown_family_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "second_grown_family_sign_note",
+    "second_grown_family_complex_note",
+    "second_grown_family_complex_boundary_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
+    "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+    "scripts/SECOND_GROWN_FAMILY_COMPLEX.py",
+    "scripts/SECOND_GROWN_FAMILY_COMPLEX_QUICK.py",
+    "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+    "scripts/complex_action_grown_companion.py",
+    "scripts/gate_b_grown_joint_package.py",
+    "scripts/gate_b_no_restore_farfield.py",
+    "scripts/gate_b_nonlabel_connectivity_v1.py",
+    "scripts/impact_parameter_portability_probe.py",
+    "scripts/runner_cache.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "988896d1af67f93608a0067a385df2c761900060488ed1363ee4ca5549a94f4f",
+  "note_path": "docs/SECOND_GROWN_FAMILY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369594+00:00",
+      "archived_for_note_hash": "13de5381c6c45cb973fe39429ac77232ad9d765cea6389ee9f4fbb002e0adba2",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-09T08:58:09.448830+00:00",
+      "archived_for_note_hash": "bb066c3407d16f39a092dcbb134102e2571c6ecb624627eb4a276cbd4c5c1896",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The only cited battery script is absent from the repository and is described as 'to be frozen', so the numeric control battery cannot be rerun or checked from the provided artifact chain.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_from_archived_failed",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "9 candidate families tested, with best second candidate drift=0.05, restore=0.30, passing the full control battery for F~M, Born, gravity TOWARD, and complex-action crossover.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The note's retained positive result rests on a missing artifact, scripts/second_grown_family_battery.py, explicitly labeled as not yet frozen, and no frozen output is provided in the artifact chain. Why this blocks: the quoted F~M, Born, gravity, and complex-action control-battery numbers are unreviewable from the allowed source and artifacts, so the candidate retained-grade second-family claim cannot be independently reproduced or checked. Repair target: restore or recreate the exact battery script, add a frozen log and preferably a PASS/FAIL assertion runner, or replace this note with audit-clean sign/complex second-family notes that actually carry the evidence. Claim boundary until fixed: it is safe to say this note records a historical candidate at drift=0.05, restore=0.30; it is not safe to claim a retained second independent grown family from the current artifact chain."
+    },
+    {
+      "archived_at": "2026-06-09T19:27:09.364575+00:00",
+      "archived_for_note_hash": "e0939b7e8cf0d29c78996063ff34d08e1f81d729b5bbe2217ac78ed44936f07d",
+      "audit_date": "2026-06-09T14:14:12.703744+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "second_grown_family_complex_boundary_note": "Finite seed-0 no-restore grown-family geometry-sector probe over drifts 0.18, 0.20, and 0.22 showing Born/weak-field guards at the anchor but no TOWARD-to-AWAY crossover.",
+          "second_grown_family_complex_note": "Narrow anchor-row positive: drift=0.20 on the no-restore Gate B grown geometry with geometry-sector stencil satisfies the runner's Born-proxy, weak-field F~M, and TOWARD@0.1 to AWAY@0.5 complex-action gates over the tested seeds.",
+          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_complex_boundary_note": "bounded_theorem",
+          "second_grown_family_complex_note": "positive_theorem",
+          "second_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_complex_boundary_note": "retained_bounded",
+          "second_grown_family_complex_note": "retained",
+          "second_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "second_grown_family_complex_boundary_note",
+          "second_grown_family_complex_note",
+          "second_grown_family_sign_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2201686da40dc64cc55211c695afb4274ef9ba7227d33a6a69b708896695390d",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-141010-1698496456-second_grown_family_note",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner does run 11 finite cache/string checks, but those checks verify imported cache text rather than recomputing the evidence slices. The distance/impact slice and subordinate runner existence/current-source status are not closed by a retained one-hop authority or included runner source in the restricted packet.",
+      "claim_scope": "A packet-level audit of whether the restored primary battery verifies fresh cached evidence for the second-grown-family sign, distance/impact, complex, and boundary slices without reviving the old broad family claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T14:14:12.703744+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The missing executable battery has been restored as a bounded, reproducible current-source packet over the listed evidence slices.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include or assert explicit existence/current-SHA checks for each subordinate evidence runner, and provide a retained one-hop distance/impact authority or the relevant runner sources/certificates for the distance-law slice.",
+      "open_dependency_paths": [
+        "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
+        "scripts/impact_parameter_portability_probe.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The sign, complex, and boundary notes supplied in the packet are retained-grade and support the narrow boundary-aware reading. However, the load-bearing battery is a cross-artifact cache verifier, not a first-principles computation, and its distance/impact evidence is supported only by cache-string containment checks in this restricted packet. The helper also treats a missing subordinate runner as cache-status fresh, so the PASS output alone does not certify current-source presence for the child evidence runners. The narrow packet is plausible but not cleanly closed as a current-source bounded theorem from the supplied authorities."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:33.116519+00:00",
+      "audit_date": "2026-06-10T05:57:13.218017+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "second_grown_family_complex_boundary_note": "Finite seed-0 no-restore grown-family geometry-sector probe over drifts 0.18, 0.20, and 0.22 showing Born/weak-field guards at the anchor but no TOWARD-to-AWAY crossover.",
+          "second_grown_family_complex_note": "Narrow anchor-row positive: drift=0.20 on the no-restore Gate B grown geometry with geometry-sector stencil satisfies the runner's Born-proxy, weak-field F~M, and TOWARD@0.1 to AWAY@0.5 complex-action gates over the tested seeds.",
+          "second_grown_family_sign_note": "The audited packet supports that the signed-source fixed-field diagnostics pass on the tested no-restore geometry-sector grown-family slice for the listed drifts and seeds."
+        },
+        "dep_claim_type": {
+          "second_grown_family_complex_boundary_note": "bounded_theorem",
+          "second_grown_family_complex_note": "positive_theorem",
+          "second_grown_family_sign_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "second_grown_family_complex_boundary_note": "retained_bounded",
+          "second_grown_family_complex_note": "retained",
+          "second_grown_family_sign_note": "retained_bounded"
+        },
+        "deps": [
+          "second_grown_family_complex_boundary_note",
+          "second_grown_family_complex_note",
+          "second_grown_family_sign_note"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "cb5565fb38d82dc32a13bf39689d7a48c4fdacbfa588abf419adbe1fa8d10548",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-055447-b16b60e54a-second_grown_family_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source and stdout close the narrow artifact/provenance claim: five imported child modules produce 15 source/cache checks, five cache/provenance content checks precede the final gate, and the final count is therefore PASS=21 FAIL=0. The cited retained and retained_bounded authorities support the bounded sign/complex scope, while the boundary note prevents overextension.",
+      "claim_scope": "The audited scope is only the bounded current-source restoration of scripts/second_grown_family_battery.py as a SHA-pinned cache verifier over the listed second-grown-family evidence slices, with no broad family theorem or status movement.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:57:13.218017+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:second_grown_family_complex_boundary_note:retained_bounded->unaudited",
+      "load_bearing_step": "The battery restores the missing runner path by checking the current child runner paths, live SHA/cache SHA equality, fresh ok cache headers, and the narrowed sign, distance/impact, complex, and boundary cache gates before reporting PASS=21 FAIL=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should preserve the narrow scope: this clean verdict covers battery restoration and cache/source provenance, not independent re-derivation of the child physics claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Within the note's bounded scope, the primary runner is an exact artifact verifier rather than a first-principles physics derivation. The independent count check matches the code: five child modules times three source/cache checks gives 15, plus five upstream/cache-content gates before the final algebraic gate, yielding 21 total passes. The note's conclusion is correspondingly narrow: the missing executable battery is restored as a current-source packet, not as a resurrection of the older broad retained table."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/second_grown_family_battery.py",
+  "title": "Second Grown Family Live Battery Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

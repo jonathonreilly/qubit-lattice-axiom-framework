@@ -1,0 +1,463 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "mesoscopic_surrogate_alternate_family_scout_note",
+  "claim_scope": null,
+  "claim_type": "meta",
+  "claim_type_author_hint": "meta",
+  "claim_type_author_hint_raw": "meta",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "mesoscopic_surrogate_localization_frontier_note",
+    "mesoscopic_surrogate_localization_sweep_note",
+    "mesoscopic_surrogate_threshold_2d_note",
+    "same_family_3d_closure_note",
+    "valley_linear_asymptotic_bridge_note",
+    "persistent_inertial_response_readiness_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "meta",
+  "effective_status_reason": "metadata",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "meta",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "800271d3e1a30bce2b253330e301b92703573ae1f1cdab5d48407deb06ed58bf",
+  "note_path": "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106321+00:00",
+      "archived_for_note_hash": "d4aa6108177909bf60fc725ba4a8ffffa4f65c1492c4beabde64b7172c3a763f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.963121+00:00",
+      "archived_for_note_hash": "21cc485a7f0c3a7c4b5c726639f5bb4c8ab774b74707abc0e31d14ee86bad65b",
+      "audit_date": "2026-05-01T07:01:22.432908+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The recommendation imports frozen conclusions from multiple mesoscopic-surrogate lanes, but the row has no registered dependencies and no runner or frozen log for those comparisons. The audit cannot verify the ranking of h=0.25 versus h=0.5 and 2D from this note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If localization is worth trying again, the retained 3D h=0.25 ordered-lattice family is the cheapest plausible target, while h=0.5 and the 2D threshold lane should not keep being swept.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: register the cited mesoscopic notes/results as dependencies or attach a runner/log that reproduces the family comparison and compact-floor check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the scout recommendation rests on uncited prior bounded results about h=0.5 localization, the 2D threshold scan, and the 3D h=0.25 family. Why this blocks: without one-hop authorities or a reproduction artifact, the audit cannot verify that h=0.25 is the cheapest plausible next target or that the other lanes are exhausted. Repair target: register the cited mesoscopic notes/results as dependencies or attach a runner/log that reproduces the family comparison and compact-floor check. Claim boundary until fixed: the note may guide planning, but it is not an audited closure of the alternate-family selection."
+    },
+    {
+      "archived_at": "2026-05-18T00:08:08.567600+00:00",
+      "archived_for_note_hash": "df231f093b7c39c2877b81ece5f3de8734a66b1db8c8c4d28a4e93a3f013bc5f",
+      "audit_date": "2026-05-10T20:37:00.503742+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d66fad14ddb2ec7c77a8bbade1d3196c4c6d16be6f7b325f022b956084b1e574",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e139b-2b87-76e3-8a75-a175f2a9f9df",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note's conclusion relies on several frozen-evidence notes, but the restricted packet lists no cited authorities. The runner also reads those unlisted notes, so the ranking is cross-note input verification whose inputs are not available as retained-grade one-hop dependencies.",
+      "claim_scope": "Audited the bounded recommendation that, among the cited mesoscopic-surrogate alternatives, retained 3D h=0.25 is the cheapest plausible next localization target.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T20:37:00.503742+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The cheapest already-bounded family that still plausibly has room for a more localized source object to matter is the retained 3D ordered-lattice family at h = 0.25.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge - add direct dependency edges for docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md, docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md, docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md, docs/SAME_FAMILY_3D_CLOSURE_NOTE.md, docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md, and docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md, then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the load-bearing recommendation imports the h=0.5 frontier closure, 2D threshold closure, h=0.25 same-family closure, h=0.25 asymptotic bridge, and readiness status without any listed dependency authority. Why this blocks: with no one-hop authorities supplied, a hostile audit cannot verify that the frozen-evidence premises are retained-grade or even stated as summarized. Repair target: add explicit dependency edges for the named frozen-evidence notes and re-audit with those one-hop authorities included. Claim boundary until fixed: this is only an unaudited scout recommendation conditioned on those frozen-evidence notes being valid and retained-grade."
+    },
+    {
+      "archived_at": "2026-05-29T12:08:52.478922+00:00",
+      "archived_for_note_hash": "0cde8b8223e376a7e7c935b2c15f3b79109e22595316398800b2fd3a34b620e8",
+      "audit_date": "2026-05-28T08:34:51.481765+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mesoscopic_surrogate_localization_frontier_note": "Bounded scripted localization/strength tradeoff map for the specified 3D ordered-lattice surrogate family and sampled topN values.",
+          "mesoscopic_surrogate_localization_sweep_note": "Bounded finite-sweep benchmark only: this runner, this cached table, this explicit mesoscopic benchmark predicate, and the stated fixed 3D ordered-lattice mesoscopic-source setup. This does not certify retained source-control authority, framework-wide optimality, or a least-bad source theorem.",
+          "mesoscopic_surrogate_threshold_2d_note": "Finite 2D ordered-lattice support sweep over topN = 1,2,3,4,5,6,7,8,9,10,12,16,20,25,32,40,49,64,81 under the stated two-stage stability criteria.",
+          "persistent_inertial_response_readiness_note": null,
+          "same_family_3d_closure_note": "Fixed finite-lattice 3D valley-linear closure for h=0.25, W=10, L=12 core rows, same-h,W L=8,10,12 rows, and the W=10 tail, with the W=12 companion supplied only by retained-bounded dependency.",
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
+        },
+        "dep_claim_type": {
+          "mesoscopic_surrogate_localization_frontier_note": "bounded_theorem",
+          "mesoscopic_surrogate_localization_sweep_note": "bounded_theorem",
+          "mesoscopic_surrogate_threshold_2d_note": "bounded_theorem",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "bounded_theorem",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mesoscopic_surrogate_localization_frontier_note": "retained_bounded",
+          "mesoscopic_surrogate_localization_sweep_note": "retained_bounded",
+          "mesoscopic_surrogate_threshold_2d_note": "retained_bounded",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "retained_bounded",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "mesoscopic_surrogate_localization_frontier_note",
+          "mesoscopic_surrogate_localization_sweep_note",
+          "mesoscopic_surrogate_threshold_2d_note",
+          "persistent_inertial_response_readiness_note",
+          "same_family_3d_closure_note",
+          "valley_linear_asymptotic_bridge_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d66fad14ddb2ec7c77a8bbade1d3196c4c6d16be6f7b325f022b956084b1e574",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-mesoscopic-scout-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner confirms the cited notes contain the expected frozen-evidence markers, but it does not compute or enforce an objective ranking for 'cheapest plausible next target'. The direct dependency packet also includes a persistent-inertial-response readiness note whose current audited role is meta/index only and explicitly denies a ratifiable readiness frontier or priority ordering.",
+      "claim_scope": "Cross-note mesoscopic-surrogate planning recommendation that points to the 3D h=0.25 ordered-lattice family as the next plausible localization target, based on retained bounded h=0.5, 2D threshold, same-family 3D, and valley-linear bridge notes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T08:34:51.481765+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "The note recommends the retained 3D h=0.25 ordered-lattice family as the cheapest already-bounded family worth one more localization attempt because h=0.5 and 2D localization lanes are closed and h=0.25 has stronger retained continuum-like behavior.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: Add an explicit registered ranking/priority criterion over the cited retained rows, or retag this note as a support/meta planning index rather than a bounded theorem.",
+      "open_dependency_paths": [
+        "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The upstream retained-bounded notes support the local observations that the h=0.5 frontier and 2D threshold lane are not the obvious next localization lever, and that h=0.25 has stronger bounded same-family/asymptotic evidence. What does not close is the theorem-grade ranking: 'cheapest plausible next target' is a planning judgment, not an executable dominance criterion, and the readiness note dependency is explicitly meta only. The no-go/planning-stress check therefore leaves this as a useful scout, not a retained bounded theorem."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:19.696626+00:00",
+      "audit_date": "2026-05-29T23:46:39.741004+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mesoscopic_surrogate_localization_frontier_note": "Bounded scripted localization/strength tradeoff map for the specified 3D ordered-lattice surrogate family and sampled topN values.",
+          "mesoscopic_surrogate_localization_sweep_note": "Bounded finite-sweep benchmark only: this runner, this cached table, this explicit mesoscopic benchmark predicate, and the stated fixed 3D ordered-lattice mesoscopic-source setup. This does not certify retained source-control authority, framework-wide optimality, or a least-bad source theorem.",
+          "mesoscopic_surrogate_threshold_2d_note": "Finite 2D ordered-lattice support sweep over topN = 1,2,3,4,5,6,7,8,9,10,12,16,20,25,32,40,49,64,81 under the stated two-stage stability criteria.",
+          "persistent_inertial_response_readiness_note": null,
+          "same_family_3d_closure_note": "Fixed finite-lattice 3D valley-linear closure for h=0.25, W=10, L=12 core rows, same-h,W L=8,10,12 rows, and the W=10 tail, with the W=12 companion supplied only by retained-bounded dependency.",
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
+        },
+        "dep_claim_type": {
+          "mesoscopic_surrogate_localization_frontier_note": "bounded_theorem",
+          "mesoscopic_surrogate_localization_sweep_note": "bounded_theorem",
+          "mesoscopic_surrogate_threshold_2d_note": "bounded_theorem",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "bounded_theorem",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mesoscopic_surrogate_localization_frontier_note": "retained_bounded",
+          "mesoscopic_surrogate_localization_sweep_note": "retained_bounded",
+          "mesoscopic_surrogate_threshold_2d_note": "retained_bounded",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "retained_bounded",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "mesoscopic_surrogate_localization_frontier_note",
+          "mesoscopic_surrogate_localization_sweep_note",
+          "mesoscopic_surrogate_threshold_2d_note",
+          "persistent_inertial_response_readiness_note",
+          "same_family_3d_closure_note",
+          "valley_linear_asymptotic_bridge_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d66fad14ddb2ec7c77a8bbade1d3196c4c6d16be6f7b325f022b956084b1e574",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260529-234501-0d8f2784-mesoscopic_surrogate_alt",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited notes support several bounded marker facts: h=0.5 localization attempts are unfavorable, the 2D support-threshold scan found no sharp threshold, and h=0.25 has retained finite-lattice closure/bridge evidence. The missing step is an objective registered ranking or bridge theorem deriving cheapest plausible next target from those facts.",
+      "claim_scope": "Whether the cited bounded notes and scout runner derive the recommendation that retained 3D h=0.25 is the cheapest already-bounded next localization target after the h=0.5 and 2D lanes.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T23:46:39.741004+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:same_family_3d_closure_note:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The cheapest already-bounded family that still plausibly has room for a more localized source object to matter is the retained 3D ordered-lattice family at h = 0.25.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a registered objective ranking/priority criterion over the cited retained rows, or retag this note as a support/meta planning index with the h=0.25 recommendation explicitly non-theorem.",
+      "open_dependency_paths": [
+        "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The repair text correctly admits that the positive h=0.25 priority ordering is not derived from a registered objective ranking criterion, but the note still presents the cheapest-target recommendation as the scout result. The runner performs string-presence checks over cited notes and hard-codes the candidate ranking; it does not compute or enforce a ranking criterion, and the checks are not assertion gates. One cited authority, docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md, is explicitly meta rather than retained-grade. The packet therefore supports a planning index or marker-check summary, not a bounded theorem deriving the recommendation."
+    },
+    {
+      "archived_at": "2026-06-08T12:45:38.031823+00:00",
+      "archived_for_note_hash": "2745afa5e31163de0648a694bd22d37648afcb1fd62cdd5bf424947a3dd7610f",
+      "audit_date": "2026-06-08T11:38:51.728697+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mesoscopic_surrogate_localization_frontier_note": "Bounded scripted localization/strength tradeoff map for the specified 3D ordered-lattice surrogate family and sampled topN values.",
+          "mesoscopic_surrogate_localization_sweep_note": "Bounded finite-sweep benchmark only: this runner, this cached table, this explicit mesoscopic benchmark predicate, and the stated fixed 3D ordered-lattice mesoscopic-source setup. This does not certify retained source-control authority, framework-wide optimality, or a least-bad source theorem.",
+          "mesoscopic_surrogate_threshold_2d_note": "Finite 2D ordered-lattice support sweep over topN = 1,2,3,4,5,6,7,8,9,10,12,16,20,25,32,40,49,64,81 under the stated two-stage stability criteria.",
+          "persistent_inertial_response_readiness_note": null,
+          "same_family_3d_closure_note": "Bounded finite-lattice closure for the ordered 3D dense valley-linear family S=L(1-f), kernel 1/L^2 with h^2 measure, at h=0.25, W=10 for the stated rows, plus retained W=12 tail companion.",
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
+        },
+        "dep_claim_type": {
+          "mesoscopic_surrogate_localization_frontier_note": "bounded_theorem",
+          "mesoscopic_surrogate_localization_sweep_note": "bounded_theorem",
+          "mesoscopic_surrogate_threshold_2d_note": "bounded_theorem",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "bounded_theorem",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mesoscopic_surrogate_localization_frontier_note": "retained_bounded",
+          "mesoscopic_surrogate_localization_sweep_note": "retained_bounded",
+          "mesoscopic_surrogate_threshold_2d_note": "retained_bounded",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "retained_bounded",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "mesoscopic_surrogate_localization_frontier_note",
+          "mesoscopic_surrogate_localization_sweep_note",
+          "mesoscopic_surrogate_threshold_2d_note",
+          "persistent_inertial_response_readiness_note",
+          "same_family_3d_closure_note",
+          "valley_linear_asymptotic_bridge_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d66fad14ddb2ec7c77a8bbade1d3196c4c6d16be6f7b325f022b956084b1e574",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-113650-26a7614d71-mesoscopic_surrogate_alterna",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet closes the literal marker checks, but not the stated cheapest-plausible-target conclusion. The missing step is a registered objective ranking or priority criterion comparing the candidate families; the source explicitly admits that the h=0.25 recommendation is editorial planning input.",
+      "claim_scope": "Audited the cross-note marker packet for the h=0.5 and 2D negative evidence plus h=0.25 closure/bridge context; no theorem-grade objective cheapest-target ranking was established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T11:38:51.728697+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner verifies that the cited upstream notes contain the expected frozen-evidence markers ruling out the 3D h=0.5 localization lane and the 2D threshold lane, while the h=0.25 priority recommendation is admitted as non-load-bearing planning input.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a registered objective ranking/priority criterion over the retained candidate rows, or retag the note as a meta/support planning index whose h=0.25 recommendation is explicitly non-theorem-grade.",
+      "open_dependency_paths": [
+        "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner reads cited notes, performs literal phrase checks, and then prints a hard-coded candidate ranking; it does not compute or enforce an objective priority ordering. The retained authorities support the negative h=0.5 and 2D marker claims and the h=0.25 closure/bridge context, but they do not derive the 'cheapest plausible next target' conclusion. The packet also cites PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE with effective_status meta, so the cited dependency set is not wholly retained-grade."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:40.901218+00:00",
+      "archived_for_note_hash": "ad4c500d25323d92e2606cbc605ee925403e500cc1fe927e1fc15fa6a894c310",
+      "audit_date": "2026-06-08T15:50:01.795913+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "mesoscopic_surrogate_localization_frontier_note": "Bounded scripted localization/strength tradeoff map for the specified 3D ordered-lattice surrogate family and sampled topN values.",
+          "mesoscopic_surrogate_localization_sweep_note": "Bounded finite-sweep benchmark only: this runner, this cached table, this explicit mesoscopic benchmark predicate, and the stated fixed 3D ordered-lattice mesoscopic-source setup. This does not certify retained source-control authority, framework-wide optimality, or a least-bad source theorem.",
+          "mesoscopic_surrogate_threshold_2d_note": "Finite 2D ordered-lattice support sweep over topN = 1,2,3,4,5,6,7,8,9,10,12,16,20,25,32,40,49,64,81 under the stated two-stage stability criteria.",
+          "persistent_inertial_response_readiness_note": null,
+          "same_family_3d_closure_note": "Bounded finite-lattice closure for the ordered 3D dense valley-linear family S=L(1-f), kernel 1/L^2 with h^2 measure, at h=0.25, W=10 for the stated rows, plus retained W=12 tail companion.",
+          "valley_linear_asymptotic_bridge_note": "Audited the bounded finite-lattice claim that the provided valley-linear 3D runner computes TOWARD sign persistence, near-linear mass scaling, and slice-dependent far-tail exponents for h=0.5,W=8; h=0.25,W=10; and h=0.25,W=12."
+        },
+        "dep_claim_type": {
+          "mesoscopic_surrogate_localization_frontier_note": "bounded_theorem",
+          "mesoscopic_surrogate_localization_sweep_note": "bounded_theorem",
+          "mesoscopic_surrogate_threshold_2d_note": "bounded_theorem",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "bounded_theorem",
+          "valley_linear_asymptotic_bridge_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mesoscopic_surrogate_localization_frontier_note": "retained_bounded",
+          "mesoscopic_surrogate_localization_sweep_note": "retained_bounded",
+          "mesoscopic_surrogate_threshold_2d_note": "retained_bounded",
+          "persistent_inertial_response_readiness_note": "meta",
+          "same_family_3d_closure_note": "retained_bounded",
+          "valley_linear_asymptotic_bridge_note": "retained_bounded"
+        },
+        "deps": [
+          "mesoscopic_surrogate_localization_frontier_note",
+          "mesoscopic_surrogate_localization_sweep_note",
+          "mesoscopic_surrogate_threshold_2d_note",
+          "persistent_inertial_response_readiness_note",
+          "same_family_3d_closure_note",
+          "valley_linear_asymptotic_bridge_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d66fad14ddb2ec7c77a8bbade1d3196c4c6d16be6f7b325f022b956084b1e574",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-154831-0fb76bd125-mesoscopic_surrogate_alterna",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained cited authorities support the negative-evidence markers and the existence of h=0.25 closure/bridge rows, but the packet supplies no registered objective criterion deriving h=0.25 as the cheapest plausible target. The runner hard-codes the ranking after substring checks, and the readiness authority is meta/open.",
+      "claim_scope": "Support/meta planning index: runner-level text-marker verification of retained h=0.5 and 2D negative-evidence markers plus h=0.25 closure/bridge context, not a theorem-grade objective target ranking.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-06-08T15:50:01.795913+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner verifies that the cited upstream notes contain the expected frozen-evidence markers ruling out the h=0.5 and 2D threshold lanes, while the h=0.25 \"cheapest plausible next target\" ranking is admitted as non-load-bearing planning judgment.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: either keep this row as a meta/support planning index only, or add a registered objective ranking criterion over retained rows and a runner that enforces it.",
+      "open_dependency_paths": [
+        "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The note correctly narrows itself to a meta/support index and admits the positive ranking as editorial rather than theorem-grade. The runner only reads cited note text and checks marker substrings; it does not recompute the physics or enforce an objective ranking. Because the cited readiness note is meta and the target-selection bridge remains absent, the row cannot be clean as a bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/mesoscopic_surrogate_alternate_family_scout.py",
+  "title": "Mesoscopic Surrogate Alternate-Family Scout Note",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

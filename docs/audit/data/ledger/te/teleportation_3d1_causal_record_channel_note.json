@@ -1,0 +1,1425 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_3d1_causal_record_channel_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/teleportation_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "711989afcb47c97310b40b64e934006f7267074a634ee2e1e032c1c6fea2f6d7",
+  "note_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:32:14.911003+00:00",
+      "archived_for_note_hash": "60ef2d7662fee47bc382398b07fc01f4a0d1df457aeba1b645ec4197520625d4",
+      "audit_date": "2026-05-03T00:31:38.123291+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-Nash-019deb3e-2f92-7dc0-a0ad-ca4eafb5fa0e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note closes as an open-gate boundary: the runner verifies local record propagation, delivery timing, exactly-once delivery controls, standard finite-matrix correction behavior, and pre-delivery Bob input-independence. The omitted Bell-record/resource/dynamics derivations are stated as limitations rather than claimed results.",
+      "claim_scope": "3D+1 discrete planning harness for causal classical Bell-record propagation in ordinary qubit teleportation, explicitly bounded to exclude derivation of the Bell record, Bell resource, measurement dynamics, matter transfer, and faster-than-light signaling.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-03T00:31:38.123291+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The channel schedules and delivers the record inside the configured 3D+1 light cone, while explicitly not deriving the Bell bits, Bell resource, or measurement dynamics.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit should preserve the narrow scope; any later claim that derives the Bell record, Bell resource, apparatus dynamics, or relativistic field-theory channel needs a separate audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Clean only as an open-gate/planning-boundary claim. The runner checks consistency of an explicit classical Bell-record channel on a discrete 3D+1 lattice and the note clearly says the Bell record, Bell resource, and measurement dynamics are supplied rather than derived. No retained physics theorem beyond that bounded channel claim is established or implied."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.662961+00:00",
+      "audit_date": "2026-06-18T07:44:50.988072+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.024,
+        "runner_hash": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_3d1_causal_record_channel_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within that scoped model, the runner source directly computes the Manhattan distance, local worldline, exactly-once channel guards, Bell-branch projection/correction fidelities, and finite-probe pre-delivery Bob-state independence from explicit lattice and one-qubit matrices. The downstream helper adds boundary-status guards, but does not expand the audited physical scope beyond the supplied-record planning artifact.",
+      "claim_scope": "Finite planning-scope check of an explicit classical Bell-record channel on the specified 3D lattice: given a supplied Bell record and assumed ordinary teleportation resource, delivery obeys the discrete future cone and enables post-delivery qubit-state correction without matter transfer, FTL signaling, or derivation of the record/resource/apparatus.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T07:44:50.988072+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The emitted two-bit Bell record propagates on a local 3D+1 lattice worldline with earliest_delivery_tick = emitted_at_tick + ceil(distance / speed), and the correct delivered record restores Bob's branch state while pre-delivery Bob state remains input-independent.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the downstream boundary helper inputs if the alignment guard, rather than the finite supplied-record channel, is treated as independently load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 13,
+        "C": 6,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The primary runner is not a print-only harness: it instantiates the finite 3D+1 cone, schedules records, enforces receive constraints, computes Bell projections and Pauli corrections, and evaluates no-signaling probes numerically. The source note's limitations explicitly exclude deriving Bell bits, the Bell resource, measurement apparatus dynamics, matter transport, and FTL control, so those are not silently claimed. The helper performs cross-note boundary-status checks that pass in the cached run and preserve the bounded downstream alignment rather than supplying the finite channel computation itself."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:57.069574+00:00",
+      "audit_date": "2026-07-12T09:13:31.632246+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.0,
+        "runner_hash": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00243-teleportation_3d1_causal_rec",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source computes the advertised finite channel properties rather than merely printing expected constants: it constructs the worldline, enforces delivery constraints, projects Bell branches, applies Pauli corrections, and evaluates reduced density matrices. The chain closes only for the explicitly bounded planning artifact, not for physical record generation, apparatus dynamics, matter transfer, or relativistic-field-theory closure.",
+      "claim_scope": "Finite planning-scope computation for an explicit classical Bell-record channel on the specified discrete 3D+1 lattice, conditional on supplied Bell bits and an assumed ordinary teleportation resource.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-12T09:13:31.632246+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "Given a supplied Bell record and assumed Bell resource, the runner constructs a metric-local 3D+1 worldline, blocks pre-cone delivery, applies the record-selected Pauli correction, and computes Bob's pre-delivery state as input-independent I/2.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The harness evaluates the target event one tick before earliest arrival and calls receive before the valid delivery tick.",
+            "disposition": "CLOSED",
+            "evidence_locator": "outside_cone_event_rejected = not cone.contains_future_event(",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt reception at Bob's site one tick before the discrete future cone reaches it.",
+            "outcome": "The event is outside the cone and no record is delivered.",
+            "prior_witness_id": null,
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "premature_delivery"
+          },
+          {
+            "attempt": "The harness requests reception as Mallory and then at an adjacent non-target site.",
+            "disposition": "CLOSED",
+            "evidence_locator": "wrong_receiver_records = channel.receive(receiver=\"Mallory\", at_site=bob_site)",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt delivery through the wrong receiver identity or wrong spatial endpoint.",
+            "outcome": "Both attempts leave the record pending and fail to deliver it.",
+            "prior_witness_id": null,
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "misaddressed_delivery"
+          },
+          {
+            "attempt": "The harness emits a duplicate identifier and performs two receives at the valid endpoint.",
+            "disposition": "CLOSED",
+            "evidence_locator": "except DuplicateRecordError:",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Reuse a record identifier or receive an already delivered record twice.",
+            "outcome": "Identifier reuse is rejected and only the first valid receive returns the record.",
+            "prior_witness_id": null,
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "duplicate_delivery"
+          },
+          {
+            "attempt": "The runner computes both the delivered-bit correction and a flipped-z-bit control.",
+            "disposition": "CLOSED",
+            "evidence_locator": "wrong_record_fidelity = state_fidelity(input_state, wrong_corrected)",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the delivered Bell phase bit with the opposite value before applying the Pauli correction.",
+            "outcome": "The correct record gives unit fidelity while the wrong-record control does not restore the probe state.",
+            "prior_witness_id": null,
+            "route_class": "algebraic_rearrangement",
+            "route_id": "incorrect_correction"
+          },
+          {
+            "attempt": "The runner forms Bell-branch mixtures for five input states and compares each reduced state with I/2 and with the other inputs.",
+            "disposition": "CLOSED",
+            "evidence_locator": "def run_bob_pre_delivery_input_independence() -> dict[str, object]:",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Search for input dependence in Bob's reduced state before delivery.",
+            "outcome": "The computed trace-distance tests remain at numerical roundoff scale.",
+            "prior_witness_id": null,
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "premessage_signal"
+          },
+          {
+            "attempt": "The supplied source was inspected for construction of the channel, Bell projections, correction operators, trace distances, and predicate aggregation.",
+            "disposition": "CLOSED",
+            "evidence_locator": "def run_channel_harness(metric: Metric, max_speed_sites_per_tick: int)",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat the PASS output as potentially hard-coded rather than computed.",
+            "outcome": "The PASS values are produced from instantiated arrays and channel operations; the primary gates are not constant print statements.",
+            "prior_witness_id": null,
+            "route_class": "numerical_or_finite_case",
+            "route_id": "print_only_runner"
+          },
+          {
+            "attempt": "The record dataclass and emitted fixture were checked for provenance, including the derived_by_channel flag.",
+            "disposition": "CLOSED",
+            "evidence_locator": "derived_by_channel: bool = False",
+            "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Read the scheduled Bell bits as a derivation of the physical Bell record or apparatus.",
+            "outcome": "The channel explicitly marks the record as not derived and the source limits the result accordingly.",
+            "prior_witness_id": null,
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "derived_record_overclaim"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "Bell record supplied rather than derived",
+            "Bell resource assumed",
+            "measurement and durable apparatus dynamics idealized",
+            "discrete lattice model is not a relativistic field theory",
+            "no matter transfer or faster-than-light control is modeled"
+          ],
+          "evidence_locator": "The Bell record is supplied to the channel; the channel does not derive it.",
+          "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "Bell record supplied rather than derived",
+              "left_closes_right": false,
+              "right": "Bell resource assumed",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Bell record supplied rather than derived",
+              "left_closes_right": false,
+              "right": "measurement and durable apparatus dynamics idealized",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Bell record supplied rather than derived",
+              "left_closes_right": false,
+              "right": "discrete lattice model is not a relativistic field theory",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Bell record supplied rather than derived",
+              "left_closes_right": false,
+              "right": "no matter transfer or faster-than-light control is modeled",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Bell resource assumed",
+              "left_closes_right": false,
+              "right": "measurement and durable apparatus dynamics idealized",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Bell resource assumed",
+              "left_closes_right": false,
+              "right": "discrete lattice model is not a relativistic field theory",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Bell resource assumed",
+              "left_closes_right": false,
+              "right": "no matter transfer or faster-than-light control is modeled",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "measurement and durable apparatus dynamics idealized",
+              "left_closes_right": false,
+              "right": "discrete lattice model is not a relativistic field theory",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "measurement and durable apparatus dynamics idealized",
+              "left_closes_right": false,
+              "right": "no matter transfer or faster-than-light control is modeled",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "discrete lattice model is not a relativistic field theory",
+              "left_closes_right": false,
+              "right": "no matter transfer or faster-than-light control is modeled",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "Bell record supplied rather than derived",
+            "Bell resource assumed",
+            "measurement and durable apparatus dynamics idealized",
+            "discrete lattice model is not a relativistic field theory",
+            "no matter transfer or faster-than-light control is modeled"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "It remains only a classical Bell-record channel for ordinary quantum state teleportation.",
+          "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The Bell record is supplied to the channel; the channel does not derive it.",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "The Bell record is supplied to the channel; the channel does not derive it.",
+              "promoted_wall": "Bell record supplied rather than derived"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The Bell resource is assumed by this runner.",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "The Bell resource is assumed by this runner.",
+              "promoted_wall": "Bell resource assumed"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The Bell measurement, durable classical record, and apparatus dynamics remain",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "The Bell measurement, durable classical record, and apparatus dynamics remain idealized.",
+              "promoted_wall": "measurement and durable apparatus dynamics idealized"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The lattice is a discrete planning model, not a relativistic field theory.",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "The lattice is a discrete planning model, not a relativistic field theory."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source scope, model, limitations, claim boundary, primary runner inputs, and helper boundary guard were checked for supplied records, resources, apparatus assumptions, physical-time identifications, and unadvertised readout bridges.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Acceptance gates:",
+          "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+          "none_found_reason": "No RULED OUT BY PRIOR route is used, so no prior-witness residual match is required.",
+          "scan_scope": "No N1 route was ruled out solely by a prior witness; all listed attacks were performed or source-inspected in the restricted packet.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The artifact supports ordinary quantum state teleportation only.",
+          "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative boundary language about transfer, signaling, derivation, and field-theory scope was checked against the implemented finite model and the narrowed top-level claim scope.",
+          "statements": [
+            {
+              "evidence_locator": "It does not claim faster-than-light signaling or controllable pre-message influence.",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "It does not claim faster-than-light signaling or controllable pre-message influence.",
+              "tested_resolutions": [
+                "finite implemented channel before the configured cone arrival",
+                "Bob reduced-state input independence across five probes"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "The model does not transport matter, mass, charge, energy, or objects.",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "The model does not transport matter, mass, charge, energy, or objects.",
+              "tested_resolutions": [
+                "implemented record-only channel data model"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "bits from the lattice, from a measurement apparatus, or from the Bell resource.",
+              "evidence_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "phrase": "The channel does not derive the Bell bits from the lattice, from a measurement apparatus, or from the Bell resource.",
+              "tested_resolutions": [
+                "explicitly supplied z_bit and x_bit inputs",
+                "derived_by_channel remains false"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only kinetic-form isotropy and does not derive a Bell record, teleportation resource, measurement apparatus, or physical record carrier.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "Record formation and permanence do not supply Bell-outcome selection, Born weights, measurement dynamics, channel speed, or a physical teleportation resource.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A pointwise realized-state reference supplies neither the Bell state nor the record-generation and apparatus processes.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A unit conversion does not close any record, resource, apparatus, or relativistic-dynamics boundary.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton determinant-counting obligation is unrelated to the finite teleportation record channel.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton readout obligation supplies no Bell record or teleportation apparatus theorem.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This quark-determinant cross-sector obligation is unrelated to the scoped channel computation.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates in the supplied partial-closure index were checked against the finite Bell-record channel walls, including approved premises and unrelated open obligations.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The reported PASS suite could be a self-fulfilling fixture: lattice endpoints, Bell bits, and expected behavior are chosen in code, so stdout alone would not establish that any operator or channel computation occurred.",
+          "evidence_locator": "def run_channel_harness(metric: Metric, max_speed_sites_per_tick: int)",
+          "evidence_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+          "resolution": "The source constructs the worldline algorithmically, performs receiver/site/time state transitions, computes Bell projections by tensor contraction, applies matrix correction operators, and evaluates density-matrix trace distances. Fixed fixture inputs bound generality but do not turn the resulting finite implication into a print-only or numerical-target match.",
+          "resolved": true,
+          "route_id": "print_only_runner"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_3d1_causal_record_channel_note:previous_audit:0",
+              "evidence_locator": "teleportation_3d1_causal_record_channel_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Prior audit accepted the same narrow planning-boundary interpretation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_3d1_causal_record_channel_note:previous_audit:1",
+              "evidence_locator": "teleportation_3d1_causal_record_channel_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Prior audit identified genuine finite channel and Bell-operator computations while preserving the supplied-input boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Charged-lepton determinant-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Charged-lepton h-unit readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Quark determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite-sweep versus Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite support versus physical bridge closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Prohibition on importing textbook structure as framework proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Unrelated multi-lane inherited no-go catalogue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Coupling-identity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Gauge-coefficient comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Lensing observable and finite-path route exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Carrier antisymmetry and registry-exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Charged-lepton selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "No unconditional emergent-Lorentz theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite causal-cone algebra does not prove a global metric theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Replay-only and wider-basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Local Wilson scorecard versus environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Flavor-carrier scope exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Analytic-vector route rejection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Gauge-environment estimator and contraction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Time-generator and staggered-orientation exclusions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Dispersion support versus Fermat and gravity closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Weak-field gravity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Absolute-scale and Clifford-carrier no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Hypercharge normalization and species-readout ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Unrelated cross-lane demotion inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Atomic-scale input and threshold no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Quark-mass selector and readout no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite lattice check versus uniform asymptotic theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Signed-adjoint versus scalar-potential observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite-path surrogate geometry failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Static-source readout and hierarchy boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Transfer ticks are not physical clock rates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Related matter-cone ledger contains no asserted no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Planning priority is not theorem-grade selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Update tick is not a derivation of physical time or c.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Neutrino mass-construction no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Neutrino and cosmology gate boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite-lattice replay does not establish a universal distance law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Frozen-log and finite-basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Coupling authority and physical-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite packet behavior does not derive decoherence or gravity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite-grid exclusion versus arbitrary-degree theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Clifford-carrier selection and representation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Rank matching and projector-selection no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Plaquette bootstrap and minimal-block boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "One-plaquette diagnostic misuse boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Supplied record data do not become selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Record registrability does not supply unrelated physical readout bridges.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Strict locality of a derived generator and temporal-axis selection remain separate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite tangent mathematics does not prove physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Minimal axioms do not select a kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "SU(3) quotient-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Teleportation documentation synchronization requires an executable guard, not prose alone.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Single-slot closure does not establish a full family card.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Theta mass-side determinant-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Theta gauge-sector action/readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Theta positive-route gate inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Theta phase-insertion selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Theta defect-closure and dynamics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "AC determinant-power horn-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Record does not supply K/CPT orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Record formation does not supply rates or a physical action bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Artifact-visibility gap rather than scientific obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Record-only readout independence fails without a context bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Hard-coded table matcher and finite two-row scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Finite lattice packet does not establish continuum or universal exponent claims.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "mechanism": "Definition or physical-readout renaming cannot substitute for derivation.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "ae7fe82fff4aa180035f8bde0108616aba544111b55d12aa99991a37f1ef53de",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "teleportation_3d1_causal_record_channel_note:previous_audit:0",
+                "teleportation_3d1_causal_record_channel_note:previous_audit:1"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/teleportation_3d1_causal_record_channel_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "teleportation_3d1_causal_record_channel_note:previous_audit:0",
+                "teleportation_3d1_causal_record_channel_note:previous_audit:1"
+              ]
+            },
+            "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "4e234db0eb45577c29d7b84da69ba135c67006086d458e0a3748b16b3f4e4756",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/teleportation_3d1_causal_record_channel_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "711989afcb47c97310b40b64e934006f7267074a634ee2e1e032c1c6fea2f6d7",
+              "effective_status": null,
+              "path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It does not claim faster-than-light signaling or controllable pre-message influence.",
+                "It remains only a classical Bell-record channel for ordinary quantum state teleportation.",
+                "The Bell measurement, durable classical record, and apparatus dynamics remain",
+                "The Bell record is supplied to the channel; the channel does not derive it.",
+                "The Bell resource is assumed by this runner.",
+                "The artifact supports ordinary quantum state teleportation only.",
+                "The lattice is a discrete planning model, not a relativistic field theory.",
+                "The model does not transport matter, mass, charge, energy, or objects.",
+                "bits from the lattice, from a measurement apparatus, or from the Bell resource."
+              ]
+            },
+            "scripts/frontier_teleportation_3d1_causal_record_channel.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
+              "effective_status": null,
+              "path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Acceptance gates:",
+                "def run_bob_pre_delivery_input_independence() -> dict[str, object]:",
+                "def run_channel_harness(metric: Metric, max_speed_sites_per_tick: int)",
+                "derived_by_channel: bool = False",
+                "except DuplicateRecordError:",
+                "outside_cone_event_rejected = not cone.contains_future_event(",
+                "wrong_receiver_records = channel.receive(receiver=\"Mallory\", at_site=bob_site)",
+                "wrong_record_fidelity = state_fidelity(input_state, wrong_corrected)"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 13,
+        "C": 8,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The eight primary acceptance gates are genuine finite computations over the implemented lattice channel and qubit operators. The thirteen helper results are cross-note status and boundary checks, but they do not supply the primary channel computation. The note consistently limits its conclusion to a planning model with supplied Bell bits and resource, so its explicit omissions are boundaries rather than unacknowledged derivation claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+  "title": "Teleportation 3D+1 Causal Bell-Record Channel Note",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

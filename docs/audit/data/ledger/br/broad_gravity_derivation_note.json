@@ -1,0 +1,258 @@
+{
+  "audit_date": "2026-07-12T19:45:52.169484+00:00",
+  "audit_invocation_history": [
+    "77f9ba718d622002be90462ff0612277"
+  ],
+  "audit_invocation_id": "77f9ba718d622002be90462ff0612277",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 10.7,
+    "runner_hash": "c4fb58612eb401d90a9feea6c41222c30efa816e39fd7ef4bf102c557f95faab",
+    "transitive_descendants": 51
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00242-broad_gravity_derivation_not",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "For k != 0, delta S = 0 is equivalent to delta F = 0, and k cancels from omega(x1)/omega(x2) wherever the ratio is defined. These conclusions require only the supplied formulas and standard algebra.",
+  "claim_id": "broad_gravity_derivation_note",
+  "claim_scope": "Algebraic k-cancellation for stationary paths and phase-rate ratios under the explicitly supplied weak-field action and readout forms, without certifying their physical gravity interpretation.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem.",
+  "claim_type_last_reviewed": "2026-07-12T19:45:52.169484+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 10,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 10.7,
+  "load_bearing_step": "For nonzero k, the common multiplicative factor k cancels from both the stationary equation delta S = k delta F = 0 and the supplied phase-rate ratio.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "403bca397aef232ebd7f5fe81a3bc22b8aa49684ea9b6a79d4168f117919bd51",
+  "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
+  "notes_for_re_audit_if_any": "",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T12:32:48.491471+00:00",
+      "archived_for_note_hash": "562bba159d83ca2832d48f6546c5468c4b08d19c77458c01a86635ac4d26eb16",
+      "audit_date": "2026-04-30T22:16:11.004677+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-high-ready-20260430-19",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports a bounded weak-field/eikonal model surface, but the claimed derivation of S=kL(1-phi) still consumes the self-consistency closure condition, H+phi potential-coupling rule, eikonal/WKB limit, clock/readout identification, and continuum/null-geodesic steps. Those inputs are not registered as clean one-hop dependencies, and the live runner labels the time-dilation field-profile check bounded with large finite-lattice deviation.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The action S = kL(1-phi) is derived from the framework, so WEP and gravitational time dilation are promotable weak-field corollaries while geodesics, light bending, and the conformal metric remain bounded.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
+        "docs/GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md",
+        "H_plus_phi_potential_coupling_theorem",
+        "eikonal_WKB_action_bridge",
+        "phase_clock_readout_identification"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 21,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: the per-signature assessment over-promotes WEP and time dilation from a bounded weak-field/eikonal action surface whose key action and readout assumptions are not audited as retained inputs. Why this blocks: k-independence follows algebraically once S=kF(path,phi) is supplied, and the runner even shows it for a random field; the nontrivial physical content is the derivation and normalization of phi plus the phase/clock and potential-coupling bridge, which remain conditional. Repair target: register and audit the self-consistency Poisson chain, H+phi coupling theorem, eikonal action derivation, and clock/readout theorem, then rerun the per-signature bundle with those dependencies explicit. Claim boundary until fixed: bounded weak-field support for the listed signatures under the supplied Poisson/eikonal/continuum assumptions; no retained promotion of WEP or time dilation from this note alone."
+    },
+    {
+      "archived_at": "2026-05-28T19:51:49.028744+00:00",
+      "archived_for_note_hash": "7ceb196770437f8a9abf6f65aa3103f8ad0bfe344bad4689e7f74a5938fcb1ee",
+      "audit_date": "2026-05-28T03:18:39.451871+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+        },
+        "dep_claim_type": {
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "gravity_full_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_clean_derivation_note": "retained_bounded",
+          "gravity_full_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_clean_derivation_note",
+          "gravity_full_self_consistency_note"
+        ],
+        "load_bearing_score": 9.858,
+        "runner_hash": null,
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-broad-gravity-derivation-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-hop retained-bounded dependencies do not supply the promoted premise. GRAVITY_CLEAN_DERIVATION_NOTE treats S=L(1-phi), rho=|psi|^2, and L^{-1}=G_0 as named inputs in a bounded IF-chain; GRAVITY_FULL_SELF_CONSISTENCY_NOTE treats L^{-1}=G_0 as stipulated, not derived from the Cl(3)-on-Z^3 baseline.",
+      "claim_scope": "Broad weak-field gravity bundle assessment claiming that S = kL(1-phi) is derived from the retained weak-field core and that WEP and gravitational time dilation can be promoted while geodesics, light bending, and the conformal metric remain bounded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T03:18:39.451871+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's central load-bearing step is that S = kL(1-phi) is derived from the framework's self-consistency chain, so WEP and gravitational time dilation inherit derived status rather than merely following from an accepted action.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the source to the conditional IF-chain now present in the one-hop deps, or supply retained bridge theorems for closure identity, source readout, weak-field action, and clock/readout before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the source's promotion of WEP and time dilation rests on the assertion that the weak-field action S = kL(1-phi) is derived, but its one-hop dependencies have since been narrowed to conditional statements where that response, the source readout, and the closure identity are stipulated inputs. Why this blocks: the promoted signatures are algebraic consequences once S and the Poisson/readout premises are supplied; the restricted packet does not derive those premises, and one dependency explicitly says the stronger physical-gravity closure is out of scope. Repair target: rewrite this row as a bounded conditional bundle matching the current dependency scopes, or add retained bridge theorems deriving L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the clock/readout map. Claim boundary until fixed: conditional WEP/time-dilation algebra may be cited only under the explicitly supplied weak-field action/readout assumptions; no broad gravity-signature promotion is retained from this row."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:16.912125+00:00",
+      "archived_for_note_hash": "386d34d5c0a874ab1f9b596a1c4898ca8817fd6d176ea17b7e2cbf2b49698777",
+      "audit_date": "2026-05-29T04:50:28.063346+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_clean_derivation_note": "Conditional weak-field lattice implication from stipulated Poisson/source/response inputs to leading 1/r potential and M1*M2/r^2 force in lattice units.",
+          "gravity_full_self_consistency_note": "Conditional algebraic implication that, if `G_0 = H^{-1}` and the stipulated closure identity `L^{-1} = G_0` hold, then `L = H = -Delta_lat`."
+        },
+        "dep_claim_type": {
+          "gravity_clean_derivation_note": "bounded_theorem",
+          "gravity_full_self_consistency_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_clean_derivation_note": "retained_bounded",
+          "gravity_full_self_consistency_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_clean_derivation_note",
+          "gravity_full_self_consistency_note"
+        ],
+        "load_bearing_score": 9.858,
+        "runner_hash": null,
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-broad-gravity-a",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substeps close if the stipulated inputs are granted: k cancels in stationary-phase paths, phase-rate ratios are (1 - phi1)/(1 - phi2), and phi = M/(4*pi*r) gives a 1/r^2 gradient. The audit chain does not close from retained-grade or Tier-A registered inputs because L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), the continuum bridge, and the null-geodesic bridge remain independent unretained admissions.",
+      "claim_scope": "Conditional broad weak-field gravity signature bundle over stipulated closure, source, and weak-field response inputs, with geodesic/conformal/light-bending claims additionally conditional on continuum and null-geodesic bridges.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T04:50:28.063346+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Given the admitted inputs, WEP and time dilation follow from S = kL(1 - phi), while conformal metric, geodesic equation, and light-bending factor 2 follow only with the additional continuum-limit and null-geodesic identifications.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: re-audit after retained bridge theorems derive L^{-1}=G_0, rho=|psi|^2 as gravitational source, S=L(1-phi) as weak-field test-mass response, and the continuum/null-geodesic identifications, or after those admissions are explicitly Tier-A registered.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the bounded IF-chain is explicit and the algebraic consequences check out, but the physical response, source readout, closure, continuum, and null-geodesic bridges are load-bearing admissions. Why this blocks: the Tier-A registry does not list these gravity admissions as accepted non-axiom premises, and the one-hop retained-bounded notes do not derive them. Repair target: provide retained bridge theorems or a reviewed Tier-A registration for the admitted closure/source/response inputs and the continuum/null identifications. Claim boundary until fixed: the note is usable as a bounded explanatory IF-chain over named assumptions, but the audit row should remain audited_conditional, not audited_clean."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.347157+00:00",
+      "audit_date": "2026-05-30T23:43:36.481640+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.858,
+        "runner_hash": "c4fb58612eb401d90a9feea6c41222c30efa816e39fd7ef4bf102c557f95faab",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-234250-c70145c5-broad_gravity_derivation",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped claim closes as elementary algebra once the action S = k L(1 - phi) and phase-rate readout omega = k(1 - phi) are supplied. It does not derive or claim the physical weak-field action, source readout, continuum bridge, WEP, or gravitational time dilation.",
+      "claim_scope": "Conditional algebraic k-cancellation for stationary paths and phase-rate ratios from the supplied weak-field action/readout, with no physical gravity bridge audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T23:43:36.481640+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Given S = k F(path, phi), the variational equation delta S = k delta F = 0 is equivalent to delta F = 0 for k != 0, and the supplied omega = k(1 - phi) gives the displayed phase-rate ratio by cancelling k.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the implicit nonzero-denominator domain condition for the phase-rate ratio, but it does not affect the scoped algebraic closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is class A algebra on explicitly supplied inputs: k factors out of the stationary equation for k != 0, and cancels in the phase-rate ratio. The runner source performs symbolic checks for those cancellations and textual scope checks excluding the earlier physical overclaims. The audited scope is bounded and conditional, so no unsupported gravitational response, source, or null-geodesic bridge is being certified."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 12,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 12
+  },
+  "runner_path": "scripts/broad_gravity_signature_algebra_scope_check.py",
+  "title": "Broad Gravity Signature Algebra Packet",
+  "transitive_descendants": 51,
+  "verdict_rationale": "The source confines its conclusion to algebra over explicitly supplied action and phase-rate forms. The runner performs the relevant symbolic cancellations and verifies that the note excludes the former physical-gravity promotions. Within the audited bounded scope, the stated conclusions follow directly."
+}

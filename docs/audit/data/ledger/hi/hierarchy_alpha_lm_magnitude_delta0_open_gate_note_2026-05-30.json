@@ -1,0 +1,477 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "hierarchy_formula_honest_status_note_2026-05-10"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "865294eec2c73a01f7f31258ac0c4b80e58cef96ec574016bf99d7ec11191273",
+  "note_path": "docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T21:38:35.513024+00:00",
+      "archived_for_note_hash": "3b1d011ea7a9a49a06bfd95b4be623813c9e14d0f4dd651fcbaaea33f46ab340",
+      "audit_date": "2026-06-05T23:25:22.273718+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "91634a73bfd9a9c42cd52136793f2a4e3867b8d82c0ea3c156b1b3c523748e18",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-232500-6912981b87-hierarchy_alpha_lm_magnitude",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet closes the narrow open-gate conclusion: alpha_bare^16 = (4 pi)^-16 follows algebraically from alpha_bare = 1/(4 pi), and the displayed block forms have no alpha_bare symbol. It does not close a hierarchy derivation, but the note explicitly does not claim one.",
+      "claim_scope": "Audited only the note's stated delta-zero open-gate claim: the supplied determinant and condensate test forms contain u_0 but no explicit alpha_bare, while alpha_LM^16 carries alpha_bare^16 by algebraic relabeling.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T23:25:22.273718+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Thus the checked block observables do not by themselves supply the (4 pi)^-16 coupling-power magnitude, leaving the transport source for that magnitude open on the current delta = 0 baseline.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the verdict is limited to the open-gate boundary and is not read as validating any hierarchy-closure derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The claim under audit is an open-gate boundary claim, not a positive derivation of the hierarchy magnitude. Independent inspection of the displayed formulas agrees with the runner: (1/(4 pi))^16 is approximately 2.586e-18, alpha_bare, alpha_bare/u_0, and alpha_bare/u_0^2 form a constant-ratio progression, the inverse-alpha step ratio is u_0, and the provided determinant and condensate forms contain u_0 but no explicit alpha_bare. Since there are no cited upstream authorities and the conclusion is only that the transport source remains open in the checked delta-zero block, the audited scope closes on its own terms."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:25.708066+00:00",
+      "archived_for_note_hash": "2bec6e0d781fc3c1dee169ac6a5255a283fde78ea3393c775d44037003f86c5b",
+      "audit_date": "2026-06-12T00:41:59.336682+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.858,
+        "runner_hash": "91634a73bfd9a9c42cd52136793f2a4e3867b8d82c0ea3c156b1b3c523748e18",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-003948-5833bac34b-hierarchy_alpha_lm_magnitude",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic and symbol-support checks close the local obstruction surface, but they do not derive an explicit alpha_bare dependence in the block observable or a baseline-native transport rule supplying the same coupling-power magnitude.",
+      "claim_scope": "Delta-zero local obstruction only: alpha_LM^16 algebraically carries alpha_bare^16 = (4 pi)^-16 while the checked determinant and condensate forms contain u_0 but no explicit alpha_bare, leaving the transport source open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-12T00:41:59.336682+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The checked block observables do not by themselves supply the (4 pi)^-16 coupling-power magnitude, so a transport source for that coupling-power magnitude remains open on the current delta = 0 baseline.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or cite a baseline-native transport rule, or an explicit alpha_bare dependence in the relevant block observable, that supplies the alpha_bare^16 coupling-power magnitude.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Independent algebra checks confirm alpha_LM^16 = alpha_bare^16 u_0^-16 and (4 pi)^-16 = 2.586081e-18. The inverse-variable progression gives Delta_2/Delta_1 = u_0 away from the degenerate u_0 = 1 case, and the displayed runner block forms have u_0 but no alpha_bare. However, the runner hard-codes the checked block forms and verifies symbol support; it does not derive the missing transport source from the baseline. The source note itself correctly leaves that bridge open rather than closing the hierarchy lane."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.460212+00:00",
+      "audit_date": "2026-06-15T22:09:06.298987+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded T1 structural-support theorem: naive d=4 species count, matching u_0-degree 16 of the 2^4 APBC block determinant, exact (7/8)^(1/4) selector, K/sensitivity arithmetic over B1, with D1/C1 only as declared readout appendices and not formula or EW-VEV closure."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10"
+        ],
+        "load_bearing_score": 13.858,
+        "runner_hash": "98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-220631-dae16dbd82-hierarchy_alpha_lm_magnitude",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped open-gate claim, the chain closes: the determinant algebra gives u_0-degree 16 with no alpha_bare symbol, and u_0^16 alpha_s^16 = alpha_LM^16 is an identity. The missing step is explicitly left open, namely an attachment-observable transport rule supplying alpha_s per taste decoupling.",
+      "claim_scope": "Audited the delta-zero open-gate bookkeeping: the provided block-observable formulas do not natively supply alpha_bare, and the alpha_s-per-taste attachment-observable identification remains named but underived.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-15T22:09:06.298987+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hierarchy_formula_honest_status_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "The checked block determinant/condensate forms are u_0-only, while the alpha_LM^16 magnitude carries alpha_bare^16 only by algebraic relabeling, leaving the transport source open.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that context-only downstream probes are not treated as one-hop authorities; the clean scope is the narrow open-gate bookkeeping only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 47,
+        "C": 0,
+        "D": 0,
+        "total_pass": 69
+      },
+      "verdict_rationale": "The load-bearing step is a narrow algebraic symbol-support check, not a claimed first-principles closure of the hierarchy formula. Independent checks confirm alpha_bare^16 = (4 pi)^-16, the alpha_bare/alpha_LM/alpha_s progression, determinant u_0-degree 16, and the reduced product u_0^16 alpha_s^16 = alpha_LM^16. The source avoids a global no-go by naming the B4 attachment-observable identification gap and leaving outside-K1-K8 and beyond-mean-field routes open. Context-only downstream probes are not upgraded to load-bearing dependency authority in this verdict."
+    },
+    {
+      "archived_at": "2026-06-20T08:41:48.172221+00:00",
+      "archived_for_note_hash": "ce6150cd142d6a79185cb12bae3128f4e46d1cd77008b3b8f0aeba89ca633c9b",
+      "audit_date": "2026-06-18T05:07:29.278250+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded structural-support theorem T1 plus declared candidate-map/readout appendices: species count, determinant degree, eta/zeta selector, suppression arithmetic, and sensitivity over the stated inputs, explicitly not electroweak-VEV or formula-closure derivation."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10"
+        ],
+        "load_bearing_score": 10.807,
+        "runner_hash": "98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8",
+        "transitive_descendants": 27
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction closes, but the claimed hierarchy transport does not. The missing step is a ratio-normalized block readout in which one decoupling taste contributes alpha_s = alpha_bare/u_0^2 multiplicatively.",
+      "claim_scope": "Delta=0 B4 magnitude obstruction: the provided block observables contain u_0 but no native alpha_bare, reducing closure to an unsupplied alpha_s-per-taste attachment-observable identification.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T05:07:29.278250+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The checked block determinant/condensate forms are u_0-only, while alpha_LM^16 = alpha_bare^16 u_0^-16, so the alpha_bare^16 magnitude is bookkeeping unless an attachment-observable transport rule supplies it.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained attachment-observable theorem supplying alpha_s per taste decoupling, then re-audit the B4 transport gate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 69
+      },
+      "verdict_rationale": "Issue: the runner verifies algebraic identities, symbol absence, and scope markers, but it does not derive the B4 attachment-observable identification. Why this blocks: u_0^16 * alpha_s^16 = alpha_LM^16 is a bookkeeping equivalence, not a transport mechanism in a determinant, log-partition, or readout observable. Repair target: provide a retained theorem identifying the ratio-normalized block observable that attaches alpha_s per taste decoupling. Claim boundary until fixed: retained as an open-gate obstruction surface, not hierarchy-formula closure."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.069252+00:00",
+      "audit_date": "2026-06-21T10:35:08.855165+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded structural-support theorem T1 plus D1/C1 as declared candidate-map and numeric-readout appendices; not a closure of B3b, B4, B5, and not an EW VEV prediction."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10"
+        ],
+        "load_bearing_score": 12.454,
+        "runner_hash": "98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the audited open-gate boundary, the packet verifies the relevant block forms contain u0 but no explicit alpha_bare, and the alpha_LM power identity is algebraic. The attachment-observable identification is not supplied and is correctly left outside formula closure.",
+      "claim_scope": "Delta-zero local open gate: the provided block determinant/condensate forms are u0-only while alpha_LM^16 carries alpha_bare^16 by algebraic relabeling, leaving the B4 attachment-observable transport rule unsupplied.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T10:35:08.855165+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T10:31:47.419139+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the narrow delta=0 open-gate claim that the provided block observable algebra is u_0-only and reduces the missing hierarchy magnitude to an unsupplied alpha_s-per-taste attachment/readout rule, not a hierarchy closure.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T10:35:08.855165+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Delta-zero local open gate: the provided block determinant/condensate forms are u0-only while alpha_LM^16 carries alpha_bare^16 by algebraic relabeling, leaving the B4 attachment-observable transport rule unsupplied.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_formula_honest_status_note_2026-05-10:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The checked block observables do not by themselves supply the (4 pi)^-16 coupling-power magnitude; the transport source for that magnitude remains open on the current delta = 0 baseline.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the W51 downstream context handles remain non-load-bearing and that the clean scope stays limited to the local delta-zero open-gate boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 69,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 69
+      },
+      "verdict_rationale": "The note claims an open gate rather than a hierarchy-formula closure. The load-bearing facts are class-A symbolic/algebraic checks: alpha_LM^16 = alpha_bare^16 u0^-16, while the checked determinant and condensate expressions have no alpha_bare symbol. The runner source does not derive the block operator from first principles, but it does verify the narrowed algebraic obstruction surface claimed here, and the cited retained-bounded parent supplies the determinant context."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.464310+00:00",
+      "audit_date": "2026-07-01T08:07:41.264821+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded structural-support theorem T1: local recomputation of the naive d=4 species count, matching minimal-block determinant u_0-degree, exact eta/zeta selector, suppression constant, and sensitivities, with D1/C1 only as declared-input readout appendices and not as EW-VEV or formula closure."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10"
+        ],
+        "load_bearing_score": 12.454,
+        "runner_hash": "98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T080741Z-9df1813c-hierarchy_alpha_lm_magni",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the stated open-gate boundary: the algebra shows the checked block side supplies u_0 powers while alpha_LM^16 carries alpha_bare^16 u_0^-16. The hierarchy formula itself remains unclosed because the attachment-observable/transport rule is explicitly not derived.",
+      "claim_scope": "Audited the delta=0 hierarchy magnitude open gate: the packet verifies u_0-only block-observable support and the algebraic reduction of the missing coupling-power transport to an unsupplied alpha_s-per-taste attachment rule, without claiming hierarchy-formula closure.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-01T08:07:41.264821+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T08:03:42.354650+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T080342Z-9e4c66fe-hierarchy_alpha_lm_magni",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Delta-zero B4 magnitude gate: the supplied block determinant/condensate formulas are u_0-only, the alpha_LM magnitude is an algebraic relabeling carrying alpha_bare^16, and the attachment-observable transport rule remains open.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T08:07:41.264821+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T080741Z-9df1813c-hierarchy_alpha_lm_magni",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the delta=0 hierarchy magnitude open gate: the packet verifies u_0-only block-observable support and the algebraic reduction of the missing coupling-power transport to an unsupplied alpha_s-per-taste attachment rule, without claiming hierarchy-formula closure.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_formula_honest_status_note_2026-05-10:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The checked block determinant/condensate observables contain u_0 but no explicit alpha_bare, so the alpha_LM^16 magnitude factor alpha_bare^16 u_0^-16 is only bookkeeping unless an alpha_s-per-taste transport/attachment rule is supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if downstream sharpening handles are promoted from context to load-bearing dependencies or if the source scope is widened beyond the current open-gate boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 69
+      },
+      "verdict_rationale": "The audited object is an open-gate/named-gap statement, not a positive derivation or global no-go. The runner source performs symbolic algebra and scope-marker checks rather than first-principles operator reconstruction, so the load-bearing class is A, but that is sufficient for the narrow claim that the current block forms do not themselves supply the coupling-power magnitude. The cited authority is retained_bounded and the source keeps downstream sharpening handles non-load-bearing, so no unsupported closure is being imported."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.251550+00:00",
+      "audit_date": "2026-07-02T00:38:31.411222+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "Bounded structural-support theorem T1: local algebra verifies the d=4 naive species count, matching minimal-block determinant degree, exact eta/zeta selector, K identity, and sensitivity algebra; D1/C1 are audited only as declared-input map/readout appendices, not EW-VEV or formula closure."
+        },
+        "dep_claim_type": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "hierarchy_formula_honest_status_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "hierarchy_formula_honest_status_note_2026-05-10"
+        ],
+        "load_bearing_score": 12.454,
+        "runner_hash": "98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T003831Z-b2671841-hierarchy_alpha_lm_magni",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports the scoped open-gate conclusion: absence of native alpha_bare in the displayed block observables and the alpha_s bookkeeping identity are direct algebraic checks. The missing step is explicitly left open rather than used as a closure premise: identify a multiplicative block readout attaching alpha_s per taste decoupling.",
+      "claim_scope": "Delta-zero hierarchy magnitude open gate: the provided block observables are u_0-only, the reduced alpha_s-per-taste product is algebraically equivalent to alpha_LM^16, and the B4 attachment-observable identification is not derived.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T00:38:31.411222+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T00:34:12.946904+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T003412Z-76f3d32b-hierarchy_alpha_lm_magni",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the delta-zero algebraic boundary that the provided block determinant/condensate forms are u_0-only while alpha_LM^16 carries alpha_bare^16 by algebraic relabeling, leaving the B4 attachment-observable transport source open.",
+          "claim_type": "open_gate",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T00:38:31.411222+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T003831Z-b2671841-hierarchy_alpha_lm_magni",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Delta-zero hierarchy magnitude open gate: the provided block observables are u_0-only, the reduced alpha_s-per-taste product is algebraically equivalent to alpha_LM^16, and the B4 attachment-observable identification is not derived.",
+          "claim_type": "open_gate",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:hierarchy_formula_honest_status_note_2026-05-10:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The checked block determinant and condensate forms contain u_0 but no explicit alpha_bare, while alpha_LM^16 = alpha_bare^16 u_0^-16 is only algebraic bookkeeping, so the alpha_bare coupling-power transport remains open.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if downstream context handles are promoted to load-bearing dependencies or if a concrete B4 attachment-observable theorem is added.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 49,
+        "C": 0,
+        "D": 0,
+        "total_pass": 69
+      },
+      "verdict_rationale": "The load-bearing result is a narrow algebraic/symbol-support audit, not a claimed derivation of the hierarchy formula. Independent checks confirm alpha_bare^16 = (4 pi)^-16, Delta_2/Delta_1 = u_0 in inverse-alpha variables, det(u_0 D + m)|_{m=0} = 4^8 u_0^16 with no alpha_bare symbol, and u_0^16 alpha_s^16 = alpha_LM^16. The note passes because it states the attachment-observable identification as the open residual and avoids converting context-only pruning into a global no-go."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py",
+  "title": "Hierarchy Alpha_LM Magnitude Delta-Zero Open Gate",
+  "transitive_descendants": 15,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

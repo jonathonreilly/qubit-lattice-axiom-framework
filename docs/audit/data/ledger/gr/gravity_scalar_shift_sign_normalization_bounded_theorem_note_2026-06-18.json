@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "28cd987fee0178492b3144a89b2ee1ef5f533fa712b097b0ea7fbcf62d3da8d5",
+  "note_path": "docs/GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.108684+00:00",
+      "audit_date": "2026-06-21T13:25:36.586344+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority."
+        },
+        "dep_claim_type": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "retained_bounded"
+        },
+        "deps": [
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "735bb87ceb663b94885b9360130f61c3e16376d6dbdf1728bbdaea065151da5c",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited source-response note is retained_bounded and supplies the action-lowering convention S/L=1-phi. The scalar-packet sign and coefficient follow by finite-dimensional spectral shift and differentiation on the 0<k<pi branch, with no external constants or unsupported physical units.",
+      "claim_scope": "Locally constant one-axis graph-Laplacian scalar packet: the +sI generator shift lowers fixed-energy phase action and normalizes phi_action=c_E s to first order.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T13:25:36.586344+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Differentiating lambda_axis(k_s)+s=E gives d(k_s/k0)/ds=-1/(k0 lambda_axis'(k0)), so positive s lowers k_s/k0 and the first-order action-normalized variable is phi_action=c_E s.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that phi_action remains only an action-normalized packet variable, not a universal gravitational field identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The proof reduces to spectral algebra for H_0+sI and differentiation of the fixed-energy equation on the positive lambda_axis' branch, so the sign and coefficient c_E follow directly. The only upstream physical input is the retained_bounded source-response convention, and the conclusion stays inside the declared locally constant one-axis packet. The runner checks the matrix spectrum shift, axis symbol, monotonicity, derivative, first-order normalization, and small-k limit; its extra eikonal/ledger checks are not load-bearing for this scoped theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py",
+  "title": "Gravity Scalar-Shift Sign and Fixed-Energy Normalization Bridge",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

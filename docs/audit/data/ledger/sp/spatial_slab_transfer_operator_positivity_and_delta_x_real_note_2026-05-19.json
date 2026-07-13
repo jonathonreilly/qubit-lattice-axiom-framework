@@ -1,0 +1,117 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+    "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+    "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d6039de0c26e8cbb25b42e48caf9e427b1a514bd59817c5abd5820724d0b980f",
+  "note_path": "docs/SPATIAL_SLAB_TRANSFER_OPERATOR_POSITIVITY_AND_DELTA_X_REAL_NOTE_2026-05-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-26T09:31:38.875481+00:00",
+      "archived_for_note_hash": "e3d7767e2b5643587d444a2637d2808137f281fd0e9d66fb72067d24b9553099",
+      "audit_date": "2026-05-25T23:52:45.256648+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom."
+        },
+        "dep_claim_type": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f9250dd307de1cf6a333bc9773bd4a18a1180122d57e398bb200b21fd5b2d308",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T235223Z-1b055b3d-spatial_slab_transfer_op-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The argument explicitly imports the PR #1577 temporal-transfer theorem/Lemmas A-D and the Leg A determinant-positivity input, but those authorities are not retained-grade in the restricted packet. The pure Wilson branch also depends on the unprovided temporal-transfer theorem candidate rather than closing solely from the retained G_BARE authority and standard mathematics shown here.",
+      "claim_scope": "Finite-volume Wilson spatial-slab transfer-operator positivity, trace-class compactness, and strict positive spectral gap, with the staggered+Wilson extension conditional on Leg A determinant positivity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T23:52:45.256648+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Lemma 3.1 reduces the spatial-slab operator statement to the corresponding PR #1577 temporal-slab transfer-operator statement, after which Perron-Jentzsch is applied to obtain the simple top eigenvalue and strict gap.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or include the PR #1577 temporal-transfer theorem/Lemmas A-D and Leg A determinant-positivity theorem, then re-audit whether the spatial axis-permutation lift closes without additional assumptions.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md",
+        "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 5,
+        "C": 2,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The source note\u2019s own dependency note names the PR #1577 temporal-transfer theorem candidate as a conditional upstream input for Theorem A and Leg A as a conditional input for Theorem B. The runner performs useful internal checks, but several checks are axis-relabel/spectral-model confirmations and V7 uses a fixed two-site determinant model that does not independently close the full staggered slab determinant claim. Since the load-bearing imported transfer-operator theorem and Leg A are not retained-grade within the packet, the result is conditional, not clean."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py",
+  "title": "Spatial-Slab Transfer-Operator Positivity and \u0394_x > 0 from Wilson Axis-Permutation Symmetry (Real)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

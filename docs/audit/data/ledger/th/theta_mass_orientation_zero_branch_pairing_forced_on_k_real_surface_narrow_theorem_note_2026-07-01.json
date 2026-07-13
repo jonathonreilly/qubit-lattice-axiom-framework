@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.968,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a887e49289be3cc959cb5d1c64ad6ac034443ad85843523a9dde032878623521",
+  "note_path": "docs/THETA_MASS_ORIENTATION_ZERO_BRANCH_PAIRING_FORCED_ON_K_REAL_SURFACE_NARROW_THEOREM_NOTE_2026-07-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.955667+00:00",
+      "audit_date": "2026-07-10T02:45:13.497510+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "Finite-dimensional algebraic classification on the supplied C3 generation 3-space: Hermitian generators commuting with the cyclic shift C have Brannen circulant form and commute with the supplied pointer S=C+C^2; no derivation of C, S, r, delta, or the coupling values is audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "51a1e316b3f18832078f31da3b67bd4bf5e1334b972e8654a18ef0c1d55e64b6",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-theta_mass_orientation_z-096",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The determinant formulas close algebraically, but the claimed orientation conclusion does not: when m = 0 and M_KS has a nontrivial kernel, det(M_KS) = 0 and arg det is undefined, not 0. The same defect occurs for flavor spectra producing a zero determinant.",
+      "claim_scope": "Determinant nonnegativity and claimed zero-orientation selection for real scalar masses, Hermitian flavor-factor masses, and squared masses on the finite even-dimensional real-antisymmetric Case-A surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:45:13.497510+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15:retained_bounded->unaudited",
+      "load_bearing_step": "The paired spectrum gives det(M_KS + mI) = product over (m^2 + lambda^2) times m^(2z) >= 0, from which the note infers arg det = 0 on the whole real mass line.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Narrow all phase and orientation statements to the nonzero-determinant locus, describe the zero locus separately, and add explicit m = 0 and zero-root flavor tests before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The pairing, tensor-factorization, and squared-determinant identities are correct within the stated even-dimensional hypotheses. However, the headline conclusion covers every real mass and every Hermitian spectrum, while the supplied runner omits m = 0 and exact zero-root flavor cases despite exhibiting a configuration with kernel dimension two. Nonnegativity at a determinant zero does not define an orientation phase, so the asserted whole-surface collapse to arg det = 0 fails as written."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py",
+  "title": "Theta Mass-Orientation Zero Branch Is Pairing-Forced on the K-Real Staggered Surface",
+  "transitive_descendants": 707,
+  "verdict_rationale": null
+}

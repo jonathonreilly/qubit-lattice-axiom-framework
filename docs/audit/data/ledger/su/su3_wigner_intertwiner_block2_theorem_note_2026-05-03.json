@@ -1,0 +1,157 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_wigner_intertwiner_block2_theorem_note_2026-05-03",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "su3_wigner_intertwiner_block1_theorem_note_2026-05-03"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.596,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "97c943f3ad27bd644e03d373c981ac86b68751b20a93ead35b49df5b16d6fb3a",
+  "note_path": "docs/SU3_WIGNER_INTERTWINER_BLOCK2_THEOREM_NOTE_2026-05-03.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:12:55.250018+00:00",
+      "audit_date": "2026-05-23T14:08:10.840511+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "Self-contained finite-dimensional SU(3) adjoint tensor-product decomposition (1,1) tensor (1,1) = 1 + 8 + 8 + 10 + 10bar + 27, with explicit orthonormal CG blocks checked by the supplied runner."
+        },
+        "dep_claim_type": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "su3_wigner_intertwiner_block1_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 14.479,
+        "runner_hash": "043cafb0fa7f64891ea5b46f95819a7418b879f273b3f100bfea14a8ce6e7308",
+        "transitive_descendants": 1008
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T140810Z-su3_wigner_intertwiner_block2_theorem_no-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3.",
+      "claim_scope": "Exact finite-dimensional SU(3) representation-theory construction of the Haar projector on V_(1,1)^4 = C^4096, including rank 8 and projector/equivariance identities; excludes downstream cube-closure claims.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T14:08:10.840511+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-06T12:39:21.808837+00:00",
+          "auditor": "codex-fresh-su3-auditor-2026-05-06",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Finite-rank construction of the SU(3) adjoint four-fold Haar projector on V_(1,1)^tensor4 = C^4096, including Hermitian idempotent rank-8 projection onto invariants and numerical validation of equivariance/projector identities.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-23T14:04:36.872154+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T140416Z-8822dc87-su3_wigner_intertwiner_b-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-dimensional SU(3) representation-theory construction of the Haar projector on (1,1)^\u22974 = C^4096, including rank 8 and projector/equivariance identities; no audit of downstream L>=3 cube contraction claims.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-05-23T14:08:10.840511+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260523T140810Z-su3_wigner_intertwiner_block2_theorem_no-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-dimensional SU(3) representation-theory construction of the Haar projector on V_(1,1)^4 = C^4096, including rank 8 and projector/equivariance identities; excludes downstream cube-closure claims.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "Used bounded_theorem where the restricted finite-dimensional projector result is a closed positive_theorem at its scoped level.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "Classified the load-bearing step as C, but the rubric's C is first-principles axiom compute; this packet is algebraic SU(3) representation-theory closure, so A is the tighter class.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_cross_confirmation_packet_invalid",
+      "load_bearing_step": "Schur/Peter-Weyl identifies the four-fold Haar average of D^(1,1)(U) with the invariant-subspace projector, and Casimir-zero diagonalization plus fusion counting constructs it as a rank-8 projector on C^4096.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 3/5 ratified the hybrid tuple (audited_clean, positive_theorem, class A). Vote breakdown: J1: hybrid / audited_clean / positive_theorem / class A; J2: hybrid / audited_clean / positive_theorem / class A; J3: hybrid / audited_clean / positive_theorem / class A; J4: second / audited_clean / positive_theorem / class C; J5: second / audited_clean / positive_theorem / class C. Majority rationale: The clean finite-rank SU(3) projector theorem can be typed as a positive_theorem because the audited scope is fully closed and does not depend on the broader cube tensor-network campaign. The derivation is best classified as A: an algebraic finite-dimensional representation-theory closure over retained Block 1 data and standard Schur/Peter-Weyl/Casimir facts, with the runner verifying the matrix construction. It is not decoration because it introduces a new explicit four-fold Haar projector primitive, not merely a restatement of Block 1. | The clean scope is the finite SU(3) projector theorem only, so reclassifying it as a positive_theorem does not promote the broader cube-closure campaign. The first audit was right that the closure is algebraic representation theory over retained Block 1 input, but overly conservative in keeping the bounded_theorem label for an exact finite object. The second audit was right on audited_clean and positive_theorem scope, but its class C label overstates the rubric fit because this is not a Cl(3)/Z^3 first-principles framework computation; it is class A algebraic closure plus finite validation. | The clean scoped result is an exact finite-dimensional SU(3) theorem, analogous in status to the retained Block 1 decomposition, so positive_theorem is the better claim type than bounded_theorem. The broader L>=3 cube tensor-network campaign remains outside the audited scope and is not promoted. The load-bearing step is best classified as A: standard representation-theoretic algebra plus retained Block 1 inputs, not a framework-axiom first-principles C computation from Cl(3) on Z^3."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.977021+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su3_wigner_4fold_haar_projector.py",
+  "title": "SU(3) Wigner Intertwiner Engine \u2014 Block 2: 4-fold Haar Projector",
+  "transitive_descendants": 773,
+  "verdict_rationale": null
+}

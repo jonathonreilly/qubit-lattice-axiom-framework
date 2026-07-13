@@ -1,0 +1,233 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0ffb4deb4906308ab4357383a4a453c834c76c1cdd8e52357cc917a00d4ce162",
+  "note_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:05:13.551907+00:00",
+      "audit_date": "2026-06-03T04:18:42.955383+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e42b04c651df2cc1fe50a6c0ecddfe88702f3c0e7fa1d6ee5a875ef012dab7ac",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-041522-0b721aab-koide_anticommuting_eige",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The core Koide reconciliation follows from the retained anticommuting eigenvector theorem, the retained circulant algebraic theorem, and finite 3D spectral algebra. The anticommuting eigenvalue readout and anticommuting eigenvector readout are different objects, so the stated contradiction does not follow.",
+      "claim_scope": "Finite 3D C3 algebraic reconciliation of eigenvector vs eigenvalue Koide readouts for Gamma_chi=(2/3)J-I; no physical charged-lepton readout selector audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T04:18:42.955383+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "The apparent conflict is a readout-category error: the anticommuting route reads Q=2/3 from nonzero-eigenvalue eigenvector components, while the eigenvalue readout of a nonzero 3D anticommuting H has zero spectral sum and the circulant route reads Q=2/3 from eigenvalues at r=1/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: cheapest repair is to remove the unused CPT authority from this reconciliation note's load-bearing authority list, or repair the CPT R2 sign statement and re-run this audit.",
+      "open_dependency_paths": [
+        "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The runner source performs actual finite matrix checks for Gamma_chi, a constructed anticommuting H, and the circulant eigenvalue ratio; those checks support the core readout-category reconciliation. However, the strict formula inventory catches a false sign in the cited CPT authority's R2 corollary: from T D T = D for real D, an eigenpair (lambda, v) maps under complex conjugation to eigenvalue lambda^*, not -lambda^*; for lambda = i mu this is -i mu, not the same mu. Because the source note names that authority as load-bearing, the packet cannot receive audited_clean until the cited authority is repaired or removed from this claim's load-bearing list."
+    },
+    {
+      "archived_at": "2026-07-10T16:59:10.093753+00:00",
+      "audit_date": "2026-06-05T19:40:41.019209+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e42b04c651df2cc1fe50a6c0ecddfe88702f3c0e7fa1d6ee5a875ef012dab7ac",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-193931-c2cc3af616-koide_anticommuting_eigenvec",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained anticommuting theorem supplies Q(v)=2/3 for nonzero-eigenvalue eigenvectors, and the cited retained circulant algebra supplies Q=2/3 for the signed eigenvalue/cosine readout at r=1/2. Independently, anticommutation with Gamma_chi makes a nonzero odd-dimensional spectrum symmetric {-lambda,0,+lambda}, so the eigenvalue spectral ratio of that same H is a different object with zero denominator.",
+      "claim_scope": "Finite three-dimensional C3 reconciliation of eigenvector-component and eigenvalue Koide readouts, without selecting either readout as physical.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:40:41.019209+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+      "load_bearing_step": "The anticommuting theorem reads Q from nonzero-eigenvalue eigenvector components, while the circulant theorem reads Q from circulant eigenvalues at r=|b|^2/a^2=1/2; applying the eigenvalue readout to the anticommuting H is therefore a different-object readout that gives an infinite/undefined spectral ratio rather than a contradiction.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only the boundary convention that the anticommuting spectral Q=INF statement assumes a nonzero anticommuting H with nonzero eigenvalue; the zero operator would give 0/0, but it is outside the theorem route being reconciled.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is a finite algebraic reconciliation over retained inputs, not a new physical Koide derivation or readout selector. The displayed identities check independently: Gamma_chi has eigenvalues {1,-1,-1} and squares to I; {H,Gamma_chi}=0 implies <v|Gamma_chi|v>=0 for nonzero eigenvalue eigenvectors; and circulant eigenvalues a+2|b|cos(theta+2pi k/3) give Q=2/3 when |b|^2/a^2=1/2. The runner source performs representative matrix/eigenvalue checks and contains no external comparator, tuned empirical input, or missing helper dependency."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.723324+00:00",
+      "audit_date": "2026-07-10T17:28:35.744741+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "For real symmetric H on R^3 satisfying {H, \u0393_\u03c7} = 0, every nonzero-eigenvalue eigenvector obeys \u27e8v|\u0393_\u03c7|v\u27e9 = 0 and hence Q(v) = 2/3 and the stated Fourier norm split.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0."
+        },
+        "dep_claim_type": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 6.5,
+        "runner_hash": "e42b04c651df2cc1fe50a6c0ecddfe88702f3c0e7fa1d6ee5a875ef012dab7ac",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00030-koide_anticommuting_eigenvec",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained anticommuting authority gives v^T Gamma_chi v=0 and hence Q(v)=2/3, while Gamma_chi H Gamma_chi=-H gives the paired spectrum {-lambda,0,+lambda}. The retained circulant identity supplies the separate eigenvalue-coordinate result at r=1/2, so the differing outputs are applied to different triples and do not conflict.",
+      "claim_scope": "Finite C3 algebraic reconciliation: a nonzero anticommuting Hermitian 3x3 operator gives Q(v)=2/3 on nonzero-eigenvalue eigenvectors while its spectral quotient has a zero denominator, whereas a commuting Hermitian circulant at r=1/2 has spectral quotient 2/3; no physical readout selector is asserted.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:28:35.744741+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The infinite spectral quotient and the eigenvector value Q=2/3 concern different objects\u2014respectively the eigenvalues and eigenvector components of the anticommuting operator\u2014while the circulant route separately applies the eigenvalue quotient.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The reconciliation is a genuine algebraic closure over two independent retained-grade authorities, not a physical identification of either readout with charged-lepton masses. Ten runner checks perform actual matrix or quotient calculations supporting the finite examples. Four additional reported passes are unconditional True statements and are not counted as computational evidence, but their corresponding conclusions follow directly from the supplied authorities and elementary displayed algebra."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation.py",
+  "title": "Koide Anticommuting Eigenvector and Circulant Eigenvalue Readouts Are Consistent",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_positive_source_cone_p2_elimination_narrow_theorem_note_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_from_axiom_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e16a2a846e0b247a242ede056a531db8c7265dbe9fc8207f371dcd9b6227f1a1",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_POSITIVE_SOURCE_CONE_P2_ELIMINATION_NARROW_THEOREM_NOTE_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:31.508385+00:00",
+      "audit_date": "2026-07-10T04:23:30.392946+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "observable_principle_from_axiom_note": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block."
+        },
+        "dep_claim_type": {
+          "observable_principle_from_axiom_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "observable_principle_from_axiom_note": "retained_bounded"
+        },
+        "deps": [
+          "observable_principle_from_axiom_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "594c8b1f7254a1dc26d2dfd25b638f427be58c22cb2047b743bf3a62d2dbafe6",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00082-observable_principle_positiv",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Positive-cone positivity follows exactly from skew-spectrum pairing, while local-patch positivity follows from the Neumann invertibility bound and determinant-sign continuity. These results suffice for the narrowly scoped P2 elimination.",
+      "claim_scope": "For a finite real antisymmetric D, det(D+J) is positive for positive diagonal J and throughout a Neumann-bounded real-diagonal neighborhood of an invertible D; consequently the logarithmic phase-sensitive and phase-blind candidates coincide on that branch, without establishing global P2.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:23:30.392946+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "observable_principle_from_axiom_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_from_axiom_note:retained_bounded->unaudited",
+      "load_bearing_step": "Writing S+D=S^(1/2)(I+S^(-1/2)DS^(-1/2))S^(1/2), the middle real-skew factor has determinant product_k(1+lambda_k^2)>0, so det(S+D)>0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The proof is a correct finite-dimensional algebraic consequence of the retained-bounded parent\u2019s real-skew source-block assumptions and standard determinant facts. The runner genuinely evaluates the stated identities and counterexample, although its random trials are corroborative rather than the proof. Because every load-bearing step is class A, there are no external-comparator checks, and the chain reduces to one upstream parent plus standard mathematics, the campaign\u2019s decoration rule applies."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_observable_principle_positive_source_cone_p2_elimination_2026_06_06.py",
+  "title": "Observable Principle Positive Source Cone P2 Elimination Narrow Theorem Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

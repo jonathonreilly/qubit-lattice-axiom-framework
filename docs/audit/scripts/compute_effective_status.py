@@ -22,6 +22,8 @@ from pathlib import Path
 
 import premise_nodes
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -296,7 +298,7 @@ def main() -> int:
     ):
         ledger.pop(stale_key, None)
 
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
 
     summary = summarize(new_rows)
     summary["cycles_detected"] = len(cycles)

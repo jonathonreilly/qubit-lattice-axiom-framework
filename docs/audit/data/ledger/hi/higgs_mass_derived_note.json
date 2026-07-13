@@ -1,0 +1,139 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "higgs_mass_derived_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "taste_scalar_isotropy_theorem_note",
+    "higgs_mechanism_note",
+    "yt_zero_import_authority_note",
+    "yt_flagship_boundary_note",
+    "yt_color_projection_correction_note",
+    "yt_explicit_systematic_budget_note",
+    "ew_coupling_derivation_note",
+    "yt_ew_color_projection_theorem",
+    "alpha_s_derived_note",
+    "plaquette_self_consistency_note",
+    "qcd_low_energy_running_bridge_note_2026-05-01",
+    "hierarchy_spatial_bc_and_u0_scaling_note",
+    "hierarchy_matsubara_decomposition_note",
+    "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+    "assumption_derivation_ledger"
+  ],
+  "direct_in_degree": 25,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 22.199,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "becfada64417720b97beb5269bb688530654c5510b9231b884c37a99d2bbb8e5",
+  "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T18:30:59.016650+00:00",
+      "archived_for_note_hash": "ce3eefa82df02d439a2dc1cbc77a994dba3d07e856d83095bc179d903667c656",
+      "audit_date": "2026-05-07T12:28:32.838712+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "higgs_from_lattice_note": "The lattice Coleman-Weinberg runner provides bounded quantitative Higgs-sector support and consistency behavior, while exact m_H closure is outside this note's authority.",
+          "higgs_mechanism_note": "Mechanism-level Higgs support only: scalar order-parameter/EWSB surface, CW SSB for O(1) bounded-runner inputs, and lattice-cutoff naturalness; not exact m_H closure.",
+          "taste_scalar_isotropy_theorem_note": "For H(phi)=sum_i phi_i S_i on C^8 with three commuting sigma_x taste-shift involutions and V_f(phi)=sum_s f(lambda_s(phi)^2) for a common smooth f, the fermion Coleman-Weinberg Hessian at phi=(v,0,0) is proportional to delta_ij; bounded gauge-split and thermal-cubic estimates are excluded."
+        },
+        "dep_claim_type": {
+          "higgs_from_lattice_note": "bounded_theorem",
+          "higgs_mechanism_note": "bounded_theorem",
+          "taste_scalar_isotropy_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_from_lattice_note": "retained_bounded",
+          "higgs_mechanism_note": "retained_bounded",
+          "taste_scalar_isotropy_theorem_note": "retained"
+        },
+        "deps": [
+          "higgs_from_lattice_note",
+          "higgs_mechanism_note",
+          "taste_scalar_isotropy_theorem_note"
+        ],
+        "load_bearing_score": 16.776,
+        "runner_hash": "564fb6f991105b31195d2d0120f3a36112d833dc8c0887e2a26bdc631aee5868",
+        "transitive_descendants": 309
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-higgs-derived-judge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet shows a real 3-loop RGE computation, but it does not close the authority for y_t(v)=0.9176, g1, g2, alpha_s, v, or the lambda(M_Pl)=0 boundary. The supplied Higgs dependencies explicitly support mechanism-level or bounded quantitative claims, not exact independent m_H closure.",
+      "claim_scope": "Bounded Higgs-mass authority: the direct 3-loop SM RGE runner with lambda(M_Pl)=0 maps the current hard-coded framework input set to m_H ~= 125.1 GeV; exact closure remains conditional on the y_t and framework-input authority paths.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-07T12:28:32.838712+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "For the current accepted central input y_t(v) = 0.9176, the direct full 3-loop runner gives m_H ~= 125.1 GeV, with exact Higgs closure still inheriting the YT-lane precision caveat.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "missing_dependency_edge - Add retained-grade direct dependency edges for the current YT authority path, g1/g2/alpha_s/v framework inputs, and lambda(M_Pl)=0 boundary authority, then re-audit whether y_t(v)=0.9176 is independently derived rather than calibrated to the Higgs target.",
+      "open_dependency_paths": [
+        "docs/HIGGS_MECHANISM_NOTE.md",
+        "docs/HIGGS_FROM_LATTICE_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the m_H ~= 125.1 result is obtained at a specific hard-coded input set, especially y_t(v)=0.9176, while the restricted dependencies do not establish those inputs or the lambda(M_Pl)=0 boundary as retained authorities. Why this blocks: the runner removes the Buttazzo-style fit import and performs a real 3-loop RGE computation, but the Higgs number remains input-sensitive and the packet does not prove the input authority or precision budget. Repair target: add retained-grade direct dependencies or runners for the YT authority path, g1/g2/alpha_s/v inputs, and high-scale boundary, with this runner consuming those outputs. Claim boundary until fixed: bounded support that the current hard-coded input set maps to m_H ~= 125.1 GeV with inherited YT/input caveats."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976899+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_higgs_mass_full_3loop.py",
+  "title": "Higgs Mass: Canonical Authority Boundary",
+  "transitive_descendants": 830,
+  "verdict_rationale": null
+}

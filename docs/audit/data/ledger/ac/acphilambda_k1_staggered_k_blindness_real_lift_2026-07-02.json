@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_k1_staggered_k_blindness_real_lift_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1f4e3370ab7e17b352237ea143675348279e85c3b9d3c8b04cf996daf100ccc0",
+  "note_path": "docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:36.938744+00:00",
+      "audit_date": "2026-07-09T08:35:51.601552+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "4a404c4e0750948a5f0542e6ac2c8d50536b44d5f4acb024155169a7851a5b28",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-kblindness-auditor-20260709-b",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite real lift and heat-trace witnesses close, but the full carrier-removal no-go needs a direct retained dependency for the PR #4831 blindness theorem and off-locus carrier requirement.",
+      "claim_scope": "One-component nearest-neighbor staggered K0/K1 surface removal as a K-breaking carrier via real non-projective C3[111] lift plus conjugate-sector blindness.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-09T08:35:51.601552+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "The step that imports the PR #4831 theorem verbatim to upgrade finite real/order-three lift checks into all-real-functions trace blindness and the claimed K-breaking carrier no-go.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the direct retained dependency for PR #4831's blindness theorem and the retained source for the off-locus K-breaking carrier requirement, then re-audit the full no-go scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 56,
+        "C": 24,
+        "D": 0,
+        "total_pass": 83
+      },
+      "verdict_rationale": "Issue: the general blindness transfer and carrier-localization conclusion rely on PR #4831/off-locus carrier context while the packet wires only the staggered kinetic-class dependency. Why this blocks: the finite runner does not by itself prove Tr(f(H)Rt)=Tr(f(H)Rt^2) for every real f or establish that this blindness removes all required K-breaking registered content. Repair target: add/audit the direct dependency edge(s) carrying the real order-3 blindness theorem and the retained source for the off-locus K-breaking carrier requirement, or split the note so the finite real-lift computation is audited separately from the carrier no-go. Claim boundary until fixed: finite N=4,6 constructive real lift/order-three checks and N=4 heat-trace witnesses are supported; the full carrier-removal no-go remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py",
+  "title": "AC_phi_lambda K1 Staggered K-Blindness: Real Non-Projective Lift",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

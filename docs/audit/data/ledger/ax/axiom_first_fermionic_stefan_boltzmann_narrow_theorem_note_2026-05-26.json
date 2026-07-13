@@ -1,0 +1,535 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+    "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+    "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.064,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f1d229a60143847bd946fb9baef407fb2389ca399c4513ef20846065bd58b805",
+  "note_path": "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.423528+00:00",
+      "audit_date": "2026-06-13T22:57:56.236827+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 15.306,
+        "runner_hash": "c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47",
+        "transitive_descendants": 1265
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-225444-a06ffa7e42-axiom_first_fermionic_stefan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The theorem follows from the explicit kernel-geometry hypothesis (Z), compactness/gap off the zero windows, the determinant Jacobian for the tangent cone, and the retained 7/8 Fermi integral. The open items named in the note are boundaries of scope, not missing steps in the conditional theorem.",
+      "claim_scope": "For any stated realized-class finite-range sublattice-periodic Hermitian hopping kernel whose zero branches satisfy hypothesis (Z), the defined half-filled free-Fermi band-integral probe has u(T)=g_eff(7/8)(\u03c0^2/30)T^4+O(T^5) with finite g_eff=sum |det V|^-1; the extended-surface and quadratic-zero examples certify that both clauses of (Z) are load-bearing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T22:57:56.236827+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-13T00:26:07.115281+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-002313-82516070a0-axiom_first_fermionic_stefan",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit one-particle surface whose zero set is finite and linearly conical in the sense of (Z), the half-filled free-Fermi probe has the stated T^4 asymptotic with finite cone-weighted g_eff=sum |det V_jb|^-1; no realized-kernel selection or thermal-equilibrium derivation is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T22:57:56.236827+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260613-225444-a06ffa7e42-axiom_first_fermionic_stefan",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For any stated realized-class finite-range sublattice-periodic Hermitian hopping kernel whose zero branches satisfy hypothesis (Z), the defined half-filled free-Fermi band-integral probe has u(T)=g_eff(7/8)(\u03c0^2/30)T^4+O(T^5) with finite g_eff=sum |det V|^-1; the extended-surface and quadratic-zero examples certify that both clauses of (Z) are load-bearing.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "In each conical zero window, replace |E_b(p_j+q)| by |V_jb q| with O(T^5) absolute error and evaluate \u222b d^3q/(2\u03c0)^3 |V_jb q| n_F(|V_jb q|/T) = |det V_jb|^-1 (7/8)(\u03c0^2/30) T^4.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the harmless formal convention that (Z) is intended to mean a nonempty conical massless set when the prose asserts g_eff in (0,\u221e); the conditional finite-plateau theorem itself closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 2,
+        "C": 12,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The coefficient check closes independently: \u0393(4)\u03b7(4)=7\u03c0^4/120 and the phase-space factor gives 7\u03c0^2/240=(7/8)(\u03c0^2/30), while the linear change of variables contributes exactly |det V|^-1. The O(T^5) replacement bound follows from the quadratic cone error and exponential Lipschitz decay of x n_F(x/T); the falsification exponents T^2 and T^(5/2) follow by codim-1 and quadratic rescaling. The runner source performs actual finite-kernel spectral, zero-set, quadrature, and mode-sum computations rather than merely printing constants, and the cited non-retained axiom memo is explicitly an accepted premise while the other dependencies are retained-grade."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.795147+00:00",
+      "audit_date": "2026-06-30T16:33:55.766459+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.886,
+        "runner_hash": "c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47",
+        "transitive_descendants": 945
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T163010Z-32081372-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The audited result is a conditional asymptotic theorem: given hypothesis (Z) and the declared free-Fermi probe, the cone-window replacement, gapped-remainder estimate, change of variables, and retained Fermi-Dirac integral give the stated T^4 coefficient and O(T^5) error. That is a mathematical closure over supplied kernel geometry and retained normalization, not a first-principles derivation of which kernel is realized or of a branch/species inventory from the framework baseline. The runner's lattice witness computations support non-vacuity and the load-bearing nature of (Z), but they do not supply the universal quantifier beyond the proof.",
+      "claim_scope": "For any supplied finite-range sublattice-periodic Hermitian one-particle hopping kernel on the stated Z^3 single-ladder surface whose zero set is a nonempty finite set of linear cones satisfying (Z), the half-filled free-Fermi probe has u(T)=g_eff(7/8)(pi^2/30)T^4+O(T^5), with g_eff=sum |det V_jb|^{-1}; the row does not certify thermal equilibrium, kernel realization, or which branch satisfies (Z).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T16:33:55.766459+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T16:23:33.074145+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T162333Z-c615d099-axiom_first_fermionic_st",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For any supplied finite-range sublattice-periodic Hermitian one-particle hopping kernel on the stated Z^3 single-ladder surface whose zero set is a nonempty finite set of linear cones satisfying (Z), the half-filled free-Fermi probe has u(T)=g_eff(7/8)(pi^2/30)T^4+O(T^5), with g_eff=sum |det V_jb|^{-1}; the row does not certify thermal equilibrium, kernel realization, or which branch satisfies (Z).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-30T16:27:57.705908+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T162757Z-e1611e01-axiom_first_fermionic_st",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the declared half-filled free-Fermi probe on finite-range sublattice-periodic Hermitian hopping kernels over the Z^3 one-mode surface, any kernel whose zero set is finite and linearly conical satisfies the low-temperature T^4 asymptotic with finite cone-weighted g_eff=\u03a3|det V|^-1; no realized kernel selection or equilibrium derivation is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-30T16:33:55.766459+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260630T163010Z-32081372-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The audited result is a conditional asymptotic theorem: given hypothesis (Z) and the declared free-Fermi probe, the cone-window replacement, gapped-remainder estimate, change of variables, and retained Fermi-Dirac integral give the stated T^4 coefficient and O(T^5) error. That is a mathematical closure over supplied kernel geometry and retained normalization, not a first-principles derivation of which kernel is realized or of a branch/species inventory from the framework baseline. The runner's lattice witness computations support non-vacuity and the load-bearing nature of (Z), but they do not supply the universal quantifier beyond the proof.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit misclassified the load-bearing step as C by treating finite witness-spectrum computations as the theorem's universal first-principles closure; those computations are corroborating evidence, while the audited theorem closes through the analytic cone-reduction identity over the stated hypothesis.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the minor empty-zero-set convention: either keep the first audit's nonempty-zero-set scope or allow the fully gapped case with g_eff=0.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The audited result is a conditional asymptotic theorem: given hypothesis (Z) and the declared free-Fermi probe, the cone-window replacement, gapped-remainder estimate, change of variables, and retained Fermi-Dirac integral give the stated T^4 coefficient and O(T^5) error. That is a mathematical closure over supplied kernel geometry and retained normalization, not a first-principles derivation of which kernel is realized or of a branch/species inventory from the framework baseline. The runner's lattice witness computations support non-vacuity and the load-bearing nature of (Z), but they do not supply the universal quantifier beyond the proof."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.312274+00:00",
+      "audit_date": "2026-07-01T20:43:12.504730+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.886,
+        "runner_hash": "c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47",
+        "transitive_descendants": 945
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T204312Z-b976395b-axiom_first_fermionic_st",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The asymptotic proof closes from the stated kernel-geometry hypothesis, compactness of the torus, the retained Fermi-Dirac integral coefficient, and standard cone change-of-variables/error estimates. The cited non-retained minimal axiom node is an accepted axiom premise, and the other load-bearing authorities are retained-grade; the open items are explicitly outside the audited scope.",
+      "claim_scope": "Conditional asymptotic theorem: for any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit/Fock surface whose zero set is finite and linearly conical, the declared half-filled free-Fermi probe has u(T)=g_eff(7/8)(\u03c0\u00b2/30)T\u2074+O(T\u2075), with g_eff=\u03a3|det V_jb|^{-1}; the row does not derive equilibrium, kernel realization, branch selection, or hypothesis (Z) for a physical kernel.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T20:43:12.504730+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T20:39:02.214730+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T203902Z-f796b3a8-axiom_first_fermionic_st",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the declared thermodynamic-limit half-filled free-Fermi probe on any finite-range sublattice-periodic Hermitian hopping kernel on the Z^3 one-qubit surface satisfying hypothesis (Z), u(T)=g_eff (7/8)(pi^2/30) T^4 + O(T^5) with finite g_eff=sum |det V|^-1; no thermal-equilibrium derivation, realized-kernel selection, or phi-branch selection is included.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T20:43:12.504730+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T204312Z-b976395b-axiom_first_fermionic_st",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional asymptotic theorem: for any finite-range sublattice-periodic Hermitian hopping kernel on the stated Z^3 one-qubit/Fock surface whose zero set is finite and linearly conical, the declared half-filled free-Fermi probe has u(T)=g_eff(7/8)(\u03c0\u00b2/30)T\u2074+O(T\u2075), with g_eff=\u03a3|det V_jb|^{-1}; the row does not derive equilibrium, kernel realization, branch selection, or hypothesis (Z) for a physical kernel.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "For any kernel satisfying hypothesis (Z), replace each low-energy cone window by its tangent cone and evaluate \u222b d^3q/(2\u03c0)^3 |V_jb q| n_F(|V_jb q|/T) = |det V_jb|^{-1}(7/8)(\u03c0\u00b2/30)T\u2074, with the replacement error O(T\u2075) and off-cone contribution exponentially small.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the free-Fermi probe/Fock-surface language remains scoped as a declared probe currency rather than a derived equilibrium or CAR-dynamics claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The displayed coefficients and scalings check independently: \u0393(4)\u03b7(4)=7\u03c0\u2074/120 gives 7\u03c0\u00b2/240=(7/8)(\u03c0\u00b2/30), the determinant Jacobian gives the stated cone weighting, and the quadratic cone-error bound integrates to O(T\u2075). The runner source performs real symbolic, spectral, quadrature, and witness-kernel checks rather than merely printing PASS lines, with cross-note checks limited to retained-grade composition and citation discipline. The theorem is clean only in its bounded scope: it supplies a conditional probe asymptotic under (Z), not a derivation of thermal equilibrium, the realized kinetic branch, or phi=-1."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.411574+00:00",
+      "audit_date": "2026-07-02T08:22:00.346514+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 14.886,
+        "runner_hash": "c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47",
+        "transitive_descendants": 945
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-20260702T082055Z-unanimous",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "All five independent panel judges sided with the first audit. Under the class rubric, the decisive theorem step is class A: an analytic cone-reduction/Jacobian and Fermi-integral normalization after the kernel hypothesis (Z), the half-filled free-Fermi probe, and the retained 7/8 coefficient source have been supplied. The note contributes a clean bounded conditional theorem surface, but it does not compute the realized kernel, prove (Z), select a branch, or derive a species inventory from the framework baseline. The runner's explicit lattice witnesses and falsification legs corroborate non-vacuity and load-bearing hypotheses, but they are certificate support rather than the theorem-grade load-bearing step.",
+      "claim_scope": "Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class finite-range sublattice-periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying hypothesis (Z) has u(T)=sum |det V|^-1 (7/8)(pi^2/30) T^4 + O(T^5); the explicit non-(Z) witness kernels only certify that both clauses of (Z) are load-bearing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T08:22:00.346514+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T08:10:11.427863+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T081011Z-02ffed17-axiom_first_fermionic_st",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying (Z) has u(T)=\u03a3|det V|^{-1}(7/8)(\u03c0^2/30)T^4+O(T^5); the witness falsification legs only certify that both clauses of (Z) are load-bearing.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-02T08:14:06.922540+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T081406Z-d5a9a059-axiom_first_fermionic_st",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For any finite-range sublattice-periodic Hermitian one-particle lattice hopping kernel whose zero set is finite and linearly conical as in hypothesis (Z), the defined half-filled free-Fermi probe has u(T)=g_eff(7/8)(pi^2/30)T^4+O(T^5), with g_eff=sum |det V|^-1; the explicit non-(Z) kernels are only certificate-grade falsification witnesses.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-02T08:22:00.346514+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-20260702T082055Z-unanimous",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class finite-range sublattice-periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying hypothesis (Z) has u(T)=sum |det V|^-1 (7/8)(pi^2/30) T^4 + O(T^5); the explicit non-(Z) witness kernels only certify that both clauses of (Z) are load-bearing.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "No material tuple error. The first audit correctly classified the theorem-grade load-bearing step as class A; the ratified scope tightens the wording to explicitly name finite-range sublattice-periodic Hermitian kernels and the nonempty finite conical zero-set convention.",
+          "independence": "judicial_review",
+          "judgment_rationale": "All five independent panel judges sided with the first audit. Under the class rubric, the decisive theorem step is class A: an analytic cone-reduction/Jacobian and Fermi-integral normalization after the kernel hypothesis (Z), the half-filled free-Fermi probe, and the retained 7/8 coefficient source have been supplied. The note contributes a clean bounded conditional theorem surface, but it does not compute the realized kernel, prove (Z), select a branch, or derive a species inventory from the framework baseline. The runner's explicit lattice witnesses and falsification legs corroborate non-vacuity and load-bearing hypotheses, but they are certificate support rather than the theorem-grade load-bearing step.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "theorem_core_reported_class": "A",
+            "total_fail": 0,
+            "total_pass": 18,
+            "witness_and_falsification_classes": [
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "second_auditor_error": "The second audit reached the correct clean bounded verdict but overclassified the load-bearing step as class C by conflating the row's new conditional theorem surface and explicit witness computations with first-principles framework computation. Accepted axiom-premise dependencies do not downgrade a genuine class-C derivation, but here the audited conclusion follows from supplied (Z) plus a retained coefficient input by standard analytic reduction, so class A is the controlling label.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "Given hypothesis (Z), each cone window is replaced by its tangent-cone integral with O(T^5) error; the supplied Fermi integral plus the change of variables u=V_jb q gives |det V_jb|^-1 (7/8)(pi^2/30) T^4 per zero branch, summed over the finite zero set.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "theorem_core_reported_class": "A",
+        "total_fail": 0,
+        "total_pass": 18,
+        "witness_and_falsification_classes": [
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "verdict_rationale": "All five independent panel judges sided with the first audit. Under the class rubric, the decisive theorem step is class A: an analytic cone-reduction/Jacobian and Fermi-integral normalization after the kernel hypothesis (Z), the half-filled free-Fermi probe, and the retained 7/8 coefficient source have been supplied. The note contributes a clean bounded conditional theorem surface, but it does not compute the realized kernel, prove (Z), select a branch, or derive a species inventory from the framework baseline. The runner's explicit lattice witnesses and falsification legs corroborate non-vacuity and load-bearing hypotheses, but they are certificate support rather than the theorem-grade load-bearing step."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.120995+00:00",
+      "audit_date": "2026-07-09T23:08:43.424040+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "Under the stated massless, zero-chemical-potential, 3+1-dimensional thermal hypotheses and per-internal-degree-of-freedom normalization, the Fermi-Dirac energy-density integral is exactly 7/8 of the Bose-Einstein integral, yielding rho_B = (pi^2/30) T^4 and rho_F = (7/8)(pi^2/30) T^4.",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "minimal_axioms": null,
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0."
+        },
+        "dep_claim_type": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "bounded_theorem",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06": "retained_bounded",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 10.214,
+        "runner_hash": "c759c026987cbab59fe8aa92e19b478290daaabda9053ae218b126c74b591d47",
+        "transitive_descendants": 419
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-axiom_first_fermionic_st-014",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cone-integral proof closes for nonempty finite conical zero sets, but formal hypothesis (Z) permits an empty zero set, so a fully gapped kernel satisfies (Z) vacuously while giving g_eff=0, contradicting g_eff in (0,infinity). FSB-X also needs global control of all other zeros before a single regular surface piece or quadratic point determines the global asymptotic.",
+      "claim_scope": "The thermodynamic-limit FSB-K asymptotic under formal hypothesis (Z), including strict positivity of g_eff, together with the certificate-grade FSB-X scaling claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:08:43.424040+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06:retained_bounded->unaudited",
+      "load_bearing_step": "Replacing each conical branch by its tangent dispersion costs O(T^5), after which the change of variables u=V_jb q gives |det V_jb|^-1(7/8)(pi^2/30)T^4 per branch.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: Require Z(h) to be nonempty or replace g_eff in (0,infinity) by g_eff in [0,infinity), and restrict FSB-X to the explicit witnesses or add hypotheses globally controlling every zero component; then re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 11,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The central cone-window analysis and retained 7/8 normalization support the stated T^4 formula, and the cited dependencies are retained-grade or accepted premises. However, the formal theorem omits the nonempty-zero-set condition needed for strict positivity. The runner establishes the falsification rates only for its explicit witnesses and does not close FSB-X's broader sufficient-condition wording when additional zero components are present."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py",
+  "title": "Axiom-First Fermionic Stefan-Boltzmann \u2014 the `T\u2074` Law with Finite `g_eff` for Every Realized-Class Kinetic Kernel with Point-Like Linear-Cone Zero Set (Narrow Theorem)",
+  "transitive_descendants": 756,
+  "verdict_rationale": null
+}

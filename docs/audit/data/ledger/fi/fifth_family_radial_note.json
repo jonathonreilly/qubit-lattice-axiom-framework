@@ -1,0 +1,147 @@
+{
+  "audit_date": "2026-06-09T12:11:33.387553+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29": "Finite sampled audit of the repaired radial-shell fifth-family rule on drifts [0.05, 0.10, 0.20, 0.30, 0.40] and seeds [0, 1], plus F~M transfer on targets (0.05, 0) and (0.30, 1)."
+    },
+    "dep_claim_type": {
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29": "retained_bounded"
+    },
+    "deps": [
+      "fifth_family_radial_repaired_positive_packet_note_2026-05-29"
+    ],
+    "load_bearing_score": 5.748,
+    "runner_hash": "6a0612d0b4142b1a7a46eaf79ed112751538cdce10b2286b294c1c6b283bafec",
+    "transitive_descendants": 18
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260609-120903-e9fa138c12-fifth_family_radial_note",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The primary runner and helper sources construct the no-restore grown slice, radial-shell connectivity, source fields, propagation, and centroid readout, then compute the row gates rather than printing constants. Independent table arithmetic confirms two passing rows, drift coverage [0.05, 0.3], and the 0.20/0 boundary sign flip with zero and neutral controls clean.",
+  "claim_id": "fifth_family_radial_note",
+  "claim_scope": "Finite sampled radial-shell sweep for targets (0.05,0), (0.20,0), and (0.30,1) in scripts/FIFTH_FAMILY_RADIAL_SWEEP.py.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-09T12:11:33.387553+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "fifth_family_radial_repaired_positive_packet_note_2026-05-29"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
+    "scripts/CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 7.7,
+  "load_bearing_step": "In the no-restore grown-slice harness, the radial-shell fifth-family connectivity rule has two sampled rows, drift=0.05 seed=0 and drift=0.30 seed=1, satisfying the declared finite gates, with drift=0.20 seed=0 only an orientation boundary.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "1d2e8e80fd776cbc84b9de3686b3d0830b880c065afc67aa0d32557e137b5fd5",
+  "note_path": "docs/FIFTH_FAMILY_RADIAL_NOTE.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check the helper sign convention and that the bounded scope remains limited to the declared sampled rows.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368306+00:00",
+      "archived_for_note_hash": "e2ce255f14009d960e09e4ed3f802e9c72e61e1d4d1b919d782f42bf67864a0f",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-09T08:57:45.746288+00:00",
+      "archived_for_note_hash": "fb4cf48d1c40555484dc5b2433b9ab3c90e72a95ae2b354e022e82f51d20f60a",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The frozen logs report the stated narrow-basin pattern, but all three live artifact scripts fail before computing because CONNECTIVITY_FAMILY_V2_QUADRANT_SWEEP.py no longer exports _build_radial_shell_connectivity. The current repo therefore cannot reproduce the candidate retained-grade base-family claim.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_from_archived_failed",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note claims a narrow radial-shell fifth-family basin on sampled no-restore grown rows, with drift 0.05 seed 0 and drift 0.30 seed 1 passing exact zero-source, neutral cancellation, sign orientation, and near-unit F~M while drift 0.20 seed 0 is a sign-orientation boundary.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/FIFTH_FAMILY_RADIAL_SWEEP.py_import_error_missing__build_radial_shell_connectivity",
+        "scripts/FIFTH_FAMILY_RADIAL_BASIN.py_import_error_missing__build_radial_shell_connectivity",
+        "scripts/FIFTH_FAMILY_RADIAL_FM_TRANSFER.py_import_error_missing__build_radial_shell_connectivity",
+        "live_runner_output_not_reproducible"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the current radial-shell fifth-family artifact chain is broken by a shared helper import mismatch across the sweep, basin, and F~M transfer scripts. Why this blocks: a retained finite basin cannot be audited from stale frozen logs when the present scripts exit before checking zero-source control, neutral cancellation, sign orientation, or F~M, and downstream companion notes already fail for the same reason. Repair target: restore or move the radial-shell helper API used by these scripts, or update the scripts to import the current implementation, then rerun the sweep, basin, and F~M transfer with explicit PASS thresholds for the two retained rows and the boundary row. Claim boundary until fixed: it is safe only to say historical logs reported a narrow sampled radial-shell basin; it is not currently an audited retained fifth structured family."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/FIFTH_FAMILY_RADIAL_SWEEP.py",
+  "title": "Fifth Family Radial Live Packet",
+  "transitive_descendants": 12,
+  "verdict_rationale": "The load-bearing claim is bounded to three sampled rows and is directly supported by the completed cached run with source and transitive helper code present. The helper chain contains fixed harness parameters and target samples, but no external comparator, imported fitted value, or hard-coded contested output; the final assertions depend on computed gate values. The one-hop cited basin authority is marked retained_bounded, which is retained-grade under the rubric, and it is not needed to broaden the audited scope beyond the finite sweep."
+}

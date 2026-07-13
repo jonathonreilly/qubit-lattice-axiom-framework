@@ -1,0 +1,654 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "luders_rule_from_composition_consistency_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem \u2014 conditional-support assembly over exact finite subclaims",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+    "minimal_axioms",
+    "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+    "record_formation_to_kraus_isometry_bridge_2026-06-06"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.486,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "613c8132adbfacc300ea16e242eb7aeed3df8dd080524370a2a8d064761c3831",
+  "note_path": "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.823725+00:00",
+      "audit_date": "2026-05-22T15:11:43.187144+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T150945Z-46780f09-luders_rule_from_composi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Under LSP-projective, M_{P,E}=PEP is supplied as a framework-rule input for the scoped ideal projective case. Trace duality over all effects then fixes the posterior uniquely, and no additional blocker remains within that scope.",
+      "claim_scope": "For finite qubit-lattice regions, ideal unrefined sharp projective outcomes P with Tr(\u03c3P)>0 update uniquely by the L\u00fcders posterior under the ratified LSP-projective rule K_P=P.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T15:11:43.187144+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "Given LSP-projective sequential composition M_{P,E}=PEP, Bayes consistency for every effect E forces Tr(\u03c3|_P E)=Tr(P\u03c3P E)/Tr(\u03c3P), hence \u03c3|_P=P\u03c3P/Tr(P\u03c3P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should check that the applied scope stays tied to LSP-projective ideal unrefined sharp projective measurements.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The earlier missing authority for M_{P,E}=PEP is supplied in the restricted packet by the ratified LSP-projective rule for ideal unrefined sharp projective measurements. With that input, the derivation is finite-dimensional trace-duality algebra: equality of conditional probabilities for all effects fixes the posterior density matrix, and U1/U2/U4 follow algebraically. The result is clean only at the bounded LSP-projective scope, not as a universal non-projective instrument-selection theorem."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.077709+00:00",
+      "audit_date": "2026-05-23T13:00:22.607966+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T125847Z-26bc8652-luders_rule_from_composi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Under the ratified projective sequential-composition rule, Bayes consistency over all subsequent effects fixes the post-record trace functional uniquely. Positivity, normalization, and sequential composition then follow algebraically for the scoped projective case.",
+      "claim_scope": "Ideal unrefined sharp-projective record conditioning with p(P)>0, using the ratified LSP-projective rule K_P=P so the sequential joint effect is P E P.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T13:00:22.607966+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Given M_{P,E}=P E P, equality of Tr(sigma|_P E) with Tr(P sigma P E)/Tr(sigma P) for every POVM effect E forces sigma|_P=(P sigma P)/Tr(P sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should verify that ledger scope remains limited to nonzero-probability ideal sharp-projective records, not arbitrary Kraus instruments.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The previous blocker, the import of M_{P,E}=P E P, is removed for the ideal unrefined sharp-projective scope by the allowed ratified LSP-projective rule. Within that scope, the remaining derivation is a trace-duality algebraic closure and does not require a numerical runner. The broader source-note wording about arbitrary Kraus operators or general instruments is not part of this audited scope."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.539805+00:00",
+      "audit_date": "2026-06-05T17:36:04.317879+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": null,
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-173515-ac7d23f2f1-luders_rule_from_composition",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed trace algebra from M_{P,E}=PEP to the L\u00fcders formula is correct for nonzero outcome probability. The restricted packet does not derive or retain the load-bearing bridge M_{P,E}=PEP, and the note explicitly admits that this standard sequential-effect composition remains an input.",
+      "claim_scope": "Audited the conditional algebraic derivation of the L\u00fcders posterior \u03c3|_P=P\u03c3P/Tr(P\u03c3P) on finite M_2(C)-tensor-product local algebras, assuming the standard trace/effect pairing and standard sequential-effect composition M_{P,E}=PEP.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:36:04.317879+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The derivation sets the joint sequential effect for recording P then measuring E_i to M_{P,E_i}=P E_i P, so Bayes consistency forces Tr(\u03c3|_P E_i)=Tr(P\u03c3P E_i)/Tr(\u03c3P) for all effects.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation or retained standard-math authority for the sequential-effect composition M_{P,E}=PEP and the trace/effect probability pairing on the finite operator algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The formula inventory checks: cyclicity gives Tr(\u03c3PEP)=Tr(P\u03c3PE), Tr(\u03c3P)=Tr(P\u03c3P) for projections, equality against all effects fixes \u03c3|_P, and the two-step update composes to the Kraus update for K=P_2P_1. However, the unique-update claim depends on importing the sequential-effect composition M_{P,E}=PEP and the trace/effect probability representation, neither of which is closed by the cited minimal axioms. The note itself flags the sequential composition as admitted, so the result is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:10.867240+00:00",
+      "archived_for_note_hash": "ee8ae7a6a020099ff7c7e1973860b08dc0c739fffc5876e56d958cb515df4105",
+      "audit_date": "2026-06-05T21:31:09.115232+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": null,
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-212924-c4f0b985c2-luders_rule_from_composition",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The trace-duality and normalization algebra is correct once the sequential product and trace probability representation are assumed. Those assumptions are not supplied by the cited Minimal Axioms authority, which explicitly does not supply probability, Born weights, or measurement dynamics.",
+      "claim_scope": "Conditional algebraic derivation of the L\u00fcders posterior on finite qubit tensor algebras, assuming the trace state/effect probability pairing, nonzero outcome probability, and the standard sequential-effect product M_{P,E}=PEP.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:31:09.115232+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For (4) to hold for every subsequent effect, trace-duality forces sigma|_P = (P sigma P) / Tr(P sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained one-hop derivations or authorities for the trace probability pairing and standard sequential-effect composition M_{P,E}=PEP from the finite qubit operator algebra, with the zero-probability domain excluded explicitly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The displayed L\u00fcders update follows algebraically from Bayes consistency only after importing M_{P,E}=PEP and the trace state/effect probability pairing. The restricted packet provides only the accepted qubit-lattice axiom authority, and that authority does not provide measurement instruments or probabilities. The note also admits the sequential-effect composition as an unclosed standard-math import, so the result is a bounded conditional theorem rather than a clean closure from the supplied authority."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:59.763583+00:00",
+      "archived_for_note_hash": "2198d944f09ec0b2dda3f7db8121ef8414b40a35aba7674de3253a32f0f257da",
+      "audit_date": "2026-06-06T23:21:23.654110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "Finite-dimensional matrix theorem: for an orthogonal projection P, effects E,F, projection Q, and density operator rho in M_d(C), PEP is a supported effect, satisfies the stated trace identity and boundary cases, and nested compression obeys P(QFQ)P = (QP)^*F(QP), with no measurement or probability interpretation audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.0,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 31
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-232102-dbe97f737e-luders_rule_from_composition",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite PEP authority proves algebraic compression and trace identities, but explicitly does not derive a trace/effect probability interpretation, measurement update, Born rule, or that PEP is the physical joint sequential effect. The missing step is the measurement/probability bridge from U3 and trace pairing to the specific joint effect semantics used in Step 1.",
+      "claim_scope": "Audited whether the L\u00fcders update uniqueness claim follows from the provided minimal axioms plus the retained finite PEP compression bridge within the positive-probability finite matrix setting.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T23:21:23.654110+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note asserts that the sequential-effect bridge gives the joint sequential measurement effect M_{P,E}=PEP, so p(P then E)=Tr(sigma PEP)=Tr(P sigma P E), and then trace-duality forces sigma|_P=P sigma P/Tr(P sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving or explicitly accepting the trace/effect probability pairing and the physical sequential-effect identification M_{P,E}=PEP for records, then re-audit Step 1.",
+      "open_dependency_paths": [
+        "docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The runner genuinely checks finite matrix identities for PEP, positivity, boundaries, trace cyclicity, nested compression, and a Jordan guard; those checks support the cited bridge as algebraic class A evidence. They do not compute or justify the load-bearing measurement-side premise that sequential record probabilities are represented by Tr(sigma PEP). The cited PEP bridge is retained_bounded but expressly says it does not obtain the L\u00fcders state update or trace/effect probability interpretation, while the minimal axioms also disclaim measurement instruments and probability. Therefore the presented theorem remains conditional on an additional retained measurement/probability bridge."
+    },
+    {
+      "archived_at": "2026-06-08T12:37:19.512707+00:00",
+      "archived_for_note_hash": "c102dd9f841abd6bdaee78f6dffb341f02f7f37f5104a9d0cbfdb10002580cf7",
+      "audit_date": "2026-06-07T15:59:32.186571+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "Finite-dimensional matrix theorem: for an orthogonal projection P, effects E,F, projection Q, and density operator rho in M_d(C), PEP is a supported effect, satisfies the stated trace identity and boundary cases, and nested compression obeys P(QFQ)P = (QP)^*F(QP), with no measurement or probability interpretation audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.087,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-155910-02b8add5d9-luders_rule_from_composition",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic step from PEP plus trace duality to the normalized compression formula is sound, but the packet does not derive the measurement-side trace/effect probability semantics, the physical sequential-instrument interpretation of M_{P,E}=PEP, or the acceptance of U1-U4 as governing update requirements.",
+      "claim_scope": "Conditional finite-dimensional derivation of the normalized L\u00fcders projection update from an assumed trace/effect probability pairing, Bayes consistency for sequential records, and the retained finite PEP compression identity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T15:59:32.186571+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For every subsequent effect E, Bayes consistency with the sequential compressed effect M_{P,E}=PEP forces Tr(f(sigma,P)E)=Tr(P sigma P E)/Tr(sigma P), hence f(sigma,P)=P sigma P/Tr(P sigma P) on the positive-probability domain.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained measurement-side bridge deriving the trace/effect probability semantics and the sequential-record conditioning rule M_{P,E}=PEP as physical probabilities, not only finite matrix algebra.",
+      "open_dependency_paths": [
+        "docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md::measurement-side trace/effect probability interpretation and U1-U4 update-consistency premises"
+      ],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The runner genuinely checks finite matrix compression, trace cyclicity, nested compression, and a Jordan-product guard, which supports the algebraic PEP bridge. Independently, the displayed finite-dimensional identities are standard: PEP is positive and bounded by P, trace cyclicity gives Tr(rho PEP)=Tr(P rho P E), and equality against all effects separates density matrices. The parent conclusion remains conditional because its load-bearing update rule also imports measurement probability semantics and sequential-record conditioning assumptions that are explicitly outside the retained PEP bridge and minimal axioms."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.505417+00:00",
+      "audit_date": "2026-06-21T11:34:19.689513+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on H_Lambda with nonzero displayed outcome projectors: canonical Naimark/Lueders readout gives K_r=P_r; outcome-label phases/permutations preserve this up to phase/relabeling; general label-mixing apparatus unitaries change the POVM element on nonzero sectors.",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "Finite-dimensional matrix theorem: for an orthogonal projection P, effects E,F, projection Q, and density operator rho in M_d(C), PEP is a supported effect, satisfies the stated trace identity and boundary cases, and nested compression obeys P(QFQ)P = (QP)^*F(QP), with no measurement or probability interpretation audited.",
+          "minimal_axioms": null,
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "Exact finite-model bridge: retained bounded pointer sectors plus the controlled-copy/fresh-fragment write isometry give the projective record-write W, whose extracted blocks form the projective Kraus/CPTP instrument."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06"
+        ],
+        "load_bearing_score": 8.858,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-luders_rule_from_composition_consistency_note_2026-05-20-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic step closes once the trace/effect probability law and PEP sequential-effect interpretation are granted. The packet does not derive those measurement-side semantics, the physical selection of M_{P,E}=PEP as the joint record effect, or the general Kraus-instrument update from the cited retained inputs.",
+      "claim_scope": "Conditional finite-region projective Lueders update from supplied trace/effect probability semantics, supplied sequential joint effect M_{P,E}=PEP, and positive-probability conditioning; physical measurement semantics and the arbitrary-Kraus extension are not closed by this packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:34:19.689513+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Since Tr(sigma|_P E)=Tr(P sigma P E)/Tr(sigma P) for every effect E, equality of trace-dual functionals forces sigma|_P=(P sigma P)/Tr(P sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and audit the measurement-semantics/instrument bridge deriving trace/effect probabilities, sequential record probabilities, and selective conditioning from the approved framework surface, then separately re-audit the arbitrary-Kraus extension.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Issue: Step 1 assumes the measurement-side trace/effect probability law, the physical sequential joint effect M_{P,E}=PEP, and the update-consistency semantics rather than deriving them from the cited inputs. Why this blocks: the PEP runner verifies finite compression positivity and trace identities only, not the physical probability interpretation, instrument selection, or arbitrary-Kraus extension. Repair target: a retained measurement-semantics bridge from Lattice/Quantum/Record to trace/effect probabilities, sequential record probabilities, and selective conditioning updates. Claim boundary until fixed: the packet gives a valid conditional algebraic Lueders posterior for projective positive-probability branches after those premises are supplied."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.882719+00:00",
+      "audit_date": "2026-07-01T13:18:28.599098+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on the supplied finite qubit-region carrier, with nonzero displayed outcome projectors and the canonical prepared-apparatus/readout frame; K_r=P_r, phase/permutation readout twists preserve up to phase/relabeling, and label-mixing apparatus unitaries do not preserve the same nonzero-sector POVM.",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "Finite-dimensional matrix-algebra theorem: for an orthogonal projection P, effect E, and density matrix rho, PEP is a bounded positive compressed effect and satisfies the stated trace and nested-compression identities, with no measurement/probability interpretation audited.",
+          "minimal_axioms": null,
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "Within the explicit finite projective pointer/fresh-fragment model supplied by the cited retained_bounded notes, the calibrated record-write isometry yields projective Kraus blocks K_r=P_r, the pointer-dephasing CPTP update, and repeat-readable selective branches."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06"
+        ],
+        "load_bearing_score": 8.858,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T131828Z-f7b16f83-luders_rule_from_composi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The trace-duality argument from PEP to normalized compression is valid over finite matrices if the trace/effect law, sequential joint-effect semantics, and conditioning requirements are granted. Those premises are explicitly outside the supplied retained finite PEP bridge and minimal axioms, so the chain does not close from the restricted packet.",
+      "claim_scope": "Finite positive-probability projective Lueders update algebra given trace/effect probability semantics, PEP as the sequential joint effect, and standard update-consistency hypotheses; no framework-native measurement semantics is closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T13:18:28.599098+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Since effects range over the trace dual, equality of Tr(sigma|_P E)=Tr(P sigma P E)/Tr(sigma P) for every effect E forces sigma|_P=(P sigma P)/Tr(P sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and audit a measurement-semantics bridge from minimal axioms/record readout to trace/effect probabilities, sequential PEP/Kraus joint effects, and selective conditioning; then re-audit the bounded finite claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Issue: the finite algebraic step is sound under the stated hypotheses, but the packet does not supply a retained measurement-semantics bridge making Tr(rho E) and M_{P,E}=PEP the physical sequential probabilities or extending the result to arbitrary Kraus records. Why this blocks: the runner verifies only PEP positivity, trace cyclicity, boundaries, and nesting, and the source note itself says probability semantics and record-conditioning interpretation remain open. Repair target: audit or add a retained bridge from the approved Record/Qubit surface to trace/effect sequential measurement semantics and selective conditioning; until then the safe boundary is conditional finite Lueders support, not a framework-native update theorem."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.473390+00:00",
+      "audit_date": "2026-07-02T02:18:23.005177+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Finite-dimensional projective measurements on the finite qubit-lattice carrier, with nonzero displayed outcome projectors, fixed prepared apparatus state and outcome-basis readout; K_r=P_r is audited in the canonical frame and under phase/permutation readout relabeling, while label-mixing V_A is audited only as breaking the same projective POVM on nonzero sectors.",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "Finite-dimensional projection-compression identities: PEP is a supported effect, the compressed trace identity holds, boundary cases close, and nested compression composes algebraically, with no L\u00fcders/Born/probability interpretation audited or claimed.",
+          "minimal_axioms": null,
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "Exact finite projective-pointer bridge in the explicit controlled-copy/fresh-fragment model: the derived record-write isometry has projective Kraus blocks, a CPTP dephasing update, normalized repeat-stable branches, and orthogonal one-hot labels."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06"
+        ],
+        "load_bearing_score": 8.858,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T021823Z-2b51d66f-luders_rule_from_composi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic trace-functional step closes once the measurement probability semantics and sequential conditioning interpretation are assumed. The restricted packet does not derive or retain the physical trace/effect probability law, instrument/readout semantics, or acceptance of U1-U4 as governing update constraints.",
+      "claim_scope": "Conditional finite-matrix L\u00fcders update derivation for positive-probability projective/Kraus conditioning, assuming trace/effect probability semantics, sequential joint effect PEP, and the U1-U4 update-consistency framing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T02:18:23.005177+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "For (4) to hold for every effect E_i, equality of trace functionals forces sigma|_P = (P sigma P) / Tr(P sigma P).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and audit a measurement-semantics bridge from the approved Lattice/Qubit/Admissibility/Record surface to trace/effect probabilities, sequential record probabilities, and selective conditioning as a physical record update.",
+      "open_dependency_paths": [
+        "measurement-side trace/effect probability interpretation and sequential record-conditioning semantics",
+        "standard U1-U4 update-consistency requirements"
+      ],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The primary runner genuinely checks the finite PEP compression identities, trace cyclicity, nested compression, and the Jordan guard; those are class-A algebra over finite matrices. That support is not enough to prove a framework-native L\u00fcders/Born measurement update, because the source note explicitly imports the trace/effect probability interpretation and record-conditioning semantics. The cited retained_bounded bridge itself states it does not supply the L\u00fcders update, Born rule, or probability interpretation."
+    },
+    {
+      "archived_at": "2026-07-10T17:04:23.378934+00:00",
+      "audit_date": "2026-07-10T15:40:26.481148+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "Canonical projective-measurement Kraus selection K_r=P_r, including phase/permutation equivalence and failure under genuine outcome-sector mixing, on a finite-dimensional qubit-lattice region carrier.",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "Finite-dimensional matrix identities showing that projection compression PEP is an effect, satisfies the stated trace identity and boundary cases, and composes as P(QFQ)P = (QP)^*F(QP), without measurement or probability semantics.",
+          "minimal_axioms": null,
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "The explicit finite qubit pointer model with fresh blank fragments and the cited controlled-copy dynamics yields a calibrated projective record-write isometry and hence a projective Kraus/CPTP instrument with repeat-stable selective branches."
+        },
+        "dep_claim_type": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+          "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "record_formation_to_kraus_isometry_bridge_2026-06-06"
+        ],
+        "load_bearing_score": 8.883,
+        "runner_hash": "d8abb4838954bf31606ef21e519ba6f45a5f58f6a6df0f8b03872cde52cc34c4",
+        "transitive_descendants": 58
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00001-luders_rule_from_composition",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The missing step is a retained theorem selecting M_{P,E}=PEP, or equivalently the canonical L\u00fcders instrument, as the physical sequential-record composition. The cited PEP bridge proves algebraic validity but not that selection or instrument uniqueness.",
+      "claim_scope": "The finite-dimensional, positive-probability claim that trace/effect probabilities, U1\u2013U4, and the cited compression and canonical-instrument results uniquely force normalized projective and Kraus record updates.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:40:26.481148+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_to_kraus_isometry_bridge_2026-06-06:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "By taking the sequential joint effect to be M_{P,E}=PEP, U3 and trace duality over all effects force \u03c3|_P=P\u03c3P/Tr(P\u03c3P), with the note asserting that the PEP bridge discharges the choice of joint effect.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and retain a theorem selecting the physical instrument and sequential effect M_{P,E}=PEP (and K\u2020EK generally) from the approved measurement premises, then re-audit this parent row.",
+      "open_dependency_paths": [
+        "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+        "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Issue: Step 1 assumes the joint sequential effect M_{P,E}=PEP, while the cited PEP theorem establishes only that this is a valid compression, not that U1\u2013U4 uniquely select it. Why this blocks: U3 is a probability factorization once an instrument is supplied, and the canonical K=P authority explicitly disclaims physical instrument uniqueness. Repair target: supply a retained measurement/instrument-selection theorem deriving the sequential effect and selective update from approved premises, or narrow the claim to a consequence conditional on a supplied L\u00fcders instrument. Claim boundary until fixed: PEP positivity, trace cyclicity, canonical-frame K=P, and the normalized update formula under a supplied L\u00fcders instrument remain valid bounded support."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
+  "title": "L\u00fcders Rule from Compositional Bayesian Consistency",
+  "transitive_descendants": 716,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

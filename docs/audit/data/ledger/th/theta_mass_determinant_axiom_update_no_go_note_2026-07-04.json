@@ -1,0 +1,211 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_mass_determinant_axiom_update_no_go_note_2026-07-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "strong_cp_theta_zero_note",
+    "realized_state_primitive",
+    "kinetic_isotropy_primitive",
+    "theta_quark_determinant_cross_sector_readout_derivation_obligation"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "410c943867c7cc7c8836f014a0ac7508eac95b6cd1c46bc474c1223306c3e696",
+  "note_path": "docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.400637+00:00",
+      "audit_date": "2026-07-10T04:37:00.950137+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3344e8a82c7cb7b2b4fe108533a72cc3fca1f27ae921353768c022ceda9dd778",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00102-theta_mass_determinant_axiom",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The full cited texts substantiate the narrowly scoped non-supply conclusion, and the conditional determinant-character calculation is mathematically sound. No physical determinant channel, positive mass orientation, or theta retirement is inferred.",
+      "claim_scope": "The four updated axioms and named approved primitives do not themselves supply the physical mass-determinant readout and exhaustion bridge; the k=0 character result applies only after a multiplicative determinant channel and K/CPT registration are supplied.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T04:37:00.950137+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "The cited axioms and approved primitives supply no determinant readout context, K/CPT structure, mass/action surface, or physical-observable identification, so the determinant-character phase-erasure algebra remains conditional on an additional bridge.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: mark the Tier-A registry citation explicitly as context-only rather than a dependency in this note, then re-run the audit after the resulting note-hash change.",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 99,
+        "C": 0,
+        "D": 0,
+        "total_pass": 117
+      },
+      "verdict_rationale": "The runner genuinely checks the elementary determinant-character algebra, but most checks are textual, registry, and boundary verification rather than first-principles computation. The scientific no-supply claim is properly bounded and follows from the packet. Under the binding rubric, however, the cited Tier-A registry authority has meta status and is not flagged as an accepted premise, requiring a conditional verdict despite its apparently contextual role."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.955614+00:00",
+      "audit_date": "2026-07-10T15:56:47.949930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99",
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "kinetic_isotropy_primitive": null,
+          "minimal_axioms": null,
+          "realized_state_primitive": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "kinetic_isotropy_primitive": "meta",
+          "minimal_axioms": "meta",
+          "realized_state_primitive": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "kinetic_isotropy_primitive",
+          "minimal_axioms",
+          "realized_state_primitive",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3344e8a82c7cb7b2b4fe108533a72cc3fca1f27ae921353768c022ceda9dd778",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00021-theta_mass_determinant_axiom",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted packet, the cited premise texts explicitly withhold the required physical readout structures, and the conditional determinant-character algebra is correct. The conclusion is limited to present-premise non-supply and does not establish a universal impossibility or alter theta's retirement.",
+      "claim_scope": "Bounded non-supply result: the four axioms and currently approved primitives do not themselves provide the theta mass-side determinant-channel interface or physical-exhaustion bridge; the k=0 determinant-character result remains conditional on supplying that interface.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T15:56:47.949930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:strong_cp_theta_zero_note:retained_bounded->unaudited",
+      "load_bearing_step": "The cited axiom and primitive surfaces contain no readout context, determinant channel, K/CPT structure, action/mass surface, or physical-observable identification, so they do not themselves supply the physical arg det(M_u M_d) exhaustion bridge.",
+      "load_bearing_step_class": "B",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or explicitly register the Tier-A registry boundary as an accepted governance premise, or remove it from load-bearing citations and add a dated downstream-hygiene line to this note stating that the registry citation is context-only, then re-audit.",
+      "open_dependency_paths": [
+        "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 99,
+        "C": 0,
+        "D": 0,
+        "total_pass": 117
+      },
+      "verdict_rationale": "The runner genuinely checks the character and K-evenness algebra, but its load-bearing non-supply result is primarily cross-note boundary verification rather than a first-principles physical derivation. The Tier-A registry authority has effective status meta and is not flagged as an accepted premise, so the rubric prevents an audited-clean verdict despite the bounded conclusion following from the supplied texts. No external comparator, tuned value, renaming, or fabricated physical bridge is used."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_mass_determinant_axiom_update_no_go_2026_07_04.py",
+  "title": "Theta Mass Determinant Axiom-Update No-Go",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

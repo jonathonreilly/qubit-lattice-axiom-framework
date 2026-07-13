@@ -1,0 +1,140 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_stack_minimality_cl4c_no_go_theorem_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms_2026-04-11",
+    "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28",
+    "hubble_lane5_c1_a2_action_unit_no_go_note_2026-04-28",
+    "hubble_lane5_c1_a4_parity_gate_no_go_note_2026-04-28",
+    "hubble_lane5_c1_narrow_route_nogo_cluster_2026-04-30"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cc2c1311f26b341c8dbac3db0b344fe997875c18cc8cd2ffe06445955d1484f8",
+  "note_path": "docs/AXIOM_STACK_MINIMALITY_CL4C_NO_GO_THEOREM_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T11:01:42.886858+00:00",
+      "archived_for_note_hash": "b33b22592fe4b46f9df6f097dad2419f0babecee9cc04d9481c9ed2f2caccec5",
+      "audit_date": "2026-04-30T10:02:57.153714+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-cross-confirm-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. Direct finite linear algebra on H_cell = (C^2)^tensor4 gives full M_16(C) from the local single-qubit Cl(3) generators; its Hamming-weight-preserving part restricts to full M_4(C) on P_A, so the claimed S_4-only obstruction does not hold.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "O2/combined no-go asserts that the weight-preserving A_min-derived operator algebra on P_A H_cell is only the S_4 permutation algebra and therefore cannot contain four Hermitian Clifford generators.",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [
+        "docs/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md",
+        "docs/HUBBLE_LANE5_C1_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md",
+        "docs/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Issue: the proof's O2 step identifies the weight-preserving A_min algebra on P_A H_cell with an S_4/permutation algebra, but the requested finite check finds dim Op(A_min)=256, dim weight-preserving=70, and dim restricted P_A algebra=16=M_4(C). The proposed gamma_1=X tensor X, gamma_2=X tensor Y, gamma_3=X tensor Z, gamma_4=Y tensor I have membership residuals below 1e-15 in the restricted algebra, are Hermitian, square to I, and satisfy the Cl_4(C) anticommutators exactly. Why this blocks: the theorem's conclusion requires dim restricted algebra <16 or otherwise no Clifford quadruple; the computation gives full M_4(C) and an explicit quadruple. Repair target: either prove the local generators sigma_i^(a) are not actually in Op(A_min), or revise the theorem/runner to compute the generated weight-preserving algebra and retire the forced-Axiom* conclusion if they are included. Claim boundary until fixed: the individual A1/A2/A4 route no-gos may remain route-specific, but the assembled global no-hidden-third-option minimality theorem and Axiom* forced corollary cannot be claimed."
+    },
+    {
+      "archived_at": "2026-04-30T14:53:46.276487+00:00",
+      "audit_date": "2026-04-30T11:03:48.777721+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28": "retained",
+          "hubble_lane5_c1_a2_action_unit_no_go_note_2026-04-28": "audited_conditional",
+          "hubble_lane5_c1_a4_parity_gate_no_go_note_2026-04-28": "retained",
+          "hubble_lane5_c1_narrow_route_nogo_cluster_2026-04-30": "unaudited",
+          "minimal_axioms_2026-04-11": "audited_renaming"
+        },
+        "deps": [
+          "hubble_lane5_c1_a1_grassmann_no_go_note_2026-04-28",
+          "hubble_lane5_c1_a2_action_unit_no_go_note_2026-04-28",
+          "hubble_lane5_c1_a4_parity_gate_no_go_note_2026-04-28",
+          "hubble_lane5_c1_narrow_route_nogo_cluster_2026-04-30",
+          "minimal_axioms_2026-04-11"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop-cross-confirm-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. Direct finite linear algebra on H_cell = (C^2)^tensor4 gives full M_16(C) from the local single-qubit Cl(3) generators; its Hamming-weight-preserving part restricts to full M_4(C) on P_A, so the claimed S_4-only obstruction does not hold.",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "O2/combined no-go asserts that the weight-preserving A_min-derived operator algebra on P_A H_cell is only the S_4 permutation algebra and therefore cannot contain four Hermitian Clifford generators.",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [
+        "archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md",
+        "docs/HUBBLE_LANE5_C1_NARROW_ROUTE_NOGO_CLUSTER_2026-04-30.md",
+        "archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 13,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "Issue: the proof's O2 step identifies the weight-preserving A_min algebra on P_A H_cell with an S_4/permutation algebra, but the requested finite check finds dim Op(A_min)=256, dim weight-preserving=70, and dim restricted P_A algebra=16=M_4(C). The proposed gamma_1=X tensor X, gamma_2=X tensor Y, gamma_3=X tensor Z, gamma_4=Y tensor I have membership residuals below 1e-15 in the restricted algebra, are Hermitian, square to I, and satisfy the Cl_4(C) anticommutators exactly. Why this blocks: the theorem's conclusion requires dim restricted algebra <16 or otherwise no Clifford quadruple; the computation gives full M_4(C) and an explicit quadruple. Repair target: either prove the local generators sigma_i^(a) are not actually in Op(A_min), or revise the theorem/runner to compute the generated weight-preserving algebra and retire the forced-Axiom* conclusion if they are included. Claim boundary until fixed: the individual A1/A2/A4 route no-gos may remain route-specific, but the assembled global no-hidden-third-option minimality theorem and Axiom* forced corollary cannot be claimed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_axiom_stack_minimality_cl4c_no_go.py",
+  "title": "Axiom-Stack Minimality: Cl_4(C) No-Go Theorem (V1)",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

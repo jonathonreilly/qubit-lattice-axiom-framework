@@ -1,0 +1,441 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+    "axiom_first_spectrum_condition_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 7,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.968,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b5f3d5a7367c2c552ef933ae6e33df917bb99147137f876c9164924ec950046a",
+  "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:08:17.633207+00:00",
+      "archived_for_note_hash": "0747d51cdd81ac8006a5e5c7a75d4bb4c701b5ed452d581ab878a93a37fe3d9c",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "author_hint",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.424502+00:00",
+      "audit_date": "2026-06-11T12:41:10.763566+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.878,
+        "runner_hash": "0ff8d2b190059b7733535eaf16cd1d08682963badab6737fc978f63cfddabe5a",
+        "transitive_descendants": 940
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-123818-ef31f9c0b8-axiom_first_reeh_schlieder_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Schmidt-decomposition identities independently give dim A(O)v = d_O*r and separating iff rho_O is full rank. The runner source genuinely constructs the finite Jordan-Wigner staggered Hamiltonians, computes ground states, reduced-state ranks, falsifiers, and the time-translated commutant collapse, rather than printing or importing the contested values.",
+      "claim_scope": "Finite staggered qubit-chain carriers with left-anchored tensor-factor local algebras: the Schmidt-rank cyclic/separating dichotomy, tested OBC vacuum separating certificates, and the nonlocal vector-generic time-translated cyclicity corollary; no continuum Reeh-Schlieder claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T12:41:10.763566+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T12:37:40.387905+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-123624-fbc75a6aeb-axiom_first_reeh_schlieder_t",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional left-anchored tensor-factor local algebras A(O)=B(H_O)\u22971 on the specified staggered qubit chains: the Schmidt-rank cyclic/separating dichotomy, per-carrier full-rank vacuum certificates for L=6,8 OBC tested regions, and the L=6 non-local time-translated algebra corollary.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T12:41:10.763566+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-123818-ef31f9c0b8-axiom_first_reeh_schlieder_t",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite staggered qubit-chain carriers with left-anchored tensor-factor local algebras: the Schmidt-rank cyclic/separating dichotomy, tested OBC vacuum separating certificates, and the nonlocal vector-generic time-translated cyclicity corollary; no continuum Reeh-Schlieder claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The non-algebraic load-bearing step is the RS-2 certificate: the staggered vacuum's reduced state rho_O has full rank on the tested L=6,8 open carriers/regions, and RS-1 then makes this equivalent to separating for A(O).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check numerical conditioning around the smallest reported reduced-state eigenvalues and the source wording that calls numerical finite-carrier certificates exact.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The cited minimal axiom node is an accepted premise, and the two non-axiom cited authorities are supplied as retained_bounded, which is retained-grade for this audit rubric. The finite-dimensional algebraic part is standard linear algebra, and the numerical certificate path is first-principles finite-carrier computation from the stated staggered Hamiltonian with no external comparator or tuned empirical input. The negative boundaries are narrow: small-region equal-time cyclicity is ruled out by the dimension count, while continuum/type-III Reeh-Schlieder and uniform-in-volume full-rank theorems are explicitly left open."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.807084+00:00",
+      "audit_date": "2026-06-30T19:14:56.953173+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.817,
+        "runner_hash": "0ff8d2b190059b7733535eaf16cd1d08682963badab6737fc978f63cfddabe5a",
+        "transitive_descendants": 901
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T191456Z-a7666c1c-axiom_first_reeh_schlied",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "RS-1 follows from the Schmidt decomposition and finite-dimensional commutant algebra. The runner genuinely constructs the Jordan-Wigner staggered carriers and computes the vacuum ranks, falsification legs, and L=6 time-translated commutant collapse without importing the contested result or using conditional SC3/cluster inputs.",
+      "claim_scope": "Finite-dimensional left-anchored tensor-factor local algebras on the scoped staggered qubit chains: RS-1 Schmidt-rank dichotomy exactly; RS-2 vacuum separating certificates for tested L=6,8 OBC regions; RS-3 L=6 time-translated algebra collapse as non-local vector-generic cyclicity. No continuum, interior-region, or uniform-in-volume claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T19:14:56.953173+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T19:11:47.246634+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T191147Z-5ca4fc4d-axiom_first_reeh_schlied",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite tensor-factor Reeh-Schlieder dichotomy for left-anchored regions, plus deterministic certificates that the specified L=6,8 open free-staggered vacua are separating on tested regions R=1..3; RS-3 is only the non-local time-translated algebra result on the tested carrier.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T19:14:56.953173+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T191456Z-a7666c1c-axiom_first_reeh_schlied",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional left-anchored tensor-factor local algebras on the scoped staggered qubit chains: RS-1 Schmidt-rank dichotomy exactly; RS-2 vacuum separating certificates for tested L=6,8 OBC regions; RS-3 L=6 time-translated algebra collapse as non-local vector-generic cyclicity. No continuum, interior-region, or uniform-in-volume claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "On the L=6 and L=8 open staggered carriers (m=0.3), the vacuum reduced state rho_O has full rank for every tested region, so by RS-1 the vacuum is separating for each such A(O).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check numerical rank margins if the source later broadens beyond these finite carriers; no blocking issue in the restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing certificate is a first-principles finite-carrier computation on a declared, bounded staggered Hamiltonian parameter, not a calibrated numerical match. The algebraic dichotomy is correct, and the runner source performs the relevant diagonalizations, Schmidt-rank/rank checks, annihilator exhibits, and invariant-subspace commutant computation rather than printing hard-coded passes. The cited upstreams are either the accepted minimal-axiom premise or retained_bounded authorities, and the note explicitly fences the continuum, uniform-volume, locality, and vector-genericity boundaries; the No-Go gate is narrow enough for those negative boundaries."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.313121+00:00",
+      "audit_date": "2026-07-01T22:22:30.488089+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.817,
+        "runner_hash": "0ff8d2b190059b7733535eaf16cd1d08682963badab6737fc978f63cfddabe5a",
+        "transitive_descendants": 901
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T222230Z-19d16847-axiom_first_reeh_schlied",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "RS-1 is standard Schmidt-decomposition linear algebra, and the runner source genuinely constructs the staggered finite-carrier Hamiltonian, local algebra actions, reduced-state ranks, falsifiers, and commutant-collapse computation rather than printing constants. The cited non-axiom dependencies are retained_bounded, and the minimal-axiom dependency is an accepted premise.",
+      "claim_scope": "Finite-dimensional tensor-factor RS-1 on H_O tensor H_Oc, plus deterministic L=6,8 open staggered-vacuum separating certificates for left-anchored R<=3 and the L=6 time-translated-algebra commutant collapse; no continuum or interior-region claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T22:22:30.488089+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T22:19:07.807528+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T221907Z-1af77ea2-axiom_first_reeh_schlied",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional left-anchored tensor-factor local algebras on the specified free staggered open-chain carriers: RS-1 Schmidt-rank cyclic/separating dichotomy, RS-2 full-rank reduced-vacuum certificates for L=6,8 and R=1..3, and RS-3 non-local time-translated algebra cyclicity on the tested L=6 carrier.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T22:22:30.488089+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T222230Z-19d16847-axiom_first_reeh_schlied",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional tensor-factor RS-1 on H_O tensor H_Oc, plus deterministic L=6,8 open staggered-vacuum separating certificates for left-anchored R<=3 and the L=6 time-translated-algebra commutant collapse; no continuum or interior-region claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The staggered vacuum's reduced state rho_O has full rank on the tested L=6,8 open carriers and R=1,2,3 regions; by RS-1, full-rank rho_O is equivalent to separating for A(O).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check the small reduced-density eigenvalue margins before extending the scope beyond L=6,8 or R=1..3.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The claim is correctly bounded to finite tensor-factor carriers and per-carrier certificates. The load-bearing numerical checks are first-principles finite-matrix computations from the specified staggered carrier, with no external comparator, tuned empirical value, or imported contested premise. The negative boundaries pass the no-go discipline at the scoped level: small-region equal-time cyclicity is ruled out by exact finite-dimensional rank counting, while continuum/type-III, uniform-volume, and local time-translated claims are explicitly excluded."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.412035+00:00",
+      "audit_date": "2026-07-02T10:56:44.040398+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.817,
+        "runner_hash": "0ff8d2b190059b7733535eaf16cd1d08682963badab6737fc978f63cfddabe5a",
+        "transitive_descendants": 901
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T105644Z-2c9b0e10-axiom_first_reeh_schlied",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "RS-1 follows from Schmidt decomposition and finite-dimensional commutants, while RS-2 and RS-3 are scoped to finite carriers that the runner explicitly constructs and checks. The cited axiom node is an accepted premise and the RP/spectrum-condition inputs are retained_bounded, so no non-retained load-bearing upstream remains within the stated bounded scope.",
+      "claim_scope": "Finite-carrier theorem/certificate for left-anchored tensor-factor local algebras on the specified staggered qubit-chain carriers: RS-1 Schmidt-rank cyclic/separating dichotomy, RS-2 tested-vacuum separating certificates for L=6,8 OBC at m=0.3 on small regions, and RS-3 L=6 time-translated algebra cyclicity with explicit non-local/vector-generic qualifiers.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T10:56:44.040398+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T10:53:42.773075+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T105342Z-012db8c5-axiom_first_reeh_schlied",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite tensor-factor Reeh-Schlieder dichotomy on H_O tensor H_Oc, plus per-carrier separating certificates for the L=6 and L=8 open free-staggered chains at m=0.3 on left-anchored regions R=1..3, and the L=6 time-translated algebra corollary; no continuum, uniform-volume, interior-region, or local time-translated-algebra claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T10:56:44.040398+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T105644Z-2c9b0e10-axiom_first_reeh_schlied",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-carrier theorem/certificate for left-anchored tensor-factor local algebras on the specified staggered qubit-chain carriers: RS-1 Schmidt-rank cyclic/separating dichotomy, RS-2 tested-vacuum separating certificates for L=6,8 OBC at m=0.3 on small regions, and RS-3 L=6 time-translated algebra cyclicity with explicit non-local/vector-generic qualifiers.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "For the finite tensor split, v is separating for A(O) iff r=d_O iff rho_O has full rank, and the runner computes full-rank rho_O for the scoped L=6,8 open staggered vacua on the tested regions.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the numerical conditioning behind the smallest reported rho_O eigenvalues and the note's use of 'exact' for floating-point finite-carrier certificates, but this does not block the bounded verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner source is not a print-only or hard-coded expected-value script: it builds the finite Jordan-Wigner staggered Hamiltonians, diagonalizes them, computes Schmidt ranks/reduced-state ranks, constructs annihilators, and computes the ad_H-invariant commutant collapse. The positive claim is explicitly bounded to finite tested carriers and left-anchored tensor-factor algebras, with no continuum, uniform-volume, or vacuum-specific local time-translated Reeh-Schlieder claim. The narrow negative boundary passes the supplied no-go discipline: equal-time small-region cyclicity is ruled out by the RS-1 dimension count, while alternative continuum/time-translated/gap-only routes are fenced rather than overclaimed."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_reeh_schlieder_check.py",
+  "title": "Axiom-First Reeh-Schlieder on A_min \u2014 Finite-Lattice Cyclicity/Separating Dichotomy and the Vacuum Separating Certificate (Bounded Theorem)",
+  "transitive_descendants": 707,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

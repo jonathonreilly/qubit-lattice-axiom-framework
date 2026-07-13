@@ -1,0 +1,192 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_link_central_registration_induced_bi_invariant_step_kernel_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_rigidity_theorem_note",
+    "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+    "record_classical_semigroup_boundary_2026-06-06",
+    "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b74d6cf19d58164aa61546c638ecd9dba60330713da1139b8f76183f7a41a94e",
+  "note_path": "docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T15:28:58.868817+00:00",
+      "archived_for_note_hash": "71ae0db71c9b113a4cfb584b60957d92a41c36daff25ede323c0a623c802aab4",
+      "audit_date": "2026-07-10T12:19:44.580512+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "record_classical_semigroup_boundary_2026-06-06": "Finite post-record classical algebras C^O have only discrete permutation automorphisms and zero derivations; append/count updates are irreversible translations, while continuous Markov rates and stable points require supplied ensemble dynamics.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "Within the explicit finite qubit controlled-copy model with a fresh blank record fragment, theta = pi/4 and a fixed record-basis calibration, the kick induces the projective write isometry W with K_r = P_r, while later kicks on fresh fragments leave completed record labels invariant."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "record_classical_semigroup_boundary_2026-06-06": "positive_theorem",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "record_classical_semigroup_boundary_2026-06-06": "audit_in_progress",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "g_bare_rigidity_theorem_note",
+          "record_classical_semigroup_boundary_2026-06-06",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7f9d03973a7e811d88fcc9f6741341d5c85fe22dee693cd185ae20585ccd3f9a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-fresh-row7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-group algebra closes for the explicitly positive square-root Kraus subclass. The complete row does not close because centrality alone omits the phase condition, the compact normalization and SU(3) distance conventions drift from the source authorities, the rate claim lacks a clock or generator, and one direct dependency is not retained-grade.",
+      "claim_scope": "The implication from real-nonnegative Peter-Weyl-scalar Kraus blocks to normalized conjugation-invariant symmetric positive-character kernels, its finite S3/Q8 witnesses, and the claimed compact SU(3) softness/rate extension.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T12:19:44.580512+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For K_j = sum_R sqrt(m_j(R)) P_R with nonnegative real coefficients and sum_j m_j(R)=1, T(g|h)=sum_j|kappa_j(gh^{-1})|^2 is normalized, conjugation-invariant, inversion-symmetric, and has nonnegative character coefficients.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: Narrow 'central-scalar registration' to the positive Lueders subclass, repair and document the compact normalization and SU(3) metric, rename the computed quantity as per-step variance, then rerun after the semigroup dependency is retained-grade.",
+      "open_dependency_paths": [
+        "docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 41,
+        "C": 31,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "Issue: The row attributes representation positivity to registration-centrality although relative isotypic phases can make a central trace-preserving instrument's character coefficient negative; it also reuses the finite |G| normalization ambiguously in the compact truncation and calls a per-step variance a derived rate. Why this blocks: The broad central-registration, compact SU(3) numerical-normalization, and rate surfaces do not follow from the stated inputs, and the direct semigroup dependency is not retained-grade. Repair target: Restrict the theorem to the positive Lueders subclass, state the normalized-Haar N_trunc^(-1/2) amplitude convention, specify and implement a traceless-log branch or explicitly name the alternative metric, replace rate by per-step variance, and re-audit after the semigroup dependency reaches retained grade. Claim boundary until fixed: The exact finite S3/Q8 theorem for the explicitly written nonnegative square-root Kraus blocks remains valid; the runner's SU(3) numbers describe only its private principal-phase step-size convention, not a canonically derived physical rate. No-Go Discipline: FAIL at N3/N4/N5/N7 because the phase, compact-normalization, residual-matching, rate-rhetoric, and alternative-metric conditions are not all explicit or closed."
+    },
+    {
+      "archived_at": "2026-07-10T17:04:23.334605+00:00",
+      "audit_date": "2026-07-10T16:36:37.022289+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "g_bare_rigidity_theorem_note": "Bounded finite-link coordinate-rigidity: given the retained `SU(3)` compact subalgebra in `End(V)`, the fixed Hilbert trace form, and a finite `SU(3)` link holonomy, a selected-branch logarithm lies in the canonical generator span and scalar dilation of the canonical generators is not an allowed normalization ambiguity. No continuum gauge coupling, Wilson action/beta normalization, global branch selection, or phenomenological `g` value is audited.",
+          "record_classical_semigroup_boundary_2026-06-06": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points.",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "Within the explicit finite qubit controlled-copy model with a fresh blank record fragment, theta = pi/4 and a fixed record-basis calibration, the kick induces the projective write isometry W with K_r = P_r, while later kicks on fresh fragments leave completed record labels invariant."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "g_bare_rigidity_theorem_note": "bounded_theorem",
+          "record_classical_semigroup_boundary_2026-06-06": "no_go",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "g_bare_rigidity_theorem_note": "retained_bounded",
+          "record_classical_semigroup_boundary_2026-06-06": "retained_no_go",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "g_bare_rigidity_theorem_note",
+          "record_classical_semigroup_boundary_2026-06-06",
+          "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "317b726df0cf682d2bce47ff839b2e0ed7c1fa3aa56d08e824d3d4676b46f466",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00007-gauge_link_central_registrat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Character orthogonality proves normalization, while the central projector form proves convolutional Ad-invariance and inversion symmetry; representation-ring decomposition proves coefficient positivity. The conclusion remains explicitly restricted to supplied positive Lueders channels and position-classical inputs.",
+      "claim_scope": "Conditional classification of finite-group and stated Peter-Weyl-truncated compact-group kernels induced by positive Lueders central registration on position-classical one-link states, including exact finite-group contrast witnesses and convention-bound SU(3) numerics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:36:37.022289+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Because the positive Lueders coefficients are nonnegative, expanding each modulus square reduces the kernel to character products whose irreducible decompositions have nonnegative Kronecker multiplicities.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 11,
+        "C": 13,
+        "D": 27,
+        "total_pass": 127
+      },
+      "verdict_rationale": "The load-bearing result is genuine algebraic closure rather than a definition, renaming, tuned match, or imported comparator. The runner independently constructs the finite-group projectors and kernels, checks the counterexamples exactly, and computes the SU(3) quantities from the stated truncation; its stored numerical references serve only as regression gates. All cited authorities are retained-grade, and the note expressly excludes record-step occurrence, position-classicality derivation, rate selection, heat-kernel closure, and continuum claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py",
+  "title": "Gauge-Link Record Step: Positive Lueders Central Registration Induces Bi-Invariant Step Kernels",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

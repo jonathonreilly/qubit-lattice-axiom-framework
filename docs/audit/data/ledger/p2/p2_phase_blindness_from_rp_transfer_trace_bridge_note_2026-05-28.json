@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c6ebffe8a303e65db036ce20a059795f9d246aa19c18d6e71225f9c676550a06",
+  "note_path": "docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.978205+00:00",
+      "audit_date": "2026-06-16T01:44:47.195604+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": "Finite-region qubit-trace W_qubit for self-adjoint H,J: P1 additivity under an explicitly independent tensor-product Hamiltonian/source split and P2 phase-blindness from positive trace; no audit closure of the Grassmann/log-det bridge or parent observable-principle row.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 8.17,
+        "runner_hash": "1d66979b5b68df11d6cb20901dd8dc4f7019265e4a0f5409741786f7bf969db4",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-014215-3de6a4b6d7-p2_phase_blindness_from_rp_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The transfer-matrix algebra closes on the stated free surface: T_odd T_even has determinant 1 and trace 2+4(m^2+sin^2 p), giving eigenvalues e^{+-2E} with sinh^2 E=m^2+sin^2 p. The retained-grade cited inputs supply the positive two-step Hamiltonian and determinant positivity, and the broader source/gauge/interacting P2 bridges are explicitly outside this audited scope.",
+      "claim_scope": "Finite free zero-source staggered KS determinant with m>0, U=1, even L_t, clean eta_0=1, eta_1(t)=(-1)^t, antiperiodic time and periodic space, factorized into a positive transfer trace times a positive normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:44:47.195604+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_p1_p2_from_qubit_trace_note_2026-05-20:retained_bounded->unaudited",
+      "load_bearing_step": "For antiperiodic temporal boundary conditions, det(M_p)=(1/2)^L_t det(I+T_full(p))=(1/2)^L_t(1+e^{+L_t a E(p)})(1+e^{-L_t a E(p)}), so det(M_KS+mI)=Z_vac Tr(e^{-beta H_hat}) with H_hat>=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the antiperiodic determinant sign/factor if the scope is later broadened beyond the even-L_t free zero-source surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing formula is a finite-dimensional algebraic determinant/transfer identity, not a definition or tuned comparator. The runner source constructs the staggered matrix and the Fock-space H_hat and checks the determinant factorization, H_hat positivity, real-positive determinant, and log|det|=log det consequence; it does not merely print pass constants. All cited authorities in the packet are retained-grade, and the open interacting/source/gauge gates are excluded rather than used to close the claim."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.509288+00:00",
+      "audit_date": "2026-06-21T15:32:38.714647+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": "Finite-region qubit-trace functional W_qubit on the one-qubit-per-site algebra: additivity for explicitly independent decomposed subsystems and phase-blind real positivity for self-adjoint sources; no closure of the log|det(D+J)| bridge or parent-row retagging.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "1d66979b5b68df11d6cb20901dd8dc4f7019265e4a0f5409741786f7bf969db4",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The packet gives the free staggered temporal recurrence, the two-step dispersion, and the determinant/transfer-trace factorization, and the runner independently builds the finite Dirac matrix and Fock-space transfer Hamiltonian rather than merely printing the result. The conclusion is restricted to the zero-source free staggered surface and does not claim the broader source-dependent or interacting/gauge P2 bridge.",
+      "claim_scope": "Finite even-L_t free staggered 1+1d zero-source surface with eta_0=1, eta_1(t)=(-1)^t, antiperiodic temporal and periodic spatial boundary conditions: det(M_KS+mI) factors into a positive vacuum normalization times a positive free-Fock trace, making the modulus automatic on that bounded surface.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:32:38.714647+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_p1_p2_from_qubit_trace_note_2026-05-20:retained_bounded->unaudited",
+      "load_bearing_step": "The zero-source free staggered determinant factorizes as det(M_KS + m I) = Z_vac * Tr(e^{-beta H_hat}) with Z_vac > 0 and H_hat = H_hat^dag >= 0, so det(M_KS + m I) is positive real and log|det| = log det on this surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check the antiperiodic determinant/transfer identity and even-L_t boundary convention if the claim is later expanded beyond the free zero-source surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing bridge is a first-principles finite-lattice computation: the runner constructs M_KS+mI, the action-derived two-step kernel, H_hat, Z_vac, and the Fock trace, then checks the determinant equality, positivity, and log-modulus equality. The cited authorities are retained-grade for audit purposes, and no non-retained dependency is needed for the narrowed free zero-source claim. The broader scalar-generator P2, arbitrary sources J, and interacting/gauge realization are explicitly outside the audited scope, so they do not block this bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
+  "title": "P2 Phase-Positive Support from the RP Transfer-Matrix Trace Bridge",
+  "transitive_descendants": 706,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

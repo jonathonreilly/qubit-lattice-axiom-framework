@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+    "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+    "scripts/dm_leptogenesis_exact_common.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.115,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2c56412ccb2110794de0366ca670a1383063e1c0d36870a74b07c9a4fadc9d92",
+  "note_path": "docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.596129+00:00",
+      "audit_date": "2026-06-21T11:48:23.607856+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "Bounded arithmetic certificate for the canonical plaquette-derived alpha_LM and alpha_s(v) constants, conditional only on using the parent plaquette value P = 0.5934 as scoped input; no derivation of P or physical coupling closure is audited."
+        },
+        "dep_claim_type": {
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "decoration"
+        },
+        "dep_effective_status": {
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": "decoration_under_plaquette_self_consistency_note"
+        },
+        "deps": [
+          "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16"
+        ],
+        "load_bearing_score": 6.7,
+        "runner_hash": "a3ffc6a4188f5b89d280718131a0649effc63aa26fae4f11dcea33e5e0d7b48d",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-dm_live_constants_canonical_edge_certificate_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared support scope, the helper sources compute the displayed plaquette-derived constants and wire ALPHA_LO/ALPHA_HI to those formulas, and the eta/Omega ratio arithmetic recomputes from supplied inputs. The packet does not derive P, ETA_OBS, OMEGA_DM_OBS, or any full DM selector/completeness result, but it does not claim to.",
+      "claim_scope": "Bounded source-side certificate that the live DM thermal constants and eta/Omega bookkeeping match the provided canonical plaquette arithmetic and supplied observed comparator inputs, without auditing DM closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T11:48:23.607856+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner checks that the live DM helper constants satisfy DM ALPHA_LO = alpha_LM and DM ALPHA_HI = -log(1 - (pi^2/3) alpha_bare)/(pi^2/3), with eta/Omega arithmetic treated as supplied observed-input bookkeeping.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check helper import drift and the inherited retained-grade status of the canonical plaquette decoration.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 38,
+        "C": 0,
+        "D": 3,
+        "total_pass": 59
+      },
+      "verdict_rationale": "The runner is not a first-principles physics computation, but the note only claims a bounded constants-edge certificate. The cited canonical arithmetic authority is provided with inherited decoration status, and the helper sources show the live constants are wired to the canonical plaquette arithmetic with matching independent recomputation. The observed eta/Omega values are explicitly scoped as supplied comparators rather than framework derivations, so the clean verdict applies only to this bounded edge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py",
+  "title": "DM Live Constants Canonical Edge Certificate",
+  "transitive_descendants": 48,
+  "verdict_rationale": null
+}

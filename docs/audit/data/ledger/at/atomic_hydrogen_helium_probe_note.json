@@ -1,0 +1,138 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "atomic_hydrogen_helium_probe_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "bound_state_selection_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a130aec6f29bcd390a80f566847b8f1813ea51c31fe44c4798ded0789d4b0df1",
+  "note_path": "docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.367638+00:00",
+      "archived_for_note_hash": "c3afa60962bb2ec21e39a04a7191bb565cd7d916421384dc9d7e26050e9752c2",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-12T19:41:44.402605+00:00",
+      "archived_for_note_hash": "1e1e19ffee0c1d45257d50a70b5ef5034e55eacf78dfae32d10cd03e4b7bb1c8",
+      "audit_date": "2026-07-10T00:08:07.614331+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bound_state_selection_note": "Finite regularized lattice diagnostic for d=2,3,4,5 on the listed grid sizes and couplings: the runner-built sparse Hamiltonians reproduce the printed negative-eigenvalue counts, ground-state energies, IPR/localization diagnostics, propagation ratios, and d=4/d=5 coupling-scan trends. This excludes any retained continuum bridge to atomic chemistry, anthropic dimension selection, exclusion of d=2, or a theorem that d>=4 falls to center under the implemented IPR threshold."
+        },
+        "dep_claim_type": {
+          "bound_state_selection_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bound_state_selection_note": "retained_bounded"
+        },
+        "deps": [
+          "bound_state_selection_note"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "a00f965a332955609acf9032545bcdaf2aff3e9cbd6cfc35d05e274beb3ce0b7",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-atomic_hydrogen_helium_p-074",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely performs the hydrogen diagonalization and helium variational calculation, but the chain imports the textbook Hamiltonian, physical conversion constant, analytic Bohr spectrum, and experimental helium value without deriving or independently closing them. It also does not compute an exact helium result within any basis.",
+      "claim_scope": "A standard-QM numerical scaffold reproduces the listed finite-grid hydrogen energies and evaluates the stated independent-electron and one-parameter variational helium benchmarks.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T00:08:07.614331+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Diagonalizing the textbook radial Schr\u00f6dinger Hamiltonian on the stated finite grid and evaluating the one-parameter helium variational formula yields the reported agreement with analytic and experimental benchmarks.",
+      "load_bearing_step_class": "D",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: remove the unsupported helium '/ exact (within available basis)' wording, restrict the bounded claim to the computed one-parameter variational benchmark, and add a dated downstream-hygiene line to this note's own boundary recording that narrowing so its hash drift re-enters the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The source code constructs and diagonalizes the finite-difference hydrogen Hamiltonian rather than merely printing the cached values, and its output supports the tabulated finite-grid comparison. The helium runner evaluates only the stated textbook independent-electron and one-parameter variational formulas, with the experimental value embedded as an external comparator. Consequently this is a valid bounded standard-QM scaffold, not a class-(C) framework derivation, and the phrase claiming helium is exact within an available basis is unsupported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_atomic_hydrogen_helium_probe.py",
+  "title": "Atomic Hydrogen and Helium Probe --- Standard-QM Scaffold Lane",
+  "transitive_descendants": 23,
+  "verdict_rationale": null
+}

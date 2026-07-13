@@ -1,0 +1,320 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "distance_law_breakpoint_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "distance_law_portability_note",
+    "sign_portability_invariant_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1e5f541224512c30da7f20fad3100c79500848ccc7f543cc5c6fbaad561e6ed6",
+  "note_path": "docs/DISTANCE_LAW_BREAKPOINT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368034+00:00",
+      "archived_for_note_hash": "3d97e8e1cb517aff93ff59194b3895ac706ee865fc6944bd7c8a07659c1b47e8",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.221121+00:00",
+      "archived_for_note_hash": "e34d373bd92c63dbd1f30eb191f45ee45d612fe7da13cc7437943a5c449311ed",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner prints a hard-coded comparison table and feature classifier; it does not recompute the alpha/direction rows or perform ablations that isolate the listed architecture features.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The distance tail survives only in open directed transport families; shell-locking, reflection closure, and deep branch routing break or flatten it.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/DISTANCE_LAW_PORTABILITY_NOTE.md",
+        "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the note turns a static breakpoint table into a causal architecture-feature diagnosis, but the runner only reprints hard-coded alpha/direction rows and labels. Why this blocks: the conclusion that open directed transport preserves the tail while shell routing, reflection closure, or deep branch routing break it requires either clean upstream rows or matched ablation computations; the cited distance-law portability note is unknown and the sign-invariant context is already conditional. Repair target: register and audit the upstream row computations, then add an ablation runner that toggles shell routing, dense fallback, reflection symmetry, branch depth, and radial confinement on matched geometries while recomputing alpha and direction. Claim boundary until fixed: it is safe to present the printed six-row comparison as a bounded diagnostic table; it is not an audited retained theorem that the named architecture features are the causal order parameters for distance-tail preservation."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234774+00:00",
+      "audit_date": "2026-04-30T15:17:00.194752+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The status line says the runner reprints hard-coded rows and the architecture-feature diagnosis lacks matched ablation computations, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:distance_law_portability_note,sign_portability_invariant_note",
+      "load_bearing_step": "Distance Law Breakpoint Note: bounded narrow breakpoint table \u2014 the runner reprints hard-coded `alpha` / direction rows; the architecture-feature diagnosis (open directed vs shell vs reflection vs deep-branch routing) is not closed by matched ablation computations. Cited distance-law portability note is unknown; sign-invariant context is conditional. Not a tier-ratifiable architecture-feature theorem.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the status line says the runner reprints hard-coded rows and the architecture-feature diagnosis lacks matched ablation computations. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-29T12:18:34.684254+00:00",
+      "archived_for_note_hash": "24bff63d0d5d742245b5d59f1ec472b70780530129439c038d37ed7bd08be219",
+      "audit_date": "2026-05-28T04:50:44.245496+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "distance_law_portability_note": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.",
+          "sign_portability_invariant_note": "Finite cached diagnostic that scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py exits 0 for the runner-defined G1-G4 gate packet on the two-row second-grown recompute subset, the recorded core family logs, and the fifth-family holdout under the stated tolerances; no universal portability theorem, row-wise lower-bound theorem, or independent order parameter is audited."
+        },
+        "dep_claim_type": {
+          "distance_law_portability_note": "bounded_theorem",
+          "sign_portability_invariant_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "distance_law_portability_note": "retained_bounded",
+          "sign_portability_invariant_note": "retained_bounded"
+        },
+        "deps": [
+          "distance_law_portability_note",
+          "sign_portability_invariant_note"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-distance-law-breakpoint",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The two direct dependencies are now retained-bounded, but they support only finite portability/sign diagnostic tables and explicitly exclude causal mechanism or architecture-feature diagnosis. This row's primary runner reprints hard-coded alpha/direction/feature rows with no matched ablation computation or provenance assertions for the claimed causal breakpoint mechanism.",
+      "claim_scope": "Bounded audit of the distance-law breakpoint table and proposed architecture-feature diagnosis over the two grown-family baselines plus alt-connectivity, third-family, fourth-family, and fifth-family radial rows. The static table values are not audited as a causal architecture-feature theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T04:50:44.245496+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The near-Newtonian distance tail survives only in open directed transport families; shell-locking, reflection closure, and deep branch routing break or flatten it.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "scope_too_broad: split the finite breakpoint table from the architecture-feature diagnosis, or add matched ablation computations/provenance for each claimed break feature before re-auditing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 1,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note still turns a static hard-coded breakpoint table into an architecture-feature diagnosis that says open directed transport preserves the distance tail while shell routing, reflection closure, and deep branch routing break or flatten it. Why this blocks: the retained distance-law portability dependency closes only the finite structured-family table and explicitly excludes causal mechanism diagnosis, while this row's runner does not recompute matched ablations or derive the feature labels from retained family mechanisms. Repair target: split a clean finite breakpoint-table note from the causal diagnosis, or add matched ablation computations/provenance rows for shell routing, reflection closure, radial confinement, and deep-branch routing. Claim boundary until fixed: it is safe to cite this as a bounded static breakpoint summary consistent with retained portability diagnostics, not as a retained architecture-feature theorem."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:20.146893+00:00",
+      "audit_date": "2026-05-29T21:29:24.099067+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "distance_law_portability_note": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.",
+          "sign_portability_invariant_note": "Finite cached diagnostic that scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py exits 0 for the runner-defined G1-G4 gate packet on the two-row second-grown recompute subset, the recorded core family logs, and the fifth-family holdout under the stated tolerances; no universal portability theorem, row-wise lower-bound theorem, or independent order parameter is audited."
+        },
+        "dep_claim_type": {
+          "distance_law_portability_note": "bounded_theorem",
+          "sign_portability_invariant_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "distance_law_portability_note": "retained_bounded",
+          "sign_portability_invariant_note": "retained_bounded"
+        },
+        "deps": [
+          "distance_law_portability_note",
+          "sign_portability_invariant_note"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-audit-ready-20260529-distance_law_breakpoint_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The packet closes only in the degenerate sense that the runner defines a constant ROWS table and prints it. It does not compute the alpha/direction values, verify them against cited artifacts, or prove the stronger architecture-feature diagnosis.",
+      "claim_scope": "Static finite breakpoint table of six retained rows with alpha, direction, and preserve/break/boundary labels, excluding the split-off causal architecture-feature diagnosis.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:29:24.099067+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:sign_portability_invariant_note:retained_bounded->unaudited",
+      "load_bearing_step": "The load-bearing content is the finite breakpoint table: the per-family alpha and direction-fraction rows for the two grown anchors and the alt/third/fourth/fifth-radial families.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check if a future packet supplies executable provenance that recomputes or verifies each alpha/direction row, especially the two grown-family anchor values.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The primary runner contains a hard-coded dataclass table and rendering logic only; it performs no measurement, assertion, import, or cross-note verification. Under the rubric, a runner that prints constants without computation is class E and the result is a definition/static restatement rather than a bounded derivation. The source note correctly demotes the causal feature diagnosis to non-load-bearing conjecture, but the remaining load-bearing finite table is still not executably audited by this packet."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.800904+00:00",
+      "audit_date": "2026-07-07T19:59:05.440600+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "distance_law_portability_note": "Bounded finite-runner table and partial-portability boundary for scripts/DISTANCE_LAW_PORTABILITY_COMPARE.py: on the four tested structured-family rows with b=[5,6,7,8,10], field_strength=0.004, k=5.0, beta=0.8, the runner computes alpha/R^2/TOWARD counts showing no uniform distance-tail transfer across the tested rows. This excludes causal mechanism diagnosis, physical Gate B closure, geometry-independence claims, and broader family universality.",
+          "sign_portability_invariant_note": "Finite cached comparison that the named family logs satisfy G1 zero-source cancellation, G2 neutral cancellation, G3 plus/minus antisymmetry, and G4 unit-slope tolerance under the runner thresholds, with G4 checked only on family-accepted rows."
+        },
+        "dep_claim_type": {
+          "distance_law_portability_note": "bounded_theorem",
+          "sign_portability_invariant_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "distance_law_portability_note": "retained_bounded",
+          "sign_portability_invariant_note": "retained_bounded"
+        },
+        "deps": [
+          "distance_law_portability_note",
+          "sign_portability_invariant_note"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "539702067c29e0e678c86b3ef995efda6a636d35832ebb3d3def6e42b6d9a091",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-distance_law_breakpoint_note-12",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner does not compute or verify the alpha/direction rows from the cited authorities; it defines and prints hard-coded rows and classifier text. The finite table may be consistent with the provided authorities, but the primary artifact supplies no load-bearing computation or input verification.",
+      "claim_scope": "Audited only the bounded finite breakpoint table and its preserve/break/boundary labels across the listed retained families; the causal architecture-feature diagnosis is explicitly non-load-bearing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T19:59:05.440600+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:distance_law_portability_note:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "The finite breakpoint table classifies the retained rows by alpha, direction, and architecture feature, with only the first two grown families preserving both near-Newtonian tail and direction.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "other: cheapest repair is to replace the hard-coded breakpoint runner with a verifier that reads or recomputes the cited retained-family alpha/direction rows and asserts the table/classes against those inputs; if only downstream wording is narrowed instead, add a dated downstream-hygiene line to this note's own boundary so the row re-enters the audit queue.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source note correctly narrows the live claim to a finite table and explicitly splits off the causal architecture-feature diagnosis as non-load-bearing. However, the provided runner source contains only a constant ROWS list and prints labels; it does not recompute, parse, or verify the displayed measurements. Under the rubric, a no-computation runner that prints constants is class E, so the row is a bounded re-labeling/table definition rather than a clean theorem derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
+  "title": "Distance Law Breakpoint Note",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

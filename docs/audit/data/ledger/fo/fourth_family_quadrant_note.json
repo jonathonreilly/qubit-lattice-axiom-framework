@@ -1,0 +1,208 @@
+{
+  "audit_date": "2026-05-05T04:30:11.309847+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 9.219,
+    "runner_hash": "b1edda866d16458a24398120de5f0758c47dd7ead9dfa903e5510594c41339dc",
+    "transitive_descendants": 297
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-fresh-second-fourth_family_quadrant_note-20260505",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cached current runner completes and computes the quadrant-reflection connectivity, source propagation, detector centroid shifts, and row gate rather than printing preset outcomes. It confirms a nonempty narrow basin: the note's quick subset has 5/9 passing rows and the current full default sweep has 23/45 passing rows, so the bounded non-universal claim closes.",
+  "claim_id": "fourth_family_quadrant_note",
+  "claim_scope": "Finite quadrant-reflection connectivity sweeps on the grown slice exhibit a nonempty but seed/drift-limited signed-source basin with zero-source, neutral-cancellation, sign-orientation, and near-linear charge-scaling controls.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-05T04:30:11.309847+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-05T03:37:37.985724+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260505-033337-de2b049d-fourth_family_quadrant_n-006",
+      "auditor_family": "codex-gpt-5.5",
+      "claim_scope": "Audited the bounded computational claim that the quadrant-reflection connectivity runner exhibits a narrow signed-source basin on the tested drift/seed grid, not family-wide or geometry-generic closure.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-05T04:30:11.308899+00:00",
+      "auditor": "codex-fresh-second-fourth_family_quadrant_note-20260505",
+      "auditor_family": "codex-gpt-5",
+      "claim_scope": "Finite quadrant-reflection connectivity sweeps on the grown slice exhibit a nonempty but seed/drift-limited signed-source basin with zero-source, neutral-cancellation, sign-orientation, and near-linear charge-scaling controls.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 3,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/gate_b_no_restore_farfield.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 8.07,
+  "load_bearing_step": "The quick diagnostic sweep gives a real but narrow basin, not a family-wide closure.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "323a4a422c9bd6d6f5a82ddf4347e7b0631638152cf4b38c5d52722cb87a93f8",
+  "note_path": "docs/FOURTH_FAMILY_QUADRANT_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-check whether the unexpanded grow() helper should be surfaced as an explicit runner artifact/dependency for future audits, and fix the note's drift=0.50 'mostly passes' wording to match the cached rows.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368337+00:00",
+      "archived_for_note_hash": "c4c1af6c19183f1e39b89e95e216f00d40a4573498028f39abb296ae8bbb051b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235032+00:00",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The live --quick runner recomputes the nine-row quadrant-reflection sweep and reproduces the frozen 5/9 passing basin with exact zero/neutral controls and near-linear charge scaling. The source note explicitly excludes family-wide, seed-universal, and geometry-generic claims.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The quick diagnostic sweep gives a real but narrow basin: exact zero and neutral controls pass, sign orientation is correct on the passing rows, weak charge scaling stays near linear, and 5/9 tested rows pass.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The claim is narrow enough to close: the runner constructs the quadrant-reflection connectivity rule, evaluates the declared drift/seed grid, and reproduces the finite signed-source basin rather than importing it. The exact zero-source and neutral-cancellation controls hold on all evaluated rows, while the sign gate restricts retention to the printed 5/9 narrow basin. Residual boundary: distinctness is algorithmic for this connectivity construction, not evidence for a geometry-generic or seed-universal family law."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.811987+00:00",
+      "audit_date": "2026-05-03T15:40:52.297583+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 7.209,
+        "transitive_descendants": 73
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-fourth-family-fresh-auditor-2026-05-03",
+      "auditor_confidence": 0.86,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner defines a particular connectivity construction, source placement, propagation/readout, constants, drift grid, seed grid, and pass tolerances, then reports which rows pass. That supports a bounded numerical scout result, but it does not prove the structural bridge from quadrant-reflection connectivity to a retained basin as a positive theorem.",
+      "claim_scope": "The note claims that the quadrant-reflection connectivity rule on the grown slice gives a distinct, narrow retained signed-source basin on the tested drift/seed rows, with zero-source and neutral controls preserved and near-linear charge scaling on passing rows.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T15:40:52.297583+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The load-bearing step is the move from the quick sweep result, especially passing rows: 5/9, to the theorem-language conclusion that the quadrant-reflection family is a genuine new retained basin.",
+      "load_bearing_step_class": "configured_numerical_sweep_to_retained_basin",
+      "notes_for_re_audit_if_any": "Re-audit should check whether a retained theorem or bounded theorem has been added that derives the basin criterion rather than sampling it.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "quick_grid": {
+          "drifts": [
+            0.0,
+            0.2,
+            0.5
+          ],
+          "passing_rows": "5/9",
+          "seeds": [
+            0,
+            1,
+            2
+          ]
+        },
+        "runner_command": "python3 -u scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py --quick",
+        "runner_executed": true,
+        "runner_output_status": "Completed locally and reproduced the note's quick sweep count: passing rows 5/9.",
+        "what_the_runner_checks": [
+          "Constructs a quadrant-reflection adjacency rule over a grown slice.",
+          "Evaluates configured drift and seed rows.",
+          "Checks exact zero-source baseline, exact neutral +1/-1 cancellation, plus/minus sign orientation, and approximate charge-scaling exponent near 1.",
+          "Declares passing rows by fixed numerical tolerances."
+        ],
+        "what_the_runner_does_not_prove": [
+          "No analytic proof that the basin exists beyond the sampled drift/seed grid.",
+          "No derivation that the chosen source layer, source_z, strength, propagation constants, detector centroid readout, and tolerances are forced retained inputs.",
+          "No hard bridge from row-level pass/fail behavior to a retained positive theorem for the connectivity family."
+        ]
+      },
+      "verdict_rationale": "Issue: The note promotes a configured numerical scout, summarized as 5/9 passing quick rows, into the retained positive-theorem claim that the quadrant-reflection family is a genuine new retained basin. Why this blocks: A finite drift/seed sweep with fixed source/readout/constants and pass tolerances does not establish the theorem-level bridge that quadrant-reflection connectivity structurally preserves the signed-source response; it only identifies sampled rows that satisfy the runner's configured controls. Repair target: State and prove a bounded theorem specifying the admissible parameter domain, source/readout map, tolerances, and basin criterion, or extend the runner so it verifies that theorem rather than only sampling selected rows. Claim boundary until fixed: The safe claim is that this runner configuration reports a narrow candidate signed-source basin on its sampled rows, with the listed controls, not that the family is retained as a positive theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 23,
+    "D": 0,
+    "total_pass": 23
+  },
+  "runner_path": "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py",
+  "title": "Fourth Family Quadrant Note",
+  "transitive_descendants": 94,
+  "verdict_rationale": "The load-bearing claim is bounded to existence of a narrow computational basin, not family-wide or geometry-generic closure. The runner constructs the quadrant-reflection adjacency rule, evaluates zero, plus, minus, neutral, and double-source responses, and counts passing rows under explicit gates; it does not hard-code the pass count or target response signs. The note overstates the representative drift=0.50 quick row as mostly passing, but that wording is not needed for the audited bounded conclusion and the current runner output still supports the stated safe read. Residual risk is limited to the unexpanded imported grown-slice generator, which was not a listed one-hop note in the restricted packet."
+}

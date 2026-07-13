@@ -1,0 +1,1259 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "01acfdbed544223c60c60595f4f711a83ac1661230e5ba39a6d3cc952e0993b0",
+  "note_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.802431+00:00",
+      "audit_date": "2026-05-17T21:33:13.432967+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "521fcca893c56dad5ecbdbb27ace2928a1afc5c12164255aedd02fe5a68b764d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260517-213206-78dc5814-electrostatics_grown_sig-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The identities close by componentwise algebra in the real-vector ring, with g treated as a charge-independent kernel. The zero-delta_z corollary closes only within the stated bounded scope because the zero-field free-baseline identity is admitted as a definition.",
+      "claim_scope": "Exact source-field linearity, signed parity, same-point cancellation, and stated corollaries under the explicit linear signed source-field rule and admitted Phi(0,q_test)=centroid_z(free) baseline.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T21:33:13.432967+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting the explicit rule F({(z_k,q_k)})[i]=sum_k q_k*g(z_k,i) gives n*g(z_0,i)=n*F({(z_0,+1)})[i], -g(z_0,i)=-F({(z_0,+1)})[i], and g(z_0,i)-g(z_0,i)=0 pointwise.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that future uses do not treat the admitted Phi(0,q_test)=centroid_z(free) baseline as an independently derived propagator theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The theorem is deliberately narrow and conditional on the source-field construction rule; within that scope, the load-bearing identities are exact algebraic consequences. The runner source performs genuine symbolic simplifications for P1, P2, P3, C1, and C2-C5 rather than hard-coding a numerical target, though its parent-runner correspondence line is an inspection note rather than an independent computation. No external comparator, tuned input value, unprovided helper import, or downstream propagator sign-law claim is needed for the audited conclusion."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:37.958029+00:00",
+      "audit_date": "2026-07-12T05:22:16.968503+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "521fcca893c56dad5ecbdbb27ace2928a1afc5c12164255aedd02fe5a68b764d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00411-electrostatics_grown_sign_la",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusions are componentwise algebraic consequences of the theorem's explicit hypotheses. The runner genuinely constructs the symbolic expressions and simplifies them to zero; no geometry construction, downstream sign response, or numerical target is required.",
+      "claim_scope": "Exact source-field linearity, signed parity, same-point cancellation, and C1-C5 under the explicitly hypothesized signed-linear source-field rule and Phi(0,q_test)=centroid_z(free) baseline.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T05:22:16.968503+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "Substitution into F({(z_k,q_k)}_k)[i] := sum_k q_k g(z_k,i) gives charge scaling, sign parity, and exact same-point cancellation componentwise.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Constructed F(+n)-nF(+1) symbolically for independent kernel components.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 1: pointwise (P1)",
+            "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct componentwise expansion of the single-source linear map.",
+            "outcome": "Every component simplifies identically to zero, closing the direct-algebra route.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "direct_linearity"
+          },
+          {
+            "attempt": "Constructed F(-1)+F(+1) with symbolic positive kernel components.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 2: pointwise (P2)",
+            "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Oddness under reversal of the signed charge slot.",
+            "outcome": "The signed slot makes every component vanish identically.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "signed_parity"
+          },
+          {
+            "attempt": "Evaluated the two-entry source collection (+1,-1) on the shared kernel column.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 3: pointwise (P3)",
+            "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Two-source same-position superposition rather than a single-source scaling identity.",
+            "outcome": "The two source contributions cancel at each node, independently of the node count or kernel values.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "neutral_pair"
+          },
+          {
+            "attempt": "Substituted the exact zero field from P3 into the admitted identity Phi(0,q_test)=centroid_free.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 4: algebraic delta_z = 0 corollary (C1)",
+            "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Challenge the propagation corollary at the zero-field baseline.",
+            "outcome": "The centroid difference reduces to centroid_free-centroid_free=0; no nonzero-field propagator property is used.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "zero_baseline"
+          },
+          {
+            "attempt": "The runner evaluated q-squared, absolute-q, and mixed linear-plus-quadratic counterfactual rules.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 7: counterfactual probes (charge slot is load-bearing)",
+            "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the signed-linear charge rule by charge-squared or absolute-charge response.",
+            "outcome": "The counterfactuals fail P1, P2, or P3, confirming that the disclosed linear signed rule is precisely load-bearing and preventing an overextension beyond it.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "nonlinear_counterfactual"
+          },
+          {
+            "attempt": "Evaluated P1 and P3 at five nontrivial kernel values and n=3.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Part 6: numerical FP cross-check at one independent random sample",
+            "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Independent finite floating-point sanity check of the symbolic identities.",
+            "outcome": "The sampled residuals are zero to machine precision, consistent with the exact symbolic result.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "finite_sample"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [],
+          "evidence_locator": "This is purely a statement about algebraic substitution",
+          "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": []
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "## Forbidden imports check",
+          "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "explicit source-field rule `(I1)`-`(I2)`",
+              "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "conditional on the explicit source-field rule"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Phi([0.0]_i, q_test) = centroid_z(free)",
+              "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "Phi([0.0]_i, q_test) = centroid_z(free)"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "no grown-geometry construction",
+              "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "no grown-geometry construction"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source rule, kernel positivity, fixed geometry, zero-field baseline, propagator, numerical values, unit conventions, and parent correspondence were checked for undisclosed load-bearing imports.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "no sign-assignment at the `delta_z` level",
+          "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "none_found_reason": "No N1 route is ruled out by a prior witness; all listed stress tests are performed directly in the supplied source or runner.",
+          "scan_scope": "The packet was checked for prior-witness reliance or a negative residual imported into the positive bounded implication.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## What this does NOT claim",
+          "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "none_found_reason": "",
+          "scan_scope": "All does-not-claim, open-dependency, geometry-generic, and downstream-physics language was checked against the actual theorem resolution.",
+          "statements": [
+            {
+              "evidence_locator": "Does **not** derive the source-field-construction rule",
+              "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "Does **not** derive the source-field-construction rule",
+              "tested_resolutions": [
+                "the conditional implication from the explicitly supplied rule"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "Does **not** establish a geometry-generic sign-law theorem.",
+              "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "Does **not** establish a geometry-generic sign-law theorem.",
+              "tested_resolutions": [
+                "source-field identities parametrically in the fixed kernel only"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "Does **not** claim charge-magnitude linearity at the `delta_z` level.",
+              "evidence_path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "phrase": "Does **not** claim charge-magnitude linearity at the `delta_z` level.",
+              "tested_resolutions": [
+                "charge scaling at the source-field level only"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic space-time normalization is unrelated to the componentwise signed-linear source-field identities.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four ontology axioms neither supply nor are needed by this explicitly conditional algebraic theorem.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "No realized-state selection or state-contingent value enters the audited implication.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "No unit conversion or dimensionful comparison is load-bearing.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The charged-lepton K/CPT counting obligation is unrelated to electrostatic source-field algebra.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The charged-lepton eta readout obligation supplies no source-field or zero-baseline premise.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant cross-sector readout obligation is scientifically disjoint from the audited identities.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied foundation registry, approved primitives, open-obligation candidates, and definition/scope surfaces were checked for any candidate that changes the narrow algebraic closure.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The asserted parity and scaling could be artifacts of silently assuming a charge-independent signed-linear kernel; a physically nonlinear or parity-blind response would invalidate them.",
+          "evidence_locator": "counterfactual: nonlinear pointwise rule (q + q^2 * g) breaks (P3) cancellation",
+          "evidence_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+          "resolution": "The source note makes signed charge-linearity an explicit theorem hypothesis, and the runner's counterfactuals demonstrate that relaxing it breaks the identities. This confines, rather than undermines, the audited theorem.",
+          "resolved": true,
+          "route_id": "nonlinear_counterfactual"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17:previous_audit:0",
+              "evidence_locator": "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Prior clean audit of the same narrow algebraic implication, invalidated only because its no-go-discipline packet was missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Charged-lepton orbit-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Charged-lepton eta-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Quark determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite gravity sweep cannot supply full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Packet-memory and gauge-coupling closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "External atomic and temporal-axis proof boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Multi-lane inherited no-go catalogue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Formal coupling identity versus physical prediction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Plaquette coefficient and comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Lensing observable and finite-path bridge walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Carrier antisymmetry and registry-exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Charged-lepton selector no-go catalogue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Lorentz-theorem scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Causal-metric bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Replay-only evidence is insufficient without source-linearity, and single-row results do not imply a wider basin.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Local Wilson data cannot close a full environment.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Flavor tracial-route scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Dirac analytic-vector and audit-retag boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Gauge-environment contraction and surrogate boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Temporal-generator and staggered-orientation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Dispersion does not supply a physical Fermat bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Weak-field sign result excludes nonlinear gravity and physical Newton coupling.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Hypercharge normalization and species-identification freedom.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Cross-lane mass, scale, and coupling boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Atomic scale and threshold-transport walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Quark mass selector and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite checks do not prove uniform lattice-Green asymptotics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Nonnegative scalar-potential reduction cannot reproduce signed detector-adjoint response.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Centered-segment surrogate does not match literal finite geometry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Physical static-source readout and hierarchy remain underived.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Temporal source magnitude and readout-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Empty local no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Planning preference is not theorem-grade selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Update tick does not derive physical time or c.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Neutrino mass-matrix and selector no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Neutrino scale and cosmology dependency walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite-lattice replay does not establish a universal Newtonian distance law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Frozen logs alone and unbounded basin language are insufficient.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Conditional coupling rows cannot be relabeled retained.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite packet observables do not derive decoherence, gravity, or infinite-volume memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite coefficient scan does not imply arbitrary-degree exclusion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Clifford carrier selection remains underdetermined.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Rank matching and boundary incidence do not uniquely select the Planck carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Plaquette mean-field and minimal-block closure walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Identity evaluation is not the Haar integral; endpoint positivity language is restricted.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite record data do not supply selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Strong-CP and registrability bridge walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite-range logarithm and temporal-axis selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite Fisher tangent algebra does not establish physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Spin-statistics forcing remains withdrawn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Minimal axioms do not select a staggered kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Quotient encoder is not a retained Wilson-cube theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Documentation mismatch requires a durable source repair, not prose-only synchronization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "A single repaired slot cannot establish a full family card.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Record wording does not supply determinant-channel phase readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite gauge observations do not retire theta.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Theta carrier and insertion gates remain open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "No supplied phase-type theta insertion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Closed-branch theta carrier is not derived by the minimal surface.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Determinant algebra does not select the physical counting horn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Record does not supply K/CPT orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Record formation does not select eta readout or event rate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Artifact visibility issue rather than a theorem-level obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Record-only scalar-readout independence fails by a supplied-context scale countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Hard-coded table matching and two-row generalization boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Finite raw rows do not imply a continuum or universal exponent theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "mechanism": "Physical Yukawa identification remains a definition or renaming.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "fe9802e84ec73d6a838338e48c475d38dba88f31b37fd097393ef8e463409457",
+              "cross_cycle_candidate_ids": [
+                "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17:previous_audit:0",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17:previous_audit:0",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17": {
+              "accepted_premise_type": null,
+              "content_sha256": "1352341f5fb28769d51b58fafda111b268ec5e8d0ed3f57f0937fe260e882209",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "01acfdbed544223c60c60595f4f711a83ac1661230e5ba39a6d3cc952e0993b0",
+              "effective_status": null,
+              "path": "docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Forbidden imports check",
+                "## What this does NOT claim",
+                "Does **not** claim charge-magnitude linearity at the `delta_z` level.",
+                "Does **not** derive the source-field-construction rule",
+                "Does **not** establish a geometry-generic sign-law theorem.",
+                "Phi([0.0]_i, q_test) = centroid_z(free)",
+                "This is purely a statement about algebraic substitution",
+                "explicit source-field rule `(I1)`-`(I2)`",
+                "no grown-geometry construction",
+                "no sign-assignment at the `delta_z` level"
+              ]
+            },
+            "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "521fcca893c56dad5ecbdbb27ace2928a1afc5c12164255aedd02fe5a68b764d",
+              "effective_status": null,
+              "path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "Part 1: pointwise (P1)",
+                "Part 2: pointwise (P2)",
+                "Part 3: pointwise (P3)",
+                "Part 4: algebraic delta_z = 0 corollary (C1)",
+                "Part 6: numerical FP cross-check at one independent random sample",
+                "Part 7: counterfactual probes (charge slot is load-bearing)",
+                "counterfactual: nonlinear pointwise rule (q + q^2 * g) breaks (P3) cancellation"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The theorem is deliberately conditional and narrowly scoped to algebraic substitution in the supplied signed-linear field map. P1-P3 and C2-C5 follow directly, while C1 follows after the separately explicit zero-field baseline hypothesis; the runner source computes these identities rather than merely printing expected answers. The parent-correspondence message is inspection-only, but it is not load-bearing for the audited conditional implication."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_electrostatics_grown_sign_law_source_field_linearity_parity.py",
+  "title": "Electrostatics Grown Sign-Law Source-Field Linearity / Parity Narrow Theorem",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,329 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "magnitude_reads_minimal_record_block_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+    "scale_reference_primitive",
+    "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+    "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.47,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5438bef21c63d87425155517e1c5931abe14a71009edca979c7d6c6f77f0bfc5",
+  "note_path": "docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:40.172592+00:00",
+      "archived_for_note_hash": "0639dab99eef92494409865000ff2c1d25e2225c60059c582bf8b238174481dd",
+      "audit_date": "2026-06-08T15:45:11.760490+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "dc58b2f5070fbb1c3e45fe487845dee5f45119c10414829cbe0915ba4d185e18",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-154229-3a4f3aa350-magnitude_reads_minimal_reco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic consequences of choosing L_t=2 check out: (-1)^t has period 2 and 8 x 2 = 16, while 8 L_t diverges as L_t grows. The restricted packet does not derive or supply a retained authority for the bridge that the magnitude exponent's temporal readout is selected by register-not-read at the minimal block.",
+      "claim_scope": "Audited whether the bare magnitude temporal count is selected as L_t=2, giving exponent 16 = 8 x 2, rather than by the OS continuum count.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T15:45:11.760490+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Register-not-read is extended to the temporal readout scale so the magnitude's bare exponent is registered at the discrete minimal block L_t=2 rather than at the OS continuum limit.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation or accepted primitive showing register-not-read applies to the temporal readout scale of the magnitude exponent and selects L_t=2.",
+      "open_dependency_paths": [
+        "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+        "MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner confirms simple arithmetic and finite-count identities after registration_count=2 is assigned. Its load-bearing physical inputs are hard-coded, including single_step_is_nonpositive=True, principle_step=True, and spatial_corners=8, while the packet supplies no upstream authority text for the register-not-read meta principle, its temporal-readout extension, RP two-step premise, or spatial corner count. The prompt's primitive inventory supplies only the scale-reference primitive, which does not grant this readout bridge or dimensionless exponent selection. Therefore the scoped theorem is conditional on an unclosed bridge/dependency rather than a first-principles closure."
+    },
+    {
+      "archived_at": "2026-06-09T08:58:03.030386+00:00",
+      "archived_for_note_hash": "ee76186c8ca3d19cd88a4a34ec950376592f9d6bdf3bcf4fa368a6f5cdbbf927",
+      "audit_date": "2026-06-08T20:08:42.719423+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.248,
+        "runner_hash": "dc58b2f5070fbb1c3e45fe487845dee5f45119c10414829cbe0915ba4d185e18",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-200624-e5434a0656-magnitude_reads_minimal_reco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The minimal-block arithmetic and 8 x 2 = 16 count check out within the packet, but the selecting bridge from register-not-read to this temporal readout scale is asserted rather than derived. The source note's correction explicitly demotes that selection as flagged-open.",
+      "claim_scope": "Audited the corrected claim that the bare magnitude temporal count is read at Lt=2 rather than the OS continuum via a register-not-read temporal-readout extension; the alpha_LM value gate is outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T20:08:42.719423+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note extends register-not-read to the temporal readout scale and asserts that the bare magnitude exponent is registered at the discrete minimal block, count 2, while using the OS-continuum count is the realist slip.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained bridge theorem deriving the temporal-readout selection from approved premises, or narrow the claim to the retained minimal-block arithmetic without asserting selection over the continuum.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner verifies finite arithmetic around eta_1(t)=(-1)^t, Lt=2, and 8 x 2 = 16, but it hard-codes the retained single-step nonpositivity and the principle-extension step. It does not compute or derive the load-bearing readout-scale selection. The restricted packet supplies no closed authority or bridge theorem that licenses applying register-not-read to choose the minimal block over the OS continuum, and the source note itself says that selection is demoted and open."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.505586+00:00",
+      "audit_date": "2026-06-13T23:17:14.733157+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited only the bounded count/rate separation: the temporal factor 2 is a transfer-step/mode count, POST_RECORD_CLOCK_RATE_INTERFACE does not block count-only use, and the minimal reflection-positive block is 2 steps; not a derivation of v, alpha_LM, or the UV/per-record readout selection.",
+          "minimal_axioms": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "scale_reference_primitive": null,
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6)."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "scale_reference_primitive": "meta",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "scale_reference_primitive": "meta",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+          "minimal_axioms",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "scale_reference_primitive",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 14.806,
+        "runner_hash": "b75244df7f4ffc375e7e0d406d5a8bbf3da055fb77cfe07cbea9ce8d4c972a89",
+        "transitive_descendants": 1265
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-bc7e2bd7d3-magnitude_reads_minimal_reco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Record axiom explicitly excludes readout context, weighting, normalization, time metric, and occupancy rules, and the RP authority establishes positivity of the two-step block without a magnitude readout selector. This closes only the stated Record+RP route and leaves a future UV/minimal-block readout bridge open.",
+      "claim_scope": "Route-specific no-go: Record axiom plus RP two-step positivity does not force the magnitude count to be read at L_t=2 rather than at an OS-continuum reconstruction.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-13T23:17:14.733157+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-09T12:08:17.590278+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-368ed40bad-magnitude_reads_minimal_reco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Route-specific no-go: Record axiom + RP two-step positivity fails to force the magnitude readout scale to the minimal positive temporal block L_t=2 rather than the OS-continuum reconstruction.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-13T23:17:14.733157+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-bc7e2bd7d3-magnitude_reads_minimal_reco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Route-specific no-go: Record axiom plus RP two-step positivity does not force the magnitude count to be read at L_t=2 rather than at an OS-continuum reconstruction.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Record supplies durable finite realized records only after a readout context is supplied, while RP two-step supplies a minimal positive transfer block but no rule choosing the magnitude readout scale.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the route-specific scope and does not promote this into a global exclusion of future UV/minimal-block readout bridges.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The no-go is correctly scoped to the attempted inference from Record plus RP two-step positivity, not to all possible future readout-scale bridges. The finite arithmetic checks independently: eta_1(t)=(-1)^t has minimal period 2, e^{-2E(p)} is a positive contraction for the stated E(p), and the conditional count is 8 x 2 = 16. All load-bearing non-primitive cited inputs are retained-grade or retained-bounded, and the scale-reference primitive is quoted as a units reference only, not a selector. The runner mostly verifies cited text boundaries and simple arithmetic, which is sufficient for this route-specific no-go but not a positive magnitude derivation."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.474004+00:00",
+      "audit_date": "2026-07-02T04:22:53.852655+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1",
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited only the bounded count/rate separation: the temporal factor 2 is a transfer-step/mode count, POST_RECORD_CLOCK_RATE_INTERFACE does not block count-only use, and the minimal reflection-positive block is 2 steps; not a derivation of v, alpha_LM, or the UV/per-record readout selection.",
+          "minimal_axioms": null,
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16.",
+          "scale_reference_primitive": null,
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "Bare finite-set theorem: the coordinate-permutation S_3 action on {0,1}^3 has Hamming-weight orbits of sizes (1,3,3,1), and charge conjugation pairs them into combined S_3 x Z_2 orbits of sizes (2,6)."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "scale_reference_primitive": "meta",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded",
+          "minimal_axioms": "meta",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained",
+          "scale_reference_primitive": "meta",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+          "minimal_axioms",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+          "scale_reference_primitive",
+          "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.024,
+        "runner_hash": "b75244df7f4ffc375e7e0d406d5a8bbf3da055fb77cfe07cbea9ce8d4c972a89",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T042253Z-2e634a3d-magnitude_reads_minimal_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited Record/Minimal Axioms authority supplies fixed records and finite additive scalar readout but no readout context, selector, weighting, normalization, time metric, or occupancy rule. The RP authority supplies two-step positivity but not a magnitude readout rule, so the stated route cannot select L_t=2 without the named missing bridge.",
+      "claim_scope": "Route-specific no-go: Record axiom plus RP two-step positivity do not force the magnitude readout to occur at L_t=2 rather than the OS-continuum limit; the 8 x 2 = 16 arithmetic remains only conditional on a separate UV/minimal-block readout bridge.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T04:22:53.852655+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Record can host a realized finite readout once the readout context is supplied, and RP two-step supplies a minimal positive transfer block, but neither premise chooses the magnitude's readout scale.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the source/runner reference to the historical 2026-06-05 Record wording against the current 2026-06-29 minimal-axiom alias if the axiom text changes again.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The dependencies are retained-grade or accepted premise nodes, and the claim is narrowly scoped to failure of one route rather than a global impossibility theorem. The no-go discipline gate is present and adequate for this narrow scope: it enumerates alternative selector routes, collapses the wall set to the missing UV/minimal-block readout bridge, preserves a partial-closure path, and includes a steelman that would defeat only a broader no-go. The runner performs simple A-class arithmetic/logical checks plus B-class citation-boundary checks; it does not prove new physics, but it matches the route-specific negative conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/magnitude_reads_minimal_record_block_2026_06_06.py",
+  "title": "Record Does Not Select the Magnitude Minimal Block",
+  "transitive_descendants": 708,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

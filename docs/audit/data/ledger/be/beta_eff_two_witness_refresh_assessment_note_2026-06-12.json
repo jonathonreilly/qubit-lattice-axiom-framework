@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "beta_eff_two_witness_refresh_assessment_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (witness-pair refresh assessment)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03",
+    "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_gauge_vacuum_plaquette_bridge_support.py",
+    "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py",
+    "scripts/frontier_scalar_3plus1_temporal_ratio.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "efee3543276609805b29b0bff59914c50e2e7cacfa0af611d4c79f2a0ccccd9a",
+  "note_path": "docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.204613+00:00",
+      "audit_date": "2026-06-13T01:38:20.958677+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30": "Audited only the conditional tree-sector geometric product threshold R_tree(g_tree)=18/g_tree^(1/4), the beta=6 threshold g_tree<81, and the finite compact K-built 2x2x1 deficit obstruction; no full beta=6 convergence or plaquette value is audited.",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "Audited the scoped claim that the exact observable bridge <P>_full = R_O(beta_eff) is not derivable from A_min plus the explicitly listed current Wilson primitives unless an exact beta-6 nonperturbative completion primitive is added."
+        },
+        "dep_claim_type": {
+          "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30": "bounded_theorem",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "no_go"
+        },
+        "dep_effective_status": {
+          "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30": "retained_bounded",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03": "retained_no_go"
+        },
+        "deps": [
+          "beta6_resummation_radius_growth_rate_bounded_note_2026-05-30",
+          "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "ba596bb146ca70441780e2cf5e49b47c44a63da22ceaef8ae28105d4fba67b39",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-013606-febd848c26-beta_eff_two_witness_refresh",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained no-go pins beta_eff only through beta^5 and treats beta_eff = R_O^{-1}(<P>_full) as a definition or fit absent an independent completion primitive. The provided coefficient/radius surface is Delta-sector data, so it supplies no K > 5 beta_eff jet or beta_eff-tail bound.",
+      "claim_scope": "Audited only the narrow refresh assessment: whether the listed post-2026-05-03 Delta coefficient, Delta analytic-class, and Delta radius rows refresh Lemma 2's beta_eff witness pair.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T01:38:20.958677+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The listed exact-coefficient rows pin Delta(beta), not beta_eff(beta), and no retained theorem maps those Delta coefficients to beta_eff coefficients without the inverse bridge excluded by the retained no-go.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the coefficient-row object-identification table is used only for scope classification, not as retained authority for the Delta coefficient values themselves.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 19,
+        "C": 1,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The load-bearing conclusion is an object-scope closure, not a new numerical derivation: Delta coefficients and Delta tree-sector radius diagnostics do not by themselves constrain the beta_eff completion admitted by Lemma 2. The independent arithmetic checks pass: c 6^6 = 729/156250, beta_eff^-(6) = 170/27, beta_eff^+(6) = 26582183/4218750, and R_tree > 6 iff g_tree < 81. The no-go discipline gate is narrow and preserves future routes via an exact beta_eff coefficient theorem, a non-inverse Delta-to-beta_eff bridge theorem, a beta_eff-tail bound, or an independently selected beta_eff(6)."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/beta_eff_two_witness_refresh_assessment_2026_06_12.py",
+  "title": "Beta_eff Two-Witness Refresh Assessment Against the Exact-Coefficient Surface",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

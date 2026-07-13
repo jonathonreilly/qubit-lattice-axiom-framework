@@ -1,0 +1,1403 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "teleportation_bell_measurement_circuit_note",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/teleportation_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7a6c92d2cd4786b1dc26344c114a3da9e672ead3e9ed3d45f9745d890ff5a908",
+  "note_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh",
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:32:16.520092+00:00",
+      "archived_for_note_hash": "635735caecd2d42c33ff2ccb3eeb359b2a3a4a57450d33182c7293ac5a5b41b6",
+      "audit_date": "2026-05-02T22:50:25.268687+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-teleportation-bell-measurement-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped algebraic claim closes: the stabilizer projectors and CNOT-H computational readout reproduce the same Bell projectors and teleportation correction records. The remaining physical implementation is not a hidden premise; it is the cited open gate of this artifact.",
+      "claim_scope": "An ideal logical/taste Bell-measurement decomposition is verified algebraically, but the native physical gate/readout/apparatus implementation remains an explicit open dependency.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-05-02T22:50:25.268687+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The Bell-measurement limitation is narrowed from an undecomposed ideal Bell projector to an ideal logical/taste stabilizer or CNOT-H circuit measurement, while physical implementation of those logical primitives remains open.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit only if a later artifact supplies native logical CNOT/H, ZZ/XX stabilizer measurement, taste readout, and durable record mechanisms with quantified imperfections.",
+      "open_dependency_paths": [
+        "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The packet supports the bounded logical decomposition with exact matrix identities up to numerical precision, and all acceptance gates pass. It does not claim a physical native schedule, apparatus Hamiltonian, decoherence model, or durable measurement-record derivation. Because that physical mechanism is explicitly left open, the correct retained object is a clean open gate rather than a theorem about implementable teleportation hardware."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.715188+00:00",
+      "audit_date": "2026-06-18T08:58:15.638287+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.67,
+        "runner_hash": "a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_bell_measurement_circuit_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli, Bell-projector, and CNOT-H identities close as finite matrix algebra within the stated ideal logical scope. The note does not claim a native physical apparatus, durable readout, or matter/energy transport derivation.",
+      "claim_scope": "Ideal encoded taste-qubit Bell measurement is algebraically decomposed into equivalent ZZ/XX stabilizer parity measurements and a CNOT-H computational-readout circuit, with the physical gate/readout apparatus left open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T08:58:15.638287+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Pulling the final computational Z measurements back through CNOT(A -> R) followed by H(A) gives Z_A output -> X_A X_R and Z_R output -> Z_A Z_R, so the pulled-back circuit projectors equal P_zx.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that any future broader claim still keeps the ideal logical decomposition separate from physical apparatus or durable-record closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing claim is a genuine algebraic closure: the circuit Heisenberg pullback and stabilizer projector identities are explicitly computed, and the runner source performs finite matrix checks rather than printing constants. The native taste-surface check instantiates the finite encoded Pauli surface, while the remaining acceptance gates verify algebraic Bell projectors, record mapping, correction fidelity, and no-signaling within the ideal logical model. The downstream boundary helper is bookkeeping for scoped no-transfer/bounded-status alignment and does not supply the Bell-circuit identity itself. Physical implementation of logical gates, readout, records, and the Bell resource remains outside the audited scope, as the note states."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:59.462454+00:00",
+      "audit_date": "2026-07-12T10:34:49.816456+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00293-teleportation_bell_measureme",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix identities and ideal teleportation behavior close on their stated logical surface. The packet does not derive a native apparatus Hamiltonian, gate schedule, physical readout, durable record mechanism, encoded Bell-resource preparation, or quantified error model.",
+      "claim_scope": "The ideal taste-qubit Bell measurement is algebraically decomposed into equivalent ZZ/XX parity measurements and a CNOT-H computational-readout circuit; physical gate, apparatus, readout, record, resource, and imperfection mechanisms remain open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-12T10:34:49.816456+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "Pulling the final computational measurements back through CNOT(A -> R) followed by H(A) gives Z_A output -> X_A X_R and Z_R output -> Z_A Z_R, so the circuit projectors equal P_zx.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner constructs the CNOT-H unitary, pulls both output-Z observables and all four computational projectors back, and compares them with P_zx.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The equivalent logical circuit form is:",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Logical CNOT-H conjugation maps computational Z readout to the commuting Bell stabilizers.",
+            "outcome": "The ideal logical route closes to numerical precision.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "logical_cnot_h"
+          },
+          {
+            "attempt": "The runner constructs the two stabilizer eigenspace projectors and checks resolution, orthogonality, idempotence, and equality to Bell-state outer products.",
+            "disposition": "CLOSED",
+            "evidence_locator": "direct ideal taste-stabilizer parity measurements",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct commuting ZZ and XX logical parity measurements resolve the Bell basis.",
+            "outcome": "The ideal parity-measurement route closes algebraically.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "direct_parity"
+          },
+          {
+            "attempt": "The restricted packet was checked for an apparatus Hamiltonian, interaction schedule, or dynamical measurement derivation.",
+            "disposition": "OPEN",
+            "evidence_locator": "No apparatus Hamiltonian, error model, decoherence process",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A native apparatus Hamiltonian dynamically implements the logical gates or stabilizer measurements.",
+            "outcome": "No such mechanism is supplied.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "physical_apparatus"
+          },
+          {
+            "attempt": "The source and runner were checked for an explicit ancillary carrier, coupling operators, or physical parity-meter construction.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "It assumes the corresponding ideal logical parity measurements are available.",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A native ancilla or apparatus carrier realizes the two logical parities without assuming CNOT and H as ideal primitives.",
+            "outcome": "Only ideal logical parity measurements are assumed; no carrier realization is tested.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "native_carrier"
+          },
+          {
+            "attempt": "The restricted packet was checked for record creation, durability, delivery, and a physical readout map.",
+            "disposition": "OPEN",
+            "evidence_locator": "Computational taste-basis readout is ideal.",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Computational taste readout produces a durable classical Bell record through a physical record-formation process.",
+            "outcome": "Readout and record handling remain idealized and delegated.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "durable_readout"
+          },
+          {
+            "attempt": "The runner source was checked for noise channels, imperfect controls, decoherence parameters, and robustness sweeps.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "error model, decoherence process",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A quantified noisy-gate, decoherence, and measurement-error model establishes non-ideal performance.",
+            "outcome": "Only floating-point errors of an ideal finite model are evaluated; physical imperfections are untested.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "imperfect_operation"
+          },
+          {
+            "attempt": "The packet was checked for preparation dynamics or a same-run construction of the encoded entangled resource.",
+            "disposition": "OPEN",
+            "evidence_locator": "The encoded Bell resource is still assumed",
+            "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The encoded Bell pair is generated dynamically on the same native taste surface.",
+            "outcome": "The resource is explicitly assumed or delegated.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "bell_resource"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "native apparatus and logical-gate implementation",
+            "physical readout and durable-record implementation",
+            "encoded Bell-resource preparation",
+            "quantified imperfections and decoherence"
+          ],
+          "evidence_locator": "The remaining gap is physical implementation:",
+          "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "native apparatus and logical-gate implementation",
+              "left_closes_right": false,
+              "right": "physical readout and durable-record implementation",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "native apparatus and logical-gate implementation",
+              "left_closes_right": false,
+              "right": "encoded Bell-resource preparation",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "native apparatus and logical-gate implementation",
+              "left_closes_right": false,
+              "right": "quantified imperfections and decoherence",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical readout and durable-record implementation",
+              "left_closes_right": false,
+              "right": "encoded Bell-resource preparation",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical readout and durable-record implementation",
+              "left_closes_right": false,
+              "right": "quantified imperfections and decoherence",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "encoded Bell-resource preparation",
+              "left_closes_right": false,
+              "right": "quantified imperfections and decoherence",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "native apparatus and logical-gate implementation",
+            "physical readout and durable-record implementation",
+            "encoded Bell-resource preparation",
+            "quantified imperfections and decoherence"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "## Limitations",
+          "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "logical `CNOT`, logical `H`, or equivalent logical `ZZ` and `XX`",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "logical CNOT, logical H, or equivalent logical ZZ and XX stabilizer measurements are ideal primitives here",
+              "promoted_wall": "native apparatus and logical-gate implementation"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Computational taste-basis readout is ideal.",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "Computational taste-basis readout is ideal.",
+              "promoted_wall": "physical readout and durable-record implementation"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The encoded Bell resource is still assumed or supplied by another artifact.",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "The encoded Bell resource is still assumed or supplied by another artifact.",
+              "promoted_wall": "encoded Bell-resource preparation"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "No apparatus Hamiltonian, error model, decoherence process",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "No apparatus Hamiltonian, error model, decoherence process"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source limitations, status language, runner assumptions, and helper boundary checks were scanned for supplied gates, apparatus dynamics, readout, record, resource, and error premises.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "teleportation_bell_measurement_circuit_note:previous_audit:0",
+          "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+          "none_found_reason": "All N1 routes were directly inspected in the restricted packet, so no prior witness is used to close a route.",
+          "scan_scope": "No N1 route was classified RULED OUT BY PRIOR; the supplied prior audits and cross-cycle no-go ledgers were checked only for scope echoes.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The construction is logical and algebraic",
+          "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Claims about what the construction does not derive or transport were checked against the logical, apparatus, record, and signaling resolutions actually exercised.",
+          "statements": [
+            {
+              "evidence_locator": "It does not derive a native physical gate schedule",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "it does not derive a native physical gate schedule",
+              "tested_resolutions": [
+                "finite logical two-qubit matrix surface",
+                "fixed encoded taste-qubit restriction"
+              ],
+              "untested_resolutions": [
+                "native interaction schedule",
+                "apparatus-scale implementation"
+              ]
+            },
+            {
+              "evidence_locator": "No apparatus Hamiltonian, error model, decoherence process, or durable",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "No apparatus Hamiltonian, error model, decoherence process, or durable endogenous measurement-record derivation is supplied here.",
+              "tested_resolutions": [
+                "ideal projective measurement",
+                "ideal classical Bell record"
+              ],
+              "untested_resolutions": [
+                "apparatus Hamiltonian",
+                "decoherence dynamics",
+                "durable endogenous record formation"
+              ]
+            },
+            {
+              "evidence_locator": "does not enable faster-than-light signaling",
+              "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "phrase": "It does not transport matter, mass, charge, or energy and does not enable faster-than-light signaling.",
+              "tested_resolutions": [
+                "three-register state-vector model",
+                "Bob reduced state before classical-message conditioning"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": [
+            "Native schedule and apparatus-scale resolutions are untested.",
+            "Physical decoherence and record-formation resolutions are untested."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic graining isotropy supplies neither a Bell-measurement interaction, readout apparatus, record channel, resource preparation, nor an error model.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms explicitly withhold measurement basis selection, probability/update dynamics, and physical persistence mechanisms.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "A realized-state reference supplies no state preparation, measurement dynamics, record weighting, or apparatus implementation.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference supplies no dimensionless gate, apparatus, readout, or decoherence content.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton determinant-counting obligation is unrelated to taste-qubit Bell measurement implementation.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton h-unit readout obligation does not supply the teleportation measurement apparatus or record channel.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This quark determinant readout obligation has no mechanism for native Bell measurement or teleportation records.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied axiom, approved-primitive, open-obligation, convention, definition, and scope-reframe index was checked candidate by candidate.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "If native logical ZZ and XX parity measurements are available, their commuting eigenspace projectors already constitute the complete Bell measurement, so no CNOT-H implementation is required.",
+          "evidence_locator": "It assumes the corresponding ideal logical parity measurements are available.",
+          "evidence_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+          "resolution": "The argument succeeds exactly on the ideal logical surface and is verified by the runner. It does not close the physical wall because availability of the parity measurements is itself assumed and no apparatus carrier or dynamics is supplied.",
+          "resolved": true,
+          "route_id": "direct_parity"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_bell_measurement_circuit_note:previous_audit:0",
+              "evidence_locator": "teleportation_bell_measurement_circuit_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Prior audit accepted the ideal algebraic decomposition while retaining the physical implementation as open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "teleportation_bell_measurement_circuit_note:previous_audit:1",
+              "evidence_locator": "teleportation_bell_measurement_circuit_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Prior audit classified the matrix computation as genuine algebraic closure but was invalidated because the discipline packet was missing.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Charged-lepton determinant-counting obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Charged-lepton h-unit readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Quark determinant cross-sector readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Unrelated foundational and flavor-route no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite-sweep versus full-Newton-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Packet-memory and coupling-boundary repair limits.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "External atomic proof and RP-axis import restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Cross-lane flavor, Planck, and plaquette no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Coupling normalization identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Plaquette coefficient and comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Lensing observable and ray-surrogate walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Carrier antisymmetry and registry-exhaustion boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Charged-lepton selector and Yukawa walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Emergent-Lorentz scope restriction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Metric reconstruction and global-theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Replay-only and wider-basin restriction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Local Wilson versus full environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Flavor tracial-route scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Analytic-vector and audit-retag boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Gauge-environment estimator and contraction walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Time-generator and staggered-orientation walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Gravity Fermat-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Weak-field gravity scope restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Absolute-scale and Clifford-carrier walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Hypercharge normalization and species-readout ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Cross-lane scale, mass, and selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Atomic scale and coupling-transport walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Quark mass, selector, and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite checks versus uniform asymptotics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Signed detector-adjoint versus nonnegative path-sum wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Centered-surrogate versus literal-geometry wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Static-source readout and hierarchy-value boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Temporal readout and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Planning-priority versus theorem-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Update-tick versus physical-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Neutrino mass and selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Neutrino-cosmology scale and fork walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite-lattice versus universal Newton-law boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Frozen-log versus live-recompute boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Coupling-authority and register/read boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite packet overlap versus physical decoherence and memory theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite-grid versus arbitrary-degree theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Clifford-carrier selection and representation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Rank-four packet and Hodge-dual selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Plaquette mean-field and bootstrap-boundary walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Character-expansion identity-evaluation diagnostic wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Record versus selector-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Strong-CP and registrability readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite-range Hamiltonian and clock-axis selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite Fisher tangent versus physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Minimal-surface kinetic-law nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "SU(3) quotient-encoder fidelity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Teleportation documentation/source mismatch with no theorem-level no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Single-slot versus complete-family-card boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Theta mass-side determinant-readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Theta gauge-action and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Theta positive-gate walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Theta phase-insertion selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Theta defect-closure and branch-dynamics wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Determinant-power horn-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Record-orbit occupancy nonsupply wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Record-formation versus rate/readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Artifact-visibility gap without a no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Record-only scalar-readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Hard-coded finite table versus structural-law boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Finite wide-lattice packet versus continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "mechanism": "Physical-readout renaming versus derivation wall.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "native apparatus and logical-gate implementation",
+          "physical readout and durable-record implementation",
+          "encoded Bell-resource preparation",
+          "quantified imperfections and decoherence"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "d65a2db5f8cd0f38def7792a712dfd0957497fd37100c49c88fc2dff92bad922",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "teleportation_bell_measurement_circuit_note:previous_audit:0",
+                "teleportation_bell_measurement_circuit_note:previous_audit:1"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/teleportation_bell_measurement_circuit_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "teleportation_bell_measurement_circuit_note:previous_audit:0",
+                "teleportation_bell_measurement_circuit_note:previous_audit:1"
+              ]
+            },
+            "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "712636e9c41dac58431078b66eae4d5bf3335d8c6223a270f24fc1a72aca658b",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/teleportation_bell_measurement_circuit_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "7a6c92d2cd4786b1dc26344c114a3da9e672ead3e9ed3d45f9745d890ff5a908",
+              "effective_status": null,
+              "path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Limitations",
+                "Computational taste-basis readout is ideal.",
+                "It assumes the corresponding ideal logical parity measurements are available.",
+                "It does not derive a native physical gate schedule",
+                "No apparatus Hamiltonian, error model, decoherence process",
+                "No apparatus Hamiltonian, error model, decoherence process, or durable",
+                "The construction is logical and algebraic",
+                "The encoded Bell resource is still assumed",
+                "The encoded Bell resource is still assumed or supplied by another artifact.",
+                "The equivalent logical circuit form is:",
+                "The remaining gap is physical implementation:",
+                "direct ideal taste-stabilizer parity measurements",
+                "does not enable faster-than-light signaling",
+                "error model, decoherence process",
+                "logical `CNOT`, logical `H`, or equivalent logical `ZZ` and `XX`"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains OPEN and UNTESTED physical implementation routes.",
+          "N5 identifies untested native-schedule, apparatus, decoherence, and durable-record resolutions."
+        ],
+        "narrowed_claim_scope": "The ideal taste-qubit Bell measurement is algebraically decomposed into equivalent ZZ/XX parity measurements and a CNOT-H computational-readout circuit; physical gate, apparatus, readout, record, resource, and imperfection mechanisms remain open.",
+        "next_route": {
+          "reason_untested": "The packet supplies no native interaction Hamiltonian or gate schedule from which the ideal CNOT-H or ZZ/XX measurement could be physically derived.",
+          "route_id": "physical_apparatus"
+        },
+        "prior_claim_scope": "An ideal logical/taste Bell-measurement decomposition is verified algebraically, but the native physical gate/readout/apparatus implementation remains an explicit open dependency.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a native apparatus/gate/readout-and-record derivation with an explicit encoded-resource preparation and quantified imperfections, then rerun this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 13,
+        "C": 1,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The primary runner genuinely constructs the finite operators and verifies the stabilizer, Heisenberg-pullback, correction, and no-signaling identities rather than merely printing expected constants. Its boundary helper is bookkeeping and does not supply the Bell-circuit identity. However, the mandatory no-go-discipline stress test leaves several physically distinct implementation routes open or untested, so the open physical-implementation boundary cannot receive an audited-clean verdict."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py",
+  "title": "Teleportation Bell-Measurement Circuit Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

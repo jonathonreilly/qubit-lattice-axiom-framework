@@ -1,0 +1,561 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate / conditional fixed-lattice reduction",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+    "minimal_axioms",
+    "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+    "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.807,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "69bfac0850fc673fd36ad40f7ccbc6122293e87f0ffb55bcbb5a8932f287182f",
+  "note_path": "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T21:30:40.187868+00:00",
+      "archived_for_note_hash": "5eb22479d9b85c40b4f79f781bf39977b846087f8942a18cb5fad3c86d402e9a",
+      "audit_date": "2026-06-11T15:06:01.150620+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "92bfbba06eda425be11c8155dc38ff6c82a3124339af52798560ad28f18e5612",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-150330-4f1132d6d2-su3_beta6_gap_bulk_criticali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional implication is algebraically coherent once the gap-correlation-length relation and the no-criticality premise are granted. The restricted packet does not prove the no-second-order-bulk-critical-point premise, nor does it supply a retained derivation of the small-beta positive gap/transfer-matrix bridge used as background.",
+      "claim_scope": "Conditional fixed-lattice reduction: if the 4D SU(3) fundamental-Wilson axis has no correlation-length-divergent second-order bulk critical point for 0 < beta <= 6, and the small-beta lattice-units gap exists positively, then m(6) > 0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:06:01.150620+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at or before beta=6 is exactly a divergent correlation length on that Wilson axis.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained-grade theorem excluding correlation-length divergence on the 4D SU(3) fundamental-Wilson axis through beta=6, together with the retained small-beta positive-gap/transfer-matrix bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 5,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner performs bounded one-plaquette, asymptotic, toy-kernel, guardrail, and comparator-label checks, but it does not compute or prove the load-bearing no-critical-point premise. The cited fixed-lattice authority is retained-bounded for one-plaquette scope diagnostics and explicitly does not supply a controlled SU(3) beta=6 gap theorem or all-coupling confinement bridge. The minimal axioms and registered primitive summaries do not add a Wilson action, transfer matrix, coupling convention, or criticality theorem. Therefore the note is valid only as a conditional reduction, not as a closed beta=6 gap proof."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:19.308970+00:00",
+      "archived_for_note_hash": "a8ed0f010c5e4672bd67c9113fb251bd7cf8b93a4c662ba087f2c4fda8b0933e",
+      "audit_date": "2026-06-14T02:08:36.029778+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "69bd4385d05edd14e3935eb796d2341fc1322962d0e7e19f327eb10bde4c154d",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-020652-fa7fcff55b-su3_beta6_gap_bulk_criticali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional implication is coherent, but the restricted packet does not prove the no-second-order-bulk-critical-point premise. It also does not supply a retained Wilson transfer-matrix/strong-coupling positive-gap bridge that reaches beta=6.",
+      "claim_scope": "Conditional fixed-lattice SU(3) Wilson-axis reduction: if no second-order bulk critical point occurs for 0 < beta <= 6 and the standard Wilson gap/correlation-length setting is supplied, then m(6) > 0.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-14T02:08:36.029778+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at or before beta=6 is exactly a divergent correlation length on that Wilson axis.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained one-hop theorem proving no second-order bulk critical point on the 4D SU(3) fundamental-Wilson axis through beta=6, together with the standard Wilson transfer-matrix m=1/xi and small-beta positive-gap bridge if those are meant to be load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The source note correctly firewall-labels the result as an open-gate conditional reduction rather than an unconditional beta=6 gap theorem. The runner computes bounded SU(3) one-plaquette, strong-coupling diagnostic, positive-kernel toy, guardrail, and comparator-label checks, but it does not prove the no-critical-point premise or derive the Wilson transfer-matrix gap bridge from the provided authorities. The minimal axiom and primitive material grants no Wilson action, coupling convention, transfer matrix, physical scale import, or all-coupling confinement theorem. Therefore the audited claim remains conditional on an explicit missing physics bridge."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:10.043988+00:00",
+      "archived_for_note_hash": "9ddfdd399cd1c6e22b364685c52b01475b85eef1807a1f9555de5241582bc84e",
+      "audit_date": "2026-06-16T00:35:00.711014+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.459,
+        "runner_hash": "69bd4385d05edd14e3935eb796d2341fc1322962d0e7e19f327eb10bde4c154d",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-003310-c04a41f8ed-su3_beta6_gap_bulk_criticali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The inverse-correlation-length algebra is coherent as a conditional reduction. The restricted packet does not prove the no-second-order bulk critical point premise, nor an equivalent transfer-matrix/gap bridge carrying the small-beta positive gap through beta=6.",
+      "claim_scope": "Conditional fixed-lattice reduction from an assumed no-second-order bulk critical point on the 4D SU(3) fundamental-Wilson axis through beta=6 to positivity of the lattice-units 0++ gap at beta=6.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-16T00:35:00.711014+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at or before beta=6 is exactly a divergent correlation length; absence of such divergence on 0 < beta <= 6 implies m(6) > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the no-second-order bulk critical point premise on the 4D SU(3) fundamental-Wilson axis through beta=6, or supply an equivalent retained transfer-matrix/gap bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the load-bearing physics premise is the absence of a second-order bulk critical point on the 4D SU(3) fundamental-Wilson axis through beta=6, plus the standard fixed-lattice Wilson transfer-matrix/gap setting. Why this blocks: the runner checks one-plaquette normalization, strong-coupling diagnostics, a finite positive-kernel toy, asymptotic invisibility, and comparator guardrails, but it does not prove that no correlation-length divergence occurs on the physical Wilson axis. Repair target: supply a framework-native no-critical-point theorem or an equivalent transfer-matrix/gap bridge with the same scope. Claim boundary until fixed: the packet is a valid open-gate conditional reduction, not a beta=6 gap theorem."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:00.698163+00:00",
+      "archived_for_note_hash": "22da0295c27991e4173affc9fb53c9ce1188b144b72a57c5dae9aee248589981",
+      "audit_date": "2026-06-18T07:49:49.828580+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null,
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Gauge-only SU(3) Wilson one-link weight/kernel: non-negative character coefficients for all irreps and beta>=0, hence PSD convolution/Gram kernel; no fermion, mixed OS, or full interacting RP closure."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 5.959,
+        "runner_hash": "d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional implication is algebraic once the gap/correlation-length setting and no-critical-point premise are granted. The restricted packet does not prove the no-second-order bulk critical point premise or an equivalent transfer-matrix/gap propagation bridge to beta=6.",
+      "claim_scope": "Conditional fixed-lattice SU(3) Wilson reduction: assuming the standard fixed-lattice gap setting and no second-order bulk critical point for 0 < beta <= 6, the beta=6 lattice-units gap is positive.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T07:49:49.828580+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "In infinite volume the lattice-units gap satisfies m(beta)=1/xi(beta), so a zero gap at beta=6 would require a divergent correlation length on the SU(3) Wilson axis.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove the no-second-order bulk critical point theorem on the 4D SU(3) fundamental-Wilson axis through beta=6, or supply an equivalent retained transfer-matrix/gap bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 5,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the source note explicitly imports the no-second-order bulk critical point premise on the 4D SU(3) fundamental-Wilson axis through beta=6. Why this blocks: the runner verifies bounded diagnostics and guardrails, but it does not prove that physical premise or propagate a retained small-beta positive gap to beta=6. Repair target: a framework-native no-critical-point theorem, or an equivalent retained transfer-matrix/gap bridge with the same scope. Claim boundary until fixed: a conditional fixed-lattice reduction plus diagnostics only."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.519684+00:00",
+      "audit_date": "2026-06-21T12:46:28.889284+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null,
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 5.959,
+        "runner_hash": "d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction is coherent, but the restricted packet does not prove the no-second-order bulk critical point premise or an equivalent retained bridge propagating a small-beta positive gap to beta=6. The cited retained-bounded support only supplies bounded Wilson transfer-kernel/RP and diagnostic context, not the missing criticality theorem.",
+      "claim_scope": "Conditional fixed-lattice SU(3) Wilson-axis reduction: if the standard fixed-lattice Wilson transfer/gap setting and no second-order bulk critical point for 0 < beta <= 6 are supplied, then the lattice-units 0++ gap at beta=6 is positive; runner checks only bounded diagnostics and guardrails.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-21T12:46:28.889284+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at beta=6 would require a divergent correlation length, which is excluded only if the no-second-order-bulk-critical-point premise is supplied.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem ruling out second-order bulk criticality on the relevant 4D SU(3) Wilson axis through beta=6, or an equivalent retained gap-continuation bridge with that scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 7,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the decisive no-second-order-bulk-critical-point premise on the 4D SU(3) fundamental-Wilson axis through beta=6 is assumed, not derived. Why this blocks: without that theorem, m(6)>0 does not follow from the provided dependencies, because a correlation-length divergence on the path is exactly the remaining obstruction. Repair target: prove a framework-native no-criticality theorem on 0 < beta <= 6 or an equivalent retained transfer-matrix/gap bridge from the strong-coupling positive-gap regime to beta=6. Claim boundary until fixed: the note remains a conditional fixed-lattice reduction plus supporting one-plaquette, strong-coupling, positive-kernel, and comparator guardrail diagnostics."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.507019+00:00",
+      "audit_date": "2026-07-02T04:25:31.933119+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null,
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 5.959,
+        "runner_hash": "d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8",
+        "transitive_descendants": 21
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T042531Z-21a095b5-su3_beta6_gap_bulk_criti",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional m=1/xi reduction is coherent, but the packet does not prove or cite a retained theorem ruling out second-order bulk criticality on the SU(3) Wilson axis up to beta=6. The cited fixed-lattice and transfer-kernel/RP notes supply bounded support, not the missing no-critical-point bridge.",
+      "claim_scope": "Conditional fixed-lattice SU(3) Wilson-axis reduction: granted the no-second-order-bulk-criticality premise and standard fixed-lattice gap setting, beta=6 has a positive lattice-units 0++ gap; the premise itself remains open.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-02T04:25:31.933119+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "If no second-order bulk critical point occurs on the 4D SU(3) fundamental-Wilson axis for 0 < beta <= 6, then a zero lattice-units gap at beta=6 would require a divergent correlation length, so m(6)>0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained framework-native theorem ruling out a second-order bulk critical point on the 4D SU(3) fundamental-Wilson axis for 0 < beta <= 6, or an equivalent transfer-matrix/gap bridge with the same scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The source note accurately fences the result as an open-gate conditional reduction and does not claim an unconditional beta=6 gap. The runner performs bounded one-plaquette, toy-kernel, asymptotic, comparator, and guardrail checks, but it does not establish the load-bearing no-second-order-bulk-critical-point premise. Since that explicit physics premise remains outside the restricted packet, the audit cannot close the chain as a retained theorem."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:56.398334+00:00",
+      "audit_date": "2026-07-10T02:10:34.993359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite fixed-lattice one-plaquette SU(2) and compact U(1) Wilson diagnostics at the tested beta values, plus the local sigma and leading-loop algebra, with no continuum or physical SU(3) gap claim.",
+          "minimal_axioms": null,
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-su3_beta6_gap_bulk_criti-076",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic implication from finite correlation length to positive gap is valid, but the restricted packet does not prove the no-second-order-bulk-critical-point premise or supply a retained controlled small-beta-gap-to-beta=6 bridge.",
+      "claim_scope": "A conditional fixed-lattice reduction of the SU(3) Wilson beta=6 gap question to an unproved no-bulk-criticality premise, with bounded one-plaquette and toy-kernel diagnostics.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T02:10:34.993359+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "With m(beta)=1/xi(beta), a zero gap at beta=6 would require a divergent correlation length, so the no-second-order-critical-point premise together with a positive small-beta gap and no intervening divergence implies m(6)>0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem ruling out correlation-length divergence on the 4D SU(3) fundamental-Wilson axis through beta=6, or an equivalent retained transfer-matrix gap bridge extending a controlled small-beta positive gap to beta=6.",
+      "open_dependency_paths": [
+        "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+        "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The source accurately presents an open-gate conditional reduction rather than an unconditional beta=6 gap theorem. Its decisive no-criticality premise is explicitly unproved, while the supplied fixed-lattice authority explicitly disclaims a controlled strong-coupling gap theorem. The runner verifies internal diagnostics and one hard-coded lattice comparator but does not compute either missing physical theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.439828+00:00",
+      "audit_date": "2026-07-10T15:40:19.799354+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "Finite positivity of the explicitly defined SU(2) and compact U(1) one-plaquette integrals at beta=6, together with sampled factor inequalities and the resulting toy loop identity; no framework-native area-law, mass-gap, or continuum theorem was audited.",
+          "minimal_axioms": null,
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+          "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
+          "minimal_axioms",
+          "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00003-su3_beta6_gap_bulk_criticali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not prove the no-second-order-bulk-critical-point premise or supply a retained small-beta-gap-to-beta=6 propagation theorem. The transfer-kernel authorities establish bounded positivity inputs, not the required infinite-volume spectral-gap continuation.",
+      "claim_scope": "The conditional fixed-lattice implication that the standard 4D SU(3) fundamental-Wilson system has m_0++(6)>0 if a small-beta positive gap exists and no correlation-length divergence occurs through beta=6.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-10T15:40:19.799354+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Since m(beta)=1/xi(beta), a zero gap at beta=6 would require a divergent correlation length, so the assumed absence of a second-order bulk critical point, together with a small-beta positive gap and no intervening divergence, implies m(6)>0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained framework-native theorem excluding second-order bulk criticality on the 4D SU(3) fundamental-Wilson axis through beta=6, together with retained small-beta positive-gap and infinite-volume spectral-continuation support, or provide an equivalent direct transfer-matrix gap bridge.",
+      "open_dependency_paths": [
+        "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 1,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing implication is a valid algebraic reduction only after importing the explicitly open no-criticality and gap-continuation premises. The runner's ten passing checks are ancillary one-plaquette, toy-kernel, asymptotic, scope, and comparator diagnostics; none tests the missing physical Wilson-axis theorem. In particular, the finite positive-kernel illustration is not the infinite-volume SU(3) Wilson transfer spectrum, and the beta=6 string-tension comparison is class D evidence rather than closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py",
+  "title": "SU(3) Beta=6 Lattice-Units Gap Conditional Reduction Diagnostic",
+  "transitive_descendants": 6,
+  "verdict_rationale": null
+}

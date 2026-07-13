@@ -44,6 +44,8 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -178,7 +180,7 @@ def main() -> int:
         {"claim_id": cid, "from_family": fam, "to_family": NEW_FAMILY}
         for cid, _status, fam in targets
     ]
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
 
     print(f"Wrote {LEDGER_PATH.relative_to(REPO_ROOT)}")
     print(f"  rows relabeled: {total_rows}")

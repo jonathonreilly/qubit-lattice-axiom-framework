@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note",
+    "native_gauge_closure_note",
+    "staggered_gbare_trace_surface_bridge_note_2026-06-06"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "df0909317881c499f1e7c911727e607e92baedb5b69ca55d4fb5b6ac07879377",
+  "note_path": "docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:28.873910+00:00",
+      "audit_date": "2026-07-07T19:52:01.104140+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "staggered_gbare_trace_surface_bridge_note_2026-06-06": null
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "staggered_gbare_trace_surface_bridge_note_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained",
+          "staggered_gbare_trace_surface_bridge_note_2026-06-06": "unaudited"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note",
+          "staggered_gbare_trace_surface_bridge_note_2026-06-06"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "4c19de3862da24279c14649396cb0f9236572548c7b91e61d0fdfecbfc07b08c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-hygiene-cycle-break-20260707-193821-5b3b16-gbare_root_su2_scale_transport_b-08",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed matrix-unit definitions directly give the Pauli/2 active subblocks, su(2) brackets, trace normalization, spectrum, and period. The graph-first V_3 carrier is supplied by retained upstream authorities; the co-cycle trace-surface bridge is not needed for this finite root-SU2 scale claim.",
+      "claim_scope": "Finite-dimensional algebraic verification that each root SU(2) subgroup of the graph-first V_3 carrier has Pauli/2 normalization, trace Gram Tr_V3(J_a J_b)=1/2 delta_ab, and unchanged scale under positive bracket-preserving dilation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T19:52:01.104140+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On each active coordinate two-plane in V_3, the root generators J_x^(ij), J_y^(ij), J_z^(ij) are exactly Pauli/2 generators, so their commutator, trace Gram, spectrum, and spin period match the per-site Pauli/2 normalization.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 91,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 91
+      },
+      "verdict_rationale": "The load-bearing step is a genuine finite matrix-algebra identity over the V_3 carrier, not a definition substitution, external comparator, or numerical fit. The runner source constructs the Pauli/2 and root-SU2 matrices and checks the relevant commutators, traces, spectra, periods, conjugacy, and trace-surface controls rather than merely printing constants. The co-cycle citation docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md is treated as non-load-bearing/informational under the cycle-break instruction; source-graph repair is still needed to remove or rewrite that markdown link before effective_status can leave retained_pending_chain."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/gbare_root_su2_scale_transport_bridge_2026_06_17.py",
+  "title": "g_bare Root-SU2 Scale Transport Bridge",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

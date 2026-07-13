@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "rd_bridge_anatomy_agreement_conditioned_double_registration_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+    "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2fdc43ac98eb59d7b5510918ace2b73cdf6e04a9d1bd25425037ffccf4d76e21",
+  "note_path": "docs/RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:04.513852+00:00",
+      "audit_date": "2026-06-14T04:02:54.629779+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "402fddd6a9bbe054b5813bd0de4696d21e9859f149c7df2e775ad62e7ee236ce",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-040120-2797401309-rd_bridge_anatomy_agreement_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The projector algebra gives D(D(M))=D(M), and the independent product bookkeeping conditioned on agreement gives p_i^2/Z, so the ratio map is x'=(p_d/p_s)^2 and hence r'=2r^2. The Record axiom is used only for its non-supply boundary, so the statistics atom is named but not consumed.",
+      "claim_scope": "On the supplied singlet/doublet two-sector surface with p_d/p_s=2r, sector re-pinching is idempotent and agreement-conditioned independent double registration sends x to x^2, equivalently r to 2r^2, while leaving independence of repeated registration as an undischarged statistics atom.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T04:02:54.629779+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "If a second registration of the same partition composes independently on the bookkeeping and the retained cases are conditioned on agreement, then p_i' = p_i^2/(p_s^2 + p_d^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that future uses preserve this bounded scope and do not treat the named independence atom as discharged.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The load-bearing math is a direct algebraic identity over the supplied projectors and two-sector bookkeeping; independent recomputation confirms the factors, normalization, ratio conversion, inverse map, and fixed points. The cited map authorities are retained_bounded, and the Minimal Axioms authority is explicitly flagged as an accepted axiom premise; no non-retained dependency is needed for the bounded claim. The runner source performs genuine symbolic checks plus citation/firewall text checks rather than merely printing constants. The physical R-D adoption, probability rule, occupancy selection, and statistics atom discharge are explicitly outside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.239332+00:00",
+      "audit_date": "2026-07-10T04:27:37.071342+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "Audited only the bounded theorem for the supplied two-sector records/L\u00fcders map: derivation of r -> 2r^2, its finite fixed-point stability, and the S2 versus S3 entropy comparator maxima.",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "Audited only the bounded algebraic claim that r=1/2 is stable for the explicitly supplied two-sector map g(r)=sqrt(r/2), with HS 2-sector equipartition and endpoint checks as stated; no physical-arrow selection was audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "bounded_theorem",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02": "retained_bounded",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+          "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "402fddd6a9bbe054b5813bd0de4696d21e9859f149c7df2e775ad62e7ee236ce",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00089-rd_bridge_anatomy_agreement_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes under the stated hypotheses, but the chain from retained inputs to a physical re-registration law does not. No cited authority derives independent repeated-registration statistics or the operational agreement-retention rule.",
+      "claim_scope": "The exact idempotence of two-sector pinching and the conditional algebra mapping independent, agreement-filtered registrations to x\u2192x\u00b2, r\u21922r\u00b2, its inverse, and its fixed points; no physical registration-statistics rule was audited as derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:27:37.071342+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_r_half_is_the_records_flow_separatrix_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Assuming independent repeated registrations and conditioning retained cases on agreement gives p_i' = p_i^2/(p_s^2+p_d^2), hence x maps to x^2 and r maps to 2r^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive independent repeated-registration composition and agreement retention from retained framework inputs, wire that theorem as a direct dependency, and rerun against the current minimal-axiom authority.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "Issue: The retained map requires an explicit independent-composition premise and agreement selection that are not supplied by the cited authorities. Why this blocks: The runner defines the squared-weight update and verifies its algebraic consequences, but does not derive the joint statistics or selection operation from the framework. Repair target: Supply a retained statistics-layer bridge theorem deriving those operations and cite it directly. Claim boundary until fixed: Pinching idempotence, the conditional squared map, coordinate conversions, fixed points, and correlated negative control remain valid bounded algebra."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_rd_bridge_anatomy_agreement_conditioning_2026_06_12.py",
+  "title": "R-D Bridge Anatomy: Pinching Is Idempotent, the Supplied Flow Is Agreement-Conditioned Double Registration, and One Statistics Atom Remains (Bounded Note)",
+  "transitive_descendants": 9,
+  "verdict_rationale": null
+}

@@ -1,0 +1,170 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "mesoscopic_surrogate_annular_tapered_sweep_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "mesoscopic_surrogate_localization_frontier_note",
+    "mesoscopic_surrogate_threshold_2d_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/mesoscopic_surrogate_localization_family_sweep.py",
+    "scripts/quasi_persistent_relaunch_probe.py",
+    "scripts/two_body_momentum_harness.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.454,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "26dbc2f9de127874cab584970aa55de41cdb76083a94a330f627069b320d104f",
+  "note_path": "docs/MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369099+00:00",
+      "archived_for_note_hash": "11d72ff81f42d5e841ef8a56333908d3b43d10dad666de8f559ac57ec4d08a05",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T12:12:50.874231+00:00",
+      "archived_for_note_hash": "b0166a8fa81061129ec8da9f8490afdf855dae825ac8c9f39527c3a94d38b0e7",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded negative conclusion is reproduced, but the audit row is a parser false positive: the source Status declares a bounded localization sweep on a candidate retained-grade surrogate family, not a candidate retained-grade claim. The live runner also reports a different topN tie representative than the frozen note while preserving the same frontier conclusion.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The bounded sweep shows annular, hollow-square, and tapered localized source families do not beat the admissible topN source-control frontier under the stated support/capture floors.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: The source note is explicitly a bounded localization sweep, but the queue records it as candidate retained-grade because the Status line mentions the candidate retained-grade 3D mesoscopic surrogate family being tested. The current runner also returns topN 121 as the best overall tie representative, while the note names topN 225; this does not change the frontier result but makes the frozen row stale at the exact-row level. Why this blocks: a retained audit cannot ratify a bounded single-family control sweep, and the exact frozen best-row statement is not current with the runner. Repair target: rewrite the Status line so the parser records bounded/proposed_bounded status and update the note/log or tie-break rule for the topN best-row representative; a retained theorem would need a derivation beyond this finite sweep. Claim boundary until fixed: it is safe to claim the live artifact reproduces that no non-degenerate annular, hollow-square, or tapered family beats the admissible topN frontier under the floors; it is not safe to present this as a retained localization theorem or to rely on the stale topN 225 best-row wording without qualification."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.904747+00:00",
+      "audit_date": "2026-05-23T00:11:53.811555+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "mesoscopic_surrogate_localization_frontier_note": "Bounded scripted localization/strength tradeoff map for the specified 3D ordered-lattice surrogate family and sampled topN values.",
+          "mesoscopic_surrogate_threshold_2d_note": "Finite 2D ordered-lattice support sweep over topN = 1,2,3,4,5,6,7,8,9,10,12,16,20,25,32,40,49,64,81 under the stated two-stage stability criteria."
+        },
+        "dep_claim_type": {
+          "mesoscopic_surrogate_localization_frontier_note": "bounded_theorem",
+          "mesoscopic_surrogate_threshold_2d_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "mesoscopic_surrogate_localization_frontier_note": "retained_bounded",
+          "mesoscopic_surrogate_threshold_2d_note": "retained_bounded"
+        },
+        "deps": [
+          "mesoscopic_surrogate_localization_frontier_note",
+          "mesoscopic_surrogate_threshold_2d_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f2f034d1faea6482338d30afaf4e5327476186d4994c6dccc9e9a49b6f828b63",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001132Z-5505cc0e-mesoscopic_surrogate_ann-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and included helpers instantiate the lattice, source, surrogate field, relaunch, scoring, support, and capture tests rather than merely printing constants. The current runner supports the bounded negative conclusion, though it reports topN 121 as the best overall tie-resolved row rather than the note's topN 225 row.",
+      "claim_scope": "Finite retained 3D ordered-lattice sweep comparing topN, annular shells, hollow square shells, and tapered ellipsoidal shells at support >= 9 and capture >= 0.25 in both stages.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T00:11:53.811555+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "No non-degenerate annular / hollow / tapered family beat topN on the admissible score/capture frontier under the explicit support and capture floors.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the stale best-row prose in docs/MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md against the current runner cache; the main bounded negative result still closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing claim is a bounded finite computational result over an explicitly enumerated source-family sweep. The supplied runner source performs the relevant framework computation using the retained 3D lattice helpers, and the cited authorities are retained_bounded rather than open or support-only. There is a numerical presentation mismatch in the note's named best topN row: the runner output says BEST OVERALL topN 121, while the note lists topN 225; this should be corrected, but it does not overturn the audited negative conclusion that no localized admissible family beats topN."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/mesoscopic_surrogate_annular_tapered_sweep.py",
+  "title": "Mesoscopic Surrogate Annular / Tapered Sweep Note",
+  "transitive_descendants": 30,
+  "verdict_rationale": null
+}

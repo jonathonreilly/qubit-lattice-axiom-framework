@@ -1,0 +1,527 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_closure_note",
+    "graph_first_su3_integration_note",
+    "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+    "three_generation_observable_count_corollary_note_2026-05-03",
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+    "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3fa43767b093e7283e914491ec6d9a182fbdebe90d5b1461723e0ce2d4f4c36a",
+  "note_path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:30:25.860867+00:00",
+      "audit_date": "2026-05-11T18:08:38.564513+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+          "native_gauge_closure_note": "Bounded native gauge-closure note: exact cubic Cl(3)/SU(2), retained graph-first SU(3) structural closure, and a selected-axis traceless abelian eigenvalue pattern only.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "a14f105bbf105df07ba3f6a4263f229ca64ac509be549784b7b545fc1463225d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note is narrowed to the exact algebraic implication, all ledger dependencies are retained or retained_bounded, and the live companion runner reproduced all symbolic and Rational arithmetic checks with PASS=16, FAIL=0.",
+      "claim_scope": "Exact symbolic substitution theorem for the SU(2)_L one-loop beta coefficient only: given the cited retained/retained_bounded inputs for native SU(2)_L, structural SU(3)_c color count N_color=3, LH Weyl-doublet count N_W=(N_color+1)N_gen, N_gen=3, one complex Higgs doublet with two complex components, plus the named external Peskin-Schroeder SU(N) one-loop beta formula, the closed form b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6=(22N_pair-2(N_color+1)N_gen-1)/6 and the framework value b_2=19/6 follow by exact Rational algebra. This does not derive the upstream gauge/count/Higgs inputs, does not derive the textbook beta formula, and does not claim alpha_2 running, thresholds, PDG comparison, or any broader electroweak closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T18:08:38.564513+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "Substitution of the retained/count inputs and named external one-loop beta formula into the SU(2)_L coefficient, followed by exact symbolic simplification and framework-count evaluation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if any cited upstream input is narrowed below the counts used here, if the source expands into running/threshold/phenomenology claims, or if the external beta-formula admission is replaced by a framework-internal derivation claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "total": 16
+      },
+      "verdict_rationale": "The note's load-bearing result is a pure exact-arithmetic consequence of its named inputs. The source note honestly marks the upstream gauge/count/Higgs facts and the Peskin-Schroeder formula as inputs rather than derived content, and the runner verifies the parametric form, factored form, sector decomposition, framework value 19/6, and stated corollaries without numerical fitting or phenomenological comparison."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.415352+00:00",
+      "audit_date": "2026-05-22T17:12:40.849177+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "bounded_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a14f105bbf105df07ba3f6a4263f229ca64ac509be549784b7b545fc1463225d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T171042Z-2b47043e-su2_weak_beta_coefficien-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The main P1-P3 substitution closes, as do C1, C3, and C4. C2 does not follow as written: b_2/(-1/6) equals -22*N_pair + 2*(N_color + 1)*N_gen + 1, not N_color*(N_color + 1) - 11*N_pair.",
+      "claim_scope": "Algebraic substitution of the five named inputs X0-X4 into the SU(2)_L one-loop beta coefficient, including P1-P3 and the listed corollaries C1-C4.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T17:12:40.849177+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "Apply the Peskin-Schroeder formula with C_2(adj SU(2)) = N_pair, T(F) = 1/2, N_W = (N_color + 1) * N_gen, and n_S^complex_components = 2 to obtain b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6, then substitute (2,3,3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Correct or remove C2 and add an exact runner check for the claimed ratio; P1-P3 can then be re-audited.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner performs real exact Sympy/Rational checks for P1-P3 plus C1, C3, and C4. However, the source note explicitly claims C2 and says validation covers C1-C4, while the runner source never checks C2. Independently, the stated ratio b_2 : (-1/6) is not N_color*(N_color + 1) - 11*N_pair under P1; at framework counts it is -19, not -10. Therefore the full scoped claim does not close on its own terms."
+    },
+    {
+      "archived_at": "2026-05-24T16:04:16.405051+00:00",
+      "archived_for_note_hash": "5da36d7e77bfaddf8a3f65f33483decdf3a4e886b10bc6e3b21414e89ee73001",
+      "audit_date": "2026-05-23T15:34:06.885498+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a14f105bbf105df07ba3f6a4263f229ca64ac509be549784b7b545fc1463225d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T153237Z-8266ec84-su2_weak_beta_coefficien-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The main P1/P2/P3 substitution closes, but C2 does not follow as stated. From P1, b_2/(-1/6)=-22*N_pair+2*(N_color+1)*N_gen+1, which at N_gen=N_color is 2*N_color*(N_color+1)-22*N_pair+1, not N_color*(N_color+1)-11*N_pair.",
+      "claim_scope": "Audited the bounded algebraic substitution from X0-X4 to the claimed b_2 closed form, framework value 19/6, per-sector decomposition, and advertised C1-C4 corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:34:06.885498+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substitute N_W=(N_color+1)*N_gen, n_S^complex_components=2, C_2(adj SU(2))=N_pair, and T(F)=1/2 into the admitted Peskin-Schroeder formula to obtain b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Repair or remove C2, or restate it with a precise normalization that algebraically follows from P1; also update the runner so C2 is actually checked.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner source genuinely performs exact symbolic and Rational arithmetic for P1, P1', P2, P3, C1, C3, C4, and counterfactual checks. However, despite the source note claiming validation of C1-C4, the runner does not check C2. Direct algebra from the claimed P1 contradicts C2 as written: at framework counts b_2:(-1/6) is -19, while N_color*(N_color+1)-11*N_pair is -10. Because C2 is included among the note's claimed derivable corollaries, the full bounded claim does not close on its own terms."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.484118+00:00",
+      "audit_date": "2026-05-24T17:46:13.427422+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "e0856ed4a934ec7f2c9c5bbc8eaa53865bcec2909601a9c00a353088d9f535cd",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T174447Z-3f166368-su2_weak_beta_coefficien-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the scoped inputs, the closed form and framework value follow by direct rational arithmetic. The cited one-hop authorities in the packet are retained-grade or retained_bounded, and the runner confirms the algebra symbolically.",
+      "claim_scope": "The audited scope is the algebraic substitution from the five stated inputs X0-X4 to the SU(2)_L one-loop coefficient closed form, its 19/6 framework value, and the listed sector decomposition and corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:46:13.427422+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained->unaudited",
+      "load_bearing_step": "Substitute N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the stated one-loop beta formula to obtain b_2 = (11/3) N_pair - (1/3)(N_color + 1)N_gen - 1/6.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should only re-check that the scoped X4 beta-formula convention is the intended admitted input; the algebraic closure itself is direct.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic identity check over the stated inputs, not a renaming, numerical fit, or comparator match. The runner source actually constructs the symbolic expression from the stated beta formula and performs exact sympy simplifications plus rational framework substitution. No missing helper source or hard-coded-only pass path is present."
+    },
+    {
+      "archived_at": "2026-06-19T20:43:28.788051+00:00",
+      "audit_date": "2026-06-18T08:54:59.707769+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Audited only the bounded algebraic implication from the assumed LH trace equation and the explicit b = -1 and Q = T_3 + Y/2 conventions to the eigenvalue ratio, charge formulas, and reduced-denominator parity rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "e0856ed4a934ec7f2c9c5bbc8eaa53865bcec2909601a9c00a353088d9f535cd",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The stated closed form follows by direct coefficient substitution and common-denominator reduction. At (N_pair, N_color, N_gen) = (2, 3, 3), the exact arithmetic gives 22/3 - 4 - 1/6 = 19/6.",
+      "claim_scope": "Algebraic substitution of retained/bounded count inputs and the named Peskin-Schroeder beta-formula admission to derive the SU(2)_L b_2 closed form, its 19/6 framework value, sector decomposition, and listed algebraic corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T08:54:59.707769+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10:retained_bounded->audit_in_progress",
+      "load_bearing_step": "Substituting N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the admitted SU(N) one-loop beta formula gives b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that X4 remains intentionally in scope as a named external admission; the algebra itself closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Within the declared bounded scope, the source does not claim to derive SU(2), color, generation count, Higgs content, or the beta formula; it claims only the algebraic implication from those named inputs. The provided one-hop authorities are retained-grade in the packet, and the runner source performs exact symbolic simplification plus Rational arithmetic rather than merely printing constants. No PDG comparator, fitted selector, or tuned scale enters the load-bearing step."
+    },
+    {
+      "archived_at": "2026-07-07T15:33:31.283613+00:00",
+      "archived_for_note_hash": "bcba9841d3e915a14ae609db00b1cd1f0eead299ae93c32cd88b33350c2b4eb3",
+      "audit_date": "2026-06-21T14:08:38.876603+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Algebraic audit of the forced projective eigenvalue ratio from the trace equation, the b = -1 convention-fixed charge formulas, and the odd/even reduced-denominator rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "e0856ed4a934ec7f2c9c5bbc8eaa53865bcec2909601a9c00a353088d9f535cd",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the five named inputs, the displayed formulae follow by exact substitution and rational arithmetic. The runner source computes the symbolic expression and checks the claimed forms rather than merely printing constants.",
+      "claim_scope": "The bounded algebraic implication from the named inputs (X0)-(X4) to the SU(2)_L one-loop coefficient closed form, framework value 19/6, per-sector decomposition, and listed corollaries.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T14:08:38.876603+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substitute (X1) N_W = (N_color + 1) N_gen, (X3) n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the Peskin-Schroeder beta formula to get b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6, hence 19/6 at (2,3,3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained or explicitly approved authority for the Peskin-Schroeder SU(N) one-loop beta-coefficient formula X4, then re-audit for clean bounded closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The algebraic core is correct: the source and runner close P1, P1', P2, P3, and C1-C4 under the stated inputs, with no PDG comparator, tuned scale, or fitted selector. The one-hop ledger authorities provided in the packet are retained-grade statuses. However, X4 is a load-bearing external Peskin-Schroeder beta-function formula admission and is not closed or registered as an approved premise in the restricted packet, so the row is clean only as a bounded implication from that admission, not as a fully closed framework derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.439767+00:00",
+      "audit_date": "2026-07-10T02:42:39.423643+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "Algebraic audit of the forced projective eigenvalue ratio from the trace equation, the b = -1 convention-fixed charge formulas, and the odd/even reduced-denominator rule for positive integer n_color.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count.",
+          "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": "Standalone engineering-dimension identity for the canonical Yang-Mills action: [g_YM] = (4 - d) / 2 and [g_YM] = 0 iff d = 4, excluding Wick/P2 closure, physical-dimension forcing, RG, beta-function, asymptotic-freedom, and full renormalizability claims."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem",
+          "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained",
+          "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": "retained"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "graph_first_su3_integration_note",
+          "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03",
+          "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "f17fb2d401a3ec7f50f2734d074484cf3e6269d0a740926042e80da3ed1c0dbf",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-su2_weak_beta_coefficien-094",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact substitution closes once X4\u2032 is assumed, but the restricted packet neither derives nor supplies a retained-grade authority for the load-bearing spin-sector coefficients 11/3, -2/3, and -1/6.",
+      "claim_scope": "The conditional algebraic closed form for the SU(2)_L one-loop coefficient, its value 19/6 at counts (2,3,3), the sector decomposition, and corollaries C1\u2013C4, given the named count inputs and stated X4\u2032 coefficient kernel.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:42:39.423643+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained_bounded->unaudited",
+      "load_bearing_step": "Substituting N_W=(N_color+1)N_gen, T(F)=1/2, C_2(adj)=N_pair, and n_S=2 into the stated X4\u2032 kernel yields b_2=(11/3)N_pair-(1/3)(N_color+1)N_gen-1/6.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a ledger-visible retained-grade derivation or explicitly accepted-premise authority for the X4\u2032 d=4 spin-sector coefficients, while clarifying whether the scalar term is counted by complex multiplets or individual components, then re-run the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 20,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 20
+      },
+      "verdict_rationale": "The runner genuinely verifies the SU(2) trace factors and all downstream rational algebra, with 20 successful class-A checks. However, it explicitly hard-codes the X4\u2032 spin-sector coefficient table and labels it a boundary rather than deriving it. Restating that QFT kernel inside the note does not close the imported premise under the audit rubric, so the result remains conditional despite the correct arithmetic."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
+  "title": "SU(2)_L 1-Loop \u03b2-Function Coefficient Narrow Theorem",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

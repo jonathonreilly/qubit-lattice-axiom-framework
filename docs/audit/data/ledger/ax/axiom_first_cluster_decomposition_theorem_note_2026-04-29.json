@@ -1,0 +1,1148 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+    "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+    "strong_cp_theta_zero_note",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 19,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "33b5458cd94ceec39e4dc6cea631870ee99bcc6e624aefddf97f113d0b3dc365",
+  "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:08:20.768488+00:00",
+      "audit_date": "2026-04-30T15:13:06.125128+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Yes. The note gives a self-contained structural proof on the stated A_min objects, and the registered runner completed successfully on the load-bearing algebraic checks.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3: the stated finite-lattice/Cl(3) theorem is proved on the listed A_min objects and checked by the registered runner.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing theorem is structural rather than a tuned numerical match: support \u2014 branch-local theorem note on A_min; runner passing; audit-pending.. The registered runner completed successfully and its classified PASS surface is {'A': 0, 'B': 0, 'C': 3, 'D': 0, 'total_pass': 3}. Residual risk is limited to the support/branch-local scope stated by the note; this does not promote the row beyond its author-declared tier."
+    },
+    {
+      "archived_at": "2026-05-03T11:33:25.056072+00:00",
+      "audit_date": "2026-05-02T22:25:36.012551+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 5.322,
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The LR commutator envelope follows for bounded finite-range Hamiltonians, but the advertised cluster-decomposition theorem imports a positive gap/confinement premise and prior-cycle RP/spin-statistics authorities that are unaudited or conditional. The runner checks a 1D free-fermion representative, not the canonical SU(3) gapped cluster bridge.",
+      "claim_scope": "Conditional axiom-first Lieb-Robinson and cluster-decomposition theorem for finite-range Cl(3) lattice Hamiltonians on Z^3; the LR envelope is structurally supported, but exponential clustering and canonical-surface corollaries remain conditional on retained gap/confinement and prior-cycle authorities.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:25:36.012551+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Standard Hastings-Koma manipulation yields the connected-correlator exponential clustering bound with xi_beta = max(R_int, 1/(beta*m_gap)), with the A_min gauge sector treated as gapped by SU(3) confinement.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit if the row is split into LR-only versus cluster-decomposition claims, or after the gap/confinement and prior-cycle authorities are retained-grade.",
+      "open_dependency_paths": [
+        "docs/ASSUMPTION_DERIVATION_LEDGER.md",
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the finite-range LR bound is not enough to retain the note's full exponential cluster-decomposition claim; Step 4 requires a gap/confinement premise and the note cites prior-cycle RP/spin-statistics authorities that are not retained-grade. Why this blocks: downstream mass-gap, area-law, and physical-Hilbert-space uses would cite clustering as if it follows from A_min alone, while the runner only demonstrates a small 1D free-fermion example and a conservative LR envelope. Repair target: separate a bounded LR-only theorem from the cluster-decomposition theorem, retain the gap/confinement premise and prior-cycle authorities, and add a runner/proof that checks the actual canonical-surface clustering bridge. Claim boundary until fixed: finite bounded Hamiltonians on the lattice have LR-style finite propagation envelopes, but exponential clustering for the canonical surface remains conditional."
+    },
+    {
+      "archived_at": "2026-05-09T19:03:50.302293+00:00",
+      "archived_for_note_hash": "961bfd0db309b62aa1d176e83a989d0e0111c376fffbb94b5c8bbb1d3af11f14",
+      "audit_date": "2026-05-03T12:00:21.134614+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.68,
+        "transitive_descendants": 289
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-ohm-019dedb4-fb2e-7ce0-9d1c-f4c83666905e",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The LR portion can plausibly close from finite-dimensional local algebras, finite interaction range, bounded local norm, and cubic coordination. The full claim does not close because L2 is not an immediate consequence of those inputs: exponential clustering requires an independently established spectral gap, high-temperature/finite-temperature clustering hypotheses, uniqueness/mixing assumptions, or a cited theorem with all hypotheses verified. The note instead imports m_gap>0 through statements about the A_min gauge sector, SU(3) confinement, and generic gapped behavior, none of which are in the retained inputs or proved by the runner.",
+      "claim_scope": "Finite-range Cl(3) site-algebra Hamiltonians on Z^3: L1 Lieb-Robinson envelope, L3 lattice light cone, L4 finite local norm bound, plus L2 exponential connected-correlator clustering for the canonical thermal state/gapped canonical surface.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T12:00:21.134614+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Step 4: deriving L2 exponential clustering for the canonical thermal state from the LR bound via imaginary-time/Hastings-Koma and asserting m_gap>0 from the A_min gauge/SU(3) sector.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: either restrict the audited theorem to L1/L3/L4 LR consequences, or add a separate retained theorem proving the required spectral gap/thermal clustering hypotheses for the canonical Hamiltonian and then verify the exact Hastings-Koma assumptions and constants.",
+      "open_dependency_paths": [
+        "independent proof of m_gap>0 or valid thermal clustering hypotheses for the canonical Cl(3) Z^3 Hamiltonian/state",
+        "verification that Hastings-Koma assumptions apply to the stated finite-range interaction and state",
+        "replacement of 1D free-fermion proxy runner with a theorem-level check or exact model-specific verification"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 4,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: L2 exponential clustering is promoted from LR plus an asserted mass gap/confinement bridge. Why this blocks: LR bounds alone control commutators outside a light cone; they do not prove static connected-correlator clustering for arbitrary canonical thermal states, and the packet gives no retained derivation of m_gap>0 for the stated Cl(3) tensor Z^3 Hamiltonian class. The runner is a 1D free-fermion representative with weak clustering pass condition and cannot verify the 3D Cl(3) theorem or the imported gauge-sector gap. Repair target: either restrict the audited theorem to L1/L3/L4 LR consequences, or add a separate retained theorem proving the required spectral gap/thermal clustering hypotheses for the canonical Hamiltonian and then verify the exact Hastings-Koma assumptions and constants. Claim boundary until fixed: clean only as a conditional LR-plus-clustering statement: if the specified Hamiltonian/state satisfies an independently proved positive gap or valid finite-temperature clustering theorem hypotheses, then exponential clustering may be invoked; the unconditional cluster-decomposition corollary is not audited clean."
+    },
+    {
+      "archived_at": "2026-05-18T11:37:01.062550+00:00",
+      "archived_for_note_hash": "33745c83757f4b206f8f57569012058e421ba4211d2f4d205e8077ec136c3c5d",
+      "audit_date": "2026-05-10T12:18:49.394028+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 16.295,
+        "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
+        "transitive_descendants": 627
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e11d2-ef45-7170-8c56-dd57cda7aaf3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The LR/light-cone/norm portions are structurally supported, but the L2 spatial thermal connected-correlator bound does not close. The missing step is a retained derivation of \u0394_T > 0 plus a retained theorem converting the gap/LR or transfer-matrix input into spatial cluster decomposition for the canonical Cl(3) \u2297 Z^3 Hamiltonian.",
+      "claim_scope": "Audited the note's claimed L1 Lieb-Robinson bound, L3 lattice light cone, L4 finite Cl(3) norm support, and its L2 exponential cluster-decomposition statement after the 2026-05-09 mass-gap bridge repair.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-10T12:18:49.394028+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Step 4 promotes the LR commutator bound to thermal connected-correlator clustering by applying the LR bound in imaginary time and invoking a mass gap/confinement input to obtain equation (3).",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained spatial gap-plus-Lieb-Robinson theorem or spatial transfer-matrix proof, together with a first-principles derivation of \u0394_T > 0 for the canonical Hamiltonian.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 3,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the note's L2 step still depends on an explicit mass-gap input and on a spatial gap-plus-LR or spatial transfer-matrix clustering theorem that the packet says is open. Why this blocks: LR bounds control commutators/light cones, and the cited bridge only proves a finite-block temporal spectral lemma conditional on \u0394_T > 0, so the advertised spatial thermal connected-correlator bound for canonical states is not derived from retained inputs. Repair target: derive \u0394_T > 0 on the canonical Cl(3) \u2297 Z^3 staggered + Wilson Hamiltonian and add a retained spatial cluster-decomposition theorem with constants. Claim boundary until fixed: retain only L1/L3/L4 and conditional temporal gap-to-clustering support, not unconditional L2 spatial clustering."
+    },
+    {
+      "archived_at": "2026-05-19T08:55:12.924422+00:00",
+      "archived_for_note_hash": "7d95b73213f18d99ec19a71f7b5facf75e6f49a81639c22769d667fcd01d8b12",
+      "audit_date": "2026-05-18T12:11:45.462547+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 18.291,
+        "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
+        "transitive_descendants": 885
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260518-120032-569b3ebd-axiom_first_cluster_deco-012",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The L1/L3/L4 bounded LR/light-cone portion closes as standard finite-lattice algebraic/combinatorial LR reasoning. The full L2 cluster-decomposition chain does not close because \u0394_T > 0 and the spatial cluster-decomposition step are explicitly open dependencies.",
+      "claim_scope": "Audited only the narrowed bounded scope: L1 Lieb-Robinson commutator envelope for finite-range Hermitian Cl(3)\u2297Z^3 Hamiltonians, L3 lattice light cone as its consequence, L4 finite Cl(3) norm control of J, and L2 only as conditional temporal transfer-matrix clustering if \u0394_T > 0; unconditional or spatial cluster decomposition is outside closed scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-18T12:11:45.462547+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Combining the Duhamel/LR series with the cubic-lattice path count gives \u2016[A(t),B]\u2016 \u2264 2\u2016A\u2016\u2016B\u2016 exp(-(d(x,y)-v_LR|t|)/\u03be) with v_LR = 2eJZ_latR_int; L2 is only conditional on an external transfer-matrix gap \u0394_T > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained proof of \u0394_T > 0 plus a retained spatial gap-plus-Lieb-Robinson or spatial transfer-matrix cluster-decomposition theorem for the canonical Cl(3)\u2297Z^3 Hamiltonian.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The narrowed note honestly removes the previous unconditional L2 claim and identifies the transfer-matrix gap and spatial clustering theorem as open. The cited bridge authority is retained_bounded but itself proves only a conditional finite-block temporal spectral lemma and explicitly does not derive \u0394_T > 0 or spatial clustering. The runner computes illustrative 1D free-fermion LR/clustering exhibits, but it does not instantiate the full canonical Cl(3)\u2297Z^3 staggered+Wilson Hamiltonian or close the missing mass-gap/spatial bridge. Therefore the retained result is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-05-29T01:51:05.710180+00:00",
+      "audit_date": "2026-05-26T18:23:59.915438+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite spatial lattice Lambda only: the pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, Haar) has a simple positive top eigenvalue and a strict finite-volume spectral gap; no thermodynamic, continuum, or uniform-in-Lambda conclusion is audited.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering lemma conditional on a positive Hermitian transfer matrix with a nondegenerate top eigenvalue, Delta_T > 0.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "bounded_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained_bounded",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 17.776,
+        "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
+        "transitive_descendants": 876
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-cluster-decomposition-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A five-judge panel produced a 4-of-5 majority for the second audit tuple. The source note's L1/L3/L4 branch is an internal finite-range Lieb-Robinson/path-count/norm argument, but the full bounded parent claim also depends on the surviving L2 branch, which is supplied by one-hop retained_bounded Delta_T finite-Lambda support and the mass-gap bridge to finite-block temporal transfer-matrix clustering. That decisive full-row closure is cross-note input verification, so the ratified load-bearing class is B. The clean verdict is restricted to that finite-block/finite-Lambda temporal scope; the legacy unconditional spatial cluster-decomposition, thermodynamic-limit, continuum, and general thermal-clustering readings are not audited as closed. The runner's E1-E4 PASS lines remain representative finite 1D free-fermion computations and are not promoted to proof of the theorem.",
+      "claim_scope": "Finite-block/finite-Lambda bounded scope: L1 Lieb-Robinson commutator bound for bounded finite-range Cl(3) local Hamiltonians on finite Z^3 blocks, L3 lattice light cone, L4 finite canonical local-term norm bound, and L2 only as temporal transfer-matrix clustering on the retained_bounded finite-Lambda/selected Wilson-plus-staggered surface; no unconditional spatial cluster decomposition, thermodynamic-limit, continuum, or general thermal-clustering claim is audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T18:23:59.915438+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T18:06:04.586326+00:00",
+          "auditor": "codex-gpt-5.5-fresh-axiom-first-cluster-decomposition-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-block scope: L1 Lieb-Robinson commutator bound, L3 lattice light cone, L4 finite canonical-normalized local-term norm bound for finite-range Cl(3) interactions, and L2 only as finite-Lambda temporal transfer-matrix clustering through the retained_bounded Delta_T/bridge inputs on the selected Wilson-plus-staggered surface; no spatial, thermodynamic-limit, continuum, or unconditional thermal clustering is audited as closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-26T18:15:25.667376+00:00",
+          "auditor": "codex-gpt-5.5-fresh-axiom-first-cluster-decomposition-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block/finite-Lambda bounded scope: L1 Lieb-Robinson commutator bound for bounded finite-range Cl(3) local Hamiltonians on finite Z^3 blocks, L3 lattice light cone, L4 finite canonical local-term norm bound, and L2 only as temporal transfer-matrix clustering on the retained_bounded finite-Lambda/selected Wilson-plus-staggered surface; no unconditional spatial cluster decomposition, thermodynamic-limit, continuum, or general thermal-clustering claim is audited as closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-26T18:23:59.915438+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-cluster-decomposition-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block/finite-Lambda bounded scope: L1 Lieb-Robinson commutator bound for bounded finite-range Cl(3) local Hamiltonians on finite Z^3 blocks, L3 lattice light cone, L4 finite canonical local-term norm bound, and L2 only as temporal transfer-matrix clustering on the retained_bounded finite-Lambda/selected Wilson-plus-staggered surface; no unconditional spatial cluster decomposition, thermodynamic-limit, continuum, or general thermal-clustering claim is audited as closed.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit correctly identified the internal LR/path-bound subproof but overclassified the full bounded tuple as A; the retained clean status for the whole row depends on importing the retained_bounded Delta_T and bridge inputs for L2. Its A-only runner breakdown also overstates representative computations as algebraic closure.",
+          "independence": "judicial_review",
+          "judgment_rationale": "A five-judge panel produced a 4-of-5 majority for the second audit tuple. The source note's L1/L3/L4 branch is an internal finite-range Lieb-Robinson/path-count/norm argument, but the full bounded parent claim also depends on the surviving L2 branch, which is supplied by one-hop retained_bounded Delta_T finite-Lambda support and the mass-gap bridge to finite-block temporal transfer-matrix clustering. That decisive full-row closure is cross-note input verification, so the ratified load-bearing class is B. The clean verdict is restricted to that finite-block/finite-Lambda temporal scope; the legacy unconditional spatial cluster-decomposition, thermodynamic-limit, continuum, and general thermal-clustering readings are not audited as closed. The runner's E1-E4 PASS lines remain representative finite 1D free-fermion computations and are not promoted to proof of the theorem.",
+          "load_bearing_step_class": "B",
+          "runner_check_breakdown": {
+            "A": 0,
+            "B": 0,
+            "C": 4,
+            "D": 0,
+            "total_pass": 4
+          },
+          "second_auditor_error": "No material error on the applyable majority tuple.",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09:retained_bounded->audited_conditional",
+      "load_bearing_step": "The bounded claim closes by combining the finite-range Lieb-Robinson series bound for L1/L3/L4 with the one-hop retained_bounded Delta_T finite-Lambda support and mass-gap bridge for L2 only as finite-block temporal transfer-matrix clustering.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit if the source is later cited as proving unconditional spatial clustering, thermodynamic-limit or continuum clustering, or if any retained_bounded Delta_T/bridge/selected-surface dependency status drifts.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "A five-judge panel produced a 4-of-5 majority for the second audit tuple. The source note's L1/L3/L4 branch is an internal finite-range Lieb-Robinson/path-count/norm argument, but the full bounded parent claim also depends on the surviving L2 branch, which is supplied by one-hop retained_bounded Delta_T finite-Lambda support and the mass-gap bridge to finite-block temporal transfer-matrix clustering. That decisive full-row closure is cross-note input verification, so the ratified load-bearing class is B. The clean verdict is restricted to that finite-block/finite-Lambda temporal scope; the legacy unconditional spatial cluster-decomposition, thermodynamic-limit, continuum, and general thermal-clustering readings are not audited as closed. The runner's E1-E4 PASS lines remain representative finite 1D free-fermion computations and are not promoted to proof of the theorem."
+    },
+    {
+      "archived_at": "2026-06-05T09:04:37.309444+00:00",
+      "archived_for_note_hash": "012eeae6b1ef8be77715d167a073394de9989430c820bc544b639715b01e395e",
+      "audit_date": "2026-05-30T22:34:25.047905+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 17.838,
+        "runner_hash": "e84dd93be2dcf95c9a0ed1655b3b1778cbd91c4f12dfb6e1d46a0109b942efdd",
+        "transitive_descendants": 914
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-223146-0a305f46-axiom_first_cluster_deco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet does not close the spatial or unconditional L2 claim: the bridge proves only finite-block temporal decay conditional on a gap, and the source itself leaves spatial cluster decomposition open. The displayed Kubo-style identity (8) is not a valid general identity for thermal connected correlators, and the LR constant as written does not account for the full interaction-degree norm under the stated general sum over h_X.",
+      "claim_scope": "Finite-block finite-range Lieb-Robinson commutator/light-cone support and finite Cl(3) local-norm boundedness; L2 only as conditional temporal transfer-matrix clustering under Delta_T > 0, with spatial and unconditional clustering not closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T22:34:25.047905+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Combining the Duhamel/Lieb-Robinson series with the cubic-lattice path count is claimed to give the exponential commutator bound with v_LR = 2 e J R_int Z_lat, while L2 is retained only conditionally through a transfer-matrix gap Delta_T > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained spatial gap-plus-Lieb-Robinson or spatial transfer-matrix clustering theorem, and repair the false Kubo identity (8) plus the LR interaction-degree constant before re-audit.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "L1/L3/L4 have the shape of a standard finite-range Lieb-Robinson argument, but the displayed constant v_LR = 2 e J R_int Z_lat is not derived under the note's general interaction assumptions, where a per-site interaction norm or interaction-degree factor is also needed. L2 does not close: equation (8) would give zero for H = 0 and A = B with nonzero variance, so it cannot be the stated general connected-correlator identity. The cited bridge and finite-Lambda gap note provide conditional finite-block temporal support, not the missing spatial cluster-decomposition theorem. The runner computes a 1D free-fermion proxy and its E2 pass condition only checks decay toward zero, so it does not verify the full Cl(3) x Z^3 theorem."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.496806+00:00",
+      "audit_date": "2026-06-05T16:34:32.618551+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 18.41,
+        "runner_hash": "4035c7c11a7189870448d6a1728994ca21cfbdddbef4966e165c0b41ac83ccd9",
+        "transitive_descendants": 961
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-163213-94e46c0d0f-axiom_first_cluster_decompos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-range LR, light-cone, and finite-J_* portions close as standard finite-lattice operator-norm inequalities. The L2 bound does not close because the packet supplies only a conditional temporal transfer-gap bridge and no retained spatial cluster-decomposition theorem or target-state gap authority for equation (3).",
+      "claim_scope": "Finite-range Hermitian Cl(3) lattice Hamiltonians on finite Z^3 blocks satisfy the stated bounded Lieb-Robinson/light-cone/J_* claims; exponential clustering is audited only as conditional and not spatially closed here.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:34:32.618551+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Iterating the Duhamel commutator estimate and bounding length-n interaction paths by D_int^n gives the Lieb-Robinson envelope with v_LR = 2 e J_* R_int D_int, while L2 is left conditional on a separate gap/spatial-clustering authority.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained spatial gap-plus-LR/slab clustering theorem for equation (3), or remove L2 from the theorem statement and re-audit only L1/L3/L4.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely computes finite free-fermion exhibits and the source-side J_* correction, but those exhibits are representative rather than a proof of the 3D spatial clustering statement. The LR/L3/L4 part is a bounded theorem over finite-range interactions and accepted lattice/quantum premises. However, L2 still imports an explicit open gap/spatial-clustering bridge: the mass-gap bridge proves temporal decay only conditional on Delta_T > 0, and the finite-Lambda operator note does not provide the missing spatial or full canonical staggered+Wilson closure. Therefore the audited row remains conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:04.857807+00:00",
+      "archived_for_note_hash": "006c71edf343ea08b69968483947c5ab42cc095ec31e110a3eed05db993bfb46",
+      "audit_date": "2026-06-05T20:52:53.244301+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 18.411,
+        "runner_hash": "4035c7c11a7189870448d6a1728994ca21cfbdddbef4966e165c0b41ac83ccd9",
+        "transitive_descendants": 962
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-204955-66a5b3be6d-axiom_first_cluster_decompos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The L1/L3 finite-speed part is a standard finite-lattice LR algebra/path-count closure, but the displayed L2 spatial-distance clustering bound is not closed by the supplied temporal transfer-matrix bridge; a retained spatial clustering or spatial-slab gap theorem is still missing. The Step 6 Cl(3) coefficient-norm bound is also false as written for arbitrary Hermitian elements, e.g. I + sigma_z has norm 2 while the stated Euclidean bound gives sqrt(2).",
+      "claim_scope": "Finite-block finite-range Cl(3) local Hamiltonians on Z^3: L1/L3 finite-speed Lieb-Robinson/light-cone control and finite J_* support; L2 only as conditional clustering under separately retained temporal or spatial gap authority, not as unconditional spatial clustering.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:52:53.244301+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Combining the Duhamel/Lieb-Robinson series with the finite interaction-path bound gives ||[A(t),B]|| <= 2||A||||B|| exp(-(d(x,y)-v_LR|t|)/xi) with v_LR = 2e J_* D_int R_int.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained spatial cluster-decomposition or spatial transfer-gap theorem for equation (3), and repair Step 6's Cl(3) coefficient norm inequality with a valid triangle/Frobenius operator-norm bound.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner genuinely computes proxy finite-lattice exhibits, but it is a 1D free-fermion representative and does not prove the full Cl(3)\u2297Z^3 spatial clustering statement. The cited mass-gap bridge is retained-bounded only as a conditional temporal spectral lemma and explicitly does not prove Delta_T from the baseline or spatial cluster decomposition. Formula inventory also blocks a clean verdict because the specific Cl(3) Euclidean coefficient norm bound in L4 is mathematically too strong, even though a looser finite-dimensional bound would likely repair that subclaim."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:03.501211+00:00",
+      "archived_for_note_hash": "a601a0025b3fad4f56e8799ca4501d13e9c9c7ffcb3044301ba0dba293463dfb",
+      "audit_date": "2026-06-06T16:30:14.557426+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 18.97,
+        "runner_hash": "57efef1fe877a274d7dd663b9942e7d059b8b9a5d9daa2f7200776fa615ae869",
+        "transitive_descendants": 1002
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260606-162635-e7092f4d07-axiom_first_cluster_decompos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The L1 proof does not close as written because the Step 3 tail estimate contains a false displayed inequality and does not rigorously derive the stated constants for general R_int. L2 also remains dependent on a retained transfer-gap or spatial-clustering authority for the target state; the provided bridge is temporal and conditional.",
+      "claim_scope": "Finite-block finite-range Hermitian Hamiltonians on the Cl(3) site algebra over Z^3: L1/L3/L4 Lieb-Robinson/light-cone/Cl(3)-norm support, with L2 only as a gap-or-spatial-authority conditional statement.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T16:30:14.557426+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Combining the Duhamel/LR series with the finite interaction-path bound gives (6), and the tail estimate is asserted to imply (7) with v_LR = 2 e J_* D_int R_int and xi = R_int.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Repair Step 3 with a correct LR/Poisson-tail estimate for the stated J_*, D_int, R_int constants; separately supply retained spatial or target-state gap authority before promoting any L2 spatial clustering statement.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The narrowed scope correctly retracts unconditional spatial clustering, and L4's triangle/Cauchy Cl(3) norm bound is sound. However the load-bearing LR constant derivation has a local proof break: `(a/n)^n <= exp(-n) * exp(n log(a/n))` is false, and the Poisson-tail-to-light-cone step is not supplied correctly for the stated constants. The runner is only an illustrative 1D free-fermion exhibit and uses a fermionic propagator proxy rather than proving the general Cl(3) spin-algebra commutator theorem, so it cannot repair the proof gap. The L2 part remains explicitly conditional/open beyond temporal finite-block transfer clustering."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.423121+00:00",
+      "audit_date": "2026-06-06T23:00:31.842633+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 19.479,
+        "runner_hash": "9fb0ce7b06dbdd452f7be95803b793a9b0e86b58e5b94667f530bd313bd270ae",
+        "transitive_descendants": 1008
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-225800-9865a15a60-axiom_first_cluster_decompos",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the audited scope, the weighted-path estimate gives L1, L3 is its direct contrapositive, and L4 follows from the finite-dimensional Cl(3) triangle/Cauchy norm bound. The packet does not close unconditional spatial L2, but that claim is explicitly outside the load-bearing scope.",
+      "claim_scope": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T23:00:31.842633+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T22:57:26.803133+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-225525-ecc47295cc-axiom_first_cluster_decompos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block finite-range Cl(3)=M2(C) Hamiltonians on Z^3 satisfy the stated Lieb-Robinson commutator envelope and lattice light-cone bound with v_LR=2eJ_*D_intR_int, plus the Cl(3) local norm bound; L2 is audited only as conditional on a separate transfer-gap or spatial-clustering authority.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T23:00:31.842633+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-225800-9865a15a60-axiom_first_cluster_decompos",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) constant for finite-range Hermitian finite-block Hamiltonians; L2 only as a conditional transfer-gap/bridge consequence, with unconditional spatial clustering excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The weighted-path Duhamel estimate bounds the commutator by 2||A||||B|| exp(-mu d(x,y)) sum_n (2 J_* D_int exp(mu R_int)|t|)^n/n!, and with mu=1/R_int gives v_LR=2 e J_* D_int R_int.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the non-load-bearing Poisson-tail prose, which appears to insert an extra e in the informal tail form, and the E5 runner's weak single-term-max exhibit; neither affects the weighted-path proof used for L1/L3/L4.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic finite-lattice Lieb-Robinson closure over the accepted Lattice/Quantum premises and the explicit finite-range Hamiltonian hypothesis. Independently checking the constants gives -d/R_int + 2 e J_* D_int |t| = -(d - v_LR |t|)/R_int, and the Cl(3) constant bound follows from unit-norm monomials and Cauchy-Schwarz. The runner source performs real many-body matrix-exponential checks for illustrative finite chains and algebra checks for the corrected constants; it does not import an external comparator or tuned value."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.792167+00:00",
+      "audit_date": "2026-06-30T17:44:16.487370+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 22.87,
+        "runner_hash": "9fb0ce7b06dbdd452f7be95803b793a9b0e86b58e5b94667f530bd313bd270ae",
+        "transitive_descendants": 935
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T174416Z-99b6f90e-axiom_first_cluster_deco",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The L1/L3/L4 bounded core follows from finite-dimensional local algebra, finite interaction range, the per-site interaction norm J_*, and standard finite-lattice Duhamel/path counting. The note explicitly does not close unconditional or spatial L2, so the scoped claim closes only with that exclusion.",
+      "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) lattice Hamiltonians satisfy the stated Lieb-Robinson commutator bound, lattice light cone, and finite Cl(3) norm constant; L2 is audited only as conditional/open transfer-gap routing, not as closed spatial clustering.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T17:44:16.487370+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T17:41:01.432790+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T174101Z-d84617d4-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) lattice Lieb-Robinson bound with corrected J_*, D_int, R_int constants, its lattice-light-cone corollary, the finite Cl(3) norm bound, and only conditional L2 transfer-gap routing; unconditional or spatial cluster decomposition is not closed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T17:44:16.487370+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T174416Z-99b6f90e-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) lattice Hamiltonians satisfy the stated Lieb-Robinson commutator bound, lattice light cone, and finite Cl(3) norm constant; L2 is audited only as conditional/open transfer-gap routing, not as closed spatial clustering.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Combining the Duhamel path expansion with the exponential path weight gives ||[A(t),B]|| <= 2||A||||B|| exp(-mu d + 2 J_* D_int exp(mu R_int)|t|), and taking mu=1/R_int yields v_LR=2e J_* D_int R_int.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the source later widens L2 from conditional temporal-gap routing to unconditional or spatial clustering.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The repaired load-bearing LR proof uses the per-site norm J_* and finite interaction adjacency D_int rather than the prior under-specified single-term constant, and the Cl(3) coefficient bound is the valid triangle/Cauchy estimate. The runner source genuinely computes interacting finite-chain commutators for exhibits E1/E3/E4 and uses algebraic checks for the repaired constants and false-inequality control. The clean verdict is for the bounded L1/L3/L4 core plus explicitly conditional L2 routing; it does not promote the open spatial cluster-decomposition claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.311910+00:00",
+      "audit_date": "2026-07-01T21:34:22.747376+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 22.87,
+        "runner_hash": "9fb0ce7b06dbdd452f7be95803b793a9b0e86b58e5b94667f530bd313bd270ae",
+        "transitive_descendants": 935
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T213422Z-e986a206-axiom_first_cluster_deco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-range Duhamel/path-count argument gives L1 with conservative constants, L3 is its immediate light-cone consequence, and L4 follows from finite-dimensional M_2(C) monomial norm bounds. The source no longer claims unconditional spatial clustering; L2 is explicitly conditional/open beyond the cited finite-block transfer-gap bridge.",
+      "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) Hamiltonians on the Z^3 lattice satisfy the stated conservative Lieb-Robinson commutator bound, its lattice light-cone corollary, and the finite Cl(3) norm/J_* bound; L2 is audited only as conditional on separate retained transfer-gap or spatial-clustering authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T21:34:22.747376+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T21:30:49.459224+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T213049Z-9b19c75b-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block finite-range Hermitian Hamiltonians on the M_2(C)/Cl(3) site algebra over Z^3: L1 Lieb-Robinson bound, L3 lattice light cone, and L4 finite Cl(3) norm bound; L2 only as a conditional/open clustering pointer.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T21:34:22.747376+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T213422Z-e986a206-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) Hamiltonians on the Z^3 lattice satisfy the stated conservative Lieb-Robinson commutator bound, its lattice light-cone corollary, and the finite Cl(3) norm/J_* bound; L2 is audited only as conditional on separate retained transfer-gap or spatial-clustering authority.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "The weighted-path expansion bounds the commutator by 2||A||||B|| exp(-mu d(x,y) + 2 J_* D_int exp(mu R_int)|t|), and taking mu = 1/R_int gives the Lieb-Robinson bound with v_LR = 2 e J_* D_int R_int.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if a later source revision expands L2 beyond the conditional transfer-gap/spatial-clustering boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The corrected proof uses a standard finite-lattice Duhamel/path expansion with the per-site interaction norm J_* and a conservative interaction-degree factor; the displayed exponent and v_LR normalization are internally consistent. The runner genuinely computes exact many-body M_2(C) commutators for finite samples and separately checks the J_*, Cl(3) norm, weighted-path, Chernoff-tail, and false-inequality repair surfaces. The bounded-wall N1-N8 discussion is adequate for the narrowed boundary because it does not assert unconditional L2 closure and leaves the gap/spatial clustering route as a named future closure path."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.410995+00:00",
+      "audit_date": "2026-07-02T09:18:53.319173+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 22.87,
+        "runner_hash": "9fb0ce7b06dbdd452f7be95803b793a9b0e86b58e5b94667f530bd313bd270ae",
+        "transitive_descendants": 935
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T091853Z-bb12961e-axiom_first_cluster_deco",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The L1/L3/L4 bounded core follows from finite-dimensional local algebra, finite interaction range, per-site interaction norm, Duhamel expansion, and the lattice path count. The unconditional spatial L2 claim does not close, but it is explicitly excluded from the audited scope rather than asserted.",
+      "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) local Hamiltonians on the lattice substrate satisfy the stated Lieb-Robinson commutator envelope, lattice light-cone corollary, and finite Cl(3) norm/J_* bound; L2 is audited only as conditional/open routing requiring separate gap or spatial-clustering authority.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T09:18:53.319173+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T09:15:13.745164+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T091513Z-5bce5b71-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited L1 finite-range Lieb-Robinson bound, L3 lattice light cone, and L4 Cl(3) finite-norm constant on finite blocks; L2 is only a conditional/open clustering route, not unconditional spatial clustering.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T09:18:53.319173+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T091853Z-bb12961e-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) local Hamiltonians on the lattice substrate satisfy the stated Lieb-Robinson commutator envelope, lattice light-cone corollary, and finite Cl(3) norm/J_* bound; L2 is audited only as conditional/open routing requiring separate gap or spatial-clustering authority.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "Combining the Duhamel path expansion with the exponential path weight gives ||[A(t),B]|| <= 2||A||||B|| exp(-mu d(x,y) + 2 J_* D_int exp(mu R_int)|t|), and taking mu=1/R_int yields v_LR=2e J_*D_int R_int.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if the source scope is broadened to unconditional finite-temperature or spatial L2; that would require a separate retained spatial/gap theorem.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md",
+        "docs/STRONG_CP_THETA_ZERO_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The narrowed bounded theorem is honest about its support: L1 is the finite-range Lieb-Robinson estimate with corrected J_* and D_int constants, L3 is its direct light-cone corollary, and L4 is the finite Cl(3) triangle/Cauchy norm bound. The runner genuinely computes interacting M_2(C) many-body commutators for the finite-chain exhibit and separately checks the corrected algebraic inequalities, while also marking L2 as non-proof exhibit/open. The mass-gap bridge and finite-Lambda gap notes do not supply full spatial L2 closure, but the parent no longer claims they do; they remain conditional routing outside the clean bounded core."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.023180+00:00",
+      "audit_date": "2026-07-08T00:25:25.446330+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "Finite connected spatial Lambda with fixed tau>0 and beta>0, pure-Wilson SU(3) heat-kernel transfer operator T_W on L2(SU(3)^E, dU_Haar) only: simple dominant eigenvalue and strict finite-volume transfer gap Delta_T(Lambda)>0. No T_full/Leg A, thermodynamic limit, continuum limit, uniform-in-Lambda bound, Yang-Mills mass gap, or spatial-clustering claim is ratified.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "minimal_axioms": null,
+          "strong_cp_theta_zero_note": "Bounded theta_eff = 0 closure only on the explicitly theta-free Wilson-plus-staggered scalar-mass action surface with positive real scalar quark masses; no unbounded strong-CP solution or derivation of that action surface is audited."
+        },
+        "dep_claim_type": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "positive_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": "retained",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "minimal_axioms": "meta",
+          "strong_cp_theta_zero_note": "retained_bounded"
+        },
+        "deps": [
+          "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "minimal_axioms",
+          "strong_cp_theta_zero_note"
+        ],
+        "load_bearing_score": 21.544,
+        "runner_hash": "9fb0ce7b06dbdd452f7be95803b793a9b0e86b58e5b94667f530bd313bd270ae",
+        "transitive_descendants": 527
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260707-4e0f04f4",
+      "auditor_confidence": "panel-majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing closure is the finite-dimensional Duhamel/path-count algebra plus the weighted exponential inequality; it does not depend on producing a new framework number by first-principles computation. The runner contains genuine interacting Cl(3) computations and useful controls, but those are exhibits validating the algebraic theorem surface rather than the theorem's load-bearing derivation class. The bounded/open L2 language is explicitly scoped out of clean closure except as conditional temporal routing, and the No-Go Discipline boundary is narrow enough to avoid overclaiming spatial clustering.",
+      "claim_scope": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) norm/J_* bound for finite-range Hermitian Cl(3) lattice Hamiltonians; L2 only as conditional transfer-gap temporal clustering routing, not unconditional spatial cluster decomposition.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T00:25:25.446330+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T23:52:22.981743+00:00",
+          "auditor": "codex-audit-loop-2026-07-07-row4-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite-range Cl(3) lattice Lieb-Robinson commutator envelope, lattice light-cone corollary, finite Cl(3) local-term norm bound, and only conditional transfer-gap clustering; no unconditional spatial cluster decomposition or continuum Lorentz claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-08T00:22:53.366763+00:00",
+          "auditor": "codex-cli-gpt-5.5-cross-confirm-20260707-55b9eb9b-axiom_first_cluster_deco",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) norm/J_* bound for finite-range Hermitian Cl(3) lattice Hamiltonians; L2 only as conditional transfer-gap temporal clustering routing, not unconditional spatial cluster decomposition.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-08T00:25:25.446330+00:00",
+          "auditor": "codex-cli-gpt-5.5-five-judge-panel-20260707-4e0f04f4",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "L1 Lieb-Robinson commutator bound, L3 lattice light cone, and L4 finite Cl(3) norm/J_* bound for finite-range Hermitian Cl(3) lattice Hamiltonians; L2 only as conditional transfer-gap temporal clustering routing, not unconditional spatial cluster decomposition.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Class C overweights the runner exhibits; the theorem's decisive step is an algebraic finite-range LR estimate, not a first-principles numerical computation producing a new number.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The load-bearing closure is the finite-dimensional Duhamel/path-count algebra plus the weighted exponential inequality; it does not depend on producing a new framework number by first-principles computation. The runner contains genuine interacting Cl(3) computations and useful controls, but those are exhibits validating the algebraic theorem surface rather than the theorem's load-bearing derivation class. The bounded/open L2 language is explicitly scoped out of clean closure except as conditional temporal routing, and the No-Go Discipline boundary is narrow enough to avoid overclaiming spatial clustering.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 0,
+            "C": 4,
+            "D": 0,
+            "total_pass": 9
+          },
+          "second_auditor_error": "",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Step 3 inserts an exponential path weight into the finite Duhamel interaction-path series and sets mu = 1/R_int to obtain the LR envelope with v_LR = 2e J_* D_int R_int.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing closure is the finite-dimensional Duhamel/path-count algebra plus the weighted exponential inequality; it does not depend on producing a new framework number by first-principles computation. The runner contains genuine interacting Cl(3) computations and useful controls, but those are exhibits validating the algebraic theorem surface rather than the theorem's load-bearing derivation class. The bounded/open L2 language is explicitly scoped out of clean closure except as conditional temporal routing, and the No-Go Discipline boundary is narrow enough to avoid overclaiming spatial clustering."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
+  "title": "Axiom-First Cluster Decomposition / Lieb\u2013Robinson Bound on Cl(3) \u2297 Z^3",
+  "transitive_descendants": 706,
+  "verdict_rationale": null
+}

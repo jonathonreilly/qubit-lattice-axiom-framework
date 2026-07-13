@@ -1,0 +1,323 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.301,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1a5ea03a449b6ee35703b77e603f45772811ef1314a7c19b54fd1472b3aafd90",
+  "note_path": "docs/G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:35:38.962420+00:00",
+      "audit_date": "2026-05-02T22:45:52.994616+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 1.5,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-g-bare-convention-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The declared graph-first SU(3) dependency is retained_bounded, and the remaining inputs are explicitly scoped as admitted Wilson conventions rather than derived framework consequences. The narrowed conclusion is only algebraic substitution and unity rescaling at g_bare = 1.",
+      "claim_scope": "Given g_bare = 1 as an admitted Wilson canonical-normalization convention and retained graph-first SU(3) input with N_c = 3, the Wilson coefficient beta = 2 N_c / g_bare^2 evaluates to beta = 6, and the admitted 1/g_bare curvature-normalization factor is unity; does not derive or uniquely force g_bare = 1 or close broader gauge-coupling claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T22:45:52.994616+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "Substitute N_c = 3 and admitted convention g_bare = 1 into beta = 2 N_c / g_bare^2, and into the admitted curvature-normalization factor 1/g_bare.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Correct the non-load-bearing N_c=2 prose example from beta=8 to beta=4, and preserve the narrowed wording that this is a convention-normalization statement rather than a derivation of g_bare = 1.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Clean as a bounded convention-plus-substitution theorem. Once g_bare = 1 is admitted as convention and N_c = 3 is inherited from retained graph-first SU(3), beta = 6 and the absence of a 1/g_bare rescaling follow exactly. Residual risk: the source note's non-load-bearing verification prose misstates the N_c=2 example; this should be corrected later, but it does not affect the scoped N_c=3 claim or the runner's exact rational check."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.812088+00:00",
+      "audit_date": "2026-05-03T17:23:32.409956+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 6.555,
+        "transitive_descendants": 46
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-current-fresh-context-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic closes once the Wilson beta relation and the Cl(3)-to-lattice curvature normalization are assumed, and the cited graph-first SU(3) dependency is retained_bounded. The restricted one-hop packet does not derive or cite the Wilson beta relation or the physical bridge identifying lattice field strength with Cl(3) curvature, so the full theorem is conditional on those admitted normalization premises.",
+      "claim_scope": "Given graph-first SU(3) with N_c=3 plus an explicitly admitted Wilson canonical-normalization convention g_bare=1 and the standard Wilson beta/curvature normalization formulas, the note obtains beta=6 and no curvature rescaling; no derivation of g_bare=1 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T17:23:32.409956+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Given g_bare := 1, N_c = 3, and beta = 2 N_c / g_bare^2, beta = 2 * 3 / 1 = 6; with F^lattice = (1/g_bare) Omega^Cl(3), at g_bare = 1 F^lattice = Omega^Cl(3).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check whether a future retained Wilson-normalization bridge is added as a direct dependency; if so, the same arithmetic runner would likely be adequate for the narrowed conditional claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 27,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "Issue: The note's beta=6 and F^lattice=Omega^Cl(3) conclusions require the Wilson beta relation and the Cl(3)-to-lattice curvature normalization as admitted premises rather than deriving them from the retained graph-first SU(3) dependency. Why this blocks: A hostile reviewer can accept the arithmetic while rejecting retained theorem status because the physical normalization bridge is imported, not closed by the allowed authority. Repair target: Add a retained-grade theorem or cited retained dependency deriving the Wilson action normalization and the Cl(3) curvature-to-lattice-field map under the stated convention, with a runner that constructs that bridge rather than text-checking it. Claim boundary until fixed: It is safe to state the conditional algebraic corollary: if standard Wilson beta/curvature normalization is assumed and g_bare=1 is chosen as convention, then beta=6 and the rescaling factor is 1."
+    },
+    {
+      "archived_at": "2026-05-09T14:37:41.961176+00:00",
+      "archived_for_note_hash": "f4997d3302652f89f08728768534b4f6bafbeeff649ea9f675981bcadf493d01",
+      "audit_date": "2026-05-05T05:00:36.371151+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 9.061,
+        "runner_hash": "7154df77d942c29449cddd752d244b725d919a66e0137facc9504ded49f6602c",
+        "transitive_descendants": 266
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-g_bare_canonical_convent-108",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic closes, and the cited graph-first authority supplies the SU(3)/N_c = 3 surface. The restricted packet does not independently close the imported Wilson normalization/action formula or the F^{lattice} = (1/g_bare) \u03a9^{Cl(3)} relation.",
+      "claim_scope": "Given the admitted Wilson canonical-normalization convention g_bare = 1, the standard Wilson \u03b2 relation, and retained graph-first SU(3) input N_c = 3, \u03b2 = 6 and the stated 1/g_bare curvature rescaling is trivial.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T05:00:36.371151+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given g_bare := 1, N_c = 3, and \u03b2 = 2 N_c / g_bare\u00b2, substitution gives \u03b2 = 2\u00b73/1 = 6, with rescaling factor 1/g_bare = 1 for F^{lattice}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained-grade bridge theorem closing the Wilson action normalization \u03b2 = 2N_c/g_bare\u00b2 and the lattice-to-Cl(3) curvature rescaling relation under the stated convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing computation is class A substitution, not a first-principles derivation. The cited authority is retained_bounded and supports the graph-first SU(3) surface, but the Wilson \u03b2 relation and curvature rescaling are admitted standard inputs inside the note rather than closed by the one-hop authority. The runner also exits nonzero because the ledger status check expected unaudited but found audited_conditional, which is an artifact/status issue rather than a physics closure proof."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:25.848141+00:00",
+      "audit_date": "2026-05-11T01:16:28.562708+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 11.151,
+        "runner_hash": "47f647c99d22f9005326e961ef32eea7a2e460f1abc068ce20a6f7d3a3fb49b5",
+        "transitive_descendants": 401
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e1499-dfe5-7291-b87c-853c7287b617",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped result is only algebraic substitution into formulas explicitly admitted in the note, with graph_first_su3 supplying the SU(3)/N_c = 3 surface. No derivation or uniqueness of g_bare = 1 is claimed.",
+      "claim_scope": "Given the admitted Wilson canonical-normalization convention g_bare = 1 and the retained graph-first SU(3) surface with N_c = 3, the Wilson coefficient is \u03b2 = 6 and the Cl(3)-to-lattice curvature normalization has no multiplicative rescaling factor at g_bare = 1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T01:16:28.562708+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T01:13:54.301773+00:00",
+          "auditor": "codex-audit-loop-019e1496-e057-7ce3-ab9f-77fdb7d44781",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the admitted Wilson canonical-normalization convention g_bare = 1 and retained graph-first SU(3) / N_c = 3, the audited conclusion is \u03b2 = 6 and unity of the multiplicative lattice-curvature rescaling factor; no forcing or uniqueness of g_bare is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-11T01:16:28.562466+00:00",
+          "auditor": "codex-audit-loop-019e1499-dfe5-7291-b87c-853c7287b617",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the admitted Wilson canonical-normalization convention g_bare = 1 and the retained graph-first SU(3) surface with N_c = 3, the Wilson coefficient is \u03b2 = 6 and the Cl(3)-to-lattice curvature normalization has no multiplicative rescaling factor at g_bare = 1.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:graph_first_su3_integration_note:bounded_theorem->positive_theorem",
+      "load_bearing_step": "Given g_bare := 1, N_c = 3, and \u03b2 = 2 N_c / g_bare\u00b2, the substitution \u03b2 = 2 \u00b7 3 / 1 = 6, while the factor 1/g_bare in F^{lattice} = (1/g_bare) \u03a9^{Cl(3)} becomes 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that F^{lattice} = \u03a9^{Cl(3)} is read as equality of normalization/no rescaling at g_bare = 1, not as removal of the note's stated O(a\u00b2) lattice correction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 21,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The note cleanly frames g_bare = 1 as an admitted convention rather than a derived constraint, and the retained graph-first dependency supplies the SU(3) setting needed for N_c = 3. The \u03b2 = 6 conclusion and the absence of a multiplicative curvature rescaling at g_bare = 1 are class-A consequences under that scoped convention. Runner checks include non-load-bearing supersession and upgrade checks, but those are not needed for this narrow claim and do not alter the closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.164748+00:00",
+      "audit_date": "2026-05-22T16:16:58.947528+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 13.046,
+        "runner_hash": "47f647c99d22f9005326e961ef32eea7a2e460f1abc068ce20a6f7d3a3fb49b5",
+        "transitive_descendants": 1056
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T161441Z-224f6239-g_bare_canonical_convent-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited graph-first authority is retained-grade and supplies the SU(3)/N_c = 3 input; with the admitted Wilson convention and formulas, the conclusion is direct substitution. The Ward supersession material checked by the runner is not load-bearing for this narrow convention scope.",
+      "claim_scope": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-22T16:16:58.947528+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Given g_bare := 1 and N_c = 3, substitute into \u03b2 = 2 N_c / g_bare\u00b2 and F^lattice = (1/g_bare) \u03a9^Cl(3) to get \u03b2 = 6 and no rescaling.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the supersession/Ward upgrade checks remain outside this note's load-bearing scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 54,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 54
+      },
+      "verdict_rationale": "The load-bearing work is entirely class A algebraic substitution; the runner validates exact fraction arithmetic and note/ledger visibility, not an independent first-principles derivation. There are no external comparator checks. Because the scoped result has no independent physical content beyond retained graph-first SU(3) plus the admitted Wilson normalization convention, it is decoration rather than a standalone bounded theorem. The runner's Ward forced-determination upgrade checks are non-load-bearing for this note and do not change the verdict."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_g_bare_canonical_convention_narrow.py",
+  "title": "g_bare Canonical Wilson Normalization (Convention) \u2014 Narrow Theorem",
+  "transitive_descendants": 891,
+  "verdict_rationale": null
+}

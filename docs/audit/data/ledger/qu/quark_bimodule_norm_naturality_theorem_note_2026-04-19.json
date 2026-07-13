@@ -1,0 +1,262 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "quark_bimodule_norm_naturality_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_realization_gate_note_2026-05-03"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fdd069fd5cc26076ed81e55ce212965ff2fc93c8e22195013150818067c951ed",
+  "note_path": "docs/QUARK_BIMODULE_NORM_NATURALITY_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106838+00:00",
+      "archived_for_note_hash": "d641a8e28d5608f6d204fa4f3321574a327be8f796e69b77fac5f2f2537c775b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.893277+00:00",
+      "archived_for_note_hash": "8afd20d7cbb8c6064641668ff32121fa322f906627e0141867a439b80d4f39d3",
+      "audit_date": "2026-05-01T11:58:21.655981+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the note's explicitly stated bimodule assumptions, the proof is an algebraic consequence of endpoint normalization and affine naturality on a one-real-dimensional channel. The runner verifies complementarity, endpoints, affine naturality, uniqueness of the normalized kappa profile, and the physical-point BICAC identity.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Applying affine naturality with b = 0 and t = a gives D_a = a D_1 + (1-a) D_0 = a Id_I, hence U_a = (1-a) Id_I.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The theorem closes as a conditional structural support result: under the three named assumptions, the normalized affine family is forced to D_a=a Id_I and U_a=(1-a) Id_I. The source explicitly states that NORM naturality is added structure and is no longer load-bearing for Quark closure, so this clean audit does not promote a retained physics derivation. Residual risk is exactly the stated caveat: deriving the naturality assumptions from retained quark-side physics remains open."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.755862+00:00",
+      "archived_for_note_hash": "45dcb4a7e13faebc277f60fbc1a77981a320b124570bdbb1fbc1efad4b47ba8f",
+      "audit_date": "2026-05-11T14:42:36.192673+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.228,
+        "runner_hash": "3e52ee6b088cacdaca2964eea137e0f8ff90539a8117f46db875dc94e0b30722",
+        "transitive_descendants": 423
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The affine one-dimensional algebra closes and the runner reports PASS=8 FAIL=0. The note explicitly states the three NORM naturality conditions are added structure not derived on this branch, and it also imports the open staggered-Dirac realization context for quark observables.",
+      "claim_scope": "Exact uniqueness of the BICAC split law from stipulated complementarity, endpoint normalization, and affine naturality on a one-real-dimensional ownership interval, excluding derivation of those structural assumptions from retained quark physics.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T14:42:36.192673+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Endpoint normalization plus affine naturality gives D_a=D_{a*1+(1-a)*0}=aD_1+(1-a)D_0=a Id_I, hence U_a=(1-a)Id_I and BICAC at a=rho.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive complementarity, endpoint normalization, and affine naturality from retained quark-side physics, and wire the stated staggered-Dirac realization gate before re-auditing physical endpoint closure.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: BICAC follows only after assuming complementarity, endpoint normalization, and affine naturality; the note says these assumptions are not themselves derived from retained quark-side physics. Why this blocks: the result is a clean conditional implication, not a retained derivation of the physical BICAC endpoint. Repair target: prove the NORM normalization/naturality conditions from retained quark-side structure and wire the stated staggered-Dirac realization dependency. Claim boundary until fixed: given the three NORM axioms on a one-dimensional interval, the BICAC profile is the unique normalized affine extension."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:41.642277+00:00",
+      "archived_for_note_hash": "17ec19eba03ca80168026940d31a66888c7fd7024224db824f8f118da51f681a",
+      "audit_date": "2026-06-11T14:04:45.830886+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "3e52ee6b088cacdaca2964eea137e0f8ff90539a8117f46db875dc94e0b30722",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-140312-45837a51fe-quark_bimodule_norm_naturali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The internal algebraic implication closes: endpoint normalization plus affine naturality force D_a = a Id_I, and BICAC follows by substituting a = rho. The result remains bounded because the NORM naturality/normalization assumptions and the staggered-Dirac parent are not discharged as retained-grade inputs in this packet.",
+      "claim_scope": "Given complementarity, endpoint normalization, and affine naturality for real-linear split maps on the one-real imaginary channel, BICAC is the unique normalized affine full-interval split law at a = rho.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T14:04:45.830886+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Applying affine naturality to a = a*1 + (1-a)*0 gives D_a = a D_1 + (1-a) D_0 = a Id_I, and complementarity then gives U_a = (1-a) Id_I.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or re-audit the staggered-Dirac parent and provide a retained derivation of normalized affine NORM naturality if seeking unbounded clean status.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing step is a valid algebraic closure over the explicitly assumed affine-normalized NORM structure, not a first-principles physics computation. The runner source matches this: it performs arithmetic/algebraic checks and verifies the support/target endpoint-normalization failures, with no opaque helpers or external comparator. However, the cited staggered-Dirac parent is marked unaudited/bounded in the restricted packet, and the note itself states that NORM naturality is added structure rather than derived from retained quark-side physics. Therefore the theorem is conditionally correct under its stated assumptions but not retained-grade clean."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.190067+00:00",
+      "audit_date": "2026-06-12T01:04:28.556871+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "3e52ee6b088cacdaca2964eea137e0f8ff90539a8117f46db875dc94e0b30722",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-010135-734eadfdd9-quark_bimodule_norm_naturali",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing algebra closes directly from the three stated structural premises; no dimensional physics is needed beyond the supplied carrier notation. The note does not derive NORM naturality itself, and correctly leaves that as the bounded premise/admission boundary.",
+      "claim_scope": "Under complementarity, endpoint normalization, and affine naturality for real-linear split maps on the one-real channel I, the unique normalized affine split is D_a = a Id_I and U_a = (1-a) Id_I; evaluating at the supplied rho gives the stated BICAC/STRC-LO identity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:04:28.556871+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Applying affine naturality to a = a*1 + (1-a)*0 gives D_a = a D_1 + (1-a) D_0 = a Id_I, and complementarity then gives U_a = (1-a) Id_I.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the registry fact that STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md is registered as the Tier-A AC_phi_lambda target; the algebra itself is straightforward.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The proof is a valid affine-algebra closure: substituting the endpoints 1 and 0 into the affine law forces D_a = a Id_I, and complementarity forces U_a. The displayed numerical identities for rho, sin_d, the support/target kappa values, and the BICAC endpoint arithmetic are internally consistent. The runner is not first-principles class C, but its eight checks are consistent arithmetic/algebra checks of the bounded theorem. The staggered-Dirac carrier dependence is admitted only at the bounded Tier-A routing level stated in the packet, so this is clean as a bounded theorem, not as an unbounded positive theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_quark_bimodule_norm_naturality_theorem.py",
+  "title": "Quark Bimodule NORM-Naturality Theorem",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

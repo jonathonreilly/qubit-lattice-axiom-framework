@@ -1,0 +1,122 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "bae_block_total_frobenius_derivation_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+    "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
+    "koide_bae_30_probe_campaign_note_2026-05-09",
+    "koide_bae_probe_f1_canonical_functional_bounded_obstruction_note_2026-05-09_probe18",
+    "bae_max_entropy_retained_bounded_obstruction_note_2026-05-10_baemaxent"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "43dd10f8ff7ae214ace01c57b5583e632a9d528af855ed1f4937ee347b2899fb",
+  "note_path": "docs/BAE_BLOCK_TOTAL_FROBENIUS_DERIVATION_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-17T08:06:23.421706+00:00",
+      "archived_for_note_hash": "1795c18f20ec34192cdf80fc33c8cf616e79767063856a2121cec4002824eaa7",
+      "audit_date": "2026-05-16T13:55:54.007208+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Zero-dependency Hermitian-circulant algebra theorem: on Herm_circ(3), pi_+ and pi_perp decompose H=aI+bC+bbar C^2 orthogonally with real image dimensions 1 and 2, E_+=3a^2 and E_perp=6|b|^2, the stated equal-weight log functional at fixed E_++E_perp has the unique interior maximum E_+=E_perp (kappa=2), and the multiplicity pattern (1,(1,),0) is unique at d=3 among d in {2,3,4,5,6}. No canonical weighting or physical Koide selection is audited.",
+          "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": "Finite algebra on the Hermitian C3-circulant H=aI+bC+conj(b)C^2: trace-state degeneracy, equal block-log saddle at E_plus=E_perp, translation to |b|^2/a^2=1/2, and half-scaled curvature distinction; no primitive election, empirical claim, or framework-level BAE closure is audited."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "54fd7eea05252a8fb611b777cad5523becea89b52b15ccfa595827cb91ddc164",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260516-135530-20260516T135530Z-4a741f93-bae_block_total_frobeniu-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic locus-identification chain closes from the two cited retained-grade upstreams. The full implication depends on the explicit H_F1 canonicality premise, which the restricted packet states is not discharged and remains the F1-vs-F3 open dependency.",
+      "claim_scope": "Conditional algebraic identification on Herm_circ(3): given the undisclosed H_F1 premise selecting F1, the F1 extremum locus is exactly the BAE locus kappa = 2 / |b|^2/a^2 = 1/2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-16T13:55:54.007208+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under fixed E_+ + E_perp, F1 has its unique interior critical point at E_+ = E_perp, which through E_+ = 3a^2 and E_perp = 6|b|^2 gives a^2 = 2|b|^2, equivalently |b|^2/a^2 = 1/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cheapest repair is a retained theorem selecting F1 over F3 as the canonical extremal principle on Herm_circ(3), or rescope the audit row to record only the conditional locus identity with H_F1 explicitly outside closure.",
+      "open_dependency_paths": [
+        "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+        "docs/KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md",
+        "docs/KOIDE_BAE_PROBE_F1_CANONICAL_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe18.md",
+        "docs/BAE_MAX_ENTROPY_RETAINED_BOUNDED_OBSTRUCTION_NOTE_2026-05-10_baemaxent.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing mathematics is class (A): exact Frobenius identities plus a constrained log-functional extremum and a reciprocal algebraic substitution. The runner source genuinely computes these symbolic checks and reports PASS=31/FAIL=0, with no external comparator or numerical tuning. However, the note explicitly imports H_F1 as an undisclosed canonicality premise and repeatedly identifies F1-vs-F3 selection as open, so retained status cannot propagate to a clean positive closure of BAE."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_bae_block_total_frobenius_derivation_narrow.py",
+  "title": "BAE Block-Total-Frobenius Derivation Narrow Theorem",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

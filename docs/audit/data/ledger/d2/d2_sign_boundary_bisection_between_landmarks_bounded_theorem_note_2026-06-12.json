@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-06-14T01:26:41.659383+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12": "Finite sampled-grid statement for the free staggered square-lattice model: m\u2208{0.2,0.5}, T\u2208{0.2,0.4}, \u03bc_ch\u2208{0.0,0.5,1.0,1.5,2.0}, rational fluxes q\u2208{16,24,32}, exact Harper spectra, and Gauss-Legendre quadrature; no continuum, unsampled-interval, or continuum-QFT claim."
+    },
+    "dep_claim_type": {
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12": "retained_bounded"
+    },
+    "deps": [
+      "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12"
+    ],
+    "load_bearing_score": 5.17,
+    "runner_hash": "5d890f6dcfbbb93cd56865b0f997b14189b7f1d8d57c3be22e2972d4fa4d2406",
+    "transitive_descendants": 17
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260614-012405-67fb9fe741-d2_sign_boundary_bisection_b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner constructs the finite Harper matrices and zero-field spectra, computes chi from the spectra, and uses sign-preserving bisection rather than importing the displayed roots. Independent arithmetic confirms the bisection widths imply <=1e-3 midpoint localization, the two stated monotone orderings hold, and all three roots lie strictly between |m| and sqrt(m^2+16).",
+  "claim_id": "d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12",
+  "claim_scope": "Sampled finite-q sign-boundary roots at q=24 for (m,T)=(0.2,0.2),(0.5,0.2),(0.2,0.4), with quadrature doubling gates, q=32 size probes, fixed ordering checks, and strict between-landmarks inequalities; no continuum or landmark-identification claim.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-14T01:26:41.659383+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 5.5,
+  "load_bearing_step": "The finite-Harper flux-response curvature sign-change boundary is bisection-located to 1e-3 at the three sampled (m,T) instances, with q=32 size probes and each sampled mu* strictly between |m| and sqrt(m^2+16).",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "0ffa408aa599acd4f36d5278b3a10ed99cdfcec436d6b85067a38a81b04fdf90",
+  "note_path": "docs/D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check the finite-field Harper normalization and the |m| landmark label if expanding beyond the bounded finite-q scope.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 154,
+    "D": 0,
+    "total_pass": 154
+  },
+  "runner_path": "scripts/frontier_d2_sign_boundary_bisection_2026_06_12.py",
+  "title": "The d=2 Orbital Sign-Change Boundary Located by Bisection (\u03bc* to 10\u207b\u00b3, q-Size-Checked): It Lies Strictly Between the Van Hove Energy and the Band Edge, Anchored to Neither (Bounded)",
+  "transitive_descendants": 3,
+  "verdict_rationale": "The load-bearing step is a first-principles finite numerical computation from the stated lattice operator, not a renaming, comparator match, or cross-note value import. The sole cited authority is retained_bounded, and the present note keeps the conclusion bounded to sampled finite-field instances. The explicit open landmark-identification language is not used as a premise for a stronger identification; the audited claim is only strict between-ness and non-anchoring at the sampled points."
+}

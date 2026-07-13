@@ -1,0 +1,557 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "physical_lattice_necessity_note",
+    "cl3_color_automorphism_theorem",
+    "graph_first_su3_integration_note",
+    "su3_casimir_fundamental_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 28,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 23.49,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6c319c1da618456791f4036102fedefc192a30f1a4f423832ba843e830f5561c",
+  "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T19:52:54.554686+00:00",
+      "archived_for_note_hash": "7fcc2748d0d20824cf86fd5a663e04940325391e960ac050a0dad1046073055a",
+      "audit_date": "2026-05-26T22:50:45.069956+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
+        },
+        "dep_claim_type": {
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+          "physical_lattice_necessity_note": "no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+          "physical_lattice_necessity_note": "retained_no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+        },
+        "deps": [
+          "g_bare_structural_normalization_theorem_note_2026-04-18",
+          "physical_lattice_necessity_note",
+          "su3_casimir_fundamental_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 21.7,
+        "runner_hash": "9c155be2e88138c9b4d5b850ae895677694c6abc3d9397028a9c5b5fd40ff43e",
+        "transitive_descendants": 207
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26",
+      "auditor_confidence": "judicial_majority_3_to_2",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.",
+      "claim_scope": "Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T22:50:45.069956+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T00:00:00+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-g-bare-hs-rigidity-pass1-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained/bounded canonical triplet carrier and fixed Hilbert-Schmidt form on su(3), scalar dilation T_a -> c T_a rescales both Tr(T_a T_b) and sum_a T_a T_a by c^2, so only c = +/-1 preserves the fixed trace-Casimir pair; no Wilson-action derivation, N_F = 1/2 from Cl(3), dynamical running/fixed-point selection, or absolute g_bare = 1 derivation is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-26T00:00:00+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-g-bare-hs-rigidity-pass2-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Attempted bounded HS-rigidity-to-g_bare theorem: R1-R3 establish fixed-form trace/Casimir scalar-dilation rigidity on the algebraic su(3) triplet, while R4/R5 would additionally require a physical connection-equivalence bridge and admitted Wilson-action routing.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-26T22:50:45.069956+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-five-judge-panel-majority-g-bare-hs-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Current source scope includes R1-R3 Hilbert-Schmidt trace-Casimir scalar-dilation rigidity plus R4 connection-rescaling equivalence and R5 Wilson-coefficient routing. R1-R3 close as bounded class-A algebra, but R4/R5 remain conditional on a retained physical connection-equivalence bridge and Wilson action-routing premise.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit correctly identified a clean bounded R1-R3 algebraic core, but over-narrowed the row to that subclaim while R4/R5 remain part of the current source theorem/proposed scope. The correct ledger state for the as-written row is scope_too_broad conditional until the source is split/narrowed or the missing bridge is retained.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 62,
+            "B": 5,
+            "C": 0,
+            "D": 0,
+            "total_pass": 67
+          },
+          "second_auditor_error": "No material tuple error. The second audit correctly treated the clean R1-R3 core as insufficient to ratify the broader current source scope; it should be read as conditional on the R4/R5 extension, not as a rejection of the trace-Casimir algebra.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "For c^2 != 1, both invariants change by the same factor c^2; the canonical pair (N_F, C_F) = (1/2, 4/3) is preserved only at c^2 = 1, so T_a -> c T_a with c != +/-1 is not an automorphism of the canonical inner-product structure on g_conc.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad -- narrow/split the source to R1-R3 HS trace-Casimir rigidity only, or add retained bridge theorems proving R4 physical connection-coordinate equivalence and R5 Wilson action routing from the fixed Hilbert-Schmidt structure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 67
+      },
+      "verdict_rationale": "Issue: The R1-R3 fixed Hilbert-Schmidt trace-Casimir algebra closes, but the source row as written also includes R4/R5 claims that coefficient rescaling is merely coordinate redundancy on the same physical connection and that Wilson coefficient routing supports the g_bare interpretation. Why this blocks: the trace-Casimir identity proves only generator-basis rigidity under a fixed algebraic form; it does not derive the physical connection-equivalence relation, Wilson plaquette action form, or matching surface from retained inputs. Repair target: split/narrow the source and ledger scope to the standalone R1-R3 bounded algebraic theorem, or add retained bridge theorems for physical connection equivalence and Wilson action routing. Claim boundary until fixed: R1-R3 may be used as a clean algebraic core, but this row must not be cited for Wilson action form, running/fixed-point selection, N_F = 1/2 from Cl(3), absolute g_bare = 1 from A1+A2, or the parent broad g-bare derivation."
+    },
+    {
+      "archived_at": "2026-05-29T00:58:04.152141+00:00",
+      "audit_date": "2026-05-28T02:21:32.215748+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "Bounded structural-normalization theorem: on the admitted SU(3) Wilson plaquette action and continuum kinetic-matching surface, the Cl(3)->End(V)->su(3) canonical-normalization chain fixes the Wilson bare normalization g_bare=1 equivalently beta=6, without deriving the Wilson action form or any dynamical running/fixed-point selection.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can."
+        },
+        "dep_claim_type": {
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "bounded_theorem",
+          "physical_lattice_necessity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "g_bare_structural_normalization_theorem_note_2026-04-18": "retained_bounded",
+          "physical_lattice_necessity_note": "retained_no_go"
+        },
+        "deps": [
+          "g_bare_structural_normalization_theorem_note_2026-04-18",
+          "physical_lattice_necessity_note"
+        ],
+        "load_bearing_score": 21.714,
+        "runner_hash": "5b82fa4436749f0be366622db1fe08682dce5061745b71e9486821588361c6e7",
+        "transitive_descendants": 209
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Fresh-context check confirms su(3) is simple, so invariant symmetric bilinear forms are one-dimensional; with Tr(T_a T_b)=N_F delta_ab, Schur centrality gives sum_a T_aT_a=C_F I_3 and tracing gives 3C_F=8N_F. Scaling by real c multiplies both invariants by c^2, so joint preservation is exactly c=+/-1.",
+      "claim_scope": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T02:21:32.215748+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-28T02:17:46.787564+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded R1-R3 algebraic core: for a fixed Hilbert-Schmidt form on the canonical su(3) triplet block, the Ad-invariant form is unique up to scalar, and scalar dilation T_a -> c T_a preserves both the trace Gram and quadratic Casimir only for c = +/-1; connection-rescaling and Wilson-routing observations are out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-28T02:21:32.215597+00:00",
+          "auditor": "codex-audit-loop-fresh-context-g-bare-hs-rigidity-20260528-r2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "R1-R3 only: fixed Hilbert-Schmidt form on the canonical su(3) triplet block, invariant-form uniqueness up to scalar, and scalar-dilation trace/Casimir rigidity c=+/-1.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:g_bare_structural_normalization_theorem_note_2026-04-18:retained_bounded->unaudited",
+      "load_bearing_step": "For T_a -> c T_a, both B_HS(T_a,T_b) and sum_a T_a T_a scale by c^2, so preserving the fixed trace Gram and quadratic Casimir forces c^2=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No re-audit needed unless the source promotes R4/R5 connection or Wilson-routing observations into load-bearing claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The scoped R1-R3 trace/Casimir rigidity closes. This does not ratify physical connection equivalence, Wilson routing, N_F=1/2 derivation, running/fixed-point selection, or absolute g_bare=1 from A1+A2; c=-1 is only metric/Casimir-preserving within this scalar-dilation check, not a new Lie-bracket automorphism claim."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.038916+00:00",
+      "audit_date": "2026-06-06T23:16:37.953834+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Exact algebraic SU(3) embedding on the 3D symmetric base carrier of the Cl(3)/Z^3 taste cube, its commutation with the displayed fiber SU(2) and base-sector Y operators, and the SU(3) Fierz channel-count fraction R_conn=8/9; physical SM-color identification and EW readout are excluded.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 statement that the SU(3)_c quadratic Casimir on the cited V_3 fundamental with Gell-Mann normalization equals (4/3) I_3; physical quark color-factor readouts are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "physical_lattice_necessity_note": "no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained",
+          "graph_first_su3_integration_note": "retained",
+          "physical_lattice_necessity_note": "retained_no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "graph_first_su3_integration_note",
+          "physical_lattice_necessity_note",
+          "su3_casimir_fundamental_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 22.109,
+        "runner_hash": "f4baa4bca1293edd525f61c7fc1dca71960beab9b2c949e1f125016cd525d095",
+        "transitive_descendants": 275
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-231338-7bf09fa65a-g_bare_hilbert_schmidt_rigid",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The R1-R3 algebraic core follows from the retained algebraic su(3) embedding/trace normalization plus standard simplicity, invariant-form rigidity, Schur centrality, and trace evaluation. The note explicitly excludes the former connection-rescaling, Wilson-routing, and unconditional g_bare promotion claims, so those missing bridges are not part of the audited scope.",
+      "claim_scope": "Under the fixed algebraic triplet-block su(3) embedding and its Hilbert-Schmidt trace form, the Ad-invariant form is unique up to scalar and no real scalar dilation c != \u00b11 preserves both the trace Gram and quadratic Casimir.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T23:16:37.953834+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T23:13:03.907272+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-231008-4f33649acd-g_bare_hilbert_schmidt_rigid",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "R1-R3 only: on the fixed triplet block carrying the retained algebraic su(3) embedding, the Hilbert-Schmidt trace form is the unique invariant inner product up to scalar, and no real scalar dilation c != +/-1 preserves both the trace Gram and quadratic Casimir.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T23:16:37.953834+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-231338-7bf09fa65a-g_bare_hilbert_schmidt_rigid",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the fixed algebraic triplet-block su(3) embedding and its Hilbert-Schmidt trace form, the Ad-invariant form is unique up to scalar and no real scalar dilation c != \u00b11 preserves both the trace Gram and quadratic Casimir.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained->unaudited",
+      "load_bearing_step": "For a B_HS-orthogonal su(3) basis with B_HS(T_a,T_b)=N_F \u03b4_ab, Schur plus trace evaluation gives \u03a3_a T_aT_a=(8/3)N_F I_3, and the dilation T_a -> cT_a multiplies both the trace Gram and this Casimir by c^2, so joint preservation forces c^2=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the convention boundary between the triplet-block trace Tr_{V_3} and the full M3_sym \u2297 I2 embedding trace; it does not affect the scoped R1-R3 result as written.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The load-bearing mathematics is a finite algebraic consequence of the triplet su(3) representation and the fixed trace form: invariant-form uniqueness is standard for simple su(3), and the Casimir value follows from Tr(C_F I_3)=\u03a3_a Tr(T_aT_a)=8N_F. The supplied runner computes the canonical Gram, Casimir, sampled Ad-invariance, normalization scaling, and scalar-dilation identities, and its source performs actual matrix checks rather than merely printing a certificate. The cited authorities are retained for the algebraic embedding/form inputs actually used, while their deferred physical-color, Wilson-action, and connection-equivalence readouts are outside this row's declared scope."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.454626+00:00",
+      "audit_date": "2026-06-15T21:04:27.725046+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 only: the SU(3)_c quadratic Casimir on the cited algebraic V_3 fundamental equals (4/3)I_3 in Gell-Mann normalization, excluding physical-quark color/readout corollaries."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "physical_lattice_necessity_note": "no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "physical_lattice_necessity_note": "retained_no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "retained_bounded"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "graph_first_su3_integration_note",
+          "physical_lattice_necessity_note",
+          "su3_casimir_fundamental_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 26.785,
+        "runner_hash": "f4baa4bca1293edd525f61c7fc1dca71960beab9b2c949e1f125016cd525d095",
+        "transitive_descendants": 311
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-210048-7e64e818d1-g_bare_hilbert_schmidt_rigid",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained CL3/graph authorities supply the algebraic SU(3) triplet embedding and trace normalization needed for the scoped claim; the remaining steps are standard simple-Lie-algebra rigidity, Schur scalar reduction, and finite trace algebra. No out-of-scope Wilson or physical connection bridge is used in R1-R3.",
+      "claim_scope": "R1-R3 only: on the algebraic SU(3) triplet block inside C^8 with the fixed trace form, the Ad-invariant form is unique up to scalar and no real scalar rescaling c other than c=+/-1 preserves both the trace Gram and sum_a T_a T_a. Wilson routing, connection equivalence, physical color readout, and g_bare promotion were not audited as load-bearing claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T21:04:27.725046+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T21:00:07.343187+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-205731-35e5384955-g_bare_hilbert_schmidt_rigid",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the fixed triplet-block Hilbert-Schmidt form on the retained algebraic su(3) embedding in V=C^8, the invariant form is unique up to scalar and no real scalar dilation c != +/-1 preserves both the trace Gram and quadratic Casimir.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-15T21:04:27.725046+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-210048-7e64e818d1-g_bare_hilbert_schmidt_rigid",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "R1-R3 only: on the algebraic SU(3) triplet block inside C^8 with the fixed trace form, the Ad-invariant form is unique up to scalar and no real scalar rescaling c other than c=+/-1 preserves both the trace Gram and sum_a T_a T_a. Wilson routing, connection equivalence, physical color readout, and g_bare promotion were not audited as load-bearing claims.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:su3_casimir_fundamental_theorem_note_2026-05-02:retained_bounded->unaudited",
+      "load_bearing_step": "For Tr(T_a T_b)=N_F delta_ab, Schur plus trace gives sum_a T_a T_a=(8/3)N_F I_3, and T_a -> c T_a multiplies both the trace Gram and this raw Casimir sum by c^2, so simultaneous preservation requires c^2=1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the phrase 'no scalar dilation' read with the explicit c != +/-1 qualifier; downstream consumers should not cite this row for Wilson routing, connection equivalence, or absolute g_bare=1.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The substantive runner checks are finite matrix-algebra checks of the Gram, Casimir, Ad-invariance samples, normalization scaling, and scalar-rescaling identities; the remaining five passes are source-scope firewall checks. Independently, Tr(sum_a T_a T_a)=8N_F and Schur on the irreducible triplet give C_F=(8/3)N_F, while scalar dilation multiplies both audited invariants by c^2. The cited physical-identification and Wilson-action gaps are explicitly outside the audited R1-R3 scope, so they do not block the bounded algebraic theorem."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.937494+00:00",
+      "audit_date": "2026-06-18T03:34:49.312711+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic K1-K3 only: on the cited V_3 fundamental with Gell-Mann normalization T^a=\u03bb^a/2, C_2=\u03a3_a T^aT^a is central, scalar, and equals (4/3)I_3; physical-quark color-factor readouts are excluded."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "physical_lattice_necessity_note": "no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "physical_lattice_necessity_note": "retained_no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "graph_first_su3_integration_note",
+          "physical_lattice_necessity_note",
+          "su3_casimir_fundamental_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 22.785,
+        "runner_hash": "f4baa4bca1293edd525f61c7fc1dca71960beab9b2c949e1f125016cd525d095",
+        "transitive_descendants": 311
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the retained su(3) triplet embedding and trace normalization, the uniqueness and rescaling claims follow from standard simplicity/Killing rigidity plus finite matrix trace algebra. The former connection-rescaling and Wilson-routing observations are outside the audited scope.",
+      "claim_scope": "R1-R3 only: on the fixed triplet block carrying the retained su(3) fundamental trace form, B_HS is the unique Ad-invariant form up to scalar and scalar dilation T_a -> c T_a preserves both trace Gram and quadratic Casimir only for c = +/-1.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-18T03:34:49.312711+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:su3_casimir_fundamental_theorem_note_2026-05-02:decoration_under_cl3_color_automorphism_theorem->unaudited",
+      "load_bearing_step": "Because su(3) is simple the Hilbert-Schmidt trace form is unique up to scalar, and under T_a -> c T_a both the trace Gram and quadratic Casimir scale by c^2, so preserving both forces c^2 = 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor may re-check whether GRAPH_FIRST_SU3_INTEGRATION_NOTE is genuinely load-bearing for canonicality; the R1-R3 algebra itself closes either way.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The algebra in R1-R3 is correct: the trace form is invariant, Schur plus trace evaluation gives C_F = (8/3)N_F, and scalar dilation multiplies both invariants by c^2. The runner checks these finite identities and source-scope firewalls, with no external comparator or tuned input. The result is a standard algebraic corollary of the retained CL3_COLOR_AUTOMORPHISM_THEOREM su(3) fundamental embedding and trace normalization plus classical Lie algebra facts, rather than an independent new theorem."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.704360+00:00",
+      "audit_date": "2026-06-21T08:14:42.886060+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_color_automorphism_theorem": "Algebraic SU(3) embedding on the chosen 3D symmetric base subspace of the taste cube, its commutation with fiber SU(2) and sector-scalar Y, and the SU(3) Fierz/channel-count fraction R_conn=8/9; physical SM-color and EW readout bridges excluded.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "physical_lattice_necessity_note": "Narrow algebraic no-go: on the retained Wilson SU(3) beta=6/g_bare^2 surface with one positive plaquette parameter u_0, preserving alpha_s ratio x/y^2=1 and hierarchy ratio (x/y)^16=1 forces beta=6 and u_0=u_0_can.",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "Algebraic V_3 SU(3)_c fundamental only: the direct Gell-Mann matrix identity C_2 = \u03a3_a T^a T^a = (4/3)I_3 and centrality on that carrier."
+        },
+        "dep_claim_type": {
+          "cl3_color_automorphism_theorem": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "physical_lattice_necessity_note": "no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "cl3_color_automorphism_theorem": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "physical_lattice_necessity_note": "retained_no_go",
+          "su3_casimir_fundamental_theorem_note_2026-05-02": "decoration_under_cl3_color_automorphism_theorem"
+        },
+        "deps": [
+          "cl3_color_automorphism_theorem",
+          "graph_first_su3_integration_note",
+          "physical_lattice_necessity_note",
+          "su3_casimir_fundamental_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 22.817,
+        "runner_hash": "f4baa4bca1293edd525f61c7fc1dca71960beab9b2c949e1f125016cd525d095",
+        "transitive_descendants": 318
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260621-075307-895da9c9-g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the narrowed algebraic scope, the conclusion follows from the retained SU(3) triplet embedding and trace normalization plus standard simplicity/Killing-form and Casimir linear algebra. The out-of-scope Wilson, connection-equivalence, physical-color, and absolute g_bare readings are not used.",
+      "claim_scope": "Bounded algebraic R1-R3 only: on the retained algebraic SU(3) triplet trace-form surface, the Hilbert-Schmidt form is unique up to scalar and scalar generator dilations preserve both trace Gram and Casimir only for c = +/-1.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-21T08:14:42.886060+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "cl3_color_automorphism_theorem",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cl3_color_automorphism_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "A scalar dilation T_a -> c T_a sends both B_HS(T_a,T_b) and sum_a T_a T_a to c^2 times their original values, so preserving the trace Gram and quadratic Casimir forces c^2 = 1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the decoration classification versus clean bounded theorem; the R1-R3 algebra itself closes only on the narrowed trace-Casimir scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 38,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 38
+      },
+      "verdict_rationale": "The R1-R3 algebra is correct as a finite Lie-algebra consequence of the retained CL3 color automorphism triplet trace-normalization surface, with the graph-first SU(3) note only corroborating the same carrier. The runner constructs the Gell-Mann matrices and verifies trace Gram, Casimir scaling, sampled Ad-invariance, and source-scope firewall checks; it uses no external comparator or tuned data. Because the audited content is an exact algebraic corollary of the upstream SU(3) triplet surface plus standard Killing/Casimir mathematics, it is decoration rather than an independent clean theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
+  "title": "g_bare Hilbert\u2013Schmidt Rigidity Theorem (R1\u2013R3 Bounded Algebraic Core)",
+  "transitive_descendants": 718,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.2,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "64170050f3719976e3528e76dab749bb0a20afe8cd3d1f7f1b54cc7059e877f2",
+  "note_path": "docs/CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:27.101576+00:00",
+      "audit_date": "2026-06-10T05:11:53.708396+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "The flat Euclidean six-tetrahedra Coxeter triangulation of Z^3 has zero Regge deficit on axis, face-diagonal, and body-diagonal interior edges, with the six tetrahedra partitioning each cube."
+        },
+        "dep_claim_type": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "e30746e2ce2be1104ad6074c6854278227f98c18ccd6a4b9dccce06d220e71c7",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-050759-7b8cc67339-cubic_coxeter_regge_second_v",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The only load-bearing upstream authority is the retained flat cubic-Coxeter complex/zero-deficit note, and the runner directly instantiates that geometry, assembles the Regge Hessian from tetrahedral dihedral geometry, and checks Schlaefli, Hessian symmetry, action finite difference, gauge, Bloch, k=0, and comparator gates. An independent finite-difference reconstruction of tetrahedron geometry reproduced the flat deficits, 6-tet axis edge-star, c approximately -0.5 including a generic k direction, and the TT/trace signs to finite-difference accuracy.",
+      "claim_scope": "The audited scope is the retained 3D cubic-Coxeter six-tetrahedra complex: second variation of S_R about flat, gauge and k=0 consistency, non-metric breathing mass, and leading O(k^2) proportionality to the in-runner-derived 3D Euclidean linearized EH pairing.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:11:53.708396+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At small k, the metric-sector Regge quadratic form from the exact line-averaged metric map satisfies Q_h(k) = c * Q_EH(k) + O(k^4) with the single constant c = -1/2 in the tested axis, face-diagonal, and body-diagonal directions, with exact gauge zero modes and a massive non-metric complement.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Primitive registry artifacts were absent from the isolated packet, but no registered primitive is load-bearing here; a second auditor should re-check symbolic extraction of the O(k^2) coefficient if upgrading this runner-verified bounded theorem to a hand-proof standard.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner is not a print-only certificate: it constructs the retained periodic complex, computes dihedral derivatives, assembles J, verifies exactness gates, and compares the computed Bloch Hessian to an EH operator derived from curvature definitions. The hard-coded -1/2 pass threshold is applied only after c is computed from the Regge Hessian; no fitted value, external comparator, or unretained authority is consumed. The unaudited contextual rows are not load-bearing for the scoped 3D statement."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py",
+  "title": "The Second Variation of the Regge Action on the Retained Cubic-Coxeter Complex Equals the Linearized Einstein-Hilbert Second Variation at Leading Order \u2014 Exactly, Isotropically, with Derived Normalization",
+  "transitive_descendants": 12,
+  "verdict_rationale": null
+}

@@ -1,0 +1,174 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.48,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "50d0c0d356b3a5729f50d98134ecd03c3412c2b7a12a6b082277f6856d8ac63e",
+  "note_path": "docs/FREE_STAGGERED_TWO_STEP_DISPERSION_D_DIMENSIONAL_NARROW_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:50:39.202425+00:00",
+      "archived_for_note_hash": "9752c9af1b5af90e8c2cf412300124d55ef12f1879da90df5a79378b8286ff9d",
+      "audit_date": "2026-06-14T00:44:05.535595+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 5.524,
+        "runner_hash": "7ef13dc37fe241eb560166ed42e4fa7b59d49a13e43600c83e446aa21ab0ef9e",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260614-004153-978df8533a-free_staggered_two_step_disp",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford/two-step dispersion algebra closes under an independent bit-sign check and gives the displayed eigenvalues. The contour proof does not close as written: with the stated kernel convention exp(i p.z), the shift p -> p - i eta sign(z) gives exp(+eta |z|), not the claimed decaying factor.",
+      "claim_scope": "Free U=1 staggered two-step one-particle transfer in d spatial dimensions, including the dispersion E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), even-offset kernel support, and the stated exponential l_inf/l1 kernel bound for m>0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T00:44:05.535595+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The dimension-dependent reduction is the claim that the folded phase matrices satisfy the Clifford relations so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I, and the rate bound is then claimed from shifting p_mu* to p_mu* - i eta sign(z_mu*) in the Fourier integral.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Correct the contour-shift sign for the exp(i p.z) Fourier convention and re-audit the rate-bound paragraph; a second auditor should also re-check the axis-rate sharpness wording separately from the numerical fit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 1,
+        "C": 3,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The primary runner performs genuine finite-dimensional checks for the Clifford algebra, scalar hop square, and finite-torus two-step spectra, and it is not just printing constants. However, runner PASS does not repair the source proof's contour-shift sign error, because the finite-block numerical bound check does not verify the analytic sign convention in the displayed derivation. Since the all-direction exponential kernel bound is part of the audited theorem, the chain does not close as written even though the dispersion subclaim itself is supported."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.065222+00:00",
+      "audit_date": "2026-06-16T00:20:55.383927+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 8.524,
+        "runner_hash": "f82b9a7226c8bc53fb70d71bda5f8a89b9681481fe3195cb3a611abcf1128e8f",
+        "transitive_descendants": 22
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-001737-8356cca151-free_staggered_two_step_disp",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Both cited authorities are retained_bounded, which is retained-grade under the rubric, and they are used only for the one-axis two-step transfer algebra/normalization and quasilocal contour mechanism. The new d-dimensional step closes internally by the Gamma-matrix algebra and the note's self-contained strip estimate.",
+      "claim_scope": "Free U=1 staggered two-step sector with m > 0 and even spatial periods: the d-dimensional folded-cell algebra gives E_d(p) = arcsinh(sqrt(m^2 + sum_mu sin^2 p_mu)), the even-offset support rule, and the stated positive exponential kernel bound; gauged/interacting locality and sharp non-axis anisotropic rates are out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T00:20:55.383927+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "The folded staggered phase matrices obey Gamma_mu^2 = I and Gamma_mu Gamma_nu + Gamma_nu Gamma_mu = 0, so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I and every reduced momentum sector reduces to the one-axis 2 by 2 time-block algebra.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "The isolated workspace did not contain the primitive-registry files, but the restricted packet does not invoke any registered primitive.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure, not a definition or renaming: the staggered phase bookkeeping gives a Clifford family whose scalar square reduces the d-dimensional hop to the retained one-axis two-step eigenvalue calculation. The displayed signs, factors of 2, determinant/trace algebra, pi-periodicity support rule, contour-shift sign for exp(i p.z), and l_inf-to-l1 rate conversion are consistent. The runner source performs actual matrix, spectrum, and FFT checks rather than printing constants, and its finite d=2,d=3 computations support the general algebraic derivation without importing external comparators."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/free_staggered_two_step_dispersion_d_dimensional_2026_06_12.py",
+  "title": "Free Staggered Two-Step Dispersion in d Spatial Dimensions -- Narrow Theorem",
+  "transitive_descendants": 713,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

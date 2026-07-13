@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_projective_equivariance_k_odd_trace_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fd5e34c28998067c8ee1ac0573a97a1d4669ff3e5bbe2e5769fc24e57b7046fb",
+  "note_path": "docs/ACPHILAMBDA_PROJECTIVE_EQUIVARIANCE_K_ODD_TRACE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:25.733441+00:00",
+      "audit_date": "2026-07-09T08:46:07.232292+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "13c8ed10add27dbce98336c89bd5a9543910b4f1523f767a7d855822848e35fc",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-acphilambda-kodd-20260709-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded operator scope, the construction is explicit and the runner computes the relevant finite matrices/traces rather than importing an external comparator or tuned physical value. The note preserves the open boundaries for physical selection, occurrence, readout/value, and phi.",
+      "claim_scope": "For the explicitly defined finite-torus two-component Dirac representative H_D with C3 spin lift R2, the note proves/checks exact projective equivariance, torsion branch weights, diagonal heat/flux trace reductions, even-N naive doubler cancellation, and stated odd-ring/Wilson K-odd witnesses; no physical carrier selection, phi value, occurrence, or AC_phi_lambda retirement is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T08:46:07.232292+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The definitions of H_D, R2, and A(phi), together with the algebraic/dense checks that [R2,H_D]=0, R2^3=-I, Tr(f(H_D)R2^2)=-Tr(f(H_D)R2), and the even/odd/Wilson K-odd trace gates hold at the stated bounded instances.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that the claim remains scoped to the concrete representative and finite gates; dense-vs-reduction checks carry the branch-trace claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 29,
+        "C": 9,
+        "D": 0,
+        "total_pass": 64
+      },
+      "verdict_rationale": "Clean closure: the claimed result is a bounded construction/check on a defined representative, not a claim that the representative is physically selected or that AC_phi_lambda is retired. The retained-bounded dependency supplies the licensed per-site C^2 nearest-neighbor surface and residual selector boundary, while the runner verifies the projective equivariance, branch weights, trace reductions, cancellation, and finite K-odd witnesses with PASS=64 FAIL=0."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_projective_equivariance_k_odd_trace_2026_07_02.py",
+  "title": "AC_phi_lambda Projective Equivariance And The K-Odd Equivariant Trace",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

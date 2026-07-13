@@ -1,0 +1,1388 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_3d_self_gravity_sign_note_2026-04-11",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.97,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "47f9c65d2983ab223f6f7bc03ae5b08af95bb391cce8a7a8bf4a7db9d5889e3a",
+  "note_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T18:51:01.607278+00:00",
+      "audit_date": "2026-05-02T00:40:04.791184+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner directly computes the centered 3D staggered self-gravity sign-flip control and reproduces the note's exact width-ratio, core-excess, shell-gradient, drift, and norm-drift table. The bounded split closes because contraction holds for both signs while the trajectory envelope does not separate by sign.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->high",
+      "load_bearing_step": "Retain this as a bounded positive / negative split: the primary staggered architecture has a real 3D blocked-envelope self-gravity contraction observable, but the same centered self-gravity surface does not yield an honest sign-selective trajectory observable under a matched sign-flip control.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The note's claim is deliberately bounded to this centered open-cubic staggered probe. The current runner matches every frozen row and aggregate check: width contraction is strong for attract and repulse, core excess is essentially unchanged across signs, shell-gradient sign flips 20/20 versus 0/20, and norm drift remains machine-clean. Residual risk is limited to interpreting this architecture-specific envelope observable; the note does not claim sign-selective trajectory or Newton closure."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.976761+00:00",
+      "audit_date": "2026-05-10T15:34:27.666259+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.964,
+        "runner_hash": "2f4ef7390407f408eb36a3413e9bb2953b97be6a1611e8398b05e76a2bb40be8",
+        "transitive_descendants": 352
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-019e1285-7502-7270-a5b9-058c04a4abe0",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs the finite staggered lattice Hamiltonian, solves the screened self-field from the evolving packet density, evolves the packet, and computes the stated blocked width, core, drift, and shell-gradient diagnostics without hard-coded output values. The conclusion closes only as this bounded finite-parameter computational statement, not as a broader physical self-gravity or asymptotic theorem.",
+      "claim_scope": "For the script-defined open 3D staggered cubic lattice with MASS=0.30, G_SELF=50.0, MU2=0.001, DT=0.10, N_STEPS=20, SIGMA=1.35, and side lengths 9, 11, 13, the computed blocked-envelope contraction is present for both source signs and the trajectory readouts do not give sign-selective closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T15:34:27.666259+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-10T15:32:58.784185+00:00",
+          "auditor": "codex-audit-loop-019e1283-7868-7131-9111-9eb96a1ad3da",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the specified open 3D cubic staggered lattice, parameters, sides 9/11/13, and listed blocked observables, the runner-computed envelope contracts versus free evolution for both source signs while only the field-side shell-gradient sign flips.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-10T15:34:27.665963+00:00",
+          "auditor": "codex-audit-loop-019e1285-7502-7270-a5b9-058c04a4abe0",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the script-defined open 3D staggered cubic lattice with MASS=0.30, G_SELF=50.0, MU2=0.001, DT=0.10, N_STEPS=20, SIGMA=1.35, and side lengths 9, 11, 13, the computed blocked-envelope contraction is present for both source signs and the trajectory readouts do not give sign-selective closure.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The exact outputs show blocked width ratios of about 0.632-0.640 and core probability excesses about +0.428-0.429 for both source signs, while the shell-averaged potential gradient flips sign perfectly.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the retained scope stays limited to the finite script-defined parameter sweep; the reported norm drift is not an independent unitarity check because each step renormalizes the state.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Clean for the bounded runner-defined claim: the code computes the six sign/size cases and the stdout matches the note's contraction, core-excess, and shell-gradient sign claims. There are no cited dependencies and no external comparator or imported target value. The clean boundary is narrow: it does not establish sign-selective trajectory closure, a continuum limit, parameter robustness beyond the listed sweep, or a physical gravity bridge outside the specified parity-coupled scalar law."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:44.250350+00:00",
+      "audit_date": "2026-07-12T16:03:02.422582+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.235,
+        "runner_hash": "2f4ef7390407f408eb36a3413e9bb2953b97be6a1611e8398b05e76a2bb40be8",
+        "transitive_descendants": 425
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00128-staggered_3d_self_gravity_si",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical computation closes on its explicitly programmed finite model, but the source overextends that result to a robust primary-architecture self-gravity statement and a broader failure of sign-selective trajectory closure. A framework-native dynamics/source bridge and tests of off-center, longer-time, or genuinely different trajectory observables are missing.",
+      "claim_scope": "The runner verifies final-time contraction and sign nonseparation for the listed blocked-width, core-probability, and blocked-centroid observables on the centered N_STEPS=20 fixture at side lengths 9, 11, and 13; it does not establish a general trajectory-sign no-go or derive the physical self-gravity model from the framework premises.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T16:03:02.422582+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "For side lengths 9, 11, and 13, the computed blocked width and core observables contract for both source signs while the centered trajectory readouts remain effectively unchanged under the sign flip.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner evolves attract and repulse cases for side lengths 9, 11, and 13 and compares the final blocked-envelope observables.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`side=9`: `|\u0394 ratio| = 1.394913e-05`",
+            "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Directly compare the two programmed source signs in every finite size case.",
+            "outcome": "The tested width ratios and core excesses are nearly identical across signs, closing this finite-case route only.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "matched_finite_sign_flip"
+          },
+          {
+            "attempt": "The same calculation was run at side lengths 9, 11, and 13.",
+            "disposition": "CLOSED",
+            "evidence_locator": "`side = 9, 11, 13`",
+            "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Look for increasing sign separation as the open cubic lattice side is enlarged.",
+            "outcome": "No material sign separation appears within this three-size sweep, but no continuum or larger-volume conclusion follows.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "finite_size_drift"
+          },
+          {
+            "attempt": "The runner records the shell-gradient sign at every step for both source signs.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the **field profile** knows the sign:",
+            "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the shell-averaged potential gradient as evidence that the sign survives into the evolution.",
+            "outcome": "The field observable separates perfectly, but it is not a trajectory observable and therefore cannot close sign-selective trajectory dynamics.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "field_gradient_proxy"
+          },
+          {
+            "attempt": "Maximum and final blocked-centroid drift were computed for every sign and lattice size.",
+            "disposition": "CLOSED",
+            "evidence_locator": "blocked-centroid drift stays tiny and symmetric",
+            "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether the sign produces a symmetry-breaking blocked-centroid displacement despite similar envelope widths.",
+            "outcome": "The centered fixture shows only small, sign-symmetric drift, closing this specific centroid channel.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "centroid_symmetry_breaking"
+          },
+          {
+            "attempt": "No such initial condition appears in the source or runner; only the centered Gaussian is evaluated.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "centered Gaussian packet",
+            "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Break central symmetry with an off-center or momentum-carrying initial packet so the field sign can generate directional trajectory response.",
+            "outcome": "This remains an untested route to sign-selective trajectory behavior.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "off_center_initial_packet"
+          },
+          {
+            "attempt": "The supplied runner stops after the fixed twenty-step evolution.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "N_STEPS = 20",
+            "evidence_path": "scripts/frontier_staggered_3d_self_gravity_sign.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Evolve beyond the short twenty-step window to test whether small sign differences accumulate into a trajectory separation.",
+            "outcome": "Longer-time sign behavior remains untested.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "long_time_dynamics"
+          },
+          {
+            "attempt": "The packet supplies only the fixed blocked-envelope, core, centroid, and field-gradient readouts.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "The readouts are deliberately symmetry-safe:",
+            "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace the fixed 2x2x2 blocking with site-resolved moments, currents, anisotropic multipoles, or a different coarse-graining carrier.",
+            "outcome": "Other trajectory carriers remain untested and could retain sign information.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "alternate_blocking_carrier"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The listed centered blocked-width, core-probability, and centroid observables do not materially separate the two signs over the supplied finite twenty-step sweep.",
+            "The restricted packet does not derive the programmed staggered Hamiltonian and self-field law as the framework's physical primary-architecture self-gravity dynamics."
+          ],
+          "evidence_locator": "does not choose a Hamiltonian or transfer operator",
+          "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "The listed centered blocked-width, core-probability, and centroid observables do not materially separate the two signs over the supplied finite twenty-step sweep.",
+              "left_closes_right": false,
+              "right": "The restricted packet does not derive the programmed staggered Hamiltonian and self-field law as the framework's physical primary-architecture self-gravity dynamics.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "The listed centered blocked-width, core-probability, and centroid observables do not materially separate the two signs over the supplied finite twenty-step sweep.",
+            "The restricted packet does not derive the programmed staggered Hamiltonian and self-field law as the framework's physical primary-architecture self-gravity dynamics."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "sign-selective trajectory closure still fails.",
+          "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "primary staggered architecture",
+              "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+              "phrase": "primary staggered architecture",
+              "promoted_wall": "The restricted packet does not derive the programmed staggered Hamiltonian and self-field law as the framework's physical primary-architecture self-gravity dynamics."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Admissibility is not a dynamics axiom.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "self-gravity",
+              "promoted_wall": "The restricted packet does not derive the programmed staggered Hamiltonian and self-field law as the framework's physical primary-architecture self-gravity dynamics."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "centered Gaussian packet",
+              "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+              "phrase": "centered Gaussian packet"
+            }
+          ],
+          "scan_scope": "The source's architecture, self-gravity, robustness, centered-packet, trajectory-closure, Hamiltonian, source-law, normalization, and finite-sweep language was checked against the runner and supplied framework premises.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "This lane does **not** produce a sign-selective 3D trajectory observable.",
+          "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+          "none_found_reason": "No N1 route uses RULED OUT BY PRIOR, so no prior-witness residual match is claimed.",
+          "scan_scope": "The packet contains no N1 route ruled out by a retained prior witness; all N1 routes were judged directly from the supplied source and runner.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "Retain this as a bounded positive / negative split:",
+          "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+          "scan_scope": "The source's robust, clean, real, and sign-closure language was compared with the actual spatial sizes, initial condition, duration, and observables tested.",
+          "statements": [
+            {
+              "evidence_locator": "the contraction is strong and stable",
+              "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+              "phrase": "the contraction is strong and stable",
+              "tested_resolutions": [
+                "side lengths 9, 11, and 13",
+                "one centered Gaussian initial state",
+                "twenty evolution steps",
+                "one fixed parameter tuple"
+              ],
+              "untested_resolutions": [
+                "other coupling strengths and packet widths",
+                "larger-volume or continuum behavior",
+                "longer-time stability"
+              ]
+            },
+            {
+              "evidence_locator": "sign-selective trajectory closure still fails",
+              "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+              "phrase": "sign-selective trajectory closure still fails",
+              "tested_resolutions": [
+                "blocked 2x2x2 width",
+                "core probability",
+                "blocked-centroid drift"
+              ],
+              "untested_resolutions": [
+                "off-center packets",
+                "momentum-carrying packets",
+                "site-resolved current or multipole observables",
+                "alternate coarse grainings",
+                "longer-time evolution"
+              ]
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes only kinetic-form isotropy and explicitly supplies no dynamics, coupling, source law, or downstream gravity theorem.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The minimal axioms supply lattice, local possibilities, admissibility, and record content but explicitly do not choose a Hamiltonian or physical dynamics.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise access to a realized state does not select the Gaussian state, evolution law, source coupling, or observable.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference supplies no dimensionless dynamics, coupling, sign selector, or trajectory readout.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton determinant-counting obligation is unrelated to staggered self-gravity dynamics or trajectory sign response.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton R-eta readout obligation does not supply the gravity source law or tested trajectory extensions.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This quark determinant cross-sector readout obligation is unrelated to the finite staggered self-field computation.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The complete supplied partial-closure index was checked for axioms, approved primitives, open obligations, conventions, and definition/scope reframes that could supply the missing dynamics/source bridge or broaden the finite sign test.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The perfectly reversed shell-gradient sign demonstrates that the self-field carries the sign at every step, so the near-identical envelope observables might be interpreted as a genuine dynamical sign result rather than numerical blindness.",
+          "evidence_locator": "the **field profile** knows the sign:",
+          "evidence_path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+          "resolution": "The argument establishes field-side sign sensitivity but not a sign-selective trajectory observable. It therefore supports the note's finite positive/negative split while failing to justify a general trajectory-sign no-go.",
+          "resolved": true,
+          "route_id": "field_gradient_proxy"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:0",
+              "evidence_locator": "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Prior audit treated the finite architecture-specific computation as clean while preserving a narrow residual-risk boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:1",
+              "evidence_locator": "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Prior audit narrowed the result to the exact runner-defined finite fixture and excluded continuum, broader robustness, and physical-gravity closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Charged-lepton orbit-counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Charged-lepton R-eta readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Quark determinant cross-sector readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A finite gravity sweep cannot establish distance-law, both-masses, or full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Finite positive evidence does not itself supply a physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated audit-process and atomic-stability boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated inherited flavor, Planck, and plaquette route inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated electroweak normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated plaquette coefficient-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Lensing-observable and tuned-ray boundaries are not the centered self-gravity envelope calculation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated carrier-orbit antisymmetry and registry-exhaustion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated charged-lepton selector no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated Lorentz-emergence scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated causal-metric theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "General warning against extrapolating a single finite boundary row.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated local Wilson-scorecard boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated flavor-tracial route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated analytic-vector proof-route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated gauge-environment contraction routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated gauge-isotropy and temporal-generator walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A finite gravity-side computation does not supply a full physical observable bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Weak-field sign checks do not close nonlinear self-gravity or physical Newton coupling.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated Planck-scale carrier and source-unit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated hypercharge normalization and species-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated multi-lane dependency and scale-boundary inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated atomic-scale and threshold-transport no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated quark-mass selector and readout inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Finite lattice checks do not establish an asymptotic or continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A field or scalar-potential proxy need not be the same trajectory observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated finite-path lensing geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Physical static-source readout remains a separate derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated temporal-source and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated planning-priority versus theorem-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A simulation update tick is not automatically a derived physical time.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated neutrino mass-matrix and selector inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated neutrino and cosmological-scale dependency inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Finite lattice rows must not be promoted to a universal Newtonian theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "General warning not to extrapolate beyond a fixed finite parameter fixture.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated gauge-coupling authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "An imposed-field or finite packet response does not by itself derive physical gravity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Finite-window exclusion does not establish an all-resolution theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated Clifford-carrier selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated Planck carrier-selection and action-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated gauge-plaquette bootstrap boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated one-plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Supplied finite data and arithmetic do not select a physical observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated strong-CP and charged-lepton registrability boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated locality and temporal-axis selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A finite mathematical observable does not automatically supply physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated spin-statistics nonforcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "The current minimal framework does not select the programmed nonzero staggered kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated SU(3) cube-encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated documentation/source synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A single finite slot does not establish a full architecture-wide card.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated theta mass-orientation bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated theta gauge-sector action/readout bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated theta carrier and assembly gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated theta phase-insertion gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated theta defect-closure gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated charged-lepton determinant-power selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated charged-lepton orbit-occupancy selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated record-formation and R-eta selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated artifact-visibility gap without a theorem-level no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated record-only readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "A small finite packet cannot establish a continuous family or structural selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Finite wide-lattice rows do not prove an exact continuum theorem or universal law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "mechanism": "Unrelated Yukawa readout-renaming boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The listed centered blocked-width, core-probability, and centroid observables do not materially separate the two signs over the supplied finite twenty-step sweep.",
+          "The restricted packet does not derive the programmed staggered Hamiltonian and self-field law as the framework's physical primary-architecture self-gravity dynamics."
+        ],
+        "demotion": "bounded-with-corrected-wall-count",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11": {
+              "accepted_premise_type": null,
+              "content_sha256": "ebb9985957fb65762e4c3ae54717d4c9f5a0ccd4a73e562bdd7f10ea60a7cf5f",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:0",
+                "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:1"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:0",
+                "staggered_3d_self_gravity_sign_note_2026-04-11:previous_audit:1"
+              ]
+            },
+            "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11": {
+              "accepted_premise_type": null,
+              "content_sha256": "9ed093103ab17308d42e31be4424f60445d53a85e3a943acce8462bb61d72377",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/staggered_3d_self_gravity_sign_note_2026-04-11",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Admissibility is not a dynamics axiom.",
+                "does not choose a Hamiltonian or transfer operator"
+              ]
+            },
+            "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "47f9c65d2983ab223f6f7bc03ae5b08af95bb391cce8a7a8bf4a7db9d5889e3a",
+              "effective_status": null,
+              "path": "docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Retain this as a bounded positive / negative split:",
+                "The readouts are deliberately symmetry-safe:",
+                "This lane does **not** produce a sign-selective 3D trajectory observable.",
+                "`side = 9, 11, 13`",
+                "`side=9`: `|\u0394 ratio| = 1.394913e-05`",
+                "blocked-centroid drift stays tiny and symmetric",
+                "centered Gaussian packet",
+                "primary staggered architecture",
+                "sign-selective trajectory closure still fails",
+                "sign-selective trajectory closure still fails.",
+                "the **field profile** knows the sign:",
+                "the contraction is strong and stable"
+              ]
+            },
+            "scripts/frontier_staggered_3d_self_gravity_sign.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "2f4ef7390407f408eb36a3413e9bb2953b97be6a1611e8398b05e76a2bb40be8",
+              "effective_status": null,
+              "path": "scripts/frontier_staggered_3d_self_gravity_sign.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "N_STEPS = 20"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains untested off-center, longer-time, and alternate-carrier routes.",
+          "N5 identifies untested resolutions behind the robust and sign-closure rhetoric."
+        ],
+        "narrowed_claim_scope": "The runner verifies final-time contraction and sign nonseparation for the listed blocked-width, core-probability, and blocked-centroid observables on the centered N_STEPS=20 fixture at side lengths 9, 11, and 13; it does not establish a general trajectory-sign no-go or derive the physical self-gravity model from the framework premises.",
+        "next_route": {
+          "reason_untested": "The runner hard-wires a centered Gaussian, so it never tests whether breaking central symmetry converts the sign-reversing field gradient into a directional trajectory response.",
+          "route_id": "off_center_initial_packet"
+        },
+        "prior_claim_scope": "For the script-defined open 3D staggered cubic lattice with MASS=0.30, G_SELF=50.0, MU2=0.001, DT=0.10, N_STEPS=20, SIGMA=1.35, and side lengths 9, 11, 13, the computed blocked-envelope contraction is present for both source signs and the trajectory readouts do not give sign-selective closure.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to the exact centered N_STEPS=20 blocked-width/core/centroid fixture, add a dated downstream-hygiene line to this note's own boundary so the narrowed hash re-enters the audit queue, and register off-center, longer-time, alternate-blocking, and framework-native dynamics/source-bridge extensions separately.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner genuinely constructs the lattice operators, solves the six nonlinear evolutions, and reproduces the reported finite rows without hard-coding their outputs. However, the Hamiltonian, parity-coupled self-field law, coupling strength, centered initial condition, blocking prescription, and finite duration are supplied model choices rather than consequences of the accepted framework premises. The completed evidence supports the exact finite fixture, but not the note's broader physical-architecture and sign-closure language."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_staggered_3d_self_gravity_sign.py",
+  "title": "3D Staggered Self-Gravity Contraction / Sign Note",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

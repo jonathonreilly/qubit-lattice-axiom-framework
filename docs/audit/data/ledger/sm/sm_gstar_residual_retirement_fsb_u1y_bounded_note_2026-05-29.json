@@ -1,0 +1,180 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_closure_note",
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f4dd6fc6213fc7c109e0181dc3a7f9eca21a2fff31b03c7a606624cf2cb22236",
+  "note_path": "docs/SM_GSTAR_RESIDUAL_RETIREMENT_FSB_U1Y_BOUNDED_NOTE_2026-05-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-07T15:16:07.334836+00:00",
+      "archived_for_note_hash": "98682d77f7ba298dd890148d0f2f5962107b12da7d2852ca9f2016d776b53482",
+      "audit_date": "2026-05-30T13:38:51.391361+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "Audited the narrow arithmetic theorem that the per-mode lattice ratio (c+1/2)/(c+1) at c=d-1, the eta/zeta quotient at s=d, and the alignment equation 2^(d-2)=d coincide at 7/8 only for integer d=4 among d>=2.",
+          "hypercharge_identification_note": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
+          "hypercharge_identification_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "76627a9407aeac7c573e77ec6ef4a33ee1e553a6f6ffb3bc5df5e9e738bbe3b2",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260530-133548-a6277735-sm_gstar_residual_retire",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The R-U1Y rank-only arithmetic is supported by the retained gl(3) plus gl(1) commutant, with R-POL still separate. The R-FSB step does not close because the cited 7/8 theorem supplies a retained rational coincidence, not a bridge identifying or deriving the fermionic thermal weight used in g_*.",
+      "claim_scope": "Audited the bounded claim that R-FSB and R-U1Y are retired to retained-sourced status for the g_* dof-count only: R-FSB via the retained 7/8 anchor, and R-U1Y via the retained gl(3) plus gl(1) commutant rank.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T13:38:51.391361+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note claims the g_* dof-count consumes only the retained 7/8 rational and the retained one-abelian-factor rank, both strictly weaker than the full fermionic-SB law and hypercharge-value statements.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-audit after a retained bridge proves that the g_* fermionic thermal weight is supplied by the cited 7/8 anchor, or after replacing the R-FSB sourcing with a retained fermionic thermal-ratio derivation.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 41,
+        "C": 0,
+        "D": 0,
+        "total_pass": 63
+      },
+      "verdict_rationale": "The runner verifies exact arithmetic, ledger bookkeeping, and the rank-count separation, but it does not compute or bridge the fermionic Stefan-Boltzmann thermal factor. The source note equates the physical g_* fermion weight with an independently retained 7/8 rational because the numerical value matches. That is a role-identification substitution rather than a derivation of the thermal-weight input. The U1 rank retirement may be retained-scoped, but the two-residual retirement claim fails as a whole on R-FSB."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.720942+00:00",
+      "audit_date": "2026-06-07T19:04:47.458346+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "761024ee1748b3f3c42e6902973e81f559be6601fd1ae6ff55ad2ec58a074186",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-190310-d189e04ee0-sm_gstar_residual_retirement",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The thermal ratio follows from the displayed Bose/Fermi series integrals and eta/zeta identity, and the abelian count follows algebraically from the retained gl(3) \u2295 gl(1) decomposition. The note explicitly leaves the full fermionic-SB law, hypercharge values, and R-POL outside the retired scope.",
+      "claim_scope": "Audited the bounded retirement of two g_* census residuals: the fermion thermal 7/8 weight via source-local thermal integrals and the one-abelian-factor rank via the retained gl(3) \u2295 gl(1) commutant.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T19:04:47.458346+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For g_* purposes, R-FSB consumes only the direct Bose/Fermi thermal-integral ratio I_F/I_B = 7/8, and R-U1Y consumes only the single gl(1) rank in the retained gl(3) \u2295 gl(1) commutant, not the full fermionic Stefan-Boltzmann law or hypercharge values.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that using the gl(1) rank does not import the excluded hypercharge-value surface; this packet separates those scopes cleanly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 47,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 66
+      },
+      "verdict_rationale": "Independent formula checking confirms Gamma(4) zeta(4) = pi^4/15, Gamma(4) eta(4) = 7 pi^4/120, and their ratio is 7/8. The graph-first authority states the 3 \u2295 1 split and gl(3) \u2295 gl(1) commutant, so extracting one abelian factor is a valid algebraic consequence of retained input. The runner source mostly performs symbolic/arithmetic checks plus citation and ledger checks; it does not import PDG, lattice, fitted, or observational comparators."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py",
+  "title": "`g_*` Census Residual Retirement: R-FSB (direct thermal 7/8 ratio) + R-U1Y (one abelian gauge dof) \u2014 Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

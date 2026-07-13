@@ -1,0 +1,369 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "light_cone_framing_note",
+  "claim_scope": null,
+  "claim_type": "meta",
+  "claim_type_author_hint": "meta",
+  "claim_type_author_hint_raw": "meta",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+    "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
+    "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "meta",
+  "effective_status_reason": "metadata",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "meta",
+  "load_bearing_score": 7.375,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ab3f24b90c6d5947e5ac1c897257cf0dd2226aab333519f0152d4242e64ed29a",
+  "note_path": "docs/LIGHT_CONE_FRAMING_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106276+00:00",
+      "archived_for_note_hash": "71f4ff01d1e02761b23c5f3c824545e4347b01df0d6b419b56f5a214d25f5348",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-01T15:26:01.958448+00:00",
+      "archived_for_note_hash": "01a6cd2d3392497b0ff78e68f8633b5acb6a80b2ded9b361f6d7e0c100a89b78",
+      "audit_date": "2026-05-01T01:59:24.880587+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop:2026-05-01-light_cone_framing_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The dispersion derivative is internally wrong: for E^2=m^2+sin^2(k), v_g=sin(k)cos(k)/E has vmax=sqrt(1+m^2)-m<1 for m>0 and tends to 1 as m->0, not vmax=1/(2m), and the massless maximum is not at k=pi/2.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note argues that the staggered dispersion E^2=m^2+sin^2(k) gives the correct v=1 light cone in the massless limit and v<1 for massive particles, so Lieb-Robinson finite-cone behavior is not a blocker.",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note's load-bearing staggered-dispersion argument contains an algebraic error. From E^2=m^2+sin^2(k), v_g=sin(k)cos(k)/E; maximizing gives vmax=sqrt(1+m^2)-m, which is below 1 for m>0 and approaches 1 as m->0. The note instead states vmax=1/(2m) for m<<1 and then says the massless maximum occurs at k=pi/2, where cos(k)=0. Why this blocks: the support note is meant to defuse a light-cone concern, but its central dispersion calculation contradicts itself and would imply superluminal velocities for small nonzero m. Repair target: correct the staggered-dispersion extremum derivation, add a runner for v_g(k,m) and the Lieb-Robinson bound, and declare/cite the lattice-QFT reference inputs used for the broader framing. Claim boundary until fixed: the general statement that lattice theories have Lieb-Robinson rather than strict continuum cones may still be standard background, but this note's presented derivation does not currently support it."
+    },
+    {
+      "archived_at": "2026-05-03T11:33:25.056636+00:00",
+      "audit_date": "2026-05-01T16:25:12.511321+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.892,
+        "transitive_descendants": 41
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the note's stated scope, the calculus from E^2 = m^2 + sin^2(k) to v_max(m) is explicit and the runner numerically validates the corrected maximum, subluminal bound, and mass limits. The note also explicitly excludes deriving a Lieb-Robinson constant for the separate Crank-Nicolson operator.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "Substituting back yields the closed-form maximum v_max(m) = sqrt(m^2 + 1) - m, with v_max(m) <= 1 for all m >= 0 and equality only in the strict massless limit.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The scoped support claim closes: starting from the stated staggered Dirac dispersion, the maximum group velocity formula follows by ordinary calculus and the runner verifies the formula and subluminal behavior across the tested mass range. The residual risk is intentionally outside this row's boundary: it does not provide the operator-norm Lieb-Robinson constant for the specific Crank-Nicolson kernel used elsewhere, and the note says that would require a separate calculation."
+    },
+    {
+      "archived_at": "2026-05-09T18:28:00.865540+00:00",
+      "archived_for_note_hash": "7c14a58ecb8ba68107cba70f5f00445dacee4b9346ae04e7c65dca81a7f5c82e",
+      "audit_date": "2026-05-03T13:03:17.690014+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.655,
+        "transitive_descendants": 284
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-agent-light-cone-20260503T000000Z",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner closes the corrected staggered-dispersion formula, but the note explicitly states that it does not derive the Lieb-Robinson constant for the specific Crank-Nicolson operator. Therefore the architecture-level framing conclusion does not follow from the provided inputs alone.",
+      "claim_scope": "Audit of the claim that the observed finite-spacing Crank-Nicolson Lieb-Robinson cone is standard lattice-QFT behavior and not a blocker, supported by the 1+1d staggered Dirac dispersion bound.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T13:03:17.690014+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The 97% containment seen at finite lattice spacing in the Crank-Nicolson evolution is the standard discretization artifact.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "other: add a retained theorem and runner that compute the Lieb-Robinson/operator-norm bound for the specific Crank-Nicolson operator used elsewhere.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Issue: the note validates the staggered Dirac dispersion formula v_max(m)=sqrt(m^2+1)-m, but the load-bearing bridge identifies the observed Crank-Nicolson containment behavior with standard lattice-QFT Lieb-Robinson behavior without deriving the LR constant for the actual Crank-Nicolson hopping kernel. Why this blocks: the positive theorem needs the architecture-specific operator-norm/source-kernel calculation, not just an analogy to staggered lattice QFT. Repair target: add a retained theorem and runner that compute the Lieb-Robinson/operator-norm bound for the specific Crank-Nicolson operator used elsewhere. Claim boundary until fixed: the exact 1+1d staggered dispersion maximum is numerically validated and subluminal, but the architecture-level no-blocker conclusion remains conditional."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:12.819179+00:00",
+      "archived_for_note_hash": "68da0a360c45bcf1dd5306447bd2320f3822e48a2e62a255e24dd0304769e349",
+      "audit_date": "2026-06-12T00:57:54.699463+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "For finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1, the CN step is unitary, has the stated spectral generator identity, does not support the withdrawn H_CN weighted-overlap quasilocality claim, and inherits the exact finite-range LR cone up to the explicit additive defect 2||B||n zeta.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "F1-F2c carrier support/J/W budgets, F3-L1/L2 finite-range LR lemma with derived constants, and F4 unconditional tensor-product nearest-neighbor hopping-H microcausality bound; F5 only as an explicit conditional/open exact-H context."
+        },
+        "dep_claim_type": {
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "bounded_theorem",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "retained_bounded",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 7.322,
+        "runner_hash": "5f1ec28eb11b1e7a70f6cae3e60a41814fc09c732afcde2f524394625a32da8b",
+        "transitive_descendants": 79
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-005534-c398f7b81c-light_cone_framing_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The dispersion subclaim closes algebraically: maximizing `sin^2(k)(1-sin^2(k))/(m^2+sin^2(k))` gives `sin^2(k*)=m(sqrt(m^2+1)-m)` and `v_max=sqrt(m^2+1)-m`. The broader LR/CN framing does not close because the cited Hamiltonian authority leaves the reconstructed `H` quasilocal bridge open, and the cited CN authority explicitly withdraws the fixed-step `v_LR^CN` formula used in the source note.",
+      "claim_scope": "The audited scope is the claim that the staggered dispersion has `v_max(m)=sqrt(m^2+1)-m` and that the framework's Crank-Nicolson light-cone behavior is standard finite-spacing Lieb-Robinson behavior rather than a blocker.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:57:54.699463+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The source uses the CN bridge equation `v_LR^CN(a_tau) = v_LR(H) / (1 - a_tau J / 2)` to connect the observed finite-step Crank-Nicolson containment to a standard Lieb-Robinson tail.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained finite-range or quasilocal Lieb-Robinson theorem for the reconstructed `H` and its Crank-Nicolson kernel, then update the stale `J_action` and `v_LR^CN` formulas in the source note.",
+      "open_dependency_paths": [
+        "docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md",
+        "docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The primary runner genuinely checks the dispersion formula, but only as an algebraic/numerical validation of that subclaim, not as a proof of the LR/CN bridge. The source note contains stale quantitative bridge material: `J_action <= |m| + 30` conflicts with the retained Hamiltonian authority's repaired `|m|+78`/`78.5`/`80` and overlap-weight constants, and the quoted fixed-step CN velocity formula is explicitly withdrawn by the cited CN authority. The full identification of the observed 97% CN containment as a theorem-grade standard LR tail therefore remains conditional on an exact finite-range or quasilocal bridge for the reconstructed Hamiltonian and CN kernel."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.504781+00:00",
+      "audit_date": "2026-06-12T23:35:06.898468+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": "Free U=1 bilinear two-step exact-log Hamiltonian with the retained exponential hopping-kernel bound satisfies a finite-velocity quasilocal Lieb-Robinson envelope for one-site observables when 0 < d mu < eta < arcsinh(m).",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "For finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1, the CN step is unitary, has the stated spectral generator identity, does not support the withdrawn H_CN weighted-overlap quasilocality claim, and inherits the exact finite-range LR cone up to the explicit additive defect 2||B||n zeta.",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range."
+        },
+        "dep_claim_type": {
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": "bounded_theorem",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "bounded_theorem",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": "retained_bounded",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "retained_bounded",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 7.84,
+        "runner_hash": "1171136e22539e344865baba1d8e63387263040e46b970a485fb45ff128783f2",
+        "transitive_descendants": 80
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-233147-876dae4b69-light_cone_framing_note",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed CN bound is a direct triangle-inequality composition of the retained_bounded free-bilinear quasilocal LR bridge and the retained_bounded CN cone-inheritance theorem. The staggered dispersion maximum is an independent algebraic identity, and the note keeps the open gauged/interacting and volume-independent CN-defect targets out of scope.",
+      "claim_scope": "The repaired light-cone framing closes only for the massive free bilinear exact-log sector, with a weighted-overlap LR cone and finite-block subcritical Crank-Nicolson additive defect; it does not claim strict finite-range H, fixed-step CN velocity, gauged/interacting locality, or strict v=1 at finite spacing.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:35:06.898468+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "Composing the free-bilinear exact-evolution LR envelope with the repaired CN cone-inheritance defect gives ||[alpha_CN^n(A_x),B_y]|| <= 2||A_x||||B_y||exp(-mu d_1(x,y)+4W_mu|t|)+2||B_y||n zeta(A_x) under the stated sector, finite-block, subcritical, and 0 < d mu < eta < arcsinh(m) hypotheses.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check the shared a_tau notation if a future claim upgrades the CN defect from finite-block fixed-H scaling to a continuum exact-log scaling statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 11,
+        "C": 3,
+        "D": 6,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The repair removes the stale diameter-2 exact-H and fixed-step CN velocity surfaces and routes the conclusion through retained-grade bounded authorities supplied in the packet. Independent algebra gives v_max(m)=sqrt(m^2+1)-m from E^2=m^2+sin^2(k), and the LR/CN composition preserves the stated hypotheses and additive defect. The runner is supportive rather than purely self-printing: it numerically checks the dispersion formula, source rewiring guards, weighted-overlap condition, and a finite-block CN defect inequality."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.882161+00:00",
+      "audit_date": "2026-07-01T13:05:55.819540+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": "Free U=1 bilinear staggered two-step exact-log Hamiltonian with m>0 and 0<d mu<eta<arcsinh(m): finite weighted overlap W_mu and the one-site quasilocal LR bound with velocity v_mu=4 W_mu/mu; no gauged/interacting, massless, or continuum microcausality claim.",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "For finite-dimensional finite-range Hermitian H on a finite block with y=a_tau||H||/2<1, the Cayley/CN step has the stated spectral generator identity and inherits the exact finite-range Lieb-Robinson cone up to the additive defect 2||B|| n zeta(A); no locality of H_CN is claimed.",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "Symbol-level free U=1 bilinear two-step result for E_d(p)=arcsinh sqrt(m^2+sum_mu sin^2 p_mu), m>0: explicit exponential kernel bound, d=1 sharpness, finite l1 support-family/tail bounds, and strict diameter<=2 support failure on the stated free-sector range-4 exhibit; gauged/interacting locality, formal d=3 lower-bound proof, and quasilocal-LR composition are out of scope."
+        },
+        "dep_claim_type": {
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": "bounded_theorem",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "bounded_theorem",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10": "retained_bounded",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09": "retained_bounded",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
+          "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+          "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 7.409,
+        "runner_hash": "1171136e22539e344865baba1d8e63387263040e46b970a485fb45ff128783f2",
+        "transitive_descendants": 84
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T130555Z-5319615a-light_cone_framing_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cone statement is an algebraic composition of the retained_bounded quasilocal exact-evolution LR bridge and the retained_bounded CN defect theorem. The dispersion maximum follows by optimizing v_g^2 over s=sin^2(k).",
+      "claim_scope": "Free U=1 bilinear staggered two-step sector with m>0: exact-log quasilocal LR envelope plus finite-block subcritical Crank-Nicolson cone inheritance with additive n zeta defect; separate staggered E^2=m^2+sin^2(k) dispersion has v_max=sqrt(m^2+1)-m <= 1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T13:05:55.819540+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "The composed CN inheritance bound: ||[alpha_CN^n(A_x), B_y]|| <= 2||A_x||||B_y|| exp(-mu d_1(x,y) + 4 W_mu |t|) + 2||B_y|| n zeta(A_x) under the free-bilinear, finite-block, subcritical, and 0 < d mu < eta < arcsinh(m) hypotheses.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the E^2=m^2+sin^2(k) dispersion paragraph remains scoped separately from the arcsinh exact-log dispersion used in the LR authorities.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 11,
+        "C": 3,
+        "D": 6,
+        "total_pass": 46
+      },
+      "verdict_rationale": "The cited authorities are all retained_bounded and supply the exact-log kernel, weighted-overlap LR envelope, and CN defect inequality used by the note. The source keeps the sector boundaries explicit and does not claim strict v=1, exact finite range, a fixed-step CN velocity, a gauged/interacting theorem, or a volume-independent CN defect. The runner checks the corrected dispersion algebra, source rewiring, shell-condition finiteness, Cayley convention, and a finite-block CN inheritance inequality without using external comparator data."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/light_cone_staggered_dispersion.py",
+  "title": "Light Cone Framing \u2014 Lieb-Robinson is Standard Lattice QFT",
+  "transitive_descendants": 82,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

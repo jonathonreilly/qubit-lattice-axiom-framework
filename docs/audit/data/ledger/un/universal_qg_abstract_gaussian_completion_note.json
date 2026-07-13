@@ -1,0 +1,107 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_abstract_gaussian_completion_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_discrete_global_closure_note",
+    "universal_qg_uv_finite_partition_note",
+    "universal_qg_projective_schur_closure_note",
+    "universal_qg_canonical_refinement_net_note",
+    "universal_qg_inverse_limit_closure_note"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.129,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1061ccebb187240c70e4f06ca52251eb1f0628815b3a843567407d2fa00b567e",
+  "note_path": "docs/UNIVERSAL_QG_ABSTRACT_GAUSSIAN_COMPLETION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-06T11:08:35.450870+00:00",
+      "archived_for_note_hash": "067f0989b6bec10f252a04932398e27776615bfcfb094dd909b3c6c4bfaac026",
+      "audit_date": "2026-05-05T23:55:24.525806+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "audited_renaming"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 13.308,
+        "runner_hash": null,
+        "transitive_descendants": 316
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_abstract_ga-098",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The functional-analytic construction would be standard if the projectively consistent Gaussian cylinder family and refinement-independent cylindrical observables were retained inputs. The restricted packet provides no retained authority proving those load-bearing premises.",
+      "claim_scope": "Audited only the asserted construction of an abstract Gaussian/Cameron-Martin completion from a projectively consistent inverse-limit Gaussian cylinder family on the canonical barycentric-dyadic refinement net.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:55:24.525806+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because the inverse-limit family is exactly projectively consistent, the covariance bilinear form is refinement-independent, null-quotienting gives a pre-Hilbert cylindrical space, and its completion defines H_QG.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained-grade upstream notes proving the exact inverse-limit Gaussian cylinder family, projective compatibility, refinement-independent cylindrical observables, and any needed continuity of the stationary mean functional.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note's mathematical closure is an algebraic/standard completion step over an imported projective Gaussian cylinder family, not a first-principles compute. The only cited authority supplied is a packaging-only optional comparison note and does not establish the inverse-limit Gaussian family, Schur/projective closure, or continuity of the mean functional. Therefore the theorem does not close from the restricted packet, even though the completion step itself is plausible conditional on the missing premises."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_abstract_gaussian_completion.py",
+  "title": "Universal QG Abstract Gaussian Completion on `PL S^3 x R`",
+  "transitive_descendants": 139,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1081 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (proposed; audit-lane to ratify)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+    "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+    "graph_first_su3_integration_note",
+    "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+    "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+    "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+    "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b5ee5f081eee028b56df2d75e4f90dabd0e95ea8381b90710d9d1a14e14e49c7",
+  "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.235876+00:00",
+      "audit_date": "2026-05-02T23:33:42.200213+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-higgs-lattice-ratio-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The derivation closes as a narrow algebraic theorem from retained/admitted inputs: the structural counts, Clifford eigenvalue magnitude, mean-field scaling, generating-functional curvature, and N_taste = 16 substitution are sufficient. No hidden physical Higgs-matching bridge is needed for the stated lattice-side ratio.",
+      "claim_scope": "Given the retained graph-first SU(3) gauge surface, admitted Wilson canonical convention g_bare = 1, admitted Cl(3) Clifford identity D_taste^2 = d*I with d = 4, admitted mean-field factorization U_ab -> u_0 delta_ab, and N_taste = 16 taste eigenvalues, the lattice-side dimensionless curvature ratio is R_lattice = 4/(u_0^2*N_taste) = 1/(4u_0^2). This does not identify the ratio with (m_H/v)^2, fix u_0, derive m_H = v/(2u_0), or imply a Standard Model Higgs-mass prediction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T23:33:42.200213+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:g_bare_canonical_convention_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+      "load_bearing_step": "From the admitted Clifford identity with d = 4, the mean-field-scaled eigenvalues have magnitude 2u_0, so W(J) = (N_tot/2) log(J^2 + 4u_0^2) has W''(0) = N_tot/(4u_0^2); dividing by N_tot gives 1/(4u_0^2), matching the declared scaled lattice ratio 4/(u_0^2*N_taste) at N_taste = 16.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit any physical Higgs matching, u_0 value, or m_H prediction separately. The runner's pre-audit effective-status check is not part of the theorem proof and should not be used as retained evidence.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The claim is properly bounded and explicitly excludes the physical identification and Higgs-mass prediction. Although many runner checks are scope and ledger checks, the row adds an independent lattice-side curvature-ratio identity beyond merely restating its retained dependencies. Residual risk is downstream misuse: any identification with physical (m_H/v)^2 or u_0 selection must be audited separately."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:25.851249+00:00",
+      "audit_date": "2026-05-11T22:58:24.271801+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given the admitted Wilson canonical-normalization convention g_bare = 1 and the retained graph-first SU(3) surface with N_c = 3, the Wilson coefficient is \u03b2 = 6 and the Cl(3)-to-lattice curvature normalization has no multiplicative rescaling factor at g_bare = 1.",
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes."
+        },
+        "dep_claim_type": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "bounded_theorem",
+          "graph_first_su3_integration_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "retained_bounded",
+          "graph_first_su3_integration_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "7ced0fd61271f54704fea67cae6b4ad9e9d347027940dc22bb4e9012b051215c",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-higgs_lattice_eigenvalue-026",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic simplification closes once N_taste = 16, D_taste^2 = d I with d = 4, and mean-field scaling by u_0 are admitted. The restricted packet does not close those admitted Clifford/minimal-block/mean-field premises as retained upstream theorems, and the runner ledger reports the g_bare convention dependency as audited_conditional.",
+      "claim_scope": "Conditional lattice-side mean-field algebraic identity R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) for N_taste = 16, excluding any physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T22:58:24.271801+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-11T01:32:55.519175+00:00",
+          "auditor": "codex-audit-loop-019e14a9-5cc6-7671-a2d1-f85a85463ba5",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given retained graph-first SU(3), retained/admitted Wilson g_bare=1 convention, admitted Cl(3) identity D_taste\u00b2=d\u00b7I with d=4, admitted mean-field factorization, and N_taste=16, the lattice-side mean-field curvature ratio is R_lattice=1/(4u_0\u00b2), with no physical Higgs-mass matching claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:g_bare_canonical_convention_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+      "load_bearing_step": "Given N_taste = 16 and admitted mean-field eigenvalues |lambda| = 2 u_0, R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2), matching W''(0)/N_tot.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: reconcile the g_bare dependency status and add retained-grade upstream closure or explicit admitted-premise treatment for the Clifford/minimal-block and mean-field inputs.",
+      "open_dependency_paths": [
+        "docs/G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The load-bearing operation is class A algebra over declared inputs, and the note correctly excludes the physical matching step R_lattice = (m_H/v)^2. However, the result depends on admitted premises not closed inside the restricted packet, especially the Clifford/minimal APBC block and mean-field factorization, and the included runner ledger marks the g_bare dependency as audited_conditional. Therefore it is a valid bounded conditional identity, not an audited_clean closure over fully retained independent inputs."
+    },
+    {
+      "archived_at": "2026-05-24T22:11:54.287353+00:00",
+      "archived_for_note_hash": "be9b239bf67ba2d6ec2b77d5a6197269fba99ace32126addb154f5d110d92d36",
+      "audit_date": "2026-05-22T17:06:51.760104+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "Given admitted Wilson canonical-normalization g_bare = 1, the standard Wilson \u03b2 relation/field-strength rescaling, and retained graph-first SU(3) giving N_c = 3, \u03b2 = 6 and F^lattice = \u03a9^Cl(3) within the stated lattice expansion.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "g_bare_canonical_convention_narrow_theorem_note_2026-05-02",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "7ced0fd61271f54704fea67cae6b4ad9e9d347027940dc22bb4e9012b051215c",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T170631Z-b9876eb2-higgs_lattice_eigenvalue-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic simplification itself closes, but the restricted packet includes a cited authority that is not retained-grade and imports admitted mean-field/Clifford inputs rather than closing them inside the packet.",
+      "claim_scope": "Conditional lattice-side algebraic identity at mean-field: R_lattice = 4/(u_0\u00b2 N_taste) with N_taste = 16, hence R_lattice = 1/(4 u_0\u00b2), excluding any physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T17:06:51.760104+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given N_taste = 16 and mean-field eigenvalues |lambda_k| = 2 u_0, R_lattice \u2261 4/(u_0\u00b2 N_taste) = 1/(4 u_0\u00b2), matching W''(0)/N_tot.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: retain or replace the g_bare canonical convention dependency, and separately ensure the admitted mean-field/Clifford inputs are represented by retained-grade authorities if the row is to become clean.",
+      "open_dependency_paths": [
+        "docs/G_BARE_CANONICAL_CONVENTION_NARROW_THEOREM_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The load-bearing step is class A algebra over declared inputs, and the runner source genuinely checks the symbolic curvature and ratio claimed rather than merely printing passes. However, the g_bare canonical convention authority is marked decoration/audited-conditional rather than retained-grade under the allowed retained statuses. The note also explicitly conditions on admitted Clifford and mean-field assumptions, so the result is a valid bounded algebraic identity only after those inputs are accepted."
+    },
+    {
+      "archived_at": "2026-05-26T14:07:42.879591+00:00",
+      "audit_date": "2026-05-25T11:48:38.729502+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Given canonical trace normalization Tr(T_a T_b)=delta_ab/2, retained Wilson matching beta=2 N_c/g_bare^2, and the explicit local Wilson surface N_c=3, beta=6, the compatible value is g_bare=1; beta=6 is not derived.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Under the canonical Cl(3) triplet generator normalization Tr(T_a T_b)=delta_ab/2 and the Wilson small-a matching beta=2N_c/g_bare^2, a nontrivial scalar rescaling of the operator basis violates the canonical Gram normalization and routes into beta rather than an independent g_bare freedom.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "7ced0fd61271f54704fea67cae6b4ad9e9d347027940dc22bb4e9012b051215c",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T114550Z-8ca27e14-higgs_lattice_eigenvalue-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The symbolic curvature calculation and simplification close locally. The retained-grade chain does not close because the Clifford identity, N_taste = 16 minimal APBC block, and mean-field factorization are admitted inputs rather than retained authorities supplied in the restricted packet.",
+      "claim_scope": "Conditional lattice-side mean-field algebra: given the SU(3) graph surface, the Wilson g_bare = 1 surface, D_taste^2 = d I with d = 4, N_taste = 16, and U_ab -> u_0 delta_ab, the per-total curvature and R_lattice equal 1/(4 u_0^2), with no physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:48:38.729502+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_constraint_vs_convention_theorem_note_2026-05-03:retained_bounded->unaudited",
+      "load_bearing_step": "Given |lambda_full| = 2 u_0, W(J) = (N_tot/2) log(J^2 + 4 u_0^2), so W''(0)/N_tot = 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite retained one-hop authority for D_taste^2 = d I, the Cl(3)/Z^4 APBC N_taste = 16 block, and the mean-field U_ab -> u_0 delta_ab curvature normalization.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The runner performs exact class-A algebra and confirms the note avoids the physical matching claim R_lattice = (m_H/v)^2. It does not instantiate the staggered operator or derive the taste count and mean-field spectrum; those are hard-coded or admitted as standard inputs. The cited SU(3) and g_bare authorities are retained-grade, but the lattice/taste/mean-field bridge needed for retained-grade closure is not provided in this packet."
+    },
+    {
+      "archived_at": "2026-05-27T14:39:17.904182+00:00",
+      "audit_date": "2026-05-27T02:52:46.543358+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "7ced0fd61271f54704fea67cae6b4ad9e9d347027940dc22bb4e9012b051215c",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The symbolic algebra itself is internally consistent under the listed assumptions, but the current primary runner no longer verifies the repaired dependency surface: after a forced cache refresh it exits nonzero because it still expects the old g_bare_canonical_convention dependency while the live ledger records the repaired g_bare rescaling and constraint-vs-convention dependencies. Closure should not be granted while the registered runner/cached certificate is stale against the source and ledger.",
+      "claim_scope": "Bounded lattice-side algebra claim: given the graph-first SU(3) surface, the scoped canonical g_bare/Wilson-matching inputs, the stated staggered Clifford identity D_taste^2 = d I at d=4, and the stated mean-field factorization with N_taste=16, the source algebra gives R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2), without identifying this with (m_H/v)^2, deriving u_0, or claiming a Higgs mass prediction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T02:52:46.543358+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:7ced0fd6->91c94aab",
+      "load_bearing_step": "The load-bearing algebra is the source block deriving W''(0)/N_tot = 1/(4 u_0^2) and R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste=16, while excluding the physical Higgs-mass identification.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update `scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py` to check the repaired g_bare dependency pair now present in the live ledger, refresh `logs/runner-cache/frontier_higgs_lattice_eigenvalue_ratio_narrow.txt`, and re-audit the bounded algebraic scope with the physical Higgs-matching exclusion intact.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "assert_count": 1,
+        "runner_elapsed_sec": 0.51,
+        "runner_failure": "Runner still checks that the claim records g_bare_canonical_convention_narrow_theorem_note_2026-05-02 as a dependency, but the live ledger deps are g_bare_constraint_vs_convention_theorem_note_2026-05-03, g_bare_rescaling_freedom_removal_theorem_note_2026-05-03, and graph_first_su3_integration_note.",
+        "runner_sha256": "7ced0fd61271f54704fea67cae6b4ad9e9d347027940dc22bb4e9012b051215c",
+        "runner_status": "nonzero_exit",
+        "total_fail": 1,
+        "total_pass": 29
+      },
+      "verdict_rationale": "Issue: the repaired source and live ledger cite the newer g_bare repaired dependency pair, but the primary runner still asserts the obsolete canonical-convention dependency and now exits with FAIL=1 when refreshed. Why this blocks: the audit lane cannot ratify a runner-backed bounded theorem when the registered certificate is stale relative to the actual dependency surface, even though the algebraic steps pass under the listed assumptions. Repair target: update the runner's graph-visible dependency checks to the repaired g_bare rescaling and constraint-vs-convention authorities, refresh the SHA-pinned cache, and preserve the explicit no-physical-Higgs-identification scope guard. Claim boundary until fixed: the note may be read as an unaudited algebra sketch under stated mean-field/Staggered-Clifford assumptions, but it is not retained-bounded until the runner certificate matches the repaired source/ledger."
+    },
+    {
+      "archived_at": "2026-05-29T12:01:40.581778+00:00",
+      "archived_for_note_hash": "fdb53ab34b661c53206dc91f9e80e384c19dc2c575884c1ba92d017659dcb7e7",
+      "audit_date": "2026-05-28T04:45:03.282850+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 3.807,
+        "runner_hash": "91c94aab606c66870ffddf16840242af7fbb3e16bbf5105d225d11d1b98dd02c",
+        "transitive_descendants": 6
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-Boyle-019e6ce4-ee9d-7ef1-8c2f-513651126166",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra and runner checks close exactly: W''(0)/N_tot equals 1/(4u_0^2), matching R_lattice. The retained one-hop rows cover the scoped SU(3) and g_bare surfaces, but the Clifford/staggered identity D_taste^2=d I and mean-field factorization U_ab -> u_0 delta_ab are load-bearing admitted premises, not retained one-hop theorem rows or registered Tier-A admissions in this packet.",
+      "claim_scope": "Exact mean-field algebraic ratio R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) for N_taste=16, N_c=3, and scoped g_bare=1, assuming D_taste^2=d I with d=4 and mean-field scaling U_ab -> u_0 delta_ab. Physical Higgs/SM matching, u_0 value, and m_H=v/(2u_0) are excluded.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T04:45:03.282850+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Given D_taste^2=d I with d=4 and mean-field U_ab -> u_0 delta_ab, W''(0)/N_tot = 1/(4u_0^2) and R_lattice = 4/(u_0^2 N_taste)=1/(4u_0^2) at N_taste=16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: add retained one-hop theorem/dependency coverage or explicitly approved admission rows for D_taste^2=d I and mean-field U_ab -> u_0 delta_ab, then re-audit the exact algebraic ratio.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "Issue: the exact algebra depends on two load-bearing imports, D_taste^2=d I and U_ab -> u_0 delta_ab, that are stated as admitted standard inputs rather than retained one-hop authorities. Why this blocks: without retained or explicitly approved admission status for those premises, the audit can verify only the downstream algebra, not the full claimed lattice-side theorem from retained inputs. Repair target: add retained one-hop theorem/dependency coverage or an explicitly approved admission for the Clifford/staggered identity and the mean-field scaling premise, then re-audit the same algebraic ratio. Claim boundary until fixed: the runner-supported equality R_lattice=1/(4u_0^2) is an exact conditional algebraic consequence of the stated premises and does not support any physical Higgs mass or Standard Model matching claim."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.534806+00:00",
+      "audit_date": "2026-06-05T18:40:20.861630+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "For complex internal Clifford algebras Cl(p,q), the volume element has parity commutation with generators, an internal chirality involution exists iff p+q is even, and with d_s=3 this forces d_t odd.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "cc129e130ef231974dbedf2d0e096deddac6348b9636644adb41378b144639d4",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-183959-19b090f3f7-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed differentiation is correct: for one paired eigenvalue term, d^2/dJ^2 of (1/2)log(J^2+4u_0^2) at J=0 is 1/(4u_0^2), and division by N_tot gives the same value. The result closes only within the explicitly named mean-field truncation and does not require the excluded physical matching step.",
+      "claim_scope": "Pure lattice-side algebraic identity in the stated tadpole mean-field truncation: with N_taste=16 and Clifford eigenvalue magnitude 2, R_lattice=4/(u_0^2 N_taste)=1/(4u_0^2), excluding any physical Higgs-mass identification or numerical u_0 value.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:40:20.861630+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:clifford_chirality_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "At mean field, W(J) = (N_tot/2) log(J^2 + 4 u_0^2), so W''(0)/N_tot = 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the packet-status inconsistency around the Clifford authority if the live ledger still marks it retained_pending_chain rather than retained.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic identity over the stated inputs, not a physical matching, numerical comparator, or renaming. The runner source performs real symbolic and matrix checks rather than merely printing constants, and an independent differentiation confirms the curvature factor. The cited one-hop authorities supplied in the packet are retained-grade or retained_bounded, and the note\u2019s conclusion is bounded to the formal mean-field hypothesis it states."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:55.235433+00:00",
+      "archived_for_note_hash": "d52de45c1ee6c1d313dc491137c6db7db6b3747be237e3c9999b628d770dd01e",
+      "audit_date": "2026-06-05T21:51:51.761318+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "cc129e130ef231974dbedf2d0e096deddac6348b9636644adb41378b144639d4",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-215002-a6b03dbac1-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed curvature algebra is correct once d=4, N_taste=16, the mean-field factorization, and the W(J) determinant form are granted. The restricted packet does not fully close those carrier/taste-count and generating-functional inputs from retained one-hop authorities, and the runner hard-codes d=4 and N_taste=16.",
+      "claim_scope": "Pure lattice-side mean-field algebra: given d=4, N_taste=16, SU(3) color count, and the tadpole mean-link u_0, the curvature ratio simplifies to R_lattice = 1/(4 u_0^2), with no physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:51:51.761318+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At mean field, W(J) = (N_tot/2) log(J^2 + 4 u_0^2), so W''(0)/N_tot = 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) at N_taste = 16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained one-hop bridge deriving the d=4/Z^4 APBC taste count N_taste=16 and the mean-field determinant W(J) form used in the curvature calculation.",
+      "open_dependency_paths": [
+        "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "An independent check of the load-bearing algebra agrees with the runner: differentiating (1/2) log(J^2 + 4u_0^2) gives 1/(4u_0^2) per mode, and 4/(16 u_0^2) simplifies to the same value. However, the packet leaves the d=4/APBC N_taste=16 bridge and the specific mean-field generating-functional form as scoped inputs rather than closed retained derivations. The Clifford dependency is also represented in the note/runner as retained_pending_chain, so the row is not eligible for audited_clean on this packet."
+    },
+    {
+      "archived_at": "2026-06-08T12:37:18.960798+00:00",
+      "archived_for_note_hash": "afe6ed060802bc56dab9c858697131bb371018e499e1e18c96ca5b8569601eb1",
+      "audit_date": "2026-06-07T16:37:43.894661+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded algebraic bridge that, for the stated free naive d=4 lattice Dirac operator and tadpole mean-field Cl(4) taste block, derives N_taste=16 and W(J)=(N_tot/2)log(J^2+4u_0^2) with curvature W''(0)=N_tot/(4u_0^2).",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "ecd5205f66fdfaa16d9bb539cdeefd8a566194ef91d97ce01bbbfd09f0c75698",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260607-163537-b1d8487c96-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The curvature differentiation and ratio simplification close algebraically once d=4, N_taste=16, and the mean-field determinant carrier are in force. The restricted one-hop packet does not close the d=4/Z^4 input: the cited Clifford chirality-dimension authority explicitly only forces d_t odd from d_s=3 and does not derive d_t=1 or total d=4.",
+      "claim_scope": "Pure lattice-side mean-field algebra for R_lattice=1/(4 u_0^2) on a d=4 Cl(4)/Z^4 APBC carrier with N_taste=16 and retained mean-link u_0; no physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T16:37:43.894661+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At mean field W(J)=(N_tot/2) log(J^2+4 u_0^2), so W''(0)/N_tot=1/(4 u_0^2), matching R_lattice=4/(u_0^2 N_taste)=1/(4 u_0^2) at N_taste=16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained one-hop authority deriving d_t=1 / total d=4 / Z^4 APBC carrier for this lattice block, or narrow the row to make d=4 an explicit unresolved bounded hypothesis.",
+      "open_dependency_paths": [
+        "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 90,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 90
+      },
+      "verdict_rationale": "Independent math confirms the displayed factor of 1/(4 u_0^2): d^2/dJ^2 log(J^2+4u_0^2) at J=0 is 1/(2u_0^2), and multiplying by N_tot/2 gives N_tot/(4u_0^2). However the runner and bridge packet hard-code or assert the d=4/Z^4 carrier needed for N_taste=16. The cited Clifford authority is retained for the chirality parity theorem but explicitly does not force d_t=1, so the claimed derivation from one-hop retained inputs is missing that bridge."
+    },
+    {
+      "archived_at": "2026-06-09T08:57:56.812500+00:00",
+      "archived_for_note_hash": "511da060a9763fa8437e8d35141919692ca4af7f4308dbc3ac80714525b9d1ea",
+      "audit_date": "2026-06-08T15:05:56.586734+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded algebraic bridge that, for the stated free naive d=4 lattice Dirac operator and tadpole mean-field Cl(4) taste block, derives N_taste=16 and W(J)=(N_tot/2)log(J^2+4u_0^2) with curvature W''(0)=N_tot/(4u_0^2).",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "905f886d9c3022d3b641659fbd22d3e6f4f16f8fe26be619714c6a6ed6a28d0c",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-150415-f7e5a4ee74-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra and curvature calculation close under the stated hypotheses. The restricted packet still leaves the framework-native d=4/Z^4 APBC carrier as an explicit unresolved bounded hypothesis, and the mean-field factorization remains a formal truncation hypothesis rather than a retained conclusion.",
+      "claim_scope": "Pure lattice-side mean-field algebra: given SU(3) color, retained u_0 definition, the supplied d=4/Z^4 APBC taste-block carrier with N_taste=16, and the tadpole mean-field truncation, R_lattice = 1/(4u_0\u00b2); no physical Higgs-mass matching or numerical u_0 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T15:05:56.586734+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "R_lattice \u2261 4/(u_0\u00b2\u00b7N_taste) = 4/(u_0\u00b2\u00b716) = 1/(4u_0\u00b2), matching W''(0)/N_tot = 1/(4u_0\u00b2) in the mean-field determinant form.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained one-hop derivation of the framework-native d=4/Z^4 APBC carrier, or keep the row explicitly conditional; also reconcile the stale runner PASS-count text.",
+      "open_dependency_paths": [
+        "UNPROVIDED: supplied d=4/Z^4 APBC taste-block carrier hypothesis",
+        "UNPROVIDED: mean-field factorization U_ab -> u_0 delta_ab formal truncation hypothesis"
+      ],
+      "runner_check_breakdown": {
+        "A": 93,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 93
+      },
+      "verdict_rationale": "Independent algebra agrees that D_taste\u00b2=4I gives mean-field paired eigenvalues \u00b12iu_0, W(J)=(N_tot/2)log(J\u00b2+4u_0\u00b2), W''(0)/N_tot=1/(4u_0\u00b2), and 4/(16u_0\u00b2)=1/(4u_0\u00b2). The runner source performs algebraic checks rather than a physical comparator or renaming. However, the claim explicitly depends on a supplied unresolved d=4/Z^4 APBC carrier and on the tadpole mean-field factorization as a bounded lemma hypothesis, so the chain does not close from retained-grade inputs alone. The note also contains stale verification counts relative to the provided runner output, but that is secondary to the open carrier/truncation dependency."
+    },
+    {
+      "archived_at": "2026-06-10T02:22:06.468677+00:00",
+      "archived_for_note_hash": "e42c83aaada537d0a186055ad6bebf6f47b3a94264d8fc500336baed8f352413",
+      "audit_date": "2026-06-09T11:56:42.853775+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded algebraic bridge that, for the stated free naive d=4 lattice Dirac operator and tadpole mean-field Cl(4) taste block, derives N_taste=16 and W(J)=(N_tot/2)log(J^2+4u_0^2) with curvature W''(0)=N_tot/(4u_0^2).",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "905f886d9c3022d3b641659fbd22d3e6f4f16f8fe26be619714c6a6ed6a28d0c",
+        "transitive_descendants": 23
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-115427-c051e1e851-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed curvature algebra closes inside the stated finite mean-field packet. Full retained-grade closure does not close because the d=4/Z^4 APBC carrier remains an explicit unresolved bounded hypothesis rather than a retained framework-native derivation.",
+      "claim_scope": "Pure lattice-side mean-field algebra: on the supplied d=4/Z^4 APBC taste-block packet with N_taste = 16, W''(0)/N_tot = R_lattice = 1/(4 u_0^2), with no physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T11:56:42.853775+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At N_taste = 16, R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2), matching the per-mode curvature W''(0)/N_tot.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide a retained one-hop framework-native derivation of the d=4/Z^4 APBC carrier, or keep the row explicitly conditional.",
+      "open_dependency_paths": [
+        "supplied d=4/Z^4 APBC taste-block carrier (unresolved bounded hypothesis; no retained source path supplied)"
+      ],
+      "runner_check_breakdown": {
+        "A": 93,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 93
+      },
+      "verdict_rationale": "The load-bearing math is a genuine algebraic identity: differentiating W(J) = (N_tot/2) log(J^2 + 4 u_0^2) gives W''(0) = N_tot/(4 u_0^2), and 4/(16 u_0^2) gives the same per-mode value. The runner source performs symbolic Clifford, curvature, ratio, and bridge-cache checks rather than only printing constants. However, the note explicitly keeps the framework-native d=4/Z^4 APBC carrier as unresolved, so the row cannot be audited clean from retained-grade inputs alone."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.222184+00:00",
+      "audit_date": "2026-06-10T03:23:54.341280+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded algebraic bridge that, for the stated free naive d=4 lattice Dirac operator and tadpole mean-field Cl(4) taste block, derives N_taste=16 and W(J)=(N_tot/2)log(J^2+4u_0^2) with curvature W''(0)=N_tot/(4u_0^2).",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.585,
+        "runner_hash": "ce4eaf046da5f504ee47dd41c0cdffe4586aa6faa3d07a52bd82c8c0d91af2ac",
+        "transitive_descendants": 23
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-032130-4d6af91aa8-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied retained bridge authorities provide N_taste = 16 and D_mf^dag D_mf = 4 u_0^2 I_48 inside the named mean-field truncation. Independent differentiation of the displayed W(J) gives W''(0)/N_tot = 1/(4 u_0^2), matching the stated R_lattice algebraically.",
+      "claim_scope": "Pure lattice-side mean-field algebra on the retained bridge-backed d=4/Z^4 APBC taste/determinant surface: R_lattice = 4/(u_0^2 N_taste) with N_taste = 16 equals the per-mode source curvature 1/(4 u_0^2), with no physical Higgs-mass matching or numerical u_0 claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T03:23:54.341280+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "Using W(J) = (N_tot/2) log(J^2 + 4 u_0^2), W''(0)/N_tot = 1/(4 u_0^2), and R_lattice = 4/(u_0^2 N_taste) with N_taste = 16 also equals 1/(4 u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only that the APBC/taste-carrier wording remains limited to the retained bridge-backed finite mean-field surface; no repair action is indicated.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 103,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained or retained_bounded inputs, not a physical readout or numerical match. The finite carrier and determinant form are supplied by retained bridge packets, while the mean-field replacement is kept as an explicit bounded hypothesis rather than promoted to the exact theory. The runner source performs symbolic Clifford and curvature checks plus bridge-cache verification, and the same curvature and ratio equality check out by direct manual differentiation and simplification."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.066295+00:00",
+      "audit_date": "2026-06-12T01:13:36.797252+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Standalone complex Clifford-algebra result that the volume element has parity-dependent commutation, an internal gamma_5 in Cl(p,q) exists iff p+q is even, and with the accepted Z^3 spatial axiom this forces d_t odd conditional on a total Cl(d_s,d_t) carrier.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Bounded algebraic implication CN + WM + beta=6 + N_c=3 => g_bare^2=1, with WM and beta=6 treated only as scoped assumptions.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Conditional algebraic lemma: given canonical trace normalization and scoped Wilson matching, a nontrivial scalar normalization rescaling sends the Gram matrix and matched beta coefficient by c^2, without deriving Wilson matching itself.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Two algebraic bridges only: the structural free-naive d=4 Brillouin-zone taste count and the Berezin/tadpole-mean-field W(J) curvature form under the explicit mean-field block; no physical Higgs-mass claim or full non-mean-field spectrum is audited.",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "Audited only the algebraic implication from a four-link plaquette and the admitted unit-mean tadpole-normalization principle to u_0 = <P>^{1/4}."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 7.0,
+        "runner_hash": "ce4eaf046da5f504ee47dd41c0cdffe4586aa6faa3d07a52bd82c8c0d91af2ac",
+        "transitive_descendants": 31
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-011219-6acc9fe919-higgs_lattice_eigenvalue_rat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed curvature derivative and ratio reduction are algebraic and independently check: W''(0)=N_tot/(4u_0^2), so W''(0)/N_tot=1/(4u_0^2), and 4/(16u_0^2)=1/(4u_0^2). The needed carrier, determinant, Clifford, SU(3), g_bare, and u_0 inputs are cited as retained or retained_bounded, while the mean-field truncation is correctly scoped as a bounded hypothesis.",
+      "claim_scope": "Pure lattice-side mean-field algebra: given the retained bridge-backed d=4/APBC carrier with N_taste=16 and D_mf^dag D_mf=4u_0^2 I_48, the source-curvature ratio is R_lattice=1/(4u_0^2), with no physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T01:13:36.797252+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:g_bare_constraint_vs_convention_theorem_note_2026-05-03:retained_bounded->unaudited",
+      "load_bearing_step": "At N_taste = 16, R_lattice = 4/(u_0^2 N_taste) = 1/(4u_0^2), matching W''(0)/N_tot from W(J) = (N_tot/2) log(J^2 + 4u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the bounded bookkeeping of the APBC/taste carrier versus spin-taste terminology; it does not affect the audited algebra once the retained determinant bridge is accepted.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 103,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The load-bearing step is not a numerical comparator or a physical renaming; it is a class-A algebraic identity over retained-grade inputs and a clearly named mean-field truncation. The runner source does construct explicit Cl(4) gamma matrices and symbolically differentiates the generating functional, while the independent check of the derivative and factor 4/16 confirms the same result without relying on the runner path. The note explicitly excludes R_lattice=(m_H/v)^2, m_H=v/(2u_0), a numerical u_0, and full non-mean-field gauge-theory claims, so the audited scope remains bounded but closed."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.495683+00:00",
+      "audit_date": "2026-06-18T07:04:48.777230+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Internal complex Clifford-algebra chirality parity: the volume element has commutation sign (-1)^(n-1), an internal gamma_5 exists iff p+q is even, and with d_s=3 this forces d_t odd.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Conditional algebraic corollary: given CN, N_c=3, WM beta = 2 N_c / g_bare^2, and the explicit beta=6 input, exact rational arithmetic gives g_bare^2=1 and positive-branch g_bare=1.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Given the retained canonical trace normalization Tr(T_a T_b)=delta_ab/2, scalar rescaling T_a -> c T_a scales the Gram matrix by c^2 and preserves the canonical surface only when c^2=1.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the narrow algebraic bridge that, under the free naive lattice Dirac symbol and the declared tadpole mean-field Cl(4) block, proves the structural d=4 naive taste count N_taste=16 and derives W(J)=(N_tot/2)log(J^2+4u_0^2) with W''(0)=N_tot/(4u_0^2).",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration_under_cl3_color_automorphism_theorem",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 6.954,
+        "runner_hash": "ce4eaf046da5f504ee47dd41c0cdffe4586aa6faa3d07a52bd82c8c0d91af2ac",
+        "transitive_descendants": 30
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge authorities supply the d=4 taste count, determinant carrier, and W(J) form; the remaining step is exact Clifford algebra, differentiation, and simplification. The note keeps the tadpole mean-field truncation as an explicit bounded hypothesis and excludes the physical identification R_lattice = (m_H/v)^2.",
+      "claim_scope": "Pure lattice-side mean-field algebra on the retained bridge-backed d=4/APBC taste determinant carrier: W''(0)/N_tot = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16, excluding physical Higgs-mass matching and any numerical u_0 value.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T07:04:48.777230+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:clifford_chirality_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "From W(J) = (N_tot/2) log(J^2 + 4 u_0^2), W''(0)/N_tot = 1/(4 u_0^2), and with N_taste = 16 the ratio 4/(u_0^2 N_taste) also equals 1/(4 u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should note the non-load-bearing source prose still mentions an older PASS=93 runner total while the supplied current cache reports PASS=103; the algebraic claim itself is checked by the current runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 103,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The audited claim is an exact algebraic closure over retained-grade inputs: the bridge packets provide N_taste = 16 and D_mf^dag D_mf = 4 u_0^2 I_48, and the source/runner independently verify the Clifford square and curvature formula. The runner source performs symbolic and matrix checks rather than merely printing the target identity, and the supplied cache reports PASS=103, FAIL=0. No PDG value, numerical u_0, Higgs-mass identification, or fitted scale is used in the load-bearing chain."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.428690+00:00",
+      "audit_date": "2026-07-02T03:26:45.619735+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "Pure Clifford-algebra parity theorem: the volume element commutes for odd n and anticommutes for even n, so an internal Clifford-algebra chirality involution exists iff p+q is even; with accepted Z^3 spatial count this implies d_t is odd.",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "Conditional algebraic corollary: given CN, N_c=3, WM beta = 2 N_c / g_bare^2, and the explicit beta=6 input, exact rational arithmetic gives g_bare^2=1 and positive-branch g_bare=1.",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "Given the retained canonical trace normalization Tr(T_a T_b)=delta_ab/2, scalar rescaling T_a -> c T_a scales the Gram matrix by c^2 and preserves the canonical surface only when c^2=1.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded algebraic bridge that, under the explicit naive lattice Dirac operator and tadpole mean-field block hypotheses, derives the d=4 naive taste count N_taste=16 and the mean-field log-determinant W(J) curvature form used by the ratio note.",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "Finite Clifford/APBC spin-taste/color mean-field determinant identity showing the per-mode source curvature equals 4/(u_0^2 N_taste) for N_taste = 16 under the declared U -> u_0 I truncation.",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "The bounded algebraic implication u_0 = <P>^{1/4} from the local hypotheses P1 four-link plaquette structure and P2 unit-mean tadpole rescaling principle; no derivation of P2 or numerical plaquette value is audited."
+        },
+        "dep_claim_type": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "bounded_theorem",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "positive_theorem",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10": "retained",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03": "retained_bounded",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03": "decoration_under_cl3_color_automorphism_theorem",
+          "graph_first_su3_integration_note": "retained",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06": "retained",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+          "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+          "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+          "graph_first_su3_integration_note",
+          "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+          "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+          "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 7.044,
+        "runner_hash": "ce4eaf046da5f504ee47dd41c0cdffe4586aa6faa3d07a52bd82c8c0d91af2ac",
+        "transitive_descendants": 32
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T032645Z-f3f1feaa-higgs_lattice_eigenvalue",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade bridge packets supply the scoped d=4/APBC taste count and determinant form, and the u_0 authority supplies the mean-link parameter. Independent algebra confirms the Clifford square, curvature derivative, and ratio normalization within the stated mean-field truncation.",
+      "claim_scope": "Pure mean-field lattice-side algebra identity on the retained bridge-backed d=4/APBC taste carrier: R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16, with no physical Higgs-mass identification.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T03:26:45.619735+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:clifford_chirality_dimension_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "With N_taste = 16 and W(J) = (N_tot/2) log(J^2 + 4 u_0^2), the per-mode curvature W''(0)/N_tot equals 1/(4 u_0^2), matching R_lattice = 4/(u_0^2 N_taste) = 1/(4 u_0^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 103,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 103
+      },
+      "verdict_rationale": "The load-bearing step is exact algebra over the stated bounded inputs: differentiating W(J) gives W''(0)/N_tot = 1/(4 u_0^2), and substituting N_taste = 16 gives the same R_lattice. The runner source constructs the Clifford matrices, checks the symbolic derivative, verifies the ratio identity, and checks SHA-fresh retained bridge caches rather than relying only on printed PASS text. The claim explicitly excludes R_lattice = (m_H/v)^2 and imports no PDG, fitted, or tuned comparator value."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
+  "title": "Higgs Lattice Eigenvalue Ratio (Mean-Field) \u2014 Narrow Theorem",
+  "transitive_descendants": 17,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,189 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_selector_unique_amplitude_slot_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "pmns_selector_class_space_uniqueness_note"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.557,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "997f2bac727ac71808fd33bd0037952f08f2109bf0b3007319962c03bb9f7dd5",
+  "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.813208+00:00",
+      "audit_date": "2026-04-30T02:42:25.396621+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.241,
+        "transitive_descendants": 106
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-round-2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Given the one-dimensional reduced selector class space, the one-amplitude statement follows by elementary linear algebra. It adds bookkeeping but no independent physical bridge or comparator beyond the parent uniqueness claim.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "pmns_selector_class_space_uniqueness_note",
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "Assume the exact PMNS selector class-space uniqueness theorem; then every future microscopic bridge functional after reduction to X_red is B_red = a_sel S_cls for one real scalar amplitude a_sel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 2,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the note is an algebraic reduced-form restatement of the upstream PMNS selector class-space uniqueness theorem. Why this blocks: it adds no independent physical observable, comparator, or microscopic selector law; it only names the remaining scalar coordinate once the parent one-dimensionality is assumed. Repair target: box this as a corollary under the class-space uniqueness parent, or add a genuine derivation of the amplitude activation law. Claim boundary until fixed: the safe claim is that the parent one-dimensional class space has a single real coordinate, not a separately retained theorem-grade bridge result."
+    },
+    {
+      "archived_at": "2026-05-05T07:51:30.021896+00:00",
+      "archived_for_note_hash": "9db1958063c27ad25c581e5be8fb2b87722663ec923c0472e67970d620bd7180",
+      "audit_date": "2026-05-05T04:24:35.496056+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.587,
+        "runner_hash": "fa20b4d098df7d9daa25e2084bc2023988588cf0650647dbb9c2d70bf0605277",
+        "transitive_descendants": 271
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-pmns_selector_unique_amp-031",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic inference would close if the PMNS selector class-space uniqueness theorem were supplied as retained input. In the restricted packet, that load-bearing parent is named but not provided, so the required one-dimensionality premise is imported rather than derived from the axiom.",
+      "claim_scope": "Audited only the reduced linear-algebra inference that a one-dimensional real selector class space leaves a single real coefficient on the canonical class S_cls.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:24:35.496056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Assume the exact PMNS selector class-space uniqueness theorem; then every future microscopic bridge functional after reduction to X_red is of the form B_red = a_sel S_cls with one real scalar amplitude.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the retained PMNS selector class-space uniqueness note or an independent derivation of the one-dimensional reduced selector class space in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The core step is standard one-dimensional real vector-space bookkeeping: once a real reduced selector class space is one-dimensional with basis S_cls, any real reduced realization is a_sel times that basis. However, the note explicitly assumes the class-space uniqueness theorem, while section 2 provides no cited authority for it. The runner also hard-codes the constraint matrix and basis, then verifies repository text in unprovided files, so it does not constitute a first-principles derivation from the axiom."
+    },
+    {
+      "archived_at": "2026-05-08T07:13:38.665698+00:00",
+      "archived_for_note_hash": "c6e2453f1f771196a3c4d125d9bf742ca42ae6c1fbcd9d0df8720558fad4139b",
+      "audit_date": "2026-05-08T02:38:20.990670+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.451,
+        "runner_hash": "fa20b4d098df7d9daa25e2084bc2023988588cf0650647dbb9c2d70bf0605277",
+        "transitive_descendants": 174
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt55-xhigh-019e0572-c81b-7012-8609-9948aff87c33",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic reduction from a one-dimensional real class space to one scalar amplitude is straightforward, but the required upstream PMNS selector class-space uniqueness theorem is not provided as a cited authority in the restricted packet. The Majorana structural framing is also referenced but not supplied and is not load-bearing for the algebraic slot count.",
+      "claim_scope": "Given a one-dimensional reduced PMNS selector class spanned by S_cls = chi_N_nu - chi_N_e over R, the reduced bridge has one real amplitude coordinate a_sel.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T02:38:20.990670+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Assume the exact PMNS selector class-space uniqueness theorem; then every future microscopic bridge functional, after reduction to X_red, is of the form B_red = a_sel S_cls with one real scalar amplitude.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the PMNS selector class-space uniqueness note as a one-hop cited retained authority, or include a runner that derives the one-dimensional reduced selector class from retained inputs without reading external notes.",
+      "open_dependency_paths": [
+        "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The note explicitly assumes PMNS selector class-space uniqueness, but the restricted packet lists no one-hop dependencies, so the central premise is not closed inside the audit packet. The runner partly hard-codes the reduced constraints and basis, then performs algebraic reconstruction, and separately checks text in external notes not provided here; it does not independently derive the upstream uniqueness theorem from retained primitives. Within the stated reduced scope, the one-real-amplitude conclusion follows conditionally from a one-dimensional real selector class."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_selector_unique_amplitude_slot.py",
+  "title": "PMNS Selector Unique Amplitude Slot",
+  "transitive_descendants": 752,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

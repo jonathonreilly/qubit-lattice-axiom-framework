@@ -1,0 +1,264 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "born_rule_from_gleason_busch_derivation_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem \u2014 bounded support note",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+    "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20",
+    "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+    "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+    "luders_rule_from_composition_consistency_note_2026-05-20",
+    "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.478,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "44f128a0580bce498c1c90f6bb64f754bba9b094dfbf179c8ed9cfa11ae546e9",
+  "note_path": "docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T12:08:46.580919+00:00",
+      "archived_for_note_hash": "cf6e466df5357904e7720a68f69d3f1716b9e63fa734c77727e72317466391ef",
+      "audit_date": "2026-05-27T03:00:22.600842+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The retained tracial-state dependency now closes only the unique-tracial-state theorem, and explicitly does not identify that state with a pre-record physical reference. The source note still imports the no-extra-structure/pre-record identification, L\u00fcders compositional-consistency update, and record-as-Kraus bridge as admitted or in-flight inputs, so the Born derivation does not close from the one-hop retained packet.",
+      "claim_scope": "Bounded Born-rule repair route on the qubit-lattice operator algebra: if one assumes the standard Gleason-Busch probability representation on the POVM effect algebra, identifies the unique tracial state with a pre-record reference state, and assumes a L\u00fcders/Kraus record-conditioning bridge, then the usual post-record Born form follows. This audit does not ratify the pre-record identification, the L\u00fcders/update bridge, the record-as-Kraus bridge, or a retained closure of the failed gravitational-Hartree Born route.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T03:00:22.600842+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The load-bearing chain is Step 2 plus Steps 3-4: pinning sigma to rho_ref as the pre-record state, then using L\u00fcders/Kraus conditioning to obtain p(j|i)=<psi_i|E_j|psi_i> and the rank-1 Born form.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: land and cite retained bridge theorems for pre-record identification, L\u00fcders/update or resolved projective-measurement conditioning, and persistent-record-as-Kraus/readout mapping; then re-audit the Born derivation with those direct dependencies.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "assert_count": 0,
+        "runner_result": "No runner is registered for this row.",
+        "runner_status": "no_primary_runner",
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the row's Born conclusion depends on physical/readout bridges that are not retained in the restricted packet: the unique tracial state is not yet identified with a pre-record reference state, L\u00fcders compositional consistency is admitted, and record-as-Kraus is still a separate target. Why this blocks: Gleason-Busch supplies the representation form only after a probability assignment is admitted, and the retained tracial theorem supplies a mathematical state, not the physical pre-record/readout bridge needed for this row's claimed Born-rule derivation. Repair target: land retained bridge theorems for the no-extra-structure pre-record identification, L\u00fcders/update rule or its resolved projective-measurement substitute, and persistent-record-as-Kraus/readout mapping, then wire them as direct dependencies. Claim boundary until fixed: this remains a bounded repair route showing how Born follows under named standard/admitted inputs, not a retained derivation from A1+A2."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:16.704513+00:00",
+      "archived_for_note_hash": "82ef80be0f3712a075a5f5abfa2a8c0c64e0be1806a66bf322eb6c458e19c0a8",
+      "audit_date": "2026-05-29T21:16:37.206615+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-born_rule_from_gleason_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Gleason-Busch probability-form step is standard, and the cited tracial-state authority retains only uniqueness of the tracial state. The chain still needs the open identification of that state with the physical pre-record reference, plus the record-as-Kraus/readout bridge for the full post-record conclusion.",
+      "claim_scope": "Audited the conditional Born-rule route: Gleason-Busch fixes p(E)=Tr(\u03c3E) on the qubit-lattice effect algebra, then \u03c3 is identified with the tracial state and projective record conditioning is used to obtain the standard pure-state Born rule.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:16:37.206615+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "A1+A2 with the no-extra-structure identification pins \u03c3 = \u03c1_ref = \u2297_x I/2 for the pre-record system.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite retained bridge theorems for pre-record identification and persistent-record-as-Kraus/readout mapping, and wire any resolved projective-measurement/L\u00fcders authority as a direct dependency before re-audit.",
+      "open_dependency_paths": [
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source note itself admits that the no-extra-structure/pre-record identification, L\u00fcders/update premise, and persistent-record-as-Kraus mapping are not derived in the restricted packet. The cited tracial-state authority is retained for unique tracial-state characterization only and explicitly says the pre-record identification remains an open admission, so retained status cannot propagate through that identification. Even if the projective-measurement component is treated as resolved elsewhere, that authority is not included as a cited retained dependency here and the pre-record identification remains a blocker."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.467052+00:00",
+      "audit_date": "2026-05-30T22:14:55.788102+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": "Finite-region application of the Busch/CFMR POVM Gleason theorem to the qubit-lattice effect algebra E(H_\u039b) for every nonempty finite \u039b, including the single-qubit dim-2 case.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite \u039b \u2282 Z^3 with |\u039b| \u2265 2, any countably additive probability measure on the projection lattice P(H_\u039b), H_\u039b=\u2297_{x\u2208\u039b}C\u00b2, has a unique density-matrix representation m(P)=Tr(\u03c3P).",
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "For finite \u039b \u2282 Z^3, linear maps \u03a6: A_\u039b \u2192 A_\u039b on A_\u039b = \u2297_{x\u2208\u039b} M_2(C) \u2245 M_{2^|\u039b|}(C) have the standard finite-dimensional Kraus representation iff CP, are TP iff \u03a3_r K_r\u2020K_r = 1, and are CP iff the Choi matrix is positive semidefinite.",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "For a finite qubit-lattice region and an explicitly chosen canonical projective-measurement Naimark/L\u00fcders dilation, the outcome-r Kraus operator is P_r and sequential composition with a later effect is P_r E P_r; no uniqueness of all instruments implementing the same POVM is audited.",
+          "luders_rule_from_composition_consistency_note_2026-05-20": "Ideal unrefined sharp-projective record conditioning with p(P)>0, using the ratified LSP-projective rule K_P=P so the sequential joint effect is P E P.",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "For finite qubit-lattice projective measurements in the retained canonical L\u00fcders/Naimark frame with K_P=P, the joint sequential effect satisfies M_{P,E}=K_P\u2020 E K_P=PEP and the normalized L\u00fcders state update follows when Tr(P\u03c3P)>0.",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "Unique normalized tracial state on the standard quasi-local tensor-product C*-algebra built from one M_2(C) qubit algebra at each Z^3 site, with finite-region restrictions Tr(.)/2^|Lambda|. This excludes the physical identification of that tracial state with a pre-record reference state and excludes one-point Pauli vanishing alone as a sufficient uniqueness criterion."
+        },
+        "dep_claim_type": {
+          "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "luders_rule_from_composition_consistency_note_2026-05-20": "bounded_theorem",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "bounded_theorem",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "luders_rule_from_composition_consistency_note_2026-05-20": "retained_bounded",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": "retained_bounded",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20": "retained"
+        },
+        "deps": [
+          "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+          "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+          "luders_rule_from_composition_consistency_note_2026-05-20",
+          "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22",
+          "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "1c66abf1fe1bd29b111c04d0332ec0180a6aa678037b98f96431cda308e143ca",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260530-221319-cb4ba2ff-born_rule_from_gleason_b",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional matrix identities and the canonical projective-measurement part close on the stated ideal surface. The missing step is the cited pre-record authority's explicitly open identification of the unique tracial state tau with the pre-record reference rho_ref.",
+      "claim_scope": "Finite qubit-lattice ideal-record bridge from trace-form probabilities, tracial reference I/d, and canonical projective L\u00fcders update to the rank-one Born probability |<phi|psi>|^2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-30T22:14:55.788102+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20:retained->unaudited",
+      "load_bearing_step": "For a rank-one projective record P = |psi><psi|, P rho_ref P / Tr(P rho_ref P) = P, so a later rank-one effect E = |phi><phi| has probability Tr(P E) = |<phi|psi>|^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: land and audit a direct bridge identifying the unique tracial state tau with the pre-record reference rho_ref=I/d, then re-audit this finite ideal-record Born bridge.",
+      "open_dependency_paths": [
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 16,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The runner performs real finite-matrix checks for the tracial, L\u00fcders, rank-one, sequential-effect, and projective-Kraus identities; those are algebraic checks, not an independent derivation of the physical reference state. The cited Gleason/Busch and direct projective/L\u00fcders rows are retained-grade for the bounded ideal-projective surface. However, the pre-record reference authority explicitly says the identification of the unique tracial state with a pre-record reference remains an open admission, and this parent note uses that identification load-bearingly. The remaining blocker is therefore not the projective-measurement chain but the pre-record-reference bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/born_rule_framework_bridge_check.py",
+  "title": "Born Rule From Finite Ideal Records",
+  "transitive_descendants": 712,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

@@ -1,0 +1,140 @@
+{
+  "audit_date": "2026-05-12T00:19:40.930522+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "claude_complex_action_grown_companion_note": "Runner-defined grown row only: drift=0.2, restore=0.7, seeds 0 and 1, with the listed gamma sweep and no geometry-generic, continuum, or self-gravity extension."
+    },
+    "dep_claim_type": {
+      "claude_complex_action_grown_companion_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "claude_complex_action_grown_companion_note": "retained_bounded"
+    },
+    "deps": [
+      "claude_complex_action_grown_companion_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "b7b54112984eaf612c58de048f5eccb2682705970b131c3cbdcef56708a92c79",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260512-000558-b0c4bc75-fixed_field_complex_grow-015",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited companion authority is retained-bounded for the center row, and the provided runner computes the neighbor row directly using the grown-geometry propagation machinery rather than printing fixed constants. Within the stated seed-0, two-row scope, the row table supports the selective tiny-basin positive claim.",
+  "claim_id": "fixed_field_complex_grown_basin_v2_note",
+  "claim_scope": "Audited only the runner-defined two-row tiny basin: center drift=0.20 restore=0.70 with retained companion support, plus neighbor drift=0.20 restore=0.60 for seed 0 crossover and weak-field F~M checks.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-12T00:19:40.930522+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "claude_complex_action_grown_companion_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/complex_action_grown_companion.py",
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 4.5,
+  "load_bearing_step": "The row-table runner shows the center row remains clean and the immediate neighbor at drift=0.20, restore=0.60 keeps TOWARD at gamma=0.1, AWAY at gamma=0.5, and weak-field F~M=1.000.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "98b52f3a1f0dd4d8a78b6dd4233e8c54403925a15507c74b5e2f374deb21b0c9",
+  "note_path": "docs/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check the imported complex_action_grown_companion implementation if judging whether the imported propagation machinery itself deserves class C.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368314+00:00",
+      "archived_for_note_hash": "fbd65f6d59a30d37f0e374cd4f756c731fadd46b7e6eff765d04cf01287e3041",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.235003+00:00",
+      "audit_date": "2026-04-26",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The live V2 runner reproduces the frozen two-row table, with center Born proxy 1.456e-15, F~M = 1.000 on both rows at gamma=0 and gamma=0.5, and t01=1/t05=0 crossover on both rows. The cited grown companion parent is already audited clean, and the conclusion is restricted to the center row plus one immediate neighbor.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:claude_complex_action_grown_companion_note",
+      "load_bearing_step": "The note claims that the retained grown-row complex-action anchor at drift 0.20 restore 0.70 and one nearby row at drift 0.20 restore 0.60 preserve the tiny-basin package: center Born proxy, center and neighbor weak-field F~M near 1, and TOWARD-to-AWAY crossover.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The claim is intentionally tiny and the live runner recomputes the disputed finite surface rather than only rendering a static table. It confirms the center-row Born proxy, center and nearby weak-field F~M gates, and nearby crossover survival, while the source note explicitly excludes family-wide or geometry-generic transfer. Residual boundary: the result is a two-row basin around the audited grown-row companion, not a broad grown-family theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 1,
+    "C": 4,
+    "D": 0,
+    "total_pass": 5
+  },
+  "runner_path": "scripts/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2.py",
+  "title": "Fixed-Field Complex Grown Basin V2 Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The load-bearing neighbor result is a direct runner computation from the framework functions, with selected rows and seed fixed in advance by the note. The center-row exact reduction is explicitly delegated to a retained-bounded cited authority, while the current runner verifies the center Born/F~M checks and the nearby crossover/F~M survival. The claim is narrow and does not assert family-wide transfer, continuum closure, or self-gravity."
+}

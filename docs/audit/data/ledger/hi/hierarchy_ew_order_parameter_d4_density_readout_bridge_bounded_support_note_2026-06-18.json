@@ -1,0 +1,196 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+    "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.484,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "efdcd965078492a96db745dcc16101f11f7375362e47d284bb8231ca0ea07b57",
+  "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.964604+00:00",
+      "audit_date": "2026-06-19T21:08:30.073696+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Audited the bounded algebraic D=4 fixed-positive-density coefficient-to-scale map, including inverse placement, sign, reference normalization, and endpoint applications to the supplied retained A_2/A_4 and A_inf/A_2 ratios, excluding any electroweak VEV identification."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 8.448,
+        "runner_hash": "a633888c4a6568f02154b9722c3cfbf4ddcf011ebf70a6b94ff37355ab57c4f9",
+        "transitive_descendants": 246
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The EW authority supplies H(v) = (0, v/sqrt(2))^T and the tree mass dictionary; the D4 bridge supplies the fixed positive density algebra. Direct substitution gives q = v^2, rho = A v^4, and the unique positive inverse fourth-root ratio without using an observed EW value.",
+      "claim_scope": "For a supplied positive quartic D=4 density on the retained one-Higgs neutral EW surface, the order-parameter coordinate v is the positive fourth-root coordinate and fixed-density endpoint ratios have inverse fourth-root placement; endpoint selection and absolute scale are outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:08:30.073696+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained->unaudited",
+      "load_bearing_step": "Since q(H(v)) = 2 H^dagger H = v^2, any supplied positive quartic D=4 density rho_* = A(L) q(H(v(L)))^2 is rho_* = A(L) v(L)^4, so equal fixed densities give v(L) / v_ref = (A_ref / A(L))^(1/4).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the stated endpoint-selection and absolute-scale boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is exact algebra over positive reals and the retained one-Higgs EW surface, not a fitted numerical comparator or a symbol renaming. The runner source checks the same finite identities, distinguishes inverse placement from direct placement and D=16, and includes source-firewall checks; it does not import PDG values or observed EW scales. The clean verdict applies only to the bounded bridge for supplied positive quartic densities, not to selecting the hierarchy endpoint coefficient as the physical Higgs density or deriving an absolute electroweak scale."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.289409+00:00",
+      "audit_date": "2026-06-21T09:55:15.923463+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "Algebraic corollary that a positive fixed D=4 density readout rho_* = A(L)v(L)^4 maps coefficient ratios to inverse fourth-root scale ratios, with reference normalization and sign; no physical VEV identification is ratified."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 9.477,
+        "runner_hash": "a633888c4a6568f02154b9722c3cfbf4ddcf011ebf70a6b94ff37355ab57c4f9",
+        "transitive_descendants": 251
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the bounded scope, the EW authority supplies the neutral Higgs coordinate H(v), and the D4 bridge supplies the fixed-density fourth-root algebra. Substituting q(H(v))=v^2 gives rho_*=A v^4 and v(L)/v_ref=(A_ref/A(L))^(1/4) without importing an observed EW value.",
+      "claim_scope": "Given the retained one-Higgs neutral EW surface and a supplied positive quartic D=4 density, the audited claim is the algebraic q=v^2 substitution and resulting inverse fourth-root fixed-density readout for v ratios, with endpoint selection and absolute EW scale outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T09:55:15.923463+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T09:53:09.461943+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded algebraic bridge identifying the retained one-Higgs neutral EW coordinate v with the positive fourth-root coordinate of a supplied positive quartic D=4 density, excluding endpoint selection and absolute EW scale derivation.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T09:55:15.923463+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained one-Higgs neutral EW surface and a supplied positive quartic D=4 density, the audited claim is the algebraic q=v^2 substitution and resulting inverse fourth-root fixed-density readout for v ratios, with endpoint selection and absolute EW scale outside scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the neutral one-Higgs surface, q(H(v)) = 2 H^dagger H = v^2, so any positive quartic D=4 density rho_* = A(L) q(H(v(L)))^2 is exactly rho_* = A(L) v(L)^4.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the audited scope remains limited to a supplied positive D=4 density and is not later cited as closing endpoint selection or absolute EW scale.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic identity over the cited retained-grade EW surface and the retained-grade D4 density readout bridge. The runner performs sample rational checks of q=v^2, rho=A v^4, inverse placement, D4-vs-D16 distinction, and EW mass-ratio compatibility, plus source-boundary text checks; it does not use PDG values or fitted targets. The note explicitly limits itself to the supplied positive quartic density and does not claim endpoint selection, hierarchy-to-physical-Higgs-density identification, or an absolute EW scale."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
+  "title": "Hierarchy EW Order-Parameter D4 Density Readout Bridge",
+  "transitive_descendants": 715,
+  "verdict_rationale": null
+}

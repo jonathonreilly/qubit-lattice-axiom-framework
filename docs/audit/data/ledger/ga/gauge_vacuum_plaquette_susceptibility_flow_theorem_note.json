@@ -1,0 +1,305 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_susceptibility_flow_theorem_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_reduction_existence_theorem_note",
+    "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.555,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "09452480f5e2c0b41693393aa18146692e09a46b1ebc790ea1a1742579e543f0",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T19:14:10.168045+00:00",
+      "archived_for_note_hash": "1175f2905dd4c262516677d5a6ba73aa0ed7ebae35cf7c47d4cbc0e4ec118528",
+      "audit_date": "2026-04-30T17:50:00.550507+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-20260430-phase-a-susceptibility-flow",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The contention is clean exact flow versus conditional status because the row is unknown. The theorem only differentiates the implicit reduction law and identifies the remaining susceptibility profile; it does not claim that profile or P(6) is closed, so the first clean/A reading is correct and the second status-based conditional is not.",
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Differentiating P_L(beta)=P_1plaq(beta_eff,L(beta)) gives beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).",
+      "load_bearing_step_class": "A",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The contention is clean exact flow versus conditional status because the row is unknown. The theorem only differentiates the implicit reduction law and identifies the remaining susceptibility profile; it does not claim that profile or P(6) is closed, so the first clean/A reading is correct and the second status-based conditional is not."
+    },
+    {
+      "archived_at": "2026-05-03T13:40:45.886530+00:00",
+      "archived_for_note_hash": "a6ddfd3bbf574c613b31030f7d889ab3de5f5d0ca08e7dc9c89168b6d546488c",
+      "audit_date": "2026-04-30T17:50:00.550507+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-20260430-phase-a-susceptibility-flow",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The contention is clean exact flow versus conditional status because the row is unknown. The theorem only differentiates the implicit reduction law and identifies the remaining susceptibility profile; it does not claim that profile or P(6) is closed, so the first clean/A reading is correct and the second status-based conditional is not.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Differentiating P_L(beta)=P_1plaq(beta_eff,L(beta)) gives beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The contention is clean exact flow versus conditional status because the row is unknown. The theorem only differentiates the implicit reduction law and identifies the remaining susceptibility profile; it does not claim that profile or P(6) is closed, so the first clean/A reading is correct and the second status-based conditional is not."
+    },
+    {
+      "archived_at": "2026-05-11T12:54:39.434145+00:00",
+      "archived_for_note_hash": "1ee250da5987c850fa2dc3d34024b05d3ad8c96cf8941e6d591612dcf4048992",
+      "audit_date": "2026-05-05T23:18:01.800382+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "g_bare_derivation_note": "audited_conditional",
+          "minimal_axioms_2026-05-03": "meta",
+          "staggered_dirac_realization_gate_note_2026-05-03": "open_gate"
+        },
+        "deps": [
+          "g_bare_derivation_note",
+          "minimal_axioms_2026-05-03",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 11.235,
+        "runner_hash": "dfc52e70a37356aacc0226234765f8697872bb18773f644deea73f36d190d4b7",
+        "transitive_descendants": 425
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-gauge_vacuum_plaquette_s-037",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The calculus step closes on its own terms, but the audited packet explicitly admits open upstream gates for the staggered-Dirac realization and g_bare=1/Wilson beta=6 normalization surface. Those dependencies prevent the full lane from closing as an unconditional positive theorem.",
+      "claim_scope": "Exact finite-volume Wilson plaquette susceptibility identities and the calculus flow law for the implicit one-plaquette reduction map, conditional on the admitted Wilson evaluation surface and upstream reduction-law setup.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:18:01.800382+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Differentiating the implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: close or remove the two admitted open gates from the audited claim surface, then re-audit the narrowed finite-Wilson susceptibility-flow theorem separately from beta=6 quantitative use.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/G_BARE_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The central derivation is a genuine algebraic/calculus consequence of the implicit reduction law and susceptibility definitions, not a numerical match or renaming. The runner mostly verifies coefficient differentiations and imports/checks upstream plaquette constants and implicit-beta support values; it does not compute the Wilson susceptibility profile from first principles. Because the source note itself lists the staggered-Dirac realization gate and the g_bare=1 derivation target as admitted open inputs, the bounded theorem remains conditional under the rubric."
+    },
+    {
+      "archived_at": "2026-05-24T08:14:08.797172+00:00",
+      "archived_for_note_hash": "8b2cdc5d2a7bcce2b92ff3dfa71095f7e583a5892bc726ab650a566c0b71a193",
+      "audit_date": "2026-05-23T19:02:10.046117+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_derivation_note": "Audited only the bounded algebraic claim that canonical `Tr(T_a T_b)=delta_ab/2`, Wilson matching `beta=2 N_c/g_bare^2`, and the explicit local Wilson surface `N_c=3`, `beta=6` force `g_bare=1`, with rescalings routed into `beta`."
+        },
+        "dep_claim_type": {
+          "g_bare_derivation_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_derivation_note": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_derivation_note"
+        ],
+        "load_bearing_score": 12.459,
+        "runner_hash": "dfc52e70a37356aacc0226234765f8697872bb18773f644deea73f36d190d4b7",
+        "transitive_descendants": 994
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T190041Z-77b29f32-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-surface mathematical statement follows from differentiating the implicit reduction relation and using the stated positivity/monotonicity of the one-plaquette susceptibility. This does not close the broader physical beta=6 lane or derive the full chi_L(beta) profile.",
+      "claim_scope": "Within a finite periodic Wilson L^4 evaluation surface and assuming the exact implicit plaquette reduction law, the audit covers the chain-rule susceptibility flow, its integral representation, and the differentiated first nonlocal susceptibility coefficient.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:02:10.046117+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Differentiating the exact implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence the susceptibility-flow equation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained-grade closure or re-audit certificates for the staggered-Dirac realization gate and the g_bare parent repair chain, then rerun this audit against the narrowed finite-surface theorem.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/G_BARE_DERIVATION_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing theorem is algebraic class A: the runner mainly verifies differential/arithmetic consequences of previously supplied plaquette-onset and implicit-reduction inputs, while the canonical plaquette reconstruction uses a hard-coded same-surface constant only as support. The source note explicitly admits open upstream gates, including the staggered-Dirac realization target and the g_bare=1 dependency chain, and it states that explicit beta=6 closure and the full chi_L(beta) profile remain open. No-Go Discipline N3/N6 also identify those admitted normalization/surface gates as unresolved, so the bounded theorem cannot receive a clean terminal verdict for the wider lane."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.837485+00:00",
+      "audit_date": "2026-05-24T20:29:59.903207+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure.",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "Exact finite-volume theorem: on every finite periodic SU(3) Wilson L^4 evaluation surface, the one-plaquette inverse defines a unique implicit beta_eff,L(beta), with analytic and strictly increasing behavior; physical beta=6 characterization and canonical plaquette support are excluded."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "positive_theorem",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+          "gauge_vacuum_plaquette_reduction_existence_theorem_note"
+        ],
+        "load_bearing_score": 12.497,
+        "runner_hash": "47da743bce4ae95270725444de5329e9b1398d9998221dbc015e314e522a56dd",
+        "transitive_descendants": 1021
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202901Z-971fd84f-gauge_vacuum_plaquette_s-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped theorem follows by algebraic differentiation and integration of retained inputs plus the susceptibility definitions. The explicit closed form for chi_L(beta) and beta=6 closure are explicitly outside the audited claim scope.",
+      "claim_scope": "Finite periodic Wilson L^4 surfaces: assuming the retained implicit plaquette reduction law and retained onset coefficient, the packet derives the susceptibility transport equation, integral representation, and first nonlocal susceptibility coefficient while leaving the full chi_L(beta) profile open.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T20:29:59.903207+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-24T20:28:34.439461+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202741Z-971fd84f-gauge_vacuum_plaquette_s-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained finite implicit reduction law and retained onset coefficient, the finite Wilson reduction map satisfies the susceptibility transport equation and integral representation, with first nonlocal susceptibility correction 5 beta^4/472392 + O(beta^5).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-24T20:29:59.903207+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T202901Z-971fd84f-gauge_vacuum_plaquette_s-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite periodic Wilson L^4 surfaces: assuming the retained implicit plaquette reduction law and retained onset coefficient, the packet derives the susceptibility transport equation, integral representation, and first nonlocal susceptibility coefficient while leaving the full chi_L(beta) profile open.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Differentiating the retained implicit reduction law P_L(beta)=P_1plaq(beta_eff,L(beta)) gives chi_L(beta)=chi_1plaq(beta_eff,L(beta))*beta_eff,L'(beta), hence beta_eff,L'(beta)=chi_L(beta)/chi_1plaq(beta_eff,L(beta)).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if upstream retained statuses change; the canonical plaquette inverse computation is support-only, not part of the theorem closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 1,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic consequence of the retained implicit reduction theorem and the positivity of the one-plaquette susceptibility. The mixed-cumulant authority supplies the retained beta^5 onset coefficient, whose differentiation gives the stated beta^4 susceptibility coefficient. The runner's theorem checks are algebraic/imported-coefficient checks; its canonical plaquette inverse checks use a hard-coded support value but are non-load-bearing for this bounded theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_susceptibility_flow_theorem.py",
+  "title": "Gauge-Vacuum Plaquette Susceptibility-Flow Finite Packet",
+  "transitive_descendants": 46,
+  "verdict_rationale": null
+}

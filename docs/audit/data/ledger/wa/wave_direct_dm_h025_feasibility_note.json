@@ -1,0 +1,88 @@
+{
+  "audit_date": "2026-05-29T06:33:39.112533+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "wave_direct_dm_h025_high_band_boundary_note": "Bounded Fam1 seed0 H=0.25, S=0.004 direct-dM point: dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, R_hist=-20.12%, with the retained fine-pair synthesis establishing that seed 1 has the larger-magnitude negative R_hist at the same H and strength. Coarse H=0.5/0.35 provenance, coarse-to-fine reversal framing, mechanism claims, and portability claims are excluded.",
+      "wave_direct_dm_h025_low_band_retention_note": "Bounded seed-1 Fam1 H=0.25 direct-dM controlled replay: exact S=0 null, negative delta_hist for S=0.002/0.004/0.008, R_hist near -29% to -30%, and low scaled-spread in the pinned control-ladder runner. Coarse H=0.5/0.35 continuity rows, cross-seed ordering, downstream synthesis, and portability claims are excluded.",
+      "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited."
+    },
+    "dep_claim_type": {
+      "wave_direct_dm_h025_high_band_boundary_note": "bounded_theorem",
+      "wave_direct_dm_h025_low_band_retention_note": "bounded_theorem",
+      "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "wave_direct_dm_h025_high_band_boundary_note": "retained_bounded",
+      "wave_direct_dm_h025_low_band_retention_note": "retained_bounded",
+      "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded"
+    },
+    "deps": [
+      "wave_direct_dm_h025_high_band_boundary_note",
+      "wave_direct_dm_h025_low_band_retention_note",
+      "wave_direct_dm_h025_two_point_synthesis_note"
+    ],
+    "load_bearing_score": 1.5,
+    "runner_hash": "29b13d93485683fc9f18a653b18057effb6f77be624a2419b2cba170f8a71073",
+    "transitive_descendants": 1
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-gpt-5.5-xhigh-2026-05-28-wave-h025-feasibility",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cached runner output matches the source's load-bearing point values: dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, and R_hist=-20.12%. A manual arithmetic check confirms the sign and normalized magnitude from the printed dM values, and the one-hop H=0.25 boundary/synthesis dependencies are retained-bounded for the narrowed interpretation.",
+  "claim_id": "wave_direct_dm_h025_feasibility_note",
+  "claim_scope": "Bounded operational/numerical artifact: the Fam1 seed0 direct-dM matched-history harness at H=0.25 and S=0.004 completes within the declared 1800 s audit budget and emits dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, R_hist=-20.12%, with the result interpreted only as a single-point feasibility/high-band-boundary datum. Portability, mechanism, coarse-to-fine law, and family-wide claims are excluded.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-29T06:33:39.112533+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_h025_high_band_boundary_note",
+    "wave_direct_dm_h025_two_point_synthesis_note",
+    "wave_direct_dm_h025_low_band_retention_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/wave_direct_dm_matched_history_probe.py",
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": "The primary runner calls measure_dm(0.25, S_PHYS, Fam1, drift=0.20, restore=0.70, seed=0), completes under AUDIT_TIMEOUT_SEC=1800, and reports the H=0.25 seed0 direct-dM values used by the source note.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cbdcc93a74e5319d8f1309677ebf0c4c0d54fd44fb199689819034372d2244bd",
+  "note_path": "docs/WAVE_DIRECT_DM_H025_FEASIBILITY_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-audit only if the note broadens beyond the single Fam1 seed0 H=0.25 feasibility/high-band-boundary datum or if the runner/cache changes the emitted dM/R_hist values.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "runner_status": "ok_no_pass_fail_accounting; exit_code=0; elapsed_sec=143.04; rss_mb=696.7; runner_sha256=29b13d93485683fc9f18a653b18057effb6f77be624a2419b2cba170f8a71073",
+    "total_fail": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_direct_dm_h025_feasibility_probe.py",
+  "title": "Wave Direct-dM H=0.25 Feasibility Note",
+  "transitive_descendants": 1,
+  "verdict_rationale": "The row is clean only as a bounded single-run feasibility and boundary datum. The runner computes the stated H=0.25 Fam1 seed0 point through the shared matched-history harness rather than importing the output constants, and the printed values agree with the source's scientific numbers. Residual risk is scope, not arithmetic: runtime/RSS are machine- and cache-dependent operational metadata, and this row does not establish portability, a mechanism, or a refinement-stable amplitude law."
+}

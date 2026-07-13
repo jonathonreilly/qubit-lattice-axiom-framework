@@ -1,0 +1,223 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "distance_law_frontier_audit_note",
+  "claim_scope": null,
+  "claim_type": "meta",
+  "claim_type_author_hint": "meta",
+  "claim_type_author_hint_raw": "meta",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gate_b_grown_distance_law_note",
+    "gate_b_h025_distance_law_note",
+    "wide_lattice_h2t_distance_law_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "meta",
+  "effective_status_reason": "metadata",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "meta",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "1b5138c46acf4e8bb6102b7f3f160a9f14266377e2befc9fe4852f9be47a463f",
+  "note_path": "docs/DISTANCE_LAW_FRONTIER_AUDIT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368038+00:00",
+      "archived_for_note_hash": "8cf7b364a748a4875110f194990a1c4f9e9f0582219005412387d42f7c18cf15",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-29T03:48:09.221128+00:00",
+      "archived_for_note_hash": "67184b4d6f6e1edb5b3d2aa3502f3d819382c343213b80124431eac2e76f95e9",
+      "audit_date": "2026-04-26",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note is a cross-note frontier summary with no runner of its own, and its cited distance-law frontier inputs are unaudited candidate retained-grade rows rather than audit-retained authorities.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The honest current frontier is compact grown-geometry transfer plus the independently replayed wide-lattice ordered h^2+T far-tail replay, both retained on main.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "docs/GATE_B_GROWN_DISTANCE_LAW_NOTE.md",
+        "docs/GATE_B_H025_DISTANCE_LAW_NOTE.md",
+        "docs/WIDE_LATTICE_H2T_DISTANCE_LAW_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note claims the compact grown-geometry and wide-lattice distance-law pieces are the retained current frontier, but it provides no runner and depends entirely on three unaudited candidate retained-grade source notes. Why this blocks: an audit-lane retained summary cannot outrank its inputs; until the cited distance-law notes are audited clean, this note can only summarize proposed frontier candidates. Repair target: audit the Gate B grown, Gate B h=0.25, and wide-lattice h^2+T notes clean, or add a registered runner that independently recomputes the frontier comparison from those artifacts. Claim boundary until fixed: it is safe to say the note is a roadmap/synthesis identifying compact grown transfer and wide-lattice h^2+T replay as proposed distance-law frontier pieces, not that both are audit-retained."
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.234781+00:00",
+      "audit_date": "2026-04-30T19:31:12.479478+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-resweep-2026-04-30",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The restricted packet has no registered primary runner or retained upstream proof artifact for the leaf claim.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:gate_b_grown_distance_law_note,gate_b_h025_distance_law_note,wide_lattice_h2t_distance_law_note",
+      "load_bearing_step": "What is the smallest honest distance-law claim now retained on `main`, after",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: no primary runner or retained one-hop proof artifact is registered for this leaf row. Why this blocks: the audit packet does not expose an independently checkable load-bearing computation. Repair target: register a runner/proof note for the load-bearing step or cite an audited retained dependency. Claim boundary until fixed: safe to cite as a support note without audit-ratified executable closure."
+    },
+    {
+      "archived_at": "2026-05-29T12:13:10.770831+00:00",
+      "archived_for_note_hash": "27fb890424b8c4509a2bcde8f7defee9fda79489f69ed91841ee5ceb409439b5",
+      "audit_date": "2026-05-28T07:13:07.920586+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_grown_distance_law_note": "Bounded replay of the exact-grid versus moderate-drift grown-geometry distance-law tail on the runner-defined h=0.5, W=10, L=12, four-seed, z=3..7 family.",
+          "gate_b_h025_distance_law_note": "Bounded h=0.25 distance-law replay for exact grid versus grown drift=0.2/restore=0.7, seeds=2, z=2..6, checking only positive declining far-field tail under the runner-defined geometry, source, propagation, and readout.",
+          "wide_lattice_h2t_distance_law_note": "Finite wide-lattice replay at h=0.25, W=12, L=12 for the ordered 3D 1/L^2 h^2+T family: all ten tested distance rows are attractive, the far tail fits near b^-1, and the field-strength response is linear; no continuum or exact-exponent theorem is audited."
+        },
+        "dep_claim_type": {
+          "gate_b_grown_distance_law_note": "bounded_theorem",
+          "gate_b_h025_distance_law_note": "bounded_theorem",
+          "wide_lattice_h2t_distance_law_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gate_b_grown_distance_law_note": "retained_bounded",
+          "gate_b_h025_distance_law_note": "retained_bounded",
+          "wide_lattice_h2t_distance_law_note": "retained_bounded"
+        },
+        "deps": [
+          "gate_b_grown_distance_law_note",
+          "gate_b_h025_distance_law_note",
+          "wide_lattice_h2t_distance_law_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-xhigh-2026-05-28-distance-law-frontier-audit-note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited distance-law inputs are now retained_bounded, so the summary direction is plausible as metadata. The source itself remains support-level, contains stale unaudited-input status wording, and has no registered runner or explicit ranking artifact for a retained frontier-summary theorem.",
+      "claim_scope": "Support/frontier-summary note only: it summarizes that the compact grown-geometry distance-law transfer and wide-lattice ordered h^2+T far-tail replay are the current retained bounded distance-law frontier pieces. It is not a tier-ratifiable positive theorem, does not provide a registered runner or frontier-ranking criterion, and does not promote either bounded replay to a continuum/asymptotic distance-law theorem.",
+      "claim_type": "meta",
+      "claim_type_last_reviewed": "2026-05-28T07:13:07.920586+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "strong",
+      "load_bearing_step": "The note cross-references the Gate B grown, Gate B h=0.25, and wide-lattice h^2+T distance-law replay rows and summarizes their retained bounded frontier status without adding an independent proof or runner.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: if a retained frontier summary is desired, update the stale support note and register a runner or explicit artifact that reproduces the frontier-ranking criteria over the retained bounded distance-law inputs.",
+      "open_dependency_paths": [
+        "registered frontier-ranking runner or artifact for the distance-law summary",
+        "source status text update to reflect that the three cited distance-law inputs are now retained_bounded"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "This row should not remain classified as a positive theorem. The restricted packet contains no runner and no new derivation; it is a status/frontier summary of three bounded distance-law replay rows. Although those dependencies now carry retained_bounded effective status, the source explicitly says it is support only and not tier-ratifiable, and its old audit-boundary text is stale relative to current dependency status. Conditional/meta is the accurate landing until the note is rewritten as a current metadata index or replaced by a runner-backed retained frontier summary."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Distance Law Frontier Audit",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

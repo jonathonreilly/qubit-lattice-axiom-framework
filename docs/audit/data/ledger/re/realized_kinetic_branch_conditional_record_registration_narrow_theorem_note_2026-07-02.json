@@ -1,0 +1,198 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+    "realized_state_primitive",
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a5efa80d989169d7298865ef6e17cd6f429cb812823ca6b569d9a4875d8e8a4c",
+  "note_path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.390952+00:00",
+      "audit_date": "2026-07-10T02:07:31.664981+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "5ae28ea86dbb0f29cbb5974923f9e9750077c9f46f4bed790e361dff389e91ef"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": "Representative-level algebraic, dispersion, zero-set, and generated-algebra discriminators between the retained parent K0 and K1 classes; no branch selector or Admissibility interpretation was audited as decided.",
+          "realized_state_primitive": null,
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": "decoration",
+          "realized_state_primitive": "meta",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": "decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+          "realized_state_primitive": "meta",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+          "realized_state_primitive",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 5.0,
+        "runner_hash": "1f60d3704c7679b23708b123401a02d872c475e1f5a8ce81dadd2972ce102313",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-realized_kinetic_branch_-073",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet proves that K0 supplies only the scalar projector while K1 supplies direction-tagged rank-one projectors. It does not establish the required bridge identifying the axiom\u2019s fixed nearest-neighbor Admissibility rule governing actual records with the spectral availability map induced by the kinetic coefficients.",
+      "claim_scope": "Representative-level K0/K1 coefficient-algebra discrimination on the retained two-flux-class surface, conditional on identifying a record\u2019s availability rule with the kinetic coefficient spectral map.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T02:07:31.664981+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:realized_state_primitive:5ae28ea8->0515188f",
+      "load_bearing_step": "If a supplied realized record stack contains a neighbor-conditioned qubit record, T-A excludes K0 while T-B realizes K1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add and cite a retained bridge identifying the record-governing Admissibility map with the kinetic coefficient spectral map, or narrow T-C explicitly to records supplied together with that kinetic-induced-map premise, then re-run the audit.",
+      "open_dependency_paths": [
+        "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The runner genuinely verifies the stated finite-dimensional algebra and projector properties, but its record witness is constructed by inserting the K1 projector availability gap. The Minimal Axioms explicitly leave kinetic-branch structure downstream, while the sibling authority leaves the Admissibility interpretation undecided. Consequently, a neighbor-conditioned record governed by an independent admissibility rule has not been shown incompatible with K0."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:39.679876+00:00",
+      "audit_date": "2026-07-10T15:41:01.075315+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7",
+          "realized_state_primitive": "0515188f2f4ca91b4c75a5f2ec35f42c9d3f2efec86b20f8d22b1bc991a9e44b"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": "Representative-level algebraic, dispersion, zero-set, and generated-algebra discriminators between the retained parent K0 and K1 classes; no branch selector or Admissibility interpretation was audited as decided.",
+          "realized_state_primitive": null,
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": "decoration",
+          "realized_state_primitive": "meta",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02": "decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+          "realized_state_primitive": "meta",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "minimal_axioms",
+          "realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02",
+          "realized_state_primitive",
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 5.0,
+        "runner_hash": "1f60d3704c7679b23708b123401a02d872c475e1f5a8ce81dadd2972ce102313",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00002-realized_kinetic_branch_cond",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic K0/K1 projector distinction closes, but no cited authority derives the framework's Admissibility/Record availability rule from the kinetic coefficient algebra. The runner stipulates that identification when constructing its record witness rather than computing a bridge to an axiom-level record.",
+      "claim_scope": "Representative-level conditional discrimination on the retained two-flux-class surface, restricted to availability maps defined by spectral projectors of the kinetic coefficient algebras.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:41:01.075315+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:realized_kinetic_branch_discriminator_dichotomy_narrow_theorem_note_2026-07-02:decoration_under_staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10->unaudited",
+      "load_bearing_step": "If the supplied realized record stack contains a neighbor-conditioned qubit record, T-A excludes K0 while T-B realizes K1.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a theorem deriving and proving exhaustive the kinetic-coefficient-to-Admissibility/Record availability map, wire it as a direct dependency, and update the runner so the record witness is obtained through that bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 10,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Issue: the note identifies kinetic-coefficient spectral projectors with the available possibilities locked by a realized record without a cited bridge theorem. Why this blocks: the runner proves the discriminator only inside its stipulated spectral-projector availability model, so a framework-level neighbor-conditioned record does not yet imply that K0 is excluded. Repair target: derive and cite an exhaustive covariant map from the kinetic coefficient algebra to the Admissibility/Record rule, with a runner that constructs rather than assumes this link. Claim boundary until fixed: K0 has only the full spectral projector while K1 has two rank-one direction projectors, yielding conditional discrimination within that explicitly supplied projector model."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py",
+  "title": "Realized Kinetic Branch: Conditional-Record Registration of the Kinetic Branch",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

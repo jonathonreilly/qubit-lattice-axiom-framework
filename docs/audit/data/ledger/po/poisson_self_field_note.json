@@ -1,0 +1,266 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "poisson_self_field_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
+    "gate_b_poisson_self_gravity_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "19a2bb5174b33170e2b192e38c33913b1dc79f0d17012ae17e84575d0f2e248d",
+  "note_path": "docs/POISSON_SELF_FIELD_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369407+00:00",
+      "archived_for_note_hash": "0ff31b5bb5512007e3089bfe9e6028799a41983b0f6d5c2b0737ccf10364c0e2",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.493362+00:00",
+      "archived_for_note_hash": "da93eba71ab19a33bf76b51f3f1cab2bcf2fd98e72b12caf28e08de7d628a947",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reproduces the finite Poisson-branch response, but the 2D Poisson equation, source normalization, boundary solve, and explicit 1/(dx+0.1) longitudinal factor are still supplied inputs rather than retained derivations.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The model's transverse field is no longer an input because it is a consequence of a local 2D Poisson PDE on each layer, while the longitudinal axis remains imposed.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GATE_B_POISSON_SELF_GRAVITY_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: The note presents the transverse profile as derived from a local equation, but the local 2D Poisson equation, source normalization, boundary conditions, iteration budget, and the longitudinal 1/(dx+0.1) factor are still chosen inputs. Why this blocks: the live runner verifies a finite Poisson-branch computation after those premises are supplied, but it does not derive the field law or source carrier from retained framework structure, so the retained derivation claim is conditional. Repair target: derive or cite a retained theorem for the Poisson equation and source/boundary normalization, remove the explicit longitudinal factor or prove its retained origin, and add convergence/residual checks for the solver. Claim boundary until fixed: it is safe to claim that the tested runner replaces the transverse imposed profile with a chosen 2D Poisson stencil while preserving TOWARD response, near-linear F versus M, Born behavior, and the s=0 null; it is not safe to claim the gravitational field is retained as an axiom-derived consequence."
+    },
+    {
+      "archived_at": "2026-05-10T13:05:06.027919+00:00",
+      "audit_date": "2026-05-05T11:36:29.199463+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "3172eb9d7f9529a396ccc521260e4814bded4ac7488872a5ec21efb80fc0f15d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-poisson_self_field_note-044",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated boundary, the runner genuinely solves the 2D finite-grid Poisson update and then uses that field in the propagation, Born, null, direction, and F~M checks. The full 3D field-law derivation does not close, but the note explicitly excludes that from the claimed scope.",
+      "claim_scope": "The audited claim is only that the transverse per-layer field profile is computed from a discrete 2D Poisson solve, with longitudinal falloff still imposed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T11:36:29.199463+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gate_b_poisson_self_gravity_note:retained_no_go->unaudited",
+      "load_bearing_step": "The transverse (y,z) profile at each layer is derived by solving laplacian_perp(f) = -source(iy, iz), while the longitudinal x falloff is still imposed as 1/(dx+0.1).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the finite-grid zero-boundary Poisson solve and fixed iteration count are acceptable as the intended local transverse equation rather than an unstated boundary-condition premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The source note is careful that only the transverse profile is claimed as derived, and the runner source implements an actual Gauss-Seidel solve of the discrete 2D Poisson equation rather than printing constants or importing the result from another note. The longitudinal 1/(dx+0.1) factor is an explicit imposed boundary of the claim, not hidden support for the scoped transverse result. The cited Gate B authority is retained_no_go and is used as dependency bookkeeping, not as an open positive bridge needed for this scoped conclusion."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:05.303552+00:00",
+      "archived_for_note_hash": "751ccfbef3fc2ed68a51813f1c2597c49c26b8064e6acf2d5be7578c182cac1a",
+      "audit_date": "2026-05-10T18:15:36.541055+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "3172eb9d7f9529a396ccc521260e4814bded4ac7488872a5ec21efb80fc0f15d",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop-019e1318-6faf-7ad3-9a94-b00b09cdaaff",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner solves the stated discrete Poisson problem and reproduces the numerical branch checks, but the Poisson equation, source map, boundary/normalization choices, and longitudinal 1/(dx+0.1) factor are inputs. The restricted packet does not derive those choices from retained primitives or close the physical identification of the resulting field as gravity.",
+      "claim_scope": "A bounded Poisson-branch harness where the transverse field is obtained by solving a stipulated 2D discrete Poisson equation per layer while the longitudinal falloff remains imposed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T18:15:36.541055+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The TRANSVERSE (y, z) profile at each layer is derived from a 2D Poisson equation: laplacian_perp(f) = -source(iy, iz).",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if a later note derives the Poisson source law, boundary/normalization choices, and longitudinal falloff from retained primitives rather than setting them in the runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "Issue: the load-bearing step defines the transverse field by imposing a Poisson equation rather than deriving the field law from the framework. Why this blocks: the note's stronger statement that the transverse field is no longer an input needs a theorem deriving the PDE, source, boundary condition, normalization, and physical gravity readout. Repair target: supply a retained bridge theorem deriving the per-layer Poisson equation and the longitudinal law from retained primitives, then rerun the same harness without those choices stipulated. Claim boundary until fixed: numerical evidence for a manually specified Poisson branch with exact null behavior, machine-precision Born cancellation, and near-linear F~M in the tested sweep."
+    },
+    {
+      "archived_at": "2026-06-19T10:12:02.762439+00:00",
+      "archived_for_note_hash": "800854c195bb38b9ebee35ef1c6e69def6a1ac3ac2f63904d9c3824c00967449",
+      "audit_date": "2026-06-18T14:05:35.509430+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gate_b_poisson_self_gravity_note": "Bounded no-go for the supplied one-seed minimal one-loop Poisson-like backreaction probe on the drift=0.2, restore=0.7 grown row."
+        },
+        "dep_claim_type": {
+          "gate_b_poisson_self_gravity_note": "no_go"
+        },
+        "dep_effective_status": {
+          "gate_b_poisson_self_gravity_note": "retained_no_go"
+        },
+        "deps": [
+          "gate_b_poisson_self_gravity_note"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3172eb9d7f9529a396ccc521260e4814bded4ac7488872a5ec21efb80fc0f15d",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-poisson_self_field_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner supports the supplied-branch numerics, but the restricted packet does not derive or retain the Poisson PDE, source, boundary condition, normalization, gravity readout, or imposed longitudinal law. The missing step is a retained derivation or approved premise for those inputs.",
+      "claim_scope": "Given the supplied per-layer 2D Poisson equation and imposed longitudinal factor, the runner audits the transverse profile and branch checks: TOWARD shift, near-linear F~M, machine-precision Born cancellation, and exact null at s=0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:05:35.509430+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The transverse (y,z) profile at each layer is derived from a supplied 2D Poisson equation, laplacian_perp(f) = -source(iy, iz), while the longitudinal falloff is still imposed as 1/(dx+0.1).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add or cite a retained derivation or approved premise for the Poisson PDE, source/boundary/normalization/readout, and longitudinal law, then reconcile the note's Born value with the cached runner output.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The runner source performs real finite-difference Poisson solving and propagation rather than printing constants, so the supplied-branch numerical checks are substantive. However, the source note itself says the PDE, source, boundary condition, normalization, readout, and longitudinal falloff are supplied or imposed, and no cited authority in the restricted packet closes those premises. The cached runner also reports Born |I3|/P = 1.32e-15 while the note states 7.07e-16, so the exact retained number is stale even though both values are machine-precision cancellations."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/poisson_self_field.py",
+  "title": "Poisson Self-Field: Transverse Profile from a Local Equation",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

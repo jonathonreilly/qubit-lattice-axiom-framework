@@ -1,0 +1,350 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_reality_type_permitted_not_forced_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+    "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+    "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "98c8dbd609c69cc38d661dcadd0d9a9723802ddf772be6a3d07969b76cbdb904",
+  "note_path": "docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:05:13.553637+00:00",
+      "audit_date": "2026-06-03T10:48:48.947475+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "Audited only the abstract algebraic implication that premises C D C=-D, P D P=-D, and T D T=D imply C1 Theta D Theta^{-1}=D and C2 [P K, iD]=0; the universal Theta^2=\u00b1I claim is excluded.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7e9706fa0ac1e7fdc01f9024e78ece4f33df6d3805dab2555ce8601107838ea5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-104550-21cdbc40-koide_reality_type_permi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite construction directly exhibits both admissible faces on the same real anti-Hermitian operator. Therefore D-reality alone is insufficient; the remaining field-reality/measure selector is explicitly outside the claim rather than a hidden premise.",
+      "claim_scope": "Finite C3/Jcs linear algebra showing D-reality permits both per-block Pfaffian and per-dimension determinant readings; no physical Wick-face or Koide-measure selector is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T10:48:48.947475+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10:retained_bounded->unaudited",
+      "load_bearing_step": "A single real anti-Hermitian D=Jcs supports both the antisymmetric bilinear/Pfaffian doublet count and the Hermitian iD/determinant doublet count, so real matrix D does not select the Wick face.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that 'symplectic' is read on the two-dimensional doublet restriction; full 3D Jcs has the singlet kernel.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is class-A finite linear algebra: real skew D gives both an antisymmetric bilinear and Hermitian iD, while Pfaffian versus determinant degrees distinguish the two counts. The runner source actually constructs C, Jcs, the doublet restriction, Pf/det degrees, and the generic Hermitian circulant check; it does not import PDG data, tuned values, or opaque helpers. The cited authorities are retained-grade and the note keeps the Wick-face selector as an explicit residual, not as a derived conclusion."
+    },
+    {
+      "archived_at": "2026-06-10T20:11:19.225615+00:00",
+      "audit_date": "2026-06-05T23:51:23.936351+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: under the qubit-per-site/R1 k=1 axiom reading, a single faithful Cl(3) module per site has dim_C H_x = 2; full staggered-Dirac/U4 realization and chirality forcing are outside scope.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Audited the abstract finite-dimensional algebraic equivalence V_Hn ~= Lambda^*(C^d), the K\u00e4hler-Dirac operator identities on that form complex, the d=4 Cl(3) spinor-count match inside the even-d arithmetic factorization, and the narrow Wilson/JW boundary statements."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7e9706fa0ac1e7fdc01f9024e78ece4f33df6d3805dab2555ce8601107838ea5",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-234929-898d040996-koide_reality_type_permitted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded no-selector claim closes: elementary transpose/adjoint algebra gives both bilinear structures for the same real anti-Hermitian `D`, and the `C_3` centralizer, doublet complex-structure, Pfaffian-degree, determinant-degree, and `Q=(1+2r)/3` checks are finite algebra. The missing physical Wick-face/measure selector is explicitly outside the claim rather than a premise needed for it.",
+      "claim_scope": "Finite `C_3`/`Jcs` algebra showing that real anti-Hermitian matrix reality permits both Pfaffian/per-block and determinant/per-dimension bilinear readings, without supplying a physical Wick-face or measure selector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T23:51:23.936351+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "A single real anti-Hermitian `D=Jcs` on an explicitly complex space supports both the real antisymmetric bilinear `u^T D v` and the Hermitian sesquilinear `conj(u)^T(iD)v`, so real-matrix reality does not select the Wick face.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check wording that calls the full `3x3` `Jcs` form symplectic; strictly the nondegenerate symplectic reading is on the two-dimensional doublet restriction, while the scalar direction is a kernel.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing inference is a genuine algebraic closure, not a definition or fitted numerical match. Independently of the runner path, `D^T=-D` and real entries imply `u^T D v` is antisymmetric and `(iD)\u2020=iD`; the cyclic centralizer in real antisymmetric matrices is `span(C-C^2)`, and on the doublet `Jcs^2=-I`. The runner source performs finite matrix and symbolic degree computations rather than importing a contested selector. The open selector is correctly retained as the residual boundary."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.970859+00:00",
+      "audit_date": "2026-06-12T02:48:35.325854+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "C1 only: conditional on a single faithful Cl(3) module per site, the retained Cl(3) split and standard semisimple representation theory give dim_C H_x = 2; unconditional U4 closure and chirality/unitary-conjugacy claims are outside this ratified scope.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "bounded_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained_bounded",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "7e9706fa0ac1e7fdc01f9024e78ece4f33df6d3805dab2555ce8601107838ea5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-024629-6c98f65ebb-koide_reality_type_permitted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated boundary, the chain closes: D^T=-D gives both an antisymmetric real bilinear and Hermitian iD form, while the C3 centralizer, Jcs doublet square, Pfaffian/determinant degrees, and Q arithmetic check independently. The missing Wick-face selector is explicitly left out of scope.",
+      "claim_scope": "Finite C3/Jcs algebra showing that D-reality is compatible with both Pfaffian/per-block and determinant/per-dimension readings, with no physical Wick-face or Koide-measure selector supplied.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T02:48:35.325854+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained_bounded->unaudited",
+      "load_bearing_step": "A single real anti-Hermitian D on a complex space simultaneously supports the antisymmetric bilinear omega(u,v)=u^T D v and the Hermitian sesquilinear h(u,v)=conj(u)^T(iD)v, so real-matrix D alone does not select the Pfaffian/per-block Wick face.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check downstream uses preserve the boundary: this audit does not select a Wick face or physical Koide measure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source performs actual finite matrix and symbolic checks rather than merely printing expected constants, and no helper imports or external comparators are involved. Independent algebra confirms the displayed signs, factors, projections, Pfaffian/determinant degrees, circulant commutation, and Q=(1+2r)/3 arithmetic. The cited authorities are retained-grade for the bounded content consumed here, and their open physical-identification language is not imported as a premise. The no-go discipline section narrows the negative result to one residual selector rather than claiming global impossibility."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.072859+00:00",
+      "audit_date": "2026-06-21T17:41:51.903905+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "Within the B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a scalar/traceless weight freedom and do not force beta = 0.",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "On the current minimal-Quantum one-qubit surface, the one-site Cl(3) physical carrier has multiplicity k=1 and complex dimension 2; on the abstract Cl(3) representation surface only the conditional k=1 => dim_C=2 statement holds, with k>=2 counterexamples preserved.",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "Abstract finite-dimensional component-space theorem: V_Hn = C^(2^d) is graded-linearly equivalent to Lambda^*(C^d); D_KD = d - delta has the stated parity, square, adjoint, and Hermiticity properties; the d=4 spinor-count arithmetic matches the cited Cl(3) chirality-pair dimension, with physical staggered-operator and JW/Fock identifications out of scope."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "positive_theorem",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": "retained_no_go",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17": "retained",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17": "retained_bounded"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
+          "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+          "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7e9706fa0ac1e7fdc01f9024e78ece4f33df6d3805dab2555ce8601107838ea5",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_reality_type_permitted_not_forced_note_2026-05-30-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs and the runner establish the finite algebra: Jcs is real anti-Hermitian, supplies both bilinear structures, and the Pfaffian/determinant degrees differ. The missing Wick-face/measure selector is explicitly outside the claim rather than used to prove it.",
+      "claim_scope": "Finite C3/Jcs linear-algebra audit that real anti-Hermitian D permits both Pfaffian/per-block and determinant/per-dimension countings and therefore does not by itself force the per-block Koide reading.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:41:51.903905+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17:retained->unaudited",
+      "load_bearing_step": "A single real anti-Hermitian D on an explicitly complex space supports both the real antisymmetric Pfaffian bilinear and the Hermitian determinant bilinear, so real-matrix reality does not select the field-reality/Wick face.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should verify downstream rows do not cite this bounded result as a positive selector for Q=2/3.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is a genuine finite algebraic counterexample to the overclaim that real D alone selects the real/Pfaffian face. The runner source computes the relevant matrix, commutator, Pfaffian-degree, determinant-degree, and Q(r) checks rather than merely printing constants, and no helper imports are missing. The no-go boundary is narrow: it says only that D-reality is necessary-not-sufficient, while explicitly leaving a future Berry/WZ or matter-action selector open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_reality_type_permitted_not_forced_2026_05_30.py",
+  "title": "Koide Reality Type Is Permitted, Not Forced: Real D Does Not Select the Wick Face",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

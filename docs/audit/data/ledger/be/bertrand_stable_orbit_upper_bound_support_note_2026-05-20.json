@@ -1,0 +1,246 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "bertrand_stable_orbit_upper_bound_support_note_2026-05-20",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "28d7a2e90fe2f725521f987562f1514f0e91e34994e4c86b1b06c9e5a037297a",
+  "note_path": "docs/BERTRAND_STABLE_ORBIT_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T12:08:46.255827+00:00",
+      "archived_for_note_hash": "13b35e759352b39b63dc106ad999a93d8072140917929be5076e921f5a29b507",
+      "audit_date": "2026-05-21T22:04:46.566693+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260521-215638-bb10cae5-bertrand_stable_orbit_up-018",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic stability step closes under the assumed continuum potential. The restricted packet does not close the general continuum dimensional-gravity law beyond the cache-backed d = 3 and d = 4 rows, so the d >= 5 instability portion depends on an explicit bounded extrapolation.",
+      "claim_scope": "Audited the elementary effective-potential stability calculation for circular orbits under the assumed continuum potential V(r) = -k/r^(d-2) with k > 0 and integer d >= 3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-21T22:04:46.566693+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Using the circular-orbit condition to eliminate L^2 gives d^2V_eff/dr^2 at r_c = k(d-2)(4-d)/r_c^d, so stability requires (d-2)(4-d) > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation or authority for the continuum V(r) = -k/r^(d-2) law across the integer d >= 5 cases used by the upper-bound argument.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The load-bearing calculation is a straightforward algebraic closure of the effective potential and the circular-orbit condition. However, the dimensional potential pattern used for arbitrary integer d is not established by the cited authority; that authority is explicitly cache-backed only for d = 3 and d = 4 and labels broader use as out of binding scope. The note states this limitation, so the bounded support claim is not failed, but it remains conditional on the unclosed continuum extrapolation."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:16.282687+00:00",
+      "archived_for_note_hash": "244abd4871e51469680d9bc80b4d54e99b674a9a21e3ec4f8b4f939af9e2f30c",
+      "audit_date": "2026-05-29T21:43:46.704734+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimensional_gravity_table": "Cache-backed finite inventory for the d=3 and d=4 rows only: Born, F\u221dM, distance-tail/TOWARD entries as recorded in the registered runner caches/logs; d=2 and asymptotic 4D distance-law closure are out of binding scope."
+        },
+        "dep_claim_type": {
+          "dimensional_gravity_table": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimensional_gravity_table": "retained_bounded"
+        },
+        "deps": [
+          "dimensional_gravity_table"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": null,
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-bertrand_stable_orbit_up",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic stability step closes under the assumed continuum potential and yields stable d = 3 and marginal d = 4. The restricted packet does not close the general continuum dimensional-gravity law for integer d >= 5, so the d >= 5 instability application remains an admitted extrapolation.",
+      "claim_scope": "Audited the algebraic effective-potential stability calculation for the assumed continuum potential V(r) = -k/r^(d-2), with framework-connected support retained only for the cache-backed d = 3 and d = 4 rows.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:43:46.704734+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Using the circular-orbit condition to eliminate L^2 gives d^2V_eff/dr^2|_{r_c} = k(d-2)(4-d)/r_c^d, so stability requires (d-2)(4-d) > 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation or retained authority for the continuum V(r) = -k/r^(d-2) law across the integer d >= 5 cases, or narrow the audited claim to the d = 3 and d = 4 algebraic rows only.",
+      "open_dependency_paths": [
+        "docs/DIMENSIONAL_GRAVITY_TABLE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing differentiation and substitution are a genuine class A algebraic check, and they correctly produce the stated sign condition. However, the only cited authority is retained_bounded for cache-backed d = 3 and d = 4 rows and explicitly does not retain a universal continuum V(r) = -k/r^(d-2) law across all integer dimensions. Because the source note still uses the d >= 5 continuum law as part of the stated upper-bound support while admitting that bridge is not supplied, the full bounded claim is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-10T12:50:47.993224+00:00",
+      "archived_for_note_hash": "891be2013904ab0e485fd6ad4c426b82a0c81383939a52c80b351d3e90901493",
+      "audit_date": "2026-05-31T14:01:14.090183+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "24f2a5fae4caf44e449268415b475455891034aa47be9906a3638e34f5ff221c",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-135949-eb2e2006-bertrand_stable_orbit_up",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed Green-kernel normalization, flux calculation, effective-potential derivatives, L^2 elimination, and integer sign classification are algebraically consistent under the note's stated conventions. The conclusion is bounded to the continuum potential/effective-potential setup and does not claim a framework-internal gravity derivation or full Bertrand theorem closure.",
+      "claim_scope": "For d>=3 under the stated continuum Laplacian Green-kernel convention and fixed-angular-momentum central-force effective potential, the note audits the stability sign of circular orbits for V(r)=-k/r^(d-2), k>0.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T14:01:14.090183+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Using the circularity condition to eliminate L^2 gives d^2V_eff/dr^2|_{r_c}=k(d-2)(4-d)/r_c^d, so only integer d=3 is stable, d=4 is marginal, and d>=5 is unstable.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check only that the bounded scope remains limited to the stated continuum Laplacian and central-force effective-potential conventions.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing stability step is a genuine algebraic closure over the in-packet continuum Green-kernel and effective-potential setup, not a renaming or numerical fit. Independent formula inventory confirms the radial Laplacian power law, S_{d-1} normalization, unit -grad flux, attractive potential shape, derivative signs, second-derivative reduction, and d=3/d=4/d>=5 sign classification. The runner source performs finite algebraic checks rather than merely printing constants, and no cited authority is missing or non-retained because the claim is scoped as a bounded continuum calculation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.179818+00:00",
+      "audit_date": "2026-06-10T21:04:29.497867+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.892,
+        "runner_hash": "24f2a5fae4caf44e449268415b475455891034aa47be9906a3638e34f5ff221c",
+        "transitive_descendants": 20
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-210244-85f57ee9dd-bertrand_stable_orbit_upper_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The radial Laplacian identity, unit-flux normalization, absorbed positive Green-kernel coefficient, effective-potential derivatives, and sign classification follow by direct calculus from the displayed formulas. This closes only the stated continuum/effective-potential support claim, not a framework-internal gravity derivation or the full Bertrand closed-orbit theorem.",
+      "claim_scope": "Bounded continuum result: for d>=3 and k>0, the radial Green-kernel potential V(r)=-k/r^(d-2) with the fixed-angular-momentum effective potential has stable circular orbits only for integer d=3, with d=4 marginal and d>=5 unstable.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:04:29.497867+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using circularity to eliminate L^2 gives d^2V_eff/dr^2|_{r_c}=k(d-2)(4-d)/r_c^d, so among integer d>=3 only d=3 has positive stability sign, d=4 is marginal, and d>=5 is unstable.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream use does not widen this result into full Bertrand closure or a framework-internal derivation of gravity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The load-bearing step is algebraic, not an imported numerical comparator or renaming. Independent manual differentiation gives the displayed radial harmonic coefficient q(q+d-2), the Green flux normalization, and the reduced second derivative k(d-2)(4-d)/r_c^d with the stated integer signs. The runner source performs finite checks consistent with these identities and does not hard-code an external measured value or read a contested premise. The clean verdict applies only to the bounded continuum claim as scoped in the note."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/bertrand_stable_orbit_green_kernel_bridge.py",
+  "title": "Bertrand Stable-Orbit Upper-Bound Support",
+  "transitive_descendants": 5,
+  "verdict_rationale": null
+}

@@ -1,0 +1,341 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_closure_note",
+    "graph_first_su3_integration_note",
+    "hypercharge_identification_note",
+    "three_generation_observable_count_corollary_note_2026-05-03",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a0fde48a0986e09109e45880a1c2fd961ea7e2ab72378a3daa1401128b9c3b47",
+  "note_path": "docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:14.103229+00:00",
+      "archived_for_note_hash": "05b82fd40aefb7ebb496952b7e966cc0c76d6736e6c587a8cecf012ee4ac9af3",
+      "audit_date": "2026-06-08T21:15:32.860374+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_identification_note": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+          "key_terminology": null,
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "key_terminology": "meta",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "key_terminology",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "209a1ec4b0e588ef0be040450bf04929dc8046f84960f96382032f1eb65aabe9",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-211217-ad47ecfa19-sm_anomaly_closure_retained_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independently, SU(3)^2Y gives y_u+y_d=2/3, Tr[Y] gives y_e=-2, and Tr[Y^3] gives y_u y_d=-8/9, so the roots are 4/3 and -2/3 up to the stated u_R/d_R convention. Substitution then gives zero perturbative anomalies and even SU(2) doublet parity; the matter-content ansatz and absolute Y scale remain scoped admissions/conventions.",
+      "claim_scope": "Exact one-generation SM anomaly arithmetic under retained SU(2)/SU(3), N_c=3, LH doubled-Y charges +1/3 and -1, n_gen=3 for Witten parity, standard anomaly formulae, and the admitted minimal no-nu_R RH completion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T21:15:32.860374+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the retained LH charges and the admitted no-nu_R minimal RH singlet completion, the SU(3)^2Y, Tr[Y], and Tr[Y^3] anomaly equations force (Y(u_R), Y(d_R), Y(e_R)) = (+4/3, -2/3, -2), after which all six gauge-anomaly conditions cancel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the scoped-admission boundary: the result is clean only as a bounded theorem under the admitted minimal RH content and doubled-Y normalization convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing work is finite algebra over retained-grade inputs plus explicit bounded admissions, not a renaming or numerical comparator match. The runner uses exact Fraction/integer arithmetic and does not import anomaly_forces_time, PDG values, or fitted constants. The nu_R caveat also checks independently: allowing y4=t gives y_u=4/3+t, y_d=-2/3-t, y_e=-2-t, which preserves the anomaly equations, so the no-nu_R uniqueness statement is correctly bounded."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:52.133533+00:00",
+      "archived_for_note_hash": "45c5c24c698a37d5dc9bb1fc6382c4d06ce722ff4ed29aa4de0bb545e998af38",
+      "audit_date": "2026-06-16T03:53:01.404524+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_identification_note": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "209a1ec4b0e588ef0be040450bf04929dc8046f84960f96382032f1eb65aabe9",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-034815-10dfeef514-sm_anomaly_closure_retained_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The central no-nu_R anomaly algebra closes by exact rational arithmetic independent of the runner implementation. However, the packet also claims the C3 nu_R caveat is runner-verified, while the runner's y4=1/2 example keeps y_u,y_d at SM values and checks only Tr[Y]; its U(1)_Y^3 trace is 15/2, so that auxiliary verification is not clean as written.",
+      "claim_scope": "Bounded algebraic audit of the no-nu_R minimal RH completion: given retained N_c=3, retained LH doubled-Y content, n_gen=3 for Witten parity, standard anomaly formulae, and the explicit minimal RH ansatz, the RH charges and six anomaly cancellations close exactly; matter-content uniqueness, the nu_R branch, and absolute Y-scale are not derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T03:53:01.404524+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Solving the SU(3)^2Y, Tr[Y], and Tr[Y^3] equations with fixed LH charges Y(Q_L)=1/3, Y(L_L)=-1 and the no-nu_R minimal RH singlet ansatz gives y_u+y_d=2/3, y_e=-2, y_u y_d=-8/9, discriminant 4, hence (Y(u_R),Y(d_R),Y(e_R))=(4/3,-2/3,-2), after which the anomaly sums vanish.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: fix C3 by verifying the full nu_R family, for example y_u=4/3+t, y_d=-2/3-t, y_e=-2-t, y_nu=t, or narrow the runner/source text to the Tr[Y]-only check; also correct the runner comment sign for the U(1)^3 equation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing no-nu_R theorem is a genuine class-A algebraic closure over the stated retained inputs and explicit bounded ansatz. The runner source does compute the headline RH solution and anomaly cancellations, but its C3 scorecard item overstates what was verified: the printed non-SM nu_R example is not U(1)^3-anomaly-free with the fixed SM y_u,y_d values. Because the source says C1-C3 are verified in the runner and counts C3 in the PASS scorecard, the packet needs a runner/source repair before a clean verdict."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.985099+00:00",
+      "audit_date": "2026-06-18T14:50:20.321548+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_identification_note": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "13fc4a614d1798abdff1d74a88c2b132e62705cf2c994e89594db4ff68d5ee83",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows by exact algebra over the supplied retained inputs plus the explicit bounded premises. The runner source computes the quadratic, trace sums, cubic sums, Witten parity count, and caveat examples with Fractions/integers rather than merely printing expected values.",
+      "claim_scope": "Bounded arithmetic closure: under retained LH hypercharge content, N_c=3, n_gen=3, standard anomaly formulae, and the explicit minimal no-nu_R RH ansatz, the RH hypercharges are uniquely fixed up to the stated u/d convention and the listed one-generation gauge anomalies vanish exactly.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:50:20.321548+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:hypercharge_identification_note:retained_bounded->unaudited",
+      "load_bearing_step": "Given the retained LH content and the admitted no-nu_R minimal SU(2)-singlet RH completion, the equations SU(3)^2Y=0, Tr[Y]=0, and Tr[Y^3]=0 force (Y(u_R),Y(d_R),Y(e_R))=(+4/3,-2/3,-2), after which all six gauge-anomaly conditions cancel exactly.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the all-left anomaly sign convention and that the explicit RH-completion ansatz is accepted as bounded premise rather than claimed as derived content.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "Within the bounded scope, the load-bearing step is genuine class-A algebraic closure over retained-grade inputs and explicitly stated premises. The cited authorities for the LH content, nonabelian structure, and generation count are retained-grade, while the minimal axiom memo is an accepted framework premise. The result does not derive the RH matter content, exclude vectorlike or nu_R branches, or fix absolute Y scale; those limits are explicitly outside the forced conclusion and are checked by the runner ledger."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.716144+00:00",
+      "audit_date": "2026-07-10T04:34:56.389975+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_identification_note": "Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "three_generation_observable_count_corollary_note_2026-05-03": "Finite-dimensional corollary that, given the hw=1 orbit count of three and the generated M_3(C) irreducible action on C^3, no nonzero algebra-preserving quotient lowers the observable count."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_identification_note": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "three_generation_observable_count_corollary_note_2026-05-03": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_identification_note": "retained_bounded",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "three_generation_observable_count_corollary_note_2026-05-03": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_identification_note",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "three_generation_observable_count_corollary_note_2026-05-03"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "13fc4a614d1798abdff1d74a88c2b132e62705cf2c994e89594db4ff68d5ee83",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00098-sm_anomaly_closure_retained_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact rational algebra derives the two right-handed roots and verifies the anomaly sums without importing anomaly_forces_time. The conclusion remains bounded because the right-handed content and absolute hypercharge normalization are explicitly admitted rather than derived.",
+      "claim_scope": "Given the retained SU(3) and left-handed representation/charge surface, the chosen hypercharge normalization, standard anomaly formulae, and the admitted minimal no-nu_R right-handed content, the right-handed charge ratios are unique up to field-label interchange and the stated perturbative and global anomaly conditions vanish.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:34:56.389975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "From the fixed left-handed charges and admitted minimal no-nu_R singlet content, the anomaly equations give y_u+y_d=2/3, y_e=-2, and y_u y_d=-8/9, hence the unordered roots {4/3,-2/3}, after which direct substitution cancels the anomaly traces.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "A second auditor should note the harmless scope wording mismatch: the perturbative arithmetic is one-generation, whereas the displayed Witten count N_D=12 uses the retained three-generation input; one generation already has four doublets and is also even.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The load-bearing calculation is genuine algebraic closure over retained-grade inputs and an explicitly bounded matter-content premise. The runner computes the quadratic invariants, exact Fraction-valued anomaly traces, and Witten parity rather than merely printing the claimed result. Its hard-coded canonical charges are used only after the independently computed roots have been checked, while the unproved matter-content and scale choices are accurately excluded from the forced conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.py",
+  "title": "SM One-Generation Anomaly Closure From Retained Anchors \u2014 Decoupled From `anomaly_forces_time` (Bounded Theorem)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

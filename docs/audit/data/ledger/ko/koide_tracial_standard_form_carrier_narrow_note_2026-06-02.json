@@ -1,0 +1,1462 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a2b66380405af41409d1259715b1d136ed3f7631ee91b81c87f1c524c83ee70f",
+  "note_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:49.207562+00:00",
+      "archived_for_note_hash": "8d93b10be4ab681d66aa41345b7bbb1ec07acd497e5fbf4d1508b3b5a801efd0",
+      "audit_date": "2026-06-03T01:47:01.793991+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "c55e40ddcc1ceaac65ae6323f44177ead5d9c126083b3e1efef7704a852781da",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-014431-da720f4f-koide_tracial_standard_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from the proposed carrier plus channel-counting scoring closes, but the restricted retained inputs do not establish that carrier or scoring rule as admitted framework content. The missing step is a retained or explicitly admitted carrier/scoring bridge.",
+      "claim_scope": "Given the proposed tracial-standard-form R[Z_3] carrier and the equal-energy per cyclic-vector-channel scoring rule, the cyclic vector distinguishes the identity/non-identity split from the idempotent split and the channel rule yields r=1/2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T01:47:01.793991+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The cyclic-vector split L^2 = C.Omega (+) Omega^perp = span{e} (+) span{g,g^2} is fixed by (Omega,<.,.>), and equal GNS channel energy a^2*1 = b^2*2 gives r = |b|^2/a^2 = 1/2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained or explicitly approved Tier-A carrier theorem plus an independent derivation/admission of channel-counting scoring on the cyclic-vector split; also narrow the Aut(R[Z_N]) wording before any clean re-audit.",
+      "open_dependency_paths": [
+        "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner/source verify algebraic facts: in the proposed tracial GNS standard form, Omega=e fixes the identity line, the idempotent singlet is the democratic line, and equal energy across the two cyclic-vector channels gives r=1/2. These checks are class A, not class C: the carrier and channel-counting rule are supplied as premises, and the note itself says GNS does not choose channel-counting over basis-direction counting. The cited Koide algebra and chirality no-go authorities are retained-grade, but they do not admit the proposed carrier, the scoring rule, or the Kahler/Dirac-to-Majorana readout bridge. A second pass should also restrict the overbroad Aut(R[Z_N]) prose to the actual Z3/group-basis/Hopf automorphism claim, since the runner only checks Aut(Z3) permutations."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:58.236178+00:00",
+      "archived_for_note_hash": "3aaf9d7ff54d2726335479cec65d25f11fa6df230393aae56983230bf252cf2a",
+      "audit_date": "2026-06-05T19:21:57.083699+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "The C_3 block-power algebra and local obstruction: equal block weighting yields Q=2/3, dimension weighting yields Q=1, and C_3-equivariant operators do not supply the anticommuting orbit-splitting weighting.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "bounded_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29": "retained_bounded",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 2.5,
+        "runner_hash": "fbb6fa88754235b1729b77aae43c94421eec9f8b5fade9e60249f3b6ceb76567",
+        "transitive_descendants": 3
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-192000-0b7cd9d6c3-koide_tracial_standard_form_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra closes conditional on the proposed carrier and channel-counting scoring. The restricted packet does not supply a retained/admitted bridge selecting the R[Z_3] tracial standard form as the physical carrier or adjudicating channel-counting over direction-counting; the Kahler/Dirac physical corroborator is also not bridged.",
+      "claim_scope": "Conditional finite-dimensional algebra audit: in the proposed tracial standard form of R[Z_3], Omega=e canonically defines the identity/non-identity split, and equal channel energy on that split algebraically yields r=1/2 and Q=2/3; admission of the carrier and channel-counting scoring is not audited as derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:21:57.083699+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The tracial-standard-form vector gives L^2 = C.Omega (+) Omega^perp = span{e} (+) span{g,g^2}, and equal energy across those two cyclic-vector channels gives r = 1/(N-1) = 1/2 at N = 3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained or explicitly accepted bridge selecting the tracial-standard-form carrier and channel-counting scoring rule, including any Kahler/Dirac readout bridge if those claims remain in scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner source performs real finite-dimensional algebra and symbolic checks, and an independent check of the GNS ONB, Omega projection, Hilbert-Schmidt norm ratios, idempotent overlap, r=1/(N-1), and chirality commutation agrees. However these are class-A conditional algebra checks on an explicitly proposed carrier and scoring rule, not a class-C derivation from the accepted framework baseline. The source itself states the channel-vs-direction scoring residual, and the packet does not close the carrier/scoring bridge or the physical Kahler/Dirac/Majorana readout claims."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.161284+00:00",
+      "audit_date": "2026-06-07T16:31:55.199675+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.17,
+        "runner_hash": "a701d77bec7d8a15316fc3a8ee145de49cf8c16920209aedbbfda0335dc67359",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-162931-16ecbeef14-koide_tracial_standard_form_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite standard-form identities, the Omega-aligned (1,2) split, the Hilbert-Schmidt norms, and Q=2/3 after the supplied r=1/2 all close by direct algebra on the stated carrier. The chain does not claim to close the separate physical selection of the carrier or channel-count scoring rule.",
+      "claim_scope": "Audited only the supplied finite tracial standard-form R[Z_3] carrier and the conditional equal-channel scoring arithmetic; no physical carrier or scoring-rule selection from baseline axioms was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T16:31:55.199675+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The cyclic vector is one of the group-element ONB vectors, so L^2 = C Omega (+) Omega^perp = span{e} (+) span{g,g^2}, and equal channel scoring gives N a^2 = N(N-1)b^2, hence r=1/(N-1).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the bounded supplied-carrier scope and do not cite this as a physical scoring-rule derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The note is correctly scoped as a bounded supplied-carrier theorem, not an unbounded Koide derivation. Independent algebra confirms the ONB/trace identities, the cyclic-vector split, the democratic idempotent misalignment, the Hilbert-Schmidt factors N and N(N-1), r=1/(N-1), and Q=2/3 at N=3. The runner source performs finite symbolic/numeric checks rather than merely printing constants, and its PASS output matches the restricted claim boundary."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:42.747035+00:00",
+      "audit_date": "2026-07-12T08:52:30.222632+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 4.17,
+        "runner_hash": "a701d77bec7d8a15316fc3a8ee145de49cf8c16920209aedbbfda0335dc67359",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00238-koide_tracial_standard_form_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebraic implication closes on the supplied carrier and scoring rule. The framework-level chain does not close because neither physical selection of that carrier nor channel-count scoring is derived in the restricted packet.",
+      "claim_scope": "On the explicitly supplied tracial-standard-form R[Z_3] carrier, Omega=e defines the identity/non-identity split; if equal channel energy is additionally supplied, the algebra yields r=1/2 and Q=2/3, without deriving the physical carrier or scoring rule.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T08:52:30.222632+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "If equal energy is additionally assigned to the two cyclic-vector channels, then N a^2=N(N-1)b^2, hence r=1/(N-1) and, at N=3, Q=2/3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Checked whether the restricted packet derives, rather than supplies, this carrier.",
+            "disposition": "OPEN",
+            "evidence_locator": "The input analyzed here is explicitly supplied:",
+            "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Adopt the tracial standard-form R[Z_3] carrier as the physical generation carrier.",
+            "outcome": "The carrier supports the finite theorem but remains explicitly supplied, so physical carrier selection is open.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "R1_supplied_carrier"
+          },
+          {
+            "attempt": "Computed the democratic singlet overlap with Omega and compared it with the identity line.",
+            "disposition": "OPEN",
+            "evidence_locator": "Recovering that line therefore imports spectral/Fourier structure beyond the cyclic vector.",
+            "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the idempotent/Fourier singlet-doublet decomposition instead of the cyclic-vector split.",
+            "outcome": "The overlap 1/sqrt(3) shows that this decomposition requires extra Fourier structure, but it remains an algebraically expressible alternative rather than a globally excluded physical readout.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "R2_fourier_split"
+          },
+          {
+            "attempt": "Evaluated the Hilbert-Schmidt norms N and N(N-1) and solved the resulting equality.",
+            "disposition": "OPEN",
+            "evidence_locator": "equal energy per channel",
+            "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Normalize equal total energy across the identity and non-identity cyclic-vector channels.",
+            "outcome": "This closes the conditional arithmetic r=1/(N-1), but no accepted premise selects the equality physically.",
+            "route_class": "normalization_or_units",
+            "route_id": "R3_channel_scoring"
+          },
+          {
+            "attempt": "Solved a^2=b^2 on the same split.",
+            "disposition": "OPEN",
+            "evidence_locator": "equal energy per basis direction",
+            "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Assign equal energy per basis direction instead of per aggregate channel.",
+            "outcome": "This consistent alternative gives r=1 and Q=1, demonstrating that the standard form alone does not select channel counting.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "R4_direction_scoring"
+          },
+          {
+            "attempt": "Compared the claimed selection with the restricted source's Record analysis.",
+            "disposition": "CLOSED",
+            "evidence_locator": "They do not provide the generation carrier, the `K`/CPT context, or the scoring rule.",
+            "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat Record additivity as authority selecting the generation carrier or scoring rule.",
+            "outcome": "The supplied Record surface provides neither the generation carrier nor the scoring rule, so this route is closed on current premise content.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "R5_record_selector"
+          },
+          {
+            "attempt": "Checked whether the primitive supplies a state-contingent value or selector.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not supply a state, state-selection rule, averaging over alternatives",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the realized-state primitive to select r=1/2 as realized-state content.",
+            "outcome": "The primitive supplies only a pointwise reference slot and cannot turn r=1/2 into a derivation output.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "R6_realized_state"
+          },
+          {
+            "attempt": "Compared the primitive's declared content with the needed dimensionless scoring choice.",
+            "disposition": "CLOSED",
+            "evidence_locator": "No mass ratio, coupling, mixing angle, phase, or selector",
+            "evidence_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Attempt to obtain the mass-ratio or scoring selector from the kinetic-isotropy primitive.",
+            "outcome": "The primitive explicitly supplies no mass ratio or selector and therefore cannot close this wall.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "R7_kinetic_isotropy"
+          },
+          {
+            "attempt": "No such theorem or completed derivation is present in the restricted packet.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "still needs a separate theorem selecting channel-count scoring as the physical generation readout.",
+            "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive a physical generation-readout theorem selecting channel-count scoring.",
+            "outcome": "This is the explicitly named next scientific route and remains untested.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "R8_future_readout_theorem"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "physical generation-carrier selection",
+            "physical channel-count scoring selection"
+          ],
+          "evidence_locator": "physical selection of the carrier and of its scoring rule remains open.",
+          "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "physical generation-carrier selection",
+              "left_closes_right": false,
+              "right": "physical channel-count scoring selection",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "physical generation-carrier selection",
+            "physical channel-count scoring selection"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The source-side status is therefore bounded support",
+          "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "The input analyzed here is explicitly supplied:",
+              "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+              "phrase": "explicitly supplied",
+              "promoted_wall": "physical generation-carrier selection"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "If an additional scoring rule assigns equal energy to the two cyclic-vector channels",
+              "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+              "phrase": "additional scoring rule",
+              "promoted_wall": "physical channel-count scoring selection"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "The source-side status is therefore bounded support",
+              "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+              "phrase": "bounded support"
+            }
+          ],
+          "scan_scope": "Checked supplied-input, additional-scoring-rule, physical-readout, Record, and bounded-support language in the source and accepted-premise surfaces.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Honest Residual",
+          "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+          "none_found_reason": "No N1 route relies on a prior-witness disposition; each restricted-packet route was directly inspected.",
+          "scan_scope": "Checked the source's carrier, Fourier, scoring, Record, and physical-readout residuals; no N1 route was marked RULED OUT BY PRIOR.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "it does not by itself adjudicate channel-counting versus direction-counting on the cyclic-vector split.",
+          "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+          "scan_scope": "Checked every statement that the standard form does not adjudicate a choice or that physical selection remains open.",
+          "statements": [
+            {
+              "evidence_locator": "it does not by itself adjudicate channel-counting versus direction-counting on the cyclic-vector split.",
+              "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+              "phrase": "it does not by itself adjudicate channel-counting versus direction-counting on the cyclic-vector split.",
+              "tested_resolutions": [
+                "equal channel scoring",
+                "equal basis-direction scoring",
+                "idempotent equal-power scoring"
+              ],
+              "untested_resolutions": [
+                "a framework-native dynamical or readout selector theorem"
+              ]
+            },
+            {
+              "evidence_locator": "physical selection of the carrier and of its scoring rule remains open.",
+              "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+              "phrase": "physical selection of the carrier and of its scoring rule remains open.",
+              "tested_resolutions": [
+                "tracial-standard-form carrier supplied as input",
+                "Record additivity",
+                "realized-state primitive",
+                "kinetic-isotropy primitive"
+              ],
+              "untested_resolutions": [
+                "a retained physical carrier theorem",
+                "a retained channel-count readout theorem"
+              ]
+            }
+          ],
+          "unresolved": [
+            "framework-native physical carrier theorem",
+            "framework-native channel-count scoring theorem"
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes kinetic-form isotropy and explicitly supplies no mass ratio, selector, or readout bridge.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms supply neither generation-context selection nor weighting/scoring content.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It permits pointwise evaluation but supplies no state, selector, weighting, or state-contingent value.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It is a dimensionful units conversion and cannot select the dimensionless r value or its carrier.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Its target is relevant to counting grain, but it is explicitly an open obligation rather than a completed theorem.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "It concerns a physical charged-lepton readout identity but remains open and does not derive this carrier or scoring rule.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "It targets a quark-determinant cross-sector identification and does not close the Koide carrier/scoring wall.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "Checked every approved primitive and open gate returned by the orchestrator's partial-closure index against the carrier and scoring walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The cyclic vector canonically separates one identity direction from N-1 non-identity directions, and equal aggregate Hilbert-Schmidt energy across those two channels is a simple symmetry-compatible normalization that yields the desired r without fitting.",
+          "evidence_locator": "N a^2 = N(N-1)b^2",
+          "evidence_path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+          "resolution": "The arithmetic succeeds exactly, but symmetry of the supplied split does not entail equal aggregate channel energy; the equally consistent direction-count rule gives r=1. Thus the steelman supports the bounded conditional theorem but not physical selection.",
+          "resolved": true,
+          "route_id": "R3_channel_scoring"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:0",
+              "evidence_locator": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Prior audit found supplied carrier and scoring premises.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:1",
+              "evidence_locator": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Prior audit classified the finite checks as conditional algebra.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:2",
+              "evidence_locator": "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Prior clean bounded verdict was invalidated for a missing no-go-discipline packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Open charged-lepton counting-grain theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Open charged-lepton physical readout theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Open quark determinant cross-sector readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Earlier Koide ratio-source selector firewalls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Finite gravity sweep versus full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Finite positive result does not close its physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated atomic and time-axis audit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Earlier Koide selected-line and ratio-selector routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated coupling-normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated lensing observable bridges.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Carrier symmetry does not prove registry exhaustiveness or physical selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Charged-lepton Koide selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated Lorentz-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated global metric bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite radial-family scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated Wilson environment closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Tracial formalism does not identify the finite carrier with physical flavor.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated analytic-vector route.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated Wilson-character environment routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated gauge-isotropy mechanisms.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated Fermat bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated weak-gravity sign scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated Clifford carrier and absolute-scale walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous distinction between invariant structure and physical identification.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Charged-lepton selector routes require new structural content.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated atomic scale and coupling gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "C3 carrier algebra does not provide a physical mass readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated asymptotic-limit wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite-path geometry boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous physical readout selector left open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated temporal source and rate selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated physical-time bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated neutrino Majorana carrier routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated neutrino scale gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite-lattice distance-law scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite parameter-window scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated coupling readout selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite packet-memory scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite-grid differential-equation scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous failure of symmetry and dimension matching to select a physical carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous carrier-selection underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated plaquette bootstrap inputs.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Supplied finite arithmetic is not selector authority and Record does not derive the metric/readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Koide readout and occupancy routes remain separate open bridges.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated time-axis and finite-range walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous distinction between a finite basis and a physical response basis.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated spin-statistics forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Minimal axioms do not select a physical kinetic carrier or law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated SU(3) quotient encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous determinant-channel readout nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Analogous Record/action/readout nonselection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated theta insertion gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated theta phase insertion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated theta defect closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Determinant algebra leaves physical counting-horn selection open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Record and K/CPT labels do not select occupancy or determinant power.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Record formation does not select charged-lepton readout or rate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Record additivity permits unregistered context-dependent readout scaling.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite two-row numerical implication.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Unrelated finite-lattice continuum scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "mechanism": "Physical readout identity cannot be supplied by coefficient consistency alone.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "physical generation-carrier selection",
+          "physical channel-count scoring selection"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "fc1082425ae2ef67cf9ab9c926d7727517e3b7d85559b92910b85595d057b214",
+              "cross_cycle_candidate_ids": [
+                "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:0",
+                "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:1",
+                "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:2",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:0",
+                "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:1",
+                "koide_tracial_standard_form_carrier_narrow_note_2026-06-02:previous_audit:2",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "72162e6074ef8dc0b07d18f4fb6b9af08bf062845c3589afd49a08767cd6e250",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/koide_tracial_standard_form_carrier_narrow_note_2026-06-02",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+              "effective_status": null,
+              "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "No mass ratio, coupling, mixing angle, phase, or selector"
+              ]
+            },
+            "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "a2b66380405af41409d1259715b1d136ed3f7631ee91b81c87f1c524c83ee70f",
+              "effective_status": null,
+              "path": "docs/KOIDE_TRACIAL_STANDARD_FORM_CARRIER_NARROW_NOTE_2026-06-02.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "Honest Residual",
+                "If an additional scoring rule assigns equal energy to the two cyclic-vector channels",
+                "N a^2 = N(N-1)b^2",
+                "Recovering that line therefore imports spectral/Fourier structure beyond the cyclic vector.",
+                "The input analyzed here is explicitly supplied:",
+                "The source-side status is therefore bounded support",
+                "They do not provide the generation carrier, the `K`/CPT context, or the scoring rule.",
+                "equal energy per basis direction",
+                "equal energy per channel",
+                "it does not by itself adjudicate channel-counting versus direction-counting on the cyclic-vector split.",
+                "physical selection of the carrier and of its scoring rule remains open.",
+                "still needs a separate theorem selecting channel-count scoring as the physical generation readout."
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not supply a state, state-selection rule, averaging over alternatives"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 leaves the physical carrier, Fourier/readout alternative, channel scoring, and direction scoring routes OPEN and the future readout theorem UNTESTED.",
+          "N5 identifies untested framework-native carrier and channel-count selector resolutions.",
+          "The packet does not provide five distinct closed attack routes, so the mandatory discipline gate cannot pass."
+        ],
+        "narrowed_claim_scope": "On the explicitly supplied tracial-standard-form R[Z_3] carrier, Omega=e defines the identity/non-identity split; if equal channel energy is additionally supplied, the algebra yields r=1/2 and Q=2/3, without deriving the physical carrier or scoring rule.",
+        "next_route": {
+          "reason_untested": "The restricted packet contains no retained theorem deriving the physical carrier and channel-count scoring from accepted framework premises.",
+          "route_id": "R8_future_readout_theorem"
+        },
+        "prior_claim_scope": "Audited only the supplied finite tracial standard-form R[Z_3] carrier and the conditional equal-channel scoring arithmetic; no physical carrier or scoring-rule selection from baseline axioms was audited.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained theorem deriving the physical R[Z_3] carrier and channel-count scoring rule from accepted premises, then rerun this finite checker.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner genuinely computes the tracial GNS identities, projections, Hilbert-Schmidt norms, residual alternatives, and Koide-coordinate substitution rather than merely printing expected values. Those computations are class-A checks on explicitly supplied inputs, not a class-C derivation from the accepted framework premises. The note correctly exposes the carrier-selection and channel-versus-direction scoring residuals, so its bounded conditional algebra is supported while physical Koide closure remains open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/koide_tracial_standard_form_carrier_2026_06_02.py",
+  "title": "Koide Tracial Standard-Form Carrier Boundary",
+  "transitive_descendants": 8,
+  "verdict_rationale": null
+}

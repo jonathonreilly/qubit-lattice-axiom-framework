@@ -1,0 +1,241 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.47,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "7122ca81975a9d0836885cbe6ca14ceb29cfb770a2bfc34c26f2a838d478a053",
+  "note_path": "docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:30:35.646041+00:00",
+      "archived_for_note_hash": "af1ec7a38b3e24ae6ea868bb07915f952945da9c14fc1d333bacbcb452b5d28c",
+      "audit_date": "2026-06-06T17:08:33.157527+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_bae_30_probe_campaign_note_2026-05-09": null,
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_bae_30_probe_campaign_note_2026-05-09": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_bae_30_probe_campaign_note_2026-05-09": "meta",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_bae_30_probe_campaign_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 5.307,
+        "runner_hash": "ea2926c008d3acd36628a986523a326bfae57fd01f16445032fedfcc02049d7f",
+        "transitive_descendants": 13
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-1e258db918-koide_r_half_not_symmetry_pr",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Fourier diagonalization gives Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, and the Frobenius channel split is E+=3a^2 and E_perp=6|b|^2. The S3-invariant form alpha I+beta(J-I) has a twofold eigenvalue degeneracy; Lagrange's theorem gives no strict subgroup between C3 and S3; and dimensions 1 and 2 block a unitary singlet/doublet swap.",
+      "claim_scope": "Within the Hermitian C3-circulant family H=aI+bC+bbar C^2, r=1/2 is an equal singlet/doublet norm-balance condition and is not forced by the listed unitary C3/S3 symmetry routes while preserving three distinct masses.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-06T17:08:33.157527+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "C3 leaves r free, S3 axis-permutation symmetry forces eigenvalue multiplicities {1,2}, there is no intermediate C3 < G < S3 subgroup, and the 1D singlet and 2D doublet cannot be swapped by a unitary isomorphism.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Runner does not explicitly enumerate the S3 subgroup lattice, but the missing check is supplied by the elementary order argument for C3 < S3.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing math is finite matrix and group algebra, with no external comparator, fitted input, or definitional renaming. The no-go is narrow: it closes only the listed unitary C3/S3 symmetry-protection routes and explicitly leaves dynamical, variational, nonunitary, and extra-structure routes open. The BAE campaign citation is contextual rather than load-bearing on this audited scope."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:03.472753+00:00",
+      "archived_for_note_hash": "3e3d22ab2e3f4759fd9e80ddabec90817dbf188233d5d7e236aac22c6fe5269f",
+      "audit_date": "2026-06-18T06:28:49.164282+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 7.615,
+        "runner_hash": "ea2926c008d3acd36628a986523a326bfae57fd01f16445032fedfcc02049d7f",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra closes for the four enumerated routes. However the binding no-go discipline gate for a clean no-go is not satisfied because N1 enumerates only four distinct attack routes, below the required five-route stress test.",
+      "claim_scope": "Within the Hermitian C3-circulant Yukawa family, r=1/2 is the equal singlet/doublet channel-energy condition and is not forced by the enumerated C3/S3 unitary symmetry routes while preserving three distinct masses.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-18T06:28:49.164282+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "C3 leaves r free, S3 axis-permutation symmetry forces a twofold degeneracy, there is no subgroup strictly between C3 and S3, and the 1D singlet cannot be unitarily swapped with the 2D doublet.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: add a fifth distinct N1 route or rescope the row as a bounded algebraic support identity for the four explicitly checked C3/S3 unitary routes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the algebraic proof and runner support the four listed obstructions, but the source note's N1 route enumeration names only C3, S3, the subgroup gap, and singlet/doublet swap. Why this blocks: current no-go policy requires at least five distinct attack routes before an audited_clean no-go, even when the mathematical core is exact. Repair target: add a fifth distinct checked route or split this into a bounded algebraic support identity for the four listed routes. Claim boundary until fixed: the four-route finite-algebra obstruction is supported, but the row should not land as a clean no-go under the current gate."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.097814+00:00",
+      "audit_date": "2026-06-21T11:40:53.403469+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 7.7,
+        "runner_hash": "5d31f21cba4b95f09f621d6806edc9375d6a808c66ec286161301453c2de6940",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows from finite algebra over the provided packet: C3 leaves r variable, S3 gives a twofold eigenvalue multiplicity, no subgroup exists strictly between C3 and S3, no unitary equivalence swaps 1D and 2D irreps, and allowed doublet rotations preserve |b|^2/a^2. The note is explicitly route-local and leaves dynamical, nonunitary, variational, enlarged-structure, and untested symmetry routes open.",
+      "claim_scope": "Within H=aI+bC+bbar C^2, r=1/2 is the 45-degree/equal-channel-energy condition and is not forced by the listed C3/S3 unitary symmetry or coefficient-calibration routes while keeping three distinct masses.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T11:40:53.403469+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The listed C3/S3 symmetry routes and C3-compatible coefficient rephasing do not force r=1/2: C3 leaves r free, S3 forces {1,2} degeneracy, there is no C3<G<S3 subgroup, singlet/doublet dimensions differ, and rephasing preserves |b|^2/a^2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should recheck the manually audited subgroup-gap fact C3<G<S3, since it is not an explicit runner assertion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing facts are exact algebraic and representation-theoretic checks, not fitted comparisons or symbol renamings. The runner substantively verifies the Q/angle relation, equal Frobenius energy condition, S3 degeneracy, C3 freedom, dimension obstruction, and rephasing invariance; the omitted explicit subgroup enumeration follows immediately because C3 has index 2 in S3. The no-go discipline scope is satisfied because the claim names five tested routes, keeps the walls route-local, and explicitly preserves the live dynamical/extra-structure residuals."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py",
+  "title": "Koide r=1/2 Is Not Fixed By C3/S3 Symmetry Enhancement (Dynamical Norm-Balance) Narrow No-Go",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

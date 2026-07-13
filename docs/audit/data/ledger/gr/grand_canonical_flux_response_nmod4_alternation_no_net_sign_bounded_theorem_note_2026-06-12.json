@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "grand_canonical_flux_response_nmod4_alternation_no_net_sign_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "69857726bca59276b11fb03c7632060c2ac853d1987f8344efa2fb735e0cd520",
+  "note_path": "docs/GRAND_CANONICAL_FLUX_RESPONSE_NMOD4_ALTERNATION_NO_NET_SIGN_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:38.433258+00:00",
+      "audit_date": "2026-06-13T02:25:09.757637+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11": "Exact finite U(1) flux response V(phi)=E0(phi) for the listed free staggered-mass rings, N in {8,10,12,14,16}, supplied fillings K=N/2 and K=N/2-1, listed masses, and ground-state response only."
+        },
+        "dep_claim_type": {
+          "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11": "retained_bounded"
+        },
+        "deps": [
+          "matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "05ff5346954a9df012f7d0db2fe14b73a9fde817d0309fd28983f82b43f70953",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-022301-08ba17402c-grand_canonical_flux_respons",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source explicitly constructs the finite staggered tight-binding Hamiltonian and computes analytic second derivatives rather than reading or hard-coding the table. An independent check from the closed-form two-band spectrum reproduces the load-bearing signs, magnitudes, ratios, and T=1 maximum scale in the restricted packet.",
+      "claim_scope": "Finite free even rings with Abelian U(1) flux at grand-canonical mu_ch=0 and finite T on the stated tested grid N={8,10,12,14,16}, m and T as listed; no continuum, thermodynamic-limit, non-Abelian, gauge-self-energy, beta-function, or mu_ch != 0 claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:25:09.757637+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:matter_loop_flux_response_no_uniform_sign_shell_nmod4_resolved_bounded_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "At T=0.3 and m=0.4, exact Omega''(0) over N=8,10,12,14,16 is negative, positive, negative, positive, negative with magnitudes decaying by about 2.7 per Delta N=2.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that 'no net sign' remains interpreted as no uniform sign on the tested finite grid, not exact cancellation or an asymptotic statement.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 7,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles finite-model computation with no external comparator, tuned empirical input, or upstream open bridge. The cited upstream note is retained_bounded and is used only as context for the finite-shell sign question, not as an imported numerical premise. The source wording stays bounded to the tested grid and explicitly excludes thermodynamic, continuum, beta-function, gauge-self-energy, and off-particle-hole-symmetry claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_grand_canonical_flux_response_alternation_2026_06_12.py",
+  "title": "The Parity-Averaged Flux Response Also Has No Uniform Sign: Exact Analytic Derivatives Show N-Alternation With Decay at the Particle-Hole Point \u2014 the Screening Sign Lives Off Symmetry (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

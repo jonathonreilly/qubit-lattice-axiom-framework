@@ -1,0 +1,260 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
+    "koide_dimensionless_note_2026-04-24"
+  ],
+  "direct_in_degree": 12,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.248,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "05b987b354729db445963a84bd701648693417c455dcd1b1a84549d8fca47871",
+  "note_path": "docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T13:40:45.889425+00:00",
+      "archived_for_note_hash": "b87e151b19447bc23c95f962971ff37d44c81ee97905ad105bd23d0c71df7737",
+      "audit_date": "2026-04-30T21:50:53.112878+00:00",
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-high-ready-20260430-07",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner verifies the projector algebra, diagonal compression, uniqueness from trace preservation, and quotient erasure exactly. The note explicitly keeps the physical source-domain law and retained Koide closure open.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The unique trace-preserving local descent from A=span(P_plus,P_perp) to D^C3=span(I) is E_loc(X)=Tr(X)I/3, equals diagonal compression on A, and erases the reduced traceless Z coordinate modulo common scalar background.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 16,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The support-tier canonical-descent theorem closes on its stated scope: with scalar preservation, trace preservation, and strict onsite target fixed, the descent A -> D^C3 is uniquely Tr(X)I/3 and agrees with site-local diagonal compression. The runner verifies 55 checks including the boundary guardrails, projector algebra, uniqueness, and erasure of the reduced Z coordinate modulo common scalar. Residual risk is downstream overuse: this clean audit does not prove that the physical charged-lepton source-domain law must use onsite descent, nor does it retain native Q, delta, or full Koide closure."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.750710+00:00",
+      "archived_for_note_hash": "0be7a308da5e92c99077d82e6c94d1aaa30ce7241affc7a2c2cfd63fb992870c",
+      "audit_date": "2026-05-11T14:17:10.753224+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 14.238,
+        "runner_hash": "c686224417bef9b36533031380a8a553bc939bd07e1c2ce11d31e5d40c46fe28",
+        "transitive_descendants": 426
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional descent algebra is verified by the runner with PASS=55/FAIL=0. The retained chain does not close because the note admits the staggered-Dirac realization gate and reads several authority files for the Q/source-domain context without registered retained one-hop dependencies proving the physical source-domain law.",
+      "claim_scope": "Bounded exact source-domain descent algebra from the admitted C3-commutant source grammar A = span{P_plus, P_perp} to strict onsite C3-fixed scalar source functions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T14:17:10.753224+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "If the retained C3-commutant source grammar A = span{P_plus, P_perp} is descended to strict onsite C3-fixed scalar source functions by a scalar-preserving, trace-preserving local source-domain map, then the descent is uniquely E_loc(X) = Tr(X)I/3 and erases the reduced traceless Z coordinate modulo the common scalar background.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: register retained one-hop dependencies for the staggered-Dirac realization gate and the Q source-domain/background-zero authority notes, then re-audit the scoped descent claim.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+        "docs/KOIDE_Q_BACKGROUND_ZERO_Z_ERASURE_CRITERION_THEOREM_NOTE_2026-04-25.md",
+        "docs/KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md",
+        "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
+        "docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 14,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "Issue: the exact descent E_loc(X)=Tr(X)I/3 and Z-erasure algebra is proved only after admitting the C3-commutant source grammar and the staggered-Dirac/charged-lepton source-domain context; the runner also reads unregistered authority files to enforce the boundary. Why this blocks: retained Koide-route support requires those context inputs and the physical onsite-descent law to be retained one-hop authorities, not assumptions inside this row. Repair target: register and retain the staggered-Dirac realization gate plus the Q background-zero/source-domain authority notes, or split the row to a purely self-contained finite linear-algebra lemma with no physical Q implication. Claim boundary until fixed: exact bounded linear-algebra descent and Z-erasure modulo scalar background, conditional on the admitted source-domain context."
+    },
+    {
+      "archived_at": "2026-06-11T21:38:38.676537+00:00",
+      "archived_for_note_hash": "3f2fc8076554bc23e5a4143d905102d7b12d5e5aa21bf07808566303940daf82",
+      "audit_date": "2026-06-11T13:47:46.361371+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_dimensionless_note_2026-04-24": "Exact no-go that the stated finite two-channel Q(s,z) algebra plus endpoint delta algebra alone forces full dimensionless Koide closure.",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25": "Strict onsite C3-invariant scalar sources on the three-generation orbit reduce to common scalars, while the C3-commutant/projected source domain contains a non-onsite C3-invariant Z direction and therefore admits non-Koide zZ source values; this does not audit retained native Q=2/3 closure.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_dimensionless_note_2026-04-24": "no_go",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25": "no_go",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_dimensionless_note_2026-04-24": "retained_no_go",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25": "retained_no_go",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_dimensionless_note_2026-04-24",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 13.285,
+        "runner_hash": "354d0d706c34a7ccc8e6b5e62d19d5a4896deecff85dcb947359decfba650345",
+        "transitive_descendants": 77
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260611-134516-1b09dde973-koide_q_source_domain_canoni",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic descent theorem closes: P_plus=J/3, P_perp=I-J/3, Tr(P_plus)=1, Tr(P_perp)=2, Tr(Z)=-1, and Diag(alpha P_plus+beta P_perp)=((alpha+2 beta)/3)I. The downstream physical/Q reading remains conditional on the admitted source-domain and staggered-Dirac context.",
+      "claim_scope": "Exact finite C3 linear algebra: the unique trace-preserving onsite scalar descent A=span{P_plus,P_perp} -> D^C3 is trace averaging, agrees with diagonal compression on A, and kills the Z coordinate modulo common scalars; no physical Koide closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T13:47:46.361371+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because the target is D^C3 = span{I}, every descent has E_loc(X)=lambda(X)I, and trace preservation forces lambda(X)=Tr(X)/3, so E_loc(X)=(Tr X/3)I.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit or otherwise retain docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, or narrow this row to the standalone finite-linear-algebra descent with no staggered-Dirac admission.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 16,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class A algebraic identity, not a renaming or tuned numerical match, and the independent finite-matrix check agrees with the runner. However the packet explicitly lists docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md as a cited/admitted context authority with effective_status unaudited, and the source note itself says the physical source-domain law is not proved. Under the rubric, the exact descent can be accepted only at conditional/bounded scope until that dependency or the scope boundary is repaired."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.072062+00:00",
+      "audit_date": "2026-06-12T00:29:28.239026+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_dimensionless_note_2026-04-24": "Exact no-go that the stated finite two-channel Q(s,z) algebra plus endpoint delta algebra alone forces full dimensionless Koide closure.",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25": "Strict onsite C3-invariant scalar sources on the three-generation orbit reduce to common scalars, while the C3-commutant/projected source domain contains a non-onsite C3-invariant Z direction and therefore admits non-Koide zZ source values; this does not audit retained native Q=2/3 closure.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null
+        },
+        "dep_claim_type": {
+          "koide_dimensionless_note_2026-04-24": "no_go",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25": "no_go",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_dimensionless_note_2026-04-24": "retained_no_go",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25": "retained_no_go",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited"
+        },
+        "deps": [
+          "koide_dimensionless_note_2026-04-24",
+          "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25",
+          "staggered_dirac_realization_gate_note_2026-05-03"
+        ],
+        "load_bearing_score": 13.285,
+        "runner_hash": "354d0d706c34a7ccc8e6b5e62d19d5a4896deecff85dcb947359decfba650345",
+        "transitive_descendants": 77
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-002540-f7c2c3742e-koide_q_source_domain_canoni",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra closes independently: P_plus is the rank-one all-ones projector, P_perp=I-P_plus, Z=2P_plus-I, so the traces and diagonal coefficients force the stated descent. The Q consequence remains only the stated conditional consequence after Z-erasure, not a proof of the physical source-domain law.",
+      "claim_scope": "Exact finite-dimensional C3 projector algebra: unique trace-preserving descent A=span{P_plus,P_perp}->D^C3, equality with diagonal compression, and erasure of the reduced Z coordinate modulo common scalar; no retained native Koide closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:29:28.239026+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Since every descent value lies in D^C3 = span{I}, write E_loc(X)=lambda(X)I; trace preservation gives 3 lambda(X)=Tr(X), hence E_loc(X)=(Tr X/3)I, and diagonal compression has the same values on A.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that the AC_phi_lambda Tier-A admission registry entry is present when computing effective status; if auditing the separate Q(z) readout rather than this descent theorem, also re-check the cross-note z-sign convention.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 16,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "All displayed projector, trace, diagonal-compression, and quotient identities check by direct finite linear algebra, including diag(Z)=-I/3 and Tr(Z)=-1. The runner source uses exact rational matrix operations and note-boundary checks, with no external comparator, tuned numerical input, or definition-only substitution carrying the theorem. The staggered-Dirac carrier remains a bounded Tier-A admission for the carrier-named reading, so this clean verdict is for the bounded descent theorem and does not promote retained native Koide closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_q_source_domain_canonical_descent.py",
+  "title": "Koide Q Source-Domain Canonical Descent Theorem",
+  "transitive_descendants": 75,
+  "verdict_rationale": null
+}

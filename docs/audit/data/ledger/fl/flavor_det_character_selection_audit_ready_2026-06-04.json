@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_det_character_selection_audit_ready_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem.",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_classicalization_dynamics_firewall_2026-06-05",
+    "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "flavor_logdet_factor_2_record_readout_realization_narrow_theorem_note_2026-06-04",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ba80f303a9e2f170a71d66552be8aa952826372baa64539454468102f799afa3",
+  "note_path": "docs/FLAVOR_DET_CHARACTER_SELECTION_AUDIT_READY_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T16:24:06.473022+00:00",
+      "archived_for_note_hash": "1073e1148c7602ee7bf3bb20979177eed8216991ec87f7df28b58bf35012b253",
+      "audit_date": "2026-06-05T22:29:39.563244+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "aa37b202baa7a7f911810939ac8b9ce40734259a3f797966f4fa0eb7a1e3c02d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-222917-7ad42dcf3f-flavor_det_character_selecti",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic determinant-character and logarithm-form steps close as standard mathematics, but the restricted packet does not derive the residual premise that the relevant partition amplitude is the Berezin/Grassmann determinant Z=det(D+J). It also assumes continuity/smoothness for the scalar readout rather than deriving it from Record.",
+      "claim_scope": "Audited the bounded mathematical factor-2 claim: determinant powers are the regular composition characters on GL_n(C), non-determinant examples fail that axis, and regular additive readouts of positive multiplicative amplitudes are logarithmic, while Z=det(D+J) is not derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:29:39.563244+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Regular algebraic characters of GL_n(C) factor through det as integer powers, and a continuous/smooth additive readout on a positive multiplicative amplitude has form W=c\u00b7log Z; the actual identification Z=det(D+J) remains a separate fermionic/Berezin premise.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation of the Berezin/Grassmann partition amplitude Z=det(D+J) over independent source patches and a retained regularity/smoothness premise for the scalar readout.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner performs genuine finite algebraic sanity checks rather than merely printing constants, and its checks support the displayed determinant multiplicativity, counterexamples, direct-sum trace additivity, and log additivity claims. The broader conclusion is explicitly conditional on extra regularity and on the fermionic/Berezin amplitude identification, neither of which is supplied by the cited Record axiom. The cited Minimal Axioms authority is an accepted premise and does not by itself downgrade the row, but it also does not close those added premises."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_det_character_selection_audit_ready_2026_06_04.py",
+  "title": "Flavor - determinant-character finite-patch re-audit packet",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

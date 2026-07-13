@@ -1,0 +1,322 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.748,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "905bdd9d430195ae221b044af92a7dca7fecbc696285b0eb31e3722463b503c4",
+  "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.061334+00:00",
+      "audit_date": "2026-05-28T06:15:57.197904+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "ampere-fresh-context-codex-gpt-5.5-xhigh-2026-05-28-bz-volume-two-pi-cubed",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The substrate-internal chain closes from Z^3 plus standard Pontryagin/Haar facts: the dual torus and its probability-normalized Haar measure fix the (2pi)^3 denominator. The continuum comparison is explicitly non-load-bearing.",
+      "claim_scope": "From the accepted Z^3 spatial substrate plus standard Pontryagin-duality and Haar-normalization facts, the BZ dual is T^3 and its Haar probability measure in [-pi,pi]^3 coordinates is d^3k/(2pi)^3. The continuum R^3 Fourier denominator is certified only as a non-load-bearing numerical convention comparison, not as a derived continuum-measure bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T06:15:57.197904+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "(Z^3)^* = T^3, vol([-pi,pi]^3) = (2pi)^3, hence mu_Haar(dk) = d^3k/(2pi)^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Recheck only if later scope treats this as deriving the continuum R^3 Fourier measure, a BZ-to-continuum bridge, a 4D loop measure, Wick rotation, or a hierarchy/g_bare normalization primitive.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The bounded theorem closes at the stated scope. Independent check: Pontryagin duality gives Z^* = R/2piZ and products give (Z^3)^* = T^3; the coordinate fundamental domain [-pi,pi]^3 has product volume (2pi)^3; Haar probability normalization on the compact torus therefore writes as d^3k/(2pi)^3. The runner checks source-boundary firewalls, character-sum structure, exact sympy volume/Haar identities, Riemann-sum normalization, translation invariance, and alternative-constant fingerprints with PASS=55 FAIL=0. Residual risk is only scope creep: this does not derive the continuum R^3 Fourier measure, any 4D loop measure, Wick rotation, hierarchy primitive, 4pi factor, or Wilson/g_bare normalization."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.507746+00:00",
+      "audit_date": "2026-06-05T19:04:46.505283+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-190422-ba8b5ef002-bz_volume_two_pi_cubed_subst",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes from the accepted Lattice axiom Z^3 plus standard Pontryagin duality and Haar normalization. Independently, the character pairing n\u00b7k with k mod 2\u03c0 gives dual torus (R/2\u03c0Z)^3, whose coordinate fundamental-domain volume is (2\u03c0)^3, so normalized Haar density is exactly 1/(2\u03c0)^3.",
+      "claim_scope": "Audited the narrow claim that the Brillouin-zone Haar normalization for the Z^3 substrate gives d^3k/(2\u03c0)^3 on T^3, and that this numerically matches the standard continuum 3D Fourier denominator without being used as an input.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:04:46.505283+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "The dual group of Z^3 is T^3 realized as [-\u03c0,\u03c0]^3, so its Haar-probability measure in d^3k coordinates is d^3k/(2\u03c0)^3 because vol([-\u03c0,\u03c0]^3)=(2\u03c0)^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only the convention choice T^1=R/2\u03c0Z versus R/Z; under the note's explicit e^{ik\u00b7x} pairing convention the stated normalization is correct.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 44,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic closure over the accepted Z^3 substrate and standard harmonic-analysis facts, not a fitted numerical comparison or symbol renaming. The continuum Fourier convention is used only after the substrate-side (2\u03c0)^3 has already been obtained, so it is non-load-bearing. The runner source performs exact symbolic volume and normalization checks plus bounded numerical sanity checks; its PASS output is consistent with the independent derivation, though some runner checks are only illustrative rather than theorem-proving."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.430964+00:00",
+      "audit_date": "2026-06-05T22:01:38.444541+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-220117-865e1a6f87-bz_volume_two_pi_cubed_subst",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited axiom supplies the Z^3 substrate, and the remaining steps are standard Pontryagin-dual/Haar-normalization facts plus product-measure arithmetic on [-\u03c0,\u03c0]^3. The continuum d^3k/(2\u03c0)^3 convention is not used to derive the substrate normalization.",
+      "claim_scope": "Audited only the narrow identification that the Brillouin-zone Haar normalization for the Z^3 substrate gives the factor (2\u03c0)^3 in d^3k/(2\u03c0)^3, with the continuum Fourier convention used only as a numerical comparison.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:01:38.444541+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "The Haar-probability measure on the Pontryagin dual T^3 of Z^3, written on the [-\u03c0,\u03c0]^3 coordinate fundamental domain, is d^3k/(2\u03c0)^3 because vol([-\u03c0,\u03c0]^3)=(2\u03c0)^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the chosen R/2\u03c0Z dual-coordinate convention is accepted as part of the stated Fourier pairing convention, since using R/Z would move the 2\u03c0 into the character exponent rather than the coordinate period.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 44,
+        "B": 0,
+        "C": 11,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The load-bearing computation is an algebraic and measure-normalization closure over the accepted Z^3 lattice premise plus textbook Pontryagin/Haar facts explicitly admitted by the claim. Independent checking of the displayed formulae confirms that the dual coordinate period is 2\u03c0, the product volume is (2\u03c0)^3=8\u03c0^3, and normalizing Haar measure to total mass one gives density 1/(2\u03c0)^3. The runner supports this but is not the sole basis for the verdict; its source performs arithmetic and finite character-factorization checks rather than merely printing a verdict. No open upstream authority is load-bearing in the restricted packet."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.328061+00:00",
+      "audit_date": "2026-07-02T03:21:06.606992+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.087,
+        "runner_hash": "92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2",
+        "transitive_descendants": 33
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T032106Z-f10a9bc4-bz_volume_two_pi_cubed_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted minimal-axiom authority supplies the Z^3 lattice substrate; standard Pontryagin duality gives (Z^3)^*=T^3=(R/2\u03c0Z)^3 and Haar uniqueness fixes probability measure to Lebesgue-volume normalization. The continuum Fourier measure is not used upstream of this derivation.",
+      "claim_scope": "Audited only the narrow identification that the Z^3 Pontryagin dual T^3 has Haar probability measure d^3k/(2\u03c0)^3 in [-\u03c0,\u03c0]^3 coordinates, with the continuum (2\u03c0)^3 noted only as a numerical convention comparison.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T03:21:06.606992+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "From vol_Lebesgue([-\u03c0,\u03c0]^3)=(2\u03c0)^3 and Haar probability normalization, \u03bc_Haar(dk)=d^3k/(2\u03c0)^3 on the dual torus T^3 of Z^3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 36,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "With the stated e^{ik\u00b7x} pairing, characters of Z are 2\u03c0-periodic, so the three-dimensional torus fundamental domain has volume (2\u03c0)^3 and normalized Haar density 1/(2\u03c0)^3. The cited minimal-axiom node is an accepted premise and supplies only the Z^3 substrate needed here; no non-retained cited authority is required. The runner corroborates the algebra and source-boundary guards, but its hard-coded numeric fingerprints are not load-bearing for the verdict."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.409589+00:00",
+      "audit_date": "2026-07-09T05:00:07.333868+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-20260709",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the audited scope, the accepted Z^3 substrate plus standard Pontryagin/Haar mathematics determine T^3 and its normalized Haar measure. The continuum d^3k/(2 pi)^3 convention is named only after the substrate-internal denominator has been derived, so it is not a hidden input.",
+      "claim_scope": "For the accepted Z^3 spatial substrate and standard Pontryagin-duality/Haar-measure facts, the dual group is T^3 with Haar probability measure d^3k/(2 pi)^3 on [-pi, pi]^3; the resulting (2 pi)^3 Brillouin-zone normalization is substrate-internal for this 3D bounded scope, with the continuum Fourier convention used only as a non-load-bearing comparison.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T05:00:07.333868+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The dual group T^3 of Z^3 has fundamental domain [-pi, pi]^3, Lebesgue volume (2 pi)^3, and normalized Haar probability density d^3k/(2 pi)^3, so the BZ Plancherel denominator is fixed by the Z^3 substrate plus Pontryagin/Haar normalization rather than imported from continuum 3D Fourier measure.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second audit should keep the scope limited to the 3D Brillouin-zone Haar normalization; any 4D loop-measure, Wick-rotation, alpha_bare, or hierarchy use needs its own retained bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 55,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 55
+      },
+      "verdict_rationale": "The source's load-bearing result is the standard algebraic/harmonic-analysis chain Z^3 -> T^3, vol([-pi,pi]^3)=(2 pi)^3, and Haar probability density d^3k/(2 pi)^3. The current minimal-axiom authority supplies the Z^3 spatial substrate, and the remaining inputs are textbook Pontryagin-duality and Haar-normalization facts. The runner completed with TOTAL PASS=55 FAIL=0, checking the source boundary, character-sum factorization, exact volume identities, Haar normalization, translation invariance of the constant density, and exclusion of 4D/Wick/hierarchy extensions. The clean verdict is only for the bounded 3D BZ normalization and does not close alpha_bare, 4D loop measures, Wick rotation, hierarchy primitives, or continuum-measure derivation from first principles."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
+  "title": "Brillouin-Zone Volume `(2\u03c0)\u00b3` on `Z\u00b3` is Substrate-Internal \u2014 Narrow Theorem",
+  "transitive_descendants": 18,
+  "verdict_rationale": null
+}

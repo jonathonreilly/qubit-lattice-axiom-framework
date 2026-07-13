@@ -1,0 +1,419 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+    "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+    "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.67,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "572cec8171e297f01eb086002d2732c643e5798df4aa77e0ba337c4b8879d6a7",
+  "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.091662+00:00",
+      "audit_date": "2026-05-29T06:12:58.198559+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact finite Pauli/projector and retained EW one-Higgs bookkeeping carrier-ray bridge: the signed-record sigma_z source is affinely equivalent to the P_- occupation source, and P_- is the neutral Higgs ray; radial source-coordinate scale cancels only by the prior ratio gate.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 4.085,
+        "runner_hash": "48f9c92150f9086f5c4deaf49ba252502c50e984a834ee0943b61dc7521a1d16",
+        "transitive_descendants": 5
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained EW theorem supplies the W/Z mass formulas, the audited neutral-carrier bridge supplies the P_- radial carrier, and the source-coordinate gate supplies the common-coordinate/reparameterization cancellation; the derivative identities then close by elementary algebra.",
+      "claim_scope": "Exact bounded W/Z denominator support on the audited neutral carrier ray: differentiating retained one-Higgs EW mass rows M_W=g_2 v/2 and M_Z=sqrt(g_2^2+g_Y^2)v/2 with respect to a common local radial source coordinate gives the W/Z response rows, source-reparameterization invariance, and radial Jacobian recovery conditional on known g_2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T06:12:58.198559+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "From M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2)v(s)/2, dM_W/ds=(g_2/2)v'(s), dM_Z/ds=(sqrt(g_2^2+g_Y^2)/2)v'(s), so their ratio is g_2/sqrt(g_2^2+g_Y^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "fail": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The independent check differentiates M_W=g_2 v/2 and M_Z=sqrt(g_2^2+g_Y^2)v/2 directly, giving the stated derivative rows and cancellation of the common v'(s) factor. Under s=f(r), both derivatives acquire the same f'(r), so the W/Z ratio is invariant. The absolute W row recovers v'(s) only if g_2 is supplied. The verdict is bounded support only: it does not derive a top numerator row, top coefficient, top carrier/hypercharge authority, physical-scale g_2(v), m_t, y_t, v=246 GeV, or positive Y_T closure."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.555357+00:00",
+      "audit_date": "2026-06-05T17:37:53.214679+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact support that the signed one-qubit record source is affinely equivalent to the P_- occupation source and that P_- is the neutral carrier ray of the retained one-Higgs doublet, with no positive Y_T closure.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.5,
+        "runner_hash": "48f9c92150f9086f5c4deaf49ba252502c50e984a834ee0943b61dc7521a1d16",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-173634-3e09d04237-yt_strict_wz_neutral_carrier",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The audited W/Z denominator result follows by ordinary differentiation and cancellation from the retained EW mass formulas once the neutral carrier-ray surface is supplied. The open top coefficient, top carrier/hypercharge, and physical-scale g_2 issues are outside this bounded claim and are explicitly excluded.",
+      "claim_scope": "Exact denominator-side W/Z response rows on the neutral one-Higgs carrier ray, including source-reparameterization invariance and explicit radial-Jacobian recovery, with no top, y_t, physical-scale g_2(v), or positive Y_T closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:37:53.214679+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "Differentiating the retained EW formulas M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2) v(s)/2 gives dM_W/ds=(g_2/2)v'(s), dM_Z/ds=(sqrt(g_2^2+g_Y^2)/2)v'(s), and W/Z response ratio g_2/sqrt(g_2^2+g_Y^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream use does not promote this bounded W/Z denominator support into top coefficient, y_t, or physical-scale g_2 closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The load-bearing math is a genuine class A algebraic closure over retained-grade inputs: the EW theorem supplies the mass formulas and the carrier-ray authority supplies the neutral radial surface. Independent checking confirms the derivative factors, W/Z ratio, source-coordinate chain-rule invariance, projector signs, and Q-neutral tangent. The runner source performs symbolic differentiation/projection checks plus artifact and scope checks; it does not rely on numerical tuning, observed masses, or a hard-coded contested value. The clean verdict is limited to the bounded W/Z denominator support row."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.492245+00:00",
+      "audit_date": "2026-06-05T21:33:25.028818+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level algebraic diagonalization of the gauge-boson mass terms for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev, including W/Z/photon masses, Q=T3+Y, e=g sin(theta_W)=g_Y cos(theta_W), rho_tree=1, and the GUT-normalized coupling dictionary.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Exact bounded support that the signed one-qubit source in the sigma_z readout basis is affinely equivalent to a P_- occupation source, and that P_- is the neutral carrier ray of the retained one-Higgs electroweak doublet.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.5,
+        "runner_hash": "48f9c92150f9086f5c4deaf49ba252502c50e984a834ee0943b61dc7521a1d16",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-213142-dab683aaf1-yt_strict_wz_neutral_carrier",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The derivative rows and ratio follow algebraically from the cited retained EW Higgs mass formulas once the source is restricted to a local neutral radial coordinate. The neutral-carrier identification is supplied by a retained-grade bounded authority, and the packet does not require or claim the open top coefficient, top carrier, hypercharge, or physical-scale g_2 steps.",
+      "claim_scope": "Exact tree-level W/Z response rows and source-reparameterization-invariant W/Z denominator ratio on the neutral one-Higgs carrier ray, with the radial source Jacobian left explicit and no Y_T closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:33:25.028818+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26:retained->unaudited",
+      "load_bearing_step": "Differentiating M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2) v(s)/2 gives dM_W/ds=(g_2/2)v'(s), dM_Z/ds=(sqrt(g_2^2+g_Y^2)/2)v'(s), so the W/Z response ratio is g_2/sqrt(g_2^2+g_Y^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the clean verdict remains scoped to W/Z denominator support at a local point with nonzero source Jacobian and is not propagated as positive Y_T closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "The load-bearing math is a direct calculus/algebra closure over retained-grade inputs: the common v'(s) factor cancels in the W/Z ratio and reappears only as the explicit unknown Jacobian in the absolute W response. The runner source performs symbolic projection, differentiation, ratio, and reparameterization checks rather than merely printing constants; its other checks are boundary, text, and dependency-status checks. No external comparator, tuned numerical value, or definition-as-derivation is used for the scoped W/Z denominator response. The note explicitly limits the result away from positive Y_T, top-response, and physical-scale coupling closure."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:49.942891+00:00",
+      "archived_for_note_hash": "c3cfde332da28fae64376e578385028d1273383497e861f17160de14ef85063e",
+      "audit_date": "2026-06-19T21:45:23.953074+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling relation, rho_tree identity, and scalar Hessian companion for one SU(2)_L Higgs doublet with Y_H=1/2 and neutral vev.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Bounded algebraic support: signed-record source equivalence to lower-projector occupation in the one-site qubit algebra plus neutrality of the lower one-Higgs EW ray, excluding any physical same-surface qubit/Higgs carrier identification or Y_T closure.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "positive_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "48f9c92150f9086f5c4deaf49ba252502c50e984a834ee0943b61dc7521a1d16",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The calculus closes for an already-given EW neutral radial coordinate, but the full carrier-source chain does not. The cited neutral-ray bridge explicitly leaves the physical same-surface identification between the signed-record/qubit source and the EW neutral radial source open.",
+      "claim_scope": "Neutral-carrier W/Z denominator response packet: tree-level W/Z derivative rows and their source-coordinate-independent ratio along a local neutral one-Higgs EW radial coordinate, without top numerator or physical-scale g_2 closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-19T21:45:23.953074+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Differentiating M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2) v(s)/2 gives dM_W/ds=(g_2/2)v'(s), dM_Z/ds=(sqrt(g_2^2+g_Y^2)/2)v'(s), so the W/Z response ratio is g_2/sqrt(g_2^2+g_Y^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply or audit the same-surface theorem identifying the signed-record/qubit source ray with the EW neutral radial source, or split the clean EW derivative corollary from the carrier-source claim.",
+      "open_dependency_paths": [
+        "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+        "docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "total_pass": 47
+      },
+      "verdict_rationale": "Issue: the displayed W/Z derivative and ratio algebra is correct, and the runner executes those class-A SymPy checks, but the source-identification phrasing relies on a cited bridge that leaves the physical same-surface qubit/EW carrier identification open. Why this blocks: differentiating M_W and M_Z only establishes response rows for a stipulated local EW radial coordinate, not that the signed-record or neutral-carrier source is that physical coordinate. Repair target: supply or audit a retained same-surface carrier theorem, or narrow the note to the EW radial calculus corollary. Claim boundary until fixed: exact W/Z response rows on an assumed one-Higgs neutral radial coordinate are supported, but neutral-carrier source support remains conditional."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.526179+00:00",
+      "audit_date": "2026-06-21T12:28:45.564319+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Bounded source-side support: signed-record epsilon source is affinely equivalent to lower-projector occupation, and the lower projector is the neutral charge-spectral projector on the retained one-Higgs carrier; no positive Y_T, top-response, scalar-normalization, or physical-scale g_2 closure is audited.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "57366f88877698b0eb3f94b65f12a0949d64119c03aef7ad6ac18ced0dadd911",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The audited Layer 1 result follows by direct differentiation of the cited EW mass formulas and chain-rule cancellation under local reparameterization. The signed-record/qubit carrier-source identification is explicitly outside this audited scope.",
+      "claim_scope": "Layer 1 only: W/Z response rows, W/Z ratio, reparameterization invariance, and radial-Jacobian recovery on a stipulated local neutral one-Higgs EW radial coordinate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T12:28:45.564319+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "From M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2) v(s)/2, differentiating gives the W/Z response rows and the ratio g_2/sqrt(g_2^2+g_Y^2) after the common source Jacobian cancels.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers do not cite this row for the excluded carrier-source identification or positive Y_T closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 39,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The standalone Layer 1 result is a class-A algebraic closure over retained-grade EW mass input: substitute the retained tree masses as functions of an arbitrary local radial coordinate, differentiate, and cancel the shared v'(s) or f'(r) factor. The runner source performs these symbolic differentiations and simplifications, while the remaining checks are text, ledger, and firewall guardrails; no external comparator, tuned numerical value, or hard-coded disputed premise is load-bearing. The conditional carrier-source reading is not certified by this verdict because the note excludes it from the standalone exact-support scope."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.514945+00:00",
+      "audit_date": "2026-07-02T04:04:08.219380+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "Exact tree-level gauge-boson mass diagonalization, unbroken charge generator, electric coupling identity, rho_tree=1, and optional scalar Hessian bookkeeping for one declared SU(2)_L Higgs doublet with Y_H=1/2 and neutral vacuum; no derivation of the EW inputs, pole masses, loops, or numerical couplings was audited.",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "Bounded source-side support that the signed-record epsilon source is affinely equivalent to P_- occupation, the one-Higgs lower ray is neutral, and the cited same-surface spectral-projector theorem identifies that ray as 1_0(Q_H), without positive Y_T closure.",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "Exact source-coordinate invariance support theorem for a same-surface top/W Feynman-Hellmann ratio: if M_t(h)=y_t v(h)/sqrt(2), M_W(h)=g_2 v(h)/2, and v'(h0) is common and nonzero, then (dM_t/dh)/(dM_W/dh)=sqrt(2) y_t/g_2 and the unknown local source Jacobian cancels under h=f(s). This does not derive the EW carrier/source authority, top coefficient, y_t, m_t, g_2, v=246 GeV, physical-scale matching, or retained Y_T closure."
+        },
+        "dep_claim_type": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "bounded_theorem",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "bounded_theorem",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26": "retained_bounded",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": "retained_bounded",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+          "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+          "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "57366f88877698b0eb3f94b65f12a0949d64119c03aef7ad6ac18ced0dadd911",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T040408Z-43e4447c-yt_strict_wz_neutral_car",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The layer-1 result follows by ordinary differentiation of the retained EW mass formulas with couplings treated as fixed inputs. The source note explicitly excludes the carrier-source identification and top/Y_T closure from the standalone audited scope.",
+      "claim_scope": "Layer 1 only: strict W/Z derivative response rows, W/Z response ratio, reparameterization invariance, and W-radial Jacobian recovery for a stipulated local neutral one-Higgs EW radial coordinate; no carrier-source identification or positive Y_T closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T04:04:08.219380+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "From the retained formulas M_W(s)=g_2 v(s)/2 and M_Z(s)=sqrt(g_2^2+g_Y^2)v(s)/2, differentiating with respect to s gives the two response rows and the ratio g_2/sqrt(g_2^2+g_Y^2).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream citations use this only for the stipulated-EW-radial W/Z denominator response, not for carrier-source identification or positive Y_T closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 40,
+        "C": 0,
+        "D": 0,
+        "total_pass": 48
+      },
+      "verdict_rationale": "The load-bearing math is a class-A algebraic/calc corollary of retained-grade EW mass formulas: the derivative rows, ratio cancellation, and reparameterization invariance all follow without external comparators or fitted values. The runner source performs the relevant symbolic differentiations and projector checks, while many other PASS lines are text, existence, or ledger-boundary checks. The conditional layer-2 carrier-source reading is explicitly outside this scoped claim, so it does not block clean audit of layer 1."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
+  "title": "Y_T Strict W/Z Neutral-Carrier Response Packet",
+  "transitive_descendants": 8,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

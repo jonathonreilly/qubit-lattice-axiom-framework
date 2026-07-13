@@ -1,0 +1,359 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+    "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10",
+    "yt_ward_identity_derivation_theorem"
+  ],
+  "direct_in_degree": 12,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.516,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "15bc5c45b35ffc54a0ebbc9e3b4680124156e39de72f85910e20d7036cc9c315",
+  "note_path": "docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T14:37:41.961242+00:00",
+      "archived_for_note_hash": "e724496cd2082d61fb715f43871eaaa4f95d12d5373f2699392e0312f4ecb4af",
+      "audit_date": "2026-04-30T11:41:14.333916+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "audited_conditional",
+          "yt_ward_identity_derivation_theorem": "audited_renaming"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 11.614,
+        "transitive_descendants": 276
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-critical-sweep-20260430",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md, YT_WARD_IDENTITY_DERIVATION_THEOREM.md.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The scalar-singlet four-fermion coefficient on the retained Q_L block is asserted to be the same off-surface 1PI coefficient as the Rep-B H_unit form factor route.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences.",
+      "open_dependency_paths": [
+        "docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md",
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md, YT_WARD_IDENTITY_DERIVATION_THEOREM.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+    },
+    {
+      "archived_at": "2026-05-25T16:06:45.367547+00:00",
+      "archived_for_note_hash": "be7aa24ac3ce6aa0b50afb14e16b6804eb15b36cf8f7d42520e3eab46212db79",
+      "audit_date": "2026-05-25T14:36:57.877795+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 13.819,
+        "runner_hash": null,
+        "transitive_descendants": 902
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T143626Z-55f2d114-g_bare_two_ward_same_1pi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet supports the H_unit matrix element and Rep-B independence, and it supports the canonical-surface same-1PI agreement, but it does not supply a closed theorem that the H_unit-residue representation remains the complete same Gamma^(4) representation off the canonical surface for arbitrary g_bare. That missing off-surface same-1PI bridge is exactly the pinning step.",
+      "claim_scope": "Audited the claimed off-surface same-1PI coefficient identity equating the OGE scalar-singlet four-fermion coefficient with the H_unit residue representation for arbitrary g_bare on Q_L.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T14:36:57.877795+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because D17 leaves only one retained scalar-singlet coefficient on Q_L, Representation A and Representation B must be the same coefficient of the same projected Gamma_S^(4) for every g_bare, so F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained off-surface theorem proving that the H_unit-residue representation is the complete same projected 1PI Gamma_S^(4) coefficient for arbitrary g_bare, not merely a canonical-surface consistency check.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Both cited authorities are marked retained_bounded, so there is no automatic downgrade from non-retained upstream status. However, the source claim imports an additional off-surface identification: the constant H_unit matrix element is treated as a complete representation of the same four-fermion 1PI coefficient for all g_bare. The provided YT authority explicitly verifies the same-1PI agreement only on the canonical g_bare = 1 surface, while Rep-B independence only fixes the local matrix element, not the off-surface equality of the two Gamma^(4) representations. Thus the algebraic solve for g_bare = 1 is conditional on a missing bridge theorem rather than closed by the restricted packet."
+    },
+    {
+      "archived_at": "2026-05-26T13:19:12.589282+00:00",
+      "archived_for_note_hash": "1c52b0fa35564689d1275ca312f378a7eae310c1b4e0184865ac819b6650d0ea",
+      "audit_date": "2026-05-25T19:01:55.748492+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 13.771,
+        "runner_hash": null,
+        "transitive_descendants": 873
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185958Z-bf9580d7-g_bare_two_ward_same_1pi-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra closes after accepting the H_unit-residue admission, but the restricted packet does not derive that the constant H_unit matrix element exhausts the complete same-projected 1PI residue for arbitrary g_bare. D17 uniqueness and canonical-surface agreement do not supply that off-surface bridge.",
+      "claim_scope": "Conditional off-surface pinning of positive g_bare to 1 on Q_L from Rep A, retained Rep-B independence, and the admitted completeness of the H_unit same-projected 1PI residue.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:01:55.748492+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the H_unit-residue admission, Representation B exhausts the complete same-projected 1PI Gamma_S^(4) coefficient, so equating it with Representation A gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a direct derivation that the H_unit tree-level matrix element exhausts the complete same-projected 1PI Gamma_S^(4) residue for arbitrary g_bare on Q_L.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "No runner was available, but the load-bearing issue is judgeable from the note text. The cited authorities are presented as retained_bounded in this packet; the blocker is instead the source note's explicit, load-bearing H_unit-residue admission. The N1-N8 stress check collapses the residual to that single missing bridge, and the packet's strongest steelman, D17 uniqueness plus canonical agreement, still does not prove off-surface completeness."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.475481+00:00",
+      "audit_date": "2026-05-26T17:58:17.062296+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "yt_ward_identity_derivation_theorem": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 13.78,
+        "runner_hash": "9e3713bf98c895372701c79484f68fd6f6f78393e1e9434f4a48db9165f43d56",
+        "transitive_descendants": 878
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-same-1pi-second-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes only for the bounded conditional theorem: direct dependencies are retained_bounded, and the missing H_unit-residue-to-complete-1PI bridge is stated as a load-bearing admission rather than smuggled in as a derived fact. The packet does not close, and the note does not claim to close, the complete same-projected 1PI exhaustion theorem.",
+      "claim_scope": "Conditional algebraic pinning of g_bare=1 on Q_L from retained Rep-B independence plus the explicitly admitted H_unit-residue identification of Rep B with the complete same-projected 1PI coefficient; the same-projected 1PI exhaustion bridge itself is not audited as proved.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T17:58:17.062296+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T17:53:59.136041+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-same-1pi-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded conditional Path-2 theorem: assuming the H_unit-residue admission identifies the H_unit tree-level matrix element with the complete same-projected 1PI Gamma_S^(4) coefficient, Rep-B independence and exact coefficient algebra force the positive-branch solution g_bare = 1; no complete same-projected 1PI exhaustion bridge is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T17:58:17.062140+00:00",
+          "auditor": "codex-gpt-5.5-fresh-g-bare-two-ward-same-1pi-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional algebraic pinning of g_bare=1 on Q_L from retained Rep-B independence plus the explicitly admitted H_unit-residue identification of Rep B with the complete same-projected 1PI coefficient; the same-projected 1PI exhaustion bridge itself is not audited as proved.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:yt_ward_identity_derivation_theorem:retained_bounded->unaudited",
+      "load_bearing_step": "Under the explicit H_unit-residue admission, Representation B is allowed to be read as the same complete projected Gamma_S^(4) coefficient as Representation A, so equating coefficients gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c), and the retained Rep-B value F_Htt^(0)=1/sqrt(6) then gives g_bare=1 on the positive branch.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second-pass caution: downstream rows must preserve the H_unit-residue admission whenever they cite this row for off-surface g_bare=1; this audit does not certify the missing same-projected 1PI exhaustion bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The source note is correctly scoped as conditional Path-2 support: it repeatedly states that off-surface g_bare=1 depends on the H_unit-residue admission and does not prove the missing same-projected 1PI exhaustion bridge. The runner passes 25 checks, but those checks are source-firewall and coefficient-algebra checks after the admitted premise, not a first-principles computation of the bridge. Under that bounded scope, the algebra from F_Htt^(0)^2=1/6 and F_Htt^(0)^2=g_bare^2/(2N_c) to g_bare=1 is exact, and the retained_bounded direct dependencies are sufficient for bounded chain closure."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:23.989880+00:00",
+      "archived_for_note_hash": "3b6a23f85436a087c6c2a568c28744d24fc9d98ccd40d222e02d2cf40085f7de",
+      "audit_date": "2026-06-12T00:25:02.836891+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "yt_ward_identity_derivation_theorem": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim."
+        },
+        "dep_claim_type": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "bounded_theorem",
+          "yt_ward_identity_derivation_theorem": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19": "retained_bounded",
+          "yt_ward_identity_derivation_theorem": "retained_bounded"
+        },
+        "deps": [
+          "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+          "yt_ward_identity_derivation_theorem"
+        ],
+        "load_bearing_score": 12.508,
+        "runner_hash": "9e3713bf98c895372701c79484f68fd6f6f78393e1e9434f4a48db9165f43d56",
+        "transitive_descendants": 90
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260612-002321-6e86ea1137-g_bare_two_ward_same_1pi_pin",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational solve itself closes: 2 * 3 * (1/6) = 1. The full off-surface pinning chain does not close because the packet does not derive the H_unit-residue exhaustion theorem identifying the H_unit matrix element with the complete same-projected 1PI Gamma_S^(4) residue.",
+      "claim_scope": "Exact conditional coefficient algebra: from retained Rep-B input F_Htt^(0)^2 = 1/6 and the explicitly admitted same-projected 1PI identity, the positive branch gives g_bare = 1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T00:25:02.836891+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the H_unit-residue admission, Representation B is allowed to be read as the same complete projected coefficient as Representation A, so equating coefficients gives F_Htt^(0)(g_bare)^2 = g_bare^2/(2 N_c).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and audit the complete same-projected 1PI exhaustion theorem showing that the H_unit tree-level matrix element exhausts the full scalar-singlet 1PI residue for arbitrary g_bare on Q_L.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The runner source performs source-firewall checks and exact rational algebra, not a first-principles derivation of the residue bridge. Independent algebra confirms that, if F_Htt^(0)^2 = 1/6 and F_Htt^(0)^2 = g_bare^2/(2 N_c) with N_c = 3 are both accepted, then g_bare^2 = 1 and the positive branch is g_bare = 1. The load-bearing bridge is explicitly an H_unit-residue admission, and the source note states that it does not derive the complete same-projected 1PI exhaustion theorem. Retained status therefore cannot propagate to an unconditional pinning theorem from this packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976870+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
+  "title": "Off-Surface Same-1PI Conditional Map and Residue-Normalization Obstruction for the Two-Ward `g_bare` Route",
+  "transitive_descendants": 731,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

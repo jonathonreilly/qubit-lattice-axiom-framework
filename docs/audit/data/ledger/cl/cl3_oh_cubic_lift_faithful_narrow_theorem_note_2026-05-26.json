@@ -1,0 +1,166 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.1,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2d0768747f0453fb473e9323c73325160776b401dd381950bb35f6c660653692",
+  "note_path": "docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:26.763317+00:00",
+      "audit_date": "2026-06-18T02:55:46.639110+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded.",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 14.899,
+        "runner_hash": "5b574315a310f4ba4ecdaad3ad61ac965a8e3919e94125ec547b30ba3a470507",
+        "transitive_descendants": 674
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26-panel1-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The tuple is clean because the claim closes as a pure algebraic derivation from the Clifford relations, orthogonality of signed permutation matrices, the universal property, and the determinant action on the top exterior grade. The runner source genuinely enumerates all 48 O_h elements and verifies the relevant Clifford, determinant, pseudoscalar, and averaging identities without importing external comparators or tuned constants.",
+      "claim_scope": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T02:55:46.639110+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-29T06:22:27.631259+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure Cl(3)/finite-cubic-group support lemma: every signed-permutation matrix R in O_h extends to a Cl(3) algebra automorphism on generators, the pseudoscalar I=gamma_1 gamma_2 gamma_3 transforms as det(R) I, and the pure pseudoscalar line has zero O_h-average. Strong-CP/action-class/continuum bridges are excluded.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-18T02:48:58.432233+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the finite-group/Clifford-algebra claim that all 48 signed permutation matrices in O_h act on Cl(3,0) by algebra automorphisms, with the pseudoscalar line transforming by the determinant character and averaging to zero.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-06-18T02:55:46.639110+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26-panel1-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite Cl(3)/O_h algebra lemma: all 48 signed-permutation matrices induce Clifford algebra automorphisms, the pseudoscalar line transforms by det(R), and its O_h average is zero; no strong-CP or lattice-action bridge is audited.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "Misclassified the load-bearing step as class C first-principles compute; it is class A algebraic derivation/check over existing Clifford and finite-group inputs.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The tuple is clean because the claim closes as a pure algebraic derivation from the Clifford relations, orthogonality of signed permutation matrices, the universal property, and the determinant action on the top exterior grade. The runner source genuinely enumerates all 48 O_h elements and verifies the relevant Clifford, determinant, pseudoscalar, and averaging identities without importing external comparators or tuned constants.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 18,
+            "B": 0,
+            "C": 0,
+            "D": 0,
+            "total_pass": 18
+          },
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For any orthogonal R, the generator map gamma_i -> sum_j R_ij gamma_j preserves the Clifford relations and sends I = gamma_1 gamma_2 gamma_3 to det(R)\u00b7I by the Leibniz formula.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The tuple is clean because the claim closes as a pure algebraic derivation from the Clifford relations, orthogonality of signed permutation matrices, the universal property, and the determinant action on the top exterior grade. The runner source genuinely enumerates all 48 O_h elements and verifies the relevant Clifford, determinant, pseudoscalar, and averaging identities without importing external comparators or tuned constants."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/cl3_oh_cubic_lift_faithful_runner.py",
+  "title": "Cl(3) Faithful Lift of the Cubic Point Group O_h \u2014 Narrow Theorem",
+  "transitive_descendants": 775,
+  "verdict_rationale": null
+}

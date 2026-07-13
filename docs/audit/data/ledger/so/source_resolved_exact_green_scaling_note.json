@@ -1,0 +1,216 @@
+{
+  "audit_date": "2026-05-17T14:42:11.906633+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 11.216,
+    "runner_hash": "08ef82fe2d03a43890b76a906ef6d849262bad649ab80bf4187a0a30c43ff836",
+    "transitive_descendants": 840
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260517-144003-bc2044d8-source_resolved_exact_gr-002",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The primary runner and included helper build the lattice, fields, propagation, centroid readout, ratios, and power fits from the stated constants; the reported values are computed rather than hard-coded. The closure is limited to the stated finite lattice, kernel, calibration target, source cluster, and readout.",
+  "claim_id": "source_resolved_exact_green_scaling_note",
+  "claim_scope": "Fixed-parameter finite-lattice replay of the stated source-resolved Green kernel on the h=0.5, W=3, L=24 exact lattice, including zero-source reduction, TOWARD rows, linear source-strength scaling, and reported Green/instantaneous ratios.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-17T14:42:11.906633+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-17T14:39:26.011542+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260517-143905-bc2044d8-source_resolved_exact_gr-001",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "A bounded numerical lattice statement for h=0.5, W=3, L=24, the specified source cluster, kernel exp(-mu r)/(r+eps) with mu=0.08 and eps=0.5, and the runner's weak-field calibration.",
+      "claim_type": "bounded_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "second_audit": {
+      "audit_date": "2026-05-17T14:42:11.906633+00:00",
+      "auditor": "codex-cli-gpt-5.5-20260517-144003-bc2044d8-source_resolved_exact_gr-002",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Fixed-parameter finite-lattice replay of the stated source-resolved Green kernel on the h=0.5, W=3, L=24 exact lattice, including zero-source reduction, TOWARD rows, linear source-strength scaling, and reported Green/instantaneous ratios.",
+      "claim_type": "bounded_theorem",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "C",
+      "verdict": "audited_clean"
+    },
+    "status": "confirmed"
+  },
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 2,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/minimal_source_driven_field_probe.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": "For the fixed h=0.5, W=3, L=24 source-resolved Green-kernel configuration, the runner computes zero-source shift +0.000000e+00, four positive Green deflections, F~M exponent 1.01, and mean |green/inst| = 1.111.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "97c1fc825fe2a49a6dd3a4571ffe0c237fe8124c94056461824588cadf37bcd6",
+  "note_path": "docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-check if the claim is broadened beyond the fixed lattice/kernel/gain/source configuration audited here.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.236955+00:00",
+      "audit_date": "2026-05-02T00:11:43.232867+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner recomputes the note's larger-family replay exactly for the declared lattice, source cluster, kernel, source ladder, and calibration gain. The note keeps the result bounded as exact-lattice size-transfer evidence and does not claim a full self-consistent field theory.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:source_resolved_exact_green_pocket_note",
+      "load_bearing_step": "The source-resolved Green field remains a bounded weak-field pocket on the larger exact lattice, preserving zero-source reduction, TOWARD sign, near-linear F~M, and mean |green/inst| = 1.111.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The current runner output matches the frozen table: zero-source shift is 0, the Green-kernel deflections and ratios match, max |f| scales from 2.5e-03 to 2.0e-02, and both fitted exponents are 1.01. This closes the bounded size-transfer claim for the declared source-resolved linear Green architecture. Residual risk is still generated-geometry transfer, robustness, and self-consistency, which the note identifies as outside this claim."
+    },
+    {
+      "archived_at": "2026-05-04T12:38:55.381751+00:00",
+      "audit_date": "2026-05-03T20:56:34.825957+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "source_resolved_exact_green_pocket_note": "retained_bounded"
+        },
+        "deps": [
+          "source_resolved_exact_green_pocket_note"
+        ],
+        "load_bearing_score": 2.585,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "fresh-agent-source-green-scaling",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop source-resolved Green pocket dependency is effective retained_bounded, and the current runner completed and reproduced the frozen L=24 table, zero-source shift, exponents, and mean ratio. Closure is bounded to this fixed lattice family, kernel, source cluster, gain, and readout; it does not establish a self-consistent field theory or generated-geometry transfer.",
+      "claim_scope": "For the fixed exact lattice h=0.5, W=3, L=24, fixed four-node source cluster, source strengths 0.001 through 0.008, kernel parameters mu=0.08 and eps=0.5, and calibration gain 2.131774, the source-resolved Green replay has exact zero-source reduction, TOWARD sign in all four rows, near-linear F~M scaling, and mean |green/inst| ratio 1.111.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T20:56:34.825957+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:source_resolved_exact_green_pocket_note:retained_bounded->unaudited",
+      "load_bearing_step": "The strongest bounded statement is that zero-source reduction survives, the Green-kernel field keeps the weak-field TOWARD sign on the larger exact lattice family, the mass-scaling class stays essentially linear, and mean |green/inst| = 1.111.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A later re-audit should keep the scope bounded to the fixed gain, kernel, source cluster, and L=24 replay unless an additional robustness sweep or generated-family transfer theorem is supplied.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-context",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing finite computation completed under the current runner and matches the source note's frozen values: zero-source dynamic shift +0.000000e+00, TOWARD rows 4/4, instantaneous and Green-kernel F~M exponents 1.01, and mean |green/inst| ratio 1.111. The result is not algebraic decoration of the upstream pocket because it performs a distinct larger-lattice replay rather than deriving an identity from the parent. The calibrated gain and fixed kernel/source choices are part of the bounded claim scope, so they limit but do not block the audited statement."
+    },
+    {
+      "archived_at": "2026-05-10T14:40:27.628010+00:00",
+      "audit_date": "2026-05-05T11:35:44.833436+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {
+          "source_resolved_exact_green_pocket_note": "retained_bounded"
+        },
+        "deps": [
+          "source_resolved_exact_green_pocket_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "08ef82fe2d03a43890b76a906ef6d849262bad649ab80bf4187a0a30c43ff836",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-source_resolved_exact_gr-042",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner computes the Green field, instantaneous comparison field, propagated centroids, ratios, zero-source reduction, and fitted exponents rather than printing hard-coded target values. The conclusion is bounded to the explicit finite lattice family and selected source-resolved kernel.",
+      "claim_scope": "Fixed source-resolved Green-kernel replay on the h=0.5, W=3, L=24 exact lattice with the stated four-node source cluster, source ladder, kernel parameters, and calibration gain.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T11:35:44.833436+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:source_resolved_exact_green_pocket_note:retained_bounded->unaudited",
+      "load_bearing_step": "The larger-family replay has zero-source dynamic shift +0.000000e+00 and, across the four source strengths on h=0.5, W=3, L=24, the Green-kernel deflection remains TOWARD with F~M = 1.01 and mean |green/inst| = 1.111.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the imported lattice/proagation helper source if the restricted packet is expanded to include shared runner dependencies.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The cited upstream pocket is retained_bounded, and the new load-bearing size-transfer result is produced by a finite runner computation with no completed-output mismatch. The code constructs the source cluster and Green field, calibrates the explicitly declared weak-field amplitude, propagates both fields, and derives the reported signs, ratios, and exponents from those arrays. The clean result is narrow: it does not establish a self-consistent field theory, generated-geometry transfer, or robustness beyond this fixed kernel and lattice family."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 1,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 2
+  },
+  "runner_path": "scripts/source_resolved_exact_green_scaling.py",
+  "title": "Source-Resolved Exact Green Scaling",
+  "transitive_descendants": 2,
+  "verdict_rationale": "The runner source is substantive: it constructs the finite lattice, computes the source-resolved Green-like field, propagates amplitudes, and derives the centroid shifts and fitted exponents without importing prior note outputs or asserting the table constants. The cached stdout matches the note's frozen readout, including exact zero-source reduction and all four TOWARD rows. This clean verdict applies only to the bounded fixed-configuration computation, not to a full self-consistent field theory or generated-geometry transfer."
+}

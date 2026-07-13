@@ -1,0 +1,250 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "one_parameter_reduced_shell_law_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.392,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e572632645154b2d7693a86a110dbc4c0c90848df54bee70cd652406e24f19b3",
+  "note_path": "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.813022+00:00",
+      "audit_date": "2026-05-01T03:03:45.004112+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.248,
+        "transitive_descendants": 37
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-one_parameter_reduced_shell_law_note",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner numerically checks the reduced-source invariance, but the exact theorem still depends on undeclared predecessor primitives and machine-precision Green-solve equality rather than an exact/symbolic proof or a classified audit runner surface.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->critical",
+      "load_bearing_step": "The note claims that on the reduced shell surface the sewing-shell law is fixed entirely by total charge, sigma_red(Q) = Q * (k_rad + c_aniso * m_orb), with no extra family-dependent anisotropic amplitude.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "scripts/frontier_star_shell_projector.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_coarse_grained_exterior_law.py",
+        "scripts/frontier_sewing_shell_source.py",
+        "scripts/frontier_radial_shell_matching_law.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the runner produces seven PASS checks for the reduced shell calculation, but none are A/B/C/D classified, and the source note declares deps=[] while relying on already-established radial DtN, anisotropic shell-sector, exact local O_h, and finite-rank source-family primitives. Why this blocks: the bounded reduced law is numerically supported, but the claimed exact one-parameter theorem is not auditable as closed from the note alone because the exact source-class/projection machinery and the numeric-to-exact step are implicit. Repair target: register the upstream gravity-shell dependency notes or include their exact constructions, update the runner to emit classified PASS lines for the lattice compute, and add an exact or certified-error proof that the machine-precision equalities force the stated theorem. Claim boundary until fixed: evidence for a one-parameter reduced-shell law on the tested star-supported source class; not a closed exact theorem for the gravity matching program."
+    },
+    {
+      "archived_at": "2026-05-11T13:06:18.364564+00:00",
+      "archived_for_note_hash": "2f304de8566ef0a8db90d6d3eeed41505a67e7e6e7175781c7000f97b68163c7",
+      "audit_date": "2026-05-05T04:45:14.692160+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.066,
+        "runner_hash": "2166767a71e73d9acd4a44af06fc0d5089d9ce3fb1112b65d97d29e904e3ac77",
+        "transitive_descendants": 267
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-one_parameter_reduced_sh-074",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The linearity inference from identical normalized columns to a one-parameter law closes algebraically, but the restricted packet does not include the imported frontier modules that define and compute the point-Green columns, projector, Laplacian, Green solve, and source families from the axiom. The missing step is an in-packet first-principles derivation or retained authority for those operators and source constructors.",
+      "claim_scope": "Audited the reduced-shell statement that, for the computed seven star-support point-Green columns and the two checked exact source families at shell cutoff R = 4, the reduced sewing-shell law is fixed by total charge with c_aniso = 0.081435402995901.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T04:45:14.692160+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By linearity of the exterior projector, the lattice Laplacian, and the Green solve, the identical reduced data from the seven unit point-Green columns imply sigma_red(Q) = Q * (k_rad + c_aniso * m_orb) on the star-supported source class.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide the frontier modules or retained notes certifying star_shell_projector, sewing_shell, radial_shell, same_source_metric, and coarse_grained as axiom-derived inputs, or replace the runner with a self-contained first-principles certificate.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner performs nontrivial numerical checks of equality and linear scaling, and its reported tolerances support the reduced one-parameter relation for the data it constructs. However, the source imports the load-bearing operator and source definitions from unprovided modules via load_frontier rather than deriving them within the restricted packet. With no cited authorities supplied, the claim depends on unclosed framework inputs, so it cannot be audited clean from the packet alone."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.039513+00:00",
+      "archived_for_note_hash": "74f322c499e6ab7f1d15aab6c07d112fddda0ca2008f45873bc7783ebc68ed94",
+      "audit_date": "2026-05-11T13:42:15.685609+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.781,
+        "runner_hash": "2166767a71e73d9acd4a44af06fc0d5089d9ce3fb1112b65d97d29e904e3ac77",
+        "transitive_descendants": 439
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-20260511-one-parameter-shell-law",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The live runner reports PASS=7 FAIL=0 for the constructed reduced-shell witness. The restricted packet does not provide retained one-hop authority notes for the imported helper modules that define the projector, source families, sewing-shell projection, radial kernel, and coarse-grained exterior law.",
+      "claim_scope": "Conditional reduced-shell law on the constructed cutoff-R=4 reduced shell surface: given the imported exterior projector, shell-mean operator, source-family constructors, coarse-grained exterior law, sewing-shell projection, and radial DtN shell kernel, the runner verifies that seven point-Green columns share the same normalized radial profile, anisotropic orbit mode, shell-mean response, and c_aniso=0.081435402995901, and that the exact local O_h and finite-rank families obey the same one-parameter law. This excludes a retained authority for the imported helper modules and excludes full shell-stress/junction, nonlinear 4D, or final Einstein/Regge closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T13:42:15.685609+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By linearity of the exterior projector, lattice Laplacian/Green solve, and sewing-shell construction, identical normalized point-Green columns fix the reduced shell law entirely by total charge Q.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge \u2014 wire retained-grade authority notes for the five imported helper modules, or inline their operator/source constructions so the reduced-shell proof is self-contained in the audit packet.",
+      "open_dependency_paths": [
+        "scripts/frontier_star_shell_projector.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_coarse_grained_exterior_law.py",
+        "scripts/frontier_sewing_shell_source.py",
+        "scripts/frontier_radial_shell_matching_law.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the exact reduced one-parameter arithmetic is computed on objects supplied by five imported frontier modules that are not retained dependencies of this row. Why this blocks: the theorem needs authority for the operators and source-family constructors before the audit can treat the linearity result as a retained bounded theorem, even though the numerical witness itself is reproducible. Repair target: add retained-grade cited notes/dependency edges for `frontier_star_shell_projector.py`, `frontier_same_source_metric_ansatz_scan.py`, `frontier_coarse_grained_exterior_law.py`, `frontier_sewing_shell_source.py`, and `frontier_radial_shell_matching_law.py`, or inline their constructions into a self-contained runner. Claim boundary until fixed: the one-parameter reduced-shell law is a conditional bounded witness on the imported reduced shell surface, not retained gravity closure."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:00.932025+00:00",
+      "archived_for_note_hash": "1769be5fd543da806d3328f142ba23640b84b33a16ec985316d1c8b79cb0bcba",
+      "audit_date": "2026-06-15T22:37:08.405954+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": "Bounded helper-umbrella audit for the five named helper modules consumed by `scripts/frontier_one_parameter_reduced_shell_law.py` on the reduced R=4 sewing-shell surface."
+        },
+        "dep_claim_type": {
+          "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": "retained_bounded"
+        },
+        "deps": [
+          "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
+        ],
+        "load_bearing_score": 11.304,
+        "runner_hash": "2166767a71e73d9acd4a44af06fc0d5089d9ce3fb1112b65d97d29e904e3ac77",
+        "transitive_descendants": 78
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260615-223440-cc825926bb-one_parameter_reduced_shell_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic linearity step closes only if the five imported frontier helpers are accepted as the stated linear operators and source constructors. The packet supplies an umbrella wrapper and loader, but not the helper sources or retained derivations needed to independently audit those inputs.",
+      "claim_scope": "Conditional bounded witness that, on the imported R=4 reduced-shell helper surface, the seven unit point-Green columns and two checked source families obey the one-parameter reduced law with c_aniso = 0.081435402995901.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T22:37:08.405954+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By linearity of the exterior projector, lattice Laplacian, and Green solve, identical normalized seven point-Green columns imply sigma_red(Q) = Q * (k_rad + c_aniso * m_orb) with A_aniso = c_aniso * Q.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include full source/cache for the five frontier helper imports or retained helper authority notes, then re-audit the reduced-shell algebra and c_aniso normalization.",
+      "open_dependency_paths": [
+        "docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "Issue: the load-bearing equality is an algebraic consequence of identical normalized columns only after accepting the five frontier helper modules as the exterior projector, shell-mean operator, source-family constructors, sewing-shell projection, and radial DtN kernel; the restricted packet includes only an umbrella wrapper and _frontier_loader.py, not those helper sources or retained derivations. Why this blocks: the runner PASS output verifies consistency of opaque imported operators, not an independently auditable operator chain, and the supplied packet cannot independently validate c_aniso beyond those imports. Repair target: include or audit scripts/frontier_star_shell_projector.py, scripts/frontier_same_source_metric_ansatz_scan.py, scripts/frontier_coarse_grained_exterior_law.py, scripts/frontier_sewing_shell_source.py, and scripts/frontier_radial_shell_matching_law.py, or replace them with retained source notes; until then the safe boundary is a conditional bounded witness on the imported reduced-shell surface."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_one_parameter_reduced_shell_law.py",
+  "title": "One-Parameter Reduced Sewing-Shell Law (Bounded Finite Replay)",
+  "transitive_descendants": 83,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

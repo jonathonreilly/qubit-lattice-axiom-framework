@@ -1,0 +1,1459 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "car_from_positivity_neutrality_note_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.322,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f1eff02223fb91d9ab0e5832818a4266ea89a6702154ebea596da0c67906c87b",
+  "note_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T20:34:08.507969+00:00",
+      "audit_date": "2026-06-05T20:08:04.898644+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "34cda27898832a41d360862facc6a7f950f7e8aa91b659a644afa02db5721200",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-f4a919436a-car_from_positivity_neutrali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source genuinely constructs the HCB and JW ladder operators, transfer operators, Gram matrices, open-chain Hamiltonians, and ring Hamiltonians from finite one-qubit tensor products, rather than importing or hard-coding the contested conclusion. The conclusion is correctly narrowed to the tested positivity route and does not claim a global no-go against fermions or full reflection-positive fermion measures.",
+      "claim_scope": "Route-local audit: finite transfer-operator positivity, the associated Stone spectrum, and the explicitly tested two-slice reflected Gram witness do not select cross-site CAR over the hard-core-boson frame in the constructed finite qubit hopping models.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T20:08:04.898644+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "On the open L = 4 chain the HCB and Jordan-Wigner nearest-neighbor hopping Hamiltonians are identical matrices, while on the closed ring the spectra differ but both Hermitian bounded Hamiltonians still give positive transfer operators.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the scope boundary that the Gram witness is only the explicitly constructed two-slice toy surface, not a full reflection-positivity theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 21,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The only cited upstream authority is the minimal-axiom memo, explicitly flagged as an accepted axiom premise, so it does not trigger the conditional downgrade. The runner performs finite matrix construction and spectral/PSD checks from the one-qubit algebra and finite lattice adjacency, and its source supports the stdout claims. The no-go discipline gate is satisfied only in the route-local sense: alternative selectors such as graded locality, fermion-parity superselection, boundary data, or continuum spin-statistics are explicitly left open."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.431275+00:00",
+      "audit_date": "2026-06-05T22:22:37.365782+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "34cda27898832a41d360862facc6a7f950f7e8aa91b659a644afa02db5721200",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-87029159be-car_from_positivity_neutrali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite one-qubit tensor-product construction closes the scoped result: adjacent open-chain Jordan-Wigner strings cancel in the hopping Hamiltonian, so T=exp(-tau H) and the Stone spectrum cannot discriminate the frames. On the ring the uncancelled loop string changes the spectrum, but finite Hermitian Hamiltonians still give strictly positive transfer operators in both frames.",
+      "claim_scope": "Route-local audit of whether the finite transfer-operator positivity, Stone readout, and tested two-slice reflected Gram witness force CAR over the hard-core-boson frame in the finite qubit hopping models.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T22:22:37.365782+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "In the tested finite hopping models, the open-chain hard-core-boson and Jordan-Wigner Hamiltonians are identical matrices, so the same positive transfer operator and Stone spectrum are obtained, while the closed-loop sign changes spectra without making either transfer operator non-positive.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only the source-note citation drift from MINIMAL_AXIOMS_2026-06-04 to the supplied superseding 2026-06-05 memo; it does not affect the audited Lattice/Quantum load-bearing content.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 20,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The runner source constructs the HCB and JW operators directly on finite qubit tensor products and computes commutators, ranks, Gram spectra, transfer spectra, correlators, and ring spectra rather than printing hard-coded conclusions. An independent algebra check agrees with the load-bearing signs: open nearest-neighbor JW strings cancel bond-by-bond, while the closed boundary string remains as a loop datum; positivity of exp(-tau H) follows for each finite Hermitian H. The cited minimal-axiom authority is an accepted premise, and the note explicitly limits the no-go to the tested finite positivity route rather than claiming a global spin-statistics or graded-locality obstruction."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.328638+00:00",
+      "audit_date": "2026-07-02T04:54:08.362612+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.822,
+        "runner_hash": "34cda27898832a41d360862facc6a7f950f7e8aa91b659a644afa02db5721200",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T045408Z-761f5251-car_from_positivity_neut",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated finite test surfaces, the runner constructs the HCB and JW operators from qubit matrices and computes the identical open-chain transfer/Stone data plus positive ring transfer spectra. The cited minimal-axioms authority is a registered accepted premise and no additional statistics selector is imported.",
+      "claim_scope": "Route-local no-go: the tested finite transfer-positivity, Stone-spectrum, and two-slice Gram checks do not select CAR over the hard-core-boson frame; closed-loop signs distinguish frames but do not make either transfer operator non-positive.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T04:54:08.362612+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "On the tested open chain the HCB and Jordan-Wigner hopping Hamiltonians are identical matrices, so T = exp(-tau H) and the Stone spectrum are identical, while on the closed ring both frame Hamiltonians remain Hermitian and give positive transfer operators.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check JW string/operator-ordering conventions and the ring wrap-around sign in a second clean-room audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 0,
+        "C": 21,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The only upstream authority is the registered minimal-axioms premise, so it does not trigger a dependency downgrade. The runner source genuinely constructs finite matrices and computes commutators, spectra, PSD tests, correlators, and ring transfer eigenvalues; the load-bearing values are not merely printed constants. The no-go is explicitly narrowed to the tested finite transfer-positivity/Stone/Gram route, and the N1-N8 gate leaves global fermion and full reflection-positivity selectors outside scope. This is clean for the route-local no-go, not a global no-go against CAR."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.415495+00:00",
+      "audit_date": "2026-07-09T06:14:18.169474+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.322,
+        "runner_hash": "34cda27898832a41d360862facc6a7f950f7e8aa91b659a644afa02db5721200",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner explicitly constructs the HCB and Jordan-Wigner generator frames, verifies the real generator-level CAR/HCB distinction, shows the open-chain transfer and Stone spectra are identical, checks the two-slice Gram verdict is the same, and shows closed-loop spectra differ while both ring transfer operators remain positive. The old 2026-06-04 baseline wording is non-load-bearing for this verdict because the current minimal-axiom dependency still supplies the needed qubit one-site algebra and lattice carrier.",
+      "claim_scope": "Route-local no-go: on the finite qubit tensor-product hopping models and two-slice Gram witnesses constructed by the runner, finite transfer-operator positivity, Stone generator spectrum, and the tested reflection-style Gram positivity do not select cross-site CAR over the hard-core-boson frame; this does not rule out fermions, global reflection-positive measures, graded locality, fermion-parity superselection, or continuum spin-statistics routes.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-09T06:14:18.169474+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Finite transfer positivity, the associated Stone spectrum, and the simple reflected Gram witness do not force CAR over the hard-core boson frame; on the open chain the transfer object is identical, and on the closed ring both statistics choices still give positive transfer operators.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 32,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The no-go closes as an exact finite-matrix route exclusion: the tested positivity objects are positive or PSD in both statistics frames, while the cross-site sign remains a genuine generator-level and closed-loop datum rather than a unitary-gauge artifact. The runner covers the possible loopholes named in the note: identical open-chain Hamiltonians and transfer spectra, equal Gram positivity verdicts, nontrivial CAR/HCB intertwiner obstruction, bare correlator sign dependence, and ring spectra that differ without positivity selecting one frame. Residual risk is the explicitly scoped one: a fuller graded-locality, parity-superselection, boundary, or continuum spin-statistics construction could still select CAR outside this finite positivity route."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:48.257043+00:00",
+      "audit_date": "2026-07-12T09:28:26.715023+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 3.322,
+        "runner_hash": "34cda27898832a41d360862facc6a7f950f7e8aa91b659a644afa02db5721200",
+        "transitive_descendants": 4
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00262-car_from_positivity_neutrali",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner directly constructs both operator frames and computes their algebraic relations, transfer spectra, Gram spectra, correlators, and ring spectra. Those computations establish neutrality for the explicitly tested finite positivity objects without claiming a global spin-statistics theorem.",
+      "claim_scope": "Route-local no-go: the finite transfer-operator positivity, Stone-spectrum, and explicitly constructed two-slice Gram tests do not select cross-site CAR over the hard-core-boson frame in the tested finite qubit hopping models.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-12T09:28:26.715023+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid",
+      "load_bearing_step": "In the tested finite models, the open-chain transfer objects and Stone spectra are identical in the two frames, while both distinct closed-ring Hamiltonians still yield positive transfer operators.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner independently constructs the HCB and Jordan-Wigner nearest-neighbor Hamiltonians on an open four-site chain and exponentiates each.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Open-chain transfer positivity",
+            "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Select statistics by requiring positivity of the open-chain transfer operator.",
+            "outcome": "The Hamiltonians are identical matrices, so their positive transfer operators are identical and this selector cannot distinguish the frames.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "open_transfer"
+          },
+          {
+            "attempt": "The runner evaluates the logarithmic Stone generator and compares its finite spectra in both frames.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Stone spectrum route",
+            "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Recover the generator from the positive transfer operator and select statistics through its spectrum.",
+            "outcome": "The tested spectra agree, leaving no frame discriminator in the Stone readout.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "stone_spectrum"
+          },
+          {
+            "attempt": "The runner constructs the stated two-slice reflection map and Gram matrices for site-one-supported observables in both frames.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Reflected Gram route",
+            "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use reflection-style half-space Gram positivity as the statistics selector.",
+            "outcome": "Both Gram matrices are PSD and give the same verdict; fuller graded or boundary-enriched measures remain outside the scoped claim.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "reflected_gram"
+          },
+          {
+            "attempt": "The runner compares bare bilinears under different orderings and also compares shared parity-even density correlators.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Bare correlator route",
+            "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Treat a frame-dependent sign in a bare one-particle correlator as a positivity certificate.",
+            "outcome": "Bare values can sign-flip through the Jordan-Wigner string convention, while the tested density correlator agrees; the sign flip is not a positivity violation.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "bare_correlator"
+          },
+          {
+            "attempt": "The runner builds both periodic four-site Hamiltonians and computes their spectra and transfer-operator minimum eigenvalues.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Closed-loop positivity route",
+            "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the physical wrap-around string on a ring and ask positivity to rank the resulting theories.",
+            "outcome": "The ring spectra differ, confirming a real loop datum, but both transfer operators remain positive, so positivity alone does not select one.",
+            "route_class": "topology_or_global_structure",
+            "route_id": "closed_loop"
+          },
+          {
+            "attempt": "The runner solves the simultaneous intertwiner equations for ordered and swapped generator pairs and checks the preserved commutation relations.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Inner-gauge erasure",
+            "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Erase the distinction through an inner automorphism of the finite matrix algebra.",
+            "outcome": "Both intertwiner spaces are trivial, so the statistics distinction is real rather than gauge-trivial; neutrality comes from the tested positivity objects being blind to it.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "inner_gauge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "finite transfer positivity supplies no cross-site statistics selector"
+          ],
+          "evidence_locator": "The collapsed wall is a single selector wall",
+          "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "finite transfer positivity supplies no cross-site statistics selector"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "\"Positivity\" means the finite transfer operator",
+          "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "No graded-locality rule, superselection principle, or continuum spin-statistics theorem is hidden in those words.",
+              "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+              "phrase": "No graded-locality rule, superselection principle, or continuum spin-statistics theorem is hidden in those words."
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "Admissibility is not a dynamics axiom.",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "phrase": "Admissibility is not a dynamics axiom."
+            }
+          ],
+          "scan_scope": "The meanings of positivity, statistics, frame, physical sign, graded locality, superselection, and continuum spin-statistics were checked against the source, runner, accepted premise, and premise registry.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The residual is cross-site statistics selection.",
+          "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+          "none_found_reason": "Every N1 route was directly attempted in the supplied source or runner; no route was marked RULED OUT BY PRIOR and therefore no prior-witness mapping is required.",
+          "scan_scope": "The finite transfer, Stone, Gram, correlator, intertwiner, and closed-loop witnesses were checked against the claimed residual of cross-site statistics selection.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It only closes the tested route",
+          "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+          "scan_scope": "The words neutral, no-go, identical, physical, and force were checked for finite-versus-global overstatement.",
+          "statements": [
+            {
+              "evidence_locator": "\"Neutral\" means neutral for the tested positivity route.",
+              "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+              "phrase": "\"Neutral\" means neutral for the tested positivity route.",
+              "tested_resolutions": [
+                "finite open-chain transfer operator",
+                "finite Stone spectrum",
+                "explicit two-slice Gram witness",
+                "finite closed-ring positivity"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "It is not a full theorem about every possible reflection-positive Euclidean measure.",
+              "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+              "phrase": "It is not a full theorem about every possible reflection-positive Euclidean measure.",
+              "tested_resolutions": [
+                "the explicitly constructed finite transfer and Gram surfaces only"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes the kinetic-form ratio c_t/c_s and explicitly supplies no selector or dynamical content.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The lattice, qubit, admissibility, and record axioms do not supply graded locality, a Hamiltonian, or a statistics-selection rule.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise reference to a realized state supplies neither a statistics frame nor a state-selection or superselection rule.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful unit conversion carries no statistics, selector, or dimensionless dynamical content.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns charged-lepton K/CPT occupancy counting and does not supply cross-site CAR or a positivity selector.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This is an angle/readout obligation unrelated to the finite statistics-selection wall.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This concerns a quark-determinant readout identification and supplies no graded-locality or CAR-selection theorem.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The complete supplied foundation registry and indexed open obligations were checked for a premise that supplies graded locality, fermion-parity superselection, or another statistics selector.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A full reflection-positive fermion measure could contain graded-locality, boundary, or superselection data absent from the runner's site-supported two-slice Gram test and could therefore select CAR.",
+          "evidence_locator": "A hostile reviewer can argue that a full reflection-positive fermion measure is not exhausted by this finite transfer-operator check",
+          "evidence_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+          "resolution": "The objection defeats a global positivity no-go but not the audited claim, whose source expressly limits itself to the finite transfer objects and explicit Gram witness that the runner constructs.",
+          "resolved": true,
+          "route_id": "reflected_gram"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:0",
+              "evidence_locator": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Earlier audit of the same route-local finite positivity wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:1",
+              "evidence_locator": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Earlier independent finite-matrix assessment of open-chain and ring statistics data.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:2",
+              "evidence_locator": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Earlier route-local audit preserving global spin-statistics escape routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:3",
+              "evidence_locator": "car_from_positivity_neutrality_note_2026-06-02:previous_audit:3",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Earlier audit emphasizing that generator-level statistics remain real although finite positivity is neutral.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Charged-lepton occupancy-counting obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Charged-lepton angle/readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Quark-determinant cross-sector readout obligation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Unrelated foundational-campaign no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite gravity-sweep scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Gauge-coupling runner-boundary restrictions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Prior warning that reflection positivity alone does not select a unique temporal axis.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Broad inherited no-go inventory including distinct carrier and flavor lanes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Coupling-normalization and renaming boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Plaquette coefficient source and comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Lensing observable and finite-path no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Carrier antisymmetry and primitive-registry exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Charged-lepton selector no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Spatial-dimension selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite causal-metric witness versus global theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite replay and basin-language boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Local Wilson normalization versus environment closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Flavor-tracial route boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Free-Dirac analytic-vector proof-route rejection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Gauge-plaquette estimator and operator-closure boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Gauge-isotropy generator and eta-sign route boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Gravity dispersion and Fermat-bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Weak-field gravity sign and nonlinear-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Earlier finding that bare parity structure does not force CAR semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Hypercharge normalization and species-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Multi-lane physics campaign boundary inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Atomic scale and threshold-transport boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Quark-mass selector and readout boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite checks versus lattice asymptotic theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Signed-adjoint versus nonnegative lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite-path lensing geometry mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Static-source readout and hierarchy boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Temporal source and physical-clock readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Planning-priority versus theorem-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Update tick versus physical time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Neutrino mass-matrix and selector route inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Neutrino scale and cosmology dependency boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite Newtonian replay versus universal distance-law boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Frozen-log and bounded-basin evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Coupling authority and physical-versus-bare readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite packet-memory versus decoherence/gravity theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite recurrence window versus arbitrary-degree theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Clifford carrier-selection and representation mismatch boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Rank-four carrier and Hodge-dual selection boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Plaquette mean-field and bootstrap authority boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Plaquette character-evaluation and endpoint-language boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Supplied packet data versus selector authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Strong-CP and registrability bridge no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Reflection positivity does not by itself select an axis; boundary data remain an escape.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite Fisher tangent versus physical source semantics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Direct prior statement that statistics forcing remains withdrawn and hard-core bosons survive the stated obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Adjacent one-site M2(C) statistics non-forcing wall with graded-locality as the reopen condition.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "SU(3) quotient-encoder fidelity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Documentation synchronization boundary rather than a physics no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Single family-card slot versus full geometry theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Theta mass-orientation and determinant-readout boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Theta gauge-sector action and readout boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Positive theta carrier and assembly gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Theta insertion-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Theta defect-closure and dynamics-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Determinant power and occupancy-horn selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Record does not supply K/CPT orbit occupancy.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Record formation does not supply event rates or R-eta readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Artifact-visibility issue without a theorem-level no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Record-only scalar-readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Hard-coded finite-table matching and basin-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Finite wide-lattice evidence versus continuum theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "mechanism": "Physical readout renaming rather than an independent derivation.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "c72c42b352a152afb658a0ce5ff39b81b928eaa563fe2af033199f669e676861",
+              "cross_cycle_candidate_ids": [
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:0",
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:1",
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:2",
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:3",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/car_from_positivity_neutrality_note_2026-06-02",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:0",
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:1",
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:2",
+                "car_from_positivity_neutrality_note_2026-06-02:previous_audit:3",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "526ba3b14f8720bd7115bd8630cbb95a12bde7cd776ba9cd869c586182ea9ad5",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/car_from_positivity_neutrality_note_2026-06-02",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "f1eff02223fb91d9ab0e5832818a4266ea89a6702154ebea596da0c67906c87b",
+              "effective_status": null,
+              "path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "\"Neutral\" means neutral for the tested positivity route.",
+                "\"Positivity\" means the finite transfer operator",
+                "A hostile reviewer can argue that a full reflection-positive fermion measure is not exhausted by this finite transfer-operator check",
+                "Bare correlator route",
+                "Closed-loop positivity route",
+                "Inner-gauge erasure",
+                "It is not a full theorem about every possible reflection-positive Euclidean measure.",
+                "It only closes the tested route",
+                "No graded-locality rule, superselection principle, or continuum spin-statistics theorem is hidden in those words.",
+                "Open-chain transfer positivity",
+                "Reflected Gram route",
+                "Stone spectrum route",
+                "The collapsed wall is a single selector wall",
+                "The residual is cross-site statistics selection."
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": "meta",
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "authority",
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "Admissibility is not a dynamics axiom."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 18,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "The source code genuinely constructs finite qubit operators and performs matrix, rank, PSD, intertwiner, and spectral computations instead of printing hard-coded expected conclusions. The accepted minimal-axiom authority supplies the lattice and one-site algebra baseline without creating a dependency downgrade. The result is clean only for the stated finite transfer/Stone/Gram route; graded locality, parity superselection, fuller reflection-positive measures, and continuum spin-statistics remain outside its scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/car_from_positivity.py",
+  "title": "CAR From Transfer Positivity Neutrality No-Go",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

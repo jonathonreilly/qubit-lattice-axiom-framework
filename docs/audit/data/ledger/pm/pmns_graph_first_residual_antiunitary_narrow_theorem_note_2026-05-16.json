@@ -1,0 +1,326 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem (narrow algebraic bridge)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "pmns_graph_axis_to_active_lane_bridge_note",
+    "z2_hw1_mass_matrix_parametrization_note",
+    "graph_first_selector_derivation_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.97,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d26f1ed2528c4564d6cb107daae8eb5f3472a2a68538113c955927bf85a090a7",
+  "note_path": "docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:01.533502+00:00",
+      "archived_for_note_hash": "e091587a78fc6e61e5b9ce0da1bc5250dc6e6bcda96b5837e3d959d2e8ec821b",
+      "audit_date": "2026-05-25T12:28:05.028358+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "pmns_graph_first_axis_alignment_note": "Within the hw=1 cube-shift triplet route, the audited claim is axis-minimum selection with residual Z2 and the algebraic consequence that residual P23 invariance forces the aligned Hermitian core form.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "pmns_graph_first_axis_alignment_note": "bounded_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "pmns_graph_first_axis_alignment_note": "retained_bounded",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "pmns_graph_first_axis_alignment_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "80b4bb71f370671eccca6eb514e1b82897ad03b783ac532a6cb0a9b996921b18",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audit_in_progress",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T122628Z-6042eced-pmns_graph_first_residua-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": true,
+      "chain_closure_explanation": "The narrow algebraic claim closes from the provided P_23 matrix and matrix-unit definitions by direct finite-dimensional algebra. Carrier identification and the graph-first derivation of P_23 are explicitly out of scope and are cited to retained-grade upstream authorities.",
+      "claim_scope": "Given the specified P_23 residual swap and oriented forward-cycle channel A_fwd, the audit checks that R[A]=P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive there, and has fixed locus c_1=conj(c_3), c_2 real.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-13T21:30:53.194519+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T12:28:05.028358+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T122628Z-6042eced-pmns_graph_first_residua-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the specified P_23 residual swap and oriented forward-cycle channel A_fwd, the audit checks that R[A]=P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive there, and has fixed locus c_1=conj(c_3), c_2 real.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Direct multiplication gives P_23 E_21 P_23 = E_31, P_23 E_32 P_23 = E_23, and P_23 E_13 P_23 = E_12, hence R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "awaiting_cross_confirmation_after_criticality_soft_reset:leaf->critical: first-pass audit (auditor=codex-cli-gpt-5.5-per-site-k1-20260525T122628Z-6042eced-pmns_graph_first_residua-01, family=codex-gpt-5.5, independence=cross_family) was clean at the prior criticality tier; new tier requires an independent second auditor.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The source proof and runner both perform explicit 3x3 matrix algebra rather than importing a numerical fit or merely renaming symbols. The runner source constructs P_23, the matrix units, R, and the cycle block, then checks the coordinate action, channel preservation, conjugate-linearity, involution, and fixed-locus characterization. The cited upstream authorities are marked retained-grade or retained_bounded, and no external comparator or tuned numerical input is used. The clean verdict applies only to the stated narrow algebraic bridge, not to downstream point selection or carrier derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.900935+00:00",
+      "audit_date": "2026-07-10T16:17:59.847732+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "pmns_graph_axis_to_active_lane_bridge_note": "Audited the finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with the corresponding permutation action on Herm(V_1), especially P_23 for selected axis e_1.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "pmns_graph_axis_to_active_lane_bridge_note": "bounded_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "pmns_graph_axis_to_active_lane_bridge_note": "retained_bounded",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "pmns_graph_axis_to_active_lane_bridge_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 10.19,
+        "runner_hash": "8948772662cc83a37d36b15c2ba44dd820f13078bc050bbd498cd8984142ed99",
+        "transitive_descendants": 412
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-pmns_graph_first_res-judge-2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed matrix-unit identities directly establish the coordinate action, from which conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow without an open dependency. The runner genuinely performs these finite-dimensional calculations and reports 35 successful class-A checks. This clean verdict is restricted to properties of the defined map; it does not independently establish that residual invariance of an arbitrary Hermitian core mandates imposing this fixed-point condition.",
+      "claim_scope": "For the stated P_23 and forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:17:59.847732+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-15T23:48:55.831184+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260615-234653-6fa34c48f7-pmns_graph_first_residual_an",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the stated P_23 swap and forward-cycle channel A_fwd = c_1 E_12 + c_2 E_23 + c_3 E_31, the map R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-09T23:14:11.127288+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-pmns_graph_first_residua-017",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The exact coordinate action, involution, generic non-fixity, and three-real-dimensional fixed locus of the defined map R[A] = P_23 A^dagger P_23 on the oriented forward-cycle channel.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-07-10T16:17:59.847732+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T161147Z-65eea0c5-pmns_graph_first_res-judge-2",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the stated P_23 and forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.",
+          "claim_type": "positive_theorem",
+          "first_auditor_error": "",
+          "independence": "judicial_review",
+          "judgment_rationale": "The displayed matrix-unit identities directly establish the coordinate action, from which conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow without an open dependency. The runner genuinely performs these finite-dimensional calculations and reports 35 successful class-A checks. This clean verdict is restricted to properties of the defined map; it does not independently establish that residual invariance of an arbitrary Hermitian core mandates imposing this fixed-point condition.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second auditor assigned a conditional verdict despite limiting its claim scope to self-contained algebraic properties of the defined map; no unretained or open authority is needed to prove those properties.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:pmns_graph_axis_to_active_lane_bridge_note:retained_bounded->unaudited",
+      "load_bearing_step": "Direct matrix-unit conjugation gives R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The displayed matrix-unit identities directly establish the coordinate action, from which conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow without an open dependency. The runner genuinely performs these finite-dimensional calculations and reports 35 successful class-A checks. This clean verdict is restricted to properties of the defined map; it does not independently establish that residual invariance of an arbitrary Hermitian core mandates imposing this fixed-point condition."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:06.806281+00:00",
+      "audit_date": "2026-07-12T14:37:52.603396+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "pmns_graph_axis_to_active_lane_bridge_note": "Finite-dimensional bridge identifying the residual S_3 transposition stabilizer of a selected hw=1 cube axis with its permutation action on Herm(V_1), specifically P_23 after relabeling the selected axis to e_1; active-sector assignment and PMNS values are excluded.",
+          "z2_hw1_mass_matrix_parametrization_note": "On V1 with the specified Z2 action swapping X1 and X2 and fixing X3, the Z2-invariant Hermitian operators are exactly the stated five-real-parameter family, with the stated sign eigenvector, trivial-block spectrum, generic nondegeneracy, and S3-locus collapse."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "pmns_graph_axis_to_active_lane_bridge_note": "bounded_theorem",
+          "z2_hw1_mass_matrix_parametrization_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "pmns_graph_axis_to_active_lane_bridge_note": "retained_bounded",
+          "z2_hw1_mass_matrix_parametrization_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "pmns_graph_axis_to_active_lane_bridge_note",
+          "z2_hw1_mass_matrix_parametrization_note"
+        ],
+        "load_bearing_score": 10.291,
+        "runner_hash": "8948772662cc83a37d36b15c2ba44dd820f13078bc050bbd498cd8984142ed99",
+        "transitive_descendants": 442
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00087-pmns_graph_first_residual_an",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed matrix-unit identities establish the coordinate action directly, and conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow algebraically. The audited scope does not assert that residual invariance of an arbitrary Hermitian core independently mandates imposing this fixed-point condition.",
+      "claim_scope": "For the explicitly specified P_23 and oriented forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T14:37:52.603396+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-12T14:15:27.228089+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00079-pmns_graph_first_residual_an",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the specified P_23 and forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has the three-real-dimensional fixed locus c_1 = conj(c_3), c_2 real.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-12T14:37:52.603396+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00087-pmns_graph_first_residual_an",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the explicitly specified P_23 and oriented forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:pmns_graph_axis_to_active_lane_bridge_note:retained_bounded->unaudited",
+      "load_bearing_step": "Direct matrix-unit conjugation gives R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The proof is a genuine finite-dimensional algebraic closure over the explicitly given permutation matrix and cycle-channel basis, with no fitted values, external comparators, or symbol renaming. The runner constructs the matrices and computes all 35 checks rather than merely printing expected results. The clean verdict is restricted to the defined map and its fixed locus; it does not independently derive a physical requirement that every residual-invariant Hermitian core supply an R-fixed cycle component."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py",
+  "title": "PMNS Graph-First Residual Antiunitary on the Oriented Cycle Channel \u2014 Narrow Bridge Theorem",
+  "transitive_descendants": 708,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1409 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e75d40809507c76e0226c1693745c0c96d74e4f7ae9799cab72804a72f586a89",
+  "note_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T20:00:25.200988+00:00",
+      "archived_for_note_hash": "926179469fe272fd9b2221ad93c16a46fe3e8e006749fd4160a3518afc99bdcd",
+      "audit_date": "2026-06-03T02:58:03.526915+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "483c698d1911a951eb0b61657ed43ab787840fc507549c914ad14e1942f7a2bf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-025519-7122e4e4-flavor_find_j_consolidat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet independently supports only the stated Gaussian equipartition arithmetic and the r-to-Q substitutions. The broader exhaustion of the static complex-structure, Berezin, Dirac-reality, superselection, Plancherel, and K0 selector routes depends on unprovided prior authorities or runner checks hard-coded as true.",
+      "claim_scope": "Audited whether the restricted packet establishes the four-lever non-forcing claim and the det_C versus det_R measure split for the C3 isotype decomposition.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T02:58:03.526915+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "det_C/r=1/2/Q=2/3 is not forcible from framework baseline plus emergent dynamics by any of the four attacked levers; the remaining freedom is the per-irrep-block versus per-real-DOF counting measure on the C3 isotype split.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the one-hop retained authorities/runners for rounds 1-3 and the cited anchors, and replace R4-2/R4-3 hard-coded True checks with executable algebraic checks before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The displayed quantitative identities checked in the packet are internally consistent: the Gaussian weight gives <a^2>=<|b|^2>, Q(1/2)=2/3, Q(1)=1, and R[C3]=R+C supports a two-block K0 statement. But the runner hard-codes the Plancherel and K0 non-selector checks as True, and the packet omits the retained proofs for rounds 1-3 and the cited no-go anchors. The restricted packet therefore supports a narrowed measure-comparison statement, not the full bounded theorem that the four-route hunt has isolated a single residual."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.173897+00:00",
+      "audit_date": "2026-06-05T22:34:43.334356+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-223248-9c34685cc0-flavor_find_j_consolidation_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite algebra closes: the real regular C3 representation splits into rank-1 and rank-2 central projectors, R[C3] is R(+)C with K0 rank 2, and G=w_triv P_triv+w_std P_std is positive and C3-invariant for arbitrary positive weights. The stated Gaussian also gives <a^2>=<|b|^2>, while equal-block weighting is a separate imposed constraint.",
+      "claim_scope": "Within the finite real regular C3 isotype packet, the checked Gaussian, Plancherel, and K0/block-count alternatives do not force equal-block det_C/r=1/2; the block-vs-DOF weighting remains an input outside this round-4 check.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T22:34:43.334356+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The same central idempotents admit positive C3-invariant metric families with different trivial:standard energy ratios, so K0 counts the two blocks but does not by itself select an energy weighting.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that Q(r) and the trace-functional prose are treated as scoped readout conventions rather than additional independently derived global framework claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The bounded claim is a finite algebraic statement inside the stated real regular C3 packet, not a closure of rounds 1-3. Independent checks confirm the projector ranks, the standard R[C3]=R(+)C / K0=Z^2 block count, and the existence of invariant positive metric families with nonunique sector ratios. That is sufficient to show the tested block-count route does not force det_C/r=1/2. The runner states some constants, but the load-bearing non-forcing result is independently closed by the restricted finite algebra."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:47.871866+00:00",
+      "audit_date": "2026-07-12T05:18:31.796478+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00419-flavor_find_j_consolidation_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite K0/projector counterexample closes algebraically, but the mandatory no-go gate does not: operator-level sector-factorization is explicitly untested, and the trace route is not independently established as a selector theorem.",
+      "claim_scope": "Within the finite real regular C3 packet, the projector and invariant-metric-family computation shows that K0 block count and the tested per-DOF alternatives do not by themselves force equal-block det_C/r=1/2; no exhaustive no-forcing theorem beyond those routes was audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T05:18:31.796478+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "The same two central idempotents admit positive C3-invariant metric families with different trivial:standard energy ratios, so K0 counts blocks but does not select an energy weighting.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner analytically computes the variances and samples one million Gaussian draws.",
+            "disposition": "CLOSED",
+            "evidence_locator": "# (1a) equipartition (per-DOF) -> r=1, analytic + Monte Carlo",
+            "evidence_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A Gaussian action measure distributes variance over the three real coordinates.",
+            "outcome": "It closes this assumed-measure route in favor of r=1, but the Gaussian measure is an explicit model input rather than a universal selector.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "gaussian_equipartition"
+          },
+          {
+            "attempt": "The runner constructs the central projectors and checks idempotence, orthogonality, centrality, completeness, and ranks.",
+            "disposition": "CLOSED",
+            "evidence_locator": "# (1b) Plancherel: dimension weighting 1:2 -> per-DOF -> r=1",
+            "evidence_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "The real regular C3 representation weights the trivial and standard subspaces by ranks one and two.",
+            "outcome": "The finite representation calculation supports dimension weighting and does not select equal block weighting.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "plancherel_dimension"
+          },
+          {
+            "attempt": "The runner constructs several positive C3-invariant metrics on the same central-projector decomposition and compares their sector ratios.",
+            "disposition": "CLOSED",
+            "evidence_locator": "# (2) K_0(R[C_3]) = Z^2 counts blocks (gen count), metric-free -> can't weight energies",
+            "evidence_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "K0/Wedderburn block count is tested as a putative energy-weight selector.",
+            "outcome": "The differing ratios close the narrow claim that block count alone does not determine energy weighting, although k0_rank is assigned rather than computed.",
+            "route_class": "topology_or_global_structure",
+            "route_id": "k0_block_selector"
+          },
+          {
+            "attempt": "The accepted minimal-axiom text was checked for weighting, normalization, context-selection, or action-measure content.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights",
+            "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "Record additivity or admissibility might select a physical sector weighting.",
+            "outcome": "The registered axiom explicitly withholds those structures, so this route is ruled out on the supplied premise surface.",
+            "prior_witness_id": "minimal_axiom_no_weight",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "record_weight_selector"
+          },
+          {
+            "attempt": "The primitive was checked for state-selection, measure, weighting, or probability content.",
+            "disposition": "CLOSED",
+            "evidence_locator": "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting, probability rule",
+            "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+            "honesty_marker": "RULED OUT BY PRIOR",
+            "mechanism": "The realized-state primitive might promote the observed sector ratio into a forced measure.",
+            "outcome": "It supplies only a pointwise state reference and explicitly supplies no weighting or state-contingent value.",
+            "prior_witness_id": "realized_state_no_measure",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "realized_state_selector"
+          },
+          {
+            "attempt": "The runner evaluates Q at r=1/2 and r=1 and compares the two named readouts.",
+            "disposition": "CLOSED",
+            "evidence_locator": "# (3/4) the two readings and the over-determined default",
+            "evidence_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Calling one balance det_C and the other det_R might itself select the physical measure.",
+            "outcome": "The arithmetic distinguishes the conventions but supplies no theorem choosing between them.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "determinant_relabeling"
+          },
+          {
+            "attempt": "The runner prose asserts convergence of trace with equipartition and Plancherel, but contains no separate construction of the physical trace functional or readout bridge.",
+            "disposition": "OPEN",
+            "evidence_locator": "3 independent principles (equipartition, Plancherel, trace) converge on det_R/r=1",
+            "evidence_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "A physical trace energy functional might force per-real-DOF weighting.",
+            "outcome": "The route remains open as a physical selector theorem even though trace arithmetic on a supplied finite carrier is standard.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "trace_energy_selector"
+          },
+          {
+            "attempt": "No operator-level factorization calculation is supplied; the source explicitly names it as the next unresolved path.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "Round 4's finite checks do not close that stronger path.",
+            "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Operator-level superselection could make the two C3 sectors separate-power sectors and enforce equal power per sector.",
+            "outcome": "This strongest alternative remains untested and prevents an exhaustive no-forcing verdict.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "operator_sector_factorization"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The finite C3 central-block/K0 structure does not select a unique block-versus-DOF energy measure."
+          ],
+          "evidence_locator": "**block-vs-DOF counting measure** on the C\u2083 isotype",
+          "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+          "pairwise_checks": [],
+          "unresolved": [],
+          "walls": [
+            "The finite C3 central-block/K0 structure does not select a unique block-versus-DOF energy measure."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "## Round-4 checked result",
+          "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+          "hits": [
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Under the Gaussian/equipartition model with",
+              "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+              "phrase": "Under the Gaussian/equipartition model"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "unless a separate operator-level sector-factorization or",
+              "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+              "phrase": "unless a separate operator-level sector-factorization or measure principle is supplied and audited",
+              "promoted_wall": "The finite C3 central-block/K0 structure does not select a unique block-versus-DOF energy measure."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "3 independent principles (equipartition, Plancherel, trace) converge on det_R/r=1",
+              "evidence_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+              "phrase": "trace energy functional all converge"
+            }
+          ],
+          "scan_scope": "The source note and runner were scanned for assumed measures, physical energy/readout identifications, sector selectors, trace assumptions, and claims extending beyond the finite packet.",
+          "unresolved": [
+            "The physical trace-energy/readout bridge is asserted but not separately constructed."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The residual is one precisely-named open object",
+          "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+          "scan_scope": "Accepted-premise witnesses used to rule out Record and realized-state measure selection were compared directly with the claimed weighting residual.",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "A physical block-versus-DOF weighting is not selected by the finite C3 decomposition.",
+              "evidence_locator": "It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "match": true,
+              "route_id": "record_weight_selector",
+              "witness_id": "minimal_axiom_no_weight",
+              "witness_residual": "The minimal axioms supply no Hamiltonian, weights, normalization, context selector, source/action bridge, or physical observable bridge."
+            },
+            {
+              "claim_residual": "The realized sector ratio cannot be promoted into a forced counting measure by that primitive.",
+              "evidence_locator": "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting, probability rule",
+              "evidence_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "match": true,
+              "route_id": "realized_state_selector",
+              "witness_id": "realized_state_no_measure",
+              "witness_residual": "The realized-state primitive supplies no measure, weighting, probability, preferred state, or state-contingent value."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## The next path this opens (not a closing statement)",
+          "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+          "scan_scope": "All non-forcing, residual, default, and broader-consolidation language was checked against the resolutions actually computed.",
+          "statements": [
+            {
+              "evidence_locator": "does not force the equal-block `det_C` weighting.",
+              "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+              "phrase": "does not force the equal-block det_C weighting",
+              "tested_resolutions": [
+                "Gaussian equipartition on the supplied quadratic form",
+                "central-projector ranks and dimension weighting",
+                "K0 block count versus invariant metric families",
+                "det_C/det_R arithmetic"
+              ],
+              "untested_resolutions": [
+                "operator-level superselection or sector-factorization",
+                "a separately derived physical trace-energy readout theorem"
+              ]
+            },
+            {
+              "evidence_locator": "Round 4's finite checks do not close that stronger path.",
+              "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+              "phrase": "Round 4's finite checks do not close that stronger path",
+              "tested_resolutions": [
+                "finite block-count and invariant-metric alternatives"
+              ],
+              "untested_resolutions": [
+                "operator-level sector-factorization on the M2(C)-per-site plus R[C3] algebra"
+              ]
+            },
+            {
+              "evidence_locator": "This repair does not claim the full four-round consolidation is audit-clean:",
+              "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+              "phrase": "does not claim the full four-round consolidation is audit-clean",
+              "tested_resolutions": [
+                "round-4 finite packet only"
+              ],
+              "untested_resolutions": [
+                "rounds 1-3 one-hop authority closure"
+              ]
+            }
+          ],
+          "unresolved": [
+            "Operator-level sector-factorization and the physical trace selector remain untested resolutions."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes spacetime kinetic-form isotropy and explicitly supplies no mass ratio, selector, readout bridge, or dimensionless dynamical content.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms explicitly withhold weighting, normalization, context selection, source/action, and physical-observable bridges.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It permits pointwise evaluation but supplies no measure, weighting, state selector, or state-contingent value.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful units reference cannot select this dimensionless sector weighting.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": true,
+              "disposition": "Its target is precisely a retained counting-grain theorem, but its status is open_gate, so it is a possible future closure rather than current evidence.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "It concerns the R-eta h-class/h-unit readout identity, not the block-versus-DOF energy measure.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "It concerns cross-sector theta/quark determinant readout and does not supply the charged-lepton C3 counting measure.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied foundation primitives and all indexed open obligations were checked for content that currently selects the C3 block-versus-DOF measure.",
+          "unresolved": [
+            "The AC occupancy statistical-grain obligation is directly relevant but remains open."
+          ]
+        },
+        "N7_steelman": {
+          "argument": "A genuine operator-level decomposition into separate-power superselection sectors could impose one power constraint per central block and thereby force r=1/2 even though ordinary invariant metrics and Plancherel weighting do not.",
+          "evidence_locator": "Round 4's finite checks do not close that stronger path.",
+          "evidence_path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+          "resolution": "The objection succeeds against any exhaustive no-forcing claim because the source explicitly leaves this calculation open; it does not refute the narrower finite K0/projector counterexample.",
+          "resolved": true,
+          "route_id": "operator_sector_factorization"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:0",
+              "evidence_locator": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Earlier audit found hard-coded Plancherel and K0 checks.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:1",
+              "evidence_locator": "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Earlier narrow clean result lacked a valid no-go-discipline packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Open retained counting-grain theorem target.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Open R-eta readout bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Open theta cross-sector readout bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Earlier charged-lepton and Koide selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite-sweep scope boundary in gravity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Packet-memory and coupling-boundary warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "External-import and audit-edit boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Inherited Koide selector and radian-bridge no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Coupling-identity scope warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Runner and comparator boundary for beta6.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Lensing observable and tuned-input walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Carrier symmetry and registry-exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Charged-lepton Koide selector route closures.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite dimension-set scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Conditional Lorentz-claim boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Metric-source packet boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Replay-only and basin-scope warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Local Wilson versus full-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Tracial route does not rule out nontracial or block-measure selectors.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Analytic-vector and retag boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Gauge environment contraction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Gauge anisotropy route boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Gravity dispersion bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Weak-field sign and scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Absolute-scale and carrier-selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Normalization and species-readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Campaign-level charged-lepton selector demotions.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Atomic scale and threshold walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Quark C3 carrier/readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite versus asymptotic lattice boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Signed-adjoint observable obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite-path lensing surrogate failure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Physical source/readout selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Temporal readout selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Empty matter-cone ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Planning priority is not theorem selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Time-tick interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Neutrino construction and selector no-gos.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Neutrino-scale dependency walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite Newtonian replay scope.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Frozen-log and basin-scope warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Coupling and physical-vs-bare selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite packet-memory scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite-grid versus arbitrary-degree boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Carrier-selection nonuniqueness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Projector/carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Gauge bootstrap and minimal-block gap.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Plaquette diagnostic interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Record does not derive a metric or selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Broad det_C non-forcing was previously demoted for insufficient N1 coverage.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Axis and locality selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite Fisher metric versus physical source semantics.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Statistics forcing remains withdrawn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Minimal axioms do not select a kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "SU3 quotient-encoder scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Documentation synchronization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Single-slot versus full-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Determinant-channel readout remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Gauge-sector readout/action remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Theta assembly gates remain open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "No action or measure selects theta G3.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "No dynamics selects theta G1.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Determinant algebra leaves physical count-once horn selection open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Current axioms and Record do not select orbit occupancy or determinant power.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Record formation does not select R-eta rate/readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Artifact visibility rather than theorem obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Record-only readout admits an unregistered scale countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Hard-coded table matching and two-row scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Finite lattice packet scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "mechanism": "Physical readout identification as renaming.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The finite C3 central-block/K0 structure does not select a unique block-versus-DOF energy measure."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "768da006f411e421c81ff42d43a320f34979a8f64b5fd696af68bfd03a786431",
+              "cross_cycle_candidate_ids": [
+                "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:0",
+                "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:0",
+                "flavor_find_j_consolidation_kappa_is_the_input_2026-06-02:previous_audit:1",
+                "no_go_cross_cycle_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02": {
+              "accepted_premise_type": null,
+              "content_sha256": "e3319188e06dfdc72d1eefbe973d790833655083b7bc1c11b0dcedd00b83fee6",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/flavor_find_j_consolidation_kappa_is_the_input_2026-06-02",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "no_go_partial_closure_index_v1",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "e75d40809507c76e0226c1693745c0c96d74e4f7ae9799cab72804a72f586a89",
+              "effective_status": null,
+              "path": "docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## Round-4 checked result",
+                "## The next path this opens (not a closing statement)",
+                "**block-vs-DOF counting measure** on the C\u2083 isotype",
+                "Round 4's finite checks do not close that stronger path.",
+                "The residual is one precisely-named open object",
+                "This repair does not claim the full four-round consolidation is audit-clean:",
+                "Under the Gaussian/equipartition model with",
+                "does not force the equal-block `det_C` weighting.",
+                "unless a separate operator-level sector-factorization or"
+              ]
+            },
+            "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+              "effective_status": null,
+              "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not choose a Hamiltonian or transfer operator, supply transition probabilities or weights"
+              ]
+            },
+            "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+              "accepted_premise_type": "axiom_or_approved_primitive",
+              "content_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+              "effective_status": null,
+              "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+              "roles": [
+                "framework_premise"
+              ],
+              "verified_locators": [
+                "It does not supply a state, state-selection rule, averaging over alternatives, measure, weighting, probability rule"
+              ]
+            },
+            "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "878137f0ac267df279d7d4a4bf187979fab4cbd4b7933145cf381687baaa437c",
+              "effective_status": null,
+              "path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "# (1a) equipartition (per-DOF) -> r=1, analytic + Monte Carlo",
+                "# (1b) Plancherel: dimension weighting 1:2 -> per-DOF -> r=1",
+                "# (2) K_0(R[C_3]) = Z^2 counts blocks (gen count), metric-free -> can't weight energies",
+                "# (3/4) the two readings and the over-determined default",
+                "3 independent principles (equipartition, Plancherel, trace) converge on det_R/r=1"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: operator-level sector-factorization is untested and the physical trace-selector route remains open.",
+          "N5: the non-forcing rhetoric has untested operator-level and trace-readout resolutions.",
+          "N6: the directly relevant AC occupancy statistical-grain obligation remains open.",
+          "N7: the strongest operator-factorization steelman defeats an exhaustive no-forcing conclusion."
+        ],
+        "narrowed_claim_scope": "Within the finite real regular C3 packet, the projector and invariant-metric-family computation shows that K0 block count and the tested per-DOF alternatives do not by themselves force equal-block det_C/r=1/2; no exhaustive no-forcing theorem beyond those routes was audited.",
+        "next_route": {
+          "reason_untested": "The packet supplies no operator algebra showing whether the trivial and standard C3 blocks are genuine separate-power sectors; the source explicitly names this as the remaining stronger path.",
+          "route_id": "operator_sector_factorization"
+        },
+        "prior_claim_scope": "Within the finite real regular C3 isotype packet, the checked Gaussian, Plancherel, and K0/block-count alternatives do not force equal-block det_C/r=1/2; the block-vs-DOF weighting remains an input outside this round-4 check.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "scope_too_broad: keep the auditable row explicitly at the finite K0/projector counterexample, add a dated downstream-hygiene line to this note's own boundary, and move the operator-level sector-factorization question to a separate audited row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the finite algebra supports the K0 non-selector result, but operator-level sector-factorization remains explicitly open and the trace route is not separately derived. Why this blocks: the mandatory N1-N8 gate cannot certify exhaustive non-forcing, so audited_clean is unavailable. Repair target: test the operator-superselection route and independently establish the trace-measure premise. Claim boundary until fixed: retain only the finite C3 projector, metric-family, and measure-comparison result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_find_J_round4_consolidation_kappa_is_input_2026_06_02.py",
+  "title": "Flavor \u2014 Find-J round 4 executable block-count measure check",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

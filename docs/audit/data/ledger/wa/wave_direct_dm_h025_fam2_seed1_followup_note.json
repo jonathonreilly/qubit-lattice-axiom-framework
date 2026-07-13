@@ -1,0 +1,451 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_direct_dm_h025_fam2_seed1_followup_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_h025_fam2_seed1_control_note",
+    "wave_direct_dm_h025_fam2_seed0_control_note",
+    "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+    "wave_direct_dm_h025_two_point_synthesis_note",
+    "wave_direct_dm_portability_batch_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/wave_direct_dm_matched_history_probe.py",
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "b518fae417db2ede9e89d5ac99bac252f5512f91cc4b5a2b3b6d3ede6a42fc2a",
+  "note_path": "docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370080+00:00",
+      "archived_for_note_hash": "ab41e3c3826cc75aad1e02e067d47ffa32a3b6df5543f342b6d6cd38f5fbf04a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T01:01:47.231663+00:00",
+      "archived_for_note_hash": "4324ab39be214c1a00a537e23d71ddf50116c9af1ca274e2458a9ff91270b83a",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-27T08:58:20.041362+00:00",
+      "archived_for_note_hash": "b92c5d873d173bbf740cbed76d17e666180b96e3d72a9c101f6c8067099d80e4",
+      "audit_date": "2026-05-27T02:47:27.532572+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        ],
+        "load_bearing_score": 3.959,
+        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "transitive_descendants": 10
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The target Fam2 seed-1 point and the two retained Fam2 control ladders are present, but the claim's coarse-H seed-1 comparison and Fam1-style cross-seed comparison require upstream comparison authorities that are not in the selected one-hop dependency packet. The registered cached runner output also runs the default Fam1 seed0 point, not the Fam2 seed1 target.",
+      "claim_scope": "Bounded finite-run follow-up for the direct-dM matched-history lane: at Fam2, seed 1, S=0.004, H=0.25, the completed point log reports dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and the retained Fam2 control dependencies support the same-resolution seed-1 and seed-0 ladders. The broader claims that this aligns with coarse-H seed-1 late-gain behavior and reproduces the Fam1 cross-seed ordering are not closed by the current one-hop packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T02:47:27.532572+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's honest conclusion says that on Fam2 the H=0.25 seed-conditioned late-gain asymmetry survives and the cross-seed ordering flips the same way it did on Fam1, while the normalized amplitude band is not refinement-stable.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct retained dependency edges for the Fam1/fine-H pair comparison and the coarse-H portability/late-gain comparison, then add a target-specific runner wrapper or cached certificate for the Fam2 seed1 H=0.25 invocation.",
+      "open_dependency_paths": [
+        "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
+        "docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "assert_count": 0,
+        "cached_runner_scope": "default Fam1 seed0 invocation, not the Fam2 seed1 target",
+        "runner_sha256": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "runner_status": "ok",
+        "target_log_path": "logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt",
+        "target_log_result": "Fam2 seed=1 H=0.25 strength=0.004: dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%",
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing conclusion is not just the isolated Fam2 seed-1 point; it also compares that point to coarse-H seed-1 values and to the Fam1 cross-seed ordering. Why this blocks: the one-hop retained packet includes Fam2 seed-1 control, Fam2 seed-0 control, and Fam2 pair synthesis, but not the Fam1 pair or coarse-H portability authorities needed for those comparison statements; additionally the registered cached runner output is not parameterized to the target Fam2 seed-1 invocation. Repair target: add direct dependency edges to the retained Fam1/fine-H and coarse-H comparison authorities used by the claim, and wire a target-specific runner wrapper or cache entry for `--family Fam2 --seed 1 --strength 0.004 --h 0.25`. Claim boundary until fixed: the completed log plus retained Fam2 control notes support the bounded Fam2 seed-1 point and same-resolution Fam2 pair controls, but not the broader cross-family/coarse-to-fine follow-up claim."
+    },
+    {
+      "archived_at": "2026-06-05T09:04:58.040129+00:00",
+      "archived_for_note_hash": "a655d2d61b96ef9e27706251d222177ba96cb14b8fd5c074ddd36c8f4087b3eb",
+      "audit_date": "2026-05-29T07:34:40.762584+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.",
+          "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+          "wave_direct_dm_portability_batch_note": "Bounded direct-dM portability batch over Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}, strengths {0,0.002,0.004,0.008}, and the matched-schedule direct-retarded response: exact S=0 nulls, negative delta_hist for all nonzero runs, reference-strength R_hist band -19.98% to -44.29%, and within-bucket |delta_hist/s| spread from 1.97% to 6.91%. H=0.25 portability, tight amplitude law, continuum stability, lab-facing magnitude, and mechanism claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_portability_batch_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_portability_batch_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+          "wave_direct_dm_h025_two_point_synthesis_note",
+          "wave_direct_dm_portability_batch_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The archived target log supports the stated single replay values, and retained downstream control notes now carry the controlled Fam2 pair surface. This note's distinctive promotion depends on selected numerical comparison to earlier coarse points rather than a structural derivation or independent theorem.",
+      "claim_scope": "Bounded numerical follow-up for one selected direct-dM replay: Fam2, seed 1, H=0.25, S=0.004 has dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03% in the archived target log; the note compares that selected late-gain value to earlier coarse seed-1 rows and excludes a portability or amplitude-law claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T07:34:40.762584+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The H=0.25 late gain +0.002037 is numerically close to the coarse Fam2 seed-1 late gains +0.001937 and +0.002061, while the normalized R_hist shifts to -35.03%.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "If reworked, bind the primary runner/cache to the exact Fam2 seed1 arguments and audit the controlled pair/batch surface rather than this selected one-strength coarse-to-fine numerical comparison.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing retained read is a selected numerical match/ordering comparison across specific family, seed, H, and strength settings, not a theorem derived from retained inputs. Why this blocks: the target log verifies the point values, but closeness of late-gain scale to two earlier coarse rows and the cross-seed ordering are empirical replay comparisons with chosen settings. Repair target: make the controlled Fam2 pair synthesis or a broader pre-registered batch the claim surface, with runner arguments/caches tied exactly to each row. Claim boundary until fixed: cite this row only as an archived Fam2 seed-1 H=0.25 replay datapoint feeding the retained-bounded control/synthesis lane, not as an independent retained theorem or portability result."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:14.963344+00:00",
+      "archived_for_note_hash": "90623b099ef40edcf20654a9e046526ec8995401f88b68be2aa9a57b0a48534f",
+      "audit_date": "2026-06-06T00:49:53.279248+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.",
+          "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+          "wave_direct_dm_portability_batch_note": "Bounded direct-dM portability batch over Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}, strengths {0,0.002,0.004,0.008}, and the matched-schedule direct-retarded response: exact S=0 nulls, negative delta_hist for all nonzero runs, reference-strength R_hist band -19.98% to -44.29%, and within-bucket |delta_hist/s| spread from 1.97% to 6.91%. H=0.25 portability, tight amplitude law, continuum stability, lab-facing magnitude, and mechanism claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_portability_batch_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_portability_batch_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+          "wave_direct_dm_h025_two_point_synthesis_note",
+          "wave_direct_dm_portability_batch_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-004744-f4319c76b4-wave_direct_dm_h025_fam2_see",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed arithmetic closes from the supplied values: delta_hist=dM(early)-dM(late), R_hist uses max(|dM|), late gain=-delta_hist, and the control-ladder spreads match the tabulated ratios. The restricted packet does not fully expose the load-bearing helper implementation because scripts/wave_retardation_continuum_limit.py is truncated across the prop_beam/cz path, so the claimed first-principles replay cannot be verified from the packet alone.",
+      "claim_scope": "Exact Fam2 seed 1, H=0.25, source-strength 0.004 direct-dM replay feeding the controlled Fam2 fine-H pair surface, without promotion to an independent theorem-grade surface or H=0.25 portability law.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:49:53.279248+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The target runner recomputes the exact Fam2 seed 1, H=0.25, S=0.004 replay and obtains dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and late gain +0.002037, so the bounded seed-conditioned late-gain asymmetry survives at the archived point.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the complete untruncated scripts/wave_retardation_continuum_limit.py helper source, especially field_at/prop_beam/cz, or an independent certificate for the measure_dm computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 10,
+        "C": 9,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The one-hop cited authorities are all retained-grade or retained-bounded, and the source note keeps the claim appropriately bounded. Independent arithmetic checks support the signs, ratios, late-gain comparison, and non-promotion language in the note. However, stdout plus the primary wrapper is not enough for audited_clean because the helper source is truncated in the load-bearing compute path used by measure_dm. This is a runner-packet completeness issue rather than evidence that the physics claim fails."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:11.085949+00:00",
+      "archived_for_note_hash": "b33f330afb2f6073df826cc047b0681ff416f6340d6aba0908ca2c20da27ecc2",
+      "audit_date": "2026-06-06T20:49:03.348890+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.",
+          "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+          "wave_direct_dm_portability_batch_note": "Bounded direct-dM portability batch over Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}, strengths {0,0.002,0.004,0.008}, and the matched-schedule direct-retarded response: exact S=0 nulls, negative delta_hist for all nonzero runs, reference-strength R_hist band -19.98% to -44.29%, and within-bucket |delta_hist/s| spread from 1.97% to 6.91%. H=0.25 portability, tight amplitude law, continuum stability, lab-facing magnitude, and mechanism claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_portability_batch_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_portability_batch_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+          "wave_direct_dm_h025_two_point_synthesis_note",
+          "wave_direct_dm_portability_batch_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "52b36e7b4407166f1ef1104341db31a29ca38e85b1d9e413de6502ed1fc2800d",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-204658-ea882fcc0d-wave_direct_dm_h025_fam2_see",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed arithmetic for delta_hist, R_hist, late_gain, and the cited retained-grade control summaries is internally consistent. However, the restricted packet truncates scripts/wave_retardation_continuum_limit.py before the full field_at, prop_beam, and cz implementation, so the load-bearing measure_dm computation cannot be independently verified from the supplied source.",
+      "claim_scope": "Exact Fam2 seed1 H=0.25 direct-dM matched-history replay as a bounded target datapoint feeding the controlled Fam2 pair surface, not an independent portability or amplitude-law claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T20:49:03.348890+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The Fam2, seed 1, H=0.25, S=0.004 replay recomputes dM(early)=+0.003777 and dM(late)=+0.005814, giving delta_hist=-0.002037, R_hist=-35.03%, and late_gain=+0.002037.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the complete untruncated scripts/wave_retardation_continuum_limit.py helper source, especially field_at, prop_beam, and cz, or an independent certificate for the measure_dm computation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 23,
+        "C": 1,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "All one-hop cited authorities are retained-grade or retained_bounded, so there is no citation-status downgrade. The primary runner fixes the intended Fam2 seed1 H=0.25 S=0.004 invocation and reports 27 passing checks against the archived row. But stdout and a source-packet PASS line do not substitute for the full transitive helper source, and the provided helper source is explicitly truncated in the load-bearing wave/beam path. The claim is therefore conditionally supported pending a complete helper-source packet, not cleanly audited from this restricted packet."
+    },
+    {
+      "archived_at": "2026-07-12T17:13:15.903006+00:00",
+      "audit_date": "2026-06-07T19:21:12.329256+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "Finite configured control-ladder result for Fam2 seed0 at H=0.25 over S=0, 0.002, 0.004, and 0.008, plus retained-grade seed1 as the second Fam2 control point; excludes Fam1, Fam3, and any full H=0.25 portability law.",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "Audited only the reported same-resolution Fam2 seed 1 H=0.25 direct-dM control ladder at S = 0, 0.002, 0.004, and 0.008, with the note's bounded interpretation.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension.",
+          "wave_direct_dm_h025_two_point_synthesis_note": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+          "wave_direct_dm_portability_batch_note": "Bounded direct-dM portability batch over Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}, strengths {0,0.002,0.004,0.008}, and the matched-schedule direct-retarded response: exact S=0 nulls, negative delta_hist for all nonzero runs, reference-strength R_hist band -19.98% to -44.29%, and within-bucket |delta_hist/s| spread from 1.97% to 6.91%. H=0.25 portability, tight amplitude law, continuum stability, lab-facing magnitude, and mechanism claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "positive_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_h025_two_point_synthesis_note": "bounded_theorem",
+          "wave_direct_dm_portability_batch_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam2_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_seed1_control_note": "retained",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_h025_two_point_synthesis_note": "retained_bounded",
+          "wave_direct_dm_portability_batch_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam2_seed0_control_note",
+          "wave_direct_dm_h025_fam2_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note",
+          "wave_direct_dm_h025_two_point_synthesis_note",
+          "wave_direct_dm_portability_batch_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "c1d401ee87e275b853d56ac27903b44c0a9b697c3b6625e92d34ff689691b4b9",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-191926-8347fe207e-wave_direct_dm_h025_fam2_see",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner computes through the exposed measure_dm path, including grow, solve_wave, prop_beam, and cz, rather than only printing constants; the displayed delta_hist, R_hist, late-gain, sign, and ladder-spread arithmetic also checks independently from the tables. All one-hop cited authorities are retained-grade, and the note keeps the conclusion inside the bounded target/pair scope.",
+      "claim_scope": "Bounded audit of the exact Fam2 seed1 H=0.25 direct-dM matched-history replay at source strength 0.004, including its use as a controlled Fam2 fine-H pair datapoint but not as a portability or amplitude-law claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T19:21:12.329256+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wave_direct_dm_h025_fam2_seed0_control_note:retained_bounded->unaudited",
+      "load_bearing_step": "The target runner recomputes the fixed Fam2 seed1 H=0.25, S=0.004 replay and checks dM(early)=+0.003777, dM(late)=+0.005814, delta_hist=-0.002037, R_hist=-35.03%, and late gain=+0.002037.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only if a later claim broadens this row into an H=0.25 portability law or a stable amplitude-band claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 9,
+        "C": 15,
+        "D": 3,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing target replay is a finite first-principles computation within the provided framework sources, with the transitive helper code exposed and tied to SHA-fresh successful caches. The hard-coded EXPECTED values are used as archive comparisons, but the contested row is recomputed before comparison through the supplied wave and beam-propagation code. The cited Fam2 controls, Fam2 synthesis, Fam1 synthesis, and portability batch are retained or retained_bounded, and the source avoids promoting the result beyond the fixed bounded replay and controlled pair surface."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py",
+  "title": "Wave Direct-dM H=0.25 Fam2 Seed1 Follow-Up Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

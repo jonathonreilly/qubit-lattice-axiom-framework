@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "3019d1006dc20319045d59536fe1079e15a7d84ce64fd059f97e5e08bd631936",
+  "note_path": "docs/DECLARED_RG_MAP_UNIFORM_CHAIN_BAND_EDGE_FIXED_POINT_NU_HALF_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:13:28.398251+00:00",
+      "audit_date": "2026-06-13T01:51:28.155010+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": "Finite periodic free 1D one-color staggered nearest-neighbor chain on the E=0 slice with m != 0; odd-sublattice Schur downfolding, retained-resolvent invariance, migrated uniform+NN form, and bounded diagnostics, with m=0 treated only as a projected/regulator diagnostic and no RG/rescaling claim."
+        },
+        "dep_claim_type": {
+          "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11": "retained_bounded"
+        },
+        "deps": [
+          "exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "2594f7af5f69281330daedd3d371502cb29f5dc7559e23c6edd83127ec2cadb5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-014948-a72a86de4c-declared_rg_map_uniform_chai",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Schur-complement algebra gives the stated closure and map with the displayed signs and factors. The fixed points, band-edge threshold, derivative 4, and \u03be(g)=1/arccosh(1/2g) scaling then follow from standard uniform-chain dispersion and hyperbolic identities within the declared scope.",
+      "claim_scope": "Free one-dimensional uniform nearest-neighbor chain at E=0 under the declared b=2 projective Schur convention, quotient |g|=|t/\u03bc| on |g|<1/\u221a2, including the fixed point |g|=1/2 and the named resolvent length exponent \u03bd=1/2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T01:51:28.155010+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11:retained_bounded->unaudited",
+      "load_bearing_step": "Odd-sublattice Schur decimation at E=0 maps the uniform chain to \u03bc\u2032=\u03bc\u22122t\u00b2/\u03bc and t\u2032=t\u00b2/\u03bc, so the quotient coupling obeys |g\u2032|=g\u00b2/|1\u22122g\u00b2|.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the signed-map versus quotient-map wording outside the declared chart; it is labeled as a probe and is not load-bearing for the theorem scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The runner source performs actual dense Schur-complement, spectrum, unitary-equivalence, and Green-function checks rather than merely printing constants, and the no-helper packet is complete. An independent algebra check confirms the load-bearing map, fixed-point set, pole location, threshold condition |g|=1/2, and \u03be composition law \u03be(g\u2032)=\u03be(g)/2 below threshold. The only cited authority is retained_bounded and is used for the staggered-to-uniform composition, while the theorem itself is explicitly bounded to the free 1D E=0 convention and labels outside-chart probes as non-theorem scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_declared_rg_map_uniform_chain_band_edge_2026_06_12.py",
+  "title": "A Declared Projective Fixed-Energy Schur RG Convention on the Uniform Free Chain: the Quotient Coupling |g| Flows as g\u00b2/|1\u22122g\u00b2|, the Unstable Fixed Point 1/2 Sits at the E=0 Resolvent Threshold, and \u03bd = 1/2 Governs the Named Decay Length \u03be = 1/arccosh(1/2g) (Bounded)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1378 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dm_neutrino_cascade_geometry_note_2026-04-14",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "default_positive_theorem",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 12.692,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c46f1837b6084ec3f9f3de3c74238aa8e657fd4066ff01848da8e3d951503ce8",
+  "note_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-04T15:35:10.811506+00:00",
+      "audit_date": "2026-04-29T12:27:28.463074+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.866,
+        "transitive_descendants": 164
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-backlog-sweep-2026-04-29",
+      "auditor_confidence": 0.91,
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact operator geometry checks cleanly, but the row's source status is unknown and the note explicitly leaves chirality, sector normalization, and full 4D neutrino-Yukawa matching open.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "At second order, the return operator on T_1 decomposes exactly as diag(1,0,0) from O_0 plus diag(0,1,1) from T_2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "open theorem: C^8 weak-axis geometry to full C^16 chiral/right-handed neutrino embedding",
+        "open theorem: physical Dirac Yukawa operator chain",
+        "open theorem: neutrino-sector base normalization"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the matrix action of Gamma_1 closes the local 1+2 cascade geometry, but the physical neutrino Dirac Yukawa theorem is outside the restricted inputs and remains open in the source. Why this blocks: strict audit status rules do not permit audited_clean on source status=unknown, and the open chirality/normalization/4D matching steps are load-bearing for any physical Yukawa claim. Repair target: promote the exact operator-geometry support claim separately or add audited dependencies for the full neutrino embedding and normalization. Claim boundary until fixed: exact weak-axis cascade geometry support, not a closed neutrino Yukawa theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.620289+00:00",
+      "audit_date": "2026-05-05T09:56:37.760258+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.67,
+        "runner_hash": "be4f4c20588f9583f82986780ea592fb27197cfcafc1bf9c5ddae71dfffcf4f9",
+        "transitive_descendants": 287
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-second-dm_neutrino_cascade_geometry_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded operator-geometry claim closes by direct finite matrix algebra over the stated basis, sectors, projectors, and Gamma_1. The note explicitly excludes the physical neutrino Dirac Yukawa theorem, so the open chirality, full C^16 embedding, operator-chain, and normalization bridges are outside the audited clean scope.",
+      "claim_scope": "Exact C^8 weak-axis Clifford geometry for Gamma_1 on O_0, T_1, and T_2: no T_1 one-hop closure, rank-1 O_0 plus rank-2 T_2 split, and second-order return diag(1,0,0)+diag(0,1,1)=I_3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T09:56:37.760258+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T04:43:29.404049+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-dm_neutrino_cascade_geom-069",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "The audit covers only the exact C^8 weak-axis Clifford geometry for Gamma_1 on the O_0, T_1, and T_2 taste-sector subspaces, not a physical neutrino Dirac Yukawa theorem.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T09:56:37.759812+00:00",
+          "auditor": "codex-fresh-second-dm_neutrino_cascade_geometry_note-20260505",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Exact C^8 weak-axis Clifford geometry for Gamma_1 on O_0, T_1, and T_2: no T_1 one-hop closure, rank-1 O_0 plus rank-2 T_2 split, and second-order return diag(1,0,0)+diag(0,1,1)=I_3.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-gpt-5",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At second order, the return operator on T_1 decomposes exactly as diag(1,0,0) from O_0 plus diag(0,1,1) from T_2, with total I_3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that future citation surfaces preserve the bounded scope and do not quote this clean operator-geometry result as a closed neutrino Dirac Yukawa theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The runner constructs the 8-dimensional basis, Gamma_1, sector projectors, and projected return operators, then verifies the six load-bearing finite algebraic statements with completed cached output: 6 PASS, 0 FAIL. The claim is not a neutrino Yukawa derivation and does not claim a physical Dirac mass, sector normalization, or full chiral embedding closure. Within the bounded scope of exact weak-axis operator geometry, no hidden comparator, tuned numerical input, renaming, or unrun compute is load-bearing."
+    },
+    {
+      "archived_at": "2026-07-12T17:10:28.484577+00:00",
+      "audit_date": "2026-07-11T18:06:16.945290+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 12.553,
+        "runner_hash": "be4f4c20588f9583f82986780ea592fb27197cfcafc1bf9c5ddae71dfffcf4f9",
+        "transitive_descendants": 750
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00040-dm_neutrino_cascade_geometry",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely constructs and verifies the six finite-dimensional operator identities. The further inference to a physical neutrino cascade lacks the C^16 chiral embedding, physical Dirac-operator chain, and neutrino-sector normalization explicitly left open by the note.",
+      "claim_scope": "Exact C^8 projected-matrix geometry for the explicitly defined Gamma_1 and fixed O_0/T_1/T_2 bases, together with the bounded inference that it motivates a second-order neutrino-cascade search surface; no physical Dirac-Yukawa theorem is audited as closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T18:06:16.945290+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "For the explicitly chosen weak-axis generator, the second-order return on T_1 splits as diag(1,0,0) through O_0 plus diag(0,1,1) through T_2, summing to I_3.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Construct b1 from the three T_1 basis vectors and evaluate the nine entries of b1\u2020 Gamma_1 b1, then compare the resulting matrix with the 3-by-3 zero matrix.",
+            "disposition": "CLOSED",
+            "evidence_locator": "P_T1 Gamma_1 P_T1 = 0",
+            "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Direct one-hop closure inside T_1",
+            "outcome": "All nine projected entries vanish, so direct one-hop closure inside the selected T_1 sector is excluded.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "one_hop_internal"
+          },
+          {
+            "attempt": "Form the 1-by-3 block b0\u2020 Gamma_1 b1, calculate its matrix rank, and independently evaluate the projector sandwich b1\u2020 Gamma_1 p0 Gamma_1 b1.",
+            "disposition": "CLOSED",
+            "evidence_locator": "one singlet channel `O_0`",
+            "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Second-order return through the O_0 singlet sector",
+            "outcome": "The one-hop block has rank one and its second-order sandwich equals diag(1,0,0), isolating only the first T_1 mode.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "singlet_return"
+          },
+          {
+            "attempt": "Form the 3-by-3 block b2\u2020 Gamma_1 b1, determine that its image is two-dimensional, and separately multiply the p2 projector sandwich b1\u2020 Gamma_1 p2 Gamma_1 b1.",
+            "disposition": "CLOSED",
+            "evidence_locator": "one residual two-state channel into `T_2`",
+            "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Second-order return through the residual T_2 representation sector",
+            "outcome": "The one-hop block has rank two and its second-order sandwich equals diag(0,1,1), covering the complementary pair of T_1 modes.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "t2_return"
+          },
+          {
+            "attempt": "Inventory the source and runner for a 16-dimensional carrier, chiral projectors, a right-handed-neutrino subspace, or an explicit intertwiner preserving the computed C^8 channel decomposition.",
+            "disposition": "OPEN",
+            "evidence_locator": "connect this `C^8` weak-axis geometry to the full `C^16` chiral/right-handed",
+            "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Embed the C^8 taste geometry into the full C^16 chiral and right-handed-neutrino carrier",
+            "outcome": "None of those objects is constructed; the source explicitly identifies the C^8-to-C^16 connection as open.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "c16_embed"
+          },
+          {
+            "attempt": "Trace every load-bearing multiplication in the runner and check whether any Higgs insertion, chiral bilinear, action derivative, or source-to-physical-Yukawa readout map is instantiated.",
+            "disposition": "OPEN",
+            "evidence_locator": "identify which operator chain actually generates the physical Dirac Yukawa",
+            "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Construct the physical operator chain producing the Dirac Yukawa",
+            "outcome": "The calculation ends at projected Clifford return matrices; no action-level Dirac-Yukawa generating chain is present.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "physical_chain"
+          },
+          {
+            "attempt": "Check the runner, source, and accepted-premise registry excerpts for a neutrino-sector coefficient, normalized bilinear, sector weight, or rule fixing the magnitude of the candidate Yukawa.",
+            "disposition": "OPEN",
+            "evidence_locator": "fix the neutrino-sector base normalization",
+            "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the neutrino-sector base normalization",
+            "outcome": "The computation contains only unit Clifford entries and projectors; no physical neutrino normalization is derived or supplied.",
+            "route_class": "normalization_or_units",
+            "route_id": "nu_normalization"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "full C^16 chiral/right-handed-neutrino embedding",
+            "physical Dirac-Yukawa operator chain",
+            "neutrino-sector base normalization"
+          ],
+          "evidence_locator": "Three physics steps remain open:",
+          "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "full C^16 chiral/right-handed-neutrino embedding",
+              "left_closes_right": false,
+              "right": "physical Dirac-Yukawa operator chain",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "full C^16 chiral/right-handed-neutrino embedding",
+              "left_closes_right": false,
+              "right": "neutrino-sector base normalization",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "physical Dirac-Yukawa operator chain",
+              "left_closes_right": false,
+              "right": "neutrino-sector base normalization",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "full C^16 chiral/right-handed-neutrino embedding",
+            "physical Dirac-Yukawa operator chain",
+            "neutrino-sector base normalization"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "Until those steps are derived, the correct claim remains:",
+          "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "connect this `C^8` weak-axis geometry to the full `C^16` chiral/right-handed",
+              "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "phrase": "connect this `C^8` weak-axis geometry to the full `C^16` chiral/right-handed",
+              "promoted_wall": "full C^16 chiral/right-handed-neutrino embedding"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "identify which operator chain actually generates the physical Dirac Yukawa",
+              "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "phrase": "identify which operator chain actually generates the physical Dirac Yukawa",
+              "promoted_wall": "physical Dirac-Yukawa operator chain"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "fix the neutrino-sector base normalization",
+              "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "phrase": "fix the neutrino-sector base normalization",
+              "promoted_wall": "neutrino-sector base normalization"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "This exact geometry does **not** derive the neutrino Dirac Yukawa.",
+              "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "phrase": "This exact geometry does **not** derive the neutrino Dirac Yukawa."
+            }
+          ],
+          "scan_scope": "The source status, physical-interpretation paragraphs, runner honest-read section, and supplied premise registries were checked for unstated carrier, action, chirality, and normalization assumptions.",
+          "unresolved": [
+            "full C^16 chiral/right-handed-neutrino embedding",
+            "physical Dirac-Yukawa operator chain",
+            "neutrino-sector base normalization"
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Three physics steps remain open:",
+          "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR; the three physical routes are honestly left open rather than closed by an inapplicable historical witness.",
+          "scan_scope": "The N1 routes and restricted cross-cycle material were checked for any route marked RULED OUT BY PRIOR.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "the neutrino Yukawa theorem itself is still open.",
+          "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+          "scan_scope": "Negative and incompleteness language was checked against the actual resolution tested by the C^8 runner.",
+          "statements": [
+            {
+              "evidence_locator": "Why This Still Falls Short Of A Theorem",
+              "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "phrase": "Why This Still Falls Short Of A Theorem",
+              "tested_resolutions": [
+                "fixed C^8 weak-axis operator geometry"
+              ],
+              "untested_resolutions": [
+                "full C^16 chiral/right-handed-neutrino embedding",
+                "physical Dirac-Yukawa operator construction",
+                "neutrino-sector normalization"
+              ]
+            },
+            {
+              "evidence_locator": "neutrino Yukawa theorem itself is still open.",
+              "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "phrase": "neutrino Yukawa theorem itself is still open.",
+              "tested_resolutions": [
+                "one-hop and second-order projected matrices on the selected C^8 basis"
+              ],
+              "untested_resolutions": [
+                "other carriers and embeddings",
+                "action-level physical matching",
+                "normalization choices"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The broad physical-theorem resolution was not tested beyond the selected C^8 representation."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It fixes only space-time kinetic-form isotropy and supplies no neutrino carrier, Yukawa operator, chirality map, or sector normalization.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms do not select a Hamiltonian, kinetic branch, source/action bridge, or downstream neutrino operator.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies none of the missing carrier, action, or normalization content.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "The dimensionful ruler supplies no dimensionless neutrino-sector normalization or physical Yukawa bridge.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "Its boundary expressly supplies no above-C3 taste/Dirac/chirality content, PMNS alignment, or sector-weight law.",
+              "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "A bare-coupling rescaling convention cannot construct the missing physical neutrino map or normalization.",
+              "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "Hypercharge-coordinate normalization is unrelated to the C^16 embedding and physical Dirac-Yukawa chain.",
+              "evidence_locator": "convention_reframe:hypercharge_identification_note",
+              "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All candidates supplied by the partial-closure index were checked against the three physical bridge walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A compatible C^16 chiral embedding might preserve the computed 1+2 return structure and provide the right-handed-neutrino carrier, making the second-order surface physically meaningful.",
+          "evidence_locator": "connect this `C^8` weak-axis geometry to the full `C^16` chiral/right-handed",
+          "evidence_path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+          "resolution": "This is a viable challenge to any broad nonexistence claim, but the restricted packet supplies no embedding or intertwiner. It therefore leaves the physical interpretation open without undermining the exact selected-representation matrix identities.",
+          "resolved": true,
+          "route_id": "c16_embed"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:0",
+              "evidence_locator": "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Prior conditional audit identified the same physical embedding and normalization gap.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:1",
+              "evidence_locator": "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Prior clean audit isolated the exact C^8 matrix scope but was invalidated for missing no-go discipline.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Owner-governed flavor residual retirement excludes above-C3 chirality and PMNS content.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Strong-CP retirement concerns a different physical sector.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Owner governance does not supply the excluded neutrino chirality or normalization content.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Lists an inherited neutrino Dirac/seesaw fork no-go but does not provide this row's missing bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite-sweep limitation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane coupling-runner boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "General prohibition on importing textbook results as framework proof.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Records two-Higgs, universal-Yukawa, and neutrino-source selector walls relevant to avoiding overclaim.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane coupling identity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane observable-bridge walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different carrier-registry exhaustion warning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Charged-lepton Yukawa selector walls do not supply a neutrino bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane Lorentz-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane metric bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite replay and basin boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane Wilson-environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Flavor carrier/readout nonidentification is analogous but does not close this row's bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different Dirac/Wigner analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane gauge-environment computation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Clifford extension and temporal-generator walls concern a different operator-selection problem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane gravity bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane gravity sign boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Clifford carrier-selection warnings are analogous but do not construct the neutrino C^16 embedding.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane U(1) normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Records that absolute lepton-scale and neutrino quantitative closure remain unavailable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane atomic normalization walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Quark Yukawa carrier/readout underdetermination is analogous but sector-distinct.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane asymptotic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane observable mismatch boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite-path boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane source/readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane rate and temporal-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Empty different-lane no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane planning-selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane time-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Neutrino-specific prior work closes several Majorana and PMNS selector classes but leaves the Dirac global lift open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Direct neutrino-Yukawa Ward anchoring is recorded as closed, reinforcing the need for a different physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite-lattice scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite recomputation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane coupling/readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite-to-physical bridge boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite-window theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Shows that Clifford carrier dimension matching alone does not supply an intertwiner, directly cautioning against inferring the C^16 embedding.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Earlier Clifford carrier-selection warning is analogous but does not provide the required neutrino embedding.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane gauge bootstrap boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane plaquette diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "General warning that finite arithmetic does not supply physical selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different flavor/readout governance walls; no neutrino carrier bridge is supplied.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane locality and axis-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Analogous warning that a finite basis is not yet the physical Yukawa-response basis.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "The minimal premises do not select a physical staggered kinetic law, so they cannot silently supply this row's physical Dirac chain.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane SU(3) quotient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane documentation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane partial-card boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane theta determinant-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane theta action/readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane theta carrier and assembly boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane theta insertion-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane theta branch-closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different flavor-sector determinant-power selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different flavor-sector occupancy boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different flavor-sector readout-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane artifact-visibility issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane record-only readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different DM finite-table and selector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Different-lane finite-lattice boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "mechanism": "Physical Yukawa readout cannot be obtained by defining an operator matrix element to be the Yukawa.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "full C^16 chiral/right-handed-neutrino embedding",
+          "physical Dirac-Yukawa operator chain",
+          "neutrino-sector base normalization"
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14": {
+              "accepted_premise_type": null,
+              "content_sha256": "0e9b6a8251aa8679827a495b5afdcf8917b1acb2acae24c149ef9963e0e82e77",
+              "cross_cycle_candidate_ids": [
+                "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:0",
+                "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:0",
+                "dm_neutrino_cascade_geometry_note_2026-04-14:previous_audit:1",
+                "no_go_cross_cycle_index_v1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ]
+            },
+            "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14": {
+              "accepted_premise_type": null,
+              "content_sha256": "e1e884b5b876bcacf05a71a6b453453d707a3e87fc7477764ba9b3587277d260",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/dm_neutrino_cascade_geometry_note_2026-04-14",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "no_go_partial_closure_index_v1",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ]
+            },
+            "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c46f1837b6084ec3f9f3de3c74238aa8e657fd4066ff01848da8e3d951503ce8",
+              "effective_status": null,
+              "path": "docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "P_T1 Gamma_1 P_T1 = 0",
+                "This exact geometry does **not** derive the neutrino Dirac Yukawa.",
+                "Three physics steps remain open:",
+                "Until those steps are derived, the correct claim remains:",
+                "Why This Still Falls Short Of A Theorem",
+                "connect this `C^8` weak-axis geometry to the full `C^16` chiral/right-handed",
+                "fix the neutrino-sector base normalization",
+                "identify which operator chain actually generates the physical Dirac Yukawa",
+                "neutrino Yukawa theorem itself is still open.",
+                "one residual two-state channel into `T_2`",
+                "one singlet channel `O_0`",
+                "the neutrino Yukawa theorem itself is still open."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the C^16 embedding, physical Dirac-Yukawa operator chain, and neutrino-sector normalization routes remain OPEN.",
+          "N3: the physical interpretation depends on three explicit unclosed bridge assumptions.",
+          "N5: the runner tests only the selected C^8 representation and does not test the broader physical resolutions named by the source."
+        ],
+        "narrowed_claim_scope": "Exact C^8 projected-matrix geometry for the explicitly defined Gamma_1 and fixed O_0/T_1/T_2 bases, together with the bounded inference that it motivates a second-order neutrino-cascade search surface; no physical Dirac-Yukawa theorem is audited as closed.",
+        "next_route": {
+          "reason_untested": "The restricted packet contains no explicit C^8-to-C^16 intertwiner or chiral/right-handed-neutrino embedding to audit.",
+          "route_id": "c16_embed"
+        },
+        "prior_claim_scope": "Exact C^8 weak-axis Clifford geometry for Gamma_1 on O_0, T_1, and T_2: no T_1 one-hop closure, rank-1 O_0 plus rank-2 T_2 split, and second-order return diag(1,0,0)+diag(0,1,1)=I_3.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: split the exact C^8 operator theorem from the neutrino-physics interpretation and add a dated downstream-hygiene line to this note's own boundary limiting the re-audit scope to the six matrix identities; audit the C^16 embedding, physical operator chain, and normalization separately.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the computed C^8 matrix identities close, but they do not construct the physical neutrino Dirac-Yukawa carrier or operator map. Why this blocks: the claim that this is the physically relevant second-order cascade surface depends on three explicit bridge steps absent from the restricted packet. Repair target: supply a C^16 chiral/right-handed embedding theorem, the physical Dirac-Yukawa operator chain, and its base normalization, or split the exact matrix theorem from the physical interpretation. Claim boundary until fixed: the six projected-matrix identities are exact for the selected representation, while their neutrino-physics significance remains conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976823+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dm_neutrino_cascade_geometry.py",
+  "title": "DM Neutrino Cascade Geometry Note",
+  "transitive_descendants": 826,
+  "verdict_rationale": null
+}

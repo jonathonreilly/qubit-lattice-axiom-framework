@@ -1,0 +1,227 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "unit_singlet_overlap_narrow_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 16,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 17.823,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5aa4df69c2cb3d97e528488c5ea02a0c0e675b4f54086d5b900bbdfc314a7c90",
+  "note_path": "docs/G_BARE_TWO_WARD_REP_B_INDEPENDENCE_THEOREM_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T11:40:10.271578+00:00",
+      "archived_for_note_hash": "d8fa0434b050720de0db6fac138d35a4f08ee31a73b4ccaf5f75339f1d66b2fb",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:41:57.783171+00:00",
+      "archived_for_note_hash": "b64360312dbb0b14473727c28670ab435d43acb547ee87b4320cefffe91b75b5",
+      "audit_date": "2026-04-30T11:41:07.297491+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-critical-sweep-20260430",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local step cannot be promoted because direct upstream authorities remain unaudited, support/open/unknown, or terminal non-clean: YT_WARD_IDENTITY_DERIVATION_THEOREM.md.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_pending_reaudit",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The tree-level bare H_unit top-channel form factor is y_t,bare^(0)=1/sqrt(6) for arbitrary g_bare on the retained Q_L block.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The load-bearing step still imports unratified direct authority: YT_WARD_IDENTITY_DERIVATION_THEOREM.md. Why this blocks: Under the restricted one-hop audit context, those authorities are not retained/audited-clean, so the critical claim cannot be ratified as closed even when its local algebra or runner checks pass. Repair target: ratify or repair the listed upstream theorem/bridge rows and rerun the local runner so it computes the disputed bridge rather than only checking consequences. Claim boundary until fixed: the note may be cited as conditional/supporting local structure, but no retained or promoted audit status propagates through this row."
+    },
+    {
+      "archived_at": "2026-05-04T15:35:10.812109+00:00",
+      "audit_date": "2026-05-03T17:09:20.996622+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 8.555,
+        "transitive_descendants": 46
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-g-bare-two-ward-rep-b-fresh-2026-05-03",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained narrow dependency supplies the explicit H_unit overlap identity and g_bare-independence for the defined operator; substituting N_iso=2 and N_c=3 gives 1/sqrt(6). The note expressly leaves the same-Gamma/g_bare pinning and terminal Yukawa identification to separate claims, so those are not load-bearing within this bounded scope.",
+      "claim_scope": "Given the explicitly defined unit-normalized scalar-singlet operator H_unit on the Q_L=(2,3) block and canonical basis-pair normalization, the tree-level basis-pair form factor is 1/sqrt(6) for all g_bare; this audit excludes free-theory residue derivation, Standard Model top-Yukawa readout, same-Gamma pinning, and solving g_bare=1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T17:09:20.996622+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:high->critical",
+      "load_bearing_step": "Multiplying the operator normalization from Step 1 by the group-theory overlap from Step 2 and the unit Wick contraction from Step 3 gives F_Htt^(0)(g_bare) = (1 / sqrt(6)) * 1 = 1 / sqrt(6), with no g_bare dependence.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers cite this only for bare-scale H_unit overlap independence, not for residue-derived normalization, Standard Model Yukawa identification, same-Gamma pinning, or g_bare=1.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "runner_status": "no primary runner listed",
+        "total_pass": 0
+      },
+      "verdict_rationale": "The parent row closes only under the narrowed bounded scope: it consumes the retained unit-singlet overlap theorem and performs an exact substitution/application on Q_L=(2,3). The possible normalization-residue derivation and same-Gamma g_bare=1 pinning are not silently imported because the source note explicitly excludes them and assigns them to separate rows. No primary runner is listed for this claim, so the clean verdict rests on the retained dependency plus exact algebra in the note."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.204085+00:00",
+      "audit_date": "2026-05-05T09:42:54.860227+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "unit_singlet_overlap_narrow_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 11.18,
+        "runner_hash": null,
+        "transitive_descendants": 289
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-second-g_bare_two_ward_rep_b_independence_theorem_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited narrow overlap theorem supplies the normalized diagonal Wick-contractor identity and gauge-coupling independence for the operator definition; the source note only specializes it to N_iso=2, N_c=3 and a basis pair. The note explicitly excludes the broader Ward-identification step, so no unproved SM Yukawa readout is needed for the scoped claim.",
+      "claim_scope": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-05T09:42:54.860227+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T09:39:08.900972+00:00",
+          "auditor": "codex-fresh-first-g_bare_two_ward_rep_b_independence_theorem_note-20260505",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "For the explicitly defined unit-normalized scalar-singlet operator on the Q_L = (2,3) block, the tree-level form factor to a selected basis top-pair component is 1 / sqrt(6) and is independent of g_bare; this does not audit the later physical Standard Model top-Yukawa/Ward readout.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T09:42:54.859794+00:00",
+          "auditor": "codex-fresh-second-g_bare_two_ward_rep_b_independence_theorem_note-20260505",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Bounded tree-level statement that the unit-normalized scalar-singlet bilinear on the Q_L=(2,3) block has form factor 1/sqrt(6) against a chosen basis top-pair component, independent of g_bare, without claiming the Standard Model top-Yukawa Ward readout.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:unit_singlet_overlap_narrow_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "\"F_Htt^(0)(g_bare) = (1 / sqrt(6)) * 1 = 1 / sqrt(6),\" with no gauge-coupling insertion at tree order.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the bounded scope and do not cite this row as the terminal Standard Model top-Yukawa identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The bounded theorem closes as exact algebra over the supplied narrow overlap authority plus the source note's tree-order no-gauge-insertion argument. There is no tuned numerical comparator, no hidden g_bare dependence in the stated tree-level operator matrix element, and no reliance on the terminal top-Yukawa Ward-identification row within the audited scope. Residual risk is only that downstream uses may overread the internal bare datum as a physical Standard Model top-Yukawa readout, which this note explicitly does not establish."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Rep-B Bare-Scale Independence Theorem for the Two-Ward `g_bare` Route",
+  "transitive_descendants": 905,
+  "verdict_rationale": null
+}

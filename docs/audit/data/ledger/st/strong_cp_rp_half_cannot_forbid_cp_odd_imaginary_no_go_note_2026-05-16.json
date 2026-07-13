@@ -1,0 +1,210 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 16.482,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "73108d45039fb6529bd0205bb60e3c872e7f1bb7e6fcf38fa6066c5c80653074",
+  "note_path": "docs/STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T19:06:46.367990+00:00",
+      "audit_date": "2026-05-16T14:03:08.106681+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Conditional weighted-L2 norm-square and positive sesquilinear-form identity on a finite or compact measured space with measure-preserving involution, \u0398-invariant real half-action, and reflection-Hermitian observable."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ad45e22a5c53cb45bb372e4e5473f50d1276207b7026c31eb9104d8185f08562",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260516-140246-20260516T140246Z-bb7a3856-strong_cp_rp_half_cannot-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The conclusion follows algebraically from the retained bounded RP identity plus the explicitly admitted \u0398-anti-invariance of h and reflection-Hermiticity of F. No external physics convention, numerical comparator, or unretained upstream authority is needed for the scoped no-go.",
+      "claim_scope": "Audited the finite/compact measured-space no-go that the retained \u0398-invariant RP half-square identity is insensitive to real \u0398-anti-invariant CP-odd imaginary half-action additions in the reflected expectation tested on reflection-Hermitian observables.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-16T14:03:08.106681+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+      "load_bearing_step": "By \u0398-anti-invariance of h, h(\u0398x)+h(x)=0, so exp(-i c (h(x)+h(\u0398x)))=1 and the modified reflected expectation equals the original RP norm-square.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check the distinction between the symmetric no-go, which preserves non-negativity exactly, and the single-side diagnostic, which proves realness but not positivity for arbitrary c.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic cancellation of the CP-odd phase under \u0398-pairing. The cited upstream authority is retained_bounded, and the source note does not require stronger continuum claims or external data. The runner genuinely checks the finite-carrier algebra rather than hard-coding a contested numerical value, though the proof itself is already symbolic."
+    },
+    {
+      "archived_at": "2026-05-29T01:07:36.840661+00:00",
+      "audit_date": "2026-05-23T20:33:47.821718+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "Bounded measure-theoretic norm-square identity, real non-negativity, and induced Hermitian positive semidefinite sesquilinear form for (X, \u03bc, \u0398, S_+, F) under the stated \u0398-invariance and reflection-Hermiticity assumptions."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained_bounded"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ad45e22a5c53cb45bb372e4e5473f50d1276207b7026c31eb9104d8185f08562",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T203211Z-e020632a-strong_cp_rp_half_cannot-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited authority is retained_bounded and supplies the reflected-expectation norm-square identity. The added CP-odd phase cancels pointwise under the stated Theta-anti-invariance, so the no-go closes within the narrowed half-square RP scope.",
+      "claim_scope": "For finite or compact measured spaces with measure-preserving involution, real Theta-invariant S_+, real Theta-anti-invariant h, and reflection-Hermitian F, the symmetric half-square RP reflected expectation is insensitive to adding i c h to S_+.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-23T20:33:47.821718+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_type_changed:reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:bounded_theorem->positive_theorem",
+      "load_bearing_step": "By Theta-anti-invariance of h, exp(-i c (h(x) + h(Theta x))) = 1, so the symmetrically modified reflected expectation equals the original RP norm-square.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second audit should keep the scope limited to the symmetric half-square reflected-expectation identity; the single-side calculation establishes realness, not positivity for arbitrary c.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The proof is a direct algebraic closure over the retained upstream identity: h(Theta x) = -h(x) cancels the symmetric phase, and reflection-Hermiticity makes F(Theta x)F(x) a norm-square factor. The runner source genuinely computes the finite-carrier identities with sympy/numpy and does not hard-code contested constants or import external comparators. The no-go gate passes at this packet scope: attacks via non-Hermitian observables, non-anti-invariant h, fixed points, carrier extension, single-side phases, and real-action admissibility either fail by the stated algebra or fall outside the narrowed operational claim. The clean verdict is only for the half-square RP detection failure, not for full continuum theta physics or independent action-class admissibility."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:33.395153+00:00",
+      "audit_date": "2026-05-29T01:16:35.448809+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded."
+        },
+        "dep_claim_type": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ad45e22a5c53cb45bb372e4e5473f50d1276207b7026c31eb9104d8185f08562",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "Mencius-fresh-context-019e7149-406d-7741-9daa-2fa46308d218",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The result is exact algebra over the cited RP identity hypotheses: S_+(Theta x)=S_+(x), h(Theta x)=-h(x), and F(Theta x)=conjugate(F(x)). The no-go closes only the RP-half-square repair route, not every possible primitive or action-admissibility route for excluding theta.",
+      "claim_scope": "Within the finite/compact measure-preserving involution setting of the retained RP half-square identity, a real Theta-anti-invariant imaginary addition S_CP = i c h is invisible to the symmetric reflected expectation for every reflection-Hermitian F; therefore that RP identity alone cannot derive a no-bare-theta-slot exclusion.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-29T01:16:35.448809+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The phase factor in the symmetrically modified reflected expectation is exp(-i c (h(x) + h(Theta x))) = 1 by Theta-anti-invariance, so the modified expectation equals the original nonnegative norm-square.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second pass should keep the scope limited to RP half-square insensitivity and not read it as physical admissibility of CP-odd terms or as full continuum theta-partition-function insensitivity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing cancellation is pointwise: the symmetric modification contributes exp(-i c(h(x)+h(Theta x)))=1, so the reflected expectation remains the same weighted norm-square. The cached runner exits 0 with PASS=16 FAIL=0 and checks exact finite carriers plus orbit-pair identities; the runner source computes the stated cancellations rather than printing constants. No-go discipline N1-N8 passes under the narrow scope: alternative RP-detection routes, hidden-wall scan, residual matching, rhetoric narrowing, partial-closure scan, steelman, and cross-cycle echo do not refute the claim that retained RP alone cannot derive the no-bare-theta-slot premise."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_strong_cp_rp_cannot_forbid_cp_odd_imaginary_no_go_2026_05_16.py",
+  "title": "Reflection-Positivity Half-Square Identity Cannot Forbid CP-Odd Imaginary Action Additions (No-Go)",
+  "transitive_descendants": 714,
+  "verdict_rationale": null
+}

@@ -38,6 +38,8 @@ SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
 import orchestrate_audit_batch as batch  # noqa: E402
 
+import ledger_io
+
 LEDGER = batch.DATA / "audit_ledger.json"
 
 REQUIRED_BINDING_FIELDS = (
@@ -264,7 +266,7 @@ def main() -> int:
         print(f"dry run: would fill {total_filled} seat rationale(s)")
         return 0
     # Match apply_audit.py's canonical ledger serialization exactly.
-    LEDGER.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
     print(f"wrote {LEDGER} with {total_filled} backfilled seat rationale(s)")
     print(
         "NEXT: bash docs/audit/scripts/run_pipeline.sh && "

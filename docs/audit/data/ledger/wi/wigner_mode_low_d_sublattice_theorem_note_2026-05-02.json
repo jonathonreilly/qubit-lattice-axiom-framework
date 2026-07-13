@@ -1,0 +1,235 @@
+{
+  "audit_date": "2026-06-09T11:48:39.094317+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "load_bearing_score": 6.644,
+    "runner_hash": "acf7fcbd3231664a57c1c29d02b94b08cfe317dcd9f3b0f0bb3ae7b992b790fc",
+    "transitive_descendants": 49
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260609-114701-877d26d67a-wigner_mode_low_d_sublattice",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "For the scoped finite claim, the runner constructs Q diagonal by occupation number and H only within equal-charge blocks, so [Q,H]=0 and exp(-beta H)/Tr exp(-beta H) preserves the same sectors. An independent check using omega=4 sum sin^2(pi n/L) reproduces the quoted IR values and strict growth from L=16 to L=32 in d=1 and d=2.",
+  "claim_id": "wigner_mode_low_d_sublattice_theorem_note_2026-05-02",
+  "claim_scope": "Finite charge-commutation and Gibbs-state commutation in the generated symmetric Hamiltonian, plus finite L=16 to L=32 IR-sum increase for the stated nearest-neighbor dispersion in d=1 and d=2; no no-SSB or Noether bridge is audited.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-09T11:48:39.094317+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": "The source-side retained-eligible content is only the finite algebra and finite IR-growth diagnostics that the runner computes directly.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "99b28b717cdcd067ac61fa8fddbf7f3125e7d2daab77142521fb5df59102515d",
+  "note_path": "docs/WIGNER_MODE_LOW_D_SUBLATTICE_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check only that downstream use preserves this finite-diagnostic scope and does not treat it as a no-SSB or Noether theorem.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-04T16:59:09.090617+00:00",
+      "audit_date": "2026-05-31T13:19:09.979258+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "e0d5c64040e1116068b17d2863ac64c9d2d853d9c67293f00b876fa50568155a",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-131655-8e85e00e-wigner_mode_low_d_sublat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The cited CMW authority only proves the IR-sum threshold and explicitly says it does not prove no spontaneous breaking of continuous symmetries in d <= 2. The Noether authority is also bounded to its admitted staggered/Grassmann carrier and infinitesimal-action-symmetry scope, so the stated general H_d formulation is broader than the provided theorem.",
+      "claim_scope": "Attempted composition of low-dimensional finite-temperature no-SSB with lattice Noether current conservation for the same continuous action symmetry on 1D/2D coordinate sublattices of Z^3.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-31T13:19:09.979258+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "By the cited CMW MW1, for d <= 2 and finite T continuous symmetry breaking is absent, and by Noether N3 the same action symmetry has \u2202^L_\u03bc J^\u03bc_x = 0 on shell.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply or cite a retained Ward/commutator-normalized no-continuous-SSB theorem for d <= 2 finite temperature, then narrow the Noether branch to the admitted carrier/infinitesimal-action-symmetry scope or cite a retained general lattice Noether theorem.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The displayed W1 formula family, namely that no continuous-symmetry order parameter condenses at d <= 2 and T > 0, is not supplied by the cited CMW note; that authority explicitly narrows itself to IR-sum divergence and lists the no-SSB bridge as a non-claim. The runner's IR-growth check supports only the narrowed IR threshold, while the finite commutator/Gibbs checks do not establish thermodynamic no-SSB. W2 can only inherit the bounded Noether scope of the admitted carrier, not the source note's arbitrary Hamiltonian/action wording."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:22.366506+00:00",
+      "audit_date": "2026-06-06T11:25:50.259468+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice Noether identity on the explicitly admitted Grassmann/Kawamoto-Smit staggered carrier: U(1) current (4), bilateral current (5) for local infinitesimal generators, and exact central two-step Ward identity (3a) for (2Z)^3 translations; density (3) is support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "e0d5c64040e1116068b17d2863ac64c9d2d853d9c67293f00b876fa50568155a",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-112527-1c9b32c97e-wigner_mode_low_d_sublattice",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Noether-current half is supported only at the bounded admitted-carrier level, but the no-SSB half does not follow from the supplied CMW authority. That authority explicitly narrows itself to an IR-sum threshold and states that it does not prove no spontaneous breaking of continuous symmetries in d <= 2.",
+      "claim_scope": "Joint claim that on 1D/2D coordinate sublattices, finite-temperature continuous-symmetry SSB is absent and the same action symmetry has an on-shell conserved Noether current.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:25:50.259468+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:axiom_first_lattice_noether_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "By the cited CMW MW1, for d <= 2 and finite T, continuous symmetry breaking is absent under the theorem's stated hypotheses.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained-grade theorem converting the IR-sum threshold into finite-temperature no continuous-symmetry SSB under the stated order-parameter/Ward hypotheses, and preserve the bounded Noether carrier assumptions explicitly.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The source note treats the CMW packet as a no-SSB theorem, but the quoted authority says the Ward/order-parameter bridge is missing and lists no continuous-symmetry SSB in d <= 2 as a non-claim. The runner only checks a commuting toy Hamiltonian, Gibbs symmetry, IR-sum growth, and logical compatibility; it does not supply the missing CMW-to-no-SSB bridge. The Noether authority is retained_bounded and carries admitted carrier/KS-phase conditions, so it cannot upgrade the joint positive theorem to clean closure."
+    },
+    {
+      "archived_at": "2026-06-09T08:58:31.221944+00:00",
+      "archived_for_note_hash": "f320855379529305ba69244dacacf5b787e4d2e0de7ee66b802c181504152ce9",
+      "audit_date": "2026-06-08T19:33:03.649950+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "The audited claim is only the periodic lattice IR-sum threshold for E_k = 2 sum_mu(1-cos k_mu): d <= 2 is IR-divergent and d >= 3 is IR-finite in the continuum scaling proxy, with finite lattice enumerations matching this threshold for d in {1,2,3,4}.",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-lattice algebraic Noether identities on the admitted KS staggered/Grassmann carrier: the onsite/internal nearest-neighbor current including U(1), and the separate (2Z)^3 two-step Ward identity; canonical density (3) is support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "e0d5c64040e1116068b17d2863ac64c9d2d853d9c67293f00b876fa50568155a",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-193056-fe569b1e82-wigner_mode_low_d_sublattice",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The provided CMW authority only proves an IR-sum threshold and explicitly says it does not prove the Ward/order-parameter bridge needed for no continuous SSB. The Noether authority is also bounded to its admitted staggered carrier and onsite/internal infinitesimal generator scope, while the source note states the current claim for a generic H_d/action symmetry.",
+      "claim_scope": "As stated, the note audits a joint claim that continuous action symmetries on 1D/2D coordinate sublattices have no finite-temperature SSB and an on-shell Noether current from the two cited upstream notes.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:33:03.649950+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "By the cited CMW MW1 and Noether N3 inputs, d <= 2 finite-temperature continuous-symmetry SSB is absent and the same action symmetry has an on-shell conserved lattice current.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained finite-temperature continuous-symmetry no-SSB theorem with the Ward/order-parameter bridge for d <= 2, and narrow the Noether branch to the cited onsite/internal admitted-carrier scope.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The attempted proof is a citation composition, but the first citation does not contain the claimed MW1 no-SSB theorem in the restricted packet. Its non-claims section expressly removes no continuous SSB and the order-parameter Ward/commutator normalization bridge from the retained result. The runner checks a symmetric toy Hamiltonian, Gibbs commutation, IR-sum growth, and logical compatibility, but it does not supply the missing no-SSB bridge or repair the Noether scope broadening."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 3,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 4
+  },
+  "runner_path": "scripts/wigner_mode_low_d_sublattice_check.py",
+  "title": "Wigner Low-D Sublattice IR/Charge Compatibility Certificate",
+  "transitive_descendants": 45,
+  "verdict_rationale": "The displayed matrix identities and finite numerical table entries match both the runner source and an independent recomputation: I_1 gives 1.328125 and 2.6640625, and I_2 gives approximately 0.4899245 and 0.6003262. The runner does not hard-code the contested outputs or import a cross-note premise; it constructs the finite symmetric block Hamiltonian and directly computes the Gibbs commutator and lattice sums. The stronger low-dimensional no-SSB and Noether-current bridges are explicitly excluded as non-claims, so the bounded conclusion does not depend on those open bridges."
+}

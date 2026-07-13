@@ -1,0 +1,1409 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.907,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d4cfa971fed8384b95df27b3accd6fe701a21d07efca48caa7bd35e6c46aac75",
+  "note_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:25.673648+00:00",
+      "audit_date": "2026-06-21T06:00:05.350130+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 11.131,
+        "runner_hash": "502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee",
+        "transitive_descendants": 1120
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite anomaly equations reduce to x + y = 2a, z = -6a, and xy = -8a^2, so the quadratic for the two color-triplet singlet charges has only roots 4a and -2a. The physical existence or minimality of the P-COMP template is explicitly outside the audited scope.",
+      "claim_scope": "Given the stated left-handed surface, the narrow opposite-chirality singlet completion template, and the neutral singlet n = 0, exact anomaly cancellation forces the completion charges up to the x/y label swap.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T06:00:05.350130+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-21T05:57:10.177670+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Assuming Q_L:(2,3)_a, L_L:(2,1)_(-3a), a != 0, the stated opposite-chirality SU(2)-singlet completion template with n=0, and the listed anomaly-cancellation equations, the completion charges are forced up to swapping x and y: {x,y}={4a,-2a}, z=-6a, n=0.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-21T06:00:05.350130+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the stated left-handed surface, the narrow opposite-chirality singlet completion template, and the neutral singlet n = 0, exact anomaly cancellation forces the completion charges up to the x/y label swap.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting x + y = 2a and z = -6a into the cubic anomaly gives x^3 + y^3 = 56a^3, hence xy = -8a^2 and the roots are {4a, -2a}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the chirality-signed anomaly convention and SU(3)^3 slot-count normalization; P-COMP existence and minimality remain explicitly out of scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 49
+      },
+      "verdict_rationale": "The audited claim is a bounded conditional classification, not a derivation of the P-COMP premise itself. Within that scope, the load-bearing step is exact algebra over the stated anomaly equations, and the runner source genuinely verifies the symbolic reduction, sample exact solutions, full anomaly cancellation, and counterfactual non-uniqueness without external comparator data. The a = 1/3 normalization is checked only as an example, not used to tune the scale-free result."
+    },
+    {
+      "archived_at": "2026-07-12T17:09:26.943474+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "Given the stated left-handed surface, two opposite-chirality color-triplet singlets, one charged colorless singlet, and n=0, exact cancellation of the listed anomalies forces {x,y,z,n}={4a,-2a,-6a,0} up to exchanging x and y.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T14:21:31.486743+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-11T14:21:31.486743+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00008-abj_p_comp_scale_free_single",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the stated left-handed surface, two opposite-chirality color-triplet singlets, one charged colorless singlet, and n=0, exact cancellation of the listed anomalies forces {x,y,z,n}={4a,-2a,-6a,0} up to exchanging x and y.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "The mixed and linear equations were substituted into the cubic equation, and the cubic sum identity was used to derive xy=-8a^2.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Using `x^3 + y^3 = (x+y)^3 - 3xy(x+y)` and `x+y = 2a`",
+                "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Solve the anomaly system through the elementary symmetric polynomials x+y and xy.",
+                "outcome": "The resulting quadratic factors exactly and leaves only the two exchanged roots, so the scoped classification closes.",
+                "route_class": "algebraic_rearrangement",
+                "route_id": "direct_symmetric_elimination"
+              },
+              {
+                "attempt": "The unordered root set and both ordered branches were checked.",
+                "disposition": "CLOSED",
+                "evidence_locator": "up to swapping the two color-triplet singlet labels",
+                "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Exchange the two indistinguishable color-triplet singlet slots.",
+                "outcome": "Exchange changes only the x/y labels and introduces no additional charge branch.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "triplet_label_symmetry"
+              },
+              {
+                "attempt": "The symmetric-product equations were derived and the explicit branch (0,2a,-2a,-4a) was checked.",
+                "disposition": "CLOSED",
+                "evidence_locator": "If the neutral singlet condition `n = 0` is removed, uniqueness fails.",
+                "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Allow both colorless singlet charges to vary instead of imposing n=0.",
+                "outcome": "This produces a nonunique family, but it does not invalidate the scoped theorem because n=0 is an explicit hypothesis and the broader claim is expressly disclaimed.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "remove_neutral_constraint"
+              },
+              {
+                "attempt": "The proof was retained symbolically in a and the runner checked several distinct rational scales.",
+                "disposition": "CLOSED",
+                "evidence_locator": "the absolute `a = 1/3` normalization is not load-bearing for the completion classification",
+                "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Vary the nonzero abelian normalization a rather than fixing a=1/3.",
+                "outcome": "All charges scale linearly with a, so the a=1/3 normalization is not load-bearing.",
+                "route_class": "normalization_or_units",
+                "route_id": "arbitrary_scale"
+              },
+              {
+                "attempt": "Both exchanged branches were checked at a=1/3, 2/5, and 7/4 using exact arithmetic.",
+                "disposition": "CLOSED",
+                "evidence_locator": "# Direct enumeration for rational scale samples.",
+                "evidence_path": "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Solve and recompute all anomaly traces at several exact rational scales.",
+                "outcome": "The finite cases agree with the symbolic result and are validation checks rather than tuned inputs.",
+                "route_class": "numerical_or_finite_case",
+                "route_id": "exact_sample_recomputation"
+              },
+              {
+                "attempt": "The claimed conclusion and explicit boundary statements were compared to determine whether this physical selection was used as an output.",
+                "disposition": "CLOSED",
+                "evidence_locator": "It does not derive full `P-COMP`; the completion slot template and neutral singlet remain premise inputs.",
+                "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Demand that the framework dynamically derive the existence and minimality of the singlet completion surface.",
+                "outcome": "It is an explicit premise outside the bounded theorem, so its absence does not break the audited conditional algebra and is not laundered as a derived result.",
+                "route_class": "dynamical_or_effective_action",
+                "route_id": "physical_template_selection"
+              },
+              {
+                "attempt": "The proof was checked without species labels, and the a=1/3 table was isolated as an example after the symbolic derivation.",
+                "disposition": "CLOSED",
+                "evidence_locator": "It does not derive `P-REC`, `B-AXIS`, one generation, or physical species names.",
+                "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Treat the conventional Standard Model field names or normalization as if they generated the charge classification.",
+                "outcome": "The classification is label-free; physical species naming and one-generation interpretation are explicitly excluded.",
+                "route_class": "convention_or_relabeling",
+                "route_id": "sm_species_relabel"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "Removing the neutral-singlet condition leaves a nonunique anomaly-canceling family.",
+                "Supplying fewer than two opposite-chirality color-triplet singlets leaves an SU(3)^3 slot-count residual."
+              ],
+              "evidence_locator": "The color-slot shape is part of the completion premise, not a theorem of this note.",
+              "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+              "pairwise_checks": [
+                {
+                  "independent": true,
+                  "left": "Removing the neutral-singlet condition leaves a nonunique anomaly-canceling family.",
+                  "left_closes_right": false,
+                  "right": "Supplying fewer than two opposite-chirality color-triplet singlets leaves an SU(3)^3 slot-count residual.",
+                  "right_closes_left": false
+                }
+              ],
+              "unresolved": [],
+              "walls": [
+                "Removing the neutral-singlet condition leaves a nonunique anomaly-canceling family.",
+                "Supplying fewer than two opposite-chirality color-triplet singlets leaves an SU(3)^3 slot-count residual."
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "This theorem deliberately records the open parts of `P-COMP`.",
+              "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+              "hits": [
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "with opposite chirality and with anomaly cancellation required",
+                  "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                  "phrase": "neutral singlet `n = 0`"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "The two color-triplet singlet slots cancel `Tr[SU(3)^3]` by slot count",
+                  "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                  "phrase": "two color-triplet singlet slots"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "derive or approve the physical existence/minimality of the opposite-chirality SU(2)-singlet completion surface",
+                  "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                  "phrase": "physical existence/minimality"
+                }
+              ],
+              "scan_scope": "The source claim, proof, counterfactuals, scope exclusions, runner source, and supplied premise registries were checked for hidden carrier, chirality, neutrality, normalization, readout, and physical-species selections.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "## Counterfactuals",
+              "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+              "none_found_reason": "Every N1 route was tested directly from the source note or runner; none was marked RULED OUT BY PRIOR.",
+              "scan_scope": "The restricted packet was checked for prior-witness reliance in the seven N1 routes.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "## Counterfactuals",
+              "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+              "scan_scope": "Negative wording about uniqueness and anomaly cancellation was checked against the exact resolution actually tested.",
+              "statements": [
+                {
+                  "evidence_locator": "If the neutral singlet condition `n = 0` is removed, uniqueness fails.",
+                  "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                  "phrase": "uniqueness fails",
+                  "tested_resolutions": [
+                    "The four-charge symmetric-product surface without n=0, including the explicit non-neutral anomaly-canceling counterexample."
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "the `SU(3)^3` anomaly count is not canceled by this template",
+                  "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                  "phrase": "is not canceled by this template",
+                  "tested_resolutions": [
+                    "The SU(3)^3 chirality slot count with one and with two right-handed color triplets."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Kinetic-form isotropy supplies no anomaly-completion carrier, chirality, or neutral-singlet selection.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The four minimal axioms supply no gauge representation or P-COMP singlet-template selection.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Pointwise realized-state evaluation does not choose completion charges or field slots.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "The units reference supplies no dimensionless completion structure and is unnecessary for the scale-free theorem.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "could_close_wall": false,
+                  "disposition": "The adopted AC_phi_lambda occupancy and R-eta readout boundaries are unrelated to the ABJ singlet completion template.",
+                  "evidence_locator": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "owner_governed"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "could_close_wall": false,
+                  "disposition": "The bare-coupling rescaling convention has no bearing on anomaly slot content or charge ratios.",
+                  "evidence_locator": "convention_reframe:g_bare_rigidity_theorem_note",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "convention_reframe"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "convention_reframe:hypercharge_identification_note",
+                  "could_close_wall": false,
+                  "disposition": "The hypercharge normalization convention explains why a=1/3 is non-load-bearing but does not derive P-HY or select the physical completion template.",
+                  "evidence_locator": "convention_reframe:hypercharge_identification_note",
+                  "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "kind": "convention_reframe"
+                }
+              ],
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "owner_governed_residual",
+                "tier_a_derivation_target",
+                "tier_a_convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "All candidates in the supplied partial-closure index were checked against the neutral-singlet, color-slot, and physical-template boundaries.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "Anomaly cancellation alone might not uniquely select the Standard-Model-scale charges because a second variable colorless-singlet charge could absorb the cubic constraint.",
+              "evidence_locator": "For example `(x,y,z,n) = (0, 2a, -2a, -4a)` cancels the same anomaly traces but has no neutral singlet.",
+              "evidence_path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+              "resolution": "The steelman succeeds against an unconditional or full-P-COMP uniqueness claim: removing n=0 leaves the displayed one-parameter family. It fails against the audited claim because n=0 is an explicit hypothesis and the note expressly preserves that physical selection as an open residual.",
+              "resolved": true,
+              "route_id": "remove_neutral_constraint"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:previous_audit:0",
+                  "evidence_locator": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "A prior audit reached the same bounded algebraic scope but lacked the required no-go-discipline packet.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Retirement of AC_phi_lambda occupancy and readout admissions.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_locator": "tier_a_retirement:strong_cp_theta_zero_note",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Retirement of the strong-CP theta admission.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_locator": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Owner-governed AC_phi_lambda residual adoption.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Unrelated charged-lepton, neutrino, and area-law route memory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite gravity-sweep scope and Newton-closure boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Gauge-coupling normalization and packet-memory boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "The anomaly lane may import only an axis-conditional cap under B-AXIS.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Broad inherited no-go memory from unrelated flavor, gravity, and plaquette lanes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Formal coupling identities must not be promoted to physical predictions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Plaquette coefficient and Monte Carlo comparator boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Lensing observable and finite-path no-go routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Antisymmetric carrier-primitive and registry-exhaustiveness boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Charged-lepton selector and Koide no-go routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Dimension-selection and Bertrand-import boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Conditional Lorentz-restoration scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Metric reconstruction and finite-runner scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Replay-only and wider-basin scope boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Local Wilson scorecard cannot close the full environment.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Flavor tracial-route scope and carrier-identification boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Rejected Gaussian analytic-vector route.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Plaquette environment character-computation boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Pseudoscalar-time and staggered-orientation routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Fermat and Kubo gravity bridge boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Weak-field gravity scope exclusions.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Absolute-scale and Clifford-carrier no-go routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Absolute U(1) normalization is conventional while scale-free charge ratios remain unobstructed.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Broad campaign boundaries including anomaly-exhaustion and unrelated physical closures.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Atomic scale, threshold, and unit-map no-go routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Quark-mass selector and physical-readout no-go routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite checks do not establish an asymptotic Green-function theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Nonnegative scalar-potential reduction fails for a signed detector response.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Centered finite-path surrogate fails literal geometry.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Static-source readout and hierarchy-value boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Temporal readout and clock-rate boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Empty matter-cone ledger with no applicable no-go.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Planning criteria cannot become theorem-grade selectors.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Update ticks do not derive physical time or light speed.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Majorana and PMNS selector route memory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Neutrino scale and cosmology dependency boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite lattice replay is not a universal Newtonian theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Frozen logs and finite basin language cannot establish broader recomputation claims.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Conditional coupling and physical-versus-bare readout boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite packet overlap does not derive decoherence or gravity.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite-degree Picard-Fuchs exclusion does not imply an all-degree theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Clifford-carrier selection and representation mismatch.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Rank-four carrier and Hodge-dual selection boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Plaquette mean-field and bootstrap closure boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Character identity evaluation and endpoint-positivity boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Supplied packet arithmetic does not create selector authority.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Strong-CP and AC_phi_lambda registrability boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Locality and temporal-axis selection boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite Fisher geometry does not supply physical source semantics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Spin-statistics forcing remains withdrawn.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Minimal axioms do not select a staggered kinetic law.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "SU(3) quotient encoder is not a Wilson cube theorem.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Documentation synchronization rather than a theorem-level no-go.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "A single family-distance slot does not establish a full family card.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Theta mass-side determinant-readout boundaries.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Theta gauge-side action and emergent-sector boundaries.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Theta positive-route gates.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Theta phase-insertion selection boundaries.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Theta defect-closure and branch-action boundaries.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "AC determinant-power horn-selection boundary.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Record does not select AC orbit occupancy.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Record formation does not select the AC R-eta readout.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Artifact visibility rather than a scientific obstruction.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Record-only scalar-readout underdetermination.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Hard-coded numerical table matching and finite-family scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Finite raw rows do not establish continuum or universal laws.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "mechanism": "Physical Yukawa identification by definition or renaming.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "20dd41ab0c3f50a0d642865fb41e3fe83ac7c16bfe9b5a77f04c386a3ca2e81b",
+                  "cross_cycle_candidate_ids": [
+                    "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:previous_audit:0",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:previous_audit:0",
+                    "no_go_cross_cycle_index_v1",
+                    "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                    "tier_a_retirement:strong_cp_theta_zero_note"
+                  ]
+                },
+                "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "78702f669e701455ef0399fc16b9d015df81decfe11e05e38913abb72be15ddd",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ],
+                  "path": "audit-packet://partial-closure-index/abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "convention_reframe:g_bare_rigidity_theorem_note",
+                    "convention_reframe:hypercharge_identification_note",
+                    "no_go_partial_closure_index_v1",
+                    "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+                  ]
+                },
+                "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "d4cfa971fed8384b95df27b3accd6fe701a21d07efca48caa7bd35e6c46aac75",
+                  "effective_status": null,
+                  "path": "docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "## Counterfactuals",
+                    "For example `(x,y,z,n) = (0, 2a, -2a, -4a)` cancels the same anomaly traces but has no neutral singlet.",
+                    "If the neutral singlet condition `n = 0` is removed, uniqueness fails.",
+                    "It does not derive `P-REC`, `B-AXIS`, one generation, or physical species names.",
+                    "It does not derive full `P-COMP`; the completion slot template and neutral singlet remain premise inputs.",
+                    "The color-slot shape is part of the completion premise, not a theorem of this note.",
+                    "The two color-triplet singlet slots cancel `Tr[SU(3)^3]` by slot count",
+                    "This theorem deliberately records the open parts of `P-COMP`.",
+                    "Using `x^3 + y^3 = (x+y)^3 - 3xy(x+y)` and `x+y = 2a`",
+                    "derive or approve the physical existence/minimality of the opposite-chirality SU(2)-singlet completion surface",
+                    "the `SU(3)^3` anomaly count is not canceled by this template",
+                    "the absolute `a = 1/3` normalization is not load-bearing for the completion classification",
+                    "up to swapping the two color-triplet singlet labels",
+                    "with opposite chirality and with anomaly cancellation required"
+                  ]
+                },
+                "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee",
+                  "effective_status": null,
+                  "path": "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
+                  "roles": [
+                    "runner"
+                  ],
+                  "verified_locators": [
+                    "# Direct enumeration for rational scale samples."
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-13T02:08:32.494432+00:00",
+      "audit_date": "2026-07-13T02:07:44.414829+00:00",
+      "audit_invocation_history": [
+        "e17bf184947744688cb76fc9cca873cf"
+      ],
+      "audit_invocation_id": "e17bf184947744688cb76fc9cca873cf",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.907,
+        "runner_hash": "502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee",
+        "transitive_descendants": 1357
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260713-ac9c45c8",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exact algebra closes on the explicitly stated completion surface, and the runner independently checks the symbolic reduction, factorization, rational samples, anomaly cancellation, and counterexamples. The packet does not derive the physical existence or minimality of that completion surface.",
+      "claim_scope": "Given the stated left-handed surface, two opposite-chirality color-triplet singlets, one charged colorless singlet, and n=0, exact cancellation of the listed anomalies forces {x,y,z,n}={4a,-2a,-6a,0} up to exchanging x and y.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T02:07:44.414829+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting x+y=2a and z=-6a into the cubic anomaly forces xy=-8a^2, so x and y are the roots of (t-4a)(t+2a)=0.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or explicitly approve the physical existence and minimality of the opposite-chirality singlet completion surface, including the neutral singlet, then re-audit the physical P-COMP use.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 49
+      },
+      "verdict_rationale": "Issue: The exact classification assumes the opposite-chirality singlet-slot template and neutral-singlet condition rather than deriving their physical realization. Why this blocks: The algebraic implication is valid, but it cannot establish the physical P-COMP completion from the restricted inputs. Repair target: Supply a framework-native theorem or approved premise establishing the existence and minimality of the stated completion surface, including n=0. Claim boundary until fixed: The scale-free charge classification is safe only as the exact conditional implication stated in claim_scope."
+    },
+    {
+      "archived_at": "2026-07-13T02:10:13.169133+00:00",
+      "audit_date": "2026-07-13T02:07:44.420697+00:00",
+      "audit_invocation_history": [
+        "2f7129048db94b3685c67f2766f67254"
+      ],
+      "audit_invocation_id": "2f7129048db94b3685c67f2766f67254",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 10.907,
+        "runner_hash": "502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee",
+        "transitive_descendants": 1357
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260713-4fe9084d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra closes exactly on the supplied completion template. The restricted packet does not derive or cite an authority for the physical existence/minimality of that template or its neutral-singlet condition.",
+      "claim_scope": "Given the stated left-handed surface, two opposite-chirality color-triplet singlets, one charged colorless singlet, and n=0, exact cancellation of the listed anomalies forces {x,y,z,n}={4a,-2a,-6a,0} up to exchanging x and y.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-13T02:07:44.420697+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Using x+y=2a and x^3+y^3=(x+y)^3-3xy(x+y), the cubic anomaly forces xy=-8a^2, so x and y are the roots of (t-4a)(t+2a)=0.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "bounded_with_named_walls",
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained or explicitly approved authority deriving the physical opposite-chirality SU(2)-singlet completion surface, including the neutral singlet, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 31,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 49
+      },
+      "verdict_rationale": "The runner genuinely performs the symbolic algebra and verifies the resulting charges and anomaly cancellation at several exact rational scales; it also exhibits the non-neutral counterexample. The framework-level chain remains conditional because the narrow P-COMP slot surface and n=0 are explicit premise inputs with no cited authority in the packet. For N1-N4, the alternative neutral-singlet and color-slot routes are directly tested, the two boundaries are distinct, no hidden authority supplies them, and no prior residual witness is cited. For N5-N8, the negative language is limited to those scoped counterfactuals, no supplied primitive or indexed reclassification derives the physical completion surface, the strongest steelman is the anomaly-free non-neutral family, and the cross-cycle material supplies no applicable closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
+  "title": "ABJ P-COMP Scale-Free Singlet Completion Classification",
+  "transitive_descendants": 1357,
+  "verdict_rationale": null
+}

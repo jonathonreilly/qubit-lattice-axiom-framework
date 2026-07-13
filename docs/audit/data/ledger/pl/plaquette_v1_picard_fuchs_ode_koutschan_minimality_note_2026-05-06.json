@@ -1,0 +1,332 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "plaquette_v1_picard_fuchs_ode_koutschan_minimality_note_2026-05-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "plaquette_v1_picard_fuchs_ode_note_2026-05-05",
+    "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.248,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5e8e67a016ec5fae3d60fb6c8e2ae013e81dcf12827d48c2f5b71b10b3f87959",
+  "note_path": "docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-25T16:06:53.588937+00:00",
+      "audit_date": "2026-05-24T17:33:24.480528+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "9ccad124945b3a82842d22067f05e355d77a1c603c39db7e8e3fa0661629526f",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T173138Z-b0c3c874-plaquette_v1_picard_fuch-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The reported runner output is consistent with the bounded claim, and the primary runner source shows an intended exact linear-algebra computation. However the restricted packet truncates the imported helper source, including the load-bearing matrix/rank implementation, so stdout alone cannot verify that the computation actually closes.",
+      "claim_scope": "Bounded finite-series certificate for the V=1 SU(3) single-plaquette Picard-Fuchs operator: Taylor annihilation through beta^96, recurrence checks for N=2..99, lower-order exclusion for r<=2,d<=30, r=3 higher-degree consistency for d=2..12, and primitive-integer signature match to L.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T17:33:24.480528+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:9ccad124->be9b2d9c",
+      "load_bearing_step": "At Taylor depth 100, exact-rational Bessel-determinant coefficients give full-column-rank matching systems for every r <= 2, d <= 30, while the first non-trivial kernel in the guess scan is one-dimensional at (r=3,d=2) and matches the published operator L.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: provide the complete helper source for scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py, especially matrix_for_ansatz and _rank_via_numeric, then re-audit the same cached run/source pair.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic finite-window rank and nullspace check, not a renaming or numerical match. Both cited note authorities are retained_bounded, so there is no status downgrade from those note dependencies. The problem is runner artifact completeness: the primary runner imports build_J_series, matrix_for_ansatz, and _rank_via_numeric from a helper whose source is visibly truncated in the packet, so the load-bearing computation cannot be source-audited as required."
+    },
+    {
+      "archived_at": "2026-06-08T10:14:33.401981+00:00",
+      "audit_date": "2026-05-25T19:45:35.128103+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "be9b2d9c265237827b61c68469414ed94591cc1bd475aae37e5bcd2ed62d2595",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T194339Z-c403bfee-plaquette_v1_picard_fuch-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the bounded scope, the chain closes by exact rational construction of the Taylor coefficients and exact rank/nullspace computations. The result does not require treating the external D-module or Koutschan literature as proving an all-order minimal-annihilator statement.",
+      "claim_scope": "Bounded finite-window exact-rational certificate for the V=1 SU(3) single-plaquette J(beta): L annihilates through beta^96, the recurrence holds for N=2..99, no order <=2 degree <=30 ansatz survives, the first shortlex scan hit in r,d<=4 is r=3,d=2 matching L, and checked r=3 higher-degree kernels through d=12 are polynomial multiples.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:45:35.128103+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:be9b2d9c->b375cf8c",
+      "load_bearing_step": "At Taylor depth 100, the runner builds exact Bessel-determinant coefficients and verifies the finite matching systems: no r<=2,d<=30 kernel, a one-dimensional r=3,d=2 kernel matching L, and r=3,d=2..12 kernels of dimension d-1.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers keep this as a bounded finite-window certificate, not an all-order minimal-annihilator theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The provided runner source is not a print-only artifact: it constructs the Bessel-determinant Taylor series, builds matching matrices over exact Fractions, computes exact ranks, extracts the nullspace, and compares the primitive integer kernel to the published operator. The hard-coded operator coefficients are used for candidate verification and signature comparison, while the finite lower-order exclusions and minimal scan hit are computed from the generated coefficient sequence. The one-hop cited note dependencies are retained_bounded, and the audited conclusion is limited to the stated bounded finite windows."
+    },
+    {
+      "archived_at": "2026-06-08T14:28:31.733137+00:00",
+      "audit_date": "2026-06-08T10:49:38.117301+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Finite-window exact-arithmetic certificate packet at Taylor depth 40 for the V=1 SU(3) single-plaquette Picard-Fuchs candidate operator, excluding all-order minimal-annihilator claims.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 4.585,
+        "runner_hash": "b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0",
+        "transitive_descendants": 11
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-104648-b57f8e5701-plaquette_v1_picard_fuchs_od",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source constructs the Bessel-determinant Taylor coefficients and solves the finite matching systems over exact rationals; no helper imports are missing. This closes the bounded finite-window certificate only, not arbitrary-degree or all-order minimality.",
+      "claim_scope": "Finite-window V=1 SU(3) Picard-Fuchs certificate: Taylor annihilation through degree 96, recurrence through N=99, lower-order exclusion for r<=2 and d<=30, r=3 consistency for d=2..12, and finite Koutschan-style rediscovery of L in the stated scan window.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T10:49:38.117301+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+      "load_bearing_step": "At Taylor depth 100, exact-rational matching systems have zero kernel for all checked order <= 2, degree <= 30 ansatzes, while the first finite scan hit is a one-dimensional (r=3,d=2) kernel matching the displayed operator L.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use does not promote this finite-window Koutschan-style guess into an all-order minimal-annihilator theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The displayed operator coefficients and recurrence factors are internally consistent, and independent coefficient extraction gives the reported initial Taylor coefficients. The supplied runner source performs exact rational Taylor construction, exact rank checks, kernel extraction, and primitive-integer signature comparison; the cached run reports all six certificates passing. Both provided cited note authorities are retained-grade, and no unavailable helper source or optional ore_algebra result is load-bearing for the finite claim."
+    },
+    {
+      "archived_at": "2026-06-08T18:21:55.521714+00:00",
+      "audit_date": "2026-06-08T14:47:24.577392+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Bounded exact-arithmetic finite-window certificate for the displayed V=1 SU(3) Bessel-determinant Taylor series: Taylor annihilation through beta^36, recurrence consistency for N in [2,39], lower-order exclusion only for {1}x{0..12} union {2}x{0..11}, uniqueness at (r=3,d=2), and higher-degree consistency for r=3,d=2..6.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated-series ODE residual through the tested order and discrete numerical ODE-vs-Weyl agreement at beta = 2,4,6,8,10, including J'(6)/J(6) = 0.422531739650."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 4.7,
+        "runner_hash": "b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-144151-f530829046-plaquette_v1_picard_fuchs_od",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the bounded finite-window certificate: the runner source genuinely builds Bessel-determinant Taylor coefficients and exact matching matrices rather than merely printing expected values. An independent modular-rank recomputation over a large prime confirmed the displayed first coefficients, recurrence window, r <= 2 full-rank exclusions through d=30, r=3 kernel dimensions through d=12, and first hit at (3,2).",
+      "claim_scope": "Extended bounded V=1 SU(3) single-plaquette Picard-Fuchs finite-window certificate: depth-100 annihilation/recurrence, lower-order exclusion for r <= 2 and d <= 30, r=3 consistency for d <= 12, and finite-window guess recovery of L at (3,2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T14:47:24.577392+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06:retained_bounded->retained_pending_chain",
+      "load_bearing_step": "At Taylor depth 100, exact-rational matching matrices have zero kernel for every r <= 2, d <= 30, while the first shortlex nontrivial kernel occurs at (r,d) = (3,2) and matches the displayed operator L.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the source's algorithmic-minimality language scoped to the finite checked windows, not all-order minimality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "This is a class-A algebraic/rank certificate over retained-bounded cited inputs, with no external comparator or tuned numerical scale in the load-bearing path. The runner source is present, has no missing helper imports, and the cached output agrees with the code path. The clean verdict is only for the stated bounded windows; arbitrary-degree lower-order exclusion and all-order minimal-annihilator claims remain outside the audited scope."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.812324+00:00",
+      "audit_date": "2026-06-08T19:36:01.297762+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "Bounded exact finite-window certificate for the V=1 SU(3) single-plaquette Picard-Fuchs candidate at Taylor depth 40, excluding all-order minimal-annihilator claims and the skipped (r=2,d=12) cell.",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "Finite-runner certificate only: truncated Taylor-series ODE residual through the runner window, finite numerical agreement at beta=2,4,6,8,10, and the beta=6 logarithmic-derivative readout; no all-order Picard-Fuchs or all-order branch-identification claim was audited."
+        },
+        "dep_claim_type": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "bounded_theorem",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06": "retained_bounded",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_v1_picard_fuchs_ode_minimality_proof_note_2026-05-06",
+          "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
+        ],
+        "load_bearing_score": 6.358,
+        "runner_hash": "b375cf8c63694e0fb9eb01644ccb231d97b0fb8440468e27d59cc9f0fe8039f0",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-193337-171992c2d4-plaquette_v1_picard_fuchs_od",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the finite windows stated above, the runner source performs actual exact series construction and rank/nullspace checks rather than merely printing expected values. I independently checked the recurrence algebra and the rank claims by a separate modular-polynomial/rank computation; the all-order and arbitrary-degree minimality interpretations remain outside the audited scope.",
+      "claim_scope": "Bounded V=1 SU(3) single-plaquette finite-window certificate: L annihilates the Bessel-determinant Taylor series through beta^96, the induced recurrence holds for N=2..99, no checked lower-order annihilator exists for r<=2,d<=30, the checked r=3 higher-degree kernels through d=12 are only polynomial multiples, and the finite shortlex scan r,d<=4 first returns L at (3,2).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:36:01.297762+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "At Taylor depth 100, exact-rational matching matrices have zero kernel for every r<=2,d<=30, have kernel dimension d-1 for r=3,d=2..12, and the shortlex guess first finds a one-dimensional kernel at (r,d)=(3,2) whose primitive-integer vector is the displayed operator L.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that downstream rows do not cite this as an all-order minimal-annihilator theorem; this verdict is finite-window bounded.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing content is a finite algebraic certificate over the provided Bessel-determinant Taylor coefficients and retained-bounded one-hop inputs. The runner source computes the coefficients, matching matrices, ranks, nullspace direction, and primitive signature in exact arithmetic, and the cached output matches those computations. The source contains contextual all-order and Koutschan/ore_algebra language, but its bounded certificate surface and runner stdout explicitly do not claim arbitrary-degree lower-order exclusion or all-order minimality; this clean verdict applies only to the finite-window scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py",
+  "title": "Plaquette V=1 Picard-Fuchs ODE: Extended (Koutschan-style) Minimality Note",
+  "transitive_descendants": 18,
+  "verdict_rationale": null
+}

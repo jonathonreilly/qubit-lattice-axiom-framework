@@ -1,0 +1,292 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+    "single_clock_uniqueness_scope_boundary_2026-06-06",
+    "minimal_axioms",
+    "post_record_clock_rate_interface_2026-06-06",
+    "record_clock_rate_normalization_gate_2026-06-06"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 9.966,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f9d8239b87449f60656578ec5140e0e7d4a265b7895e098fab7c2a3a49b86394",
+  "note_path": "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T16:20:15.050204+00:00",
+      "audit_date": "2026-07-09T23:22:34.057456+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+          "post_record_clock_rate_interface_2026-06-06": "Finite post-record word/count histories determine event order and counts but do not uniquely determine a physical clock or transition rates; rates are exact only conditional on a supplied strictly increasing clock map.",
+          "record_clock_rate_normalization_gate_2026-06-06": "A finite three-atom Markov-generator interface theorem: supplied reversible generators can stabilize the sampled dial distributions, while Record counts, dial selection, and physical clock/rate normalization remain separate.",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors."
+        },
+        "dep_claim_type": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "post_record_clock_rate_interface_2026-06-06": "no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "positive_theorem",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "audit_in_progress",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "post_record_clock_rate_interface_2026-06-06",
+          "record_clock_rate_normalization_gate_2026-06-06",
+          "single_clock_uniqueness_scope_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 9.096,
+        "runner_hash": "dc0f662e506b346c353b0760f7fbe031c5392bdbb21c681f2f98fa1054c15d3b",
+        "transitive_descendants": 386
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-single_clock_blocked_tim-027",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The factor-of-two and transfer-rescaling algebra closes over the retained-grade authorities. The broader framework-level no-unit conclusion additionally consumes docs/MINIMAL_AXIOMS_2026-06-05.md, whose full content, effective status, and accepted-premise classification are absent from the restricted authority packet.",
+      "claim_scope": "The audit checked the factor-of-two denominator for the supplied two-step transfer and the bounded claim that its dimensionless spectrum and Record histories do not determine an absolute physical clock unit.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-09T23:22:34.057456+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:record_clock_rate_normalization_gate_2026-06-06",
+      "load_bearing_step": "For the same dimensionless transfer T_hat^2, the aligned two-step reconstruction uses 2 a_tau, while replacing the block time by 2 c a_tau rescales the generator to H_block/c without changing T_hat^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a load-bearing citation edge to docs/MINIMAL_AXIOMS_2026-06-05.md and include its full text, effective status, and any explicit accepted-premise flag in the restricted packet, then re-audit.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 5,
+        "D": 10,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The runner genuinely evaluates the elementary diagonal-transfer and clock-map identities rather than merely printing expected results, and those calculations support the narrow algebraic split. However, its framework-exclusion check only string-searches an unprovided MINIMAL_AXIOMS file, so the packet cannot verify the load-bearing assertion that no other minimal-framework axiom supplies the clock metric. Under the restricted-input and accepted-premise rules, that missing authority edge prevents an audited-clean verdict."
+    },
+    {
+      "archived_at": "2026-07-10T17:39:41.590218+00:00",
+      "audit_date": "2026-07-10T16:31:13.930525+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+          "post_record_clock_rate_interface_2026-06-06": "Finite post-record word/count histories determine event order and counts but do not uniquely determine a physical clock or transition rates; rates are exact only conditional on a supplied strictly increasing clock map.",
+          "record_clock_rate_normalization_gate_2026-06-06": "The finite three-atom construction for s=1,2,3 proves that explicit reversible Markov generators stabilize the sampled dial distributions, while positive rescaling preserves those stationary distributions and leaves absolute rate distinguishable only after fixing a clock unit.",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors."
+        },
+        "dep_claim_type": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "post_record_clock_rate_interface_2026-06-06": "no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "positive_theorem",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "retained",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "post_record_clock_rate_interface_2026-06-06",
+          "record_clock_rate_normalization_gate_2026-06-06",
+          "single_clock_uniqueness_scope_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 9.126,
+        "runner_hash": "dc0f662e506b346c353b0760f7fbe031c5392bdbb21c681f2f98fa1054c15d3b",
+        "transitive_descendants": 394
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00001-single_clock_blocked_time_un",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The transfer and Record-relative algebra closes, but the framework-wide N2b conclusion also consumes docs/MINIMAL_AXIOMS_2026-06-05.md, which is not supplied as a one-hop authority with an effective status. The runner only verifies selected text anchors from that omitted file.",
+      "claim_scope": "The B-AXIS.1 split between the internally fixed two-step denominator for supplied T_hat^2 and the underived absolute physical clock unit represented by a_tau.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:31:13.930525+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:dc0f662e->4b54bb3d",
+      "load_bearing_step": "For the same dimensionless transfer T_hat^2, functional calculus fixes the supplied two-step reconstruction to H_block = -(1/(2 a_tau)) log(T_hat^2/M_T), while replacing the block time by 2 c a_tau rescales the generator to H_block/c.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add a load-bearing dependency edge to docs/MINIMAL_AXIOMS_2026-06-05.md so its full text and effective status enter the restricted packet, then re-audit the framework-wide N2b conclusion.",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-05.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 6,
+        "C": 5,
+        "D": 4,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the proof's framework-wide N2b conclusion consumes docs/MINIMAL_AXIOMS_2026-06-05.md without a direct dependency edge or full retained-grade authority packet. Why this blocks: the supplied retained no-go authorities establish transfer- and Record-relative clock underdetermination, but do not alone establish the absence of clock content from every minimal Lattice or Quantum axiom. Repair target: wire the minimal-axioms note as a direct dependency and re-audit its exact exclusions and status. Claim boundary until fixed: N2a and the transfer-/Record-relative rescaling no-go remain supported, while the framework-wide absolute-unit conclusion remains conditional."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.689591+00:00",
+      "audit_date": "2026-07-10T17:51:56.858398+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+          "minimal_axioms": null,
+          "post_record_clock_rate_interface_2026-06-06": "Finite post-record word/count histories determine event order and counts but do not uniquely determine a physical clock or transition rates; rates are exact only conditional on a supplied strictly increasing clock map.",
+          "record_clock_rate_normalization_gate_2026-06-06": "The finite three-atom construction for s=1,2,3 proves that explicit reversible Markov generators stabilize the sampled dial distributions, while positive rescaling preserves those stationary distributions and leaves absolute rate distinguishable only after fixing a clock unit.",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "Finite-dimensional algebra shows Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit or exclude separately supplied commuting transfer factors."
+        },
+        "dep_claim_type": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "minimal_axioms": "meta",
+          "post_record_clock_rate_interface_2026-06-06": "no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "positive_theorem",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "minimal_axioms": "meta",
+          "post_record_clock_rate_interface_2026-06-06": "retained_no_go",
+          "record_clock_rate_normalization_gate_2026-06-06": "retained",
+          "single_clock_uniqueness_scope_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "minimal_axioms",
+          "post_record_clock_rate_interface_2026-06-06",
+          "record_clock_rate_normalization_gate_2026-06-06",
+          "single_clock_uniqueness_scope_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 13.231,
+        "runner_hash": "4b54bb3dc73e6337b2d73cce17ea9b7708441ccfdf1998994604ff8f796a0c61",
+        "transitive_descendants": 424
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00005-single_clock_blocked_time_un",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded normalization authority supplies the two-step transfer interpretation, and finite spectral calculus proves both the factor-of-two normalization and clock-rescaling identity. The accepted minimal-axiom premise and retained clock/rate authorities independently support the limited non-identifiability statement.",
+      "claim_scope": "For the supplied two-step blocked transfer T_hat^2, the relative denominator is 2 a_tau; T_hat^2, the minimal axioms, and record histories alone do not determine the absolute physical value of a_tau.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:51:56.858398+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-10T17:45:52.989976+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00002-single_clock_blocked_time_un",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the supplied retained-bounded two-step transfer object T_hat^2, the aligned internal reconstruction denominator is 2 a_tau; neither that transfer data nor finite Record histories determine the absolute physical value of a_tau.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T17:51:56.858398+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00005-single_clock_blocked_time_un",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the supplied two-step blocked transfer T_hat^2, the relative denominator is 2 a_tau; T_hat^2, the minimal axioms, and record histories alone do not determine the absolute physical value of a_tau.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For the same dimensionless transfer object, finite functional calculus gives H_block = -(1/(2 a_tau)) log(T_hat^2/M_T), while replacing the supplied block time by 2 c a_tau gives H_c = H_block/c.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 26,
+        "C": 0,
+        "D": 0,
+        "total_pass": 37
+      },
+      "verdict_rationale": "The load-bearing result is a genuine algebraic closure over independent retained-grade inputs, not a definition, renaming, tuned match, or external comparison. The runner correctly checks the spectral identities and record-clock invariance, while its textual checks verify the cited dependency boundaries. The claim remains explicitly limited to the supplied T_hat^2 object and to what the minimal axioms and record data determine without a separate physical-unit supplier."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py",
+  "title": "Single-Clock Blocked-Time Unit Split: N2 Internal Support Boundary",
+  "transitive_descendants": 706,
+  "verdict_rationale": null
+}

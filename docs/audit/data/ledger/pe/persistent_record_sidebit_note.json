@@ -1,0 +1,238 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "persistent_record_sidebit_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "persistent_record_matched_compare_note",
+    "persistent_record_overlap_kernel_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e606d5225e03186d70738cd15f7c20c6a90c8bb67219a555c469f30a44b91e6b",
+  "note_path": "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-01T18:28:34.983183+00:00",
+      "archived_for_note_hash": "0840d6609eaf2338cb3782e35673ccc5878a7a497588099714466e03fa20b110",
+      "audit_date": "2026-05-01T11:00:54.800667+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current matched-comparison runner no longer reproduces the note's quoted side-bit table values or detector-sector counts.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The side-bit matched comparison table is supposed to quantify the bounded improvement of the soft-overlap persistent-record lane against the node-label baseline.",
+      "load_bearing_step_class": "C",
+      "open_dependency_paths": [
+        "scripts/persistent_record_matched_compare.py current output diverges from docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the source note's matched side-bit table is stale relative to the current runner. The note reports side-bit gamma=1.0 purities of 0.5685 at N=12 and 0.7270 at N=18 with side-bit detector-sector counts 9.5, 37.5, 121.0; the current runner returns 0.5698 at N=12 and 0.7287 at N=18 with counts 9.5, 37.5, 123.0. Why this blocks: the exact bounded numerical comparison is the load-bearing evidence for the note, so the quoted table cannot be audited clean against the current harness even though the qualitative modest-improvement read mostly remains. Repair target: refresh the side-bit note and frozen log from the current persistent_record_matched_compare.py output, or explicitly mark the note as superseded by the corrected refinement note. Claim boundary until fixed: the current runner still supports the weaker qualitative statement that the side bit modestly improves the soft-overlap lane but does not beat node-label on this bounded slice."
+    },
+    {
+      "archived_at": "2026-05-08T10:21:41.722485+00:00",
+      "archived_for_note_hash": "3d55184f9fcd78ba282d406952782ef1a8d3f236d416d74edb0aeb0994a12f41",
+      "audit_date": "2026-05-01T20:35:25.474619+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The matched-compare runner reproduces the table with seeds=2 and gamma=1.0, including side-bit soft values 0.8644, 0.5698, and 0.7287. The ledger row has no registered primary runner and the output has no classified PASS lines.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "One extra persistent packet-side bit modestly improves the soft-overlap persistent-record lane on the bounded N=8,12,18 slice, but still does not beat node-label on raw purity.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "other: register `persistent_record_matched_compare.py --seeds 2 --gamma 1.0 --methods node,pr_trace,pr_soft,pr_side_trace,pr_side_soft` or a wrapper as the primary runner, and emit classified C PASS lines for the side-bit soft improvement and failure to beat node-label.",
+      "open_dependency_paths": [
+        "scripts/persistent_record_matched_compare.py",
+        "scripts/persistent_record_overlap_kernel.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the finite side-bit result reproduces, but the row is missing runner registration and emits only a table, not classified PASS checks. Why this blocks: a hostile reviewer can rerun the matched comparison manually, but the audit lane cannot treat an unregistered command and unclassified table as a closed C-class check. Repair target: register `persistent_record_matched_compare.py --seeds 2 --gamma 1.0 --methods node,pr_trace,pr_soft,pr_side_trace,pr_side_soft` or a wrapper as the primary runner, and emit classified C PASS lines for the side-bit soft improvement and failure to beat node-label. Claim boundary until fixed: bounded evidence for a modest side-bit soft-overlap improvement, not a new raw-decoherence winner or persistent-mass theorem."
+    },
+    {
+      "archived_at": "2026-05-11T08:32:51.398481+00:00",
+      "archived_for_note_hash": "cc6a964bc6e5f4189afcbe0826ef666e509b01aa9cf6f92fa0cee2bf207a3d12",
+      "audit_date": "2026-05-08T11:03:35.855995+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "persistent_record_matched_compare_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "persistent_record_matched_compare_note": "bounded_theorem",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_matched_compare_note": "retained_bounded",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_matched_compare_note",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt55-xhigh-019e0741-3fd7-7880-8303-da186742c63c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet contains retained bounded parents for the baseline matched comparison and overlap-kernel model, but it does not include the side-bit runner output or log that generated the new side-bit values. The missing step is an included computation or retained authority verifying the side-bit table and its implementation.",
+      "claim_scope": "Audited the bounded claim that adding one persistent packet-side bit modestly improves the soft-overlap persistent-record lane on the N=8,12,18 matched slice without becoming the raw purity winner.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-08T11:03:35.855995+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The side-bit soft-overlap lane improves the persistent gamma=1.0 values on the bounded matched slice, e.g. N=12: 0.6099 -> ~0.569 and N=18: 0.7314 -> ~0.727, while still not beating node-label.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add the side-bit matched-compare runner output/log and, ideally, runner source for the --side-bit implementation to the restricted audit packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing improvement rests on new side-bit numerical rows that are asserted in the note but not backed by runner stdout, runner source, or an included retained log in the restricted packet. Why this blocks: the cited parents establish only the baseline persistent-record and matched-comparison context, not the claimed side-bit refinement results. Repair target: include the side-bit matched-compare log or runner output/source as a primary artifact showing the side-bit rows are computed from the stated geometry. Claim boundary until fixed: this remains a plausible bounded refinement note, not an audited closed bounded theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.747809+00:00",
+      "audit_date": "2026-05-11T17:46:37.644247+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "persistent_record_matched_compare_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+          "persistent_record_overlap_kernel_note": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+        },
+        "dep_claim_type": {
+          "persistent_record_matched_compare_note": "bounded_theorem",
+          "persistent_record_overlap_kernel_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "persistent_record_matched_compare_note": "retained_bounded",
+          "persistent_record_overlap_kernel_note": "retained_bounded"
+        },
+        "deps": [
+          "persistent_record_matched_compare_note",
+          "persistent_record_overlap_kernel_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current matched-comparison runner constructs the same generated DAGs, seeds, k band, persistent-record baseline, and side-bit variants directly and reproduces the table within the source note's stated third-decimal drift. The cited parent notes are retained bounded inputs for the baseline matched comparison and overlap-kernel model; no asymptotic or raw-winner claim is included in this scope.",
+      "claim_scope": "Bounded generated-DAG matched comparison on N=8,12,18 with 2 seeds and gamma=1.0: adding one persistent packet-side bit modestly improves the soft-overlap persistent-record lane on the N=12 and N=18 rows, does not uniformly improve exact-trace purity, and does not beat node-label raw purity.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T17:46:37.644247+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The matched N={8,12,18}, seeds=2, gamma=1.0 table shows the side-bit persistent record modestly improves the soft-overlap lane at N=12 and N=18 while not beating node-label on raw purity.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Linked frozen log is absent in this checkout, but the current runner source and live output close the bounded qualitative claim; re-check only if future edits broaden the scope to exact frozen-log provenance or asymptotic behavior.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The bounded claim closes because the runner computes the node, persistent trace/soft, and side-bit trace/soft rows over the declared finite slice rather than hard-coding the side-bit conclusion. The live output matches the quoted N=8 row exactly and the N=12/N=18 rows within the documented third-decimal drift, preserving the narrow conclusion: side-bit helps the soft-overlap lane at N=12 and N=18, does not uniformly help trace purity, and remains behind node-label raw purity. Residual risk is limited to bounded-slice and stochastic-drift scope, which the audited claim already states."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Persistent Record Side-Bit Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

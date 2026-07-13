@@ -1,0 +1,76 @@
+{
+  "audit_date": "2026-06-19T21:53:43.979090+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+    },
+    "dep_claim_type": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+    },
+    "deps": [
+      "teleportation_retained_axis_operator_algebra_closure_note"
+    ],
+    "load_bearing_score": 5.248,
+    "runner_hash": "ab8f528d2af592288ae3d52774707ade6184452a269600d4754678c2f86c80ed",
+    "transitive_descendants": 18
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260619-203739-0fd17364-teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18-first",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The runner and helpers construct the finite Hamiltonians, compute ground states, factor sites into logical/environment labels, trace the environment, and evaluate Bell overlap, negativity, CHSH, and teleportation fidelity. The cited RALA authority is retained-grade for the logical-operator algebra used by the extraction.",
+  "claim_id": "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+  "claim_scope": "Bounded finite offline extraction on 1D N=8, G=1000 and 2D 4x4, G=1000 Poisson/CHSH cases, with 1D N=8, G=0 null separation, using RALA last-taste logical carriers.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-06-19T21:53:43.979090+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "teleportation_retained_axis_operator_algebra_closure_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/frontier_bell_inequality.py",
+    "scripts/frontier_teleportation_resource_from_poisson.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 2.5,
+  "load_bearing_step": "Tracing cells and spectator tastes while keeping the last retained taste bit per species yields a deterministic high-fidelity logical Bell resource on the two Poisson/CHSH finite cases, while the G=0 null control fails.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fa5120fce0997c405361e7a9370c13b530d509f66ba4d589e66443f399bf20d3",
+  "note_path": "docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": "Second auditor should re-check tensor index ordering in factor_sites/amplitudes_by_logical_env/reduced_logical_resource and confirm the finite-case thresholds remain source-synchronized.",
+  "open_dependency_paths": [],
+  "previous_audits": [],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 14,
+    "B": 22,
+    "C": 13,
+    "D": 0,
+    "total_pass": 49
+  },
+  "runner_path": "scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py",
+  "title": "Teleportation Poisson Finite Extraction Core",
+  "transitive_descendants": 3,
+  "verdict_rationale": "The load-bearing finite-resource extraction is computed from the framework primitives in the included helper chain rather than read from a note or hard-coded as an expected value. The primary runner\u2019s PASS output is backed by source that calls the Hamiltonian construction, eigensolve, KS factorization, logical partial trace, and teleportation-statistics routines. The theorem is clean only at the declared finite offline scope; the source explicitly keeps native physical preparation/readout outside this claim."
+}

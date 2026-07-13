@@ -1,0 +1,122 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cpt_exact_note",
+    "kinetic_isotropy_primitive_irreducibility_support_2026-06-09",
+    "kinetic_isotropy_primitive"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "598a88d1f26e472bb80fce28ecf35e8cb8d9d55e0a003624877e156da4eaee62",
+  "note_path": "docs/TICK_UNITARITY_FROM_SPECTRUM_REFLECTION_CONJUGACY_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:33:32.487000+00:00",
+      "audit_date": "2026-06-15T22:13:42.650521+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "kinetic_isotropy_primitive": null,
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": "Model-family non-fixation: within the provided free Euclidean lattice scalar witness family, the listed current structures leave xi=c_t/c_s undetermined, supporting the registered kinetic-isotropy primitive as explicit."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "kinetic_isotropy_primitive": "meta",
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "kinetic_isotropy_primitive": "meta",
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": "retained"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "kinetic_isotropy_primitive",
+          "kinetic_isotropy_primitive_irreducibility_support_2026-06-09"
+        ],
+        "load_bearing_score": 11.358,
+        "runner_hash": "23dd69fbf4bc79592f3836d88493bafa18bc6a5f7e492cd55bbc405fb8c98336",
+        "transitive_descendants": 28
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-220948-a596f30407-tick_unitarity_from_spectrum",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional theorem closes by operator-norm algebra, and the converse follows from the spectral theorem for unitaries. The strict-tick transport and channel envelope are explicitly scoped as named premises, not derived outputs.",
+      "claim_scope": "Finite-dimensional characterization: an invertible contraction admits an isometric or anti-isometric spectrum-reflection conjugacy iff it is unitary; applied to the realized strict tick only conditional on the stated C-reading transport and N-reading envelope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-15T22:13:42.650521+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:kinetic_isotropy_primitive_irreducibility_support_2026-06-09:retained->unaudited",
+      "load_bearing_step": "The inverse-conjugacy relation gives ||T^{-1}|| = ||T|| <= 1, so ||x|| = ||T^{-1}Tx|| <= ||Tx|| <= ||x|| for every x, making T an isometry and hence unitary in finite dimension.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the bounded scope and do not cite this note as deriving strict-tick transport or the channel envelope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 3,
+        "C": 2,
+        "D": 4,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure, not a renaming or numerical match. The runner source performs substantive finite-matrix norm, witness, transport, and scope checks rather than hard-coding the conclusion, and the analytic norm-chain proof independently verifies the key implication. The clean result is bounded to the stated hypotheses and does not derive the C-reading or N-reading themselves."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10.py",
+  "title": "Tick Unitarity From Spectrum-Reflection Conjugacy: The Realized-Tick Unitarity Premise Reduces To Discrete-Symmetry Transport Plus The Channel Envelope",
+  "transitive_descendants": 17,
+  "verdict_rationale": null
+}

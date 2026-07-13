@@ -1,0 +1,1422 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "source_resolved_generated_support_mass_scaling_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/causal_field_gravity.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "235accaf3b4fd6a2c4ef41296f0ab361cb5cdda213d5f1385e27a0c158b395e2",
+  "note_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-fresh-agent",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T17:40:03.760052+00:00",
+      "archived_for_note_hash": "034a99c635ef12c6808a45068c2e6a24c939b75675865a2304693caabfc80ca7",
+      "audit_date": "2026-05-02T00:20:23.547470+00:00",
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The current runner preserves the qualitative support/sign rescue and the N_eff/exponent summaries, but the note's frozen centroid-shift values are stale or underspecified. The note reports baseline -4.357340e-02 and tweak +3.850909e-01, while current per-strength output ends at -4.548761e-02 and +4.128727e-01 and has different means across the source ladder.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The kNN-floor connectivity tweak broadens detector support and partially rescues sign on the compact generated family, but it does not restore the weak-field mass-scaling class.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the frozen aggregated detector/scaling table contains centroid-shift values that do not match the current primary runner output or state which source-strength aggregation they represent. Why this blocks: a bounded numerical result cannot be certified clean while a reported load-bearing numeric column is stale or ambiguous, even though sign rows, N_eff, and fitted exponents match the runner. Repair target: refresh the centroid-shift column from the current runner and label whether it is the largest-strength row, an average over strengths, or another aggregate. Claim boundary until fixed: conditional/bounded support that kNN-floor broadens support from N_eff 2.66 to 5.25 and improves sign rows from 0/4 to 2/4, while F~M remains non-linear at -0.152."
+    },
+    {
+      "archived_at": "2026-05-11T08:32:51.399934+00:00",
+      "archived_for_note_hash": "9c3343243be2d9d1699103f1c936d7ce9f151ffc382622f56efd44f01c12706c",
+      "audit_date": "2026-05-03T00:04:12.999074+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "fresh-agent-Meitner-019deb25-d511-73a2-bbc4-120e1724bce2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner output supports the stated finite numerical readout, but the runner has no explicit PASS/FAIL assertions and the claim relies on interpreting 'far from linear' and 'mass-scaling class' without a closed threshold or independent comparator in the provided material.",
+      "claim_scope": "Frozen finite-run comparison of baseline generated DAG family versus kNN-floor augmentation for seeds 0..3, four source strengths, detector N_eff, sign rows, and fitted centroid-shift exponent.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-03T00:04:12.999074+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "For the frozen compact generated DAG probe, the kNN-floor tweak increases mean N_eff and improves TOWARD sign rows, while the fitted centroid-shift exponent remains far from the retained linear mass-scaling class.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: add explicit acceptance/rejection bounds and executable assertions for support broadening, sign rescue, and mass-scaling failure.",
+      "open_dependency_paths": [
+        "scripts/source_resolved_generated_support_mass_scaling.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the numerical output matches the source note's partial-recovery narrative, but the decisive mass-scaling failure criterion is interpretive rather than formally asserted. Why this blocks: the runner reports exponents -0.299 and -0.152 plus support/sign changes, yet no threshold defines when the retained linear class is recovered. Repair target: add explicit acceptance/rejection bounds and executable assertions for support broadening, sign rescue, and mass-scaling failure. Claim boundary until fixed: valid only as a bounded diagnostic readout for the frozen generated-family probe, not as a closed generated-family theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.817952+00:00",
+      "audit_date": "2026-05-11T15:57:37.874517+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The registered runner cache is complete and matches the source note's finite tables. The audited scope is the numerical readout and explicit non-closure boundary, not a thresholded classifier or retained mass-scaling theorem.",
+      "claim_scope": "Finite compact generated-family support/mass-scaling readout: baseline is 0/4 TOWARD with mean N_eff 2.66 and exponent -0.299, while the kNN-floor tweak is 2/4 TOWARD with mean N_eff 5.25 and exponent -0.152; no mass-scaling closure is claimed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-11T15:57:37.874517+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The current runner prints the baseline and kNN-floor detector tables, showing support broadening and partial sign recovery but non-linear/non-Newtonian centroid-shift exponents.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if cited as a mass-scaling closure, a generated-family transfer theorem, or if runner assertions/threshold comparators are added.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The finite runner output supports the note's bounded conclusion: the kNN-floor tweak broadens detector support and gives two TOWARD rows, but the fitted exponents remain far from the linear mass-scaling closure being sought. The source explicitly disclaims full generated-family transfer and weak-field mass-law recovery. Residual risk is that the runner has no hard assertions, so any future drift should be rechecked against the registered table."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:41.043092+00:00",
+      "audit_date": "2026-07-12T03:26:02.083427+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00352-source_resolved_generated_su",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner genuinely computes the finite rows and exponents, but the stated tweak aggregate mean is not the arithmetic mean of the displayed per-s values: those values give -4.66279425e-02, which rounds to -4.663e-02 rather than -4.658e-02. The class-level conclusion also lacks a defined linear-recovery threshold and uses an absolute-value fit across a sign-changing response.",
+      "claim_scope": "Frozen seeds 0..3 per-strength rows, zero-source checks, sign counts, mean N_eff, and fitted exponents; the aggregate centroid-mean column and classifier-level mass-law conclusion are not certified.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T03:26:02.083427+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "The fitted centroid-shift exponent remains far from the retained linear class, so the weak-field mass-scaling class does not recover.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner computes the baseline and tweak fits on strengths 0.001 through 0.008.",
+            "disposition": "CLOSED",
+            "evidence_locator": "exponent = _fit_power([row.strength for row in rows], [abs(row.delta_mean) for row in rows]) or float(\"nan\")",
+            "evidence_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Fit a power exponent to the absolute value of the four strength-averaged centroid shifts.",
+            "outcome": "This closes the finite exponent readout, yielding -0.299 and -0.152, but does not by itself close a categorical mass-scaling classifier.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "current_finite_abs_fit"
+          },
+          {
+            "attempt": "The restricted packet was checked for an executable threshold or independent classifier.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "depends on a comparator threshold not in the restricted packet",
+            "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Pre-register a numerical acceptance or rejection region for recovery of the linear mass-scaling class.",
+            "outcome": "No threshold or comparator is supplied, so the route remains untested.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "explicit_linear_classifier"
+          },
+          {
+            "attempt": "The fitting code and the four tweak response signs were inspected.",
+            "disposition": "OPEN",
+            "evidence_locator": "[abs(row.delta_mean) for row in rows]",
+            "evidence_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Analyze the signed centroid response or a piecewise model instead of fitting the absolute value through a zero crossing.",
+            "outcome": "The implementation takes abs(delta_mean) even though the response changes sign, and no signed or piecewise alternative is tested.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "signed_response_model"
+          },
+          {
+            "attempt": "The runner source was checked for use of its computed standard errors in the scaling verdict.",
+            "disposition": "OPEN",
+            "evidence_locator": "delta_se=_stdev(delta_vals) / math.sqrt(len(delta_vals))",
+            "evidence_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether per-seed slopes and their uncertainty exclude linear scaling rather than fitting the exponent of seed-averaged shifts.",
+            "outcome": "Standard errors are computed but neither printed nor propagated into a slope interval or classifier.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "per_seed_uncertainty"
+          },
+          {
+            "attempt": "The frozen strength range and zero-source sanity test were inspected.",
+            "disposition": "OPEN",
+            "evidence_locator": "SOURCE_STRENGTHS = [0.001, 0.002, 0.004, 0.008]",
+            "evidence_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Probe a smaller-source window or derive the s-to-zero response to determine whether the tested strengths are in the linear weak-field regime.",
+            "outcome": "The zero-source check verifies free propagation only; no derivative or smaller nonzero-strength convergence test is performed.",
+            "route_class": "boundary_or_initial_condition",
+            "route_id": "weaker_source_limit"
+          },
+          {
+            "attempt": "The family summarization path was inspected for how gain is selected.",
+            "disposition": "OPEN",
+            "evidence_locator": "gain = FIELD_TARGET_MAX / ref_max if ref_max > 1e-30 else 1.0",
+            "evidence_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use a common externally fixed gain for baseline and tweak or establish that separate gain normalization cannot change the nonlinear scaling classification.",
+            "outcome": "Each case derives its own gain from its own family reference maximum; no common-gain robustness test is supplied.",
+            "route_class": "normalization_or_units",
+            "route_id": "common_gain_control"
+          },
+          {
+            "attempt": "The stated observable perimeter was inspected.",
+            "disposition": "OPEN",
+            "evidence_locator": "one mass-scaling observable: centroid-shift exponent across source strength",
+            "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check mass scaling with an independently derived force or response observable rather than detector centroid shift alone.",
+            "outcome": "Only one mass-scaling observable is evaluated, so observable-specific failure is not separated from mass-law failure.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "alternate_mass_observable"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "The claimed tweak aggregate centroid mean is inconsistent with the displayed per-strength values and is not emitted by the runner.",
+            "No quantitative threshold or independent comparator defines recovery of the retained linear class.",
+            "The absolute-value power fit crosses a sign change and therefore does not establish a single signed response law."
+          ],
+          "evidence_locator": "arithmetic mean of per-`s` `delta_mean` values across the four source strengths",
+          "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "The claimed tweak aggregate centroid mean is inconsistent with the displayed per-strength values and is not emitted by the runner.",
+              "left_closes_right": false,
+              "right": "No quantitative threshold or independent comparator defines recovery of the retained linear class.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "The claimed tweak aggregate centroid mean is inconsistent with the displayed per-strength values and is not emitted by the runner.",
+              "left_closes_right": false,
+              "right": "The absolute-value power fit crosses a sign change and therefore does not establish a single signed response law.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "No quantitative threshold or independent comparator defines recovery of the retained linear class.",
+              "left_closes_right": false,
+              "right": "The absolute-value power fit crosses a sign change and therefore does not establish a single signed response law.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "The aggregate value, classifier threshold, and signed-response treatment all remain unresolved."
+          ],
+          "walls": [
+            "The claimed tweak aggregate centroid mean is inconsistent with the displayed per-strength values and is not emitted by the runner.",
+            "No quantitative threshold or independent comparator defines recovery of the retained linear class.",
+            "The absolute-value power fit crosses a sign change and therefore does not establish a single signed response law."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "not the classifier-level interpretation",
+          "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "far from the retained linear class",
+              "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+              "phrase": "far from the retained linear class",
+              "promoted_wall": "No quantitative threshold or independent comparator defines recovery of the retained linear class."
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "non-Newtonian regime",
+              "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+              "phrase": "non-Newtonian regime",
+              "promoted_wall": "No quantitative threshold or independent comparator defines recovery of the retained linear class."
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "supported perimeter is just the finite numerical readout",
+              "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+              "phrase": "supported perimeter is just the finite numerical readout"
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source note, primary runner, helper source, and supplied premise registries were checked for hidden definitions of linear recovery, Newtonian classification, weak-field response, aggregation, normalization, and observable selection.",
+          "unresolved": [
+            "No restricted-packet authority supplies the missing classifier threshold."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "not a mass-scaling closure",
+          "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+          "none_found_reason": "No N1 route is marked RULED OUT BY PRIOR; the packet contains no retained one-hop witness that closes the missing classifier or signed-response residual.",
+          "scan_scope": "The source note, runner/helper sources, and supplied prior-route material were checked for retained prior witnesses matching the exact mass-scaling residual.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The \u00a7\"Safe read\" qualitative phrasing",
+          "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+          "none_found_reason": "",
+          "scan_scope": "Categorical negative phrases about mass-scaling recovery and Newtonian behavior were compared with the finite resolutions actually tested.",
+          "statements": [
+            {
+              "evidence_locator": "mass-scaling class does **not** recover",
+              "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+              "phrase": "mass-scaling class does **not** recover",
+              "tested_resolutions": [
+                "four source strengths on seeds 0..3 using the absolute value of the seed-averaged centroid shift"
+              ],
+              "untested_resolutions": [
+                "pre-registered linear-class threshold",
+                "signed or piecewise response model",
+                "per-seed exponent uncertainty",
+                "smaller nonzero-source asymptotic window"
+              ]
+            },
+            {
+              "evidence_locator": "baseline and tweak both sit in a non-Newtonian regime on this family",
+              "evidence_path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+              "phrase": "baseline and tweak both sit in a non-Newtonian regime on this family",
+              "tested_resolutions": [
+                "finite centroid-shift exponent on one compact generated DAG configuration family"
+              ],
+              "untested_resolutions": [
+                "independent force observable",
+                "continuum or larger-family limit",
+                "explicit Newtonian-class comparator"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The categorical phrases exceed the tested finite resolution."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no dynamical mass-response law, centroid observable, classifier threshold, or aggregate computation.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms do not supply the chosen DAG propagation law, Green kernel, response observable, normalization, or mass-scaling criterion.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither these generated-family samples nor a mass-law classifier.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A units reference cannot repair a dimensionless exponent classifier or a stale arithmetic mean.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton occupancy obligation is unrelated to generated-DAG gravity response or mass scaling.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This charged-lepton angle-readout obligation supplies no centroid or force-response bridge.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This quark-determinant readout obligation is unrelated to the finite generated-family computation.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "The supplied partial-closure index was checked across axioms, approved primitives, open obligations, conventions, definitions, and scope reframes.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The tweak response changes from AWAY to TOWARD between the second and third strengths, yet the runner takes the logarithm of abs(delta_mean) and reports one exponent. A zero-crossing response need not belong to any single signed power-law class, so that exponent alone cannot establish failure of linear response.",
+          "evidence_locator": "[abs(row.delta_mean) for row in rows]",
+          "evidence_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+          "resolution": "The steelman succeeds against the categorical no-recovery claim. The finite absolute-magnitude exponent remains a valid diagnostic number, but the restricted packet provides no signed, piecewise, or asymptotic analysis that turns it into a closed class-level verdict.",
+          "resolved": true,
+          "route_id": "signed_response_model"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "source_resolved_generated_support_mass_scaling_note:previous_audit:0",
+              "evidence_locator": "source_resolved_generated_support_mass_scaling_note:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Prior audit identified a stale or ambiguous aggregate centroid column; the label is now explicit, but the tweak arithmetic mismatch persists.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "source_resolved_generated_support_mass_scaling_note:previous_audit:1",
+              "evidence_locator": "source_resolved_generated_support_mass_scaling_note:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Prior audit identified the missing executable mass-scaling threshold.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "source_resolved_generated_support_mass_scaling_note:previous_audit:2",
+              "evidence_locator": "source_resolved_generated_support_mass_scaling_note:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A prior clean finite-readout judgment was invalidated because the required no-go discipline packet was absent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Charged-lepton occupancy counting gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Charged-lepton angle-readout gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Quark-determinant cross-sector gate.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated foundational and flavor no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite mass-scaling and sign sweeps do not supply full Newton closure.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite support must not be promoted through an unclosed physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated atomic, temporal-axis, and audit-ownership boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated inherited flavor, Planck, and plaquette no-go routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated electroweak normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated plaquette coefficient and comparator boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite centroid harnesses and imposed surrogates do not close the physical detector observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated carrier symmetry and registry-exhaustiveness boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated charged-lepton selector routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated spatial-dimension finite-set boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A finite runner cannot prove a global emergent-metric theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Single finite rows must not be generalized to wider family theorems.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated local Wilson normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated flavor carrier pruning.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated analytic-vector and audit-retag boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated gauge-environment contraction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated temporal-generator and gauge-isotropy routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A dispersion result does not supply a full physical Fermat or centroid bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Weak-field sign repair does not establish nonlinear gravity, Einstein closure, or physical Newton coupling.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated absolute-scale and Clifford-carrier no-go routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated U(1) normalization ambiguity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated cross-lane mass, atomic, and cosmology boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated atomic scale and threshold-transport walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated quark mass and selector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite Green-function checks do not establish an asymptotic limit without uniform control.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Detector-centroid response can require signed adjoint coefficients rather than a positive scalar reduction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A finite surrogate can fail when its geometry or regime-transition prediction differs from the actual centroid harness.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated physical static-source readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated temporal source and clock-rate boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A candidate objective or class judgment requires a registered criterion.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated physical-time and emergent-speed boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated neutrino construction no-go routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated neutrino and cosmology gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite lattice replay must not be called a universal Newtonian theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Frozen logs require live recomputation and finite fixtures cannot support unbounded basin language.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated coupling and register-not-read boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "An imposed-field centroid shift is not automatically derived physical gravity.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite-window exclusion does not establish an all-degree or asymptotic theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated rank-four carrier and Hodge-duality walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated plaquette bootstrap and mean-field walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated plaquette diagnostic interpretation boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated supplied-data and selector-authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated determinant, topology, and Record registrability walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated finite-range and temporal-axis selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated physical source-semantics and response-basis boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated statistics-forcing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated kinetic-law selection countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated SU(3) cube encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A documentation mismatch requires an executable recurrence guard.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "A single repaired slot cannot support full family-independence wording.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated theta mass-orientation and readout walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated theta gauge-action and sector walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated positive theta-carrier gates.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated theta phase-insertion wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated theta defect-closure wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated determinant-power horn-selection wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated Record-orbit occupancy wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated Record-formation readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "No no-go was claimed; the earlier issue was artifact visibility.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated Record-only mass-readout underdetermination.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite rows cannot establish a continuous family law, and hard-coded matching cannot elevate the evidence class.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Finite raw rows do not establish a continuum theorem or universal scaling exponent.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "mechanism": "Unrelated definition-as-physical-readout boundary.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "The claimed tweak aggregate centroid mean is inconsistent with the displayed per-strength values and is not emitted by the runner.",
+          "No quantitative threshold or independent comparator defines recovery of the retained linear class.",
+          "The absolute-value power fit crosses a sign change and therefore does not establish a single signed response law."
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "0385485daec62af383bd7c05a147709b532295e53d8f0f5f66d8c13d7b4595c3",
+              "cross_cycle_candidate_ids": [
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "source_resolved_generated_support_mass_scaling_note:previous_audit:0",
+                "source_resolved_generated_support_mass_scaling_note:previous_audit:1",
+                "source_resolved_generated_support_mass_scaling_note:previous_audit:2"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/source_resolved_generated_support_mass_scaling_note",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "source_resolved_generated_support_mass_scaling_note:previous_audit:0",
+                "source_resolved_generated_support_mass_scaling_note:previous_audit:1",
+                "source_resolved_generated_support_mass_scaling_note:previous_audit:2"
+              ]
+            },
+            "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note": {
+              "accepted_premise_type": null,
+              "content_sha256": "e26e8970be2ee8ebdd2501c16a002d3717884ffab294344fd1149236a3ae950b",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/source_resolved_generated_support_mass_scaling_note",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "235accaf3b4fd6a2c4ef41296f0ab361cb5cdda213d5f1385e27a0c158b395e2",
+              "effective_status": null,
+              "path": "docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "The \u00a7\"Safe read\" qualitative phrasing",
+                "arithmetic mean of per-`s` `delta_mean` values across the four source strengths",
+                "baseline and tweak both sit in a non-Newtonian regime on this family",
+                "depends on a comparator threshold not in the restricted packet",
+                "far from the retained linear class",
+                "mass-scaling class does **not** recover",
+                "non-Newtonian regime",
+                "not a mass-scaling closure",
+                "not the classifier-level interpretation",
+                "one mass-scaling observable: centroid-shift exponent across source strength",
+                "supported perimeter is just the finite numerical readout"
+              ]
+            },
+            "scripts/source_resolved_generated_support_mass_scaling.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "b37ebd9375b14677e5fff16aef9580fcd7f6c17b990f54f83e172f197df439be",
+              "effective_status": null,
+              "path": "scripts/source_resolved_generated_support_mass_scaling.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "SOURCE_STRENGTHS = [0.001, 0.002, 0.004, 0.008]",
+                "[abs(row.delta_mean) for row in rows]",
+                "delta_se=_stdev(delta_vals) / math.sqrt(len(delta_vals))",
+                "exponent = _fit_power([row.strength for row in rows], [abs(row.delta_mean) for row in rows]) or float(\"nan\")",
+                "gain = FIELD_TARGET_MAX / ref_max if ref_max > 1e-30 else 1.0"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains open and untested alternative routes.",
+          "N2 retains three independent unresolved walls.",
+          "N3 finds an undefined comparator threshold.",
+          "N5 finds untested resolutions beneath categorical negative rhetoric.",
+          "The source aggregate centroid value fails arithmetic consistency with the displayed runner rows."
+        ],
+        "narrowed_claim_scope": "Frozen seeds 0..3 per-strength rows, zero-source checks, sign counts, mean N_eff, and fitted exponents; the aggregate centroid-mean column and classifier-level mass-law conclusion are not certified.",
+        "next_route": {
+          "reason_untested": "The packet contains no registered quantitative recovery criterion; the next concrete target is an executable classifier coupled to signed or piecewise response and uncertainty checks.",
+          "route_id": "explicit_linear_classifier"
+        },
+        "prior_claim_scope": "Frozen finite-run comparison of baseline generated DAG family versus kNN-floor augmentation for seeds 0..3, four source strengths, detector N_eff, sign rows, and fitted centroid-shift exponent.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "Recompute and print the aggregate centroid means in the runner, correct the tweak aggregate value, and add a pre-registered mass-scaling classifier before re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: the note claims that its two-row aggregate table is reproduced by the runner and defines the centroid column as the arithmetic mean, but the tweak value -4.658e-02 disagrees with the displayed per-strength rows, and the runner does not print that aggregate. Why this blocks: the claimed supported perimeter expressly includes that numerical table, while the stronger mass-class rejection additionally relies on an unspecified comparator threshold and a sign-changing absolute-value fit. Repair target: print and assert the aggregate means in the runner, refresh the stale value, and register an executable linear-class criterion using an appropriate signed or piecewise response analysis. Claim boundary until fixed: the zero-source checks, per-strength rows, sign counts, mean N_eff values, and fitted absolute-magnitude exponents remain reproducible finite diagnostics."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/source_resolved_generated_support_mass_scaling.py",
+  "title": "Source-Resolved Generated Support + Mass Scaling",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

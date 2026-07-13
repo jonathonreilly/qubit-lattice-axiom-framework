@@ -1,0 +1,141 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "observable_principle_consumed_sector_bounded_by_ac_phi_lambda_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "observable_principle_from_axiom_note",
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "minimal_axioms",
+    "ac_orbit_occupancy_statistical_grain_derivation_obligation"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "9a10be6c1da41aca6ed110511e47bc4080a4e66e4f70353944a3baa3f4b441a7",
+  "note_path": "docs/OBSERVABLE_PRINCIPLE_CONSUMED_SECTOR_BOUNDED_BY_AC_PHI_LAMBDA_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:39.449536+00:00",
+      "audit_date": "2026-07-10T04:21:22.304189+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "admitted_input_registry_tier_a_note_2026-05-23": null,
+          "minimal_axioms": null,
+          "observable_principle_from_axiom_note": "Finite real-positive staggered source-surface theorem: given Record finite additivity, determinant positivity, and the explicit T1-d readout-identification Boundary, the log-det generator family, local derivative formulas, Matsubara kernel identity, and Klein-four Lt=4 selector close on the runner block.",
+          "staggered_dirac_realization_gate_note_2026-05-03": "Bounded synthesis of the staggered-Dirac realization gate on Quantum plus Lattice and the declared premise set, with AC_phi_lambda generation labeling carried only by the no-go plus accepted labeling convention.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "minimal_axioms": "meta",
+          "observable_principle_from_axiom_note": "bounded_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "admitted_input_registry_tier_a_note_2026-05-23": "meta",
+          "minimal_axioms": "meta",
+          "observable_principle_from_axiom_note": "retained_bounded",
+          "staggered_dirac_realization_gate_note_2026-05-03": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "admitted_input_registry_tier_a_note_2026-05-23",
+          "minimal_axioms",
+          "observable_principle_from_axiom_note",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5886031367467c687716001f8541e2193ec7f8eb80c8759e71c9a02823bf7f9f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00079-observable_principle_consume",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The P2-elimination algebra closes, but the generator classification does not follow from Record plus analyticity alone. The cited parent explicitly retains T1-d: W must be a determinant-only continuous readout on all of R_{>0}, and disjoint source blocks must register as disjoint records; neither Berezin forcing nor AC_\u03c6\u03bb supplies that bridge in this packet.",
+      "claim_scope": "On the homogeneous J=jI sector with real-antisymmetric D and positive determinant, phase-sensitive and phase-blind logarithmic candidates coincide; the further claim that the parent is bounded by AC_\u03c6\u03bb alone was also audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:21:22.304189+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:observable_principle_from_axiom_note:retained_bounded->unaudited",
+      "load_bearing_step": "Because det(D+jI) is real-positive on the homogeneous consumed sector, arg Z=0 makes P2 vacuous, after which Record additivity and continuity are asserted to force W(Z)=c log Z with AC_\u03c6\u03bb as the sole residual.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained authority closing T1-d\u2014the determinant-only readout quotient, source-block-to-record identification, and continuity of W on all R_{>0}\u2014or narrow this note's conclusion to be explicitly conditional on T1-d, then replace the runner's hard-coded sole-residual PASS assertion with a dependency-aware check.",
+      "open_dependency_paths": [
+        "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 15,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "Determinant positivity genuinely removes phase discrimination on the stated sector, so that narrow algebraic result is sound. However, polynomial analyticity of j\u21a6det(D+jI) does not establish continuity of the physical readout W on all positive amplitudes, nor does Record identify source-block factorization with disjoint records. The current parent authority expressly declares this T1-d boundary and records its independence obstruction; the runner's claims that AC_\u03c6\u03bb is the sole residual are unconditional True checks rather than computations of that missing bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_observable_principle_consumed_sector_bounded_ac_phi_lambda_2026_06_05.py",
+  "title": "Observable Principle \u2014 On Its Consumed Sector, P2 Is Eliminated and the Parent Is Bounded by AC_\u03c6\u03bb Alone (Narrow Theorem Note)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

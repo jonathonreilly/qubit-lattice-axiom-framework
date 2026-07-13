@@ -1,0 +1,150 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wave_direct_dm_matched_history_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_family_scout_note",
+    "wave_direct_dm_portability_batch_note",
+    "wave_direct_dm_h025_feasibility_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/wave_retardation_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ab2a1577769c347d692d9ff9647c9602f8a50b8cd9e493fceccb6bab9b21b489",
+  "note_path": "docs/WAVE_DIRECT_DM_MATCHED_HISTORY_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370123+00:00",
+      "archived_for_note_hash": "05723db28ef327fc7ffd7b36c3473d02581869669148659bd41cbd07164d1af6",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-12T17:13:29.978495+00:00",
+      "audit_date": "2026-05-29T07:36:21.931291+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_family_scout_note": "Exploratory one-seed, one-strength direct-dM family scout: for Fam1/Fam2/Fam3 at H=0.5 and H=0.35 with seed=0 and s=0.004, R_hist is negative in all six rows with values -43.59%, -42.36%, -42.33%, -37.73%, -44.29%, and -41.82%; no portability, multi-seed, null-stack, weak-sweep, or continuum-stability claim is audited.",
+          "wave_direct_dm_h025_feasibility_note": "Bounded operational/numerical artifact: the Fam1 seed0 direct-dM matched-history harness at H=0.25 and S=0.004 completes within the declared 1800 s audit budget and emits dM(early)=+0.004989, dM(late)=+0.006246, delta_hist=-0.001256, R_hist=-20.12%, with the result interpreted only as a single-point feasibility/high-band-boundary datum. Portability, mechanism, coarse-to-fine law, and family-wide claims are excluded.",
+          "wave_direct_dm_portability_batch_note": "Bounded direct-dM portability batch over Fam1/Fam2/Fam3, seeds 0 and 1, H in {0.5,0.35}, strengths {0,0.002,0.004,0.008}, and the matched-schedule direct-retarded response: exact S=0 nulls, negative delta_hist for all nonzero runs, reference-strength R_hist band -19.98% to -44.29%, and within-bucket |delta_hist/s| spread from 1.97% to 6.91%. H=0.25 portability, tight amplitude law, continuum stability, lab-facing magnitude, and mechanism claims are excluded."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_family_scout_note": "bounded_theorem",
+          "wave_direct_dm_h025_feasibility_note": "bounded_theorem",
+          "wave_direct_dm_portability_batch_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_family_scout_note": "retained_bounded",
+          "wave_direct_dm_h025_feasibility_note": "retained_bounded",
+          "wave_direct_dm_portability_batch_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_family_scout_note",
+          "wave_direct_dm_h025_feasibility_note",
+          "wave_direct_dm_portability_batch_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6ed89e5a01072d2b12a8a80a5aeb1626b0546058594614eae620683bb5290211",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-audit-loop-2026-05-29",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source table matches the current cached runner output for the stated Fam1 seed-0 setup, and the null/sign/linearity claims are direct arithmetic from that output. The note explicitly excludes portability, multi-seed, H=0.25, continuum-stability, and lab-observable interpretations.",
+      "claim_scope": "Bounded deterministic-compute result for the Fam1 seed-0 direct-dM matched-history probe at H=0.5 and H=0.35: with matched start/end/final geometry and identical move trace but different timing, the cached runner gives exact S=0 nulls, negative delta_hist for S in {0.002,0.004,0.008}, approximately linear weak-field scaling, and R_hist about -42% to -44%; no portability, multi-seed, H=0.25, continuum, or lab-observable claim is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T07:36:21.931291+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wave_direct_dm_portability_batch_note:retained_bounded->unaudited",
+      "load_bearing_step": "The matched-history runner computes dM(early) and dM(late) for the two schedules and finds delta_hist<0 at both tested H values with exact S=0 null and weak-field scaling over S=0.002,0.004,0.008.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check if broadened to multi-family portability, multi-seed law, H=0.25 continuation, continuum stability, tight amplitude law, or lab-facing observable claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The runner computes the stated two-schedule direct-dM observables rather than hard-coding the quoted deltas, and the cached output reproduces the source values at H=0.5 and H=0.35. Independent arithmetic confirms the exact null rows, common negative sign, and approximate weak-field scaling; the H=0.35 geometry drift is disclosed in the source and kept inside the bounded scope. The result is retained only as a narrow deterministic-compute surface, not as an amplitude law, portability result, or physical observable bridge."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/wave_direct_dm_matched_history_probe.py",
+  "title": "Wave Direct-dM Matched-History",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

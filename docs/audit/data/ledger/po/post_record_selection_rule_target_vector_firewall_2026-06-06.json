@@ -1,0 +1,212 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "post_record_selection_rule_target_vector_firewall_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no-go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "post_record_supplied_selection_rule_interface_2026-06-06",
+    "post_record_directed_certificate_kernel_selection_firewall_2026-06-06"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "meta",
+  "max_descendant_status_rank": 25,
+  "note_hash": "144b935bd77f37690b41c9d0fc5cb50d7f0f2500080eeba28a6c8e7bab7c555b",
+  "note_path": "docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:11.841319+00:00",
+      "archived_for_note_hash": "79f9f0d3957c9dcc385a645940dc3c2a16e8ff102bb2c95a9c9b490d18493232",
+      "audit_date": "2026-06-06T19:36:55.803721+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "6b876b19b5010686ad73dde9131c8911d5fd7635aa6cd073a0b4d2d5dba568a8",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-ecf8701ce5-post_record_selection_rule_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact rational score computation is correct for the displayed supplied-rule example. The broader Record-alone no-go does not close from this restricted packet because no Record axiom content or retained selection-rule authority is provided, and the runner hard-codes the absence/blocking flags rather than deriving them from Record.",
+      "claim_scope": "Audited the finite two-kernel supplied selection-rule witness showing weight-dependent kernel selection for a fixed target, plus blocking when target or positive weights are absent.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-06T19:36:55.803721+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The same rational target vector can select different kernels under different supplied weight choices, so the target vector and loss weights are supplied rule data rather than consequences of the post-record words alone.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: include the retained Record axiom and the supplied selection-rule interface authority, or narrow the claim to the finite supplied-rule witness only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 11,
+        "B": 8,
+        "C": 3,
+        "D": 10,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Independent recomputation confirms the runner's finite rational witness: k4 wins under endpoint-heavy weights and k3 wins under second-coordinate-heavy weights for the same target. That proves weight dependence inside the supplied scoring rule, but not that Record cannot derive targets or weights in general. The no-go discipline check leaves open routes through a Record axiom statement, a retained bridge theorem, a canonical weighting convention, or a narrowed interface theorem not present in the packet."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:31.503035+00:00",
+      "archived_for_note_hash": "62fd0095e14a2b71ded5de71bc7d51195f31ef71e126903e15e6a632212791a2",
+      "audit_date": "2026-06-06T23:59:57.634132+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06": "Audited the branch-local no-go that directed certificate data alone do not generally select a unique production kernel; supplied kernels, estimators, or model-selection rules remain outside the firewall.",
+          "post_record_supplied_selection_rule_interface_2026-06-06": "For supplied finite candidate scores, a supplied total tie-priority order, and a positive winning margin, the lexicographic selector is unique and stable under uniform score perturbations below half the margin; no derivation of candidates, scores, rules, physical probabilities, or a dial setting is audited."
+        },
+        "dep_claim_type": {
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06": "no_go",
+          "post_record_supplied_selection_rule_interface_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06": "retained_no_go",
+          "post_record_supplied_selection_rule_interface_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06",
+          "post_record_supplied_selection_rule_interface_2026-06-06"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "bbe78160e80c17bf7bf1115e6afafad69051d7d616c4e2d6df7fe8d225897400",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-235729-0f3a710d82-post_record_selection_rule_t",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent arithmetic matches the finite witness: k3 has endpoint_ba=0 and second_is_b=3/4, while k4 has endpoint_ba=1/2 and second_is_b=1/4. With target (1/3,2/3), weights (100,1) uniquely select k4 and weights (1,100) uniquely select k3, so target alone does not determine the selection under the supplied objective.",
+      "claim_scope": "Inside the supplied finite kernel-selection interface, target values and positive loss weights are required rule inputs; the packet does not audit any broad Record-derived target/weight route.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-06T23:59:57.634132+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The same rational target vector can select different kernels under different supplied loss weights, so target vector and loss weights are supplied rule data for this finite selection interface.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream use preserves the finite supplied-interface scope and does not upgrade this into a broad Record-alone target/weight no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 36
+      },
+      "verdict_rationale": "The load-bearing calculation is finite algebra over explicitly supplied rational data, and the runner source computes the laws, statistic vectors, weighted losses, and blocking cases rather than merely printing constants. The cited authorities are retained-grade for the restricted supplied-rule and kernel-firewall surfaces. The no-go discipline gate is satisfied only for this narrow firewall: any broader claim that Record can never derive target vectors or weights is expressly outside scope and is not ratified here."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.048792+00:00",
+      "audit_date": "2026-06-21T13:54:14.943662+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06": "Audited the branch-local no-go that directed certificate data alone do not generally select a unique production kernel; supplied kernels, estimators, or model-selection rules remain outside the firewall.",
+          "post_record_supplied_selection_rule_interface_2026-06-06": "For supplied finite candidate scores, a supplied total tie-priority order, and a positive winning margin, the lexicographic selector is unique and stable under uniform score perturbations below half the margin; no derivation of candidates, scores, rules, physical probabilities, or a dial setting is audited."
+        },
+        "dep_claim_type": {
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06": "no_go",
+          "post_record_supplied_selection_rule_interface_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06": "retained_no_go",
+          "post_record_supplied_selection_rule_interface_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "post_record_directed_certificate_kernel_selection_firewall_2026-06-06",
+          "post_record_supplied_selection_rule_interface_2026-06-06"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "bbe78160e80c17bf7bf1115e6afafad69051d7d616c4e2d6df7fe8d225897400",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-post_record_selection_rule_target_vector_firewall_2026-06-06-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite witness computes the Markov laws, statistic vectors, weighted squared losses, and unique minimizers exactly. This closes only the scoped supplied-rule firewall, not any broader Record-alone target or weight derivation claim.",
+      "claim_scope": "Inside the finite supplied kernel-selection rule interface, target values and loss weights are supplied rule data; the exact witness shows one shared target selecting different kernels under different supplied weights and blocking selection when target or weights are absent.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-21T13:54:14.943662+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The same rational target vector can select different kernels under different supplied weight choices, so target values and loss weights are supplied rule inputs rather than outputs of the finite selection algebra.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream uses preserve the narrow supplied-rule-interface scope and do not reuse this as a broad Record-alone target/weight no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 36
+      },
+      "verdict_rationale": "The runner genuinely computes the finite algebra with exact rational arithmetic; independently, the endpoint-heavy rule selects k4 and the second-coordinate-heavy rule selects k3 for the same target vector. The cited supplied-rule interface and directed-certificate kernel firewall are retained-grade inputs for this bounded surface. The clean verdict is limited to the finite supplied-rule interface and does not assert a broad Record-alone impossibility theorem for every possible target or weight derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py",
+  "title": "Post-Record Selection Rule Target Vector Firewall",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

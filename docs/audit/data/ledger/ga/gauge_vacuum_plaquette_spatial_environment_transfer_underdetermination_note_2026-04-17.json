@@ -1,0 +1,501 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_spatial_environment_transfer_underdetermination_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.907,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "befe094fc9d7b81824d32c99e773674d911887199212d66e31a719d9ac7c9420",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_UNDERDETERMINATION_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-05T07:51:37.101736+00:00",
+      "audit_date": "2026-05-05T06:47:14.729227+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 1.5,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-gauge_vacuum_plaquette_s-281",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the note's stated admissibility criteria, the runner explicitly constructs two positive self-adjoint swap-symmetric witnesses, verifies distinct normalized boundary data, and verifies distinct induced triples. The closure is only for underdetermination by those stated structural constraints, not for any stronger unprovided definition of admissibility.",
+      "claim_scope": "Audited the restricted claim that the structural conditions listed in the note do not uniquely determine beta=6 spatial-environment boundary character data or the induced three-sample plaquette PF data.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-05T06:47:14.729227+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->medium",
+      "load_bearing_step": "The runner exhibits two admissible positive self-adjoint conjugation-symmetric spatial transfer/boundary witnesses with rho_A != rho_B, and the same left operator maps them to different normalized three-sample triples.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check whether the repository's full definition of admissible spatial-environment transfer imposes constraints beyond positivity, self-adjointness, swap symmetry, and positive symmetric boundary state.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing no-go is an explicit counterexample check: two witness pairs satisfy the stated positivity, self-adjointness, conjugation symmetry, normalization, and induce different rho and sample triples. The runner source performs real matrix and character computations rather than merely printing expected constants. Some support checks are string-based cross-note checks against files not included as cited authorities, but the no-go conclusion audited here does not require treating those support notes as retained derivations."
+    },
+    {
+      "archived_at": "2026-05-12T08:18:40.748578+00:00",
+      "archived_for_note_hash": "ad47f58376e66df481489e2805915cdd4ccf77549bf38d82f2049e62c8cb62f1",
+      "audit_date": "2026-05-11T23:34:14.974143+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.781,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 439
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-personal-adjudication-gpt-5.5-20260511-gauge-vacuum-underdetermination",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite witness check closes the structural-surface non-uniqueness, but the source-note-level current-stack claim still needs retained authority that the listed surface is the complete admissibility surface for beta=6 environment data.",
+      "claim_scope": "The listed positivity, self-adjointness, conjugation-symmetry, and positive boundary-state structural conditions do not by themselves determine a unique beta=6 spatial-environment transfer/boundary pair or induced three-sample PF data; this does not audit that those conditions exhaust the full current beta=6 admissibility stack.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-11T23:34:14.974143+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T11:33:34.190324+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-110856-be71e5c1-gauge_vacuum_plaquette_s-039",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": null,
+          "auditor_reasoning_effort": null,
+          "claim_scope": "Audited the restricted claim that the stated structural conditions alone do not force a unique beta=6 spatial-environment transfer/boundary pair or unique induced three-sample PF data.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-11T22:50:19.738629+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260511-224519-a7679e61-gauge_vacuum_plaquette_s-011",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited only the restricted-packet claim that the stated structural conditions do not uniquely force beta=6 spatial-environment transfer/boundary data.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_conditional"
+        },
+        "status": "disagreement_irresolvable",
+        "third_audit": {
+          "audit_date": "2026-05-11T23:11:58.749209+00:00",
+          "auditor": "codex-judicial-gpt-5.5-20260511-231158-gauge_vacuum_plaquette_s-006",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the restricted-packet claim that the listed positivity, self-adjointness, conjugation symmetry, and boundary-state conditions alone do not determine a unique beta=6 spatial-environment transfer/boundary datum.",
+          "claim_type": "no_go",
+          "first_auditor_error": "It treated the structural-surface counterexample as clean for the current-stack claim without accounting for the missing upstream/admissibility bridge in the restricted packet.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The finite runner does perform real algebraic checks showing two constructed witnesses satisfy the listed symmetry/positivity surface and give distinct normalized rho and three-sample outputs. That supports the narrow non-uniqueness of the stated structural surface, but the restricted packet does not provide the upstream retained authorities or bridge proving that this finite structural surface exhausts the current beta=6 admissibility constraints. The correct hostile-review result is therefore conditional with an algebraic load-bearing step, not clean and not class C.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 5,
+            "B": 5,
+            "C": 0,
+            "D": 0,
+            "total_pass": 10
+          },
+          "second_auditor_error": "It correctly flagged conditionality, but misclassified the load-bearing step as class C; the runner is an algebraic finite witness check, not a first-principles axiom computation.",
+          "sided_with": "neither",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "load_bearing_step": "The runner constructs two positive self-adjoint conjugation-symmetric spatial transfer/boundary witnesses satisfying the listed structural surface, with different normalized rho data and different induced three-sample values under the same left operator.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: ratify the contextual authority chain or prove that the listed structural surface exhausts the full current beta=6 admissibility stack; otherwise keep the result scoped to structural-surface non-uniqueness.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSED_RIM_FUNCTIONAL_UNIQUENESS_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_EXACT_RADICAL_RECONSTRUCTION_MAP_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_CURRENT_STACK_CONSTRAINT_BOUNDARY_NOTE_2026-04-17.md",
+        "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 5,
+        "C": 0,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Issue: the runner proves non-uniqueness only for the listed structural conditions, while the note frames the result as a current-stack obstruction after importing spatial-transfer, seam-reduction, rim-functional, radical-map, current-stack, and local-Wilson context that is not retained-grade as a package. Why this blocks: a counterexample to a subset of constraints does not prove that the full current beta=6 admissibility stack leaves the environment data underdetermined. Repair target: ratify the contextual authority chain or add a theorem proving the listed structural surface exhausts all current beta=6 admissibility constraints. Claim boundary until fixed: the listed structural surface alone does not force unique beta=6 spatial-environment transfer/boundary data or the induced three-sample PF values."
+    },
+    {
+      "archived_at": "2026-05-24T22:26:03.933645+00:00",
+      "archived_for_note_hash": "8d7f8beb31a027c25a957a09260f1fe248ec8fc7fe236ce3290b171479098f8e",
+      "audit_date": "2026-05-24T17:23:57.129845+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.022,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T172229Z-67172da0-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite runner supports non-uniqueness under positivity, self-adjointness, swap symmetry, and normalization constraints. The missing step is a retained bridge showing that this finite admissible witness surface exactly matches all full beta=6 Wilson-parent/factorization constraints under audit.",
+      "claim_scope": "Audited the claim that the provided current structural surface does not uniquely determine beta=6 spatial-environment boundary data, using the included finite witness runner and the one provided upstream transfer authority.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-24T17:23:57.129845+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner exhibits admissible positive self-adjoint conjugation-symmetric spatial-transfer/boundary choices with rho_A != rho_B, and those choices produce different normalized three-sample/PF data under the same left operator.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove that the finite positive self-adjoint swap-symmetric witness surface used by the runner is admissible under the full beta=6 spatial-environment and Wilson-parent/factorization stack, or narrow the claim to finite structural-surface underdetermination.",
+      "open_dependency_paths": [
+        "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TRANSFER_THEOREM_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 5,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The runner source does real computation: it constructs two finite witnesses, checks symmetry/positivity/normalization, and computes a nonzero rho and three-sample gap. But the broad source claim relies on full current-stack authorities for exact factorization and Wilson parent/compression that are not provided in the restricted packet. The only provided upstream transfer note is retained_bounded and explicitly says the actual untruncated Wilson-environment transfer identity remains open. No-Go gate N4 fails because the finite NMAX=5, DEPTH=3 witness residual does not exactly match the actual beta=6 S_6^env / eta_6 residual under audit."
+    },
+    {
+      "archived_at": "2026-05-27T19:37:57.004376+00:00",
+      "audit_date": "2026-05-25T11:17:57.171636+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.022,
+        "runner_hash": "12efb8d9811a8650411775a972521c25a942671762e4197e7bc319ba498b7a6b",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T111532Z-4cfa3a50-gauge_vacuum_plaquette_s-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner constructs two finite transfer/boundary witnesses satisfying the listed structural conditions and computes a nonzero rho gap and nonzero induced three-sample gap. Because the note explicitly narrows away from full Wilson-parent/factorization admissibility, those open constraints are not needed for this scoped counterexample.",
+      "claim_scope": "Finite structural-surface underdetermination for the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization witness packet; not the full beta = 6 Wilson-parent/factorization admissibility stack.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-25T11:17:57.171636+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:12efb8d9->331ebb0d",
+      "load_bearing_step": "The runner exhibits admissible choices on the listed structural surface with rho_A != rho_B, and the same universal left operator sends them to different normalized three-sample triples.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the support-only note-string checks remain non-load-bearing after the 2026-05-24 narrowing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 5,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing path is a constructive finite computation, not a definition substitution or an imported numerical match: the code builds the recurrence, transfer witnesses, boundary amplitudes, normalized rho vectors, and sample operator, then checks the gaps. The cited upstream authority is retained_bounded and is used consistently with the narrowed finite-witness scope rather than as authority for the actual untruncated Wilson environment. The No-Go Discipline gate passes only under that narrowed scope: attacks via full-stack collapse, actual Wilson-environment identity, stronger admissibility constraints, finite-to-infinite extension, and witness-condition failure are either explicitly outside scope or answered by the computed two-witness counterexample on the tested surface."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.057217+00:00",
+      "audit_date": "2026-05-28T03:45:29.503341+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.022,
+        "runner_hash": "331ebb0dc75ae7c63c0fc6ffba81d8e7c72881a2e407207993cfb85d220be55d",
+        "transitive_descendants": 64
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gauge-vacuum-spatial-underdetermination-20260528-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The one-hop spatial-environment transfer dependency is retained-bounded only as a finite witness packet, which is exactly the narrowed surface audited here. The no-go discipline gate passes because the source collapses the wall to the listed structural surface, explicitly leaves the full beta=6 stack open, enumerates alternative routes, and accepts the steelman that stronger full-stack constraints may still collapse the witnesses.",
+      "claim_scope": "Narrow finite structural-surface no-go only: on the runner's listed class-sector witness surface, the enumerated positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique beta=6 spatial-environment pair (S_6^env, eta_6) or a unique induced normalized three-sample datum. This does not audit any claim that the full beta=6 Wilson-parent/factorization/current-stack admissibility constraints fail, nor does it close explicit S_6^env, eta_6, rho_(p,q)(6), canonical P(6), or a global plaquette selector.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-28T03:45:29.503341+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:331ebb0d->79d5da0d",
+      "load_bearing_step": "The cached runner and direct rerun exhibit two admissible normalized beta-side witnesses on the listed structural surface: symmetry/swap errors are below 1e-12, rho_A(0,0)=rho_B(0,0)=1, max |rho_A-rho_B|=0.060847050322, and the same rank-3 left sample operator sends them to different normalized triples with max |Zhat_A-Zhat_B|=0.121575423874 and imaginary residue 4.093e-14.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if this row is cited as ruling out the full beta=6 Wilson-parent/factorization/current-stack route, as proving nonexistence or nonuniqueness of the actual Wilson environment transfer, as closing explicit S_6^env/eta_6/rho_(p,q)(6), or if additional full-stack admissibility constraints are added that apply to the two witnesses.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 5,
+        "C": 5,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "Clean no-go is warranted only at the narrowed finite-surface level. A logical non-uniqueness obstruction needs two admissible witnesses satisfying the stated conditions but inducing different data; the runner supplies exactly that. Independent arithmetic checks confirmed rank(F)=3 with restriction error 4.777e-15, all reported structural errors below 1e-12, rho_gap > 1e-3, and triple_gap > 1e-2 with negligible imaginary residue. The no-go discipline review does not overclaim: N1 lists the full Wilson-parent stack as open, N2 collapses the wall set to the listed structural surface, N3/N5 scope the rhetoric to the finite witness packet, N6 records a positive bridge path, and N7 steelmans that the full beta=6 stack may still rule out one witness. Therefore the retained result is a finite structural-surface underdetermination no-go, not a full plaquette closure obstruction."
+    },
+    {
+      "archived_at": "2026-06-13T21:30:53.166696+00:00",
+      "audit_date": "2026-06-12T23:38:17.704725+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.454,
+        "runner_hash": "79d5da0ddce1619ea58ff2d1e54cb5b62010f29e7daeab41bd73fd62a956375b",
+        "transitive_descendants": 61
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-bd11df3516-gauge_vacuum_plaquette_spati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A finite counterexample pair is enough to refute uniqueness for the listed structural surface, and the runner source actually constructs two such positive self-adjoint swap-symmetric witnesses with different normalized rho data and different induced three-sample triples. The broader physical beta=6 uniqueness question is explicitly left open, so it is not part of the closed no-go.",
+      "claim_scope": "Finite structural-surface underdetermination only: on the runner's truncated class-sector witness surface, the listed positivity, self-adjointness, conjugation-symmetry, positive symmetric boundary, and normalization conditions do not force a unique transfer/boundary pair or normalized rho sequence; the full beta=6 Wilson-parent/factorization stack is not audited closed or ruled out.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-12T23:38:17.704725+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:79d5da0d->ee7dba68",
+      "load_bearing_step": "The runner exhibits admissible choices on the listed finite structural surface with rho_A != rho_B, hence the listed positivity/self-adjointness/swap-symmetry/boundary conditions do not determine a unique normalized beta-side vector.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the scope boundary: this clean verdict does not cover full beta=6 Wilson-parent/factorization uniqueness or explicit physical S_6^env and eta_6.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 5,
+        "C": 3,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The audited no-go is narrow and finite: it denies only that the enumerated structural constraints alone select a unique witness on the runner surface. The code is not just printing constants; it builds the finite recurrence, constructs two transfer/boundary pairs, verifies the relevant symmetries and positivity of the transfer operators, and computes nonzero rho and three-sample gaps. The cited upstream authority is retained_bounded and is used consistently as bounded finite context; its full Wilson-environment open target is not claimed closed here."
+    },
+    {
+      "archived_at": "2026-06-15T18:51:38.943014+00:00",
+      "audit_date": "2026-06-14T00:04:56.045529+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 7.454,
+        "runner_hash": "ee7dba68486df40fb17ab9754a21d9b4ff92f66edcc97271b503f585dd48d4c8",
+        "transitive_descendants": 61
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-9b8652e6c8-gauge_vacuum_plaquette_spati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped no-go closes by finite counterexample: two constructed witnesses satisfy the listed surface and have a nonzero rho gap and nonzero three-sample gap. The full beta=6 Wilson-parent/factorization stack is explicitly outside the audited claim.",
+      "claim_scope": "Finite structural-surface underdetermination only: positivity, self-adjointness, swap symmetry, positive symmetric boundary, and normalization do not determine a unique beta-side rho or runner three-sample readout.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-14T00:04:56.045529+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:ee7dba68->4fab2895",
+      "load_bearing_step": "The runner exhibits two admissible positive self-adjoint conjugation-symmetric finite witnesses on the listed structural surface with rho_A != rho_B, and the fixed three-sample operator separates them.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream ledger wording preserves the finite structural-surface scope and does not promote this to full beta=6 Wilson/factorization underdetermination.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 8,
+        "C": 2,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing result is a finite counterexample, not an absolute no-go for the physical beta=6 stack. The runner source performs actual finite matrix construction and separation checks rather than merely printing expected values, and an independent toy construction on the same listed structural constraints confirms that those constraints alone cannot imply uniqueness. The retained_bounded cited authority is used only as finite-packet context; its open full Wilson-environment theorem is not imported into the scoped conclusion. The N1-N8 no-go gate is satisfied because the note explicitly steelmans and leaves open the stronger full-stack route."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:28.816140+00:00",
+      "audit_date": "2026-06-15T22:48:00.543601+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "Audited only the finite constructed class-sector witness packet on 0 <= p,q <= 5 with ETA = 0.32 and DEPTH = 3, not the actual unmarked spatial Wilson environment or beta = 6 boundary data."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note"
+        ],
+        "load_bearing_score": 10.454,
+        "runner_hash": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
+        "transitive_descendants": 61
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-c3de1e828a-gauge_vacuum_plaquette_spati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The constructive counterexample closes the scoped claim: S=EDE is positive self-adjoint and swap-symmetric for both parameter choices, the boundary vectors are positive and swap-symmetric, and the resulting normalized rho vectors and three-sample readouts differ. The full beta=6 Wilson-parent/factorization collapse question is expressly outside the audited scope.",
+      "claim_scope": "Finite structural-surface no-go only: on the runner's finite class-sector witness surface, the listed positivity, self-adjointness, conjugation-swap symmetry, positive symmetric boundary, and normalization constraints do not force a unique normalized beta-side vector or induced three-sample triple.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-15T22:48:00.543601+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The runner exhibits two distinct admissible witnesses satisfying the listed positivity, self-adjointness, conjugation-symmetry, and positive-symmetric-boundary surface with rho_A != rho_B, so that surface alone does not determine unique beta=6 spatial-environment data.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck any future promotion of the Perron-moment/Jacobi-coefficient wording; the clean verdict here does not cover full beta=6 Wilson/Haar exhaustiveness or physical-stack uniqueness.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 9,
+        "C": 2,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing finite counterexample is computed rather than imported: the runner constructs the recurrence, transfer witnesses, boundary vectors, normalized rho vectors, and sample operator, then reports a nonzero rho gap and triple gap. An independent algebraic check of the construction supports the structural conditions: the transfer has EDE form with positive diagonal D, the recurrence and damping commute with the swap, and positivity of the boundary follows from exponentiating a nonnegative connected recurrence. The N1-N8 no-go gate passes only because the claim is narrowed to the finite listed surface and explicitly leaves the stronger full-stack beta=6 route open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+  "title": "Gauge-Vacuum Plaquette Spatial-Environment Transfer Underdetermination",
+  "transitive_descendants": 59,
+  "verdict_rationale": null
+}

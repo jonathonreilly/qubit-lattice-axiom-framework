@@ -1,0 +1,110 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_canonical_textbook_continuum_gr_closure_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_canonical_textbook_weak_measure_equivalence_note",
+    "universal_qg_smooth_gravitational_local_identification_note",
+    "universal_qg_smooth_gravitational_global_solution_class_note",
+    "universal_qg_smooth_gravitational_global_atlas_note",
+    "universal_qg_canonical_smooth_geometric_action_note",
+    "universal_qg_canonical_textbook_geometric_action_equivalence_note",
+    "universal_gr_lorentzian_global_atlas_closure_note",
+    "universal_gr_discrete_global_closure_note"
+  ],
+  "direct_in_degree": 14,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.768,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "e7bc69456d352913d3745166f5bc5bd752eee94fc4615446731147270d7c7d9b",
+  "note_path": "docs/UNIVERSAL_QG_CANONICAL_TEXTBOOK_CONTINUUM_GR_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-06T11:08:35.450893+00:00",
+      "archived_for_note_hash": "b1b657db581cb1111dacf9d92c1c7d6696738a2c9402ab24b0c006db30b83ab4",
+      "audit_date": "2026-05-05T23:36:10.030999+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "audited_renaming"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 13.844,
+        "runner_hash": null,
+        "transitive_descendants": 324
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_canonical_t-071",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet does not provide retained-grade authorities for the six asserted exact equivalences or for the bridge identifying both sectors as one operator/action family. The only cited authority is packaging-only and marked audited_renaming, so it cannot close the theorem claim.",
+      "claim_scope": "Audited whether the stated canonical textbook continuum gravitational closure follows from the provided source note and its one cited authority.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:36:10.030999+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because all of these steps are carried by the same exact operator/action family K_GR(D) = H_D \u2297 Lambda_R, the chosen canonical textbook target already contains the weak/Gaussian, stationary Lorentzian/Einstein-Regge, and atlas-patching families.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained-grade upstream notes proving the six listed exact equivalences and the K_GR(D) sector-unification bridge on PL S^3 x R.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is an asserted identity between existing sector constructions under K_GR(D), not a first-principles computation or algebraic closure from supplied retained inputs. The source imports multiple exact equivalence and global closure premises that are not present in the restricted packet. The sole cited authority is explicitly packaging-only and has effective_status audited_renaming, which is not retained-grade. Therefore the theorem closure does not follow from the provided inputs."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_canonical_textbook_continuum_gr_closure.py",
+  "title": "Universal QG Canonical Textbook Continuum Gravitational Closure",
+  "transitive_descendants": 108,
+  "verdict_rationale": null
+}

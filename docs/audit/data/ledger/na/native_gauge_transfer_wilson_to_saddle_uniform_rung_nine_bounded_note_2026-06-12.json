@@ -1,0 +1,120 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+    "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5b5685dd75b57fcce9a03e6ab699a40d669b2db7251a6681ac78cf378d856ae4",
+  "note_path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-21T05:42:39.976389+00:00",
+      "audit_date": "2026-06-18T09:16:06.960260+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "Audited only the finite beta=6, NMAX=7, MODE_MAX=200 source-sector Perron packet with supplied rho choices rho=1 and rho=delta, three enumerated one-parameter rho-family sweeps, and the internally computed all-forward L_s=2 Schur diagnostic; no physical 3D residual environment, thermodynamic limit, or canonical P(6)=0.5934 closure is included.",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": "Audited the bounded partial Route B result: the saddle-diagonal geometric expansion, saddle-tail multiplier bound, scaled half-slice contraction, and eigen-ratio perturbation algebra, with the exact Wilson-to-saddle and full large-beta operator remainder explicitly left open."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note": "retained_bounded",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "c009775dd082cd7d2ffa2e14fbb938bdb591611115c1c154b2eb647656bbc444",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes for the scoped open-gate claim only. The cited retained-grade authorities provide the target estimate and exact Bessel-determinant convention, while the note correctly identifies the absent uniform remainder rather than deriving or fitting K_W(a).",
+      "claim_scope": "Audited the open-gate obstruction claim that this source note does not derive K_W(a) and stops at the missing uniform large-argument Bessel/determinant remainder for k,n = O(sqrt(beta)).",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T09:16:06.960260+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_tensor_transfer_perron_solve_note:retained_bounded->unaudited",
+      "load_bearing_step": "The fixed-index Bessel next term fails on the active window, and the needed uniform local-CLT remainder with determinant-mode tails is not supplied by the retained inputs.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check if a later source supplies explicit R_2(k,t), determinant-sum tail constants, and c_(0,0) normalization bounds.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing obstruction is a genuine algebraic check on the attempted fixed-index Bessel expansion, supported by retained-grade authorities that state the target and coefficient convention. The runner recomputes determinant ratios and falsifier rows from the Bessel determinant and explicitly avoids fitting K_W(a); these are witness checks, not a hidden derivation of K_W(a). The conclusion is narrow: this note cleanly records an open gate at the uniform Bessel/determinant remainder step, not a broader impossibility result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12.py",
+  "title": "Native Gauge Transfer Wilson-To-Saddle Uniform Obstruction Note",
+  "transitive_descendants": 7,
+  "verdict_rationale": null
+}

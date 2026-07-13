@@ -1,0 +1,367 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.617,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "78600c1733c1dca17b7169fe494267b3690bfb30bcc51cfb3466c52392cda22e",
+  "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-06T22:40:03.839425+00:00",
+      "archived_for_note_hash": "40d8486d77556ed939864edfd35cd99d268e753ac550ac318b274e8a3bdf54da",
+      "audit_date": "2026-06-06T11:51:10.466762+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "ce3ffc00efb972ff276adc5aab708174b9a63afce7df61e81f44547ac542af62",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260606-114841-7b73c65c26-axiom_first_reflection_posit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The chain does not close as written because W1 defines S_0 = +beta Re Tr[U_0 U_1^dag] while W2 and section 4 use exp(-S_0); the literal kernel exp(-beta cos theta) has negative character coefficients, so the required positive plane kernel is not established. The runner computes exp(+S_0) instead, so it verifies a sign-repaired convention rather than the displayed source formula.",
+      "claim_scope": "Pure-gauge two-time-slice Wilson temporal-gauge bridge for A_+^(2) observables, with claimed exact Z_N/U(1) checks and a numeric SU(2) exhibit.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T11:51:10.466762+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The plane Boltzmann weight exp(-S_0) factorizes per straddling link into a character sum with real nonnegative coefficients, so the integrated Gram has the form G = W diag(kappa) W^dag with kappa >= 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after reconciling the S_0/Boltzmann sign convention and replacing the U(1) finite-grid exactness claim with an analytic Bessel-series proof or a certified exact/truncated theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 6,
+        "C": 2,
+        "D": 0,
+        "total_pass": 11
+      },
+      "verdict_rationale": "The core bridge requires the reflection-plane Boltzmann kernel to be a positive character Gram kernel. As written, S_0 = +beta Re with exp(-S_0) gives negative Fourier coefficients already for Z_2, where the nontrivial coefficient is (e^{-beta} - e^{beta})/2 < 0. The runner source uses exp(+S_0), not the displayed exp(-S_0), and its U(1) \"exact finite-Haar\" check uses a finite angular grid on exp(beta cos theta), which is not a bounded-degree trigonometric polynomial. The timeout is not used as scientific evidence; the substantive blockers are the sign/source-runner drift and the overstated exactness of the U(1) finite-grid computation."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:24.655980+00:00",
+      "audit_date": "2026-06-07T15:31:37.881620+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 11.501,
+        "runner_hash": "e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0",
+        "transitive_descendants": 1024
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-xhigh-fresh-context-019ea2b1-ee51-7e41-9985-f53342a751d4",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Gram conjugations and order close: with K(c0,c1)=sum_a kappa_a phi_a(c0) overline{phi_a(c1)} and W_I(a)=int e^{B_+} overline{F_I} phi_a, the c1 integral is overline{W_J(a)}, so G=W diag(kappa) W^dagger. Z_N coefficient nonnegativity follows from Bessel aliasing of positive I_n terms, U(1) from the positive I_n series, and the source does not overclaim finite exact SU(N) support beyond its structural/matrix-coefficient argument and SU(2) sample.",
+      "claim_scope": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T15:31:37.881620+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T23:39:36.599477+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-233720-31de4c1f2e-axiom_first_reflection_posit",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Pure-gauge two-time-slice temporal-gauge Wilson-plane bridge: reflection split plus nonnegative plane character kernel yields PSD integrated A_+^(2) reflected Gram on the stated bounded surfaces, with exact finite Z_N checks, U(1) Bessel plane-kernel certificate, and only structural/numeric support for nonabelian SU(N).",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-07T15:31:37.881252+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-xhigh-fresh-context-019ea2b1-ee51-7e41-9985-f53342a751d4",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-slice lattice for A_+^(2) observables: reflection split plus positive plane kernel imply the integrated reflected Gram is PSD; exact finite-Haar for Z_N, analytic U(1) plane-kernel positivity with quadrature Gram cross-check, and structural SU(N) support without a finite exact SU(N) computation or fermion/full-interacting/continuum claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Inserting the plane-kernel spectral decomposition e^{B_0}=sum_a kappa_a phi_a(c_0) overline{phi_a(c_1)} gives G_{IJ}=sum_a kappa_a W_I(a) overline{W_J(a)}, equivalently G=W diag(kappa) W^dagger with kappa_a>=0, hence G is PSD.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Residual risk: re-check that downstream consumers preserve the bounded scope, especially that SU(N) is cited only through the structural Peter-Weyl/matrix-coefficient positivity argument and not as a completed finite exact SU(N) computation or full fermion-coupled RP theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The N1-N8 bounded-wall check passes for the narrowed claim: the Wilson action, temporal gauge, Haar reflection setup, observable basis, and group-scope limitations are explicit theorem hypotheses rather than hidden Record/axiom imports. The runner reports 16 PASS / 0 FAIL, and an independent finite Z_N reconstruction confirmed the conjugated Gram factorization, nonnegative plane spectrum, PSD Gram, and positive U(1) Bessel coefficients. The SU(N) language is bounded as structural support, not a finite exact computation or full interacting theorem, so it does not block the scoped clean verdict."
+    },
+    {
+      "archived_at": "2026-07-07T18:55:22.457381+00:00",
+      "archived_for_note_hash": "9c8f15d55e240be0063f42965b0257b9be2739dd7063a69ca6446ffa3d2f6711",
+      "audit_date": "2026-07-07T15:31:10.816666+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 16.197,
+        "runner_hash": "e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0",
+        "transitive_descendants": 586
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-fresh-context-audit-2026-07-07-wilson-temporal-gauge-einstein",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The row does not close at the stated bounded bridge scope because the source includes a general SU(N) structural extension beyond the exact Z_N/U(1) and sampled SU(2) runner surface. Peter-Weyl supplies an expansion, but not by itself nonnegative coefficients for an arbitrary positive class function; the needed Wilson-plane SU(N) positivity theorem is not retained or runner-witnessed here.",
+      "claim_scope": "Pure-gauge Wilson plaquette temporal-gauge bridge on the explicit two-time-slice lattice for A_+^(2) observables: W1 reflection split, W2 plane norm-square kernel, and W3 reflected Gram PSD. The runner-witnessed clean core is finite-exact for Z_N, Bessel-certified for the U(1) plane kernel with a U(1) quadrature Gram cross-check, and sampled numerically for SU(2); a rigorous general SU(N)/SU(3) character-coefficient or integrated Gram theorem is not proved by this packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T15:31:10.816666+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The finite Z_N and U(1) plane-kernel checks establish a positive plane kernel and reflected Gram on the tractable surface, but the source's general SU(N) bridge depends on the specific nonnegative irreducible-character coefficient theorem for exp(beta Re Tr U), which is named structurally rather than proved or runner-witnessed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: clean finite/abelian bounded core exists for Z_N and the U(1) plane kernel, with a U(1) quadrature cross-check and SU(2) numeric sample, but the source also relies on a general SU(N)/SU(3) Wilson-plane character-coefficient positivity step not proved or retained in this packet. Re-audit would require either narrowing the claim to the runner-witnessed tractable surface or adding a retained theorem proving the needed SU(N) Wilson-plane positive character-kernel/integrated Gram statement.",
+      "open_dependency_paths": [
+        "general_SU_N_Wilson_plane_character_kernel_positivity"
+      ],
+      "runner_check_breakdown": {
+        "A": 14,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The paired runner exits 0 with TOTAL: 16 PASS / 0 FAIL and witnesses the Z_N exact reflection split, plane-kernel coefficient positivity/reconstruction, Z_N Gram PSD, U(1) Bessel coefficient positivity over the implemented coefficient window, U(1) quadrature PSD cross-check, manifest finite G = W diag(kappa) W^dag factorization, and SU(2) Monte Carlo sample. It does not witness a rigorous general SU(N) or exact SU(3) Wilson-plane character-kernel/Gram theorem, while the source uses that structural step to frame the bridge as discharging the gauge-half application more broadly than the runner-certified tractable groups."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.078096+00:00",
+      "audit_date": "2026-07-08T04:11:47.352007+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 16.197,
+        "runner_hash": "e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0",
+        "transitive_descendants": 586
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-second-auditor-2026-07-08",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained gauge-half norm-square identity supplies the abstract PSD form, and the note independently realizes its hypotheses on the Wilson temporal-gauge boundary. The sign convention S_W=-B+constant is consistent with exp(B), the Z_N coefficients are positive Bessel periodizations, the U(1) coefficients are positive I_n(beta) series, and the Gram factorization makes PSD explicit on the stated bounded surface.",
+      "claim_scope": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-08T04:11:47.352007+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-08T03:37:36.065805+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-audit-lane-2026-07-08-row2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-08T04:11:47.351843+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-second-auditor-2026-07-08",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Wilson plaquette temporal-gauge gauge-half RP bridge on the explicit two-slice lattice for A_+^(2) observables: finite-exact Z_N, U(1) plane-kernel Bessel positivity with Gram cross-check, SU(2) numeric sample, and SU(N>=3) comparator-only.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The plane Boltzmann kernel factorizes with nonnegative character/Bessel coefficients and therefore the integrated reflected Gram over the stated A_+^(2) basis has the manifest form G = W diag(kappa) W^dag with kappa >= 0.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second-auditor recheck: keep the retained scope limited to the finite-exact Z_N and analytic U(1) bridge plus labeled SU(2) sample; SU(N>=3) and full interacting/fermion-sector RP remain outside this row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 14,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The derivation closes on its bounded surface: W1 gives the Wilson exponent split with the repaired Boltzmann sign, W2 establishes nonnegative plane-kernel coefficients for Z_N and U(1), and W3 follows by the standard finite Gram factorization G = W diag(kappa) W^dag. I independently checked the sign dependence, finite cyclic Fourier coefficient positivity, and a small Z_3 Gram PSD without importing the companion runner. The N1-N8 bounded-wall gate is satisfied because the note expressly excludes the full interacting SU(N>=3), continuum/OS reconstruction, and fermion-sector claims rather than using them as hidden support. Residual risk is bounded to the stated scope: SU(2) remains only a numerical sample and SU(N>=3) is comparator-only, not part of the clean derivation."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
+  "title": "Reflection Positivity \u2014 Wilson Plaquette Temporal-Gauge Bridge: The Gauge-Half Norm-Square Hypotheses Yield the Integrated Three-Factor RP Form for A_+^(2) Observables (Narrow Bounded Theorem Note)",
+  "transitive_descendants": 784,
+  "verdict_rationale": null
+}

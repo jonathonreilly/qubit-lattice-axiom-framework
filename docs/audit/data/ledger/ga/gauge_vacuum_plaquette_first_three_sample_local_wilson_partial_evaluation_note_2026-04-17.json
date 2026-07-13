@@ -1,0 +1,316 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+    "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
+    "gauge_vacuum_plaquette_bridge_support_note",
+    "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.781,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "14f4618ae70731e5b2117c616664e79672d50bdaf5737c6a1ed4c72ecbf54f68",
+  "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_PARTIAL_EVALUATION_NOTE_2026-04-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:37.177258+00:00",
+      "archived_for_note_hash": "dfdaa71ec0f77fdcfbdd7cfeea2568368d915edff350c7506d3edee90559fb98",
+      "audit_date": "2026-06-08T14:41:18.539790+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_bridge_support_note": "Audited only the finite scalar/local support packet at beta=6, not the full interacting Wilson-environment plaquette bridge or canonical P(6) closure.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no universal sub-three-sample linear collapse for the named first symmetric witness sector only; beta=6 sample evaluation is out of scope.",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_bridge_support_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_bridge_support_note": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_bridge_support_note",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
+        ],
+        "load_bearing_score": 6.281,
+        "runner_hash": "34660cbd8cc025af6e50d43d5157e93e4ee9cefa34bc14db5c842874666af40c",
+        "transitive_descendants": 54
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-143746-9d1a02494b-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The local arithmetic closes from the cited radical sample column and local Wilson formula: J=a/18,b/18,d/18 gives w_6=exp(a/3),exp(b/3),exp(d/3), and the stated Bessel-determinant scalar gives the listed normalized values. The full environment completion remains explicitly outside scope.",
+      "claim_scope": "Audited the local sample-side Wilson evaluation at W_A, W_B, W_C, including exp(3J), w_6(W_i), and w_6(W_i)/Z_(1plaq)(6), excluding any claim to evaluate Z_6^env(W_i).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-08T14:41:18.539790+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "At beta = 6, the local Wilson one-link class function gives w_6(W)=exp(6J(W)), so the radical sample-column values determine w_6(W_A), w_6(W_B), w_6(W_C) and their normalization by Z_(1plaq)(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: repair the stale expected summary or add the missing theorem check, then re-audit the same local-only scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Independent arithmetic checks match the displayed half-slice factors, local Wilson weights, ordering, and normalized local values. However, the source note's command block expects THEOREM PASS=6 SUPPORT=4 FAIL=0, while the provided completed runner cache and source show only five theorem checks and THEOREM PASS=5 SUPPORT=4 FAIL=0. That completed runner/source mismatch prevents audited_clean as written, even though the scoped local calculation itself closes."
+    },
+    {
+      "archived_at": "2026-06-12T19:48:32.054622+00:00",
+      "audit_date": "2026-06-08T19:21:09.196975+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_bridge_support_note": "Audited only the finite scalar/local support packet at beta=6, not the full interacting Wilson-environment plaquette bridge or canonical P(6) closure.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no universal sub-three-sample linear collapse for the named first symmetric witness sector only; beta=6 sample evaluation is out of scope.",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_bridge_support_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_bridge_support_note": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_bridge_support_note",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
+        ],
+        "load_bearing_score": 6.807,
+        "runner_hash": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+        "transitive_descendants": 55
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-191750-0a021c5f3c-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The local-only chain closes from the supplied radical sample matrix, the local Wilson weight exp[(beta/3) Re Tr W], and the Bessel-determinant one-plaquette normalization. The missing full rim/environment completion is explicitly outside the audited claim scope.",
+      "claim_scope": "Exact local SU(3) one-plaquette Wilson sample values and normalized local one-plaquette values at the named holonomies W_A, W_B, W_C for beta=6; no full environment amplitude Z_6^env(W_i) is audited as closed.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:21:09.196975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "The second sample-matrix column satisfies <K(W), Phi_1> = 3(chi_(1,0)(W)+chi_(0,1)(W)) = 18 J(W), so the radical entries determine J(W_i), hence w_6(W_i)=exp(6J(W_i)) and w_6(W_i)/Z_(1plaq)(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the sample-functional convention <K(W),Phi_1>=3(chi_(1,0)+chi_(0,1)); under that convention the factor 18J is consistent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing calculation is an algebraic closure over retained-grade bounded inputs: the given Weyl-angle samples fix the dimension-weighted second column, which fixes J(W_i), and the Wilson local factor then gives the displayed weights. The runner source computes the one-plaquette partition by a Bessel-determinant mode sum rather than merely printing the contested values; an independent Weyl-torus quadrature check agrees with the displayed Z_(1plaq)(6) and normalized samples to the shown precision. The note does not overclaim explicit B_6(W), K_6^env, or Z_6^env(W_i)."
+    },
+    {
+      "archived_at": "2026-06-18T01:40:24.884435+00:00",
+      "audit_date": "2026-06-15T23:00:32.812015+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_bridge_support_note": "Audited only the finite scalar/local support packet at beta=6, not the full interacting Wilson-environment plaquette bridge or canonical P(6) closure.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical-form reconstruction on the named first symmetric three-sample witness sector, including the matrix, inverse map, `W_A` annihilation, opposite-sign `chi_(1,1)` separation, and no universal linear relation among the three named samples; beta=6 sample evaluation is excluded.",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_bridge_support_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_bridge_support_note": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_bridge_support_note",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
+        ],
+        "load_bearing_score": 9.807,
+        "runner_hash": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+        "transitive_descendants": 55
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260615-225711-e588aa0051-gauge_vacuum_plaquette_first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The radical sample column fixes 18J at the three named holonomies, and the cited local Wilson formula then algebraically gives the half-slice, local Wilson, and normalized one-plaquette values. The full environment amplitudes are explicitly excluded and are not used in the local conclusion.",
+      "claim_scope": "Local-only sample-side evaluation of J(W_i), exp(3J(W_i)), w_6(W_i), and w_6(W_i)/Z_(1plaq)(6) for W_A, W_B, W_C; no audit of Z_6^env(W_i), B_6(W), or K_6^env closure.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-15T23:00:32.812015+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "The second sample-matrix column gives 18 J(W_i), so the radical entries determine J(W_A), J(W_B), J(W_C), and at beta = 6 the local Wilson weights are w_6(W_i)=exp(6 J(W_i)) normalized by Z_(1plaq)(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if a later source edit promotes these local values to full Z_6^env(W_i) environment amplitudes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The local claim closes from retained-grade bounded inputs: the radical sample matrix, the local Wilson class function, and the one-plaquette normalizer. An independent Weyl-torus Haar integration check, separate from the runner's Bessel-sum path, reproduces Z_(1plaq)(6)=3.441440354987778 and the three normalized values, while direct holonomy traces reproduce the 18J radical entries. The open rim/environment objects remain outside the audited claim boundary."
+    },
+    {
+      "archived_at": "2026-06-21T05:42:39.952081+00:00",
+      "audit_date": "2026-06-18T05:51:06.231279+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_bridge_support_note": "Audited only the finite scalar/local support packet at beta=6, not the full interacting Wilson-environment plaquette bridge or canonical P(6) closure.",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "Exact radical reconstruction matrix, inverse map, W_A adjoint annihilation, sign separation, and no sector-local linear collapse for the named first symmetric witness sector, with beta=6 sample evaluation excluded.",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "Supplied finite SU(3) rim/far plaquette-support partition with product Haar measure and no mixed rim/far plaquette; the audited result is the product-Fubini slice-marginal factorization and the formal class projection P_cls B_beta(W) after the compression boundary is supplied.",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "Finite local Wilson coefficient packet on the truncated dominant-weight box at beta = 6, including D_6^loc and the finite exp(3J) D_6^loc exp(3J) algebraic checks."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_bridge_support_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "bounded_theorem",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_bridge_support_note": "retained_bounded",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": "retained_bounded",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_bridge_support_note",
+          "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
+          "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17",
+          "gauge_vacuum_plaquette_local_environment_factorization_theorem_note"
+        ],
+        "load_bearing_score": 7.358,
+        "runner_hash": "2968abf6179bf963da7225140daa9f4afde4fa2558d2e0c9e290337b9a03691d",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited radical sample matrix fixes the relevant source entries, the local Wilson definition gives w_6(W)=exp(6J(W)), and the Bessel-determinant normalization gives Z_(1plaq)(6). These inputs algebraically reproduce the displayed local values without asserting any full environment completion.",
+      "claim_scope": "Exact local beta=6 one-plaquette Wilson sample values and normalized local ratios for W_A, W_B, and W_C, excluding the full environment amplitudes Z_6^env(W_i).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:51:06.231279+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17:retained_bounded->unaudited",
+      "load_bearing_step": "Because the second sample-matrix column is <K(W), Phi_1> = 3(chi_(1,0)(W) + chi_(0,1)(W)) = 18 J(W), the radical entries determine J(W_i), hence w_6(W_i)=exp(6 J(W_i)) and the normalized local ratios follow by division by Z_(1plaq)(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the sample-kernel factor-3 normalization and the Bessel-determinant normalization; no repair needed.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 1,
+        "D": 0,
+        "total_pass": 10
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic conversion from retained sample-matrix entries to local Wilson weights, followed by the retained one-plaquette normalization. The runner source actually recomputes the radical matrix, Bessel-determinant partition value, normalized sample triple, and reconstruction checks; it does not merely print the target values, although it does compare against displayed decimals. The cited authorities' open full-environment language does not block this scoped local-only claim because the source explicitly excludes B_6(W), K_6^env, and Z_6^env(W_i)."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+  "title": "Gauge-Vacuum Plaquette First Three-Sample Local Wilson Partial Evaluation",
+  "transitive_descendants": 54,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

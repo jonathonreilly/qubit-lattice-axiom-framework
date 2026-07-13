@@ -1,0 +1,237 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (two exact strong-coupling series coefficients plus a",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
+    "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+    "gauge_vacuum_plaquette_distinct_shell_theorem_note"
+  ],
+  "direct_in_degree": 6,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8ad26d13b84a0be17c8efea0a616aaabab02a9e002fc2a81ac3d8bc7d7453588",
+  "note_path": "docs/BETA6_PLAQUETTE_CONNECTED_BETA6_COEFFICIENT_BOUNDED_NOTE_2026-05-30.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T15:59:41.624703+00:00",
+      "audit_date": "2026-06-01T21:32:52.276297+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "Finite mod-2 cubical-boundary theorem that the minimal distinct connected shell containing a marked plaquette on the four-coordinate Wilson cubical patch is the six-face cube boundary, with bounded beta^5 numerator and beta^6 vacuum order readings.",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "positive_theorem",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "retained",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "e536150e66fdd3d041cd023d8ed1d807484a65a65314994ee34b9f71b49d2f8f",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260601-212951-5f23cd5c-beta6_plaquette_connecte",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained upstream notes supply the connected-cumulant expansion, the d_5 cube-shell anchor, and the finite shell geometry. The runner code instantiates exact SU(3) Haar projectors, set-partition cumulants, GF(3) support enumeration, and an independent Fraction cross-check; the displayed rational identities d_5, d_6, d_6/d_5, and d_7^pred are arithmetically consistent.",
+      "claim_scope": "Exact bounded strong-coupling result d_6 = 7/5668704 for Delta(beta) = P_full - P_1plaq, plus finite GF(3) support reduction showing no size-6 or size-7 distinct action support contributes beyond cube-shell multiplicities.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-01T21:32:52.276297+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_hash_changed:e536150e->acb3a617",
+      "load_bearing_step": "Zero GF(3)-closable distinct supports occur at action size 6, so the order-beta^6 coefficient comes only from the four cube shells' order-6 multiplicity cumulants, whose exact SU(3) Haar cumulant sum is d_6 = 7/5668704.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should separately re-check the optional maxorder=7 d_7 runner path; the present clean verdict does not rely on a certified numerical d_7 value.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing coefficient is not imported from a comparator or defined by renaming; it is computed from exact finite Haar integrals and finite connected-support enumeration. The cited authorities are retained-grade for this bounded use, and the note explicitly avoids claiming P(6), beta_eff(6), or a certified numerical d_7. The formula inventory does not expose a false normalization, sign, factor, ratio, or displayed coefficient in the audited scope."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:05.312743+00:00",
+      "archived_for_note_hash": "3b2451d80e019e5fa20dd7186b43abaea20db5f53a87bf2d59e4401dad995152",
+      "audit_date": "2026-06-05T18:25:18.818485+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "Finite mod-2 cubical-boundary theorem that the minimal distinct connected shell containing a marked plaquette on the four-coordinate Wilson cubical patch is the six-face cube boundary, with bounded beta^5 numerator and beta^6 vacuum order readings.",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "positive_theorem",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "retained",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "acb3a6171eb01408654809217d2606f5cfe1c8a6050d0ec2fb7c646c483b6185",
+        "transitive_descendants": 9
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-182245-8c97b37c93-beta6_plaquette_connected_be",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The d_6 arithmetic and completed V0-V4/V4b runner checks are internally consistent. The full scoped claim also needs the Section 3c order-beta^7 GF(3) cycle-space certificate, but the supplied completed stdout is a default maxorder=6 run without V5, and the runner source packet is truncated/source-drifted around later d_7/d_8 claims.",
+      "claim_scope": "Exact order-beta^6 coefficient d_6 = 7/5668704 for Delta(beta), plus the claimed GF(3) reduction of the order-beta^7 distinct-support search to four cube-shell multiplicity terms.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T18:25:18.818485+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's load-bearing step is that GF(3) support enumeration/cycle-space certification leaves only the four cube shells, and exact connected-cumulant multiplicity evaluation gives per shell d_6 = 7/22674816, hence d_6 = 7/5668704.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "compute_required: provide a completed maxorder=7 runner cache or a sliced standalone GF(3) cycle-space certificate for Section 3c, along with the full untruncated runner source used for that cache.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The displayed rational arithmetic checks out: 18^5 = 1889568, four shells give d_5 = 1/472392, and four times 7/(12*18^5) gives d_6 = 7/5668704 with ratio d_6/d_5 = 7/12. The runner output supports the order-6 coefficient path through exact Haar-integrator validations, size-6 support exclusion, and two-engine d_6 agreement. However, the source note's second load-bearing claim is the order-7 support reduction, and the provided completed run does not execute the V5 cycle-space certificate needed for that claim. The runner artifact also contains source/output drift about exact d_7 and d_8 values while the note says no d_7 value is certified, so the full bounded theorem should not be marked clean from this packet."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.184036+00:00",
+      "audit_date": "2026-06-12T23:16:16.935467+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "Exact finite-volume uniform-source derivative identity for the Wilson plaquette source surface and the resulting connected plaquette cumulant hierarchy; explicit nonperturbative beta_eff closure is outside scope.",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "Finite mod-2 cubical-boundary theorem that the minimal distinct connected shell containing a marked plaquette on the four-coordinate Wilson cubical patch is the six-face cube boundary, with bounded beta^5 numerator and beta^6 vacuum order readings.",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "Exact small-beta first nonlocal Wilson plaquette onset coefficient on the accepted 3 spatial + 1 derived-time surface, excluding nonperturbative beta=6 plaquette closure."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "positive_theorem",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "bounded_theorem",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note": "retained",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note": "retained_bounded",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note": "retained"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_connected_hierarchy_theorem_note",
+          "gauge_vacuum_plaquette_distinct_shell_theorem_note",
+          "gauge_vacuum_plaquette_mixed_cumulant_audit_note"
+        ],
+        "load_bearing_score": 7.907,
+        "runner_hash": "dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e",
+        "transitive_descendants": 29
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260612-231238-2591fe059f-beta6_plaquette_connected_be",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained one-hop authorities supply the connected-cumulant hierarchy, the d_5 cube-shell anchor, and the finite distinct-shell geometry; the supplied runner source then computes the new finite Haar cumulant sums rather than importing a fitted value. Independent rational checks confirm the displayed d_5, d_6, d_7 ratios and multiplicity arithmetic, and no external comparator is load-bearing.",
+      "claim_scope": "Bounded exact strong-coupling coefficients for Delta(beta)=P_full-P_1plaq through beta^7, including the finite GF(3) support reduction to cube-shell multiplicity terms and the arithmetic single-ratio falsification d_7/d_6 != d_6/d_5.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-12T23:16:16.935467+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "No size-6 or size-7 distinct action support is GF(3)-closable, so d_6 and d_7 reduce to the four cube shells' multiplicity cumulants, which the exact SU(3) Haar/Moebius runner computes as d_6 = 7/5668704 and d_7 = 5/17006112.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should inspect or rerun the full maxorder-7 packet cache if challenging the cached d_7 certificate; beta=6 closure-limit prose is outside this clean bounded scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 14,
+        "C": 5,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing computation is first-principles finite enumeration plus exact SU(3) invariant-projector Haar integration and set-partition cumulants. The code path does not reduce to printing constants: it constructs projectors, moments, support enumeration, multiplicity sums, and exact Fraction cross-checks, while the maxorder-7 result is exposed through a SHA-pinned cache certificate. The claim is clean only at the bounded coefficient/support-reduction scope and does not derive P(6) or any nonperturbative beta=6 closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_beta6_connected_coefficient_2026_05_30.py",
+  "title": "Beta=6 SU(3) Wilson Single-Plaquette \u2014 Exact Order-beta^6 and Order-beta^7 Coefficients",
+  "transitive_descendants": 17,
+  "verdict_rationale": null
+}

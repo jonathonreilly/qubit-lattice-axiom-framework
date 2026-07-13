@@ -1,0 +1,271 @@
+{
+  "audit_date": "2026-05-28T03:20:36.628226+00:00",
+  "audit_state_snapshot": {
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
+      "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%."
+    },
+    "dep_claim_type": {
+      "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
+      "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
+      "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded"
+    },
+    "deps": [
+      "wave_direct_dm_h025_fam1_seed0_control_note",
+      "wave_direct_dm_h025_fam1_seed1_control_note"
+    ],
+    "load_bearing_score": 8.587,
+    "runner_hash": "87f7b9946cacf9ef89096deba2ae6d66b9cb8c11efa2d75999ae4e27ab16c09e",
+    "transitive_descendants": 16
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-wave-direct-dm-h025-two-point-20260528-r1",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Both one-hop control notes are retained-bounded, the direct runner completes in this worktree with PASS=39 FAIL=0, and independent arithmetic on the frozen logs confirms delta_hist = dM(early)-dM(late), negative signs for both seeds, and |R_hist(seed1)| > |R_hist(seed0)| at S=0.004.",
+  "claim_id": "wave_direct_dm_h025_two_point_synthesis_note",
+  "claim_scope": "Controlled Fam1 H=0.25, S=0.004 seed0/seed1 fine-pair synthesis: both seeds have negative matched-history delta after exact null controls, and seed 1 has the larger-magnitude negative R_hist in the two-point pair; no coarse-band reversal, mechanism, portability, or family-wide law is audited.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": "2026-05-28T03:20:36.628226+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wave_direct_dm_h025_fam1_seed0_control_note",
+    "wave_direct_dm_h025_fam1_seed1_control_note"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 10.907,
+  "load_bearing_step": "The synthesis table combines the retained seed0 and seed1 control ladders at Fam1, H=0.25, S=0.004 and asserts common negative delta_hist with seed 1 having the larger-magnitude negative R_hist.",
+  "load_bearing_step_class": "B",
+  "max_descendant_status": "retained_bounded",
+  "max_descendant_status_rank": 95,
+  "note_hash": "a326ec7ba15cf86459ab3c08e29ec973c8bab7a496634e60f74133c05e8e530c",
+  "note_path": "docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md",
+  "notes_for_re_audit_if_any": "Re-audit if the source reintroduces coarse-band reversal/mechanism language, broadens beyond the two Fam1 H=0.25 seeds, or runner/log hashes change.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.370119+00:00",
+      "archived_for_note_hash": "daab6b203711dd7a80ed525426dd7964da667b7dc6b17b41dac6c8343caa8b83",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T01:01:47.231742+00:00",
+      "archived_for_note_hash": "649cb0a4a13a21ccc7b98738b326429b9c218d3f9c4e498ee0de68fc9ababb20",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-11T09:23:39.750254+00:00",
+      "archived_for_note_hash": "6b03c214184b0785deb33f36b90bcf3f5c6097dec0c0dfe4284ff3393d445863",
+      "audit_date": "2026-04-30T17:50:00.552710+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 8.5,
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judge-20260430-phase-b-wave-two-point",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The old third sample sided with the first numerical-match verdict, but judicial review favors the second: the note depends on a missing artifact-chain provenance and the current runner did not complete under the audit timeout, so the numerical synthesis is conditional rather than independently closed. The selected H=0.25 values can remain a reported narrow synthesis, not an audit-clean numerical theorem.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-30T01:22:15.084807+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "G",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_numerical_match"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T11:45:00.754153+00:00",
+          "auditor": "codex-fresh-context-20260430-14-wave-two-point",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-04-30T17:50:00.552710+00:00",
+          "auditor": "codex-judge-20260430-phase-b-wave-two-point",
+          "auditor_family": "codex-gpt-5",
+          "first_auditor_error": "It ratified a selected numerical slice without adequate dependency/runner provenance for the replay rows and controls.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The old third sample sided with the first numerical-match verdict, but judicial review favors the second: the note depends on a missing artifact-chain provenance and the current runner did not complete under the audit timeout, so the numerical synthesis is conditional rather than independently closed. The selected H=0.25 values can remain a reported narrow synthesis, not an audit-clean numerical theorem.",
+          "load_bearing_step_class": "B",
+          "previous_auditor_family": "codex-current",
+          "second_auditor_error": null,
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "The synthesis reads the controlled Fam1 H=0.25 two-seed pair and coarse-to-fine comparison from artifact-chain notes/logs.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "compute_required: rerun within compute budget or supply cached completed artifact.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The old third sample sided with the first numerical-match verdict, but judicial review favors the second: the note depends on a missing artifact-chain provenance and the current runner did not complete under the audit timeout, so the numerical synthesis is conditional rather than independently closed. The selected H=0.25 values can remain a reported narrow synthesis, not an audit-clean numerical theorem."
+    },
+    {
+      "archived_at": "2026-05-27T12:36:36.153781+00:00",
+      "archived_for_note_hash": "fbdabcc1347bd5ab2d21f894050fcf5c04cea80e5bb5fe375bf18850aa051d9c",
+      "audit_date": "2026-05-27T02:32:00.453925+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "Runner-defined Fam1, seed 0, H=0.25 control replay only: exact S=0 null, common negative weak-field sign across S=0.002/0.004/0.008, and approximately linear weak-field scaling with R_hist around -20% to -21%. No Fam1 seed1, Fam2, cross-family, or general H=0.25 portability claim.",
+          "wave_direct_dm_h025_fam1_seed1_control_note": "Audited the bounded numerical control-ladder claim for Fam1, seed 1, H=0.25 over S=0, 0.002, 0.004, and 0.008, including exact null, common negative sign, low scaled spread, and R_hist near -30%.",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "Finite configured synthesis of the current Fam2 H=0.25 seed0/seed1 direct-dM control ladders over S = 0, 0.002, 0.004, and 0.008, retaining only controlled pair survival and seed-conditioned late-gain asymmetry; excludes Fam1, Fam3, broader seed widening, lab-facing magnitude, and any H=0.25 portability extension."
+        },
+        "dep_claim_type": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam1_seed1_control_note": "bounded_theorem",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "wave_direct_dm_h025_fam1_seed0_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam1_seed1_control_note": "retained_bounded",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note": "retained_bounded"
+        },
+        "deps": [
+          "wave_direct_dm_h025_fam1_seed0_control_note",
+          "wave_direct_dm_h025_fam1_seed1_control_note",
+          "wave_direct_dm_h025_fam2_two_point_synthesis_note"
+        ],
+        "load_bearing_score": 8.0,
+        "runner_hash": "e82a23489d1400d1a8d731527ac8c769ec0694bd439f3d8975fe3225ba11809a",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-aquinas-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The H=0.25 Fam1 seed0 and seed1 fine rows are supported by the primary seed0 runner output and retained Fam1 seed0/seed1 control dependencies. The coarse-to-fine ordering reversal and uneven late-gain-compression mechanism depends on coarse-H seed-band high/low logs that are cited in the note but are not retained one-hop dependencies in the audit packet.",
+      "claim_scope": "Controlled Fam1 H=0.25 S=0.004 seed0/seed1 two-point synthesis, including null/sign/control-ladder support and the narrower conclusion that sign survives while old coarse-H seed ordering is not refinement-stable.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T02:32:00.453925+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The synthesis promotes a Fam1 H=0.25 two-seed result plus a coarse-to-fine seed-ordering reversal / uneven late-gain-compression comparison.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_dependency_edge - Provide retained direct dependency edges or runner artifacts for the cited coarse-H seed-band logs high/low so the refinement-instability and late-gain-compression parts of the synthesis can be audited from retained provenance.",
+      "open_dependency_paths": [
+        "logs/2026-04-08-wave-direct-dm-h025-high-band.txt",
+        "logs/2026-04-08-wave-direct-dm-h025-low-band.txt"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "primary_runner_computes_coarse_h_comparisons": false,
+        "primary_runner_computes_control_ladders": false,
+        "primary_runner_computes_seed1": false,
+        "primary_runner_exit_code": 0,
+        "primary_runner_matches_seed0_fine_point": true,
+        "primary_runner_status": "ok",
+        "primary_runner_timeout_sec": 1800,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: The note's headline depends on old coarse-H seed ordering and late-gain compression bands, but the coarse-H high/low logs are only mentioned in the source note authority chain and are not provided as retained one-hop dependencies. Why this blocks: without retained coarse-H dependency edges or runner artifacts, the audit packet verifies the fine-H seed pair/control core but cannot close the refinement-instability and compression-mechanism portion of the bounded theorem. Repair target: add retained one-hop dependencies for the coarse-H seed-band logs high/low, or attach runner/source/output artifacts that reproduce the coarse-H R_hist and late-gain band values for both seeds. Claim boundary until fixed: the clean core is limited to the controlled Fam1 H=0.25 seed0/seed1 fine-H sign/null/control-ladder comparison; the coarse-to-fine seed-ordering reversal and uneven late-gain-compression explanation remain conditional."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 39,
+    "C": 0,
+    "D": 0,
+    "total_fail": 0,
+    "total_pass": 39
+  },
+  "runner_path": "scripts/wave_direct_dm_h025_fam1_fine_pair_synthesis_certificate.py",
+  "title": "Wave Direct-dM H=0.25 Fam1 Fine-Pair Synthesis",
+  "transitive_descendants": 14,
+  "verdict_rationale": "The source has been narrowed to the retained-core fine-pair comparison and explicitly excludes the older coarse-band reversal/mechanism claims. The runner checks source boundaries, reads only the two Fam1 seed-control logs, verifies exact nulls/sign patterns/spread summaries, and matches the S=0.004 table values. A separate log arithmetic check reproduces the negative deltas and R_hist ordering within rounding. Residual risk is limited to the finite logged control-ladder setup; no family-wide, portability, mechanism, or coarse-band conclusion is retained."
+}

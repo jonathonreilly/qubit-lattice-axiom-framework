@@ -1,0 +1,136 @@
+{
+  "audit_date": "2026-05-08T02:57:40.106289+00:00",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_claim_scope": {
+      "staggered_graph_portability_note": "The provided runner computes the stated battery on three fixed finite bipartite graph families with the stated parity-coupled scalar potential and reports passing rows."
+    },
+    "dep_claim_type": {
+      "staggered_graph_portability_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "staggered_graph_portability_note": "retained"
+    },
+    "deps": [
+      "staggered_graph_portability_note"
+    ],
+    "load_bearing_score": 2.085,
+    "runner_hash": "0afdcaa48ec18cb8f34958e3aa1e8703768f11767b59552bea6758f8c6274ba8",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-loop-gpt55-xhigh-019e0584-7515-7f02-97fa-a42166b11c33",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited portability authority is retained, and the included runner constructs flux-threaded Hamiltonians, diagonalizes them, computes ground-state current spans and endpoint residuals, and reports multiple cycle-bearing PASS cases. No missing bridge is apparent within the restricted packet for this scoped native graph-current closure probe.",
+  "claim_id": "staggered_graph_gauge_closure_note",
+  "claim_scope": "Audited whether the provided gauge-closure runner computes a native flux-threaded persistent-current response on cycle-bearing staggered graph families and reports periodic closure without 1D helpers or proxy rows.",
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-08T02:57:40.106289+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_graph_portability_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "retained",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/frontier_staggered_graph_portability.py",
+    "scripts/frontier_staggered_graph_portability_stress.py",
+    "scripts/frontier_staggered_layered_backreaction.py"
+  ],
+  "independence": "fresh_context",
+  "intrinsic_status": "retained",
+  "load_bearing_score": 6.085,
+  "load_bearing_step": "The closure condition is that a cycle-bearing family shows nontrivial current span under threaded flux and periodic closure at phi=0 and phi=2pi, with the runner selecting the best geometry/operator/observable from that frozen run.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "retained_no_go",
+  "max_descendant_status_rank": 100,
+  "note_hash": "0cb6151b1692cec920b90c6d75e6ee554ab160f61fb456a262b84e68102c3bf5",
+  "note_path": "docs/STAGGERED_GRAPH_GAUGE_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": "A second auditor should re-check the unprovided imported portability/stress/layered helper implementations if broader runner-source closure is required; within this packet, the visible runner does real numerical computation rather than printing constants.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369836+00:00",
+      "archived_for_note_hash": "8e665de7af88814a73011c193a22386f55a2ccaf6bd05ea0f4cc3646bc15f79d",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.494073+00:00",
+      "archived_for_note_hash": "33ec3f74aa46dee7ee8216fab8dea947c22ca04945b0cbf477a2af7e3bbeee85",
+      "audit_date": "2026-04-27",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source note is a harness/criteria card and does not freeze the measured closure rows or best geometry; the live runner and separate results note carry that evidence.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note defines a native gauge/current closure criterion: a cycle-bearing graph must show nontrivial persistent-current span and periodic residual closure under flux threaded through the detected cycle edge.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md",
+        "docs/STAGGERED_GRAPH_PORTABILITY_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The note is marked candidate retained-grade but contains expected readout and closure criteria, not the actual measured gauge/current closure table or best-geometry result. Why this blocks: a retained closure claim must state the observed family, current span, residual, and side-battery status in the source note being audited; otherwise the note only defines the acceptance test. Repair target: either demote this card to support/harness status or merge in the frozen runner table and best-geometry readout from the results note, with assertions for current span, residual, cycle/N/A status, and retained side-battery checks. Claim boundary until fixed: it is safe to claim that this note defines the native flux-threaded persistent-current closure criterion and that the current runner can be used to evaluate it; it is not safe to treat this harness note alone as a retained gauge/current closure result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 5,
+    "D": 0,
+    "total_pass": 4
+  },
+  "runner_path": "scripts/frontier_staggered_graph_gauge_closure.py",
+  "title": "Staggered Graph Gauge Closure Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": "The load-bearing computation is not a hard-coded numerical match: the runner builds a flux-threaded Hamiltonian for each graph, diagonalizes it over phi in [0, 2pi], and computes current span and periodic residual from the ground-state vector. The retained upstream portability note supplies the staggered transport law and prior retained side battery, and the current observable is separately scored on cycle-bearing graphs while acyclic graphs are N/A. One cycle-bearing layered stress case fails, but the note's stated closure criterion only requires a cycle-bearing family with nontrivial span and periodic closure, which the frozen runner output provides."
+}

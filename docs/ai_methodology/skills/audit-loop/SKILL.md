@@ -247,7 +247,7 @@ python3 scripts/cached_runner_output.py scripts/<runner>.py
 
 Per-runner declared timeout (preferred for runners that are persistently slow): add a top-level `AUDIT_TIMEOUT_SEC = <N>` assignment to the runner file. `scripts/runner_cache.runner_timeout_for()` reads this and overrides the default.
 
-After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical `audit_ledger.json` delta together. The full audit pipeline (`docs/audit/scripts/run_pipeline.sh`) will then regenerate `runner_classification.json`, `audit_queue.json`, `effective_status_summary.json`, and `AUDIT_QUEUE.md` against the new cache.
+After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical sharded-ledger delta (`docs/audit/data/ledger/`) together; the monolithic `audit_ledger.json` is an untracked cache materialized by the pipeline. The full audit pipeline (`docs/audit/scripts/run_pipeline.sh`) will then regenerate `runner_classification.json`, `audit_queue.json`, `effective_status_summary.json`, and `AUDIT_QUEUE.md` against the new cache.
 
 **Refresh propagation**: refreshed cache files land on `main` via PR. After merge:
 

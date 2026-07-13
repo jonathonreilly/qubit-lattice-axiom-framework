@@ -1,0 +1,666 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hypercharge_identification_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+    "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+    "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25"
+  ],
+  "direct_in_degree": 23,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 21.915,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "16aa1e0bda291fee9840f15aa9ed2f93c3b5ef6240970e7a174d1e797caa220d",
+  "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T11:23:54.963164+00:00",
+      "archived_for_note_hash": "7a20a4c093a0431c9f3abfc5442f4dd94a5fcd582aa9837c06d15453bc22980c",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T12:21:20.788127+00:00",
+      "archived_for_note_hash": "9e76626e92fae836407aaf65e5d4774161f42808dc04070fc0eda54e679f241f",
+      "audit_date": "2026-04-30T11:45:00.753916+00:00",
+      "audit_status": "audited_renaming",
+      "auditor": "codex-fresh-context-20260430-03-hypercharge",
+      "auditor_confidence": 0.9,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note closes elementary traceless-ratio algebra only after assuming the commutant decomposition and identifying abstract symmetric/antisymmetric sectors with SM quark/lepton doublets plus conventional hypercharge normalization.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "With conventional normalization a = 1/3, the note identifies C^2 x Sym^2(C^2) as the left-handed quark doublet with Y=+1/3 and C^2 x Anti^2(C^2) as the left-handed lepton doublet with Y=-1.",
+      "load_bearing_step_class": "F",
+      "open_dependency_paths": [
+        "docs/SU3_COMMUTANT_NOTE.md",
+        "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: The proof identifies abstract commutant eigenspaces with SM left-handed quark and lepton doublets, and fixes a=1/3, without a retained derivation of that physical readout. Why this blocks: The tracelessness algebra gives a unique 1:-3 ratio inside the assumed commutant, but it does not prove the sector/color/lepton/readout or physical hypercharge normalization identifications. Repair target: Supply a retained theorem deriving the SU(2)_weak carrier, SWAP_23 commutant, quark/lepton sector identification, and Q=T3+Y/2 normalization from independent inputs. Claim boundary until fixed: Assuming the commutant decomposition, sector identification, and conventional normalization, the traceless central U(1) has the SM left-doublet hypercharge ratio 1:-3."
+    },
+    {
+      "archived_at": "2026-05-06T11:16:43.413417+00:00",
+      "archived_for_note_hash": "3d90ebe6897287a712103e2d98f267043038c83d57c6b5c7f8ec0687d435bf0f",
+      "audit_date": "2026-05-02T16:28:42.327101+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.771,
+        "transitive_descendants": 308
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-hypercharge-mcclintock",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic uniqueness of the traceless U(1) direction closes inside the stated C^8 commutant setup. The physical bridge to Standard Model hypercharge is an identification of sectors and normalization, not an independently derived map from retained inputs.",
+      "claim_scope": "Bounded left-handed-doublet identification: in C^8 with SU(2)_weak on factor 1 and SWAP_23 on factors 2 and 3, the unique traceless commutant U(1) has eigenvalue ratio 1:-3 and, after identifying the (2,3) and (2,1) sectors as Q_L and L_L with conventional normalization, reproduces their SM hypercharges and charges.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T16:28:42.327101+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-04-30T02:42:08.404813+00:00",
+          "auditor": "codex-audit-loop-round-2",
+          "auditor_family": "codex-gpt-5",
+          "independence": "cross_family",
+          "load_bearing_step_class": "F",
+          "verdict": "audited_renaming"
+        },
+        "mode": "terminal_second_pass",
+        "second_audit": {
+          "audit_date": "2026-04-30T11:45:00.753914+00:00",
+          "auditor": "codex-fresh-context-20260430-03-hypercharge",
+          "auditor_family": "codex-gpt-5",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "F",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_renaming"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "With conventional normalization a=1/3, the (2,3)=C^2 x Sym^2(C^2) subspace is identified with the left-handed quark doublet and the (2,1)=C^2 x Anti^2(C^2) subspace is identified with the left-handed lepton doublet, so the traceless commutant U(1) matches SM hypercharge on that surface.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check only if the note later claims full SM hypercharge, full anomaly cancellation, GUT normalization, or an independently derived fermion-sector map rather than the bounded left-handed-sector identification audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 9,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the load-bearing step identifies the symmetric/antisymmetric commutant sectors with SM Q_L/L_L and names the unique traceless U(1) as hypercharge after choosing conventional normalization. Why this blocks: the runner verifies exact algebra and downstream consistency after that carrier identification, but it does not derive the SM fermion-sector map or hypercharge normalization from independent premises. Repair target: provide a retained theorem constructing the physical map from the C^8 taste sectors to SM left-handed fermion representations and deriving the allowed normalization/readout without importing the target labels. Claim boundary until fixed: the safe statement is that the commutant contains a unique traceless U(1) whose eigenvalue ratio matches the left-handed SM hypercharge ratio under the stated identification."
+    },
+    {
+      "archived_at": "2026-05-22T01:27:46.606221+00:00",
+      "archived_for_note_hash": "d5e819713d1fb2b68bf0f27de2d4fd4ebe37fca50634d34250d0991148c05a67",
+      "audit_date": "2026-05-17T12:47:00.697846+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 18.66,
+        "runner_hash": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
+        "transitive_descendants": 808
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260517-124640-20260517T124640Z-7cc93800-hypercharge_identificati-targeted",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic substitution closes conditionally, but the scientific chain does not close as a retained theorem because L2 is not retained-grade and L3 explicitly admits the hypercharge normalization as open SM convention.",
+      "claim_scope": "Audited only the chain-assembly claim that the retained ratio theorem, the supplied LHCM matter-assignment note, and the admitted SM normalization imply the LH-doublet SM hypercharge values.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-17T12:47:00.697846+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under L1 ratio + L2 matter assignment + L3 admitted normalization alpha = 1/3, the unique traceless U(1) has eigenvalues (+1/3,-1) on (Q_L,L_L), reproducing the SM LH-doublet hypercharge pattern.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "dependency_not_retained: make the LHCM matter-assignment authority retained-grade and supply a closed bridge theorem deriving or explicitly scoping the alpha = 1/3 normalization before seeking a clean verdict.",
+      "open_dependency_paths": [
+        "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md",
+        "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md#L3-alpha-normalization-admitted-sm-convention"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 2,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely checks the projector algebra, commutation, traceless ratio, and downstream charge table, but the load-bearing SM identification depends on imported chain links rather than deriving them internally. One cited authority, the LHCM matter-assignment note, is marked decoration/support rather than retained-grade, and the note explicitly admits alpha = 1/3 as an open normalization convention. Under the rubric, retained status cannot propagate through these open identification and normalization premises."
+    },
+    {
+      "archived_at": "2026-05-22T15:26:26.326875+00:00",
+      "audit_date": "2026-05-22T02:37:08.126771+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "Given a selected axis of the taste cube, the graph-first finite-cube construction canonically yields weak su(2) fibers, a residual-swap 3+1 base split, joint commutant gl(3)+gl(1), embedded su(3), and a hypercharge-like traceless U(1) pattern for all three axes.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym2 and Anti2 LH-doublet subblocks of the graph-first selected-axis commutant decomposition, excluding fixed eigenvalue normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Audited the algebraic SU(3) representation-content assignment Sym\u00b2\u2192fundamental triplet and Anti\u00b2\u2192singlet on the graph-first selected-axis LH-doublet sector, with quark/lepton names treated as SM-definition labels."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "bounded_theorem",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "retained_bounded",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 18.954,
+        "runner_hash": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
+        "transitive_descendants": 991
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260522-023108-49f0228b-hypercharge_identificati-007",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic ratio-to-table substitution closes under the stated assumptions, but the audit chain does not close as a retained theorem because the LHCM matter-assignment authority is not retained-grade and alpha = 1/3 plus the GMN readout remain admitted SM conventions.",
+      "claim_scope": "Audited the conditional chain assembly that the traceless commutant U(1) ratio +1:(-3), combined with the LHCM matter-assignment import and admitted SM normalization alpha = 1/3, reproduces the LH-doublet hypercharge and charge table.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T02:37:08.126771+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02:retained_bounded->unaudited",
+      "load_bearing_step": "Under the L1 ratio theorem, the L2 matter assignment, and the admitted L3 normalization alpha = 1/3, the unique traceless U(1) generator has eigenvalues (+1/3, -1) on (Q_L, L_L).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: first ratify the LHCM matter-assignment authority, then provide a retained normalization/readout theorem for alpha = 1/3 and Q = T_3 + Y/2 before re-auditing this chain.",
+      "open_dependency_paths": [
+        "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The structural projector algebra, tracelessness ratio, commutation checks, and uniqueness-up-to-scale are algebraic and are supported by the runner/source packet. However, the claimed SM identification still imports a non-retained matter-assignment authority and an explicit normalization/readout convention rather than deriving those bridges. The runner computes the structural matrix facts and then hard-codes alpha = 1/3 and SM labels for the chain consequents, so it is not evidence that those admitted inputs are closed."
+    },
+    {
+      "archived_at": "2026-05-26T00:56:06.070069+00:00",
+      "archived_for_note_hash": "b41b48838674794cf21713712922b5aedb5645d89e6ff85cb31178d47d34cf61",
+      "audit_date": "2026-05-24T20:50:38.663796+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 18.26,
+        "runner_hash": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
+        "transitive_descendants": 612
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260524T204833Z-82a77225-hypercharge_identificati-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic chain closes once L2 and the admitted L3 normalization/readout are accepted as inputs. It does not close as an internal derivation of \u03b1 = 1/3 or of the electric-charge bridge.",
+      "claim_scope": "Audited the conditional chain assembly on the LH-doublet C^8 surface: retained structural ratio plus imported matter assignment plus admitted \u03b1 = 1/3/GMN conventions reproduce the SM LH hypercharge and charge table.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-24T20:50:38.663796+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under L1's +1:(-3) ratio, L2's Sym\u00b2/Anti\u00b2 to Q_L/L_L matter assignment, and the admitted \u03b1 = 1/3 SM normalization, Y_\u03b1 has eigenvalues (+1/3, -1) on the LH-doublet sectors.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained bridge deriving or formally ratifying the \u03b1 = 1/3 normalization and GMN/electric-charge readout instead of importing them as SM convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 3,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The runner genuinely computes the projector algebra, traceless ratio, uniqueness up to scale, and commutation checks rather than merely printing constants. However, the SM-value match depends on the explicitly admitted \u03b1 = 1/3 normalization and the admitted Gell-Mann--Nishijima readout, neither of which is closed by the restricted packet. The rewrite removes the prior hidden renaming from the internal proof, but the retained theorem remains conditional on those imported bridges."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:16.342281+00:00",
+      "archived_for_note_hash": "bbfc60614ea93569ece99abfd5ee85c4286d572f497747a087e21a9257111980",
+      "audit_date": "2026-05-26T20:39:53.338574+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 18.299,
+        "runner_hash": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
+        "transitive_descendants": 629
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-identification-pass2-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The bounded chain closes because every physical or readout convention needed for SM-Y matching is explicitly imported: the ratio is supplied by the LH-doublet traceless-ratio note, the Sym^2/Anti^2 to color triplet/singlet assignment is supplied by the LHCM matter-assignment note under a naming convention, and the absolute scale is supplied by the audited retained_bounded alpha bridge. The current source expressly excludes internal derivations of those inputs, GMN, full-spectrum hypercharge, and anomaly cancellation, so no additional hidden bridge is required for the narrowed claim.",
+      "claim_scope": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T20:39:53.338574+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T20:35:32.822162+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-identification-pass1-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded chain-assembly theorem only: given the retained graph-first selected-axis SU(3) commutant surface, the retained/decorated Sym^2/Anti^2 eigenvalue ratio 1:(-3), the imported LHCM Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with quark/lepton labels only under the stated SM-definition convention, and the audited bounded alpha=1/3 normalization bridge with its admitted GMN/electron-charge readout premises, the LH-doublet surface has Y(Q_L)=+1/3 and Y(L_L)=-1 and the displayed GMN charge table follows. This does not internally derive matter assignment, physical hypercharge, alpha=1/3, GMN Q=T3+Y/2, electroweak matching beyond the LH-doublet surface, anomaly cancellation, or a full SM spectrum.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T20:39:53.338427+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-identification-pass2-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded chain-assembly theorem only: on the retained graph-first selected-axis LH-doublet surface, using the imported 1:(-3) Sym^2/Anti^2 traceless ratio, the imported Sym^2/Anti^2 to SU(3)-fundamental/singlet assignment with the SM-definition convention color-charged == quark and color-singlet == lepton, and the retained bounded alpha=1/3 normalization bridge with admitted Anti^2-as-L_L readout, GMN Q=T3+Y/2, T3(e_L)=-1/2, and Q(e_L)=-1, Y=(1/3)P_sym-P_anti has eigenvalues +1/3 on Q_L and -1 on L_L and the admitted GMN charge table follows on the LH-doublet surface. This does not derive matter assignment, alpha normalization/readout conventions, GMN, physical hypercharge beyond this bounded surface, the full SM spectrum, or anomaly cancellation.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "B",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Cross-note chain assembly of three explicit inputs: retained/decorative structural ratio, retained/decorative SU(3) representation-to-matter convention, and retained_bounded alpha=1/3 normalization bridge with admitted GMN/electron readout; runner checks the resulting projector algebra and charge table but does not derive the imported inputs internally.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "Re-audit if any direct dependency status changes, if the note removes the explicit admission boundaries, or if future prose claims an internal derivation of matter assignment, alpha=1/3, GMN, full-spectrum SM hypercharge, or anomaly cancellation. Runner final prose should eventually be synchronized with the retained_bounded alpha-bridge metadata, but this is not load-bearing for the current bounded verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "cached_runner_status": "ok",
+        "chain_checks": "Pass only under imported L1 ratio, L2 matter assignment, L3 alpha=1/3 normalization and admitted GMN; runner explicitly tags these as chain/convention inputs rather than internal derivations.",
+        "consistency_checks": "Pass: GMN charge table matches u_L, d_L, nu_L, e_L under admitted labels; SU(2)^2-U(1) trace vanishes; Tr[Y^3] nonzero on LH-only surface is correctly outside full anomaly-cancellation scope; GUT/sin^2 display is non-load-bearing.",
+        "exit_code": 0,
+        "limitations": "Runner does not compute LHCM matter assignment or alpha bridge internally, and stale final prose about alpha being open is overridden by current metadata supplied in the packet.",
+        "runner_sha256": "eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750",
+        "structural_checks": "Pass: constructs projectors, obtains rank 6/2 embedding, Tr[Y]=0, eigenvalues +1/3 multiplicity 6 and -1 multiplicity 2, ratio +1:(-3), commutation with weak SU(2), SWAP_23, and SU(3) generators, and uniqueness up to scale from 6a+2b=0."
+      },
+      "verdict_rationale": "Audited clean only as a bounded theorem. Boundary stress check found no unlisted load-bearing admission after narrowing: quark/lepton naming, Anti^2-as-L_L readout, alpha=1/3, GMN, T3(e_L), and Q(e_L) are all named or forwarded to audited dependencies. The source's broader title and SM-Y language are controlled by the retained-scope and not read as a derivation of physical hypercharge from the commutant alone. The decoration dependencies are not promoted to independent physics; they are used only as inherited chain inputs under the retained graph-first SU(3) surface. The stale runner prose saying alpha remains open is non-authoritative under the supplied current ledger metadata and does not break the chain."
+    },
+    {
+      "archived_at": "2026-07-02T21:17:56.847472+00:00",
+      "archived_for_note_hash": "615fb8a98bd6e958816f1cdcfcd2e745fa7c152f1515c4edc2b9904297548170",
+      "audit_date": "2026-06-21T05:54:22.454244+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 21.137,
+        "runner_hash": "3a0675d3598f9b88f05fc3c19a2a26d2ab02d6b2a54ae1f4d86dc187820e148c",
+        "transitive_descendants": 1125
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-054531-f51f6887-hypercharge_identification_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The algebraic chain closes on its stated conditional inputs: alpha(P_sym-3P_anti) gives (+1/3,-1) at alpha=1/3, and GMN then gives the displayed charges. It does not close as an unconditional derivation because the matter-label/readout and normalization premises remain admitted inputs.",
+      "claim_scope": "Conditional chain assembly: given the traceless U(1) ratio, the LHCM SU(3) representation-to-matter assignment, and the alpha=1/3 normalization/GMN readout, the LH-doublet hypercharge and charge tables match the SM values.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T05:54:22.454244+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The combined SM-Y matching follows from the +1:(-3) ratio plus the LHCM Sym^2/Anti^2 matter assignment once the alpha=1/3 normalization/readout convention is fixed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained or explicitly accepted bridge for the matter/readout and alpha-normalization premise packet, or keep the row scoped as conditional chain assembly.",
+      "open_dependency_paths": [
+        "docs/LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md",
+        "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: The algebraic assembly is correct only after accepting the LHCM matter-assignment convention and the alpha=1/3/GMN/electron-charge premise packet, and those readout and normalization premises are explicitly not derived in the restricted packet. Why this blocks: the runner computes projector, trace, commutation, and charge consistency, but it imports the physical readout and normalization rather than deriving them. Repair target: derive or formally ratify the Anti^2-as-L_L readout, GMN relation, T3(e_L), and Q(e_L) premise packet as retained or accepted inputs; claim boundary until fixed is conditional LH-doublet chain assembly."
+    },
+    {
+      "archived_at": "2026-07-07T15:31:53.698062+00:00",
+      "archived_for_note_hash": "81f040ff717f1b236389b6863e4c64638d5245e295ba0248b28c610b0bee64d2",
+      "audit_date": "2026-07-02T21:42:31.972119+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gmn_vev_annihilator_l4_support_note_2026-07-02": "Audited only the finite two-dimensional stabilizer algebra deriving Q = T_3 + Y/2 from the supplied Higgs hypercharge Y_H = +1 and supplied lower-component vev record.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention."
+        },
+        "dep_claim_type": {
+          "gmn_vev_annihilator_l4_support_note_2026-07-02": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "gmn_vev_annihilator_l4_support_note_2026-07-02": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "gmn_vev_annihilator_l4_support_note_2026-07-02",
+          "graph_first_su3_integration_note",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 24.441,
+        "runner_hash": "92c52e9d977569d95ea5cc19b903e1f44e42f0ec6fc47dde68c10d26558436b4",
+        "transitive_descendants": 1389
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T214231Z-8bee78d8-hypercharge_identificati",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The core LH-doublet hypercharge and charge-table chain closes algebraically from the provided retained-grade or retained-bounded inputs. The conditional verdict is for quantitative downstream GUT-normalization/source-runner drift, not for the core table.",
+      "claim_scope": "Bounded chain assembly on the LH-doublet surface: L1 ratio, L2 matter assignment, L3 alpha scale, and L4 GMN readout reproduce the Q_L/L_L hypercharge and electric-charge table; no full-spectrum or GUT-normalization closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T21:42:31.972119+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The combined SM-Y matching follows from the 1:(-3) ratio plus the LHCM matter assignment once the alpha = 1/3 normalization boundary is fixed.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: remove or explicitly quarantine the GUT-normalization/sin^2 downstream quantitative claims from this note and runner, or add a direct audited squared-trace authority; because this is a downstream-scope repair, add a dated downstream-hygiene line to this note's own boundary so hash drift requeues the row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The LH-doublet chain itself is an algebraic closure over the provided one-hop inputs: the 6+2 tracelessness ratio gives 1:(-3), L2 supplies the representation-to-matter assignment, L3 supplies the alpha = 1/3 bounded normalization, and L4 supplies the GMN coefficient. However, the source and runner also carry downstream GUT-normalization quantitative claims; for the stated Y_alpha = alpha(P_sym - 3P_anti), Tr[Y_alpha^2] is 24 alpha^2, with 8/3 only at alpha = 1/3, and the runner Part 6 prints inconsistent SU(2) trace/sin^2 checks without executable assertions. Under the current math-audit policy, that unquarantined quantitative drift prevents a clean verdict as written."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.576039+00:00",
+      "audit_date": "2026-07-07T21:14:36.866518+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gmn_vev_annihilator_l4_support_note_2026-07-02": "Audited only the finite two-dimensional stabilizer algebra deriving Q = T_3 + Y/2 from the supplied Higgs hypercharge Y_H = +1 and supplied lower-component vev record.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims.",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "Algebraic corollary that the graph-first selected-axis SU(3) representation content splits the LH-doublet sector into an SU(3)-fundamental (2,3) block and SU(3)-singlet (2,1) block, with quark/lepton names applied only by the stated SM-definition convention."
+        },
+        "dep_claim_type": {
+          "gmn_vev_annihilator_l4_support_note_2026-07-02": "bounded_theorem",
+          "graph_first_su3_integration_note": "positive_theorem",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "bounded_theorem",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration"
+        },
+        "dep_effective_status": {
+          "gmn_vev_annihilator_l4_support_note_2026-07-02": "retained_bounded",
+          "graph_first_su3_integration_note": "retained",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": "retained_bounded",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+        },
+        "deps": [
+          "gmn_vev_annihilator_l4_support_note_2026-07-02",
+          "graph_first_su3_integration_note",
+          "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+          "lhcm_matter_assignment_from_su3_representation_note_2026-05-02"
+        ],
+        "load_bearing_score": 24.345,
+        "runner_hash": "64d41548c710694a4e5727497f3c416bea1daea80e613462435d779efceaa32a",
+        "transitive_descendants": 1300
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260707T174600Z-hypercharge_identification-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The direct authorities supplied for L1-L4 are retained-grade or decoration under a retained parent, and the source note keeps the normalization/readout boundaries explicit. The runner completes and checks only exact finite algebra plus source-boundary routing over those supplied/chained inputs.",
+      "claim_scope": "Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T21:14:36.866518+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T21:09:10.680696+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260707T173000Z-hypercharge_identification",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded LH-doublet chain assembly showing that the retained/chained ratio, matter-assignment, alpha=1/3 normalization bridge, and GMN vev-annihilator readout give Y(Q_L)=+1/3, Y(L_L)=-1 and the corresponding LH charge multiset; no full-spectrum, GUT-normalization, or sin^2(theta_W) claim is included.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-07T21:14:36.866362+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260707T174600Z-hypercharge_identification-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded LH-doublet chain assembly: from the retained-grade ratio, matter-assignment, alpha=1/3 normalization, and GMN readout authorities, the commutant U(1) gives Y(Q_L)=+1/3, Y(L_L)=-1 and the derived LH charge table; no full-spectrum anomaly, GUT-normalization, or sin^2(theta_W) claim is included.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The load-bearing step of this note is the chain assembly itself: jointly, the L1 ratio, L2 matter assignment, L3 alpha=1/3 normalization bridge, and L4 GMN readout reproduce the SM hypercharge/charge pattern on the LH-doublet surface.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 16,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "The scoped bounded theorem closes as an algebraic assembly over retained-grade one-hop inputs: the ratio and matter assignment select the sectors, the retained-bounded normalization bridge fixes alpha=1/3, and the retained-bounded GMN lemma supplies Q=T3+Y/2. The runner does not perform an external PDG-style comparator check and the source firewall quarantines downstream GUT/sin^2/full-spectrum claims. Residual risk is bounded to the upstream premise packets and conventions already owned by the cited authority rows, not to this chain-assembly step."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
+  "title": "Name-Free U(1) Two-Block Algebra",
+  "transitive_descendants": 1364,
+  "verdict_rationale": null
+}

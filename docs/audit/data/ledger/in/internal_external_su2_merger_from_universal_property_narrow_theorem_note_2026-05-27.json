@@ -1,0 +1,639 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+    "per_site_su2_spin_half_theorem_note_2026-05-02",
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02"
+  ],
+  "direct_in_degree": 10,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.649,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8ac6fa4f47253278c93f9d2b04e683615b879b5ce0f28fdee255a02855455414",
+  "note_path": "docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-29T00:46:44.361247+00:00",
+      "audit_date": "2026-05-28T08:13:45.706637+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Under the k=1 qubit-per-site A1/R1 reading on Z^3 plus retained Cl(3) irrep/Pauli uniqueness, each site has H_x \u2245 C^2 with Pauli generators and each finite block has dim_C 2^|\u039b|.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "Given the k=1 qubit-per-site reading H_x = C\u00b2 and the retained Pauli/Cl(3) per-site representation, the per-site generators S_i = \u03c3_i/2 form the unique spin-1/2 su(2) irrep on each site."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-internal-external-su2-merger-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained Pauli and per-site spin-half dependencies supply the carrier and S_i=sigma_i/2; exact Pauli multiplication and conjugation checks close the B_i=iS_i and row-convention Spin(3) generator identification within the stated bounded scope.",
+      "claim_scope": "Bounded operator-level identification in the retained one-qubit Pauli realization H_x=C^2: with gamma_i=sigma_i, B_i=(1/2)gamma_j gamma_k for cyclic (i,j,k) satisfies B_i=i S_i and S_i=-i B_i for S_i=sigma_i/2; the B_i and S_i commutators close with the stated signs; the proper cubic row-vector Spin(3)->SO(3) lifts and infinitesimal generators use the same Hermitian S_i data. This does not retain lattice translations, physical scale, Coleman-Mandula/HLS, arbitrary Clifford-module classification, or improper rotations as complex-linear unitary lifts.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T08:13:45.706637+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02:retained->unaudited",
+      "load_bearing_step": "In the Pauli realization, sigma_j sigma_k=i epsilon_jki sigma_i gives B_i=(1/2)gamma_j gamma_k=iS_i with S_i=sigma_i/2, so [B_i,B_j]=-epsilon_ijk B_k, [S_i,S_j]=i epsilon_ijk S_k, and the row-convention spin lift has infinitesimal Hermitian generators S_i.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if the source is widened beyond the Pauli H_x=C^2 carrier, the row-vector proper-cubic/infinitesimal checks, or the B_i=iS_i operator-data identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "fresh_context_second_read": "agreed_clean_bounded_operator_identity",
+        "independent_sign_check": "For cyclic (i,j,k), sigma_j sigma_k=i sigma_i, so B_i=i sigma_i/2=iS_i and [B_i,B_j]=[iS_i,iS_j]=-[S_i,S_j]=-i epsilon_ijk S_k=-epsilon_ijk B_k.",
+        "runner_sha256": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "runner_status": "PASS=273 FAIL=0",
+        "total_pass": 273
+      },
+      "verdict_rationale": "The signs and i factors close in the positive-chirality Pauli realization: the anti-Hermitian Clifford bivectors are B_i=iS_i, while the Hermitian quantum spin generators are S_i=-iB_i. The runner performs exact symbolic Pauli, proper-cubic lift, row-vector convention, and infinitesimal generator checks, and the fresh-context audit independently confirmed the same tuple. The clean result is bounded to this operator-data identification and does not add a new framework primitive or physical spacetime/lattice claim."
+    },
+    {
+      "archived_at": "2026-06-03T00:43:52.898716+00:00",
+      "audit_date": "2026-05-31T16:16:09.781150+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site, for an oriented Pauli triple satisfying the stated Pauli commutation and anticommutation relations, S_i = sigma_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-161414-ea58abfa-internal_external_su2_me",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted A1 qubit premise supplies the local M_2(C)/Cl(3,0) Pauli algebra, and retained inputs supply the Pauli realization and per-site S_i = sigma_i/2 action. Exact Pauli multiplication gives B_i = i S_i and the commutators, while the runner verifies the stated cubic Spin(3) lift and infinitesimal generator convention without importing external comparators.",
+      "claim_scope": "On the repo-baseline one-qubit Pauli realization, the per-site Pauli su(2) generators S_i = sigma_i/2 and the Clifford/Spin(3) infinitesimal generator data coincide operator-level, with proper cubic rotations checked by SU(2) conjugation and improper cubic actions treated only as real Clifford signed-generator actions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T16:16:09.781150+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:per_site_su2_spin_half_theorem_note_2026-05-02",
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i on H_x = C^2, the Clifford bivectors B_i = (1/2) gamma_j gamma_k equal i S_i with S_i = sigma_i/2, and the same S_i are the Hermitian infinitesimal generators of the checked Spin(3) conjugation action.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the row-vector convention and the Hermitian S_i versus anti-Hermitian -i S_i generator wording, since that is the main sign-convention sensitivity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade Pauli/qubit inputs, not a definition substitution or symbol renaming. The runner source constructs the Pauli matrices, signed-permutation rotations, cofactor action, and SU(2) lifts, then asserts exact sympy identities; it does not merely print constants or read a contested premise. The clean scope remains bounded to the canonical Pauli realization and standard Clifford/Spin conventions stated in the note."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.073821+00:00",
+      "audit_date": "2026-06-03T01:33:18.218571+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On a single Axiom 1 qubit site with an oriented Pauli triple satisfying relation (1), S_i=sigma_i/2 is the irreducible unique two-dimensional j=1/2 complex su(2) module; no physical spin-statistics, matter-sector, or multi-site claim is audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 6.67,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 8
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260603-013026-b566889b-internal_external_su2_me",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The chain closes within the A1 qubit/Cl(3,0) local algebra: retained inputs supply the Pauli realization and per-site S_i, and direct Pauli multiplication gives B_i = iS_i with the stated commutators. The Spin(3) lift convention is standard finite-dimensional Clifford/Spin mathematics and is checked in the runner by exact symbolic conjugation and infinitesimal commutator identities.",
+      "claim_scope": "Operator-level identification, in the retained positive-chirality Pauli realization of the one-qubit Cl(3,0) local algebra, of the per-site Pauli su(2) generators S_i = sigma_i/2 with the Hermitian infinitesimal Spin(3) lift generator data.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T01:33:18.218571+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i on H_x = C^2, S_i = sigma_i/2 and B_i = (1/2)gamma_j gamma_k satisfy B_i = i S_i, so the Hermitian Spin(3) lift generators are the same S_i.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the row-vector sign convention in the Spin(3) lift; the provided runner and manual Pauli products agree with the stated convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The runner source constructs the Pauli matrices, signed permutation matrices, cofactor actions, and SU(2) lifts with exact sympy checks; it is not merely printing constants and has no helper imports. Independent sign and factor checks give B_i = iS_i, [B_i,B_j] = -epsilon_ijk B_k, and [S_i,S_j] = i epsilon_ijk S_k under the stated row-vector convention. The only meta upstream is flagged as an axiom premise, all non-axiom cited authorities in the packet are retained-grade, and no external comparator, fitted scale, or open bridge is used."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.535527+00:00",
+      "audit_date": "2026-06-05T17:23:14.121431+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum-axiom qubit site A_x ~= M_2(C), the Pauli action S_i = \u03c3_i/2 realizes the irreducible two-dimensional complex su(2) module with Casimir 3/4 and j = 1/2, without identifying it with all physical spin sectors."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 9.67,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 35
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-172018-41a1a2ae2c-internal_external_su2_merger",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Quantum axiom supplies the one-site Pauli/Cl(3,0) algebra, and the other load-bearing authorities are retained. Independently, sigma_j sigma_k = i epsilon_jki sigma_i gives B_i = i S_i and [S_i, sigma_a] = i epsilon_iab sigma_b, matching the row-vector infinitesimal Clifford action.",
+      "claim_scope": "In the retained one-qubit Pauli realization H_x = C^2, the per-site Pauli su(2) generators S_i = sigma_i/2 and the Clifford/Spin(3) infinitesimal generators, after the standard anti-Hermitian-to-Hermitian convention B_i = i S_i, are the same operator triple.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T17:23:14.121431+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i, B_i = (1/2) gamma_j gamma_k equals i S_i with S_i = sigma_i/2, so the Clifford Spin(3) infinitesimal action is generated by the same Hermitian operators S_i.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the row-vector sign convention against the anti-Hermitian bivector convention B_i = i S_i, since that is the only subtle convention point.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The load-bearing content is an exact algebraic identity in M_2(C), not a numerical fit, external comparator, or definition-only renaming. The runner source instantiates the Pauli matrices and cubic signed-permutation actions and checks exact symbolic identities; the independent Pauli-product calculation confirms the signs and factors needed for the theorem. The claim is narrow to the canonical one-qubit Pauli realization and does not import lattice discreteness, scales, translations, or physical matter-sector identifications beyond the cited accepted/retained inputs."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.499250+00:00",
+      "audit_date": "2026-06-05T21:12:32.574145+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one accepted Quantum/Axiom-1 qubit site with an oriented Pauli triple satisfying the stated relations, the local action S_i = \u03c3_i/2 is the irreducible two-dimensional complex j = 1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 9.822,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 39
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-211032-bcbc2063e5-internal_external_su2_merger",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Quantum axiom supplies the one-qubit M_2(C)/Cl(3,0) local algebra, and retained inputs supply the Pauli realization and S_i = sigma_i/2 action. Direct Pauli multiplication gives B_i = i S_i and the stated commutators, while the standard spin lift with U(t)=exp(-it S_i) gives the claimed infinitesimal Clifford-generator action.",
+      "claim_scope": "Operator-level identification on the retained one-qubit Pauli Cl(3,0) realization: the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Spin(3) generators from the Clifford action are the same Hermitian operator triple on C^2.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T21:12:32.574145+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i, the Clifford bivectors B_i = (1/2) gamma_j gamma_k satisfy B_i = i S_i with S_i = sigma_i/2, and these same S_i generate the row-convention Spin(3) conjugation action on the Pauli generators.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the row-vector rotation sign convention if the theorem is later broadened beyond this Pauli-realization operator identity.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The load-bearing content is an exact algebraic identity check in the existing Pauli Cl(3,0) representation, not a definition-only symbol merge or numerical comparison. Independent sign and normalization checks confirm B_i = (1/2) sigma_j sigma_k = i sigma_i/2 = i S_i, [B_i,B_j] = -epsilon_ijk B_k, and [S_i,sigma_a] = i epsilon_iab sigma_b under the stated row-vector convention. The runner source performs actual exact Sympy matrix and finite cubic-group checks, with no helper imports or hard-coded contested external constants. All non-axiom cited authorities are retained-grade, and the Minimal Axioms citation is explicitly flagged as an accepted premise."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.876477+00:00",
+      "audit_date": "2026-07-01T07:13:23.305073+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "For a single accepted Qubit/Axiom-1 site with local algebra M_2(C) and an oriented Pauli triple used as S_i=\u03c3_i/2, the local action is the irreducible two-dimensional complex j=1/2 su(2) module."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 12.443,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 173
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T071323Z-2d4b57e1-internal_external_su2_me",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained inputs supply the one-site M_2(C)/Cl(3,0) Pauli realization and the Pauli spin action S_i = sigma_i/2. Direct Pauli multiplication gives B_i = i S_i and the stated commutators, while the standard Clifford/Spin adjoint action has infinitesimal unitary generator S_i in the same representation.",
+      "claim_scope": "On the repo one-qubit Pauli/Cl(3,0) realization, the per-site Pauli su(2) generators S_i = sigma_i/2 and the infinitesimal Clifford Spin(3) generators are the same operator triple, up to the standard anti-Hermitian i convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T07:13:23.305073+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i, B_i = (1/2) gamma_j gamma_k equals i S_i with S_i = sigma_i/2, and the Clifford Spin(3) infinitesimal action is generated by the same S_i.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the row-vector rotation convention and the B_i = i S_i sign convention, which are the only plausible convention-sensitive points.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The load-bearing step is an exact algebraic identity over the retained Pauli realization, not a fitted numerical comparison or a new definition. The runner source actually constructs Pauli matrices, bivectors, signed cubic rotations, and SU(2) lifts, then checks exact sympy matrix equalities; it does not merely print constants or import the contested identity. The claim remains narrow: it identifies the operator data on C^2 and does not derive lattice translations, dynamics, spin-statistics, or physical scale."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.434243+00:00",
+      "audit_date": "2026-07-01T23:37:24.787960+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "On one Axiom-Qubit site with an oriented Pauli triple satisfying the displayed Pauli relations, the local action S_i = sigma_i/2 is the irreducible two-dimensional j=1/2 complex su(2) module; no physical spin-statistics or multi-site sector identification is audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 12.443,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 173
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T233724Z-f5eae2ec-internal_external_su2_me",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit/Cl(3,0) premise plus retained Pauli irrep and per-site spin theorem supply gamma_i = sigma_i and S_i = sigma_i/2 on C^2. Direct Pauli algebra gives B_i = iS_i, the stated commutators, and the conjugation/infinitesimal identities without importing empirical data or an additional physical bridge.",
+      "claim_scope": "In the canonical one-qubit Pauli/Cl(3,0) realization on C^2, the per-site Pauli spin generators S_i = sigma_i/2 coincide operator-level with the Clifford bivector/Spin(3) infinitesimal generator data, with proper cubic rotations checked by SU(2) conjugation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T23:37:24.787960+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "In the canonical Pauli realization gamma_i = sigma_i, the Clifford bivectors B_i = (1/2) gamma_j gamma_k satisfy B_i = i S_i with S_i = sigma_i/2, so the Clifford Spin(3) infinitesimal generator data and the per-site Pauli su(2) generator data are the same operators.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should recheck the row-vector sign convention for the spin lift; the packet is internally consistent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic identity check, not a renaming: B_i is constructed from Clifford products while S_i is supplied by the retained Pauli spin action, and their equality is forced by Pauli multiplication. The runner source performs exact sympy matrix and finite signed-permutation checks for the Pauli relations, bivector closure, proper cubic SU(2) lifts, improper signed Clifford actions, and infinitesimal commutators. The minimal-axiom dependency is a registered accepted premise, and the other direct dependencies are retained-grade."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.643910+00:00",
+      "audit_date": "2026-07-10T16:58:48.396155+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "Pure abstract-algebra audit of (K1)-(K4) for Cl(3,0), its complexification, central idempotent split, and the resulting 2-dimensional irreducible complex modules; no physical Hilbert-space bridge audited.",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "Given accepted A1/A2 and the retained pure finite-dimensional Cl(3,0) irrep classification, each site has a one-qubit faithful irreducible Cl(3) module with complex dimension 2, and any finite block tensor product has dimension 2^|Lambda|. This does not audit a pure-Cl(3)-only derivation of the physical site-Hilbert bridge, chirality selection, spin-statistics, or downstream physics.",
+          "minimal_axioms": null,
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "For an oriented Pauli triple satisfying equation (1) on the accepted one-site algebra M_2(C), S_i = \u03c3_i/2 realizes the unique irreducible two-dimensional complex j = 1/2 su(2) module; no physical-spin, spin-statistics, or larger-block identification is audited."
+        },
+        "dep_claim_type": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "positive_theorem",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02": "retained",
+          "minimal_axioms": "meta",
+          "per_site_su2_spin_half_theorem_note_2026-05-02": "retained"
+        },
+        "deps": [
+          "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
+          "minimal_axioms",
+          "per_site_su2_spin_half_theorem_note_2026-05-02"
+        ],
+        "load_bearing_score": 18.058,
+        "runner_hash": "d2f93b1b000016e817f5351164c0f28628f3babfa496ed30f60793354257b74a",
+        "transitive_descendants": 532
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00002-internal_external_su2_merger",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained Pauli and per-site su(2) inputs independently supply gamma_i=sigma_i and S_i=sigma_i/2. Exact Clifford multiplication and differentiation of the proper spin lift then give B_i=iS_i and the same conjugation generator S_i without an additional physical bridge.",
+      "claim_scope": "In the canonical positive-chirality Pauli realization on C^2, the per-site Pauli su(2) generators coincide with the Hermitian generators implementing the proper Spin(3) action on the Clifford generators; improper cubic maps are only signed real-Clifford actions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:58:48.396155+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-05T00:00:00-04:00",
+          "auditor": "codex-gpt-5.5-audit-wave-20260705-row3-tesla-019f32f7",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Canonical Pauli realization gamma_i=sigma_i on C^2: internal S_i=sigma_i/2 and the self-adjoint infinitesimal Spin(3) unitary generators are the same 2x2 operators, with Clifford bivectors B_i=i*S_i.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-10T16:58:48.396155+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00002-internal_external_su2_merger",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "In the canonical positive-chirality Pauli realization on C^2, the per-site Pauli su(2) generators coincide with the Hermitian generators implementing the proper Spin(3) action on the Clifford generators; improper cubic maps are only signed real-Clifford actions.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "In the canonical Pauli realization, B_i=(1/2)gamma_j gamma_k=iS_i while the proper Spin(3) lift is generated by the same Hermitian operators S_i=sigma_i/2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 273,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 273
+      },
+      "verdict_rationale": "The runner genuinely constructs the Pauli operators, signed-permutation group, proper unitary lifts, bivector actions, and infinitesimal commutators using exact symbolic arithmetic; it does not merely print passes or import the contested conclusion. The equality is a genuine algebraic closure over retained-grade inputs rather than a definition, because the bivector and per-site Pauli generators are constructed independently before their operator equality is checked. The conclusion remains correctly restricted to the canonical Pauli module and does not extend improper transformations to complex-linear unitary actions."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/internal_external_su2_merger_runner.py",
+  "title": "Internal-External SU(2) Operator Identification",
+  "transitive_descendants": 802,
+  "verdict_rationale": null
+}

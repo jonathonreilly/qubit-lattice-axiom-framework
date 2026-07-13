@@ -1,0 +1,165 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_asymmetry_identification_principled_not_forced_2026-05-31",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "flavor_operator_realization_local_density_2026-05-31",
+    "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+    "lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d83b46c252a1be813cb5f9b881d37f21d5c2ca2fbc49e29b23ad6a0ed3378cb0",
+  "note_path": "docs/FLAVOR_ASYMMETRY_IDENTIFICATION_PRINCIPLED_NOT_FORCED_2026-05-31.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-05T09:04:43.751815+00:00",
+      "archived_for_note_hash": "887266878641d75f1eba8aee998bf4a89a72c5b0d8569d0b6e805d9b92a72733",
+      "audit_date": "2026-06-03T02:21:41.378766+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1064a798f89331874edd9a726dfa938da2bd6d373dc7b27f1036d5490914c13f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260603-022004-c315e496-flavor_asymmetry_identif",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local Lefschetz arithmetic checks, but the physical identification does not close. The missing step is the theorem that the physical charged-lepton generation space is the single C3[111] fixed locus whose local density the observable reads.",
+      "claim_scope": "Audited the bounded final-identification claim that 2/9 is the unique type-consistent local index contribution, not a fully forced charged-lepton asymmetry prediction without the generation-space bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-03T02:21:41.378766+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The single-fixed-point local density 2/9 is the only intensive/type-consistent survivor among the three native index objects, but promoting that contribution to the charged-lepton asymmetry observable requires the undischarged generation-space bridge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and audit a retained theorem proving physical charged-lepton generation space equals the single C3[111] fixed locus reading its local density.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The displayed local-density formula independently simplifies to L_3(1,2)=2/9, and the L=4,6 extensive sums follow arithmetically. However, the runner asserts the type-filter and bridge status largely as prose/True checks, and the source note explicitly states that the contribution-to-observable identification is undischarged. The claim is therefore correctly bounded, but it remains conditional rather than a closed topological prediction."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:49.938053+00:00",
+      "archived_for_note_hash": "8bedac98624c185682a7ce6870ef1e4223b5072859feaa096371d88da41eedf1",
+      "audit_date": "2026-06-05T20:30:21.889629+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_operator_realization_local_density_2026-05-31": "Bounded finite L=4,6 Kawamoto-Smit operator certificate: the raw cyclic axis permutation is repaired by a site-local Z2 gauge to an order-three symmetry commuting with D, and its fixed-site transverse tangent weights give local density 2/9; the physical single-summand readout is not audited.",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded."
+        },
+        "dep_claim_type": {
+          "flavor_operator_realization_local_density_2026-05-31": "bounded_theorem",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_operator_realization_local_density_2026-05-31": "retained_bounded",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26": "retained_bounded"
+        },
+        "deps": [
+          "flavor_operator_realization_local_density_2026-05-31",
+          "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "1064a798f89331874edd9a726dfa938da2bd6d373dc7b27f1036d5490914c13f",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-202811-fa65814327-flavor_asymmetry_identificat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local-density arithmetic and the extensive-versus-intensive distinction check out within the packet, but the physical identification does not close. The missing step is a retained theorem identifying charged-lepton generation space with the single C3[111] fixed locus and justifying reading one local summand rather than a global invariant; the zero readout is also not excluded by intensiveness alone without a nonzero-observable premise.",
+      "claim_scope": "Bounded audit of the finite C3 staggered-packet readout distinction between global eta 0, extensive global sum L*(2/9), and single-fixed-point local density 2/9, including whether the charged-lepton physical readout is closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:30:21.889629+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's decisive step is that the Koide asymmetry's intensive, scale-invariant type eliminates the global eta readout 0 and the extensive sum L*(2/9), leaving the single-fixed-point local density 2/9, while promoting that summand to the physical observable requires the generation-space bridge.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained generation-space/readout theorem proving physical charged-lepton generation space equals the C3[111] fixed locus and that the observable reads one local summand rather than the global eta or extensive Lefschetz sum.",
+      "open_dependency_paths": [
+        "docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The primary runner verifies the displayed 2/9 local-density formula and a toy Gamma5 pairing, but its type-filter and bridge-status checks are prose assertions rather than a closure of the physical readout. The cited local-density authority explicitly states that the single-summand charged-lepton observable identification remains open. Thus the note is honest about being derived modulo a named bridge, but it is not eligible for audited_clean because retained status does not propagate through that open identification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py",
+  "title": "Flavor \u2014 final step: the asymmetry-2/9 identification is PRINCIPLED-BUT-NOT-FORCED; closing it needs one named generation-space bridge",
+  "transitive_descendants": 5,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

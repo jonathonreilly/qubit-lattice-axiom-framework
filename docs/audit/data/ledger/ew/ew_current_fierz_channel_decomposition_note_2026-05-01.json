@@ -1,0 +1,316 @@
+{
+  "audit_date": "2026-05-23T14:25:12.301143+00:00",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+      "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+    },
+    "dep_claim_type": {
+      "graph_first_su3_integration_note": "positive_theorem",
+      "native_gauge_closure_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "graph_first_su3_integration_note": "retained",
+      "native_gauge_closure_note": "retained"
+    },
+    "deps": [
+      "graph_first_su3_integration_note",
+      "native_gauge_closure_note"
+    ],
+    "load_bearing_score": 17.538,
+    "runner_hash": "c3ff0f82219906a3522e385cc48ef3527808a647728b0fc843d40aa3a308d4ef",
+    "transitive_descendants": 1050
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-judicial-panel-per-site-k1-20260523T142512Z-ew_current_fierz_channel_decomposition_n-majority",
+  "auditor_confidence": "judicial_panel_majority",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation.",
+  "claim_id": "ew_current_fierz_channel_decomposition_note_2026-05-01",
+  "claim_scope": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+  "claim_type": "decoration",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-05-23T14:25:12.301143+00:00",
+  "claim_type_provenance": "judicial_review",
+  "criticality": "critical",
+  "cross_confirmation": {
+    "first_audit": {
+      "audit_date": "2026-05-23T14:16:41.010844+00:00",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T141421Z-a0466ee8-ew_current_fierz_channel-01",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Exact SU(N_c) representation-theoretic derivation of the adjoint-channel dimension fraction (N_c^2 - 1)/N_c^2, with N_c = 3 supplied by retained SU(3) upstreams; not the EW matching rule.",
+      "claim_type": "positive_theorem",
+      "independence": "cross_family",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_clean"
+    },
+    "mode": "judicial_third_pass",
+    "second_audit": {
+      "audit_date": "2026-05-23T14:20:31.242916+00:00",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T141708Z-a0466ee8-ew_current_fierz_channel-02",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Algebraic SU(3) group-theory corollary: for a fundamental-antifundamental pair, the adjoint channel has dimension fraction 8/9; the EW matching rule (M) and full 9/8 package-level correction were not audited as derived.",
+      "claim_type": "decoration",
+      "independence": "fresh_context",
+      "load_bearing_step_class": "A",
+      "verdict": "audited_decoration"
+    },
+    "status": "third_confirmed_second",
+    "third_audit": {
+      "audit_date": "2026-05-23T14:25:12.301143+00:00",
+      "auditor": "codex-judicial-panel-per-site-k1-20260523T142512Z-ew_current_fierz_channel_decomposition_n-majority",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "Algebraic SU(3) group-theory corollary: a fundamental-antifundamental pair decomposes as singlet plus adjoint, so the adjoint-channel dimension fraction is exactly 8/9 at N_c = 3; the EW matching rule (M) and full 9/8 correction are not ratified as derived.",
+      "claim_type": "decoration",
+      "decoration_parent_claim_id": "graph_first_su3_integration_note",
+      "first_auditor_error": "Treated a class-A algebraic corollary of retained SU(3) structure as an independent audited_clean positive theorem instead of applying the audited_decoration tie-break.",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation.",
+      "load_bearing_step_class": "A",
+      "second_auditor_error": "none",
+      "sided_with": "second",
+      "verdict": "audited_decoration"
+    }
+  },
+  "decoration_parent_claim_id": "graph_first_su3_integration_note",
+  "deps": [
+    "native_gauge_closure_note",
+    "graph_first_su3_integration_note"
+  ],
+  "direct_in_degree": 25,
+  "effective_status": "decoration_under_graph_first_su3_integration_note",
+  "effective_status_reason": "decoration_parent_retained",
+  "helper_runner_paths": [],
+  "independence": "judicial_review",
+  "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
+  "load_bearing_score": 22.714,
+  "load_bearing_step": "The adjoint-channel dimension fraction of the q-qbar Hilbert space is dim(adj)/dim(N_c tensor N_c-bar) = (N_c^2 - 1)/N_c^2, giving 8/9 at N_c = 3.",
+  "load_bearing_step_class": "A",
+  "max_descendant_status": "unknown",
+  "max_descendant_status_rank": 70,
+  "note_hash": "1f584f1c88e9c37342402f11a76a54c5e02af269513ed75fe8b1702b9d33e842",
+  "note_path": "docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md",
+  "notes_for_re_audit_if_any": "Do not use this verdict to validate matching rule (M) or the package-level 9/8 EW correction.",
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T14:40:53.193623+00:00",
+      "audit_date": "2026-05-01T23:08:59.062929+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "On the note's narrowed support boundary, the chain closes as exact SU(N_c) Fierz completeness plus Hilbert-space dimension counting over retained N_c=3/SU(3) inputs. The note explicitly does not claim that this derives the physical EW matching rule or closes the full 9/8 coefficient.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:graph_first_su3_integration_note:retained->retained_bounded",
+      "load_bearing_step": "The adjoint-channel dimension fraction of the q-qbar Hilbert space is exactly dim(adj)/dim(N_c tensor N_c-bar) = (N_c^2 - 1)/N_c^2, giving 8/9 at N_c = 3, while the physical EW matching rule remains explicitly outside this note's derivation.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The support claim is limited to an exact group-theory ratio and cycle-breaking dependency boundary, not a retained EW-current matching theorem. The runner verifies the retained upstream citations, absence of markdown citations to the three cycle nodes, SU(N_c) generator normalization, the Fierz identity for N_c=2..5, exact dimension counting, the 8/9 value at N_c=3, and the explicit non-derivation of matching rule (M). Residual risk is confined to downstream claims that try to use this note as full physical EW matching closure, which the source note forbids."
+    },
+    {
+      "archived_at": "2026-05-22T15:30:26.208580+00:00",
+      "audit_date": "2026-05-02T17:09:13.531516+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained_bounded",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 9.719,
+        "transitive_descendants": 297
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop:fresh-2026-05-02-ew-fierz-ramanujan",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scoped group-theory result follows from SU(N_c) Fierz completeness and the representation dimension count, with retained upstreams supplying the bounded gauge/color setting and N_c=3. The broader physical EW 9/8 matching correction does not close here because the projection/matching rule is explicitly outside scope.",
+      "claim_scope": "Exact SU(N_c) Fierz/channel-count derivation of the adjoint q-qbar fraction (N_c^2 - 1)/N_c^2, with N_c=3 giving 8/9, excluding the EW vacuum-polarization matching rule.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-02T17:09:13.531516+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-02T17:09:13.439426+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-ew-fierz-euler",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Exact finite-N_c SU(N_c) q-qbar singlet/adjoint Fierz-channel decomposition and the N_c=3 adjoint fraction 8/9 with reciprocal 9/8, excluding any physical EW matching rule.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-02T17:09:13.531370+00:00",
+          "auditor": "codex-audit-loop:fresh-2026-05-02-ew-fierz-ramanujan",
+          "auditor_family": "codex-gpt-5",
+          "claim_scope": "Exact SU(N_c) Fierz/channel-count derivation of the adjoint q-qbar fraction (N_c^2 - 1)/N_c^2, with N_c=3 giving 8/9, excluding the EW vacuum-polarization matching rule.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-current",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "The q-qbar color space decomposes as N_c tensor N_c-bar = 1 + adjoint, so the adjoint channel-count fraction is (N_c^2 - 1)/N_c^2, giving 8/9 at N_c=3 and reciprocal 9/8.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit only if later claims use this as deriving the physical EW vacuum-polarization projection rule or the full 9/8 coupling correction.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 7,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "Within the stated boundary, the derivation closes: the Fierz identity supplies the singlet/adjoint decomposition and the Hilbert-space dimension count gives the exact ratio without numerical tuning or an asymptotic correction. The note correctly separates this bounded theorem from the unproved matching rule M and does not claim to derive the full EW coupling correction. The retained upstream dependencies are sufficient for the scoped color/gauge context and no forbidden cycle dependency is load-bearing."
+    },
+    {
+      "archived_at": "2026-05-23T13:19:00.401518+00:00",
+      "audit_date": "2026-05-22T15:43:46.372419+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching.",
+          "native_gauge_closure_note": "Exact native cubic Cl(3)/SU(2) on the Z^3 taste surface, retained graph-first selector and structural SU(3) integration, and only the bounded left-handed +1/3/-1 hypercharge-like abelian eigenvalue surface."
+        },
+        "dep_claim_type": {
+          "graph_first_su3_integration_note": "positive_theorem",
+          "native_gauge_closure_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_su3_integration_note": "retained",
+          "native_gauge_closure_note": "retained_bounded"
+        },
+        "deps": [
+          "graph_first_su3_integration_note",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 17.717,
+        "runner_hash": "c3ff0f82219906a3522e385cc48ef3527808a647728b0fc843d40aa3a308d4ef",
+        "transitive_descendants": 1189
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154127Z-8872a1b5-ew_current_fierz_channel-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped ratio, the chain closes from the retained SU(3)/N_c = 3 inputs plus the inline Fierz completeness and representation-dimension count. The full package-level 9/8 EW correction would still require the separately admitted matching rule (M).",
+      "claim_scope": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-22T15:43:46.372419+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T15:41:04.660786+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154041Z-8872a1b5-ew_current_fierz_channel-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact SU(N_c) group-theory derivation of the adjoint q-qbar channel dimension fraction (N_c^2 - 1)/N_c^2, with N_c = 3 imported from retained graph-first SU(3) structure; no audit of the EW matching rule (M).",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T15:43:46.372419+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T154127Z-8872a1b5-ew_current_fierz_channel-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact SU(N_c) group-theory derivation of the q-qbar adjoint channel-count fraction, with N_c = 3 imported from retained gauge-structure authorities; the EW matching rule (M) is not audited as derived.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:native_gauge_closure_note:retained_bounded->unaudited",
+      "load_bearing_step": "The adjoint-channel dimension fraction is dim(adj)/dim(N_c \u2297 N_c-bar) = (N_c^2 - 1)/N_c^2, giving exactly 8/9 at N_c = 3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use of the 9/8 package-level correction does not treat the matching rule (M) as derived by this note.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 8,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure: SU(N_c) Fierz completeness and N_c \u2297 N_c-bar = 1 \u2295 adj imply the stated dimension fraction. The cited authorities are retained-grade for the needed SU(3)/N_c = 3 input, and the runner source actually constructs SU(N) generators, checks normalization/Fierz identities, verifies dimension counts, and checks citation hygiene. No external comparator, tuned input scale, or hard-coded disputed physical matching coefficient is used. The clean verdict is limited to the exact group-theory channel ratio, not to the physical EW projection rule (M)."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_ew_current_fierz_channel_decomposition.py",
+  "title": "EW Current Fierz-Channel Decomposition: Exact Group-Theory Derivation of `(N_c^2 - 1)/N_c^2`",
+  "transitive_descendants": 1187,
+  "verdict_rationale": "Five-judge panel majority 4/5 ratified the second tuple (audited_decoration, decoration, class A). Vote breakdown: J1: second / audited_decoration / decoration / class A; J2: second / audited_decoration / decoration / class A; J3: first / audited_clean / positive_theorem / class A; J4: second / audited_decoration / decoration / class A; J5: second / audited_decoration / decoration / class A. Majority rationale: The load-bearing step is exact class-A representation algebra over the retained SU(3)/N_c = 3 input, with no external comparator and no tuned numerical input. The runner checks real SU(N) generator normalization, Fierz completeness, dimension counting, and citation hygiene, but it does not turn the algebraic corollary into an independent physical theorem. Under the rubric's clean-vs-decoration tie-break, the closed content is decoration of the retained SU(3) parent, while the matching rule (M) remains explicitly outside the audit scope. | The scoped claim is exact class-A algebra: Fierz completeness and the 1 plus adjoint decomposition over the retained SU(3) color structure. There are no external comparators or tuned inputs, and the note explicitly excludes the matching rule (M), so the physical 9/8 EW correction is not closed here. Under the tie-break rule, because the closed content reduces to standard mathematics applied to a single retained SU(3) parent, the proper terminal tuple is decoration rather than an independent positive-theorem clean result. | The load-bearing step is a standard algebraic representation-dimension identity over the retained SU(3) parent, with no external comparator and no tuned numerical input. The runner checks real SU(N) algebra, Fierz completeness, and the exact Fraction(8,9), but it does not make this an independent physical theorem. Because the note explicitly excludes deriving matching rule (M) and the closed content is only the algebraic channel fraction, the decoration verdict is the applicable tuple. | Both audits correctly identify the load-bearing step as class A and agree that the scoped channel-fraction claim closes while matching rule (M) remains outside the result. Under the rubric's tie-breaker, a zero-comparator algebraic corollary that reduces to retained SU(3) structure plus standard Fierz/representation algebra is decoration rather than a new positive theorem. The runner supports the algebra and citation hygiene but does not turn the standard dimension-count corollary into an independent first-principles computation."
+}

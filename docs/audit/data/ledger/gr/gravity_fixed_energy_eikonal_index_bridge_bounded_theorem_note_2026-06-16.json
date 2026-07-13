@@ -1,0 +1,235 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
+    "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+    "self_consistency_forces_poisson_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5525f933eb528b6f095855491d8cd142774994273a58a708c5bb575661b21010",
+  "note_path": "docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-20T08:41:46.067039+00:00",
+      "archived_for_note_hash": "31ee4a579d1c805ec8b28ff5f9727e6f42445b1ec189d6c07acf1d4a8341c324",
+      "audit_date": "2026-06-18T10:01:22.111391+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "2708b75c3fa889c5a6b1a72184a963573b5ed6c70a97392661deab9e3a1456d4",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The fixed-energy inverse, phase-count identity, first-order coefficient, and ray-angle algebra close once H_s=H_0+sI is granted. The restricted cited authorities do not actually derive the additive scalar generator shift with the stated +s sign and normalization; they only state the weak-field action response and Poisson/source surface.",
+      "claim_scope": "Bounded fixed-energy one-axis lattice-symbol phase-count bridge deriving n=k_s/k0 and c_E=1/(k0 lambda_axis'(k0)) for slowly varying piecewise-constant scalar-shift cells, conditional on the additive scalar generator shift input.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T10:01:22.111391+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Dividing the local phase count Phase[s]=sum_j k_{s_j} Delta l_j by k0 gives Phase[s]/k0=sum_j (k_{s_j}/k0) Delta l_j, so the packet index is n_j:=k_{s_j}/k0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a direct retained theorem or one-hop authority that derives H_s=H_0+sI with the +s sign and normalization, then re-audit the phase-count bridge.",
+      "open_dependency_paths": [
+        "docs/SELF_CONSISTENCY_FORCES_POISSON_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_pass": 32
+      },
+      "verdict_rationale": "Issue: the load-bearing algebra is valid conditional on H_s=H_0+sI, but the cited SELF_CONSISTENCY_FORCES_POISSON_NOTE text does not supply that scalar generator-shift theorem. Why this blocks: the note claims the shift is inherited from retained one-hop inputs, yet the restricted packet only closes the later phase-count consequences. Repair target: add or cite a retained bounded theorem deriving the additive generator shift, including sign and normalization, from the weak-field action/propagator surface. Claim boundary until fixed: the note supports the conditional axis-symbol eikonal identity and coefficient, not an independently closed gravity scalar-shift bridge."
+    },
+    {
+      "archived_at": "2026-07-07T15:21:37.882914+00:00",
+      "archived_for_note_hash": "bfe9929c36ab1fe526351d137db6366b4d69cdf201c1ab0b99d0438ba3585fd0",
+      "audit_date": "2026-06-21T15:13:47.681191+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": "Locally constant one-axis graph-Laplacian scalar packet: the +sI generator shift lowers fixed-energy phase action and normalizes phi_action=c_E s to first order.",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": "bounded_theorem",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": "retained_bounded",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "276e83713cd2c30fb7282cbe5f9139662b2ec0811ec582e3836c5d428a72c6c4",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact phase-count identity and derivative coefficient close algebraically from the cited retained-bounded inputs. The claim as written does not fully close because the displayed small-k expansion omits the O(s) correction from c_E=1/(2E)+1/24+O(E), so the stated O(E s) remainder is too small without an extra scaling assumption.",
+      "claim_scope": "Bounded one-axis fixed-energy scalar-shifted lattice packet: phase counting gives n=k_s/k0 and the first-order coefficient c_E=1/(k0 lambda_axis'(k0)), with a stated small-k weak-field expansion and conditional 1/b ray-angle form.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T15:13:47.681191+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Differentiate lambda_axis(k_s)+s=E to get d(k_s/k0)/ds|_{s=0}=-1/(k0 lambda_axis'(k0)), so n(s)=1-c_E s and c_E=1/(k0 lambda_axis'(k0)).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit after correcting the small-k remainder and adding a runner assertion for the series expansion beyond the leading 1/(2E) term.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 24,
+        "C": 0,
+        "D": 0,
+        "total_pass": 36
+      },
+      "verdict_rationale": "Issue: the source states n(s)=1-s/(2E)+O(s^2/E^2, E s), but expanding the exact axis formula gives an additional O(s) term. Why this blocks: the bounded theorem includes that small-k weak-field expansion, and the runner only checks the relative coefficient trend, not the displayed remainder order. Repair target: replace the remainder with O(s^2/E^2, s) or state and verify a scaling regime where the missing term is dominated. Claim boundary until fixed: the exact n=k_s/k0 identity and c_E=1/(k0 lambda_axis'(k0)) coefficient remain algebraically supported."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.480684+00:00",
+      "audit_date": "2026-07-10T03:33:22.613924+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": "Locally constant one-axis graph-Laplacian scalar packet: the +sI generator shift lowers fixed-energy phase action and normalizes phi_action=c_E s to first order.",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority.",
+          "self_consistency_forces_poisson_note": "Finite numerical operator-preference result for the tested 3D Dirichlet cubic-lattice self-consistent field setup: Poisson versus the runner's biharmonic, inverse-r-squared, local, random-kernel, and screened-Poisson alternatives."
+        },
+        "dep_claim_type": {
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": "bounded_theorem",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "bounded_theorem",
+          "self_consistency_forces_poisson_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": "retained_bounded",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": "retained_bounded",
+          "self_consistency_forces_poisson_note": "retained_bounded"
+        },
+        "deps": [
+          "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
+          "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+          "self_consistency_forces_poisson_note"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "f2db0160fea7c3fabe5af8a98a8b2133464adecb291bee688262cfc6efd21f6b",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00027-gravity_fixed_energy_eikonal",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The dispersion inversion and coefficient expansion close algebraically, but the optical-index/Fermat conclusion is introduced by definition after assuming local phase additivity. No supplied theorem derives the lattice eikonal phase law or Fermat ray variational principle from the spatially varying generator.",
+      "claim_scope": "The one-axis lattice dispersion's fixed-energy wavenumber and normalized phase-density expansion, including the proposed optical-index/Fermat identification on slowly varying piecewise-constant paths.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:33:22.613924+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18:retained_bounded->unaudited",
+      "load_bearing_step": "After assuming Phase[s] = sum_j k_{s_j} Delta l_j, the note introduces n_j := k_{s_j}/k0 and identifies S_eik[s] = sum_j n_j Delta l_j as the Fermat functional.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a bounded discrete-lattice eikonal and ray-variational derivation, with a runner that solves or propagates the spatially varying lattice operator instead of defining the optical functional from k_s/k0.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 6,
+        "C": 13,
+        "D": 0,
+        "total_pass": 40
+      },
+      "verdict_rationale": "Issue: the load-bearing step defines n as k_s/k0 and then names the resulting normalized phase sum the Fermat functional. Why this blocks: the runner verifies the ensuing algebra and numerical expansions but constructs the optical functional using that same definition, without deriving phase additivity or ray stationarity from H_0+s(x)I. Repair target: supply a bounded discrete-lattice eikonal theorem establishing local phase accumulation and the Fermat variational law for the stated slowly varying packet. Claim boundary until fixed: the exact fixed-energy wavenumber, sign, derivative, and c_E expansion remain valid algebraic results."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py",
+  "title": "Fixed-Energy Eikonal Index Bridge for the Gravity Premise (4) Packet",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

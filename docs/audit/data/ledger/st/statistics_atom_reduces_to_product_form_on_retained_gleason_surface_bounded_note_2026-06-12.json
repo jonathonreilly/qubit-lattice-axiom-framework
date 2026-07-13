@@ -1,0 +1,327 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem / bounded support under a supplied outcome-factorization instance",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+    "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+    "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+    "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "24a24c2f16a43b7b99469e29a6b0fd4b3751ff487331481ca898745d35e3106f",
+  "note_path": "docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:17.515705+00:00",
+      "archived_for_note_hash": "c312a60f1c5e6e3eb717fbc3e7c8788cab7eb674441c565d25e212eb9e1fa353",
+      "audit_date": "2026-06-14T16:40:24.254322+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "6ed0dc1d3df6fdbca3dfdacd48683be2480114cad101b8947ea8f6aab70f6b4a",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260614-163724-d968432376-statistics_atom_reduces_to_p",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The trace-factorization and ratio algebra close from the cited retained-grade Born surface once the product-form instance is supplied. The missing step is a retained-grade derivation or accepted premise that repeated registrations are in fact carried by product-form instances sigma tensor sigma.",
+      "claim_scope": "Audited the algebraic reduction that, on the retained Gleason/Busch Born surface, a supplied product-form joint instance yields multiplicative weights and the stated agreement-conditioning flow; the product-form premise itself was not audited as derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T16:40:24.254322+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For two registrations carried by a product instance sigma tensor sigma, the Born trace on P_j tensor P_k factors as Tr(sigma P_j) Tr(sigma P_k), so agreement conditioning gives x -> x^2 and r -> 2r^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained-grade derivation or explicitly accepted bounded premise that repeated registrations are carried by product-form joint instances sigma tensor sigma.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 15,
+        "C": 0,
+        "D": 0,
+        "total_pass": 25
+      },
+      "verdict_rationale": "The cited Gleason authority is retained, the Busch authority is retained_bounded and therefore retained-grade under the rubric, and the minimal-axiom memo is an accepted premise. The runner source performs real symbolic trace and conditioning checks rather than merely printing constants, and an independent algebra check agrees with the displayed identities. However the source note explicitly names, and does not discharge, the product-form/independence premise needed to turn repeated registrations into sigma tensor sigma instances. That open bridge prevents a clean closure of the statistics atom itself."
+    },
+    {
+      "archived_at": "2026-06-17T10:32:06.719816+00:00",
+      "archived_for_note_hash": "e1c2ec6e2c093d0ab980d63b649f2ee8cb6639a7db9642e8dbc0814706a9fa1b",
+      "audit_date": "2026-06-16T04:13:19.532298+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 7.587,
+        "runner_hash": "d6f45dbe1c6a72ad17119f17acfb8111b501c9e7d2a340099e7b98f436d9615f",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260616-041042-d00f18504c-statistics_atom_reduces_to_p",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra from a supplied sigma tensor sigma instance to product weights and the conditioning flow closes. The chain from the cited retained inputs alone does not close, because no cited authority derives that repeated registrations are carried by product-form joint instances.",
+      "claim_scope": "Under retained Gleason/Busch one-copy Born authority and a supplied product-form joint instance sigma tensor sigma, the note derives product joint weights and the agreement-conditioning flow x -> x^2, equivalently r -> 2r^2, while leaving the product-form premise undisclosed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T04:13:19.532298+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For two registrations carried by the supplied product instance sigma tensor sigma, the joint Born weight factors as m(P_j tensor P_k)=Tr((sigma tensor sigma)(P_j tensor P_k))=Tr(sigma P_j)Tr(sigma P_k)=p_j p_k.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cheapest repair is a retained or accepted bounded bridge proving that repeated registrations are represented by product-form joint states sigma tensor sigma; a second auditor should also re-check the implicit p_s>0 domain for the ratio coordinate.",
+      "open_dependency_paths": [
+        "docs/UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+        "docs/UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 16,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The load-bearing mathematics is a class-A tensor-trace identity plus normalization/conditioning algebra, and the independent check confirms the factors and ratio map once the product joint state is assumed. The cited Gleason and Busch surfaces provide Born form, and the minimal axiom memo is an accepted premise, but neither supplies independence or iid/product composition. The source note correctly names that product-form premise as non-retained and not discharged, so the row is a valid reduction to an open premise rather than a closed theorem from the restricted packet alone."
+    },
+    {
+      "archived_at": "2026-06-20T08:42:41.721610+00:00",
+      "archived_for_note_hash": "a108dc6b4f79c7e1c4237c24d900752ebfdb9f454fb85e9cedacf7bca8ad0d7f",
+      "audit_date": "2026-06-18T14:56:50.049777+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null,
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "Given a supplied two-outcome partition and the bounded premise of outcome-level factorization, the note audits the algebraic x -> x^2 agreement-conditioned flow, a non-product witness with factorized partition weights, and invariance under frame motion commuting with the partition."
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "c9c666709f2808216b0e629bf33f7bb39464f40f5b41348487d0f91ff5fa6a14",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The conditional algebra closes once m(j,k)=p_j p_k is supplied. The unrestricted chain does not close from the cited retained inputs alone because no provided authority derives the outcome-factorization premise for repeated registrations.",
+      "claim_scope": "Audited the algebraic reduction of the W8a statistics atom under retained one-copy Born form, retained-bounded product-to-outcome weakening, and a supplied two-outcome quotient factorization m(j,k)=p_j p_k; the factorization premise itself was not audited as true.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:56:50.049777+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Supply the quotient-level premise m(j,k)=p_j p_k for j,k in {s,d}; then agreement conditioning gives p_i' = p_i^2/(p_s^2+p_d^2), hence x -> x^2 and r -> 2r^2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove or cite a retained theorem that repeated registrations factor on the registered two-outcome quotient, m(j,k)=p_j p_k.",
+      "open_dependency_paths": [
+        "docs/UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md",
+        "docs/UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 17,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "Issue: K2 imports the quotient-level outcome-factorization premise m(j,k)=p_j p_k as a supplied premise. Why this blocks: the retained Born and product-to-outcome authorities justify the form of the downstream algebra, but they do not derive physical repeated-registration independence. Repair target: provide a retained theorem or retained-bounded direct dependency discharging outcome factorization on the registered two-outcome quotient. Claim boundary until fixed: the note is a valid conditional algebraic reduction under that supplied premise, not a closure of the statistics atom from retained inputs alone."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.519243+00:00",
+      "audit_date": "2026-06-21T19:04:37.820128+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "For the accepted one-qubit carrier Ax ~= M2(C), any m:E(M2)->[0,1] satisfying the stated M1-M3 POVM-additivity assumptions is uniquely represented as m(E)=Tr(sigma E) for a density matrix sigma; parent-row status and higher-dimensional closure are out of scope.",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "For finite Lambda subset Z^3 with |Lambda|>=2, assuming the standard Gleason theorem, every countably additive probability measure on P(tensor_x C^2) has a unique density-matrix trace representation.",
+          "minimal_axioms": null,
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "Given a supplied two-outcome partition and the bounded premise of outcome-level factorization, the note audits the algebraic x -> x^2 agreement-conditioned flow, a non-product witness with factorized partition weights, and invariance under frame motion commuting with the partition.",
+          "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17": "Finite M_2(C) algebra showing that same marginals plus shifted-Pauli product-effect factorization force the supplied joint state to be sigma tensor sigma, with product-to-quotient factorization and same-marginal insufficiency checked only within that bounded scope."
+        },
+        "dep_claim_type": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "positive_theorem",
+          "minimal_axioms": "meta",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "bounded_theorem",
+          "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20": "retained",
+          "minimal_axioms": "meta",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": "retained_bounded",
+          "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17": "retained_bounded"
+        },
+        "deps": [
+          "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+          "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+          "minimal_axioms",
+          "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+          "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "1915b07dcd7ba2584f61a1aaa45985284520ffff2231f2a374937620a86f40be",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra downstream of `m(j,k)=p_j p_k` closes and the runner implements substantive symbolic checks. The restricted packet does not derive or retain the quotient-factorization premise itself, so the full chain from retained Born/Busch authorities alone is missing that step.",
+      "claim_scope": "Bounded reduction: retained one-copy Born weights plus a supplied two-registration quotient factorization imply the agreement-conditioned map `p_i' = p_i^2/(p_s^2+p_d^2)`, `x -> x^2`, and `r -> 2r^2`.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T19:04:37.820128+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05:retained_bounded->unaudited",
+      "load_bearing_step": "Supply the quotient-level premise `m(j,k)=p_j p_k` for `j,k in {s,d}`, so agreement conditioning gives `p_i' = p_i^2/(p_s^2 + p_d^2)` and hence `x -> x^2`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained record-stack independence/stationarity theorem deriving the registered quotient law `m(j,k)=p_j p_k`, or keep the row explicitly bounded to that supplied premise.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 19,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "K1-K4 are algebraically correct within the declared bounded setting: the retained Born/Busch surfaces provide one-copy weights, the product-to-outcome weakening and product-instance bridge are retained_bounded, and the runner checks the conditioning flow plus the correlated control witness. `MINIMAL_AXIOMS_2026-06-05.md` is explicitly flagged as an accepted axiom-premise node and does not downgrade under the registry carve-out. The row still imports the outcome-level factorization `m(j,k)=p_j p_k` as a supplied premise and explicitly says it is not discharged; therefore the claim cannot be `audited_clean` as an unconditional reduction from retained inputs."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py",
+  "title": "W8a Statistics Atom Reduces To Outcome Factorization Under A Supplied Quotient Instance",
+  "transitive_descendants": 2,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

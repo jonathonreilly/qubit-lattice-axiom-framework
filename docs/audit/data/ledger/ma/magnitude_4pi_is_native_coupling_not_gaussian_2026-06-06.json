@@ -1,0 +1,382 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+    "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+    "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+    "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+    "magnitude_reads_minimal_record_block_2026-06-06"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "94c98d1b190a87f2efd4667a4c09f107272b8824182bfcd5e7e9b90c46ac8f14",
+  "note_path": "docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-08T18:21:39.803584+00:00",
+      "archived_for_note_hash": "287ba4037d33b24fb778e9b0509870c90e44c4cb62dba831aa140fbb35d33c6e",
+      "audit_date": "2026-06-08T15:41:55.896097+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "5084fed89ff3331c6ba44fd69943990836af3022395913a12c78fc907db54821",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260608-153841-0732712a66-magnitude_4pi_is_native_coup",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The arithmetic and continuum 4\u03c0 normalization checks close, but the packet does not close the missing bridge that the hierarchy magnitude's per-mode factor is the coupling alpha_bare rather than a Gaussian measure. The exponent-16 count and the I1/I2/I3/P3/g_bare readout-convention-dressing chain are asserted or listed as unaudited rather than derived from retained inputs in the restricted packet.",
+      "claim_scope": "Audited the arithmetic and normalization boundary claim that the hierarchy magnitude's stated per-mode coupling factor is 4\u03c0 rather than Gaussian 2\u03c0, conditional on the supplied magnitude formula, exponent-count, and coupling/readout conventions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-08T15:41:55.896097+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given alpha_bare = g_bare^2/(4\u03c0) and exponent 16, the magnitude uses (4\u03c0)^-16 rather than the Gaussian (2\u03c0)^-16, and the two differ by exactly 2^16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained or approved-premise support for the per-mode coupling readout/convention/dressing bridge and the exponent-16 count, then re-audit the 4\u03c0-vs-2\u03c0 boundary claim.",
+      "open_dependency_paths": [
+        "docs/static_source_readout_i1_..._bridge.md",
+        "docs/alpha_convention_i2_..._bridge.md",
+        "docs/cl3_normalization_i3_..._bridge.md",
+        "docs/hierarchy_formula_honest_status.md",
+        "docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md",
+        "docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 3,
+        "C": 2,
+        "D": 1,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Independent checks confirm the displayed arithmetic: (2\u03c0)^-16/(4\u03c0)^-16 = 2^16 and the continuum inverse-Laplacian normalization gives rG = 1/(4\u03c0). Those checks do not derive the load-bearing physical identification of the hierarchy magnitude's per-mode factor with the coupling normalization, nor the exponent-count and readout/convention/dressing dependencies. The runner also includes a PASS check using hard-coded M_Pl and v, despite the note's forbidden-import statement that observed values are not consumed in PASS conditions; that check is ancillary, but it prevents treating the runner as a purely framework-internal closure."
+    },
+    {
+      "archived_at": "2026-06-09T19:27:06.024078+00:00",
+      "archived_for_note_hash": "a1593dad634572fe82f0e9099cbb13f0516814d49329962b578f5ddc0a10cc86",
+      "audit_date": "2026-06-09T12:14:21.359607+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "Audited only the narrow identification that the Brillouin-zone Haar normalization for the Z^3 substrate gives the factor (2\u03c0)^3 in d^3k/(2\u03c0)^3, with the continuum Fourier convention used only as a numerical comparison.",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "Standalone polynomial-algebra theorem over positive real abstract variables (g, beta, K) satisfying beta*g^2 = K: the zero-, one-, and two-axis admission cases have respectively two, one, and zero free parameters, so constraint-vs-convention status depends on admission rank. No physical bare-coupling, Wilson-action, Cl(3), SU(N_c), Gell-Mann normalization, comparator, or framework-specific admission-rank claim is audited.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited.",
+          "magnitude_reads_minimal_record_block_2026-06-06": "Route-specific no-go: Record axiom + RP two-step positivity fails to force the magnitude readout scale to the minimal positive temporal block L_t=2 rather than the OS-continuum reconstruction.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited the bounded boundary claim that the temporal factor 2 in the magnitude exponent is a transfer-step/mode cardinality in the count-supported zone of the retained clock-rate no-go, not a clock-rate or time-metric derivation."
+        },
+        "dep_claim_type": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "magnitude_reads_minimal_record_block_2026-06-06": "no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "magnitude_reads_minimal_record_block_2026-06-06": "retained_no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "magnitude_reads_minimal_record_block_2026-06-06",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "d0f65d20c4fb3322ae0d062b70c072585ae146fd6f33b469ad09a82253fdbfe1",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-121220-ae7fd13378-magnitude_4pi_is_native_coup",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the algebra closes and the cited retained-bounded Green-kernel authority supplies the native 4*pi geometric coefficient. The open I1/I2/I3/P3 and minimal-block readout issues are explicitly excluded from the audited conclusion.",
+      "claim_scope": "Formula-local audit that the supplied hierarchy formula's 4*pi coupling slot is not interchangeable with a Gaussian 2*pi measure slot; it does not audit the physical readout, alpha convention, dressing, minimal-block selection, or hierarchy value gate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T12:14:21.359607+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given alpha_bare = g_bare^2/(4*pi) and exponent 16, replacing 1/(4*pi) by a Gaussian 1/(2*pi) changes the factor by ((1/(2*pi))/(1/(4*pi)))^16 = 2^16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update the primary runner/source note/cache so the minimal-block readout demotion markers and advertised PASS/FAIL total match the current retained_no_go packet, then re-run the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 47,
+        "C": 5,
+        "D": 0,
+        "total_pass": 59
+      },
+      "verdict_rationale": "The load-bearing math is a genuine algebraic identity over supplied inputs, and an independent check gives the same 2^16 factor. However the source note advertises the runner as PASS=62 FAIL=0 while the provided completed cache exits nonzero with PASS=59 FAIL=3. The three failures are source/runner marker drift in the minimal-block demotion packet, not timeout, so the row should not be ratified clean until the validation artifact is repaired."
+    },
+    {
+      "archived_at": "2026-06-13T22:22:48.285861+00:00",
+      "audit_date": "2026-06-10T04:24:33.486185+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "Audited only the narrow identification that the Brillouin-zone Haar normalization for the Z^3 substrate gives the factor (2\u03c0)^3 in d^3k/(2\u03c0)^3, with the continuum Fourier convention used only as a numerical comparison.",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "Standalone polynomial-algebra theorem over positive real abstract variables (g, beta, K) satisfying beta*g^2 = K: the zero-, one-, and two-axis admission cases have respectively two, one, and zero free parameters, so constraint-vs-convention status depends on admission rank. No physical bare-coupling, Wilson-action, Cl(3), SU(N_c), Gell-Mann normalization, comparator, or framework-specific admission-rank claim is audited.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "magnitude_reads_minimal_record_block_2026-06-06": "Route-specific no-go: Record axiom + RP two-step positivity fails to force the magnitude readout scale to the minimal positive temporal block L_t=2 rather than the OS-continuum reconstruction.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited the bounded boundary claim that the temporal factor 2 in the magnitude exponent is a transfer-step/mode cardinality in the count-supported zone of the retained clock-rate no-go, not a clock-rate or time-metric derivation."
+        },
+        "dep_claim_type": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "magnitude_reads_minimal_record_block_2026-06-06": "no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "magnitude_reads_minimal_record_block_2026-06-06": "retained_no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "magnitude_reads_minimal_record_block_2026-06-06",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "ab5439acc994c14fe7ccb8289f5a9165d04be520b35d0e9a10c932f7020ec5cb",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-042151-5da9065bc0-magnitude_4pi_is_native_coup",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing `2^16` ratio and `(4\u03c0)^-16 = ((4\u03c0)^-1)^16` identities close by direct algebra, and the cited `Z^3` Green-kernel source supplies the separate native geometric `4\u03c0` coefficient. The claim remains bounded to that objection-removal scope and does not use the explicitly open I1/I2/I3/P3 residuals.",
+      "claim_scope": "Formula-local audit that the supplied `4\u03c0` coupling slot differs from a Gaussian `2\u03c0` slot by `2^16` at exponent count 16, with retained-bounded support for native `Z^3` Green-kernel `1/(4\u03c0r)` geometry and no closure of physical readout, convention, dressing, or value gate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:24:33.486185+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+      "load_bearing_step": "Given the supplied hierarchy-formula slot `alpha_bare = g_bare^2/(4\u03c0)` and exponent `16`, replacing the coupling normalization `4\u03c0` with a Gaussian `2\u03c0` changes the factor by exactly `((1/(2\u03c0)) / (1/(4\u03c0)))^16 = 2^16`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers cite this only for the formula-local 4\u03c0/2\u03c0 boundary, not for I1/I2/I3/P3 or hierarchy value-gate closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 52,
+        "C": 2,
+        "D": 0,
+        "total_pass": 62
+      },
+      "verdict_rationale": "The load-bearing step is an exact algebraic identity over the supplied formula slot and exponent, not a numerical match or empirical comparator. The one-hop cited authorities needed for the bounded scope are retained-grade under the rubric, and the runner source contains actual arithmetic checks rather than only PASS printing. The note explicitly excludes the physical static-source readout, alpha convention, Cl3 normalization, per-mode dressing, and hierarchy value gate, so those residuals are not promoted by this audit."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.505542+00:00",
+      "audit_date": "2026-06-14T01:07:59.507492+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "Audited only the narrow identification that the Brillouin-zone Haar normalization for the Z^3 substrate gives the factor (2\u03c0)^3 in d^3k/(2\u03c0)^3, with the continuum Fourier convention used only as a numerical comparison.",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "Standalone polynomial-algebra theorem over positive real abstract variables (g, beta, K) satisfying beta*g^2 = K: the zero-, one-, and two-axis admission cases have respectively two, one, and zero free parameters, so constraint-vs-convention status depends on admission rank. No physical bare-coupling, Wilson-action, Cl(3), SU(N_c), Gell-Mann normalization, comparator, or framework-specific admission-rank claim is audited.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "magnitude_reads_minimal_record_block_2026-06-06": "Route-specific no-go: Record axiom plus RP two-step positivity does not force the magnitude count to be read at L_t=2 rather than at an OS-continuum reconstruction.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited only the bounded count/rate separation: the temporal factor 2 is a transfer-step/mode count, POST_RECORD_CLOCK_RATE_INTERFACE does not block count-only use, and the minimal reflection-positive block is 2 steps; not a derivation of v, alpha_LM, or the UV/per-record readout selection."
+        },
+        "dep_claim_type": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "magnitude_reads_minimal_record_block_2026-06-06": "no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "magnitude_reads_minimal_record_block_2026-06-06": "retained_no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "magnitude_reads_minimal_record_block_2026-06-06",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+        ],
+        "load_bearing_score": 5.748,
+        "runner_hash": "ab5439acc994c14fe7ccb8289f5a9165d04be520b35d0e9a10c932f7020ec5cb",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-010459-f242d73965-magnitude_4pi_is_native_coup",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing arithmetic is exact, and the cited 4\u03c0 geometry and count-16 authorities are retained-grade within the packet. The open I1/I2/I3/P3 and minimal-block readout residuals are explicitly outside the audited scope.",
+      "claim_scope": "Formula-local boundary: within the supplied alpha_bare slot and exponent-16 count, substituting 2\u03c0 for 4\u03c0 produces exactly the 2^16 gap; no physical readout, convention, dressing, or hierarchy value gate is closed.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T01:07:59.507492+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "Given the supplied hierarchy-formula slot alpha_bare = g_bare^2/(4\u03c0) and exponent 16, replacing the coupling normalization 4\u03c0 with a Gaussian 2\u03c0 changes the factor by ((1/(2\u03c0))/(1/(4\u03c0)))^16 = 2^16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the supplied formula slot is treated only as the bounded scope, not as a derived alpha/readout theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 51,
+        "C": 5,
+        "D": 0,
+        "total_pass": 62
+      },
+      "verdict_rationale": "The claim closes as a bounded, formula-local algebraic objection removal: (2\u03c0)^-16/(4\u03c0)^-16 = 2^16, independently of observed M_Pl, v, PDG values, fitted u0, or value matching. The packet\u2019s retained-grade sources support the native 4\u03c0 geometry and exponent-count context, while the runner source verifies it is not smuggling in an observed-value PASS condition. This verdict does not promote the physical coupling/readout/dressing chain."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.473852+00:00",
+      "audit_date": "2026-07-02T05:47:12.027703+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "Audited only the narrow identification that the Z^3 Pontryagin dual T^3 has Haar probability measure d^3k/(2\u03c0)^3 in [-\u03c0,\u03c0]^3 coordinates, with the continuum (2\u03c0)^3 noted only as a numerical convention comparison.",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "Standalone polynomial-algebra theorem over positive real abstract variables (g, beta, K) satisfying beta*g^2 = K: the zero-, one-, and two-axis admission cases have respectively two, one, and zero free parameters, so constraint-vs-convention status depends on admission rank. No physical bare-coupling, Wilson-action, Cl(3), SU(N_c), Gell-Mann normalization, comparator, or framework-specific admission-rank claim is audited.",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "magnitude_reads_minimal_record_block_2026-06-06": "Route-specific no-go: Record axiom plus RP two-step positivity do not force the magnitude readout to occur at L_t=2 rather than the OS-continuum limit; the 8 x 2 = 16 arithmetic remains only conditional on a separate UV/minimal-block readout bridge.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited only the bounded count/rate separation: the temporal factor 2 is a transfer-step/mode count, POST_RECORD_CLOCK_RATE_INTERFACE does not block count-only use, and the minimal reflection-positive block is 2 steps; not a derivation of v, alpha_LM, or the UV/per-record readout selection."
+        },
+        "dep_claim_type": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "bounded_theorem",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "magnitude_reads_minimal_record_block_2026-06-06": "no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26": "retained_bounded",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "magnitude_reads_minimal_record_block_2026-06-06": "retained_no_go",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded"
+        },
+        "deps": [
+          "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+          "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "magnitude_reads_minimal_record_block_2026-06-06",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "ab5439acc994c14fe7ccb8289f5a9165d04be520b35d0e9a10c932f7020ec5cb",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T054712Z-05a2fb98-magnitude_4pi_is_native_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the scoped claim, the algebra closes exactly and the cited retained-grade inputs supply the native Z^3 Green-kernel 4\u03c0 geometry and count-16 boundary. The note explicitly excludes the open physical readout/convention/dressing/value-gate bridges from this claim.",
+      "claim_scope": "Formula-local audit that the supplied 4\u03c0 coupling slot, raised to exponent 16, is not interchangeable with a Gaussian 2\u03c0 measure slot; no physical readout, convention, dressing, or value-gate closure is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T05:47:12.027703+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26:retained_bounded->unaudited",
+      "load_bearing_step": "Given the supplied hierarchy-formula slot alpha_bare = g_bare^2/(4\u03c0) and exponent 16, replacing the coupling normalization 4\u03c0 with a Gaussian 2\u03c0 changes the factor by exactly ((1/(2\u03c0))/(1/(4\u03c0)))^16 = 2^16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream citations preserve the formula-local boundary and do not use this row as a physical readout or hierarchy value-gate closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 51,
+        "C": 5,
+        "D": 0,
+        "total_pass": 62
+      },
+      "verdict_rationale": "The load-bearing step is exact algebra over the supplied formula slot and exponent: replacing 1/(4\u03c0) by 1/(2\u03c0) multiplies the factor by 2^16. The one-hop authorities used for the bounded scope are retained-grade, and the open I1/I2/I3/P3 residuals are not used to close the audited conclusion. The runner mostly verifies source/dependency status, but it also checks the ratio algebra and reconstructs the 1/(4\u03c0) Fourier coefficient without observed-value or tuned-scale comparators."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
+  "title": "The Hierarchy Magnitude's 4\u03c0 Boundary Is Coupling/Geometry, Not Gaussian Measure",
+  "transitive_descendants": 2,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

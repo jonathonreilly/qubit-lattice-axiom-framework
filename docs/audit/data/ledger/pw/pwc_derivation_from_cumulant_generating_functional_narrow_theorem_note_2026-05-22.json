@@ -1,0 +1,422 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "491a91c7cb62b075a5e0190876cde6e9be364553bec2fa190b1f07e96aab3d90",
+  "note_path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T12:01:21.827320+00:00",
+      "audit_date": "2026-05-23T00:18:46.007097+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "minimal_axioms_2026-05-20": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms_2026-05-20": "meta"
+        },
+        "deps": [
+          "minimal_axioms_2026-05-20"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T001713Z-d9ca5cbd-pwc_derivation_from_cumu-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The packet shows a valid standard-math identification once the PWC formula for W is already assumed, but it does not derive the framework's use of that W from the cited axiom note. The missing step is an independent retained source or theorem fixing the framework pre-record W rather than identifying it by definition.",
+      "claim_scope": "Commuting bounded finite-source observables on a finite-region qubit algebra, with rho_ref taken as a given input state, and W[J]=log Tr(rho_ref e^{-J})-log Tr(rho_ref).",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T00:18:46.007097+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:minimal_axioms|dep_removed:minimal_axioms_2026-05-20",
+      "load_bearing_step": "For the commuting-source scope, the framework's W[J] is exactly the standard source-coupled cumulant generating functional Q1 with rho = rho_ref.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-audit only if a retained upstream theorem independently fixes the framework pre-record W[J] form, or if the claim is intentionally reclassified as a definition/terminology note rather than a bounded theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing move is an identification of the already-stated framework symbol W with the standard cumulant generating functional under the substitution rho = rho_ref. That is not a first-principles derivation from A1/A2 or an independent algebraic closure over retained inputs; it is a symbol/concept identity plus standard cumulant facts. The commuting-source cumulant statement is mathematically plausible on its own scope, but the presented chain reduces to naming the PWC expression as the standard CGF. A second auditor should also check the odd-derivative sign convention from e^{-J}, since derivatives give (-1)^n cumulants unless the sign convention is explicitly absorbed."
+    },
+    {
+      "archived_at": "2026-05-23T13:02:53.270035+00:00",
+      "archived_for_note_hash": "665f3688278696b9e44bb66b35b3e2e9ce1f12b2101ce94ae7b5a09bd0b73c42",
+      "audit_date": "2026-05-23T12:54:16.136294+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T125354Z-41c15921-pwc_derivation_from_cumu-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The formula has the standard cumulant-generator derivatives on the stated commuting scope, assuming the quoted standard probability/statistical-mechanics definitions. The audit chain is an identification of the framework symbol with that standard object, not an independent derivation from A1+A2.",
+      "claim_scope": "Commuting bounded finite-source observables on a finite-region one-qubit algebra A_Lambda with a given pre-record reference state rho_ref.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T12:54:16.136294+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The framework's W[J] is the right-hand side of the standard source functional Q1 with rho = rho_ref, hence is the standard cumulant generating functional on commuting source families.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "A second auditor should re-check only whether the lane intentionally wants renaming status for standard-object identifications, since the mathematical commuting-source cumulant statement itself is narrow and coherent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note's load-bearing move is explicitly an identification: PWC is Q1 with rho replaced by rho_ref. That is mathematically coherent on the commuting-source scope, but under the rubric it is class F because it asserts identity between an existing framework symbol and a standard cumulant-generating functional rather than deriving a new result from the axiom premise. The axiom citation supplies the finite-region qubit algebra substrate only; it does not itself derive the source-functional form."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.082305+00:00",
+      "audit_date": "2026-05-23T15:48:33.097543+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T154809Z-de17a3a9-pwc_derivation_from_cumu-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated commuting-source scope, the formula matches the standard cumulant-generating-functional form after applying the joint spectral measure and the explicit e^{-J} sign convention. The result is an identification of an existing framework symbol with an existing standard object, not an independent derivation from A1+A2.",
+      "claim_scope": "Audited only the narrow commuting bounded-source identification W[J] = log Tr(rho_ref e^{-J}) - log Tr(rho_ref) as the cumulant generating functional over a finite-region qubit algebra.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:48:33.097543+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "On commuting source families, the framework's W[J] is the standard cumulant generating functional applied to the given pre-record reference state.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only whether standard cumulant theory is being treated as ordinary mathematical infrastructure; that does not change the class F identification verdict.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note's operative move is to assert that the already-stated framework functional W[J] is the standard cumulant generating functional on the commuting-source scope. That is a valid narrow identification given the formula and sign bookkeeping, but under the rubric it is class F rather than class A or C. The cited axiom premise supplies the qubit-on-Z^3 substrate only; it does not derive the cumulant-generating-functional form."
+    },
+    {
+      "archived_at": "2026-06-17T10:31:20.511666+00:00",
+      "archived_for_note_hash": "8ae31e9a8a55498b7edd977402af1ce6aabf468ef08e9c49702800fe1c688dfb",
+      "audit_date": "2026-06-06T00:16:22.221374+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": null,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260606-001558-aca445374d-pwc_derivation_from_cumulant",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet supports the narrow identification on its own terms: for commuting bounded observables, the joint spectral measure reduces the trace expression to a classical cumulant-generating log moment functional with the stated e^{-J} sign convention. However, the load-bearing move is an asserted identity between the framework's existing W and the standard object, not a first-principles derivation from the minimal axioms.",
+      "claim_scope": "Commuting bounded self-adjoint finite source observables on A_Lambda, identifying the framework expression W[J] = log Tr(rho_ref e^{-J}) - log Tr(rho_ref) with the standard cumulant generating functional for the joint spectral measure induced by rho_ref.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T00:16:22.221374+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On commuting source families, the framework's W[J] is the standard cumulant generating functional applied to the given pre-record reference state because it is exactly log Tr(rho_ref e^{-J}) - log Tr(rho_ref).",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Second auditor should re-check whether repository policy wants standard textbook imports to count as accepted external mathematics for this narrow identification; that does not change the class F load-bearing step here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The note explicitly frames the result as identification rather than selection or derivation, and the load-bearing step is the symbol identity between the framework's W[J] and the standard cumulant generating functional. The displayed derivative signs and normalization are internally consistent for the e^{-J} convention on commuting observables, including W[0]=0 and the (-1)^n cumulant factor. The cited minimal axioms supply only the Z^3 one-qubit carrier for rho_ref; they do not derive the source functional, rho_ref, or the probabilistic/state bridge. Therefore the claim is a valid narrow identification but audits as class F renaming rather than clean derivation."
+    },
+    {
+      "archived_at": "2026-06-21T05:41:37.692302+00:00",
+      "archived_for_note_hash": "04c822699ec96204656bb1184d3618b68821c3f472e0644fb8c34e549eccf96f",
+      "audit_date": "2026-06-18T14:21:03.465017+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": null,
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.5-20260618-112229-b3680374-pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The commuting-source cumulant algebra is internally consistent, including the explicit (-1)^n sign bookkeeping. The missing step is an independent derivation that the framework's pre-record W must have this form, rather than an identification of an already supplied W with the standard cumulant generator.",
+      "claim_scope": "Commuting bounded finite-source observables on a finite-region one-qubit algebra, with rho_ref supplied as input; audited only the identification of W[J] = log Tr(rho_ref e^{-J}) - log Tr(rho_ref) with the standard cumulant generator and its stated sign convention.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T14:21:03.465017+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "For the commuting-source scope, the framework's W[J] is the right-hand side of the standard source functional with rho = rho_ref, so W[J] is the standard cumulant generating functional applied to rho_ref.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "Re-check only if a later packet adds an independent retained derivation of the framework source functional rather than this identification.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing move is the note's explicit identification of the framework symbol W[J] with the standard cumulant generating functional. Why this blocks: that is a symbol identity/standard-object naming step, not a derivation from the cited axiom content or from an independently closed source-functional theorem. Repair target: provide a retained theorem deriving the source functional form from accepted framework premises or keep this row scoped as a standard-math identification. Claim boundary until fixed: given rho_ref and commuting bounded sources, the displayed W has the usual cumulant-generator content with the stated sign convention."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.512885+00:00",
+      "audit_date": "2026-06-21T18:24:56.572386+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "3ab2c6676444898f66fbb9b3f7f2ee0f0d274965d3743bd24bd51914fb720d81",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional spectral reduction and log-moment-to-cumulant differentiation close the stated commuting-source theorem over the supplied state/source inputs. The only cited framework authority is the registered minimal-axioms premise, and no unclosed noncommuting, source-production, or rho_ref-selection bridge is used inside the audited scope.",
+      "claim_scope": "Given a supplied positive finite-region state rho_ref and mutually commuting bounded self-adjoint finite-source observables on A_Lambda, the trace-log expression is the finite joint-spectral cumulant generator with the fixed (-1)^n source sign; rho_ref derivation and noncommuting ordering are outside scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T18:24:56.572386+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "For mutually commuting finite source observables, simultaneous spectral decomposition gives Tr(rho_ref e^{-sum_a J_a O_a}) = sum_r w_r exp(-sum_a J_a o_a(r)), hence W[J] = log(...) - log(sum_r w_r) and differentiating the log gives (-1)^n connected cumulants.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second audit should re-check that downstream citations preserve the supplied-state, commuting-source boundary and do not cite this as a rho_ref or noncommuting-ordering derivation.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 2,
+        "C": 2,
+        "D": 3,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The load-bearing step is an exact finite-dimensional algebraic/spectral calculation: the commuting trace reduces to a finite classical moment generating function and the logarithm produces connected cumulants with the stated sign. The runner source performs symbolic differentiations on a nondegenerate finite spectral measure, checks trace-vs-spectral equivalence, and includes falsifiers showing the logarithm and connected form are necessary rather than hard-coding only PASS text. The clean result is narrow: it does not derive rho_ref, physical source production, path-integral compatibility, or any noncommuting ordering convention."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.748154+00:00",
+      "audit_date": "2026-07-10T04:25:23.090564+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3ab2c6676444898f66fbb9b3f7f2ee0f0d274965d3743bd24bd51914fb720d81",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00086-pwc_derivation_from_cumulant",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Simultaneous spectral decomposition converts the trace into a finite classical moment-generating function, and the standard finite moment-to-cumulant algebra proves the stated derivatives. The reference state and commuting observables remain theorem inputs rather than derived framework objects.",
+      "claim_scope": "For any supplied nonzero positive finite-region state and mutually commuting bounded self-adjoint source family, the normalized trace-log functional generates their joint connected cumulants.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T04:25:23.090564+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "minimal_axioms",
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:c8201cb1->fc4d60cc",
+      "load_bearing_step": "For mutually commuting finite-dimensional observables, the trace reduces to a joint spectral moment-generating function whose logarithm has derivatives equal to the connected cumulants with the fixed (-1)^n source sign.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 2,
+        "C": 2,
+        "D": 3,
+        "total_pass": 14
+      },
+      "verdict_rationale": "The finite-dimensional calculation is correct, and the runner performs exact symbolic checks rather than merely printing expected results. The general conclusion is an algebraic consequence of simultaneous diagonalization and the logarithmic moment-to-cumulant identity; it introduces no external-comparator check or first-principles numerical prediction. Because the chain reduces to the single accepted minimal-algebra parent plus standard mathematics, the rubric classifies it as decoration rather than an independent retained theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/pwc_commuting_cgf_framework_native_2026_06_17.py",
+  "title": "PWC Derivation from the Standard Cumulant Generating Functional (Narrow)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

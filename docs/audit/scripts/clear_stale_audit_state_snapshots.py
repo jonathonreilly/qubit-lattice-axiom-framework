@@ -22,6 +22,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -43,7 +45,7 @@ def main() -> int:
         cleared += 1
 
     ledger["rows"] = rows
-    LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(ledger)
 
     print(f"clear_stale_audit_state_snapshots: scanned {len(rows)} rows")
     print(f"  cleared: {cleared} stale snapshots on already-unaudited rows")

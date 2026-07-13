@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c586742f725f64c3b373a7734f90d8da8839618490a79da962fcbd825fe02916",
+  "note_path": "docs/LP_TWO_BAND_EXACT_COMPLETION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-12T17:11:49.976455+00:00",
+      "audit_date": "2026-06-14T03:46:40.714993+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12": "Staggered d=2 Harper cell with q=24, Ly=2, finite B=2\u03c0/24, for sampled (m,T)=(0.2,0.2),(0.2,0.4),(0.5,0.2),(0.5,0.4); audits only the measured separation from the intraband det-Hessian LP kernel, not a corrected two-band orbital formula or the strict B\u21920 limit."
+        },
+        "dep_claim_type": {
+          "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "758e6a8051bc76fd876c3f4ae4f54c05820101be3989cafe5bfa51da953d8794",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-034344-03efbdd95e-lp_two_band_exact_completion",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "A manual Taylor/Frechet check of Tr g(H(B)) gives the same normalization used in the runner: 2 Tr g'(H0)H2 plus the divided-difference H1 term with diagonal limit g''. The completed cache shows all sampled mass gates below 2e-2, and the provided source computes the matrix spectra and PT sums rather than reading expected chi values from another note.",
+      "claim_scope": "Finite Q=24, Ly=2 staggered Harper one-particle cell at T=0.2, mu=1.7086, B=1e-3 finite-difference reference, masses m=0,0.2,0.3,0.5, and fixed 2e-2 tolerance; not a continuum, flux-quantized, strict B->0, or boundary-root theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T03:46:40.714993+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12:retained_bounded->unaudited",
+      "load_bearing_step": "The finite-dimensional calculation expands the Peierls phase as H(B)=H0+B H1+B^2 H2+O(B^3) and evaluates the grand-potential curvature with the full two-band sum, including interband H1 matrix elements.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check the non-flux-quantized finite-B convention and degenerate divided-difference handling if this claim is later broadened beyond the finite sampled scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 1,
+        "C": 8,
+        "D": 0,
+        "total_pass": 13
+      },
+      "verdict_rationale": "The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_lp_two_band_exact_2026_06_12.py",
+  "title": "Full Two-Band Peierls Perturbation Agrees With the Landed Small-B Finite-Difference Response Off m = 0 (Fixed B = 1e-3 Estimator, Fixed Tolerances; Bounded)",
+  "transitive_descendants": 3,
+  "verdict_rationale": null
+}

@@ -1,0 +1,343 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+    "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "0aa4ca45998870a8ae94d48a5fcf95c9c8f3fceab701377b6ddf3bec7c65f65d",
+  "note_path": "docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-27T14:36:47.392264+00:00",
+      "archived_for_note_hash": "c826292c156c9c37c5d047a5d923df49d3ce4b29b4006687bd5a972bcbccace4",
+      "audit_date": "2026-05-27T05:00:39.770280+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "Formal positive two-slot constrained log-volume extremum under rho_plus^2 + rho_perp^2 = E_tot, with kappa defined as 2*rho_plus^2/rho_perp^2 and evaluated only at that extremum."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e3a28d07bd8c076d81413148cc467c26d1830e1f1acb94fed40cae62cd798f91",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-2026-05-27",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra after the reduced-carrier admission closes and the runner verifies it at exact symbolic precision with PASS=35 FAIL=0. The full scoped claim still load-bears the physical SO(2)-quotient/reduced-carrier bridge, and the current parent dependency supplies only a formal reduced two-variable log-volume identity, not a retained physical charged-lepton SO(2)-quotient derivation.",
+      "claim_scope": "Conditional post-quotient algebra only: given an admitted SO(2) frame-quotient/reduced two-slot carrier with rho_+^2 = E_+ and rho_perp^2 = E_perp, plus the retained block-total Frobenius identities E_+ = 3a^2 and E_perp = 6|b|^2, the equal-weight reduced-carrier log-volume extremum gives rho_+^2 = rho_perp^2 = E_tot/2 and hence a^2 = 2|b|^2, kappa = 2. The SO(2)-quotient/reduced-carrier bridge on the charged-lepton scalar lane is not derived or retained in this packet.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T05:00:39.770280+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The source's frontmatter and binding scope assume the SO(2) frame-quotient carrier on the charged-lepton scalar lane, with rho_+^2 = E_+ and rho_perp^2 = E_perp, and then run exact log-volume algebra on that admitted carrier.",
+      "load_bearing_step_class": "F",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the physical SO(2)-quotient/reduced-carrier map on the charged-lepton scalar lane, or rescope the source to a purely formal two-variable corollary of the retained Frobenius and reduced-log-volume rows.",
+      "open_dependency_paths": [
+        "retained derivation of the SO(2) frame-quotient/reduced-carrier bridge on the charged-lepton scalar lane",
+        "retained theorem identifying rho_+^2 = E_+ and rho_perp^2 = E_perp as a physical reduction rather than an admitted carrier",
+        "or source rewrite removing the physical SO(2)-quotient admission and claiming only formal reduced-carrier algebra"
+      ],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "runner_result": "runner_sha256=e3a28d07bd8c076d81413148cc467c26d1830e1f1acb94fed40cae62cd798f91; exit_code=0; PASS=35 FAIL=0; exact symbolic verification of post-quotient Lagrange extremum, E_i=rho_i^2 reparametrization, kappa=2 algebra, and counterfactual tilts; runner does not derive the physical SO(2)-quotient/reduced-carrier bridge.",
+        "runner_status": "ok",
+        "total_fail": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "Issue: the source requires the SO(2) frame-quotient/reduced two-slot carrier on the charged-lepton scalar lane as a load-bearing premise. Why this blocks: that carrier/readout bridge is an admitted physical reduction, not a retained theorem in the restricted packet; the current parent row is retained_bounded only as formal reduced-carrier algebra and explicitly does not derive the physical SO(2)-quotient. Repair target: add a retained bridge theorem deriving the SO(2)-quotient/reduced-carrier map rho_i^2 = E_i on the charged-lepton scalar lane, or rewrite this row as a purely formal algebraic corollary with no physical SO(2)-quotient/carrier claim. Claim boundary until fixed: the post-quotient algebra is exact and runner-certified, but the row remains conditional on the unratified reduced-carrier bridge."
+    },
+    {
+      "archived_at": "2026-06-04T20:16:28.892008+00:00",
+      "audit_date": "2026-05-28T08:19:44.745568+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure algebraic identities on Herm_circ(3): orthogonal trace/doublet decomposition, Frobenius block totals, the equal-weight log extremum kappa=2, and d=3 uniqueness of the (1,(1,),0) real-irrep multiplicity pattern among d=2..6.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "Formal positive two-slot constrained log-volume extremum under rho_plus^2 + rho_perp^2 = E_tot, with kappa defined as 2*rho_plus^2/rho_perp^2 and evaluated only at that extremum."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9ea5528c94361548a1115f96b0be848cacd2e15d7e931f4befe8eb4638577676",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-koide-mru-reduced-carrier-2026-05-28",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The reduced-carrier extremum closes by elementary AM-GM/Lagrange algebra, and the retained Frobenius identities supply the post-quotient substitution; no physical Koide bridge is consumed.",
+      "claim_scope": "Formal two-variable reduced-carrier algebra only: for positive rho_+, rho_perp with rho_+^2+rho_perp^2=E_tot, the symmetric log-volume extremum has rho_+^2=rho_perp^2=E_tot/2; under E_i=rho_i^2 and the retained Frobenius identities E_+=3a^2 and E_perp=6|b|^2 this gives a^2=2|b|^2, kappa=2, and S_E=2S_rho. This excludes physical SO(2) quotient derivation, charged-lepton scalar-lane readout, mass identification, Standard Model matching, observed lepton masses, and parent physical Koide closure.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T08:19:44.745568+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Maximize S_rho=log rho_+ + log rho_perp under rho_+^2+rho_perp^2=E_tot, then substitute E_i=rho_i^2 and retained E_+=3a^2, E_perp=6|b|^2 to obtain a^2=2|b|^2 and kappa=2, with S_E=2S_rho.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if the source is widened beyond the formal two-variable carrier or used as authority for a physical SO(2) quotient, charged-lepton scalar readout, mass identification, Standard Model matching, or parent Koide closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "fresh_context_second_read": "agreed_clean_bounded_not_decoration",
+        "independent_check": "AM-GM gives rho_+^2*rho_perp^2 <= (E_tot/2)^2 with equality only at rho_+^2=rho_perp^2=E_tot/2; log monotonicity then gives the unique strict maximum, and retained 3a^2=6|b|^2 gives kappa=2.",
+        "runner_sha256": "9ea5528c94361548a1115f96b0be848cacd2e15d7e931f4befe8eb4638577676",
+        "runner_status": "PASS=35 FAIL=0",
+        "total_pass": 35
+      },
+      "verdict_rationale": "The bounded formal chain closes: the symmetric two-slot log extremum is unique, the positive change of variables E_i=rho_i^2 is monotone, and the retained Frobenius identities convert E_+=E_perp into a^2=2|b|^2 and kappa=2. The result is not decoration because no single parent carries both the reduced rho-carrier extremum and the Frobenius post-quotient substitution; the source combines two retained algebraic inputs. The clean verdict is strictly formal and does not ratify a physical charged-lepton carrier, mass/readout identification, observed Koide match, or parent physical Koide lane."
+    },
+    {
+      "archived_at": "2026-06-12T23:00:40.821632+00:00",
+      "audit_date": "2026-06-06T18:33:46.295941+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "Formal positive two-slot constrained log-volume extremum under rho_plus^2 + rho_perp^2 = E_tot, with kappa defined as 2*rho_plus^2/rho_perp^2 and evaluated only at that extremum."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "9ea5528c94361548a1115f96b0be848cacd2e15d7e931f4befe8eb4638577676",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-183208-e09c0693cf-koide_moment_ratio_uniformit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independently setting x = rho_+^2 and y = rho_perp^2 gives S_rho = (1/2)(log x + log y) with x + y = E_tot, whose unique positive maximum is x = y = E_tot/2. The cited Frobenius totals then give 3a^2 = 6|b|^2, hence a^2 = 2|b|^2 and kappa = 2, without importing any physical bridge.",
+      "claim_scope": "Formal positive two-slot log-volume extremum under rho_+^2 + rho_perp^2 = E_tot, transported by E_i = rho_i^2 and the retained Herm_circ(3) Frobenius block-total identities to kappa = 2; no physical quotient, readout, mass identification, or Standard Model matching audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T18:33:46.295941+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_moment_ratio_uniformity_theorem_note_2026-04-19",
+      "load_bearing_step": "Substituting E_i = rho_i^2 turns the reduced-carrier critical point into E_+ = E_perp = E_tot/2, and substituting the retained Frobenius identities E_+ = 3a^2 and E_perp = 6|b|^2 gives a^2 = 2|b|^2 and kappa = 2.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the open weighting-selection and physical-identification caveats in the Frobenius authority remain excluded from this bounded formal scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: one retained_bounded reduced two-slot extremum and one retained Frobenius block-total identity theorem. The runner source performs symbolic Lagrange checks, trace/Frobenius identity checks, reparametrization checks, and counterfactual tilts, with 35 class-A passes and no external comparator or tuned numerical input. The Frobenius authority's open F1-vs-F3 canonical-weighting gap is explicitly outside this note's bounded formal scope, so it does not block the audited claim as stated."
+    },
+    {
+      "archived_at": "2026-06-21T08:24:33.922238+00:00",
+      "audit_date": "2026-06-13T02:44:04.208563+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Standalone Herm_circ(3) projection/Frobenius identities, the equal-weight log extremum, and the clock-action real-irrep multiplicity uniqueness at d=3 among d in {2,3,4,5,6}.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "The audited claim is only the formal positive two-slot constrained log-volume theorem: with rho_plus^2 + rho_perp^2 = E_tot, L = log(rho_plus) + log(rho_perp) has its unique interior constrained maximum at equal squared radii, so the explicitly defined kappa = 2 rho_plus^2/rho_perp^2 equals 2 there."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "9ea5528c94361548a1115f96b0be848cacd2e15d7e931f4befe8eb4638577676",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260613-024154-fb69a69c24-koide_moment_ratio_uniformit",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated formal scope, the Lagrange extremum, positive change of variables, and Frobenius block-total substitution are sufficient. The cited open physical SO(2), readout, mass-identification, and canonical-weighting bridges are explicitly outside the claim and are not used in the conclusion.",
+      "claim_scope": "Formal positive two-slot carrier algebra: the log-volume extremum at `rho_+^2 = rho_perp^2 = E_tot/2` is carried by `E_i = rho_i^2` to the retained Frobenius block totals, yielding `a^2 = 2 |b|^2` and `kappa = 2`, with no physical charged-lepton bridge audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-13T02:44:04.208563+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10:retained->unaudited",
+      "load_bearing_step": "Substituting the retained Frobenius identities `E_+ = 3 a^2` and `E_perp = 6 |b|^2` into the equal-slot result `E_+ = E_perp = E_tot / 2` gives `3 a^2 = 6 |b|^2`, hence `a^2 = 2 |b|^2` and `kappa = 2`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "No primitive-registry dependency appears relevant to this formal algebraic row.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing move is a genuine algebraic closure over retained-grade inputs: the MRU reduced two-slot theorem supplies the equal positive slots, and the retained Frobenius theorem supplies `E_+ = 3a^2` and `E_perp = 6|b|^2`. Independent checking confirms the stationary equations force equal squared radii, the boundary cannot maximize, and `S_E = 2 S_rho` on the positive quadrant preserves the optimizer. The runner source performs symbolic algebra and direct matrix Frobenius checks rather than merely printing constants, with no helper imports detected."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.011610+00:00",
+      "audit_date": "2026-06-21T17:36:33.542920+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}.",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "The audited claim is only the formal positive two-slot constrained log-volume theorem: with rho_plus^2 + rho_perp^2 = E_tot, L = log(rho_plus) + log(rho_perp) has its unique interior constrained maximum at equal squared radii, so the explicitly defined kappa = 2 rho_plus^2/rho_perp^2 equals 2 there."
+        },
+        "dep_claim_type": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19": "retained_bounded"
+        },
+        "deps": [
+          "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "9ea5528c94361548a1115f96b0be848cacd2e15d7e931f4befe8eb4638577676",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared formal scope, the reduced log-volume extremum fixes rho_+^2 = rho_perp^2 = E_tot/2, and the retained Frobenius identities then algebraically force 3a^2 = 6|b|^2. The note explicitly excludes the physical charged-lepton bridge, so no unclosed physical identification is needed for the audited claim.",
+      "claim_scope": "Formal two-slot reduced-carrier algebra: the log-volume extremum, positive square reparametrization E_i = rho_i^2, and retained Frobenius identities imply a^2 = 2|b|^2 and kappa = 2, with no physical SO(2), charged-lepton readout, or mass-identification bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T17:36:33.542920+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substituting E_i = rho_i^2 turns the reduced critical point into E_+ = E_perp = E_tot/2, and substituting E_+ = 3a^2, E_perp = 6|b|^2 gives a^2 = 2|b|^2 and kappa = 2.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 35,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 35
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over retained-grade inputs: the retained reduced two-slot extremum and the retained Frobenius block-total identities. The runner source symbolically verifies the Lagrange systems, reparametrization, Frobenius identities, and counterfactual tilts rather than merely printing constants. No external comparator, fitted value, or physical charged-lepton identification is used inside the binding claim. The result remains bounded to the formal carrier scope stated in the note."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_koide_mru_reduced_carrier_post_quotient_algebra.py",
+  "title": "Koide MRU Reduced-Carrier Formal Corollary",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

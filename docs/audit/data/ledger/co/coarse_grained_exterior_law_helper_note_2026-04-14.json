@@ -1,0 +1,407 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "coarse_grained_exterior_law_helper_note_2026-04-14",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "finite_rank_gravity_residual_helper_note_2026-04-14",
+    "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 8.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dff335f16f5e6e12807389a4cc797cbe8b4da21b0d3546a00b5816b901f5d392",
+  "note_path": "docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-24T21:52:32.744273+00:00",
+      "archived_for_note_hash": "971844bf43674ec70b8cbc665c6dd36f5f285d7f95d159f45b044ebe741a176d",
+      "audit_date": "2026-05-22T23:39:49.327302+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Given an invertible bare lattice Hamiltonian H_0, finite support projector P, finite-rank support matrix W, and invertible I - W G_S, the helper computes the exact finite-rank Woodbury/Dyson renormalized support source and exterior field."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14"
+        ],
+        "load_bearing_score": 8.07,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 94
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T233928Z-f90684b7-coarse_grained_exterior_-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The primary runner source does implement the projection and Einstein-tensor residual scan, but its load-bearing field construction is opaque because it dynamically imports scripts/frontier_same_source_metric_ansatz_scan.py and scripts/frontier_finite_rank_gravity_residual.py without those helper sources in the packet. The finite-rank authority is retained_bounded, but the runner artifact is incomplete for verifying the actual imported computations.",
+      "claim_scope": "Audited the bounded helper-module claim that the supplied runner computes a shell-averaged radial-harmonic a/r projection of the finite-rank exterior field and reports vacuum-close coarse-grained residuals on the scanned radii.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:39:49.327302+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The helper takes the exact finite-rank exterior field phi(x) and applies shell-averaging plus radial-harmonic projection phi_eff(r) := shell_average(phi, r) -> a/r, with a selected by the radial scan.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_same_source_metric_ansatz_scan.py, scripts/frontier_finite_rank_gravity_residual.py, and _frontier_loader.py in the restricted packet so the dynamic imports can be audited directly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The note is bounded and does not overclaim physical necessity or full GR closure. The runner performs nontrivial numerical computation rather than printing constants: it shell-averages phi, least-squares fits a/r, constructs direct and coarse metrics, and evaluates finite-difference Einstein-tensor residuals. However, the runner depends on dynamically loaded helper scripts not included in the restricted packet, including the finite-rank field construction and the local O_h grid builder, so the load-bearing compute chain cannot be fully inspected from the provided sources. This is an artifact-completeness defect rather than a substantive failure of the stated bounded claim."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:50.664076+00:00",
+      "archived_for_note_hash": "80d40e2058e9ec979324f5a1900a1f472f60bea30990f5c308a4843fbe2d4e17",
+      "audit_date": "2026-05-25T11:09:01.163891+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Given an invertible bare lattice Hamiltonian H_0, finite support projector P, finite-rank support matrix W, and invertible I - W G_S, the helper computes the exact finite-rank Woodbury/Dyson renormalized support source and exterior field."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14"
+        ],
+        "load_bearing_score": 8.629,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 98
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T110839Z-17c98626-coarse_grained_exterior_-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the restricted packet, the runner source and inlined load-bearing helper code instantiate the lattice operators, finite-rank support construction, shell averaging, least-squares harmonic projection, and finite-difference metric residual checks. The conclusion is bounded to this numerical helper workflow and does not claim a physical derivation of the projection map or full GR closure.",
+      "claim_scope": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:09:01.163891+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The module applies shell-averaging to the exact finite-rank exterior field and fits the unique radial-harmonic projection phi_eff(r)=a/r, then verifies the coarse-grained exterior metric residual across scan radii.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "A second auditor should re-check whether the inlined helper slices exactly match the full dynamic-import files used by the cached runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The load-bearing computation is not just a printed constant: the runner constructs phi grids from the supplied finite-rank/O_h machinery, fits a/r from shell averages, evaluates finite-difference Einstein-tensor residuals, and records three passing bounded checks. The upstream finite-rank helper authority is retained_bounded, and the source note explicitly limits the claim to a helper-module residual result rather than a full physical theorem. The numerical parameters in the helper are selected inputs, but the audited claim is only that this bounded module performs and reports the stated coarse-graining/residual calculation on that finite family."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.051381+00:00",
+      "audit_date": "2026-06-18T03:12:13.612118+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Exact finite-rank Woodbury/Dyson source renormalization and exterior-field construction for supplied finite-rank lattice data H_0, P, and W, with no audit of the origin of P,W or downstream 3+1 gravity closure.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 11.351,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 652
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-coarse_grained_exterior_law_helper_note_2026-04-14-second",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited finite-rank authority supplies the exact finite-rank field construction, and the cited shell-localization identity supplies the retained shell-helper surface. The included runner and load-bearing helper excerpts compute the shell averages, a/r projection, and metric residuals rather than merely printing constants.",
+      "claim_scope": "Audited the bounded finite-grid helper claim that the specified local O_h and finite-rank lattice fields, after shell averaging and least-squares radial-harmonic projection, produce the reported vacuum-close coarse-grained exterior residual improvement on the scanned 15^3 Dirichlet grid.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T03:12:13.612118+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-18T03:09:24.976998+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-coarse_grained_exterior_law_helper_note_2026-04-14-first",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded audit of the explicit 15^3-grid shell-averaging/radial-harmonic projection helper and its reported finite-difference metric residual improvement for the local O_h and finite-rank families.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-18T03:12:13.612118+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-coarse_grained_exterior_law_helper_note_2026-04-14-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Audited the bounded finite-grid helper claim that the specified local O_h and finite-rank lattice fields, after shell averaging and least-squares radial-harmonic projection, produce the reported vacuum-close coarse-grained exterior residual improvement on the scanned 15^3 Dirichlet grid.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The helper applies shell averaging to the finite-rank exterior field and fits the resulting shell means to the unique radial-harmonic profile phi_eff(r)=a/r, then verifies the coarse metric residual across the scanned matching radii.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Recheck the source/runner wording around the representative R_match value: the note highlights the R_match=5.0 finite-rank row, while the pass assertions use R_match=4.5; both rows are present in stdout and this does not affect the bounded residual claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: no substantive closure defect in the bounded helper scope. Why this closes: the runner instantiates the lattice finite-rank fields, performs the shell fit, and computes the coarse versus direct Einstein-tensor residuals with PASS=3 FAIL=0, while the one-hop dependencies are retained-grade bounded authorities. Repair target: none for the bounded helper claim. Claim boundary until extended: this does not derive a physically forced shell projection, full tensorial 3+1 completion, or framework-level gravity theorem beyond the finite-grid coarse-residual calculation."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.446539+00:00",
+      "audit_date": "2026-07-01T08:19:12.063199+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Exact finite-rank Woodbury/Dyson source renormalization and exterior-field construction for supplied finite-rank lattice data H_0, P, and W, with no audit of the origin of P,W or downstream 3+1 gravity closure.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian with R=4: seven-star Green columns induce a localized sewing-band shell source and a reduced radial/anisotropic shell map depending only on total charge."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 9.024,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 91
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T081912Z-15c82156-coarse_grained_exterior_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within that bounded scope, the chain closes from the retained_bounded finite-rank field helper, the retained_bounded shell-localization identity, and the supplied runner/helper code. The note explicitly excludes the unclosed physical bridge from this projection to a full tensorial gravity theorem.",
+      "claim_scope": "Audited only the bounded helper computation: on the explicit 15^3 local O_h and finite-rank lattice source families, shell averaging plus least-squares a/r projection gives the reported small finite-difference vacuum residuals, without auditing physical forcing of the projection or a full tensor/GR completion.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T08:19:12.063199+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The helper takes the exact finite-rank exterior field phi(x), shell-averages it, fits the radial-harmonic projection phi_eff(r)=a/r outside a matching radius, and evaluates the resulting coarse-grained metric residual.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the R_match convention drift between the prose-highlighted 5.0 row and the runner's fixed 4.5 PASS row, though it does not change the bounded result.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The runner does more than print constants: it constructs the finite lattice fields, forms shell means, fits a/r by least squares, and computes Einstein-tensor finite-difference residuals for the direct and coarse metrics. The load-bearing helper slices needed by the dynamic imports are included in the restricted packet, and the direct dependencies are retained-grade for a bounded theorem. The note's highlighted finite-rank R_match=5.0 row differs from the runner's fixed PASS row at R_match=4.5, but both rows are present in stdout and satisfy the bounded residual claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.228672+00:00",
+      "audit_date": "2026-07-02T01:04:16.763278+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Exact finite-rank Woodbury/Dyson source renormalization and exterior-field construction for supplied finite-rank lattice data H_0, P, and W, with no audit of the origin of P,W or downstream 3+1 gravity closure.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian shell-localization and reduced-shell factorization at R=4 for the seven-site star, with O_h orbit organization; no nonlinear GR or tensor-valued matching law."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 9.024,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 91
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T010416Z-a001b012-coarse_grained_exterior_",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained-bounded finite-rank helper supplies the field construction and the retained-bounded shell-localization note supplies the shell-helper surface; the primary runner then computes the shell means, fits a, and evaluates the finite-difference Einstein residuals. This closes only the bounded helper computation, not a physical derivation that the projection or metric ansatz is forced.",
+      "claim_scope": "Bounded finite-grid check that the provided 15^3 O_h and finite-rank lattice fields, after shell averaging and least-squares a/r projection, give the reported isotropic-metric residual reductions.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T01:04:16.763278+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The module takes the exact finite-rank exterior field phi(x) and applies shell-averaging plus radial-harmonic projection phi_eff(r) := shell_average(phi,r) -> a/r, then reports the coarse-grained metric residual across scan radii.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check the source/runner wording around best matching radius: the note quotes R_match=5.0 while the PASS checks use the R_match=4.5 table row, although both rows support the bounded residual claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "The runner is not print-only: it constructs the lattice fields, computes the shell-mean least-squares a/r projection, and evaluates the direct and coarse-grained metric residuals. The reported finite-rank R_match=5.0 values are generated by the executable table, and the PASS checks establish the same bounded residual-improvement claim at R_match=4.5. The hard-coded finite family, finite Dirichlet grid, and isotropic metric ansatz remain part of the audited bound, so this is not a framework-level exterior-gravity theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.517447+00:00",
+      "audit_date": "2026-07-10T01:48:29.004100+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "Exact finite-rank Woodbury/Dyson source renormalization and exterior-field construction for supplied finite-rank lattice data H_0, P, and W, with no audit of the origin of P,W or downstream 3+1 gravity closure.",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "The finite 15^3 zero-Dirichlet realization at R=4, restricted to seven-site-star sources and the stated shell-mean, radial-orbit, and reduced-shell observables."
+        },
+        "dep_claim_type": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "bounded_theorem",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "finite_rank_gravity_residual_helper_note_2026-04-14": "retained_bounded",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": "retained_bounded"
+        },
+        "deps": [
+          "finite_rank_gravity_residual_helper_note_2026-04-14",
+          "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        ],
+        "load_bearing_score": 8.615,
+        "runner_hash": "5d8fe1c6d541ca8b9aadc088462c12836e1c22c0dfb07d1f88384fb33fcd3e02",
+        "transitive_descendants": 97
+      },
+      "audit_status": "audited_renaming",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-coarse_grained_exterior_-051",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The code reproduces the R_match = 5.0 numerical row, but it does not derive the exterior law: a/r is supplied as the fitting basis and the scan does not algorithmically derive a physically preferred matching radius. Neither cited authority derives the continuum 1/r asymptotic or the metric bridge.",
+      "claim_scope": "Implementation and numerical behavior, on the explicit 15^3 Dirichlet finite-rank fixture, of shell averaging, least-squares a/r projection, and the reported Einstein-residual reduction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T01:48:29.004100+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16:retained_bounded->unaudited",
+      "load_bearing_step": "The module shell-averages the exact finite-rank field and then least-squares projects it onto the preselected effective law phi_eff(r) = a/r at a matching radius chosen from the scan.",
+      "load_bearing_step_class": "E",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a bounded theorem and convergence runner deriving the 1/r shell-mean asymptotic and a declared matching-radius criterion from the retained lattice construction instead of supplying the continuum ansatz.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "total_pass": 3
+      },
+      "verdict_rationale": "Issue: the effective exterior law is introduced by projecting onto a predefined a/r ansatz, while the low Einstein residual follows from evaluating the corresponding isotropic Schwarzschild-form metric rather than deriving that metric from the lattice field. Why this blocks: the lattice authority explicitly leaves the 1/r asymptotic and GR/tensor completion out of scope, and the finite shell fit still has relative RMS 0.094 and maximum relative error 0.233 at R_match = 5.0. Repair target: derive the radial asymptotic and matching criterion from retained lattice inputs and explicit boundary conditions. Claim boundary until fixed: the runner validly documents a numerical projection construction and its reported residuals, but not an emergent or uniquely derived exterior law."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_coarse_grained_exterior_law.py",
+  "title": "Coarse-Grained Exterior Law Helper Module",
+  "transitive_descendants": 95,
+  "verdict_rationale": null
+}

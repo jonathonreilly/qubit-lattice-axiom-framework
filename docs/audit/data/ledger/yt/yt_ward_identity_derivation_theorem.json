@@ -1,0 +1,855 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "yt_ward_identity_derivation_theorem",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem.",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_realization_gate_note_2026-05-03",
+    "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+    "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05",
+    "minimal_axioms",
+    "native_gauge_closure_note"
+  ],
+  "direct_in_degree": 60,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/canonical_plaquette_surface.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 39.994,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "f213de78a8ed0a97cc18d1abb82fadc2741c45be9b6c75455df9e08ef4836b56",
+  "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-29T11:23:54.963951+00:00",
+      "archived_for_note_hash": "2e661fb9af93f4ededfe0307aceff78a25b29572698a8cc4e158a0c34eb9f7e5",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-04-30T12:21:20.790256+00:00",
+      "archived_for_note_hash": "548510ef15aa972473e04bb2b651759491c76c7524a88b7dbed34694780b7e2c",
+      "audit_date": "2026-04-30T11:45:00.754263+00:00",
+      "audit_status": "audited_renaming",
+      "auditor": "codex-fresh-context-20260430-01-yt-ward",
+      "auditor_confidence": 0.9,
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies algebraic coefficients, but the physical readout of the normalized composite matrix element as the Yukawa coupling and the common tadpole dressing are introduced rather than derived from allowed dependencies.",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "On the canonical surface (g_bare = 1), y_t_bare is defined as the unit-norm-state matrix element of H_unit: y_t_bare := <0 | H_unit(0) | tbar_top,up t_top,up>.",
+      "load_bearing_step_class": "E",
+      "open_dependency_paths": [
+        "docs/MINIMAL_AXIOMS_2026-04-11.md",
+        "docs/NATIVE_GAUGE_CLOSURE.md",
+        "docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md",
+        "docs/YUKAWA_COLOR_PROJECTION_THEOREM.md",
+        "docs/YT_EW_COLOR_PROJECTION_THEOREM.md",
+        "docs/YT_VERTEX_POWER_DERIVATION.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "Issue: The load-bearing move defines y_t_bare as a unit-normalized H_unit-to-top matrix element and treats that definition as the physical Yukawa readout entering y_t(M_Pl) = g_s(M_Pl)/sqrt(6). Why this blocks: The algebraic 1/sqrt(6) overlap is computed, but the physical Yukawa identification and common tadpole normalization are imported rather than derived from allowed retained dependencies. Repair target: Provide a retained theorem or runner-checked derivation mapping the composite operator matrix element to the physical Yukawa vertex and proving its tadpole dressing, with D9/D15/D16/D17 supplied as verified one-hop dependencies. Claim boundary until fixed: The result supports an algebraic normalization/overlap for the chosen Q_L scalar singlet and Fierz coefficients, not a closed Ward-identity derivation of y_t(M_Pl) = g_s(M_Pl)/sqrt(6)."
+    },
+    {
+      "archived_at": "2026-05-03T11:47:05.621308+00:00",
+      "archived_for_note_hash": "64a274d7be60121a2acb17eb9a36d1c7fb5cc356b505f38d9792157d32b1ed92",
+      "audit_date": "2026-05-03T10:48:10.701414+00:00",
+      "audit_status": "audited_renaming",
+      "auditor": "fresh-agent-popper-019ded72-35b5-7031-a1a0-f451abb8141d",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic Clebsch-Gordan overlap and Fierz checks close for the defined H_unit readout, but the theorem-level identification of that readout as y_t is introduced by definition rather than derived from an independent retained authority. The runner verifies the resulting coefficients after the readout choice; it does not derive the physical Yukawa map without that definition.",
+      "claim_scope": "Tree-level canonical-surface identification of the unit-normalized Q_L scalar-singlet H_unit matrix element with the top-Yukawa readout, yielding y_t(M_Pl)/g_s(M_Pl)=1/sqrt(6); no RG, precision, or NLO claim audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-03T10:48:10.701414+00:00",
+      "claim_type_provenance": "audited",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note defines y_t_bare as the unit-norm H_unit matrix element between the vacuum and a single top-pair state, then evaluates that matrix element as 1/sqrt(6).",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "Re-check only if a future restricted-input audit supplies retained one-hop authorities deriving the y_t readout and D15/D17 bridge rather than asserting them in this note.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh-agent",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 45
+      },
+      "verdict_rationale": "Issue: the load-bearing step defines y_t_bare to be the H_unit-to-top matrix element and then computes the 1/sqrt(6) overlap. Why this blocks: the presented chain establishes an internally consistent framework readout, but not an independently derived Standard Model top-Yukawa observable. Repair target: provide a retained theorem deriving the top-Yukawa readout and shared tadpole dressing from the bare action without defining y_t as the target matrix element. Claim boundary until fixed: the note may safely claim the unit-normalized H_unit overlap and same-1PI scalar-singlet consistency on the canonical surface."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.091710+00:00",
+      "audit_date": "2026-05-25T14:32:32.165236+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 37.913,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 963
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judicial-panel-per-site-k1-20260525T143232Z-yt_ward_identity_derivation_theorem-majority",
+      "auditor_confidence": "judicial_panel_majority",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict.",
+      "claim_scope": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T14:32:32.165236+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-25T14:24:57.722299+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T142128Z-d0306d41-yt_ward_identity_derivat-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact unit-normalized scalar-singlet H_unit matrix element on the Q_L = (2,3) block: y_t_bare = 1/sqrt(6), equivalently g_bare/sqrt(6) on the admitted g_bare = 1 canonical surface; no SM Yukawa, Planck-ratio, or tadpole-transport claim is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-25T14:28:01.298995+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T142528Z-d0306d41-yt_ward_identity_derivat-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional on the admitted canonical Q_L=(2,3) bare-action surface, the unit-normalized H_unit scalar-singlet matrix element on one top-basis component equals 1/sqrt(6), equivalently g_bare/sqrt(6) when the admitted canonical g_bare=1 surface is used; no SM Yukawa readout, Planck transport, or precision claim is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-05-25T14:32:32.165236+00:00",
+          "auditor": "codex-judicial-panel-per-site-k1-20260525T143232Z-yt_ward_identity_derivation_theorem-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On the admitted canonical Q_L=(2,3) surface, the unit-normalized scalar-singlet H_unit matrix element on a single top-basis component equals 1/sqrt(6); no SM Yukawa readout, Planck transport, or precision claim is audited.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second audit overclassified the load-bearing overlap as C; the presented step is class A algebra over existing bounded inputs.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "Eq. (3.8): from H_unit = (1/sqrt(N_c N_iso)) sum psi-bar psi and canonical fermion normalization, the top-basis matrix element is (1/sqrt(6)) * 1 = 1/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-audit if downstream use treats this as a physical SM Yukawa readout or Planck-surface tadpole-transport closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Five-judge panel majority 3/5 ratified the first tuple (audited_clean, bounded_theorem, class A). Vote breakdown: J1: first / audited_clean / bounded_theorem / class A; J2: hybrid / audited_clean / bounded_theorem / class A; J3: first / audited_clean / bounded_theorem / class A; J4: first / audited_clean / bounded_theorem / class A; J5: second / audited_clean / bounded_theorem / class C. Majority rationale: The load-bearing step uses the already fixed Q_L dimension N_c N_iso = 6 and applies the unit-normalized singlet overlap with the canonical Wick amplitude. That is an algebraic identity over the stated bounded inputs, not a new first-principles compute from A1+A2. The runner source supports the contraction and overlap checks, while the helper plaquette constants are confined to non-load-bearing context. The clean verdict is applyable only at bounded_theorem scope, with the physical SM Yukawa map and tadpole bridge outside the audited claim. | The refreshed scope removes the physical-Yukawa and tadpole-transport identification, leaving only the H_unit matrix-element calculation. Once the Q_L dimension and unit scalar-singlet normalization are fixed, the load-bearing step is an algebraic singlet-overlap evaluation, so class A is the sharper classification than C. The runner source supports the contraction and overlap checks, while the hard-coded plaquette helper constants enter only support/context blocks. The named open gates limit the result to a bounded theorem surface rather than an unbounded retained theorem, but they do not make the scoped matrix-element identity conditional in audit-status terms. | The narrowed claim closes as a bounded theorem because the audited conclusion is only the scalar-singlet component overlap on the explicitly admitted canonical surface. The load-bearing step is class A: once the Q_L block dimension and unit-normalized singlet operator are accepted, the value is an algebraic normalization/overlap calculation, not a new first-principles lattice computation. The runner source supports this by enumerating contractions and constructing the singlet state; hard-coded plaquette/tadpole constants appear only in non-load-bearing context. No-Go gate N1-N8 leaves only the already named bounded admissions and the explicitly excluded SM/readout/tadpole routes, so it does not defeat the bounded clean verdict."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.555409+00:00",
+      "audit_date": "2026-06-05T16:09:23.725304+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 38.015,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 1034
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-160551-0879b034da-yt_ward_identity_derivation_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-dimensional normalization math closes once the six-component Q_L block, H_unit definition, and canonical fermion/scalar normalizations are granted. The restricted packet does not close the stated open gates for the staggered-Dirac/canonical bare-action surface or the g_bare = 1 convention used to write the result as g_bare/sqrt(6).",
+      "claim_scope": "Only the unit-normalized H_unit scalar-singlet matrix element on a chosen Q_L = (2,3) basis component at the canonical bare surface; no SM Yukawa, Planck-surface ratio, tadpole transport, NLO, or physical readout claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:09:23.725304+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Eq. (3.8): from H_unit = (1/sqrt(N_c N_iso)) sum_{alpha,a} psi-bar psi, the top-basis matrix element is (1/sqrt(6)) * 1 = 1/sqrt(6), written as g_bare/sqrt(6) on the g_bare = 1 canonical surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: provide retained or explicitly Tier-A-admitted sources for the staggered-Dirac/canonical Q_L surface and the g_bare = 1 canonical-surface convention, then rerun the restricted audit.",
+      "open_dependency_paths": [
+        "docs/G_BARE_DERIVATION_NOTE.md",
+        "docs/MINIMAL_AXIOMS_2026-06-04.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 44,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "Independently, a unit vector uniformly spread over six orthonormal Q_L basis-pair components has overlap 1/sqrt(6) with any one component, so the narrowed matrix-element arithmetic is sound. The runner source contains real index-contraction, Fierz, and singlet-state computations, while the plaquette helper enters only non-load-bearing context. However, the source note explicitly conditions on open/admitted staggered-Dirac/canonical-surface and g_bare = 1 inputs, and the provided 2026-06-04 minimal axiom memo keeps those outside the axioms. Those gates are not closed by the restricted packet, so the theorem is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:15.404003+00:00",
+      "archived_for_note_hash": "de89764b21a1338d4451e5a1a7cc7e9e3049c27fbf6d4336617f4ee0a1d07a2b",
+      "audit_date": "2026-06-05T20:44:13.117975+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded."
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained"
+        },
+        "deps": [
+          "minimal_axioms",
+          "native_gauge_closure_note"
+        ],
+        "load_bearing_score": 38.021,
+        "runner_hash": "02bc73fa878cd50a93bc5d7d8fb7512d9e0cd7c8644a167d648d3a01257e7172",
+        "transitive_descendants": 1038
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-204013-6a91d0be59-yt_ward_identity_derivation_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The 6-dimensional singlet-overlap calculation closes algebraically once the Q_L carrier, canonical scalar/fermion normalization, and g_bare=1 surface are assumed. The restricted packet does not close the explicitly admitted staggered-Dirac/canonical-surface and g_bare=1 inputs.",
+      "claim_scope": "Bare canonical-surface H_unit scalar-singlet matrix element on the stated Q_L=(2,3) block; no SM Yukawa readout, Planck-surface transport, shared tadpole bridge, precision claim, or NLO correction is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T20:44:13.117975+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Computing the matrix element from H_unit = (1/sqrt(N_c N_iso)) sum_{alpha,a} psibar_{alpha,a} psi_{alpha,a} gives y_t_bare = (1/sqrt(6))*1 = 1/sqrt(6), with the displayed g_bare/sqrt(6) form only on the canonical g_bare=1 surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: supply retained or explicitly Tier-A-admitted one-hop authority for the staggered-Dirac/canonical bare-action surface and g_bare=1 convention, then re-audit the same matrix-element calculation.",
+      "open_dependency_paths": [
+        "docs/G_BARE_DERIVATION_NOTE.md",
+        "docs/MINIMAL_AXIOMS_2026-05-20.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 44,
+        "D": 0,
+        "total_pass": 44
+      },
+      "verdict_rationale": "The load-bearing matrix-element math is sound in the stated 6-dimensional carrier: a unit singlet has overlap 1/sqrt(6) with any chosen basis bilinear, and the shown runner checks compute that algebra rather than importing a physical top Yukawa value. However, the note explicitly conditions on open/admitted context inputs, and the provided 2026-06-05 axiom authority says staggered-Dirac realization and g_bare=1 convention handling remain outside axiom content. The result is therefore bounded on those premises, not a closed theorem from the retained one-hop packet alone."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.526306+00:00",
+      "audit_date": "2026-06-11T23:03:57.333488+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 39.131,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 792
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260611-yt_ward_identity_derivation_theorem-r1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source packet closes the Ward identity on the declared B1 action surface by finite-dimensional Noether/Schwinger-Dyson algebra, with runner checks that construct M, J, G, exact rational certificates, and falsification legs rather than merely printing the result. The T1 corollary is likewise an exact normalization and Schur/commutant calculation for the defined H_unit operator, not a physical Yukawa readout or tadpole-transport claim. Class A is the better load-bearing classification because the theorem is algebraic closure over the admitted staggered-action surface, not a first-principles derivation of that surface from the minimal axioms.",
+      "claim_scope": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T23:03:57.333488+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T22:50:34.367913+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-224720-8f3b8ae6e0-yt_ward_identity_derivation_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-06-11T22:55:40.629282+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-225114-3c404a8158-yt_ward_identity_derivation_",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact point-split U(1)_B and U(2)_iso vector Ward identities for the staggered Q_L action on the declared B1 fixed-link finite-lattice surface, plus the Schur-forced H_unit scalar-singlet matrix element y_t_bare = 1/sqrt(6) at canonical g_bare = 1; no SM Yukawa, RG, tadpole-transport, or precision claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_first",
+        "third_audit": {
+          "audit_date": "2026-06-11T23:03:57.333488+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-majority-20260611-yt_ward_identity_derivation_theorem-r1",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact staggered-Q_L point-split vector Ward identities W1-W2, Schur/commutant singlet uniformity W3, and the bare-surface H_unit matrix element T1 on the declared B1 staggered-action surface with the canonical g_bare=1 convention; no SM Yukawa readout, tadpole transport, or precision claim.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "none",
+          "independence": "judicial_review",
+          "judgment_rationale": "The source packet closes the Ward identity on the declared B1 action surface by finite-dimensional Noether/Schwinger-Dyson algebra, with runner checks that construct M, J, G, exact rational certificates, and falsification legs rather than merely printing the result. The T1 corollary is likewise an exact normalization and Schur/commutant calculation for the defined H_unit operator, not a physical Yukawa readout or tadpole-transport claim. Class A is the better load-bearing classification because the theorem is algebraic closure over the admitted staggered-action surface, not a first-principles derivation of that surface from the minimal axioms.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "Classified the load-bearing step as C even though the restricted claim is algebraic closure on the declared B1 action surface rather than a first-principles computation deriving that surface from the framework baseline.",
+          "sided_with": "first",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Localizing the exact vector symmetry of the staggered Q_L action emits the symmetric point-split current and equating the variation with the projector commutator gives sum_mu[J_mu(x)-J_mu(x-mu)]=[E_x,M], while the unit-normalized U(2)_iso x SU(3)_color singlet gives the H_unit matrix element 1/sqrt(6).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the B1 staggered-Dirac surface remains registered as the Tier-A bounded admission; no compute repair is indicated.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The source packet closes the Ward identity on the declared B1 action surface by finite-dimensional Noether/Schwinger-Dyson algebra, with runner checks that construct M, J, G, exact rational certificates, and falsification legs rather than merely printing the result. The T1 corollary is likewise an exact normalization and Schur/commutant calculation for the defined H_unit operator, not a physical Yukawa readout or tadpole-transport claim. Class A is the better load-bearing classification because the theorem is algebraic closure over the admitted staggered-action surface, not a first-principles derivation of that surface from the minimal axioms."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.900770+00:00",
+      "audit_date": "2026-06-30T19:19:13.023542+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 40.685,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 822
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T191913Z-7a701a8a-yt_ward_identity_derivat",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Ward-identity algebra and matrix-element normalization close on the declared staggered-Q_L/canonical-g_bare surfaces, and the runner source performs substantive matrix/residual checks. The full restricted chain does not close because the B1 staggered-Dirac/canonical Q_L surface is carried by a direct cited authority with effective_status unaudited rather than a retained-grade authority in this packet.",
+      "claim_scope": "Exact point-split vector Ward identities and iso-vector breaking for the staggered Q_L action on the declared B1 surface, plus the H_unit scalar-singlet matrix element y_t_bare/g_bare = 1/sqrt(6); no SM readout, tadpole transport, or precision claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T19:19:13.023542+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Localizing the exact vector symmetry of the staggered Q_L action gives the point-split current and the kernel Noether identity sum_mu[J_mu(x)-J_mu(x-mu)] = [E_x,M], while the unique unit scalar singlet H_unit gives the 1/sqrt(6) matrix element on the canonical surface.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "dependency_not_retained: audit or explicitly include the accepted Tier-A admission evidence for AC_phi_lambda / docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md, then rerun the restricted bounded-theorem audit.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "Issue: the presented Noether/Ward derivation and the 1/sqrt(6) H_unit matrix element are locally sound on the stated action surface, but the action/Q_L realization surface itself remains a direct non-retained dependency in the restricted packet. Why this blocks: the runner verifies identities after that surface is assumed; it does not retire AC_phi_lambda or derive the staggered-Dirac realization from the accepted axiom node. Repair target: provide a retained audit or explicit accepted Tier-A admission evidence for the B1 surface, then rerun this bounded audit. Claim boundary until fixed: exact finite-dimensional Ward/matrix-element algebra conditional on B1/C2 only."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.515134+00:00",
+      "audit_date": "2026-07-01T22:32:16.404136+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 40.685,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 822
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T223216Z-883cb967-yt_ward_identity_derivat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared staggered-Dirac/Q_L action surface, the Ward identities are finite matrix identities derived from the action symmetry, and the contact terms follow by Gaussian Schwinger-Dyson algebra. The singlet uniformity and 1/sqrt(6) matrix element close by Schur/commutant algebra and unit-residue normalization; the AC_phi_lambda realization remains the explicit bounded Tier-A surface, not a theorem closed here.",
+      "claim_scope": "Exact point-split U(1)_B and U(2)_iso vector Ward identities for the stated finite staggered Q_L action at fixed color links, plus the bounded H_unit matrix-element corollary y_t_bare=1/sqrt(6) on the canonical g_bare=1 surface, with no SM Yukawa, tadpole-transport, or precision readout.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T22:32:16.404136+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T22:27:57.555652+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T222757Z-4420a191-yt_ward_identity_derivat",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact point-split U(1)_B and U(2)_iso vector Ward identities, Schur-forced scalar-singlet uniformity, and the local H_unit matrix element y_t_bare=1/sqrt(6), all only on the declared staggered Q_L action surface with the canonical g_bare convention; no SM Yukawa, tadpole transport, RG, anomaly, or precision claim is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T22:32:16.404136+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T223216Z-883cb967-yt_ward_identity_derivat",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact point-split U(1)_B and U(2)_iso vector Ward identities for the stated finite staggered Q_L action at fixed color links, plus the bounded H_unit matrix-element corollary y_t_bare=1/sqrt(6) on the canonical g_bare=1 surface, with no SM Yukawa, tadpole-transport, or precision readout.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Localizing the exact vector symmetry and equating the independent alpha(x) coefficients gives the finite-kernel Noether identity sum_mu[J_mu(x)-J_mu(x-mu)] = [E_x,M], from which the Schwinger-Dyson Ward identity follows; the H_unit corollary then uses the unique scalar singlet s=I/sqrt(6).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that future reuse preserves the bounded scope: the same-1PI consistency discussion must remain non-load-bearing unless a separate H_unit carrier/propagator bridge is supplied.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The runner source genuinely constructs finite staggered operators, random and exact link backgrounds, Ward-current kernels, propagators, falsification currents, and the product-symmetry commutant; it is not merely printing the target residuals. The hard-coded plaquette helper constants are confined to log-only/context lines and do not affect the load-bearing Ward or H_unit checks. The result is clean only at the bounded scope stated in the note: the staggered-Dirac realization surface is admitted/registered rather than re-derived, and no physical top-Yukawa or transport claim is audited here."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.510467+00:00",
+      "audit_date": "2026-07-02T11:11:07.870494+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "staggered_dirac_realization_gate_note_2026-05-03": null,
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "unaudited",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 40.685,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 822
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-judge-panel-gpt-5.5-yt-ward-identity-20260702-20260702T110723Z-bd7b3b19-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The second audit has the correct tuple. The Ward identity and H_unit factor close as exact finite-dimensional Noether/Schwinger-Dyson, Schur-commutant, and normalization algebra over the declared B1 action surface and B2 convention; the runner supplies strong computed evidence and falsification legs, but the proof's load-bearing class is algebraic closure over admitted inputs rather than a new first-principles baseline computation. The clean verdict is bounded: it does not retire the staggered-Dirac Tier-A surface and does not audit any SM Yukawa, tadpole transport, or precision claim.",
+      "claim_scope": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action at fixed color links, plus the local H_unit matrix-element form factor y_t_bare/g_bare = 1/sqrt(6) on the canonical bare surface; no SM Yukawa readout, tadpole transport, or precision claim audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T11:11:07.870494+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T11:01:31.504432+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T110131Z-1e530cbe-yt_ward_identity_derivat",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite-lattice U(1)_B and U(2)_iso vector Ward identities, singlet uniformity, and the local H_unit matrix element y_t_bare/g_bare = 1/sqrt(6), all only on the declared staggered-Q_L action surface with the stated g_bare convention; no SM Yukawa, Planck-scale, tadpole-transport, or precision claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-02T11:07:09.244557+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T110709Z-3b256443-yt_ward_identity_derivat",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action at fixed color links, plus the local H_unit matrix-element form factor y_t_bare/g_bare = 1/sqrt(6) on the canonical bare surface; no SM Yukawa readout, tadpole transport, or precision claim audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-02T11:11:07.870494+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-yt-ward-identity-20260702-20260702T110723Z-bd7b3b19-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit overclassified the load-bearing step as C; its rationale describes valid finite-matrix computations, but the source proof itself depends on the admitted staggered-Q_L action surface and then performs exact algebra on that surface.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The second audit has the correct tuple. The Ward identity and H_unit factor close as exact finite-dimensional Noether/Schwinger-Dyson, Schur-commutant, and normalization algebra over the declared B1 action surface and B2 convention; the runner supplies strong computed evidence and falsification legs, but the proof's load-bearing class is algebraic closure over admitted inputs rather than a new first-principles baseline computation. The clean verdict is bounded: it does not retire the staggered-Dirac Tier-A surface and does not audit any SM Yukawa, tadpole transport, or precision claim.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "none",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check on future edits that B1 remains a registered bounded action-surface admission and that plaquette/tadpole helper constants remain outside load-bearing PASS checks.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The second audit has the correct tuple. The Ward identity and H_unit factor close as exact finite-dimensional Noether/Schwinger-Dyson, Schur-commutant, and normalization algebra over the declared B1 action surface and B2 convention; the runner supplies strong computed evidence and falsification legs, but the proof's load-bearing class is algebraic closure over admitted inputs rather than a new first-principles baseline computation. The clean verdict is bounded: it does not retire the staggered-Dirac Tier-A surface and does not audit any SM Yukawa, tadpole transport, or precision claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:35.000598+00:00",
+      "audit_date": "2026-07-07T21:17:35.132860+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "The standalone rational-function algebra identity \u03b2(g,N)=2N/g^2 under g\u21a6g/c, the invariant product \u03b2g^2=2N, and the associated positive-rational orbit/injectivity statements for \u03b2-values in the image.",
+          "minimal_axioms": null,
+          "native_gauge_closure_note": "Exact native cubic Cl(3) taste algebra, native Clifford-bivector su(2), finite open-block cubic parity/chiral anticommutation, plus retained graph-first selected-axis structural su(3), with abelian/electroweak/matter/Wilson/phenomenology claims excluded.",
+          "staggered_dirac_realization_gate_note_2026-05-03": "Bounded synthesis of the staggered-Dirac realization gate on Quantum plus Lattice and the declared premise set, with AC_phi_lambda generation labeling carried only by the no-go plus accepted labeling convention.",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "Audited the narrow dependency-routing bridge for the parent Ward identity: Dep 1 is treated only as a registered Tier-A admitted target, Dep 2 is supported by retained beta-g_bare rescaling algebra and retained_bounded finite-link normalization rigidity, and the normalized form factor F=y_t_bare/g_bare is algebraically g_bare-flat."
+        },
+        "dep_claim_type": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "positive_theorem",
+          "staggered_dirac_realization_gate_note_2026-05-03": "bounded_theorem",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta",
+          "native_gauge_closure_note": "retained",
+          "staggered_dirac_realization_gate_note_2026-05-03": "retained_bounded",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
+          "minimal_axioms",
+          "native_gauge_closure_note",
+          "staggered_dirac_realization_gate_note_2026-05-03",
+          "yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05"
+        ],
+        "load_bearing_score": 44.35,
+        "runner_hash": "fa08cefaf4b1d968604e10cef1944041dca76a7eacbcf518dcbf4051ef6c6732",
+        "transitive_descendants": 922
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-yt-ward-second-20260707",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the declared staggered Q_L surface, the local vector variation gives the point-split current and kernel identity, Gaussian integration gives the contact-term Ward identity, and U(2)_iso x SU(3)_color commutant plus unit-residue normalization force the 1/sqrt(6) scalar-singlet matrix element. The direct dependencies are retained-grade or accepted axiom/owner-governed surfaces, so the clean result remains bounded rather than unbounded.",
+      "claim_scope": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action surface, plus the local H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6); no SM Yukawa readout, tadpole transport, RG, precision, or physical matching claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-07T21:17:35.132860+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T21:06:30.524581+00:00",
+          "auditor": "codex-audit-loop-yt-ward-20260707",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action surface, plus the local H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6); no SM Yukawa readout, tadpole transport, RG, precision, or physical matching claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-07T21:17:35.132701+00:00",
+          "auditor": "codex-audit-loop-yt-ward-second-20260707",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact point-split U(1)_B and U(2)_iso Ward identities for the declared staggered Q_L action surface, plus the local H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6); no SM Yukawa readout, tadpole transport, RG, precision, or physical matching claim.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Step 0 derives sum_mu [J_mu(x) - J_mu(x-mu)] = [E_x, M] and the Schwinger-Dyson contact-term Ward identities for the declared staggered Q_L action; Steps 1-3 evaluate the H_unit scalar-singlet matrix element y_t_bare = g_bare/sqrt(6) on the same bounded surface.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 0,
+        "C": 45,
+        "D": 0,
+        "total_pass": 58
+      },
+      "verdict_rationale": "The Ward identity is derived from a localized change of variables for the declared staggered action, and the runner computes zero residuals on random and exact finite constructions while computing nonzero residuals for link-stripped, eta-mismatched, and split-mass falsification legs. Independently, I checked the kernel/contact-term signs on a separate U(1) toy lattice, the iso-breaking commutator sign, the singlet normalization, the SU(3) singlet Fierz coefficient, and the scalar Clifford projection coefficient. The T1 statement is only the local H_unit matrix element on the canonical bare surface; the note explicitly excludes SM Yukawa readout, tadpole transport, RG, precision, and physical matching. No-go/bounded-surface gate: the residual surfaces are explicit dependencies or boundaries, not hidden negative walls or promoted no-go claims."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
+  "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
+  "transitive_descendants": 1019,
+  "verdict_rationale": null
+}

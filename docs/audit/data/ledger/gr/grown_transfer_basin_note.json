@@ -1,0 +1,183 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "grown_transfer_basin_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "grown_transfer_basin_targeted_repair_note_2026-06-04"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.524,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "27ac981a1f2f6fa4dc8800d3e02982ee4673cdf9363a5d2e598d4a8b99431b3a",
+  "note_path": "docs/GROWN_TRANSFER_BASIN_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.368657+00:00",
+      "archived_for_note_hash": "5f59d95735d4a3a0fa58d934798ac6ecfc674b62c1ab1a20ea2a4176f8cbaa73",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-06-09T08:57:55.911791+00:00",
+      "archived_for_note_hash": "aad48b81b54623224c15c64eb6f64f4122aad276856890e3d44b6a717044f83e",
+      "audit_date": "2026-04-27",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The one-row diagnostic supports the new middle row under the corrected criterion, but a declared targeted basin runner still applies the rejected gamma0-zero criterion and emits the opposite SAFE READ: 0/4 nearby rows survive. The artifact chain is therefore stale/internally inconsistent for the plural basin promotion.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "backfilled_from_archived_failed",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The nearby grown rows preserve both the signed-source sign law and the complex-action TOWARD -> AWAY crossover plus near-linear F~M, so the narrow grown-row basin is retained.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md",
+        "docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md",
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V1_NOTE.md",
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V2_NOTE.md",
+        "docs/GATE_B_NONLABEL_CONNECTIVITY_V3_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "Issue: `scripts/GROWN_TRANSFER_BASIN_TARGETED.py` still requires `abs(row.action_gamma0) < 1e-12`, the exact complex-action survival criterion that the source note says is wrong. Its live output for the four declared nearby rows prints zero/neutral controls, charge exponent 1.000, F0/F05 = 1.000, and toward = (3, 0), but then reports `nearby rows surviving both observables: 0/4` and `the retained positives do not survive this nearby basin`. Why this blocks: the headline retained basin claim depends on the same-row signed-source plus complex-action survival decision, and the declared artifact chain currently gives a contradictory pass/fail verdict for that decision rather than a clean regenerated basin log. Repair target: patch the targeted basin checker to use the source note's stated criterion, require same-row intersection of signed-source and complex-action survival, rerun/archive the targeted and full basin outputs, and update the note only after the executable SAFE READ matches the retained claim. Claim boundary until fixed: safely claim that the central retained grown row and the single middle diagnostic row at drift=0.20, restore=0.60 pass the corrected signed-source and complex-action checks; do not claim a retained nearby basin or graph-ladder transfer beyond that repaired runner output."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:38.503096+00:00",
+      "audit_date": "2026-06-18T05:19:47.179401+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "grown_transfer_basin_targeted_repair_note_2026-06-04": "Finite grown-transfer basin packet at H=0.5, K=5.0, BETA=0.8, NL=25, PW=10, seeds 0-2, requiring signed-source and complex-action predicates on the same declared rows."
+        },
+        "dep_claim_type": {
+          "grown_transfer_basin_targeted_repair_note_2026-06-04": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "grown_transfer_basin_targeted_repair_note_2026-06-04": "retained_bounded"
+        },
+        "deps": [
+          "grown_transfer_basin_targeted_repair_note_2026-06-04"
+        ],
+        "load_bearing_score": 8.039,
+        "runner_hash": "7749f84dbf097c85afca8dc8c25868d38bfb6288fc3b4825f87f49f245ae314f",
+        "transitive_descendants": 92
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-grown_transfer_basin_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied sweep source deterministically constructs grown geometries, propagates both observables, and applies the stated predicates; the completed cache shows all nine rows satisfy them. The included helper's load-bearing `grow` path is algorithmic and does not import the contested survivor counts.",
+      "claim_scope": "Finite same-row survival of the signed-source and complex-action predicates on the declared PW=10, seeds 0-2, 3x3 drift/restore grid, with the four targeted rows covered as a subset.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:19:47.179401+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:grown_transfer_basin_targeted_repair_note_2026-06-04:retained_bounded->unaudited",
+      "load_bearing_step": "Row values are recomputed by `_score_row(drift, restore)`, which builds the grown geometry through `scripts/gate_b_grown_joint_package.py` and applies the shared row predicates.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the targeted 4/4 statement is treated as covered by the supplied 3x3 sweep rather than as requiring an independent targeted-runner artifact.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner is not a print-only or replay-only artifact: it computes each row from fixed constants, seeds, grown geometry, and propagation rules, then checks the predicates against the computed values. The cache values satisfy signed-source survival, complex-action survival, and same-row survival for all nine rows. The helper contains hard-coded replay expectations for its own harness, but those are outside the `grow` path imported by this claim. The verdict is clean only for the finite declared grid and predicates, not for any family-wide transfer theorem or geometry-generic claim."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/GROWN_TRANSFER_BASIN_SWEEP.py",
+  "title": "Grown Transfer Basin Note",
+  "transitive_descendants": 91,
+  "verdict_rationale": null
+}

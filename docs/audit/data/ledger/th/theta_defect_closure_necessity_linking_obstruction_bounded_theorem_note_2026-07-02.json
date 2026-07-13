@@ -1,0 +1,113 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "theta_defect_closure_necessity_linking_obstruction_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (exact finite identity plus a necessity",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "4c1f02a6ee0ff3fab4c3b28dfb3f06450c3e65bb0108834e92fb669701688b23",
+  "note_path": "docs/THETA_DEFECT_CLOSURE_NECESSITY_LINKING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.937333+00:00",
+      "audit_date": "2026-07-10T04:36:46.217703+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "aee8bafb44e6fc733a9eb2c279beb3bff536be5ad7d4ee83c1824aee97d0f2ef",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00100-theta_defect_closure_necessi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The linking identity follows algebraically from the implemented coboundary, Leibniz rule, d^2=0, and torus telescoping. The runner then constructs the relevant cochains and exhaustively checks all 64 unit-link shifts for each of the six plane representatives without importing the claimed result.",
+      "claim_scope": "On the self-contained T^4 lattice at L=2, the Q_raw cup-square charge is invariant under exact branch shifts for closed cochains, while each of the six tested single-plaquette representatives is obstructed by a unit-link shift; one near/far pair also witnesses defect-local support.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T04:36:46.217703+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For each of the six tested single-plaquette cochains, the exact identity Delta(lambda) = -sum(J cup lambda) + sum(lambda cup J) admits a unit-link shift with |Delta| >= 1, whereas dn = 0 makes Delta vanish for every exact shift.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 2,
+        "C": 2,
+        "D": 1,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The runner genuinely implements the finite cubical complex and cup product, computes the charge changes, discriminates all four sign patterns, and obtains seven passing checks without hard-coded target outputs or external comparators. The result is a genuine class-(A) algebraic closure within its explicitly bounded family. Its necessity statement applies only to invariance of this Q_raw-based construction on the six tested representatives and does not exclude alternative defect-relative charges or extend to arbitrary defect families."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/theta_defect_closure_necessity_linking_obstruction_2026_07_02.py",
+  "title": "Defect Closure Is Necessary on the Tested Single-Plaquette Family: the Sector-Stability Obstruction Is Exactly the Defect-Shift Linking Pairing and Is Defect-Supported (Bounded Theorem)",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

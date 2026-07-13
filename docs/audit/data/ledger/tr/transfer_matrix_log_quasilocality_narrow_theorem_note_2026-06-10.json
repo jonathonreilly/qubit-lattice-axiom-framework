@@ -1,0 +1,586 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+    "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+    "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+  ],
+  "direct_in_degree": 8,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.553,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "5b43daca3ee95bd3bf5cad093e282a87ce3ffeb28a53794cd4070941172c051b",
+  "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-11T10:02:50.737861+00:00",
+      "audit_date": "2026-06-10T21:45:39.316798+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "On the retained finite tensor-product translation/fermion-operator bridge, the symmetric hopping bilinear H_{xy}=a_x^dag a_y+a_y^dag a_x is Hermitian, translation-covariant, Q_total-conserving, yields translation-invariant commuting sums over invariant link families, has real finite spectrum, and swaps the one-particle two-site occupations.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Audited the supplied/displayed carrier support and J/W budgets, the in-note finite-range LR lemma with v_LR=2eqWR, the unconditional framework hopping-H LR bound, and F5 only as a conditional implication under an explicit exact-H locality hypothesis."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "7fae8c7106d8ec88a1a5b1f2d58ea1cf87bc4300aa82c768c480bf6296642a84",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-214054-7ab2a5b8e1-transfer_matrix_log_quasiloc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The strip analyticity, contour-shift bound, d=1 branch-point obstruction, and support-family norm translation close from the retained two-step symbol input, blocked-time normalization, and retained tensor-product pair-norm convention. Gauged/interacting locality and a formal d=3 lower-bound proof are explicitly outside the audited theorem scope.",
+      "claim_scope": "Free U=1 bilinear staggered two-step sector for the supplied/declared symbol E_d(p): explicit exponential kernel bound for eta < arcsinh(m), exact sharpness in d=1, Z^3 axis sharpness as numerical confirmation, support-family/tail translation, and failure of the strict R <= 2 F5 form by range-4 hops.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T21:45:39.316798+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "On the shifted strip, Re w >= m^2 - sinh^2 eta > 0 and |arcsinh(sqrt(w))| <= C_d(eta,m), so shifting the Fourier contour in a max-coordinate direction gives |h(z)| <= a_tau^{-1} C_d(eta,m) e^{-eta ||z||_inf}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean scope narrow: the theorem does not close gauged/interacting log locality or a formal d=3 sharp lower-bound proof.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing analytic inequalities are correct and give the advertised prefactor and exponential rate by a standard torus contour shift, while the d=1 branch-point derivative proves no faster exponential rate. The runner source performs substantive computations rather than printing constants: it checks the transfer-symbol anchor, strip bounds, kernels, tails, range-4 coefficients, and falsification legs. An independent Gauss-Legendre quadrature reproduces the range-4 coefficients at m=0.3, including h(4,0,0) = -0.0055630045 and h(2,2,0) = -0.0104390687, supporting the strict R <= 2 negative finding."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.522093+00:00",
+      "audit_date": "2026-06-11T12:23:37.780246+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "On the retained finite tensor-product translation/fermion-operator bridge, the symmetric hopping bilinear H_{xy}=a_x^dag a_y+a_y^dag a_x is Hermitian, translation-covariant, Q_total-conserving, yields translation-invariant commuting sums over invariant link families, has real finite spectrum, and swaps the one-particle two-site occupations.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "F1-F2c carrier support/J/W budgets, F3-L1/L2 finite-range LR lemma with derived constants, and F4 unconditional tensor-product nearest-neighbor hopping-H microcausality bound; F5 only as an explicit conditional/open exact-H context."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 12.402,
+        "runner_hash": "7fae8c7106d8ec88a1a5b1f2d58ea1cf87bc4300aa82c768c480bf6296642a84",
+        "transitive_descendants": 956
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-122018-d793b464f0-transfer_matrix_log_quasiloc",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The exponential bound follows by standard strip analyticity and contour shifting from the retained two-step symbol and normalization inputs. The support-family translation uses the retained tensor-product hopping convention, and the range-4 nonzero coefficients are independently supported by direct quadrature from the same symbol rather than by a hidden finite-range premise.",
+      "claim_scope": "For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T12:23:37.780246+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T12:19:31.211510+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-121623-4a3dec90bc-transfer_matrix_log_quasiloc",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Free U=1 bilinear staggered two-step sector for the stated symbol E_d(p)=arcsinh(sqrt(m^2+sum sin^2 p_mu)): explicit exponential kernel bound and support-family/tail quasilocality for m>0, d=1 sharpness by branch obstruction, declared Z^3 carrier upper bound with numerical axis-rate confirmation, and strict R<=2 finite-range failure on the exhibited bilinear sector.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T12:23:37.780246+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-122018-d793b464f0-transfer_matrix_log_quasiloc",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the free U=1 bilinear staggered two-step sector with symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), including the upstream-derived d=1 case and the explicitly declared d=3 carrier, the log-transfer hopping kernel is exponentially quasilocal for m>0 with the stated prefactor; d=1 sharpness is proved, d=3 axis sharpness is numerical, and the exact bilinear H is not diameter-2 finite range.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "After proving Re w >= m^2 - sinh^2 eta > 0 and |E_d(p)| <= C_d(eta,m) on the shifted strip, the proof shifts the p_mu contour to Im p_mu = -eta sgn(z_mu) and obtains |h(z)| <= a_tau^{-1} C_d(eta,m) e^{-eta ||z||_inf}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream users preserve the declared-carrier boundary for d=3 and do not cite this as a gauged/interacting log-transfer locality theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "All cited authorities in the restricted packet are retained-grade or decoration under retained-grade status. The load-bearing analytic estimate closes from the displayed symbol, and the runner source performs substantive strip, Fourier-kernel, tail, truncation, and falsification checks rather than printing constants. The scoped negative is not an absolute locality no-go: it only rules out diameter <= 2 finite range on the free bilinear two-step sector, while explicitly preserving the proved quasilocal route and leaving gauged/interacting locality open."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.897572+00:00",
+      "audit_date": "2026-06-30T16:19:16.113672+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "On the retained finite tensor-product Pauli-ladder translation surface, the symmetric two-site hopping bilinear is Hermitian, translation-covariant, Q_total-conserving, swaps one-particle occupations for distinct sites, and translation-invariant sums commute with translations and have real spectrum.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded carrier-surface support/J/W budgets, an in-note finite-range LR lemma with derived velocity, and an unconditional LR bound for the tensor-product nearest-neighbor hopping Hamiltonian; exact reconstructed-H carrier locality is audited only as a conditional implication."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 17.389,
+        "runner_hash": "7fae8c7106d8ec88a1a5b1f2d58ea1cf87bc4300aa82c768c480bf6296642a84",
+        "transitive_descendants": 947
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T161916Z-75161222-transfer_matrix_log_quas",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The analytic contour-shift bound, d=1 branch-point obstruction, and support-family translation follow from the displayed symbol plus retained-grade transfer-matrix, normalization, and hopping-bilinear inputs. The d=3 use is closed only as the note's declared symbol carrier, not as an independently derived gauged/interacting transfer-matrix theorem.",
+      "claim_scope": "Symbol-level free U=1 bilinear two-step result for E_d(p)=arcsinh sqrt(m^2+sum_mu sin^2 p_mu), m>0: explicit exponential kernel bound, d=1 sharpness, finite l1 support-family/tail bounds, and strict diameter<=2 support failure on the stated free-sector range-4 exhibit; gauged/interacting locality, formal d=3 lower-bound proof, and quasilocal-LR composition are out of scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-30T16:19:16.113672+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T16:13:45.258822+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T161345Z-75fa189b-transfer_matrix_log_quas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Symbol-scoped free U=1 bilinear two-step log-transfer Hamiltonian: d=1 anchored to the retained transfer-matrix derivation and d>=1, including the declared Z^3 carrier, from E_d(p)=arcsinh(sqrt(m^2+sum sin^2 p_mu)); audited Q1 exponential bound, d=1 sharpness, support-family tail translation, and strict R<=2 failure on the free bilinear sector.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T16:19:16.113672+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T161916Z-75161222-transfer_matrix_log_quas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Symbol-level free U=1 bilinear two-step result for E_d(p)=arcsinh sqrt(m^2+sum_mu sin^2 p_mu), m>0: explicit exponential kernel bound, d=1 sharpness, finite l1 support-family/tail bounds, and strict diameter<=2 support failure on the stated free-sector range-4 exhibit; gauged/interacting locality, formal d=3 lower-bound proof, and quasilocal-LR composition are out of scope.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "Because the complexified radicand has Re w > 0 for |Im p_mu| <= eta < arcsinh(m), E_d is analytic and bounded by C_d(eta,m) in the strip, so shifting the Fourier contour in the maximal coordinate gives |h(z)| <= (1/a_tau) C_d(eta,m) exp(-eta ||z||_inf).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the clean scope tied to the displayed/declared symbol carrier; re-check finite-volume periodization constants only if a downstream theorem uses them load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The load-bearing quasilocality step is an exact analytic closure over the supplied symbol, not a definition substitution, tuned numerical match, or external comparator. The runner source genuinely computes the symbol anchor, kernel bounds, branch behavior, tails, range-4 coefficients, and falsification legs; it does not merely print cached constants. The negative finite-range statement is scoped to the strict diameter<=2 free bilinear sector, with broader finite-range, gauged/interacting, and LR-composition claims explicitly left outside the audit surface."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.509860+00:00",
+      "audit_date": "2026-07-01T20:34:54.505288+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "On the finite periodic tensor-product Fock space supplied by the retained bridge, the symmetric hopping bilinear is Hermitian, translation-covariant, total-number conserving, swaps one-particle two-site occupations, and translation-invariant sums commute with translations and have real spectrum.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded support/J/W budgets on the supplied/displayed carrier surface, the finite-range LR lemma with derived v_LR=2eqWR, the unconditional tensor-product NN hopping-H LR bound, and F5 only as a conditional exact-H implication."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 17.389,
+        "runner_hash": "7fae8c7106d8ec88a1a5b1f2d58ea1cf87bc4300aa82c768c480bf6296642a84",
+        "transitive_descendants": 947
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T203030Z-dcfc01ff-majority",
+      "auditor_confidence": "judicial",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The second audit correctly identifies the load-bearing sign error. With the stated Fourier convention h(z)=int E(p)e^{ip\u00b7z} dp, exponential decay requires shifting the selected contour to Im p_mu=+eta*sgn(z_mu), while the source note shifts to -eta*sgn(z_mu), which gives exponential growth in the displayed estimate. The theorem appears locally repairable and the runner is substantive, but the written proof does not close as audited_clean.",
+      "claim_scope": "Free U=1 bilinear staggered two-step log-transfer Hamiltonian for the d=1 action-derived symbol and the explicitly declared d-dimensional carrier symbol; proves exponential quasilocality for eta<arcsinh(m), d=1 sharpness, support-family tail bounds, and strict diameter<=2 finite-range failure on the tested bilinear sector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T20:34:54.505288+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T20:26:00.232441+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T202600Z-1b388ceb-transfer_matrix_log_quas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For the free U=1 bilinear two-step symbol E_d(p)=arcsinh(sqrt(m^2+sum_mu sin^2 p_mu)), with d=1 anchored upstream and d=3 treated as the note's declared carrier, the position kernel is exponentially quasilocal for m>0; d=1 has sharp rate arcsinh(m); the bilinear support-family/tail translation closes; strict R<=2 finite range is falsified on the exhibited free bilinear sector.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-01T20:30:17.008820+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T203017Z-636f5820-transfer_matrix_log_quas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Free U=1 bilinear staggered two-step log-transfer Hamiltonian for the d=1 action-derived symbol and the explicitly declared d-dimensional carrier symbol; proves exponential quasilocality for eta<arcsinh(m), d=1 sharpness, support-family tail bounds, and strict diameter<=2 finite-range failure on the tested bilinear sector.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-01T20:34:54.505288+00:00",
+          "auditor": "codex-judge-panel-gpt-5.5-p1-20260701T203030Z-dcfc01ff-majority",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": null,
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit missed the sign error in the contour-shift line that carries Q1, and therefore treated a non-closing written proof as clean.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The second audit correctly identifies the load-bearing sign error. With the stated Fourier convention h(z)=int E(p)e^{ip\u00b7z} dp, exponential decay requires shifting the selected contour to Im p_mu=+eta*sgn(z_mu), while the source note shifts to -eta*sgn(z_mu), which gives exponential growth in the displayed estimate. The theorem appears locally repairable and the runner is substantive, but the written proof does not close as audited_clean.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "None material; its d=3 carrier point should be read mainly as a scope boundary unless downstream users promote the declared carrier to a derived transfer-matrix authority.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": null,
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: repair the contour-shift orientation in Step 1 and preserve the d=3 result as a theorem for the declared carrier unless a retained d=3 transfer-symbol derivation is added.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The second audit correctly identifies the load-bearing sign error. With the stated Fourier convention h(z)=int E(p)e^{ip\u00b7z} dp, exponential decay requires shifting the selected contour to Im p_mu=+eta*sgn(z_mu), while the source note shifts to -eta*sgn(z_mu), which gives exponential growth in the displayed estimate. The theorem appears locally repairable and the runner is substantive, but the written proof does not close as audited_clean."
+    },
+    {
+      "archived_at": "2026-07-02T12:02:51.615556+00:00",
+      "archived_for_note_hash": "8da8968dbe645eb77066fea7554e3dd69b7e4806fa736322547327f6b2f11c8a",
+      "audit_date": "2026-07-02T08:05:53.751585+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "Algebraic corollary on the retained finite tensor-product translation/fermion bridge: H_{xy}=a_x^dag a_y+a_y^dag a_x is Hermitian, translation-covariant, Q_total-conserving, and unweighted translation-invariant finite link sums commute with translations and have real spectrum.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded carrier support/J/W arithmetic, the self-contained finite-range Lieb-Robinson lemma with v_LR=2eqWR, and its unconditional application to the retained tensor-product nearest-neighbor hopping Hamiltonian; exact reconstructed -log(T)/a_tau locality is only a stated conditional implication, not an audited unconditional result."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 16.887,
+        "runner_hash": "7fae8c7106d8ec88a1a5b1f2d58ea1cf87bc4300aa82c768c480bf6296642a84",
+        "transitive_descendants": 946
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T080553Z-11c7ce57-transfer_matrix_log_quas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The strip analyticity and C_d inequalities are correct, but the contour-shift sign is wrong for the stated Fourier convention e^{i p*z}: shifting to Im p=-eta*sgn(z) gives exponential growth, not decay. The theorem would be repaired by shifting to +eta*sgn(z), but the load-bearing proof as written does not close.",
+      "claim_scope": "Free U=1 bilinear two-step log-transfer symbol E_d(p)=arcsinh(sqrt(m^2+sum sin^2 p_mu)); d=1 is anchored to the cited transfer-matrix note and d=3 is treated as the note's declared carrier. Audited claims include the explicit exponential kernel bound, d=1 sharpness, quasilocal support-family/tail translation, and the strict R<=2 finite-range falsity exhibit.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T08:05:53.751585+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The note's Q1 proof shifts the p_mu* contour to Im p_mu* = -eta*sgn(z_mu*) and asserts |e^{i p_mu* z_mu*}| = e^{-eta ||z||_inf}, yielding the exponential kernel bound.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "other: fix the Step 1 contour-shift sign for the e^{i p*z} convention and re-audit; if retaining physical Z^3 carrier wording, add/cite a retained derivation of the d=3 transfer symbol or narrow the scope to the declared symbol.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 10,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The cited one-hop authorities are retained-grade for the d=1 symbol and hopping-operator convention, and the runner performs substantive numerical and algebraic checks rather than hard-coded PASS output. The analytic bound's load-bearing contour step nevertheless contains a sign error that the runner does not test, so the source is not clean as written. The d=3 result is also clean only as a theorem for the declared symbol, not as an independently derived physical Z^3 transfer-matrix carrier."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.507337+00:00",
+      "audit_date": "2026-07-02T12:11:54.550378+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "Bounded finite 2-step staggered-only reflection-positivity reduction for factorized A_+^(2) observables, using retained/retained_bounded authorities for fixed-background fermion transfer positivity, determinant positivity, mixed-kernel positivity, and the Wilson temporal-gauge gauge-half bridge.",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "Algebraic corollary on the retained finite tensor-product translation/fermion bridge: H_{xy}=a_x^dag a_y+a_y^dag a_x is Hermitian, translation-covariant, Q_total-conserving, and unweighted translation-invariant finite link sums commute with translations and have real spectrum.",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "Bounded carrier support/J/W arithmetic, the self-contained finite-range Lieb-Robinson lemma with v_LR=2eqWR, and its unconditional application to the retained tensor-product nearest-neighbor hopping Hamiltonian; exact reconstructed -log(T)/a_tau locality is only a stated conditional implication, not an audited unconditional result."
+        },
+        "dep_claim_type": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "bounded_theorem",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "bounded_theorem",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "retained_bounded",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29": "retained_bounded",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02": "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+          "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+          "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 17.383,
+        "runner_hash": "038b8a151a1962abb2249e8d9a5f8b694d451de1ebe5064af5037594038f308c",
+        "transitive_descendants": 943
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T121154Z-9aff2258-transfer_matrix_log_quas",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade inputs supply the two-step free d=1 symbol, normalization, and hopping-bilinear support convention; the d=3 carrier is explicitly scoped as a declaration. Within that bounded surface, the contour-shift proof, branch-point obstruction, and support-family matrix-element argument close without an additional authority.",
+      "claim_scope": "Free U=1 staggered bilinear two-step log-transfer sector: d=1 symbol anchored by the cited two-step transfer derivation, d=3 treated as the note's declared carrier; explicit exponential kernel bound for every eta<arcsinh(m), d=1 sharpness by branch point, finite l1 support-family tails, and strict diameter<=2 finite-range falsification on the displayed bilinear sector.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T12:11:54.550378+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T12:07:22.827696+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T120722Z-5796942a-transfer_matrix_log_quas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Free U=1 bilinear staggered two-step log-transfer kernel for the stated symbol: explicit exponential quasilocality, d=1 sharp rate, declared d=3 upper/support-family bounds with numerical axis sharpness, truncation tails, and strict R<=2 finite-range falsification on the exhibited sector.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T12:11:54.550378+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T121154Z-9aff2258-transfer_matrix_log_quas",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Free U=1 staggered bilinear two-step log-transfer sector: d=1 symbol anchored by the cited two-step transfer derivation, d=3 treated as the note's declared carrier; explicit exponential kernel bound for every eta<arcsinh(m), d=1 sharpness by branch point, finite l1 support-family tails, and strict diameter<=2 finite-range falsification on the displayed bilinear sector.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09:retained_bounded->unaudited",
+      "load_bearing_step": "Step 1: after proving Re w>0 and |E|<=C_d(eta,m) in the strip, shift the p_{mu*} contour to Im p_{mu*}=+eta*sgn(z_{mu*}) so |e^{ip_{mu*}z_{mu*}}|=e^{-eta||z||_inf}, yielding |h(z)|<=(1/a_tau)C_d(eta,m)e^{-eta||z||_inf}.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 7,
+        "B": 1,
+        "C": 11,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The load-bearing exponential bound is a direct complex-analysis/algebraic closure over the stated symbol, not a definition or tuned numerical match. The runner source performs actual FFT/quadrature and algebraic checks rather than printing expected constants, including the repaired contour orientation, tail weights, parity, and range-4 finite-range falsification. The clean verdict is only for the bounded scope stated here: gauged/interacting log-transfer locality, formal d=3 lower-bound sharpness, and the quasilocal Lieb-Robinson composition are outside the audited theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
+  "title": "Transfer-Matrix Log Quasilocality on the Free Bilinear Sector",
+  "transitive_descendants": 750,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

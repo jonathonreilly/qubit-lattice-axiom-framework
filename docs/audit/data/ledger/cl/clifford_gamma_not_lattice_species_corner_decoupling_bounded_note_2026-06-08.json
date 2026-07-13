@@ -1,0 +1,192 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "clifford_gamma_not_lattice_species_corner_decoupling_bounded_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+    "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+    "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+    "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "6c52daa203b195cd3243f34609074d72f014b6c053c48514bc2f3f3cbe379542",
+  "note_path": "docs/CLIFFORD_GAMMA_NOT_LATTICE_SPECIES_CORNER_DECOUPLING_BOUNDED_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-13T22:22:48.180826+00:00",
+      "audit_date": "2026-06-09T12:41:50.067903+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": "Finite Pauli/Cl(3,0) construction of a chiral Weyl boost carrier on C^2, covariance of p0 + p.sigma, faithful-over-scalar selection for spin-1/2 content, and reduction of the massive Dirac closure to the named partner-chirality residual.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited the bounded boundary claim that the temporal factor 2 in the magnitude exponent is a transfer-step/mode cardinality in the count-supported zone of the retained clock-rate no-go, not a clock-rate or time-metric derivation.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": "bounded_theorem",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": "retained_bounded",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "74913b653ee238bd8b14d525b5f495f74d503a0d82e5f44d7de063e3d6008d5e",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-124009-7079413f42-clifford_gamma_not_lattice_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained Clifford authority supplies the gamma/spinor extension, and the cited retained lattice authority supplies the 2^d corner count. The source conclusion only separates these objects and therefore closes within its stated bounded scope.",
+      "claim_scope": "Audited only the algebra/counting decoupling between the retained Cl(3,1) gamma extension and the retained naive-lattice 2^d species-corner count; no emergent-time gamma supply, massive field realization, or magnitude-wall closure is established.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T12:41:50.067903+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+      "load_bearing_step": "A Clifford generator/gamma extension is a matrix-algebra object, while a lattice species corner is a Brillouin-zone zero; the resulting spinor dimension 4 is not the naive-lattice species count 16.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream use preserves the stated bounded scope; the primitive registry file was unavailable in the isolated workspace, but no registered primitive appears relevant to this algebra/counting claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 3,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a class-A algebraic/counting distinction over retained-grade inputs: a Clifford generator is not a momentum-space corner, and 4 spinor components are not 16 naive species corners. The runner source performs lightweight finite checks of Pauli/Dirac matrix sizes, gamma5 balance, sin(k) zeros, and powers of two; the independent audit route is the cited Clifford and lattice theorems plus the object-type distinction. The source note's guardrails prevent the clean result from being overread as emergent-time field construction or missing-corner wall closure."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.051146+00:00",
+      "audit_date": "2026-06-14T02:23:26.465278+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": "Finite Pauli/Cl(3,0) construction of a chiral Weyl boost carrier on C^2, covariance of p0 + p.sigma, faithful-over-scalar selection for spin-1/2 content, and reduction of the massive Dirac closure to the named partner-chirality residual.",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "Audited only the bounded count/rate separation: the temporal factor 2 is a transfer-step/mode count, POST_RECORD_CLOCK_RATE_INTERFACE does not block count-only use, and the minimal reflection-positive block is 2 steps; not a derivation of v, alpha_LM, or the UV/per-record readout selection.",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "Exact zero-locus and 2^d species count for the defined standard naive lattice Dirac operator on a hypercubic lattice, with d=4 count 16."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": "bounded_theorem",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "bounded_theorem",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02": "retained_bounded",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06": "retained_bounded",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": "retained"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02",
+          "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
+          "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "74913b653ee238bd8b14d525b5f495f74d503a0d82e5f44d7de063e3d6008d5e",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260614-022110-70e13f0594-clifford_gamma_not_lattice_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained Clifford authority supplies the gamma/spinor-extension side, and the retained naive-lattice authority supplies the 2^d species-corner count. The conclusion only separates these mathematical objects and explicitly leaves emergent-time field realization, partner chirality, and magnitude-wall closure out of scope.",
+      "claim_scope": "Audited only the narrow algebra/counting decoupling between a fourth Clifford gamma/Dirac spinor extension and a fourth naive-lattice species-corner direction.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-14T02:23:26.465278+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_onsite_boost_reconstruction_weyl_faithful_vs_scalar_selection_note_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "A missing fourth lattice species corner does not by itself block use of the retained Cl(3,1) gamma algebra, because a Clifford generator and a Brillouin-zone doubler corner are not the same mathematical object.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that downstream consumers preserve this bounded scope; no field-realization or magnitude-readout bridge is audited here.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 3,
+        "C": 2,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic/type distinction over independent retained-grade inputs: a matrix Clifford generator is not a Brillouin-zone zero, and the relevant counts 4 and 16 are not being identified. The runner source performs only finite matrix/count checks and does not import PDG values, fitted constants, or a contested physical-realization premise. The guardrails prevent overclaiming: no emergent-time gamma, massive Dirac field, positive energy, boost covariance, or magnitude missing-corner closure is asserted."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_clifford_gamma_species_corner_decoupling.py",
+  "title": "Clifford Gamma Is Not a Lattice Species Corner (Bounded Decoupling)",
+  "transitive_descendants": 0,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

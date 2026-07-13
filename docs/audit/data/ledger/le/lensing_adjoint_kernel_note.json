@@ -1,0 +1,143 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "lensing_adjoint_kernel_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lensing_long_path_test_note",
+    "lensing_beta_sweep_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/kubo_continuum_limit.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 7.144,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "875a45a0a2fe7e0f4d810ea923eb7bb3208d8b3603255aa6501a834776f2948b",
+  "note_path": "docs/LENSING_ADJOINT_KERNEL_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-27T01:58:35.369005+00:00",
+      "archived_for_note_hash": "ed5a1a5e09fd37e05aa1c12be4729ad0e8dc0cc6efb5a3ba4e4b6b810f4b8e23",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.471960+00:00",
+      "audit_date": "2026-06-08T19:30:24.867916+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "lensing_beta_sweep_note": "For the provided Fam1 seed=0 runner on b={3,4,5,6}, the H=0.5 beta=5 near-1/b point is unstable under the tested beta=7/10 neighbors and under the H=0.35 beta=5 refinement.",
+          "lensing_long_path_test_note": "Bounded Lane L++ check that the centered finite-path Fermat surrogate's short-path regime-transition prediction fails for the kubo_true detector-centroid observable at T_phys=7.5, H=0.25 on b in {3,4,5,6}; the coarse T_phys=45 run is only diagnostic."
+        },
+        "dep_claim_type": {
+          "lensing_beta_sweep_note": "bounded_theorem",
+          "lensing_long_path_test_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "lensing_beta_sweep_note": "retained_bounded",
+          "lensing_long_path_test_note": "retained_bounded"
+        },
+        "deps": [
+          "lensing_beta_sweep_note",
+          "lensing_long_path_test_note"
+        ],
+        "load_bearing_score": 6.644,
+        "runner_hash": "14b1fba9b5c73699a127bb4d884a17b394da71f8451ee0d9f30bfe7ec2a53c5c",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260608-192742-e59198e362-lensing_adjoint_kernel_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independently differentiating the forward DAG recurrence gives U_ij = W_ij(-i k L_ij/r_field) and the adjoint recurrence \u03bb_i = c_i + \u03a3 W_ij \u03bb_j, so the detector functional reduces to the stated edge sum. The supplied runner source genuinely computes A, \u03bb, U, K_l, and the default cache verifies equality with true_kubo_at_H and the broad kernel metrics without hard-coded expected values.",
+      "claim_scope": "For the supplied Fam1 default run T_phys=15, H=0.25, beta=0.8, b \u2208 {3,4,5,6}, the code-level first-order lensing observable is the adjoint-weighted edge-sum kernel and its computed |K_l| profile is broad and downstream-skewed rather than a localized mass-plane kick.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-08T19:30:24.867916+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The retained first-order detector-centroid response can be written exactly as K_l = 2 Re \u03a3_{edges i\u2192j into layer l} \u03bb_j A_i U_ij, and the summed layer kernel reproduces kubo_true while remaining broad and post-mass-skewed over b \u2208 {3,4,5,6}.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check the optional T=7.5 and beta-variant log caches before broadening this clean scope beyond the supplied default runner cache.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing identity is a valid adjoint/backpropagation rewrite of the same first-order Kubo centroid functional implemented in the helper, and the sign and normalization factors match the derivative of exp(i k L(1-s/r)). The default cached run supports the numerical shape claim across b = 3,4,5,6: exact sums match kubo_ref to roundoff, abs-centers lie downstream of x_src, and widths are O(3.5-3.9), not a narrow mass-plane spike. The cited authorities are retained-grade bounded inputs and are used only to frame the failed ray/finite-path rescues, while the source explicitly does not claim a derivation of the -1.43 exponent."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/lensing_adjoint_kernel_probe.py",
+  "title": "Lensing Adjoint Kernel Probe \u2014 Why The Slope Is Not A Ray-Deflection Law",
+  "transitive_descendants": 49,
+  "verdict_rationale": null
+}

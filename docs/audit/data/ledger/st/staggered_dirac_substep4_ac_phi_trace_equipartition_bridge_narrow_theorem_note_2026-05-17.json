@@ -1,0 +1,110 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.642,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "a0df810a8de08ec167898c46c88850a200115ab6000a8d45795a28a4a6727d06",
+  "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_PHI_TRACE_EQUIPARTITION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:33.195520+00:00",
+      "audit_date": "2026-05-17T15:10:50.712296+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple."
+        },
+        "dep_claim_type": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained"
+        },
+        "deps": [
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "bbdd63ad642fc0205744f00f48f710b9826a7bffcc8f4de00bde21ae252291df",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260517-150948-a5e2dcef-staggered_dirac_substep4-004",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The abstract algebra closes once the circulant form is admitted: C and C^2 have zero diagonal, so diag(H) = (a,a,a), Tr(H)=3a, and the retained cited parent supplies the eigenvalue formula. The physical hw=1 carrier and observable identification is explicitly outside this claim scope.",
+      "claim_scope": "Abstract 3-dimensional Z/3Z-equivariant Hermitian operators with standard cyclic permutation C have equal basis diagonal entries Tr(H)/3 while their circulant eigenvalues are generically distinct.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-17T15:10:50.712296+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_circulant_character_bridge_narrow_theorem_note_2026-05-09:retained->unaudited",
+      "load_bearing_step": "Given the circulant Hermitian form H = aI + bC + bbar C^2, the zero diagonals of C and C^2 imply every diagonal entry of H equals a = Tr(H)/3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that the commutant-converse P1 is accepted as standard finite-dimensional linear algebra, since the provided parent mostly states the circulant ansatz and eigenvalue formula.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 19,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 19
+      },
+      "verdict_rationale": "The runner performs exact symbolic matrix algebra and reports 19 passing class-A checks with no external comparator or fitted input. The result is a true algebraic corollary of the single retained circulant/eigenvalue parent plus standard finite-dimensional matrix facts. Under the decoration policy, zero-D algebra that reduces to one upstream parent claim is audited_decoration rather than audited_clean. The runner's reverse-direction uniqueness evidence is only a counterexample, so a second audit should keep P1 tied to admitted standard commutant theory rather than to that runner check alone."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py",
+  "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6 Trace-Equipartition Bridge Narrow Theorem",
+  "transitive_descendants": 1129,
+  "verdict_rationale": null
+}

@@ -1,0 +1,288 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
+    "higgs_mass_from_axiom_note",
+    "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
+    "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+    "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "29c61b0a6cb1d120ac1ce8e68e4c91385a55236ce6337d3bee9a17bcce223e80",
+  "note_path": "docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-30T15:13:05.092513+00:00",
+      "audit_date": "2026-06-21T14:16:07.296238+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "Audited the bounded algebraic claim that the Wilson Hamming-weight staircase supplies class multiplicities but does not by itself select the effective Higgs-channel N_taste; the five single-class substitutions yield three values distinct from the uniform-16 admission.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "Bounded algebraic derivation of the Wilson-shifted tree-level mean-field V_taste formula, its first two m-derivatives at m=0, the r=0 reduction, and the leading small-r curvature correction on the declared retained-bounded Wilson/staggered mean-field surface.",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "Part I algebraic core: the exact finite-sum diagnostic curvature-scale formula Q_W(r,u_0), its r=0 reduction, and its small-r Taylor reduction; the Part II matching readout is only conditional arithmetic, not a physical Higgs-pole derivation.",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "Finite-sum algebra for the Wilson-corrected tree-level V_taste^W: exact stationary point m = -4r and leading small-r curvature -4/u_0^2 + 12 r^2/u_0^4 + O(r^4), with r and u_0 carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "bounded_theorem",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "retained_bounded",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "bb1fece6c70ac0f66f9d87d8f2b76e7c777d3cd74284e873a5c7dc9d4d6b1e64",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-wilson_m_h_per_channel_closure_bounded_note_2026-05-09-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-sum algebra and quoted bisection values close under the stipulated S-readout rule. The chain does not close as an unconditioned theorem because the channel identification, curvature-on-subset readout convention, physical comparison bridge, and nonzero Wilson coefficient are not derived by the restricted packet.",
+      "claim_scope": "Conditional per-channel Wilson curvature readouts and PDG-comparison matching roots for S={2}, {0,4}, {1,3}, and uniform-16.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T14:16:07.296238+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08:retained_bounded->unaudited",
+      "load_bearing_step": "For each subset S, set the curvature-on-subset readout (S) equal to the comparison target (m_H_PDG/v)^2 and bisect for the matching r, while S={2} stays fixed at 1/(4u_0^2).",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or ratify the channel identification, curvature-on-subset readout convention, physical comparison bridge, and nonzero Wilson-coefficient selection before re-auditing any unconditioned closure claim.",
+      "open_dependency_paths": [
+        "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
+        "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+        "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 86,
+        "C": 0,
+        "D": 12,
+        "total_pass": 137
+      },
+      "verdict_rationale": "Issue: the numerical closure values are comparison roots against m_H_PDG under a non-derived subset readout and non-derived channel identification. Why this blocks: the runner verifies the scalar arithmetic, but it does not derive the readout bridge, channel choice, or Wilson coefficient needed to promote the roots beyond conditional matching values. Repair target: derive or explicitly ratify the channel identification and curvature-on-subset readout convention, plus a nonzero-r selection/readout bridge. Claim boundary until fixed: the per-S formulas, k=2 constancy, rescaling identity, and comparator roots are valid conditional algebra, not a Higgs-gap closure or derivation of r."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.280238+00:00",
+      "audit_date": "2026-07-02T06:00:44.792352+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "Audited the bounded algebraic claim that the Wilson Hamming-weight staircase supplies class multiplicities but does not by itself select the effective Higgs-channel N_taste; the five single-class substitutions yield three values distinct from the uniform-16 admission.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "Bounded algebraic derivation of the Wilson-shifted tree-level mean-field V_taste formula, its first two m-derivatives at m=0, the r=0 reduction, and the leading small-r curvature correction on the declared retained-bounded Wilson/staggered mean-field surface.",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "Part I standalone finite-sum algebraic curvature-scale diagnostic Q_W(r,u_0), including its r=0 and small-r reductions; Part II matching values are audited only as explicitly conditional arithmetic, not as physical Higgs-pole closure.",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "Finite-sum algebra for the Wilson-corrected tree-level V_taste^W: exact stationary point m = -4r and leading small-r curvature -4/u_0^2 + 12 r^2/u_0^4 + O(r^4), with r and u_0 carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "bounded_theorem",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "retained_bounded",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 5.67,
+        "runner_hash": "bb1fece6c70ac0f66f9d87d8f2b76e7c777d3cd74284e873a5c7dc9d4d6b1e64",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T060044Z-4d8e7ed3-wilson_m_h_per_channel_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra and bisection values check out once the subset channel, curvature-on-subset readout rule, external target, tree-level mean-field surface, and nonzero r are admitted. The packet does not derive the channel/readout bridge or the Wilson coefficient, so the matching readouts do not close as retained-derived closure values.",
+      "claim_scope": "Conditional per-channel Wilson matching table for S={2}, {0,4}, {1,3}, and uniform-16 under the stated curvature-on-subset readout convention; not a derivation of the Higgs pole or Wilson coefficient.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T06:00:44.792352+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08:retained_bounded->unaudited",
+      "load_bearing_step": "Set the subset readout (S), (m_H_W/v)^2_S = (1/(4 N_eff(S))) \u03a3_{k in S} binomial(4,k)(u_0^2-(k-2)^2 r^2)/((k-2)^2 r^2+u_0^2)^2, equal to the comparison target (m_H_PDG/v)^2 and bisect to obtain the per-channel r values.",
+      "load_bearing_step_class": "D",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive the curvature-on-subset readout/channel-selection bridge and a nonzero Wilson-r selection theorem, or resubmit with scope explicitly limited to conditional algebraic matching values.",
+      "open_dependency_paths": [
+        "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
+        "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+        "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 90,
+        "C": 0,
+        "D": 7,
+        "total_pass": 137
+      },
+      "verdict_rationale": "Issue: the arithmetic from (S) to the reported roots is correct, but (S) is a non-derived per-channel readout applied to non-derived channel identifications and matched to an external PDG comparator. Why this blocks: the cited authorities explicitly retain only diagnostic curvature algebra and boundary statements while leaving readout identification, channel selection, nonzero r, and physical Higgs-pole closure open. Repair target: supply a bridge theorem deriving the channel/readout convention and Wilson coefficient selection, or narrow the source to a purely conditional algebraic lookup table. Claim boundary until fixed: exact conditional matching values under the stated admissions only."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:34.717285+00:00",
+      "audit_date": "2026-07-10T03:23:09.891021+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "Audited the bounded algebraic claim that the Wilson Hamming-weight staircase supplies class multiplicities but does not by itself select the effective Higgs-channel N_taste; the five single-class substitutions yield three values distinct from the uniform-16 admission.",
+          "higgs_mass_from_axiom_note": "Audited the bounded structural theorem T1 over the declared B3/B4 surface, plus D1 as a declared diagnostic definition and C1 as the numeric readout over B1/B2; no Higgs-pole prediction was audited or claimed.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "Bounded algebraic derivation of the Wilson-shifted tree-level mean-field V_taste formula, its first two m-derivatives at m=0, the r=0 reduction, and the leading small-r curvature correction on the declared retained-bounded Wilson/staggered mean-field surface.",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "Part I only: the exact finite-sum diagnostic curvature-scale identity Q_W, including its r=0 and small-r reductions; Part II's physical Higgs-matching interpretation remains explicitly conditional.",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "Finite-sum algebra for the Wilson-corrected tree-level V_taste^W: exact stationary point m = -4r and leading small-r curvature -4/u_0^2 + 12 r^2/u_0^4 + O(r^4), with r and u_0 carried symbolically."
+        },
+        "dep_claim_type": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "bounded_theorem",
+          "higgs_mass_from_axiom_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08": "retained_bounded",
+          "higgs_mass_from_axiom_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08": "retained_bounded"
+        },
+        "deps": [
+          "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+          "higgs_mass_from_axiom_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+          "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+          "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
+          "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "bb1fece6c70ac0f66f9d87d8f2b76e7c777d3cd74284e873a5c7dc9d4d6b1e64",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00014-wilson_m_h_per_channel_closu",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebra and bisections close under the declared inputs, but the restricted packet supplies no retained theorem selecting S or validating the curvature-on-subset diagnostic as a physical Higgs readout. The rounded u_0 normalization used for the quoted roots is also explicitly unreconciled with the current parent surface.",
+      "claim_scope": "The exact subset formulas, k=2 non-closure, rescaling identity, and conditional PDG-comparison roots under the declared curvature-on-subset convention and rounded u_0=0.8776 input.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:23:09.891021+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08:retained_bounded->unaudited",
+      "load_bearing_step": "For an admitted subset S, divide the sign-flipped Wilson curvature restricted to S by 4\u00b7N_taste^(eff)(S), yielding equation (S) for the per-channel readout.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: split the exact subset algebra from the conditional physical/PDG matching readout, or supply retained channel-selection and readout-identification theorems and reconcile the rounded u_0 input with the current parent normalization before re-audit.",
+      "open_dependency_paths": [
+        "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
+        "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
+        "docs/HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 40,
+        "B": 90,
+        "C": 0,
+        "D": 7,
+        "total_pass": 137
+      },
+      "verdict_rationale": "The runner genuinely evaluates the rational subset formulas and performs Fraction bisections; its reported values and rescaling identity follow under the stated convention. However, both the channel identification and curvature-on-subset readout rule are expressly non-derived, and the parent authority says the curvature scale is a diagnostic rather than a Higgs-pole observable. Thus the calculation is a valid conditional matching exercise, not closure of a physical Higgs channel or derivation of a canonical Wilson coefficient."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wilson_m_h_per_channel_closure.py",
+  "title": "Wilson m_H Per-Channel Closure Values \u2014 Bounded Note",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

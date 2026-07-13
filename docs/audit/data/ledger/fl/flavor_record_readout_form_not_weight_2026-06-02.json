@@ -1,0 +1,166 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "flavor_record_readout_form_not_weight_2026-06-02",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+    "minimal_axioms"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/flavor_occupancy_boundary_checks_2026_06_13.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.459,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c1dd9a9259c2b7b6772753cd1f8f3a0c4971a223f0e8eaea37c4ed56792fa3bb",
+  "note_path": "docs/FLAVOR_RECORD_READOUT_FORM_NOT_WEIGHT_2026-06-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-02T15:04:31.555928+00:00",
+      "archived_for_note_hash": "9a6ba1e12b9fc3e0f6fe71cbeb811dbff35d140d797dfe677d4fc242135dd8cd",
+      "audit_date": "2026-06-05T22:53:35.713359+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "e300fd23508ce1c9392bed29d9d1a571993f9771d574159267b811f419ea989a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260605-225314-aaaa214569-flavor_record_readout_form_n",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The determinant multiplicity statement is standard finite-dimensional algebra: a two-dimensional degenerate doublet contributes twice to log|det H|. The block-count expression is therefore a different functional, so additive/log form alone does not determine the sector weight.",
+      "claim_scope": "Record additivity can support logarithmic readout form once a positive multiplicative amplitude is supplied, but it does not force the Koide sector-weight choice between dimension count (1:2) and block count (1:1).",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-05T22:53:35.713359+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Genuine log|det H| counts eigenvalue multiplicity, so the doublet contributes 2 log|lambda_doublet| while the r=1/2 block-count reading requires the distinct multiplicity-stripped functional log|lambda_triv lambda_doublet|.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the Record axiom is being used only for additive scalar readout and not as a hidden source of the block-count functional.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The audited claim is narrow and negative: it separates logarithmic form from Koide sector weighting. The displayed determinant identity and the distinction from the multiplicity-stripped block functional close by algebra, and the runner source actually computes a finite 3x3 example rather than merely printing constants. No external comparator, tuned numerical match, or cited open dependency is used."
+    },
+    {
+      "archived_at": "2026-07-10T12:26:57.073344+00:00",
+      "audit_date": "2026-07-09T05:50:22.586657+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "Bounded relative independence claim only: the current checked Record/Koide bookkeeping surface admits both sector-slot and orbit-slot occupancy models with exact doublet-weight ratio 2, so it does not fix the occupancy rule; the orbit-occupancy paragraph is audited only as a proposed premise with non-input support, not as adopted or derived content.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 4.7,
+        "runner_hash": "ee34a075b3fd68c1eebe6dace76fdc5c5311c7fa535ade7873fe3e850f048dac",
+        "transitive_descendants": 12
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-current",
+      "auditor_model": "gpt-5-codex",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The source/dependency packet supports the open-gate boundary, but the primary runner currently exits nonzero with SCORECARD PASS=9 FAIL=1. The failing helper check is a boundary-string/runner-artifact mismatch against the current occupancy note and superseded axiom memo, so the current executable artifact does not close cleanly.",
+      "claim_scope": "Open gate that Record additivity can support logarithmic readout form only after a multiplicative amplitude/readout surface is supplied, and does not select the Koide singlet/doublet occupancy weight or block-count functional.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-09T05:50:22.586657+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "weak",
+      "invalidation_reason": "dep_weakened:koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09:retained_bounded->unaudited",
+      "load_bearing_step": "Record additivity selects log form only after Z is supplied, while genuine log|det H| counts the doublet with multiplicity two and the r=1/2 block-count reading uses a distinct multiplicity-stripped functional.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: update scripts/flavor_occupancy_boundary_checks_2026_06_13.py to match the current occupancy-note wording or ledger claim_scope and the current 2026-06-29 minimal-axiom boundary, then rerun the primary runner to a zero-fail scorecard.",
+      "open_dependency_paths": [
+        "scripts/flavor_occupancy_boundary_checks_2026_06_13.py",
+        "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 4,
+        "C": 0,
+        "D": 0,
+        "total_fail": 1,
+        "total_pass": 9
+      },
+      "verdict_rationale": "Issue: the primary runner completes but reports one failure in the downstream occupancy-boundary helper, specifically the guard that the occupancy note records independence without adopting the premise. Why this blocks: a clean open-gate audit cannot rely on a currently failing runner, even though the core algebraic checks pass and the failure appears to be stale boundary-string/tooling drift rather than a contradiction of the form/weight separation. Repair target: update the helper to check the current occupancy-note wording or ledger claim_scope and the current 2026-06-29 minimal-axiom boundary, then rerun to a zero-fail scorecard. Claim boundary until fixed: Record-additivity/log-form separation and non-selection of the Koide weight remain supported, but the row should not be promoted until its runner artifact is repaired."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/flavor_record_readout_form_not_weight_2026_06_02.py",
+  "title": "Flavor Record Readout Fixes Form Not Weight",
+  "transitive_descendants": 21,
+  "verdict_rationale": null
+}

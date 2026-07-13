@@ -1,0 +1,111 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.585,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "543c9ef61a7f97a6f5261cf6e137b94e2a9eb89c044687d67a13fbdf1c18f2ee",
+  "note_path": "docs/ACPHILAMBDA_AMBIENT_SCALAR_K_BLINDNESS_PROJECTIVE_CARRIER_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:25.700791+00:00",
+      "audit_date": "2026-07-10T03:28:09.382096+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "On the adjacency-licensed Q-conserving NN bilinear surface over per-site C^2, translation+cubic covariance up to site-local U(1) frame collapses the kinetic family to two simply connected flux classes K0=+1 and K1=-1; the site-local absorbing frame exists and is unique up to gauge x global frame on K1; the K1 selector remains unforced."
+        },
+        "dep_claim_type": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10": "retained_bounded"
+        },
+        "deps": [
+          "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "a0f79cc7aa1380b64a70beb5082eae128045bcafdde5db28998fb4db72a6254e",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00020-acphilambda_ambient_scalar_k",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The scalar blindness and isotypic equality follow by exact finite-dimensional trace algebra. The retained-bounded authority supplies the scoped per-site C^2 carrier surface, and the note correctly limits the projective conclusion to exact group-theoretic identities rather than physical realization.",
+      "claim_scope": "Real scalar-Laplacian equivariant traces cannot separate conjugate C3 isotypes; complex hopping provides an explicit algebraic rejector, while the spin-1/2 C3[111] lift satisfies U^3 = -I and the signed trace identity as a named projective seed, without establishing carrier realization or a phase value.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:28:09.382096+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For real orthogonal R with R^3 = I and real-symmetric O = f(Delta), Tr(O R^2) = conjugate(Tr(O R)) = Tr(O R), so the conjugate C3 isotypic traces coincide.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 56,
+        "C": 3,
+        "D": 0,
+        "total_pass": 87
+      },
+      "verdict_rationale": "The runner symbolically verifies the load-bearing trace identities, the isotypic corollary, the complex-hopping counterexample, and the projective-lift algebra; its finite torus checks genuinely construct the Laplacian and rotation operators. No external comparator, tuned physical value, or hard-coded disputed bridge enters the bounded conclusion. Physical selection of the projective carrier remains explicitly outside the audited scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py",
+  "title": "AC_phi_lambda Ambient Scalar K-Blindness And The Projective Carrier Requirement",
+  "transitive_descendants": 11,
+  "verdict_rationale": null
+}

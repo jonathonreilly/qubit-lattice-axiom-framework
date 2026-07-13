@@ -1,0 +1,213 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "pmns_c3_character_holonomy_closure_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "pmns_oriented_cycle_channel_value_law_note",
+    "pmns_three_flux_holonomy_closure_note",
+    "pmns_twisted_flux_transfer_holonomy_boundary_note"
+  ],
+  "direct_in_degree": 4,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_pmns_oriented_cycle_channel_value_law.py",
+    "scripts/frontier_pmns_three_flux_holonomy_closure.py",
+    "scripts/frontier_pmns_twisted_flux_transfer_holonomy_boundary.py",
+    "scripts/pmns_lower_level_utils.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.557,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2659e2a6dd4d916edd50e1ddf7e7d3402bc6e7e37cef580ab7da0b07eb96be22",
+  "note_path": "docs/PMNS_C3_CHARACTER_HOLONOMY_CLOSURE_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.106529+00:00",
+      "archived_for_note_hash": "99b9e0e0dbc3f7df1fb1fcc8471b23d6abc4089e60ca6aef687bccb809c0e24b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-04T12:32:48.493251+00:00",
+      "archived_for_note_hash": "8eb05b19713995cccba547b714415c161ff80105bce573de5964e1a843454cac",
+      "audit_date": "2026-05-01T04:13:12.436477+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-pmns_c3_character_holonomy_closure_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the finite C3-character reconstruction, but the ledger row declares no dependencies while the computation imports prior PMNS oriented-cycle/three-flux/twisted-flux machinery. One imported value-law authority is already audit-demoted and the other imported PMNS rows are not declared as dependencies.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The projected coordinate-cycle unitary on the hw=1 triplet has the exact C3 characters, and those three character holonomies form an invertible design matrix for (u,v,w).",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md",
+        "docs/PMNS_THREE_FLUX_HOLONOMY_CLOSURE_NOTE.md",
+        "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+        "UNREGISTERED: retained hw=1 triplet / coordinate-cycle authority"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 6,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "Issue: the native C3-character closure is algebraically checked, but it rests on unregistered upstream PMNS helper theorems and a prior oriented-cycle value-law authority that is not audit-clean. Why this blocks: the runner can reconstruct reduced coordinates once the hw=1 triplet, projected coordinate cycle, reduced family, and three-flux machinery are accepted, but the note does not independently derive or register those inputs. Repair target: register the oriented-cycle channel value law, three-flux holonomy closure, twisted-flux boundary, and hw=1 triplet/coordinate-cycle authority as dependencies, then re-audit after those inputs are clean or explicitly bounded. Claim boundary until fixed: this is a conditional bounded closure of the reduced PMNS readout family, not a sole-axiom PMNS value derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:39.611097+00:00",
+      "audit_date": "2026-06-11T23:43:43.797438+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "pmns_oriented_cycle_channel_value_law_note": "For a canonical 3x3 active block A and the projected forward-cycle basis P_i C = E12,E23,E31, the forward-cycle coefficients are diag(A C^dagger); the cached runner checks the stated projected cycle/projector identities and coefficient reconstruction.",
+          "pmns_three_flux_holonomy_closure_note": "For the reduced graph-first cycle family with the cited one-angle holonomy law, the three specified flux-angle readouts form an invertible 3x3 linear system and exactly recover (u,v,w).",
+          "pmns_twisted_flux_transfer_holonomy_boundary_note": "Exact finite cyclic-frame algebra: the fluxed transfer moments recover (xbar,ybar,phi), and a single one-angle holonomy functional on the 3-real reduced oriented-cycle carrier leaves a 2-real kernel; PMNS carrier naming remains bounded through the registered Tier-A admission."
+        },
+        "dep_claim_type": {
+          "pmns_oriented_cycle_channel_value_law_note": "positive_theorem",
+          "pmns_three_flux_holonomy_closure_note": "bounded_theorem",
+          "pmns_twisted_flux_transfer_holonomy_boundary_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "pmns_oriented_cycle_channel_value_law_note": "retained",
+          "pmns_three_flux_holonomy_closure_note": "retained_bounded",
+          "pmns_twisted_flux_transfer_holonomy_boundary_note": "retained_bounded"
+        },
+        "deps": [
+          "pmns_oriented_cycle_channel_value_law_note",
+          "pmns_three_flux_holonomy_closure_note",
+          "pmns_twisted_flux_transfer_holonomy_boundary_note"
+        ],
+        "load_bearing_score": 11.511,
+        "runner_hash": "245441221e4fa9c50a05aed618dd1dbcc32e14e92dadaf8a9fcf383af545e633",
+        "transitive_descendants": 515
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-233951-6161bbecf2-pmns_c3_character_holonomy_c",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained/retained_bounded authorities supply the projected cycle C, the reduced oriented-cycle family, and the one-angle holonomy law. Independently, the basis Gram factors give h_phi=2u cos(phi)+2v sin(phi)+w and the C3-phase matrix has determinant 6 sqrt(3), so the reduced coordinates invert exactly.",
+      "claim_scope": "Bounded reduced-readout closure: given the retained hw=1 cycle frame and one-angle holonomy law, the C3 character phases furnish an invertible three-holonomy readout for A_fwd(u,v,w), without deriving nontrivial PMNS values from the sole axiom.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T23:43:43.797438+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-11T23:39:12.351077+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-233549-0f1463faa9-pmns_c3_character_holonomy_c",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained oriented-cycle frame and the bounded one-angle holonomy law, the exact C3 character phases give an invertible three-readout linear system on the reduced graph-first PMNS cycle family; sole-axiom production of nontrivial values is not audited or claimed.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-11T23:43:43.797438+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260611-233951-6161bbecf2-pmns_c3_character_holonomy_c",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded reduced-readout closure: given the retained hw=1 cycle frame and one-angle holonomy law, the C3 character phases furnish an invertible three-holonomy readout for A_fwd(u,v,w), without deriving nontrivial PMNS values from the sole axiom.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:pmns_oriented_cycle_channel_value_law_note:retained->unaudited",
+      "load_bearing_step": "On A_fwd(u,v,w), the one-angle holonomies at the native C3 phases 0, 2 pi/3, and 4 pi/3 have design matrix [[2,0,1],[-1,sqrt(3),1],[-1,-sqrt(3),1]] with nonzero determinant, so (u,v,w) are reconstructed exactly.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should keep the bounded scope explicit: this audits the C3-phase reduced readout inversion, not sole-axiom production of nontrivial PMNS values.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing computation is finite matrix algebra over cited retained-grade bounded inputs, not a numerical match or external comparator check. The independent formula inventory confirms the signs, factors, normalization, and determinant in the displayed design matrix. The clean verdict is only for the bounded reduced-cycle readout closure; the note's sole-axiom nontrivial-value blockage is treated as a caveat, not as an audited no-go theorem."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_pmns_c3_character_holonomy_closure.py",
+  "title": "PMNS `C3` Character Holonomy Closure",
+  "transitive_descendants": 752,
+  "verdict_rationale": null
+}

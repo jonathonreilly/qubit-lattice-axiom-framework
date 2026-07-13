@@ -1,0 +1,123 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "corner_transfer_extends_to_fixed_gauge_backgrounds_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "998dd19bf314a279deaaa5a2b15425e21e1581343dd7146c14724b5854ca9051",
+  "note_path": "docs/CORNER_TRANSFER_EXTENDS_TO_FIXED_GAUGE_BACKGROUNDS_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:37.555923+00:00",
+      "audit_date": "2026-07-10T03:56:21.455053+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "In the supplied finite Record readout context with bridge-carried K/CPT orbit constancy and determinant-character/log-character homomorphism boundary, the homomorphic determinant phase contribution is zero; downstream strong-CP and AC_phi_lambda uses are only conditional algebra inside that supplied context.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "Within the declared two-candidate canonical-pair surface {single-pair Grassmann, free bosonic CCR}, the physical per-site dim-two space excludes the free bosonic candidate and leaves the single-pair Berezin/Grassmann candidate with determinant readout; full statistics selection is not audited or claimed."
+        },
+        "dep_claim_type": {
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "bounded_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": "retained_bounded",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": "retained"
+        },
+        "deps": [
+          "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "0819995c541a7066b84a232a881ee5c6be76d24e57d8bf65cc18dc6acdb8e90e",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T031137Z-0d389f16-00051-corner_transfer_extends_to_f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "N1\u2013N3 close algebraically, but the unrestricted N4 relation does not follow from the cited authorities or runner. The runner tests only the degenerate L_s=2 U(1) carrier; generally background conjugation gives t[conj(U)]=conj(t[U]), not the asserted raw same-matrix equality used by N4a/N4c and N5.",
+      "claim_scope": "The fixed-background channel decomposition, corner tensor-product positivity, trace/determinant correspondence, and K/complement relations were audited without any U-integrated gauge-dynamics claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T03:56:21.455053+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10:retained_bounded->unaudited",
+      "load_bearing_step": "Because the internal circulant mass commutes with the spatial gauge action, the fixed-background transfer splits into positive channel transfers whose tensor product is positive, while K is asserted to relate the channel kernels at U and conj(U) by a doublet swap.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Recheck N4 on a nondegenerate L_s>=3 complex U(1) background and a generic SU(3) background; repair the operator statement to include the required antiunitary/complex-conjugation action and then reassess the N5 consequence.",
+      "open_dependency_paths": [
+        "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 22,
+        "B": 5,
+        "C": 3,
+        "D": 0,
+        "total_pass": 30
+      },
+      "verdict_rationale": "The tensor-product positivity and finite-fermion trace identities are sound algebraic consequences of retained-grade inputs. However, the L_s=2 U(1) runner surface makes the channel kernel insensitive to the complex structure that distinguishes t[U] from t[conj(U)], so its passing N4 checks do not support the claimed every-background SU(3)/U(1) operator relation. The registrability authority also explicitly leaves the physical species-readout identification open, preventing the stated N5 narrowing from repairing this gap."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py",
+  "title": "Corner Transfer Extends To Fixed Gauge Backgrounds -- Bounded Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+    "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
+    "plaquette_self_consistency_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.822,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "be75de8800905c3109d556d2f78654c23339c8c85361261e162dc2b516b818a2",
+  "note_path": "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:34.723021+00:00",
+      "audit_date": "2026-06-21T13:32:47.860470+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "plaquette_self_consistency_note": "For a selected finite periodic L^4 SU(3) Wilson lattice with compact Haar product measure and specified beta, P_bar is a bounded observable with a unique finite expectation; the runner supplies finite diagnostics and boundary checks only, not a 0.5934 same-surface or infinite-volume certificate.",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "Finite bounded identity on the stated Z^3+t APBC BZ-corner set: the 16 corners in {0,1}^4 split by Hamming weight with multiplicities (1,4,6,4,1), and the Wilson term satisfies W(n)/r = 2*hw(n), with r carried symbolically.",
+          "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15": "Leading-order Wilson-shifted per-channel diagnostic curvature readout and its Taylor ratio, excluding any physical Higgs-pole, channel-selection, or numerical Wilson-coefficient conclusion."
+        },
+        "dep_claim_type": {
+          "plaquette_self_consistency_note": "bounded_theorem",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "bounded_theorem",
+          "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "plaquette_self_consistency_note": "retained_bounded",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08": "retained_bounded",
+          "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15": "retained_bounded"
+        },
+        "deps": [
+          "plaquette_self_consistency_note",
+          "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+          "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15"
+        ],
+        "load_bearing_score": 5.322,
+        "runner_hash": "69766c8e0bbfd7e37590a7ad52cac94ad8386846c9bfd4e70a22e3ddb6929adb",
+        "transitive_descendants": 19
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The displayed finite sum reduces by exact centered binomial moments: sum C(4,k)=16, sum C(4,k)(k-2)^2=16, and sum C(4,k)(k-2)^4=40. The physical readout, channel-selection, and nonzero Wilson-coefficient questions are explicitly outside the audited scope.",
+      "claim_scope": "Finite algebraic diagnostic formula Q_W(r,u_0), its r=0 reduction, r^2/r^4 Taylor coefficients, and B1-surface numerical consistency only; no Higgs-pole, matching, or nonzero-r derivation.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T13:32:47.860470+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Taking the sign-flipped curvature magnitude termwise and dividing by the declared diagnostic all-corners count 16 yields the normalized diagnostic core Q_W.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the clean verdict is read only for the displayed diagnostic Q_W algebra and not as closure of the excluded physical Higgs-pole, channel-selection, or nonzero-r claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 17,
+        "B": 12,
+        "C": 9,
+        "D": 11,
+        "total_pass": 49
+      },
+      "verdict_rationale": "The claim is a bounded algebraic split, not a physical Higgs-mass derivation. The retained one-hop authorities supply the Hamming multiplicities, diagnostic-boundary discipline, and admitted B1 plaquette reuse value; the load-bearing reductions from the displayed Q_W formula are exact finite algebra. The runner source computes the finite sum, moments, Taylor coefficients, B1 sanity values, and scope guards, and the cached run reports PASS=49 FAIL=0 with the two relevant residuals left open."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_wilson_m_h_tree_at_extremum_algebraic_core_split_2026_06_18.py",
+  "title": "Wilson All-Orders Extremum Curvature Algebraic Core Split",
+  "transitive_descendants": 4,
+  "verdict_rationale": null
+}

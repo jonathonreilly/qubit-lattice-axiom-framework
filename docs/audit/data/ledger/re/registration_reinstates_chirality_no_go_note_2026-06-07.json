@@ -1,0 +1,569 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "registration_reinstates_chirality_no_go_note_2026-06-07",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+    "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "79a657768aeec73ffde969a59e9b6475052d2c332703f48ea3d9c426b9b1dff1",
+  "note_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T16:59:10.106768+00:00",
+      "audit_date": "2026-06-07T18:59:40.912648+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "3cbe96111a2bbdf82128d0a67cde3dc79e7fe6d99f574179d748c103c80cefdf",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-a94938c04e-registration_reinstates_chir",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Since P0=J/3 and Gamma_chi=2P0-I, every allowed registration block lies wholly in a Gamma_chi eigenspace. For an anticommuting M, Gamma_chi M Gamma_chi=-M, while block registration is Gamma_chi-even, forcing D(M)=-D(M) and hence D(M)=0.",
+      "claim_scope": "On the finite C^3 generation orbit, C3-character central-sector registration, including its singlet|doublet coarsening, annihilates Gamma_chi-anticommuting Koide carriers; noncentral straddling partitions and emergent T-odd routes are outside the audited no-go.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-07T18:59:40.912648+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+      "load_bearing_step": "If {M, Gamma_chi}=0, then the central-sector registration map D(M)=sum_k P_k M P_k satisfies D(M)=0 under both the 3-block character partition and the 2-block singlet|doublet partition.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should preserve the scoped reading: this does not prove a global no-go for noncentral straddling partitions or the explicitly open T-odd emergent-structure route.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "The load-bearing step is a direct algebraic identity over the supplied projector and grading definitions, not a numerical match or renaming. The runner source genuinely constructs C, the character projectors, Gamma_chi, D3, and D2, then checks the eigenspace identities, annihilation, and adversarial controls; it does not merely print canned PASS lines. The cited one-hop authorities are retained-grade, and the clean verdict is scoped to the central-sector registration no-go, not to all possible future Koide mechanisms or noncentral partitions."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.368046+00:00",
+      "audit_date": "2026-07-10T18:04:31.834013+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "Audited the bounded algebraic claim that K-real C3-invariant einselection selects the 2-sector partition but does not derive r=1/2, leaving K-reality and block-counting/equal-power as explicit residual inputs.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "For real symmetric H on R^3 satisfying {H, \u0393_\u03c7} = 0, every nonzero-eigenvalue eigenvector obeys \u27e8v|\u0393_\u03c7|v\u27e9 = 0 and hence Q(v) = 2/3 and the stated Fourier norm split.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "flavor_einselection_2sector_modulo_kreality_2026-06-02",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 1.5,
+        "runner_hash": "3cbe96111a2bbdf82128d0a67cde3dc79e7fe6d99f574179d748c103c80cefdf",
+        "transitive_descendants": 1
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T174516Z-d2660b50-00009-registration_reinstates_chir",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The annihilation identity closes for D3 and D2. The broader chain fails because the C3-invariant coarsening {P0+P1,P2} straddles Gamma_chi eigenspaces and can register an anticommuting carrier, while the cited authority proves only anticommutation implies Q=2/3, not the asserted converse or circulant implies Q=1.",
+      "claim_scope": "Conditional finite-dimensional result for the two explicitly tested partitions {P0,P1,P2} and {P0,P1+P2}: D annihilates every Gamma_chi-anticommuting Hermitian operator; no general Record-selected-partition or Koide-value no-go was established.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T18:04:31.834013+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:flavor_einselection_2sector_modulo_kreality_2026-06-02:retained_bounded->unaudited",
+      "load_bearing_step": "Because every chosen registration block lies wholly within one Gamma_chi eigenspace, P_k M P_k vanishes for every block whenever {M,Gamma_chi}=0, hence D(M)=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Form QA=P0+P1 and QB=P2 from the supplied character projectors; both commute with C, while QA contains the Gamma_chi +1 and -1 sectors, so its dephasing preserves a P0-to-P1 anticommuting carrier.",
+            "disposition": "OPEN",
+            "evidence_locator": "are coarsenings of the character partition `{P\u2080,P\u2081,P\u2082}` \u2014 all of whose blocks are `\u0393_\u03c7`-eigenspaces",
+            "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the central coarsening {ran(P0+P1),ran(P2)}, whose blocks are C3-invariant although the first block straddles the Gamma_chi eigenspaces.",
+            "outcome": "This is a counterexample to the assertion that every C3-invariant coarsening has Gamma_chi-pure blocks; the alternative survives.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "central_coarsening_straddle"
+          },
+          {
+            "attempt": "Compare the claim with both retained authorities: one proves only the sufficient anticommuting-operator implication, while the other excludes only simultaneous C3-equivariance and Gamma_chi anticommutation.",
+            "disposition": "OPEN",
+            "evidence_locator": "It only establishes the algebraic implication:",
+            "evidence_path": "docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Seek a registered C3-equivariant operator having a Q=2/3 eigenvector without requiring the operator itself to anticommute with Gamma_chi.",
+            "outcome": "No supplied result proves Q=2/3 only if the operator anticommutes, or that every circulant operator has Q=1; this route remains open.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "registered_nonchiral_q23"
+          },
+          {
+            "attempt": "The source lists the route but explicitly labels its supporting note unaudited, and that note is absent from the restricted packet.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "cited as route, not as retained authority \u2014 currently `unaudited`",
+            "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Transport spacetime gamma5 structure to the generation factor as a distinct chirality carrier.",
+            "outcome": "The stated partition-blindness argument cannot be verified here, so the route is untested rather than ruled out.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "gamma5_transport"
+          },
+          {
+            "attempt": "The source reports that A is partition-blind and registered on a symmetric line, but cites only an unaudited route note not supplied in the packet.",
+            "disposition": "UNTESTED",
+            "evidence_locator": "`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06`, `unaudited`",
+            "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the K-odd current A=i(C-C^2) as the registered chirality-sensitive observable.",
+            "outcome": "The restricted packet cannot verify the dismissal, so this route remains untested.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "kodd_c3_current"
+          },
+          {
+            "attempt": "The source only says this relocates an unaudited admission, and the owner-governed registry expressly supplies no above-C3 taste, Dirac, or chirality content.",
+            "disposition": "OPEN",
+            "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content",
+            "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Identify generation with a staggered-taste or Cl(3) grade so lattice spatial chirality supplies the grading.",
+            "outcome": "The required carrier bridge is absent but the mechanism is not ruled out; it remains open.",
+            "route_class": "lattice_scale_or_limit",
+            "route_id": "staggered_taste_grade"
+          },
+          {
+            "attempt": "The source checks the presently cited emergent-time arrow and reports it conjugation-even, while expressly leaving a genuinely T-odd structure open.",
+            "disposition": "OPEN",
+            "evidence_locator": "This is the live next-path, **not** ruled out \u2014 it is the only route",
+            "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive a genuinely T-odd emergent structure that selects K-reality or delta=0 independently of pre-record carrier registration.",
+            "outcome": "This is an explicit live route outside the completed algebraic test.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "emergent_todd_selector"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "specified-partition Gamma_chi eigenblock alignment",
+            "Record-to-dephasing-map and partition bridge",
+            "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+            "K-reality/delta=0 partition-coarseness selector",
+            "circulant-registered-image-to-Q=1 bridge"
+          ],
+          "evidence_locator": "Two distinct objects: (a) the `\u0393_\u03c7`-eigenpartition mechanism (pure algebra, T2\u2013T4); (b) the `K`-reality coarseness predicate",
+          "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "specified-partition Gamma_chi eigenblock alignment",
+              "left_closes_right": false,
+              "right": "Record-to-dephasing-map and partition bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "specified-partition Gamma_chi eigenblock alignment",
+              "left_closes_right": false,
+              "right": "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "specified-partition Gamma_chi eigenblock alignment",
+              "left_closes_right": false,
+              "right": "K-reality/delta=0 partition-coarseness selector",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "specified-partition Gamma_chi eigenblock alignment",
+              "left_closes_right": false,
+              "right": "circulant-registered-image-to-Q=1 bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Record-to-dephasing-map and partition bridge",
+              "left_closes_right": false,
+              "right": "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Record-to-dephasing-map and partition bridge",
+              "left_closes_right": false,
+              "right": "K-reality/delta=0 partition-coarseness selector",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Record-to-dephasing-map and partition bridge",
+              "left_closes_right": false,
+              "right": "circulant-registered-image-to-Q=1 bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+              "left_closes_right": false,
+              "right": "K-reality/delta=0 partition-coarseness selector",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+              "left_closes_right": false,
+              "right": "circulant-registered-image-to-Q=1 bridge",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "K-reality/delta=0 partition-coarseness selector",
+              "left_closes_right": false,
+              "right": "circulant-registered-image-to-Q=1 bridge",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [
+            "Record-to-dephasing-map and partition bridge",
+            "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+            "K-reality/delta=0 partition-coarseness selector",
+            "circulant-registered-image-to-Q=1 bridge"
+          ],
+          "walls": [
+            "specified-partition Gamma_chi eigenblock alignment",
+            "Record-to-dephasing-map and partition bridge",
+            "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge",
+            "K-reality/delta=0 partition-coarseness selector",
+            "circulant-registered-image-to-Q=1 bridge"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "The partition `{P_k}` is an **explicit input**, named as such",
+          "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Registration map `D(M) = \u03a3_k P_k M P_k` (canonical record principle",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "phrase": "canonical record principle",
+              "promoted_wall": "Record-to-dephasing-map and partition bridge"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "`Q=2/3` holds **iff** the generation mass operator is **chiral**",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "phrase": "Q=2/3 holds iff the generation mass operator is chiral",
+              "promoted_wall": "Q=2/3-to-Gamma_chi-anticommuting-carrier necessity bridge"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "registers **only** the `C\u2083`-equivariant (circulant) family \u2014 whose Koide value is `Q=1`",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "phrase": "the circulant family has Koide value Q=1",
+              "promoted_wall": "circulant-registered-image-to-Q=1 bridge"
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "`\u0393_\u03c7 := (2/3) J \u2212 I`",
+              "evidence_path": "docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "Gamma_chi=(2/3)J-I"
+            }
+          ],
+          "unresolved": [
+            "The Record axiom does not supply the asserted dephasing map or central-sector partition.",
+            "The cited anticommuting theorem supplies only the forward implication, not the claimed iff.",
+            "Neither cited authority nor the runner computes the claimed circulant-to-Q=1 implication."
+          ]
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "The charged-lepton value r=1/2 reduces to **two** physical inputs",
+          "evidence_path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The partition-coarseness or K-reality predicate remains open.",
+              "evidence_locator": "GAP A \u2014 K-reality is posited, not derived",
+              "evidence_path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
+              "match": true,
+              "witness_residual": "GAP A: K-reality is posited rather than derived."
+            },
+            {
+              "claim_residual": "The registration map does not derive r, which remains a dial setting.",
+              "evidence_locator": "H is already block-diagonal in {P\u2080,P\u2081} for *every* r",
+              "evidence_path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
+              "match": true,
+              "witness_residual": "Block diagonality leaves r unconstrained and a separate weighting input remains."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "The claim is scoped to the `C\u2083`-character central-sector partition, not \"all partitions\"",
+          "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+          "statements": [
+            {
+              "evidence_locator": "T5: D ANNIHILATES every Gamma_chi-anticommuting Hermitian operator",
+              "evidence_path": "scripts/frontier_registration_reinstates_chirality_nogo.py",
+              "phrase": "D annihilates every anticommuting carrier",
+              "tested_resolutions": [
+                "D3 on 3000 sampled anticommuting operators",
+                "D2 on 3000 sampled anticommuting operators",
+                "four explicit basis carriers under D3 and D2"
+              ],
+              "untested_resolutions": [
+                "Other C3-invariant central coarsenings, including {P0+P1,P2}"
+              ]
+            },
+            {
+              "evidence_locator": "T7: the registered family is circulant => Koide value Q=1 (not 2/3)",
+              "evidence_path": "scripts/frontier_registration_reinstates_chirality_nogo.py",
+              "phrase": "The registered image is always circulant and therefore has Q=1",
+              "tested_resolutions": [
+                "Only D3(M) was spot-checked for commutation with C"
+              ],
+              "untested_resolutions": [
+                "D2(M) is not generally circulant because its doublet block may mix P1 and P2",
+                "No Koide Q calculation appears in T7"
+              ]
+            },
+            {
+              "evidence_locator": "It only establishes the algebraic implication:",
+              "evidence_path": "docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md",
+              "phrase": "Q=2/3 holds iff the mass operator is chiral",
+              "tested_resolutions": [
+                "The retained authority proves that a nonzero eigenvector of an anticommuting operator has Q=2/3"
+              ],
+              "untested_resolutions": [
+                "The converse that every Q=2/3 realization requires a relevant anticommuting mass operator"
+              ]
+            }
+          ],
+          "unresolved": [
+            "The all-partitions rhetoric exceeds the two implemented dephasings.",
+            "T7's Q=1 label is not computed.",
+            "The claimed iff exceeds the cited theorem."
+          ]
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The minimal Record axiom explicitly leaves K/CPT structure, central-sector decomposition, and sector generation downstream, so it cannot supply D or the selected partition.",
+              "evidence_locator": "central-sector decomposition, and any sector generation rule are downstream readout-context content",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The owner-governed AC boundary supplies neither r or delta nor above-C3 taste, Dirac, or chirality content.",
+              "evidence_locator": "It supplies no value of r, delta, charged-lepton mass, mixing angle, probability rule, above-C3 taste/Dirac/chirality content",
+              "evidence_path": "docs/audit/data/owner_governed_premise_nodes.json",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The live Tier-A registry is empty, and retired admissions cannot be broadened beyond their recorded boundaries to supply the missing bridges.",
+              "evidence_locator": "\"genuine_admitted_input_count\": 0",
+              "evidence_path": "docs/audit/data/tier_a_admissions.json",
+              "kind": "tier_a"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "Relabeling cannot replace the missing T-odd selector, partition-selection theorem, or Koide necessity bridge.",
+              "evidence_locator": "needs a new `T`-odd *structure*, not a new axiom or a vocabulary ratification",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "No convention/relabeling closes this",
+          "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "A legitimate C3-invariant central coarsening can straddle the Gamma_chi eigenspaces: QA=P0+P1 and QB=P2 commute with C, yet QA preserves a P0-to-P1 anticommuting carrier under registration.",
+          "evidence_locator": "all of whose blocks are `\u0393_\u03c7`-eigenspaces, so all annihilate the carrier",
+          "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+          "resolution": "The steelman succeeds against the broad no-go. The source's reply incorrectly infers that every coarsening of {P0,P1,P2} has Gamma_chi-pure blocks; its runner tests only one different straddling partition that is non-invariant and never tests the central coarsening above.",
+          "resolved": true
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "`comm(R) \u2229 anticomm(\u0393_\u03c7) = {0}`",
+              "evidence_path": "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+              "mechanism": "The same-factor C3-equivariant and Gamma_chi-anticommuting operator intersection is zero.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "GAP A \u2014 K-reality is posited, not derived",
+              "evidence_path": "docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md",
+              "mechanism": "K-reality remains a posited partition selector.",
+              "retired": false
+            },
+            {
+              "addressed": false,
+              "applicable": true,
+              "evidence_locator": "`KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06`, cited as route",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "mechanism": "Spacetime gamma5 transport to the generation factor.",
+              "retired": false
+            },
+            {
+              "addressed": false,
+              "applicable": true,
+              "evidence_locator": "`G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06`, `unaudited`",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "mechanism": "The K-odd C3 current as a partition-sensitive carrier.",
+              "retired": false
+            },
+            {
+              "addressed": false,
+              "applicable": true,
+              "evidence_locator": "the emergent-time arrow is conjugation-**even**",
+              "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+              "mechanism": "Conjugation parity of the emergent-time arrow.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "The structurally adjacent wall \u2014 `koide_z3_equivariant_anticommuting_no_go` \u2014 remains retained_bounded",
+          "evidence_path": "docs/REGISTRATION_REINSTATES_CHIRALITY_NO_GO_NOTE_2026-06-07.md",
+          "packet_complete": false,
+          "unresolved": [
+            "The gamma5 route authority is absent from the restricted packet.",
+            "The K-odd C3-current route authority is absent from the restricted packet.",
+            "The retained_bounded emergent-time conjugation-parity authority is absent from the restricted packet."
+          ]
+        },
+        "corrected_wall_set": [
+          "For the explicitly defined D3 and D2 maps, every registration block lies in one Gamma_chi eigenspace, so every Gamma_chi-anticommuting Hermitian operator is annihilated."
+        ],
+        "demotion": "partial_narrowing",
+        "failures": [
+          "N1: a C3-invariant central coarsening survives and several cited alternative routes remain open or untested.",
+          "N2-N3: the Record-to-D bridge, Koide necessity converse, K-reality selector, and circulant-to-Q=1 bridge are unresolved.",
+          "N5: the all-partitions, iff, and Q=1 rhetoric exceeds the tested resolutions.",
+          "N7: the strongest central-coarsening steelman succeeds against the broad no-go.",
+          "N8: the cross-cycle packet omits three applicable route authorities."
+        ],
+        "narrowed_claim_scope": "Conditional finite-dimensional result for the two explicitly tested partitions {P0,P1,P2} and {P0,P1+P2}: D annihilates every Gamma_chi-anticommuting Hermitian operator; no general Record-selected-partition or Koide-value no-go was established.",
+        "next_route": "Add a deterministic adversarial control using QA=P0+P1 and QB=P2, verify that both blocks are C3-invariant and that their dephasing registers a P0-to-P1 anticommuting carrier, then either narrow the allowed partition class or prove the additional restriction that excludes this coarsening.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "Re-audit after the runner includes the C3-invariant {P0+P1,P2} coarsening as an adversarial control and the note either narrows its Record/Koide conclusions or supplies the missing bridges.",
+      "open_dependency_paths": [
+        "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
+        "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 23,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 23
+      },
+      "verdict_rationale": "Issue: although the D3 and D2 annihilation calculation is correct, the no-go generalizes falsely because the C3-invariant central coarsening {P0+P1,P2} straddles Gamma_chi eigenspaces and registers a P0-to-P1 anticommuting carrier, while the cited theorem proves only anticommutation implies Q=2/3 and the runner never computes Q=1. Why this blocks: the claimed exclusion of all legitimate central decompositions and the inference that registration cannot source Q=2/3 do not follow. Repair target: restrict the theorem to the two stated partitions and add a retained partition-selection theorem plus valid Koide-necessity and Q=1 bridges before restoring the broader conclusion. Claim boundary until fixed: only the exact finite-dimensional annihilation identity for D3 and D2 is supported."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_registration_reinstates_chirality_nogo.py",
+  "title": "Register-Not-Read RE-INSTATES the Koide Chirality No-Go (it does not dissolve it)",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

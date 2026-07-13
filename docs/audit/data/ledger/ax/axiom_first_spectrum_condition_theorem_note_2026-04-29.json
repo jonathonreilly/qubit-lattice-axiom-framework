@@ -1,0 +1,556 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+    "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+    "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+    "staggered_only_det_positivity_case_a_note_2026-05-17",
+    "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+    "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09"
+  ],
+  "direct_in_degree": 23,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 21.06,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c3afccd86c3acbac250f7ff148dce8ef4ff0abcd12f19737b58d074f31890a18",
+  "note_path": "docs/AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T16:08:20.768723+00:00",
+      "audit_date": "2026-04-30T15:13:24.023781+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The proof imports the reflection-positivity companion as a load-bearing premise that is not listed as a ledger dependency for this row, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "criticality_increased:leaf->high",
+      "load_bearing_step": "Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) \u2297 Z^3: support \u2014 branch-local theorem note on A_min; runner passing; audit-pending.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the proof imports the reflection-positivity companion as a load-bearing premise that is not listed as a ledger dependency for this row. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-02T17:44:15.874893+00:00",
+      "archived_for_note_hash": "a6c511cccd69ada362439478689749a06530030ca03d117799dd719ef965a0c7",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-07T08:10:02.485839+00:00",
+      "archived_for_note_hash": "f59d1bfee215b9ccf139339c74b4a2b4152f3507fcffceca5ea5aad2058c19d9",
+      "audit_date": "2026-05-05T22:55:49.063501+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29": "audited_conditional"
+        },
+        "deps": [
+          "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.798,
+        "runner_hash": "584e8d642799d8f25402780a8673b7668672d1ad1ecc49f3f62504d815ea5944",
+        "transitive_descendants": 444
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-axiom_first_spectrum_con-006",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The functional-calculus step closes algebraically only after a retained-grade strictly positive finite-dimensional Hermitian transfer matrix is available. The restricted packet gives that transfer-matrix input through an audited_conditional, sector-limited reflection-positivity authority, and SC4 also relies on a cluster-decomposition companion not provided in the packet.",
+      "claim_scope": "SC1-SC4 spectrum-condition claims for the vacuum-subtracted Hamiltonian built from the reflection-positivity-reconstructed transfer matrix on A_min, including gap and clustering compatibility statements.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T22:55:49.063501+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "On H_phys^\u00d7, T/M_T is a positive Hermitian operator with spectrum (0,1], so functional calculus defines log(T/M_T) as self-adjoint and H=-(1/a_\u03c4)log(T/M_T) has spectrum [0,+\u221e).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "dependency_not_retained: first bring the reflection-positivity companion to retained grade or split this claim to the staggered-only retained sector, then add/provide the cluster-decomposition dependency and re-check the strict log-domain/top-eigenvalue assumptions.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+        "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the functional-calculus conclusion is algebraic, but its hypotheses are imported from docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md, which is marked audited_conditional and only theorem-grade for the staggered-only sector while the full staggered+Wilson extension is runner-supported; SC4 additionally cites a cluster-decomposition companion not supplied in the packet. Why this blocks: a conditional transfer-matrix construction and missing cluster authority cannot support an unconditional A_min spectrum-condition theorem, and the note's extension over ker(T) plus strict gap/top-eigenvalue assumptions are not closed by the provided inputs. Repair target: retain the reflection-positivity dependency or split to its theorem-grade staggered-only sector, provide and audit the cluster-decomposition dependency, and prove strict positivity or restrict the log-domain statement. Claim boundary until fixed: the note establishes an algebraic spectral-theorem corollary for any strictly positive finite-dimensional Hermitian transfer matrix with the stated normalization, and the runner exhibits this on a small free-staggered model."
+    },
+    {
+      "archived_at": "2026-06-06T16:24:05.200054+00:00",
+      "archived_for_note_hash": "daf19b96472ea226665ff9e96379df25fac111aa1b2007f261af94efa80ab512",
+      "audit_date": "2026-06-05T16:40:07.923155+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 19.905,
+        "runner_hash": "498185d3654731a502f85bfd1c765c2894f25a67a6c54fbb6b25048e44b472f9",
+        "transitive_descendants": 958
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-163719-0dd12519d3-axiom_first_spectrum_conditi",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The spectral-calculus part closes from the retained-grade positivity inputs. The exact mass-gap and temporal-rate normalization does not close as written because the cited two-step authorities define H_hat = -log(T_hat^2)/(2 a_tau), while this note and runner use 1/a_tau without a blocked-time-spacing bridge.",
+      "claim_scope": "Finite-dimensional staggered-only free/fixed-background two-step transfer surface: given a strictly positive Hermitian T = T_hat^2 on H_phys, the normalized logarithm is self-adjoint/non-negative, with SC3 and SC4 only conditional on a non-degenerate top eigenvalue/gap and the temporal bridge.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-06-05T16:40:07.923155+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because spec(T) subset (0, M_T], finite-dimensional functional calculus makes log(T / M_T) self-adjoint with non-positive spectrum, hence H := -(1/a_tau) log(T / M_T) is self-adjoint and non-negative.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add an explicit blocked-time-spacing normalization bridge identifying a_tau as the two-step block spacing, or change H and m_gap to use 1/(2 a_tau), then align the runner with T_hat^2.",
+      "open_dependency_paths": [
+        "docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The core SC1-SC2 argument is genuine finite-dimensional algebra over positive Hermitian T, not a renaming or numerical comparator. SC3 is correctly conditional on top-eigenvalue non-degeneracy, and SC4 is correctly framed as conditional on a gap. The remaining blocker is the unclosed factor-of-two/time-spacing normalization for T = T_hat^2, and the runner mirrors that normalization while constructing T = exp(-a_tau H_lat) rather than the cited two-step transfer object."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:23.803062+00:00",
+      "audit_date": "2026-06-06T16:39:45.323453+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d, finite periodic L_s, m>0: the single-step transfer object is non-positive, while the two-step blocked Fock transfer matrix built from the decaying action-derived channel is positive Hermitian.",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "Audited only the finite free staggered two-step transfer-matrix surface: T_hat^2 advances two lattice spacings, so the reconstructed Hamiltonian and mass gap use 1/(2 a_tau) and agree with the retained bounded two-step authority after vacuum normalization.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 19.964,
+        "runner_hash": "61c4aa453dc582549a7b71747988bf6601e06d646285aa20415dc173fe2de4fa",
+        "transitive_descendants": 998
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-163650-fa946d7fbb-axiom_first_spectrum_conditi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The spectral-calculus step is an elementary algebraic consequence of the retained-grade positive-Hermitian two-step transfer input and the retained blocked-time normalization bridge. The gap and temporal-decay statements are explicitly conditional and do not assert an independently derived universal gap or spatial cluster decomposition.",
+      "claim_scope": "Finite-dimensional spectrum-condition statement for the staggered-only two-step blocked transfer matrix T := T_hat^2 on the free/fixed-background retained sector: SC1-SC2 from positive Hermitian T, SC3 conditional on a non-degenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T16:39:45.323453+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T16:36:14.041231+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-163343-21666161e5-axiom_first_spectrum_conditi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional two-step blocked staggered-only transfer matrix T = T_hat^2 on the free or fixed-background config-by-config surface; SC1-SC2 hold given strict positive Hermitian T, SC3 is conditional on a nondegenerate top eigenvalue, and SC4 is only a conditional temporal-decay corollary on a supplied positive gap.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T16:39:45.323453+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-163650-fa946d7fbb-axiom_first_spectrum_conditi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional spectrum-condition statement for the staggered-only two-step blocked transfer matrix T := T_hat^2 on the free/fixed-background retained sector: SC1-SC2 from positive Hermitian T, SC3 conditional on a non-degenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Because spec(T) is contained in (0,M_T], finite-dimensional functional calculus defines log(T/M_T), and H := -(1/(2 a_tau)) log(T/M_T) is self-adjoint with non-negative spectrum.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that downstream consumers preserve the bounded scope: fixed/free staggered-only two-step T, conditional gap, and temporal-only clustering.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "All load-bearing upstream authorities in the restricted packet are retained-grade or retained-bounded, and the theorem\u2019s main step is finite-dimensional spectral theory over those inputs. The factor 1/(2 a_tau) is now supported by the blocked-time normalization bridge, so the previous factor-of-two normalization issue is closed within the stated two-step scope. The runner checks a finite positive-Hermitian two-step exhibit and the corrected normalization; it is supportive, not the source of the proof. The note does not overclaim a closed-form non-degeneracy theorem, U-integrated full interacting SU(3) closure, Wilson extension, or unconditional spatial clustering."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.881191+00:00",
+      "audit_date": "2026-06-06T23:07:42.423884+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 staggered fermions in 1+1d with m>0 and periodic spatial lattice: the one-step action transfer is non-positive, while the two-step blocked Fock transfer built from the decaying spectral channel is positive Hermitian; no gauge-integrated or single-step RP theorem is audited.",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "Audited the bounded free/fixed-background staggered normalization bridge: T_hat^2 has block spacing 2 a_tau, so Hamiltonian and gap reconstruction use 1/(2 a_tau) and agree with the vacuum-subtracted H_hat from the retained_bounded two-step positivity authority.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "decoration",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 19.972,
+        "runner_hash": "61c4aa453dc582549a7b71747988bf6601e06d646285aa20415dc173fe2de4fa",
+        "transitive_descendants": 1003
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260606-230538-55370ef2b5-axiom_first_spectrum_conditi",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited two-step positivity and blocked-time normalization inputs are retained-grade, and the downstream claims are finite-dimensional spectral calculus. The note explicitly excludes full U-integrated SU(3), Wilson extension, unconditional nondegeneracy, and spatial cluster decomposition.",
+      "claim_scope": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T23:07:42.423884+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-06T23:05:01.099385+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-230342-60cc38ba66-axiom_first_spectrum_conditi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional staggered-only two-step transfer-matrix spectrum condition: given retained two-step positive-Hermitian T := T_hat^2 and blocked spacing 2 a_tau, the vacuum-subtracted H is self-adjoint and bounded below; the gap and temporal decay are conditional on top-eigenvalue nondegeneracy and the retained temporal bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-06T23:07:42.423884+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260606-230538-55370ef2b5-axiom_first_spectrum_conditi",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional staggered-only free and fixed-background two-step transfer matrix T_hat^2: SC1-SC2 after blocked-time normalization, SC3 conditional on a nondegenerate top eigenvalue, and SC4 conditional on the supplied temporal gap bridge.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28:retained_bounded->unaudited",
+      "load_bearing_step": "Given finite-dimensional positive Hermitian T with spec(T) in (0,M_T], functional calculus gives H := -(1/(2 a_tau)) log(T/M_T) self-adjoint with H >= 0, and the gap formula follows when the top eigenvalue is nondegenerate.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check notation only: interval statements for spectra should be read as containment, and SC4's transfer-gap notation must stay tied to blocked physical time.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 2,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The load-bearing theorem is an algebraic closure over independent retained-grade inputs: a positive Hermitian finite transfer matrix, the two-step time normalization, and the retained temporal bridge for the conditional SC4 corollary. The runner source is not a print-only certificate; it constructs a finite free-staggered exhibit, checks positivity, normalization, self-adjointness, and a positive finite-carrier gap. The clean verdict is only for the bounded/conditional scope stated in the note, not for U-integrated reflection positivity or spatial clustering."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:26.134373+00:00",
+      "audit_date": "2026-07-10T16:10:01.311229+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "Free U=1 1+1d staggered-only finite periodic L_s, real m>0: single-step transfer is non-positive, while the two-step blocked Fock transfer built from the decaying channel e^{-2E(p)} is positive Hermitian. Gauge, U-integrated RP, continuum OS reconstruction, and Wilson-sector claims are out of scope.",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "Within the free/fixed-background staggered-only finite Fock-space surface of the cited two-step transfer-matrix authority, the reconstructed Hamiltonian and gap from T_hat^2 use the two-step block normalization 1/(2 a_tau), not 1/a_tau; no U-integrated interacting, continuum/OS, closed-form universal nondegeneracy, or physical-mass identification is audited.",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "Finite-dimensional temporal transfer-matrix clustering for the correlator \u27e80|A T\u0303^n B|0\u27e9, conditional on a positive Hermitian transfer matrix with unique top eigenvalue and \u0394_T>0; includes the stated finite-temperature q_\u03b2 correction and does not derive the gap or spatial clustering.",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "For finite or compact measured spaces with measure-preserving involution Theta, real Theta-invariant S_+, reflection-Hermitian F, and psi^2 F in L2 where psi^2=exp(-S_+), the reflected integral equals ||psi^2 F||_2^2 >= 0 and induces the weighted L2 Hermitian positive semidefinite form. Full Wilson plaquette RP, fermion determinant positivity, combined gauge+fermion RP, transfer-matrix normalization/vacuum subtraction, physical Hilbert-space identification, and framework-action satisfaction of the hypotheses are excluded.",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "Fixed-background staggered KS two-step transfer positivity on the stated temporal-gauge finite carrier, plus finite permutation-conjugation invariance of det(M_KS+mI), spec(H_hat), and Z; no U-integrated RP, P2, AC_phi_lambda, or continuum/OS reconstruction claim was audited.",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "For a balanced even staggered lattice with canonical anti-Hermitian M_KS off-diagonal under \u03b5 and real m>0, det(M_KS+mI)=\u220f(m\u00b2+\u03c3_i\u00b2)>0 for every SU(3) link configuration."
+        },
+        "dep_claim_type": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "bounded_theorem",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "bounded_theorem",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": "retained_bounded",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05": "retained_bounded",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09": "retained_bounded",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10": "retained",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "retained_bounded",
+          "staggered_only_det_positivity_case_a_note_2026-05-17": "retained"
+        },
+        "deps": [
+          "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+          "axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05",
+          "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+          "reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10",
+          "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+          "staggered_only_det_positivity_case_a_note_2026-05-17"
+        ],
+        "load_bearing_score": 21.162,
+        "runner_hash": "61c4aa453dc582549a7b71747988bf6601e06d646285aa20415dc173fe2de4fa",
+        "transitive_descendants": 572
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T160820Z-9d13e99d-axiom_first_spectrum-judge-1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing result is elementary spectral algebra over explicitly supplied retained-grade positivity and blocked-time-normalization authorities; no open authority is required for SC1-SC2, while SC3-SC4 state their additional hypotheses explicitly. The runner constructs T from H and reconstructs H, so it is only an algebraic exhibit rather than an independent positivity derivation, but the cited retained-grade authorities already supply that premise. The physical claim remains bounded to finite staggered-only free or fixed-background two-step carriers, so positive_theorem is too broad as the row-level classification.",
+      "claim_scope": "On finite free or time-independent fixed-background staggered-only two-step carriers, a strictly positive Hermitian transfer matrix yields a self-adjoint vacuum-subtracted Hamiltonian H >= 0; a positive gap and temporal decay follow under the stated non-degeneracy and gap hypotheses.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T16:10:01.311229+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-09T23:03:36.082403+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-axiom_first_spectrum_con-008",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On finite free or fixed-background staggered-only two-step carriers, a strictly positive Hermitian transfer matrix with block spacing 2 a_tau yields a self-adjoint vacuum-subtracted H >= 0; a positive gap requires a non-degenerate top eigenvalue, and temporal decay is conditional on that gap.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-10T01:19:19.799414+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-20260710-011703-de39c93e-axiom_first_spectrum_con-008",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Finite-dimensional spectral consequences of a strictly positive two-step staggered transfer matrix: vacuum-subtracted H is self-adjoint and non-negative, a non-degenerate top eigenvalue gives a positive gap, and that gap conditionally gives temporal decay.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_hybrid",
+        "third_audit": {
+          "audit_date": "2026-07-10T16:10:01.311229+00:00",
+          "auditor": "codex-gpt-5.6-sol-xhigh-judicial-panels-20260710T160820Z-9d13e99d-axiom_first_spectrum-judge-1",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "On finite free or time-independent fixed-background staggered-only two-step carriers, a strictly positive Hermitian transfer matrix yields a self-adjoint vacuum-subtracted Hamiltonian H >= 0; a positive gap and temporal decay follow under the stated non-degeneracy and gap hypotheses.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first position classified the row as positive_theorem despite its expressly finite-carrier, staggered-only, fixed-background and conditional-gap scope; bounded_theorem is the applyable classification.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The load-bearing result is elementary spectral algebra over explicitly supplied retained-grade positivity and blocked-time-normalization authorities; no open authority is required for SC1-SC2, while SC3-SC4 state their additional hypotheses explicitly. The runner constructs T from H and reconstructs H, so it is only an algebraic exhibit rather than an independent positivity derivation, but the cited retained-grade authorities already supply that premise. The physical claim remains bounded to finite staggered-only free or fixed-background two-step carriers, so positive_theorem is too broad as the row-level classification.",
+          "load_bearing_step_class": "A",
+          "second_auditor_error": "The second position imposed audited_conditional even though every load-bearing cited authority is retained-grade and the non-degeneracy and temporal-gap conditions are explicit theorem hypotheses rather than unresolved imported identifications.",
+          "sided_with": "hybrid",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Finite-dimensional functional calculus applied to spec(T/M_T) contained in (0,1] gives H := -(1/(2 a_tau)) log(T/M_T) self-adjoint and non-negative, with the stated conditional spectral-gap consequences.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing result is elementary spectral algebra over explicitly supplied retained-grade positivity and blocked-time-normalization authorities; no open authority is required for SC1-SC2, while SC3-SC4 state their additional hypotheses explicitly. The runner constructs T from H and reconstructs H, so it is only an algebraic exhibit rather than an independent positivity derivation, but the cited retained-grade authorities already supply that premise. The physical claim remains bounded to finite staggered-only free or fixed-background two-step carriers, so positive_theorem is too broad as the row-level classification."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/axiom_first_spectrum_condition_check.py",
+  "title": "Axiom-First Spectrum Condition (Lattice Analogue) on Cl(3) \u2297 Z^3",
+  "transitive_descendants": 754,
+  "verdict_rationale": null
+}

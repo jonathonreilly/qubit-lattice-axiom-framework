@@ -1,0 +1,431 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "dimension_selection_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "high",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
+    "scripts/frontier_dimension_selection.py",
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 5.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c6f6ec4e4eb9bf660cc80e380d96508e321858fe755005534acf3673f4283b32",
+  "note_path": "docs/DIMENSION_SELECTION_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-current",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-09T19:35:28.521152+00:00",
+      "audit_date": "2026-04-30T15:16:15.748994+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "default_positive_theorem",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "runner_artifact_issue_resolved:scripts/frontier_dimension_selection.py",
+      "load_bearing_step": "Dimension Selection: Does Self-Consistency Require d = 3?: Dimension Selection: Does Self-Consistency Require d = 3?",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim.",
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-05-18T11:31:37.034782+00:00",
+      "archived_for_note_hash": "516e83e7d8f54c0ca1a14427bc9934ac1b382264d967ed74101c1d6c7d850401",
+      "audit_date": "2026-05-10T19:19:03.166371+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-019e1352-a39d-75f1-9997-3e18273f39e3",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner itself finds that d=3,4,5 pass the advertised three observables, so the unique d=3 conclusion depends on orbital and atomic stability inputs that are not included as one-hop authorities. The lower-bound numerics also use a selected 2D propagation readout through hand-coded analytic d-dimensional potentials, not a closed theorem equating that readout with self-consistent d-dimensional gravity.",
+      "claim_scope": "Finite d=1..5 numerical sweep plus a claimed combination with external stability upper bounds to select d=3.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-10T19:19:03.166371+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "Combined with the known upper bound from orbital and atomic stability (d <= 3), this uniquely gives d = 3.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_dependency_edge - add direct retained dependencies for the orbital/atomic stability upper-bound authorities and re-audit after separating the finite lower-bound claim from the unique d=3 selection claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the note imports the d<=3 upper bound and the phase-to-force/readout bridge without retained cited support. Why this blocks: without those inputs, the supplied evidence only shows that the selected runner criteria pass for d=3,4,5 and fail for d<=2 under chosen parameters. Repair target: add retained one-hop stability authorities and a bridge theorem tying the runner readout to the claimed gravitational observable, or split the note to the finite numerical lower-bound claim. Claim boundary until fixed: runner-specific evidence for excluding d<=2 under the stated setup, not a retained dimension-selection theorem."
+    },
+    {
+      "archived_at": "2026-05-29T12:18:34.435768+00:00",
+      "archived_for_note_hash": "31133faae3905b03d27efc52392fcb8689f2eb9b7fafc175e0d1aca19a49ca8d",
+      "audit_date": "2026-05-23T19:58:28.237184+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": "f555ebd969e566912710426a4e436ff15137db95301501993499b31fc47f24da",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T195806Z-e816e970-dimension_selection_note-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The numerical lower-bound experiment is present, but the broader d = 3 conclusion also imports an upper bound from stable orbits/atoms that is not provided as a cited retained authority in this packet. The runner additionally measures gravity using hand-coded analytic d-dimensional potentials in 2D propagation, so the bridge from the stated axiom to those potentials and sign criterion is not closed inside the packet.",
+      "claim_scope": "The restricted packet supports only the bounded lower-bound claim that, in this runner's propagator-plus-Poisson model with the stated analytic d-dimensional potentials, d <= 2 fails attractive gravity and beta ~= 1 while d >= 3 passes those numerical criteria.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-23T19:58:28.237184+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The propagator phase coupling S = L * (1 - phi) produces attractive deflection only when the potential phi decays with distance, which requires d >= 3.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide retained upstream authorities or a self-contained derivation for the d <= 3 upper bound and for the analytic d-dimensional potential/sign bridge used by the runner.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "The runner performs a substantive numerical computation rather than merely printing constants, and its own output honestly reports that the three tested observables coexist at d = 3, 4, 5 rather than uniquely selecting d = 3. The note's bounded lower-bound claim is partly supported by the computation, but the unique d = 3 conclusion depends on separate orbital and atomic stability inputs not included as authorities. The analytic d-dimensional potential formulas and their connection to the claimed axiom are also imported bridge structure rather than closed from the restricted packet alone."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:18.363932+00:00",
+      "archived_for_note_hash": "0fd525a195d09e238e39927bb57ddae70bc414f15d78180a1788a895f83f03e2",
+      "audit_date": "2026-05-29T21:35:06.271090+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 2.585,
+        "runner_hash": null,
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-audit-ready-20260529-dimension_selection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The restricted packet provides no cited authority or derivation for the analytic d-dimensional potentials and phase-coupling sign bridge. The runner source/stdout is also absent, so the numerical table cannot be independently verified from this packet.",
+      "claim_scope": "Conditional lower-bound claim only: assuming the supplied analytic d-dimensional potentials and sign criterion, the note asserts the tested setup excludes d <= 2 for attractive gravity with linear mass dependence.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T21:35:06.271090+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The phase-coupling sign analysis says attractive deflection occurs only for decaying analytic d-dimensional potentials, so the tested self-consistency setup excludes d <= 2 and gives a lower bound d >= 3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation or explicitly accepted admitted-premise authority for the analytic d-dimensional potential/sign bridge, and include the runner source plus completed output if the numerical lower-bound experiment remains load-bearing.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Judging from the note text alone, the scoped result is explicitly conditional on hand-coded analytic potentials and a sign criterion that are admitted rather than derived. The unique d = 3 conclusion additionally depends on an admitted d <= 3 upper bound, so it is not closed by this packet. Because no runner source or stdout is included, the numerical lower-bound experiment is not verifiable here beyond the source note's narrative."
+    },
+    {
+      "archived_at": "2026-06-05T09:04:41.569939+00:00",
+      "archived_for_note_hash": "d94575bf12ee22bf89e8a7f73a3feb3b6157915bff4dbdd31352038980f0e15e",
+      "audit_date": "2026-05-31T13:41:35.119358+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "Runner-specific finite-k centroid-sign bridge for k=6.0, L_x=40, L_y=60, source at y_mid, mass offset +7, dimensions d=1..5, including the M=0 derivative and parent M=0.005 probe replay."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260531-133746-c4e87d9e-dimension_selection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The centroid-sign part is supported by the cited bridge note, but the source note's displayed lower-bound table and criteria also include beta~1 and I_3 entries that are not computed by the supplied primary runner. The primary runner also dynamically imports scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, whose source is absent from the packet, so stdout alone cannot verify the imported finite-k computations.",
+      "claim_scope": "Finite-runner lower-bound support for d=1,2 failing and d=3,4,5 passing the stated runner criteria, with no unique-d=3 theorem or framework-baseline rewrite.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T13:41:35.119358+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The finite-k derivative bridge independently certifies the same sign transition for the runner's baseline centroid observable: d <= 2 negative/away and d >= 3 positive/toward.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the dynamically imported bridge runner source and add or expose a runner check for the beta, alpha, and I_3 table entries, or narrow the audited parent claim to sign-only lower-bound support.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 14,
+        "C": 10,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The note is correctly narrowed away from the prior unique-dimension overclaim, and the cited authority is retained_bounded for the runner-specific centroid-sign transition. However, strict formula inventory catches displayed beta and I_3 quantitative entries in the parent note that are not independently checked by the supplied runner source or cited bridge. The visible runner verifies prose boundaries and sign replay only, with an opaque dynamic import for the bridge computation. This is a packet/runner-artifact gap rather than evidence that the sign table is false."
+    },
+    {
+      "archived_at": "2026-06-06T22:40:04.437836+00:00",
+      "archived_for_note_hash": "fbb11bdecffb8daa70fb3cc57a1dd3f4aa8d734f6bd7a71fd2fe9aa8d69bce0c",
+      "audit_date": "2026-06-05T19:06:54.989022+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260605-190518-99660e015c-dimension_selection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The prose scope is properly narrowed and the parent runner reports a sign replay, but the restricted packet does not include the dynamically imported bridge runner source or the original dimension runner/cache/source-packet verifier needed to inspect the beta, I_3, and finite-k computations. The missing step is an independently inspectable runner-source or derivation chain for the displayed table and sign computations.",
+      "claim_scope": "Finite-runner lower-bound support for the stated d = 1..5 propagator-plus-Poisson runner surface: d = 1,2 fail and d = 3,4,5 pass the runner criteria; no unique-d = 3 theorem or framework-baseline rewrite.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-05T19:06:54.989022+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The bounded result asserts that d <= 2 fail the runner's attractive-gravity / beta~1 lower-bound criteria while d = 3,4,5 pass, with the finite-k bridge certifying the same d <= 2 away and d >= 3 toward sign transition.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the finite-k bridge runner source, original dimension runner source/cache, and source-packet verifier output so the displayed beta, I_3, and sign computations can be independently inspected.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 24,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The cited finite-k bridge note is retained_bounded for the narrow sign statement, and the source note correctly avoids the prior unique-d = 3 overclaim. However, the parent runner source dynamically loads computational bridge code that is not shown in the restricted packet, and the original dimension runner/cache/source-packet verifier that allegedly support the displayed beta and I_3 entries are also absent. The load-bearing table therefore remains cross-artifact verification rather than an independently checkable first-principles compute or algebraic closure."
+    },
+    {
+      "archived_at": "2026-06-07T15:15:48.317217+00:00",
+      "archived_for_note_hash": "9302eb5b231077e7fae0dace1f21742bfd105a0fb208802cd083776b303e02c9",
+      "audit_date": "2026-06-06T23:45:23.873058+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "97a57b6de963a564bc68d6e0b4a5d5d7790c9b75bbfc0f48d12f55b4fa934880",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260606-234245-269f5eae4c-dimension_selection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bridge note supplies retained-bounded sign support, but the restricted packet does not include the dynamically imported bridge runner source or the original dimension runner/cache/source-packet verifier needed to check the displayed beta/I_3 table from code. The provided primary runner therefore verifies prose boundaries and an opaque imported replay, not the full finite-runner lower-bound artifact chain.",
+      "claim_scope": "Finite-runner lower-bound support only: d=1,2 fail and d=3,4,5 pass the stated runner criteria under the displayed finite propagator and potential-family surface, with no unique-d=3 or baseline-rewrite claim.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-06T23:45:23.873058+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The finite-k derivative bridge independently certifies the same sign transition for the runner's baseline centroid observable: d <= 2 negative/away response and d >= 3 positive/toward response.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, scripts/frontier_dimension_selection.py, logs/runner-cache/frontier_dimension_selection.txt, and the source-packet verifier/cache so the finite-k replay and displayed beta/I_3 table can be checked from code.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 26,
+        "C": 0,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "The narrowed prose is materially better scoped and the cited bridge is retained-bounded for the runner-specific centroid sign transition. However, the primary runner source dynamically imports scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py, whose source is not included in the helper packet, so its numerical derivative and finite-M replay cannot be independently verified from the supplied code. The parent note also displays beta, alpha, and I_3 entries attributed to the original dimension runner, but that runner/cache/verifier chain is not present in the restricted packet. This is a packet/artifact incompleteness condition, not a substantive disproof of the bounded claim."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:27.337521+00:00",
+      "audit_date": "2026-06-07T16:46:39.648182+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "For the specified finite-k runner geometry k=6.0, L_x=40, L_y=60, source at y_mid, and mass offset +7, the exact normalized centroid derivative at M=0 has signs negative for d=1,2 and positive for d=3,4,5, with the M=0.005 probe showing the same sign pattern."
+        },
+        "dep_claim_type": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25": "retained_bounded"
+        },
+        "deps": [
+          "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25"
+        ],
+        "load_bearing_score": 2.585,
+        "runner_hash": "55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260607-164411-2c3086f5f4-dimension_selection_note",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner and exposed helpers compute the finite-k centroid derivative, finite-M centroid replay, beta fits, alpha entries, and I3 check for the stated runner inputs. An independent direct matrix-recursion check reproduces the displayed sign transition and table values within numerical tolerance.",
+      "claim_scope": "Finite-runner lower-bound support only: for the specified layer-normalized propagator, analytic d-dimensional potential family, k=6.0 baseline geometry, and d=1..5 runner surface, d=1,2 fail and d=3,4,5 pass the stated attraction/beta/I3 lower-bound criteria.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-07T16:46:39.648182+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25:retained_bounded->unaudited",
+      "load_bearing_step": "The runner table reports that d=1,2 fail the attractive-gravity/beta lower-bound criteria while d=3,4,5 pass them, and the finite-k derivative bridge certifies the same d<=2 away versus d>=3 toward sign transition for the runner centroid observable.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only that future edits do not broaden this finite-runner lower-bound result into unique d=3 selection or a framework-internal derivation of the all-d potential family.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 15,
+        "C": 10,
+        "D": 0,
+        "total_pass": 27
+      },
+      "verdict_rationale": "The cited finite-k bridge is retained-bounded and directly supplies the runner-specific sign certificate, while the helper sources expose the original beta/I3 computation and cache freshness checks. The source note explicitly narrows the claim to finite-runner lower-bound support and disclaims unique d=3 selection, framework-internal derivation of the all-d potential family, and any axiom rewrite. Within that bounded scope, the computation closes without external comparator input or definition substitution."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
+  "title": "Dimension Selection Lower-Bound Finite-k Repair",
+  "transitive_descendants": 6,
+  "verdict_rationale": null
+}

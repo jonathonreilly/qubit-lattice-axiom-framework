@@ -1,0 +1,132 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite-Brillouin-zone source certificate)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+    "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08",
+    "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+    "scale_reference_primitive",
+    "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 1.5,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "cb6ffdd7cbf6da534df0c53b26bdcda23cee28d682755c80400c492afe80b11f",
+  "note_path": "docs/UNIVERSAL_GR_W_HESSIAN_IDENTIFICATION_FULL_FINITE_K_CHANNEL_TABLE_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-17T10:33:32.489099+00:00",
+      "audit_date": "2026-06-11T15:12:46.033194+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "scale_reference_primitive": "7f3f712d5bdfd0ce27caaf65f658af2c271b249706fdf08f1b777d19eada287f"
+        },
+        "dep_claim_scope": {
+          "scale_reference_primitive": null,
+          "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08": "Local finite-nonzero-k no-go: in the degenerate trace=shear comparator-gluing model, no overall normalization sign can make both trace and TT omega^2 signs healthy when glued to the derived opposite-signed Regge/EH comparator potentials.",
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "Finite-BZ runner-defined yz TT bubble sign diagnostic for D(q)=i sigma.sin(q)+mI over the stated N and mass tests, with the bare-Hermitian control comparison.",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "Audited the bounded per-mode metric-source Hessian theorem for the scalar lattice-Laplacian and Cl(3)-Dirac determinant symbols, together with the finite tensor-algebra TT-projector frame-dependence and isotropic-average facts.",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "Audited only the runner-defined finite-BZ scheme with D(q), V_cons, and S=-B0+B1+B5: leading longitudinal violation is cancelled in the tested channels and the yz TT stiffness remains positive for the tested masses."
+        },
+        "dep_claim_type": {
+          "scale_reference_primitive": "meta",
+          "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08": "no_go",
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "bounded_theorem",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "scale_reference_primitive": "meta",
+          "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08": "retained_no_go",
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": "retained_bounded",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08": "retained_bounded"
+        },
+        "deps": [
+          "scale_reference_primitive",
+          "universal_gr_degenerate_supermetric_graviton_sign_no_go_bounded_theorem_note_2026-06-08",
+          "universal_gr_induced_graviton_w_native_finite_k_bounded_theorem_note_2026-06-08",
+          "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08",
+          "universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "8c4bf76adf230f71bca9cfeb9ce45c4abba875a5764142431c2dd058d74ef0d1",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-150916-81f2e9715c-universal_gr_w_hessian_ident",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner source instantiates the lattice Dirac operator, Pauli algebra, local vertices, seagull, position-space logdet Hessian check, and finite-BZ sums directly; the displayed channel table and sign/splitting conclusions are independently reproducible from the same restricted operator definitions. The only primitive used is the registered scale-reference units remark, which supplies no dimensionless physics and is not load-bearing.",
+      "claim_scope": "Finite-Brillouin-zone W-Hessian/channel-table audit for the 3D native elliptic Dirac operator and the declared/Ward-selected local schemes on the checked grids, excluding continuum, unique-improvement, and full-GR closure claims.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:12:46.033194+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08:retained_bounded->unaudited",
+      "load_bearing_step": "The explicit finite-BZ computation from the native elliptic Dirac operator identifies the declared local coupling's W Hessian with the midpoint bubble and gives Ward-selected TT and trace stiffnesses with the same positive sign and zero transverse trace/shear splitting, so the opposite-sign trace/TT comparator is not induced in the tested class.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the non-load-bearing wording that calls the comparator supplied, since the cited authority packet now says the comparator signs are derived upstream; the finite-BZ W-not-induced conclusion is unaffected.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing computation is not a printed constant, renaming, or imported comparator match: it constructs the finite lattice operators and computes the W Hessian/channel slopes from first principles in the restricted packet. The cited upstream rows are retained-grade or an explicitly approved primitive, and the source keeps the negative scoped to the tested finite-BZ native one-loop W schemes while leaving continuum, improvement-classification, and geometric/Regge routes open. The updated cited no-go authority now treats the comparator signs as derived upstream rather than merely supplied, but that wording drift does not affect this row's audited statement that the tested W schemes do not induce that opposite-sign pair."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_gr_w_hessian_identification_full_channel_table_2026_06_09.py",
+  "title": "W Metric-Hessian Identification and Finite-k Channel Table",
+  "transitive_descendants": 1,
+  "verdict_rationale": null
+}

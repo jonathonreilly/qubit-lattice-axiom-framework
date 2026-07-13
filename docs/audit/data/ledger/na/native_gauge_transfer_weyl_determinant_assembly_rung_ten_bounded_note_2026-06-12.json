@@ -1,0 +1,121 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12",
+  "claim_scope": null,
+  "claim_type": "open_gate",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12",
+    "native_gauge_transfer_hdet_gaussian_core_support_note_2026-06-18",
+    "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
+    "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+  ],
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 3.807,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "511cbca98ae3debb1b0075b5cf2f7937225e24279a406b3c46ef261dd47f81f4",
+  "note_path": "docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-20T08:42:13.940188+00:00",
+      "archived_for_note_hash": "857304dfb5519f0f5aae120d792fa061c44bf3d5d4c8faabc6eb0d095173c81f",
+      "audit_date": "2026-06-18T10:21:27.057872+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "On the finite periodic SU(3) Wilson 3+1 source surface, the marked plaquette source is the explicit self-adjoint character-recurrence operator J and finite plaquette expectations are represented by its spectral measure in the transfer state; beta=6 Perron/thermal data are outside scope.",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": "Audited the bounded partial Route B result: the saddle-diagonal geometric expansion, saddle-tail multiplier bound, scaled half-slice contraction, and eigen-ratio perturbation algebra, with the exact Wilson-to-saddle and full large-beta operator remainder explicitly left open.",
+          "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12": "Scalar integer-order Bessel local-CLT expansion for k >= 0, t >= 1, a = k/sqrt(t), with P_1(a) and an explicit all-a absolute remainder bound; no SU(3) determinant or operator-tail assembly is audited."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": "bounded_theorem",
+          "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": "retained_bounded",
+          "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+          "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
+          "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12"
+        ],
+        "load_bearing_score": 5.087,
+        "runner_hash": "82821fa628c8fa626e080746a1d2bb7804b35578dd6eb35a87c5886510bba5a5",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bounded-window determinant propagation is an algebraic consequence of `H_scalar` and determinant multilinearity. The two-route assembly does not close because `H_det(A)` and `H_spec` are not supplied in the restricted packet.",
+      "claim_scope": "Audited the open-gate assertion that scalar Bessel local-CLT control propagates through finite 3x3 determinant algebra but does not by itself close the Route B Wilson-to-saddle bound or the Route A reduced spectral comparison.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-18T10:21:27.057872+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "`H_scalar` gives only a finite bounded-window determinant expansion; `This is not yet K_W(a)` because the determinant-mode sums still must be converted to the normalized Wilson ratio with `c_(0,0)` normalization and tails, and Route A separately needs `H_spec`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: create or audit `H_det(A)` for determinant normalization/tails and `H_spec` for reduced A2 spectral domination, then re-audit the assembly.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 18,
+        "C": 5,
+        "D": 0,
+        "total_pass": 26
+      },
+      "verdict_rationale": "Issue: the note's finite determinant propagation from `H_scalar` is algebraic and internally checked, but it explicitly stops before the normalized Wilson ratio and Route A spectral comparison. Why this blocks: scalar entry control does not supply the `c_(0,0)` lower normalization, determinant-mode/weight tails, or the reduced A2 inequality `c_D <= c_J`. Repair target: supply and audit `H_det(A)` and `H_spec`; until then the valid boundary is a partial open-gate sufficiency map, not a closed half-line assembly."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py",
+  "title": "Native Gauge Transfer Weyl-Determinant Assembly Rung Ten Bounded Note",
+  "transitive_descendants": 6,
+  "verdict_rationale": null
+}

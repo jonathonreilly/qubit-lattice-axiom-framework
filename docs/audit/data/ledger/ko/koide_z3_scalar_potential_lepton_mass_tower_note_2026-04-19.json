@@ -1,0 +1,1404 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 9,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.976,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "dfd4aafc5cb26893333c2b84eaec7ebf53daffb8bc409c68bbfc3f90cd0ba9f5",
+  "note_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_auditor_family": "codex-gpt-5",
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-02T21:05:43.955905+00:00",
+      "archived_for_note_hash": "d1d3213bf1a5c0a2e80163e9dd6c24ec9e914c75848b494b80165c4f699c61b5",
+      "audit_date": "2026-05-01T01:23:24.073700+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:2026-05-01-koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+      "auditor_confidence": "medium-high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The explicit T_m matrix proves the involution and trace coefficients locally, but the frozen-bank coefficients, selected physical point, H-witness ratio, PDG comparison, and chamber-wide trace lemma are imported without declared dependencies or a runner.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The note claims that the selected Koide Z3 scalar coordinate has an exactly derived cubic potential with Clifford-fixed quadratic/cubic coefficients, while the physical lepton-mass point is a separate H-witness-selected point rather than the V_eff minimum.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "docs/charged_lepton_koide_review_packet_2026-04-18.md",
+        "docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the local Clifford involution T_m^2=I and the resulting Tr(T_m^2)=3, Tr(T_m^3)=1 checks close directly from the displayed matrix, but the broader scalar-potential/lepton-mass-tower claim relies on hidden inputs: K_frozen, c1/c2 values, the chamber-wide Tr(K_frozen)=0 lemma, the H_* witness ratio selecting m_*, and the PDG mass comparator after an overall scale fit. Why this blocks: with deps=[] and no runner, the audit cannot verify that the frozen-bank coefficients, physical selected point, determinant cubic, or mass-table comparison are derived rather than imported or fitted. Repair target: register a runner that reconstructs K_frozen, c1, c2, det(K_sel), m_V, m_*, kappa values, and the mass comparison from explicit upstream inputs, or declare the frozen-bank/Koide-selector/PDG-comparator authorities as dependencies. Claim boundary until fixed: the displayed T_m involution and its immediate trace consequences are exact support facts; the physical selection and mass-tower interpretation remain conditional support only."
+    },
+    {
+      "archived_at": "2026-05-04T12:32:51.254423+00:00",
+      "audit_date": "2026-05-02T21:45:55.338138+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.67,
+        "transitive_descendants": 71
+      },
+      "audit_status": "audited_numerical_match",
+      "auditor": "fresh-koide-z3-scalar-tower-auditor",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The local identities T_m^2 = I_3, Tr(T_m^2)=3, and Tr(T_m^3)=1 close for the displayed matrix, but they do not select m_*, fix the mass scale, or derive the charged-lepton slot-to-generation map. The note itself states that V_eff does not select the physical point and that the overall scale remains to be derived.",
+      "claim_scope": "Whether the Z3 scalar potential note derives a charged-lepton mass tower / Koide mass values, rather than only the local Clifford-trace coefficients of V(m).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-02T21:45:55.338138+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "criticality_increased:medium->high",
+      "load_bearing_step": "At the physical m_*, the Koide triplet satisfies Q = 2/3 on the cone; after one overall scale factor, the slot direction reproduces all three charged-lepton masses.",
+      "load_bearing_step_class": "G",
+      "notes_for_re_audit_if_any": "If the claim is narrowed to only the displayed T_m trace algebra and V(m) coefficient assignment, it can be re-audited separately as a hand-checkable local algebra claim; the mass-tower claim needs declared upstream dependency paths and a runner.",
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-fresh",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "registered_runner": false,
+        "runner_block": "No runner is registered; this does not block the hand-checkable local trace identities, but it blocks audit-grade support for the numerical mass-tower/readout claims.",
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the claimed lepton mass tower/Koide mass agreement is obtained at an imported physical m_* with an admitted one-overall-scale fit/readout, not derived from the displayed scalar potential. Why this blocks: V(m) has its minimum at m_V approx -0.433, while the physical m_* approx -1.1605 is selected by external H_* witness/comparator machinery; no mass-unit, Yukawa normalization, scale theorem, or generation assignment is derived here. Repair target: provide a retained theorem and runner deriving m_*, the physical mass scale, and the slot-to-lepton map from lattice primitives without PDG/comparator tuning. Claim boundary until fixed: the note may claim the local Clifford-trace coefficient assignment g_2 = 3/2 and g_3 = 1/6 for the displayed T_m, plus explicitly conditional/numerical observations about Koide mass agreement."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.188641+00:00",
+      "audit_date": "2026-05-05T10:35:12.022102+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 9.665,
+        "runner_hash": null,
+        "transitive_descendants": 286
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-fresh-koide_z3_scalar_potential_lepton_mass_tower_note-20260505",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.",
+      "claim_scope": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T10:35:12.022102+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-05T04:55:32.915712+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260505-040942-beec6e04-koide_z3_scalar_potentia-100",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Audited only the local Clifford-trace algebra of the displayed T_m and its resulting V(m) coefficient assignment (g_2,g_3)=(3/2,1/6), not the charged-lepton mass-tower interpretation or imported frozen-bank/H_* inputs.",
+          "claim_type": "positive_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-05T10:35:12.020992+00:00",
+          "auditor": "codex-fresh-koide_z3_scalar_potential_lepton_mass_tower_note-20260505",
+          "auditor_family": "codex-gpt-5.5",
+          "claim_scope": "Given the displayed T_m and the stipulated V(m)=1/2 Tr(K_sel^2)+1/6 Tr(K_sel^3), the local Clifford-trace algebra fixes the m-dependent scalar-potential coefficients g_2=3/2 and g_3=1/6; no charged-lepton mass selector, K_frozen authority, c1/c2 value, H_* witness, PDG comparator, or transport-gap observation is audited.",
+          "claim_type": "positive_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "previous_auditor_family": "codex-gpt-5",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should verify the retained scope remains limited to the local Clifford-trace coefficient assignment and does not promote the out-of-scope mass-tower, K_frozen, H_* witness, or PDG-comparator material.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:44.807267+00:00",
+      "audit_date": "2026-07-12T15:20:02.412964+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 13.255,
+        "runner_hash": null,
+        "transitive_descendants": 431
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00102-koide_z3_scalar_potential_le",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite matrix identities and pure self-contributions close directly. The full m\u00b2 coefficient additionally requires Tr(K_frozen)=0 to eliminate the cubic cross-term, while the physical mass-tower interpretation requires the admitted H_* selector, readout, and scale inputs.",
+      "claim_scope": "For the displayed T_m and stipulated V normalization, the pure m\u00b2 and m\u00b3 self-contributions are 3/2 and 1/6; the total quadratic coefficient and charged-lepton mass-tower interpretation are not established without K_frozen trace and selector/readout authorities.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-12T15:20:02.412964+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:49756ee75b3c",
+      "load_bearing_step": "The note infers from T_m\u00b2 = I_3 that Tr(T_m\u00b2) = 3 and Tr(T_m\u00b3) = 1, thereby assigning g_2 = 3/2 and g_3 = 1/6 in the stated potential.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Direct multiplication gives T_m\u00b2=I_3, hence Tr(T_m\u00b2)=3 and T_m\u00b3=T_m with trace 1.",
+            "disposition": "CLOSED",
+            "evidence_locator": "This matrix satisfies the **Clifford involution identity**",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Multiply the displayed matrix by itself and take finite traces.",
+            "outcome": "This route closes the local trace identities.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "direct_matrix_product"
+          },
+          {
+            "attempt": "The permutation-matrix spectrum independently reproduces the second- and third-power traces.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Tr(T_m\u00b3) = Tr(T_m) = 1",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Read T_m as an involutive permutation representation with eigenvalues 1, 1, and -1.",
+            "outcome": "This route closes the same local trace result without addressing frozen-bank cross-terms.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "eigenvalue_trace"
+          },
+          {
+            "attempt": "The pure quadratic contribution is (1/2)Tr(T_m\u00b2)m\u00b2=3m\u00b2/2 and the cubic contribution is (1/6)Tr(T_m\u00b3)m\u00b3=m\u00b3/6.",
+            "disposition": "CLOSED",
+            "evidence_locator": "V(m) = (1/2) Tr(K_sel\u00b2) + (1/6) Tr(K_sel\u00b3)",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply the stipulated one-half and one-sixth action normalizations to the pure generator powers.",
+            "outcome": "This closes only the pure self-contributions under the stated normalization.",
+            "route_class": "normalization_or_units",
+            "route_id": "stipulated_normalization"
+          },
+          {
+            "attempt": "The cubic trace expansion was checked symbolically and contains an additional m\u00b2 contribution proportional to Tr(K_frozen).",
+            "disposition": "OPEN",
+            "evidence_locator": "Tr(K_frozen) = 0",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Expand the full frozen-plus-active carrier rather than the active generator alone.",
+            "outcome": "The route remains open because the packet supplies no authority deriving the required frozen-trace identity.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "frozen_cross_term"
+          },
+          {
+            "attempt": "The note's own values m_V\u2248-0.433 and m_*\u2248-1.1605 were compared.",
+            "disposition": "CLOSED",
+            "evidence_locator": "The V_eff potential alone does not select `m_*`.",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether minimizing the displayed scalar potential selects the physical charged-lepton point.",
+            "outcome": "The route is closed negatively for V alone; a separate microscopic selector remains open.",
+            "route_class": "dynamical_or_effective_action",
+            "route_id": "effective_minimum_selector"
+          },
+          {
+            "attempt": "The note reports a finite three-mass comparison after one overall scale factor.",
+            "disposition": "OPEN",
+            "evidence_locator": "After one overall scale factor, the slot direction reproduces all three charged-lepton masses:",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the imported selected point and one fitted overall scale to compare the three slots with lepton masses.",
+            "outcome": "This is comparator support and does not derive the selector or scale from the restricted packet.",
+            "route_class": "numerical_or_finite_case",
+            "route_id": "mass_scale_fit"
+          },
+          {
+            "attempt": "The source boundary was checked for a derivation of the witness ratio and slot-to-mass map.",
+            "disposition": "OPEN",
+            "evidence_locator": "H_* witness rates / `m_*` physical point.",
+            "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Identify the scalar coordinate with the physical charged-lepton mass readout through the H_* witness.",
+            "outcome": "No such derivation is supplied; both are explicitly admitted-context.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "physical_readout_bridge"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "total quadratic coefficient requires the imported identity Tr(K_frozen)=0",
+            "charged-lepton mass-tower interpretation requires an external selector/readout and overall scale"
+          ],
+          "evidence_locator": "The **broader claim** that V(m) constitutes",
+          "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "total quadratic coefficient requires the imported identity Tr(K_frozen)=0",
+              "left_closes_right": false,
+              "right": "charged-lepton mass-tower interpretation requires an external selector/readout and overall scale",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "total quadratic coefficient requires the imported identity Tr(K_frozen)=0",
+            "charged-lepton mass-tower interpretation requires an external selector/readout and overall scale"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "## Out of scope (admitted-context to this note)",
+          "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "**K_frozen matrix.**",
+              "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+              "phrase": "K_frozen matrix.",
+              "promoted_wall": "total quadratic coefficient requires the imported identity Tr(K_frozen)=0"
+            },
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "**H_* witness rates / `m_*` physical point.**",
+              "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+              "phrase": "H_* witness rates / `m_*` physical point.",
+              "promoted_wall": "charged-lepton mass-tower interpretation requires an external selector/readout and overall scale"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "**PDG comparator / transport-gap observations.**",
+              "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+              "phrase": "PDG comparator / transport-gap observations."
+            }
+          ],
+          "none_found_reason": "",
+          "scan_scope": "The source scope, exact-form expansion, critical-point discussion, scale analysis, transport observation, and admitted-context list were checked for hidden frozen-bank, selector, scale, comparator, and readout inputs.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "## Out of scope (admitted-context to this note)",
+          "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+          "none_found_reason": "No RULED OUT BY PRIOR route is used, so no prior witness-to-residual match is required.",
+          "scan_scope": "No N1 route was ruled out by prior authority; all routes were tested against the current restricted packet.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "## 5. Honest Gap: V_eff Minimum \u2260 Physical Selected Point",
+          "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+          "none_found_reason": "",
+          "scan_scope": "Negative and resolution language concerning scalar-potential selection, the honest gap, determinant support, physical mass reproduction, and transport interpretation was checked at the resolutions actually evidenced.",
+          "statements": [
+            {
+              "evidence_locator": "The V_eff potential alone does not select `m_*`.",
+              "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+              "phrase": "The V_eff potential alone does not select m_*.",
+              "tested_resolutions": [
+                "the one-dimensional displayed effective potential evaluated at the quoted critical and physical points"
+              ],
+              "untested_resolutions": [
+                "a microscopic H_* selector derivation from retained framework premises"
+              ]
+            },
+            {
+              "evidence_locator": "requires an additional microscopic selector.",
+              "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+              "phrase": "identifying which critical condition pins m_* requires an additional microscopic selector.",
+              "tested_resolutions": [
+                "the displayed cubic scalar potential"
+              ],
+              "untested_resolutions": [
+                "alternate effective actions, coupled fields, and retained readout dynamics"
+              ]
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies only space-time kinetic-form isotropy and no scalar frozen bank, lepton selector, readout, or mass ratio.",
+              "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms do not supply K_frozen, a scalar action, a physical selector, a readout bridge, or mass normalization.",
+              "evidence_locator": "approved_primitive:minimal_axioms",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "It permits pointwise evaluation but explicitly supplies no state-contingent value or state-selection rule.",
+              "evidence_locator": "approved_primitive:realized_state_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "It supplies a dimensionful ruler only and cannot derive the dimensionless mass direction, selector, or overall fitted normalization.",
+              "evidence_locator": "approved_primitive:scale_reference_primitive",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "This is an unresolved charged-lepton occupancy-counting obligation; it does not prove the frozen trace or currently close the physical mass readout.",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "Its target is adjacent to the missing physical readout, but its open-gate status means it cannot close that wall.",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "open_gate"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "could_close_wall": false,
+              "disposition": "The quark determinant cross-sector question is not a derivation of the local scalar coefficient or charged-lepton selector.",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "kind": "open_gate"
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_partial_closure_index_v1\"",
+          "evidence_path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+          "none_found_reason": "",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "open_gate",
+            "convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved-premise and open-gate candidates returned by the supplied partial-closure index were checked against the frozen-trace and physical-selector walls.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "The claim is intentionally narrowed to the displayed generator, so direct multiplication plus the stipulated action normalization should be sufficient to certify g_2=3/2 and g_3=1/6 without any runner or upstream authority.",
+          "evidence_locator": "The `m\u00b2` cross term in `Tr(K\u00b3)` vanishes exactly because `Tr(K_frozen) = 0`",
+          "evidence_path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+          "resolution": "This steelman succeeds for the pure generator self-contributions and fully certifies g_3. It fails for the total g_2 coefficient of the expanded potential because the cubic term contributes an additional m\u00b2 cross-term unless the separately imported identity Tr(K_frozen)=0 is established.",
+          "resolved": true,
+          "route_id": "direct_matrix_product"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:0",
+              "evidence_locator": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:0",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Earlier audit separated the exact local matrix algebra from unwired frozen-bank and physical-selector inputs.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:1",
+              "evidence_locator": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:1",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Earlier audit identified the imported m_* and fitted scale as numerical-match rather than mass-tower derivation.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:2",
+              "evidence_locator": "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:2",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Earlier clean result applied only to a sharply narrowed local algebraic scope and lacked the required no-go packet.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Open charged-lepton occupancy-counting bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Open charged-lepton physical readout and normalization bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Open quark determinant cross-sector bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Prior charged-lepton selector and direct-Yukawa no-go memory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite gravity-sweep scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Runner-boundary and coupling-normalization caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "General external-import and audit-ownership caution.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Extensive charged-lepton and Koide selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Formal coupling identity versus physical prediction boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Comparator and cache non-independence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Lensing observable and tuned-parameter walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Carrier-registry and antisymmetric-readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Direct charged-lepton mass and Koide selector routes previously closed without new premises.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Spatial-dimension boundedness wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Emergent-Lorentz scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Emergent-metric authority boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite-family generalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Local Wilson versus environment closure boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Tracial flavor-form route does not identify the physical flavor sector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Analytic-vector and audit-retag boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Plaquette environment computation boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Gauge-isotropy and Clifford-time-generator boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Gravity dispersion-to-observable boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Weak-field gravity scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Absolute-scale and carrier-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Generator normalization and species-identification boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Charged-lepton gauge-anchor and absolute-scale routes remain closed.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Atomic mass-and-coupling scale-factorization walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Quark mass readout and scale-selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite checks versus uniform asymptotic theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Signed-adjoint versus scalar-potential lensing observable.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite-path surrogate geometry mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Unclosed physical static-source readout and hierarchy value.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Unclosed magnitude and per-record readout selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Empty matter-cone no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Planning priority versus theorem selection.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Update tick versus physical time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Neutrino mass and PMNS selector no-go cluster.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Absolute lepton-scale and neutrino-fork walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite-lattice versus universal distance-law boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Frozen-log versus live-recompute evidence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Conditional 4\u03c0 and physical-versus-bare readout boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite packet observables versus physical bridge.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite-degree exclusion versus all-degree theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Clifford carrier selection and representation mismatch.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Rank matching does not select a Clifford carrier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Gauge-bootstrap and minimal-block boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Truncated-character diagnostic boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Supplied packet data do not provide selector authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Koide radian/readout and determinant registrability routes remain bounded or open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Temporal-axis and finite-range locality boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite tangent basis versus physical response readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Spin-statistics forcing remains withdrawn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Minimal axioms do not select a nonzero staggered kinetic law.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "SU(3) quotient encoder is not a retained Wilson theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Documentation synchronization rather than theorem obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Single-slot computation versus full family card.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Determinant-channel physical readout remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Gauge action and readout selection remain open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Theta-sector positive gates remain open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Theta phase-insertion selector remains open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Theta defect-closure dynamics remain open.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Determinant algebra does not select the physical charged-lepton occupancy horn.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Current axioms do not supply K/CPT charged-lepton occupancy or determinant power.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Record formation does not select the charged-lepton rate/readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Artifact-visibility gap rather than scientific obstruction.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Record-only reasoning leaves an unregistered readout scale.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Hard-coded finite table matches do not derive a continuous selector.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Finite lattice packet versus continuum theorem.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "mechanism": "Physical Yukawa readout cannot be obtained by definition or renaming.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "\"schema\": \"no_go_cross_cycle_index_v1\"",
+          "evidence_path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+          "none_found_reason": "",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "total quadratic coefficient requires the imported identity Tr(K_frozen)=0",
+          "charged-lepton mass-tower interpretation requires an external selector/readout and overall scale"
+        ],
+        "demotion": "partial-narrowing",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": {
+              "accepted_premise_type": null,
+              "content_sha256": "5487290c3d9cb77270787ba5c20df8bf28dff2bbe0386e4ef44b938a67d8cc2a",
+              "cross_cycle_candidate_ids": [
+                "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:0",
+                "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:1",
+                "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:2",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_cross_cycle_index_v1\"",
+                "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:0",
+                "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:1",
+                "koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19:previous_audit:2",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md"
+              ]
+            },
+            "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19": {
+              "accepted_premise_type": null,
+              "content_sha256": "4d163d5da00a5836669ce3c74fde5f2db8a9de0ebb64abc7be4514ae01ec975a",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ],
+              "path": "audit-packet://partial-closure-index/koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "\"schema\": \"no_go_partial_closure_index_v1\"",
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+              ]
+            },
+            "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "dfd4aafc5cb26893333c2b84eaec7ebf53daffb8bc409c68bbfc3f90cd0ba9f5",
+              "effective_status": null,
+              "path": "docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "## 5. Honest Gap: V_eff Minimum \u2260 Physical Selected Point",
+                "## Out of scope (admitted-context to this note)",
+                "**H_* witness rates / `m_*` physical point.**",
+                "**K_frozen matrix.**",
+                "**PDG comparator / transport-gap observations.**",
+                "After one overall scale factor, the slot direction reproduces all three charged-lepton masses:",
+                "H_* witness rates / `m_*` physical point.",
+                "The **broader claim** that V(m) constitutes",
+                "The V_eff potential alone does not select `m_*`.",
+                "The `m\u00b2` cross term in `Tr(K\u00b3)` vanishes exactly because `Tr(K_frozen) = 0`",
+                "This matrix satisfies the **Clifford involution identity**",
+                "Tr(K_frozen) = 0",
+                "Tr(T_m\u00b3) = Tr(T_m) = 1",
+                "V(m) = (1/2) Tr(K_sel\u00b2) + (1/6) Tr(K_sel\u00b3)",
+                "requires an additional microscopic selector."
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1 contains open frozen-cross-term, mass-scale, and physical-readout routes.",
+          "N5 identifies untested microscopic-selector and alternate-effective-action resolutions."
+        ],
+        "narrowed_claim_scope": "For the displayed T_m and stipulated V normalization, the pure m\u00b2 and m\u00b3 self-contributions are 3/2 and 1/6; the total quadratic coefficient and charged-lepton mass-tower interpretation are not established without K_frozen trace and selector/readout authorities.",
+        "next_route": {
+          "reason_untested": "The packet omits the selected-slice authority or independent derivation proving Tr(K_frozen)=0, so the total quadratic coefficient cannot yet be certified.",
+          "route_id": "frozen_cross_term"
+        },
+        "prior_claim_scope": "Whether the Z3 scalar potential note derives a charged-lepton mass tower / Koide mass values, rather than only the local Clifford-trace coefficients of V(m).",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_dependency_edge: wire the selected-slice/frozen-bank authority proving Tr(K_frozen)=0 and the separate selector/readout authorities, then re-audit the total coefficient and mass-tower claims.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the displayed matrix proves the pure trace identities, but the asserted total g_2=3/2 coefficient also uses the unwired identity Tr(K_frozen)=0. Why this blocks: expanding Tr((K_frozen+mT_m)^3) produces an m\u00b2 term proportional to Tr(K_frozen), and the broader mass-tower claim additionally imports the H_* selector, physical readout, and overall scale. Repair target: cite and retain the selected-slice authority proving the frozen trace identity and separately wire the selector/readout authorities. Claim boundary until fixed: only the local matrix identities and pure m\u00b2/m\u00b3 self-contributions are exact from this packet."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "relabel_date": "2026-05-06T17:45:26.976930+00:00",
+  "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": null,
+  "title": "Koide Z\u00b3 Scalar Potential \u2014 Lepton Mass Tower Note",
+  "transitive_descendants": 711,
+  "verdict_rationale": null
+}

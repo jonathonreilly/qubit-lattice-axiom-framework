@@ -1,0 +1,235 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem (finite enumeration under an explicit",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "lattice_nn_light_cone_note",
+    "kinetic_isotropy_primitive"
+  ],
+  "direct_in_degree": 5,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.972,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "137bdd40af24dc07f75d4218fda91ec123deb94755b5e47dbc088b4c762c891a",
+  "note_path": "docs/PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-10T12:26:56.385455+00:00",
+      "audit_date": "2026-06-10T04:32:14.280376+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "5dd0ccb927dccb8416eeb37d8c41091190ee40d165698f9e691ed68da467feaa"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "lattice_nn_light_cone_note": "For finite vertex set V, one-step dependency relation R, and any R-local update rule with shared external randomness, initial differences on S can affect only vertices in C_t(S) after t ticks."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "lattice_nn_light_cone_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "lattice_nn_light_cone_note": "retained"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "lattice_nn_light_cone_note"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "c5847d71019999ab6abe33984aad71e53045132201d942a88a80ad55cded9bf4",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-042938-e1067f2afa-per_plaquette_from_adjacency",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited reachability note supplies nearest-neighbor dependency context, and the kinetic-isotropy primitive is flagged as an accepted premise used only for one-tick form context. The finite enumeration follows from the stated loop domain and license, without deriving the license or the gauge action.",
+      "claim_scope": "Finite enumeration of rooted non-backtracking edge-simple closed loops at the origin in Z^3 for lengths 4 and 6 under the stipulated unit-neighborhood link-support license.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:32:14.280376+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:5dd0ccb9->9186702f",
+      "load_bearing_step": "Within the rooted edge-simple length-4/6 loop enumeration on Z^3, all 24 length-4 loops are plaquettes satisfying the unit-neighborhood license and all 264 length-6 loops fail it.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that downstream uses preserve the bounded scope and do not treat the unit-neighborhood license as derived.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner source actually enumerates length-4 and length-6 lattice loops with no immediate backtracking or repeated undirected edge and applies the endpoint-neighborhood license; it is not just printing constants. An independent recursive enumeration/classification gives the same quantitative identities: 24 licensed plaquette loops at length 4 and 264 length-6 loops, all failing with a min-distance-2 witness. The accepted primitive contributes no dynamics, normalization, selector, or empirical input, and the conclusion remains bounded to the explicit finite license test."
+    },
+    {
+      "archived_at": "2026-07-10T17:16:20.786113+00:00",
+      "audit_date": "2026-07-10T13:02:43.125889+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "lattice_nn_light_cone_note": "For finite vertex set V, one-step dependency relation R, and any R-local update rule with shared external randomness, initial differences on S can affect only vertices in C_t(S) after t ticks."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "lattice_nn_light_cone_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "lattice_nn_light_cone_note": "retained"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "lattice_nn_light_cone_note"
+        ],
+        "load_bearing_score": 7.709,
+        "runner_hash": "c5847d71019999ab6abe33984aad71e53045132201d942a88a80ad55cded9bf4",
+        "transitive_descendants": 36
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-20260710-124556-b32a85dc-per_plaquette_from_adjac-008",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner exhaustively generates the stated finite loop domain and applies the stated license directly. An independent self-avoiding-walk enumeration reproduces the 24/264 loop counts and 24/0 license split.",
+      "claim_scope": "Under the explicitly defined unit-neighborhood endpoint license, the rooted cubic-lattice loops of lengths 4 and 6 have counts 24 and 264 respectively, with license acceptance counts 24 and 0; no gauge-action derivation is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T13:02:43.125889+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:lattice_nn_light_cone_note",
+      "load_bearing_step": "At length 4, all 24 rooted simple closed loops are plaquettes satisfying the unit-neighborhood license, while none of the 264 length-6 loops satisfies it.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The load-bearing finite enumeration is genuinely computed rather than imported or tuned, and its results independently reproduce. Both cited authorities are admissible: the reachability note is retained, and the kinetic-isotropy note is explicitly flagged as an accepted framework premise, although neither supplies the enumerated result. The verdict applies only under the stipulated link-support license and does not promote that license into a derived gauge-action principle."
+    },
+    {
+      "archived_at": "2026-07-11T22:04:32.534657+00:00",
+      "audit_date": "2026-07-10T17:17:52.723008+00:00",
+      "audit_state_snapshot": {
+        "criticality": "high",
+        "dep_axiom_premise_note_hash": {
+          "kinetic_isotropy_primitive": "9186702f30a2faa7ce41afd398a0f1956f41f796b704dd34a04047352fd35d99"
+        },
+        "dep_claim_scope": {
+          "kinetic_isotropy_primitive": null,
+          "lattice_nn_light_cone_note": "For a finite dependency graph and a fixed R-local update rule, differences initially confined to S remain confined at tick t to the cumulative forward-reachability neighborhood C_t(S), with shared external randomness when applicable."
+        },
+        "dep_claim_type": {
+          "kinetic_isotropy_primitive": "meta",
+          "lattice_nn_light_cone_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "kinetic_isotropy_primitive": "meta",
+          "lattice_nn_light_cone_note": "retained"
+        },
+        "deps": [
+          "kinetic_isotropy_primitive",
+          "lattice_nn_light_cone_note"
+        ],
+        "load_bearing_score": 7.709,
+        "runner_hash": "c5847d71019999ab6abe33984aad71e53045132201d942a88a80ad55cded9bf4",
+        "transitive_descendants": 36
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T165623Z-ba1d1130-00023-per_plaquette_from_adjacency",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner exhaustively generates the stated finite loop domains and directly evaluates the plaquette and license predicates. The chain closes for this conditional combinatorial statement, but it does not derive the license or a physical gauge action.",
+      "claim_scope": "Conditional finite enumeration of rooted simple closed cubic-lattice loops at lengths 4 and 6 under the explicitly supplied unit-neighborhood endpoint license.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T17:17:52.723008+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:kinetic_isotropy_primitive:9186702f->5516fb0b",
+      "load_bearing_step": "Exact enumeration gives 24 rooted simple length-4 loops, all plaquettes satisfying the unit-neighborhood license, and 264 rooted simple length-6 loops, none satisfying it.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation of the unit-neighborhood link-support license from the accepted lattice and dependency premises.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 3,
+        "C": 5,
+        "D": 0,
+        "total_pass": 9
+      },
+      "verdict_rationale": "The runner performs a genuine exhaustive computation rather than merely printing the expected counts, and its implementation matches the stated finite-domain predicates. It confirms all reported length-4 and length-6 results on the supplied cubic lattice. However, the unit-neighborhood link-support license is an explicit load-bearing premise not derived from either cited authority, so the result is retained only as a theorem conditional on that license and cannot establish a fundamental per-plaquette action."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py",
+  "title": "Per-Plaquette Link-License Finite Enumeration Support",
+  "transitive_descendants": 709,
+  "verdict_rationale": null
+}

@@ -1,0 +1,116 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_aps_block_by_block_forcing_note_2026-04-21",
+    "s3_cap_uniqueness_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c258da0f90d308401ae9ad0732457273a769c7c2b99448a66c0ca0cb2e37369c",
+  "note_path": "docs/KOIDE_APS_ETA_TOPOLOGICAL_ROBUSTNESS_BOUNDED_THEOREM_NOTE_2026-07-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-11T07:35:29.777305+00:00",
+      "audit_date": "2026-07-05T11:48:09.464252+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "Bounded C3 local-density statement: the C3[111] cyclic operator fixes p=3, transverse weights (1,2) up to swap, and local Lefschetz density 2/9; global PL/ABSS applicability and physical selected-line readout are excluded.",
+          "s3_cap_uniqueness_note": "Finite cone-cap construction certificate for the explicit cubical-ball boundary family at R=2,3,4,5: finite boundary, cone, link, face-pairing, and Euler-characteristic checks only. No global cap uniqueness, physical closure, arbitrary PL cap classification, or PL S^3 compactification claim is audited."
+        },
+        "dep_claim_type": {
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "bounded_theorem",
+          "s3_cap_uniqueness_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "koide_aps_block_by_block_forcing_note_2026-04-21": "retained_bounded",
+          "s3_cap_uniqueness_note": "retained_bounded"
+        },
+        "deps": [
+          "koide_aps_block_by_block_forcing_note_2026-04-21",
+          "s3_cap_uniqueness_note"
+        ],
+        "load_bearing_score": 6.144,
+        "runner_hash": "63a3645cf0e4a715f51c8d1973d3aa2e51c750725c75db974fdcb361477f2f0a",
+        "transitive_descendants": 49
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-20260705-acphi-eta-robustness",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the runner recomputes the character sum, the invariant-metric rigidity G=lambda I, mod-3 weight invariance, and fractional-part arithmetic, and both direct dependency notes are supplied as retained_bounded. The source explicitly excludes the physical Brannen-phase bridge, tangent-class selection as a physical class, and global PL/ABSS route closure from this claim.",
+      "claim_scope": "Bounded local robustness theorem: conditional on the named ABSS/APS premises and the declared retained Z_3 tangent class (1,2), the local fixed-point eta contribution is metric-independent and equals 2/9 mod Z; no physical readout or global PL compactification bridge is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-05T11:48:09.464252+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "On the declared premises, the fractional part of the equivariant APS eta-invariant at an isolated Z_3 fixed point is determined by the tangent weights alone via eta(a,b)=(1/3) sum_{k=1,2} 1/[(zeta^{ka}-1)(zeta^{kb}-1)], and eta(1,2)=2/9 with no metric symbol.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 41,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 41
+      },
+      "verdict_rationale": "The load-bearing step is exact algebra over declared local inputs, not a definition, renaming, tuned comparator, or physical-observable bridge. The current runner and cache both report PASS=41, FAIL=0, and the source code performs symbolic evaluations and invariant-metric solves rather than merely printing constants. Residual risk is bounded by the explicitly scoped premises: ABSS/fractional-part invariance and the upstream tangent-class input are consumed, not reproved, and no downstream physical eta-to-observable identification is established here."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_koide_aps_topological_robustness.py",
+  "title": "APS `\u03b7 = 2/9` Topological Robustness at the `Z_3` Fixed Locus \u2014 Bounded Member Note",
+  "transitive_descendants": 47,
+  "verdict_rationale": null
+}

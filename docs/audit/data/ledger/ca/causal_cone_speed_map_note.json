@@ -1,0 +1,280 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "causal_cone_speed_map_note",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "migration_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "causal_propagating_field_live_packet_note_2026-06-05",
+    "causal_field_portability_note",
+    "causal_distance_tail_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/evolving_network_prototype_v6.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "26d4bb339f9ade37d2a87f8008b88d38cb2fda1196725fcca5b6e7b358aee86e",
+  "note_path": "docs/CAUSAL_CONE_SPEED_MAP_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-03T11:37:21.234524+00:00",
+      "audit_date": "2026-04-30T15:13:52.305663+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop:leaf-bottomup-2026-04-30",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "No. The load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet, so the conclusion cannot be ratified from the source note alone.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:causal_distance_tail_note,causal_field_portability_note",
+      "load_bearing_step": "Causal Cone Speed Map Note: bounded cone-speed probe on the center grown family",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [
+        "unregistered_or_missing_primary_runner_or_frozen_log"
+      ],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "Issue: the load-bearing replay or comparison depends on an unregistered script/log/artifact that is not available as a primary runner in the restricted audit packet. Why this blocks: the audit packet does not independently close the load-bearing step, so the row cannot carry an audit-clean theorem/result beyond its stated bounded or open scope. Repair target: register a current runner/log or cite an audited dependency that proves the missing bridge, then re-audit the narrowed claim. Claim boundary until fixed: safe to cite as a bounded diagnostic, roadmap, archive, or finite-slice report only as worded in the source note."
+    },
+    {
+      "archived_at": "2026-06-17T10:29:44.478145+00:00",
+      "archived_for_note_hash": "5a58957e0ce5c1f2d82dbadb4528482b13e14b2fe8047d2672858761acd69f56",
+      "audit_date": "2026-05-27T04:32:30.723638+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_distance_tail_note": "Bounded finite distance-tail diagnostic on the configured causal-field replay over the three declared grown-family parameter rows, with exact zero-source controls, broad instantaneous/forward/dynamic c=1 power-law-like tails, and dynamic c=0.5 collapse; not a universal causal-field theorem, Newtonian rescue, physical carrier derivation, or portability law.",
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem."
+        },
+        "dep_claim_type": {
+          "causal_distance_tail_note": "bounded_theorem",
+          "causal_field_portability_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_distance_tail_note": "retained_bounded",
+          "causal_field_portability_note": "retained_bounded"
+        },
+        "deps": [
+          "causal_distance_tail_note",
+          "causal_field_portability_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "7bbfb035ae5b777d1956b9e32a4aeb8661e8bfcba9d97123d012d024e5e60c78",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-fresh-2026-05-27-planck-2nd",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The source note stays within the finite runner setup, the one-hop retained-bounded dependencies provide bounded causal-field replay and distance-tail context, and the runner output exactly matches the source numbers and classification. The helper source shows the carrier, growth rule, propagation, anchor, field, and centroid are runner-defined diagnostic choices rather than imported physical or axiomatic theorems.",
+      "claim_scope": "Bounded finite cone-speed diagnostic on the configured center grown family with runner-defined growth, propagation, source-anchor, centroid, field-strength, metric, seed set, and c values; it supports an exact zero-source control and structured/non-monotone proxy dependence with largest response near c=1.0, but not a smooth monotone law, stable plateau theorem, physical wave-speed claim, or framework-selected carrier/metric/threshold theorem.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-27T04:32:30.723638+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The primary runner performs the configured finite center-family cone-speed sweep, using the helper-defined growth, propagation, source-anchor, field, metric, and detector-centroid choices; the zero-source control remains exactly null and the reported c-sweep table supports a structured but non-monotone proxy-control classification without promoting c to a physical wave speed.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-audit if the source note is expanded to claim a physical carrier, monotone law, cross-family portability, framework-selected metric/threshold, or if the runner/helper constants or classification rule change.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "runner_result": "runner_sha256=7bbfb035ae5b777d1956b9e32a4aeb8661e8bfcba9d97123d012d024e5e60c78; exit_code=0; zero-source control exact; c-sweep table and noisy/non-monotone classification match source; helper scripts/evolving_network_prototype_v6.py included",
+        "runner_status": "ok",
+        "scope_hygiene": 4,
+        "total_fail": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The note is a bounded finite diagnostic whose numerical claims, exact-null control, c-sweep table, and noisy/non-monotone classification are matched by the runner output. It explicitly rejects physical wave-speed and smooth-monotone readings, so it does not import an unclosed carrier, metric, threshold, or growth-rule theorem beyond the runner-defined setup."
+    },
+    {
+      "archived_at": "2026-06-21T05:47:30.797048+00:00",
+      "audit_date": "2026-06-18T11:15:10.004726+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_distance_tail_note": "Finite configured runner result on three structured-growth families: zero-source controls vanish, broad causal-field variants fit steep high-R2 distance tails, and dynamic c=0.5 gives a much steeper mixed-toward tail on the declared b-grid.",
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem.",
+          "causal_propagating_field_live_packet_note_2026-06-05": "Finite replay of scripts/causal_propagating_field.py for drift=0.20, restore=0.70, seeds 0-5, source_layer=8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward/dynamic c=1.0/c=0.5 field cases."
+        },
+        "dep_claim_type": {
+          "causal_distance_tail_note": "bounded_theorem",
+          "causal_field_portability_note": "bounded_theorem",
+          "causal_propagating_field_live_packet_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_distance_tail_note": "retained_bounded",
+          "causal_field_portability_note": "retained_bounded",
+          "causal_propagating_field_live_packet_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "causal_distance_tail_note",
+          "causal_field_portability_note",
+          "causal_propagating_field_live_packet_note_2026-06-05"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7bbfb035ae5b777d1956b9e32a4aeb8661e8bfcba9d97123d012d024e5e60c78",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-101136-c6f729f5-causal_cone_speed_map_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner actually constructs the configured grown family, computes the zero control, instantaneous reference, and dynamic cone fields for each c using the included helper source; the note's table matches the cached output. The conclusion is bounded to this finite proxy sweep and explicitly avoids a physical wave-speed claim.",
+      "claim_scope": "Finite configured cone-speed sweep on the center grown family with drift/restore 0.20/0.70, seeds 0..5, source strength 5.0e-05, and c values 0.10 through 1.50, interpreted only as a proxy observable.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T11:15:10.004726+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:causal_propagating_field_live_packet_note_2026-06-05",
+      "load_bearing_step": "The c-sweep is structured but not monotone across the whole range, with the largest response near c = 1.0, so c is a structured but noisy/non-monotone proxy knob on this family.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only that downstream use preserves the bounded proxy scope and does not promote c to a physical wave-speed claim.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner is not a print-only or hard-coded expected-value check: it computes the field values, propagates amplitudes, forms centroid shifts, and derives the non-monotone classification from the computed ratios. The cited authorities are retained_bounded and the source note keeps the claim within the configured center-family proxy setting, so their explicit boundaries do not block this bounded conclusion. The arithmetic and classification are internally consistent with the provided stdout: the ratios rise to c = 1.0 and then turn over, excluding a smooth monotone law for this scan."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:37.281770+00:00",
+      "audit_date": "2026-06-21T16:22:11.848105+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "causal_distance_tail_note": "Configured finite replay in scripts/causal_distance_tail_probe.py over the three declared structured-growth families, seeds 0-5, fixed source-placement rule, distance anchors, and the four declared field cases.",
+          "causal_field_portability_note": "Finite diagnostic on the configured fixed-anchor cross-family replay using the runner-defined growth, propagation, source-anchor, centroid, field, metric, and ratio-spread choices; not a cross-family portability theorem, physical field-theory derivation, or framework-selected carrier/metric/threshold theorem.",
+          "causal_propagating_field_live_packet_note_2026-06-05": "Finite configured replay for drift=0.20, restore=0.70, seeds 0-5, source layer 8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward-only/dynamic c=1.0/c=0.5 field cases."
+        },
+        "dep_claim_type": {
+          "causal_distance_tail_note": "bounded_theorem",
+          "causal_field_portability_note": "bounded_theorem",
+          "causal_propagating_field_live_packet_note_2026-06-05": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "causal_distance_tail_note": "retained_bounded",
+          "causal_field_portability_note": "retained_bounded",
+          "causal_propagating_field_live_packet_note_2026-06-05": "retained_bounded"
+        },
+        "deps": [
+          "causal_distance_tail_note",
+          "causal_field_portability_note",
+          "causal_propagating_field_live_packet_note_2026-06-05"
+        ],
+        "load_bearing_score": 4.5,
+        "runner_hash": "7bbfb035ae5b777d1956b9e32a4aeb8661e8bfcba9d97123d012d024e5e60c78",
+        "transitive_descendants": 15
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260621-095023-923e9318-causal_cone_speed_map_note-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The primary runner computes the zero-source control, instantaneous reference, and dynamic cone fields from the included helper growth/propagation code; the reported non-monotone ratios match the runner output. The conclusion is explicitly limited to this finite proxy scan and excludes physical wave-speed interpretation.",
+      "claim_scope": "Bounded finite cone-speed proxy scan for the configured center grown family at drift/restore 0.2/0.7, seeds 0..5, source strength 5.0e-05, and c values 0.10 through 1.50.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-21T16:22:11.848105+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:causal_distance_tail_note:retained_bounded->unaudited",
+      "load_bearing_step": "The c-sweep on the center retained family is structured but non-monotone, with the largest response near c = 1.0 and a turnover afterward.",
+      "load_bearing_step_class": "C",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the qualitative structured/not-random language remains scoped to the deterministic seven-point finite scan, not a statistical randomness rejection.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 2
+      },
+      "verdict_rationale": "The runner does not hard-code the contested c-sweep table; it builds the configured grown family, selects the source anchor, computes fields for each c, propagates amplitudes, and measures detector-centroid deltas. The helper source needed for the load-bearing path is present, and it supplies actual growth and propagation routines rather than importing the audited result from another note. The cited authorities are retained_bounded and the source note keeps the conclusion bounded to the center-family proxy scan, so the chain closes within that scope."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/causal_cone_speed_map.py",
+  "title": "Causal Cone Speed Map Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

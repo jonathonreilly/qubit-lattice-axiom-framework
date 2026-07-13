@@ -1,0 +1,591 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go (narrow route-demarcation, negative result)",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+    "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+    "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+    "cpt_exact_note",
+    "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+    "koide_readout_lane_demarcation_note_2026-05-30"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "ac90909212979603b21d6e1a5da7e194ec53e9f3b9edd0de57d87457e11d0499",
+  "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-15T18:51:38.965033+00:00",
+      "audit_date": "2026-06-12T01:57:05.255015+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "Finite three-dimensional C3 reconciliation of eigenvector-component and eigenvalue Koide readouts, without selecting either readout as physical.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_readout_lane_demarcation_note_2026-05-30": "Narrow readout-lane no-go: the provided signed/Hermitian circulant readout and tested spectral-residue freedoms supply the formula, theta quotient, and readout class, but do not select r=1/2; broader dynamics, source-response, and future residue theorems remain outside scope.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_readout_lane_demarcation_note_2026-05-30": "no_go",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_readout_lane_demarcation_note_2026-05-30": "retained_no_go",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_readout_lane_demarcation_note_2026-05-30",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "44cf1a9ad4cd37930a5b383143737867f91156dfc96c695a314c002c746504fa",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-3c8e3e4ddb-koide_signed_readout_is_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Gamma_chi is an invertible circulant, so any circulant H commutes with Gamma_chi; imposing anticommutation as well gives 2H Gamma_chi=0 and hence H=0. A Gamma_chi-anticommuting Hermitian operator is off-diagonal between the + and - Gamma_chi subspaces, giving the odd-dimensional spectrum {-lambda,0,+lambda}, so its eigenvalue-readout denominator vanishes rather than producing the Brannen Q=2/3 value.",
+      "claim_scope": "Narrow same-factor algebra: the Brannen/det_R signed-eigenvalue readout of C3 circulants is not equivalent to Gamma_chi anticommutation; Hermiticity makes signed eigenvalues available but does not by itself force the signed sqrt readout.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-12T01:57:05.255015+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_readout_lane_demarcation_note_2026-05-30:retained_no_go->unaudited",
+      "load_bearing_step": "The signed-eigenvalue Q=2/3 readout belongs to the Gamma_chi-commuting C3 circulant H=aI+bC+bbar C^2, while any nonzero Gamma_chi-anticommuting Hermitian H has spectrum {-lambda,0,+lambda} and no nonzero circulant lies in that anticommuting class.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check source/status drift and the runner Part 4 exhaustive-zero-intersection assertion; both are non-blocking here because the retained disjointness theorem and Gamma_chi invertibility argument close the algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The derivation is class-A algebra over retained-grade inputs plus direct symbolic identities; no empirical comparator or fitted value is used as a proof input. The no-go is correctly scoped to the proposed identification of signed eigenvalue readout with same-factor Gamma_chi chirality, and the note leaves multi-factor chirality, readout selection, and r=1/2 dynamics open. The N1-N8 guard passes for this narrow route-demarcation claim."
+    },
+    {
+      "archived_at": "2026-07-10T16:59:10.096049+00:00",
+      "audit_date": "2026-06-18T09:12:45.757681+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "Finite three-dimensional C3 reconciliation of eigenvector-component and eigenvalue Koide readouts, without selecting either readout as physical.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_readout_lane_demarcation_note_2026-05-30": "Audited the narrow demarcation that the tested native signed/Hermitian C3-circulant readout and listed residue/readout variants supply the Koide formula and theta-independence but do not select the r=1/2 block-count weight.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_readout_lane_demarcation_note_2026-05-30": "no_go",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_readout_lane_demarcation_note_2026-05-30": "retained_no_go",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_readout_lane_demarcation_note_2026-05-30",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "44cf1a9ad4cd37930a5b383143737867f91156dfc96c695a314c002c746504fa",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04-first",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The discriminator follows from retained-grade algebraic inputs: Gamma_chi is circulant, circulants commute, no nonzero circulant anticommutes with Gamma_chi, and anticommuting Hermitian H has zero-sum sign-symmetric eigenvalues. The note does not need to derive r=1/2, physical charged-lepton masses, or a global chirality mechanism.",
+      "claim_scope": "Narrow same-factor algebraic no-go: the signed Brannen/det_R eigenvalue readout of the C3 circulant is not equivalent to Gamma_chi anticommutation/chirality, and Hermiticity alone does not force the signed sqrt(m) readout.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-18T09:12:45.757681+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01:retained_bounded->unaudited",
+      "load_bearing_step": "The Brannen signed-eigenvalue Q=2/3 readout belongs to the Gamma_chi-commuting C3 circulant class, while Gamma_chi-anticommuting Hermitian operators have sign-symmetric {-lambda,0,+lambda} eigenvalue readout and comm(R) intersect anticomm(Gamma_chi) = {0}.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check that the verdict is read only as a same-generation-factor Gamma_chi discriminator, not as a global chirality closure.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The load-bearing step is a genuine class-A algebraic closure over retained or retained-bounded authorities, not a definition or numerical match. The runner source constructs the two operator classes and checks the commute/anticommute split, signed/singular readout contrast, eigenvalue/eigenvector readout distinction, and sign-grade steelman without importing external data. The source note's N1-N8 no-go gate is scoped narrowly and explicitly leaves multi-factor chirality and dynamics routes open, so the negative claim is not overbroad."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:30.144697+00:00",
+      "audit_date": "2026-07-10T18:20:52.410628+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cpt_exact_note": "Exact finite-lattice C/P/CP-CPT identities and vanishing Theta_H-odd Hamiltonian-sector residuals for the free staggered Cl(3) operator on even periodic Z^3 lattices, excluding canonical SME coefficient identification.",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "The abstract bounded theorem that, assuming the stated operator-type axioms and premise identities CDC=-D, PDP=-D, and TDT=D, C1 Theta D Theta^{-1}=D and C2 [PK,iD]=0 hold; the parent Cl(3) premise derivation, SME bridge, and unconditional Theta^2 claim were not audited.",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "Finite C3 algebraic reconciliation: a nonzero anticommuting Hermitian 3x3 operator gives Q(v)=2/3 on nonzero-eigenvalue eigenvectors while its spectral quotient has a zero denominator, whereas a commuting Hermitian circulant at r=1/2 has spectral quotient 2/3; no physical readout selector is asserted.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "For real symmetric H on R^3 satisfying {H, \u0393_\u03c7} = 0, every nonzero-eigenvalue eigenvector obeys \u27e8v|\u0393_\u03c7|v\u27e9 = 0 and hence Q(v) = 2/3 and the stated Fourier norm split.",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "Pure algebraic Fourier/character identities relating H = aI + bC + bbar C^2 on R x C to the C_3 character coefficients of its eigenvalue triple.",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "Pure trigonometric/algebraic identity for x_k = v_0(1 + sqrt(2) cos(delta + 2 pi k/3)) with v_0 > 0 and delta real, including T1, T2, T3, and the Koide-form corollary only on the chamber where x_k > 0.",
+          "koide_readout_lane_demarcation_note_2026-05-30": "Audited the narrow demarcation that the tested native signed/Hermitian C3-circulant readout and listed residue/readout variants supply the Koide formula and theta-independence but do not select the r=1/2 block-count weight.",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "Pure algebraic comparison of signed-eigenvalue and singular-value Koide readouts for the C3-circulant Hermitian H=aI+bC+b\u0304C\u00b2, especially at r=|b|\u00b2/a\u00b2=1/2.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cpt_exact_note": "positive_theorem",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "bounded_theorem",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "bounded_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "positive_theorem",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "koide_readout_lane_demarcation_note_2026-05-30": "no_go",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cpt_exact_note": "retained",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10": "retained_bounded",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01": "retained_bounded",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": "retained",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10": "retained",
+          "koide_readout_lane_demarcation_note_2026-05-30": "retained_no_go",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cpt_exact_note",
+          "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+          "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+          "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+          "koide_readout_lane_demarcation_note_2026-05-30",
+          "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "44cf1a9ad4cd37930a5b383143737867f91156dfc96c695a314c002c746504fa",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T181128Z-79c35c5e-00002-koide_signed_readout_is_not_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Retained-grade authorities establish the circulant Q identity, the anticommuting eigenstructure/eigenvector result, and the zero intersection of the circulant and \u0393_\u03c7-anticommuting classes. Exact algebra then separates signedness, readout object, and grading without consuming the empirical Q=2/3 comparator.",
+      "claim_scope": "Finite three-dimensional same-factor no-go: the C3-circulant signed-eigenvalue Brannen readout is not equivalent to \u0393_\u03c7 anticommutation; Hermiticity alone also does not select \u03bb over |\u03bb| as the square-root-mass readout. No global chirality or r=1/2 selector no-go is claimed.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T18:20:52.410628+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:cpt_exact_note:retained->unaudited",
+      "load_bearing_step": "The Brannen signed-Q circulant class commutes with \u0393_\u03c7 and intersects the \u0393_\u03c7-anticommuting class only at H=0, while a nonzero anticommuting operator has a zero-sum eigenvalue spectrum rather than the signed-eigenvalue Q=2/3 readout.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "Compute its commutator and anticommutator with \u0393_\u03c7 and its signed-eigenvalue Q at r=1/2.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Route A \u2014 the signed-readout, COMMUTING circulant operator",
+            "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Use the signed eigenvalues of the C3-circulant Hermitian operator as the proposed chirality carrier.",
+            "outcome": "The operator gives signed-eigenvalue Q=2/3 but commutes with \u0393_\u03c7, so it does not realize the proposed anticommuting grading.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "commuting_signed_values"
+          },
+          {
+            "attempt": "Evaluate Q(|\u03bb|) at several phases and compare it with the phase-independent signed result.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the singular-value readout gives a **\u03b8-dependent** `Q(V)`",
+            "evidence_path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Replace signed eigenvalues by singular values of the same Hermitian spectrum.",
+            "outcome": "The singular-value readout is phase-dependent and generically below 2/3 after a sign flip, so it neither supplies the grading nor makes signedness equivalent to chirality.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "singular_values"
+          },
+          {
+            "attempt": "Derive and evaluate its {-\u03bb,0,+\u03bb} spectrum.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Applying the eigenvalue readout to an anticommuting `H` gives `Q=infinity`",
+            "evidence_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Apply the signed-eigenvalue Koide functional directly to a \u0393_\u03c7-anticommuting Hermitian operator.",
+            "outcome": "The eigenvalue sum vanishes while the squared sum is nonzero, giving a zero denominator rather than Q=2/3.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "anticommuting_eigenvalues"
+          },
+          {
+            "attempt": "Compute Q(v) for the two nonzero eigenspaces.",
+            "disposition": "CLOSED",
+            "evidence_locator": "the theorem reads `sqrt(m)` from",
+            "evidence_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Read Q from the components of nonzero-eigenvalue eigenvectors of the anticommuting operator.",
+            "outcome": "The eigenvectors give Q(v)=2/3, but this is a different carrier from the operator eigenvalue triple and therefore does not rescue the proposed signed-eigenvalue/chirality equivalence.",
+            "route_class": "alternate_carrier_or_sector",
+            "route_id": "anticommuting_eigenvectors"
+          },
+          {
+            "attempt": "Track the negative eigenvalue across \u0393_\u03c7 grades as the free phase \u03b8 varies.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Which `\u03bb_k` is negative roams across grades as \u03b8 varies",
+            "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Interpret the number or location of negative circulant eigenvalues as a chirality index.",
+            "outcome": "The negative eigenvalue moves between the singlet and doublet grades while signed Q remains \u03b8-independent, so the sign pattern is not a \u0393_\u03c7-grade invariant.",
+            "route_class": "topology_or_global_structure",
+            "route_id": "sign_count_index"
+          },
+          {
+            "attempt": "Apply both real-valued readout maps to the same Hermitian spectrum and compare their squared masses and Q values.",
+            "disposition": "CLOSED",
+            "evidence_locator": "Hermiticity (`H = iD`) makes a signed real spectrum available",
+            "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Argue that Hermiticity of H=iD uniquely forces \u221am_k=\u03bb_k instead of \u221am_k=|\u03bb_k|.",
+            "outcome": "Both maps give identical \u03bb_k\u00b2 masses but different Q values, so Hermiticity makes signed eigenvalues available without uniquely selecting the signed square-root-mass identification.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "hermiticity_forces_sign"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "value/readout wall: signed-versus-modulus and eigenvalue-versus-eigenvector mappings",
+            "grading wall: commutation versus anticommutation with \u0393_\u03c7 on the same generation factor"
+          ],
+          "evidence_locator": "The signed/singular distinction\n(value axis) and the commute/anticommute distinction (grading axis) are independent\naxes",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "value/readout wall: signed-versus-modulus and eigenvalue-versus-eigenvector mappings",
+              "left_closes_right": false,
+              "right": "grading wall: commutation versus anticommutation with \u0393_\u03c7 on the same generation factor",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "value/readout wall: signed-versus-modulus and eigenvalue-versus-eigenvector mappings",
+            "grading wall: commutation versus anticommutation with \u0393_\u03c7 on the same generation factor"
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "No PDG observed values consumed",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "hits": [
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "`H=iD` =\nthe `C_3` circulant",
+              "evidence_path": "docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md",
+              "phrase": "H=iD is represented by the stated C3 circulant"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "Does **not** derive `r = 1/2`.",
+              "evidence_path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "phrase": "r=1/2"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "`Q \u2248 2/3` is the empirical comparator",
+              "evidence_path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "phrase": "empirical Q\u22482/3"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "examined, NOT adopted.",
+              "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "native readout is signed"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "4D analogy points the other way (runner Part 7).",
+              "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "4D chirality analogy"
+            }
+          ],
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "N4 \u2014 Residual matching.",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "unresolved": [],
+          "witnesses": [
+            {
+              "claim_residual": "The Brannen-Q circulant and \u0393_\u03c7-anticommuting classes meet only at zero.",
+              "evidence_locator": "comm(R) \u2229 anticomm(\u0393_\u03c7) = {0}",
+              "evidence_path": "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+              "match": true,
+              "witness_residual": "A nonzero circulant cannot also anticommute with \u0393_\u03c7 on the same factor."
+            },
+            {
+              "claim_residual": "Eigenvector and eigenvalue readouts cannot be conflated when testing signedness against chirality.",
+              "evidence_locator": "They compute `Q=2/3` from different objects:",
+              "evidence_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+              "match": true,
+              "witness_residual": "Anticommuting eigenvectors give Q=2/3, but the operator eigenvalue readout has a zero denominator."
+            },
+            {
+              "claim_residual": "Signed \u221am is an additional identification rather than a consequence of Hermiticity by itself.",
+              "evidence_locator": "Does **not** assert that the framework forces the Hermitian readout `S`.",
+              "evidence_path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "match": true,
+              "witness_residual": "The framework does not follow from Hermiticity alone in selecting the signed readout."
+            }
+          ]
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "This is a **route-demarcation no-go**, not a closure of the chirality search.",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "statements": [
+            {
+              "evidence_locator": "The proposed equivalence \"signed eigenvalue readout \u27fa chirality\" is FALSE.",
+              "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "phrase": "The proposed equivalence \"signed eigenvalue readout \u27fa chirality\" is FALSE.",
+              "tested_resolutions": [
+                "whether the Brannen circulant anticommutes with \u0393_\u03c7",
+                "whether an anticommuting operator's eigenvalues give Q=2/3",
+                "whether its eigenvectors instead give Q=2/3",
+                "whether the negative-eigenvalue location is a \u0393_\u03c7 index",
+                "whether Hermiticity uniquely selects the signed square-root-mass map"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The approved baseline does not supply the missing readout selector or same-factor chirality identification.",
+              "evidence_locator": "`K`/CPT orbit structure, central-sector decomposition",
+              "evidence_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "The adopted AC residual boundary explicitly excludes above-C3 chirality content, r, and sector-weight laws.",
+              "evidence_locator": "It supplies no value of `r`, `delta`, charged-lepton mass, mixing angle, probability rule, above-C3",
+              "evidence_path": "docs/TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "No live Tier-A derivation target exists that could be silently used to close either scoped wall.",
+              "evidence_locator": "\"genuine_admitted_input_count\": 0",
+              "evidence_path": "docs/audit/data/tier_a_admissions.json",
+              "kind": "tier_a"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "Choosing \u221am=\u03bb by convention can choose a value readout but cannot convert commutation into anticommutation.",
+              "evidence_locator": "The proposed equivalence \"signed eigenvalue readout \u27fa chirality\" is FALSE.",
+              "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "could_close_wall": false,
+              "disposition": "Renaming signedness as chirality cannot alter the exact commutator and anticommutator identities.",
+              "evidence_locator": "Brannen signed-Q readout != chirality.",
+              "evidence_path": "scripts/koide_signed_readout_is_not_chirality.py",
+              "kind": "definition_refactor"
+            }
+          ],
+          "evidence_locator": "N6 \u2014 Partial-closure path scan.",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "Even if the circulant commutes with \u0393_\u03c7, its negative-eigenvalue count or location might define a topological chirality index correlated with the \u0393_\u03c7 grades.",
+          "evidence_locator": "Which `\u03bb_k` is negative roams across grades as \u03b8 varies",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "resolution": "At fixed r=1/2 the negative eigenvalue moves from the +1 singlet grade to a \u22121 doublet grade as \u03b8 varies, while signed Q remains \u03b8-independent. The sign data therefore is not locked to, and does not resolve, the \u0393_\u03c7 grading.",
+          "resolved": true
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "Both readouts assign the **same masses**",
+              "evidence_path": "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
+              "mechanism": "Earlier signed-versus-singular work separated the common mass squares from the sign-sensitive readout denominator.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "They compute `Q=2/3` from different objects:",
+              "evidence_path": "docs/KOIDE_ANTICOMMUTING_EIGENVECTOR_VS_EIGENVALUE_READOUT_RECONCILIATION_NOTE_2026-06-01.md",
+              "mechanism": "Earlier reconciliation work separated anticommuting eigenvector and circulant eigenvalue readouts.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "comm(R) \u2229 anticomm(\u0393_\u03c7) = {0}",
+              "evidence_path": "docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+              "mechanism": "Earlier same-factor work established the exact zero intersection of circulant and \u0393_\u03c7-anticommuting operators.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "evidence_locator": "the readout itself supplies no rule",
+              "evidence_path": "docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md",
+              "mechanism": "Earlier readout-lane work left block-weight and coupling-ratio selection outside the readout itself.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "N8 \u2014 Cross-cycle echo.",
+          "evidence_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "failures": [],
+        "required": true,
+        "status": "PASS"
+      },
+      "notes_for_re_audit_if_any": "Re-check that Part 4's runner basis-generator test is not treated as the proof of disjointness; the complete proof is the cited retained-bounded Fourier argument.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 33,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 33
+      },
+      "verdict_rationale": "The scoped negative conclusion is a genuine algebraic closure over multiple independent retained-grade inputs, not a definition or numerical fit. The runner verifies the readout contrasts, anticommuting spectrum, grade-roaming sign pattern, and Hermiticity counterexample directly. Its Part 4 basis-generator check alone is insufficient to prove that no linear combination anticommutes, but the cited retained-bounded Fourier/invertibility theorem supplies the complete intersection proof. The notation Q=\u221e should be read as a nonzero numerator over a zero denominator; the essential conclusion is that this eigenvalue readout is not 2/3."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
+  "title": "Koide: the Brannen/det_R Signed-Eigenvalue Q=2/3 Readout Is Not the Chiral Grading - Narrow No-Go",
+  "transitive_descendants": 2,
+  "verdict_rationale": null
+}

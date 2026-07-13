@@ -1,0 +1,210 @@
+{
+  "audit_date": "2026-06-08T21:24:29.645877+00:00",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "fixed_field_complex_grown_basin_v2_note": "Audited only the runner-defined two-row tiny basin: center drift=0.20 restore=0.70 with retained companion support, plus neighbor drift=0.20 restore=0.60 for seed 0 crossover and weak-field F~M checks.",
+      "fixed_field_family_unification_note": "Seed-0 fixed-field comparison on the retained grown row drift=0.2, restore=0.7, h=0.5: signed-source zero/neutral/linear sign response and complex-action gamma=0, gamma=0.2, and gamma=0.5 metrics on the same connectivity family, with no geometry-generic or continuum claim.",
+      "nonlabel_grown_basin_note": "Finite deterministic audit of the grown geometry-sector signed-source transfer for seed 0, drift 0.2, and restore values 0.60, 0.70, and 0.80 only."
+    },
+    "dep_claim_type": {
+      "fixed_field_complex_grown_basin_v2_note": "positive_theorem",
+      "fixed_field_family_unification_note": "positive_theorem",
+      "nonlabel_grown_basin_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "fixed_field_complex_grown_basin_v2_note": "retained",
+      "fixed_field_family_unification_note": "retained",
+      "nonlabel_grown_basin_note": "retained_bounded"
+    },
+    "deps": [
+      "fixed_field_complex_grown_basin_v2_note",
+      "fixed_field_family_unification_note",
+      "nonlabel_grown_basin_note"
+    ],
+    "load_bearing_score": 4.587,
+    "runner_hash": "99051d852a3baf2f549c34d2607a6b331b9e834272813ddbaaf0400f68c7e696",
+    "transitive_descendants": 16
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-cli-gpt-5.5-20260608-212214-0afd84f823-unification_basin_failure_no",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.5",
+  "auditor_model": "gpt-5.5",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The cited upstream authorities are retained-grade or retained_bounded, and the provided runner/helper sources instantiate the grown geometry, geometry-sector adjacency, source fields, propagation, centroid readout, and survivor predicates rather than importing the contested row values. The cached output matches the source table and reports sign-law survivors 2/2, complex-action survivors 0/2, and unified survivors 0/2.",
+  "claim_id": "unification_basin_failure_note",
+  "claim_scope": "Finite audit of the two listed shared rows, drift = 0.20 with restore = 0.60 and 0.70, under the provided fixed-field geometry-sector runner: signed-source gates pass, complex-action crossover does not, and unified survival is 0/2.",
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": null,
+  "claim_type_author_hint_raw": null,
+  "claim_type_last_reviewed": "2026-06-08T21:24:29.645877+00:00",
+  "claim_type_provenance": "audited",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "nonlabel_grown_basin_note",
+    "fixed_field_complex_grown_basin_v2_note",
+    "fixed_field_family_unification_note"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
+  "helper_runner_paths": [
+    "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+    "scripts/complex_action_grown_companion.py",
+    "scripts/gate_b_grown_joint_package.py"
+  ],
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": "On the two shared off-center rows, gamma = 0 remains positive but gamma = 0.2 and gamma = 0.5 are both absorptive, so the TOWARD -> AWAY complex-action crossover is lost while the signed-source gates still pass.",
+  "load_bearing_step_class": "C",
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d3252993a01f0b1ff0fe2f720013eac9ef46bdd80642a67ccb6736a48e1bc5d8",
+  "note_path": "docs/UNIFICATION_BASIN_FAILURE_NOTE.md",
+  "notes_for_re_audit_if_any": "Recheck the runner's complex_ok gamma0-zero predicate wording against the note's gamma0-positive language; it does not affect this bounded failure because delta@0.2 is already negative on both rows.",
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T18:17:51.107407+00:00",
+      "archived_for_note_hash": "262a03a9452b0999d11e8f67f87aea2c27995eaadfaf7cdfab456bb1e3bd865b",
+      "audit_date": null,
+      "audit_status": "unaudited",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "blocker": null,
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    },
+    {
+      "archived_at": "2026-05-03T11:37:21.237130+00:00",
+      "audit_date": "2026-05-02T01:31:36.881392+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 0.0,
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The note makes a narrow support-level boundary claim: the two specified off-center overlap rows keep the sign-law branch but lose the complex-action crossover. The registered runner recomputes those two rows and returns sign-law survivors 2/2, complex-action survivors 0/2, and unified survivors 0/2.",
+      "claim_scope": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": null,
+      "claim_type_provenance": "migration_hint",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "deps_changed:dep_added:fixed_field_complex_grown_basin_v2_note,fixed_field_family_unification_note,nonlabel_grown_basin_note",
+      "load_bearing_step": "The old geometry-sector / non-label idea and the complex-action companion do not share a compact basin on the same off-center rows.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "previous_auditor_family": "codex-current",
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The current artifact reproduces the note's row table, including exact zero and neutral sign controls, opposite signed-source orientation, unit charge exponent, and the negative complex-action deltas at gamma 0.2 and 0.5 on both shared rows. The claim is not a positive unification theorem; it is the negative boundary result that the shared off-center basin fails. Residual risk is limited to the local scope of the two-row shared-neighborhood probe."
+    },
+    {
+      "archived_at": "2026-06-07T15:16:19.709370+00:00",
+      "audit_date": "2026-05-25T12:43:21.331694+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "fixed_field_complex_grown_basin_v2_note": "Audited only the runner-defined two-row tiny basin: center drift=0.20 restore=0.70 with retained companion support, plus neighbor drift=0.20 restore=0.60 for seed 0 crossover and weak-field F~M checks.",
+          "fixed_field_family_unification_note": "Seed-0 fixed-field comparison on the retained grown row drift=0.2, restore=0.7, h=0.5: signed-source zero/neutral/linear sign response and complex-action gamma=0, gamma=0.2, and gamma=0.5 metrics on the same connectivity family, with no geometry-generic or continuum claim.",
+          "nonlabel_grown_basin_note": "For seed 0, fixed drift = 0.2, restore values 0.60, 0.70, and 0.80, the targeted grown-basin runner reports the bounded signed-source checks passing: exact zero-source baseline, exact neutral +1/-1 cancellation, opposite single-source signs, and near-linear +2 response."
+        },
+        "dep_claim_type": {
+          "fixed_field_complex_grown_basin_v2_note": "positive_theorem",
+          "fixed_field_family_unification_note": "positive_theorem",
+          "nonlabel_grown_basin_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "fixed_field_complex_grown_basin_v2_note": "retained",
+          "fixed_field_family_unification_note": "retained",
+          "nonlabel_grown_basin_note": "retained_bounded"
+        },
+        "deps": [
+          "fixed_field_complex_grown_basin_v2_note",
+          "fixed_field_family_unification_note",
+          "nonlabel_grown_basin_note"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "99051d852a3baf2f549c34d2607a6b331b9e834272813ddbaaf0400f68c7e696",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T124300Z-865faedc-unification_basin_failur-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited retained-grade basin notes define the two retained narrow neighborhoods and the primary runner computes the shared-row sign and complex-action quantities directly. The runner output supports the note's scoped negative conclusion that the shared off-center basin has zero unified survivors.",
+      "claim_scope": "Finite-runner boundary diagnosis for the two shared overlap rows drift=0.20 with restore=0.60 and 0.70, checking signed-source survival and complex-action crossover survival on the same geometry-sector family.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-25T12:43:21.331694+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:nonlabel_grown_basin_note:retained_bounded->unaudited",
+      "load_bearing_step": "The shared off-center rows preserve the signed-source package but do not preserve the complex-action crossover, so unified survivors are 0/2.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check the convention mismatch between the note's phrase 'gamma = 0 remains positive' and the runner's complex_ok guard requiring an exact gamma0_delta of zero; it does not affect the negative shared-basin verdict because the crossover criterion already fails on both rows.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0,
+        "total_pass": 1
+      },
+      "verdict_rationale": "All cited authorities in the restricted packet are retained-grade or retained_bounded. The primary runner and included helpers instantiate the grown geometry, sector stencil, source fields, propagators, centroid and weak-field checks rather than replaying hard-coded expected values. Its completed output shows sign-law survivors 2/2, complex-action survivors 0/2, and unified survivors 0/2, which closes the scoped boundary diagnosis on its own terms."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 1,
+    "D": 0,
+    "total_pass": 1
+  },
+  "runner_path": "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
+  "title": "Unification Basin Failure Note",
+  "transitive_descendants": 0,
+  "verdict_rationale": "The audited statement is bounded to the two listed rows and the supplied fixed-field sector-family computation. The load-bearing negative result is computed directly: zero and neutral sign controls vanish, plus/minus signs are correctly oriented with exponent near one, while delta@0.2 and delta@0.5 are negative on both rows, eliminating the crossover required for unified survival. No cited authority is below retained-grade, and no external comparator, tuned numerical match, or missing bridge is needed for this bounded failure diagnosis."
+}

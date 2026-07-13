@@ -1,0 +1,413 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "momentum_charge_commute_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.024,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "2e766ff27378be9f3c6ab53319dc39c41a0aa158f32027fa365996125c498302",
+  "note_path": "docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-26T00:44:08.677309+00:00",
+      "archived_for_note_hash": "d2204b8e97f23dd547ea8fef3f43869a80601d7d9c198fdca8f133c62de1dc26",
+      "audit_date": "2026-05-25T19:28:48.194540+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "Bounded finite-Grassmann/Kawamoto-Smit staggered-carrier Noether statement: U(1) current (4)/(5) and the (2Z)^3 central two-step Ward identity (3a), with density (3) support-only."
+        },
+        "dep_claim_type": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_lattice_noether_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "cb4f7a25649bc7b241dc85f791eca799a9c4cec3a909aec7ffe1fb4b2a991d8b",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T192826Z-c2687fea-momentum_charge_commute_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic commutation argument closes only for the symmetry generators actually supplied by the cited Noether authority. The source note overstates N1 as a total lattice momentum operator/current on H_phys, while the cited authority narrows N1 to a (2Z)^3 two-step Ward identity and explicitly keeps the canonical momentum density support-only.",
+      "claim_scope": "Commutation of the total sublattice-translation momentum generator with the total U(1) fermion-number generator on the admitted staggered lattice carrier, plus common (P,Q) labels where the corresponding self-adjoint generators are available.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T19:28:48.194540+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Algebra-level commutativity of translations and global U(1) phase implies their generators commute as operators on H_phys, hence [P\u0302_total^\u03bc,Q\u0302_total]=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to the retained bounded (2Z)^3 two-step translation generator or add a retained bridge theorem constructing the claimed P\u0302_total^\u03bc on H_phys from the two-step Ward identity.",
+      "open_dependency_paths": [
+        "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing argument is a standard algebraic closure: uniform U(1) phase and lattice translations commute as group actions, so their generators commute when both are valid operators on the same Hilbert-space surface. However, the one-hop authority is only retained_bounded and contains explicit open/admitted carrier structure, including the residual KS-phase-form admission. More importantly, its translation branch does not currently provide the full total lattice momentum operator claimed here; it supplies only the exact two-step Ward identity, with the canonical momentum density not theorem-grade. The runner checks a 1D toy Fock-space translation and number operator, so it supports the algebraic pattern but does not repair the missing bridge to the framework's P\u0302_total^\u03bc."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.484274+00:00",
+      "audit_date": "2026-05-26T01:58:32.403253+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Tensor-permutation translations on finite periodic tensor-product qubit blocks are unitary, obey the translation group law, translate the per-site ladder operators by conjugation, and commute with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "e83714317ba12f6a2f1e41847cb78e6f4b474975dbee2a507be5a3f21a205a12",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T015812Z-eac1bfbc-momentum_charge_commute_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The cited bridge is explicitly retained and supplies [T_a,Q_total]=0 on the same finite tensor-product surface. The spectral-generator corollary follows by finite-dimensional spectral calculus for a normal unitary commuting with Q_total.",
+      "claim_scope": "On the retained finite tensor-product translation surface, Q_total commutes with tensor-permutation translations and with finite-block spectral generators K_mu that are functions of axial translation unitaries.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-05-26T01:58:32.403253+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Because [T,Q_total]=0, Q_total preserves every eigenspace of T, so each spectral projector Pi_theta and hence K_mu = sum_theta theta Pi_theta commute with Q_total.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only that the pipeline intends spectral-calculus corollaries over one retained parent to be recorded as decoration rather than positive_theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The note makes no new physics import beyond the retained tensor-product translation bridge and standard finite-dimensional spectral theory. Its load-bearing work is algebraic closure: commuting normal unitaries have commuting spectral projectors, so functions of those unitaries commute with Q_total. The runner substantively checks the same finite-matrix commutators and includes one bookkeeping retained-status check; it does not use external comparators or tuned numerical inputs. Under the tie-break rule, this is a decoration of a single retained parent rather than a standalone clean theorem."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:09.036619+00:00",
+      "audit_date": "2026-06-05T18:01:00.877793+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic lattice blocks, the tensor-factor permutation translation T_a on H_Lambda = tensor_x C^2_x is unitary, obeys the translation group law, covariantly shifts the defined per-site Pauli ladder operators a_x and a_x^dagger, and commutes with Q_total = sum_x a_x^dagger a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "e83714317ba12f6a2f1e41847cb78e6f4b474975dbee2a507be5a3f21a205a12",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260605-175943-9ddd145f10-momentum_charge_commute_theo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge directly supplies [T_a,Q_total]=0 and the abelian translation group law. Finite-dimensional spectral theory then gives commuting spectral projectors, commuting Hermitian generators, and simultaneous diagonalization without any further physics premise.",
+      "claim_scope": "On the retained finite periodic tensor-product translation surface, Q_total commutes with tensor-permutation translations T_a and with finite-branch spectral generators K_mu=f(T_{e_mu}), giving common finite-block charge/momentum labels.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-05T18:01:00.877793+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Because [T,Q_total]=0, Q_total preserves every eigenspace of the normal finite-dimensional translation T, so [Pi_theta,Q_total]=0 and hence K_mu=sum_theta theta Pi_theta commutes with Q_total.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the decoration classification, since C1 is the bridge T4 identity and C2-C3 are finite-dimensional spectral corollaries.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The independent math check closes: T_a Q_total T_a^dag relabels the finite sum over sites, and if TQ=QT for a normal finite-dimensional T, the eigenspace projectors of T commute with Q. The runner source actually constructs bit-permutation translations and Q_total matrices and checks the relevant commutators; its ledger-status check is dependency bookkeeping, not the load-bearing derivation. Because the claim is a one-parent algebraic corollary of the retained bridge plus standard spectral mathematics, it is decoration rather than a new independent positive theorem."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.076349+00:00",
+      "audit_date": "2026-06-05T21:37:30.007302+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For a finite periodic lattice block with one qubit per site, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, covariantly shifts the per-site Pauli ladder operators, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.115,
+        "runner_hash": "e83714317ba12f6a2f1e41847cb78e6f4b474975dbee2a507be5a3f21a205a12",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.5-20260605-213552-70899da0d1-momentum_charge_commute_theo",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The sole cited authority is explicitly retained and supplies the same-surface identity [T_a,Q_total]=0. The K_mu and common-label conclusions follow by finite-dimensional spectral calculus and simultaneous diagonalization of commuting Hermitian operators.",
+      "claim_scope": "On the retained finite periodic tensor-product translation surface, Q_total commutes with tensor-permutation translations and with finite-branch spectral generators of axial translations.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-06-05T21:37:30.007302+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "The retained bridge gives [T_a,Q_total]=0, and because T_{e_mu} is finite-dimensional normal, Q_total commutes with its spectral projectors, hence with K_mu = sum_theta theta Pi_theta.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the classification boundary between decoration and positive_theorem; the algebraic chain itself closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The note adds no independent physical identification beyond the retained tensor-product translation bridge. Its substantive work is an algebraic corollary: spectral projectors and real finite-branch functions of a commuting finite-dimensional unitary also commute with Q_total. The runner source performs real finite-matrix checks rather than printing constants, and it contains no external comparator or tuned numerical input. Because the chain reduces to one retained parent plus standard mathematics, the conservative verdict is decoration rather than an independent positive theorem."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.470922+00:00",
+      "audit_date": "2026-07-01T13:37:25.942942+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "For finite periodic blocks of the Z^3 site lattice with one C^2 factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates a_x and a_x^\u2020, and commutes with Q_total = sum_x a_x^\u2020 a_x."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "e83714317ba12f6a2f1e41847cb78e6f4b474975dbee2a507be5a3f21a205a12",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T133725Z-06ecdd72-momentum_charge_commute_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained cited bridge directly supplies [T_a,Q_total]=0. The spectral-projector and simultaneous-diagonalization conclusions follow from finite-dimensional spectral theory and commuting Hermitian matrices, with no Noether or physical-momentum import.",
+      "claim_scope": "On the retained finite tensor-product translation surface, Q_total commutes with all tensor-permutation translations and with axial finite-block spectral generators K_mu=f(T_e_mu), giving common finite-block labels.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-01T13:37:25.942942+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Because [T,Q_total]=0, Q_total preserves every eigenspace of T, so [Pi_theta,Q_total]=0 and K_mu=sum_theta theta Pi_theta commutes with Q_total.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The claim is an algebraic corollary of one retained parent: the bridge already proves charge invariance under T_a, and the remaining K_mu result is standard functional calculus for a commuting normal unitary. The runner checks finite-block matrix instances and verifies the bridge ledger status, with no external comparator or new independent physical observable. Under the decoration tie-breaker, this is audited_decoration rather than audited_clean because every load-bearing step is class A over a single parent plus standard mathematics."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.261695+00:00",
+      "audit_date": "2026-07-02T02:44:40.817771+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "On a finite periodic tensor-product space H_\u039b = \u2297_{x\u2208\u039b} C\u00b2_x with per-site Pauli ladder operators and T_a defined as the cyclic tensor-factor permutation, T_a is unitary, obeys the translation group law, translates a_x and a_x^\u2020 by conjugation, and commutes with Q_total."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.615,
+        "runner_hash": "e83714317ba12f6a2f1e41847cb78e6f4b474975dbee2a507be5a3f21a205a12",
+        "transitive_descendants": 48
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T024440Z-50ff983a-momentum_charge_commute_",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained bridge directly supplies [T_a,Q_total]=0 and the translation group law on the same finite tensor-product surface. Finite-dimensional spectral calculus then gives [Pi_theta,Q_total]=0 and hence [K_mu,Q_total]=0, with simultaneous diagonalization following for commuting Hermitian operators.",
+      "claim_scope": "Finite tensor-product translations on the retained bridge surface commute with Q_total, and finite-block axial spectral generators K_mu chosen as functions of those translations commute with Q_total and admit common finite-block labels.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-02T02:44:40.817771+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Because [T,Q_total]=0, Q_total preserves every eigenspace of T, so the spectral projectors and K_mu commute with Q_total.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the decoration classification versus separate theorem status; the finite-block algebra itself closes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The mathematical chain closes, but it closes as an algebraic corollary of a single retained upstream bridge plus the finite-dimensional spectral theorem. The runner performs one dependency/status check and finite-block algebraic identity checks; it does not add an independent comparator or new first-principles physical output. Under the decoration tie-breaker, this should be boxed under the tensor-product translation/fermion-operator bridge rather than retained as a separate theorem."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:39.317465+00:00",
+      "audit_date": "2026-07-10T00:04:21.008485+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "Finite periodic tensor-product space H_Lambda = tensor_x C^2_x with per-site Pauli ladder operators a_x and tensor-permutation translations T_a: unitarity, group law, T_a a_x T_a^dagger = a_{x+a} and adjoint covariance, and [T_a,Q_total]=0."
+        },
+        "dep_claim_type": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": "retained"
+        },
+        "deps": [
+          "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+        ],
+        "load_bearing_score": 6.085,
+        "runner_hash": "e83714317ba12f6a2f1e41847cb78e6f4b474975dbee2a507be5a3f21a205a12",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_decoration",
+      "auditor": "codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-momentum_charge_commute_-068",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The retained parent directly supplies [T_a,Q_total]=0. The finite-dimensional spectral theorem then algebraically gives commutation of Q_total with each spectral projector and generator, while the translation group law closes the simultaneous-diagonalization corollary.",
+      "claim_scope": "On the retained finite periodic tensor-product Fock space, tensor-permutation translations and their Hermitian finite-block spectral generators commute with Q_total, permitting common eigenlabels for Q_total and the axial generators.",
+      "claim_type": "decoration",
+      "claim_type_last_reviewed": "2026-07-10T00:04:21.008485+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25:retained->unaudited",
+      "load_bearing_step": "Because [T_{e_mu},Q_total]=0, every spectral projector Pi_theta of T_{e_mu} commutes with Q_total, so K_mu=sum_theta theta Pi_theta also commutes with Q_total.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The theorem is a genuine algebraic corollary of one retained upstream parent plus the standard finite-dimensional spectral theorem. The runner explicitly constructs the finite-block operators and verifies the stated commutators and common basis; its ledger-status check is class B, while its five mathematical checks are class A. With no external-comparator check and no independent new framework derivation, the single-parent algebraic-decoration policy applies."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/momentum_charge_commute_check.py",
+  "title": "Tensor-Product Translation Generators Commute With Total U(1) Charge",
+  "transitive_descendants": 45,
+  "verdict_rationale": null
+}

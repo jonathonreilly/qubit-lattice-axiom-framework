@@ -1,0 +1,1730 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [],
+  "direct_in_degree": 15,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 14.241,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "61a2d5ecc4ac9cad096d91059a7a331825a2a0072e31af07a4524ac0ee77b5d3",
+  "note_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-04-30T23:37:46.899319+00:00",
+      "archived_for_note_hash": "8fa2a317d9ea9d4c54ec7152a657bb43ed5f5e1ea283279728c4601cf891b96c",
+      "audit_date": "2026-04-30T03:15:53.743938+00:00",
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-round-2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The bridge closes the CAR/1/4 coefficient only on the stated coframe-response surface; it does not derive that coframe response from the retained Cl(3)/Z^3 input, does not independently close the primitive-CAR edge theorem or source-unit normalization, and does not derive an SI value of hbar.",
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Under the explicit primitive metric-compatible Clifford/coframe response premise on the rank-four active block, the runner constructs Cl_4 generators, verifies irreducibility and CAR equivalence, excludes non-CAR rank-four readings by the coframe law, and checks c_Widom=c_cell=1/4 with source-unit natural-unit normalization.",
+      "load_bearing_step_class": "B",
+      "open_dependency_paths": [
+        "primitive metric-compatible Clifford/coframe response on P_A H_cell",
+        "primitive-CAR edge identification theorem",
+        "source-unit normalization theorem",
+        "Target 3 Hilbert-only boundary theorem remains the fallback without the coframe premise"
+      ],
+      "runner_check_breakdown": {
+        "A": 10,
+        "B": 4,
+        "C": 20,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "Issue: the note is a correct conditional bridge, but its decisive metric-compatible active coframe response is an explicit premise rather than an audited derived consequence. Why this blocks: without that premise the earlier Hilbert-only rank-four ambiguity remains, while the Planck-unit conclusions also import primitive-CAR edge and source-unit normalization support. Repair target: audit or derive the active-block coframe-response forcing theorem, register the primitive-CAR edge and source-unit normalization dependencies, and keep SI hbar/metrology wording out of the structural claim. Claim boundary until fixed: conditional Target 3 Clifford/CAR bridge with c_Widom=c_cell=1/4 and natural-unit G_lat=a/l_P=1, not standalone Target 3 or SI hbar closure."
+    },
+    {
+      "archived_at": "2026-05-05T23:08:44.355057+00:00",
+      "audit_date": "2026-05-05T22:59:42.484151+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30": "unaudited"
+        },
+        "deps": [
+          "planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30"
+        ],
+        "load_bearing_score": 16.278,
+        "runner_hash": "4eeac86ab185bdf4caa2f7620ae06c5609280ab33772cf6a324ab496705fcf87",
+        "transitive_descendants": 438
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-planck_target3_clifford_-013",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The internal Clifford-to-CAR algebra closes after the response premise is granted, but the restricted packet does not derive that active-block response from retained substrate inputs. The missing step is the substrate-to-P_A forcing and induced Cl_4 coframe action.",
+      "claim_scope": "Conditional on an explicit metric-compatible Clifford/coframe response on P_A H_cell, the rank-four block realizes the irreducible complex Cl_4 module, hence two CAR modes, and matches c_Widom=c_cell=1/4 before applying separate source-unit normalization.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T22:59:42.484151+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:planck_primitive_clifford_majorana_edge_derivation_theorem_note_2026-04-30:unaudited->audited_renaming",
+      "load_bearing_step": "Assume the active primitive boundary response is the Clifford coframe response, a linear map D:E_C -> End(K) satisfying D(v)^2=||v||^2 I_K.",
+      "load_bearing_step_class": "E",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: prove from retained substrate inputs that P_A is invariant and carries the induced metric-compatible Cl_4 coframe response, then re-audit the bridge with that theorem supplied.",
+      "open_dependency_paths": [
+        "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 26,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner genuinely checks finite-dimensional Clifford/CAR algebra and the stated numerical identities, but it instantiates the contested coframe generators as inputs. The cited 2026-04-30 authority is explicitly marked unaudited/audited_renaming and says the substrate-to-packet forcing theorem is missing. The note itself also labels the metric-compatible response as an explicit conditional premise, so retained closure does not propagate through this bridge."
+    },
+    {
+      "archived_at": "2026-05-24T08:14:12.612901+00:00",
+      "archived_for_note_hash": "559ee96609afc90f5f2742348ad17533a620b846cd60316b132aeea98ba1ae6e",
+      "audit_date": "2026-05-23T15:09:54.199919+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.27,
+        "runner_hash": "4eeac86ab185bdf4caa2f7620ae06c5609280ab33772cf6a324ab496705fcf87",
+        "transitive_descendants": 872
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260523T150932Z-c34c0a22-planck_target3_clifford_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford-to-CAR part closes algebraically under the stated response premise. The restricted packet does not derive that response premise from the substrate and does not provide the primitive-CAR edge theorem or source-unit normalization theorem used for the Widom and G_Newton,lat/a/l_P conclusions.",
+      "claim_scope": "Conditional on an explicit metric-compatible Clifford coframe response on P_A H_cell, the rank-four block carries the irreducible complex Cl_4 module, equivalently two CAR modes, yielding c_Widom=c_cell=1/4 before applying the separately asserted source-unit normalization.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-23T15:09:54.199919+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Assume the active primitive boundary response is the metric-compatible Clifford coframe response, D(v)^2=||v||^2 I_K, on the rank-four active block.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem; cheapest repair is to provide a retained theorem deriving the metric-compatible coframe response on P_A H_cell plus the retained primitive-CAR edge and source-unit normalization authorities in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 25,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner genuinely constructs Cl_4 generators, verifies the CAR equivalence, checks irreducibility, and confirms that common non-CAR rank-four readings fail the Clifford coframe law. However, the central response law is explicitly assumed, and the note itself says the 2026-04-30 attempt did not derive the substrate-to-P_A forcing step. The later coefficient and normalization steps rely on unprovided upstream theorems or fixed framework formulas rather than a closed derivation inside this restricted packet."
+    },
+    {
+      "archived_at": "2026-05-25T22:48:53.612629+00:00",
+      "archived_for_note_hash": "25e3545bd398c137dc70e2ee59286bf5123d5d7858208ddce3576198166f8ff1",
+      "audit_date": "2026-05-25T18:52:59.537827+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.29,
+        "runner_hash": "4eeac86ab185bdf4caa2f7620ae06c5609280ab33772cf6a324ab496705fcf87",
+        "transitive_descendants": 884
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T185237Z-5f0fd5d2-planck_target3_clifford_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford-to-CAR portion closes algebraically under the stated response premise. The full package conclusion does not close from this restricted packet because the response premise and the source-unit normalization theorem are imported rather than derived or provided.",
+      "claim_scope": "Conditional on a metric-compatible Clifford coframe response on P_A H_cell, the rank-four active block realizes the irreducible complex Cl_4 module, equivalently two CAR modes, yielding c_Widom=c_cell=1/4; the claimed G_Newton,lat=1 and a/l_P=1 also rely on an unprovided source-unit normalization theorem.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T18:52:59.537827+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Assume the active primitive boundary response is the metric-compatible Clifford coframe response, D:E_C -> End(K) with D(v)^2=||v||^2 I_K, so polarization gives the Cl_4 relations on the rank-four block.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation that the substrate action preserves P_A H_cell and induces the metric-compatible Clifford coframe response, plus include the source-unit normalization authority in the restricted packet.",
+      "open_dependency_paths": [
+        "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner genuinely constructs Cl_4 generators, checks anticommutators, irreducibility, CAR reconstruction, and the 1/4 arithmetic, so the conditional algebraic bridge is well supported. However, the metric-compatible coframe response is explicitly a bridge premise, and the note also uses a source-unit normalization support theorem that is not included as a cited authority. Under the rubric, an open premise or unprovided normalization authority prevents audited_clean even though the internal algebra is consistent."
+    },
+    {
+      "archived_at": "2026-05-26T09:31:37.661247+00:00",
+      "archived_for_note_hash": "4665fb5f0f4417c530df9752d4aaa71b3c9c4c6625ed9ea2da93c3e2ec7c758e",
+      "audit_date": "2026-05-25T23:19:39.350907+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.298,
+        "runner_hash": "4eeac86ab185bdf4caa2f7620ae06c5609280ab33772cf6a324ab496705fcf87",
+        "transitive_descendants": 889
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T231918Z-b00dd76f-planck_target3_clifford_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Clifford-to-CAR step closes algebraically once the metric-compatible coframe response is assumed. The full claimed package bridge remains conditional because that response premise and the source-unit normalization support theorem are imported but not derived or supplied in the restricted packet.",
+      "claim_scope": "Audited the conditional Clifford/coframe-to-CAR bridge on the rank-four active block and the internal equality c_Widom=c_cell=1/4, not an unconditional substrate derivation or SI hbar derivation.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-25T23:19:39.350907+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Conditional on a metric-compatible Clifford coframe response D(v)^2=||v||^2 I on K=P_A H_cell, polarization gives Cl_4 relations and the rank-four block is the irreducible Cl_4(C) module, hence two CAR modes.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained derivation forcing the metric-compatible Clifford coframe response on P_A H_cell, plus the cited source-unit normalization authority, then re-audit the broader closure.",
+      "open_dependency_paths": [
+        "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+        "docs/PLANCK_PRIMITIVE_CLIFFORD_MAJORANA_EDGE_DERIVATION_THEOREM_NOTE_2026-04-30.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 30,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 34
+      },
+      "verdict_rationale": "The runner genuinely constructs Cl_4 generators, verifies anticommutators, irreducibility, CAR reconstruction, and the 1/4 arithmetic, so the local conditional algebra is supported. However, the theorem explicitly rests on the unproved metric-compatible Clifford/coframe response on P_A H_cell, and the note also invokes a source-unit normalization theorem for G_Newton,lat=1 and a/l_P=1 that is not provided as a cited retained authority. Thus the restricted packet does not close the unconditional chain from axioms to the final bridge."
+    },
+    {
+      "archived_at": "2026-05-27T11:41:50.593293+00:00",
+      "archived_for_note_hash": "5ae8eabbc764b988ad333f63b798442650faafb44e9270fdd9771f0cfcc45ef2",
+      "audit_date": "2026-05-26T17:22:24.225993+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.298,
+        "runner_hash": "793e8f8ea64d5ae51ceedf79384367071cbf1e35241e496e8bc08e90884b0b7f",
+        "transitive_descendants": 889
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.",
+      "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T17:22:24.225993+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T17:10:57.042375+00:00",
+          "auditor": "codex-gpt-5.5-fresh-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite Cl_4(C)/two-CAR-mode carrier algebra on a supplied rank-four complex active block with a supplied metric-compatible coframe response, plus finite spin phase and c_cell=1/4 trace arithmetic; excludes derivation of the coframe response, active-block forcing, and Planck/Newton/source-unit normalization.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-05-26T17:21:55.659474+00:00",
+          "auditor": "codex-gpt-5.5-fresh-planck-target3-clifford-phase-bridge-second-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an additional explicit *-compatible/Hermitian coframe-response premise; no coframe response, substrate forcing, Newton/Planck/SI normalization, or new axiom content is derived.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_conditional"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-05-26T17:22:24.225993+00:00",
+          "auditor": "codex-gpt-5.5-five-judge-panel-planck-target3-clifford-phase-bridge-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded finite Clifford carrier algebra on a supplied rank-four active block, with the CAR-with-dagger portion conditional on an explicit Hermitian/*-compatible coframe-response premise; no coframe response, active-block forcing, Newton/Planck/source-unit normalization, or new axiom content is derived.",
+          "claim_type": "bounded_theorem",
+          "first_auditor_error": "The first audit treated algebraic Clifford compatibility and the Hermitian Pauli runner realization as sufficient for the source note's general CAR-with-dagger claim. That silently imports a *-compatible/Hermitian premise for an arbitrary supplied metric-compatible coframe response.",
+          "independence": "judicial_review",
+          "judgment_rationale": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 13,
+            "B": 18,
+            "C": 0,
+            "D": 0,
+            "total_pass": 31
+          },
+          "second_auditor_error": "No material tuple-level error. The conditional verdict correctly preserves the bounded algebraic core while refusing clean status for the CAR-with-dagger extension until an explicit adjoint-compatible premise is supplied or derived.",
+          "sided_with": "second",
+          "verdict": "audited_conditional"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "load_bearing_step": "Then polarization gives the complex Clifford relations D(u)D(v) + D(v)D(u) = 2 <u,v> I_K, followed by the claim that oriented pairs give CAR relations with dagger.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "scope_too_broad - add an explicit Hermitian/*-compatible coframe-response premise for the dagger CAR claim, prove that the stated metric-compatible response entails it, or restate the CAR conclusion algebraically with the creator defined by a Clifford involution rather than the ambient Hilbert adjoint.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 13,
+        "B": 18,
+        "C": 0,
+        "D": 0,
+        "total_pass": 31
+      },
+      "verdict_rationale": "Five fresh gpt-5.5 xhigh judges unanimously sided with the second audit tuple: audited_conditional, bounded_theorem, load-bearing class A. The finite algebraic Clifford portion closes from the stated supplied coframe response: polarization gives the Cl_4(C) anticommutators, the four-dimensional carrier is the irreducible complex module, and the spin-phase and 1/4 trace arithmetic are bounded algebraic consequences. The disputed CAR-with-dagger sentence is stronger than that. Linearity plus D(v)^2 = ||v||^2 I gives algebraic Clifford relations, but it does not force the supplied operators to be Hermitian for the Hilbert adjoint used by dagger. A nonunitary similarity of the Pauli gamma model preserves all Clifford anticommutators while breaking {c,c^dagger}=I for the ambient dagger. The runner verifies a Hermitian Pauli realization, so it checks the result with an extra *-compatible premise rather than deriving that premise from the note."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.768187+00:00",
+      "audit_date": "2026-05-28T01:11:17.734569+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 18.312,
+        "runner_hash": "a70077b76006e86e9b8f9bbbaefbae9e822ada0b092fa0e43f6e6b1f17db82a3",
+        "transitive_descendants": 898
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-fresh-context-planck-target3-20260527-r2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Independent fresh-context check: polarization of linear D(v)^2=q(v)I gives the Clifford anticommutator; complex Cl_4(C) is M_4(C), so a nonzero four-dimensional representation is irreducible; direct expansion gives {c_i,c_j}=0 and {c_i,c_j#}=delta_ij I; (Gamma_t Gamma_n)^2=-I gives 2pi -> -I and 4pi -> I; 4/16=1/4.",
+      "claim_scope": "Exact finite Cl_4(C) carrier algebra on a supplied rank-four complex block with a supplied metric-compatible coframe response: irreducible M_4(C) module, two formal-Clifford-# CAR pairs, Clifford spin phase, and 4/16 trace arithmetic. No coframe-response derivation, ambient-adjoint CAR, substrate-forcing, physical-unit map, Newton-coupling, or Planck-unit claim is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-28T01:11:17.734569+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-28T01:00:40.996091+00:00",
+          "auditor": "codex-audit-loop",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Conditional finite Clifford/algebraic-CAR carrier theorem: given a supplied four-dimensional complex active block and a supplied linear metric-compatible coframe response D(v)^2=||v||^2 I, polarization gives the Cl_4(C) anticommutators, the resulting 4D module is the irreducible complex Clifford module, two oriented Clifford pairs obey formal-Clifford-conjugate CAR, the Clifford bivector has the standard 2pi -> -I and 4pi -> I spin phase, and a rank-four packet inside dimension sixteen has primitive trace 1/4. No coframe-response derivation, ambient Hilbert-adjoint CAR, substrate-forcing, Planck-unit, or Newton-coupling claim is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-28T01:11:17.734366+00:00",
+          "auditor": "codex-audit-loop-fresh-context-planck-target3-20260527-r2",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Exact finite Cl_4(C) carrier algebra on a supplied rank-four complex block with a supplied metric-compatible coframe response: irreducible M_4(C) module, two formal-Clifford-# CAR pairs, Clifford spin phase, and 4/16 trace arithmetic. No coframe-response derivation, ambient-adjoint CAR, substrate-forcing, physical-unit map, Newton-coupling, or Planck-unit claim is audited.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "The supplied coframe relation Gamma_a^2=I and {Gamma_a,Gamma_b}=0 for a != b gives {Gamma_a,Gamma_b}=2 delta_ab I, and the oriented pairs c=(Gamma_i+i Gamma_j)/2 with formal Clifford conjugates satisfy the two-mode CAR relations.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 20,
+        "C": 0,
+        "D": 0,
+        "total_fail": 0,
+        "total_pass": 36
+      },
+      "verdict_rationale": "The bounded finite-algebra statement closes under the explicit supplied coframe-response premise. The fresh-context audit independently checked the polarization, Cl_4(C) representation, formal-# CAR anticommutators, spin phase, and trace arithmetic rather than relying only on runner PASS output. All broader physical conclusions remain outside scope."
+    },
+    {
+      "archived_at": "2026-07-12T17:12:04.797056+00:00",
+      "audit_date": null,
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": null,
+      "audit_status": "audit_in_progress",
+      "auditor": null,
+      "auditor_confidence": null,
+      "auditor_family": null,
+      "auditor_model": null,
+      "auditor_reasoning_effort": null,
+      "blocker": "awaiting_cross_confirmation",
+      "chain_closes": null,
+      "chain_closure_explanation": null,
+      "claim_scope": "The audited implication is limited to the exact finite Cl_4(C) algebra on a supplied rank-four complex block with a supplied metric-compatible coframe response, its two formal-Clifford-# CAR pairs, the 2pi/4pi spin phase, and conditional 4/16 trace arithmetic; no coframe-response, substrate, Hilbert-adjoint, or physical-unit bridge is included.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-12T16:24:54.083641+00:00",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-12T16:24:54.083641+00:00",
+          "auditor": "codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00140-planck_target3_clifford_phas",
+          "auditor_family": "codex-gpt-5.6",
+          "auditor_model": "gpt-5.6-sol",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "The audited implication is limited to the exact finite Cl_4(C) algebra on a supplied rank-four complex block with a supplied metric-compatible coframe response, its two formal-Clifford-# CAR pairs, the 2pi/4pi spin phase, and conditional 4/16 trace arithmetic; no coframe-response, substrate, Hilbert-adjoint, or physical-unit bridge is included.",
+          "claim_type": "bounded_theorem",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "no_go_discipline": {
+            "N1_alternative_routes": [
+              {
+                "attempt": "Expanded D(u+v)^2 and subtracted D(u)^2 and D(v)^2 under linearity.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Then polarization gives the complex Clifford relations",
+                "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Polarize the quadratic coframe identity to recover the Clifford anticommutator.",
+                "outcome": "The mixed term is 2<u,v>I, closing the Clifford relation.",
+                "route_class": "algebraic_rearrangement",
+                "route_id": "polarization"
+              },
+              {
+                "attempt": "The runner formed all 16 Clifford words, computed span rank 16, and solved the commutant equations.",
+                "disposition": "CLOSED",
+                "evidence_locator": "Clifford words span M_4(C)",
+                "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Test whether the four Clifford generators generate the full endomorphism algebra and have scalar commutant.",
+                "outcome": "The image is M_4(C) with scalar commutant, so the four-dimensional module is irreducible.",
+                "route_class": "symmetry_or_representation",
+                "route_id": "irreducibility"
+              },
+              {
+                "attempt": "The runner transformed all generators and formal creators by diag(1,2,3,5).",
+                "disposition": "CLOSED",
+                "evidence_locator": "formal Clifford-# CAR survives nonunitary similarity",
+                "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Conjugate the Clifford representation by a nonunitary similarity to test representation-independent algebraic closure.",
+                "outcome": "Clifford and formal-# CAR relations survived, so the result is not restricted to the Hermitian Pauli realization.",
+                "route_class": "alternate_carrier_or_sector",
+                "route_id": "similarity_carrier"
+              },
+              {
+                "attempt": "The runner used adjoints of the nonunitarily transformed annihilators as candidate creators.",
+                "disposition": "CLOSED",
+                "evidence_locator": "ambient-adjoint CAR is not inferred from metric compatibility",
+                "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Replace formal Clifford conjugation by the ambient matrix adjoint and test whether the stronger CAR claim follows.",
+                "outcome": "The ambient CAR error was nonzero, confirming that the note's formal-# scope is necessary and correctly stated.",
+                "route_class": "alternate_observable_or_readout",
+                "route_id": "adjoint_challenge"
+              },
+              {
+                "attempt": "The runner verified B^2=-I and evaluated the lift at vector angles 2pi and 4pi.",
+                "disposition": "CLOSED",
+                "evidence_locator": "spin lift has 2pi -> -I and 4pi -> I",
+                "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Exponentiate the Clifford bivector with the half-angle spin lift.",
+                "outcome": "The lift equals -I and I respectively, closing the scoped phase statement.",
+                "route_class": "dynamical_or_effective_action",
+                "route_id": "spin_exponential"
+              },
+              {
+                "attempt": "The runner reduced 4/16 using exact integer arithmetic.",
+                "disposition": "CLOSED",
+                "evidence_locator": "rank-four packet in dimension sixteen has primitive trace 1/4",
+                "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+                "honesty_marker": "ATTEMPTED",
+                "mechanism": "Reduce the supplied packet-rank ratio without introducing a physical-unit interpretation.",
+                "outcome": "The normalized primitive trace is exactly 1/4; no Newton or Planck-unit identification is made.",
+                "route_class": "normalization_or_units",
+                "route_id": "trace_ratio"
+              }
+            ],
+            "N2_wall_independence": {
+              "collapsed_wall_set": [
+                "coframe-response derivation excluded",
+                "substrate active-block forcing excluded",
+                "ambient Hilbert-adjoint CAR excluded",
+                "physical-unit and source-normalization bridge excluded"
+              ],
+              "evidence_locator": "All Planck-unit, source-normalization, and substrate-forcing conclusions",
+              "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+              "pairwise_checks": [
+                {
+                  "independent": true,
+                  "left": "coframe-response derivation excluded",
+                  "left_closes_right": false,
+                  "right": "substrate active-block forcing excluded",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "coframe-response derivation excluded",
+                  "left_closes_right": false,
+                  "right": "ambient Hilbert-adjoint CAR excluded",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "coframe-response derivation excluded",
+                  "left_closes_right": false,
+                  "right": "physical-unit and source-normalization bridge excluded",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "substrate active-block forcing excluded",
+                  "left_closes_right": false,
+                  "right": "ambient Hilbert-adjoint CAR excluded",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "substrate active-block forcing excluded",
+                  "left_closes_right": false,
+                  "right": "physical-unit and source-normalization bridge excluded",
+                  "right_closes_left": false
+                },
+                {
+                  "independent": true,
+                  "left": "ambient Hilbert-adjoint CAR excluded",
+                  "left_closes_right": false,
+                  "right": "physical-unit and source-normalization bridge excluded",
+                  "right_closes_left": false
+                }
+              ],
+              "unresolved": [],
+              "walls": [
+                "coframe-response derivation excluded",
+                "substrate active-block forcing excluded",
+                "ambient Hilbert-adjoint CAR excluded",
+                "physical-unit and source-normalization bridge excluded"
+              ]
+            },
+            "N3_hidden_wall_scan": {
+              "evidence_locator": "Explicit Non-Claims",
+              "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+              "hits": [
+                {
+                  "classification": "hidden_admission",
+                  "evidence_locator": "supplied metric-compatible coframe response",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "supplied metric-compatible coframe response",
+                  "promoted_wall": "coframe-response derivation excluded"
+                },
+                {
+                  "classification": "hidden_admission",
+                  "evidence_locator": "supplied rank-four active block",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "supplied rank-four active block",
+                  "promoted_wall": "substrate active-block forcing excluded"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "It is not asserted to be the ambient Hilbert adjoint",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "It is not asserted to be the ambient Hilbert adjoint"
+                },
+                {
+                  "classification": "non_load_bearing",
+                  "evidence_locator": "formal Clifford conjugation",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "formal Clifford conjugation"
+                }
+              ],
+              "none_found_reason": "",
+              "scan_scope": "Checked the source antecedents, explicit non-claims, formal creator definition, runner construction, and premise registry for hidden coframe, star, substrate, or unit imports.",
+              "unresolved": []
+            },
+            "N4_residual_matching": {
+              "evidence_locator": "PART 1: FINITE CLIFFORD/ALGEBRAIC-CAR ALGEBRA",
+              "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+              "none_found_reason": "All N1 routes were attempted directly in the restricted packet; none was marked RULED OUT BY PRIOR.",
+              "scan_scope": "Checked whether any N1 route relied on a prior no-go witness rather than a calculation in the restricted source and runner.",
+              "unresolved": [],
+              "witnesses": []
+            },
+            "N5_rhetoric_audit": {
+              "evidence_locator": "Explicit Non-Claims",
+              "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+              "none_found_reason": "",
+              "scan_scope": "Checked every exclusion and non-claim for resolution overreach relative to the finite algebra actually tested.",
+              "statements": [
+                {
+                  "evidence_locator": "This row does not derive the metric-compatible coframe response on `K`.",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "This row does not derive the metric-compatible coframe response on `K`.",
+                  "tested_resolutions": [
+                    "The source treats the response as an explicit antecedent and provides no derivation authority."
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "This row does not prove substrate forcing of the active block.",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "This row does not prove substrate forcing of the active block.",
+                  "tested_resolutions": [
+                    "The audited implication begins after the rank-four block is supplied."
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "It is not asserted to be the ambient Hilbert adjoint",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "It is not asserted to be the ambient Hilbert adjoint",
+                  "tested_resolutions": [
+                    "A nonunitary-similarity counterexample was computed and breaks ambient-adjoint CAR while preserving formal-# CAR."
+                  ],
+                  "untested_resolutions": []
+                },
+                {
+                  "evidence_locator": "This row does not claim a source-unit normalization, Newton coupling,",
+                  "evidence_path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "phrase": "This row does not claim a source-unit normalization, Newton coupling,",
+                  "tested_resolutions": [
+                    "The source firewall and audited scope contain only 4/16 arithmetic."
+                  ],
+                  "untested_resolutions": []
+                }
+              ],
+              "unresolved": []
+            },
+            "N6_partial_closure_scan": {
+              "candidates": [
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Kinetic-form isotropy supplies no rank-four coframe representation or star structure and is unnecessary for the scoped algebraic implication.",
+                  "evidence_locator": "approved_primitive:kinetic_isotropy_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:minimal_axioms",
+                  "could_close_wall": false,
+                  "disposition": "The one-site M_2(C) possibility algebra does not supply the asserted Cl_4 action on the rank-four block; the note does not claim otherwise.",
+                  "evidence_locator": "approved_primitive:minimal_axioms",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:realized_state_primitive",
+                  "could_close_wall": false,
+                  "disposition": "Pointwise realized-state evaluation supplies neither a coframe response nor a carrier-selection rule.",
+                  "evidence_locator": "approved_primitive:realized_state_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "approved_primitive:scale_reference_primitive",
+                  "could_close_wall": false,
+                  "disposition": "The scale ruler carries no dimensionless Clifford, CAR, or source-normalization content and cannot turn 4/16 into a physical coupling.",
+                  "evidence_locator": "approved_primitive:scale_reference_primitive",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "approved_primitive"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "Charged-lepton occupancy counting is unrelated to this finite Clifford implication.",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "The AC eta readout obligation supplies no coframe, carrier, or Clifford-star bridge.",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "open_gate"
+                },
+                {
+                  "addressed": true,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "could_close_wall": false,
+                  "disposition": "The quark determinant cross-sector readout obligation is outside the claim's algebraic carrier scope.",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "kind": "open_gate"
+                }
+              ],
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+              "none_found_reason": "",
+              "premise_classes_checked": [
+                "axiom_or_approved_primitive",
+                "open_gate",
+                "convention_not_accepted",
+                "definition_or_scope_reframe"
+              ],
+              "scan_scope": "Checked every approved primitive and open obligation returned by the supplied partial-closure index, plus convention, definition, and scope-reframe possibilities.",
+              "unresolved": []
+            },
+            "N7_steelman": {
+              "argument": "Dimension four alone does not make an arbitrary representation irreducible, so a reducible four-dimensional carrier could invalidate the note's conclusion.",
+              "evidence_locator": "commutant is only scalar",
+              "evidence_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+              "resolution": "The conclusion uses the full Cl_4(C) relations, not dimension alone: the resulting unital image is the simple algebra M_4(C), and the runner independently finds word-span rank 16 and scalar commutant. Thus the strongest reducibility challenge fails within the stated antecedent.",
+              "resolved": true,
+              "route_id": "irreducibility"
+            },
+            "N8_cross_cycle_echo": {
+              "echoes": [
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:0",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:0",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Earlier audit mixed the conditional algebra with coframe forcing and physical-unit claims; the repaired scope removes those conclusions.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:1",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:1",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Earlier coframe-forcing dependency remains outside the narrowed implication.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:2",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:2",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Earlier physical normalization and substrate conclusions are no longer in the claim.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:3",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:3",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Earlier source-unit dependency is excluded by the repaired boundary.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:4",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:4",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Earlier c_Widom and SI bridge language is absent from the current scope.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:5",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:5",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "The prior ambient-adjoint objection is repaired by formal # and tested by nonunitary similarity.",
+                  "retired": true
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:6",
+                  "evidence_locator": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:6",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Prior clean bounded-algebra result was procedurally invalidated for a missing no-go packet; the present packet supplies the gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_locator": "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated charged-lepton occupancy gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_locator": "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated AC readout gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_locator": "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated theta readout gate.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated inherited no-go inventory.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Newton closure boundary is outside scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Generic source-repair boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated atomic and temporal-axis boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Cl_4 carrier forcing remains outside the repaired bounded implication.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated coupling-normalization boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated plaquette coefficient boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated lensing observable boundaries.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated carrier-orbit registry boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated charged-lepton selector walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated spatial-dimension bound.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated Lorentz-scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated causal-metric bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated finite-family scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated Wilson environment boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated flavor readout boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated Wigner analytic-vector route.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated gauge-environment contraction routes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "A different Cl(3,0) pseudoscalar route does not affect the supplied Cl_4 representation.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated physical Fermat bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Physical Newton coupling is explicitly outside scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "The intrinsic Cl_4 carrier-forcing and source-unit walls remain open but are excluded from this implication.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated U(1) normalization wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Earlier carrier-axiom decision concerns physical forcing, which the current row excludes.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated atomic unit-map walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated quark-mass readout walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated lattice asymptotic limit.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated lensing observable no-go.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated finite-path lensing boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Physical source readout is excluded; the finite spin phase remains algebraic.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated temporal source/readout boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Empty unrelated ledger.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated planning boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated physical-time bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated neutrino construction walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated neutrino-scale walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Physical distance-law claims are outside scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated finite recompute scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Conditional physical 4pi/coupling readouts remain distinct from the finite spin phase.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated packet-memory bridge.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated finite-grid differential-equation boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "The representation-mismatch and carrier-selection walls apply to deriving the antecedent, not to the implication after it is supplied.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "P_A selection and induced-action walls remain open and are explicitly excluded.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated plaquette bootstrap walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated plaquette diagnostic boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Generic supplied-data selector boundary does not alter a stated mathematical implication.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated strong-CP and AC registrability walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated locality and temporal-axis selection walls.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated physical source semantics.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Statistics forcing remains outside scope; only an abstract formal-# CAR presentation is claimed.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": true,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Minimal-surface kinetic selection does not affect the algebraic implication under a supplied coframe response.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated SU(3) cube encoder boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated documentation synchronization issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated family-card scope boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated theta mass-side readout wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated theta gauge-side wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated theta positive gates.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated theta insertion wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated theta defect wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated AC determinant-power selection.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated AC orbit occupancy wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated AC formation/readout wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated artifact-visibility issue.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated Record-only mass readout wall.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated numerical family-match boundary.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated continuum and distance-law scope.",
+                  "retired": false
+                },
+                {
+                  "addressed": true,
+                  "applicable": false,
+                  "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_locator": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                  "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "mechanism": "Unrelated Yukawa renaming wall.",
+                  "retired": false
+                }
+              ],
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+              "packet_complete": true,
+              "unresolved": []
+            },
+            "evidence_snapshot": {
+              "entries": {
+                "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "7a640be575d0005d9c04d03affe4698adf83d3cedd86644c829c3bd4e5995157",
+                  "cross_cycle_candidate_ids": [
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:0",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:1",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:2",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:3",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:4",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:5",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:6"
+                  ],
+                  "effective_status": null,
+                  "path": "audit-packet://cross-cycle-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "roles": [
+                    "cross_cycle_index"
+                  ],
+                  "verified_locators": [
+                    "no_go_cross_cycle_index_v1",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                    "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:0",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:1",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:2",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:3",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:4",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:5",
+                    "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25:previous_audit:6"
+                  ]
+                },
+                "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "7b915cb63d5fb70d1c82d5181aace3a911a1f8d84ccb307a529adff210924fea",
+                  "effective_status": null,
+                  "partial_closure_candidate_ids": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ],
+                  "path": "audit-packet://partial-closure-index/planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
+                  "roles": [
+                    "partial_closure_index"
+                  ],
+                  "verified_locators": [
+                    "approved_primitive:kinetic_isotropy_primitive",
+                    "approved_primitive:minimal_axioms",
+                    "approved_primitive:realized_state_primitive",
+                    "approved_primitive:scale_reference_primitive",
+                    "no_go_partial_closure_index_v1",
+                    "open_gate:ac_orbit_occupancy_statistical_grain_derivation_obligation",
+                    "open_gate:ac_reta_hclass_hunit_readout_derivation_obligation",
+                    "open_gate:theta_quark_determinant_cross_sector_readout_derivation_obligation"
+                  ]
+                },
+                "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "61a2d5ecc4ac9cad096d91059a7a331825a2a0072e31af07a4524ac0ee77b5d3",
+                  "effective_status": null,
+                  "path": "docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md",
+                  "roles": [
+                    "source"
+                  ],
+                  "verified_locators": [
+                    "All Planck-unit, source-normalization, and substrate-forcing conclusions",
+                    "Explicit Non-Claims",
+                    "It is not asserted to be the ambient Hilbert adjoint",
+                    "Then polarization gives the complex Clifford relations",
+                    "This row does not claim a source-unit normalization, Newton coupling,",
+                    "This row does not derive the metric-compatible coframe response on `K`.",
+                    "This row does not prove substrate forcing of the active block.",
+                    "formal Clifford conjugation",
+                    "supplied metric-compatible coframe response",
+                    "supplied rank-four active block"
+                  ]
+                },
+                "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py": {
+                  "accepted_premise_type": null,
+                  "content_sha256": "a70077b76006e86e9b8f9bbbaefbae9e822ada0b092fa0e43f6e6b1f17db82a3",
+                  "effective_status": null,
+                  "path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+                  "roles": [
+                    "runner"
+                  ],
+                  "verified_locators": [
+                    "Clifford words span M_4(C)",
+                    "PART 1: FINITE CLIFFORD/ALGEBRAIC-CAR ALGEBRA",
+                    "ambient-adjoint CAR is not inferred from metric compatibility",
+                    "commutant is only scalar",
+                    "formal Clifford-# CAR survives nonunitary similarity",
+                    "rank-four packet in dimension sixteen has primitive trace 1/4",
+                    "spin lift has 2pi -> -I and 4pi -> I"
+                  ]
+                }
+              },
+              "schema": "no_go_evidence_snapshot_v1"
+            },
+            "failures": [],
+            "required": true,
+            "status": "PASS"
+          },
+          "verdict": "audited_clean"
+        },
+        "second_audit": null,
+        "status": "awaiting_second"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": null,
+      "invalidation_reason": "cross_confirmation_first_audit_no_go_packet_invalid:0067578c5db0",
+      "load_bearing_step": null,
+      "load_bearing_step_class": null,
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": null,
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": null
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_planck_target3_conditional_clifford_carrier_repair.py",
+  "title": "Planck Target 3 Conditional Clifford Carrier Algebra",
+  "transitive_descendants": 106,
+  "verdict_rationale": null
+}

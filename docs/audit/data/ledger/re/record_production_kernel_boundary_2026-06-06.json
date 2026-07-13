@@ -1,0 +1,163 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "record_production_kernel_boundary_2026-06-06",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no-go / exact-support boundary",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "record_classical_semigroup_boundary_2026-06-06"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "26de173bb9e3a613145fa72e614a0e27d67bcbfb431605d0f8b376b52c724b26",
+  "note_path": "docs/RECORD_PRODUCTION_KERNEL_BOUNDARY_2026-06-06.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-07-09T23:37:31.150685+00:00",
+      "audit_date": "2026-06-06T20:18:30.920058+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "record_classical_semigroup_boundary_2026-06-06": "Finite post-record classical algebras C^O have only discrete permutation automorphisms and zero derivations; append/count updates are irreversible translations, while continuous Markov rates and stable points require supplied ensemble dynamics."
+        },
+        "dep_claim_type": {
+          "record_classical_semigroup_boundary_2026-06-06": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "record_classical_semigroup_boundary_2026-06-06": "retained"
+        },
+        "deps": [
+          "record_classical_semigroup_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d7aac1365c17096bc4bafa42052a985c4ec45438a1a1dd211c717264a1b32e0a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-584ac77670-record_production_kernel_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The restricted packet gives an explicit finite counterexample: fair IID, biased IID, reverse-biased IID, Markov persistence, and scripted kernels all feed the same realized append/count update while disagreeing on likelihoods and expected next counts. This closes the scoped underdetermination claim without importing any producer-selection rule.",
+      "claim_scope": "For a supplied finite post-record alphabet and append/count update on realized atoms, the finite post-record grammar does not determine a unique production kernel, predictive law, transition rate, or stable prior.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-06T20:18:30.920058+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:record_classical_semigroup_boundary_2026-06-06:retained->audit_in_progress",
+      "load_bearing_step": "The same finite post-record alphabet and append/count grammar admit multiple distinct normalized producers with different likelihoods and expectations, so the append/count layer underdetermines the production kernel.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "A second auditor should re-check that downstream uses preserve the narrow scope: append/count underdetermines production only absent an explicitly supplied kernel, instrument, generator, or selection rule.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The runner source performs finite rational checks rather than merely printing constants, and the independent algebraic check is straightforward: append takes a supplied atom and count increments by the corresponding basis vector, while many normalized kernels can assign probabilities to the same prefixes. The cited semigroup boundary is retained and supports the separation between post-record append/count dynamics and supplied ensemble or generator dynamics. The no-go is scoped to the exact post-record grammar not selecting a producer; it does not claim that no producer can be supplied or derived elsewhere."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:32.333479+00:00",
+      "audit_date": "2026-07-10T16:40:19.470365+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "record_classical_semigroup_boundary_2026-06-06": "Conditional on representing a supplied finite post-record alphabet by C^O, the audit establishes discrete permutation automorphisms, zero derivations, irreversible nonzero append/count translations, and the need to supply Markov generators to select continuous rates or stationary points."
+        },
+        "dep_claim_type": {
+          "record_classical_semigroup_boundary_2026-06-06": "no_go"
+        },
+        "dep_effective_status": {
+          "record_classical_semigroup_boundary_2026-06-06": "retained_no_go"
+        },
+        "deps": [
+          "record_classical_semigroup_boundary_2026-06-06"
+        ],
+        "load_bearing_score": 0.0,
+        "runner_hash": "d7aac1365c17096bc4bafa42052a985c4ec45438a1a1dd211c717264a1b32e0a",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T162923Z-30cfa1fd-00013-record_production_kernel_bou",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The explicit fair, biased, history-dependent, and scripted kernels are valid countermodels sharing the same append/count layer but yielding incompatible predictions. A single countermodel pair would suffice for underdetermination, and the runner computes several using exact rational arithmetic.",
+      "claim_scope": "For the supplied finite post-record alphabet and append/count grammar, the audit establishes that production probabilities, transition structure, expected updates, and stable priors are additional inputs rather than consequences of realized-record storage dynamics.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-10T16:40:19.470365+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Multiple distinct normalized production kernels generate the same possible realized word and feed the identical append/count update while assigning different likelihoods and expected next counts, so the append/count grammar cannot identify a unique production kernel.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "The runner's B1 check is hard-coded as true, but the append function signature and the independently computed multi-kernel counterexamples directly establish the load-bearing boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 29,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 29
+      },
+      "verdict_rationale": "The no-go follows by direct algebraic counterexample: the same realized history and update grammar are compatible with multiple normalized kernels having different likelihoods and expectations. The runner genuinely evaluates normalization, likelihoods, counts, and expectations rather than importing a contested value or external comparator. The sole cited authority is retained-grade and is consistent with, but not required to substitute for, the new producer-boundary argument."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_record_production_kernel_boundary_2026_06_06.py",
+  "title": "Record Production Kernel Boundary",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,1466 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "graph_first_su3_integration_note",
+    "graph_first_selector_derivation_note"
+  ],
+  "direct_in_degree": 3,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 11.92,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "8f765fdeb725fa953fc57c9aba04e939fff506a76f6a021205feb239ffd891bb",
+  "note_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-26T11:39:34.178766+00:00",
+      "archived_for_note_hash": "17fb8988295a8c7c14aa6e4ab4380812285f7c07bf49cfdb33bf899a2ed03c04",
+      "audit_date": "2026-05-26T01:54:06.757958+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 9.801,
+        "runner_hash": "a2cf35dc12f571917333c52591c273dd643e67893e5788d1e6744d07f9732f3f",
+        "transitive_descendants": 630
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260526T015241Z-e86a6cc9-hypercharge_alpha_third_-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The rational arithmetic closes once the stated admissions are granted. The restricted packet does not itself close the Anti^2-to-L_L readout, GMN relation, weak-isospin electron assignment, or empirical electron-charge premise as retained or accepted-premise authorities.",
+      "claim_scope": "The audited claim is the bounded arithmetic bridge fixing alpha = 1/3 from the retained 6+2 traceless ratio beta = -3 alpha plus the admitted Anti^2 = L_L readout, GMN relation, T_3(e_L) = -1/2, and Q(electron) = -1.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T01:54:06.757958+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Substituting Q(e_L) = -1, T_3(e_L) = -1/2, and Y(L_L) = -3 alpha into Q = T_3 + Y/2 gives -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained or explicitly accepted-premise packet entries for the Anti^2-as-L_L readout, GMN relation, T_3(e_L) assignment, and Q(electron) unit convention.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 2,
+        "total_pass": 5
+      },
+      "verdict_rationale": "The load-bearing computation is a valid class A algebraic identity, and the runner genuinely performs exact rational arithmetic rather than merely printing constants. However, the conclusion depends on explicit admitted premises and readout conventions not supplied as retained or accepted-premise authorities in the restricted packet. The u_L and d_L checks are non-load-bearing consistency comparisons to standard charge values, not first-principles closure. No-Go Discipline does not convert these admissions into closed inputs; N6 instead supports treating the note as a convention/ratification bridge rather than a new-axiom derivation."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.546910+00:00",
+      "audit_date": "2026-05-26T20:30:31.467501+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 9.801,
+        "runner_hash": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+        "transitive_descendants": 630
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-alpha-pass2-exact-C75Ktt-2026-05-26",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied direct dependencies are retained and audited_clean for the selected-axis graph-first 6+2 structural surface. The non-framework premises P1-P4 are not treated as axioms or derived facts; they are explicit antecedents in the bounded implication. Under that exact antecedent set, the conclusion is a rational arithmetic consequence with no hidden physical identification outside scope.",
+      "claim_scope": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-26T20:30:31.467501+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-26T20:22:06.358574+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-alpha-pass1-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Given the retained graph-first selected-axis 6+2 Sym2/Anti2 split, the traceless two-eigenvalue U(1) ansatz Y_alpha = alpha(P_sym - 3 P_anti), and the explicitly supplied non-framework premise packet P1-P4, alpha is uniquely fixed to +1/3 in the doubled convention, equivalently Y(L_L) = -1. This scope does not derive or retain P1-P4, physical hypercharge identification, chiral matter content, or electroweak matching.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-26T20:30:31.467075+00:00",
+          "auditor": "codex-gpt-5.5-xhigh-fresh-hypercharge-alpha-pass2-exact-C75Ktt-2026-05-26",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+          "claim_type": "bounded_theorem",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Substitute the retained 6+2 traceless ratio beta = -3 alpha and explicit P1-P4 into Q(e_L) = T_3(e_L) + Y(L_L)/2, giving -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-audit if the claim is widened beyond the stated bounded implication, especially if P1-P4 are later presented as derived from Cl(3) on Z^3, as registry axioms/admissions, or as closing the full hypercharge/matter-identification chain.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "checks": [
+          "source firewall confirms P1-P4 and boundary phrases are present",
+          "source firewall excludes non-load-bearing quark charge cross-check phrases",
+          "6+2 tracelessness gives beta/alpha = -3",
+          "exact rational solve gives alpha = 1/3",
+          "Y(L_L) = -1 at alpha = 1/3"
+        ],
+        "exit_code": 0,
+        "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+        "runner_sha256": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+        "status": "ok",
+        "total_fail": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "Audited clean is warranted only as a bounded theorem/implication. The note honestly exposes the physical/readout inputs as P1-P4, states that they are not derived or registry-accepted premises, and keeps the parent hypercharge identification and electroweak/matter-assignment claims outside the load-bearing chain. The runner output independently checks the source firewall, the beta/alpha = -3 traceless ratio on the 6+2 split, and the exact Fraction solve alpha = 1/3 with TOTAL PASS=15 FAIL=0. No numerical fit, quark-charge cross-check, lattice-action input, or downstream status promotion is load-bearing."
+    },
+    {
+      "archived_at": "2026-07-12T17:11:29.047220+00:00",
+      "audit_date": "2026-07-11T14:10:55.503000+00:00",
+      "audit_invocation_history": null,
+      "audit_invocation_id": null,
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "graph_first_selector_derivation_note": "Audited the algebraic derivation of the graph-native weak-axis selector from the canonical one-step shifts on the 8-vertex taste cube, including its normalized axis-minimum and residual Z2 structure.",
+          "graph_first_su3_integration_note": "For the finite taste cube with a given selected axis, the graph-native weak su(2) fiber action plus complementary-axis swap has joint commutant gl(3) plus gl(1), whose compact semisimple part is su(3), without auditing physical hypercharge or electroweak matching."
+        },
+        "dep_claim_type": {
+          "graph_first_selector_derivation_note": "positive_theorem",
+          "graph_first_su3_integration_note": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "graph_first_selector_derivation_note": "retained",
+          "graph_first_su3_integration_note": "retained"
+        },
+        "deps": [
+          "graph_first_selector_derivation_note",
+          "graph_first_su3_integration_note"
+        ],
+        "load_bearing_score": 11.871,
+        "runner_hash": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+        "transitive_descendants": 1323
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260711T140442Z-413aaba4-00005-hypercharge_alpha_third_norm",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact rational arithmetic closes, but the scientific chain does not close from retained or accepted-premise inputs because P1-P4 are explicitly supplied, non-registry premises. In particular, the Anti\u00b2-to-L_L readout and physical electroweak charge conventions remain unproved.",
+      "claim_scope": "Conditional arithmetic only: given the retained 6+2 traceless ratio and supplied P1-P4 readout, electroweak, isospin, and charge conventions, \u03b1 = 1/3 and Y(L_L) = -1 follow; no derivation or physical normalization of P1-P4 is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-11T14:10:55.503000+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_invalid:114c0b516c2f",
+      "load_bearing_step": "Substituting P1-P4 into the retained ratio gives -1 = -1/2 + (-3\u03b1)/2, hence \u03b1 = 1/3.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": {
+        "N1_alternative_routes": [
+          {
+            "attempt": "The runner computes \u03b2/\u03b1=-6/2=-3 and solves the resulting linear equation with Fraction arithmetic.",
+            "disposition": "CLOSED",
+            "evidence_locator": "alpha = 1/3 follows from Q(e_L), T3(e_L), and Y(L_L)=beta",
+            "evidence_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Solve the traceless 6+2 eigenvalue relation and charge equation by exact rational algebra.",
+            "outcome": "The algebraic implication closes exactly once P1-P4 are supplied.",
+            "route_class": "algebraic_rearrangement",
+            "route_id": "ratio_arithmetic"
+          },
+          {
+            "attempt": "The retained graph authorities were checked for a physical matter/readout identification.",
+            "disposition": "OPEN",
+            "evidence_locator": "P1 Anti^2-as-L_L readout convention",
+            "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive rather than assume that the Anti\u00b2 branch is the physical left-handed lepton-doublet readout.",
+            "outcome": "They supply the graph split but not the Anti\u00b2-as-L_L identification; P1 remains an explicit supplied convention.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "p1_readout"
+          },
+          {
+            "attempt": "The source, authorities, premise registries, and runner were checked for a retained charge-observable bridge.",
+            "disposition": "OPEN",
+            "evidence_locator": "P2 Gell-Mann-Nishijima convention",
+            "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the physical charge readout Q=T_3+Y/2 from the retained graph surface.",
+            "outcome": "No such bridge is supplied; the GMN relation enters only as P2.",
+            "route_class": "alternate_observable_or_readout",
+            "route_id": "p2_gmn"
+          },
+          {
+            "attempt": "The retained su(2) generator construction was compared with the claimed physical component assignment.",
+            "disposition": "OPEN",
+            "evidence_locator": "P3 weak-isospin assignment",
+            "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the electron-component T3=-1/2 assignment from the graph-fiber su(2) representation.",
+            "outcome": "The representation has \u00b11/2 eigenvalues, but selecting and naming the electron component is not derived; P3 remains supplied.",
+            "route_class": "symmetry_or_representation",
+            "route_id": "p3_isospin"
+          },
+          {
+            "attempt": "The premise registries and cited authorities were checked for a charge-unit or electromagnetic normalization supplier.",
+            "disposition": "OPEN",
+            "evidence_locator": "P4 electron-charge unit convention",
+            "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Derive the electron charge-unit value Q(e_L)=-1 from accepted framework premises.",
+            "outcome": "No accepted supplier is present; P4 is an external unit convention within this packet.",
+            "route_class": "normalization_or_units",
+            "route_id": "p4_charge"
+          },
+          {
+            "attempt": "The supplied convention registry and cross-cycle hypercharge boundary were inspected.",
+            "disposition": "CLOSED",
+            "evidence_locator": "absolute hypercharge normalization (alpha=1/3)",
+            "evidence_path": "docs/audit/data/tier_a_admissions.json",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Test whether reciprocal rescaling of Y and g\u2032 leaves the physics invariant and prevents absolute normalization selection.",
+            "outcome": "The rescaling objection closes against an unqualified physical-normalization claim; \u03b1=1/3 remains a coordinate convention unless the readout convention is supplied.",
+            "route_class": "convention_or_relabeling",
+            "route_id": "u1_rescaling"
+          },
+          {
+            "attempt": "All supplied premise registries and the partial-closure index were checked.",
+            "disposition": "CLOSED",
+            "evidence_locator": "not registry accepted premises",
+            "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+            "honesty_marker": "ATTEMPTED",
+            "mechanism": "Check whether P1-P4 have become accepted axioms, approved primitives, owner-governed residuals, or live Tier-A premises.",
+            "outcome": "None registers P1-P4; the source explicitly states that they are not registry-accepted premises.",
+            "route_class": "dependency_or_registry_reclassification",
+            "route_id": "premise_registry"
+          }
+        ],
+        "N2_wall_independence": {
+          "collapsed_wall_set": [
+            "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived.",
+            "P2-P3 physical charge formula and electron weak-isospin assignment are supplied rather than derived.",
+            "P4 electron charge-unit normalization is supplied rather than derived.",
+            "Absolute U(1) generator normalization remains invariant under reciprocal Y\u2194g\u2032 rescaling absent a fixed physical readout convention."
+          ],
+          "evidence_locator": "The non-framework inputs are exactly P1-P4.",
+          "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+          "pairwise_checks": [
+            {
+              "independent": true,
+              "left": "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived.",
+              "left_closes_right": false,
+              "right": "P2-P3 physical charge formula and electron weak-isospin assignment are supplied rather than derived.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived.",
+              "left_closes_right": false,
+              "right": "P4 electron charge-unit normalization is supplied rather than derived.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived.",
+              "left_closes_right": false,
+              "right": "Absolute U(1) generator normalization remains invariant under reciprocal Y\u2194g\u2032 rescaling absent a fixed physical readout convention.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "P2-P3 physical charge formula and electron weak-isospin assignment are supplied rather than derived.",
+              "left_closes_right": false,
+              "right": "P4 electron charge-unit normalization is supplied rather than derived.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "P2-P3 physical charge formula and electron weak-isospin assignment are supplied rather than derived.",
+              "left_closes_right": false,
+              "right": "Absolute U(1) generator normalization remains invariant under reciprocal Y\u2194g\u2032 rescaling absent a fixed physical readout convention.",
+              "right_closes_left": false
+            },
+            {
+              "independent": true,
+              "left": "P4 electron charge-unit normalization is supplied rather than derived.",
+              "left_closes_right": false,
+              "right": "Absolute U(1) generator normalization remains invariant under reciprocal Y\u2194g\u2032 rescaling absent a fixed physical readout convention.",
+              "right_closes_left": false
+            }
+          ],
+          "unresolved": [],
+          "walls": [
+            "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived.",
+            "P2-P3 physical charge formula and electron weak-isospin assignment are supplied rather than derived.",
+            "P4 electron charge-unit normalization is supplied rather than derived.",
+            "Absolute U(1) generator normalization remains invariant under reciprocal Y\u2194g\u2032 rescaling absent a fixed physical readout convention."
+          ]
+        },
+        "N3_hidden_wall_scan": {
+          "evidence_locator": "does not claim to derive the premise packet",
+          "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+          "hits": [
+            {
+              "classification": "hidden_admission",
+              "evidence_locator": "Supplied premise packet (not axioms)",
+              "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+              "phrase": "P1-P4 supplied premise packet",
+              "promoted_wall": "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived."
+            },
+            {
+              "classification": "retained_authority",
+              "evidence_locator": "the abelian factor is still best described as **hypercharge-like**",
+              "evidence_path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+              "phrase": "hypercharge-like qualification"
+            },
+            {
+              "classification": "non_load_bearing",
+              "evidence_locator": "vacuous normalization convention",
+              "evidence_path": "docs/audit/data/tier_a_admissions.json",
+              "phrase": "Y0 normalization convention"
+            }
+          ],
+          "scan_scope": "The source claim, boundaries, runner constants, retained graph authorities, and all supplied premise registries were scanned for hidden matter-readout, charge, normalization, or physical-observable assumptions.",
+          "unresolved": []
+        },
+        "N4_residual_matching": {
+          "evidence_locator": "Supplied premise packet (not axioms)",
+          "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+          "none_found_reason": "All N1 routes were directly tested against the restricted packet, so no prior-witness residual match is required.",
+          "scan_scope": "No N1 route was marked RULED OUT BY PRIOR; prior records were used only as cross-cycle context, not as residual witnesses.",
+          "unresolved": [],
+          "witnesses": []
+        },
+        "N5_rhetoric_audit": {
+          "evidence_locator": "It does not claim to rederive the matter assignment.",
+          "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+          "scan_scope": "All boundary, non-derivation, normalization, and downstream-status language was checked for overbroad impossibility or resolution claims.",
+          "statements": [
+            {
+              "evidence_locator": "does not claim to derive the premise packet",
+              "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+              "phrase": "does not claim to derive the premise packet",
+              "tested_resolutions": [
+                "conditional exact-arithmetic implication from explicitly supplied P1-P4"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "This bridge does not close:",
+              "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+              "phrase": "This bridge does not close:",
+              "tested_resolutions": [
+                "source-scope firewall excluding physical derivations and parent promotion"
+              ],
+              "untested_resolutions": []
+            },
+            {
+              "evidence_locator": "It does not eliminate admission",
+              "evidence_path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+              "phrase": "does not eliminate admission",
+              "tested_resolutions": [
+                "conditional-chain exposure rather than admission retirement"
+              ],
+              "untested_resolutions": []
+            }
+          ],
+          "unresolved": []
+        },
+        "N6_partial_closure_scan": {
+          "candidates": [
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:kinetic_isotropy_primitive",
+              "could_close_wall": false,
+              "disposition": "Kinetic-form isotropy supplies no charge, matter-readout, or U(1) normalization content.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:minimal_axioms",
+              "could_close_wall": false,
+              "disposition": "The four axioms supply lattice, qubit, admissibility, and record structure but no electroweak readout or species assignment.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:realized_state_primitive",
+              "could_close_wall": false,
+              "disposition": "Pointwise realized-state evaluation supplies neither charge values nor branch identification.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "approved_primitive:scale_reference_primitive",
+              "could_close_wall": false,
+              "disposition": "A dimensionful Planck ruler cannot fix a dimensionless hypercharge generator convention.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "approved_primitive"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "owner_governed:staggered_dirac_realization_gate_note_2026-05-03",
+              "could_close_wall": false,
+              "disposition": "Its exact AC_phi_lambda occupancy and R-eta boundary does not include hypercharge, lepton-branch naming, or charge normalization.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "owner_governed"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:g_bare_rigidity_theorem_note",
+              "could_close_wall": false,
+              "disposition": "The g_bare rescaling convention is unrelated to the P1-P4 electroweak readout chain.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "convention_reframe"
+            },
+            {
+              "addressed": true,
+              "candidate_id": "convention_reframe:hypercharge_identification_note",
+              "could_close_wall": false,
+              "disposition": "It classifies \u03b1=1/3 as a vacuous Y\u2194g\u2032 normalization convention; it does not accept or derive P1-P4 and therefore does not close the physical-readout wall.",
+              "evidence_locator": "no_go_partial_closure_index_v1",
+              "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "kind": "convention_reframe"
+            }
+          ],
+          "evidence_locator": "no_go_partial_closure_index_v1",
+          "evidence_path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "premise_classes_checked": [
+            "axiom_or_approved_primitive",
+            "owner_governed_residual",
+            "tier_a_derivation_target",
+            "tier_a_convention_not_accepted",
+            "definition_or_scope_reframe"
+          ],
+          "scan_scope": "All approved primitives, owner-governed residuals, live/retired Tier-A entries, normalization conventions, and indexed scope reframes were checked for a supplier of P1-P4 or a physical U(1) normalization.",
+          "unresolved": []
+        },
+        "N7_steelman": {
+          "argument": "P2-P4 fix a doubled-hypercharge coordinate in which the arithmetic gives \u03b1=1/3, but reciprocal rescaling (Y,Y_H,g_Y)\u2192(cY,cY_H,g_Y/c) leaves physical covariant-derivative and charge ratios unchanged; therefore the commutant line cannot select an absolute physical generator normalization.",
+          "evidence_locator": "An absolute numerical U(1) generator normalization cannot be selected",
+          "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "resolution": "This steelman succeeds against any unqualified physical-normalization claim and supports the conditional verdict. It does not invalidate the narrower algebraic implication after P1-P4 and the doubled convention are explicitly supplied.",
+          "resolved": true,
+          "route_id": "u1_rescaling"
+        },
+        "N8_cross_cycle_echo": {
+          "echoes": [
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25:previous_audit:0",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Prior conditional verdict identified the same unaccepted P1-P4 readout inputs.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25:previous_audit:1",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Prior clean bounded-implication verdict was invalidated because its no-go discipline packet was missing.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "graph_first_su3_integration_note:previous_audit:0",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unaudited historical cycle for the retained graph-split authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "graph_first_su3_integration_note:previous_audit:1",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Second unaudited historical cycle for the graph-split authority.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:0",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unaudited selector-history entry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:1",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Second unaudited selector-history entry.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:2",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Earlier clean selector result invalidated by dependency weakening.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "graph_first_selector_derivation_note:previous_audit:3",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Current scoped selector algebra audit; it does not supply P1-P4.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "AC_phi_lambda retirement is outside hypercharge scope.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "tier_a_retirement:strong_cp_theta_zero_note",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Theta retirement is outside hypercharge scope.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Owner-governed AC residual does not supply P1-P4.",
+              "retired": true
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated foundational and flavor no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated Newton/source-scaling boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Adjacent warning that gauge-coupling normalization was not derived.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated textbook-import and RP-axis boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Broad historical no-go inventory without a hypercharge P1-P4 supplier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Directly analogous warning that formal \u03b1 identities do not close electroweak normalization.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated plaquette coefficient boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated lensing observable boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated carrier-swap primitive exhaustion issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Charged-lepton selector no-gos do not derive the Anti\u00b2 matter readout used here.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated dimension-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated Lorentz-scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated metric-source boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated finite replay boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated Wilson environment boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated flavor-carrier boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated analytic-vector boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated plaquette-environment routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated gauge-isotropy routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated gravity dispersion boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated weak-field gravity boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated Planck/action-scale no-go inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Direct hypercharge rescaling and species-readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Broad unrelated campaign boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated atomic scale/coupling thresholds.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated quark-mass selector boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated asymptotic-limit boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated lensing observable no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated finite-path lensing boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated source-readout normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated temporal-source normalization boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Empty unrelated no-go ledger.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated planning-selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated emergent-time boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated neutrino construction boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated neutrino/cosmology boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated Newtonian-distance scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated finite recompute boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Adjacent coupling-normalization warning but no P1-P4 supplier.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated memory/decoherence boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated finite-grid theorem boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated Clifford-carrier selection walls.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated P_A carrier history.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated plaquette-bootstrap boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated plaquette diagnostic boundaries.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Relevant general warning that supplied packet data are not accepted primitives.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated AC/theta registrability routes.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated clock-axis selection boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "General warning against treating a democratic coefficient as a physical readout.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated statistics boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated kinetic-selection no-go.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated SU3 Wilson-cube encoder boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated documentation synchronization issue.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated family-card scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated theta mass-readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated theta gauge-readout wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated theta positive-gate inventory.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated theta insertion wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated theta defect-closure wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated AC determinant-count wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated AC record-orbit wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated AC R-eta formation wall.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated artifact-visibility statement.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated record-only mass-readout countermodel.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated hard-coded finite numerical matcher boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": false,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Unrelated continuum and distance-law scope boundary.",
+              "retired": false
+            },
+            {
+              "addressed": true,
+              "applicable": true,
+              "candidate_id": "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+              "evidence_locator": "no_go_cross_cycle_index_v1",
+              "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "mechanism": "Analogous warning that a physical readout identification cannot be supplied by coefficient consistency alone.",
+              "retired": false
+            }
+          ],
+          "evidence_locator": "no_go_cross_cycle_index_v1",
+          "evidence_path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+          "packet_complete": true,
+          "unresolved": []
+        },
+        "corrected_wall_set": [
+          "P1 Anti\u00b2-as-L_L physical readout identification is supplied rather than derived.",
+          "P2-P3 physical charge formula and electron weak-isospin assignment are supplied rather than derived.",
+          "P4 electron charge-unit normalization is supplied rather than derived.",
+          "Absolute U(1) generator normalization remains invariant under reciprocal Y\u2194g\u2032 rescaling absent a fixed physical readout convention."
+        ],
+        "demotion": "stretch-attempt-with-honest-residual",
+        "evidence_snapshot": {
+          "entries": {
+            "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": {
+              "accepted_premise_type": null,
+              "content_sha256": "68393be9556abb44b1df9e3adecaa4bf487edfa5c03fce482d36bbcaf5a04946",
+              "cross_cycle_candidate_ids": [
+                "graph_first_selector_derivation_note:previous_audit:0",
+                "graph_first_selector_derivation_note:previous_audit:1",
+                "graph_first_selector_derivation_note:previous_audit:2",
+                "graph_first_selector_derivation_note:previous_audit:3",
+                "graph_first_su3_integration_note:previous_audit:0",
+                "graph_first_su3_integration_note:previous_audit:1",
+                "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25:previous_audit:0",
+                "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25:previous_audit:1",
+                "owner_governed_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/24h-axiom-first-derivations-20260501/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/architecture-portability-live-bridge-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-consistency-source-repairs-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/audit-unlock-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/axiom-to-main-lane-cascade-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/bare-alpha-formal-identity-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/beta6-coefficient-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/born-scattering-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/carrier-orbit-invariance-2026-05-03/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/charged-lepton-pickup-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/dimension-upper-bound-source-note-repair-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-lorentz-conditional-title-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/emergent-metric-causal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/fifth-family-radial-orientation-wire-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/first-three-local-wilson-scorecard-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/flavor-tracial-formal-route-pruning-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/free-dirac-wigner-bridge-wireup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-plaquette-spatial-env-character-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-p4-dispersion-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/gravity-weak-field-sign-repair-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hubble-c1-absolute-scale-gate-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/hypercharge-identification-name-free-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/impact-campaign-20260429/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane2-atomic-scale-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lattice-greens-asymptotic-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-centroid-multipole-nogo-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/lensing-finite-path-negative-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-4pi-source-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/magnitude-temporal-source-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/matter-cone-larger-cell/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/mesoscopic-surrogate-planning-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/min-time-step-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-quantitative-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/neutrino-sigma-mnu-cosmology-20260428/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/newtonian-distance-pointer-rawrows-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/nonlabel-live-recompute-artifact-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/p3-coupling-authority-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/packet-memory-bridge-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/picard-fuchs-finite-window-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/planck-pa-retention-20260430/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/plaquette-perron-diagnostic-cleanup-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/post-record-selector-supplied-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/registrability-bridges-20260610/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/single-clock-range-retirement-20260612/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/source-measure-finite-tangent-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/spin-statistics-source-packet-20260611/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/staggered-dirac-a1a2-realization-closure-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/su3-cube-quotient-encoder-boundary-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/three-family-card-missing-distance-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block08-theta-mass/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block09-theta-gauge/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block10-theta-positive/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block11-theta-g3/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block12-theta-g1/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block28-ac-det-power-split/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block29-ac-record-orbit-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/tier-a-elimination-block30-ac-reta-formation-nonsupply/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/universal-gr-casimir-block-localization-20260710/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/unordered-mass-pdep-record-independence-20260618/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wave-direct-dm-h025-seed0-crossfamily-closure/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/wide-lattice-raw-row-packet-20260608/NO_GO_LEDGER.md",
+                "physics_loop_no_go_ledger:.claude/science/physics-loops/yt-ward-renaming-audit-repair/NO_GO_LEDGER.md",
+                "tier_a_retirement:staggered_dirac_realization_gate_note_2026-05-03",
+                "tier_a_retirement:strong_cp_theta_zero_note"
+              ],
+              "effective_status": null,
+              "path": "audit-packet://cross-cycle-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "roles": [
+                "cross_cycle_index"
+              ],
+              "verified_locators": [
+                "An absolute numerical U(1) generator normalization cannot be selected",
+                "no_go_cross_cycle_index_v1"
+              ]
+            },
+            "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25": {
+              "accepted_premise_type": null,
+              "content_sha256": "30e7be8920db4ab1d3d2a76f55b90fd3e511f39b41ba45315a9dd80f9fa190e0",
+              "effective_status": null,
+              "partial_closure_candidate_ids": [
+                "approved_primitive:kinetic_isotropy_primitive",
+                "approved_primitive:minimal_axioms",
+                "approved_primitive:realized_state_primitive",
+                "approved_primitive:scale_reference_primitive",
+                "convention_reframe:g_bare_rigidity_theorem_note",
+                "convention_reframe:hypercharge_identification_note",
+                "owner_governed:staggered_dirac_realization_gate_note_2026-05-03"
+              ],
+              "path": "audit-packet://partial-closure-index/hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
+              "roles": [
+                "partial_closure_index"
+              ],
+              "verified_locators": [
+                "no_go_partial_closure_index_v1"
+              ]
+            },
+            "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "c37bff23f3452c42245d4f310a2a593d4c88d0cfd4d361e45068d2d64c5a97ed",
+              "effective_status": "retained",
+              "path": "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+              "roles": [
+                "authority"
+              ],
+              "verified_locators": [
+                "the abelian factor is still best described as **hypercharge-like**"
+              ]
+            },
+            "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md": {
+              "accepted_premise_type": null,
+              "content_sha256": "8f765fdeb725fa953fc57c9aba04e939fff506a76f6a021205feb239ffd891bb",
+              "effective_status": null,
+              "path": "docs/HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md",
+              "roles": [
+                "source"
+              ],
+              "verified_locators": [
+                "It does not claim to rederive the matter assignment.",
+                "It does not eliminate admission",
+                "P1 Anti^2-as-L_L readout convention",
+                "P2 Gell-Mann-Nishijima convention",
+                "P3 weak-isospin assignment",
+                "P4 electron-charge unit convention",
+                "Supplied premise packet (not axioms)",
+                "The non-framework inputs are exactly P1-P4.",
+                "This bridge does not close:",
+                "does not claim to derive the premise packet",
+                "not registry accepted premises"
+              ]
+            },
+            "docs/audit/data/tier_a_admissions.json": {
+              "accepted_premise_type": "tier_a_registry_mixed_entries",
+              "content_sha256": "6fa404fb9dfdc35bb2ea7775f46e5e3f2f7d2dc3187563cadf51ae268dc4381b",
+              "effective_status": null,
+              "path": "docs/audit/data/tier_a_admissions.json",
+              "roles": [
+                "premise_registry"
+              ],
+              "verified_locators": [
+                "absolute hypercharge normalization (alpha=1/3)",
+                "vacuous normalization convention"
+              ]
+            },
+            "scripts/hypercharge_alpha_third_normalization_runner.py": {
+              "accepted_premise_type": null,
+              "content_sha256": "0a23b98fb7c88e29b5662817313e6542671d4e4dd18d4c7bf49a4242d81ad26e",
+              "effective_status": null,
+              "path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+              "roles": [
+                "runner"
+              ],
+              "verified_locators": [
+                "alpha = 1/3 follows from Q(e_L), T3(e_L), and Y(L_L)=beta"
+              ]
+            }
+          },
+          "schema": "no_go_evidence_snapshot_v1"
+        },
+        "failures": [
+          "N1: the p1_readout, p2_gmn, p3_isospin, and p4_charge routes remain OPEN because the restricted packet supplies those inputs without deriving or accepting them."
+        ],
+        "narrowed_claim_scope": "Conditional arithmetic only: given the retained 6+2 traceless ratio and supplied P1-P4 readout, electroweak, isospin, and charge conventions, \u03b1 = 1/3 and Y(L_L) = -1 follow; no derivation or physical normalization of P1-P4 is audited.",
+        "next_route": {
+          "reason_untested": "The cited graph authorities establish the 6+2 representation split but do not derive the physical Anti\u00b2-to-L_L readout; a retained matter-assignment/readout theorem is the next concrete missing bridge.",
+          "route_id": "p1_readout"
+        },
+        "prior_claim_scope": "Bounded implication only: given the retained graph-first selected-axis 6+2 Sym^2/Anti^2 split, the traceless two-eigenvalue U(1) family Y_alpha = alpha(P_sym - 3 P_anti), and the explicit premise packet P1-P4 identifying Anti^2 as the L_L readout, using Q = T_3 + Y/2, T_3(e_L) = -1/2, and Q(e_L) = -1, the arithmetic conclusion alpha = +1/3 follows, equivalently Y(L_L) = -1. This does not derive P1-P4, physical hypercharge, electroweak matching, matter assignment, or any continuum/numerical observable.",
+        "required": true,
+        "status": "FAIL"
+      },
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: supply retained or explicitly accepted authorities for P1-P4\u2014especially the Anti\u00b2-as-L_L readout and physical charge convention\u2014then rerun this exact-arithmetic audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 12,
+        "C": 0,
+        "D": 0,
+        "total_pass": 15
+      },
+      "verdict_rationale": "The runner genuinely computes the 6+2 traceless ratio and exact Fraction solution rather than merely printing the result. Nevertheless, \u03b1 = 1/3 follows only after importing P1-P4, which the note explicitly says are neither derived nor registry-accepted. The registry also classifies absolute hypercharge normalization as a vacuous Y\u2194g\u2032 rescaling convention, so this packet does not establish an independently selected physical U(1) normalization."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/hypercharge_alpha_third_normalization_runner.py",
+  "title": "Hypercharge \u03b1 = 1/3 Normalization Bridge",
+  "transitive_descendants": 1369,
+  "verdict_rationale": null
+}

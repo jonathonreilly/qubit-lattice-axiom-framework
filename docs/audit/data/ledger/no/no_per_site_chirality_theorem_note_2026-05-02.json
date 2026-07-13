@@ -1,0 +1,1000 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "no_per_site_chirality_theorem_note_2026-05-02",
+  "claim_scope": null,
+  "claim_type": "no_go",
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10"
+  ],
+  "direct_in_degree": 11,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.922,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "67ca56045cd5462723734592b727d1c307be42f533eedb2394115b930b003cb2",
+  "note_path": "docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-22T15:08:24.496003+00:00",
+      "audit_date": "2026-05-22T12:55:46.392287+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-`Cl(3)`-only U1-U3: existence of the Pauli irrep, the two chirality-distinguished faithful complex irreducible representations of `Cl(3,0)`, and finite-dimensional decomposition into their direct sums; no physical per-site Hilbert-space bridge audited."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 12.04,
+        "runner_hash": "fbc431d065e69419706f6e9e79104c50dc154274b298f37687f080b300205336",
+        "transitive_descendants": 1052
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T125330Z-34ddc3b9-no_per_site_chirality_th-01",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli-basis algebraic no-go closes inside M_2(C), and the runner genuinely checks those matrix identities. The stronger framework claim that the physical per-site Hilbert is this Pauli M_2(C) representation is not supplied by the cited authority, which explicitly moved that bridge out of scope.",
+      "claim_scope": "No M in M_2(C) on a single Pauli Cl(3) irrep anticommutes with all three \u03c3_i and squares to I; the framework per-site-Hilbert application depends on a separate Pauli-site bridge.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-22T12:55:46.392287+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_weakened:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:retained_bounded->unaudited",
+      "load_bearing_step": "Decomposing M = a\u00b7I + \u03a3_k b_k\u00b7\u03c3_k gives {M, \u03c3_j} = 2a\u00b7\u03c3_j + 2b_j\u00b7I, so anticommuting with all three \u03c3_j forces M = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: provide a retained one-hop authority for the physical per-site Hilbert-to-Pauli M_2(C) bridge, or narrow the claim to the abstract Pauli-irrep algebraic no-go.",
+      "open_dependency_paths": [
+        "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The load-bearing step is a valid class-A algebraic closure over the Pauli representation: only the zero matrix anticommutes with all three Pauli generators, so no involutive gamma_5 exists in M_2(C). The no-go gate does not find a counter-route inside the stated M_2(C) Pauli scope, including the negative-chirality sign flip. However, gate N3 exposes a hidden bridge: the source note cites the per-site uniqueness theorem for H_x \u2245 C^2 with gamma_i mapped to sigma_i, while the provided authority says the physical per-site Hilbert bridge was moved out of its scope. The result is therefore conditional unless that bridge authority is supplied or the claim is narrowed to the abstract Pauli-irrep no-go."
+    },
+    {
+      "archived_at": "2026-05-29T00:46:44.386231+00:00",
+      "audit_date": "2026-05-22T22:34:13.542162+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Physical-Cl(3)-only U1-U3: abstract Cl(3,0) has exactly two non-isomorphic faithful complex irreducible representations, both 2-dimensional and distinguished by central pseudoscalar eigenvalue \u03c9 = \u00b1i; every finite-dimensional complex representation decomposes as a direct sum of these two irreps."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained_bounded"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 11.771,
+        "runner_hash": "fbc431d065e69419706f6e9e79104c50dc154274b298f37687f080b300205336",
+        "transitive_descendants": 873
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T223237Z-22f7fdbf-no_per_site_chirality_th-02",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The targeted packet supplies the missing physical Hilbert-to-Pauli bridge through the k=1 qubit-per-site ratification: H_x is exactly C^2 with a Pauli Cl(3) action. Once that input is admitted, the no-go is elementary M_2(C) algebra; the negative-chirality sign choice would not change the anticommutator conclusion.",
+      "claim_scope": "Under the k=1 qubit-per-site reading H_x = C^2 with the canonical Pauli Cl(3) action, no \u03b3_5 \u2208 M_2(C) satisfies \u03b3_5^2 = I and anticommutes with all three generators.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-22T22:34:13.542162+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-22T22:32:15.441350+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T223018Z-22f7fdbf-no_per_site_chirality_th-01",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "For a k=1 per-site qubit H_x ~= C^2 in the canonical positive Pauli Cl(3) irrep, omega = sigma_1 sigma_2 sigma_3 = iI and no complex-linear M in M_2(C) anticommutes with all three generators.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-22T22:34:13.542162+00:00",
+          "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T223237Z-22f7fdbf-no_per_site_chirality_th-02",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Under the k=1 qubit-per-site reading H_x = C^2 with the canonical Pauli Cl(3) action, no \u03b3_5 \u2208 M_2(C) satisfies \u03b3_5^2 = I and anticommutes with all three generators.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "dep_claim_type_changed:axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29:bounded_theorem->positive_theorem",
+      "load_bearing_step": "For M = aI + \u03a3_k b_k \u03c3_k, {M, \u03c3_j} = 2a \u03c3_j + 2b_j I, so vanishing for all j forces a = b_1 = b_2 = b_3 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check that any non-targeted ledger application includes the R1 k=1/qubit-per-site authority; without that scoped input the note only proves the single M_2(C) Pauli-site no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "The direct retained_bounded per-site uniqueness authority plus the allowed k=1 qubit-per-site context close the physical-Hilbert-to-Pauli identification for this targeted audit. The runner genuinely computes the Pauli products, commutators, constraint nullspace, and even/odd complex-span ranks, all as algebraic checks. No-Go Discipline gate passes: k>1 or mixed-chirality modules, negative chirality, larger Clifford algebras, real-vs-complex grading language, and projector-only escape routes are either closed by the stated k=1 scope, sign-invariant, or outside the audited M_2(C) claim."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:26.376485+00:00",
+      "archived_for_note_hash": "ff529bb3e0ab5ee86bd5e039fe4e9721268464fdf866bb1e9e9626093266c5eb",
+      "audit_date": "2026-05-29T02:59:28.526962+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "Pure finite-dimensional algebra theorem: for real Cl(3,0), omega = gamma_1 gamma_2 gamma_3 is central with omega^2 = -1; Cl(3,0) tensor_R C splits as M_2(C) plus M_2(C) via the omega -> +/- i central-character summands; finite-dimensional complex representations decompose by Wedderburn/Schur into copies of the two 2-dimensional chiral simple modules. Physical per-site Hilbert-space identification, chirality selection, and downstream spin-statistics interpretation are excluded."
+        },
+        "dep_claim_type": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "positive_theorem"
+        },
+        "dep_effective_status": {
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29": "retained"
+        },
+        "deps": [
+          "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29"
+        ],
+        "load_bearing_score": 13.775,
+        "runner_hash": "fbc431d065e69419706f6e9e79104c50dc154274b298f37687f080b300205336",
+        "transitive_descendants": 875
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-fresh-restricted-input-audit-agent",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Pauli-representation algebra closes, but the framework-per-site conclusion does not close from the wired dependency because that dependency supplies only pure Cl(3) irrep classification and explicitly excludes the physical H_x identification and chirality-selection bridge.",
+      "claim_scope": "Framework per-site no-gamma5 claim conditional on identifying H_x with a single 2D Pauli Cl(3) module; the supplied-Pauli M_2(C) algebraic no-go itself is verified.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-29T02:59:28.526962+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "By the cited per-site uniqueness theorem (U2), H_x ~= C^2 with gamma_i mapped to sigma_i.",
+      "load_bearing_step_class": "B",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: cite a retained bridge theorem identifying framework H_x with a single 2D Pauli chirality module, or narrow the claim to the supplied-Pauli-representation M_2(C) no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "Issue: the source imports the framework per-site Hilbert space identification H_x ~= C^2 with gamma_i -> sigma_i from a dependency whose audited scope excludes physical per-site Hilbert-space identification and chirality selection. Why this blocks: the runner and independent algebra prove the narrower supplied-Pauli M_2(C) no-gamma5 fact, but they do not close the framework-level carrier bridge or rule out larger/mixed representation routes without that bridge. Repair target: cite a retained bridge theorem identifying the framework H_x with a single 2D Pauli Cl(3) module, or narrow the source claim to the supplied-Pauli-representation M_2(C) no-go. Claim boundary until fixed: within the supplied 2x2 Pauli representation, sigma1 sigma2 sigma3 = iI, no nonzero 2x2 matrix anticommutes with all three sigma_i, and there is no per-site gamma5/chirality projector of that form."
+    },
+    {
+      "archived_at": "2026-06-04T16:59:09.079513+00:00",
+      "audit_date": "2026-05-30T22:56:24.945533+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "1d36a556f3d87017a06e06a92979d8e36f587481125e5769f0ace5dcbccc6d4d"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 13.796,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 888
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260530-225413-e888ef88-no_per_site_chirality_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Axiom 1 supplies the one-site algebra M_2(C), and the retained Pauli-irrep authority supports using a Pauli generating presentation. The Pauli-basis exhaustion is elementary linear algebra and directly excludes any gamma_5 satisfying gamma_5^2 = I while anticommuting with all three generators.",
+      "claim_scope": "Single-site one-qubit algebra M_2(C) with a Pauli Cl(3) generating triple: omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero M in M_2(C) anticommutes with all three sigma_i, so no gamma_5-based one-site chirality projector exists.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-05-30T22:56:24.945533+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-05-30T22:52:35.444541+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-225026-a6d1e495-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Inside one Axiom-1 site A_x ~= M_2(C) with the Pauli Cl(3) generators, omega = sigma_1 sigma_2 sigma_3 is scalar and no nonzero matrix anticommutes with all three generators; hence no internal gamma_5 projector exists at one site.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-05-30T22:56:24.945533+00:00",
+          "auditor": "codex-cli-gpt-5.5-20260530-225413-e888ef88-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit algebra M_2(C) with a Pauli Cl(3) generating triple: omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero M in M_2(C) anticommutes with all three sigma_i, so no gamma_5-based one-site chirality projector exists.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:1d36a556->b8848fc8",
+      "load_bearing_step": "For M = a I + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3, the equations {M, sigma_j} = 0 give 2a sigma_j + 2b_j I = 0 for each j, hence a = b_1 = b_2 = b_3 = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope limited to gamma_5-style projectors anticommuting with all three Pauli generators; ordinary M_2(C) spin projectors are not being excluded.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the accepted Axiom 1 premise and retained-grade Pauli representation input, not a definition, renaming, or comparator match. The runner source actually computes the Pauli volume element, commutators, square, linear constraint nullspace, and even/odd span ranks rather than merely printing expected constants. The no-go discipline check passes at the narrowed scope: temporal, larger-Clifford, multi-site, and gauge chirality routes are explicitly outside the single-site M_2(C) residual."
+    },
+    {
+      "archived_at": "2026-06-05T20:34:08.541772+00:00",
+      "audit_date": "2026-06-05T16:45:39.543787+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "b8848fc8d300286c16cfce9689f7e38767359c10dc9ae7081010252be0f20802"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 14.87,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 935
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-b49119207f-no_per_site_chirality_theore",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli basis exhausts M_2(C), and linear independence of I and sigma_j forces all Pauli-basis coefficients to vanish. The minimal axiom is an accepted premise for the one-site algebra, and the retained Cl(3) authority is consistent but not needed beyond the Pauli presentation.",
+      "claim_scope": "One-site Pauli presentation of A_x ~= M_2(C): omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero element of M_2(C) anticommutes with all three sigma_i, so no internal gamma_5 chirality projector exists.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T16:45:39.543787+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T16:43:08.747417+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-d7904fd23a-no_per_site_chirality_theore",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Fixed one-site M_2(C) Pauli algebra: omega=sigma_1 sigma_2 sigma_3 is scalar in the positive Pauli presentation, and no internal gamma_5/chirality projector anticommutes with all three Pauli generators.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-05T16:45:39.543787+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-b49119207f-no_per_site_chirality_theore",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "One-site Pauli presentation of A_x ~= M_2(C): omega = sigma_1 sigma_2 sigma_3 = iI, and no nonzero element of M_2(C) anticommutes with all three sigma_i, so no internal gamma_5 chirality projector exists.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:b8848fc8->be72f50a",
+      "load_bearing_step": "Writing M = a I + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3 gives {M, sigma_j} = 2a sigma_j + 2b_j I, so anticommuting with all three Pauli generators forces M = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that future citation updates keep the source aligned with the current minimal-axiom memo while preserving the same one-site Quantum axiom content.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is elementary finite-dimensional matrix algebra, independently checked from the Pauli anticommutation relations rather than from the runner implementation. The completed runner genuinely constructs the Pauli matrices, computes omega, commutators, omega^2, and the linear nullspace for the universal anticommutator condition. The no-go is clean only at the explicitly scoped one-site M_2(C) level; larger Clifford, temporal, multi-site, and gauge chirality mechanisms are left outside the claim rather than ruled out."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.508189+00:00",
+      "audit_date": "2026-06-05T20:57:25.190895+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 14.872,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 936
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-49162d2045-no_per_site_chirality_theore",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Pauli basis spans M_2(C), and the anticommutator equations independently force the scalar coefficient and each Pauli coefficient to vanish. This closes the stated single-site no-go without using temporal, gauge, multi-site, or larger Clifford structure.",
+      "claim_scope": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-05T20:57:25.190895+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-05T20:56:30.946591+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-644b28da8a-no_per_site_chirality_theore",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit algebra A_x ~= M_2(C) with a Pauli Cl(3) generator triple: no nonzero internal element anticommutes with all three sigma_i, hence no gamma_5 with gamma_5^2 = I and no intrinsic one-site chirality projectors.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-05T20:57:25.190895+00:00",
+          "auditor": "codex-cli-gpt-5.5-no-go-gate-20260531-49162d2045-no_per_site_chirality_theore",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Inside a single one-qubit site algebra M_2(C) with a Pauli generating triple, no nonzero element anticommutes with all three Pauli generators, hence no internal \u03b3_5 with \u03b3_5^2=I exists.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Writing M = aI + b_1\u03c3_1 + b_2\u03c3_2 + b_3\u03c3_3 gives {M,\u03c3_j}=2a\u03c3_j+2b_jI, so anticommuting with all three \u03c3_j forces M=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check the wording in Step 4, which includes an unnecessary even/odd-subalgebra explanation, but the no-\u03b3_5 conclusion already follows from the Step 3 Pauli-basis exhaustion.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is elementary finite-dimensional matrix algebra over the accepted one-site M_2(C) premise and the retained Pauli Cl(3) representation input. Independent checking confirms \u03c3_1\u03c3_2\u03c3_3=iI and confirms the linear anticommutator constraints have only the zero solution. The no-go is properly scoped to one single-site Pauli carrier and explicitly leaves larger chirality mechanisms outside its residual. The runner source performs actual matrix and linear-rank computations rather than merely printing expected constants."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:09.885393+00:00",
+      "audit_date": "2026-06-30T15:31:34.943773+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.15,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 1135
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260630T153134Z-d6855666-no_per_site_chirality_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The accepted Qubit axiom supplies the one-site M_2(C) algebra, and the retained Pauli/Cl(3) authority supplies the Pauli presentation. The Pauli-basis anticommutator calculation closes the no-go directly; zero is the only universal anticommuting element and cannot square to I.",
+      "claim_scope": "One-site M_2(C) Pauli algebra: no nonzero internal operator anticommutes with all three Pauli generators, hence no internal gamma_5 with gamma_5^2 = I and no per-site chirality projectors.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-06-30T15:31:34.943773+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-06-30T15:28:09.811070+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T152809Z-33701ae3-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "One fixed one-site M_2(C) Pauli Cl(3,0) presentation: omega=sigma_1 sigma_2 sigma_3=iI, and no nonzero matrix anticommutes with all three sigma_i, so no internal gamma_5 chirality projector exists.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-06-30T15:31:34.943773+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260630T153134Z-d6855666-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "One-site M_2(C) Pauli algebra: no nonzero internal operator anticommutes with all three Pauli generators, hence no internal gamma_5 with gamma_5^2 = I and no per-site chirality projectors.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:06434d7c->a6e7047b",
+      "load_bearing_step": "Writing M = a I + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3 gives {M, sigma_j} = 2a sigma_j + 2b_j I, so requiring all three anticommutators to vanish forces M = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check only the wording around 'any Pauli generating triple' versus the +i orientation convention for omega; the no-gamma5 conclusion is sign-independent.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is elementary matrix algebra over the supplied Pauli basis, not a definition, renaming, external comparator, or numerical fit. The runner source genuinely computes the Pauli products, commutators, constraint nullspace, and even/odd span ranks; its source-firewall check is bookkeeping rather than a hidden premise. The no-go is narrow and leaves larger Clifford, temporal, multi-site, and gauge chirality mechanisms explicitly out of scope, satisfying the no-go discipline for this single-site claim."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.493174+00:00",
+      "audit_date": "2026-07-01T19:40:56.536329+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.15,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 1135
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T194056Z-85f43211-no_per_site_chirality_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The minimal-axiom Qubit premise supplies the one-site M_2(C) algebra, and the retained Pauli/Cl(3) authority plus the admitted Pauli basis reduce the claim to exact 2x2 matrix algebra. The anticommutator exhaustion proves the no-go without importing spacetime, gauge, or multi-site chirality structure.",
+      "claim_scope": "Single-site complex one-qubit operator algebra M_2(C): the Pauli volume element is iI and no nonzero internal matrix anticommutes with all three Pauli generators, so no one-site gamma_5 projector exists.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-01T19:40:56.536329+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-01T19:37:56.357337+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T193756Z-c91ef52b-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "One-site M_2(C) Pauli algebra: omega = sigma_1 sigma_2 sigma_3 = iI and no nonzero internal operator anticommutes with all three Pauli generators, so no gamma5-based per-site chirality projectors exist there.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-01T19:40:56.536329+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260701T194056Z-85f43211-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site complex one-qubit operator algebra M_2(C): the Pauli volume element is iI and no nonzero internal matrix anticommutes with all three Pauli generators, so no one-site gamma_5 projector exists.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Writing M = aI + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3 gives {M, sigma_j} = 2a sigma_j + 2b_j I, so anticommuting with all three Pauli generators forces M = 0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the scope fixed to the complex one-site M_2(C) operator algebra and not read the result as a no-go for real Cl(3) grading, larger Clifford algebras, or multi-site/gauge chirality.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is an exact algebraic closure over the Pauli basis of M_2(C), not a definition, renaming, tuned numerical match, or external comparator. Independent recomputation confirms sigma_1 sigma_2 sigma_3 = iI and that {M, sigma_j}=0 for j=1,2,3 has only the zero solution in the complex Pauli basis. The accepted-premise carve-out covers the minimal-axiom citation, while the Cl3 Pauli irrep authority is retained-grade. The no-go discipline is satisfied for the narrowed single-site residual; larger Clifford, temporal, gauge, or multi-site chirality mechanisms are explicitly outside scope rather than claimed impossible."
+    },
+    {
+      "archived_at": "2026-07-02T15:04:45.495692+00:00",
+      "audit_date": "2026-07-02T07:29:37.418641+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 16.15,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 1135
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T072937Z-0244852f-no_per_site_chirality_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Qubit axiom supplies the one-site M_2(C) algebra, and the retained Pauli Cl(3) authority plus admitted Pauli-basis algebra supply the presentation. The anticommutator exhaustion is exact finite-dimensional linear algebra and needs no larger chirality, gauge, temporal, or multi-site bridge.",
+      "claim_scope": "Single-site one-qubit algebra M_2(C) with a Pauli Cl(3,0) presentation: omega=sigma_1 sigma_2 sigma_3=iI and no nonzero internal matrix anticommutes with all three Pauli generators, so no one-site gamma5/projector exists.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T07:29:37.418641+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T07:26:47.086937+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T072647Z-6ad907e5-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit algebra M_2(C): omega = sigma_1 sigma_2 sigma_3 = iI and no internal gamma5/chirality operator anticommutes with all three Pauli generators.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T07:29:37.418641+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T072937Z-0244852f-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit algebra M_2(C) with a Pauli Cl(3,0) presentation: omega=sigma_1 sigma_2 sigma_3=iI and no nonzero internal matrix anticommutes with all three Pauli generators, so no one-site gamma5/projector exists.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bccb59d5->5572efaf",
+      "load_bearing_step": "For M = aI + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3, the equations {M, sigma_j}=2a sigma_j + 2b_j I = 0 for all j force a=b_1=b_2=b_3=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Re-check only if future edits broaden the scope beyond the one-site M_2(C) algebra.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is a genuine algebraic closure over the cited one-site M_2(C) and Pauli-generator inputs, not a definition or numerical match. Independent manual recomputation confirms sigma_1 sigma_2 sigma_3=iI and {aI+sum b_k sigma_k, sigma_j}=2a sigma_j+2b_j I, so the only universal anticommuting matrix is zero. The runner source performs the same finite matrix and linear-rank checks rather than merely printing expected PASS lines. The no-go discipline is satisfied for the narrowed single-site residual because larger Clifford, temporal, multi-site, and gauge chirality routes are explicitly out of scope rather than claimed closed."
+    },
+    {
+      "archived_at": "2026-07-03T08:47:22.943051+00:00",
+      "audit_date": "2026-07-02T21:27:52.288159+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "bec23a13ccffcf107d26ab30b311100e073bcbf38917c2ab6037786ab9b9f6f6"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 19.45,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 1398
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T212752Z-f0736ce1-no_per_site_chirality_th",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The Qubit axiom supplies the one-site algebra M_2(C), and the retained Pauli Cl(3) authority plus direct Pauli-basis algebra closes the anticommutator exhaustion. Larger spacetime, multi-site, and gauge chirality routes are explicitly outside the audited one-site scope.",
+      "claim_scope": "Inside one fixed one-site M_2(C) Pauli/Cl(3,0) presentation, no nonzero matrix anticommutes with all three Pauli generators, hence no gamma5 with gamma5^2=I and no associated internal chirality projector pair exists.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-02T21:27:52.288159+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-02T21:25:13.857942+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T212513Z-09cc6abb-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Inside a single-site one-qubit operator algebra M_2(C) with a Pauli Cl(3,0) generating triple, no nonzero internal element anticommutes with all three generators, hence no gamma_5 projector pair exists there.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-02T21:27:52.288159+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260702T212752Z-f0736ce1-no_per_site_chirality_th",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Inside one fixed one-site M_2(C) Pauli/Cl(3,0) presentation, no nonzero matrix anticommutes with all three Pauli generators, hence no gamma5 with gamma5^2=I and no associated internal chirality projector pair exists.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:bec23a13->70324c45",
+      "load_bearing_step": "Writing M = aI + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3 gives {M, sigma_j} = 2a sigma_j + 2b_j I, so anticommuting with all three sigma_j forces a=b_1=b_2=b_3=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should keep the omega = iI sign convention scoped to the fixed positive Pauli presentation; the no-gamma5 conclusion itself is independent of that sign.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is an elementary algebraic closure in the Pauli basis, not a definition, comparator match, or hidden physical bridge. The runner actually computes the Pauli product, centrality, omega squared, the linear nullspace for simultaneous anticommutation, and the even/odd span statement; it does not merely print constants. The accepted minimal-axiom premise is registered, the other dependency is retained, and the no-go discipline is satisfied because the conclusion is narrowly limited to one internal M_2(C) site."
+    },
+    {
+      "archived_at": "2026-07-04T10:59:07.859812+00:00",
+      "audit_date": "2026-07-03T18:44:28.595173+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "7b581f9f475c7bf16a02e664ef48a271d20d0404d8b2b1f7e58bc41ab3d50a24"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 19.452,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 1400
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-judicial-20260703-no-per-site-chirality",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The load-bearing step is an exact Pauli-basis algebra identity inside the already supplied one-site M_2(C) operator algebra. The runner confirms omega=iI, centrality, omega^2=-I, zero nullspace for the anticommutator constraints, no gamma_5 candidate, and even/odd span collapse by direct finite matrix algebra. This does not produce a new framework number absent from the inputs in the Class C sense; it checks algebraic consequences of the existing Pauli/M_2(C) inputs. Therefore the second audit's audited_clean/no_go/Class A tuple is the applyable one.",
+      "claim_scope": "Single-site one-qubit M_2(C) Pauli algebra: omega=sigma_1 sigma_2 sigma_3=iI and no nonzero internal gamma_5/chirality element anticommutes with all three Pauli generators.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-03T18:44:28.595173+00:00",
+      "claim_type_provenance": "judicial_review",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-03T18:38:19.653897+00:00",
+          "auditor": "codex-audit-loop-20260703-gpt-5.5-xhigh",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit operator algebra M_2(C): omega=sigma_1 sigma_2 sigma_3=iI and no internal gamma_5/chirality projector anticommutes with all three Pauli generators.",
+          "claim_type": "no_go",
+          "independence": "cross_family",
+          "load_bearing_step_class": "C",
+          "verdict": "audited_clean"
+        },
+        "mode": "judicial_third_pass",
+        "second_audit": {
+          "audit_date": "2026-07-03T18:42:21.787101+00:00",
+          "auditor": "codex-audit-loop-fresh-context-20260703-no-per-site-chirality",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit operator algebra M_2(C) with Pauli generators: \u03c9=\u03c3_1\u03c3_2\u03c3_3=iI, no nonzero element anticommutes with all three \u03c3_i, so no internal \u03b3_5/chirality projector exists at one site.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "third_confirmed_second",
+        "third_audit": {
+          "audit_date": "2026-07-03T18:44:28.595173+00:00",
+          "auditor": "codex-audit-loop-judicial-20260703-no-per-site-chirality",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit M_2(C) Pauli algebra: omega=sigma_1 sigma_2 sigma_3=iI and no nonzero internal gamma_5/chirality element anticommutes with all three Pauli generators.",
+          "claim_type": "no_go",
+          "first_auditor_error": "It got the verdict, claim type, and scope right, but misclassified the finite Pauli-basis identity check as Class C instead of Class A.",
+          "independence": "judicial_review",
+          "judgment_rationale": "The load-bearing step is an exact Pauli-basis algebra identity inside the already supplied one-site M_2(C) operator algebra. The runner confirms omega=iI, centrality, omega^2=-I, zero nullspace for the anticommutator constraints, no gamma_5 candidate, and even/odd span collapse by direct finite matrix algebra. This does not produce a new framework number absent from the inputs in the Class C sense; it checks algebraic consequences of the existing Pauli/M_2(C) inputs. Therefore the second audit's audited_clean/no_go/Class A tuple is the applyable one.",
+          "load_bearing_step_class": "A",
+          "runner_check_breakdown": {
+            "A": 6,
+            "B": 1,
+            "C": 0,
+            "D": 0,
+            "total_pass": 7
+          },
+          "second_auditor_error": "None material.",
+          "sided_with": "second",
+          "verdict": "audited_clean"
+        }
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "judicial_review",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:7b581f9f->0f59e220",
+      "load_bearing_step": "Writing M=aI+sum b_i sigma_i gives {M,sigma_j}=2a sigma_j+2b_j I, so requiring all three anticommutators to vanish forces a=b_1=b_2=b_3=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 1,
+        "C": 0,
+        "D": 0,
+        "total_pass": 7
+      },
+      "verdict_rationale": "The load-bearing step is an exact Pauli-basis algebra identity inside the already supplied one-site M_2(C) operator algebra. The runner confirms omega=iI, centrality, omega^2=-I, zero nullspace for the anticommutator constraints, no gamma_5 candidate, and even/odd span collapse by direct finite matrix algebra. This does not produce a new framework number absent from the inputs in the Class C sense; it checks algebraic consequences of the existing Pauli/M_2(C) inputs. Therefore the second audit's audited_clean/no_go/Class A tuple is the applyable one."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:31.408200+00:00",
+      "audit_date": "2026-07-07T21:02:33.410074+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "Standalone finite-dimensional representation-theoretic theorem for real Cl(3,0): Pauli irreps exist, omega is central with omega^2 = -I, and the only faithful irreducible complex irreps are the two 2-dimensional chiralities.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "positive_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": "retained",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 19.356,
+        "runner_hash": "ea186e8bb718b4cd014a02109b9b88d6e4333703fa1a399b649e7bb1fb3d209d",
+        "transitive_descendants": 1310
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260707T171600Z-no_per_site_chirality-second",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The current minimal-axioms note supplies the one-site M_2(C) algebra as an accepted axiom premise, and the retained Cl(3) Pauli-irrep note supplies the Pauli presentation/pseudoscalar context. The no-go itself is elementary Pauli-basis exhaustion; zero cannot satisfy gamma5^2=I, and larger temporal, gauge, or multisite chirality mechanisms are explicitly out of scope.",
+      "claim_scope": "Inside a single one-qubit site algebra A_x ~= M_2(C) with a Pauli Cl(3) presentation, no nonzero element anticommutes with all three Pauli generators, so no internal gamma5/chirality projector exists there.",
+      "claim_type": "no_go",
+      "claim_type_last_reviewed": "2026-07-07T21:02:33.410074+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": {
+        "first_audit": {
+          "audit_date": "2026-07-07T20:57:01.905246+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260707T163900Z-no_per_site_chirality",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Single-site one-qubit operator algebra M_2(C) with a Pauli Cl(3,0) presentation: no nonzero internal matrix anticommutes with all three generators, hence no gamma_5 with gamma_5^2 = I and no associated internal chirality projectors.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "second_audit": {
+          "audit_date": "2026-07-07T21:02:33.409913+00:00",
+          "auditor": "codex-audit-loop-gpt-5.5-20260707T171600Z-no_per_site_chirality-second",
+          "auditor_family": "codex-gpt-5.5",
+          "auditor_model": "gpt-5.5",
+          "auditor_reasoning_effort": "xhigh",
+          "claim_scope": "Inside a single one-qubit site algebra A_x ~= M_2(C) with a Pauli Cl(3) presentation, no nonzero element anticommutes with all three Pauli generators, so no internal gamma5/chirality projector exists there.",
+          "claim_type": "no_go",
+          "independence": "fresh_context",
+          "load_bearing_step_class": "A",
+          "verdict": "audited_clean"
+        },
+        "status": "confirmed"
+      },
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "For M = a I + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3, {M, sigma_j} = 2a sigma_j + 2 b_j I, so requiring {M, sigma_j}=0 for all j forces a=b_1=b_2=b_3=0 and hence M=0.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The load-bearing step is a direct finite-dimensional matrix-algebra identity over the supplied M_2(C) site algebra and Pauli generators, not a definition, renaming, tuned numerical match, or external comparator. The runner independently checks the same Pauli products, commutators, nullspace exhaustion, and gamma5 exclusion, with only source-firewall checks classified as B. Residual risk: the note/runner still mention an older minimal-axioms filename, but the supplied 2026-06-29 axiom authority contains the needed Qubit premise and accepted-premise treatment, so this does not block closure."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/no_per_site_chirality_check.py",
+  "title": "No \u03b3_5 Chirality Operator in the One-Qubit Operator Algebra",
+  "transitive_descendants": 1371,
+  "verdict_rationale": null
+}

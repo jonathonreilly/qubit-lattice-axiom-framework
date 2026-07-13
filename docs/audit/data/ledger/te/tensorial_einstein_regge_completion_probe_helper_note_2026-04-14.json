@@ -1,0 +1,452 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "medium",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "coarse_grained_exterior_law_helper_note_2026-04-14",
+    "oh_schur_boundary_action_note"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+    "scripts/frontier_discrete_dtn_shell_kernel.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_flux_fixed_matching_theorem.py",
+    "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+    "scripts/frontier_oh_schur_boundary_action.py",
+    "scripts/frontier_radial_shell_matching_law.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_sewing_shell_source.py",
+    "scripts/frontier_star_shell_projector.py",
+    "scripts/frontier_universal_shell_profile.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 6.281,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "84110f62c87a287caa7f866b85d7f2f48566a12f850ed635cb050997b7d7686d",
+  "note_path": "docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-23T01:44:14.928298+00:00",
+      "archived_for_note_hash": "47be0caace0f11f69bdd7456c727548d9af26ad778b6c89a309b68c0f53d927f",
+      "audit_date": "2026-05-22T23:46:02.894190+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "load_bearing_score": 6.2,
+        "runner_hash": "d911f3655b3665a00c16047ab6107a3f7eaf7979c84f850253a2de6808ef100f",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260522T234313Z-fdb92532-tensorial_einstein_regge-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner performs a real finite-difference Einstein-tensor computation, but the packet does not include the load_frontier helper sources that supply the scalar bridge grids and Schur boundary action. It also does not derive the probe ansatz or Einstein tensor formula from the stated Cl(3) on Z^3 axiom.",
+      "claim_scope": "Bounded helper computation for explicit ADM vector-shift, traceless-shear, and mixed probes, with numerical Einstein residual activation on imported scalar bridge grids.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-22T23:46:02.894190+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The helper constructs vector-shift, traceless-shear, and mixed probes with fixed scalar trace and computes the full 3+1 Einstein tensor residual channels, especially G_{0i} and traceless G_{ij}.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include the transitive load_frontier helper sources, especially the scalar bridge grid and Schur boundary action providers, then re-audit the bounded helper scope.",
+      "open_dependency_paths": [
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_coarse_grained_exterior_law.py",
+        "scripts/frontier_oh_schur_boundary_action.py",
+        "scripts/frontier_microscopic_dirichlet_bridge_principle.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The primary runner defines ADM probe metrics, computes Christoffel/Ricci/Einstein tensors, and the four decisive checks pass without hard-coded expected residuals. However, scalar bridge and Schur-action inputs are imported through opaque load_frontier calls whose sources are absent from the restricted packet. The bounded negative boundary is not cleanly certified here: No-Go gate N1 lacks five independent closure-route checks, and N3 flags the fixed scalar trace/by-construction scalar blindness as an explicit admission rather than a closed derivation."
+    },
+    {
+      "archived_at": "2026-05-29T01:38:38.292281+00:00",
+      "audit_date": "2026-05-25T11:27:01.656923+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes represented in the runner, the Schur-complement DtN boundary energy generates the checked shell trace stationarity equations."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "d911f3655b3665a00c16047ab6107a3f7eaf7979c84f850253a2de6808ef100f",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-per-site-k1-20260525T112435Z-5f8edb4e-tensorial_einstein_regge-01",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within this bounded helper scope, the runner source constructs the ADM perturbations, computes Christoffel/Ricci/Einstein tensors by centered finite differences, and the completed cached run passes the four decisive checks. This does not audit or ratify a downstream full tensorial Einstein/Regge no-go beyond the tested helper probes.",
+      "claim_scope": "Bounded helper-module audit of the specific vector-shift, traceless-shear, and mixed probe computations on the retained scalar bridge grids, including scalar-action invariance and Einstein-residual channel activation at the runner's sampled shell-adjacent points.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-25T11:27:01.656923+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:oh_schur_boundary_action_note",
+      "load_bearing_step": "For each vector-shift, traceless-shear, and mixed probe, the helper computes the full 3+1 Einstein tensor and reports the active G_{0i}, traceless G_{ij}, and combined residual channels while the scalar shell trace/action is held fixed.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check that dynamic helper imports remain covered by retained cited authorities and do not read this clean helper verdict as auditing the downstream scalar-trace-tensor no-go.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The cited authorities are retained_bounded, and the primary runner does actual tensorial computation rather than printing constants or importing the contested residuals. The scalar action is unchanged because the scalar trace input is fixed, while the vector, shear, and mixed probes produce nonzero Einstein residual channels in the completed run. The No-Go Discipline gate is satisfied only after narrowing: this verdict covers the bounded helper/probe computation, not a full closure or full no-go theorem for all tensorial completions."
+    },
+    {
+      "archived_at": "2026-05-30T22:12:36.026548+00:00",
+      "archived_for_note_hash": "9aa2997b77beb1ce26e0bc29c4a31b6c91753c4164c27d702e4559fe1815b05b",
+      "audit_date": "2026-05-29T04:57:35.737731+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes, the Schur-complement DtN boundary energy generates the checked shell-trace stationarity equations: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R=Lambda_R f, and Lambda_R f - j = 0 when j is the microscopic trace flux of the same harmonic exterior field. No general Einstein/Regge, nonlinear GR, all-R, arbitrary-source, or broader non-O_h strong-field theorem is ratified."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "d911f3655b3665a00c16047ab6107a3f7eaf7979c84f850253a2de6808ef100f",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The registered runner cache reports the intended four decisive tensorial-probe checks as passing, but the runner dynamically loads load-bearing sibling scripts through _frontier_loader that are not listed in helper_runner_paths, and two of those dynamic helpers have no one-hop wrapper authority in the ledger. Without those sources or retained dependency handles in the restricted packet, stdout cannot fully certify what objects are being compared.",
+      "claim_scope": "Bounded tensorial-probe helper surface for the current runner: scalar boundary action blindness versus active vector/shear Einstein residual channels on the implemented local O_h and finite-rank scalar exterior fields; no full Einstein/Regge completion, nonlinear GR, all-source, or framework-level tensor matching theorem is audited.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-29T04:57:35.737731+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The registered runner reports that the scalar Schur boundary action is unchanged under vector-shift, traceless-shear, and mixed tensor perturbations, while the corresponding Einstein tensor channels are active.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "runner_artifact_issue: include all dynamic _frontier_loader imports in helper_runner_paths or provide retained wrapper/dependency notes for the same-source metric and microscopic Dirichlet bridge helpers, then re-audit the current runner/cache.",
+      "open_dependency_paths": [
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_microscopic_dirichlet_bridge_principle.py"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the load-bearing runner delegates scalar-field construction and microscopic bridge pieces through dynamic _frontier_loader imports that are not fully represented in helper_runner_paths or one-hop retained wrapper notes. Why this blocks: the top-level stdout confirms the four probe outcomes, but a clean audit must verify the imported same-source metric and microscopic Dirichlet bridge machinery rather than treating them as opaque runtime premises. Repair target: register the dynamic helper scripts as helper_runner_paths, or add retained one-hop wrapper notes/dependency edges for scripts/frontier_same_source_metric_ansatz_scan.py and scripts/frontier_microscopic_dirichlet_bridge_principle.py, then rerun the tensorial probe certificate. Claim boundary until fixed: the current packet is a reported finite tensorial-probe diagnostic, not a closed retained helper theorem for downstream no-go use."
+    },
+    {
+      "archived_at": "2026-06-17T10:33:32.486306+00:00",
+      "audit_date": "2026-05-31T00:12:44.033894+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded helper-module claim that the provided runner constructs the finite-rank and local O_h scalar exterior fields, shell-averages them, projects them to a/r, and reports small coarse-grained residuals within the stated finite lattice scan.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes, the Schur-complement DtN boundary energy generates the checked shell-trace stationarity equations: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R=Lambda_R f, and Lambda_R f - j = 0 when j is the microscopic trace flux of the same harmonic exterior field. No general Einstein/Regge, nonlinear GR, all-R, arbitrary-source, or broader non-O_h strong-field theorem is ratified."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 6.2,
+        "runner_hash": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+        "transitive_descendants": 51
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260531-000811-5c83d7b7-tensorial_einstein_regge",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The runner builds the scalar bridge grids from retained helper inputs, applies explicit vector/tensor perturbations to the ADM metric, and finite-differences the full 4D Einstein tensor at shell-adjacent points. The scalar action equality follows because the Schur action depends only on the unchanged phi_grid; the tensor residual values are computed rather than hard-coded.",
+      "claim_scope": "Bounded verification that the explicit vector-shift, traceless-shear, and mixed perturbation families implemented in the runner leave the scalar Schur action unchanged and produce nonzero sampled G_{0i}/traceless-G_{ij} Einstein residuals on the retained O_h and finite-rank scalar bridge inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-05-31T00:12:44.033894+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:coarse_grained_exterior_law_helper_note_2026-04-14:retained_bounded->unaudited",
+      "load_bearing_step": "The helper constructs vector-shift, traceless-shear, and mixed probes at fixed scalar trace and computes the G_{0i}, traceless G_{ij}, and mixed Einstein residual channels while the scalar Schur action is unchanged.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the source wording around independent probe components remains bounded to the explicit implemented probe families, not an exhaustive tensor-mode basis.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Both one-hop cited authorities are retained_bounded, and the load-bearing probe and Einstein-tensor computation is visible in the restricted runner source. The residuals are generated by metric, Christoffel, Ricci, and Einstein finite differences from the constructed perturbations, while scalar-action blindness follows algebraically from the unchanged scalar trace input. This is clean only at bounded helper scope: it does not prove an exhaustive tensor-sector completion theorem or derive the scalar bridge itself."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:05.089787+00:00",
+      "audit_date": "2026-06-18T05:47:07.661948+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited the bounded finite-grid helper claim that the specified local O_h and finite-rank lattice fields, after shell averaging and least-squares radial-harmonic projection, produce the reported vacuum-close coarse-grained exterior residual improvement on the scanned 15^3 Dirichlet grid.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes, the Schur-complement DtN boundary energy generates the checked shell-trace stationarity equations: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R=Lambda_R f, and Lambda_R f - j = 0 when j is the microscopic trace flux of the same harmonic exterior field. No general Einstein/Regge, nonlinear GR, all-R, arbitrary-source, or broader non-O_h strong-field theorem is ratified."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 6.858,
+        "runner_hash": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260618-023644-3b04cce6-tensorial_einstein_regge_completion_probe_helper_note_2026-04-14-first",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The supplied runner source constructs the three probe families, evaluates the metric-dependent Einstein tensor by finite differences, and derives the reported residual activations rather than printing fixed PASS constants. The closure is only for these explicit probes and sampled finite-difference residuals, not for a downstream universal tensorial Einstein/Regge theorem.",
+      "claim_scope": "Bounded helper-module audit of the explicit vector-shift, traceless-shear, and mixed metric probe construction and finite-difference Einstein-residual reporting on the supplied scalar bridge inputs.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-18T05:47:07.661948+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:coarse_grained_exterior_law_helper_note_2026-04-14:retained_bounded->unaudited",
+      "load_bearing_step": "For each vector-shift, traceless-shear, and mixed probe, the helper computes the 3+1 Einstein tensor on the perturbed metric and reports the active G_{0i}, traceless G_{ij}, and combined residual channels while the scalar Schur action is unchanged.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "Re-check only that downstream users do not cite this as more than an explicit finite-probe helper surface.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The claim is a bounded helper claim, and within that scope the code path is inspectable: scalar-action invariance follows because the Schur boundary action is evaluated only on the unchanged scalar phi grid, while the vector, tensor, and mixed channels are computed from perturbed ADM metrics. The one-hop cited authorities are retained_bounded, and the primary runner cache matches the runner source's computed PASS conditions. This does not ratify any broader no-go or full GR closure beyond the explicit probe surface."
+    },
+    {
+      "archived_at": "2026-07-01T19:21:10.482618+00:00",
+      "audit_date": "2026-07-01T13:22:33.859974+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Audited only the bounded helper computation: on the explicit 15^3 local O_h and finite-rank lattice source families, shell averaging plus least-squares a/r projection gives the reported small finite-difference vacuum residuals, without auditing physical forcing of the projection or a full tensor/GR completion.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes, the Schur-complement DtN boundary energy generates the checked shell-trace stationarity equations: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R=Lambda_R f, and Lambda_R f - j = 0 when j is the microscopic trace flux of the same harmonic exterior field. No general Einstein/Regge, nonlinear GR, all-R, arbitrary-source, or broader non-O_h strong-field theorem is ratified."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 6.858,
+        "runner_hash": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260701T132233Z-567059fd-tensorial_einstein_regge",
+      "auditor_confidence": "medium",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner computes genuine Einstein-tensor residuals for explicit sampled modes, but it does not construct or check independent shift-vector components or an independent traceless-shear basis as stated in the note. The missing step is a basis-level probe enumeration or a narrower source claim limited to the representative modes actually implemented.",
+      "claim_scope": "Representative finite-difference tensorial-probe computation for one rotational shift mode, one radial traceless quadrupole shear mode, and their mixture on the O_h scalar bridge, with finite-rank vector/shear summaries and unchanged scalar Schur action evaluated from the same scalar phi grid.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-01T13:22:33.859974+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:coarse_grained_exterior_law_helper_note_2026-04-14:retained_bounded->unaudited",
+      "load_bearing_step": "For each tensorial probe, the helper computes the 3+1 Einstein tensor on the perturbed metric and reports the G_{0i}, traceless G_{ij}, and mixed residual channels while the scalar Schur action is unchanged.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to representative vector/shear/mixed probe modes or add a basis-level runner that checks all independent shift and traceless-shear channels.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "Issue: the primary runner uses one fixed rotational vector mode and one fixed quadrupolar traceless tensor mode at three probe points, not independent vector and traceless-shear component families. Why this blocks: the source note's broader helper-family wording is not closed by the supplied computation, even though the representative-mode computation itself is substantive. Repair target: either narrow the wrapper to the representative sampled probes, or add assertions that enumerate the three shift and five traceless-shear channels with baseline-subtracted residual activation."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:11.276563+00:00",
+      "audit_date": "2026-07-02T02:23:48.596930+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "Bounded finite-grid check that the provided 15^3 O_h and finite-rank lattice fields, after shell averaging and least-squares a/r projection, give the reported isotropic-metric residual reductions.",
+          "oh_schur_boundary_action_note": "For the finite R=4 exterior lattice shell and the current exact local O_h and finite-rank source classes, the Schur-complement DtN boundary energy generates the checked shell-trace stationarity equations: Lambda_R = H_tt - H_tb H_bb^{-1} H_bt, E_R(f)=1/2 f^T Lambda_R f, grad E_R=Lambda_R f, and Lambda_R f - j = 0 when j is the microscopic trace flux of the same harmonic exterior field. No general Einstein/Regge, nonlinear GR, all-R, arbitrary-source, or broader non-O_h strong-field theorem is ratified."
+        },
+        "dep_claim_type": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "bounded_theorem",
+          "oh_schur_boundary_action_note": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "coarse_grained_exterior_law_helper_note_2026-04-14": "retained_bounded",
+          "oh_schur_boundary_action_note": "retained_bounded"
+        },
+        "deps": [
+          "coarse_grained_exterior_law_helper_note_2026-04-14",
+          "oh_schur_boundary_action_note"
+        ],
+        "load_bearing_score": 6.858,
+        "runner_hash": "14301f71a9b21f6e44a434384c3089bf26b4db6f09512fe8479143c243f52536",
+        "transitive_descendants": 57
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T022348Z-233eafe5-tensorial_einstein_regge",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The runner verifies the residual contrast for one hard-coded vector ansatz and one hard-coded shear ansatz at three shell-adjacent probe points. It does not show a basis-spanning construction for independent shift-vector components or independent traceless-shear modes as stated in the note.",
+      "claim_scope": "Sampled fixed-trace tensorial probe computation for one rotational shift mode, one traceless quadrupole shear mode, and their mixture on the current scalar bridge surfaces.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T02:23:48.596930+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_weakened:coarse_grained_exterior_law_helper_note_2026-04-14:retained_bounded->unaudited",
+      "load_bearing_step": "The helper constructs vector-shift, traceless-shear, and mixed probe families with fixed scalar shell trace and computes the `G_{0i}` and traceless `G_{ij}` Einstein residuals for them.",
+      "load_bearing_step_class": "C",
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to the specific sampled rotational-shift and quadrupole-shear probes, or add a basis-spanning probe runner with explicit assertions for all independent vector and traceless-shear components.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 1,
+        "B": 0,
+        "C": 3,
+        "D": 0,
+        "total_pass": 4
+      },
+      "verdict_rationale": "The runner is substantive: it builds perturbed ADM metrics and computes Christoffel, Ricci, and Einstein components by centered finite differences rather than printing constants. The scalar-action blindness check is an algebraic fixed-trace check, and the vector, tensor, and mixed activation checks are genuine numerical tensor computations. However, the source note's claimed independent vector and traceless-shear probe families are broader than the single rotational vector mode and single quadrupole shear mode actually exercised."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_tensorial_einstein_regge_completion.py",
+  "title": "Tensorial Einstein-Regge Completion Probe Helper Module",
+  "transitive_descendants": 54,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

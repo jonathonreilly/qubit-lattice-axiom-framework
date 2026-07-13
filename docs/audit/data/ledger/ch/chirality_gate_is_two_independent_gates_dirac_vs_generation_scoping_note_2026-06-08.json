@@ -1,0 +1,239 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem / conditional finite algebra",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+    "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+    "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27"
+  ],
+  "direct_in_degree": 0,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 0.0,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "fb0fb2ebabb46b8fa7b062b0e5f4480644830d38c14b071dd1d90321b85bfb91",
+  "note_path": "docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-09T19:27:01.149617+00:00",
+      "archived_for_note_hash": "d61ff7f61e28958b885395724bc8d41430b32073c27ab6e88d78dc41ac30a854",
+      "audit_date": "2026-06-09T12:36:52.340381+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "219d36226a205ec462fd5979f818a191dffe852dbb937e3336cf71ae9b3c5602",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260609-123412-4325005196-chirality_gate_is_two_indepe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic separation closes for a stipulated separate-factor gamma_5 = I_3 tensor sigma_3. The restricted packet does not close the stronger assertion that the retained Cl(3,1) theorem itself supplies that chirality and the spin-statistics use, since the cited Cl(3,1) authority explicitly scopes itself as a Clifford classification rather than a chirality-existence theorem.",
+      "claim_scope": "Conditional tensor-product separation between separate-factor Dirac chirality gamma_5 and Koide/generation chirality Gamma_chi on R^3, including the C3-equivariant anticommuting disjointness.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-06-09T12:36:52.340381+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Because gamma_5 = I_3 tensor sigma_3 is identity on the generation factor, it commutes with every generation-sector operator G tensor I_2 and cannot supply the generation-sector anticommuting condition {M_gen, Gamma_chi}=0.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: add a retained bridge deriving the separate L/R gamma_5 and spin-statistics use from the Cl(3,1) extension, or narrow the note to the conditional tensor-product separation only.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 12
+      },
+      "verdict_rationale": "The runner performs genuine finite matrix checks, and an independent exact check confirms Gamma_chi^2 = I, [Gamma_chi,R] = 0, gamma_5 beta + beta gamma_5 = 0, [gamma_5,G tensor I_2] = 0, and comm(R) intersect anticomm(Gamma_chi) = {0} inside symmetric generation operators. These class-A identities support the two-gate separation once the separate L/R gamma_5 factor is granted. However, the packet does not provide a retained bridge from the Cl(3,1) extension theorem to the asserted gamma_5/spin-statistics supply, so the full source-note scope is conditional rather than clean."
+    },
+    {
+      "archived_at": "2026-06-11T10:02:08.279743+00:00",
+      "archived_for_note_hash": "530bc11b43bf32928f227dc5df9094dc2d453ca5a8c8e16e3989e19e28715280",
+      "audit_date": "2026-06-10T05:01:50.840404+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "c8bf5ed98b3147974eb2836a2cf6814cdbf9e124ac5543c69eeed6de04c6f5e7",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260610-045831-aee81490ce-chirality_gate_is_two_indepe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The tensor-product separation and C3-equivariant intersection calculation close exactly. The source as written also states `Q=2/3 \u21d4 {M_gen, \u0393_\u03c7}=0`, but the provided Koide authority proves the anti-commuting-operator mechanism in the sufficient direction for nonzero eigenvectors and explicitly does not claim completeness/converse.",
+      "claim_scope": "Conditional finite-algebra separation on the supplied carrier `R^3 \u2297 (L\u2295R)`: the separate-factor Dirac grading is generation-blind, while the Koide anti-commuting-operator route requires a generation-sector operator.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T05:01:50.840404+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "`\u03b3_5 = I_3 \u2297 \u03c3_3` acts as the identity on the generation factor and therefore commutes with every generation-sector operator `G \u2297 I_2`, so it cannot supply a generation operator satisfying `{M_gen, \u0393_\u03c7}=0`.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: either narrow the wording to the one-way retained anti-commuting-operator mechanism or supply a retained converse/completeness theorem for the stated `Q=2/3 \u21d4 {M_gen, \u0393_\u03c7}=0` bridge.",
+      "open_dependency_paths": [
+        "docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The runner genuinely constructs the finite matrices and checks class-A algebraic identities; an independent exact check confirms the involutions, tensor-factor commutations, zero C3-equivariant intersection, and existence of C3-breaking anti-commuting examples. No PDG value, tuned numerical comparator, or external empirical input is used. The non-clean point is the written biconditional tying scalar Koide `Q=2/3` to `{M_gen, \u0393_\u03c7}=0`, which is stronger than the retained authority supplied in this packet."
+    },
+    {
+      "archived_at": "2026-07-10T16:59:10.079455+00:00",
+      "audit_date": "2026-06-11T15:15:30.419424+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "Standalone finite-dimensional real Clifford-algebra identity: adjoining one anticommuting generator to Cl(3,0) gives only epsilon=+1 Cl(4,0) ~= M_2(H) or epsilon=-1 Cl(3,1) ~= M_4(R); among one-generator extensions preserving Cl(3,0), (3,1) is the unique reachable single M_k(R) real-matrix cell. This does not close Wick rotation, P2, spacetime, gauge, or dynamics.",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "Audited the narrow algebraic implication that a real Hermitian 3x3 H anti-commuting with \u0393\u03c7 forces every nonzero-eigenvalue eigenvector v to satisfy \u27e8v|\u0393\u03c7|v\u27e9=0 and hence Q(v)=2/3.",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "The audited result is the narrow algebraic identity comm(R) \u2229 anticomm(\u0393_\u03c7) = {0} inside real symmetric 3\u00d73 operators, plus only the same-factor \u03b3=\u0393_\u03c7 observation under imposed Z_3-equivariance."
+        },
+        "dep_claim_type": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "positive_theorem",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "positive_theorem",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": "retained",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10": "retained",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16": "retained_bounded"
+        },
+        "deps": [
+          "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+          "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+          "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+        ],
+        "load_bearing_score": 4.587,
+        "runner_hash": "c8e69a6b9832d6eabdb3fff817d3f21f9152bf09c7aca6cdebc477f4f17b5cc6",
+        "transitive_descendants": 16
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260611-151323-ddb41a3e8c-chirality_gate_is_two_indepe",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The tensor-product identities close exactly: gamma_5 anticommutes with beta but commutes with all generation-sector operators. The retained Koide authority supplies only the one-way need for a nonzero generation M_gen anticommuting with Gamma_chi, and the retained_bounded Z3 authority shows any such nonzero symmetric operator must break C3.",
+      "claim_scope": "Conditional finite algebra on R^3_gen tensor (L plus R) with supplied gamma_5, beta, and Gamma_chi, showing the Dirac/spinor chirality gate is independent from the Koide/generation anticommuting gate.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-11T15:15:30.419424+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+      "load_bearing_step": "Because gamma_5 = I_3 tensor sigma_3 is identity on the generation factor, it commutes with every generation operator G tensor I_2 and therefore cannot supply the nonzero generation-sector M_gen required by the retained one-way Koide anticommuting route.",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Re-check only the scope boundary: this audit covers the supplied tensor-product carrier, not any derivation of gamma_5 from Cl(3,1) or spin-statistics use.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 16,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 16
+      },
+      "verdict_rationale": "The audited claim is a bounded algebraic separation, not a derivation of gamma_5 from Cl(3,1) or a spin-statistics theorem. Independent exact rational-matrix checks reproduce the grading, commutator, anticommutator, and zero-intersection claims without relying on the NumPy runner path. The cited authorities are retained-grade for the one-way Koide anticommuting route and the C3-equivariant obstruction, and no open cited dependency is load-bearing on the scoped conclusion."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/chirality_gate_two_gates_dirac_vs_generation_2026_06_08.py",
+  "title": "Dirac/Spinor Chirality Does Not Discharge Koide/Generation Chirality",
+  "transitive_descendants": 0,
+  "verdict_rationale": null
+}

@@ -1,0 +1,110 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "universal_qg_smooth_gravitational_global_solution_class_note",
+  "claim_scope": null,
+  "claim_type": "positive_theorem",
+  "claim_type_author_hint": "positive_theorem",
+  "claim_type_author_hint_raw": "positive_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
+  "criticality": "critical",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "universal_qg_smooth_gravitational_local_identification_note",
+    "universal_qg_smooth_gravitational_global_atlas_note",
+    "universal_gr_discrete_global_closure_note",
+    "universal_qg_pl_sobolev_interface_note",
+    "universal_qg_pl_weak_form_note",
+    "universal_qg_canonical_refinement_net_note",
+    "universal_qg_projective_schur_closure_note",
+    "universal_qg_inverse_limit_closure_note"
+  ],
+  "direct_in_degree": 16,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 15.044,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "c5970f413127ef02ce7c43058515e342d3835fe953c4a761f8576e0acbb69bbe",
+  "note_path": "docs/UNIVERSAL_QG_SMOOTH_GRAVITATIONAL_GLOBAL_SOLUTION_CLASS_NOTE.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-05-06T11:08:35.450954+00:00",
+      "archived_for_note_hash": "376c4c1de29234d74f1e4d783db6d2037a3aebc5e70913b73f4a53dc705bb093",
+      "audit_date": "2026-05-05T23:30:31.106322+00:00",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_effective_status": {
+          "universal_qg_optional_textbook_comparison_note": "audited_renaming"
+        },
+        "deps": [
+          "universal_qg_optional_textbook_comparison_note"
+        ],
+        "load_bearing_score": 13.849,
+        "runner_hash": null,
+        "transitive_descendants": 325
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_smooth_grav-064",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The note relies on multiple upstream closure claims about local smooth gravitational identification, finite-atlas patching, discrete-global stationary families, canonical weak Sobolev/Gaussian objects, refinement nets, and Schur/projective closure that are not provided as retained-grade authorities in the restricted packet. The only cited authority supplied is packaging-only and not a theorem authority for these premises.",
+      "claim_scope": "Audited whether the stated smooth global weak gravitational stationary/Gaussian solution class follows from the provided one-hop restricted packet.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-05-05T23:30:31.106322+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The exhaustion levels form one exact projective weak/Gaussian family whose limit is a smooth global weak gravitational stationary/Gaussian solution class.",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "missing_dependency_edge: provide retained-grade authority notes for the local smooth gravitational identification, finite-atlas patching, discrete-global stationary family, canonical weak/Gaussian object, refinement net, and Schur/projective closure used by the exhaustion argument.",
+      "open_dependency_paths": [
+        "docs/UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md"
+      ],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 0
+      },
+      "verdict_rationale": "The load-bearing step is an algebraic/projective-limit style closure, but it is not closed over the restricted inputs because the premises it needs are asserted rather than supplied. The sole cited authority is an optional textbook comparison note with effective status audited_renaming and explicitly packaging-only scope. No runner or source is available to independently certify the missing closure steps."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "not_evaluated_pre_vocab_lint",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/frontier_universal_qg_smooth_gravitational_global_solution_class.py",
+  "title": "Universal QG Smooth Gravitational Global Solution Class",
+  "transitive_descendants": 131,
+  "verdict_rationale": null
+}

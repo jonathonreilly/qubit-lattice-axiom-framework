@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2961 |
+| unaudited | 2960 |
 | audit_in_progress | 1 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 381 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3312 |
+| `unaudited` | 3311 |
 
 | claim_type | count |
 |---|---:|
@@ -503,6 +503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
@@ -2932,6 +2933,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
 - **auditor confidence:** high
+
+### `graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11`
+
+- **Note:** [`GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The conditional menu-refinement contradiction, full-symmetry zero-information point, and unequal-rank obstruction on the proposed C3 generation context.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Uniformity on both {P_s,P_d} and {P_s,P_1,P_2} assigns incompatible values to the shared projector, while full qutrit Weyl symmetry forces rho=I/3 and hence r=1 rather than r=1/2.  _(class `A`)_
+- **chain closes:** False — The matrix and menu algebra closes conditionally, but the graded core and canonical context are proposed/unapproved, while the Born-form and occupancy parents are unaudited.
+- **rationale:** Issue: the refinement contradiction, Weyl-commutant calculation, Born-weight traces, DFT tie, and rank obstruction are correct, but the graded core and context naming are proposed rather than approved and two scientific direct parents are unaudited. Why this blocks: the computed r=1 and r=1/2 points remain consequences of supplied menu, Born-form, symmetry, and dictionary hypotheses rather than retained framework results. Repair target: retain the Born and occupancy parents and provide approved or retained law-domain certificates for menu eligibility, lattice-motion covariance, and record-decidable weighting. Claim boundary until fixed: A-C are exact conditional boundary facts on the explicitly supplied qutrit projection menus only.
+- **open / conditional deps cited:**
+  - `BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`
+  - `KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `graph_first_selector_derivation_note`
 

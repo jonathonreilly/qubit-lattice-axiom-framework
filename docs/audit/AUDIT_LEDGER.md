@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2964 |
+| unaudited | 2963 |
 | audit_in_progress | 1 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 19 |
+| ~~audited_conditional~~ | 20 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 381 |
-| `audited_conditional` | 19 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3315 |
+| `unaudited` | 3314 |
 
 | claim_type | count |
 |---|---:|
@@ -504,6 +504,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3385,6 +3386,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The polynomial pullback and the equivalence to the standard sqrt(m) Koide form follow by direct algebra from the displayed map. The physical derivation of the Gamma orbit slots, the value law for (u,v,w), and the dynamical reason for the selector are explicitly outside this audited scope.
 - **rationale:** The load-bearing result is an exact algebraic identity, and the runner verifies the same symbolic expansion plus the algebraic equivalence to Q = 2/3. The two numeric checks only witness the usual charged-lepton Koide proximity and are not needed for theorem closure. This clean verdict covers the selector pullback under the stated map only; it does not audit or close the Gamma orbit value law or dynamical selector derivation.
 - **auditor confidence:** high
+
+### `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03`
+
+- **Note:** [`KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`](../../docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The four-channel K-real determinant localization and the conditional one-locked-possibility statistical-slot comparison on the explicitly enumerated local surface.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The four determinant localizations are exact, while one locked record content can determine two component readouts and only the supplied one-possibility/one-slot rule creates the one-versus-two slot mismatch.  _(class `A`)_
+- **chain closes:** False — The local formulas close, but the statistical-slot rule and K/CPT outcome context are supplied conditions and all three scientific direct dependencies remain unaudited.
+- **rationale:** Issue: the local determinant, Gaussian, Record-countermodel, and endpoint algebra is correct, but the statistical-slot equality lacks a retained certificate and the three direct scientific parents are unaudited. Why this blocks: neither physical slotting nor the current-source nonselection boundary can propagate at retained grade. Repair target: retain the three named parents and supply a record-decidable, lattice-motion-covariant law-domain theorem for the one-possibility/one-slot rule. Claim boundary until fixed: the four displayed matrices and the explicitly supplied one-slot and aggregate-energy laws have only the stated conditional local consequences.
+- **open / conditional deps cited:**
+  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
+  - `KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`
+  - `KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
 

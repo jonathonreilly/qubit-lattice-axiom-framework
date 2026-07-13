@@ -1158,3 +1158,39 @@ No globally normalized combined response, actual red-factor instantiation,
 generic source embedding, Haar provenance theorem for `g`, future-center
 migration, strong return, Hessian, invariant ball, probability/time law, or
 continuum result is claimed. No axiom-update stop is triggered.
+
+## Joint product-reference determinant-counterterm review
+
+PASS WITH BOUNDED CLAIMS. The decisive repair replaces both the naive Haar
+average of fixed-background ratios and a bare global inverse by one exact
+local ledger. The negative determinant-loop potentials factorize
+`Z_A^(-1)` inside the reference; the positive copies restore the physical
+determinant exactly once. Wilson plaquettes and actual preintegration
+boundary sources are the remaining red species. At color one the inverse and
+restore cancel, while Gaussian integration generates rather than duplicates
+the Schur complement.
+
+Code/math review proved that the construction is one genuine product-
+coordinate factor graph, so the standard `Theta+2c` reserve pays its two
+factor-to-polymer/hard-core layers without a second nested Haar expansion.
+The final source defines hidden overlap `H_a` separately from the weighted
+geometric carrier `S_a` and uses the total-even, total-balanced joint
+hidden/retained Grassmann algebra. This validates the `K_G=K_B` safe envelope,
+onsite Gaussian contractivity, and global color subtraction leading to
+`A_joint=2D K_R/(1-tau)^3`.
+
+Physics/import review verifies original `A=m1+M_II` ownership, hidden boundary
+incidence `<=2<=8`, determinant/Schur non-double-counting, and refusal to
+import the weak future `S^(2)` range as a strong input. Governance/no-go
+review passes N1--N8 and the local-inverse boundary.
+
+Runner/cache are `PASS=12 FAIL=0`; all witness values were independently
+recomputed at high precision. Audit validation seeds one `bounded_theorem` /
+`unaudited` row with exactly five dependencies, classifies the runner as
+first-principles compute, and strict lint has zero errors. PR #5350 is open.
+
+The theorem is a globally normalized original-center response only on its
+declared joint source domain. Generic source embedding, coarse-shadow/future
+atoms, strong return, future-center migration, Hessian, invariant ball,
+time/probability law, and continuum remain open. No axiom-update stop is
+triggered.

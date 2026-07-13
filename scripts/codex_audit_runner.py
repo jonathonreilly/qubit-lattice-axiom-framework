@@ -1701,6 +1701,22 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         return "N1_ROUTE_CLASS_MARKER_MISMATCH"
     if validation_error.startswith("N4 witness "):
         return "N4_WITNESS_SCHEMA_MISMATCH"
+    if validation_error.startswith("N5 contains unknown fields") and any(
+        field in validation_error
+        for field in (
+            "resolution_classes_checked",
+            "tested_resolutions",
+            "untested_resolutions",
+            "resolution_evidence_path",
+            "resolution_evidence_locator",
+        )
+    ):
+        return "N5_STATEMENT_FIELD_NESTING_MISMATCH"
+    if (
+        validation_error.startswith("N6 candidate ")
+        and ".closure_mechanism must use its indexed_basis" in validation_error
+    ):
+        return "N6_INDEXED_BASIS_VERBATIM_MISMATCH"
     return "AUDIT_SCHEMA_REJECT"
 
 
@@ -1779,6 +1795,19 @@ def render_fresh_schema_retry_prompt(
             "claim_evidence_locator fields. The witness surface must have the "
             "authority role and the claim surface must have the source role. Copy "
             "each residual text and ID verbatim from its own cited packet surface.\n"
+        ),
+        "N5_STATEMENT_FIELD_NESTING_MISMATCH": (
+            "Static N5 invariant: resolution_classes_checked, "
+            "tested_resolutions, untested_resolutions, resolution_evidence_path, "
+            "and resolution_evidence_locator belong inside each statements[] "
+            "object, never on the N5_rhetoric_audit section object. Preserve all "
+            "statement content while placing each field at that documented level.\n"
+        ),
+        "N6_INDEXED_BASIS_VERBATIM_MISMATCH": (
+            "Static N6 invariant: copy indexed_basis exactly from the candidate "
+            "record and include that complete text verbatim inside the same "
+            "candidate's closure_mechanism before the explanation of how it could "
+            "affect the named wall. Do not paraphrase or shorten indexed_basis.\n"
         ),
     }.get(validation_code, "")
     return (

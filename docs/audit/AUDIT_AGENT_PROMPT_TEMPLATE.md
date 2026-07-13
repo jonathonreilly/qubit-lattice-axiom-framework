@@ -500,7 +500,7 @@ supply it. Otherwise replace it with:
         "kind": "<approved_primitive | open_gate | convention_reframe | definition_refactor>",
         "indexed_basis": "<20+ character exact quote from this candidate record>",
         "affected_wall": "<exact N2 wall tested by this candidate>",
-        "closure_mechanism": "<40+ normalized characters explaining how the candidate could close that wall>",
+        "closure_mechanism": "<include indexed_basis verbatim, then use 40+ normalized characters to explain how the candidate could close that wall>",
         "could_close_wall": false,
         "addressed": true,
         "disposition": "<why the candidate does or does not close the scoped wall>",
@@ -645,6 +645,17 @@ collapse distinct phrases into one object. For example, `boundary` and
 `primitive` require separate objects even when one source sentence contains
 both. The path, phrase, and occurrence-group id must identify the same single
 authenticated group.
+
+For N5, the fields `resolution_classes_checked`, `tested_resolutions`,
+`untested_resolutions`, `resolution_evidence_path`, and
+`resolution_evidence_locator` belong inside each `statements[]` object. Do not
+place any of them on the `N5_rhetoric_audit` section object itself.
+
+For every N6 candidate, copy `indexed_basis` exactly from its orchestrator
+candidate record and include that complete `indexed_basis` text verbatim
+inside `closure_mechanism` before explaining how the candidate could affect
+the named wall. A paraphrase or merely related explanation does not satisfy
+the authenticated-basis binding.
 
 For each N5 statement, `resolution_classes_checked` must equal the five canonical classes exactly,
 and `tested_resolutions` must contain exactly five entries: one and only one

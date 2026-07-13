@@ -72,6 +72,7 @@ DISPATCH_QUEUE_PATH = AUDIT_DIR / "data" / "audit_dispatch_queue.json"
 CANONICAL_DISPATCH_QUEUE_PATH = DISPATCH_QUEUE_PATH
 PROMPT_TEMPLATE_PATH = AUDIT_DIR / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
+PIPELINE_SCRIPT = AUDIT_DIR / "scripts" / "run_pipeline.sh"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
 LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
 DISPATCH_ALLOWED_PROCESS_PATHS = {
@@ -2318,6 +2319,25 @@ def main() -> int:
                 print("  Resolve the conflict on main manually, then re-run.")
                 print(f"  rebase stderr: {(rebase.stderr or rebase.stdout).strip()[:300]}")
                 return 2
+
+    if (
+        not args.from_dispatch
+        and not args.from_reaudit_candidates
+        and not QUEUE_PATH.exists()
+    ):
+        print("Derived audit caches missing (fresh clone); running the pipeline once.")
+        bootstrap = subprocess.run(
+            ["bash", str(PIPELINE_SCRIPT)],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=1800,
+            check=False,
+        )
+        if bootstrap.returncode != 0:
+            detail = (bootstrap.stderr or bootstrap.stdout).strip()[-500:]
+            print(f"REFUSING: audit pipeline bootstrap failed: {detail}")
+            return 2
 
     run_commit = git("rev-parse", "HEAD", check=False).stdout.strip()
     ledger_rows = load_ledger_rows()

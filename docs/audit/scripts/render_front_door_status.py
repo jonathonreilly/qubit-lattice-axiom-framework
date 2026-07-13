@@ -6,6 +6,8 @@ import json
 import re
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 OUT_PATH = REPO_ROOT / "docs" / "repo" / "FRONT_DOOR_STATUS.md"
@@ -125,6 +127,7 @@ def table(rows: list[tuple[str, str | int]]) -> str:
 
 
 def main() -> None:
+    ledger_io.ensure_cache()
     counts, boxed_decorations, retained_grade = status_counts()
     summary = load_json(DATA_DIR / "effective_status_summary.json")
     queue = load_json(DATA_DIR / "audit_queue.json")

@@ -132,6 +132,7 @@ def compute_score(direct_in: int, transitive: int, max_desc_rank: int) -> float:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not GRAPH_PATH.exists():
         raise SystemExit("citation_graph.json missing; run build_citation_graph.py first")
     if not LEDGER_PATH.exists():

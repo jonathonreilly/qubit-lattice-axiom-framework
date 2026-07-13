@@ -61,6 +61,11 @@ from pathlib import Path
 import runner_cache as rc
 
 REPO_ROOT = rc.REPO_ROOT
+AUDIT_SCRIPTS = REPO_ROOT / "docs" / "audit" / "scripts"
+sys.path.insert(0, str(AUDIT_SCRIPTS))
+import ledger_io  # noqa: E402
+import compute_audit_queue  # noqa: E402
+
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 QUEUE_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_queue.json"
 CACHE_DIR = rc.CACHE_DIR
@@ -116,9 +121,23 @@ def runner_timeout_for(runner_path: str) -> int:
 
 
 def collect_runners_from_queue() -> list[str]:
-    q = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
+    if QUEUE_PATH.exists():
+        queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8")).get(
+            "queue", []
+        )
+    else:
+        # Fresh clones intentionally omit the generated queue cache. Rebuild
+        # its row universe in memory from authoritative ledger fields so the
+        # default CLI remains usable without dirtying tracked pipeline views.
+        ledger_io.ensure_cache()
+        rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get("rows", {})
+        queue = [
+            row
+            for row in rows.values()
+            if compute_audit_queue.needs_audit(row)[0]
+        ]
     seen: dict[str, None] = {}
-    for r in q.get("queue", []):
+    for r in queue:
         rp = r.get("runner_path")
         if rp:
             seen.setdefault(canonical_runner_path(rp), None)
@@ -333,6 +352,8 @@ def main() -> int:
     p.add_argument("--commit-batch-size", type=int, default=200,
                    help="Maximum cache files per commit (default 200).")
     args = p.parse_args()
+
+    ledger_io.ensure_cache()
 
     # --check-only, --staged-only, and --pr-diff never push: the first
     # is read-only, the latter two run from a non-main branch.

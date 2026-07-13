@@ -17,6 +17,14 @@ exact counts, which drift as auditing proceeds) and PRINTS the current priority 
 import json
 import collections
 import os
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
+import ledger_io  # noqa: E402
+
+ledger_io.ensure_cache()
 
 PASS = 0
 FAIL = 0
@@ -27,7 +35,7 @@ def check(name, cond):
     PASS += ok
     FAIL += (not ok)
 
-LEDGER = os.path.join(os.path.dirname(__file__), "..", "docs", "audit", "data", "audit_ledger.json")
+LEDGER = os.path.join(REPO_ROOT, "docs", "audit", "data", "audit_ledger.json")
 rows = json.load(open(LEDGER))["rows"]
 
 # dep-readiness mirrors compute_audit_queue.py: retained-grade + metadata tiers count as ready.

@@ -275,6 +275,7 @@ def main() -> int:
     )
     args = ap.parse_args()
 
+    ledger_io.ensure_cache()
     ledger = json.loads(LEDGER_PATH.read_text())
     rows = ledger["rows"]
 

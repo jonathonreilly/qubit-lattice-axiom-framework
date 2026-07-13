@@ -81,6 +81,8 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -124,6 +126,7 @@ def participant_families(*audits: dict) -> list[str]:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))

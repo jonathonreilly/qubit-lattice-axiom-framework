@@ -29,6 +29,7 @@ LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit(f"audit_ledger.json missing at {LEDGER_PATH}")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))

@@ -791,6 +791,7 @@ def soft_reset_to_cross_confirmation_pending(row: dict, reason: str) -> dict:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing; run seed_audit_ledger.py first")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))

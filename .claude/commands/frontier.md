@@ -7,6 +7,7 @@ the qubit-lattice axiom framework.
 
 1. Ledger statistics — counts by `effective_status` and `claim_type`:
    ```bash
+   python3 docs/audit/scripts/ledger_io.py --materialize
    python3 - <<'PY'
    import json, collections
    rows = json.load(open("docs/audit/data/audit_ledger.json"))["rows"]

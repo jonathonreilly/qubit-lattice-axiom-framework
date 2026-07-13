@@ -141,6 +141,7 @@ def main() -> int:
                    help="Report what would change without writing the ledger.")
     args = p.parse_args()
 
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))

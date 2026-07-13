@@ -60,8 +60,9 @@ retained status or an approved primitive; otherwise it remains conditional/open.
   legitimate import-bearing shape is: explicit named import with a narrow
   role → bounded result → import-retirement audit queued.
 - **The ledger is authoritative.** Before citing or building on any result
-  as retained-grade, check its `effective_status` in
-  `docs/audit/data/audit_ledger.json` on `origin/main` (retained-grade =
+  as retained-grade, check its `effective_status` in the claim's tracked
+  `docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json` shard on
+  `origin/main` (retained-grade =
   `retained`, `retained_bounded`, `retained_no_go`). In-file `Status:`
   headers and session memory go stale. Use `/ledger`.
 - **Author-side status vocabulary only.** Never write bare `retained` /

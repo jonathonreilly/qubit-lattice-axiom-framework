@@ -878,6 +878,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         print(f"FAIL: ledger missing at {LEDGER_PATH}", file=sys.stderr)
         return 1

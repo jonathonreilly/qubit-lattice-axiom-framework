@@ -232,6 +232,7 @@ def main() -> int:
         return 2
     print(f"indexed {len(index)} invocation-bound envelopes")
 
+    ledger_io.ensure_cache()
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
     rows = ledger.get("rows", {})
     if args.claims:

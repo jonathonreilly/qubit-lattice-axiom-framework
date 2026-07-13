@@ -133,7 +133,6 @@ jobs:
           git config user.name  "audit-bot"
           git config user.email "audit-bot@users.noreply.github.com"
           git add \
-            docs/audit/AUDIT_LEDGER.md \
             docs/audit/AUDIT_QUEUE.md \
             docs/audit/data/ \
             docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md \

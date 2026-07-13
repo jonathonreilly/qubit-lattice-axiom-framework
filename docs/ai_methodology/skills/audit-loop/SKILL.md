@@ -625,12 +625,15 @@ policy blocker prevents progress:
 
 Review the diff. It should normally touch only:
 
-- `docs/audit/data/audit_ledger.json`;
+- `docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json`;
+- `docs/audit/data/ledger_meta.json` when top-level statistics change;
 - `docs/audit/data/effective_status_summary.json`;
-- `docs/audit/data/audit_queue.json`;
-- `docs/audit/AUDIT_LEDGER.md`;
 - `docs/audit/AUDIT_QUEUE.md`;
-- possibly generated load-bearing/runner files if the pipeline refreshed them.
+- possibly other tracked load-bearing/runner summaries if the pipeline refreshed them.
+
+The monolithic ledger, queue JSON, runner classification, citation graph, and
+rendered `AUDIT_LEDGER.md` are ignored materialized caches; never force-add
+them.
 
 Commit:
 

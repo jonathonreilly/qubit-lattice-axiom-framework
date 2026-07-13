@@ -8,8 +8,9 @@ that were accidentally stored as note paths. It does not change audit verdicts.
 """
 from __future__ import annotations
 
-import json
 from pathlib import Path
+
+import ledger_io
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -137,12 +138,11 @@ def canonicalize_decoration_parent_ids(ledger: dict) -> None:
 
 
 def main() -> int:
-    if not LEDGER_PATH.exists():
-        raise SystemExit("audit_ledger.json missing; run seed_audit_ledger.py first")
-    ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+    ledger_io.ensure_cache()
+    ledger = ledger_io.load_ledger()
     sanitized = sanitize_obj(ledger)
     canonicalize_decoration_parent_ids(sanitized)
-    LEDGER_PATH.write_text(json.dumps(sanitized, indent=2, sort_keys=True) + "\n")
+    ledger_io.save_ledger(sanitized)
     print(f"Sanitized {LEDGER_PATH.relative_to(REPO_ROOT)}")
     return 0
 

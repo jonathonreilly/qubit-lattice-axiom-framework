@@ -72,7 +72,8 @@ Run the repo-native physics review loop from:
   independent audit lane and effective status is pipeline-derived.
 - Load-bearing dependencies in changed claim notes must be markdown links that
   seed the citation graph. After the audit pipeline, changed claim rows must
-  show the intended deps in `docs/audit/data/audit_ledger.json`.
+  show the intended deps in their tracked
+  `docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json` shards.
 - New landed science must use explicit repo naming from
   `docs/repo/CONTROLLED_VOCABULARY.md`. Do not approve bare overloaded labels
   such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane

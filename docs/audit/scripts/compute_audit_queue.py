@@ -26,6 +26,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import premise_nodes
+import ledger_io
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
@@ -153,6 +154,7 @@ def cycle_break_targets(rows: dict[str, dict]) -> list[dict]:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))

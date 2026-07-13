@@ -42,6 +42,7 @@ PUB_DIR = DOCS / "publication" / "ci3_z3"
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import premise_nodes
+import ledger_io
 
 # Tables to render. Each entry: (source_basename, output_basename, scope_label)
 TABLES = [
@@ -483,6 +484,7 @@ def render_divergence(all_lookups: dict[str, list[dict]],
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     missing_sources = [src for src, _, _ in TABLES if not (PUB_DIR / src).exists()]
     if missing_sources:
         print(

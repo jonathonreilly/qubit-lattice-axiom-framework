@@ -42,6 +42,7 @@ fi
 
 echo "[pre-commit] audit-lane check"
 
+python3 docs/audit/scripts/ledger_io.py --materialize >/dev/null
 python3 docs/audit/scripts/build_citation_graph.py >/dev/null
 python3 docs/audit/scripts/seed_audit_ledger.py >/dev/null
 
@@ -63,12 +64,16 @@ if ! echo "$STAGED" | python3 docs/audit/scripts/check_staged_claim_typing.py; t
     exit 1
 fi
 
-# If staging includes the ledger or graph, that's fine. If they were
-# updated by this hook but not staged, ask the developer to stage them.
-if ! git diff --quiet docs/audit/data/citation_graph.json docs/audit/data/audit_ledger.json 2>/dev/null; then
-    echo "[pre-commit] audit ledger or graph updated by seeding."
-    echo "  Stage docs/audit/data/citation_graph.json and"
-    echo "  docs/audit/data/audit_ledger.json, then commit again."
+# If seeding changed the tracked source-of-truth shards or metadata but those
+# changes are not staged, ask the developer to stage them. The monolith and
+# citation graph are ignored materialized caches.
+UNTRACKED_LEDGER="$(git ls-files --others --exclude-standard -- \
+  docs/audit/data/ledger docs/audit/data/ledger_meta.json)"
+if ! git diff --quiet docs/audit/data/ledger docs/audit/data/ledger_meta.json 2>/dev/null \
+  || [[ -n "${UNTRACKED_LEDGER}" ]]; then
+    echo "[pre-commit] tracked audit-ledger shards updated by seeding."
+    echo "  Stage docs/audit/data/ledger and"
+    echo "  docs/audit/data/ledger_meta.json, then commit again."
     exit 1
 fi
 

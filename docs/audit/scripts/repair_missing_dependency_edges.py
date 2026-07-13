@@ -36,8 +36,11 @@ import collections
 import json
 import os
 import re
+import subprocess
+import sys
 from pathlib import Path, PurePosixPath
 
+import ledger_io
 from build_cycle_inventory import detect_cycles
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -65,6 +68,7 @@ def is_repairable_note_path(path: str) -> bool:
 
 
 def load_rows() -> dict[str, dict]:
+    ledger_io.ensure_cache()
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
     return ledger.get("rows", {})
 
@@ -295,6 +299,12 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    if not GRAPH_PATH.exists():
+        subprocess.run(
+            [sys.executable, str(Path(__file__).with_name("build_citation_graph.py"))],
+            cwd=REPO_ROOT,
+            check=True,
+        )
     rows = load_rows()
     repairs = candidate_repairs(rows)
     stats = apply_repairs(rows, repairs, args.apply)

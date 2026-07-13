@@ -2,8 +2,8 @@
 """Sharded audit-ledger IO.
 
 The git-tracked source of truth for the audit ledger is
-``docs/audit/data/ledger/<claim_id>.json`` (exactly one row per file, one
-file per row) plus ``docs/audit/data/ledger_meta.json`` (every top-level
+``docs/audit/data/ledger/<claim_id[:2]>/<claim_id>.json`` (exactly one row
+per file, one file per row) plus ``docs/audit/data/ledger_meta.json`` (every top-level
 ledger key except ``rows``: schema_version, stats, last_invalidations).
 
 The monolithic ``docs/audit/data/audit_ledger.json`` is an UNTRACKED
@@ -27,14 +27,20 @@ CLI:
 from __future__ import annotations
 
 import argparse
+import contextlib
+import fcntl
 import hashlib
 import json
+import os
+import re
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any
 
 DATA = Path(__file__).resolve().parents[1] / "data"
 MANIFEST_SCHEMA = "ledger_cache_manifest_v1"
+_KNOWN_CACHE_SHA: str | None = None
 
 
 def _shards() -> Path:
@@ -58,6 +64,16 @@ FOREIGN_WRITE_ERROR = (
     "direct write to it would be silently lost. Re-apply the change through "
     "ledger_io.save_ledger() (or discard the cache file) and retry."
 )
+STALE_WRITE_ERROR = (
+    "the sharded audit ledger changed after this writer materialized its "
+    "input; refusing to overwrite a concurrent update. Reload the ledger "
+    "and retry the operation."
+)
+UNPRIMED_WRITE_ERROR = (
+    "save_ledger() requires ensure_cache() before loading a sharded ledger; "
+    "refusing an unversioned full-ledger write that could overwrite a "
+    "concurrent update."
+)
 
 
 def _dump(value: Any) -> str:
@@ -66,6 +82,45 @@ def _dump(value: Any) -> str:
 
 def _sha(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _read_text(path: Path) -> str:
+    """Read UTF-8 without universal-newline normalization."""
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        return handle.read()
+
+
+@contextlib.contextmanager
+def _ledger_lock():
+    """Serialize materialization and saves that share the same DATA root."""
+    key = hashlib.sha256(str(DATA.resolve()).encode("utf-8")).hexdigest()[:20]
+    lock_path = Path(tempfile.gettempdir()) / f"audit-ledger-{key}.lock"
+    with lock_path.open("a+") as handle:
+        fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+
+
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Replace *path* atomically with a fully flushed UTF-8 text file."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, raw_tmp = tempfile.mkstemp(
+        dir=path.parent,
+        prefix=f".{path.name}.",
+        suffix=".tmp",
+    )
+    tmp = Path(raw_tmp)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as handle:
+            handle.write(text)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
 
 
 def sharded() -> bool:
@@ -81,7 +136,9 @@ def shard_path(claim_id: str) -> Path:
     a few KB. The prefix is taken from the claim id (not a hash) so humans
     can predict a shard's path.
     """
-    if "/" in claim_id or claim_id in {"", ".", ".."}:
+    if not isinstance(claim_id, str) or not re.fullmatch(
+        r"[A-Za-z0-9_-][A-Za-z0-9_.-]*", claim_id
+    ):
         raise ValueError(f"claim id is not shard-safe: {claim_id!r}")
     return _shards() / claim_id[:2] / f"{claim_id}.json"
 
@@ -89,12 +146,24 @@ def shard_path(claim_id: str) -> Path:
 def load_ledger() -> dict:
     """Load the full ledger dict from shards (or the legacy monolith)."""
     if not sharded():
-        return json.loads(_cache().read_text(encoding="utf-8"))
+        return json.loads(_read_text(_cache()))
     rows: dict[str, dict] = {}
     for path in sorted(_shards().glob("*/*.json")):
-        rows[path.stem] = json.loads(path.read_text(encoding="utf-8"))
+        claim_id = path.stem
+        expected = shard_path(claim_id)
+        if path != expected:
+            raise ValueError(
+                f"ledger shard is in the wrong fanout directory: {path}; "
+                f"expected {expected}"
+            )
+        if claim_id in rows:
+            raise ValueError(f"duplicate ledger shard for {claim_id!r}")
+        row = json.loads(_read_text(path))
+        if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+            raise ValueError(f"ledger shard identity mismatch: {path}")
+        rows[claim_id] = row
     meta = (
-        json.loads(_meta().read_text(encoding="utf-8"))
+        json.loads(_read_text(_meta()))
         if _meta().exists()
         else {}
     )
@@ -103,15 +172,40 @@ def load_ledger() -> dict:
     return {**meta, "rows": rows}
 
 
-def save_ledger(ledger: dict) -> dict:
+def save_ledger(ledger: dict, *, _validate_cache: bool = True) -> dict:
     """Persist the ledger: changed shards + meta + refreshed cache.
 
     Returns a change summary {"changed": [...], "removed": [...],
     "meta_changed": bool} so callers can log commit-relevant deltas.
     """
+    with _ledger_lock():
+        return _save_ledger_locked(ledger, validate_cache=_validate_cache)
+
+
+def _save_ledger_locked(ledger: dict, *, validate_cache: bool) -> dict:
     rows = ledger.get("rows")
     if not isinstance(rows, dict):
         raise ValueError("ledger must carry a rows dict")
+    expected_sha = _KNOWN_CACHE_SHA
+    if validate_cache and sharded():
+        # Refuse a missed direct-cache writer before its in-memory result can
+        # be laundered into authoritative shards by an otherwise ported writer.
+        _ensure_cache_locked()
+        if expected_sha is None:
+            raise SystemExit(UNPRIMED_WRITE_ERROR)
+        if _KNOWN_CACHE_SHA != expected_sha:
+            raise SystemExit(STALE_WRITE_ERROR)
+    folded: dict[str, str] = {}
+    for claim_id, row in rows.items():
+        shard_path(claim_id)
+        prior = folded.setdefault(claim_id.casefold(), claim_id)
+        if prior != claim_id:
+            raise ValueError(
+                "claim ids collide on a case-insensitive filesystem: "
+                f"{prior!r}, {claim_id!r}"
+            )
+        if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+            raise ValueError(f"ledger row identity mismatch: {claim_id!r}")
     _shards().mkdir(parents=True, exist_ok=True)
     changed: list[str] = []
     removed: list[str] = []
@@ -119,11 +213,8 @@ def save_ledger(ledger: dict) -> dict:
     for claim_id, row in rows.items():
         blob = _dump(row)
         path = shard_path(claim_id)
-        if claim_id not in existing or existing[claim_id].read_text(
-            encoding="utf-8"
-        ) != blob:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(blob, encoding="utf-8")
+        if claim_id not in existing or _read_text(existing[claim_id]) != blob:
+            _atomic_write_text(path, blob)
             changed.append(claim_id)
     for claim_id, path in existing.items():
         if claim_id not in rows:
@@ -135,29 +226,31 @@ def save_ledger(ledger: dict) -> dict:
     meta_blob = _dump(meta)
     meta_changed = (
         not _meta().exists()
-        or _meta().read_text(encoding="utf-8") != meta_blob
+        or _read_text(_meta()) != meta_blob
     )
     if meta_changed:
-        _meta().write_text(meta_blob, encoding="utf-8")
+        _atomic_write_text(_meta(), meta_blob)
     _write_cache(ledger)
     return {"changed": sorted(changed), "removed": sorted(removed),
             "meta_changed": meta_changed}
 
 
 def _write_cache(ledger: dict) -> None:
+    global _KNOWN_CACHE_SHA
     blob = _dump(ledger)
-    _cache().write_text(blob, encoding="utf-8")
-    _manifest().write_text(
+    _atomic_write_text(_cache(), blob)
+    _atomic_write_text(
+        _manifest(),
         _dump({"schema": MANIFEST_SCHEMA, "cache_sha256": _sha(blob)}),
-        encoding="utf-8",
     )
+    _KNOWN_CACHE_SHA = _sha(blob)
 
 
 def _manifest_sha() -> str | None:
     if not _manifest().exists():
         return None
     try:
-        manifest = json.loads(_manifest().read_text(encoding="utf-8"))
+        manifest = json.loads(_read_text(_manifest()))
     except json.JSONDecodeError:
         return None
     if manifest.get("schema") != MANIFEST_SCHEMA:
@@ -172,24 +265,30 @@ def ensure_cache() -> bool:
     Returns True when the cache was (re)written. No-op on pre-sharding
     checkouts (the tracked monolith IS the ledger there).
     """
+    with _ledger_lock():
+        return _ensure_cache_locked()
+
+
+def _ensure_cache_locked() -> bool:
+    global _KNOWN_CACHE_SHA
     if not sharded():
         return False
     ledger = load_ledger()
     blob = _dump(ledger)
     if _cache().exists():
-        current = _cache().read_text(encoding="utf-8")
+        current = _read_text(_cache())
         if current == blob:
             if _manifest_sha() != _sha(blob):
-                _manifest().write_text(
+                _atomic_write_text(
+                    _manifest(),
                     _dump({"schema": MANIFEST_SCHEMA, "cache_sha256": _sha(blob)}),
-                    encoding="utf-8",
                 )
+            _KNOWN_CACHE_SHA = _sha(blob)
             return False
         recorded = _manifest_sha()
-        if recorded is not None and recorded != _sha(current):
+        if recorded is None or recorded != _sha(current):
             raise SystemExit(FOREIGN_WRITE_ERROR)
-        # Cache is ours (or manifest missing on a fresh checkout) but shards
-        # moved (git pull, direct shard edit): refresh.
+        # Cache is ours but shards moved (git pull, direct shard edit): refresh.
     _write_cache(ledger)
     return True
 
@@ -202,11 +301,11 @@ def verify() -> str | None:
     blob = _dump(ledger)
     if not _cache().exists():
         return "cache missing; run ledger_io.py --materialize"
-    current = _cache().read_text(encoding="utf-8")
+    current = _read_text(_cache())
     if current == blob:
         return None
     recorded = _manifest_sha()
-    if recorded is not None and recorded != _sha(current):
+    if recorded is None or recorded != _sha(current):
         return FOREIGN_WRITE_ERROR
     return "cache is stale relative to shards; run ledger_io.py --materialize"
 
@@ -215,8 +314,8 @@ def migrate() -> dict:
     """One-shot: split the tracked monolith into shards + meta + cache."""
     if sharded() and any(_shards().glob("*/*.json")):
         raise SystemExit("ledger/ already contains shards; refusing to re-migrate")
-    ledger = json.loads(_cache().read_text(encoding="utf-8"))
-    summary = save_ledger(ledger)
+    ledger = json.loads(_read_text(_cache()))
+    summary = save_ledger(ledger, _validate_cache=False)
     round_trip = load_ledger()
     if _dump(round_trip) != _dump(ledger):
         raise SystemExit("migration round-trip mismatch; aborting")

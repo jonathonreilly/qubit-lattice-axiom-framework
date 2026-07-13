@@ -135,6 +135,8 @@ def reset_unaudited_audit_fields(row: dict) -> None:
     """Clear stale audit-owned residue from rows already back in the queue."""
     if row.get("audit_status") != "unaudited":
         return
+    invalidated_type = row.get("claim_type")
+    invalidated_type_provenance = row.get("claim_type_provenance")
     invocation_history = list(row.get("audit_invocation_history") or [])
     live_invocation = row.get("audit_invocation_id")
     if live_invocation and live_invocation not in invocation_history:
@@ -186,6 +188,16 @@ def reset_unaudited_audit_fields(row: dict) -> None:
             row["unattributed_audit_provenance"] = unattributed
     for k, v in EMPTY_AUDIT.items():
         row[k] = v if not isinstance(v, (list, dict)) else (list(v) if isinstance(v, list) else dict(v))
+    if (
+        invalidated_type in CLAIM_TYPES
+        and invalidated_type_provenance
+        in {"author_hint_after_invalidation", "needs_reaudit_after_invalidation"}
+    ):
+        # Invalidation deliberately records why an unaudited row retained its
+        # type. Reseeding must be a fixed point, not collapse that provenance
+        # back to a generic author hint/default.
+        row["claim_type"] = invalidated_type
+        row["claim_type_provenance"] = invalidated_type_provenance
     # Accepted archive/requeue transitions consume the incoming invocation even
     # though they leave the row unaudited. Reseeding must not make that token
     # replayable merely because the live audit-owned fields were cleared.
@@ -653,6 +665,7 @@ def seed() -> dict:
 
 def main() -> int:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    ledger_io.ensure_cache()
     ledger = seed()
     ledger_io.save_ledger(ledger)
     s = ledger["stats"]

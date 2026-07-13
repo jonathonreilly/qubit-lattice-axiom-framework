@@ -107,6 +107,7 @@ def main() -> int:
                    help="Report what would change without writing the ledger.")
     args = p.parse_args()
 
+    ledger_io.ensure_cache()
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
     rows = ledger.get("rows", {})
     stats = migrate(rows)

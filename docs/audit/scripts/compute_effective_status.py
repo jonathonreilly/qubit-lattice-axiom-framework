@@ -278,6 +278,7 @@ def summarize(rows: dict[str, dict]) -> dict:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing; run seed_audit_ledger.py first")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))

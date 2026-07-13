@@ -29,6 +29,8 @@ import json
 import sys
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -38,9 +40,10 @@ def main() -> int:
     staged_docs = [p for p in staged if p.startswith("docs/") and p.endswith(".md")]
     if not staged_docs:
         return 0
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
-        # Seeding did not run; nothing to check against.
-        return 0
+        print("[claim-typing] audit ledger is unavailable after materialization")
+        return 1
     rows = json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get("rows", {})
     row_by_note_path = {row.get("note_path"): (cid, row) for cid, row in rows.items()}
     offenders: list[tuple[str, str]] = []

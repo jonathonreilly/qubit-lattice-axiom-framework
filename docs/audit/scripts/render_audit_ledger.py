@@ -13,6 +13,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import ledger_io
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
@@ -208,6 +210,7 @@ def render_top_load_bearing(rows: dict[str, dict], n: int = 25) -> str:
 
 
 def main() -> int:
+    ledger_io.ensure_cache()
     if not LEDGER_PATH.exists():
         raise SystemExit("audit_ledger.json missing")
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
@@ -219,7 +222,10 @@ def main() -> int:
     out: list[str] = []
     out.append("# Audit Ledger")
     out.append("")
-    out.append("**Source of truth:** `data/audit_ledger.json`")
+    out.append(
+        "**Source of truth:** `data/ledger/<claim-id-prefix>/<claim-id>.json` "
+        "plus `data/ledger_meta.json`"
+    )
     out.append("**Schema:** see [README.md](README.md), "
                "[FRESH_LOOK_REQUIREMENTS.md](FRESH_LOOK_REQUIREMENTS.md), and "
                "[ALGEBRAIC_DECORATION_POLICY.md](ALGEBRAIC_DECORATION_POLICY.md); "

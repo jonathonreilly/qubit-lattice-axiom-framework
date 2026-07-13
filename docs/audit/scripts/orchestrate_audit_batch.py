@@ -120,6 +120,63 @@ def lane_closure(root: str, rows: dict[str, dict]) -> set[str]:
     return seen
 
 
+def last_source_change(row: dict) -> str:
+    """ISO commit time of the newest change to the row's note/runner sources."""
+    paths = [
+        path
+        for path in (
+            row.get("note_path"),
+            row.get("runner_path"),
+            *(row.get("helper_runner_paths") or []),
+        )
+        if path
+    ]
+    if not paths:
+        return ""
+    result = sh(["git", "log", "-1", "--format=%cI", "--", *paths])
+    return (result.stdout or "").strip()
+
+
+def awaiting_repair_since_conditional(
+    row: dict, effective: dict[str, str]
+) -> bool:
+    """A re-queued conditional row is re-audited only after something moved.
+
+    A non-terminal audited_conditional archives and re-queues the row as
+    unaudited immediately, so without this check every orchestrator RUN
+    re-audits the unchanged claim toward the same conditional verdict
+    (observed: cl3_pauli burned two fresh seats one run after its agreed
+    conditional). Movement means either the note/runner sources changed
+    after the archived verdict, or a recorded dependency's effective status
+    changed since the archived snapshot (e.g. a demanded authority went
+    retained-grade).
+    """
+    archives = row.get("previous_audits") or []
+    if not archives or not isinstance(archives[-1], dict):
+        return False
+    last = archives[-1]
+    if last.get("audit_status") != "audited_conditional":
+        return False
+    audited_at = str(last.get("archived_at") or last.get("audit_date") or "")
+    if audited_at:
+        changed_at = last_source_change(row)
+        if changed_at and _iso(changed_at) > _iso(audited_at):
+            return False
+    snapshot = last.get("audit_state_snapshot") or {}
+    snapshot_deps = snapshot.get("dep_effective_status") or {}
+    for dep, then_status in snapshot_deps.items():
+        if effective.get(dep, "MISSING") != then_status:
+            return False
+    return True
+
+
+def _iso(stamp: str) -> datetime:
+    try:
+        return datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+    except ValueError:
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+
 def compute_targets(
     scope: set[str], rows: dict[str, dict]
 ) -> tuple[list[dict], list[str]]:
@@ -156,6 +213,12 @@ def compute_targets(
             continue
         if not dep_ready(row, effective):
             skipped.append(f"{cid}: dependencies are not retained-grade")
+            continue
+        if awaiting_repair_since_conditional(row, effective):
+            skipped.append(
+                f"{cid}: awaiting repair (sources and deps unchanged since "
+                "audited_conditional)"
+            )
             continue
         targets.append(row)
     return targets, skipped

@@ -1,5 +1,21 @@
 # PR Delivery
 
+The declared projected/rescaled RG-chart theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block29-grassmann-polymer-norm-20260712`
+- head: `physics-loop/record-faithful-dynamics-block30-projected-rescaled-contraction-20260712`
+- runner: `PASS=10 FAIL=0`
+- scope: finite diameter-zero and declared local-jet projectors, exact field-
+  rescaling torsor, joint raw-lift identity, and `exp(-lambda)` suppression of
+  every extended raw lifted mode in the declared support chart; no invariant
+  ball or full derivative contraction
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  Block25 and Block29 dependencies; pipeline/strict lint pass; generated
+  outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5330
+
+No merge is authorized. Independent audit remains authoritative.
+
 The simultaneous retained gauge--Grassmann polymer-norm theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block28-gauge-body-source-polymer-20260712`

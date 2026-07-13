@@ -1,6 +1,34 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block30-projected-rescaled-contraction-20260712`.
+The declared-RG-chart runner reports `PASS=10 FAIL=0`. The source declares a
+factor-two support dilation, the finite-rank diameter-zero projector `P_0`,
+finite Berezin/Peter--Weyl jet projectors, and the field-coordinate torsor
+`||D_rho Phi||_eta=||Phi||_(eta/rho)`. It extends the exact raw lift identity
+to even balanced retained polynomials.
+
+In this declared chart, every extended raw lifted direction remaining after
+`P_0` is suppressed by at least `exp(-lambda)`. This retires the concern that
+the infinite raw unit-direction family automatically defeats all rescaled
+contraction attempts. Fixed-background Schur mass/hopping tangent bounds are
+also explicit after `rho` rescaling.
+
+Independent code/math, physics/import/Nature, and governance/no-go review pass
+after correcting the per-mode scale factor to an upper bound. Audit validation
+seeds one `bounded_theorem` / `unaudited` row with exactly Block25 and Block29
+dependencies; strict lint has zero errors and generated outputs are stripped.
+
+The theorem does not establish a unique physical relevant sector, invariant
+ball, full non-fiber derivative contraction, nonlinear iteration, physical
+beta function, taste carrier, or critical trajectory. No axiom-update stop is
+triggered.
+
+Declared-RG-chart stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5330
+is open against the retained-Grassmann polymer head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block29-grassmann-polymer-norm-20260712`.
 The retained-Grassmann joint-polymer runner reports `PASS=14 FAIL=0`. The
 retained weight's correct positive body is `det D_II`, not the full `det D`.

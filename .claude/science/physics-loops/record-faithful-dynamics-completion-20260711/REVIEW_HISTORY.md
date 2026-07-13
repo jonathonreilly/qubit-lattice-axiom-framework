@@ -1100,3 +1100,32 @@ The next target splits nonempty future atoms from extended empty atoms and
 combines atom downshift with raw-lift geometry for the strong spatial handoff;
 correlated covariance attachment remains independent. No axiom-update stop is
 triggered.
+
+## Fixed-background correlated-Berezin locality review
+
+PASS WITH BOUNDED CLAIMS after three load-bearing repairs. The future
+diagnostic now pays the potential-level atom rule
+`exp(C_*^3 9/m)-1`; the Wick proof claims contractivity only for final
+constant-extracted principal-block Gaussian expectations; and general block
+cumulants regroup all internal covariance into those principal blocks before
+expanding inter-block operators.
+
+For original `A=m1+M_II`, the exact onsite-product bond ratio retains its
+positive determinant denominator. Product-centered marks have a connected
+bond attachment row, while pointwise `G_A(U)`-centered marks have direct
+cross-Wick covariance bounds. Combined `E_HG_A` centering is not substituted
+for either condition. `K-I` Schur boundary hops remain external sources, only
+actual eliminated endpoints root Gaussian attachment, and `det(A)` remains a
+separate full-integral factor.
+
+Independent code/math stress tests verified the principal-block graph bound
+and all constants. Physics/import/Nature and governance/no-go reviews pass the
+fixed-background/original-center scope, six-wall independence packet, and
+determinant/centering boundaries. Runner/cache are `PASS=11 FAIL=0`; audit
+validation seeds one `bounded_theorem` / `unaudited` row with exactly five
+dependencies; strict lint has zero errors and generated outputs are stripped.
+PR #5347 is open.
+
+The next target is the combined-reference split plus residual-colored
+resummation and Haar provenance, followed by migration to the extracted
+future center. No axiom-update stop is triggered.

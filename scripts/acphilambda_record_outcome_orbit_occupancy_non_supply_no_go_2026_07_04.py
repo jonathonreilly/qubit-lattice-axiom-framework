@@ -7,6 +7,8 @@ from pathlib import Path
 
 import sympy as sp
 
+import acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13 as n7_independent
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
@@ -282,6 +284,10 @@ def main() -> int:
         "N7 accepted axiom surface withholds log-det and action/readout selection",
         "P2/modulus, log-det, source/action, measurement" in axioms
         and "physical-observable identification" in axioms,
+    )
+    check(
+        "N7 independent normalization certificate is executable",
+        callable(n7_independent.main),
     )
     check("note grants the auxiliary complex carrier", "Grant an auxiliary invertible complex block carrier" in note)
     check("note contains both countermodel functionals", "F_C(A) = log |det_C A|" in note and "F_R(A) = log det_R R(A)" in note)

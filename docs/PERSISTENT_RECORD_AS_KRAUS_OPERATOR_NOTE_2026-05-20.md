@@ -23,9 +23,9 @@ the Record axiom. Outside the two named controlled-copy surfaces, normalized
 
 ## Source Boundary
 
-The finite Kraus/CPTP algebra closes once a normalized linear isometry `W` and
-an orthonormal record-label representation are supplied. This note does not
-derive either input from the persistent-record overlap-kernel lane. This
+The finite Kraus/CPTP algebra closes once a normalized linear isometry `W` is
+supplied together with an orthonormal record-label representation. This note
+does not derive either input from the persistent-record overlap-kernel lane. This
 revision takes the **split path**:
 
 - **Load-bearing (in scope):** The finite-instrument algebraic certificate — that if a normalized linear isometry `W : H_sys → H_sys ⊗ H_record` is given, then extracting record blocks `K_r` yields (a) resolution of identity `Σ_r K_r†K_r = I`, (b) a CPTP unconditional update, and (c) normalized selective post-record states — all verified by the runner on a concrete `C^4 → C^4 ⊗ C^3` example.
@@ -41,7 +41,8 @@ revision takes the **split path**:
 
 No new axiom is introduced. The runner-verified core remains the load-bearing
 algebra; the dependencies below supply bounded source instantiations without
-turning them into an arbitrary persistent-record-to-isometry bridge.
+turning them into an arbitrary persistent-record-to-isometry bridge. The
+general persistent-record-to-isometry bridge remains open.
 
 ## Load-Bearing Dependencies and Premise Wiring
 
@@ -64,11 +65,13 @@ conditional, deliberately mirroring W1a's declared readings:
 > orthogonal vectors `{|r>}` in `H_record`, so `<r|s> = delta_rs`.
 
 The phrase “distinct record configurations are distinct classical data” is a
-declared reading here, not a verbatim Minimal-Axioms theorem. W1a discharges
-`(R_perp)` on its narrow surface only through its declared C1 orthogonal-support
-reading; its C4 additivity reading expressly imposes no additional
-Hilbert-space relation among the blank and written vectors. The 2026-06-18
-controlled-copy theorem instead derives
+declared reading here, not a verbatim Minimal-Axioms theorem. W1a satisfies
+`(R_perp)` on its narrow surface conditional on C1–C4 and blank-input trace
+preservation: its declared C1 orthogonal-support reading supplies the
+off-diagonal orthogonality, while trace preservation with the common Kraus
+normalization supplies unit norms. Its C4 additivity reading expressly imposes
+no additional Hilbert-space relation among the blank and written vectors. The
+2026-06-18 controlled-copy theorem instead derives
 `<eta_0|eta_1> = 0` inside its explicit finite model. Thus either bounded
 controlled-copy authority supplies both normalization and orthogonal labels on
 its own stated surface; neither promotes `(R_perp)` to a consequence of the

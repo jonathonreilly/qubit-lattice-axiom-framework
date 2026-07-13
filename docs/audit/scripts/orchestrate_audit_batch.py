@@ -256,7 +256,9 @@ def _iso(stamp: str) -> datetime | None:
 
 
 def compute_targets(
-    scope: set[str], rows: dict[str, dict]
+    scope: set[str],
+    rows: dict[str, dict],
+    retarget: frozenset[str] = frozenset(),
 ) -> tuple[list[dict], list[str]]:
     effective = {cid: row.get("effective_status", "?") for cid, row in rows.items()}
     targets: list[dict] = []
@@ -298,8 +300,10 @@ def compute_targets(
                 "seed_audit_ledger.py + pipeline and commit before auditing"
             )
             continue
-        if audit_status == "unaudited" and awaiting_repair_since_conditional(
-            row, effective, rows
+        if (
+            audit_status == "unaudited"
+            and cid not in retarget
+            and awaiting_repair_since_conditional(row, effective, rows)
         ):
             skipped.append(
                 f"{cid}: awaiting repair (sources and deps unchanged since "
@@ -972,6 +976,17 @@ def main() -> int:
     scope_group = parser.add_mutually_exclusive_group(required=True)
     scope_group.add_argument("--lane", help="lane name from lane_certification_config.json")
     scope_group.add_argument("--claims", help="comma-separated claim ids")
+    parser.add_argument(
+        "--retarget-conditionals",
+        action="store_true",
+        help=(
+            "with --claims only: re-audit named rows even though their "
+            "sources and dependency statuses are unchanged since their last "
+            "audited_conditional. Use when the remedy for the conditional "
+            "was an environment change the repair-wait guard cannot see "
+            "(gate/template calibration, packet-policy revision)."
+        ),
+    )
     parser.add_argument("--max-workers", type=int, default=6)
     parser.add_argument("--rounds", type=int, default=6)
     parser.add_argument("--stall-minutes", type=int, default=45)
@@ -987,6 +1002,11 @@ def main() -> int:
         or args.push_retries < 1
     ):
         parser.error("worker, round, stall, runner-timeout, and retry limits must be positive")
+    if args.retarget_conditionals and not args.claims:
+        parser.error("--retarget-conditionals requires an explicit --claims list")
+    retarget = frozenset(
+        cid.strip() for cid in (args.claims or "").split(",") if cid.strip()
+    ) if args.retarget_conditionals else frozenset()
 
     if not args.dry_run:
         error = clean_main_error()
@@ -1029,7 +1049,7 @@ def main() -> int:
                 report.append({"cid": cid, "result": "judicial_panel_required"})
                 session_skipped.add(cid)
         scope.difference_update(session_skipped)
-        targets, skipped = compute_targets(scope, rows)
+        targets, skipped = compute_targets(scope, rows, retarget=retarget)
         print(f"== round {round_no}: {len(targets)} dep-ready targets, {len(skipped)} skipped")
         for line in skipped:
             print(f"   skip: {line}")

@@ -1,5 +1,24 @@
 # PR Delivery
 
+The two-layer constrained-fiber complex-source/polymer theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block27-raw-action-hessian-decay-20260712`
+- head: `physics-loop/record-faithful-dynamics-block28-gauge-body-source-polymer-20260712`
+- runner: `PASS=14 FAIL=0`
+- scope: explicit two-layer KP convergence, a uniform gauge-body complex-source
+  domain, all fixed-order local cumulant/tree bounds, and weighted connected
+  coarse `p=0` membership; no retained gauge--Grassmann norm, projected RG
+  contraction, or continuum trajectory
+- review repair: nonminimal syntactic supports retain coarse-`V` factors after
+  hidden cancellation; the full rooted-tree recursion and final KP row are
+  explicit; the runner includes a dummy-supported hidden-independent factor
+- audit compatibility: one `bounded_theorem` / `unaudited` row with the sole
+  Block27 dependency; full pipeline and strict lint pass; generated outputs
+  stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5322
+
+No merge is authorized. Independent audit remains authoritative.
+
 The raw constrained-action response/Hessian theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block26-coarse-gauge-gibbsianness-20260712`

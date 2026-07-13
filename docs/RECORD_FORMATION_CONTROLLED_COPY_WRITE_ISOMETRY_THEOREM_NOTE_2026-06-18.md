@@ -72,8 +72,10 @@ dynamics to the ideal pointer-label write used by the finite Kraus bridge.
 - `RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md` is the target
   bridge whose finite projective write to Kraus/CPTP algebra this theorem now
   feeds.
-- [`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
-  supplies the finite normalized-isometry to Kraus-instrument algebra.
+- `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md` supplies the
+  finite normalized-isometry to Kraus-instrument algebra downstream of this
+  theorem's write isometry (downstream-consumer pointer, not a
+  citation-graph dependency; 2026-07-13 cycle-break demotion).
 
 ## Proof
 

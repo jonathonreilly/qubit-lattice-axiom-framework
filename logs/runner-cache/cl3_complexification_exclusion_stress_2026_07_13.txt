@@ -1,0 +1,90 @@
+Dedicated exact exclusion stress runner
+Source: docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md
+Arithmetic: exact SymPy/stdlib; no random or floating-point checks
+
+========================================================================================
+E1: central-idempotent split and simplicity
+========================================================================================
+[PASS] E1.1 complete basis-triple associativity of the constructed 8-dim algebra | 512/512 products
+[PASS] E1.2 all defining Clifford relations hold in the multiplication table | 9/9 relations
+[PASS] E1.3 omega^2 = -1
+[PASS] E1.4 omega is central against the complete algebra basis | 8/8 basis elements
+[PASS] E1.5 e_+ and e_- are complete central orthogonal idempotents | 5/5 identities
+[PASS] E1.6 e_+ and e_- commute with the complete algebra basis | 16/16 commutators
+[PASS] E1.7 both two-sided summands have complex dimension 4 | ranks=(4,4)
+[PASS] E1.8 the two summands have zero intersection and span all 8 dimensions | combined rank=8
+[PASS] E1.9 exhaustive left/right closure of both summands | 128/128 products
+[PASS] E1.10 full commutator solve gives Z(A) = span_C{1, omega} | constraint rank=6, center dim=2
+Computed central idempotents (coefficient of 1, coefficient of omega):
+  (0, 0)
+  (1, 0)
+  (1/2, -I/2)
+  (1/2, I/2)
+[PASS] E1.11 exhaustive central-idempotent solve gives only 0, e_+, e_-, 1 | solutions=4
+[PASS] E1.12+ constructed matrix units span the e_+ summand | rank=4
+[PASS] E1.13+ all E_ab E_cd = delta_bc E_ad identities | 16/16 products
+[PASS] E1.14+ generic coefficient isolation by two-sided multiplication | 16/16 identities
+[PASS] E1.15+ no proper nonzero two-sided ideal in the e_+ summand | any nonzero coefficient generates every matrix unit
+[PASS] E1.12- constructed matrix units span the e_- summand | rank=4
+[PASS] E1.13- all E_ab E_cd = delta_bc E_ad identities | 16/16 products
+[PASS] E1.14- generic coefficient isolation by two-sided multiplication | 16/16 identities
+[PASS] E1.15- no proper nonzero two-sided ideal in the e_- summand | any nonzero coefficient generates every matrix unit
+[PASS] E1.TOTAL A = e_+A direct-sum e_-A = M2(C) direct-sum M2(C), both simple | central idempotents exhausted in the full 8-dim algebra
+
+========================================================================================
+E2: exhaustive irreducible-module dimension
+========================================================================================
+For a simple module V, centrality makes e_+V and e_-V submodules; each action is therefore 0 or identity.
+Computed central-idempotent actions on a simple module:
+  (e_+, e_-) = (0, 1)
+  (e_+, e_-) = (1, 0)
+[PASS] E2.1 central-idempotent actions exhaust to exactly one active summand | solutions=2
+Every simple unital module is a cyclic quotient of its active regular summand; the computed minimal-left-ideal decomposition below exhausts those quotients.
+[PASS] E2.2+.1 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
+[PASS] E2.3+.1 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
+[PASS] E2.2+.2 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
+[PASS] E2.3+.2 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
+[PASS] E2.4+ the regular summand is the direct sum of the two rank-2 left ideals | combined rank=4
+[PASS] E2.5+ the two minimal rank-2 left ideals are explicitly isomorphic | 4/4 inverse-map identities
+[PASS] E2.6+ the e_+ summand has one simple-module class, of dimension 2 | computed from primitive-idempotent ranks and matrix-unit maps
+[PASS] E2.2-.1 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
+[PASS] E2.3-.1 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
+[PASS] E2.2-.2 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
+[PASS] E2.3-.2 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
+[PASS] E2.4- the regular summand is the direct sum of the two rank-2 left ideals | combined rank=4
+[PASS] E2.5- the two minimal rank-2 left ideals are explicitly isomorphic | 4/4 inverse-map identities
+[PASS] E2.6- the e_- summand has one simple-module class, of dimension 2 | computed from primitive-idempotent ranks and matrix-unit maps
+[PASS] E2.TOTAL every irreducible complex module of M2(C) direct-sum M2(C) has dimension 2 | both central actions and both summands exhausted
+
+========================================================================================
+E3: one-dimensional exclusion and two-dimensional positive control
+========================================================================================
+SymPy solve for the complete scalar Clifford system: []
+[PASS] E3.1 exhaustive SymPy solve finds no 1x1 complex Clifford representation | solutions=0
+Groebner contradiction basis: [1]
+[PASS] E3.2 exact polynomial ideal is the unit ideal | contradiction certificate: 1 = 0
+Explicit d=1 exhaustion after x_i^2=1: tested=8, valid=[]
+[PASS] E3.3 all eight d=1 square-law candidates violate an off-diagonal relation | valid=0
+[PASS] E3.4 d=2 Pauli witness satisfies the complete Clifford system | 9/9 relations
+[PASS] E3.5 Pauli positive control has omega = i I2 and omega^2 = -I2
+[PASS] E3.TOTAL d=1 is excluded exhaustively and d=2 has an exact witness
+
+========================================================================================
+E4: full-complexification kernel and real-algebra faithfulness boundary
+========================================================================================
+[PASS] E4.1+ pi_+ is multiplicative on every basis pair | 64/64 products
+[PASS] E4.2+ full complexified pi_+ has the opposite summand as its exact kernel | map rank=4, kernel dim=4
+[PASS] E4.3+ the 2-dim representation of the full complexified algebra is non-faithful | kernel dim=4
+[PASS] E4.4+ restriction to real Cl(3,0) is faithful | real rank=8, determinant=16
+[PASS] E4.1- pi_- is multiplicative on every basis pair | 64/64 products
+[PASS] E4.2- full complexified pi_- has the opposite summand as its exact kernel | map rank=4, kernel dim=4
+[PASS] E4.3- the 2-dim representation of the full complexified algebra is non-faithful | kernel dim=4
+[PASS] E4.4- restriction to real Cl(3,0) is faithful | real rank=8, determinant=16
+[PASS] E4.TOTAL both 2-dim full-complexification modules are non-faithful, while both real Cl(3,0) restrictions are faithful | ker(pi_+)=e_-A and ker(pi_-)=e_+A
+
+========================================================================================
+TOTAL
+========================================================================================
+[PASS] UNIVERSAL EXCLUSION CERTIFICATE | faithful irreducible complex Cl(3,0) representations have dimension 2; d=1 is impossible
+TOTAL: PASS=52 FAIL=0
+FLAGS: none

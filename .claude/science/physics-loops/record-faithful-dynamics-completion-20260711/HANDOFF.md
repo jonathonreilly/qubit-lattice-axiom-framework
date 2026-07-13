@@ -897,3 +897,32 @@ Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5270
 is open and mergeable on Block14; the independent audit workflow was running
 at the delivery checkpoint.
+
+## Block 38: fixed-U combined-reference split and colored response
+
+The exact combined reference `E=E_HG_A(U)` now has a two-arm centering split
+`O=[O-Lg]+Lg`, with `g(U)=G_A(U)O`, and an exact law of total covariance.
+For the pointwise Gaussian-centered arm, a one-Haar-tag Gaussian bond row and
+color-preserving cluster subtraction give
+`A_corr=2D K_R/(1-tau)^3`, which vanishes at `K_R=0` with the reference row
+fixed. The runner/cache report `PASS=11 FAIL=0`.
+
+This is a fixed-background theorem on a declared abstract factor row. The
+displayed `q=0.606530659713` is arithmetic compatibility only: outer Haar
+normalization, canonical Haar provenance for `g`, actual physical red-factor
+instantiation in the strong domain, future-center migration, strong spatial
+return, the Hessian, and an invariant ball remain open. Determinant ownership
+is explicit: scalar determinant/Wilson factors belong only to the future joint
+outer-Haar arm, while fermionic boundary/Schur factors are candidates for the
+fixed-`U` arm after a factor-level map.
+
+Independent code/math, physics/import, and governance/no-go reviews all pass
+with bounded claims. The full audit pipeline seeded one `bounded_theorem` /
+`unaudited` row with exactly four dependencies; strict lint had zero errors
+and generated outputs were stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5349 is
+open on Block37. The next exact target is a direct joint Haar--Gaussian
+colored cluster expansion controlling the outer partition factor and `g`
+provenance before migrating to `S^(2)`. No axiom-update stop is triggered.

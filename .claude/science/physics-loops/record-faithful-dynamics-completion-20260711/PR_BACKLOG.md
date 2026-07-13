@@ -447,6 +447,24 @@ The cubic neighbor-response result was pushed and opened for review:
 
 No merge was performed. Independent audit remains authoritative.
 
+The fixed-U combined-reference split and residual-colored response theorem is
+prepared as the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5349
+- base: `physics-loop/record-faithful-dynamics-block37-correlated-gaussian-attachment-20260712`
+- head: `physics-loop/record-faithful-dynamics-block38-combined-reference-residual-resummation-20260712`
+- source runner: `PASS=11 FAIL=0`
+- disposition: independent code/math, physics/import, and governance/no-go
+  review passed with bounded claims after common-row, colored-envelope,
+  denominator-branch, determinant-arm, and fixed-envelope-linearity repairs;
+  the full audit pipeline seeds one `bounded_theorem` / `unaudited` row with
+  exactly four dependencies, strict lint has zero errors, and generated
+  status surfaces are stripped
+- delivery check: open; mergeability and checks are verified after the
+  campaign-state commit is pushed
+
+No merge is authorized. Independent audit remains authoritative.
+
 The two-seam forest gauge and Polyakov-holonomy bridge is prepared as the next
 stacked review block:
 

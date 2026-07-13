@@ -38,6 +38,22 @@ def flattened(path):
     return " ".join(path.read_text(encoding="utf-8").split())
 
 
+def flattened_quote_groups(path):
+    """Return blockquotes with quote markers removed and whitespace flattened."""
+    groups, current = [], []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith(">"):
+            current.append(line[1:].lstrip())
+        elif current and not line.strip():
+            current.append("")
+        elif current:
+            groups.append(" ".join(" ".join(current).split()))
+            current = []
+    if current:
+        groups.append(" ".join(" ".join(current).split()))
+    return groups
+
+
 # Shared exact algebra; no floating-point values occur.
 I = sp.I
 sqrt3 = sp.sqrt(3)
@@ -62,12 +78,20 @@ P1, Pw, Pwb = P(sp.Integer(1)), P(w), P(wb)
 # V1 -- current memo clauses, verbatim after whitespace flattening.
 minimal_path = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
 minimal_flat = flattened(minimal_path)
+target_note_path = ROOT / "docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md"
+target_flat = flattened(target_note_path)
 v1_needles = {
+    "qubit_full_domain": (
+        "The full one-site possibility domain has algebraic presentation `M_2(C)`."
+    ),
     "qubit_real_presentation": (
         "A `Cl(3,0)`-compatible real-algebra presentation may be used "
         "equivalently and adds no further primitive structure."
     ),
     "no_possibility_privileged": "No possibility is privileged.",
+    "possibilities_distinguished_by_supplied_algebra": (
+        "Possibilities are distinguished by the supplied algebraic structure alone."
+    ),
     "qualification_choice": (
         "A choice not fixed by the supplied structure remains a named "
         "conditional or open dependency."
@@ -84,6 +108,15 @@ v1_needles = {
 }
 for name, needle in v1_needles.items():
     check("V1", name, " ".join(needle.split()) in minimal_flat)
+memo_quote_groups = flattened_quote_groups(minimal_path)
+target_quote_groups = flattened_quote_groups(target_note_path)
+quoted_memo_groups = target_quote_groups[:2]
+check(
+    "V1", "all_target_memo_quote_blocks_current_verbatim",
+    len(quoted_memo_groups) == 2
+    and all(group in minimal_flat for group in quoted_memo_groups),
+    detail="complete Qubit and Qualification blockquotes compared after whitespace flattening",
+)
 
 
 # V2 -- L-K1 joint real-algebra structure and positive-list K closure.
@@ -177,11 +210,17 @@ def copy_isometry(pvm):
 sector_pvm = [P1, Pw, Pwb]
 sector_pvm_K = [sp.conjugate(projector) for projector in sector_pvm]
 V3copy, V3copy_K = copy_isometry(sector_pvm), copy_isometry(sector_pvm_K)
+pointer_swap3 = sp.Matrix([[1, 0, 0], [0, 0, 1], [0, 1, 0]])
 check("V4", "sector_copy_isometry", matrix_zero(V3copy.conjugate().T * V3copy - I3))
 check("V4", "sector_copy_conj_is_conjugated_PVM_copy",
       matrix_zero(sp.conjugate(V3copy) - V3copy_K))
 check("V4", "sector_conjugation_swaps_doublet_projectors",
       matrix_zero(sector_pvm_K[1] - Pwb) and matrix_zero(sector_pvm_K[2] - Pw))
+check("V4", "sector_copy_combined_K_pointer_label_intertwiner",
+      matrix_zero(sp.kronecker_product(I3, pointer_swap3) * sp.conjugate(V3copy)
+                  - V3copy)
+      and not matrix_zero(sp.conjugate(V3copy) - V3copy),
+      detail="pointer-label swap is load-bearing; entrywise conjugation alone fails")
 z = sp.symbols("z0:9")
 rho3_generic = sp.Matrix(3, 3, z)
 check(
@@ -203,6 +242,19 @@ check(
     matrix_zero(sp.conjugate(V2copy * rho3_generic * V2copy.conjugate().T)
                 - V2copy_K * sp.conjugate(rho3_generic) * V2copy_K.conjugate().T),
 )
+V3copy_second = sum(
+    (sp.kronecker_product(projector, I3, ket(k, 3))
+     for k, projector in enumerate(sector_pvm)),
+    sp.zeros(27, 9),
+)
+V3copy_two_tick = sp.simplify(V3copy_second * V3copy)
+two_tick_history_swap = sp.kronecker_product(I3, pointer_swap3, pointer_swap3)
+check(
+    "V4", "fixed_two_tick_combined_K_history_intertwiner",
+    matrix_zero(two_tick_history_swap * sp.conjugate(V3copy_two_tick)
+                - V3copy_two_tick),
+    detail="both real pointer registers carry the induced doublet-label swap",
+)
 
 
 # V5 -- L-K2 state face and orbit-constant joint-witness protocol.
@@ -223,6 +275,12 @@ check(
     "V5", "K_real_sector_registered_weights_orbit_constant",
     scalar_zero(registered_weights[1] - registered_weights[2]),
     detail=f"w-Pw_minus_w-Pwb={sp.simplify(registered_weights[1]-registered_weights[2])}",
+)
+registered_history_swap = sp.kronecker_product(sp.eye(6), pointer_swap3)
+check(
+    "V5", "registered_state_combined_K_history_invariant",
+    matrix_zero(registered_history_swap * sp.conjugate(registered)
+                * registered_history_swap.T - registered),
 )
 I6 = sp.eye(6)
 Q0 = sp.simplify(I6 - W**2 / 3)
@@ -249,6 +307,27 @@ for branch_name, Q in W_pvm:
 check("V5", "W_protocol_symmetric_ensemble",
       scalar_zero(sum(branch_differences, sp.Integer(0))),
       detail=f"summed_difference={sp.simplify(sum(branch_differences, sp.Integer(0)))}")
+U_nonintertwining = sp.simplify((I2 - I * s1) / sp.sqrt(2))
+rho_z = (I2 + s3) / 2
+rho_z_rotated = sp.simplify(U_nonintertwining * rho_z
+                            * U_nonintertwining.conjugate().T)
+check(
+    "V5", "K_closed_generated_algebra_not_enough_for_state_preservation",
+    matrix_zero(I * s1 - s1 * s2 * s3 * s1)
+    and matrix_zero(U_nonintertwining.conjugate().T * U_nonintertwining - I2)
+    and not matrix_zero(sp.conjugate(rho_z_rotated) - rho_z_rotated),
+    detail="U=(I-i*s1)/sqrt(2) is generated but does not intertwine entrywise K",
+)
+orbit_weight = sp.Symbol("a", positive=True)
+first_tick_orbit_weights = sp.Matrix([orbit_weight, orbit_weight])
+asymmetric_feed_forward = sp.diag(1, 0) * first_tick_orbit_weights
+equivariant_feed_forward = sp.eye(2) * first_tick_orbit_weights
+check(
+    "V5", "adaptive_feed_forward_requires_history_equivariant_controller",
+    not scalar_zero(asymmetric_feed_forward[0] - asymmetric_feed_forward[1])
+    and scalar_zero(equivariant_feed_forward[0] - equivariant_feed_forward[1]),
+    detail="K-closure of available writes does not pair an asymmetric history-conditioned schedule",
+)
 
 
 # V6 -- computed negative controls and dynamic authority checks.
@@ -258,6 +337,14 @@ rho_minus_eps = sp.kronecker_product((I2 - eps * s2) / 2, I3 / 3)
 check("V6", "K_odd_seed_conjugated_model_pair",
       matrix_zero(sp.conjugate(rho_eps) - rho_minus_eps)
       and scalar_zero(sp.trace(rho_eps) - sp.trace(rho_minus_eps)))
+check(
+    "V6", "K_odd_seed_density_eigenvalues_and_physical_range",
+    rho_eps.eigenvals() == {
+        sp.Rational(1, 6) - eps / 6: 3,
+        sp.Rational(1, 6) + eps / 6: 3,
+    },
+    detail="eigenvalues=(1-eps)/6,(1+eps)/6; positivity requires |eps|<=1",
+)
 neg_branch_plus = [sp.simplify(sp.trace(Rsector[k] * Qplus * rho_eps * Qplus))
                    for k in range(3)]
 neg_plus_difference = sp.factor(neg_branch_plus[1] - neg_branch_plus[2])
@@ -313,7 +400,7 @@ check("V6", "three_sector_monitor_in_positive_list_real_algebra",
       matrix_zero(sp.kronecker_product(sp.eye(2), Aodd)
                   - sp.kronecker_product(s1 * s2 * s3, C - C2)),
       detail="I2 x i(C-C^2) = (s1 s2 s3) x (C-C^2): a real product of "
-             "positive-list generators; the 3-sector monitor needs no admission")
+             "positive-list generators; the 3-sector monitor needs no K-odd input")
 
 record_note_path = ROOT / "docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md"
 record_flat = flattened(record_note_path)
@@ -335,6 +422,25 @@ check("V6", "flavor_note_Born_comparator_verbatim",
       " ".join(born_exact.split()) in flavor_flat)
 w1b_path = ROOT / "docs/ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md"
 w1b_flat = flattened(w1b_path)
+w1b_quote_groups = flattened_quote_groups(w1b_path)
+supplied_context_quote = (
+    "**Declared supplied context — `charged_lepton_k_cpt_2_sector_occupancy_context`.** "
+    "The charged-lepton 2-sector occupancy surface is the K/CPT-orbit partition "
+    "`{singlet sector, doublet orbit}` with occupancy distribution `(p_s,p_d)`, "
+    "`p_s+p_d=1`, where the equal-power-per-block grain reads `r=1/2` at "
+    "`p_s=p_d`. This uses the historical adoption record's Candidate 1 wording "
+    "together with the custody L9 equipartition cell. Those sources supply "
+    "wording and orientation only, not premise authority. The identification is "
+    "supplied here per the K/CPT supplied-context bridge pattern; it is not "
+    "derived here, and every claim below is conditional on it."
+)
+supplied_context_quote = " ".join(supplied_context_quote.split())
+check(
+    "V6", "W1b_supplied_context_quote_verbatim_in_target",
+    supplied_context_quote in w1b_quote_groups
+    and supplied_context_quote in target_quote_groups,
+    detail="complete blockquote compared after whitespace flattening",
+)
 grain_needle = "p_d=1/2 <=> 2r/(1+2r)=1/2 <=> 4r=1+2r <=> r=1/2."
 check("V6", "W1b_grain_formula_authority_available",
       " ".join(grain_needle.split()) in w1b_flat,
@@ -353,6 +459,10 @@ l2_needle = (
 check("V7", "W1b_L2_update_family_source_available",
       " ".join(l2_needle.split()) in w1b_flat,
       detail="dynamic flattened-whitespace L2 family definition")
+check("V7", "target_imports_W1b_L2_definition_exactly",
+      " ".join(l2_needle.split()) in w1b_flat
+      and " ".join(l2_needle.split()) in target_flat,
+      detail="same two-sector family text on source and target; no off-surface law")
 koide_path = ROOT / "docs/KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md"
 koide_flat = flattened(koide_path)
 koide_needle = (
@@ -403,11 +513,15 @@ for exponent in (sp.Integer(2), sp.Integer(3), sp.Rational(5, 2), sp.Integer(4))
     power_fixed_sets[str(exponent)] = solutions
 expected_fix = {sp.Integer(0), sp.Rational(1, 2), sp.Integer(1)}
 fixed_reproduced = all(solutions == expected_fix for solutions in power_fixed_sets.values())
+power_fixed_sets_detail = {
+    key: tuple(sorted(solutions, key=lambda value: float(value)))
+    for key, solutions in power_fixed_sets.items()
+}
 check("V7", "W1b_common_f_exchange_identity", exchange_identity)
 check("V7", "W1b_fixed_equation_reproved", fixed_equivalence,
       detail="T_f(q)=q iff f(q)(1-q)=q f(1-q); strict sharpening excludes off-center roots")
 check("V7", "W1b_power_subfamily_Fix_0_half_1_exact", fixed_reproduced,
-      detail=str(power_fixed_sets))
+      detail=str(power_fixed_sets_detail))
 check("V7", "swap_symmetric_surface_invariance_and_Fix_0_half_1",
       family_restriction and surface_invariant and exchange_identity
       and fixed_equivalence and fixed_reproduced,
@@ -417,6 +531,7 @@ check("V7", "swap_symmetric_surface_invariance_and_Fix_0_half_1",
 print("PATH note=docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md")
 print("PATH runner=scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py")
 print("PATH cache=logs/runner-cache/kcpt_orbit_constant_registered_occupancy_2026_07_12.txt")
-print("PATH worklog=/tmp/kreality_p3_worklog.md")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print("FLAGS: none" if not FAILURES else "FLAGS: " + ", ".join(FAILURES))
+if FAIL:
+    raise SystemExit(1)

@@ -1,5 +1,5 @@
 ==============================================================================
-Strong CP / θ = 0 Bounded Cited-Selected-Surface Closure
+Strong CP / θ = 0 Bounded Selected-Action-Surface Closure
 ==============================================================================
 
 CLAIM: Conditional on the cited selectors' own surfaces and classes,
@@ -99,7 +99,7 @@ Constructed action conditions:
 
 === COMBINED RESULT: θ_eff = 0 ===
 
-  [INFO] [SUPPORT] theta_bare = 0 is read from the constructed cited-selected basis  (computed theta/pi = 0)
+  [INFO] [SUPPORT] theta_bare = 0 is read from the constructed bounded selected basis  (computed theta/pi = 0)
   [PASS] [COMPUTE] Explicit positive-mass quark surface gives arg det(M_u M_d) = 0  (|arg det| = 0.00e+00)
   [PASS] [COMPUTE] Combined selected-surface synthesis gives θ_eff = 0  (0.0 + 0.0 = 0.0)
   [PASS] [COMPUTE] Selected-surface closure is consistent with the neutron-EDM bound  (|θ_eff| = 0.0e+00 < 1.0e-10)
@@ -116,7 +116,7 @@ SUPPORT=4
 TOTAL PASS=55  FAIL=0
 ==============================================================================
 
-All cited-selected action-surface closure checks passed. Conditional on
+All bounded selected action-surface closure checks passed. Conditional on
 the printed surfaces and classes, the strong sector closes at θ_eff = 0,
 while CKM CP remains weak-sector only and the surviving neutron-EDM signal
 stays in the separate bounded CKM lane.

@@ -41741,6 +41741,22 @@
       "to": "strong_cp_theta_zero_note"
     },
     {
+      "from": "strong_cp_theta_zero_note",
+      "to": "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04"
+    },
+    {
+      "from": "strong_cp_theta_zero_note",
+      "to": "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03"
+    },
+    {
+      "from": "strong_cp_theta_zero_note",
+      "to": "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19"
+    },
+    {
+      "from": "strong_cp_theta_zero_note",
+      "to": "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01"
+    },
+    {
       "from": "structural_no_go_survey_note",
       "to": "hw1_second_order_return_shape_theorem_note"
     },
@@ -112336,7 +112352,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "94772c8ba96eb6c73a124a7e1cfa6e5351f9c80779985ae9b4950208abefb791",
+      "note_hash": "f056f816d01734100302d8f4d7caf1288cd4b8a4a9c02a620b5c8b90f60eb547",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118685,11 +118701,16 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "theta_gauge_native_positive_class_emergent_sector_weighting_narrow_theorem_note_2026-07-04",
+        "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
+        "strong_cp_operator_basis_and_mass_orientation_theorem_note_2026-05-19",
+        "theta_mass_orientation_zero_branch_pairing_forced_on_k_real_surface_narrow_theorem_note_2026-07-01"
+      ],
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "note_hash": "fdb262863379efc5b67ae1aee6accb374b7ed2b193482758170048092e17c2ea",
+      "note_hash": "aba6a82fa00646a6218b47210525a61b61cd61f727aa3a9eb90d29d979f79946",
       "path": "docs/STRONG_CP_THETA_ZERO_NOTE.md",
       "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
       "title": "Strong CP / \u03b8 = 0 Conditional Action-Surface Closure"
@@ -129197,7 +129218,6 @@
     "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
     "stale_narrative_review_2026-05-03",
     "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18",
-    "strong_cp_theta_zero_note",
     "structured_chokepoint_bridge_note",
     "structured_mirror_bornsafe_scan_note",
     "structured_mirror_reconciliation_note",
@@ -129386,10 +129406,10 @@
       "open_gate": 212,
       "positive_theorem": 662
     },
-    "edge_count": 14531,
-    "leaf_count": 1333,
+    "edge_count": 14535,
+    "leaf_count": 1331,
     "node_count": 3948,
-    "root_count": 1115,
+    "root_count": 1114,
     "runners_with_path": 3562
   }
 }

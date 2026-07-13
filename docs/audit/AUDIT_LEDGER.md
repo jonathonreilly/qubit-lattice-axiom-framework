@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 76 |
-| **retained_bounded** | 303 |
+| **retained_bounded** | 304 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2960 |
-| audit_in_progress | 1 |
+| unaudited | 2957 |
+| audit_in_progress | 3 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -40,14 +40,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 1 |
-| `audited_clean` | 381 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 382 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3311 |
+| `unaudited` | 3308 |
 
 | claim_type | count |
 |---|---:|
@@ -60,19 +60,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 747 |
-| `high` | 401 |
-| `medium` | 960 |
-| `leaf` | 1645 |
+| `critical` | 799 |
+| `high` | 378 |
+| `medium` | 934 |
+| `leaf` | 1642 |
 
 - **Retained pending chain closure:** 1
-- **Citation cycles detected:** 10
+- **Citation cycles detected:** 63
 
 ### Runner classification (static heuristic)
 
 - runners classified: 3420
 - runners with (C) first-principles compute hits: 1799
-- runners with (D) external comparator hits: 1102
+- runners with (D) external comparator hits: 1103
 - decoration candidates (no C, no D): 729
 
 ## Top 25 by load-bearing score (topology only)
@@ -81,38 +81,41 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1989 | 231.96 | `unaudited` | meta |
-| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1612 | 64.66 | `audited_clean` | **retained** |
-| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1194 | 62.22 | `unaudited` | unaudited |
+| 1 | `minimal_axioms` | meta | critical | 1992 | 231.96 | `unaudited` | meta |
+| 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1646 | 64.69 | `audited_clean` | **retained** |
+| 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1253 | 62.29 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |
-| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1054 | 61.54 | `unaudited` | unaudited |
-| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1180 | 50.21 | `unaudited` | unaudited |
-| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1080 | 45.08 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1202 | 44.23 | `unaudited` | meta |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 953 | 39.90 | `unaudited` | unaudited |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1319 | 39.87 | `unaudited` | unaudited |
-| 11 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 432 | 39.76 | `unaudited` | unaudited |
-| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1058 | 38.05 | `unaudited` | unaudited |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1064 | 37.56 | `unaudited` | unaudited |
-| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1565 | 37.11 | `audited_clean` | **retained** |
-| 15 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 622 | 36.28 | `unaudited` | unaudited |
-| 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 124 | 35.97 | `unaudited` | unaudited |
-| 17 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 444 | 35.30 | `unaudited` | unaudited |
-| 18 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 628 | 33.80 | `unaudited` | unaudited |
-| 19 | `kinetic_isotropy_primitive` | meta | critical | 497 | 33.46 | `unaudited` | meta |
-| 20 | `yt_ew_color_projection_theorem` | no_go | critical | 895 | 32.81 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 874 | 32.27 | `unaudited` | unaudited |
-| 22 | `cpt_exact_note` | positive_theorem | critical | 736 | 31.53 | `unaudited` | unaudited |
-| 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 475 | 31.39 | `unaudited` | unaudited |
-| 24 | `three_generation_structure_note` | bounded_theorem | critical | 1051 | 31.04 | `unaudited` | unaudited |
-| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 1027 | 31.01 | `unaudited` | unaudited |
+| 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1097 | 61.60 | `unaudited` | unaudited |
+| 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1230 | 50.27 | `unaudited` | unaudited |
+| 7 | `minimal_axioms_2026-05-03` | meta | critical | 1130 | 45.14 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1247 | 44.28 | `unaudited` | meta |
+| 9 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 706 | 40.47 | `unaudited` | unaudited |
+| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 1019 | 39.99 | `unaudited` | unaudited |
+| 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1354 | 39.90 | `unaudited` | unaudited |
+| 12 | `alpha_s_derived_note` | bounded_theorem | critical | 1109 | 38.12 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1126 | 37.64 | `unaudited` | unaudited |
+| 14 | `native_gauge_closure_note` | positive_theorem | critical | 1599 | 37.14 | `audited_clean` | **retained** |
+| 15 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 842 | 36.72 | `unaudited` | unaudited |
+| 16 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 713 | 35.98 | `unaudited` | unaudited |
+| 17 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 124 | 35.97 | `unaudited` | unaudited |
+| 18 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 769 | 34.09 | `unaudited` | unaudited |
+| 19 | `kinetic_isotropy_primitive` | meta | critical | 767 | 34.09 | `unaudited` | meta |
+| 20 | `yt_ew_color_projection_theorem` | no_go | critical | 960 | 32.91 | `unaudited` | unaudited |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 940 | 32.38 | `unaudited` | unaudited |
+| 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 716 | 31.99 | `unaudited` | unaudited |
+| 23 | `cpt_exact_note` | positive_theorem | critical | 875 | 31.77 | `unaudited` | unaudited |
+| 24 | `three_generation_structure_note` | bounded_theorem | critical | 1111 | 31.12 | `unaudited` | unaudited |
+| 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 1073 | 31.07 | `unaudited` | unaudited |
 
 
 ## Applied audits
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
@@ -495,6 +498,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
+| `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `area_law_native_car_semantics_tightening_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -503,10 +507,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
-| `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
+| `koide_generation_weight_dial_shape_forced_value_unfixed_qualification_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
+| `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -557,6 +560,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 
 ## Audit findings (full)
+
+### `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`
+
+- **Note:** [`ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-batch-B-20260713-c7e34044`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The staggered alpha_mu matrices generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, while Gamma_5^spin is taste-singlet and epsilon lies outside the spin algebra and fails to commute with the full taste commutant.  _(class `A`)_
+- **chain closes:** True — The explicitly defined finite matrices determine every claimed algebraic property, and the runner computes the Clifford relations, algebra and commutant dimensions, chirality projectors, and epsilon distinctions directly. The interacting physical-chirality identification is expressly outside the audited scope.
+- **rationale:** The load-bearing result is an exact finite-dimensional algebraic closure over matrices fully specified in the note, not a renamed physical identification or tuned numerical comparison. The runner genuinely constructs those matrices and computes all load-bearing properties rather than printing expected constants. The theorem remains correctly bounded to the free blocked algebraic surface and does not claim the separate interacting, gauged, single-taste physical bridge.
+- **auditor confidence:** high
 
 ### `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`
 
@@ -726,6 +742,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** This paragraph is the canonical version and may be cited for manuscript disclosure language and methodology framing, but not as a retained physics theorem, runner-backed derivation, or audit result.  _(class `E`)_
 - **chain closes:** True — Within the declared meta scope, the note closes by adoption/definition: it designates the quoted paragraph as canonical disclosure language and explicitly excludes physics-theorem use. No physics derivation or runner-backed scientific claim is established by this packet.
 - **rationale:** The load-bearing act is a definition/adoption of canonical disclosure text, not a derivation from framework premises. The source note itself correctly scopes the artifact as methodology/canonical-text registration only and forbids citation as a retained physics theorem or audit result. Thus the meta registration closes, but any positive-theorem interpretation would be only a definition substitution rather than a scientific derivation.
+- **auditor confidence:** high
+
+### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`
+
+- **Note:** [`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For abstract positive scalars α_bare and u_0, with α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², the geometric-mean, logarithmic-mean, and equal-ratio identities hold; no numerical plaquette value or physical coupling identification was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-batch-A-20260713-b21794f1`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0² gives α_LM² = α_bare²/u_0² = α_bare·α_s(v).  _(class `A`)_
+- **chain closes:** True — Direct substitution proves the polynomial identity, and positivity justifies the logarithmic restatement and all divisions. No numerical plaquette value or physical coupling interpretation is load-bearing.
+- **rationale:** Issue: the scoped algebra closes, but clean ratification cannot satisfy the packet’s mandatory clean-verdict N1–N8 gate because the live runner output lacks five distinct N1 mechanism classes and the five required N5 resolution-specific execution records. Why this blocks: the packet forbids an audited_clean verdict without a valid PASS gate even when negative_assertion_classes is empty. Repair target: add current-cycle runner evidence satisfying those route and resolution requirements, or explicitly exempt non-negative positive theorems from the clean-verdict gate. Claim boundary until fixed: the abstract identities are established, but no numerical plaquette value or physical coupling identification is ratified here.
 - **auditor confidence:** high
 
 ### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
@@ -2934,23 +2963,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
 - **auditor confidence:** high
 
-### `graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11`
-
-- **Note:** [`GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The conditional menu-refinement contradiction, full-symmetry zero-information point, and unequal-rank obstruction on the proposed C3 generation context.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** Uniformity on both {P_s,P_d} and {P_s,P_1,P_2} assigns incompatible values to the shared projector, while full qutrit Weyl symmetry forces rho=I/3 and hence r=1 rather than r=1/2.  _(class `A`)_
-- **chain closes:** False — The matrix and menu algebra closes conditionally, but the graded core and canonical context are proposed/unapproved, while the Born-form and occupancy parents are unaudited.
-- **rationale:** Issue: the refinement contradiction, Weyl-commutant calculation, Born-weight traces, DFT tie, and rank obstruction are correct, but the graded core and context naming are proposed rather than approved and two scientific direct parents are unaudited. Why this blocks: the computed r=1 and r=1/2 points remain consequences of supplied menu, Born-form, symmetry, and dictionary hypotheses rather than retained framework results. Repair target: retain the Born and occupancy parents and provide approved or retained law-domain certificates for menu eligibility, lattice-motion covariance, and record-decidable weighting. Claim boundary until fixed: A-C are exact conditional boundary facts on the explicitly supplied qutrit projection menus only.
-- **open / conditional deps cited:**
-  - `BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`
-  - `KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
 ### `graph_first_selector_derivation_note`
 
 - **Note:** [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
@@ -3407,39 +3419,38 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing result is an exact algebraic identity, and the runner verifies the same symbolic expansion plus the algebraic equivalence to Q = 2/3. The two numeric checks only witness the usual charged-lepton Koide proximity and are not needed for theorem closure. This clean verdict covers the selector pullback under the stated map only; it does not audit or close the Gamma orbit value law or dynamical selector derivation.
 - **auditor confidence:** high
 
-### `koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11`
+### `koide_generation_weight_dial_shape_forced_value_unfixed_qualification_bounded_theorem_note_2026-07-11`
 
-- **Note:** [`KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md)
+- **Note:** [`KOIDE_GENERATION_WEIGHT_DIAL_SHAPE_FORCED_VALUE_UNFIXED_QUALIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/KOIDE_GENERATION_WEIGHT_DIAL_SHAPE_FORCED_VALUE_UNFIXED_QUALIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** The positive-kappa bookkeeping flow class, its fixed set and conjugacy, the kappa=1,2 evaluations, and conditional fixed-point inversion with report-only comparators.
+- **claim_scope:** The invariant density-state dial shape under the supplied C3 and antiunitary context, and the exhibited nonselection of its singlet-doublet coordinate.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
 - **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** With x=p_d/p_s=kappa r, independent agreement conditioning sends x to x^2 and therefore induces f_kappa(r)=kappa r^2, whose positive fixed point is 1/kappa.  _(class `A`)_
-- **chain closes:** False — The algebra closes, but independent agreement conditioning and physical bookkeeping are supplied, and all three direct scientific dependencies remain unaudited.
-- **rationale:** Issue: the odds-map, fixed-point, projective-chart, conjugacy, inversion, and comparator arithmetic are correct, but independent agreement conditioning and physical kappa identification have no retained certificates and all three direct parents are unaudited. Why this blocks: the exact map class cannot select a physical lane coefficient or support any comparator inference. Repair target: retain the parents and derive a lattice-motion-covariant, record-decidable agreement/readout law that fixes kappa. Claim boundary until fixed: kappa is only a supplied positive bookkeeping coefficient and the displayed decimal table is report-only arithmetic.
+- **load-bearing step:** C3 invariance makes rho character-diagonal and the supplied antiunitary exchanges the two nontrivial characters, forcing rho=diag(p_s,p_d/2,p_d/2) while unequal cell ranks leave p_s/p_d free.  _(class `A`)_
+- **chain closes:** False — The representation algebra closes, but the density form, canonical context, and antiunitary are supplied, and three scientific direct parents remain unaudited.
+- **rationale:** Issue: the commutant, antiunitary-exchange, invariant-state, rank/orbit, and two-point calculations are correct, but the density/Born form and readout context are supplied and the K/CPT and two no-go parents are unaudited. Why this blocks: the one-parameter dial is only a conditional classification and the Qualification cannot by itself make the registered point into derivation output. Repair target: retain the context/no-go parents and derive a density-weight/readout bridge with a lattice-motion-covariant, record-decidable domain. Claim boundary until fixed: within the supplied density-state and invariance class, doublet equality is forced while the singlet-doublet ratio remains free.
 - **open / conditional deps cited:**
-  - `RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`
-  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
-  - `FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md`
+  - `KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`
+  - `KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`
+  - `KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 
-### `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03`
+### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
 
-- **Note:** [`KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`](../../docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md)
+- **Note:** [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** The four-channel K-real determinant localization and the conditional one-locked-possibility statistical-slot comparison on the explicitly enumerated local surface.
+- **claim_scope:** On the supplied two-orbit local bookkeeping surface, the stated Gaussian has r=1, while the supplied aggregate count n_d gives r=n_d/2 and Q=(1+n_d)/3 without selecting n_d.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
 - **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** The four determinant localizations are exact, while one locked record content can determine two component readouts and only the supplied one-possibility/one-slot rule creates the one-versus-two slot mismatch.  _(class `A`)_
-- **chain closes:** False — The local formulas close, but the statistical-slot rule and K/CPT outcome context are supplied conditions and all three scientific direct dependencies remain unaudited.
-- **rationale:** Issue: the local determinant, Gaussian, Record-countermodel, and endpoint algebra is correct, but the statistical-slot equality lacks a retained certificate and the three direct scientific parents are unaudited. Why this blocks: neither physical slotting nor the current-source nonselection boundary can propagate at retained grade. Repair target: retain the three named parents and supply a record-decidable, lattice-motion-covariant law-domain theorem for the one-possibility/one-slot rule. Claim boundary until fixed: the four displayed matrices and the explicitly supplied one-slot and aggregate-energy laws have only the stated conditional local consequences.
+- **load-bearing step:** Using E_s = 3a^2, E_d = 6|b|^2, E_s = epsilon, and E_d = n_d epsilon gives r = n_d/2 and Q = (1+n_d)/3.  _(class `A`)_
+- **chain closes:** False — The Gaussian integrals and aggregate fork close algebraically, but the direct Q-dictionary and K/CPT orbit-context dependencies are unaudited and therefore do not provide retained-grade chain closure.
+- **rationale:** Issue: The local Gaussian, trace, and aggregate-fork algebra survives independent recomputation, but the direct Q-dictionary and K/CPT orbit-context authorities are not retained-grade. Why this blocks: Their unaudited status prevents the supplied orbit indexing and adjacent Q authority from propagating, even though the narrow N1-N8 nonselection gate passes and the finite supplied-condition law-domain checks are locally decidable, invariant under the checked actions, and extensionally distinct. Repair target: Independently audit the two named direct dependencies and require a retained certificate before any per-outcome-cell condition is adopted as a law domain. Claim boundary until fixed: Conditionally on the enumerated local surface, the Gaussian gives r=1 and a supplied n_d gives the exact fork, but neither n_d=1 nor a full-lattice physical readout law is derived.
 - **open / conditional deps cited:**
-  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
+  - `KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
   - `KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`
-  - `KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

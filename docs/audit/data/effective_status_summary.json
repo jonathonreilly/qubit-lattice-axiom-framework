@@ -9,31 +9,78 @@
   },
   "cycle_examples": [
     [
-      "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
-      "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
+      "strong_cp_theta_zero_note",
+      "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
+      "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+      "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "strong_cp_theta_bar_structured_admission_2026-06-04"
     ],
     [
-      "quark_cp_carrier_completion_note_2026-04-18",
-      "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17"
+      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+      "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "strong_cp_theta_zero_note",
+      "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
+      "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+      "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "strong_cp_theta_bar_structured_admission_2026-06-04",
+      "strong_cp_joint_bridge_fails_holomorphic_residual_2026-06-04",
+      "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04",
+      "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "koide_bae_30_probe_campaign_note_2026-05-09",
+      "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
+      "c3_symmetry_preserved_interpretation_note_2026-05-08"
     ],
     [
-      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
-      "bridge_gap_hk_cube_perron_note_2026-05-06"
+      "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
+      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+      "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "strong_cp_theta_zero_note",
+      "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
+      "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+      "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "strong_cp_theta_bar_structured_admission_2026-06-04",
+      "strong_cp_joint_bridge_fails_holomorphic_residual_2026-06-04",
+      "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04",
+      "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "koide_bae_30_probe_campaign_note_2026-05-09",
+      "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
+      "c3_symmetry_preserved_interpretation_note_2026-05-08"
     ],
     [
-      "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
-      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
-      "bridge_gap_hk_cube_perron_note_2026-05-06"
+      "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+      "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "strong_cp_theta_zero_note",
+      "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
+      "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+      "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "strong_cp_theta_bar_structured_admission_2026-06-04",
+      "strong_cp_joint_bridge_fails_holomorphic_residual_2026-06-04",
+      "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04",
+      "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "koide_bae_30_probe_campaign_note_2026-05-09",
+      "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
+      "c3_symmetry_preserved_interpretation_note_2026-05-08",
+      "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
     ],
     [
-      "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
-      "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
+      "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+      "strong_cp_theta_zero_note",
+      "theta_gauge_z2_character_collapse_odd_support_and_positive_class_zero_branch_selection_bounded_theorem_note_2026-07-03",
+      "theta_4d_carrier_flux_cohomology_intersection_pairing_closed_branch_and_defect_closure_residual_bounded_theorem_note_2026-07-02",
+      "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11",
+      "strong_cp_theta_bar_structured_admission_2026-06-04",
+      "strong_cp_joint_bridge_fails_holomorphic_residual_2026-06-04",
+      "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04",
+      "corner_fermion_determinant_does_not_select_koide_r_half_narrow_obstruction_note_2026-06-04",
+      "koide_bae_30_probe_campaign_note_2026-05-09",
+      "koide_a1_11_probe_campaign_bounded_admission_meta_note_2026-05-08",
+      "c3_symmetry_preserved_interpretation_note_2026-05-08",
+      "a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1"
     ]
   ],
-  "cycles_detected": 10,
+  "cycles_detected": 63,
   "effective_status_counts": {
-    "audit_in_progress": 1,
+    "audit_in_progress": 3,
     "audited_conditional": 23,
     "audited_failed": 2,
     "audited_numerical_match": 5,
@@ -49,9 +96,9 @@
     "meta": 351,
     "open_gate": 2,
     "retained": 76,
-    "retained_bounded": 303,
+    "retained_bounded": 304,
     "retained_pending_chain": 1,
-    "unaudited": 2960
+    "unaudited": 2957
   },
   "retained_pending_chain_count": 1,
   "retained_pending_chain_examples": [

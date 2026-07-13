@@ -66853,9 +66853,9 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "32b68c29dfb5035f5d069b3f7e74e9f5ce4def5a4d01b8b81b12763842664218",
+      "note_hash": "ffed188686a54c5e3cabbc3e45b0b2503b1141ceff75a39fd4bbb3b789a547a1",
       "path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
+      "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
       "title": "Cl(3) Complexification Split Narrow Theorem"
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
@@ -112390,7 +112390,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bd814454cd07dcd2bb01c871a098631c4eae35aaa6a960d9275cda4311a743ee",
+      "note_hash": "926d64af7101180fd50fa3bef6a07a1b6b1b7eac90bc8637f4a29762f9d56375",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

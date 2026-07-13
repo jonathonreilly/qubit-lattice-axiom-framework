@@ -2681,7 +2681,7 @@
       "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py",
+      "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
       "transitive_descendants": 1728
     },
     {

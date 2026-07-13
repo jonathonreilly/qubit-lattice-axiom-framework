@@ -4690,7 +4690,7 @@
       },
       "decoration_candidate": true,
       "dominant_class": "A",
-      "runner": "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py"
+      "runner": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py"
     },
     "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -44244,21 +44244,6 @@
       "dominant_class": "A",
       "exists": true
     },
-    "scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py": {
-      "assert_count": 1,
-      "claims": [
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "counts": {
-        "A": 4,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true
-    },
     "scripts/audit_companion_cl3_faithful_irrep_dim_two_exact_2026_05_10.py": {
       "assert_count": 1,
       "claims": [
@@ -48385,6 +48370,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/cl3_complexification_exclusion_stress_2026_07_13.py": {
+      "assert_count": 1,
+      "claims": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
+      ],
+      "counts": {
+        "A": 4,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
       "exists": true
     },
     "scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py": {

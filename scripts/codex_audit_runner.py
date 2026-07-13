@@ -1606,6 +1606,75 @@ def bind_authenticated_occurrence_metadata(
     return changes
 
 
+def bind_authenticated_n6_candidate_locators(
+    blob: dict,
+    evidence_manifest: dict[str, dict] | None,
+) -> list[dict[str, object]]:
+    """Bind an invalid N6 locator to its unique authenticated candidate id.
+
+    The auditor owns candidate selection, indexed basis, wall mapping,
+    mechanism, disposition, and verdict content. The orchestrator owns the
+    serialized partial-closure index. When an N6 object already names one
+    exact candidate id from that index but supplies a locator that is absent
+    from the serialized text (commonly because quoted basis text is JSON
+    escaped), replace only ``evidence_locator`` with the unique candidate id.
+    Ambiguous, missing, cross-index, or already valid locators remain untouched
+    and fail closed in the ordinary validator.
+    """
+    if evidence_manifest is None:
+        return []
+    packet = blob.get("no_go_discipline")
+    n6 = packet.get("N6_partial_closure_scan") if isinstance(packet, dict) else None
+    candidates = n6.get("candidates") if isinstance(n6, dict) else None
+    if not isinstance(candidates, list):
+        return []
+    changes: list[dict[str, object]] = []
+    for index, candidate in enumerate(candidates, 1):
+        if not isinstance(candidate, dict):
+            continue
+        path = candidate.get("evidence_path")
+        candidate_id = candidate.get("candidate_id")
+        locator = candidate.get("evidence_locator")
+        if not all(
+            isinstance(value, str) and value
+            for value in (path, candidate_id, locator)
+        ):
+            continue
+        entry = evidence_manifest.get(path)
+        if not isinstance(entry, dict):
+            continue
+        if "partial_closure_index" not in set(entry.get("roles") or []):
+            continue
+        text = str(entry.get("text") or "")
+        if locator in text:
+            continue
+        try:
+            payload = json.loads(text)
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(payload, dict):
+            continue
+        indexed = payload.get("candidates")
+        if not isinstance(indexed, list):
+            continue
+        matches = [
+            item
+            for item in indexed
+            if isinstance(item, dict) and item.get("candidate_id") == candidate_id
+        ]
+        if len(matches) != 1 or candidate_id not in text:
+            continue
+        changes.append({
+            "section": "N6_partial_closure_scan",
+            "index": index,
+            "field": "evidence_locator",
+            "from": locator,
+            "to": candidate_id,
+        })
+        candidate["evidence_locator"] = candidate_id
+    return changes
+
+
 def compute_required_reason(reply: str | None) -> str | None:
     """Accept only the exact one-line COMPUTE_REQUIRED escape protocol."""
     if not reply:
@@ -2486,6 +2555,16 @@ def main() -> int:
                         "phase": "authenticated_occurrence_metadata_bound",
                         "bindings": occurrence_bindings,
                     }) + "\n")
+            n6_locator_bindings = bind_authenticated_n6_candidate_locators(
+                blob, exact_evidence_manifest
+            )
+            if n6_locator_bindings:
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "authenticated_n6_candidate_locators_bound",
+                        "bindings": n6_locator_bindings,
+                    }) + "\n")
 
             note_path = row.get("note_path") or full_led_row.get("note_path") or ""
             note_body = read_note_body(note_path) or ""
@@ -2580,6 +2659,22 @@ def main() -> int:
                                 ),
                                 "attempt": repair_attempt,
                                 "bindings": repair_bindings,
+                            }) + "\n")
+                    repair_n6_locator_bindings = (
+                        bind_authenticated_n6_candidate_locators(
+                            repair_blob, exact_evidence_manifest
+                        )
+                    )
+                    if repair_n6_locator_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "validation_repair_authenticated_n6_"
+                                    "candidate_locators_bound"
+                                ),
+                                "attempt": repair_attempt,
+                                "bindings": repair_n6_locator_bindings,
                             }) + "\n")
                     preservation_error = validation_repair_preservation_error(
                         initial_rejected_blob, repair_blob
@@ -2677,6 +2772,22 @@ def main() -> int:
                                 ),
                                 "attempt": schema_attempt,
                                 "bindings": schema_bindings,
+                            }) + "\n")
+                    schema_n6_locator_bindings = (
+                        bind_authenticated_n6_candidate_locators(
+                            schema_blob, exact_evidence_manifest
+                        )
+                    )
+                    if schema_n6_locator_bindings:
+                        with run_log.open("a", encoding="utf-8") as f:
+                            f.write(json.dumps({
+                                "claim_id": cid,
+                                "phase": (
+                                    "fresh_schema_retry_authenticated_n6_"
+                                    "candidate_locators_bound"
+                                ),
+                                "attempt": schema_attempt,
+                                "bindings": schema_n6_locator_bindings,
                             }) + "\n")
                     schema_error = validate_verdict(
                         schema_blob,

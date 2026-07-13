@@ -9821,6 +9821,111 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertEqual(cross_labeled["occurrence_group_id"], "b4db14624baf74e0")
 
+    def test_authenticated_n6_candidate_locator_binds_unique_candidate_id_only(self):
+        m = _import_codex_audit_runner()
+        path = "audit-packet://partial-closure-index/test_no_go"
+        candidate_id = "controlled_vocabulary:246"
+        indexed_basis = (
+            'definition: "First-principles compute from the approved premise '
+            'surface producing a number not present in any input."'
+        )
+        indexed_candidate = {
+            "candidate_id": candidate_id,
+            "kind": "definition_refactor",
+            "basis": indexed_basis,
+        }
+        manifest = {
+            path: {
+                "path": path,
+                "roles": ["partial_closure_index"],
+                "text": json.dumps(
+                    {"candidates": [indexed_candidate]},
+                    sort_keys=True,
+                    separators=(",", ":"),
+                ),
+            }
+        }
+        candidate = {
+            "candidate_id": candidate_id,
+            "kind": "definition_refactor",
+            "indexed_basis": indexed_basis,
+            "affected_wall": "W_unit",
+            "closure_mechanism": (
+                f"{indexed_basis} It does not supply the W_unit theorem."
+            ),
+            "could_close_wall": False,
+            "addressed": True,
+            "disposition": "W_unit remains unproved by this definition.",
+            "evidence_path": path,
+            "evidence_locator": 'definition: "First-p',
+        }
+        blob = {
+            "verdict": "audited_clean",
+            "no_go_discipline": {
+                "N6_partial_closure_scan": {"candidates": [candidate]}
+            },
+        }
+        before = {
+            key: json.loads(json.dumps(value))
+            for key, value in candidate.items()
+            if key != "evidence_locator"
+        }
+        changes = m.bind_authenticated_n6_candidate_locators(blob, manifest)
+        self.assertEqual(len(changes), 1)
+        self.assertEqual(candidate["evidence_locator"], candidate_id)
+        self.assertEqual(
+            {
+                key: value
+                for key, value in candidate.items()
+                if key != "evidence_locator"
+            },
+            before,
+        )
+        self.assertEqual(blob["verdict"], "audited_clean")
+
+    def test_authenticated_n6_candidate_locator_refuses_ambiguity_and_wrong_role(self):
+        m = _import_codex_audit_runner()
+        path = "audit-packet://partial-closure-index/test_no_go"
+        candidate_id = "controlled_vocabulary:246"
+        indexed = {"candidate_id": candidate_id, "kind": "definition_refactor"}
+        candidate = {
+            "candidate_id": candidate_id,
+            "evidence_path": path,
+            "evidence_locator": "absent quoted basis prefix",
+        }
+        blob = {
+            "no_go_discipline": {
+                "N6_partial_closure_scan": {"candidates": [candidate]}
+            }
+        }
+        ambiguous = {
+            path: {
+                "roles": ["partial_closure_index"],
+                "text": json.dumps({"candidates": [indexed, indexed]}),
+            }
+        }
+        self.assertEqual(
+            m.bind_authenticated_n6_candidate_locators(blob, ambiguous), []
+        )
+        self.assertEqual(candidate["evidence_locator"], "absent quoted basis prefix")
+        wrong_role = json.loads(json.dumps(ambiguous))
+        wrong_role[path]["roles"] = ["cross_cycle_index"]
+        wrong_role[path]["text"] = json.dumps({"candidates": [indexed]})
+        self.assertEqual(
+            m.bind_authenticated_n6_candidate_locators(blob, wrong_role), []
+        )
+        self.assertEqual(candidate["evidence_locator"], "absent quoted basis prefix")
+        non_object = {
+            path: {
+                "roles": ["partial_closure_index"],
+                "text": "[]",
+            }
+        }
+        self.assertEqual(
+            m.bind_authenticated_n6_candidate_locators(blob, non_object), []
+        )
+        self.assertEqual(candidate["evidence_locator"], "absent quoted basis prefix")
+
     def test_locator_repair_preservation_allows_bound_metadata_only(self):
         m = _import_codex_audit_runner()
         rejected = {

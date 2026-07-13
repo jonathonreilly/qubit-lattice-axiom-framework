@@ -1,51 +1,68 @@
-===== runner cache v1 =====
-runner: scripts/frontier_strong_cp_theta_zero.py
-runner_sha256: ccdff72e07c79e685e162b708e3ebfe9aadb137490f8836134b30b4babaa55f1
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 2.46
-status: ok
------ stdout -----
 ==============================================================================
-Strong CP / θ = 0 Bounded Selected-Surface Closure
+Strong CP / θ = 0 Bounded Cited-Selected-Surface Closure
 ==============================================================================
 
-CLAIM: On the explicitly θ-free Wilson-plus-staggered scalar-mass surface,
-       θ_eff = 0 with no surviving loophole from axial rephasing,
-       exact fermion integration, or positive-weight topological sectors.
+CLAIM: Conditional on the cited selectors' own surfaces and classes,
+       the constructed Wilson-plus-staggered / K-real Case-A mass surface
+       has θ_eff = 0 with no generated strong-sector phase.
+
+=== ACTION-BASIS CONSTRUCTION FROM CITED CONDITIONAL SELECTORS ===
+
+  [PASS] [COMPUTE] Candidate basis parameterizes the CP-even and CP-odd gauge slots  (gauge candidates = ('Wilson plaquette', 'i theta sum_P Im Tr U_P'))
+  [PASS] [COMPUTE] P1-P5 real-positive single-plaquette selector computes theta=0 for the reviewed CP-odd slot  (computed theta/pi branches = (Fraction(0, 1),))
+  [PASS] [COMPUTE] Exact Z2-character equation on odd support computes theta/pi in {0, 1}  (roots of z^2-1 mapped to theta/pi = (Fraction(0, 1), Fraction(1, 1)))
+  [PASS] [COMPUTE] Strict positivity on conjugation-paired odd support computes the zero branch  (computed theta/pi branches = (Fraction(0, 1),))
+  [PASS] [COMPUTE] Exact positive native pushforward with gcd-one support computes zero weighting  (m(q) = {-1: Fraction(3, 8), 0: Fraction(1, 3), 1: Fraction(3, 8)}; Delta = 1; branches = (Fraction(0, 1),))
+  [PASS] [COMPUTE] Candidate mass basis parameterizes alpha_f for every staggered flavor  (flavors = u, d, s, c, b, t)
+  [PASS] [COMPUTE] Operator-basis reality computes alpha_f/pi in {0, 1}  (computed real scalar phases = (Fraction(0, 1), Fraction(1, 1)))
+  [PASS] [COMPUTE] K-real +/-i lambda pairing computes zero determinant phase for both real signs  (exact det = m_f^2 + (3/2)^2 > 0 for every +/-m_f)
+  [PASS] [COMPUTE] Reality plus K-real zero-branch pairing constructs alpha_f=0 positive-real representatives  (pairing fixes arg det for both signs; supplied positive-mass convention fixes the representative)
+  [PASS] [COMPUTE] Constructed action basis contains no selected CP-odd or complex-mass slot  (theta/pi = 0; alpha_f/pi = [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)])
+  NAMED CONDITIONAL: an ADMITTED CP-odd action term or complex mass phase re-opens the strong-CP question.
+    detected admitted datum: theta/pi=1/3
+  [PASS] [COMPUTE] ADMITTED theta != 0 is detected and named without being zeroed  (retained admitted probe theta/pi = 1/3)
+  NAMED CONDITIONAL: an ADMITTED CP-odd action term or complex mass phase re-opens the strong-CP question.
+    detected admitted datum: alpha_u/pi=1/3
+  [PASS] [COMPUTE] ADMITTED alpha_f != 0 is detected and named without being zeroed  (retained admitted probe alpha_u/pi = 1/3)
+
+Constructed action conditions:
+  - canonical real-positive Wilson P1-P5 surface
+  - character form + orientation-evenness + odd support + positive class
+  - supplied scalar-mass class + positive-mass convention
+  - supplied K-real Case-A determinant-channel reading
 
 === LEG A: Fermion phase closure ===
 
   [PASS] [COMPUTE] Free staggered D is anti-Hermitian  (max |D + D†| = 0.00e+00)
-  [PASS] [COMPUTE] Free staggered D has purely imaginary eigenvalues  (max |Re eig| = 1.78e-15)
+  [PASS] [COMPUTE] Free staggered D has purely imaginary eigenvalues  (max |Re eig| = 2.00e-15)
   [PASS] [COMPUTE] Free det(D+mI) is real positive  (phase = 0.00e+00)
-  cfg 0: max|D+D†| = 0.00e+00, |phase| = 3.01e-15
-  cfg 1: max|D+D†| = 0.00e+00, |phase| = 7.53e-17
+  cfg 0: max|D+D†| = 0.00e+00, |phase| = 6.91e-15
+  cfg 1: max|D+D†| = 0.00e+00, |phase| = 5.58e-15
   [PASS] [COMPUTE] Gauged Z^3 staggered D[U] stays anti-Hermitian  (max |D + D†| = 0.00e+00)
-  [PASS] [COMPUTE] Gauged Z^3 det(D[U]+mI) stays real positive  (max |phase| = 3.01e-15)
-  [PASS] [COMPUTE] Complex mass control produces a determinant phase  (|phase| = 1.2422)
-  3+1 cfg 0: max|D+D†| = 0.00e+00, |phase| = 8.84e-15, Q = 0.0292
-  3+1 cfg 1: max|D+D†| = 0.00e+00, |phase| = 2.13e-14, Q = 0.0011
+  [PASS] [COMPUTE] Gauged Z^3 det(D[U]+mI) stays real positive  (max |phase| = 6.91e-15)
+  [PASS] [COMPUTE] Complex mass control produces a determinant phase  (|phase| = 1.2168)
+  3+1 cfg 0: max|D+D†| = 0.00e+00, |phase| = 7.12e-15, Q = 0.0292
+  3+1 cfg 1: max|D+D†| = 0.00e+00, |phase| = 7.24e-15, Q = 0.0011
   [PASS] [COMPUTE] 3+1 APBC staggered D[U] stays anti-Hermitian  (max |D + D†| = 0.00e+00)
-  [PASS] [COMPUTE] 3+1 APBC det(D+mI) stays real positive  (max |phase| = 2.13e-14)
+  [PASS] [COMPUTE] 3+1 APBC det(D+mI) stays real positive  (max |phase| = 1.70e-14)
   [PASS] [COMPUTE] Nontrivial 3+1 topological-charge samples do not induce a determinant phase  (Q range = [-0.038, 0.029])
   [PASS] [COMPUTE] εD + Dε = 0 on the selected 3+1 APBC surface  (max |εD + Dε| = 0.00e+00)
-  spectral cfg 0: pair=1.07e-14, ImΓ=-1.14e-13, det phase=3.16e-16
-  spectral cfg 1: pair=1.15e-14, ImΓ=1.14e-13, det phase=8.27e-15
-  [PASS] [COMPUTE] ±λ spectral pairing holds on sampled 3+1 APBC configurations  (max |λ_k + λ_(N-1-k)| = 2.04e-14)
-  [PASS] [COMPUTE] Im Γ_f vanishes on sampled 3+1 APBC configurations  (max |Im Γ_f| = 1.14e-13)
-  [PASS] [COMPUTE] Spectral phase matches the determinant phase of det(D+mI)  (max wrapped |arg det + Im Γ_f| = 1.22e-13)
+  spectral cfg 0: pair=1.33e-14, ImΓ=2.27e-13, det phase=-8.46e-16
+  spectral cfg 1: pair=1.38e-14, ImΓ=1.14e-13, det phase=-8.55e-15
+  [PASS] [COMPUTE] ±λ spectral pairing holds on sampled 3+1 APBC configurations  (max |λ_k + λ_(N-1-k)| = 1.82e-14)
+  [PASS] [COMPUTE] Im Γ_f vanishes on sampled 3+1 APBC configurations  (max |Im Γ_f| = 2.27e-13)
+  [PASS] [COMPUTE] Spectral phase matches the determinant phase of det(D+mI)  (max wrapped |arg det + Im Γ_f| = 2.27e-13)
 
 === LEG B: Axial / chiral non-generation ===
 
   [PASS] [THEOREM] Sublattice generator obeys ε² = I  (max |ε²-I| = 0.00e+00)
   [PASS] [THEOREM] Axial rotation U_α is unitary  (max |U U† - I| = 0.00e+00)
   [PASS] [THEOREM] Axial rotation leaves the selected kinetic operator invariant  (max |U_α D U_α - D| = 1.16e-16)
-  [PASS] [THEOREM] Rotated mass operator is exactly m(cos α I + i sin α ε)  (max residual = 1.96e-17)
+  [PASS] [THEOREM] Rotated mass operator is exactly m(cos α I + i sin α ε)  (max residual = 1.39e-17)
   [PASS] [COMPUTE] Sampled axial grid only preserves a real mass operator at α ∈ {0, π}  (grid audit matches the exact m(cos α I + i sin α ε) formula)
-  [PASS] [COMPUTE] Nontrivial axial rotation generates an imaginary pseudoscalar mass component  (max |Im M_α| = 7.071e-02)
-  [PASS] [COMPUTE] Nontrivial axial rotation exits the selected scalar-mass action class  (max |M_α - m cos(α) I| = 7.071e-02; |arg det| = 5.32e-15)
-  [PASS] [COMPUTE] The only admissible selected-surface axial endpoints keep the determinant phase zero  (max endpoint |phase| = 1.22e-14)
+  [PASS] [COMPUTE] Nontrivial axial rotation generates an imaginary pseudoscalar mass component  (max |Im M_α| = 6.788e-02)
+  [PASS] [COMPUTE] Nontrivial axial rotation exits the selected scalar-mass action class  (max |M_α - m cos(α) I| = 6.788e-02; |arg det| = 1.89e-14)
+  [PASS] [COMPUTE] The only admissible selected-surface axial endpoints keep the determinant phase zero  (max endpoint |phase| = 9.35e-15)
 
 === Weak-sector-only CP source ===
 
@@ -63,26 +80,26 @@ CLAIM: On the explicitly θ-free Wilson-plus-staggered scalar-mass surface,
 
   [PASS] [THEOREM] Selected action surface has 5 explicit inputs  ((1) one-qubit operator algebra; (2) Z^3 spatial substrate; (3) finite Grassmann / staggered-Dirac partition; (4) physical lattice reading; (5) canonical normalization: g_bare = 1, plaquette / u₀ surface)
   [PASS] [THEOREM] Canonical normalization fixes Wilson β = 6  (β = 6.000000000000)
-  [INFO] [SUPPORT] No bare θ slot is present in the selected action-class definition  (slots = ['beta', 'fermion', 'gauge', 'mass'])
-  cfg 0: Im S_eff = -1.49e-14, S_eff(U)-S_eff(U*) = 2.97e-14
-  cfg 1: Im S_eff = -5.97e-15, S_eff(U)-S_eff(U*) = 1.19e-14
+  [INFO] [SUPPORT] The cited selectors construct no admitted bare theta slot  (theta/pi = 0; gauge slots = ('Wilson plaquette',))
+  cfg 0: Im S_eff = -1.47e-15, S_eff(U)-S_eff(U*) = 2.95e-15
+  cfg 1: Im S_eff = -7.53e-15, S_eff(U)-S_eff(U*) = 1.51e-14
   [PASS] [COMPUTE] Wilson gauge action is real on sampled selected 3+1 configurations  (max |Im S_gauge| = 0.00e+00)
-  [PASS] [COMPUTE] Exact selected effective action is real on sampled selected 3+1 configurations  (max |Im S_eff| = 1.90e-14)
+  [PASS] [COMPUTE] Exact selected effective action is real on sampled selected 3+1 configurations  (max |Im S_eff| = 1.62e-14)
   [PASS] [COMPUTE] Linkwise complex conjugation preserves the Wilson gauge action  (max |S_gauge(U)-S_gauge(U*)| = 0.00e+00)
   [PASS] [COMPUTE] Linkwise complex conjugation preserves the exact fermion effective action  (max |log|det|(U)-log|det|(U*)| = 0.00e+00)
-  [PASS] [COMPUTE] Linkwise complex conjugation preserves the full selected effective action  (max |S_eff(U)-S_eff(U*)| = 3.80e-14)
+  [PASS] [COMPUTE] Linkwise complex conjugation preserves the full selected effective action  (max |S_eff(U)-S_eff(U*)| = 3.24e-14)
 
 === LEG D: Topological-sector positivity and θ = 0 minimum ===
 
-  sample 0: Q = -0.0030, log weight = 27.854
-  sample 1: Q = -0.0214, log weight = -85.001
-  [PASS] [COMPUTE] Sampled positive-weight Q-weighted family is strictly positive  (min shifted weight = 1.659e-60)
+  sample 0: Q = -0.0030, log weight = 25.882
+  sample 1: Q = -0.0214, log weight = -86.985
+  [PASS] [COMPUTE] Sampled positive-weight Q-weighted family is strictly positive  (min shifted weight = 1.685e-60)
   [PASS] [COMPUTE] Sampled positive-weight θ-sum obeys |Z(θ)| <= Z(0)  (max (|Z|-Z0) = 0.00e+00)
   [PASS] [COMPUTE] Sampled θ-sum free energy is minimized at θ = 0  (min(F(θ)-F(0)) = 0.00e+00)
 
 === COMBINED RESULT: θ_eff = 0 ===
 
-  [INFO] [SUPPORT] θ_bare = 0 is taken from the selected action-class definition  (no bare θ slot appears in the selected Wilson-plus-staggered scalar-mass action)
+  [INFO] [SUPPORT] theta_bare = 0 is read from the constructed cited-selected basis  (computed theta/pi = 0)
   [PASS] [COMPUTE] Explicit positive-mass quark surface gives arg det(M_u M_d) = 0  (|arg det| = 0.00e+00)
   [PASS] [COMPUTE] Combined selected-surface synthesis gives θ_eff = 0  (0.0 + 0.0 = 0.0)
   [PASS] [COMPUTE] Selected-surface closure is consistent with the neutron-EDM bound  (|θ_eff| = 0.0e+00 < 1.0e-10)
@@ -94,14 +111,12 @@ CLAIM: On the explicitly θ-free Wilson-plus-staggered scalar-mass surface,
 
 ==============================================================================
 THEOREM PASS=13  FAIL=0
-SELECTED-SURFACE COMPUTE PASS=30  FAIL=0
+SELECTED-SURFACE COMPUTE PASS=42  FAIL=0
 SUPPORT=4
+TOTAL PASS=55  FAIL=0
 ==============================================================================
 
-All selected action-surface closure checks passed. The strong sector closes at
-θ_eff = 0 on the selected Wilson-plus-staggered scalar-mass surface, while
-CKM CP remains weak-sector only and the surviving neutron-EDM signal
+All cited-selected action-surface closure checks passed. Conditional on
+the printed surfaces and classes, the strong sector closes at θ_eff = 0,
+while CKM CP remains weak-sector only and the surviving neutron-EDM signal
 stays in the separate bounded CKM lane.
-
------ stderr -----
-

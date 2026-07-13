@@ -8,38 +8,40 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block44-product-coordinate-tree-span-incidence-bridge-20260712
+branch: physics-loop/record-faithful-dynamics-block45-correlated-snext-reference-quadratic-weyl-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 44
-block_count: 44
-active_route: wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return
+cycle_count: 45
+block_count: 45
+active_route: wilson_staggered_external_shortest_schur_center_haar_tail_projected_quadratic_weyl_conditional_reference
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_external_shortest_schur_center_haar_tail_projected_quadratic_weyl_conditional_reference_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  After the next skeleton change, the actual hidden dictionary has 60 Haar
-  and 15 eliminated-site Gaussian coordinates per factor-two cell, while W
-  and the retained K_1 slot stay external. Intermediate-site ownership and
-  the syntactic support S_X=X give K_blk<=exp(-0.2)K_dec. At m=10^46 the
-  actual residual has a strict fixed-product marked response and ordinary
-  retained-coefficient factor envelope q_sw=exp(-0.1)<1 in the weak
-  Lambda=0.1 chart. Future re-Hoeffding/atom return, correlated S_next
-  grammar, quadratic P_0 ownership/Weyl reserve, strong return, generic
-  same-norm Hessian/ball, taste selection, and continuum remain open.
+  Bipartite parity gives S_next=S_next^(2)-E_(>=4), with the first tail at
+  path length four. Actual-hidden expectation/complement splits the tail into
+  a separately reattached external residual and a current-red centered
+  residual. The actual P_0 Hermitian quadratic update leaves
+  gap(S_base)/m>=0.9999999993849568 at m=10^46. A Block44-sized row supplies
+  only a conditional Weyl budget, gap(S_trial)/m>=0.929631803428252, not a
+  physical completed joint output. At fixed external W the normalized
+  correlated ratio closes, while V_3(W)=det M_3(W) is separately owned.
+  Outer-Haar atomization, completed joint response/strong return, generic
+  Hessian/ball, taste, and continuum remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves a physical-hidden/external coordinate partition, an
-  owner-site syntactic-support bridge, one actual-residual marked response,
-  and an ordinary retained-output factor envelope. It explicitly rejects
-  centering external W/K_1 coordinates and does not claim a future atom-factor
-  return or correlated-center RG step. The m=10^44 row is only failure of an
-  inherited upper-majorant certificate. The authoritative N1--N8 packet keeps
-  scale-indexed, lineage, correlated-center, generic-ball, taste, and
-  continuum routes live.
+  The source proves an exact shortest/tail Schur split, hidden-empty/centered
+  tail ownership, coefficient-l1 to operator incidence one, an actual P_0
+  base gap, a conditional larger Weyl budget, and a normalized fixed-external
+  reference ratio with explicit product-block determinant ownership. It
+  demotes Block44 to a conditional budget because the correlated mixed
+  clusters are not constructed. The authoritative N1--N8 packet restricts
+  the negative boundary to uncompensated simultaneous same-step Schur reuse
+  and keeps post-step, enlarged-state, outer-Haar, strong-return, Hessian,
+  taste, and continuum routes live.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -181,6 +183,9 @@ files_touched:
   - docs/WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_2026_07_12.py
   - logs/runner-cache/wilson_staggered_site_block_syntactic_support_tree_span_marked_response_return_2026_07_12.txt
+  - docs/WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -242,10 +247,11 @@ no_go_routes:
   - one enhanced generated-base decorated factor return does not supply an all-horizon running-center induction, generic perturbation embedding, a same-norm two-mark estimate, or an invariant ball
   - the actual-range block-saturated linear section does not identify routed-carrier diameter incidence with hidden tree-span/source incidence, and the unchanged scalar surcharge/halving ledger cannot furnish all-horizon contraction; root-anchor lineage, scale-indexed norms, and full correlated-center grammar remain live
   - the actual-hidden site-block bridge and Lambda=0.1 marked response do not by identity supply a future-atom Lambda=0.5 input or correlated-S_next step; fresh atom payment, scale-indexed/lineage return, and full center ownership remain live
+  - the same current-hidden-dependent full Schur family cannot be inserted simultaneously and directly as an external input in the same integration step; the shortest subcenter may be external, the hidden-empty tail is separately reattached, and the centered tail remains current-residual-owned, while post-step and enlarged-state routes remain live
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_fixed_background_correlated_berezin_locality_pass_combined_reference_fixed_u_colored_response_pass_joint_outer_haar_actual_red_response_pass_future_atom_strong_coarse_shadow_pass_s2_actual_range_reference_ledger_pass_enhanced_generated_base_decorated_factor_return_pass_block_saturated_split_handoff_pass_site_block_marked_response_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open_two_horizon_reatomization_intertwining_open_fixed_background_correlated_berezin_locality_open_combined_reference_fixed_u_colored_response_open_joint_outer_haar_actual_red_response_open_future_atom_strong_coarse_shadow_open_s2_actual_range_reference_ledger_open_enhanced_generated_base_decorated_factor_return_open_block_saturated_split_handoff_open_site_block_marked_response_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_fixed_background_correlated_berezin_locality_pass_combined_reference_fixed_u_colored_response_pass_joint_outer_haar_actual_red_response_pass_future_atom_strong_coarse_shadow_pass_s2_actual_range_reference_ledger_pass_enhanced_generated_base_decorated_factor_return_pass_block_saturated_split_handoff_pass_site_block_marked_response_pass_external_shortest_tail_quadratic_conditional_reference_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open_two_horizon_reatomization_intertwining_open_fixed_background_correlated_berezin_locality_open_combined_reference_fixed_u_colored_response_open_joint_outer_haar_actual_red_response_open_future_atom_strong_coarse_shadow_open_s2_actual_range_reference_ledger_open_enhanced_generated_base_decorated_factor_return_open_block_saturated_split_handoff_open_site_block_marked_response_open_external_shortest_tail_quadratic_conditional_reference_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -290,14 +296,17 @@ block41_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block42_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5360
 block43_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5363
 block44_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5364
+block45_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369
 next_exact_action: >-
-  Construct the full correlated-S_next relative factor/reference grammar.
-  Localize the A_2^(-1) paths, own det A_2/restore/boundary factors once,
-  project the local quadratic part of P_0 into the center, and spend a Weyl
-  reserve preserving the gap. Then pay the new future re-Hoeffding atoms and
-  reuse the actual-hidden site-block support proof. Only after that handoff
-  closes, begin the generic perturbation and same-norm two-mark Hessian/
-  invariant-ball campaign.
+  Build the one-horizon scalar-product-reference outer-Haar closure at the
+  verified m=10^64 reserve witness. Write A_3=mu'I+Q_I(W)+R_II(W), factor
+  Q_I and R_II relative to scalar onsite G_mu', localize the full all-length
+  log det(I+(Q_I+R_II)/mu') rather than an even-only series, own Q_K and both
+  Schur-tail arms once, and pay fresh site-block Hoeffding plus eta migration.
+  Target a full joint marked response and landed theta>0.400001. Preserve the
+  separate all-horizon/fixed-norm obstruction; only after the one-horizon
+  factor return closes, begin the generic two-mark Hessian/invariant-ball
+  campaign.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

@@ -13,6 +13,7 @@ or:
 from __future__ import annotations
 
 import argparse
+import copy
 import contextlib
 import importlib
 import importlib.util
@@ -12597,14 +12598,10 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.tmp = Path(self._tmp.name)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class BackfillCrossSeatRationalesTest(unittest.TestCase):
     """The backfill completes pre-contract seat summaries ONLY from
-    envelopes bound by (claim_id, audit_invocation_id) whose recorded tuple
-    matches the summary exactly; any mismatch refuses the seat."""
+    envelopes bound by (claim_id, audit_invocation_id) whose recorded fields
+    match the summary exactly; any mismatch refuses the seat."""
 
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -12619,6 +12616,11 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
             "load_bearing_step_class": "(C)",
             "negative_assertion_classes": [],
             "auditor": f"codex-audit-batch-A-{invocation[:8]}",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "audit_date": "2026-07-13T00:00:00+00:00",
             "audit_invocation_id": invocation,
         }
 
@@ -12632,6 +12634,11 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
             "load_bearing_step_class": "(C)",
             "negative_assertion_classes": [],
             "auditor": f"codex-audit-batch-A-{invocation[:8]}",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "audit_date": "2026-07-13T00:00:00+00:00",
             "verdict_rationale": "the full recorded seat argument",
             "notes_for_re_audit_if_any": "none needed",
         }
@@ -12653,6 +12660,7 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
             ("row1", inv_a): self._audit("row1", inv_a),
             ("row1", inv_b): self._audit("row1", inv_b, verdict="audited_clean"),
         }
+        before = copy.deepcopy(row)
         filled, problems = m.backfill_row(row, index)
         self.assertEqual(filled, 1)
         first = row["cross_confirmation"]["first_audit"]
@@ -12663,9 +12671,95 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
         second = row["cross_confirmation"]["second_audit"]
         self.assertNotIn("verdict_rationale", second)
         self.assertTrue(any("verdict mismatch" in p for p in problems))
+        expected = copy.deepcopy(before)
+        expected_first = expected["cross_confirmation"]["first_audit"]
+        expected_first["verdict_rationale"] = "the full recorded seat argument"
+        expected_first["notes_for_re_audit_if_any"] = "none needed"
+        self.assertEqual(row, expected)
         # Idempotent: a filled seat is not touched again.
         filled_again, _ = m.backfill_row(row, index)
         self.assertEqual(filled_again, 0)
+
+    def test_refuses_tuple_provenance_and_binding_mismatches(self):
+        m = _import("backfill_cross_seat_rationales")
+        invocation = "e" * 32
+        cases = {
+            "verdict": "audited_failed",
+            "claim_type": "positive_theorem",
+            "claim_scope": "a different identity",
+            "load_bearing_step_class": "(B)",
+            "negative_assertion_classes": ["derived_no_go_boundary"],
+            "auditor": "a-different-seat",
+            "auditor_family": "a-different-family",
+            "auditor_model": "a-different-model",
+            "auditor_reasoning_effort": "low",
+            "independence": "weak",
+            "audit_date": "2099-01-01T00:00:00+00:00",
+            "audit_invocation_id": "f" * 32,
+        }
+        for field, value in cases.items():
+            with self.subTest(field=field):
+                summary = self._summary(invocation)
+                audit = self._audit("row3", invocation)
+                audit[field] = value
+                row = {
+                    "claim_id": "row3",
+                    "cross_confirmation": {
+                        "status": "disagreement",
+                        "first_audit": summary,
+                        "second_audit": self._summary("a" * 32),
+                    },
+                }
+                before = copy.deepcopy(row)
+                index = {("row3", invocation): audit}
+                filled, problems = m.backfill_row(row, index)
+                self.assertEqual(filled, 0)
+                self.assertEqual(row, before)
+                self.assertTrue(any(field in problem for problem in problems))
+
+        row = {
+            "claim_id": "row3",
+            "cross_confirmation": {
+                "status": "disagreement",
+                "first_audit": self._summary(invocation),
+                "second_audit": self._summary("a" * 32),
+            },
+        }
+        wrong_claim = self._audit("other-row", invocation)
+        filled, problems = m.backfill_row(
+            row, {("row3", invocation): wrong_claim}
+        )
+        self.assertEqual(filled, 0)
+        self.assertTrue(
+            any("claim_id mismatch" in problem for problem in problems)
+        )
+
+    def test_envelope_index_refuses_conflicts_but_isolates_claims(self):
+        m = _import("backfill_cross_seat_rationales")
+        invocation = "b" * 32
+        first_dir = self.tmp / "first"
+        second_dir = self.tmp / "second"
+        first_dir.mkdir()
+        second_dir.mkdir()
+        first = self._audit("row4", invocation)
+        conflicting = copy.deepcopy(first)
+        conflicting["verdict_rationale"] = "a different seat argument"
+        (first_dir / "delivery-first.json").write_text(
+            json.dumps({"audit": first}), encoding="utf-8"
+        )
+        (second_dir / "delivery-conflict.json").write_text(
+            json.dumps({"audit": conflicting}), encoding="utf-8"
+        )
+        with self.assertRaisesRegex(ValueError, "conflicting delivery envelopes"):
+            m.envelope_index([first_dir, second_dir])
+
+        other_claim = self._audit("row5", invocation)
+        (second_dir / "delivery-conflict.json").write_text(
+            json.dumps({"audit": other_claim}), encoding="utf-8"
+        )
+        index = m.envelope_index([first_dir, second_dir, first_dir])
+        self.assertEqual(index[("row4", invocation)], first)
+        self.assertEqual(index[("row5", invocation)], other_claim)
 
     def test_unbound_or_empty_envelopes_never_fill(self):
         m = _import("backfill_cross_seat_rationales")
@@ -12683,5 +12777,24 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
         index = {("row2", inv): empty}
         filled, problems = m.backfill_row(row, index)
         self.assertEqual(filled, 0)
-        self.assertTrue(any("empty rationale" in p for p in problems))
+        self.assertTrue(any("non-empty string" in p for p in problems))
         self.assertTrue(any("no envelope bound" in p for p in problems))
+
+    def test_missing_invocation_requires_fresh_seat_rerun(self):
+        m = _import("backfill_cross_seat_rationales")
+        row = {
+            "claim_id": "s3-row",
+            "cross_confirmation": {
+                "status": "disagreement",
+                "first_audit": {"audit_invocation_id": None},
+                "second_audit": {"audit_invocation_id": None},
+            },
+        }
+        filled, problems = m.backfill_row(row, {})
+        self.assertEqual(filled, 0)
+        self.assertEqual(len(problems), 2)
+        self.assertTrue(all("fresh seat rerun required" in p for p in problems))
+
+
+if __name__ == "__main__":
+    unittest.main()

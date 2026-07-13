@@ -12901,29 +12901,26 @@ class BackfillCrossSeatRationalesTest(unittest.TestCase):
         self.assertTrue(all("fresh seat rerun required" in p for p in problems))
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class BatchOrchestratorHashDriftPreflightTest(unittest.TestCase):
     """A row whose ledger note_hash lags the note file is skipped at
-    targeting time (grain wave 2, 2026-07-13: two seats audited a repaired
-    note and their applies were refused by the drift gate)."""
+    targeting time (2026-07-13: two seats audited a repaired note and their
+    applies were refused by the drift gate)."""
 
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self._tmp.cleanup)
         self.tmp = Path(self._tmp.name)
 
-    def test_drifted_row_skips_with_remedy_message(self):
+    def test_hash_preflight_matches_apply_and_precedes_git_log_check(self):
         m = _import("orchestrate_audit_batch")
-        import hashlib as _hashlib
+        apply = _import("apply_audit")
         note = self.tmp / "docs" / "NOTE.md"
         note.parent.mkdir(parents=True)
-        note.write_text("repaired body\n", encoding="utf-8")
-        current = _hashlib.sha256(
-            note.read_text(encoding="utf-8").encode("utf-8")
+        note.write_bytes(b"repaired\r\nbody: \xff\n")
+        current = hashlib.sha256(
+            note.read_text(encoding="utf-8", errors="replace").encode("utf-8")
         ).hexdigest()
+        self.assertNotEqual(current, hashlib.sha256(note.read_bytes()).hexdigest())
         row = {
             "claim_id": "drift_row",
             "claim_type": "bounded_theorem",
@@ -12935,14 +12932,46 @@ class BatchOrchestratorHashDriftPreflightTest(unittest.TestCase):
             "note_hash": "0" * 64,
         }
         with mock.patch.object(m, "REPO_ROOT", self.tmp), mock.patch.object(
-            m, "source_requires_forensic", return_value=False
-        ):
-            targets, skipped = m.compute_targets({"drift_row"}, {"drift_row": row})
+            apply, "REPO_ROOT", self.tmp
+        ), mock.patch.object(m, "source_requires_forensic", return_value=False):
+            self.assertTrue(m.note_hash_drifted(row))
+            self.assertIsNotNone(apply.note_hash_drift_error(row))
+            with mock.patch.object(
+                m,
+                "awaiting_repair_since_conditional",
+                side_effect=AssertionError("drift preflight must precede git log"),
+            ):
+                targets, skipped = m.compute_targets(
+                    {"drift_row"}, {"drift_row": row}
+                )
             self.assertEqual(targets, [])
             self.assertTrue(
                 any("note_hash lags the note file" in line for line in skipped)
             )
-            # Aligned hash targets normally.
+
+            # The replacement-decoded text hash agrees with apply and targets.
             row["note_hash"] = current
-            targets, skipped = m.compute_targets({"drift_row"}, {"drift_row": row})
+            self.assertFalse(m.note_hash_drifted(row))
+            self.assertIsNone(apply.note_hash_drift_error(row))
+            targets, skipped = m.compute_targets(
+                {"drift_row"}, {"drift_row": row}
+            )
             self.assertEqual([r["claim_id"] for r in targets], ["drift_row"])
+
+            # A missing named note is not drift under either implementation;
+            # another validation layer owns missing-note handling.
+            note.unlink()
+            row["note_hash"] = "0" * 64
+            self.assertFalse(m.note_hash_drifted(row))
+            self.assertIsNone(apply.note_hash_drift_error(row))
+            targets, skipped = m.compute_targets(
+                {"drift_row"}, {"drift_row": row}
+            )
+            self.assertEqual([r["claim_id"] for r in targets], ["drift_row"])
+            self.assertFalse(
+                any("note_hash lags the note file" in line for line in skipped)
+            )
+
+
+if __name__ == "__main__":
+    unittest.main()

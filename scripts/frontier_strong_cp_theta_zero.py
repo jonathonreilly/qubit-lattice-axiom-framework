@@ -3,11 +3,11 @@
 Strong CP / θ = 0 Bounded Selected-Surface Closure
 ==================================================
 
-STATUS: bounded cited-selected-surface closure on the conditional
+STATUS: bounded selected-action-surface closure on the conditional
 Wilson-plus-staggered / K-real Case-A mass action surface
 
 TARGET CLAIM:
-  On the cited-selected Wilson-plus-staggered / K-real Case-A mass surface on
+  On the bounded Wilson-plus-staggered / K-real Case-A selected action surface on
   the Z^3 spatial substrate,
   θ_eff = 0 with no surviving loophole from:
 
@@ -17,7 +17,7 @@ TARGET CLAIM:
     (D) positive-weight topological-sector weighting away from θ = 0.
 
 SCOPE:
-  This is a bounded cited-selected-surface closure package, conditional on
+  This is a bounded selected-action-surface closure package, conditional on
   the cited authorities' own positive-class, character/support,
   single-plaquette, scalar-mass, and K-real Case-A conditions. It is not a
   universal all-formulations strong-CP theorem or an audit-status claim.
@@ -1055,7 +1055,7 @@ def test_combined_theta_eff(action_basis):
     theta_exp_bound = 1e-10
 
     support(
-        "theta_bare = 0 is read from the constructed cited-selected basis",
+        "theta_bare = 0 is read from the constructed bounded selected basis",
         f"computed theta/pi = {action_basis.theta_over_pi}",
     )
     check("Explicit positive-mass quark surface gives arg det(M_u M_d) = 0", abs(arg_det_M) < 1e-12, f"|arg det| = {abs(arg_det_M):.2e}", bucket="COMPUTE")
@@ -1065,7 +1065,7 @@ def test_combined_theta_eff(action_basis):
 
 def main():
     print("=" * 78)
-    print("Strong CP / θ = 0 Bounded Cited-Selected-Surface Closure")
+    print("Strong CP / θ = 0 Bounded Selected-Action-Surface Closure")
     print("=" * 78)
     print()
     print("CLAIM: Conditional on the cited selectors' own surfaces and classes,")
@@ -1103,11 +1103,11 @@ def main():
     print("=" * 78)
 
     if total_fail != 0:
-        print("\nOne or more cited-selected-surface strong-CP closure checks failed.")
+        print("\nOne or more bounded selected-action-surface strong-CP closure checks failed.")
         return 1
 
     print()
-    print("All cited-selected action-surface closure checks passed. Conditional on")
+    print("All bounded selected action-surface closure checks passed. Conditional on")
     print("the printed surfaces and classes, the strong sector closes at θ_eff = 0,")
     print("while CKM CP remains weak-sector only and the surviving neutron-EDM signal")
     print("stays in the separate bounded CKM lane.")

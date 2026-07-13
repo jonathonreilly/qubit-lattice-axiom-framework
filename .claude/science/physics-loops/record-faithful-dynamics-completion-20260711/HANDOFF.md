@@ -1056,3 +1056,41 @@ open and mergeable on Block41. The next exact target is an all-horizon actual-
 orbit induction coupling the shortest-center squaring recursion to a scale-
 indexed enhanced-moment majorant. Generic perturbation/Hessian/ball closure
 follows only after that induction. No axiom-update stop is triggered.
+
+## Block 43: block-saturated split handoff and scalar boundary
+
+The actual Block42 generated residual now has a canonical anchored linear
+handoff from the full strong fixed-product atom decomposition to a weak empty
+arm and strong nonempty arm. With `Pi_empty=L E_0`, the declared projector
+bound `||1-P_0||<=1`, and the lower weak spatial weights,
+
+```text
+N_bs(F)<=M_s(F),
+||(1-P_0)Pi_empty F||_weak<=M_s(F).
+```
+
+This closes the actual-range local-section wall with constant one. The
+constant-one product result belongs to the coefficient atom algebra; no global
+spatial-carrier `M_s` algebra or autonomous RG map is claimed.
+
+The exact downstream arithmetic is now a discriminator rather than a theorem
+claim. Under an unproved same-`K` identification with the marked theorem's
+hidden tree-span/source-incidence norm, the `m=10^44` row gives
+`q=419.3799901057573`, while `m=10^46` would close. Block42 controls routed-
+carrier diameter, so both rows remain conditional. The unchanged fixed
+surcharge/halving moment ledger also becomes negative after the next reuse;
+this rules out only that certificate, not lineage-sensitive or scale-indexed
+closure.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims. Runner/cache: `PASS=12 FAIL=0`. The full audit pipeline seeds
+one `bounded_theorem` / `unaudited` row with exactly five dependencies; strict
+lint has zero errors and generated outputs are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5363 is
+open and mergeable on Block42 with the independent audit workflow running. The
+next exact target is the tree-span/source-incidence bridge, preferably
+retaining the smaller root-lineage `K_T2`, followed by the full correlated-
+`S_next` factor/reference grammar and projected quadratic/Weyl reserve. No
+axiom-update stop is triggered.

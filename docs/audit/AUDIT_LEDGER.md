@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 304 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2958 |
+| unaudited | 2957 |
 | audit_in_progress | 3 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 22 |
+| ~~audited_conditional~~ | 23 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 382 |
-| `audited_conditional` | 22 |
+| `audited_conditional` | 23 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3309 |
+| `unaudited` | 3308 |
 
 | claim_type | count |
 |---|---:|
@@ -498,6 +498,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
+| `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `area_law_native_car_semantics_tightening_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -741,6 +742,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** This paragraph is the canonical version and may be cited for manuscript disclosure language and methodology framing, but not as a retained physics theorem, runner-backed derivation, or audit result.  _(class `E`)_
 - **chain closes:** True — Within the declared meta scope, the note closes by adoption/definition: it designates the quoted paragraph as canonical disclosure language and explicitly excludes physics-theorem use. No physics derivation or runner-backed scientific claim is established by this packet.
 - **rationale:** The load-bearing act is a definition/adoption of canonical disclosure text, not a derivation from framework premises. The source note itself correctly scopes the artifact as methodology/canonical-text registration only and forbids citation as a retained physics theorem or audit result. Thus the meta registration closes, but any positive-theorem interpretation would be only a definition substitution rather than a scientific derivation.
+- **auditor confidence:** high
+
+### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`
+
+- **Note:** [`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For abstract positive scalars α_bare and u_0, with α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², the geometric-mean, logarithmic-mean, and equal-ratio identities hold; no numerical plaquette value or physical coupling identification was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-batch-A-20260713-b21794f1`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0² gives α_LM² = α_bare²/u_0² = α_bare·α_s(v).  _(class `A`)_
+- **chain closes:** True — Direct substitution proves the polynomial identity, and positivity justifies the logarithmic restatement and all divisions. No numerical plaquette value or physical coupling interpretation is load-bearing.
+- **rationale:** Issue: the scoped algebra closes, but clean ratification cannot satisfy the packet’s mandatory clean-verdict N1–N8 gate because the live runner output lacks five distinct N1 mechanism classes and the five required N5 resolution-specific execution records. Why this blocks: the packet forbids an audited_clean verdict without a valid PASS gate even when negative_assertion_classes is empty. Repair target: add current-cycle runner evidence satisfying those route and resolution requirements, or explicitly exempt non-negative positive theorems from the clean-verdict gate. Claim boundary until fixed: the abstract identities are established, but no numerical plaquette value or physical coupling identification is ratified here.
 - **auditor confidence:** high
 
 ### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`

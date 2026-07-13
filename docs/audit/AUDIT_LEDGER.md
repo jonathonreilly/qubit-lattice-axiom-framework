@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2956 |
-| audit_in_progress | 2 |
+| unaudited | 2955 |
+| audit_in_progress | 3 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -40,14 +40,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 2 |
+| `audit_in_progress` | 3 |
 | `audited_clean` | 381 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3307 |
+| `unaudited` | 3306 |
 
 | claim_type | count |
 |---|---:|
@@ -113,6 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |

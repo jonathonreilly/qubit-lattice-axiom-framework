@@ -12,6 +12,7 @@ or:
 """
 from __future__ import annotations
 
+import argparse
 import contextlib
 import importlib
 import importlib.util
@@ -2335,7 +2336,7 @@ class ApplyAuditTest(unittest.TestCase):
             "PASS",
         )
 
-    def test_judicial_neither_validates_before_recording_blocker(self):
+    def test_judicial_neither_is_rejected_without_recording_blocker(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
         self._seed_one_row(
@@ -2386,7 +2387,7 @@ class ApplyAuditTest(unittest.TestCase):
         before = json.dumps(led, sort_keys=True)
         ok, msg = m.apply_one(led, judgment)
         self.assertFalse(ok)
-        self.assertIn("N1-N8 packet is required", msg)
+        self.assertIn("panel-escalation outcome", msg)
         self.assertEqual(json.dumps(led, sort_keys=True), before)
 
 
@@ -12021,6 +12022,579 @@ class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
             out["cross_cycle_candidates"][0]["lifecycle_state"], "unknown"
         )
         self.assertEqual(out["audit_status"], "unaudited")
+
+
+class JudicialPanelOrchestratorTest(unittest.TestCase):
+    """Contract pins for the five-judge panel drainer."""
+
+    def _vote(self, **overrides):
+        vote = {
+            "sided_with": "first",
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_claim_scope": "an exact identity",
+            "ratified_load_bearing_step": "check the exact identity",
+            "ratified_load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+            "judgment_rationale": "packet-grounded",
+            "first_auditor_error": "none",
+            "second_auditor_error": "missed the computed check",
+            "hybrid_resolution_note": None,
+            "ratified_decoration_parent_claim_id": None,
+            "notes_for_re_audit_if_any": None,
+            "no_go_discipline": None,
+        }
+        vote.update(overrides)
+        return vote
+
+    def _row(self, claim_id="row"):
+        common = {
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "claim_type": "bounded_theorem",
+            "load_bearing_step": "check the exact identity",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+            "chain_closes": True,
+            "chain_closure_explanation": "the exact algebra closes",
+            "notes_for_re_audit_if_any": None,
+            "runner_check_breakdown": {},
+            "open_dependency_paths": [],
+            "decoration_parent_claim_id": None,
+        }
+        first = {
+            **common,
+            "auditor": "first-auditor",
+            "audit_invocation_id": "a" * 32,
+            "verdict": "audited_clean",
+            "claim_scope": "an exact identity",
+            "verdict_rationale": "first full rationale",
+        }
+        second = {
+            **common,
+            "auditor": "second-auditor",
+            "audit_invocation_id": "b" * 32,
+            "verdict": "audited_conditional",
+            "claim_scope": "a conditional identity",
+            "chain_closes": False,
+            "verdict_rationale": "second full rationale",
+            "notes_for_re_audit_if_any": "other: check the stated condition",
+        }
+        return {
+            "claim_id": claim_id,
+            "note_path": "docs/audit/README.md",
+            "note_hash": hashlib.sha256(
+                (PROJECT_ROOT / "docs" / "audit" / "README.md")
+                .read_text(encoding="utf-8", errors="replace")
+                .encode("utf-8")
+            ).hexdigest(),
+            "audit_status": "audit_in_progress",
+            "claim_type": "bounded_theorem",
+            "criticality": "critical",
+            "blocker": "cross_confirmation_disagreement",
+            "cross_confirmation": {
+                "status": "disagreement",
+                "first_audit": first,
+                "second_audit": second,
+            },
+            "previous_audits": [],
+        }
+
+    def test_vote_tuple_equivalence_rules(self):
+        m = _import("orchestrate_judicial_panel")
+        base = self._vote(
+            ratified_claim_scope="a  b\tc",
+            negative_assertion_classes=["x", "y"],
+        )
+        same = self._vote(
+            ratified_claim_scope="a b c",
+            negative_assertion_classes=["y", "x"],
+        )
+        different = self._vote(ratified_claim_scope="a b d")
+        self.assertEqual(m.vote_tuple(base), m.vote_tuple(same))
+        self.assertNotEqual(m.vote_tuple(base), m.vote_tuple(different))
+        # Substantive verdict differences always split the tuple.
+        self.assertNotEqual(
+            m.vote_tuple(base),
+            m.vote_tuple(self._vote(ratified_verdict="audited_conditional")),
+        )
+
+    def test_sided_blob_reuses_seat_scope_and_applies(self):
+        m = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row()
+        votes = [
+            self._vote(
+                ratified_claim_scope="an   exact identity",
+                _panel_judge=index,
+                _panel_auditor=f"judge-{index}",
+            )
+            for index in range(1, 6)
+        ]
+        blob = m.judicial_blob(
+            row, votes[0], votes, 5, invocation_id="c" * 32
+        )
+        self.assertEqual(
+            apply_mod.JUDICIAL_REQUIRED_FIELDS - set(blob), set()
+        )
+        self.assertEqual(blob["ratified_claim_scope"], "an exact identity")
+        self.assertEqual(blob["independence"], "judicial_review")
+        self.assertEqual(blob["auditor_reasoning_effort"], "xhigh")
+        self.assertEqual(len(blob["audit_invocation_id"]), 32)
+        self.assertIn("5/5 matching", blob["judgment_rationale"])
+        self.assertIn("panel breakdown", blob["judgment_rationale"])
+        ok, detail = apply_mod.apply_judicial_review(
+            {"schema_version": 1, "rows": {"row": row}}, blob
+        )
+        self.assertTrue(ok, detail)
+
+    def test_hybrid_blob_with_novel_scope_applies(self):
+        m = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row("hybrid-row")
+        votes = [
+            self._vote(
+                sided_with="hybrid",
+                ratified_claim_scope="a novel corrected identity",
+                hybrid_resolution_note="combine the correct bounded pieces",
+                first_auditor_error="scope was incomplete",
+                second_auditor_error="verdict was too conservative",
+                _panel_judge=index,
+                _panel_auditor=f"hybrid-judge-{index}",
+            )
+            for index in range(1, 6)
+        ]
+        blob = m.judicial_blob(
+            row, votes[0], votes, 5, invocation_id="d" * 32
+        )
+        self.assertEqual(blob["sided_with"], "hybrid")
+        self.assertEqual(blob["ratified_claim_scope"], "a novel corrected identity")
+        self.assertTrue(blob["hybrid_resolution_note"])
+        ok, detail = apply_mod.apply_judicial_review(
+            {"schema_version": 1, "rows": {"hybrid-row": row}}, blob
+        )
+        self.assertTrue(ok, detail)
+
+    def test_collect_vote_rejects_incomplete_votes(self):
+        m = _import("orchestrate_judicial_panel")
+        incomplete = self._vote()
+        incomplete.pop("second_auditor_error")
+        raw = self.tmp / "raw.txt"
+        raw.write_text(json.dumps(incomplete) + " " * 200, encoding="utf-8")
+        job = {"stalled": False, "returncode": 0, "raw_output": raw, "judge": 1}
+        vote, status = m.collect_vote(job)
+        self.assertIsNone(vote)
+        self.assertIn("vote_missing_fields", status)
+        raw.write_text(json.dumps(self._vote()) + " " * 200, encoding="utf-8")
+        vote, status = m.collect_vote(job)
+        self.assertEqual(status, "ok")
+        self.assertEqual(vote["sided_with"], "first")
+
+        neither = self._vote(
+            sided_with="neither",
+            ratified_verdict="audited_conditional",
+            first_auditor_error="first scope is too broad",
+            second_auditor_error="second scope is too narrow",
+        )
+        raw.write_text(json.dumps(neither) + " " * 200, encoding="utf-8")
+        vote, status = m.collect_vote(job)
+        self.assertEqual(status, "ok")
+        self.assertEqual(vote["sided_with"], "neither")
+
+        no_opposing_error = self._vote(second_auditor_error="none")
+        raw.write_text(
+            json.dumps(no_opposing_error) + " " * 200, encoding="utf-8"
+        )
+        vote, status = m.collect_vote(job)
+        self.assertIsNone(vote)
+        self.assertIn("must explain the second auditor's error", status)
+
+    def test_sided_vote_must_match_selected_seat_before_blob(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        mismatch = self._vote(
+            ratified_verdict="audited_conditional",
+            ratified_claim_scope="a conditional identity",
+        )
+        error = m.sided_vote_context_error(row, mismatch)
+        self.assertIn("changes selected seat tuple fields", error)
+        with self.assertRaisesRegex(ValueError, "changes selected seat tuple"):
+            m.judicial_blob(row, mismatch, [mismatch] * 5, 5)
+
+        whitespace_equivalent = self._vote(
+            ratified_claim_scope="an   exact\tidentity"
+        )
+        self.assertIsNone(
+            m.sided_vote_context_error(row, whitespace_equivalent)
+        )
+
+    def test_rationale_is_invocation_bound_and_preserved_in_new_summaries(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        summary = dict(row["cross_confirmation"]["first_audit"])
+        summary.pop("verdict_rationale")
+        row["previous_audits"] = [
+            {
+                "audit_invocation_id": summary["audit_invocation_id"],
+                "verdict_rationale": "archived exact rationale",
+                "notes_for_re_audit_if_any": "archived note",
+            }
+        ]
+        self.assertIn("archived exact rationale", m.seat_rationale(summary, row))
+        self.assertIn("archived note", m.seat_rationale(summary, row))
+        self.assertIn(
+            "no archived rationale",
+            m.archived_rationale(row, "f" * 32),
+        )
+
+        apply_mod = _import("apply_audit")
+        audit = {
+            "auditor": "seat",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "audit_invocation_id": "e" * 32,
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "scope",
+            "load_bearing_step": "step",
+            "load_bearing_step_class": "A",
+            "chain_closes": True,
+            "chain_closure_explanation": "closure",
+            "verdict_rationale": "full current argument",
+            "notes_for_re_audit_if_any": "note",
+            "negative_assertion_classes": [],
+        }
+        stored = apply_mod.audit_summary_from_blob(audit)
+        self.assertEqual(stored["verdict_rationale"], "full current argument")
+        self.assertEqual(stored["load_bearing_step"], "step")
+        self.assertEqual(stored["notes_for_re_audit_if_any"], "note")
+
+    def test_no_majority_runs_fresh_full_panel_with_prior_votes(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        launches = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, prior,
+            _invocation_id, _manifest,
+        ):
+            launches.append((panel_no, judge_no, len(prior)))
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"round-{panel_no}-judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["panel"] == 1:
+                side = {1: "first", 2: "first", 3: "second", 4: "second", 5: "hybrid"}[
+                    job["judge"]
+                ]
+                if side == "second":
+                    return self._vote(
+                        sided_with="second",
+                        ratified_verdict="audited_conditional",
+                        ratified_claim_scope="a conditional identity",
+                        notes_for_re_audit_if_any="other: check the condition",
+                        first_auditor_error="missed the condition",
+                        second_auditor_error="none",
+                    ), "ok"
+                if side == "hybrid":
+                    return self._vote(
+                        sided_with="hybrid",
+                        ratified_claim_scope="a third scope",
+                        hybrid_resolution_note="third tuple",
+                    ), "ok"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "f" * 32)
+        ) as render, mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(
+            m, "judicial_applyability_error", return_value=None
+        ), mock.patch.object(
+            m,
+            "apply_judgment",
+            return_value=(
+                True,
+                {"cid": "row", "result": "audited_clean", "commit": "abc"},
+            ),
+        ):
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+        self.assertEqual(result["result"], "audited_clean")
+        self.assertEqual(len(launches), 10)
+        self.assertTrue(all(prior == 0 for panel, _judge, prior in launches if panel == 1))
+        self.assertTrue(all(prior == 1 for panel, _judge, prior in launches if panel == 2))
+        render.assert_called_once()
+        first_record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(first_record["votes"]), 5)
+        self.assertEqual(first_record["result"], "no_majority")
+
+    def test_panel_requires_all_five_deliveries(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["judge"] == 5:
+                return None, "capacity_error"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(m, "apply_judgment") as apply_mock:
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+        self.assertEqual(result["result"], "panel_delivery_short")
+        apply_mock.assert_not_called()
+        record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(record["votes"]), 4)
+
+    def test_neither_majority_runs_fresh_panel_without_building_blob(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        launches = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, prior,
+            _invocation_id, _manifest,
+        ):
+            launches.append((panel_no, judge_no, len(prior)))
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"round-{panel_no}-judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["panel"] == 1:
+                return self._vote(
+                    sided_with="neither",
+                    ratified_verdict="audited_conditional",
+                    first_auditor_error="first tuple is unsound",
+                    second_auditor_error="second tuple is incomplete",
+                ), "ok"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "3" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(
+            m, "judicial_applyability_error", return_value=None
+        ), mock.patch.object(
+            m,
+            "apply_judgment",
+            return_value=(
+                True,
+                {"cid": "row", "result": "audited_clean", "commit": "abc"},
+            ),
+        ), mock.patch.object(m, "judicial_blob", wraps=m.judicial_blob) as build:
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+        self.assertEqual(result["result"], "audited_clean")
+        self.assertEqual(len(launches), 10)
+        self.assertTrue(all(prior == 1 for panel, _judge, prior in launches if panel == 2))
+        self.assertEqual(build.call_count, 1)
+        record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(record["result"], "majority_neither")
+
+    def test_hard_applyability_blocker_stops_with_candidate_and_error(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "4" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", return_value=(self._vote(), "ok")
+        ), mock.patch.object(
+            m,
+            "judicial_applyability_error",
+            return_value="note_hash drift; rerun seed before applying audit",
+        ), mock.patch.object(m, "apply_judgment") as apply_mock:
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+        self.assertEqual(result["result"], "applyability_blocked")
+        self.assertIn("note_hash drift", result["detail"])
+        self.assertEqual(result["judgment"]["sided_with"], "first")
+        apply_mock.assert_not_called()
+        record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(record["result"], "applyability_blocked")
+        self.assertIn("rejected_candidate", record)
+
+    def test_numeric_runtime_arguments_must_be_positive(self):
+        m = _import("orchestrate_judicial_panel")
+        valid = argparse.Namespace(
+            stall_minutes=1, runner_timeout_sec=1, push_retries=1
+        )
+        self.assertIsNone(m.runtime_arg_error(valid))
+        for field in ("stall_minutes", "runner_timeout_sec", "push_retries"):
+            invalid = argparse.Namespace(
+                stall_minutes=1, runner_timeout_sec=1, push_retries=1
+            )
+            setattr(invalid, field, 0)
+            self.assertIn("must be positive", m.runtime_arg_error(invalid))
+
+    def test_prior_panels_are_claim_bound_and_workdir_is_external(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row("claim-a")
+        sides = ["first", "first", "second", "second", "hybrid"]
+        votes = []
+        for index, side in enumerate(sides, 1):
+            if side == "first":
+                vote = self._vote()
+            elif side == "second":
+                vote = self._vote(
+                    sided_with="second",
+                    ratified_verdict="audited_conditional",
+                    ratified_claim_scope="a conditional identity",
+                    first_auditor_error="missed the condition",
+                    second_auditor_error="none",
+                    notes_for_re_audit_if_any="other: check the stated condition",
+                )
+            else:
+                vote = self._vote(
+                    sided_with="hybrid",
+                    ratified_claim_scope="a third bounded identity",
+                    hybrid_resolution_note="correct both scopes",
+                    first_auditor_error="scope too broad",
+                    second_auditor_error="scope too narrow",
+                )
+            votes.append({"judge": index, "auditor": f"judge-{index}", **vote})
+        record = {
+            "schema": "judicial_panel_record_v1",
+            "cid": "claim-a",
+            "panel": 1,
+            "invocation_id": "8" * 32,
+            "result": "no_majority",
+            "disagreement_fingerprint": m.disagreement_fingerprint(row),
+            "votes": votes,
+        }
+        path = self.tmp / "prior.json"
+        path.write_text(json.dumps(record), encoding="utf-8")
+        grouped, error = m.load_prior_panels([str(path)], {"claim-a": row})
+        self.assertIsNone(error)
+        self.assertEqual(grouped["claim-a"][0]["cid"], "claim-a")
+        _grouped, error = m.load_prior_panels(
+            [str(path)], {"claim-b": self._row("claim-b")}
+        )
+        self.assertIn("not one of this invocation's targets", error)
+
+        stale_row = self._row("claim-a")
+        stale_row["note_hash"] = "0" * 64
+        _grouped, error = m.load_prior_panels(
+            [str(path)], {"claim-a": stale_row}
+        )
+        self.assertIn("does not match the current source", error)
+
+        _grouped, error = m.load_prior_panels(
+            [str(path), str(path)], {"claim-a": row}
+        )
+        self.assertIn("duplicates claim-a panel 1", error)
+        self.assertIsNotNone(m.workdir_guard_error(m.REPO_ROOT / ".git" / "panel"))
+        self.assertIsNone(m.workdir_guard_error(self.tmp / "panel"))
+
+    def test_ordinary_auditor_cannot_resolve_a_disagreement(self):
+        apply_mod = _import("apply_audit")
+        row = self._row("ordinary-third")
+        audit = {
+            "claim_id": "ordinary-third",
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "an exact identity",
+            "auditor": "single-third-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "audit_invocation_id": "9" * 32,
+            "load_bearing_step": "check the exact identity",
+            "load_bearing_step_class": "C",
+            "chain_closes": True,
+            "chain_closure_explanation": "the exact identity closes",
+            "verdict_rationale": "single vote is not panel authority",
+            "negative_assertion_classes": [],
+        }
+        ledger = {"schema_version": 1, "rows": {"ordinary-third": row}}
+        before = json.dumps(ledger, sort_keys=True)
+        ok, detail = apply_mod.apply_one(ledger, audit)
+        self.assertFalse(ok)
+        self.assertIn("five-judge judicial panel", detail)
+        self.assertEqual(json.dumps(ledger, sort_keys=True), before)
+
+    def test_launch_failure_closes_new_log_handle(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        handles = []
+        original_open = Path.open
+
+        def tracked_open(path, *args, **kwargs):
+            handle = original_open(path, *args, **kwargs)
+            if path.name.startswith("log-"):
+                handles.append(handle)
+            return handle
+
+        with mock.patch.object(Path, "open", new=tracked_open), mock.patch.object(
+            m.subprocess, "Popen", side_effect=OSError("spawn failed")
+        ):
+            with self.assertRaises(OSError):
+                m.launch_judge(
+                    "packet", row, 1, 1, self.tmp, [], "2" * 32, {}
+                )
+        self.assertEqual(len(handles), 1)
+        self.assertTrue(handles[0].closed)
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp = Path(self._tmp.name)
 
 
 if __name__ == "__main__":

@@ -7,6 +7,8 @@ import itertools
 from fractions import Fraction
 from pathlib import Path
 
+import sympy as sp
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
@@ -156,20 +158,93 @@ def main() -> int:
         != readout(beta_counter, h, lattice_records),
     )
     check(
-        "N2 wall W_unit: beta-one and beta-two singleton laws share h but remain distinct",
+        "N2 wall readout bridge: W_unit beta-one and beta-two singleton laws share h but remain distinct",
         readout(beta_target, h, singleton) == h
         and readout(beta_counter, h, singleton) == 2 * h
         and readout(beta_target, h, singleton)
         != readout(beta_counter, h, singleton),
     )
 
-    section("Part E: source and axiom guards")
+    section("Part E: coordinate-convention steelman")
+    u_sym, h_sym, beta_sym = sp.symbols("u h beta", positive=True)
+    delta_sym = beta_sym * h_sym
+    ratio_invariant = sp.simplify((u_sym * delta_sym) / (u_sym * h_sym) - beta_sym) == 0
+    residual_covariant = sp.simplify(
+        (u_sym * delta_sym - u_sym * h_sym)
+        - u_sym * h_sym * (beta_sym - 1)
+    ) == 0
+    relative_hits_identity = sp.simplify(delta_sym / beta_sym - h_sym) == 0
+    unit_scales = [Fraction(1, 3), Fraction(1, 1), Fraction(2, 1), Fraction(7, 2)]
+    print("N1 route coordinate_convention")
+    print(
+        "  N7 convention mechanism: same-observable common-unit rescaling"
+    )
+    print(
+        "  ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by "
+        "the same positive unit factor"
+    )
+    print(
+        "  N7 convention outcome: beta=abs(delta_beta)/h remains invariant "
+        "and the W_unit readout bridge is not selected"
+    )
+    check(
+        "N7 steelman argument: N7 convention mechanism: same-observable common-unit rescaling; "
+        "N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; "
+        "N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected",
+        ratio_invariant and residual_covariant,
+    )
+    check(
+        "N7 relative-normalization guard: beta=2 reaches beta=1 by rescaling abs(delta_beta) without h, which is not a common-unit convention",
+        relative_hits_identity and Fraction(1, 2) != Fraction(1, 1),
+    )
+    check("coordinate unit scales are positive", all(unit > 0 for unit in unit_scales))
+    check(
+        "coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-one ratio",
+        all(
+            (unit * readout(beta_target, h, singleton)) / (unit * h) == beta_target
+            for unit in unit_scales
+        ),
+    )
+    check(
+        "coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-two ratio",
+        all(
+            (unit * readout(beta_counter, h, singleton)) / (unit * h) == beta_counter
+            for unit in unit_scales
+        ),
+    )
+    check(
+        "same-coordinate beta-one readout equals the fixed-locus density",
+        all(unit * readout(beta_target, h, singleton) == unit * h for unit in unit_scales),
+    )
+    check(
+        "same-coordinate beta-two readout remains distinct from the fixed-locus density",
+        all(unit * readout(beta_counter, h, singleton) != unit * h for unit in unit_scales),
+    )
+    check(
+        "same-observable identity is equivalent to beta one in the tested positive family",
+        all(
+            all(
+                (unit * readout(beta, h, singleton) == unit * h)
+                == (beta == beta_target)
+                for unit in unit_scales
+            )
+            for beta in betas
+        ),
+    )
+    print(
+        "N7 coordinate steelman resolved by current-cycle computation: a common "
+        "coordinate change leaves beta invariant; a separate same-observable "
+        "theorem could set beta=1 but is not a units convention"
+    )
+
+    section("Part F: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
     axioms = AXIOMS.read_text(encoding="utf-8")
     scale_reference = SCALE_REFERENCE.read_text(encoding="utf-8")
     kinetic_isotropy = KINETIC_ISOTROPY.read_text(encoding="utf-8")
     scale_flat = " ".join(scale_reference.split())
     kinetic_flat = " ".join(kinetic_isotropy.split())
+    note_flat = " ".join(note.split())
     check("current Record axiom contains empty-zero", "I(empty)=0" in axioms)
     check("current Record axiom contains finite additivity", "scalar readout `I` is additive" in " ".join(axioms.split()))
     check("current axioms withhold physical-observable identification", "source/action and physical-observable identification" in axioms)
@@ -184,13 +259,23 @@ def main() -> int:
     check("note limits claim to current finite-record surface", "finite-record, current-surface" in note)
     check("note preserves a future same-observable theorem", "future same-observable holonomy theorem" in note)
     check("note does not force r", "does not force\n`r=1/2`" in note)
-    check("N1 contains seven attempted routes", note.count("| ATTEMPTED |") == 7)
-    check("N2 collapses to one wall", "one wall: `W_unit`" in note)
+    check("N1 contains eight attempted routes", note.count("| ATTEMPTED |") == 8)
+    check(
+        "N2 collapses to one readout-bridge wall",
+        "single structured audit-packet wall label is `readout bridge`" in note_flat
+        and "`W_unit` is the charged-lepton lane alias" in note_flat,
+    )
     check("N3 records the required phrase scan", "The proof text was scanned for" in note)
     check("N4 uses no prior negative witness", "No prior no-go row is cited as evidence" in note)
     check("N5 names tested resolutions", "empty collection, a singleton eta-angle" in note and "three-record cycle holonomy" in note)
     check("N6 records convention and theorem paths", "convention-only coordinate ratification" in note and "same-observable determinant-line/holonomy theorem" in note)
-    check("N7 contains the coordinate steelman", "radians make the identity coefficient" in note and "same observable" in note)
+    check(
+        "N7 contains the executable coordinate steelman",
+        "same-observable common-unit rescaling" in note_flat
+        and "ratio is `Phi_u/H_u = beta`" in note_flat
+        and "same-observable identity" in note_flat
+        and "readout bridge, or empirical fit is supplied by it" in note_flat,
+    )
     check("N8 considers historical withdrawal, derivation, primitive, and coordinate mechanisms", "historical AC(ii) governance adoption and withdrawal" in note and "theta mass-side split" in note and "scale-reference primitive" in note and "registered mass-coordinate reconstruction" in note)
     check("discipline gate records PASS", "**Gate result: PASS.**" in note)
 

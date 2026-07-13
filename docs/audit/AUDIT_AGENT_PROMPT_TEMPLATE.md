@@ -260,9 +260,10 @@ per-kind candidate limits. Prior audit cycles and open gates are listed in
 full; repository similarity, negative-note, and loop-ledger scans are capped
 by the declared relevance order with an authenticated omitted-tail summary
 (`candidate_truncation`: total hits, omitted count, omitted-id hash), so the
-corpus cannot be hidden while the disposition set stays reviewable. Index
-universes that grow after your packet is authenticated are recorded as a
-generated re-audit targeting signal in
+corpus cannot be hidden while the disposition set stays reviewable.
+Authenticated N6/N8 index growth and N5 rhetoric-group universe changes after
+your packet is authenticated are recorded as a generated re-audit targeting
+signal in
 `docs/audit/data/no_go_index_growth_targets.json`, never as retroactive
 invalidation of your verdict. A forensic-tier packet must disposition every
 listed `candidate_id`; for that tier, `packet_complete` is valid only when the
@@ -677,15 +678,15 @@ current-cycle `runner_stdout` at `resolution_evidence_path`. Do not summarize,
 shorten, or paraphrase a runner line.
 
 The authenticated N5 group universe covers negative rhetoric about the
-claim's physics. Administrative scope negations — status-authority sentences
-("does not set or predict audit status"), context-handle framing ("not a
-citation-graph dependency"), corollary discipline ("does not execute or
-request"), declaration principle wording ("not an assertion"), and honest
-sweep lines ("checked and not executed") — are excluded from the
-orchestrator's authenticated group list by the same principle that honest
-coverage routing declares nothing. Do not add N5 statements for excluded
-administrative prose, and do not use the exclusion to skip any substantive
-negative claim.
+claim's physics. The orchestrator excludes an N5 occurrence only when its
+exact token lies inside an unmistakably administrative clause — for example,
+"does not set or predict audit status," "is not a citation-graph dependency,"
+"this note does not execute or request," or "is not an assertion" — and the
+locator contains no N5 rhetoric outside those administrative clauses. If an
+uncovered N5 occurrence shares the locator, or the association is ambiguous,
+every occurrence stays authenticated.
+Do not add N5 statements for excluded administrative prose, and do not use the
+exclusion to skip any substantive negative claim.
 
 N6 must bind every indexed candidate to an exact quoted indexed basis, an N2
 wall, and a substantive closure mechanism. N7 must cite the N1 route surface

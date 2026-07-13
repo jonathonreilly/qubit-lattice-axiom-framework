@@ -1,9 +1,12 @@
+V1 PASS qubit_full_domain
 V1 PASS qubit_real_presentation
 V1 PASS no_possibility_privileged
+V1 PASS possibilities_distinguished_by_supplied_algebra
 V1 PASS qualification_choice
 V1 PASS state_configuration_of_records
 V1 PASS law_no_state_privilege
 V1 PASS record_additivity
+V1 PASS all_target_memo_quote_blocks_current_verbatim :: complete Qubit and Qualification blockquotes compared after whitespace flattening
 V2 PASS joint_conjugation_multiplicative_all_G_pairs :: generators=12 pair_products=144
 V2 PASS joint_conjugation_real_linear_on_G_span
 V2 PASS K_closure_explicit_reexpression_each_G_generator :: conj(s2 x C^j)=-s2 x C^j; all other listed tensors fixed
@@ -24,14 +27,17 @@ V3 PASS corner_CplusC2_eigenvalues :: {2: 1, -1: 2}
 V4 PASS sector_copy_isometry
 V4 PASS sector_copy_conj_is_conjugated_PVM_copy
 V4 PASS sector_conjugation_swaps_doublet_projectors
+V4 PASS sector_copy_combined_K_pointer_label_intertwiner :: pointer-label swap is load-bearing; entrywise conjugation alone fails
 V4 PASS sector_channel_intertwines_K
 V4 PASS CplusC2_spectral_copy_isometry
 V4 PASS CplusC2_spectral_PVM_K_fixed
 V4 PASS CplusC2_spectral_copy_K_fixed
 V4 PASS CplusC2_spectral_channel_intertwines_K
+V4 PASS fixed_two_tick_combined_K_history_intertwiner :: both real pointer registers carry the induced doublet-label swap
 V5 PASS symbolic_input_K_real
 V5 PASS symbolic_input_Hermitian
 V5 PASS K_real_sector_registered_weights_orbit_constant :: w-Pw_minus_w-Pwb=0
+V5 PASS registered_state_combined_K_history_invariant
 V5 PASS W_spectral_PVM_complete
 V5 PASS W_spectral_PVM_projective
 V5 PASS W_spectral_PVM_K_even
@@ -39,7 +45,10 @@ V5 PASS W_branch_0_sector_orbit_constant :: difference=0
 V5 PASS W_branch_+sqrt3_sector_orbit_constant :: difference=0
 V5 PASS W_branch_-sqrt3_sector_orbit_constant :: difference=0
 V5 PASS W_protocol_symmetric_ensemble :: summed_difference=0
+V5 PASS K_closed_generated_algebra_not_enough_for_state_preservation :: U=(I-i*s1)/sqrt(2) is generated but does not intertwine entrywise K
+V5 PASS adaptive_feed_forward_requires_history_equivariant_controller :: K-closure of available writes does not pair an asymmetric history-conditioned schedule
 V6 PASS K_odd_seed_conjugated_model_pair
+V6 PASS K_odd_seed_density_eigenvalues_and_physical_range :: eigenvalues=(1-eps)/6,(1+eps)/6; positivity requires |eps|<=1
 V6 PASS K_odd_seed_plus_branch_difference_exact :: joint_difference=-eps/3; normalized_within_branch=-eps
 V6 PASS K_odd_seed_nonzero_for_eps_nonzero
 V6 PASS K_odd_seed_zero_at_eps_zero
@@ -49,20 +58,21 @@ V6 PASS full_3sector_registration_PVM_and_copy_isometry
 V6 PASS full_registration_branchwise_resolves_doublet :: Pw->[0, 1, 0]; Pwb->[0, 0, 1]
 V6 PASS K_real_full_registration_ensemble_orbit_constant
 V6 PASS K_odd_monitor_spectral_PVM_matches_3sectors
-V6 PASS three_sector_monitor_in_positive_list_real_algebra :: I2 x i(C-C^2) = (s1 s2 s3) x (C-C^2): a real product of positive-list generators; the 3-sector monitor needs no admission
+V6 PASS three_sector_monitor_in_positive_list_real_algebra :: I2 x i(C-C^2) = (s1 s2 s3) x (C-C^2): a real product of positive-list generators; the 3-sector monitor needs no K-odd input
 V6 PASS admissibility_authority_note_available :: dynamic flattened-whitespace controlled-copy class quotation
 V6 PASS flavor_note_Born_comparator_verbatim
+V6 PASS W1b_supplied_context_quote_verbatim_in_target :: complete blockquote compared after whitespace flattening
 V6 PASS W1b_grain_formula_authority_available :: dynamic flattened-whitespace p_d-to-r derivation
 V6 PASS Born_2block_weights_imply_r_one_exact :: solutions=[1]
 V7 PASS W1b_L2_update_family_source_available :: dynamic flattened-whitespace L2 family definition
+V7 PASS target_imports_W1b_L2_definition_exactly :: same two-sector family text on source and target; no off-surface law
 V7 PASS Koide_doublet_constancy_note_available :: dynamic observable-face boundary quotation
 V7 PASS W1b_common_f_exchange_identity
 V7 PASS W1b_fixed_equation_reproved :: T_f(q)=q iff f(q)(1-q)=q f(1-q); strict sharpening excludes off-center roots
-V7 PASS W1b_power_subfamily_Fix_0_half_1_exact :: {'2': {0, 1/2, 1}, '3': {0, 1/2, 1}, '5/2': {0, 1/2, 1}, '4': {0, 1/2, 1}}
+V7 PASS W1b_power_subfamily_Fix_0_half_1_exact :: {'2': (0, 1/2, 1), '3': (0, 1/2, 1), '5/2': (0, 1/2, 1), '4': (0, 1/2, 1)}
 V7 PASS swap_symmetric_surface_invariance_and_Fix_0_half_1 :: 3-label face is the exact split of W1b's (p_s,p_d) family
 PATH note=docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md
 PATH runner=scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py
 PATH cache=logs/runner-cache/kcpt_orbit_constant_registered_occupancy_2026_07_12.txt
-PATH worklog=/tmp/kreality_p3_worklog.md
-TOTAL: PASS=62 FAIL=0
+TOTAL: PASS=73 FAIL=0
 FLAGS: none

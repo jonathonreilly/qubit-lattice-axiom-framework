@@ -20,9 +20,11 @@ K-reality or the occupancy weight.
 
 The W2-era review then established that convention-freeness does not close the
 observable face: an unlabeled three-atom spectral PVM remains available. This
-note closes the **registered-weight face** natively on the supplied finite
-sector-algebra surface, under four declared load-bearing readings. K-reality's
-value face remains open.
+note derives an exact **conjugate-sector ensemble-weight equality** on the
+supplied finite sector-algebra surface, under four declared load-bearing
+readings. It does not derive physical ORBIT-INDEXING, aggregation of two
+distinct record contents into one occupancy block, or the count-once-per-orbit
+grain that W1b supplies. K-reality's value face remains open.
 
 ## Theorem
 
@@ -131,9 +133,12 @@ derivable. Under declared reading R2, derivable initial data is K-real.
 
 ### T-K3 — Ensemble orbit-constancy at every tick
 
-Consider any protocol built from the K-closed class in R1, acting on K-real
-initial data, with the K-fixed real pointer configurations of R4. The W1a
-controlled-copy form for a supplied PVM `{P_chi}` is
+Consider the protocol-level class in R1: every selected state-transition/write
+channel individually intertwines the combined K/content-label involution. The
+input data is K-real and the pointer configurations obey R4. W1a supplies the
+two-outcome controlled-copy template. R1 separately declares the following
+finite-PVM algebraic extension at this three-sector surface; W1a does not prove
+its three-outcome physical admissibility or multi-tick exhaustiveness:
 
 ```text
 V_P = sum_chi P_chi tensor |chi>_R.
@@ -145,21 +150,42 @@ Because the pointer vectors are real,
 conjugate(V_P) = V_conjugate(P).
 ```
 
-Thus the write channel intertwines conjugation. K fixes the singlet label and
-acts on the sector labels by the doublet swap. Consequently, the push-forward
-record configuration of a K-real state is K-real, and its registered weights
-obey
+Let `tau` fix the singlet content label and swap the two doublet content
+labels, and let `S_R` implement that permutation on the real pointer basis.
+Entrywise conjugation fixes each pointer vector; `S_R` is the separate induced
+action on its sector-content label. Reindexing the displayed sum gives
+
+```text
+(I tensor S_R) conjugate(V_P) = V_P.
+```
+
+Thus the write channel intertwines input conjugation with the combined output
+involution. Consequently, the push-forward record configuration of a K-real
+state is invariant under conjugation followed by `tau`, and its registered
+weights obey
 
 ```text
 weight(P_w) = weight(P_conjugate(w)).
 ```
 
-The same statement propagates from one tick to the next: composition preserves
-the intertwining identity, each newly written pointer configuration is real,
-and the K-real input condition is preserved on the registered state face.
-Induction therefore gives exact orbit-constancy at every tick of every such
-protocol. This is an ensemble registered-weight statement; it is not an
-assertion that the two PVM atoms are unavailable.
+The same statement propagates through a fixed, record-independent sequence of
+individually intertwining channels: composition preserves the combined
+intertwining identity, each
+newly written pointer configuration is real, and the induced history
+involution extends by the new label permutation. The same induction applies
+to adaptive feed-forward only when the controller is **history-equivariant**:
+the next write selected after `tau(h)` must be the conjugate-and-relabelled
+write selected after history `h`. K-closure of the available coupling algebra
+alone imposes neither this pairwise condition nor channel-by-channel
+intertwining. For example, `U=(I_2-i sigma_1)/sqrt(2)` belongs to the generated
+algebra but takes a K-real `sigma_3`-polarized state to one with a K-odd
+`sigma_2` component. An arbitrary record-conditioned choice or
+non-intertwining inter-tick channel is therefore outside the proved scope.
+Induction
+gives exact orbit-constancy at every tick of every fixed sequence and every
+history-equivariant adaptive protocol in the declared class. This is an
+ensemble registered-weight statement; it is not an assertion that the two PVM
+atoms are unavailable.
 
 The joint-witness protocol is included. The spectral PVM of `W`, followed by
 three-sector controlled-copy registration, records resolved branches. For a
@@ -180,12 +206,13 @@ q=p_d.
 R3 inherits W1b's L2 family without changing it:
 
 ```text
-T_f(q) = f(q)/(f(q)+f(1-q)),
+T_f(q) = f(q) / (f(q)+f(1-q)),
 f : [0,1] -> [0,1],
 f continuous and strictly increasing,  f(0)=0.
 ```
 
-On the three-label presentation, the exact split and aggregation maps are
+Conditional on W1b's supplied physical two-block identification, the
+bookkeeping split and aggregation maps are
 
 ```text
 E(p_s,p_d) = (p_s,p_d/2,p_d/2),
@@ -228,15 +255,18 @@ occupancy. With W1b's equal-power-per-block relation
 p_d = 2r/(1+2r),
 ```
 
-the exact solution is `r=1/2`. The orbit-constant two-sector occupancy surface
-used here is now derived under R1–R4 at this sector-algebra surface rather than
-supplied.
+the exact solution is `r=1/2`. R1–R4 derive equality of the two
+conjugate-sector formal trace weights on the three-label surface. They do not
+derive that those labels are one physical record content or one
+count-once-per-orbit occupancy block. The map `A` and that physical
+identification remain part of W1b's supplied context.
 
 ## Negative controls
 
-### N1 — Admitted K-odd seed
+### N1 — Conditionally supplied K-odd seed
 
-Admit `rho_eps` from L-K2. For the `W` branches `Q_+` and `Q_-`, the exact
+Supply `rho_eps` from L-K2 with `0<|eps|<=1`, the range in which it is a
+non-K-real density state. For the `W` branches `Q_+` and `Q_-`, the exact
 registered doublet differences are
 
 ```text
@@ -244,12 +274,12 @@ Pr(P_w,Q_+) - Pr(P_conjugate(w),Q_+) = -eps/3,
 Pr(P_w,Q_-) - Pr(P_conjugate(w),Q_-) = +eps/3.
 ```
 
-Thus the W-branch-conditional registered asymmetry has magnitude `eps/3`: it is
-nonzero exactly when `eps!=0` and zero at `eps=0`. Here “branch-sliced” means
-the difference of joint registered weights with the `W` branch fixed; no
-within-branch renormalization is being asserted. The two signs cancel in the
-unconditioned marginal exactly. This protocol supports no stronger decay
-claim.
+Thus the signed branch-sliced differences are `-/+ eps/3` and their magnitude
+is `|eps|/3`: they are nonzero exactly when `eps!=0` and zero at `eps=0`. Here
+“branch-sliced” means the difference of joint registered weights with the `W`
+branch fixed; no within-branch renormalization is being asserted. The two
+signs cancel in the unconditioned marginal exactly. This protocol supports no
+stronger decay claim.
 
 ### N2 — Three-sector registration inside the class
 
@@ -262,7 +292,7 @@ A_odd = i(C-C^2)
 directly. It is Hermitian, K-odd on the corner factor, and has eigenvalues
 `{-sqrt(3),0,+sqrt(3)}` with spectral PVM
 `{P_1,P_w,P_conjugate(w)}`, reproducing the einselection note's K-odd fact.
-No admission is needed to reach it: R1's class is K-closed rather than
+No K-odd input is needed to reach it: R1's algebra is K-closed rather than
 K-even-only, and
 
 ```text
@@ -274,8 +304,9 @@ copy is a valid three-sector registration and resolves the two doublet atoms
 branchwise. The control computes that even this registration, applied to
 K-real initial data, yields exactly orbit-constant ensemble weights — so
 three-sector branch resolution is available inside the derivable class while
-a registered doublet **asymmetry** still requires the admitted K-odd seed of
-N1. This control is a robustness exhibit for T-K3, not an exclusion claim.
+a registered doublet **asymmetry** still requires the conditionally supplied
+K-odd seed of N1 or a non-intertwining inter-tick/controller choice outside
+T-K3. This control is a robustness exhibit for T-K3, not an exclusion claim.
 
 ### N3 — Born/dimension comparator
 
@@ -290,7 +321,7 @@ Substitution into `p_d=2r/(1+2r)` gives `r=1` exactly. This is only the
 Born/dimension comparator stated by W1b and the einselection note; it is not a
 competing selection claim.
 
-## Corollary (named, not executed)
+## W1b boundary consequence (no context discharge)
 
 W1b declares, verbatim:
 
@@ -304,20 +335,36 @@ W1b declares, verbatim:
 > supplied here per the K/CPT supplied-context bridge pattern; it is not
 > derived here, and every claim below is conditional on it.
 
-At this sector-algebra surface, T-K3 derives under R1–R4 the orbit-constant
-two-sector occupancy surface consumed by that one named supplied context.
-What remains supplied for the physical chain is the charged-lepton carrier
-identification, W1b's own declared readings, and the boundary that no K-odd
-datum is admitted. A registry/bridge action reflecting this is available to a
-future gated, owner-approved lane; this note does not execute or request it.
+At this sector-algebra surface, T-K3 derives under R1–R4 only equality of the
+two conjugate-sector formal trace weights. It does not derive W1b's physical
+ORBIT-INDEXING, aggregation into one doublet record content, or
+count-once-per-orbit grain. The named W1b context therefore remains supplied
+in full, and this W1b-dependent note is not an upstream discharge source for
+that context or its registry obligation.
+
+The complete supplied/declared list for the conditional comparison is: R1's
+Pauli/corner presentation, exact positive-list algebra, finite-PVM map-level
+extension, and channel-by-channel intertwining condition; R2's K-real
+initial-data boundary; R3's entire W1b supplied two-sector context,
+permanence/stationarity, common-`f`, nondegenerate-readout, strict-sharpening,
+aggregation, and equal-power-per-block readings; R4's real-pointer and formal
+trace-weight presentation; equivariant next-write selection for adaptive
+feed-forward; and the charged-lepton carrier identification. No registry or
+bridge action is executed, requested, or made available by this note.
 
 ## Declared readings
 
 All four readings are load-bearing.
 
-**R1 — admissible-coupling positive list.** Admissible couplings are exactly
-the real-algebra class generated by the K-closed positive list `G` in L-K1
-and its protocol compositions.
+**R1 — positive-list algebra and individually intertwining protocol steps.**
+The available finite-surface coupling algebra is exactly the real algebra
+generated by the K-closed positive list `G` in L-K1. T-K3 quantifies only over
+fixed compositions whose selected state-transition/write channels each
+intertwine the combined K/content-label involution. The displayed n-ary
+controlled-copy map is a declared finite-PVM algebraic extension of W1a's
+two-outcome template, not a consequence of W1a's classification. Adaptive
+selection is covered only with the history-equivariance condition stated in
+T-K3. K-closure of the algebra alone is insufficient.
 **FLAG — positive-list burden:** the memo clause “The full one-site
 possibility domain has algebraic presentation `M_2(C)`” supplies the qubit
 algebra; its real-presentation clause supplies the equivalent real-algebra
@@ -338,10 +385,15 @@ L2 common-`f` record-influence family, and strict-sharpening reading are
 inherited unchanged. Their nondegenerate readout, common-profile symmetry,
 and off-center majority amplification are load-bearing.
 
-**R4 — K-fixed record pointers.** Record pointer configurations are K-fixed
-classical data, using the memo sentence “A state is a configuration of
-records.” The real pointer basis is a declared presentation of that finite
-record surface.
+**R4 — real pointers and formal trace-weight reading.** Record pointer
+configurations are K-fixed classical data, using the memo sentence “A state is
+a configuration of records.” The real pointer basis is a declared
+presentation of that finite record surface. Entrywise K fixes those vectors;
+the separate induced content involution swaps the two doublet labels. At this
+finite surface, “ensemble registered weight” means the formal density-operator
+trace against the corresponding pointer/sector projector. This trace-weight
+reading is declared, not derived from the minimal axioms as a Born,
+probability, occurrence, or physical weighting rule.
 
 ## What is not derived
 
@@ -351,35 +403,47 @@ record surface.
    forecloses them. The theorem is about registered **weights**.
 2. K-reality's value face, including the registered phase `delta`, is
    untouched and open.
-3. The physical charged-lepton carrier identification is not derived.
-4. “No admitted K-odd seed” is a boundary condition, not a theorem. Admitting
-   the N1 seed reopens branch-level doublet asymmetry.
-5. Nothing is claimed about the quark/mass-orientation sector.
-6. No measure, rate, site, or weight selection is made beyond what W1b already
+3. Physical ORBIT-INDEXING, aggregation of the two conjugate record contents,
+   and count-once-per-orbit occupancy are not derived. They remain in W1b's
+   supplied context.
+4. The physical charged-lepton carrier identification is not derived.
+5. “No conditionally supplied K-odd seed” is a boundary condition, not a
+   theorem. Supplying the N1 seed reopens branch-level doublet asymmetry.
+6. Nothing is claimed about the quark/mass-orientation sector.
+7. No measure, rate, site, or weight selection is made beyond what W1b already
    owns under its declared readings.
+8. No arbitrary adaptive controller is derived. Feed-forward is covered only
+   when its next-write selection is equivariant under the induced record-history
+   involution.
 
 ## Scope boundary
 
-- This is a finite theorem on the supplied qubit, corner-triplet, sector-PVM,
-  and real-pointer algebraic surface.
+- This is a finite theorem on the supplied qubit/corner presentation, the
+  character-sector PVM constructed from that supplied corner generator, and
+  the supplied real-pointer presentation.
 - Every conclusion is a derivable-structure claim under R1–R4. The declared
   readings are not promoted to memo theorems.
-- Admissions escape the conclusion by design: an admitted K-odd initial
-  datum restores a registered doublet asymmetry (N1). Three-sector branch
-  registration needs no admission — it is available inside the K-closed
+- Conditionally supplied inputs escape the conclusion by design: a K-odd
+  initial datum restores a registered doublet asymmetry (N1). Three-sector
+  branch registration needs no K-odd input — it is available inside the K-closed
   class — and the controls compute that it leaves ensemble weights
   orbit-constant on K-real inputs (N2).
 - T-K3 concerns ensemble registered weights. It neither identifies conjugate
   PVM atoms as one record content nor forbids branch-level resolution.
+- T-K3's tick induction covers fixed sequences and history-equivariant
+  adaptive feed-forward. K-closure of the operation class alone does not
+  establish arbitrary record-conditioned control.
 - T-K4 imports W1b's L1/L2 and strict-sharpening readings unchanged and makes
-  no off-surface extension of its two-sector update family.
+  no off-surface extension of its two-sector update family. Its split and
+  aggregation are a conditional bookkeeping comparison, not a derivation of
+  physical ORBIT-INDEXING.
 
 ## Load-bearing dependencies
 
 | Dependency | Consumed content |
 |---|---|
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Verbatim Qubit, no-privilege, Qualification, state, and law clauses; R1 and R2 state explicitly what those clauses do and do not supply. |
-| [`RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md) | W1a's controlled-copy isometry classification under its declared finite-surface readings. |
+| [`RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md) | W1a's one-step, two-outcome controlled-copy template under its declared finite-surface readings. R1 separately declares the n-ary map-level extension used here. |
 | [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | W1b L1/L2, strict sharpening, `Fix(T_f)`, the occupancy-to-grain map, Born comparator, and the exact supplied-context declaration addressed by the corollary. |
 | [`KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md`](KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md) | The observable-face salvage boundary: the unlabeled three-atom PVM remains convention-stable, so the new theorem must concern weights rather than PVM availability. |
 | [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md) | Orbit vocabulary and the supplied-context framing that the corollary addresses; no determinant-character value conclusion is consumed. |
@@ -395,13 +459,13 @@ Non-citation context handles:
 
 | Check block | Exact verification | Result |
 |---|---|---:|
-| V1 | Six flattened-whitespace current-memo clauses, including all five required state/Qualification/Qubit needles and the retained Record-additivity check | `PASS=6 FAIL=0` |
+| V1 | Nine flattened-whitespace current-memo checks, including both complete quoted memo blocks and the retained Record-additivity boundary check | `PASS=9 FAIL=0` |
 | V2 | Real-linearity, all `12 x 12` multiplicativity products, explicit K re-expression of every positive-list generator, and the sector-projector action | `PASS=7 FAIL=0` |
 | V3 | Positive-list real-algebra membership, Hermiticity, C3 invariance, K parity, doublet resolution, and exact spectra of the joint and corner witnesses | `PASS=10 FAIL=0` |
-| V4 | Three-sector and two-block controlled-copy isometries and exact K intertwining with real pointers | `PASS=8 FAIL=0` |
-| V5 | General symbolic K-real state, registered orbit equality, the K-even `W` PVM, and branchwise plus ensemble equality | `PASS=10 FAIL=0` |
-| V6 | K-odd seed controls, exact cancellation, three-sector registration with positive-list membership of the monitor, orbit-constant ensemble weights under full registration, dynamic W1a/W1b/flavor authority reads, and Born `r=1` | `PASS=15 FAIL=0` |
-| V7 | Dynamic L2/salvage reads, common-`f` exchange identity, fixed equation, exact power-family fixed sets, and exact split/aggregation invariance | `PASS=6 FAIL=0` |
+| V4 | Three-sector and two-block controlled-copy isometries, the combined pointer-label intertwiner, and an exact fixed two-tick composition | `PASS=10 FAIL=0` |
+| V5 | General symbolic K-real state, combined-involution registered-state equality, branchwise/ensemble equality, a non-intertwining generated-unitary control, and the adaptive-controller equivariance control | `PASS=13 FAIL=0` |
+| V6 | K-odd seed density range, exact branch-sliced differences/cancellation, three-sector registration with positive-list membership of the monitor, exact W1b supplied-context quotation, dynamic authority reads, and Born `r=1` | `PASS=17 FAIL=0` |
+| V7 | Exact target/source L2 agreement, dynamic salvage reads, common-`f` exchange identity, fixed equation, deterministic exact power-family fixed sets, and exact split/aggregation invariance | `PASS=7 FAIL=0` |
 
 Run:
 
@@ -412,7 +476,7 @@ python3 scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py
 Cached run result:
 
 ```text
-TOTAL: PASS=62 FAIL=0
+TOTAL: PASS=73 FAIL=0
 FLAGS: none
 ```
 

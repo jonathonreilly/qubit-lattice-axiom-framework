@@ -815,3 +815,18 @@ repaired result and full N1--N8 packet. Runner/cache: `PASS=12 FAIL=0`. Audit
 validation seeds one `bounded_theorem` / `unaudited` row with source hash
 `2e21f496c0ca6a92...` and the sole constrained-fiber dependency; strict lint
 has zero errors. PR #5315 is open; no axiom-update stop is triggered.
+
+## Raw constrained-action Hessian review
+
+PASS WITH BOUNDED POSITIVE CLAIMS. Compact-integral differentiation gives
+`DR[F]=<F>` and `D2R[F,G]=-Cov(F,G)` for the real positive gauge-body fiber
+system. The convention-matched Follmer estimate carries the `1/4` factor, and
+the weighted influence resolvent yields exponential support-separation decay
+uniformly in regulator and coarse configuration. Review explicitly excluded
+normalized coarse-kernel responses, retained-Grassmann norms, an extensive
+infinite raw action, higher cumulants, and projected contraction.
+
+Runner/cache: `PASS=8 FAIL=0`. Audit validation seeds one `bounded_theorem` /
+`unaudited` row with source hash `0bfb6dd97b50c569...` and the sole
+constrained-fiber dependency. PR #5317 is open; no negative theorem or
+axiom-update stop is triggered.

@@ -1188,3 +1188,57 @@ scalar `G_(mu')`, the full all-length determinant, and one completed joint
 integration with the Block44 support map. Only after deriving that joint
 ordinary output may the next actual quadratic be projected and atomized. No
 axiom-update stop is triggered.
+
+## Block 46: completed scalar-product joint output and fresh atom return
+
+The actual generated orbit now completes one current-hidden step in the
+required order. Block44's fixed-product output is not promoted into the new
+center. Instead the Block42 physical residual and `P_0` split, the Block45
+shortest center, and both tail arms enter one scalar `G_(mu')` outer-Haar/
+Gaussian graph. Since onsite `Q` insertions allow odd total word lengths, the
+determinant uses the full all-length trace-log. The hidden-centered
+counterterm/restore pays the factor-two `1-E_hid` charge.
+
+At `m=10^64`, `(Theta,c,Lambda)=(4.38,0.01,0.2)`, the conservative ledger is
+
+```text
+K_ref=1.689545491626676e-8,
+K_R=4.639276716141073e-7,
+K_T=4.808231265303741e-7<c,
+q=max(.002565476738999639,exp(-.1))=.9048374180359595<1.
+```
+
+Both Schur-tail arms receive explicit visible charges: the centered arm is in
+`K_R`; the hidden-empty arm is reattached outside the normalized ratio and is
+included in the Weyl and final factor envelopes. After the completed physical
+output is projected once,
+
+```text
+gap_out/m>=0.9999959535151595,
+theta_atom=0.427240686481831>0.400001,
+K_out,total^fac=3.613529092410874e-5<0.01.
+```
+
+Literal reuse of the unchanged certificate does not iterate: the next
+diagnostic has `q_next=1.487230817637235>1` and
+`K_next,out^fac=.03683052150750240>.01`. NG46 is only the fixed-m,
+fixed-surcharge/halving certificate boundary. Scale-indexed norms, atom
+lineage, varying mass, shortest-center squaring, sharper carriers, and
+alternate blocks remain live. No axiom-update stop is triggered.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims after centered-determinant, both-tail, N1--N8, and cache-format
+repairs. The SHA-pinned primary runner/cache gives `PASS=12 FAIL=0`; the four
+direct dependency runners give `12/0`, `13/0`, `17/0`, and `15/0`. The audit
+compatibility pipeline seeds one `bounded_theorem` / `unaudited` row with
+exactly four dependencies; strict lint has zero errors and generated outputs
+are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370 is
+open and mergeable on Block45 with the audit workflow queued. The next target
+is the exact two-mark covariance/Hessian envelope on the completed graph. The
+candidate pair bound is `68exp(.1)/(1-tau)^2=75.15428126562128`, which would
+close a one-horizon nonlinear tube for approximately
+`delta in [.0004651520,.0020673073]`. This must remain a source/output
+Banach-bundle tube until a separate same-domain invariant-ball theorem closes.

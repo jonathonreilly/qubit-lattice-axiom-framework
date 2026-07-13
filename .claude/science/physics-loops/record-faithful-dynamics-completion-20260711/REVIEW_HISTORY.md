@@ -1368,3 +1368,30 @@ full audit pipeline seeds one `bounded_theorem` / `unaudited` row with exactly
 five dependencies; strict lint has zero errors, and generated audit/status
 surfaces are stripped. PR #5369 is open on Block44. No axiom-update stop is
 triggered.
+
+## Completed scalar-product joint atom-return review
+
+PASS WITH BOUNDED CLAIMS after three independent final review lanes. The
+first implementation was corrected in four load-bearing ways: the full
+onsite-`Q` determinant is centered with the mandatory factor two; the tiny
+centered Schur tail receives a visible activity charge above one aggregate
+ulp; the separately reattached hidden-empty tail is included in both the Weyl
+gap and final factor envelope; and the next diagnostic repeats the same
+centered determinant charge rather than an obsolete full-potential row.
+
+Governance/no-go review required six uppercase `ATTEMPTED` attacks, a separate
+live-route table, all fifteen bidirectional W1--W6 independence rows, the
+mandatory phrase/rhetoric scan, an exact Block43 steelman citation, a matching
+cross-cycle echo, and removal of pre-authored retained language. NG46 now says
+only that literal fixed-m reuse of the unchanged positive-surcharge/halving
+certificate has no positive fixed point and cannot prove all-horizon
+contraction. It does not constrain other RG actions, norms, schedules, blocks,
+or continuum routes.
+
+Code/math independently recomputed every primary and next-ledger number;
+physics/import confirmed scalar-reference phase order, all-word determinant
+ownership, both tail arms, one physical projection, and one fresh atom return.
+The SHA-pinned runner/cache is `PASS=12 FAIL=0`; all four dependencies pass,
+vocabulary lint is clean, the audit pipeline seeds exactly four dependencies,
+strict lint has zero errors, and generated audit/status files are stripped.
+PR #5370 is open and mergeable on Block45. No axiom-update stop is triggered.

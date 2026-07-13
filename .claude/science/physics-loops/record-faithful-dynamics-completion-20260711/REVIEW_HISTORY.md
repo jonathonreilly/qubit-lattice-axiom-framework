@@ -794,3 +794,24 @@ the result, including the complete N1--N8 packet. Runner/cache:
 row with source hash `d55ecce2eb841fdc...` and the sole Block24 dependency;
 strict lint has zero errors. PR #5313 is open; no axiom-update stop is
 triggered.
+
+## Deep-fiber coarse-gauge Gibbsianness review
+
+PASS WITH BOUNDED CLAIMS. Exact constrained partition-function ratios define
+the coarse specification. The repaired non-nullness step uses a uniform
+absolute relative-energy bound, not hidden-variable oscillation alone. Fine
+interaction exponential tails and weighted constrained-fiber comparison give
+exponential quasilocality after convex interpolation of hidden Hamiltonians.
+
+The compact-alphabet Gibbs-representation theorem then supplies a sitewise
+absolutely summable coarse interaction. Review corrected the initial uniform
+anchored-supremum overclaim: a non-translation-adapted representative need not
+have a uniform `sup_e` norm. The source keeps exponential connected weights,
+symmetry-adapted coordinates, the joint gauge--Grassmann source theorem,
+projection/rescaling, and the physical trajectory open.
+
+Independent code/math, physics/import, and governance reviewers pass the
+repaired result and full N1--N8 packet. Runner/cache: `PASS=12 FAIL=0`. Audit
+validation seeds one `bounded_theorem` / `unaudited` row with source hash
+`2e21f496c0ca6a92...` and the sole constrained-fiber dependency; strict lint
+has zero errors. PR #5315 is open; no axiom-update stop is triggered.

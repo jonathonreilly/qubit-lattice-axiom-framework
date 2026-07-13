@@ -1,6 +1,32 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block26-coarse-gauge-gibbsianness-20260712`.
+The coarse-gauge Gibbsianness runner reports `PASS=12 FAIL=0`. In the deep
+fiber wedge, exact constrained partition ratios define a uniformly non-null
+exponentially quasilocal specification for the factor-two gauge image. The
+compact-alphabet Gibbs-representation theorem supplies a sitewise absolutely
+summable infinite-volume coarse interaction, so the image is not merely
+mixing and is not non-Gibbsian in this controlled region.
+
+The conclusion is deliberately sitewise: the selected interaction need not
+have a uniform anchored supremum or preserve translation/gauge symmetry term
+by term. It also concerns the positive gauge body only. A uniform complex
+source neighborhood and all-order factorial/tree cumulant bounds remain
+necessary for the retained gauge--Grassmann exponential polymer norm.
+
+Independent code/math, physics/import, governance, and full N1--N8 reviews
+pass after the absolute-energy, Hamiltonian-interpolation, sitewise-summability,
+and vocabulary corrections. Audit validation seeds one `bounded_theorem` /
+`unaudited` row with exactly the prior constrained-fiber dependency; strict
+lint has zero errors and generated audit outputs are stripped. No axiom-update
+stop is triggered.
+
+Coarse-gauge Gibbsianness stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5315
+is open against the constrained-fiber head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block25-generated-action-polymer-norm-20260712`.
 The constrained-fiber/raw-action runner reports `PASS=9 FAIL=0`. The exact
 one-/two-link hidden-coordinate footprints give a uniform hidden Dobrushin row

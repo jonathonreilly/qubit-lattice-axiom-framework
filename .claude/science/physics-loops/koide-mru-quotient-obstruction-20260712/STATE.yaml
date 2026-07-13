@@ -1,0 +1,48 @@
+loop_slug: koide-mru-quotient-obstruction-20260712
+mode: run
+target: best-honest-status
+started_at_utc: 2026-07-12T23:35:15Z
+runtime_budget: interactive_sustained_attempt
+checkpoint_interval: 30m
+cycle: 1
+science_block: 1
+branch: physics-loop/koide-mru-quotient-block01-20260712
+base_commit: 091d47359f70936b740657ffc5725816883e87be
+lock_mode: branch_local_supervisor_lock
+lock_path: /private/tmp/physics-loop-locks/koide-mru-weight-class-obstruction.lock
+active_route: invariant_ring_and_record_two_model_obstruction
+hard_residual: >-
+  Determine whether the physical charged-lepton scalar lane must factor the
+  real C3 doublet through its SO(2) orbit radius, rather than merely being
+  defined on that quotient.
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: no_go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: >-
+  Exact invariant-ring and same-radius spectral counterexamples show that the
+  supplied carrier, even under the stated granted strengthenings, does not
+  entail the SO(2) radius quotient; no future physical quotient law is ruled out.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - .claude/science/physics-loops/koide-mru-quotient-obstruction-20260712/
+  - docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md
+  - scripts/frontier_koide_mru_weight_class_obstruction_theorem.py
+open_imports: []
+no_go_routes:
+  - spectral_scalarity_alone_does_not_remove_cos_3_arg_b
+  - conjugation_alone_does_not_remove_re_b_cubed
+  - record_additivity_does_not_select_the_per_record_scalar
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: pending_open
+next_exact_action: >-
+  Commit and push the review-clean science block, open one unmerged review PR,
+  then hand the source row to the independent audit lane after landing.
+stop_condition: >-
+  Stop after one coherent science block has a decisive artifact, passing local
+  review-loop disposition, pushed branch, and one unmerged review PR.

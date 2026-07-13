@@ -1,5 +1,20 @@
 # PR Delivery
 
+The constrained-fiber Dobrushin and raw RG-unit-direction theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block24-coupled-one-step-rg-map-20260712`
+- head: `physics-loop/record-faithful-dynamics-block25-generated-action-polymer-norm-20260712`
+- runner: `PASS=9 FAIL=0`
+- scope: uniform hard-fiber uniqueness/mixing for `alpha<1/2`, a declared
+  generated-action coefficient space, and exact norm-one raw fiber-measurable
+  directions; no volume-uniform polymer decomposition or projected/rescaled
+  RG contraction
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  Block24 dependency; strict lint zero errors; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5313
+
+No merge is authorized. Independent audit remains authoritative.
+
 The exact factor-two Wilson--staggered gauge block, Schur, and OS semigroup is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block23-critical-scaling-necessary-conditions-20260712`

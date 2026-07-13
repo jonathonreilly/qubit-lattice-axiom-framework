@@ -8,33 +8,32 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block24-coupled-one-step-rg-map-20260712
+branch: physics-loop/record-faithful-dynamics-block25-generated-action-polymer-norm-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 24
-block_count: 24
-active_route: massive_wilson_staggered_factor_two_gauge_block_schur_os_semigroup
+cycle_count: 25
+block_count: 25
+active_route: wilson_staggered_constrained_fiber_dobrushin_and_raw_rg_unit_directions
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: massive_wilson_staggered_factor_two_gauge_block_schur_os_semigroup_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_constrained_fiber_dobrushin_and_raw_rg_unit_directions_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  A declared factor-two straight-link map has exact Haar disintegration,
-  gauge covariance, all-mass fermion Schur elimination and fixed-background
-  exponential locality, a positive continuous finite coarse gauge density,
-  and exact observable pullback. In the strict Dobrushin wedge its infinite-
-  volume image measures inherit mixing, while the coarse gauge-observable OS
-  transfer is the fine T_2 restriction with doubled time spacing. The map is
-  not taste faithful and no closed quasilocal action-space RG flow is proved.
+  The declared factor-two map has uniform constrained-fiber Dobrushin
+  uniqueness and exponential boundary comparison whenever alpha(beta,m)<1/2.
+  A joint gauge-invariant generated-action coefficient space is defined, and
+  the raw fiber-integration action map has exact norm-one directions on
+  fiber-measurable coordinates. No volume-uniform connected-polymer
+  decomposition or projected/rescaled irrelevant-sector contraction is yet
+  proved.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves a positive bounded block-functional, coarse-measure,
-  Schur, mixing, and gauge-observable OS-semigroup theorem. The named boundary
-  is action-form nonclosure: taste-faithful variables, a normed generated-
-  action space, uniform multiscale stability, and a physical critical
-  trajectory remain open. No RG or continuum impossibility is claimed.
+  The source proves positive hard-fiber control in an explicit deep wedge and
+  an exact bounded limitation on strict contraction of the raw unprojected,
+  unrescaled action map. It does not claim a projected RG eigenvalue,
+  multiscale contraction, critical trajectory, or continuum impossibility.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -116,6 +115,9 @@ files_touched:
   - docs/MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/massive_wilson_staggered_factor_two_gauge_block_schur_os_semigroup_2026_07_12.py
   - logs/runner-cache/massive_wilson_staggered_factor_two_gauge_block_schur_os_semigroup_2026_07_12.txt
+  - docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_constrained_fiber_dobrushin_raw_rg_unit_directions_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -158,10 +160,11 @@ no_go_routes:
   - compact containment in the strict Dobrushin wedge cannot yield a propagating continuum with covered nonzero separated correlations, but this does not close contact, boundary-tuned, block/polymer/RG, weak-coupling/light-mass, charged-sector, or alternative-action continuum routes
   - equality of a one-link Dobrushin majorant does not identify criticality: the exact SU(3) Wilson oscillation moves the valid boundary, and even saturation of the sharper upper bound has no converse
   - exact factor-two gauge pushforward and fixed-background Schur locality do not close on the finite Wilson-staggered action family or supply an action-space RG contraction; taste-faithful and enlarged-polymer routes remain live
+  - exact raw fiber integration cannot strictly contract its full unprojected action space in the common unrescaled coefficient norm because coarse-local lifted coordinates pass with unit ratio; relevant-coordinate projection, rescaling, and scale-weighted irrelevant norms remain live
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -186,12 +189,13 @@ block21_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block22_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5303
 block23_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5305
 block24_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5310
+block25_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5313
 next_exact_action: >-
-  Construct the smallest gauge-invariant exponentially weighted generated-
-  action/polymer space containing coarse loops and multi-fermion monomials.
-  Prove a one-step constrained-fiber stability/locality estimate for the
-  factor-two map, or isolate the exact norm/large-field obstruction. Do not
-  identify image-measure mixing with action-space contraction.
+  Prove a volume-uniform connected-cumulant/polymer decomposition for the
+  exact coarse interaction in a controlled deep subwedge. Then extract
+  vacuum/relevant coordinates, declare factor-two rescaling, and test strict
+  contraction only on a scale-weighted irrelevant sector. Keep the physical
+  critical-trajectory problem separate from this local stability theorem.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

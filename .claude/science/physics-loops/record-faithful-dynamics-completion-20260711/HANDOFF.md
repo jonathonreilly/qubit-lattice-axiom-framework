@@ -1,6 +1,31 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block25-generated-action-polymer-norm-20260712`.
+The constrained-fiber/raw-action runner reports `PASS=9 FAIL=0`. The exact
+one-/two-link hidden-coordinate footprints give a uniform hidden Dobrushin row
+at most `2 alpha`, so every fixed coarse configuration has unique exponentially
+mixing hard fibers when `alpha(beta,m)<1/2`. The joint gauge-invariant
+generated-action coefficient space is defined, but volume-uniform membership
+still requires a connected-cumulant/polymer estimate.
+
+The same block map has exact raw norm-one directions: every coarse-local
+function lifted through the block map passes unchanged through constrained-
+fiber integration. This rules out strict contraction only on the full
+unprojected, unrescaled coefficient space. It does not obstruct contraction
+after relevant-coordinate extraction, factor-two rescaling, and a
+scale-weighted irrelevant norm.
+
+Independent code/math, physics/import, governance, and full N1--N8 reviews
+pass. Audit validation seeds one `bounded_theorem` / `unaudited` row with
+exactly the Block24 dependency; strict lint has zero errors and generated
+audit outputs are stripped. No axiom-update stop is triggered.
+
+Constrained-fiber/raw-action stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5313
+is open against the factor-two block-map head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block24-coupled-one-step-rg-map-20260712`.
 The factor-two block/Schur/OS runner reports `PASS=10 FAIL=0`. The declared
 straight-link map has exact Haar disintegration, gauge covariance, all-mass

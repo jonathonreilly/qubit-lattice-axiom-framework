@@ -505,7 +505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `area_law_primitive_car_edge_identification_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1427,10 +1427,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **claim_scope:** Conditional algebraic reduction and seven-parameter count for a supplied charged-lepton texture with two distinct effective Z_3 offsets, up to generation relabeling and field rephasings.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-batch-A-20260713-e10e4fb8`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Right-multiplying by P_a^dag makes one term diagonal and leaves a relative permutation which is always a nontrivial 3-cycle.  _(class `A`)_
-- **chain closes:** False — The matrix reduction and rank-five rephasing count close algebraically. However, the restricted packet supplies no cited authority establishing that charged-lepton effective Z_3 offsets produce the assumed monomial supports D_q P_q; the runner hard-codes those support matrices.
-- **rationale:** The runner exhausts the three distinct cyclic offset pairs and correctly verifies the rank-five rephasing action, leaving six moduli and one invariant phase. Those are genuine class-A calculations once Y_e=D_aP_a+D_bP_b is supplied. The packet nevertheless omits the load-bearing authority connecting charged-lepton effective offsets to that monomial-support ansatz, so the broader charged-lepton theorem remains conditional.
+- **auditor:** `codex-audit-batch-B-20260713-3aef7057`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Diagonal charged-lepton left/right rephasings remove five phase directions, leaving six positive moduli and exactly one invariant phase.  _(class `A`)_
+- **chain closes:** False — The finite permutation and rephasing algebra closes for the supplied two-offset texture. The packet does not derive from cited inputs the load-bearing physical premise that the charged-lepton lane has support Y_e=D_aP_a+D_bP_b with two distinct effective offsets.
+- **rationale:** The runner genuinely checks the three offset pairs, the rephasing invariant, and the rank-five phase action; these are class-A algebraic checks rather than first-principles derivations from the framework axioms. The claimed seven-parameter reduction is correct conditional on the supplied two-offset support form, but the packet provides no cited authority or axiom derivation establishing that support premise for the physical charged-lepton lane. The source also names upstream lepton theorems that are absent from the cited-authority packet.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_boundary_phase_note`

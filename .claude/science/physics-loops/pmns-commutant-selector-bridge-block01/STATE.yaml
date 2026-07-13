@@ -36,8 +36,10 @@ no_go_routes:
   - the stated q/tau maps on the current corner-trace profile
 trace_gate: direct_blocker_closure
 review_disposition: pass
-pr_status: pending
-next_exact_action: complete audit validation, strip generated authority outputs, and open one review PR
+pr_status: open_review_pr
+pr_number: 5318
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5318
+next_exact_action: independent audit of the narrow no-go candidate, followed by later stale-dependent weaving if ratified
 stop_condition: coherent block reviewed, pushed, and opened as one review PR
 lock:
   path: /private/tmp/pmns-commutant-selector-bridge.lock.json

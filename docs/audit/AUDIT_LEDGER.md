@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 304 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2957 |
-| audit_in_progress | 3 |
+| unaudited | 2956 |
+| audit_in_progress | 4 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -40,14 +40,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 4 |
 | `audited_clean` | 382 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3308 |
+| `unaudited` | 3307 |
 
 | claim_type | count |
 |---|---:|
@@ -112,6 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -498,13 +499,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
-| `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `area_law_native_car_semantics_tightening_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_car_edge_identification_theorem_note_2026-04-25` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -742,19 +743,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** This paragraph is the canonical version and may be cited for manuscript disclosure language and methodology framing, but not as a retained physics theorem, runner-backed derivation, or audit result.  _(class `E`)_
 - **chain closes:** True — Within the declared meta scope, the note closes by adoption/definition: it designates the quoted paragraph as canonical disclosure language and explicitly excludes physics-theorem use. No physics derivation or runner-backed scientific claim is established by this packet.
 - **rationale:** The load-bearing act is a definition/adoption of canonical disclosure text, not a derivation from framework premises. The source note itself correctly scopes the artifact as methodology/canonical-text registration only and forbids citation as a retained physics theorem or audit result. Thus the meta registration closes, but any positive-theorem interpretation would be only a definition substitution rather than a scientific derivation.
-- **auditor confidence:** high
-
-### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`
-
-- **Note:** [`ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** For abstract positive scalars α_bare and u_0, with α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0², the geometric-mean, logarithmic-mean, and equal-ratio identities hold; no numerical plaquette value or physical coupling identification was audited.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-batch-A-20260713-b21794f1`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Substituting α_LM := α_bare/u_0 and α_s(v) := α_bare/u_0² gives α_LM² = α_bare²/u_0² = α_bare·α_s(v).  _(class `A`)_
-- **chain closes:** True — Direct substitution proves the polynomial identity, and positivity justifies the logarithmic restatement and all divisions. No numerical plaquette value or physical coupling interpretation is load-bearing.
-- **rationale:** Issue: the scoped algebra closes, but clean ratification cannot satisfy the packet’s mandatory clean-verdict N1–N8 gate because the live runner output lacks five distinct N1 mechanism classes and the five required N5 resolution-specific execution records. Why this blocks: the packet forbids an audited_clean verdict without a valid PASS gate even when negative_assertion_classes is empty. Repair target: add current-cycle runner evidence satisfying those route and resolution requirements, or explicitly exempt non-negative positive theorems from the clean-verdict gate. Claim boundary until fixed: the abstract identities are established, but no numerical plaquette value or physical coupling identification is ratified here.
 - **auditor confidence:** high
 
 ### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
@@ -1430,6 +1418,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Parseval in the stated normalization gives sum_j z_j^2 = 3(a^2 + 2|c|^2), hence Q = 1/3 + 2r/3, while the S3 action on c folds phi to an unordered-triple invariant.  _(class `A`)_
 - **chain closes:** True — Root-of-unity orthogonality and real conjugacy close the result directly, and an independent exact Q(omega) calculation confirms every displayed identity. Positivity supplies a > 0 and in fact restricts the coordinate to 0 <= r < 1, while the theorem asserts the weaker r >= 0 and leaves its value unselected.
 - **rationale:** Direct expansion in Q(omega), using omega^2 + omega + 1 = 0, independently reproduces the inverse transform, the 6|c|^2 variance identity, Parseval, and Q = 1/3 + 2r/3. The S3 action phi -> +/-phi + 2pi k/3 proves folded-phase invariance and unordered reconstruction, including the c = 0 limit. The scope starts from a supplied positive triple; physical functional construction and empirical comparison are explicitly outside scope, and r remains unselected.
+- **auditor confidence:** high
+
+### `charged_lepton_two_higgs_canonical_reduction_note`
+
+- **Note:** [`CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md`](../../docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Conditional algebraic reduction and seven-parameter count for a supplied charged-lepton texture with two distinct effective Z_3 offsets, up to generation relabeling and field rephasings.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-batch-B-20260713-3aef7057`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Diagonal charged-lepton left/right rephasings remove five phase directions, leaving six positive moduli and exactly one invariant phase.  _(class `A`)_
+- **chain closes:** False — The finite permutation and rephasing algebra closes for the supplied two-offset texture. The packet does not derive from cited inputs the load-bearing physical premise that the charged-lepton lane has support Y_e=D_aP_a+D_bP_b with two distinct effective offsets.
+- **rationale:** The runner genuinely checks the three offset pairs, the rephasing invariant, and the rank-five phase action; these are class-A algebraic checks rather than first-principles derivations from the framework axioms. The claimed seven-parameter reduction is correct conditional on the supplied two-offset support form, but the packet provides no cited authority or axiom derivation establishing that support premise for the physical charged-lepton lane. The source also names upstream lepton theorems that are absent from the cited-authority packet.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_boundary_phase_note`

@@ -321,7 +321,7 @@
         },
         {
           "claim_id": "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
-          "effective_status": "audited_conditional"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "alpha_s_derived_note",
@@ -481,7 +481,7 @@
         },
         {
           "claim_id": "charged_lepton_two_higgs_canonical_reduction_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "charged_lepton_ue_identity_via_z3_trichotomy_note_2026-04-17",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "3a87cf59714afded9f6aaff3b2dd996f9107e8f3",
+  "repo_head": "1ec27e79c80922511dc137139527fa43ee4727e6",
   "schema": "lane_certification_v2"
 }

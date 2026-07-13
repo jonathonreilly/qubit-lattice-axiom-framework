@@ -500,6 +500,30 @@ prepared as the next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The completed scalar-product-reference joint outer-Haar atom return is
+prepared as the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370
+- base: `physics-loop/record-faithful-dynamics-block45-correlated-snext-reference-quadratic-weyl-20260712`
+- head: `physics-loop/record-faithful-dynamics-block46-scalar-product-joint-outer-haar-atom-return-20260713`
+- source runner: `PASS=12 FAIL=0`, SHA-pinned cache fresh
+- scope: one actual `m=10^64` scalar-product full-determinant joint hidden
+  integration, actual output projection, Weyl/eta migration, and fresh
+  site-block atom-factor return; no autonomous iteration, generic ball,
+  taste selection, or continuum theorem
+- boundary: literal unchanged next reuse fails both marked response
+  (`q_next=1.487230817637235`) and factor return
+  (`K_next,out^fac=.03683052150750240>.01`), while scale-indexed, lineage,
+  varying-m, sharper-carrier, and alternate-block routes remain live
+- disposition: independent code/math, physics/import, and governance/no-go
+  reviews pass with bounded claims after centered-determinant, tail-owner,
+  no-go-discipline, and cache-format repairs; the compatibility pipeline seeds
+  one `bounded_theorem` / `unaudited` row with exactly four dependencies and
+  strict lint has zero errors
+- delivery check: open, mergeable, independent audit workflow queued
+
+No merge is authorized. Independent audit remains authoritative.
+
 The two-seam forest gauge and Polyakov-holonomy bridge is prepared as the next
 stacked review block:
 

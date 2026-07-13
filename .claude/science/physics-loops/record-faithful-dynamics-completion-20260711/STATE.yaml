@@ -8,40 +8,38 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block45-correlated-snext-reference-quadratic-weyl-20260712
+branch: physics-loop/record-faithful-dynamics-block46-scalar-product-joint-outer-haar-atom-return-20260713
 base_commit_at_start: 9d1636f05f
-cycle_count: 45
-block_count: 45
-active_route: wilson_staggered_external_shortest_schur_center_haar_tail_projected_quadratic_weyl_conditional_reference
+cycle_count: 46
+block_count: 46
+active_route: wilson_staggered_scalar_product_reference_completed_joint_outer_haar_actual_output_atom_return
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_external_shortest_schur_center_haar_tail_projected_quadratic_weyl_conditional_reference_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_scalar_product_reference_completed_joint_outer_haar_actual_output_atom_return_bounded_theorem_note_2026-07-13
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  Bipartite parity gives S_next=S_next^(2)-E_(>=4), with the first tail at
-  path length four. Actual-hidden expectation/complement splits the tail into
-  a separately reattached external residual and a current-red centered
-  residual. The actual P_0 Hermitian quadratic update leaves
-  gap(S_base)/m>=0.9999999993849568 at m=10^46. A Block44-sized row supplies
-  only a conditional Weyl budget, gap(S_trial)/m>=0.929631803428252, not a
-  physical completed joint output. At fixed external W the normalized
-  correlated ratio closes, while V_3(W)=det M_3(W) is separately owned.
-  Outer-Haar atomization, completed joint response/strong return, generic
-  Hessian/ball, taste, and continuum remain open.
+  One actual m=10^64 horizon now completes the scalar-product-reference
+  outer-Haar/Gaussian expansion before output projection. The full all-length
+  Q+R determinant pays the centered factor two, both Schur-tail arms are
+  visibly owned, K_T=4.808231265303741e-7<0.01, and the physical output pays
+  the Weyl/eta migration and fresh site-block atom cost with
+  K_out,total^fac=3.613529092410874e-5<0.01 and
+  theta_atom=0.427240686481831>0.400001. Literal unchanged reuse misses both
+  the next marked response and factor return. Generic two-mark Hessian/tube,
+  scale-indexed all-horizon return, taste, and continuum remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves an exact shortest/tail Schur split, hidden-empty/centered
-  tail ownership, coefficient-l1 to operator incidence one, an actual P_0
-  base gap, a conditional larger Weyl budget, and a normalized fixed-external
-  reference ratio with explicit product-block determinant ownership. It
-  demotes Block44 to a conditional budget because the correlated mixed
-  clusters are not constructed. The authoritative N1--N8 packet restricts
-  the negative boundary to uncompensated simultaneous same-step Schur reuse
-  and keeps post-step, enlarged-state, outer-Haar, strong-return, Hessian,
-  taste, and continuum routes live.
+  The source proves the scalar-product normalization identity, full all-word
+  determinant ownership, hidden-empty/centered determinant split, one common
+  actual-hidden joint graph, conservative activity/response bounds, actual
+  output projection, persistent quadratic gap, and one fresh atom-factor
+  return. The authoritative N1--N8 packet restricts NG46 to literal fixed-m
+  reuse of the unchanged positive-surcharge/halving certificate. It keeps
+  shortest-center, scale-indexed, lineage, varying-m, alternate-block,
+  Hessian/ball, taste, and continuum routes live.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -186,6 +184,9 @@ files_touched:
   - docs/WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.py
   - logs/runner-cache/wilson_staggered_external_shortest_center_tail_quadratic_weyl_reference_2026_07_12.txt
+  - docs/WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md
+  - scripts/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.py
+  - logs/runner-cache/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -248,6 +249,7 @@ no_go_routes:
   - the actual-range block-saturated linear section does not identify routed-carrier diameter incidence with hidden tree-span/source incidence, and the unchanged scalar surcharge/halving ledger cannot furnish all-horizon contraction; root-anchor lineage, scale-indexed norms, and full correlated-center grammar remain live
   - the actual-hidden site-block bridge and Lambda=0.1 marked response do not by identity supply a future-atom Lambda=0.5 input or correlated-S_next step; fresh atom payment, scale-indexed/lineage return, and full center ownership remain live
   - the same current-hidden-dependent full Schur family cannot be inserted simultaneously and directly as an external input in the same integration step; the shortest subcenter may be external, the hidden-empty tail is separately reattached, and the centered tail remains current-residual-owned, while post-step and enlarged-state routes remain live
+  - the displayed fixed-m unchanged scalar-product-reference surcharge/halving certificate has no positive fixed point, exhausts every finite spatial reserve, and misses the next marked-response and factor-return certificates; scale-indexed, lineage, varying-m, sharper-carrier, and alternate-block routes remain live
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_fixed_background_correlated_berezin_locality_pass_combined_reference_fixed_u_colored_response_pass_joint_outer_haar_actual_red_response_pass_future_atom_strong_coarse_shadow_pass_s2_actual_range_reference_ledger_pass_enhanced_generated_base_decorated_factor_return_pass_block_saturated_split_handoff_pass_site_block_marked_response_pass_external_shortest_tail_quadratic_conditional_reference_pass_bounded
@@ -297,20 +299,21 @@ block42_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block43_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5363
 block44_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5364
 block45_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369
+block46_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370
+block46_review_disposition: pass_with_bounded_claims
+block46_pr_status: open_mergeable_audit_workflow_queued
 next_exact_action: >-
-  Build the one-horizon scalar-product-reference outer-Haar closure at the
-  verified m=10^64 reserve witness. Start from the Block42 decorated residual,
-  actual P_0, external shortest center, and both separately owned Schur-tail
-  arms; do not feed the old Block44 fixed-product output forward as physical
-  Q. Relative to scalar onsite G_mu', factor the actual P_0 quadratic and
-  shortest hopping, localize the full all-length log determinant, split its
-  hidden-empty/centered atoms, and run one completed joint hidden integration
-  using the Block44 68/support map. Derive the ordinary output row there, then
-  project and atomize its actual quadratic output, pay eta migration, and
-  target landed theta>0.400001 with a full marked response. Preserve the
-  separate all-horizon/fixed-norm obstruction; only after this one-horizon
-  factor return closes, begin the generic two-mark Hessian/invariant-ball
-  campaign.
+  Build the exact two-mark covariance/Hessian theorem on the completed Block46
+  joint graph. Include the direct n=0 pair term and prove the two-root envelope
+  1+H(tau)=(1-tau)^(-2) without a spurious mixed-derivative factor two; track
+  raw/raw, raw/centered, and centered/centered blocks and reroot the unique
+  mark-to-mark path through the existing factor/polymer layers. Target
+  M_46<=68 exp(0.1)/(1-tau)^2=75.15428126562128 and the one-horizon nonlinear
+  tube B_out+q delta+(M_46/2)delta^2<=delta for
+  delta in [0.0004651520455,0.0020673073264], below the source radius
+  0.00994985479055. Keep this a source/output Banach-bundle tube, not an
+  autonomous same-domain ball; only then attack the scale-indexed invariant
+  ball/all-horizon campaign.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

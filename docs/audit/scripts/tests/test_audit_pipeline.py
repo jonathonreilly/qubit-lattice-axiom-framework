@@ -8728,6 +8728,7 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             "effective_status": "open_gate",
             "criticality": None,
             "deps": [],
+            "note_path": "docs/SPIN.md",
         }
 
     def test_one_audit_attempt_per_claim_per_run(self):

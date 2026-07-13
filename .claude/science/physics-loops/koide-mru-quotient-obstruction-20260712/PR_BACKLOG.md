@@ -1,4 +1,7 @@
 # PR Backlog
 
-No PR has been opened yet. One review PR will be created after the coherent
-science block passes the local review-loop and audit-compatibility gates.
+The coherent science block is in one unmerged review PR:
+
+- [PR #5314 — physics: isolate exact Koide MRU quotient obstruction](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5314)
+
+No additional PR is backlogged for this cycle.

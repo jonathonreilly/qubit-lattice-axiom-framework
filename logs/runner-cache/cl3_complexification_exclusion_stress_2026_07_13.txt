@@ -83,8 +83,27 @@ E4: full-complexification kernel and real-algebra faithfulness boundary
 [PASS] E4.TOTAL both 2-dim full-complexification modules are non-faithful, while both real Cl(3,0) restrictions are faithful | ker(pi_+)=e_-A and ker(pi_-)=e_+A
 
 ========================================================================================
+N5 RESOLUTION SWEEP (per authenticated negative statement)
+========================================================================================
+Each negative statement below is swept over the five canonical resolution classes. Executed classes restate the computed exclusion at that scope; classes with no in-scope instance are checked and reported as not executed. Lines are stable for byte-for-byte citation.
+NEGATIVE STATEMENT 1: no faithful one-dimensional complex representation of Cl(3,0) exists
+per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces the contradiction x_i x_j = -x_j x_i with commuting scalars; the scalar Clifford system has no solution element-by-element
+per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar system over one site was solved exhaustively and is inconsistent
+per_mode: [EXECUTED] every irreducible module (mode) restricts to one central summand and has computed complex dimension 2, never 1
+per_block: [EXECUTED] both central-idempotent blocks e_+A and e_-A carry only the 2-dimensional simple module; no block admits a 1-dimensional faithful action
+lattice_wide: [NOT EXECUTED] checked and not executed: the claim is a single-site algebra statement; no lattice-wide instance exists in this note's scope
+[PASS] N5 sweep backed by computed certificates :: NEGATIVE STATEMENT 1: no faithful one-dimensional complex re | every executed resolution line restates a computed exclusion above
+NEGATIVE STATEMENT 2: no faithful irreducible complex representation of Cl(3,0) has dimension other than 2
+per_element: [EXECUTED] central idempotent actions on any simple module were solved element-wise to exactly one active summand
+per_site: [EXECUTED] at the single site, the minimal-left-ideal decomposition exhausts all simple quotients and each has dimension 2
+per_mode: [EXECUTED] every irreducible module (mode) is a quotient of its active regular summand and computes to dimension exactly 2
+per_block: [EXECUTED] each 4-dimensional simple block decomposes into two copies of the same 2-dimensional simple module; no other dimension occurs
+lattice_wide: [NOT EXECUTED] checked and not executed: the claim is a single-site algebra statement; no lattice-wide instance exists in this note's scope
+[PASS] N5 sweep backed by computed certificates :: NEGATIVE STATEMENT 2: no faithful irreducible complex repres | every executed resolution line restates a computed exclusion above
+
+========================================================================================
 TOTAL
 ========================================================================================
 [PASS] UNIVERSAL EXCLUSION CERTIFICATE | faithful irreducible complex Cl(3,0) representations have dimension 2; d=1 is impossible
-TOTAL: PASS=52 FAIL=0
+TOTAL: PASS=54 FAIL=0
 FLAGS: none

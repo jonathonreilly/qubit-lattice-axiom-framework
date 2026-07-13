@@ -503,7 +503,8 @@ No merge is authorized. Independent audit remains authoritative.
 The completed scalar-product-reference joint outer-Haar atom return is
 prepared as the next stacked review PR:
 
-- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5374
+- supersedes: #5370 passed audit, then was auto-closed by a parent force push
 - base: `physics-loop/record-faithful-dynamics-block45-correlated-snext-reference-quadratic-weyl-20260712`
 - head: `physics-loop/record-faithful-dynamics-block46-scalar-product-joint-outer-haar-atom-return-20260713`
 - source runner: `PASS=12 FAIL=0`, SHA-pinned cache fresh
@@ -520,7 +521,35 @@ prepared as the next stacked review PR:
   no-go-discipline, and cache-format repairs; the compatibility pipeline seeds
   one `bounded_theorem` / `unaudited` row with exactly four dependencies and
   strict lint has zero errors
-- delivery check: open, mergeable, independent audit workflow queued
+- delivery check: open, mergeable; audit workflow rerunning after a tested
+  PR-dry-run missing-generated-ledger preflight repair
+
+No merge is authorized. Independent audit remains authoritative.
+
+The completed-joint two-mark covariance and nonlinear source/output tube is
+prepared as the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5375
+- base: `physics-loop/record-faithful-dynamics-block46-scalar-product-joint-outer-haar-atom-return-20260713`
+- head: `physics-loop/record-faithful-dynamics-block47-two-mark-covariance-nonlinear-tube-20260713`
+- source runner: `PASS=11 FAIL=0`, SHA-pinned cache fresh
+- scope: exact finite-regulator Hessian/covariance split, conservative
+  `(1-tau)^(-4)` centered two-root envelope, and one restricted radius-0.001
+  strong-source to weak-residual nonlinear tube with a separate center/gap/
+  eta/atom ledger; no same-domain invariant ball, second-horizon reuse,
+  generic ambient embedding, or continuum theorem
+- result: `M_delta=88.82169800480513`, tube output
+  `0.0009853829050985733<0.001`, complete center/output charge
+  `0.002021517543158784`, and
+  `theta_atom=0.4265740169167342>0.400001`
+- disposition: physics/import, governance/no-go, and local code/math reviews
+  pass with bounded claims after two-root, source-projector, raw-factor,
+  center-ledger, and W1/W2 scope repairs; all four dependencies pass, the
+  compatibility pipeline seeds one `bounded_theorem` / `unaudited` row with
+  exactly four dependencies and a non-decoration runner, and strict lint has
+  zero errors
+- delivery check: open, mergeable; audit workflow rerunning after the parent
+  preflight repair and Block47 rebase
 
 No merge is authorized. Independent audit remains authoritative.
 

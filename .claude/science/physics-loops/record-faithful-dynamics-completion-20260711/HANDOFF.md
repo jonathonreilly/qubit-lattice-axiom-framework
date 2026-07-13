@@ -1235,10 +1235,70 @@ exactly four dependencies; strict lint has zero errors and generated outputs
 are stripped.
 
 Delivery: stacked PR
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370 is
-open and mergeable on Block45 with the audit workflow queued. The next target
-is the exact two-mark covariance/Hessian envelope on the completed graph. The
-candidate pair bound is `68exp(.1)/(1-tau)^2=75.15428126562128`, which would
-close a one-horizon nonlinear tube for approximately
-`delta in [.0004651520,.0020673073]`. This must remain a source/output
-Banach-bundle tube until a separate same-domain invariant-ball theorem closes.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5374
+replaces #5370, which passed audit and was then automatically closed when its
+parent branch was force-pushed. The replacement is open and mergeable on
+Block45. A PR-only audit preflight initially failed because the rewritten
+source-only stack omitted the generated ledger; the durable reporting-only
+missing-ledger guard is tested in the replacement branch, while `--apply`
+remains strict.
+
+## Block 47: completed-joint two-mark covariance and nonlinear bundle tube
+
+The exact finite-regulator response identity is now differentiated twice on
+the actual completed Block46 graph. With the reference, center, and chart
+frozen,
+
+```text
+DR_Phi[F]=E_Phi[F],
+D^2R_Phi[F,G]=-Cov_Phi(F,G).
+```
+
+Fiber-constant raw/raw and raw/centered Hessian blocks vanish exactly. The
+source class makes every remaining raw diameter-zero direction an owned
+Hermitian onsite quadratic center; non-onsite raw terms receive the geometric
+gain and centered terms remain in the marked residual arm. For the only
+nonzero centered/centered block, a labeled meeting-anchor/cut injection into
+two complete rooted-side histories gives the conservative ordered envelope
+
+```text
+P_2(tau)<=(1-tau)^(-4).
+```
+
+There is no external mixed-derivative factor two. On the whole restricted
+radius-`delta=0.001` source ball,
+
+```text
+K_delta=0.001000980989834872<c,
+tau_delta=0.04092002696953689,
+M_delta=88.82169800480513,
+B+q delta+(M_delta/2)delta^2=0.0009853829050985733<delta.
+```
+
+The center and residual output are then deliberately overcharged together
+with an additional base row. The complete charge is
+`0.002021517543158784`, leaving
+`gap/m>=0.9997737559156604` and
+`theta_atom=0.4265740169167342>0.400001`. This is a strong-source to
+weak-residual source/output Banach-bundle tube. It is not a same-domain
+endomorphism, second-horizon reuse theorem, or all-horizon invariant ball.
+
+Physics/import and governance/no-go reviews pass with bounded claims after the
+two-root, source-projector, raw-factor, center-ledger, and wall-independence
+repairs. Code/math was completed locally after the delegated lane hit its
+usage cap; the independent 80-digit Decimal recomputation and finite
+covariance/mixed-difference fixtures agree. The SHA-pinned runner/cache is
+`PASS=11 FAIL=0`; all four dependency runners pass. Vocabulary lint is clean,
+the compatibility pipeline seeds one `bounded_theorem` / `unaudited` row with
+exactly four dependencies and a non-decoration runner, strict lint has zero
+errors, and generated audit/status files are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5375 is
+open and mergeable on the Block46 replacement. The audit workflow is rerunning
+after the parent preflight repair and Block47 rebase. The next target is an
+explicit target-to-next-source return section: combine the weak Block47 atom
+output with Block40--44 lineage/coarse-shadow/re-Hoeffding machinery, including
+moving center and reference ownership, and test it on a second actual horizon.
+Only a horizon-uniform version may be promoted to an all-horizon induction.
+No axiom-update stop is triggered.

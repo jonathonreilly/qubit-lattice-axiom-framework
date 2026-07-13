@@ -1394,4 +1394,42 @@ ownership, both tail arms, one physical projection, and one fresh atom return.
 The SHA-pinned runner/cache is `PASS=12 FAIL=0`; all four dependencies pass,
 vocabulary lint is clean, the audit pipeline seeds exactly four dependencies,
 strict lint has zero errors, and generated audit/status files are stripped.
-PR #5370 is open and mergeable on Block45. No axiom-update stop is triggered.
+PR #5370 passed audit and was then automatically closed by its parent's force
+push. Replacement PR #5374 is open and mergeable on Block45. Its source-only
+stack exposed a PR-preflight defect: the dependency-edge reporter read the
+generated ledger before the pipeline recreated it. The replacement adds a
+tested dry-run-only missing-ledger guard while preserving strict `--apply`
+behavior. No axiom-update stop is triggered.
+
+## Completed-joint two-mark nonlinear tube review
+
+PASS WITH BOUNDED CLAIMS after physics/import, governance/no-go, and local
+code/math review. The first draft was blocked on an insufficiently justified
+`(1-tau)^(-2)` pair envelope, a mismatch between `P_0`, `P_quad`, and the
+residual map, silent raw onsite-nonquadratic inputs, fiber-constant activity
+ownership, and an undercharged center/gap ledger.
+
+The repaired source restricts raw diameter-zero inputs to the Hermitian onsite
+quadratic center, proves exact cancellation of raw fiber constants in the
+normalized response, and bounds the centered/centered Hessian by a conservative
+two-side product `(1-tau)^(-4)`. The labeled meeting anchor and cut make the
+injection reconstructive; ordering removes an external factor two. The center
+norm is explicitly the induced weak projected coefficient norm.
+
+Governance narrowed W1 to one declared same-domain transition, keeping it
+independent of W2's physical all-horizon graph/center/lineage transport, and
+corrected the N5 running-center residual. NG47 is only the logical
+non-implication from a one-horizon cross-norm tube to an invariant ball. Six
+ATTEMPTED routes, all fifteen wall pairs, phrase scan, residual matching,
+resolution audit, partial-closure scan, steelman, and cross-cycle echo pass.
+
+The runner/cache is `PASS=11 FAIL=0`. An independent 80-digit Decimal
+reconstruction confirms `M_delta=88.82169800480513`, tube output
+`0.0009853829050985733<0.001`, complete center/output charge
+`0.002021517543158784`, and
+`theta_atom=0.4265740169167342>0.400001`. All four dependency runners pass;
+vocabulary lint, pycompile, cache freshness, diff hygiene, full compatibility
+pipeline, and strict lint pass. Generated audit/status outputs are stripped.
+PR #5375 is open and mergeable on replacement parent #5374, with the audit
+workflow rerunning after the parent-preflight repair. No axiom-update stop is
+triggered.

@@ -8,38 +8,39 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block46-scalar-product-joint-outer-haar-atom-return-20260713
+branch: physics-loop/record-faithful-dynamics-block47-two-mark-covariance-nonlinear-tube-20260713
 base_commit_at_start: 9d1636f05f
-cycle_count: 46
-block_count: 46
-active_route: wilson_staggered_scalar_product_reference_completed_joint_outer_haar_actual_output_atom_return
+cycle_count: 47
+block_count: 47
+active_route: wilson_staggered_completed_joint_two_mark_covariance_nonlinear_source_output_tube
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_scalar_product_reference_completed_joint_outer_haar_actual_output_atom_return_bounded_theorem_note_2026-07-13
+produced_claim_id: wilson_staggered_completed_joint_two_mark_covariance_nonlinear_source_output_tube_bounded_theorem_note_2026-07-13
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  One actual m=10^64 horizon now completes the scalar-product-reference
-  outer-Haar/Gaussian expansion before output projection. The full all-length
-  Q+R determinant pays the centered factor two, both Schur-tail arms are
-  visibly owned, K_T=4.808231265303741e-7<0.01, and the physical output pays
-  the Weyl/eta migration and fresh site-block atom cost with
-  K_out,total^fac=3.613529092410874e-5<0.01 and
-  theta_atom=0.427240686481831>0.400001. Literal unchanged reuse misses both
-  the next marked response and factor return. Generic two-mark Hessian/tube,
-  scale-indexed all-horizon return, taste, and continuum remain open.
+  On the actual completed m=10^64 graph, the exact normalized-response Hessian
+  is minus covariance; fiber-constant raw blocks vanish and a conservative
+  centered two-root envelope gives M_delta=88.82169800480513 uniformly on the
+  restricted radius-0.001 strong source ball. The nonlinear residual tube
+  closes at 0.0009853829050985733<0.001, while a separately overcharged center
+  ledger retains theta_atom=0.4265740169167342>0.400001. This is a one-horizon
+  strong-source to weak-residual Banach-bundle theorem, not a same-domain
+  invariant ball. Return embedding, moving-center/reference transport,
+  scale-indexed all-horizon control, generic sources, taste, and continuum
+  remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves the scalar-product normalization identity, full all-word
-  determinant ownership, hidden-empty/centered determinant split, one common
-  actual-hidden joint graph, conservative activity/response bounds, actual
-  output projection, persistent quadratic gap, and one fresh atom-factor
-  return. The authoritative N1--N8 packet restricts NG46 to literal fixed-m
-  reuse of the unchanged positive-surcharge/halving certificate. It keeps
-  shortest-center, scale-indexed, lineage, varying-m, alternate-block,
-  Hessian/ball, taste, and continuum routes live.
+  The source proves the exact Hessian split, raw-factor cancellation, a
+  conservative ordered two-root injection, a uniform activity/Hessian bound,
+  a positive nonlinear residual-tube margin, and a disjointly charged
+  center/gap/eta/atom ledger on the restricted source class. The authoritative
+  N1--N8 packet restricts NG47 to non-implication of same-domain or
+  second-horizon reuse. Scale-indexed bundles, lineage sections,
+  center/reference transport, generic-source embedding, taste, and continuum
+  routes remain live.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -187,6 +188,9 @@ files_touched:
   - docs/WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md
   - scripts/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.py
   - logs/runner-cache/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.txt
+  - docs/WILSON_STAGGERED_COMPLETED_JOINT_TWO_MARK_COVARIANCE_NONLINEAR_SOURCE_OUTPUT_TUBE_BOUNDED_THEOREM_NOTE_2026-07-13.md
+  - scripts/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.py
+  - logs/runner-cache/wilson_staggered_completed_joint_two_mark_nonlinear_tube_2026_07_13.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -299,21 +303,24 @@ block42_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block43_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5363
 block44_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5364
 block45_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5369
-block46_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370
+block46_original_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5370
+block46_original_pr_status: audit_passed_then_auto_closed_on_parent_force_push
+block46_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5374
 block46_review_disposition: pass_with_bounded_claims
-block46_pr_status: open_mergeable_audit_workflow_queued
+block46_pr_status: open_mergeable_audit_workflow_rerun_after_preflight_repair
+block47_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5375
+block47_review_disposition: pass_with_bounded_claims
+block47_pr_status: open_mergeable_audit_workflow_rerun_after_parent_rebase
 next_exact_action: >-
-  Build the exact two-mark covariance/Hessian theorem on the completed Block46
-  joint graph. Include the direct n=0 pair term and prove the two-root envelope
-  1+H(tau)=(1-tau)^(-2) without a spurious mixed-derivative factor two; track
-  raw/raw, raw/centered, and centered/centered blocks and reroot the unique
-  mark-to-mark path through the existing factor/polymer layers. Target
-  M_46<=68 exp(0.1)/(1-tau)^2=75.15428126562128 and the one-horizon nonlinear
-  tube B_out+q delta+(M_46/2)delta^2<=delta for
-  delta in [0.0004651520455,0.0020673073264], below the source radius
-  0.00994985479055. Keep this a source/output Banach-bundle tube, not an
-  autonomous same-domain ball; only then attack the scale-indexed invariant
-  ball/all-horizon campaign.
+  Build the first explicit target-to-next-source return theorem. Start from
+  the Block47 weak atom output and the Block40--44 lineage, coarse-shadow,
+  re-Hoeffding, and running-center machinery. Define one next-horizon source
+  chart and a transport section that owns the moving scalar/quadratic center,
+  reference determinant, and centered residual separately. Prove either a
+  finite return constant that closes the radius-0.001 tube on a second actual
+  horizon or an exact named failure with every scale-indexed/lineage route
+  still tested. Do not call this all-horizon until graph/center/atom lineage
+  estimates are uniform in the horizon index.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

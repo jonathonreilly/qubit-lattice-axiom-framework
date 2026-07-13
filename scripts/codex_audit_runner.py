@@ -1844,8 +1844,11 @@ def render_fresh_schema_retry_prompt(
         "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
             "Static N3 invariant: copy phrase, occurrence_group_id, "
             "occurrence_count, occurrence_locator_sha256, and evidence_locator "
-            "from one same full_phrase_groups record. Never cross-label a group "
-            "id, count, digest, or locator under another phrase.\n"
+            "from one same full_phrase_groups record. Separate authenticated "
+            "phrase records may share a context-derived id or digest; reproduce "
+            "that sharing only when each complete phrase record is listed. Never "
+            "infer an unlisted phrase from a shared id or cross-label a count, "
+            "digest, or locator from another record.\n"
         ),
         "N5_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
             "Static N5 invariant: copy phrase, occurrence_group_id, "

@@ -1,0 +1,44 @@
+loop_slug: pmns-commutant-selector-bridge-block01
+mode: run
+goal: >-
+  Resolve the audited renaming in docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md
+  by deriving the Fourier-to-PMNS selector bridge or proving the sharpest
+  exact obstruction on the stated construction.
+target_status: best-honest-status
+runtime: interactive sustained cycle; no unattended runtime requested
+cycle_count: 1
+block_count: 1
+active_route: exact overlap-ray and covariance obstruction
+hard_residual: >-
+  Whether the stated q := argmax(Re v0, Re v0 - Re v+, Re v0 + Re v+)
+  and tau := 0 if Re v+ >= 0 else 1 maps descend from the projected
+  commutant eigenoperator ray and transform as the claimed C3/Z2 selectors.
+minimal_premises:
+  - Lattice
+  - Qubit
+  - Admissibility
+  - Record
+approved_primitives: []
+forbidden_imports:
+  - observed PMNS values
+  - fitted selector labels
+  - an assumed corner-profile-to-lepton-sector carrier map
+  - an assumed sign or phase normalization of the commutant eigenoperator
+files_touched:
+  - docs/PMNS_COMMUTANT_EIGENOPERATOR_SELECTOR_NOTE.md
+  - scripts/frontier_pmns_commutant_eigenoperator_selector.py
+  - logs/runner-cache/frontier_pmns_commutant_eigenoperator_selector.txt
+  - .claude/science/physics-loops/pmns-commutant-selector-bridge-block01/
+open_imports:
+  - physical carrier map from a corner-supported commutant operator to the passive lepton block
+  - inter-sector map from the corner profile to the PMNS sector-orientation class
+no_go_routes:
+  - the stated q/tau maps on the current corner-trace profile
+trace_gate: direct_blocker_closure
+review_disposition: pass
+pr_status: pending
+next_exact_action: complete audit validation, strip generated authority outputs, and open one review PR
+stop_condition: coherent block reviewed, pushed, and opened as one review PR
+lock:
+  path: /private/tmp/pmns-commutant-selector-bridge.lock.json
+  owner: codex-pmns-selector-bridge

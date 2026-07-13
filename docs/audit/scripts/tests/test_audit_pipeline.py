@@ -12025,3 +12025,75 @@ class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class JudicialPanelOrchestratorTest(unittest.TestCase):
+    """Pure-logic pins for the five-judge panel drainer."""
+
+    def _vote(self, **overrides):
+        vote = {
+            "sided_with": "first",
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_claim_scope": "an exact identity",
+            "ratified_load_bearing_step_class": "(C)",
+            "negative_assertion_classes": [],
+            "judgment_rationale": "packet-grounded",
+            "first_auditor_error": "none",
+            "second_auditor_error": "missed the computed check",
+        }
+        vote.update(overrides)
+        return vote
+
+    def test_vote_tuple_equivalence_rules(self):
+        m = _import("orchestrate_judicial_panel")
+        base = self._vote(
+            ratified_claim_scope="a  b\tc",
+            negative_assertion_classes=["x", "y"],
+        )
+        same = self._vote(
+            ratified_claim_scope="a b c",
+            negative_assertion_classes=["y", "x"],
+        )
+        different = self._vote(ratified_claim_scope="a b d")
+        self.assertEqual(m.vote_tuple(base), m.vote_tuple(same))
+        self.assertNotEqual(m.vote_tuple(base), m.vote_tuple(different))
+        # Substantive verdict differences always split the tuple.
+        self.assertNotEqual(
+            m.vote_tuple(base),
+            m.vote_tuple(self._vote(ratified_verdict="audited_conditional")),
+        )
+
+    def test_judicial_blob_satisfies_apply_contract(self):
+        m = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        votes = [self._vote(), self._vote(), self._vote()]
+        blob = m.judicial_blob({"claim_id": "row"}, votes[0], votes, 3)
+        self.assertEqual(
+            apply_mod.JUDICIAL_REQUIRED_FIELDS - set(blob), set()
+        )
+        self.assertEqual(blob["independence"], "judicial_review")
+        self.assertEqual(blob["auditor_reasoning_effort"], "xhigh")
+        self.assertEqual(len(blob["audit_invocation_id"]), 32)
+        self.assertIn("3/5 matching", blob["judgment_rationale"])
+        self.assertIn("panel breakdown", blob["judgment_rationale"])
+
+    def test_collect_vote_rejects_incomplete_votes(self):
+        m = _import("orchestrate_judicial_panel")
+        incomplete = self._vote()
+        incomplete.pop("second_auditor_error")
+        raw = self.tmp / "raw.txt"
+        raw.write_text(json.dumps(incomplete) + " " * 200, encoding="utf-8")
+        job = {"stalled": False, "returncode": 0, "raw_output": raw, "judge": 1}
+        vote, status = m.collect_vote(job)
+        self.assertIsNone(vote)
+        self.assertIn("vote_missing_fields", status)
+        raw.write_text(json.dumps(self._vote()) + " " * 200, encoding="utf-8")
+        vote, status = m.collect_vote(job)
+        self.assertEqual(status, "ok")
+        self.assertEqual(vote["sided_with"], "first")
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp = Path(self._tmp.name)

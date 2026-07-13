@@ -265,7 +265,7 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 20`.
 
 The dedicated exclusion stress runner constructs the full `8`-dimensional
 complexified algebra and verifies the negative-assertion surface using exact
-sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=52 FAIL=0`.
+sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=54 FAIL=0`, including the N5 resolution sweep that restates each authenticated negative statement at the five canonical resolution classes (`per_element`, `per_site`, `per_mode`, `per_block`, `lattice_wide`), with the lattice-wide class honestly reported as checked and not executed for this single-site algebra claim.
 
 | Claim surface | Runner | Exact verification |
 |---|---|---|

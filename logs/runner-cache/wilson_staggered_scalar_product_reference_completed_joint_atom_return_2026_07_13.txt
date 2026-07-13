@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/wilson_staggered_scalar_product_reference_completed_joint_atom_return_2026_07_13.py
+runner_sha256: a2f80fa001d2da9292f625f93a3bbec854eee69ec32f67d9a4895b0d4f8b528c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS scalar_product_reference_hidden_centering_identity: min gap=3.375353429916475, Z_A C_o={-1: 1.0245428536171235, 1: 1.0245428536171235}, C_oD_o(1)={-1: 1.0, 1: 1.0}
+PASS full_all_length_trace_log_not_even_only: ||X||=0.048562, logdet=0.035568824811934, full-series=0.035568824811934, even-only=-0.001607631961341, TrX=3.714286e-02, TrX^3=1.006428e-04
+PASS color_one_gaussian_determinant_schur_ownership: det(block)=93.280376700291512, det(A)det(t-H_KI A^-1 H_IK)=93.280376700291512
+PASS mixed_site_block_and_haar_root_incidence: 68 K_Haar+16 K_Gauss <= 68(K_Haar+K_Gauss); Gaussian-only roots use 16 owned hidden site blocks
+PASS centered_schur_tail_is_positive_outward_charged: analytic log10 centered-tail potential=-499.576223956542; visible charged K_tail^o=9.99999999999999945e-21>ulp(K_R)
+PASS completed_joint_activity_strictly_closes: K_ref=1.689545491626676e-08, K_R=4.639276716141073e-07, K_T=4.808231265303741e-07<c, D=3.678971300910101e+01, tau=1.768934483319112e-05, A_joint=3.413734336099627e-05, q_centered=2.565476738999639e-03, q_raw=9.048374180359595e-01
+PASS actual_output_projection_gap_and_fresh_atom_return: B_out=3.613463806021122e-05, K_tail^empty=1.0e-20, K_out,total^fac=3.613529092410874e-05<c, epsilon_Q=4.046484840559054e-06, gap/m=0.999995953515159, sigma_eta=1.213947908245705e-05, theta_atom=0.427240686481831>0.400001
+PASS next_same_certificate_fails_response_and_factor_return: K_Tnext=5.059489201110645e-04<c, tau_next=1.960462334917195e-02, q_next=1.487230817637235>1, B_next_out=3.616848436496884e-02, K_next_out^fac=3.683052150750240e-02>c
+PASS unchanged_positive_surcharge_halving_certificate_no_fixed_point: fixed point=-2chi=-0.060000; a0=10.0 first becomes negative at j=8; Lambda_j->0 gives exp(-Lambda_j/2)->1
+PASS hidden_condition_phrase_scan: pre-N3 note plus pre-scan runner counts={'we assume': 0, 'by construction': 0, 'as is standard': 0, 'the framework provides': 0, 'bridge context': 0, 'background': 1, 'naturally': 0, 'obviously': 0, 'standard qft': 0, 'registered': 0, 'canonical': 0}; sole background hit is declared fixed-external scope
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_EXTERNAL_SHORTEST_SCHUR_CENTER_HAAR_TAIL_PROJECTED_QUADRATIC_WEYL_CONDITIONAL_REFERENCE_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=12 FAIL=0
+
+----- stderr -----
+

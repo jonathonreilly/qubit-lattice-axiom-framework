@@ -98,19 +98,15 @@ def note_hash_drifted(row: dict) -> bool:
 
     A science-fix landing changes the note before seed_audit_ledger.py
     refreshes the row, and apply_audit refuses drifted rows AFTER the seats
-    have already run (grain wave 2, 2026-07-13: two fresh seats audited the
+    have already run (2026-07-13: two fresh seats audited the
     repaired note and their applies were rejected). Refusing at targeting
     time saves the seats and tells the operator the exact remedy.
     """
-    note_path = row.get("note_path") or ""
-    if not note_path or not (REPO_ROOT / note_path).exists():
+    on_disk_path = REPO_ROOT / row.get("note_path", "")
+    if not on_disk_path.exists():
         return False
-    import hashlib
-
     on_disk = hashlib.sha256(
-        (REPO_ROOT / note_path)
-        .read_text(encoding="utf-8", errors="replace")
-        .encode("utf-8")
+        on_disk_path.read_text(encoding="utf-8", errors="replace").encode("utf-8")
     ).hexdigest()
     return on_disk != row.get("note_hash")
 

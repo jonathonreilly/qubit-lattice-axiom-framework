@@ -1,192 +1,124 @@
 # `y_t` Bridge Action Invariant Note
 
-**Date:** 2026-04-15 (demoted 2026-05-16)
+**Date:** 2026-04-15 (demoted 2026-05-16; obstruction link 2026-07-12)
 **Claim type:** bounded_theorem
-**Status:** bounded numerical-match scan (target-conditioned correlation across selected profile families)
-**Audit class:** G — load-bearing step is a target-conditioned numerical scan, not a derivation
+**Status:** bounded numerical-match scan (target-conditioned correlation across
+selected profile families)
+**Audit class:** G — load-bearing step is a target-conditioned numerical scan,
+not a derivation
 **Primary runner:** `scripts/frontier_yt_bridge_action_invariant.py`
 
-## Scope (honest framing)
+## Scope
 
-This note is **not** a derivation that the low-energy endpoint is structurally
-controlled by the normalized gauge-surplus action `I_2`. It is a bounded
-*target-conditioned numerical scan*: given the imported physical endpoint
-`y_t(v) = 0.9176`, a chosen SM-like reference transport, a chosen lattice-side
-UV bridge profile, and three pre-selected endpoint-preserving profile families
-(logistic, error-function, smoothstep), the runner scans
-`(center_frac, width_frac)` on a fixed grid inside a pre-selected UV-localized
-window and reports the correlation between the normalized gauge-surplus action
-`I_2` and the endpoint deviation across profiles retained inside
-`|dev| < 0.5%`.
+This note records a bounded target-conditioned numerical scan. It does not
+derive the exact interacting bridge, the normalized gauge-surplus action
+`I_2`, or the UV centroid from the framework axioms.
 
-Five load-bearing inputs are imported, not derived inside this note:
+Given all of the following inputs:
 
-1. the physical target `y_t(v) = 0.9176`,
-2. the SM-like reference transport anchored at the low-energy strong coupling
-   (one-loop QCD beta), used as the `g_3,SM` reference in the `I_2`
-   definition,
-3. the constructive lattice-side UV bridge profile the family deforms toward,
-4. the three pre-selected smooth profile families parameterized by
-   `(center_frac, width_frac)`, and
-5. the `|dev| < 0.5%` retention cut that selects the "viable class" the
-   correlation is reported on.
+1. the comparator `y_t(v)=0.9176`;
+2. a chosen one-loop SM-like reference transport;
+3. a chosen lattice-side UV bridge profile;
+4. logistic, error-function, and smoothstep profile families on a fixed
+   `(center_frac,width_frac)` grid; and
+5. the target-based retention cut `|dev|<0.5%`;
 
-The runner's PASS rows
-(`1a–1f`) — including `corr(I_2, dev) = +0.999889`, `centroid_2` band
-`0.978 +/- 0.004`, family-wise `I_2` monotonicity violations
-`{logistic: 0, erf: 3, smoothstep: 0}`, and the top-10 `I_2` band width
-`0.000357` — are therefore statements about *these scanned profile families
-inside this pre-selected UV-localized window against this imported target*,
-not statements that the exact interacting lattice bridge is forced to be
-controlled by `I_2` or to land in this UV centroid band.
+the runner finds that the retained rows have endpoint deviation highly
+correlated with
 
-This is therefore an `audited_numerical_match` / class-G proxy in the
-project's audit taxonomy, not a closed first-principles derivation. The
-remaining structural gaps are recorded below in "What remains open".
+```text
+I_2 = (1/Delta t) integral (g_3(t)^2-g_(3,SM)(t)^2) dt
+```
 
-## Previous-scan context (informational)
-
-Earlier YT-cluster scans established (under the same imported endpoint and
-the same SM-like reference transport):
-
-- broad / diffuse bridges fail to reproduce the imported endpoint
-  (`YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md`)
-- only a narrow UV-localized window admits any fit
-  (`YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md`)
-- subleading EW-side deformations do not rescue diffuse bridges
-  (`YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md`)
-- three endpoint-preserving profile families tuned inside the pre-selected
-  UV-localized window agree on the imported endpoint with cross-family
-  spread `<= 0.0252%` (`YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md`)
-
-All four of those upstream notes have been honestly framed as
-target-conditioned numerical proxies; this note does not re-derive them. This
-note's scan is downstream of them and conditions on the same UV-localized
-window.
-
-A structurally consistent reason to expect monotonic endpoint response to
-positive bridge surplus on the accepted background is recorded separately in
-`YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md`: the linearized endpoint-response
-kernel is positive and monotone increasing toward the IR, so equal-area
-surplus near the UV gives the smallest endpoint response. That rearrangement
-statement is itself conditioned on the same accepted background and on
-positivity of the bridge surplus; it is not a derivation that the exact
-interacting bridge is controlled by `I_2`. The rearrangement note and this
-note are mutually supporting target-conditioned proxies, not a joint
-derivation.
+and occupy a narrow band of the corresponding surplus centroid.
 
 ## Numerical result
 
-Against the imported target `y_t(v) = 0.9176`, scanning
-`center_frac in linspace(0.955, 0.985, 7)` and
-`width_frac in linspace(0.012, 0.026, 8)` for each of the three profile
-families and retaining only `|dev| < 0.5%`, the runner reports:
+On the stated scan surface the runner reports:
 
-- `83` profiles retained inside the `|dev| < 0.5%` viable class,
-- `corr(I_2, dev) = +0.999889` on the retained class,
-- viable-class `I_2` coefficient of variation `11.78%`,
-- viable-class `centroid_2` band `0.978185 +/- 0.004250`,
-- top-10 `I_2` band width `0.000357`,
-- `|dev| < 0.1%` `I_2` band width `0.002059`,
+- 83 retained profiles;
+- `corr(I_2,dev)=+0.999889`;
+- `centroid_2=0.978185+/-0.004250`;
+- top-10 `I_2` band width `0.000357`;
+- `|dev|<0.1%` `I_2` band width `0.002059`; and
 - per-family `I_2` monotonicity violations
-  `{logistic: 0, erf: 3, smoothstep: 0}`.
+  `{logistic:0, erf:3, smoothstep:0}`.
 
-The honest interpretation is that, **conditional on** the imported endpoint
-target, **conditional on** the chosen SM-like reference transport,
-**conditional on** the chosen lattice-side UV bridge profile,
-**conditional on** the three pre-selected profile families, and
-**conditional on** the `|dev| < 0.5%` retention cut, the endpoint deviation
-inside this retained class is tightly correlated with `I_2` and the retained
-class shares a narrow UV centroid.
+These numbers are statements about the selected scan. They do not establish
+profile-family completeness, structural selection of the reference flow,
+exact response linearity, or a framework-derived centroid.
 
-It does **not** establish that the exact interacting lattice bridge is
-controlled by `I_2`, that `I_2` and the UV centroid are uniquely selected by
-any axiom in the framework, or that the three scanned profile families
-fairly sample the admissible bridge class outside the pre-selected
-UV-localized window.
+## Exact obstruction now isolated
 
-## Meaning (bounded)
+The companion
+`YT_BRIDGE_ACTION_INVARIANT_GENERIC_SELECTOR_NONSELECTION_NO_GO_NOTE_2026-07-12.md`
+proves a narrow exact boundary that the old scan did not contain:
 
-The bounded claim this note licenses is narrow:
+> nearest-neighbor chain locality, fixed endpoints, and strict convexity of a
+> quadratic selector do not by themselves select a unique normalized surplus
+> average or centroid.
 
-> *Conditional on* the imported endpoint `y_t(v) = 0.9176`,
-> *conditional on* the chosen SM-like reference transport and lattice-side UV
-> bridge profile, *conditional on* the three pre-selected endpoint-preserving
-> profile families
-> (logistic, error-function, smoothstep) parameterized by
-> `(center_frac, width_frac)` on the scanned grid, and
-> *conditional on* the `|dev| < 0.5%` retention cut, the normalized
-> gauge-surplus action `I_2` is tightly correlated with endpoint deviation
-> (`corr = +0.999889`), the retained class shares a tight UV centroid
-> (`centroid_2 = 0.978 +/- 0.004`), and per-family ordering in `I_2` is
-> nearly monotone (`{logistic: 0, erf: 3, smoothstep: 0}` violations).
+The companion also records the exact moment algebra behind an affine linear
+response. It does not identify the auxiliary chain with the physical YT
+bridge and does not turn this numerical row into a clean physical derivation.
 
-It does **not** establish:
+This separation is important for the citation graph. Existing consumers cite
+this claim ID for the historical physical `I_2` scan. The new exact no-go has a
+distinct claim ID so an eventual clean negative verdict cannot masquerade as
+the old physical invariant authority.
 
-- that the exact interacting lattice bridge is controlled by `I_2`,
-- that the UV centroid band is uniquely selected by any axiom in the
-  framework,
-- that `I_2` is the structurally correct invariant (rather than a convenient
-  functional that happens to dominate inside this scanned family), or
-- that the bridge action invariant follows from the framework axioms.
+## Claim boundary
 
-## What remains open (load-bearing gaps)
+The bounded statement licensed here is:
 
-To upgrade this row from `audited_numerical_match` to a clean derivation,
-the following structural gaps must be closed, none of which the present
-runner addresses:
+> Conditional on the imported endpoint, reference transport, constructive
+> bridge profile, three selected profile families, scan grid, and retention
+> cuts, endpoint deviation is tightly correlated with `I_2` and retained rows
+> share a narrow UV centroid.
 
-1. derive the endpoint `y_t(v) = 0.9176` from the framework axioms rather
-   than importing it as the comparator target;
-2. derive why the exact interacting lattice bridge must be controlled by the
-   normalized gauge-surplus action `I_2` from operator content alone, rather
-   than reading the `I_2` correlation off a target-conditioned scan inside a
-   pre-selected UV-localized window;
-3. derive why the UV centroid `0.978 +/- 0.004` is the structurally selected
-   value, rather than the empirical centroid of the retained class against
-   the imported target;
-4. derive why the three pre-selected profile families exhaust (or fairly
-   sample) the admissible smooth bridge class, rather than treating them as
-   convenient analytic placeholders;
-5. derive the SM-like reference transport that defines `g_3,SM` in `I_2`
-   from a closed two-loop (or higher) QCD beta on the framework's physical
-   lattice surface, rather than the one-loop QCD beta as a proxy.
+It does not establish:
 
-All five are operator/theorem problems and are out of scope for this note.
-The note therefore stops at the bounded target-conditioned numerical-scan
-claim and does not attempt to upgrade beyond it.
+- that the exact interacting lattice bridge is controlled by `I_2`;
+- that the exact finite endpoint difference is a common linear functional of
+  the surplus;
+- that the physical endpoint-response kernel is affine or has a uniform
+  nonlinear remainder bound;
+- that the UV centroid band is selected by the framework;
+- that the chosen families exhaust the admissible class; or
+- that the one-loop reference transport is the exact physical reference.
+
+## Remaining Nature-grade blocker
+
+The load-bearing residual is one coherent physical bridge packet:
+
+1. derive the microscopic bridge/source-action operator and its physical YT
+   observable map;
+2. derive the resulting finite endpoint-response representation, including
+   profile-amplitude nonlinearity rather than only scale-coordinate kernel
+   curvature; and
+3. prove the kernel/support bounds that make an action-and-centroid reduction
+   uniform over the derived bridge class.
+
+The exact companion prunes the shortcut from generic locality and convexity.
+It does not rule out a future operator construction from the full lattice,
+algebra, and Admissibility structure.
 
 ## Audit history
 
-The 2026-05-05 audit recorded this row as `audited_numerical_match` with
-Class-G load-bearing step, with the substantive observation that the runner
-performs a real numerical scan rather than printing constants but the
-load-bearing result depends on hard-coded physical inputs, a selected
-constructive bridge ansatz, a target endpoint, and finite profile-family
-scans rather than a first-principles derivation. The 2026-05-16 demotion
-edit (this revision) rewrites the headline "Status", "Role", "Result", and
-"Meaning" sections so the framing matches the auditor verdict instead of
-relying on a trailing addendum. The runner output is unchanged; the current
-audit status is owned by the regenerated audit pipeline and the next
-independent re-audit. This brings the headline framing of this note into
-agreement with the parallel 2026-05-16 demotions of its sister
-`YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md` (three-family endpoint-stability scan)
-and `YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md` (target-conditioned locality
-scan).
+Prior independent reviews classified this row as a real numerical scan rather
+than a constant-printing runner, but not as a first-principles derivation. The
+row remains bounded numerical evidence. Audit status and effective status are
+owned only by the independent audit lane.
 
-## Audit dependency repair links
+## Dependency context
 
-This graph-bookkeeping section records the upstream notes the runner
-and bridge stack depend on, so the audit citation graph can track them.
-It does not promote this note or change the audited claim scope.
+The scan historically consumes the target-conditioned bridge stack:
 
 - [YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md](YT_INTERACTING_BRIDGE_LOCALITY_NOTE.md)
-  for the forced UV-localized class premise.
 - [YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md](YT_CONSTRUCTIVE_UV_BRIDGE_NOTE.md)
-  for the constructive UV-localized bridge family the action scan deforms.
 - [YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md](YT_BRIDGE_REARRANGEMENT_PRINCIPLE_NOTE.md)
-  for the rearrangement step that pushes the surplus toward the UV.
 - [YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md](YT_BRIDGE_OPERATOR_CLOSURE_NOTE.md)
-  for the EW-side scan that excludes diffuse rescues.
 - [YT_BOUNDARY_THEOREM.md](YT_BOUNDARY_THEOREM.md)
-  for the v boundary used as the IR endpoint reference.
+
+These links record the numerical scan's provenance. They do not promote the
+row or close the physical bridge.

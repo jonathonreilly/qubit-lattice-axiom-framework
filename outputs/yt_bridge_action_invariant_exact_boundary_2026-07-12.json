@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "artifact": "yt_bridge_action_invariant_exact_boundary",
+  "actual_current_surface_status": "no-go",
+  "target_claim_type": "no_go",
+  "trace_class": "negative_route_pruning",
+  "reachability_to_target": "prunes",
+  "claim_type_reason": "generic chain locality, fixed endpoints, and strict convexity admit an exact coefficient counterfamily with different moments",
+  "audit_required_before_effective_retained": true,
+  "forbidden_inputs": [
+    "observed y_t endpoint",
+    "fitted selector",
+    "chosen bridge profile family",
+    "target-conditioned retention cut",
+    "hard-coded physical constants"
+  ],
+  "hashes": {
+    "minimal_axioms_sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "source_note_sha256": "ffdbb8695c035578c5e1c241216a28146c4821af6ed7ce865851a8b44c8cbc23",
+    "runner_sha256": "2da00b99e1280e4c4c011ad93c8d3a90e5266d3adc5578fb121d133a771b4c76",
+    "scale_reference_primitive_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "kinetic_isotropy_primitive_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "realized_state_primitive_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+  },
+  "checks": [
+    {
+      "name": "affine-two-moment-identity",
+      "check_class": "A",
+      "passed": true,
+      "detail": "sum q_i(a x_i+b) = A(a c+b) identically"
+    },
+    {
+      "name": "quadratic-curvature-variance-identity",
+      "check_class": "A",
+      "passed": true,
+      "detail": "R - A K(c) = d A Var_q(x) exactly for K=a x+b+d x^2"
+    },
+    {
+      "name": "interval-variance-bound-factorization",
+      "check_class": "A",
+      "passed": true,
+      "detail": "(v-u)^2/4-(mu-u)(v-mu)=(mu-(u+v)/2)^2"
+    },
+    {
+      "name": "finite-endpoint-path-identity",
+      "check_class": "A",
+      "passed": true,
+      "detail": "E(z)-E(0)=integral_0^1 dE(sz)/ds ds for nonlinear E=z^2+z^3"
+    },
+    {
+      "name": "i2-alone-not-exact-for-nonconstant-affine-kernel",
+      "check_class": "A",
+      "passed": true,
+      "detail": "equal A=1; c=3/4 gives R=3/4, c=1 gives R=1 for K=x"
+    },
+    {
+      "name": "two-moments-not-exact-for-curved-kernel",
+      "check_class": "A",
+      "passed": true,
+      "detail": "both profiles have A=1 and c=7/8; K=x^2 responses are 49/64 and 25/32"
+    },
+    {
+      "name": "local-stable-action-counterfamily",
+      "check_class": "A",
+      "passed": true,
+      "detail": "S_kappa=sum(Delta q)^2+kappa sum(q^2), q=(0,*,*,1): kappa=0 -> q=(Fraction(0, 1), Fraction(1, 3), Fraction(2, 3), Fraction(1, 1)), A_disc=1/2, c_disc=7/9; kappa=1 -> q=(Fraction(0, 1), Fraction(1, 8), Fraction(3, 8), Fraction(1, 1)), A_disc=3/8, c_disc=31/36"
+    },
+    {
+      "name": "strict-convexity-kappa-0",
+      "check_class": "A",
+      "passed": true,
+      "detail": "H leading minor=4, determinant=12"
+    },
+    {
+      "name": "strict-convexity-kappa-1",
+      "check_class": "A",
+      "passed": true,
+      "detail": "H leading minor=6, determinant=32"
+    },
+    {
+      "name": "minimal-axiom-nonselection-boundary-present",
+      "check_class": "B",
+      "passed": true,
+      "detail": "current axiom memo withholds dynamics/source-action/time and keeps unfixed choices open"
+    },
+    {
+      "name": "approved-primitive-scope-scale_reference",
+      "check_class": "B",
+      "passed": true,
+      "detail": "approved primitive remains inside its declared narrow scope"
+    },
+    {
+      "name": "approved-primitive-scope-kinetic_isotropy",
+      "check_class": "B",
+      "passed": true,
+      "detail": "approved primitive remains inside its declared narrow scope"
+    },
+    {
+      "name": "approved-primitive-scope-realized_state",
+      "check_class": "B",
+      "passed": true,
+      "detail": "approved primitive remains inside its declared narrow scope"
+    },
+    {
+      "name": "source-note-claim-firewall",
+      "check_class": "B",
+      "passed": true,
+      "detail": "exact theorem, nonselection boundary, N1-N8 discipline, and claim-status firewall are present"
+    },
+    {
+      "name": "no-numerical-transport-stack-proof-import",
+      "check_class": "B",
+      "passed": true,
+      "detail": "runner uses exact standard-library/SymPy algebra and no numerical transport stack"
+    }
+  ],
+  "summary": {
+    "pass": 15,
+    "fail": 0
+  },
+  "remaining_blocker": "derive the physical microscopic bridge operator, YT observable map, and a uniform finite-response kernel bound"
+}

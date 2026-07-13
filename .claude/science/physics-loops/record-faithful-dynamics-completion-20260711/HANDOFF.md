@@ -926,3 +926,33 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5349 is
 open on Block37. The next exact target is a direct joint Haar--Gaussian
 colored cluster expansion controlling the outer partition factor and `g`
 provenance before migrating to `S^(2)`. No axiom-update stop is triggered.
+
+## Block 39: joint product-reference outer-Haar response
+
+The outer normalization wall is closed at the original center. The exact
+identity `E_HG_A[F]=E_0[F B_G Z_A^(-1)]` is implemented locally: `B_G` and
+the inverse determinant-loop counterterm are uncolored reference factors;
+the physical determinant restore, Wilson plaquettes, and grouped
+preintegration `K-I/I-K` sources are red. At color one the counterterm and
+restore cancel factor by factor, leaving the original block integrand. The
+generated Schur complement is output and is not double-counted as input.
+
+One joint hidden-coordinate overlap graph gives
+`A_joint=2D K_R/(1-tau)^3` on the declared source domain. The witness has
+`K_T=0.00310048489276<c`, `tau=0.00579212278066`, and
+`A_joint=0.00696178417612`. The old `68exp(1/2)` conversion evaluates to
+`0.780506832417<1`, but remains arithmetic until the new boundary grammar has
+a canonical coarse shadow and future atoms.
+
+Independent code/math, physics/import, and governance/no-go review pass with
+bounded claims. Runner/cache: `PASS=12 FAIL=0`, including a first-principles
+two-site three-color determinant test. The full audit pipeline seeds one
+`bounded_theorem` / `unaudited` row with exactly five dependencies; runner
+classification is first-principles compute, strict lint has zero errors, and
+generated outputs are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5350 is
+open on Block38. The next target is the coarse-shadow/strong-spatial theorem,
+then the same ledger at the extracted `S^(2)` center. No axiom-update stop is
+triggered.

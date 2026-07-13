@@ -12512,6 +12512,7 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             "schema": "judicial_panel_record_v1",
             "cid": "claim-a",
             "panel": 1,
+            "invocation_id": "8" * 32,
             "result": "no_majority",
             "disagreement_fingerprint": m.disagreement_fingerprint(row),
             "votes": votes,

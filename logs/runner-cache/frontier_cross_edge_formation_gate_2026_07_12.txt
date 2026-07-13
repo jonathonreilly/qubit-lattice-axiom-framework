@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cross_edge_formation_gate_2026_07_12.py
+runner_sha256: 9fdf75fcc96ac90545b48fa0a5f6a76ead91cc3e3d5f5648cb0860271e52b5e8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+[PASS] 01 outcome-factorization residual quotation matches the landed source
+[PASS] 02 outcome-factorization discharge quotation matches the landed source
+[PASS] 03 all quoted axiom sentences match the landed minimal-axiom source
+[PASS] 04 landed relocation and fresh-site source statements are guarded
+[PASS] 05 (LE) names equality of the complete transported condition, including record environment
+[PASS] 06 (LE)+(LAW) gives exact same-condition marginal identity
+[PASS] 07 LABELED COMPARATOR (never thresholded): unequal complete conditions may differ
+[PASS] 08 the single-registration law has no hidden bare-site or epoch argument
+[PASS] 09 identical marginals solve to the one-coordinate joint family
+[PASS] 10 the solved joint family is exactly normalized
+[PASS] 11 both solved single-registration marginals equal (p,1-p)
+[PASS] 12 the exact Frechet interval has lower branch max(0,2p-1)=0
+[PASS] 13 the exact Frechet interval has upper branch max(0,2p-1)=2p-1
+[PASS] 14 C_ss=0 solves natively and uniquely to a=p^2
+[PASS] 15 substituting the cumulant solution gives the full product table
+[PASS] 16 the product table makes every registered-quotient cumulant vanish
+[PASS] 17 LABELED COMPARATOR (never thresholded): locked coupling has the same exact marginals
+[PASS] 18 same marginal answer permits distinct product and correlated joint answers
+[PASS] 19 pointwise Record-readout additivity coexists with exact statistical dependence
+[PASS] 20 the four graded independence payers are enumerated and none is adopted
+
+VERDICT: PASS — marginal identity is conditional on (LE)+(LAW); cross-edge independence remains the formation-gate atom.
+T2: F:C_form->Delta({s,d}), p_i=f(c_i); c_1=c_2 under (LE) and (LAW) implies p_1=p_2, and implies no joint equation.
+LAW-EQUIVALENCE (LE): after a supplied lattice translation/proper rotation, the complete law-domain conditions, record environment, menu, and s/d labels agree; different epochs are not automatically equivalent.
+INDEPENDENCE PAYER TABLE:
+  formation dynamics | prospective derivation/bridge | open; no supplier here
+  product/maximal ignorance | candidate licensing criterion | not adopted
+  physical locality | prospective screening/factorization theorem | additivity is insufficient
+  supplied product-law condition | non-satisfying condition | conditional only; not adopted
+TOTAL: PASS=20 FAIL=0
+PROPOSED CLAIM_SCOPE: bounded_theorem — formation-gate consolidation plus Qualification-conditional marginal identity; independence isolated, not derived.
+HOSTILE-AUDIT UNCERTAINTIES: whether the complete-condition equivalence is ever physically realized across epochs; whether finite-history coupling is packaged in the same formation law; and whether quotient labels transport unchanged. The exact binary arithmetic has no numerical uncertainty.
+
+----- stderr -----
+

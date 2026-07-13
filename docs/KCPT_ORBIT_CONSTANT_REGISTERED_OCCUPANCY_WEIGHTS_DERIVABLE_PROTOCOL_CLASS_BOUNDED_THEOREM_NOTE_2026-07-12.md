@@ -119,6 +119,7 @@ vectors are K-fixed. Hold that record data and every other named clause fixed,
 and compare the supplied Pauli/corner presentation with its entrywise-
 conjugate presentation. By L-K1 these are two presentations of the same named
 real-algebra structure. A K-odd initial datum distinguishes them: for example,
+with `0<|eps|<=1`,
 
 ```text
 rho_eps = ((I_2 + eps sigma_2)/2) tensor I_3/3,
@@ -270,8 +271,8 @@ non-K-real density state. For the `W` branches `Q_+` and `Q_-`, the exact
 registered doublet differences are
 
 ```text
-Pr(P_w,Q_+) - Pr(P_conjugate(w),Q_+) = -eps/3,
-Pr(P_w,Q_-) - Pr(P_conjugate(w),Q_-) = +eps/3.
+weight(P_w,Q_+) - weight(P_conjugate(w),Q_+) = -eps/3,
+weight(P_w,Q_-) - weight(P_conjugate(w),Q_-) = +eps/3.
 ```
 
 Thus the signed branch-sliced differences are `-/+ eps/3` and their magnitude
@@ -444,9 +445,9 @@ probability, occurrence, or physical weighting rule.
 |---|---|
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Verbatim Qubit, no-privilege, Qualification, state, and law clauses; R1 and R2 state explicitly what those clauses do and do not supply. |
 | [`RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md) | W1a's one-step, two-outcome controlled-copy template under its declared finite-surface readings. R1 separately declares the n-ary map-level extension used here. |
-| [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | W1b L1/L2, strict sharpening, `Fix(T_f)`, the occupancy-to-grain map, Born comparator, and the exact supplied-context declaration addressed by the corollary. |
+| [`ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md`](ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md) | W1b L1/L2, strict sharpening, `Fix(T_f)`, the occupancy-to-grain map, Born comparator, and the exact supplied-context declaration addressed by the W1b boundary consequence. |
 | [`KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md`](KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md) | The observable-face salvage boundary: the unlabeled three-atom PVM remains convention-stable, so the new theorem must concern weights rather than PVM availability. |
-| [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md) | Orbit vocabulary and the supplied-context framing that the corollary addresses; no determinant-character value conclusion is consumed. |
+| [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md) | Orbit vocabulary and the supplied-context framing addressed by the W1b boundary consequence; no determinant-character value conclusion is consumed. |
 
 Non-citation context handles:
 

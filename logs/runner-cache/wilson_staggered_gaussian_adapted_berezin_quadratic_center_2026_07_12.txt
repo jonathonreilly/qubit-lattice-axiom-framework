@@ -1,0 +1,15 @@
+PASS gaussian_adapted_tensor_norm: old_one_site=1.0e+48, old_fifteen_site=1e720, eta_m=0.01, adapted_fifteen_site=1
+PASS three_color_covariance_minor_bound: contractions=[1.0, 0.0001, 1e-08, 1e-12], adapted_ratios=[1.0, 1.0, 1.0, 0.9999999999999998]
+PASS interaction_updates_quadratic_center: G[(bar_zeta zeta)(bar_psi psi)]={(2, 3): 0.0001}
+PASS multi_index_local_split_algebra: r*=1+sqrt(2)=2.414213562373, fixtures=18, worst_ratio=1.000000000000<=1
+PASS multi_index_modulation_and_shift: ratios=[0.0011914783003736799, 0.0011914783003736799, 0.0011914783003736799], nonempty_tag_shift<=0.5, Wilson_per_tag=0.826011419447
+PASS shortest_path_classification: returning_two_step=16, backtracks=8, straight=8
+PASS odd_schur_path_parity: odd_return_counts=[0, 0, 0], even_return_counts=[16, 640, 34816]
+PASS shortest_quadratic_center_gap: U=1 momentum spectrum min=10000.000000000000, max=10000.000400000001, gap>=10000
+PASS running_mass_chart_torsor: m'=9900, rho=1.005037815259, transformed_mass=9900.000000000004, one_site_identity_cost=1.030610152128
+PASS quadratic_center_residual_activity: K_S2=1.068290846710377e-05, K_S_even>=4=2.536105198800461e-11, K_I=2.113419744695058e-12, K_res=2.747447173269967e-11, old_B=1.197696492987366e-03>old_r_src=9.888280124566245e-04
+PASS residual_marked_attachment: tau=1.010729358519869e-08, A_att=2.021458733802326e-08, q_centered=2.266318968338462e-06, q_split=0.606530659713, B_res=3.080246724392692e-09
+PASS conditional_ball_scalar_feasibility: r_src=9.995003056365085e-04, delta=1.0e-08, M_delta=224454.841239342, lhs=9.156776063580995e-09
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=14 FAIL=0

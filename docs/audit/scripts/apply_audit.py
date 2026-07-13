@@ -191,8 +191,10 @@ def trusted_manifest_current_error(
     trusted_manifest: dict[str, dict],
     row: dict,
     rows: dict[str, dict],
+    *,
+    dynamic_index_drift_invalidates: bool = True,
 ) -> str | None:
-    """Reject replayed prompt evidence after source or dynamic-index drift."""
+    """Reject replayed evidence after stable-content or governed index drift."""
     probe_packet = dict(packet)
     probe_packet["evidence_snapshot"] = (
         no_go_discipline_gate.build_evidence_snapshot(
@@ -206,7 +208,9 @@ def trusted_manifest_current_error(
         current_row, rows, REPO_ROOT
     )
     return no_go_discipline_gate.evidence_snapshot_current_error(
-        probe_packet, current_manifest, dynamic_index_drift_invalidates=True
+        probe_packet,
+        current_manifest,
+        dynamic_index_drift_invalidates=dynamic_index_drift_invalidates,
     )
 
 
@@ -218,8 +222,10 @@ def cross_summary_no_go_error(
 ) -> str | None:
     """Validate a prior cross-confirmation seat before it can be ratified."""
     packet = summary.get("no_go_discipline")
-    required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
-        summary
+    required = (
+        source_required
+        or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+        or bool(summary.get("negative_assertion_classes"))
     )
     if packet is None:
         return (
@@ -241,6 +247,7 @@ def cross_summary_no_go_error(
             },
             source_required=source_required,
             evidence_manifest=None,
+            structural_only=True,
         )
     if snapshot_manifest is None:
         return "authenticated evidence_snapshot is required"
@@ -288,6 +295,7 @@ def archive_invalid_first_and_require_fresh_packet(row: dict, first: dict) -> No
     archive_replaced_cross_confirmation_first(row, first)
     row.pop("cross_confirmation", None)
     row.pop("no_go_discipline", None)
+    row.pop("negative_assertion_classes", None)
     row["audit_status"] = "unaudited"
     row["blocker"] = "invalid_cross_confirmation_first_archived_reaudit_required"
 
@@ -323,6 +331,8 @@ JUDICIAL_REQUIRED_FIELDS = {
     "independence",
     "sided_with",
     "ratified_verdict",
+    "ratified_claim_type",
+    "ratified_claim_scope",
     "ratified_load_bearing_step_class",
     "judgment_rationale",
     "first_auditor_error",
@@ -427,6 +437,7 @@ def _canonicalize_existing_auditor_family(family: str | None) -> str | None:
 
 
 ALLOWED_JUDICIAL_SIDES = {"first", "second", "hybrid", "neither"}
+AUDIT_TUPLE_AGREEMENT_SCHEMA = "audit_tuple_v2"
 JUDICIAL_REVIEWABLE_STATUSES = {
     "disagreement",
     "third_confirmed_first",
@@ -465,6 +476,90 @@ def cross_confirmation_error(first: dict, audit: dict) -> str | None:
             "to document a restricted-input clean-room session"
         )
     return None
+
+
+def normalized_negative_assertion_classes(blob: dict) -> tuple[str, ...]:
+    """Return the declaration as a stable component of the audit tuple.
+
+    Missing legacy declarations are treated as the historical equivalent of an
+    empty declaration. New audit inputs are separately required to carry an
+    explicit validated list before they reach any comparison path.
+    """
+    declared = blob.get("negative_assertion_classes")
+    if not isinstance(declared, list):
+        return ()
+    return tuple(sorted({item for item in declared if isinstance(item, str)}))
+
+
+def normalized_claim_scope(blob: dict) -> str:
+    """Normalize insignificant whitespace without weakening scoped agreement."""
+    scope = blob.get("claim_scope")
+    if not isinstance(scope, str):
+        return ""
+    return " ".join(scope.split())
+
+
+def audit_tuples_match(first: dict, second: dict) -> bool:
+    """Compare every field whose disagreement requires governed resolution."""
+    return (
+        first.get("verdict") == second.get("verdict")
+        and first.get("claim_type") == second.get("claim_type")
+        and first.get("load_bearing_step_class")
+        == second.get("load_bearing_step_class")
+        and normalized_claim_scope(first) == normalized_claim_scope(second)
+        and normalized_negative_assertion_classes(first)
+        == normalized_negative_assertion_classes(second)
+    )
+
+
+def audit_summary_tuple_schema_error(summary: object) -> str | None:
+    """Require a complete typed tuple before minting ``audit_tuple_v2``."""
+    if not isinstance(summary, dict) or not summary:
+        return "audit summary must be a non-empty object"
+    required = {
+        "verdict",
+        "claim_type",
+        "claim_scope",
+        "load_bearing_step_class",
+        "negative_assertion_classes",
+    }
+    missing = required - set(summary)
+    if missing:
+        return f"audit summary missing tuple fields: {sorted(missing)}"
+    verdict = summary.get("verdict")
+    if verdict not in ALLOWED_VERDICTS:
+        return f"audit summary has non-terminal verdict {verdict!r}"
+    claim_type = summary.get("claim_type")
+    if claim_type not in ALLOWED_CLAIM_TYPES:
+        return f"audit summary has invalid claim_type {claim_type!r}"
+    scope = summary.get("claim_scope")
+    if not isinstance(scope, str) or not scope.strip():
+        return "audit summary claim_scope must be a non-empty string"
+    step_class = summary.get("load_bearing_step_class")
+    if not isinstance(step_class, str) or not step_class.strip():
+        return "audit summary load_bearing_step_class must be a non-empty string"
+    declared = summary.get("negative_assertion_classes")
+    if not isinstance(declared, list) or not all(
+        isinstance(item, str) for item in declared
+    ):
+        return "audit summary negative_assertion_classes must be a list of strings"
+    unknown = sorted(
+        set(declared) - no_go_discipline_gate.POLICY_NEGATIVE_CLASSES
+    )
+    if unknown:
+        return f"audit summary has unknown negative_assertion_classes: {unknown}"
+    return None
+
+
+def legacy_tuple_upgrade_error(label: str, summary: object) -> str | None:
+    """Explain why an old seat cannot be relabeled as exact v2 agreement."""
+    error = audit_summary_tuple_schema_error(summary)
+    if error is None:
+        return None
+    return (
+        f"{label} cannot be upgraded to {AUDIT_TUPLE_AGREEMENT_SCHEMA}: "
+        f"{error}; fresh re-audit required"
+    )
 
 
 def third_confirmation_error(cross_confirmation: dict, audit: dict) -> str | None:
@@ -510,6 +605,9 @@ def audit_summary_from_row(row: dict) -> dict:
         "claim_type": row.get("claim_type"),
         "claim_scope": row.get("claim_scope"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            normalized_negative_assertion_classes(row)
+        ),
         "verdict": row.get("audit_status"),
         "audit_invocation_id": row.get("audit_invocation_id"),
     }
@@ -529,6 +627,9 @@ def audit_summary_from_blob(audit: dict) -> dict:
         "claim_type": audit.get("claim_type"),
         "claim_scope": audit.get("claim_scope"),
         "load_bearing_step_class": audit.get("load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            normalized_negative_assertion_classes(audit)
+        ),
         "verdict": audit.get("verdict"),
         "audit_invocation_id": audit.get("audit_invocation_id"),
     }
@@ -548,6 +649,9 @@ def judicial_summary_from_blob(judgment: dict) -> dict:
         "claim_type": judgment.get("ratified_claim_type"),
         "claim_scope": judgment.get("ratified_claim_scope"),
         "load_bearing_step_class": judgment.get("ratified_load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            normalized_negative_assertion_classes(judgment)
+        ),
         "verdict": judgment.get("ratified_verdict"),
         "audit_invocation_id": judgment.get("audit_invocation_id"),
         "sided_with": judgment.get("sided_with"),
@@ -875,8 +979,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if ratified_verdict not in ALLOWED_VERDICTS:
         return False, f"ratified_verdict {ratified_verdict!r} not in {sorted(ALLOWED_VERDICTS)}"
     ratified_claim_type = judgment.get("ratified_claim_type")
-    if ratified_claim_type is not None and ratified_claim_type not in ALLOWED_CLAIM_TYPES:
+    if ratified_claim_type not in ALLOWED_CLAIM_TYPES:
         return False, f"ratified_claim_type {ratified_claim_type!r} not in {sorted(ALLOWED_CLAIM_TYPES)}"
+    ratified_claim_scope = judgment.get("ratified_claim_scope")
+    if not isinstance(ratified_claim_scope, str) or not ratified_claim_scope.strip():
+        return False, "ratified_claim_scope must be a non-empty string"
 
     err = note_hash_drift_error(row)
     if err:
@@ -895,6 +1002,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     second = cross_confirmation.get("second_audit") or {}
     if not first or not second:
         return False, "judicial review requires first_audit and second_audit summaries"
+    if side != "neither":
+        for label, summary in (("first_audit", first), ("second_audit", second)):
+            tuple_error = legacy_tuple_upgrade_error(label, summary)
+            if tuple_error:
+                return False, tuple_error
 
     prior_auditors = {first.get("auditor"), second.get("auditor")}
     if judgment.get("third_auditor") in prior_auditors:
@@ -905,8 +1017,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if side == "hybrid":
         if not judgment.get("hybrid_resolution_note"):
             return False, "hybrid judicial review requires hybrid_resolution_note"
-        if ratified_claim_type is None:
-            return False, "hybrid judicial review requires ratified_claim_type"
+        ratified_scope = ratified_claim_scope
     if side in {"first", "second"}:
         chosen = first if side == "first" else second
         chosen_label = "first" if side == "first" else "second"
@@ -924,6 +1035,31 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             return False, (
                 f"ratified_claim_type {ratified_claim_type!r} does not match "
                 f"{chosen_label}_audit claim_type {chosen_claim_type!r}"
+            )
+        if (
+            normalized_negative_assertion_classes(judgment)
+            != normalized_negative_assertion_classes(chosen)
+        ):
+            return False, (
+                "negative_assertion_classes does not match the ratified "
+                f"{chosen_label}_audit declaration"
+            )
+        if (
+            judgment.get("ratified_load_bearing_step_class")
+            != chosen.get("load_bearing_step_class")
+        ):
+            return False, (
+                "ratified_load_bearing_step_class does not match the ratified "
+                f"{chosen_label}_audit class"
+            )
+        if (
+            normalized_claim_scope({"claim_scope": ratified_claim_scope})
+            != normalized_claim_scope(chosen)
+        ):
+            return False, (
+                "ratified_claim_scope does not match the ratified "
+                f"{chosen_label}_audit scope; use sided_with='hybrid' to "
+                "ratify a different scope"
             )
     ratified_decoration_parent = (
         judgment.get("ratified_decoration_parent_claim_id")
@@ -972,9 +1108,17 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     )
     if (
         evidence_manifest is None
-        and judgment.get("no_go_discipline") is not None
         and forensic_probe
     ):
+        if judgment.get("no_go_discipline") is None:
+            preliminary_error = no_go_discipline_gate.validate_no_go_discipline(
+                gate_blob,
+                source_required=source_required_probe,
+                structural_only=True,
+                require_declaration=True,
+            )
+            if preliminary_error:
+                return False, preliminary_error
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
@@ -986,7 +1130,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             return False, clipped_error
     if trusted_transport:
         manifest_error = trusted_manifest_current_error(
-            judgment.get("no_go_discipline") or {}, evidence_manifest, row, rows
+            judgment.get("no_go_discipline") or {},
+            evidence_manifest,
+            row,
+            rows,
+            dynamic_index_drift_invalidates=forensic_probe,
         )
         if manifest_error:
             return False, f"trusted evidence manifest is stale: {manifest_error}"
@@ -1021,6 +1169,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest if _forensic else None,
         prior_claim_scope=prior_claim_scope_for_row(row),
+        structural_only=not _forensic,
         require_declaration=True,
     )
     if no_go_error:
@@ -1037,6 +1186,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     # record mutate the live row. This also ensures a valid ``neither`` result
     # runs the same No-Go Discipline gate before recording its blocker.
     third = judicial_summary_from_blob(judgment)
+    if side != "neither":
+        tuple_error = legacy_tuple_upgrade_error("third_audit", third)
+        if tuple_error:
+            return False, tuple_error
     row["cross_confirmation"]["third_audit"] = third
     row["cross_confirmation"]["mode"] = "judicial_third_pass"
 
@@ -1053,6 +1206,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         "second": "third_confirmed_second",
         "hybrid": "third_confirmed_hybrid",
     }[side]
+    row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
     row["audit_status"] = ratified_verdict
     row["auditor"] = judgment["third_auditor"]
     row["auditor_family"] = judgment["auditor_family"]
@@ -1083,6 +1237,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     else:
         row["decoration_parent_claim_id"] = judgment.get("decoration_parent_claim_id")
     row["auditor_confidence"] = judgment.get("auditor_confidence", "judicial")
+    row["negative_assertion_classes"] = list(
+        normalized_negative_assertion_classes(
+            chosen if side in {"first", "second"} else judgment
+        )
+    )
     if judgment.get("no_go_discipline") is None:
         row.pop("no_go_discipline", None)
     else:
@@ -1158,9 +1317,17 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     )
     if (
         evidence_manifest is None
-        and audit.get("no_go_discipline") is not None
         and _forensic
     ):
+        if audit.get("no_go_discipline") is None:
+            preliminary_error = no_go_discipline_gate.validate_no_go_discipline(
+                audit,
+                source_required=_source_req_probe,
+                structural_only=True,
+                require_declaration=True,
+            )
+            if preliminary_error:
+                return False, preliminary_error
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
@@ -1172,7 +1339,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             return False, clipped_error
     if trusted_transport:
         manifest_error = trusted_manifest_current_error(
-            audit.get("no_go_discipline") or {}, evidence_manifest, row, rows
+            audit.get("no_go_discipline") or {},
+            evidence_manifest,
+            row,
+            rows,
+            dynamic_index_drift_invalidates=_forensic,
         )
         if manifest_error:
             return False, f"trusted evidence manifest is stale: {manifest_error}"
@@ -1198,6 +1369,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest if _forensic else None,
         prior_claim_scope=prior_claim_scope_for_row(row),
+        structural_only=not _forensic,
         require_declaration=True,
     )
     if no_go_error:
@@ -1348,17 +1520,19 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             return False, "explicit second-seat cross-confirmation requires independence != 'weak'"
 
         second = audit_summary_from_blob(audit)
-        matches = (
-            first.get("verdict") == second.get("verdict")
-            and first.get("claim_type") == second.get("claim_type")
-            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        for label, summary in (("first_audit", first), ("second_audit", second)):
+            tuple_error = legacy_tuple_upgrade_error(label, summary)
+            if tuple_error:
+                return False, tuple_error
+        matches = audit_tuples_match(first, second)
         row["cross_confirmation"] = {
             "first_audit": first,
             "second_audit": second,
             "status": "confirmed" if matches else "disagreement",
             "mode": "explicit_second_seat",
         }
+        if matches:
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
         if not matches:
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
@@ -1398,11 +1572,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             return False, "terminal cross-confirmation requires independence != 'weak'"
 
         second = audit_summary_from_blob(audit)
-        matches = (
-            first.get("verdict") == second.get("verdict")
-            and first.get("claim_type") == second.get("claim_type")
-            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        for label, summary in (("first_audit", first), ("second_audit", second)):
+            tuple_error = legacy_tuple_upgrade_error(label, summary)
+            if tuple_error:
+                return False, tuple_error
+        matches = audit_tuples_match(first, second)
         row["cross_confirmation"] = {
             "first_audit": first,
             "second_audit": second,
@@ -1410,6 +1584,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             "mode": "terminal_second_pass",
         }
         if matches:
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
             terminal_second_pass_msg = "terminal verdict cross-confirmed"
         else:
             terminal_second_pass_msg = (
@@ -1436,6 +1611,10 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
 
         first = (prior_cross_confirmation or {}).get("first_audit") or {}
         second = (prior_cross_confirmation or {}).get("second_audit") or {}
+        for label, summary in (("first_audit", first), ("second_audit", second)):
+            tuple_error = legacy_tuple_upgrade_error(label, summary)
+            if tuple_error:
+                return False, tuple_error
         for seat_name, seat in (("first", first), ("second", second)):
             seat_gate_error = cross_summary_no_go_error(
                 seat,
@@ -1448,35 +1627,38 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                     f"audit: {seat_gate_error}"
                 )
         third = audit_summary_from_blob(audit)
+        tuple_error = legacy_tuple_upgrade_error("third_audit", third)
+        if tuple_error:
+            return False, tuple_error
         first_verdict = first.get("verdict")
         second_verdict = second.get("verdict")
         third_verdict = third.get("verdict")
-        third_matches_first = (
-            third_verdict == first_verdict
-            and third.get("claim_type") == first.get("claim_type")
-            and third.get("load_bearing_step_class") == first.get("load_bearing_step_class")
-        )
-        third_matches_second = (
-            third_verdict == second_verdict
-            and third.get("claim_type") == second.get("claim_type")
-            and third.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        third_matches_first = audit_tuples_match(third, first)
+        third_matches_second = audit_tuples_match(third, second)
         if third_matches_first:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_first"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
             third_pass_msg = "third auditor confirmed first verdict"
             audit["verdict"] = first["verdict"]
             audit["claim_type"] = first["claim_type"]
             audit["load_bearing_step_class"] = first["load_bearing_step_class"]
+            audit["negative_assertion_classes"] = list(
+                normalized_negative_assertion_classes(first)
+            )
         elif third_matches_second:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_second"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
             third_pass_msg = "third auditor confirmed second verdict"
             audit["verdict"] = second["verdict"]
             audit["claim_type"] = second["claim_type"]
             audit["load_bearing_step_class"] = second["load_bearing_step_class"]
+            audit["negative_assertion_classes"] = list(
+                normalized_negative_assertion_classes(second)
+            )
         else:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "three_way_disagreement"
@@ -1500,6 +1682,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     )
     if critical_second_pass:
         first = (prior_cross_confirmation or {}).get("first_audit") or {}
+        tuple_error = legacy_tuple_upgrade_error("first_audit", first)
+        if tuple_error:
+            return False, tuple_error
         first_gate_error = cross_summary_no_go_error(
             first,
             source_required=source_requires_no_go,
@@ -1517,14 +1702,14 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             return False, err
 
         second = audit_summary_from_blob(audit)
+        tuple_error = legacy_tuple_upgrade_error("second_audit", second)
+        if tuple_error:
+            return False, tuple_error
         row["cross_confirmation"]["second_audit"] = second
-        matches = (
-            first.get("verdict") == second.get("verdict")
-            and first.get("claim_type") == second.get("claim_type")
-            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        matches = audit_tuples_match(first, second)
         if matches:
             row["cross_confirmation"]["status"] = "confirmed"
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
         else:
             row["cross_confirmation"]["status"] = "disagreement"
             row["audit_status"] = "audit_in_progress"
@@ -1553,8 +1738,12 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         prior = row.get("cross_confirmation") or {}
         first = prior.get("first_audit")
         if first is None:
+            first_summary = audit_summary_from_blob(audit)
+            tuple_error = legacy_tuple_upgrade_error("first_audit", first_summary)
+            if tuple_error:
+                return False, tuple_error
             row["cross_confirmation"] = {
-                "first_audit": audit_summary_from_blob(audit),
+                "first_audit": first_summary,
                 "second_audit": None,
                 "status": "awaiting_second",
             }
@@ -1566,6 +1755,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["claim_type_last_reviewed"] = audit.get("audit_date") or datetime.now(timezone.utc).isoformat()
             accept_row()
             return True, "first audit recorded; awaiting independent second auditor"
+        tuple_error = legacy_tuple_upgrade_error("first_audit", first)
+        if tuple_error:
+            return False, tuple_error
         first_gate_error = cross_summary_no_go_error(
             first,
             source_required=source_requires_no_go,
@@ -1582,17 +1774,20 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         err = cross_confirmation_error(first, audit)
         if err:
             return False, err
-        if (
-            first.get("load_bearing_step_class") != audit.get("load_bearing_step_class")
-            or first.get("claim_type") != claim_type
-        ):
-            row["cross_confirmation"]["second_audit"] = audit_summary_from_blob(audit)
+        second = audit_summary_from_blob(audit)
+        tuple_error = legacy_tuple_upgrade_error("second_audit", second)
+        if tuple_error:
+            return False, tuple_error
+        if not audit_tuples_match(first, second):
+            row["cross_confirmation"]["second_audit"] = second
             row["cross_confirmation"]["status"] = "disagreement"
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
             accept_row()
             return True, (
-                "first and second audits disagree on claim_type or load_bearing_step_class "
+                "first and second audits disagree on claim_type, "
+                "claim_scope, load_bearing_step_class, or "
+                "negative_assertion_classes "
                 f"({first.get('claim_type')!r}/{first.get('load_bearing_step_class')!r} vs "
                 f"{claim_type!r}/{audit.get('load_bearing_step_class')!r}); "
                 "promote to third-auditor review"
@@ -1600,6 +1795,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         # Concordant second audit: promote.
         row["cross_confirmation"]["second_audit"] = audit_summary_from_blob(audit)
         row["cross_confirmation"]["status"] = "confirmed"
+        row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
 
     # Apply the audit fields.
     row["audit_status"] = verdict
@@ -1622,6 +1818,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     row["open_dependency_paths"] = audit.get("open_dependency_paths", [])
     row["decoration_parent_claim_id"] = audit.get("decoration_parent_claim_id")
     row["auditor_confidence"] = audit.get("auditor_confidence")
+    row["negative_assertion_classes"] = list(
+        normalized_negative_assertion_classes(audit)
+    )
     if audit.get("no_go_discipline") is None:
         row.pop("no_go_discipline", None)
     else:
@@ -1666,6 +1865,7 @@ PROPAGATION_STEPS = (
     ("compute_effective_status.py",        "post-apply effective_status pass"),
     ("invalidate_stale_audits.py",         "invalidate audits whose deps shifted"),
     ("compute_effective_status.py",        "post-invalidation effective_status pass"),
+    ("compute_lane_certification.py",      "refresh rolling lane certification"),
     ("compute_audit_queue.py",             "refresh audit queue"),
     ("compute_reaudit_candidates.py",      "refresh re-audit candidates"),
     ("render_audit_ledger.py",             "render AUDIT_LEDGER.md"),
@@ -1698,17 +1898,40 @@ def run_propagation() -> int:
                 print(f"     stderr: {result.stderr.strip()[:400]}", file=sys.stderr)
             return 1
         if script == "invalidate_stale_audits.py":
+            converged = False
             for attempt in range(1, 11):
                 invalidated = len(
                     json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get(
                         "last_invalidations", []
                     )
                 )
-                if invalidated == 0:
+                restore = subprocess.run(
+                    [
+                        sys.executable,
+                        str(scripts_dir / "restore_overaggressively_invalidated_audits.py"),
+                    ],
+                    cwd=REPO_ROOT,
+                    capture_output=True,
+                    text=True,
+                )
+                if restore.returncode != 0:
+                    print(
+                        "     FAIL restore_overaggressively_invalidated_audits.py",
+                        file=sys.stderr,
+                    )
+                    return 1
+                restored_match = re.search(
+                    r"^Restored (\d+) audits",
+                    restore.stdout or "",
+                    re.MULTILINE,
+                )
+                restored = int(restored_match.group(1)) if restored_match else 0
+                if invalidated == 0 and restored == 0:
+                    converged = True
                     break
                 print(
-                    f"     fixed-point pass {attempt}: {invalidated} invalidation(s); "
-                    "recomputing effective status"
+                    f"     fixed-point pass {attempt}: {invalidated} invalidation(s), "
+                    f"{restored} restoration(s); recomputing effective status"
                 )
                 compute = subprocess.run(
                     [sys.executable, str(scripts_dir / "compute_effective_status.py")],
@@ -1724,13 +1947,10 @@ def run_propagation() -> int:
                 if repeat.returncode != 0:
                     print("     FAIL invalidate_stale_audits.py", file=sys.stderr)
                     return 1
-            if len(
-                json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get(
-                    "last_invalidations", []
-                )
-            ) != 0:
+            if not converged:
                 print(
-                    "     FAIL invalidation did not reach a fixed point after 10 passes",
+                    "     FAIL invalidation/restoration did not reach a fixed point "
+                    "after 10 passes",
                     file=sys.stderr,
                 )
                 return 1

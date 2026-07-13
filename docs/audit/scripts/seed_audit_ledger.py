@@ -109,7 +109,10 @@ EMPTY_AUDIT = {
 
 # Audit fields that are preserved across re-seeds when the note hash is
 # unchanged. If the hash changes, these are archived and reset.
-AUDIT_FIELDS = list(EMPTY_AUDIT.keys()) + ["no_go_discipline"]
+AUDIT_FIELDS = list(EMPTY_AUDIT.keys()) + [
+    "no_go_discipline",
+    "negative_assertion_classes",
+]
 
 DEFAULT_PROSE_STATUS = "not_evaluated_pre_vocab_lint"
 
@@ -186,6 +189,7 @@ def reset_unaudited_audit_fields(row: dict) -> None:
     # replayable merely because the live audit-owned fields were cleared.
     row["audit_invocation_history"] = invocation_history
     row.pop("no_go_discipline", None)
+    row.pop("negative_assertion_classes", None)
 
 
 def is_excluded_source_path(path: str) -> bool:
@@ -480,6 +484,7 @@ def archive_prior_audit(row: dict) -> dict:
     for k, v in EMPTY_AUDIT.items():
         new_row[k] = v if not isinstance(v, (list, dict)) else (list(v) if isinstance(v, list) else dict(v))
     new_row.pop("no_go_discipline", None)
+    new_row.pop("negative_assertion_classes", None)
     return new_row
 
 

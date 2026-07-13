@@ -3998,6 +3998,7 @@ def validate_no_go_discipline(
     evidence_manifest: dict[str, dict] | None = None,
     prior_claim_scope: str | None = None,
     require_declaration: bool = False,
+    structural_only: bool = False,
 ) -> str | None:
     declared = audit.get("negative_assertion_classes")
     if require_declaration:
@@ -4031,7 +4032,9 @@ def validate_no_go_discipline(
         return "No-Go Discipline N1-N8 packet is required for this audit"
     if packet is None:
         return None
-    if evidence_manifest is None:
+    if structural_only:
+        evidence_manifest = None
+    elif evidence_manifest is None:
         evidence_manifest = evidence_manifest_from_snapshot(packet)
     error = _unknown_fields(
         packet,

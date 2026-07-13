@@ -142,6 +142,7 @@ ARCHIVED_FIELDS = (
     "claim_type_last_reviewed",
     "notes_for_re_audit_if_any",
     "no_go_discipline",
+    "negative_assertion_classes",
     "audit_invocation_id",
     "audit_invocation_history",
     "negative_assertion_classes",
@@ -586,6 +587,7 @@ def restore_audit_from_previous(
         "verdict_rationale": new_row.get("verdict_rationale"),
         "notes_for_re_audit_if_any": new_row.get("notes_for_re_audit_if_any"),
         "no_go_discipline": new_row.get("no_go_discipline"),
+        "negative_assertion_classes": new_row.get("negative_assertion_classes"),
     }
     with _forensic_gate():
         output_required = no_go_discipline_gate.output_requires_no_go_discipline(
@@ -602,6 +604,11 @@ def restore_audit_from_previous(
         isinstance(d, list) and bool(d)
         for d in (declared_archived, declared_live)
     )
+    if (
+        bool(new_row.get("negative_assertion_classes"))
+        and new_row.get("no_go_discipline") is None
+    ):
+        return None
     if (
         new_row.get("audit_status") == "audited_clean"
         and (source_required or output_required or declared_requires)
@@ -633,6 +640,7 @@ def restore_audit_from_previous(
             summary_requires_packet = (
                 source_required
                 or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+                or bool(summary.get("negative_assertion_classes"))
             )
             packet = summary.get("no_go_discipline")
             if packet is None:
@@ -668,8 +676,8 @@ def restore_audit_from_previous(
                 evidence_manifest=manifest,
             ):
                 return None
-    # A present packet must round-trip and validate. Packetless negative clean
-    # authority is deliberately not restorable under the current gate.
+    # Restoration is a certification-like act: a present packet must
+    # round-trip through its authenticated snapshot and validate forensically.
     if new_row.get("no_go_discipline") is not None:
         evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
             new_row["no_go_discipline"]

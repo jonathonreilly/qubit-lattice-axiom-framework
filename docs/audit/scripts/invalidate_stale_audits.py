@@ -339,6 +339,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             },
             source_required=source_required,
             evidence_manifest=evidence_manifest if _forensic else None,
+            structural_only=not _forensic,
         )
         if packet_error:
             if audit_status == "audited_clean":
@@ -361,6 +362,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             required = (
                 source_required
                 or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+                or bool(summary.get("negative_assertion_classes"))
             )
             if nested_packet is None:
                 if required and verdict == "audited_clean":
@@ -403,6 +405,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                     evidence_manifest=(
                         evidence_manifest if nested_forensic else None
                     ),
+                    structural_only=not nested_forensic,
                 )
             if packet_error:
                 digest = hashlib.sha256(packet_error.encode("utf-8")).hexdigest()[:12]
@@ -410,6 +413,13 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
 
     if audit_status == "audit_in_progress":
         return None
+
+    if (
+        audit_status not in {None, "unaudited"}
+        and bool(row.get("negative_assertion_classes"))
+        and packet is None
+    ):
+        return "no_go_discipline_packet_missing"
 
     if audit_status == "audited_clean":
         output_required = no_go_discipline_gate.output_requires_no_go_discipline(
@@ -715,6 +725,7 @@ def archive_and_reset(row: dict, reason: str) -> dict:
         else:
             new_row[k] = v
     new_row.pop("no_go_discipline", None)
+    new_row.pop("negative_assertion_classes", None)
     source_hint = row.get("claim_type_author_hint")
     if source_hint in CLAIM_TYPES:
         new_row["claim_type"] = source_hint
@@ -752,6 +763,9 @@ def soft_reset_to_cross_confirmation_pending(row: dict, reason: str) -> dict:
         "claim_type": row.get("claim_type"),
         "claim_scope": row.get("claim_scope"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            row.get("negative_assertion_classes") or []
+        ),
         "verdict": row.get("audit_status"),
     }
     if row.get("no_go_discipline") is not None:

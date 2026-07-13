@@ -1055,6 +1055,40 @@ class ApplyAuditTest(unittest.TestCase):
             self.assertEqual(m.run_propagation(), 0)
         self.assertEqual(invalidation_calls, 2)
 
+    def test_propagation_runs_restoration_to_joint_fixed_point(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        m.LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
+        m.LEDGER_PATH.write_text(
+            json.dumps({"rows": {}, "last_invalidations": []}),
+            encoding="utf-8",
+        )
+        invalidation_calls = 0
+        restoration_calls = 0
+
+        def fake_run(cmd, **_kwargs):
+            nonlocal invalidation_calls, restoration_calls
+            name = Path(cmd[1]).name
+            if name == "invalidate_stale_audits.py":
+                invalidation_calls += 1
+                payload = json.loads(m.LEDGER_PATH.read_text(encoding="utf-8"))
+                payload["last_invalidations"] = []
+                m.LEDGER_PATH.write_text(json.dumps(payload), encoding="utf-8")
+            if name == "restore_overaggressively_invalidated_audits.py":
+                restoration_calls += 1
+                restored = 1 if restoration_calls == 1 else 0
+                return mock.Mock(
+                    returncode=0,
+                    stdout=f"Restored {restored} audits across ledger\n",
+                    stderr="",
+                )
+            return mock.Mock(returncode=0, stdout="", stderr="")
+
+        with mock.patch("subprocess.run", side_effect=fake_run):
+            self.assertEqual(m.run_propagation(), 0)
+        self.assertEqual(invalidation_calls, 2)
+        self.assertEqual(restoration_calls, 2)
+
     def test_audit_invocation_history_rejects_replay_after_newer_audit(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -1140,7 +1174,7 @@ class ApplyAuditTest(unittest.TestCase):
         }
         with mock.patch.object(
             m, "trusted_evidence_manifest", return_value=manifest
-        ):
+        ), mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("clipped evidence", msg)
@@ -1171,7 +1205,9 @@ class ApplyAuditTest(unittest.TestCase):
             m,
             "trusted_manifest_current_error",
             return_value="source drifted",
-        ) as reauth:
+        ) as reauth, mock.patch.dict(
+            os.environ, {"AUDIT_FORENSIC_MODE": "1"}
+        ):
             ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("source drifted", msg)
@@ -1248,6 +1284,20 @@ class ApplyAuditTest(unittest.TestCase):
             )
         self.assertIsNone(validate.call_args.kwargs["evidence_manifest"])
 
+        declared_without_packet = {
+            **summary,
+            "no_go_discipline": None,
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+        }
+        self.assertIn(
+            "N1-N8 packet is required",
+            m.cross_summary_no_go_error(
+                declared_without_packet,
+                source_required=False,
+                current_evidence_manifest=None,
+            ) or "",
+        )
+
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             self.assertIn(
                 "authenticated evidence_snapshot",
@@ -1257,6 +1307,271 @@ class ApplyAuditTest(unittest.TestCase):
                     current_evidence_manifest={},
                 ) or "",
             )
+
+    def test_negative_assertion_declaration_is_persisted_and_cleared(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_declared_negative")
+        led = self.fx.read_ledger()
+        declared = {
+            "claim_id": "test_declared_negative",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded structural scope",
+            "auditor": "declaration-auditor",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "A",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, declared)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_declared_negative"]["negative_assertion_classes"],
+            ["bounded_with_named_walls"],
+        )
+
+        self._seed_one_row("test_cleared_negative")
+        clear_led = self.fx.read_ledger()
+        clear_led["rows"]["test_cleared_negative"][
+            "negative_assertion_classes"
+        ] = ["bounded_with_named_walls"]
+        cleared = {
+            "claim_id": "test_cleared_negative",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "positive structural scope",
+            "auditor": "clearing-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+        }
+        ok, msg = m.apply_one(clear_led, cleared)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            clear_led["rows"]["test_cleared_negative"][
+                "negative_assertion_classes"
+            ],
+            [],
+        )
+
+    def test_cross_confirmation_disagrees_when_negative_declaration_changes(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_negative_tuple",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        first = {
+            "claim_id": "test_negative_tuple",
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded structural scope",
+            "auditor": "first-declaration-auditor",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "A",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, first)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_negative_tuple"]["cross_confirmation"][
+                "first_audit"
+            ]["negative_assertion_classes"],
+            ["bounded_with_named_walls"],
+        )
+
+        second = {
+            **first,
+            "auditor": "second-declaration-auditor",
+            "independence": "fresh_context",
+            "negative_assertion_classes": [],
+            "no_go_discipline": None,
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, second)
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_negative_tuple"]
+        self.assertEqual(row["audit_status"], "audit_in_progress")
+        self.assertEqual(row["cross_confirmation"]["status"], "disagreement")
+        self.assertEqual(row["blocker"], "cross_confirmation_disagreement")
+
+    def test_cross_confirmation_disagrees_when_claim_scope_changes(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_scope_tuple", criticality="critical")
+        led = self.fx.read_ledger()
+        first = {
+            "claim_id": "test_scope_tuple",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the identity for n = 2",
+            "auditor": "first-scope-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+        }
+        ok, msg = m.apply_one(led, first)
+        self.assertTrue(ok, msg)
+        second = {
+            **first,
+            "auditor": "second-scope-auditor",
+            "independence": "fresh_context",
+            "claim_scope": "the identity for every n",
+        }
+        ok, msg = m.apply_one(led, second)
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_scope_tuple"]
+        self.assertEqual(row["audit_status"], "audit_in_progress")
+        self.assertEqual(row["cross_confirmation"]["status"], "disagreement")
+
+    def test_development_apply_preserves_core_evidence_gates(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_stale_development_transport")
+        stale_led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_stale_development_transport",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the exact positive identity",
+            "auditor": "development-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+        }
+        manifest = {
+            "docs/TEST.md": {"roles": ["source"], "text": "old source"}
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=manifest
+        ), mock.patch.object(
+            m, "trusted_manifest_current_error", return_value="source drifted"
+        ) as current_check:
+            ok, msg = m.apply_one(stale_led, audit)
+        self.assertFalse(ok)
+        self.assertIn("trusted evidence manifest is stale", msg)
+        self.assertFalse(
+            current_check.call_args.kwargs["dynamic_index_drift_invalidates"]
+        )
+
+        self._seed_one_row("test_clipped_development_transport")
+        clipped_led = self.fx.read_ledger()
+        clipped_audit = {
+            **audit,
+            "claim_id": "test_clipped_development_transport",
+            "auditor": "clipped-development-auditor",
+        }
+        clipped_manifest = {
+            "docs/TEST.md": {
+                "roles": ["source"],
+                "text": "... [packet-clipped docs/TEST.md; 999 chars total] ...",
+            }
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=clipped_manifest
+        ):
+            ok, msg = m.apply_one(clipped_led, clipped_audit)
+        self.assertFalse(ok)
+        self.assertIn("complete load-bearing packet surfaces", msg)
+
+    def test_judicial_side_must_preserve_chosen_scope_and_class(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_judicial_tuple",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        seat = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the identity for n = 2",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+        }
+        led["rows"]["test_judicial_tuple"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": seat,
+            "second_audit": {
+                **seat,
+                "auditor": "second-auditor",
+                "verdict": "audited_conditional",
+            },
+        }
+        judgment = {
+            "claim_id": "test_judicial_tuple",
+            "third_auditor": "judicial-panel",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "first",
+            "negative_assertion_classes": [],
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "positive_theorem",
+            "ratified_claim_scope": "the identity for n = 2",
+            "ratified_load_bearing_step_class": "D",
+            "judgment_rationale": "confirm the first seat",
+            "first_auditor_error": "none",
+            "second_auditor_error": "overstated the blocker",
+        }
+        missing_type = dict(judgment)
+        missing_type.pop("ratified_claim_type")
+        ok, msg = m.apply_one(json.loads(json.dumps(led)), missing_type)
+        self.assertFalse(ok)
+        self.assertIn("ratified_claim_type", msg)
+
+        ok, msg = m.apply_one(json.loads(json.dumps(led)), judgment)
+        self.assertFalse(ok)
+        self.assertIn("ratified_load_bearing_step_class", msg)
+
+        scope_judgment = {
+            **judgment,
+            "ratified_load_bearing_step_class": "C",
+            "ratified_claim_scope": "the identity for every n",
+        }
+        ok, msg = m.apply_one(json.loads(json.dumps(led)), scope_judgment)
+        self.assertFalse(ok)
+        self.assertIn("ratified_claim_scope", msg)
 
     def test_judicial_packet_transport_is_tier_gated(self):
         m = _import("apply_audit")
@@ -1277,6 +1592,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "claim_type": "positive_theorem",
                 "claim_scope": "positive scope",
                 "load_bearing_step_class": "C",
+                "negative_assertion_classes": [],
             },
             "second_audit": {
                 "auditor": "second-auditor",
@@ -1285,6 +1601,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "claim_type": "bounded_theorem",
                 "claim_scope": "bounded scope",
                 "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
             },
         }
         judgment = {
@@ -1307,6 +1624,7 @@ class ApplyAuditTest(unittest.TestCase):
             "no_go_discipline": {"status": "PASS"},
         }
         forensic_led = json.loads(json.dumps(led))
+        packetless_led = json.loads(json.dumps(led))
         with mock.patch.object(
             m.no_go_discipline_gate,
             "validate_no_go_discipline",
@@ -1321,6 +1639,18 @@ class ApplyAuditTest(unittest.TestCase):
 
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             ok, msg = m.apply_one(forensic_led, dict(judgment))
+        self.assertFalse(ok)
+        self.assertIn("trusted orchestrator evidence transport", msg)
+
+        packetless_judgment = {
+            **judgment,
+            "no_go_discipline": None,
+            "negative_assertion_classes": [],
+            "judgment_rationale": "the exact structural result closes",
+            "notes_for_re_audit_if_any": None,
+        }
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            ok, msg = m.apply_one(packetless_led, packetless_judgment)
         self.assertFalse(ok)
         self.assertIn("trusted orchestrator evidence transport", msg)
 
@@ -1361,6 +1691,33 @@ class ApplyAuditTest(unittest.TestCase):
         ):
             ok, msg = m.apply_one(led, audit)
         self.assertTrue(ok, msg)
+
+    def test_packetless_reclassification_of_stored_no_go_requires_transport(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_stored_foreclosure",
+            claim_type="no_go",
+            note_body="Exact positive source identity.\n",
+        )
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_stored_foreclosure",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "exact positive source identity",
+            "auditor": "fresh-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+            "no_go_discipline": None,
+        }
+        ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("trusted orchestrator evidence transport", msg)
 
     def test_terminal_disagreement_preserves_live_authority(self):
         m = _import("apply_audit")
@@ -1711,7 +2068,7 @@ class ApplyAuditTest(unittest.TestCase):
         second_audit = {
             **fresh_audit,
             "auditor": "fresh-packeted-second",
-            "negative_assertion_classes": [],
+            "negative_assertion_classes": ["no_go_result"],
             "independence": "fresh_context",
             "audit_invocation_id": "f" * 32,
         }
@@ -1721,6 +2078,12 @@ class ApplyAuditTest(unittest.TestCase):
             ok, msg = m.apply_one(led, second_audit)
         self.assertTrue(ok, msg)
         self.assertEqual(msg, "applied")
+        self.assertEqual(
+            led["rows"]["legacy_pending_no_go"]["cross_confirmation"][
+                "agreement_schema"
+            ],
+            "audit_tuple_v2",
+        )
 
     def test_hybrid_judicial_review_records_applyable_third_tuple(self):
         m = _import("apply_audit")
@@ -1740,6 +2103,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "auditor_family": "codex-gpt-5",
                 "verdict": "audited_clean",
                 "claim_type": "positive_theorem",
+                "claim_scope": "first exact scope",
                 "load_bearing_step_class": "C",
             },
             "second_audit": {
@@ -1748,6 +2112,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "auditor_family": "codex-gpt-5.5",
                 "verdict": "audited_clean",
                 "claim_type": "bounded_theorem",
+                "claim_scope": "second bounded scope",
                 "load_bearing_step_class": "A",
             },
         }
@@ -1770,15 +2135,75 @@ class ApplyAuditTest(unittest.TestCase):
             "second_auditor_error": "understated load-bearing class",
             "hybrid_resolution_note": "human-authorized second-stage panel",
         }
+        legacy_led = json.loads(json.dumps(led))
+        legacy_led["rows"]["test_hybrid"]["cross_confirmation"][
+            "first_audit"
+        ].pop("claim_scope")
+        ok, msg = m.apply_one(legacy_led, audit)
+        self.assertFalse(ok)
+        self.assertIn("cannot be upgraded to audit_tuple_v2", msg)
+
         ok, msg = m.apply_one(led, audit)
         self.assertTrue(ok, msg)
         row = led["rows"]["test_hybrid"]
         self.assertEqual(row["cross_confirmation"]["status"], "third_confirmed_hybrid")
+        self.assertEqual(
+            row["cross_confirmation"]["agreement_schema"], "audit_tuple_v2"
+        )
         self.assertEqual(row["cross_confirmation"]["third_audit"]["sided_with"], "hybrid")
         self.assertEqual(row["audit_status"], "audited_clean")
         self.assertEqual(row["claim_type"], "bounded_theorem")
         self.assertEqual(row["load_bearing_step_class"], "C")
         self.assertIsNone(row["blocker"])
+
+    def test_hybrid_judicial_review_requires_explicit_scope(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_hybrid_scope",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        seat = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "first scope",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+        }
+        led["rows"]["test_hybrid_scope"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": seat,
+            "second_audit": {
+                **seat,
+                "auditor": "second-auditor",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        judgment = {
+            "claim_id": "test_hybrid_scope",
+            "third_auditor": "judicial-panel",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "hybrid",
+            "negative_assertion_classes": [],
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_load_bearing_step_class": "C",
+            "judgment_rationale": "ratify a third tuple",
+            "first_auditor_error": "scope too narrow",
+            "second_auditor_error": "class too narrow",
+            "hybrid_resolution_note": "panel selected a hybrid",
+        }
+        ok, msg = m.apply_one(led, judgment)
+        self.assertFalse(ok)
+        self.assertIn("ratified_claim_scope", msg)
 
     def test_judicial_no_go_requires_discipline_packet(self):
         m = _import("apply_audit")
@@ -1828,6 +2253,7 @@ class ApplyAuditTest(unittest.TestCase):
             "negative_assertion_classes": [],
             "ratified_verdict": "audited_clean",
             "ratified_claim_type": "no_go",
+            "ratified_claim_scope": "the obstruction",
             "ratified_load_bearing_step_class": "A",
             "judgment_rationale": "the scoped obstruction closes",
             "first_auditor_error": "none on the scoped result",
@@ -2976,6 +3402,290 @@ class AuditLintTest(unittest.TestCase):
             row.setdefault("deps", [])
         self.fx.write_ledger({"schema_version": 1, "rows": rows})
 
+    def test_cross_confirmation_tuple_normalization_matches_apply_gate(self):
+        m = _import("audit_lint")
+        first = {
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded structural scope",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+                "conditional_wall_rationale",
+                "bounded_with_named_walls",
+            ],
+        }
+        equivalent = {
+            **first,
+            "claim_scope": " bounded   structural\nscope ",
+            "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale",
+                "bounded_with_named_walls",
+            ],
+        }
+        self.assertTrue(m.audit_summary_tuples_match(first, equivalent))
+        self.assertFalse(m.audit_summary_tuples_match(
+            first, {**equivalent, "claim_scope": "different scope"}
+        ))
+        self.assertFalse(m.audit_summary_tuples_match(
+            first, {**equivalent, "negative_assertion_classes": []}
+        ))
+
+    def test_lint_rejects_confirmed_scope_mismatch(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        first = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "independence": "cross_family",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "first scoped theorem",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+        }
+        second = {
+            **first,
+            "auditor": "second-auditor",
+            "independence": "fresh_context",
+            "claim_scope": "substantively different theorem",
+        }
+        rows = {
+            "critical_claim": {
+                "claim_id": "critical_claim",
+                "audit_status": "audited_clean",
+                "effective_status": "retained",
+                "claim_type": "positive_theorem",
+                "claim_scope": second["claim_scope"],
+                "chain_closes": True,
+                "auditor": second["auditor"],
+                "auditor_family": second["auditor_family"],
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "independence": "fresh_context",
+                "criticality": "critical",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
+                "cross_confirmation": {
+                    "status": "confirmed",
+                    "agreement_schema": "audit_tuple_v2",
+                    "first_audit": first,
+                    "second_audit": second,
+                },
+            }
+        }
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("full audit tuple mismatch", output.getvalue())
+
+        ledger = self.fx.read_ledger()
+        cross = ledger["rows"]["critical_claim"]["cross_confirmation"]
+        for unsupported_schema in ("audit_tuple_v999", None, [], {}):
+            with self.subTest(unsupported_schema=unsupported_schema):
+                cross["agreement_schema"] = unsupported_schema
+                self.fx.write_ledger(ledger)
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    rc = m.main()
+                self.assertEqual(rc, 1, output.getvalue())
+                self.assertIn(
+                    "unsupported cross_confirmation.agreement_schema",
+                    output.getvalue(),
+                )
+                self.assertNotIn(
+                    "legacy_cross_confirmation_tuple_mismatch",
+                    output.getvalue(),
+                )
+
+        cross.pop("agreement_schema")
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 0, output.getvalue())
+        self.assertIn("legacy_cross_confirmation_tuple_mismatch", output.getvalue())
+
+        cross["agreement_schema"] = "audit_tuple_v2"
+        cross["second_audit"]["claim_scope"] = cross["first_audit"]["claim_scope"]
+        cross["second_audit"]["negative_assertion_classes"] = [
+            "bounded_with_named_walls"
+        ]
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("full audit tuple mismatch", output.getvalue())
+
+        cross["first_audit"]["claim_scope"] = " normalized   scoped\ntheorem "
+        cross["second_audit"]["claim_scope"] = "normalized scoped theorem"
+        cross["first_audit"]["negative_assertion_classes"] = []
+        cross["second_audit"]["negative_assertion_classes"] = []
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("authoritative live row full audit tuple", output.getvalue())
+
+        live = ledger["rows"]["critical_claim"]
+        live["claim_scope"] = "normalized scoped theorem"
+        live["negative_assertion_classes"] = []
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 0, output.getvalue())
+
+        live["negative_assertion_classes"] = ["bounded_with_named_walls"]
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("authoritative live row full audit tuple", output.getvalue())
+        live["negative_assertion_classes"] = []
+
+        cross["first_audit"] = {}
+        cross["second_audit"] = {}
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("audit summary must be a non-empty object", output.getvalue())
+
+        cross["first_audit"] = "malformed-summary"
+        cross["second_audit"] = {}
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("audit summary must be a non-empty object", output.getvalue())
+
+        malformed = dict(first)
+        malformed["verdict"] = []
+        cross["first_audit"] = malformed
+        cross["second_audit"] = dict(malformed)
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("non-terminal verdict []", output.getvalue())
+
+    def test_lint_enforces_versioned_tuple_for_all_confirmed_paths(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        base = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "independence": "cross_family",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "first bounded scope",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+        }
+        for status, winner in (
+            ("confirmed", None),
+            ("third_confirmed_first", "first"),
+            ("third_confirmed_second", "second"),
+        ):
+            with self.subTest(status=status):
+                first = dict(base)
+                second = {
+                    **base,
+                    "auditor": "second-auditor",
+                    "independence": "fresh_context",
+                    "claim_scope": "second bounded scope",
+                }
+                cross = {
+                    "status": status,
+                    "agreement_schema": "audit_tuple_v2",
+                    "first_audit": first,
+                    "second_audit": second,
+                }
+                if winner:
+                    chosen = first if winner == "first" else second
+                    cross["third_audit"] = {
+                        **chosen,
+                        "auditor": "third-auditor",
+                        "independence": "judicial_review",
+                        "claim_scope": "third mismatched scope",
+                        "sided_with": winner,
+                    }
+                rows = {
+                    "terminal_claim": {
+                        "claim_id": "terminal_claim",
+                        "audit_status": "audited_conditional",
+                        "effective_status": "audited_conditional",
+                        "claim_type": "bounded_theorem",
+                        "claim_scope": "terminal bounded scope",
+                        "chain_closes": False,
+                        "auditor": "terminal-auditor",
+                        "auditor_family": "codex-gpt-5.6",
+                        "auditor_model": "gpt-5.6-sol",
+                        "auditor_reasoning_effort": "xhigh",
+                        "independence": "fresh_context",
+                        "criticality": "leaf",
+                        "load_bearing_step_class": "A",
+                        "negative_assertion_classes": [],
+                        "notes_for_re_audit_if_any": "other: tuple test",
+                        "cross_confirmation": cross,
+                    }
+                }
+                self._write_minimal_ledger(rows)
+                import contextlib, io
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    rc = m.main()
+                self.assertEqual(rc, 1, output.getvalue())
+                self.assertIn("full audit tuple", output.getvalue())
+                if winner:
+                    valid_third = cross["third_audit"]
+                    cross["third_audit"] = "malformed-third-summary"
+                    rows["terminal_claim"].update({
+                        "audit_status": "audited_clean",
+                        "effective_status": "retained_bounded",
+                        "chain_closes": True,
+                        "auditor_family": "claude-opus",
+                    })
+                    self._write_minimal_ledger(rows)
+                    output = io.StringIO()
+                    with contextlib.redirect_stdout(output):
+                        rc = m.main()
+                    self.assertEqual(rc, 1, output.getvalue())
+                    self.assertIn(
+                        "audit summary must be a non-empty object",
+                        output.getvalue(),
+                    )
+                    cross["third_audit"] = valid_third
+                    for unsupported_schema in (None, [], {}):
+                        with self.subTest(
+                            status=status,
+                            unsupported_schema=unsupported_schema,
+                        ):
+                            cross["agreement_schema"] = unsupported_schema
+                            self._write_minimal_ledger(rows)
+                            output = io.StringIO()
+                            with contextlib.redirect_stdout(output):
+                                rc = m.main()
+                            self.assertEqual(rc, 1, output.getvalue())
+                            self.assertIn(
+                                "unsupported cross_confirmation.agreement_schema",
+                                output.getvalue(),
+                            )
+                            self.assertNotIn(
+                                "legacy_cross_confirmation_tuple_mismatch",
+                                output.getvalue(),
+                            )
+
     def test_front_door_current_markdown_link_passes(self):
         m = _import("audit_lint")
         errors = m.front_door_axiom_pointer_errors(
@@ -3118,6 +3828,60 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1)
         self.assertIn("cross_confirmation.first_audit invalid", buf.getvalue())
+
+    def test_lint_tier_gates_snapshot_requirement_for_bounded_packet(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "bounded": {
+                "claim_id": "bounded",
+                "_body": "# Exact bounded source\n",
+                "audit_status": "audited_clean",
+                "effective_status": "retained_bounded",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "the scoped obstruction",
+                "chain_closes": True,
+                "auditor": "lint-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "independence": "cross_family",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
+                "no_go_discipline": _no_go_packet(),
+            }
+        }
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        buf = io.StringIO()
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}), \
+             contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0, buf.getvalue())
+
+        original_ledger = self.fx.read_ledger()
+        packetless_ledger = json.loads(json.dumps(original_ledger))
+        packetless_row = packetless_ledger["rows"]["bounded"]
+        packetless_row.pop("no_go_discipline", None)
+        packetless_row["negative_assertion_classes"] = [
+            "bounded_with_named_walls"
+        ]
+        self.fx.write_ledger(packetless_ledger)
+        buf = io.StringIO()
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}), \
+             contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("lacks structured No-Go Discipline", buf.getvalue())
+
+        self.fx.write_ledger(original_ledger)
+        buf = io.StringIO()
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}), \
+             contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("authenticated evidence_snapshot is required", buf.getvalue())
 
     def test_lint_allows_schema_old_no_go_packet_in_non_authoritative_history(self):
         m = _import("audit_lint")
@@ -3938,6 +4702,24 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 )
             )
 
+    def test_development_output_trigger_cannot_be_bypassed_by_empty_declaration(self):
+        m = _import("no_go_discipline_gate")
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            self.assertTrue(
+                m.output_requires_no_go_discipline({
+                    "claim_type": "bounded_theorem",
+                    "claim_scope": "No retained primitive supplies the wall.",
+                    "negative_assertion_classes": [],
+                })
+            )
+            self.assertFalse(
+                m.output_requires_no_go_discipline({
+                    "claim_type": "positive_theorem",
+                    "claim_scope": "The exact positive identity closes.",
+                    "negative_assertion_classes": [],
+                })
+            )
+
     def test_n3_excludes_explicit_accepted_premise_vocabulary(self):
         m = _import("no_go_discipline_gate")
         manifest = self._manifest()
@@ -3978,6 +4760,31 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
         )
+
+    def test_structural_only_ignores_embedded_snapshot_locators(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet()
+        unrelated_manifest = {
+            "docs/UNRELATED.md": {
+                "path": "docs/UNRELATED.md",
+                "roles": ["source"],
+                "text": "unrelated source text",
+            }
+        }
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(
+            packet, unrelated_manifest
+        )
+        audit = {
+            "claim_type": "bounded_theorem",
+            "verdict": "audited_clean",
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, structural_only=True)
+        )
+        self.assertIsNotNone(m.validate_no_go_discipline(audit))
 
     def test_no_go_output_candidate_caps_are_declared(self):
         m = _import("no_go_discipline_gate")
@@ -7211,11 +8018,17 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "claim_type": "no_go",
             "claim_type_author_hint": "no_go",
             "no_go_discipline": packet,
+            "negative_assertion_classes": ["no_go_result"],
             "previous_audits": [],
         }
         reset = m.archive_and_reset(row, "test invalidation")
         self.assertEqual(reset["previous_audits"][0]["no_go_discipline"], packet)
+        self.assertEqual(
+            reset["previous_audits"][0]["negative_assertion_classes"],
+            ["no_go_result"],
+        )
         self.assertNotIn("no_go_discipline", reset)
+        self.assertNotIn("negative_assertion_classes", reset)
 
     def test_packetless_clean_no_go_is_invalidated(self):
         m = _import("invalidate_stale_audits")
@@ -7240,6 +8053,20 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 m.detect_invalidation(row, {"legacy_no_go": row}),
                 "no_go_discipline_packet_missing",
             )
+
+    def test_packetless_declared_negative_conditional_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": "declared_negative_conditional",
+            "note_path": "docs/POSITIVE_SOURCE.md",
+            "audit_status": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+        }
+        self.assertEqual(
+            m.detect_invalidation(row, {"declared_negative_conditional": row}),
+            "no_go_discipline_packet_missing",
+        )
 
     def test_live_packet_invalid_under_current_policy_is_invalidated(self):
         m = _import("invalidate_stale_audits")
@@ -7435,6 +8262,7 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         missing = [f"missing_{index:02d}" for index in range(16)]
         rows = {
             "root": {
+                "claim_type": "positive_theorem",
                 "effective_status": "retained",
                 "deps": [
                     "minimal_axioms",
@@ -7478,9 +8306,56 @@ class ComputeLaneCertificationTest(unittest.TestCase):
             [{"claim_id": "absent_root", "effective_status": "not_in_ledger"}],
         )
 
-    def test_meta_context_respects_non_evidence_registry(self):
+    def test_multiple_scientific_roots_share_one_combined_closure(self):
+        rows = {
+            "first": {
+                "claim_type": "positive_theorem",
+                "effective_status": "retained",
+                "deps": ["shared"],
+            },
+            "second": {
+                "claim_type": "bounded_theorem",
+                "effective_status": "retained_bounded",
+                "deps": ["shared"],
+            },
+            "shared": {
+                "claim_type": "positive_theorem",
+                "effective_status": "retained",
+                "deps": [],
+            },
+        }
+        payload, _ = self._run(
+            [{"lane": "multi", "roots": ["first", "second"]}], rows
+        )
+        lane = payload["lanes"][0]
+        self.assertTrue(lane["certified"])
+        self.assertEqual(lane["roots"], ["first", "second"])
+        self.assertEqual(lane["closure_size"], 3)
+
+    def test_batch_orchestrator_unions_multi_root_lane_scope(self):
+        m = _import("orchestrate_audit_batch")
+        config = self.data / "lane_certification_config.json"
+        config.write_text(json.dumps({
+            "lanes": [{"lane": "multi", "roots": ["first", "second"]}]
+        }), encoding="utf-8")
+        rows = {
+            "first": {"deps": ["shared"]},
+            "second": {"deps": ["other"]},
+            "shared": {"deps": []},
+            "other": {"deps": []},
+        }
+        with mock.patch.object(m, "DATA", self.data), mock.patch.object(
+            m, "accepted", return_value=False
+        ):
+            scope = m.scope_for_args(
+                mock.Mock(lane="multi", claims=""), rows
+            )
+        self.assertEqual(scope, {"first", "second", "shared", "other"})
+
+    def test_metadata_never_satisfies_scientific_certification(self):
         rows = {
             "root": {
+                "claim_type": "positive_theorem",
                 "effective_status": "retained",
                 "deps": ["permitted_meta", "non_evidence_meta"],
             },
@@ -7495,11 +8370,18 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         lane = payload["lanes"][0]
         self.assertEqual(
             lane["blocking"],
-            [{"claim_id": "non_evidence_meta", "effective_status": "meta"}],
+            [
+                {"claim_id": "non_evidence_meta", "effective_status": "meta"},
+                {"claim_id": "permitted_meta", "effective_status": "meta"},
+            ],
         )
 
     def test_output_is_deterministic_and_pipeline_recomputes_after_invalidation(self):
-        rows = {"root": {"effective_status": "retained", "deps": []}}
+        rows = {"root": {
+            "claim_type": "positive_theorem",
+            "effective_status": "retained",
+            "deps": [],
+        }}
         lanes = [{"lane": "stable", "root": "root"}]
         _, first = self._run(lanes, rows)
         _, second = self._run(lanes, rows)
@@ -7513,6 +8395,13 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         self.assertGreater(
             script.index(invocation),
             script.index("did not reach a fixed point after 10 passes"),
+        )
+        apply_script = (
+            PROJECT_ROOT / "docs" / "audit" / "scripts" / "apply_audit.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn(
+            '("compute_lane_certification.py",      "refresh rolling lane certification")',
+            apply_script,
         )
 
 
@@ -8087,6 +8976,24 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertIn("N8 TRANSPORT BOUND", fitted)
         self.assertIn("do not return audited_clean", fitted)
 
+        development_manifest = {
+            path: {"text": full, "roles": ["cross_cycle_index"]}
+        }
+        development_fitted, _ = m.fit_prompt_to_transport_limit(
+            prompt,
+            development_manifest,
+            cid,
+            max_chars=2500,
+            forensic_bound=False,
+        )
+        self.assertIn("do not return audited_clean", development_fitted)
+        self.assertIn(
+            "does not force a verdict when the final classification carries no "
+            "negative assertion",
+            development_fitted,
+        )
+        self.assertIn("classify claim_type=no_go", development_fitted)
+
         snapshot = m.no_go_discipline_gate.build_evidence_snapshot({}, manifest)
         packet = {"evidence_snapshot": snapshot}
         current = {path: {"text": full, "roles": ["cross_cycle_index"]}}
@@ -8114,6 +9021,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         blob.update({
             "claim_id": "target",
             "verdict": "audited_clean",
+            "claim_type": "no_go",
             "audit_invocation_id": "a" * 32,
             "no_go_discipline": {
                 "status": "PASS",
@@ -8128,6 +9036,69 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertEqual(error, "transport-bounded N8 evidence forbids audited_clean")
 
+        declared_negative = {
+            **blob,
+            "claim_type": "bounded_theorem",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+        }
+        self.assertEqual(
+            m.validate_verdict(
+                declared_negative,
+                "target",
+                expected_invocation_id="a" * 32,
+                transport_bounded_n8=True,
+            ),
+            "transport-bounded N8 evidence forbids audited_clean",
+        )
+
+    def test_development_runner_validation_ignores_locator_containment(self):
+        m = _import_codex_audit_runner()
+        blob = {field: "x" for field in m.REQUIRED_VERDICT_FIELDS}
+        blob.update({
+            "claim_id": "bounded",
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "negative_assertion_classes": [],
+            "no_go_discipline": _no_go_packet(),
+        })
+        unrelated_manifest = {
+            "docs/UNRELATED.md": {
+                "roles": ["source"],
+                "text": "no packet locator appears here",
+            }
+        }
+        self.assertIsNone(
+            m.validate_verdict(
+                blob,
+                "bounded",
+                evidence_manifest=unrelated_manifest,
+            )
+        )
+        clipped_manifest = {
+            "docs/BOUNDED.md": {
+                "roles": ["source"],
+                "text": "... [packet-clipped docs/BOUNDED.md; 999 chars total] ...",
+            }
+        }
+        self.assertIn(
+            "complete load-bearing packet surfaces",
+            m.validate_verdict(
+                blob,
+                "bounded",
+                evidence_manifest=clipped_manifest,
+            ) or "",
+        )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertIsNotNone(
+                m.validate_verdict(
+                    blob,
+                    "bounded",
+                    evidence_manifest=unrelated_manifest,
+                )
+            )
+
     def test_fresh_schema_retry_exposes_error_not_rejected_conclusion(self):
         m = _import_codex_audit_runner()
         self.assertTrue(m.fresh_schema_retry_eligible(
@@ -8136,6 +9107,12 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertTrue(m.fresh_schema_retry_eligible(
             "no_go_discipline.status must be PASS or FAIL"
         ))
+        transport_error = "transport-bounded N8 evidence forbids audited_clean"
+        self.assertTrue(m.fresh_schema_retry_eligible(transport_error))
+        self.assertEqual(
+            m.fresh_schema_retry_code(transport_error),
+            "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH",
+        )
         self.assertFalse(m.fresh_schema_retry_eligible("claim_id mismatch"))
         code = m.fresh_schema_retry_code(
             "N1 route prior_secret.route_class exposes prior content"
@@ -8572,6 +9549,25 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             m.restore_audit_from_previous(row, {cid: row})
         )
 
+    def test_restore_refuses_packetless_declared_negative_conditional(self):
+        m = self._import_and_patch()
+        cid = "packetless_declared_conditional"
+        note_path = "docs/POSITIVE_CONDITIONAL.md"
+        self.fx.write_note(note_path, "# Positive bounded source\n")
+        archived = self._archived_audit(
+            audit_status="audited_conditional",
+            claim_type="bounded_theorem",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived["negative_assertion_classes"] = [
+            "bounded_with_named_walls"
+        ]
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+        self.assertIsNone(
+            m.restore_audit_from_previous(row, {cid: row})
+        )
+
     def test_selects_only_packet_missing_rows_whose_trigger_no_longer_fires(self):
         m = self._import_and_patch()
         restored_id = "positive_identity"
@@ -8679,6 +9675,24 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 {**archived, "verdict": archived["audit_status"]}
             )
         )
+        self.assertIsNone(m.restore_audit_from_previous(row, {cid: row}))
+
+    def test_restore_requires_packet_snapshot_currency(self):
+        m = self._import_and_patch()
+        cid = "bounded_packet_restore"
+        note_path = "docs/POSITIVE_PACKET_SOURCE.md"
+        self.fx.write_note(note_path, "# Positive source theorem\n")
+        archived = self._archived_audit(
+            claim_type="bounded_theorem",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived.update({
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "no_go_discipline": _no_go_packet(),
+        })
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
         self.assertIsNone(
             m.restore_audit_from_previous(row, {cid: row})
         )
@@ -9178,10 +10192,24 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             notes_for_re_audit_if_any="other: conditional row round-trip",
         )
         ok["negative_assertion_classes"] = ["bounded_with_named_walls"]
+        ok["no_go_discipline"] = {"status": "PASS"}
         row2 = self._seed_with_archived("declared_conditional", ok)
-        restored = m.restore_audit_from_previous(
-            dict(row2), {"declared_conditional": row2}
-        )
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_manifest_from_snapshot",
+            return_value={"authenticated": {}},
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_snapshot_current_error",
+            return_value=None,
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            restored = m.restore_audit_from_previous(
+                dict(row2), {"declared_conditional": row2}
+            )
         self.assertIsNotNone(restored)
         self.assertEqual(
             restored["negative_assertion_classes"], ["bounded_with_named_walls"]

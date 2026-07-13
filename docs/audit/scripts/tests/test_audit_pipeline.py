@@ -13427,7 +13427,7 @@ class N5AdministrativeNegationExclusionTest(unittest.TestCase):
 class BatchOrchestratorRetargetFlagTest(unittest.TestCase):
     """--retarget-conditionals bypasses the repair-wait guard for explicitly
     named claims only (gate/template calibrations are invisible to the
-    source/dep movement guard; grain wave 6, 2026-07-13)."""
+    source/dep movement guard; 2026-07-13)."""
 
     def test_retarget_bypasses_repair_wait_for_named_claim_only(self):
         m = _import("orchestrate_audit_batch")

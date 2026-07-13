@@ -1,3 +1,3 @@
 # PR backlog
 
-No backlog item. PR creation is planned after checks and milestone review.
+No backlog item. Review PR #5329 is open for the coherent science block.

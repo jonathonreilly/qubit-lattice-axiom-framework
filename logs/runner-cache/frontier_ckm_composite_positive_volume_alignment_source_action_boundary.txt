@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ckm_composite_positive_volume_alignment_source_action_boundary.py
+runner_sha256: 29c3ac84ad4998279010bc1e10d7abad3d7304ef454d42de39325dc7309c6b73
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+CKM COMPOSITE POSITIVE-VOLUME ALIGNMENT SOURCE-ACTION BOUNDARY
+
+1. FIXED-SPECTRUM RESIDUAL-Z2 ORBIT
+[EXACT_PASS] H_d commutes with the selected Z2
+[EXACT_PASS] H_u(theta) commutes with the same Z2
+[EXACT_PASS] H_d has fixed spectrum {1,4,9}
+[EXACT_PASS] H_u(theta) has fixed spectrum {1,4,16}
+[EXACT_PASS] projector overlap is cos(theta)^2
+[BOUNDARY_PASS] fixed spectra admit overlap one
+[BOUNDARY_PASS] fixed spectra admit overlap zero
+[EXACT_PASS] exact H_d endpoint matrix matches the note
+[EXACT_PASS] exact aligned H_u endpoint matches the note
+[EXACT_PASS] exact orthogonal H_u endpoint matches the note
+
+2. EIGHTEEN-DIMENSIONAL DETERMINANT BALANCE
+[EXACT_PASS] C,D,E are pairwise orthogonal
+[EXACT_PASS] C,D,E resolve the identity
+[EXACT_PASS] projector ranks are (3,5,10)
+[EXACT_PASS] det Z=t^3 R^-5
+[BOUNDARY_PASS] Z becomes singular of rank 15 at t=0
+[BOUNDARY_PASS] general block powers give det Z=t^(3 alpha)R^(-5 beta)
+[BOUNDARY_PASS] equally covariant atomic lifts give exponents 5,5/2,10/3
+[EXACT_PASS] determinant-neutral witness R=q^3,t=q^5 is exact
+[EXACT_PASS] neutrality gives t=R^(5/3)
+
+3. CONDITIONAL POSITIVE-VOLUME ACTIONS
+[EXACT_PASS] Gamma_det has stationary point at z=1
+[EXACT_PASS] Gamma_det is strictly convex at z=1
+[EXACT_PASS] volume action derivative vanishes at R=q^3,t=q^5
+[EXACT_PASS] volume action vanishes at the five-thirds law
+[EXACT_PASS] volume action has positive curvature at the target
+[EXACT_PASS] closest scalar projection has determinant one
+[EXACT_PASS] independent affine-distance control gives (log det)^2/18
+[EXACT_PASS] general rank law has determinant t^a R^-b
+
+4. NATURAL-ACTION BOUNDARIES
+[BOUNDARY_PASS] full trace-logdet stationarity is R-independent
+[BOUNDARY_PASS] full trace-logdet action selects t=1
+[BOUNDARY_PASS] full trace-logdet minimum is strict at t=1
+[BOUNDARY_PASS] bare logdet has no interior stationary point
+[BOUNDARY_PASS] linear mixed trace is affine in the projector overlap
+[BOUNDARY_PASS] linear mixed trace has only commuting endpoint extrema
+
+5. STRICT-JACOBI FIXED-SPECTRUM COUNTERFAMILY
+[EXACT_PASS] strict Jacobi family has fixed spectrum C-S,C,C+S
+[EXACT_PASS] displayed middle vector is the C eigenvector
+[EXACT_PASS] displayed upper vector is the C+S eigenvector
+[BOUNDARY_PASS] relative Jacobi overlap is sin(phi-theta)^2/2
+[BOUNDARY_PASS] strict positive-link controls give distinct overlaps
+
+6. NNI COEFFICIENT SOURCE-LAW BOUNDARY
+[EXACT_PASS] required NNI coefficient reproduces target mixing tangent
+[EXACT_PASS] direct NNI block diagonalization reaches the target on-branch
+[BOUNDARY_PASS] small-angle branch denominator is positive in the exact control
+[BOUNDARY_PASS] required coefficient scales as R^(1/3)
+[BOUNDARY_PASS] constant NNI coefficient instead starts at R^(1/2)
+
+7. CLAIM-BOUNDARY FIREWALLS
+[BOUNDARY_PASS] source note declares bounded_theorem
+[BOUNDARY_PASS] source note declares exact support/boundary theorem
+[BOUNDARY_PASS] source note declares negative route pruning
+[BOUNDARY_PASS] conditional action is not presented as framework-derived
+[BOUNDARY_PASS] physical source action remains open
+[BOUNDARY_PASS] full mass pair remains open
+[BOUNDARY_PASS] retained-grade proposal language is forbidden
+[BOUNDARY_PASS] note contains no observed target values
+
+SUMMARY: EXACT_PASS=27 BOUNDARY_PASS=24 FAIL=0
+
+----- stderr -----
+

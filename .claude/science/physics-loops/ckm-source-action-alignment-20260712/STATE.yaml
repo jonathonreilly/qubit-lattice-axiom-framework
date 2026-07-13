@@ -1,0 +1,35 @@
+loop_slug: ckm-source-action-alignment-20260712
+date: 2026-07-12
+mode: run
+target: best-honest-status
+science_block: 03
+cycle_count: 1
+branch: physics-loop/ckm-source-action-alignment-block03-20260712
+base_branch: physics-loop/ckm-composite-typed-bridge-block02-20260712
+base_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5272
+status: ready_to_publish
+claim_type: bounded_theorem
+actual_current_surface_status: exact support/boundary theorem
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: composite_positive_volume_determinant_balance
+hard_residual: derive_physical_tensor_carrier_rank_lift_block_dictionary_and_positive_volume_action
+registry_edits: false
+retirement_claimed: false
+proposal_allowed: false
+proposal_allowed_reason: tested authority does not derive the mass pair, physical tensor-carrier composition, rank lift, block-weight dictionary, or composite volume action
+open_imports:
+  - physical derivation of the quark mass-operator pair and its spectra
+  - physical composition of the six-state and generation carriers
+  - asymmetric rank-(3,5) projector-lift selector
+  - unit overlap and inverse-ratio block-weight dictionary
+  - positive-volume-neutral composite source action
+verification:
+  runner: "EXACT_PASS=27 BOUNDARY_PASS=24 FAIL=0"
+  py_compile: pass
+  independent_review: "PASS WITH BOUNDED CLAIMS; 2 iterations"
+  audit_pipeline: "pass; newly seeded rows=2 including stacked parent"
+  audit_lint_strict: "pass with 31 existing warnings and 248 notices; no errors"
+  pipeline_outputs_stripped: pass
+next_exact_action: derive the carrier composition, lift, block dictionary, and positive-volume action from a physical quark source surface, or keep the representation conditional
+main_refresh_policy: do not refresh this stacked block or its parents merely because fast-moving main is ahead

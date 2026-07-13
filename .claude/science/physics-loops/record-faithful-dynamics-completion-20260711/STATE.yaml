@@ -8,35 +8,33 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block31-nonfiber-derivative-invariant-ball-20260712
+branch: physics-loop/record-faithful-dynamics-block32-localized-marked-invariant-ball-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 31
-block_count: 31
-active_route: wilson_staggered_split_derivative_unlocalized_cauchy_certificate_boundary
+cycle_count: 32
+block_count: 32
+active_route: wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_split_derivative_and_unlocalized_cauchy_certificate_boundary_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  The constrained-fiber derivative is exactly a Banach-valued conditional
-  expectation on the controlled finite-local-source class and has a
-  base-dependent lifted/centered split. The centered kernel is not nonlinear.
-  Consistent half-weight bookkeeping proves that the current unlocalized
-  Cauchy-plus-geometry certificate stays above 68 everywhere, while a fixed
-  plaquette-character tail gives a finite-jet raw floor below one. This is a
-  certificate boundary, not dynamical noncontraction. No invariant ball,
-  localized full derivative, physical relevance/taste selector, critical
-  trajectory, or continuum theorem is proved.
+  Retaining the actual activity row K sharpens the weak base defect to
+  68 exp(Lambda/2)K. Product-Haar centering plus unique marked-path rerooting
+  through both expansion layers gives an explicit anchored attachment
+  constant A_att(K,c). At one ultra-deep point the projected derivative is a
+  strict strong-to-weak contraction with q_sw=exp(-1/2). The output is not yet
+  proved to return to the same strong split norm, so no autonomous invariant
+  ball, physical relevance/taste selector, critical trajectory, or continuum
+  theorem is proved.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves exact derivative/cumulant and split-projection identities,
-  an exact nonlinear centered-kernel counterexample, and a bounded limitation
-  of the existing absolute Cauchy certificate. It does not promote finite
-  local-source control to a full interaction-ball Frechet theorem or infer an
-  actual noncontraction result.
+  The source proves a regulator-uniform anchored marked-source estimate and a
+  strict one-step operator bound between explicitly different strong and weak
+  norms. It keeps the same-norm handoff, running center, nonlinear invariant
+  ball, physical carrier, and critical scaling open.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -139,6 +137,9 @@ files_touched:
   - docs/WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_split_derivative_cauchy_certificate_boundary_2026_07_12.py
   - logs/runner-cache/wilson_staggered_split_derivative_cauchy_certificate_boundary_2026_07_12.txt
+  - docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -187,10 +188,11 @@ no_go_routes:
   - one-step simultaneous gauge--Grassmann norm membership does not by itself define an invariant factor-two rescaled neighborhood or remove the exact raw relevant directions
   - geometric suppression of every extended raw lifted mode does not control the non-fiber derivative or prove invariance/nonlinear contraction of one joint ball
   - the exact base-dependent conditional-centering split kills the centered tangent only at first order; its kernel is not an ideal, and the current unlocalized Cauchy-plus-geometry certificate remains above 68 even though localized forced-attachment and spectral-smoothing routes remain live
+  - a strict one-step strong-to-weak derivative contraction does not by itself return the coarse action to the same strong split norm or control a running center and nonlinear invariant ball
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -222,14 +224,14 @@ block28_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block29_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5327
 block30_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5330
 block31_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5333
+block32_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5338
 next_exact_action: >-
-  Prove a scale-localized marked-cluster estimate for
-  E_Phi=E_0+(E_Phi-E_0): construct a uniformly bounded local section for the
-  product-fiber response, retain the forced attachment of every centered mark
-  to at least one determinant/Wilson/Schur base activity, and derive explicit
-  base-offset, derivative, and Hessian constants. Then test
-  B+q delta+(M/2)delta^2<=delta on one autonomous joint chart. Keep any
-  contraction in this deep wedge distinct from criticality.
+  Construct an autonomous next-level norm or block-saturated local-section
+  handoff that bounds the weak coarse output in the same strong split space.
+  Track the direct-sum algebra constant, derive the same-norm two-mark Hessian
+  and running-center flow, and then turn the already-feasible
+  B+q delta+(M/2)delta^2 inequality into a genuine invariant ball. Keep the
+  resulting ultra-massive basin distinct from criticality.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

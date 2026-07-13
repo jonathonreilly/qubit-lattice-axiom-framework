@@ -948,3 +948,39 @@ and generated audit/status surfaces are stripped. PR #5333 is open. The next
 target is a bounded local section plus forced-base-attachment marked-cluster
 estimate and explicit `B,q,M,delta` invariant-ball test. No axiom-update stop
 is triggered.
+
+## K-retaining marked attachment and strong-to-weak contraction review
+
+PASS WITH BOUNDED CLAIMS after one governance repair. Re-running the first
+rooted-tree recursion without replacing its actual activity row by the
+allowance keeps the first-layer and rooted hard-core connected row at `K`.
+The weak non-onsite base defect therefore improves from
+`68 exp(Lambda/2)c` to `68 exp(Lambda/2)K`.
+
+For a product-Haar-centered mark, the empty base collection vanishes. The
+unique marked path to an output anchor pays one step
+`tau=K sup_n n exp[-(c-K)n]` at every distinguished factor. The first layer
+gives `a_0+tau/(1-tau)` and the second hard-core rerooting gives the final
+factor `1/(1-tau)`. Code/math review independently reconstructed both path
+decompositions and confirmed there is no duplicated reserve or missing
+endpoint factor. It also recomputed the exact integer suprema, all activity
+series, the 68/half-weight conversion, and the conditional Hessian diagnostic.
+
+At the ultra-deep witness the centered derivative constant is `1.743321e-7`,
+the raw component is `exp(-1/2)`, and the strong split source norm maps to the
+weak coarse norm with `q_sw=0.606530659713`. Physics/import/Nature review
+passes the coefficientwise product-Haar meaning, dummy-support overcount,
+joint gauge--Grassmann scope, and explicit denial of taste, fixed-point,
+critical, or continuum conclusions. Governance/no-go review required N3 to
+classify `standard exclusion bound` and `natural product and module bounds`;
+the repaired note makes the former a linked/self-contained hard-core reuse and
+the latter auxiliary non-load-bearing hypotheses only.
+
+Runner/cache: `PASS=9 FAIL=0`. Independent Decimal summation and brute integer
+maximization reproduce `K`, `tau`, `A_att`, `q_sw`, and `B_weak`. Audit
+validation seeds one `bounded_theorem` / `unaudited` row with source hash
+`53933fde7bccef49...` and exactly the joint-polymer and split-derivative
+dependencies; strict lint has zero errors and generated outputs are stripped.
+PR #5338 is open. The next target is an autonomous next-level strong-norm
+handoff, same-norm Hessian, running center, and genuine invariant ball. No
+axiom-update stop is triggered.

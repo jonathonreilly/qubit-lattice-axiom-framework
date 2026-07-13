@@ -51,3 +51,11 @@
 - Repo governance and claim polarity: `PASS`.
 
 Milestone `review-loop` disposition: `iteration_2_pass`.
+
+## Audit compatibility validation
+
+At rebased source commit `5968f1934`, a disposable worktree ran the complete
+16-stage audit pipeline, `audit_lint.py --strict`, and `git diff --check`.
+Strict lint returned no errors. The new no-go row was queue-visible and
+unaudited; the original row remained meta. No generated audit/effective-status
+files were copied to the science branch.

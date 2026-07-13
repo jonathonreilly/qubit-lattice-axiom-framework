@@ -13,6 +13,18 @@ The conditional theorem proves that Hilbert geometry plus a linear
 differentiable norm-preserving one-parameter group gives a self-adjoint
 generator. A carrier basis, support semantics, and locality remain independent.
 
+## Verification
+
+- new runner: `PASS=20 FAIL=0`;
+- independent manual/SymPy algebra: Markov spectrum, nonlinear group law,
+  dense-family spectrum/edge count, basis diagonalization, and generator signs
+  agree;
+- review-loop: iteration 2 `PASS` across all required reviewers;
+- vocabulary lint: zero violations;
+- full audit pipeline and strict lint in a disposable worktree: no errors;
+- pipeline result: original row `meta`/`unaudited`; separate row
+  `no_go`/`unaudited`, queue-visible, with `minimal_axioms` dependency.
+
 ## Proposed later integration
 
 Independent audit should audit

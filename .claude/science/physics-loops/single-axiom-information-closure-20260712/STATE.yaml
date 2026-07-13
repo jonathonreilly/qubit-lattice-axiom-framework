@@ -51,10 +51,17 @@ no_go_routes:
   - generator support is not basis invariant without a carrier basis
 trace_gate_classification: direct_blocker_closure
 review_disposition: iteration_2_pass
+audit_compatibility_validation: >-
+  PASS in disposable worktree at source commit 5968f1934 on origin/main
+  663d3b5f0: full 16-stage pipeline and audit_lint --strict returned no
+  errors; the original row remained meta/unaudited and the separate no_go row
+  seeded unaudited with dependency minimal_axioms, its paired runner, and audit
+  queue visibility. No generated audit authority was copied to this branch.
 pr_status: pending
 next_exact_action: >-
-  Validate audit compatibility without applying audit verdicts, then commit,
-  push, and open one unmerged review PR.
+  Push the reviewed branch and open one unmerged review PR. After landing,
+  independently audit the separate no_go row without applying its negative
+  polarity to the original meta identity's positive consumers.
 stop_condition: >-
   Stop when the scoped no-go and conditional reconstruction pass review and
   checks and one verified unmerged review PR is open.

@@ -75,7 +75,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 21 | resolved_or_superseded | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem / audited_conditional / audited_conditional |
 | 22 | resolved_or_superseded | `lorentz_violation_derived_note` | bounded_theorem / audited_conditional / audited_conditional |
 | 23 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / unaudited / unaudited |
-| 24 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
+| 24 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem / audited_conditional / audited_conditional |
 | 25 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
 | 26 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | bounded_theorem / unaudited / unaudited |
 | 27 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |

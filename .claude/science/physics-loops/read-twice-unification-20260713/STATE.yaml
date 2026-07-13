@@ -1,0 +1,34 @@
+campaign: read-twice-unification
+started: 2026-07-13
+owner_directive: >
+  "go ahead and execute it — do not run any audit work though, we are
+  reworking the audit to reduce disk usage." Executes the 2026-07-13
+  handoff (read_twice_proposal_handoff.md): handle "a record must be read
+  twice" as a derive-first packet per P0–P4, unified with the write-side
+  ("written twice") packet from the same-day formation discussion.
+worktree: /Users/jonBridger/tp-read-twice
+branch: science/read-twice-unified-packets-20260713
+constraints:
+  - NO audit-lane work of any kind (owner constraint 2026-07-13; audit
+    rework in progress to reduce disk usage): no pipeline scripts, no
+    ledger/status/registry actions, artifacts kept light on disk.
+  - No axiom edit, no registration (owner actions; packet text prepared
+    only), conditional wording throughout, P-LINK-AVAIL decoupled.
+deliverables:
+  note: docs/READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md
+  runner: scripts/read_twice_packet_derive_first_unification_2026_07_13.py
+  cache: logs/runner-cache/read_twice_packet_derive_first_unification_2026_07_13.txt
+result_shape: >
+  P2 verdicts: R-FORM (a) underivable extension, (b) motivated-not-derived
+  (permanence enforceability; single write provably adjoint-revocable in
+  the classified class), (c) underivable load-bearing (w-panel precedent),
+  (d) proven obligations. R-READ reduces ENTIRELY: ontology to R-FORM,
+  discriminator forced to the two formation registers, pairing to
+  FRAME-EXT + Gleason on the realized two-register composite (M_4), with
+  the coincidence functional = |c|^2 exact on the minimal representative;
+  FINITE-ADDITIVITY-TO-FRAME gap narrowed (clause 4 realized physically),
+  not closed. No new registration content in "read twice".
+process:
+  - supervisor-drafted note; worker-drafted runner from exact spec
+    (gpt-5.6-sol max); three-seat framework-blind physicist panel
+    (read-only seats) BEFORE PR per the handoff's P4.

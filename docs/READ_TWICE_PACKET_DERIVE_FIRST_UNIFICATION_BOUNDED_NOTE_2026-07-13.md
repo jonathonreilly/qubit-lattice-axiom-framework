@@ -44,7 +44,9 @@ packets of the same shape. Neither packet is registered by this note.
 (R-FORM-b) Independence: a formation event comprises two write events on
            DISJOINT register regions, each register's conditional content
            tied to the site outcome and, given that outcome, to nothing
-           else. [physical clause, part 1]
+           else. The outcome decomposition is the site's admissible menu,
+           supplied upstream by the Admissibility axiom - the packet
+           chooses no basis. [physical clause, part 1]
 (R-FORM-c) Counting: realized records count per admissible possibility,
            never per coordinate, dimension, or presentation.
            [physical clause, part 2 - where any weight content hides]
@@ -118,12 +120,17 @@ input in the pointer span with coefficients `c_0, c_1`:
    registers on outcome `i` — equals `c_i^* c_i = |c_i|^2`, the diagonal of
    a sesquilinear form: the R-READ-c pairing appears as the agreement
    functional of the two formation witnesses, not as a postulate;
-3. this functional satisfies all four FRAME-EXT clauses **on the realized
-   two-register menu**: content-determined (invariant under register-basis
-   unitaries), nonnegative, normalized, and defined on the composite
-   projection lattice that the formation event physically realizes
-   (`M_2 tensor M_2 = M_4`, dimension 4 >= 3, so Gleason's uniqueness
-   applies on that domain);
+3. this functional is content-determined (invariant under register-basis
+   unitaries), nonnegative, and normalized, and the composite carrier that
+   FRAME-EXT's clause (4) must otherwise supply by hand —
+   `M_2 tensor M_2 = M_4` with its projection lattice — is here realized
+   physically by the formation event. Precisely: given FRAME-EXT's
+   extension clauses on that realized carrier, Gleason's theorem
+   (dimension 4 >= 3, textbook import) forces the density form, and the
+   coincidence functional is exactly the density-form diagonal the
+   extension must match on the realized menu. The realized menu alone does
+   NOT supply Gleason's domain — the extension to all orthogonal
+   decompositions remains FRAME-EXT content; that is the surviving gap;
 4. the single-register control fails: on one register alone (`M_2`), the
    known dimension-2 loophole frame function `f(P_n) = (1 + n_z^3)/2` is
    nonnegative, normalized, and additive on every orthogonal `M_2` pair yet

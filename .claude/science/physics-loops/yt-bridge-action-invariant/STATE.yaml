@@ -25,7 +25,7 @@ trace_gate_classification: negative_route_pruning
 trace_reachability: prunes
 review_findings: "Iteration 1 blockers fixed by claim-ID split, Borel/Jensen domain repair, nonlinear path-kernel boundary, strengthened runner, and completed N1-N8 packet."
 review_disposition: pass
-pr_status: pending
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5329"
 next_exact_action: "Open independent audit on the new no-go after review PR integration; then attempt the gauge-covariant microscopic operator route."
 stop_condition: "One coherent reviewed science block is pushed and one review PR is opened, or core tooling globally fails."
 actual_current_surface_status: no-go

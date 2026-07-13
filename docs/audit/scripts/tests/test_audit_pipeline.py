@@ -3466,7 +3466,7 @@ class AuditLintTest(unittest.TestCase):
 
         ledger = self.fx.read_ledger()
         cross = ledger["rows"]["critical_claim"]["cross_confirmation"]
-        for unsupported_schema in ("audit_tuple_v999", [], {}):
+        for unsupported_schema in ("audit_tuple_v999", None, [], {}):
             with self.subTest(unsupported_schema=unsupported_schema):
                 cross["agreement_schema"] = unsupported_schema
                 self.fx.write_ledger(ledger)
@@ -3636,7 +3636,7 @@ class AuditLintTest(unittest.TestCase):
                         output.getvalue(),
                     )
                     cross["third_audit"] = valid_third
-                    for unsupported_schema in ([], {}):
+                    for unsupported_schema in (None, [], {}):
                         with self.subTest(
                             status=status,
                             unsupported_schema=unsupported_schema,

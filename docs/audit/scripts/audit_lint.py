@@ -982,9 +982,12 @@ def main() -> int:
 
         xc = row.get("cross_confirmation") or {}
         xc_status = xc.get("status") if isinstance(xc, dict) else None
-        agreement_schema = xc.get("agreement_schema") if isinstance(xc, dict) else None
+        agreement_schema_present = (
+            isinstance(xc, dict) and "agreement_schema" in xc
+        )
+        agreement_schema = xc.get("agreement_schema") if agreement_schema_present else None
         if (
-            agreement_schema is not None
+            agreement_schema_present
             and agreement_schema != AUDIT_TUPLE_AGREEMENT_SCHEMA
         ):
             errors.append(
@@ -995,7 +998,7 @@ def main() -> int:
             isinstance(xc, dict)
             and agreement_schema == AUDIT_TUPLE_AGREEMENT_SCHEMA
         )
-        summary_access_allowed = agreement_schema is None
+        summary_access_allowed = not agreement_schema_present
         if isinstance(xc, dict) and xc_status == "confirmed":
             first = xc.get("first_audit") or {}
             second = xc.get("second_audit") or {}
@@ -1010,12 +1013,12 @@ def main() -> int:
                         )
             tuples_match = (
                 audit_summary_tuples_match(first, second)
-                if agreement_schema is None
+                if not agreement_schema_present
                 or (exact_tuple_schema and tuple_schema_valid)
                 else None
             )
             summary_access_allowed = (
-                agreement_schema is None
+                not agreement_schema_present
                 or (exact_tuple_schema and tuple_schema_valid)
             )
             if exact_tuple_schema and tuple_schema_valid and tuples_match is False:
@@ -1024,7 +1027,7 @@ def main() -> int:
                     "(verdict, claim_type, normalized claim_scope, "
                     "load_bearing_step_class, negative_assertion_classes)"
                 )
-            elif agreement_schema is None and tuples_match is False:
+            elif not agreement_schema_present and tuples_match is False:
                 message = (
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
                     "(verdict, claim_type, normalized claim_scope, "
@@ -1064,7 +1067,7 @@ def main() -> int:
                             )
                 third_dict = third if isinstance(third, dict) else {}
                 summary_access_allowed = (
-                    agreement_schema is None
+                    not agreement_schema_present
                     or (exact_tuple_schema and tuple_schema_valid)
                 )
                 if summary_access_allowed:
@@ -1076,7 +1079,7 @@ def main() -> int:
                         )
                 tuples_match = (
                     audit_summary_tuples_match(third, winning)
-                    if agreement_schema is None
+                    if not agreement_schema_present
                     or (exact_tuple_schema and tuple_schema_valid)
                     else None
                 )
@@ -1092,7 +1095,7 @@ def main() -> int:
                     )
                 elif (
                     expected_side != "hybrid"
-                    and agreement_schema is None
+                    and not agreement_schema_present
                     and tuples_match is False
                 ):
                     message = (

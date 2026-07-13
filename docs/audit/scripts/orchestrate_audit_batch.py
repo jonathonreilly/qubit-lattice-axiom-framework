@@ -885,14 +885,31 @@ def apply_serialized(
         available = {seat for delivery_cid, seat in deliveries if delivery_cid == cid}
         if cid in compute_skips:
             continue
-        if available != {1, 2}:
+        if not available:
             invalid_claims.add(cid)
-            for seat in sorted(available):
-                deliveries.pop((cid, seat), None)
             report.append({
                 "cid": cid,
                 "result": "critical_peer_delivery_missing",
-                "detail": f"validated seats={sorted(available)}; required=[1, 2]",
+                "detail": "validated seats=[]; required=[1, 2]",
+            })
+        elif available != {1, 2}:
+            # Bank the single validated seat instead of discarding it. The
+            # apply contract natively supports this: a lone clean seat lands
+            # as audit_in_progress/awaiting_second and the next run resumes
+            # with only the missing peer (passes_for_row -> [2]). Discarding
+            # validated xhigh work forced whole-pair reruns (grain wave 4,
+            # 2026-07-13: seat 1 validated end-to-end and was thrown away
+            # because seat 2 failed packet schema). The failed peer's
+            # validation report stands on its own; it must not poison the
+            # validated seat's apply.
+            invalid_claims.discard(cid)
+            report.append({
+                "cid": cid,
+                "result": "critical_peer_pending",
+                "detail": (
+                    f"validated seats={sorted(available)}; banking them and "
+                    "awaiting the peer seat in a later run"
+                ),
             })
 
     for key in sorted(deliveries):

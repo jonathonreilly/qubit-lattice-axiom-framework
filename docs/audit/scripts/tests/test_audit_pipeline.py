@@ -12976,3 +12976,63 @@ class BatchOrchestratorHashDriftPreflightTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BatchOrchestratorSeatBankingTest(unittest.TestCase):
+    """A lone validated critical seat banks as awaiting_second instead of
+    being discarded (grain wave 4, 2026-07-13: seat 1 validated end-to-end
+    and was thrown away because seat 2 failed packet schema)."""
+
+    def _jobs(self, m, results):
+        row = {"claim_id": "crit_row", "criticality": "critical",
+               "audit_status": "unaudited", "cross_confirmation": None}
+        jobs = []
+        for pass_no, outcome in results.items():
+            jobs.append({
+                "cid": "crit_row", "pass": pass_no, "row": row,
+                "_outcome": outcome,
+            })
+        return jobs
+
+    def _run(self, m, jobs):
+        applied = []
+
+        def fake_finalize(job):
+            if job["_outcome"] == "ok":
+                return {"audit": {"verdict": "audited_clean"}}, {"ok": True}
+            return None, {
+                "cid": job["cid"], "pass": job["pass"],
+                "result": "validation_failed", "detail": "N7 wording",
+            }
+
+        def fake_apply_one(job, envelope, retries):
+            applied.append((job["cid"], job["pass"]))
+            return True, {
+                "cid": job["cid"], "pass": job["pass"],
+                "result": "audited_clean",
+            }
+
+        report = []
+        with mock.patch.object(m, "finalize_worker", side_effect=fake_finalize), \
+                mock.patch.object(m, "apply_one_serialized", side_effect=fake_apply_one):
+            ok, _ = m.apply_serialized(jobs, report)
+        return ok, report, applied
+
+    def test_single_validated_seat_banks(self):
+        m = _import("orchestrate_audit_batch")
+        ok, report, applied = self._run(
+            m, self._jobs(m, {1: "ok", 2: "failed"})
+        )
+        self.assertEqual(applied, [("crit_row", 1)])
+        results = {item["result"] for item in report}
+        self.assertIn("critical_peer_pending", results)
+        self.assertNotIn("critical_peer_delivery_missing", results)
+
+    def test_zero_validated_seats_still_reports_missing(self):
+        m = _import("orchestrate_audit_batch")
+        ok, report, applied = self._run(
+            m, self._jobs(m, {1: "failed", 2: "failed"})
+        )
+        self.assertEqual(applied, [])
+        results = {item["result"] for item in report}
+        self.assertIn("critical_peer_delivery_missing", results)

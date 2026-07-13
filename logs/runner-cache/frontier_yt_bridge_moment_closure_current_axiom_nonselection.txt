@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_bridge_moment_closure_current_axiom_nonselection.py
+runner_sha256: d770fb7948aacee115915f1c3365f12b64872ac0fd0328ed7aae5d0cd9e4c959
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+==============================================================================
+YT BRIDGE FIRST-ORDER MOMENT NONSELECTION: EXACT CURRENT-AXIOM OBSTRUCTION
+==============================================================================
+[PASS (B)] B1-current-axiom-authority-withholds-the-load-bearing-structures
+    current axiom memo supplies qubit/admissibility/additive-record structure but withholds Hamiltonian selection and source/observable identification
+[PASS (A)] A1-pauli-qubit-algebra
+    sigma_i^2=I and {sigma_x,sigma_y}=0 exactly
+[PASS (A)] A2-admissibility-rule-varies-and-is-cubic-permutation-invariant
+    A_x=D union {2I} for six equal neighboring records and A_x=D otherwise; equality is invariant under neighbor permutations
+[PASS (A)] A3-record-content-is-admissible-and-readout-is-additive
+    rho_z+,rho_x+ are density matrices in the always-admissible set D; I(Rz union Rx)=1=I(Rz)+I(Rx)
+[PASS (A)] A4-exact-qubit-linear-response-kernel
+    i Tr(rho [V_I(s),O_I(1)]) = sin(pi*s)
+[PASS (A)] A4b-supplied-law-family-is-coordinate-covariant
+    simultaneous Hadamard conjugation of (rho,H,V,O) leaves i Tr(rho[V_I,O_I]) unchanged
+[PASS (A)] A5-allowed-kernel-is-non-affine
+    K''(s) = -pi**2*sin(pi*s) is not identically zero
+[PASS (A)] A6-current-axiom-compatible-dynamics-give-different-kernels
+    D_0 gives K=0 while D_pi gives K=sin(pi s)
+[PASS (A)] A7-profile-pair-is-nonnegative
+    h'=12s-6 has unique critical point 1/2, h''=12>0, and endpoint/minimum values are 1,-1/2,1; hence 1+/-h are nonnegative
+[PASS (A)] A8-profiles-have-identical-I2-and-c2
+    (I2+,c2+)=(1, 1/2); (I2-,c2-)=(1, 1/2)
+[PASS (A)] A9-equal-moment-profiles-have-different-first-order-responses
+    R[phi+]-R[phi-] = 4*(-12 + pi**2)/pi**3 != 0
+[PASS (A)] A10-two-moment-annihilator-condition-fails
+    integral h(s)K(s) ds = 2*(-12 + pi**2)/pi**3 != 0
+[PASS (B)] B2-note-pins-the-narrow-negative-boundary
+    note states current-surface non-derivability, future positive route, no-import firewall, record formation/uniqueness/permanence, law-domain neutrality, independent-audit gate, and N1-N8 PASS
+
+DEPENDENCY / INPUT CERTIFICATE
+  framework dependency: MINIMAL_AXIOMS_2026-06-29.md
+  admitted mathematics: Pauli algebra, finite-dimensional linear response, elementary calculus
+  fitted inputs: none
+  observational inputs: none
+  physical target values: none
+  selected proxy families/windows/thresholds: none
+
+CLAIM BOUNDARY
+  Exact result: current axioms do not derive affine first-order response or first-order two-moment closure.
+  Not claimed: impossibility after a microscopic dynamics/source/readout law is derived.
+  Audit authority: independent audit required; effective status is pipeline-derived.
+
+CHECK CLASS COUNTS: A=11 B=2 C=0 D=0
+SUMMARY: PASS=13 FAIL=0
+
+----- stderr -----
+

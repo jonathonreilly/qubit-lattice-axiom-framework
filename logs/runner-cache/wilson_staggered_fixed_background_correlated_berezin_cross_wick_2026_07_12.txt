@@ -1,0 +1,12 @@
+PASS exact_product_gaussian_normalized_bond_ratio: ratio=1.148514851485148, direct=1.148514851485148, denominator=1.010000000000000=detA/m^2
+PASS wick_diagonal_cross_factorization: max_coefficient_error=0.000e+00
+PASS full_correlated_centered_mark_attaches_through_cross_wick: G_C[O^o]=0.000e+00, attached=2.100e-03, detached_at_zero_cross=0.000e+00, pair_bound=1.472e-01
+PASS three_block_connected_cross_wick_bound: abs_kappa3=1.680000000017778e-07<=connected_graph_bound=8.253459039820698e-04
+PASS gauge_phase_covariance_preserves_edge_majorant: before=7.000000000000001e-02, after=7.000000000000001e-02
+PASS uniform_high_mass_cross_wick_row: kappa0=2.771355194915401e-04, kappa1=7.533669674888438e-04, K_C=7.535757811682538e-04, K_bond=1.385503795927306e-03<c_G=0.01, singleton_d1=2.772634570184197e-04
+PASS product_gaussian_atom_bond_attachment_witness: m=6000000000, C*^3=1.979949493661166e+02, K_G=6.497360655367378e-06, tau=2.405877007902170e-03, A_att=4.821318733636448e-03, q_atom=5.405327309300564e-01, q_split=0.606530659713
+PASS same_lattice_product_centered_attachment_supplier: m=15000, K_G=1.594137503655947e-02<c_G=0.05, tau=1.721753852471211e-01, A_att=4.208213908389765e-01<1
+PASS normalized_expectation_requires_determinant_factor: detA=6.020000000000, G_A[F]=1.006644518272, integral=6.060000000000
+PASS source_contract: missing=[], forbidden_hits=[]
+PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md']
+SCORECARD PASS=11 FAIL=0

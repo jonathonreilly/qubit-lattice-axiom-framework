@@ -1,5 +1,18 @@
 # PR Delivery
 
+The raw constrained-action response/Hessian theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block26-coarse-gauge-gibbsianness-20260712`
+- head: `physics-loop/record-faithful-dynamics-block27-raw-action-hessian-decay-20260712`
+- runner: `PASS=8 FAIL=0`
+- scope: exact real gauge-body first/second response and uniform exponential
+  Hessian locality; no higher source, joint polymer, or contraction claim
+- audit compatibility: one `bounded_theorem` / `unaudited` row with the sole
+  constrained-fiber dependency; strict lint zero errors
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5317
+
+No merge is authorized. Independent audit remains authoritative.
+
 The deep-fiber coarse-gauge Gibbsianness theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block25-generated-action-polymer-norm-20260712`

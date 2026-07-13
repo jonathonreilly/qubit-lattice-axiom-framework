@@ -1,6 +1,25 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block27-raw-action-hessian-decay-20260712`.
+The raw-response runner reports `PASS=8 FAIL=0`. For the positive
+fermion-integrated gauge-body fiber action, `DR[F]=<F>` and
+`D2R[F,G]=-Cov(F,G)`. Follmer's covariance estimate plus the weighted hidden
+Dobrushin resolvent gives a volume- and coarse-configuration-uniform
+exponentially decaying Hessian for separated local directions. Only fixed
+local responses, not an extensive raw action, pass to infinite volume.
+
+Independent code/math, physics/import, governance, and positive-only N1--N8
+reviews pass. Audit validation seeds one `bounded_theorem` / `unaudited` row
+with exactly the constrained-fiber dependency; strict lint has zero errors.
+No higher-cumulant, complex-source, retained-Grassmann, contraction, or
+axiom-update claim is made.
+
+Raw-action Hessian stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5317
+is open against the coarse-gauge Gibbsianness head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block26-coarse-gauge-gibbsianness-20260712`.
 The coarse-gauge Gibbsianness runner reports `PASS=12 FAIL=0`. In the deep
 fiber wedge, exact constrained partition ratios define a uniformly non-null
